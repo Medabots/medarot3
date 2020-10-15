@@ -1,0 +1,14 @@
+* text eol=lf
+Makefile text
+*.asm text
+*.py text
+*.tbl text
+*.yml text
+*.md text
+*.txt text
+*.csv text
+*.tmap binary diff=hex
+*.malias binary diff=hex
+*.1bpp binary diff=hex
+*.2bpp binary diff=hex
+*.png binary diff=hex
