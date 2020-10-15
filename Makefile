@@ -41,7 +41,7 @@ COMMON := $(SRC)/common
 DIALOG_TEXT := $(TEXT)/dialog
 
 # Source Modules (directories in SRC)
-MODULES := core
+MODULES := core gfx
 
 # Toolchain
 CC := rgbasm
