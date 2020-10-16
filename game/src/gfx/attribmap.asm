@@ -1,25 +1,28 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Load Tilemaps", ROM0[$064F]
-DecompressTilemap0::
+SECTION "Load Attribmaps", ROM0[$0796]
+DecompressAttribmap0::
   push af
   ld hl, $9800
   xor a
   ld [$C4E0], a
-  jr DecompressTilemapCommon
+  jr DecompressAttribmapCommon
 
-DecompressTilemap1::
+DecompressAttribmap1::
   push af
   ld hl, $9C00
   ld a, 1
   ld [$C4E0], a
 
-DecompressTilemapCommon::
+DecompressAttribmapCommon::
+  ld a, 1
+  ld [$C4CF], a
+  ldh [hRegVBK], a
   pop af
   ld [$C4E1], a
   push hl
   push de
-  ld hl, TilemapBankTable
+  ld hl, AttribmapBankTable
   ld d, 0
   ld e, a
   add hl, de
@@ -52,7 +55,7 @@ DecompressTilemapCommon::
   add hl, de
   pop de
   push hl
-  ld hl, TilemapAddressTable
+  ld hl, AttribmapAddressTable
   ld a, [$C4E1]
   rst $30
   ld d, 0
@@ -67,7 +70,10 @@ DecompressTilemapCommon::
   ld c, l
   ld a, [de]
   cp $FF
-  ret z
+  jp z, .cleanUpAndExit
+  and $F8
+  ld [$C499], a
+  ld a, [de]
   and 3
   jr nz, .decompressMode
 
@@ -75,19 +81,20 @@ DecompressTilemapCommon::
   inc de
   ld a, [de]
   cp $FF
-  ret z
+  jp z, .cleanUpAndExit
   cp $FE
   jr z, .newLine
   cp $FD
   jr z, .jpA
   cp $FC
   jr z, .jpB
-  di 
+  call $090A
+  di
   push af
   rst $20
   pop af
   ld [hli], a
-  ei 
+  ei
   ld a, [$C4E0]
   or a
   call z, $0912
@@ -124,6 +131,7 @@ DecompressTilemapCommon::
 
 .jpC
   ld a, [$C4EE]
+  call $090A
   di
   push af
   rst $20
@@ -143,7 +151,7 @@ DecompressTilemapCommon::
   inc de
   ld a, [de]
   cp $FF
-  ret z
+  jp z, .cleanUpAndExit
   ld a, [de]
   and $C0
   cp $C0
@@ -162,6 +170,7 @@ DecompressTilemapCommon::
 .cmd0Loop
   inc de
   ld a, [de]
+  call $090A
   di
   push af
   rst $20
@@ -183,6 +192,7 @@ DecompressTilemapCommon::
   ld a, [de]
 
 .cmd1Repeat
+  call $090A
   di
   push af
   rst $20
@@ -204,6 +214,7 @@ DecompressTilemapCommon::
   ld a, [de]
 
 .cmd2RepeatAndIncrement
+  call $090A
   di
   push af
   rst $20
@@ -226,6 +237,7 @@ DecompressTilemapCommon::
   ld a, [de]
 
 .cmd3RepeatAndDecrement
+  call $090A
   di
   push af
   rst $20
@@ -238,9 +250,17 @@ DecompressTilemapCommon::
   pop bc
   jp .decompressMode
 
-TilemapBankTable::
-  db $33,  $34,  $19,  $AB
+.cleanUpAndExit
+  ld a, 0
+  ld [$C4CF], a
+  ldh [hRegVBK], a
+  ret
 
-TilemapAddressTable::
-  dw $4000,  $4000,  $4000,  $4000
+AttribmapBankTable::
+  db $37, $38, $19, $AB
+
+AttribmapAddressTable::
+  dw $4000,  $4000,  $47A0,  $5692
+
+; 0x090A
   
