@@ -1,10 +1,10 @@
 SECTION "State Machine Indexes", WRAM0[$C480]
-CoreStateIndex:: ds 1
-CoreSubStateIndex:: ds 1
+W_CoreStateIndex:: ds 1
+W_CoreSubStateIndex:: ds 1
 
 SECTION "Increment Substate Index", ROM0[$0C7C]
 IncSubStateIndex::
-  ld a, [CoreSubStateIndex]
+  ld a, [W_CoreSubStateIndex]
   inc a
-  ld [CoreSubStateIndex], a
+  ld [W_CoreSubStateIndex], a
   ret

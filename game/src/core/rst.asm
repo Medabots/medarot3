@@ -1,10 +1,14 @@
 INCLUDE "game/src/common/constants.asm"
 
 SECTION "Bank Tracking 1", WRAM0[$C4C0]
-ReturnBank:: ds 1
+W_ReturnBank:: ds 1
 
 SECTION "Bank Tracking 2", WRAM0[$C4C2]
-CurrentBank:: ds 1
+W_CurrentBank:: ds 1
+
+SECTION "Bank Tracking 3", WRAM0[$C4CE]
+W_CurrentWRAMBank:: ds 1
+W_CurrentVRAMBank:: ds 1
 
 SECTION "rst0", ROM0[$0]
 Rst00::
@@ -16,21 +20,21 @@ Rst00::
   ld l, a ;l = a
   jp hl
 
-SECTION "rst8",ROM0[$8] ;Return, enable interrupt
+SECTION "rst8",ROM0[$8]
 Rst08::
-  ld [$C4CE], a
+  ld [W_CurrentWRAMBank], a
   ldh [hRegSVBK], a
   ret
 
 SECTION "rst10, bank swap",ROM0[$10]
 Rst10::
-  ld [CurrentBank], a
+  ld [W_CurrentBank], a
   ld [$2000], a
   ret
 
 SECTION "rst18",ROM0[$18] ;Bank swap from memory
 Rst18::
-  ld a, [ReturnBank]
+  ld a, [W_ReturnBank]
   jr Rst10
 
 SECTION "rst20",ROM0[$20]

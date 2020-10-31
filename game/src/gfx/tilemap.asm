@@ -1,22 +1,26 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "Tilemap Loading Variables 1", WRAM0[$C4E0]
+W_TilemapWritingBaseLocationIndex:: ds 1 ; 0 for $9800, 1 for $9C00, I suck at naming things.
+W_TilemapPointerTableIndex:: ds 1
+
 SECTION "Load Tilemaps", ROM0[$064F]
 DecompressTilemap0::
   push af
   ld hl, $9800
   xor a
-  ld [$C4E0], a
+  ld [W_TilemapWritingBaseLocationIndex], a
   jr DecompressTilemapCommon
 
 DecompressTilemap1::
   push af
   ld hl, $9C00
   ld a, 1
-  ld [$C4E0], a
+  ld [W_TilemapWritingBaseLocationIndex], a
 
 DecompressTilemapCommon::
   pop af
-  ld [$C4E1], a
+  ld [W_TilemapPointerTableIndex], a
   push hl
   push de
   ld hl, TilemapBankTable
@@ -53,7 +57,7 @@ DecompressTilemapCommon::
   pop de
   push hl
   ld hl, TilemapAddressTable
-  ld a, [$C4E1]
+  ld a, [W_TilemapPointerTableIndex]
   rst $30
   ld d, 0
   sla e
@@ -88,9 +92,9 @@ DecompressTilemapCommon::
   pop af
   ld [hli], a
   ei 
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   jr .copyLinesMode
 
 .newLine
@@ -99,9 +103,9 @@ DecompressTilemapCommon::
   ld h, b
   ld l, c
   add hl, de
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $097C
+  call z, ConfineAddressToTilemap0
   ld b, h
   ld c, l
   pop de
@@ -109,9 +113,9 @@ DecompressTilemapCommon::
 
 .jpA
   inc hl
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   jr .copyLinesMode
 
 .jpB
@@ -130,9 +134,9 @@ DecompressTilemapCommon::
   pop af
   ld [hli], a
   ei
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   ld a, [$C4F0]
   dec a
   ld [$C4F0], a
@@ -243,4 +247,92 @@ TilemapBankTable::
 
 TilemapAddressTable::
   dw $4000,  $4000,  $4000,  $4000
+
+SECTION "Calculate Tilemap Address", ROM0[$0912]
+Tilemap0WrapToLine::
+  push af
+  push bc
+  push de
+  call ConfineAddressToTilemap0
+  ld d, h
+  ld e, l
+  ld bc, $6800
+  add hl, bc
+  srl l
+  jr c, .addressNotAtStartOfRow
+  srl l
+  jr c, .addressNotAtStartOfRow
+  srl l
+  jr c, .addressNotAtStartOfRow
+  srl l
+  jr c, .addressNotAtStartOfRow
+  srl l
+  jr c, .addressNotAtStartOfRow
+  jr .backupLineAndExit
+
+.addressNotAtStartOfRow
+  ld h, d
+  ld l, e
+  pop de
+  pop bc
+  pop af
+  ret
+
+.backupLineAndExit
+  ld h, d
+  ld l, e
+  ld bc, -$20
+  add hl, bc
+  call ConfineAddressToTilemap0
+  pop de
+  pop bc
+  pop af
+  ret
+
+Tilemap0WrapToLineBackwards::
+  push af
+  push bc
+  push de
+  call ConfineAddressToTilemap0
+  ld d, h
+  ld e, l
+  ld bc, $6800
+  add hl, bc
+  srl l
+  jr nc, .addressNotAtEndOfRow
+  srl l
+  jr nc, .addressNotAtEndOfRow
+  srl l
+  jr nc, .addressNotAtEndOfRow
+  srl l
+  jr nc, .addressNotAtEndOfRow
+  srl l
+  jr nc, .addressNotAtEndOfRow
+  jr .forwardLineAndExit
+
+.addressNotAtEndOfRow
+  ld h, d
+  ld l, e
+  pop de
+  pop bc
+  pop af
+  ret
+
+.forwardLineAndExit
+  ld h, d
+  ld l, e
+  ld bc, $20
+  add hl, bc
+  call ConfineAddressToTilemap0
+  pop de
+  pop bc
+  pop af
+  ret
+
+ConfineAddressToTilemap0::
+  ld a, h
+  and 3
+  or $98
+  ld h, a
+  ret
   

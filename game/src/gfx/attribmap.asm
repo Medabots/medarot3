@@ -1,25 +1,28 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "Attribmap Loading Variables 1", WRAM0[$C499]
+W_DecompressAttribmapCurrentValue:: ds 1
+
 SECTION "Load Attribmaps", ROM0[$0796]
 DecompressAttribmap0::
   push af
   ld hl, $9800
   xor a
-  ld [$C4E0], a
+  ld [W_TilemapWritingBaseLocationIndex], a
   jr DecompressAttribmapCommon
 
 DecompressAttribmap1::
   push af
   ld hl, $9C00
   ld a, 1
-  ld [$C4E0], a
+  ld [W_TilemapWritingBaseLocationIndex], a
 
 DecompressAttribmapCommon::
   ld a, 1
-  ld [$C4CF], a
+  ld [W_CurrentVRAMBank], a
   ldh [hRegVBK], a
   pop af
-  ld [$C4E1], a
+  ld [W_TilemapPointerTableIndex], a
   push hl
   push de
   ld hl, AttribmapBankTable
@@ -56,7 +59,7 @@ DecompressAttribmapCommon::
   pop de
   push hl
   ld hl, AttribmapAddressTable
-  ld a, [$C4E1]
+  ld a, [W_TilemapPointerTableIndex]
   rst $30
   ld d, 0
   sla e
@@ -72,7 +75,7 @@ DecompressAttribmapCommon::
   cp $FF
   jp z, .cleanUpAndExit
   and $F8
-  ld [$C499], a
+  ld [W_DecompressAttribmapCurrentValue], a
   ld a, [de]
   and 3
   jr nz, .decompressMode
@@ -88,16 +91,16 @@ DecompressAttribmapCommon::
   jr z, .jpA
   cp $FC
   jr z, .jpB
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
   pop af
   ld [hli], a
   ei
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   jr .copyLinesMode
 
 .newLine
@@ -106,9 +109,9 @@ DecompressAttribmapCommon::
   ld h, b
   ld l, c
   add hl, de
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $097C
+  call z, ConfineAddressToTilemap0
   ld b, h
   ld c, l
   pop de
@@ -116,9 +119,9 @@ DecompressAttribmapCommon::
 
 .jpA
   inc hl
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   jr .copyLinesMode
 
 .jpB
@@ -131,16 +134,16 @@ DecompressAttribmapCommon::
 
 .jpC
   ld a, [$C4EE]
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
   pop af
   ld [hli], a
   ei
-  ld a, [$C4E0]
+  ld a, [W_TilemapWritingBaseLocationIndex]
   or a
-  call z, $0912
+  call z, Tilemap0WrapToLine
   ld a, [$C4F0]
   dec a
   ld [$C4F0], a
@@ -170,7 +173,7 @@ DecompressAttribmapCommon::
 .cmd0Loop
   inc de
   ld a, [de]
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
@@ -192,7 +195,7 @@ DecompressAttribmapCommon::
   ld a, [de]
 
 .cmd1Repeat
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
@@ -214,7 +217,7 @@ DecompressAttribmapCommon::
   ld a, [de]
 
 .cmd2RepeatAndIncrement
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
@@ -237,7 +240,7 @@ DecompressAttribmapCommon::
   ld a, [de]
 
 .cmd3RepeatAndDecrement
-  call $090A
+  call AttribmapRecallValue
   di
   push af
   rst $20
@@ -252,7 +255,7 @@ DecompressAttribmapCommon::
 
 .cleanUpAndExit
   ld a, 0
-  ld [$C4CF], a
+  ld [W_CurrentVRAMBank], a
   ldh [hRegVBK], a
   ret
 
@@ -262,5 +265,11 @@ AttribmapBankTable::
 AttribmapAddressTable::
   dw $4000,  $4000,  $47A0,  $5692
 
-; 0x090A
+AttribmapRecallValue::
+  push bc
+  ld b, a
+  ld a, [W_DecompressAttribmapCurrentValue]
+  or b
+  pop bc
+  ret
   
