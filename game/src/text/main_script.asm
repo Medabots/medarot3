@@ -6,6 +6,7 @@ W_MainScriptPauseTimer:: ds 1
 W_MainScriptLineMappingBaseLocation:: ds 2
 W_MainScriptSpeed:: ds 1
 W_MainScriptIterator:: ds 1
+W_MainScriptKanjiDrawingRegionTileIndex:: ds 1
 
 SECTION "Main Script Variables 2", WRAM0[$C4CC]
 W_MainScriptTextBank:: ds 1
@@ -18,7 +19,7 @@ W_MainScriptPauseAutoAdvanceTimer:: ds 1
 SECTION "Main Script", ROM0[$1B6B]
 InitiateMainScript::
   xor a
-  ld [$C4CA], a
+  ld [W_MainScriptKanjiDrawingRegionTileIndex], a
   ld [W_MainScriptPointerLocationOffset], a
   ld [W_MainScriptPointerLocationOffset + 1], a
   ld [W_MainScriptIterator], a
@@ -43,7 +44,7 @@ InitiateMainScript::
 
 InitiateMainScriptAlternate::
   xor a
-  ld [$C4CA], a
+  ld [W_MainScriptKanjiDrawingRegionTileIndex], a
   ld [W_MainScriptPointerLocationOffset], a
   ld [W_MainScriptPointerLocationOffset + 1], a
   ld [W_MainScriptIterator], a
@@ -129,16 +130,16 @@ MainScriptProcessorPutCharLoop::
   cp $CE
   jp z, ControlCodeCE ; Text speed code.
   cp $CF
-  jp z, $1D53 ; New page after input code.
+  jp z, ControlCodeCF ; New page after input code.
   cp $D0
-  jp z, $1DB0 ; Print subtext code.
+  jp z, ControlCodeD0 ; Print subtext code.
   cp $D1
-  jp z, $1E62 ; New page without input code.
+  jp z, ControlCodeD1 ; New page without input code.
   cp $D2
   jp z, $1EB5 ; Portrait display code.
   cp $D3
   jp z, $2016 ; Kanji drawing code.
-  jp $1E7B ; Map character to the screen.
+  jp MainScriptMapCharacter ; Map character to the screen.
 
 ControlCodeCC:: ; End code.
   ld a, [W_MainScriptCCSubState]
@@ -288,6 +289,204 @@ ControlCodeCE:: ; Text speed code.
   call $2112
   pop hl
   ld a, [W_MainScriptPauseTimer]
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoop
+
+ControlCodeCF:: ; New page after input code.
+  pop hl
+  ld hl, $9C00
+  ld bc, $72
+  add hl, bc
+  ld b, $F7
+  ld a, [$C460]
+  and 4
+  jr nz, .showNextPageIndicator
+  ld b, 0
+
+.showNextPageIndicator
+  ld a, b
+  di
+  push af
+  rst $20
+  pop af
+  ld [hl], a
+  ei
+  ldh a, [hJPInputChanged]
+  and hJPInputA
+  jr nz, .aButtonPressed
+  ldh a, [hJPInputHeldDown]
+  and hJPInputA
+  ret z
+  ld a, [W_MainScriptIterator]
+  cp $C
+  jp z, .aButtonPressed
+  inc a
+  ld [W_MainScriptIterator], a
+  ret
+
+.aButtonPressed
+  ld a, 7
+  call $27DA
+  xor a
+  ld [W_MainScriptIterator], a
+  ld [W_MainScriptPauseAutoAdvanceTimer], a
+  ld bc, 0
+  ld e, 1
+  ld a, 0
+  call DecompressTilemap1
+  ld hl, $9C21
+  ld a, h
+  ld [W_MainScriptLineMappingBaseLocation], a
+  ld a, l
+  ld [W_MainScriptLineMappingBaseLocation + 1], a
+  ld b, 1
+  call $2112
+  xor a
+  ld [W_MainScriptKanjiDrawingRegionTileIndex], a
+  ret
+
+ControlCodeD0:: ; Print subtext code.
+  inc hl
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, [W_MainScriptIterator]
+  ld c, a
+  ld b, 0
+  add hl, bc
+  ld a, [hl]
+  cp $CB
+  jr nz, .mapCharacter
+
+.terminatorFound
+  ld b, 3
+  call $2112
+  xor a
+  ld [W_MainScriptIterator], a
+  ld [W_MainScriptPauseAutoAdvanceTimer], a
+  ld a, [W_MainScriptSpeed]
+  ld [W_MainScriptPauseTimer], a
+  pop hl
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoop
+
+.mapCharacter
+  ld [W_MaliasSourceBank], a
+  cp $D3
+  jr z, .kanjiHandling
+  ld a, [W_MainScriptLineMappingBaseLocation]
+  ld h, a
+  ld a, [W_MainScriptLineMappingBaseLocation + 1]
+  ld l, a
+  ld a, [W_MaliasSourceBank]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, h
+  ld [W_MainScriptLineMappingBaseLocation], a
+  ld a, l
+  ld [W_MainScriptLineMappingBaseLocation + 1], a
+  ld a, [W_MainScriptIterator]
+  inc a
+  ld [W_MainScriptIterator], a
+  ld a, [W_MainScriptSpeed]
+  ld [W_MainScriptPauseTimer], a
+  pop hl
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoop
+
+.kanjiHandling
+  inc hl
+  ld a, [hl]
+  ld [W_MaliasSourceBank], a
+  call $2122
+  ld a, [W_MaliasSourceBank]
+  call $2172
+  ld a, [W_MainScriptLineMappingBaseLocation]
+  ld h, a
+  ld a, [W_MainScriptLineMappingBaseLocation + 1]
+  ld l, a
+  ld a, [W_MainScriptKanjiDrawingRegionTileIndex]
+  add $BB
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, h
+  ld [W_MainScriptLineMappingBaseLocation], a
+  ld a, l
+  ld [W_MainScriptLineMappingBaseLocation + 1], a
+  ld a, [W_MainScriptTextBank]
+  rst $10
+  ld a, [W_MainScriptKanjiDrawingRegionTileIndex]
+  inc a
+  ld [W_MainScriptKanjiDrawingRegionTileIndex], a
+  pop hl
+  ld a, [W_MainScriptIterator]
+  add 2
+  ld [W_MainScriptIterator], a
+  ld a, [W_MainScriptSpeed]
+  ld [W_MainScriptPauseTimer], a
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoop
+
+ControlCodeD1:: ; New page without input code.
+  call MapMainScriptWindow
+  ld hl, $9C21
+  ld a, h
+  ld [W_MainScriptLineMappingBaseLocation], a
+  ld a, l
+  ld [W_MainScriptLineMappingBaseLocation + 1], a
+  ld b, 1
+  call $2112
+  xor a
+  ld [W_MainScriptKanjiDrawingRegionTileIndex], a
+  pop hl
+  ret
+
+MainScriptMapCharacter::
+  ld b, 1
+  call $2112
+  xor a
+  ld [W_MainScriptIterator], a
+  ld [W_MainScriptPauseAutoAdvanceTimer], a
+  ld a, [hl]
+  ld [W_MaliasSourceBank], a
+  ld a, [W_MainScriptLineMappingBaseLocation]
+  ld h, a
+  ld a, [W_MainScriptLineMappingBaseLocation + 1]
+  ld l, a
+  ld a, [W_MaliasSourceBank]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, h
+  ld [W_MainScriptLineMappingBaseLocation], a
+  ld a, l
+  ld [W_MainScriptLineMappingBaseLocation + 1], a
+  ld a, [W_MainScriptSpeed]
+  ld [W_MainScriptPauseTimer], a
+  pop hl
   cp $FF
   ret nz
   xor a
