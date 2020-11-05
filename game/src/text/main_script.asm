@@ -7,14 +7,23 @@ W_MainScriptLineMappingBaseLocation:: ds 2
 W_MainScriptSpeed:: ds 1
 W_MainScriptIterator:: ds 1
 W_MainScriptKanjiDrawingRegionTileIndex:: ds 1
-
-SECTION "Main Script Variables 2", WRAM0[$C4CC]
+W_MainScriptPortraitCharacter:: ds 1
 W_MainScriptTextBank:: ds 1
 W_MainScriptExitMode:: ds 1
 
-SECTION "Main Script Variables 3", WRAM0[$C4D6]
+SECTION "Main Script Variables 2", WRAM0[$C4D6]
 W_MainScriptCCSubState:: ds 1
 W_MainScriptPauseAutoAdvanceTimer:: ds 1
+
+SECTION "Main Script Variables 3", WRAM0[$C539]
+W_MainScriptPortraitPriorPlacement:: ds 1
+W_MainScriptPortraitPlacement:: ds 1
+W_MainScriptPortraitExpression:: ds 1
+
+; W_MainScriptPortraitPlacement has 5 viable values, those being $00, $01, $10, $11, and $FF.
+; $00 and $10 have left-facing portraits, and $01 and $11 have right-facing portraits.
+; $00 and $01 are of the left side of the screen. $10 and $11 are to the right.
+; $FF clears the current portrait.
 
 SECTION "Main Script", ROM0[$1B6B]
 InitiateMainScript::
@@ -30,10 +39,10 @@ InitiateMainScript::
   ld a, 0
   ld [W_MainScriptSpeed], a
   ld a, $FF
-  ld [$C4CB], a
-  ld [$C539], a
-  ld [$C53A], a
-  ld [$C53B], a
+  ld [W_MainScriptPortraitCharacter], a
+  ld [W_MainScriptPortraitPriorPlacement], a
+  ld [W_MainScriptPortraitPlacement], a
+  ld [W_MainScriptPortraitExpression], a
   ld hl, $9C21
   ld a, h
   ld [W_MainScriptLineMappingBaseLocation], a
@@ -55,10 +64,10 @@ InitiateMainScriptAlternate::
   ld a, 0
   ld [W_MainScriptSpeed], a
   ld a, $FF
-  ld [$C4CB], a
-  ld [$C539], a
-  ld [$C53A], a
-  ld [$C53B], a
+  ld [W_MainScriptPortraitCharacter], a
+  ld [W_MainScriptPortraitPriorPlacement], a
+  ld [W_MainScriptPortraitPlacement], a
+  ld [W_MainScriptPortraitExpression], a
   ld hl, $9C21
   ld a, h
   ld [W_MainScriptLineMappingBaseLocation], a
@@ -231,7 +240,7 @@ ControlCodeCC:: ; End code.
   ret
 
 .exitCodeCommon
-  ld a, [$C53A]
+  ld a, [W_MainScriptPortraitPlacement]
   cp $FF
   jr nz, .continueIntoState1
 
