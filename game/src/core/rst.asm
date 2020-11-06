@@ -11,7 +11,7 @@ W_CurrentWRAMBank:: ds 1
 W_CurrentVRAMBank:: ds 1
 
 SECTION "rst0", ROM0[$0]
-Rst00::
+Rst00:
   pop hl
   add a ;a = a+a
   rst $28
@@ -21,31 +21,31 @@ Rst00::
   jp hl
 
 SECTION "rst8",ROM0[$8]
-Rst08::
+Rst08:
   ld [W_CurrentWRAMBank], a
   ldh [hRegSVBK], a
   ret
 
 SECTION "rst10, bank swap",ROM0[$10]
-Rst10::
+Rst10:
   ld [W_CurrentBank], a
   ld [$2000], a
   ret
 
 SECTION "rst18",ROM0[$18] ;Bank swap from memory
-Rst18::
+Rst18:
   ld a, [W_ReturnBank]
   jr Rst10
 
 SECTION "rst20",ROM0[$20]
-Rst20::
+Rst20:
   ldh a, [hLCDStat]
   and 2
   jr nz, Rst20
   ret
 
 SECTION "rst28",ROM0[$28]
-Rst28::
+Rst28:
   ld b, 0
   ld c, a
   sla c
@@ -53,7 +53,7 @@ Rst28::
   ret
  
 SECTION "rst30",ROM0[$30]
-Rst30::
+Rst30:
   rst $28
   add hl, bc
   ld a, [hli]
@@ -62,5 +62,5 @@ Rst30::
   ret
 
 SECTION "rst38",ROM0[$38]
-Rst38::
+Rst38:
   ret
