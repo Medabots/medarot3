@@ -422,7 +422,7 @@ ControlCodeD0:: ; Print subtext code.
   ld [W_MaliasSourceBank], a
   call MainScriptGetKanjiDrawingAddress
   ld a, [W_MaliasSourceBank]
-  call $2172
+  call MainScriptDrawKanjiCharacter
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a
   ld a, [W_MainScriptLineMappingBaseLocation + 1]
@@ -695,7 +695,7 @@ ControlCodeD2:: ; Portrait display code.
   jp .exit
 
 .table
-  db $00,$0C,$26,$44
+  db 0,$C,$26,$44
 
 ControlCodeD3:: ; Kanji drawing code.
   ld b, 2
@@ -705,7 +705,7 @@ ControlCodeD3:: ; Kanji drawing code.
   ld [W_MaliasSourceBank], a
   call MainScriptGetKanjiDrawingAddress
   ld a, [W_MaliasSourceBank]
-  call $2172
+  call MainScriptDrawKanjiCharacter
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a
   ld a, [W_MainScriptLineMappingBaseLocation + 1]
@@ -738,14 +738,14 @@ ControlCodeD3:: ; Kanji drawing code.
 
 SECTION "Main Script Helper Functions 1", ROM0[$2112]
 MainScriptProgressXChars::
- ld a, [W_MainScriptPointerLocationOffset + 1]
- add b
- ld [W_MainScriptPointerLocationOffset + 1], a
- ret nc
- ld a, [W_MainScriptPointerLocationOffset]
- inc a
- ld [W_MainScriptPointerLocationOffset], a
- ret
+  ld a, [W_MainScriptPointerLocationOffset + 1]
+  add b
+  ld [W_MainScriptPointerLocationOffset + 1], a
+  ret nc
+  ld a, [W_MainScriptPointerLocationOffset]
+  inc a
+  ld [W_MainScriptPointerLocationOffset], a
+  ret
 
 MainScriptGetKanjiDrawingAddress::
   ld hl, $8BB0
@@ -761,4 +761,83 @@ MainScriptGetKanjiDrawingAddress::
   sla c
   rl b
   add hl, bc
+  ret
+
+MainScriptDrawNonKanjiCharacter::
+  push de
+  push bc
+  push hl
+  push af
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [hRegVBK], a
+  ld a, $39
+  rst $10
+  ld hl, $502A
+  pop af
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld d, [hl]
+  ld e, a
+  ld b, $10
+  pop hl
+
+.drawLoop
+  ld a, [de]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .drawLoop
+
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [hRegVBK], a
+  pop bc
+  pop de
+  ret
+
+MainScriptDrawKanjiCharacter::
+  push de
+  push bc
+  push hl
+  push af
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [hRegVBK], a
+  ld a, $39
+  rst $10
+  ld hl, $5F8A
+  pop af
+  rst $30
+  ld b, $10
+  ld d, h
+  ld e, l
+  pop hl
+
+.drawLoop
+  ld a, [de]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .drawLoop
+
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [hRegVBK], a
+  pop bc
+  pop de
   ret
