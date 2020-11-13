@@ -177,7 +177,7 @@ for info in rom_info:
                             t += f"<${b:02X}>"
                     else: # If we never break out of the while loop before the condition fails, this is probably garbage and we should treat it as ignored
                         if pointer_lengths[p] == -1:
-                            t = f"<IGNORED:${utils.read_short(rom):X}>"
+                            t = f"<IGNORED:${utils.read_short(rom):04X}>"
                         else:
                             t = "<IGNORED>"
 
