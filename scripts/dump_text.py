@@ -34,7 +34,7 @@ for info in rom_info:
         rom.seek(txt_tbl_ptr)
         text_ptrs = list(zip(banks, [utils.read_short(rom) for i in range(0, entry_count)]))
 
-        with open("./game/src/data/text_tables.asm", "w") as f:
+        with open("./game/src/version/text_tables.asm", "w") as f:
             f.write(f'INCLUDE "build/dialog/text_table_constants_{{GAMEVERSION}}.asm"\n\n')
             for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
                 f.write(f'SECTION "TextSection{i:02}", ROMX[${entry[1]:04x}], BANK[${entry[0]:02x}]\n')
@@ -66,22 +66,28 @@ for info in rom_info:
 
 
         class SpecialCharacter():
-            def __init__(self, symbol, default=0, bts=1, end=False, names=None, always_print=False):
+            def __init__(self, symbol, default=0, bts=1, end=False, names=None, always_print=False, parser = None):
                 self.symbol = symbol
                 self.default = default
                 self.bts = bts
                 self.end = end
                 self.names = names
                 self.always_print = always_print
+                if not parser:
+                    parser = { 0: lambda x: None, 1: utils.read_byte, 2: utils.read_short }[self.bts]
+                self.parser = parser
 
         table[0xcc] = SpecialCharacter('*', end=True) # End of text
         table[0xcd] = SpecialCharacter("CD", bts=0, always_print=True) # Moves to second line of text box
-        table[0xce] = SpecialCharacter('#') # ???
+        table[0xce] = SpecialCharacter('#') # Text Speed
         table[0xcf] = SpecialCharacter("CF", bts=0, always_print=True) # Create new text box
         table[0xd0] = SpecialCharacter("&", bts=2, names=name_table) # Pull text from RAM
-        table[0xd1] = SpecialCharacter("P", bts=0, always_print=True) # Keep same portrait
-        table[0xd2] = SpecialCharacter('@', bts=2)
+        table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
+        # Portrait, [Orientation:{00, 01, 10, 11, FF}][Character:1][Expression:1]
+        table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
         table[0xd3] = SpecialCharacter('K') # Kanji
+        
+        terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
 
         for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
             realaddr = utils.rom2realaddr(entry)
@@ -119,11 +125,11 @@ for info in rom_info:
 
             text = {}
             counter = 0
-
             # Instead of reading through the pointer table, parse through all the text in case it's out of order
             while rom.tell() in pointers.values():
                 p = list(pointers.keys())[list(pointers.values()).index(rom.tell())]
-
+                if rom.tell() in terminator_pointers:
+                    pointer_lengths[p] = -1
                 while True:
                     t = ""
                     queued_ptrs_write = "" # Queue, but don't write immediately until we know it's ignored or not
@@ -136,7 +142,7 @@ for info in rom_info:
                             if type(token) == str: # Normal character
                                 t += token
                             elif isinstance(token, SpecialCharacter): # Special character
-                                param = {0: lambda x: None, 1: utils.read_byte, 2: utils.read_short}[token.bts](rom)
+                                param = token.parser(rom)
                                 if token.always_print or (param != None and param != token.default):
                                     t += "<" + token.symbol
                                 if param != None:
@@ -152,25 +158,29 @@ for info in rom_info:
                                                     t += n
                                                     # Write the names to the table later, just in case something is ignored
                                                 else:
-                                                    if token.bts == 2:
-                                                        t += f"{param:04X}"
-                                                    else: # 1
-                                                        t += f"{param:02X}"
+                                                    if isinstance(param, str):
+                                                        t += param
+                                                    else:
+                                                        token_format = f"{{:{token.bts * 2:02}X}}"
+                                                        t += token_format.format(param)
                                 if token.always_print or (param != None and param != token.default):
                                     t += ">"
                                 if token.end:
                                     if not t:
                                         t = f"<{token.symbol}{param:02X}>"
-                                     # This is a hack, but step back one because they'll reuse this byte
+
+                                    # This is a hack, but step back one because they'll reuse this byte
                                     if param not in range(0, 4+1):
                                         rom.seek(-1, 1)
                                     break
                         else: # Not found, print literal bytes instead
                             t += f"<${b:02X}>"
                     else: # If we never break out of the while loop before the condition fails, this is probably garbage and we should treat it as ignored
-                        t = "<IGNORED>"
-                        #for b in text_bytes:
-                        #    t += f"<${b:02X}>"
+                        if pointer_lengths[p] == -1:
+                            t = f"<IGNORED:${utils.read_short(rom):X}>"
+                        else:
+                            t = "<IGNORED>"
+
                     if queued_ptrs_write and not t.startswith("<IGNORED>") or (isinstance(p, str) and p.startswith("UNUSED")):
                         ptrs.write(queued_ptrs_write)
                     
@@ -192,7 +202,7 @@ for info in rom_info:
                     duplicates[p] = pointers[p]
 
             # Finally, they may have had some pointers literally just point to the middle of other segments, so we need to account for this
-            missing = set(pointers) - set(text) - set(duplicates)
+            missing = set(pointers) - set(text) - set(duplicates) - set(terminator_pointers)
             for p in missing:
                 ptr = pointers[p]
                 rom.seek(ptr - 1)
