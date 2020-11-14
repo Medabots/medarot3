@@ -97,11 +97,11 @@ MainScriptProcessor::
   ld a, [$C522]
   cp 2
   ret z
-  ldh a, [hJPInputChanged]
-  and hJPInputA
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
   jr nz, .aButtonPressed
-  ldh a, [hJPInputHeldDown]
-  and hJPInputA
+  ldh a, [H_JPInputHeldDown]
+  and M_JPInputA
   ret z
   ld a, [W_MainScriptPauseAutoAdvanceTimer]
   cp $C
@@ -222,7 +222,7 @@ ControlCodeCC:: ; End code.
 .exitSubState1
   call $346D
   ld a, 1
-  ld [$C4D0], a
+  ld [W_OAM_SpritesReady], a
   jp .nextSubState
 
 .exitSubState2
@@ -255,11 +255,11 @@ ControlCodeCC:: ; End code.
   ret
 
 .inputCheck
-  ldh a, [hJPInputChanged]
-  and hJPInputA
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
   jr nz, .aButtonPressed
-  ldh a, [hJPInputHeldDown]
-  and hJPInputA
+  ldh a, [H_JPInputHeldDown]
+  and M_JPInputA
   ret z
   ld a, [W_MainScriptIterator]
   cp $C
@@ -323,11 +323,11 @@ ControlCodeCF:: ; New page after input code.
   pop af
   ld [hl], a
   ei
-  ldh a, [hJPInputChanged]
-  and hJPInputA
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
   jr nz, .aButtonPressed
-  ldh a, [hJPInputHeldDown]
-  and hJPInputA
+  ldh a, [H_JPInputHeldDown]
+  and M_JPInputA
   ret z
   ld a, [W_MainScriptIterator]
   cp $C
@@ -613,7 +613,7 @@ ControlCodeD2:: ; Portrait display code.
 
 .state1
   ld a, 1
-  ld [$C4D0], a
+  ld [W_OAM_SpritesReady], a
   ld a, [W_MainScriptCCSubState]
   inc a
   ld [W_MainScriptCCSubState], a
@@ -770,7 +770,7 @@ MainScriptDrawNonKanjiCharacter::
   push af
   ld a, 1
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   ld a, $39
   rst $10
   ld hl, $502A
@@ -800,7 +800,7 @@ MainScriptDrawNonKanjiCharacter::
 
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   pop bc
   pop de
   ret
@@ -812,7 +812,7 @@ MainScriptDrawKanjiCharacter::
   push af
   ld a, 1
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   ld a, $39
   rst $10
   ld hl, $5F8A
@@ -837,7 +837,7 @@ MainScriptDrawKanjiCharacter::
 
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   pop bc
   pop de
   ret

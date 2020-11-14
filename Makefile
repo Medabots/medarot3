@@ -52,7 +52,7 @@ COMMON := $(SRC)/common
 DIALOG_TEXT := $(TEXT)/dialog
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
-MODULES := core gfx text
+MODULES := core gfx text link
 
 # Toolchain
 CC := rgbasm
