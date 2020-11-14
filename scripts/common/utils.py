@@ -1,8 +1,9 @@
 import struct
 from ast import literal_eval
+from collections import OrderedDict
 
 def merge_dicts(dict_list):
-    result = {}
+    result = OrderedDict()
     for dictionary in dict_list:
         result.update(dictionary)
     return result
