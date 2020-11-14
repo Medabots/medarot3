@@ -28,9 +28,7 @@ SECTION "TextSection06", ROMX[$6f2c], BANK[$25]
 TextSection06:
   INCBIN cTextSection06
 
-SECTION "TextSection07", ROMX[$6314], BANK[$24]
-TextSection07:
-  INCBIN cTextSection07
+; TextSection07 is in a different location in Kuwagata compared to Kabuto
 
 SECTION "TextSection08", ROMX[$4000], BANK[$47]
 TextSection08:

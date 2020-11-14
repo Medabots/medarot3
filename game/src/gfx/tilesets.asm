@@ -37,7 +37,7 @@ LoadMaliasGraphics::
   ld a, [hl]
   ld a, a ; The fuck?!
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   ld a, [W_MaliasSourceBank]
   rst $10
   ld hl, $3995 ; Address of table with source addresses for tile data.
@@ -212,5 +212,5 @@ LoadMaliasGraphics::
   ld [$C4DA], a
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   ret

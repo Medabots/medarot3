@@ -20,7 +20,7 @@ DecompressAttribmap1::
 DecompressAttribmapCommon::
   ld a, 1
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   pop af
   ld [W_TilemapPointerTableIndex], a
   push hl
@@ -256,7 +256,7 @@ DecompressAttribmapCommon::
 .cleanUpAndExit
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ldh [hRegVBK], a
+  ldh [H_RegVBK], a
   ret
 
 AttribmapBankTable::

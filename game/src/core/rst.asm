@@ -23,13 +23,13 @@ Rst00:
 SECTION "rst8",ROM0[$8]
 Rst08:
   ld [W_CurrentWRAMBank], a
-  ldh [hRegSVBK], a
+  ldh [H_RegSVBK], a
   ret
 
 SECTION "rst10, bank swap",ROM0[$10]
 Rst10:
   ld [W_CurrentBank], a
-  ld [$2000], a
+  ld [X_MBC5ROMBankLow], a
   ret
 
 SECTION "rst18",ROM0[$18] ;Bank swap from memory
@@ -39,7 +39,7 @@ Rst18:
 
 SECTION "rst20",ROM0[$20]
 Rst20:
-  ldh a, [hLCDStat]
+  ldh a, [H_LCDStat]
   and 2
   jr nz, Rst20
   ret
