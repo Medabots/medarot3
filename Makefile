@@ -50,6 +50,15 @@ COMMON := $(SRC)/common
 
 # Text Directories
 DIALOG_TEXT := $(TEXT)/dialog
+TILESET_TEXT := $(TEXT)/tilesets
+
+# Patch Specific
+VWF_TSET_SRC_TYPE := 1bpp
+VWF_TSET_TYPE := vwffont
+PATCH_TEXT := $(TEXT)/patch
+PATCH_TEXT_OUT := $(BUILD)/patch
+PATCH_TILESET_TEXT := $(TILESET_TEXT)/patch
+PATCH_TILESET_OUT := $(TILESET_OUT)/patch
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
 MODULES := core gfx text link
@@ -81,6 +90,13 @@ COMMON_SRC := $(wildcard $(COMMON)/*.$(SOURCE_TYPE))
 
 DIALOG := $(notdir $(basename $(wildcard $(DIALOG_TEXT)/*.$(CSV_TYPE))))
 
+## Patch Specific
+PATCH_TEXT_TILESETS := $(notdir $(basename $(wildcard $(PATCH_TILESET_TEXT)/*.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE)))) # .1bpp.png -> 1bpp
+PATCH_TILESETS := $(filter-out $(PATCH_TEXT_TILESETS), $(notdir $(basename $(wildcard $(PATCH_TILESET_TEXT)/*.$(RAW_TSET_SRC_TYPE))))) # .png -> 2bpp
+
+PATCH_TEXT_TILESET_FILES := $(foreach FILE,$(PATCH_TEXT_TILESETS),$(PATCH_TILESET_OUT)/$(FILE))
+PATCH_TILESET_FILES := $(foreach FILE,$(PATCH_TILESETS),$(PATCH_TILESET_OUT)/$(FILE).$(TSET_TYPE))
+
 # Intermediates for common sources (not in version folder)
 OBJECTS := $(foreach OBJECT,$(OBJNAMES), $(addprefix $(BUILD)/,$(OBJECT)))
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
@@ -90,6 +106,10 @@ core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_VERSION.asm
+
+# Patch Specific
+core_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
+#patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default
 default: kabuto
@@ -139,6 +159,19 @@ $(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(C
 $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $$(foreach FILE,$(DIALOG),$(DIALOG_INT)/$$(FILE)_$$*.$(DIALOG_TYPE)) | $(DIALOG_OUT)
 	$(PYTHON) $(SCRIPT)/dialogbin2asm.py $@ $(DIALOG_OUT) $* $^
 
+## Patch Specific
+$(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_TEXT)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
+	cp $< $@
+
+#$(PATCH_TILESET_OUT)/%.$(TSET_TYPE): $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
+#	$(PYTHON) $(SCRIPT)/tileset2malias.py $< $@
+
+$(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_TEXT)/%.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
+	$(CCGFX) $(CCGFX_ARGS) -d 1 -o $@ $<
+
+$(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_TEXT)/%.$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
+	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
+
 ### Dump Scripts
 
 .PHONY: dump dump_text
@@ -148,6 +181,11 @@ dump_text: | $(DIALOG_TEXT)
 	$(PYTHON) $(SCRIPT)/dump_text.py
 
 #Make directories if necessary
+
+# Patch Specific
+$(PATCH_TILESET_OUT):
+	mkdir -p $(PATCH_TILESET_OUT)
+
 $(BUILD):
 	mkdir -p $(BUILD)
 
@@ -162,3 +200,9 @@ $(DIALOG_INT):
 
 $(DIALOG_OUT):
 	mkdir -p $(DIALOG_OUT)
+
+$(TILESET_TEXT):
+	mkdir -p $(TILESET_TEXT)
+
+$(TILESET_OUT):
+	mkdir -p $(TILESET_OUT)
