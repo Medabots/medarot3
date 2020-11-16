@@ -61,7 +61,7 @@ PATCH_TILESET_TEXT := $(TILESET_TEXT)/patch
 PATCH_TILESET_OUT := $(TILESET_OUT)/patch
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
-MODULES := core gfx text link
+MODULES := core gfx text link patch
 
 # Toolchain
 CC := rgbasm
@@ -132,7 +132,6 @@ $(VERSIONS): %: $(OUTPUT_PREFIX)%.$(ROM_TYPE)
 $(BASE)/$(OUTPUT_PREFIX)%.$(ROM_TYPE): $(OBJECTS) $$(addprefix $(VERSION_OUT)/$$*., $$(addsuffix .$(INT_TYPE), $$(notdir $$(basename $$(wildcard $(SRC)/version/$$*/*.$(SOURCE_TYPE)))))) | $(BASE)/$(ORIGINAL_PREFIX)%.$(ROM_TYPE)
 	$(LD) $(LD_ARGS) -n $(OUTPUT_PREFIX)$*.$(SYM_TYPE) -m $(OUTPUT_PREFIX)$*.$(MAP_TYPE) -O $| -o $@ $^
 	$(FIX) $(FIX_ARGS) -v -C -k 9C -l 0x33 -m 0x1B -p 0 -r 2 $@ -t "$(CURNAME)"
-	cmp -l $| $@
 
 ### Intermediate files
 ## Unless specified otherwise, called as 'script.py [output file] [optional resource file] [input file] [optional version suffix]'
