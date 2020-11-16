@@ -1,0 +1,25 @@
+SECTION "Hack Variables 1", WRAM0[$C8EC]
+W_HackTempHL:: ds 2
+W_BankPreservation:: ds 1
+W_VWFTilesDrawn:: ds 1
+W_VWFCurrentLetter:: ds 1
+W_VWFControlCodeArguments:: ds 2
+W_VWFLetterCountBuffer:: ds 9
+W_VWFCompositeAreaAddress:: ds 2
+W_VWFLetterShift:: ds 1
+W_VWFOldTileMode:: ds 1
+W_VWFTileBaseIdx:: ds 1
+W_VWFIsInit:: ds 1
+W_VWFIsSecondLine:: ds 1
+W_VWFTrackBank:: ds 1
+W_VWFTextLength:: ds 1
+W_VWFNextWordLength:: ds 1
+W_VWFInitialLetterOffset:: ds 1
+W_VWFInitialTileOffset:: ds 1
+W_VWFTileLength:: ds 1
+W_VWFDrawingAreaLengthInPixels:: ds 1
+W_VWFTileMappingPseudoIndex:: ds 1
+W_VWFDiscardSecondTile:: ds 1
+W_VWFCurrentFont:: ds 1
+W_VWFTileMappingAddress:: ds 2
+W_VWFInitialPaddingOffset:: ds 1

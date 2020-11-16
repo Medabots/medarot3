@@ -62,5 +62,20 @@ Rst30:
   ret
 
 SECTION "rst38",ROM0[$38]
-Rst38:
+Rst38: ; HackPredef
+  push af
+  ld a, [W_CurrentBank]
+  jr Rst38Cont
+
+SECTION "rst38Cont",ROM0[$61]
+Rst38Cont:
+  ld [W_BankPreservation], a
+  ld a, BANK(HackPredef)
+  rst $10
+  pop af
+  call HackPredef
+  push af
+  ld a, [W_BankPreservation]
+  rst $10
+  pop af
   ret
