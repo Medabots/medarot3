@@ -19,6 +19,8 @@ table = utils.merge_dicts([
             tilesets.get_tileset("Special", override_offset=0xE0)
         ])
 
+kanji = tilesets.get_tileset("Kanji", override_offset=0x0)
+
 default_suffix = rom_info[0][1]
 ptrs.seek(0)
 name_table = {}
@@ -48,7 +50,7 @@ for info in rom_info:
         text_table_ptrs[suffix] = (txt_bank_ptr, txt_tbl_ptr, text_ptrs)
 
         class SpecialCharacter():
-            def __init__(self, symbol, default=0, bts=1, end=False, names=None, always_print=False, parser = None):
+            def __init__(self, symbol, default=0, bts=1, end=False, names=None, always_print=False, print_control_code=True, parser=None):
                 self.symbol = symbol
                 self.default = default
                 self.bts = bts
@@ -57,6 +59,7 @@ for info in rom_info:
                 self.always_print = always_print
                 if not parser:
                     parser = { 0: lambda x: None, 1: utils.read_byte, 2: utils.read_short }[self.bts]
+                self.print_control_code = print_control_code
                 self.parser = parser
 
         table[0xcc] = SpecialCharacter('*', end=True) # End of text
@@ -67,7 +70,7 @@ for info in rom_info:
         table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
         # Portrait, [Orientation:{00, 01, 10, 11, FF}][Character:1][Expression:1]
         table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
-        table[0xd3] = SpecialCharacter('K') # Kanji
+        table[0xd3] = SpecialCharacter('K', print_control_code=False, parser=lambda x: kanji[utils.read_byte(x)]) # Kanji
         
         terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
 
@@ -128,7 +131,7 @@ for info in rom_info:
                                 t += token
                             elif isinstance(token, SpecialCharacter): # Special character
                                 param = token.parser(rom)
-                                if token.always_print or (param != None and param != token.default):
+                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
                                     t += "<" + token.symbol
                                 if param != None:
                                     if (param != None and not token.end and param != token.default) or (token.end and param != token.default):
@@ -148,7 +151,7 @@ for info in rom_info:
                                                     else:
                                                         token_format = f"{{:{token.bts * 2:02}X}}"
                                                         t += token_format.format(param)
-                                if token.always_print or (param != None and param != token.default):
+                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
                                     t += ">"
                                 if token.end:
                                     if not t:
