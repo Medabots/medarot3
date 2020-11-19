@@ -118,3 +118,208 @@ VWFRoboticFont::
 
 VWFRoboticBoldFont::
   INCBIN "build/tilesets/patch/RoboticBoldFont.1bpp"
+
+VWFMessageBoxInputHandler::
+  ; Advance on button press.
+
+  ld a, [H_JPInputChanged]
+  and M_JPInputA
+  ret nz
+
+  ; Auto-advance if button held down.
+
+  ld a, [H_JPInputHeldDown]
+  and M_JPInputA
+  ret z
+
+  ; Wait 10 frames before advancing.
+
+  ld a, [W_MainScriptIterator]
+  cp $10
+  jr nz, .buttonNotPressedLongEnough
+  xor a
+  inc a
+  ret
+
+.buttonNotPressedLongEnough
+  inc a
+  ld [W_MainScriptIterator], a
+  xor a
+  ret
+
+VWFControlCodeCD::
+  call VWFResetForNewline
+  pop hl
+  ld b, 1
+  call MainScriptProgressXChars
+  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+
+VWFControlCodeCE::
+  inc hl
+  ld a, [hl]
+  ld [W_MainScriptPauseTimer], a
+  ld [W_MainScriptSpeed], a
+  ld b, 2
+  call MainScriptProgressXChars
+  pop hl
+  ld a, [W_MainScriptPauseTimer]
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+
+VWFControlCodeCF::
+  pop hl
+  ld hl, $9C72
+  ld b, $F7
+  ld a, [$C460]
+  and 4
+  jr nz, .showNextPageIndicator
+  ld b, 0
+
+.showNextPageIndicator
+  ld a, b
+  di
+  push af
+  rst $20
+  pop af
+  ld [hl], a
+  ei
+  call VWFMessageBoxInputHandler
+  ret z
+  xor a
+  call VWFResetMessageBox
+  ld b, 1
+  call MainScriptProgressXChars
+  ret
+
+VWFControlCodeD1::
+  call VWFResetMessageBox
+  pop hl
+  ld b, 1
+  call MainScriptProgressXChars
+  ret
+
+VWFControlCodeD3::
+  pop hl
+  ld b, 2
+  call MainScriptProgressXChars
+  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+
+VWFCheckInit::
+  ld a, [W_VWFIsInit]
+  or a
+  ret z
+  xor a
+  ld [W_VWFIsInit], a
+  ld [W_VWFCurrentFont], a
+  ld a, $80
+  ld [W_VWFTileBaseIdx], a
+  call VWFResetMessageBox
+  call VWFResetMessageBoxTilemaps
+  ret
+
+VWFResetMessageBoxTilemaps::
+  push hl
+  ld hl, $9C21
+  ld c, $80
+  call VWFResetMessageBoxTilemapLine
+  ld a, l
+  add $2F
+  ld l, a
+  call VWFResetMessageBoxTilemapLine
+  pop hl
+  ret
+
+VWFResetMessageBox::
+  push hl
+  ld b, $22
+  ld hl, $8000
+  call VWFEmptyDrawingRegion
+  pop hl
+  ; "a" should be 0 after calling VWFEmptyDrawingRegion so a "xor a" here would feel redundant.
+  ld [W_VWFTilesDrawn], a
+  ld [W_VWFIsSecondLine], a
+  jr VWFResetForNewline.common
+
+VWFResetForNewline::
+  ld a, $11
+  ld [W_VWFTilesDrawn], a
+  ld a, 1
+  ld [W_VWFIsSecondLine], a
+  xor a
+
+.common
+  ld [W_VWFOldTileMode], a
+  ld [W_VWFDiscardSecondTile], a
+  ld [W_MainScriptIterator], a
+  ld [W_MainScriptPauseAutoAdvanceTimer], a
+  push hl
+  ld hl, W_VWFCompositeArea
+  ld b, $10
+
+.clearCompositeAreaLoop
+  ld [hli], a
+  dec b
+  jr nz, .clearCompositeAreaLoop
+  pop hl
+  ret
+
+VWFEmptyDrawingRegion::
+  ld c, 4
+
+.loop
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ei
+  dec c
+  jr nz, .loop
+  dec b
+  jr nz, VWFEmptyDrawingRegion
+  ret
+
+VWFResetMessageBoxTilemapLine::
+  ld b, 5
+
+.loop
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  ld a, c
+  ld [hli], a
+  inc a
+  ld [hli], a
+  inc a
+  ld [hli], a
+  ei
+  inc a
+  ld c, a
+  dec b
+  jr nz, .loop
+  di
+
+.wfbB
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfbB
+  ld a, c
+  ld [hli], a
+  inc a
+  ld [hli], a
+  ei
+  inc a
+  ld c, a
+  ret
