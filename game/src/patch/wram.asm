@@ -10,5 +10,6 @@ W_VWFOldTileMode:: ds 1
 W_VWFTileBaseIdx:: ds 1
 W_VWFIsInit:: ds 1
 W_VWFIsSecondLine:: ds 1
+W_VWFTextLength:: ds 1
 W_VWFDiscardSecondTile:: ds 1
 W_VWFCurrentFont:: ds 1
