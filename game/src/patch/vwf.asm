@@ -1,5 +1,17 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "VWF Wrappers", ROM0[$0072]
+VWFControlCodeCCCrossBank2086::
+  call $2086
+  ld a, $FF
+  rst $10
+  ret
+
+MainScriptProcessorPutCharLoopCrossBank::
+  ld a, [W_BankPreservation]
+  rst $10
+  jp MainScriptProcessorPutCharLoop
+
 SECTION "VWF Drawing Functions", ROMX[$6000], BANK[$FF]
 VWFDrawLetterTable::
   ; This determines the width of each character (excluding the 1px between characters).
@@ -135,7 +147,7 @@ VWFMessageBoxInputHandler::
   ; Wait 10 frames before advancing.
 
   ld a, [W_MainScriptIterator]
-  cp $10
+  cp $C
   jr nz, .buttonNotPressedLongEnough
   xor a
   inc a
@@ -147,12 +159,128 @@ VWFMessageBoxInputHandler::
   xor a
   ret
 
+VWFControlCodeCC::
+  ld a, [W_MainScriptCCSubState]
+  or a
+  jp nz, .subsequentStateLoader
+
+.exitSubState0
+  inc hl
+  ld a, [hl]
+  pop hl
+  ld hl, .table
+  rst $30
+  jp hl
+
+.subsequentStateLoader
+  pop hl
+  add 5
+  ld hl, .table
+  rst $30
+  jp hl
+
+.table
+  dw .exitCode0
+  dw .exitCode1
+  dw .exitCode2
+  dw .exitCode3
+  dw .exitCode4
+  dw .exitCode5
+  dw .exitSubState1
+  dw .exitSubState2
+  dw .exitSubState3
+
+.exitCode0
+  call VWFMessageBoxInputHandler
+  ret z
+  ld a, 7
+  ldh [$FFA1], a
+  call VWFControlCodeCCCrossBank2086
+  jp .exitCodeCommon
+
+.exitCode1
+  call VWFControlCodeCCCrossBank2086
+  jp .exitCodeCommon
+
+.exitCode2
+  call VWFMessageBoxInputHandler
+  ret z
+  ld a, 7
+  ldh [$FFA1], a
+  jp .exitCodeCommon
+
+.exitCode3
+  call VWFMessageBoxInputHandler
+  ret z
+  ld a, 7
+  ldh [$FFA1], a
+  ld bc, 0
+  ld e, 1
+  ld a, [W_ReturnBank]
+  push af
+  ld a, BANK(VWFControlCodeCC)
+  ld [W_ReturnBank], a
+  xor a
+  call WrapDecompressTilemap1
+  pop af
+  ld [W_ReturnBank], a
+  jp .exitCodeCommon
+ 
+.exitCode4
+  jp .exitCodeCommon
+
+.exitCode5
+  ld a, 1
+  ld [W_MainScriptExitMode], a
+  ret
+
+.exitSubState1
+  ld a, [W_ReturnBank]
+  push af
+  ld a, BANK(VWFControlCodeCC)
+  ld [W_ReturnBank], a
+  call $346D
+  pop af
+  ld [W_ReturnBank], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  jp .nextSubState
+
+.exitSubState2
+  jp .nextSubState
+
+.exitSubState3
+  ld a, 1
+  ld [W_MainScriptExitMode], a
+  jp $2060
+
+.nextSubState
+  ld a, [W_MainScriptCCSubState]
+  inc a
+  ld [W_MainScriptCCSubState], a
+  ret
+
+.exitCodeCommon
+  ld a, [W_MainScriptPortraitPlacement]
+  cp $FF
+  jr nz, .continueIntoState1
+
+.exitNow
+  ld a, 1
+  ld [W_MainScriptExitMode], a
+  ret
+
+.continueIntoState1
+  ld a, 1
+  ld [W_MainScriptCCSubState], a
+  ret
+
 VWFControlCodeCD::
   call VWFResetForNewline
   pop hl
   ld b, 1
   call MainScriptProgressXChars
-  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+  jp MainScriptProcessorPutCharLoopCrossBank
 
 VWFControlCodeCE::
   inc hl
@@ -167,7 +295,7 @@ VWFControlCodeCE::
   ret nz
   xor a
   ld [W_MainScriptPauseTimer], a
-  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+  jp MainScriptProcessorPutCharLoopCrossBank
 
 VWFControlCodeCF::
   pop hl
@@ -194,6 +322,31 @@ VWFControlCodeCF::
   call MainScriptProgressXChars
   ret
 
+VWFControlCodeD0::
+  inc hl
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, [W_MainScriptIterator]
+  ld c, a
+  ld b, 0
+  add hl, bc
+  ld a, [hl]
+  cp $CB
+  jr nz, .mapCharacter
+
+.terminatorFound
+  ld b, 3
+  call MainScriptProgressXChars
+  jp VWFWriteChar.extEntryA
+
+.mapCharacter
+  ld [W_VWFCurrentLetter], a
+  call VWFWriteCharBasic
+  ld a, [W_MainScriptIterator]
+  inc a
+  jp VWFWriteChar.extEntryB
+
 VWFControlCodeD1::
   call VWFResetMessageBox
   pop hl
@@ -205,7 +358,7 @@ VWFControlCodeD3::
   pop hl
   ld b, 2
   call MainScriptProgressXChars
-  ret ; Should jump back to MainScriptProcessorPutCharLoop instead.
+  jp MainScriptProcessorPutCharLoopCrossBank
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
@@ -322,4 +475,265 @@ VWFResetMessageBoxTilemapLine::
   ei
   inc a
   ld c, a
+  ret
+
+VWFWriteChar::
+  ld b, 1
+  call MainScriptProgressXChars
+  call VWFWriteCharBasic
+
+.extEntryA
+  xor a
+  ld [W_MainScriptPauseAutoAdvanceTimer], a
+
+.extEntryB
+  ld [W_MainScriptIterator], a
+  ld a, [W_MainScriptSpeed]
+  ld [W_MainScriptPauseTimer], a
+  pop hl
+  cp $FF
+  ret nz
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoopCrossBank
+
+VWFWriteCharBasic::
+  ; Get tile address.
+
+  ld a, [W_VWFTilesDrawn]
+  ld b, a
+  ld a, [W_VWFTileBaseIdx]
+  add b
+  call VWFTileIdx2Ptr
+
+  ; Draw character.
+
+  call VWFDrawLetter
+
+  ; Progress to next tile (if applicable).
+
+  ld a, [W_VWFOldTileMode]
+  cp 1
+  ld a, [W_VWFTilesDrawn]
+  ret c
+  inc a
+  ld [W_VWFTilesDrawn], a
+  ret
+
+VWFTileIdx2Ptr::
+  cp $80
+  jr c, .firstPage
+  swap a
+  ld h, a
+  and $F0
+  ld l, a
+  ld a, h
+  and $F
+  or $80
+  ld h, a
+  ret
+
+.firstPage
+  swap a
+  ld h, a
+  and $F0
+  ld l, a
+  ld a, h
+  and $F
+  or $90
+  ld h, a
+  ret
+
+VWFDrawLetter::
+  ld a, [W_VWFCurrentLetter]
+
+  ; Calculate the address of the relevant character.
+
+  push hl
+  ld b, 0
+  add a
+  jr nc, .noCarry
+  inc b
+
+.noCarry
+  sla a
+  rl b
+  sla a
+  rl b
+  ld c, a
+  ld hl, VWFFont
+  ld a, [W_VWFCurrentFont]
+  add a
+  add a
+  add a
+  add h
+  ld h, a
+  add hl, bc
+  ld d, h
+  ld e, l
+  pop hl
+
+  ; Store the address of the composite area (an area to draw tile data before tranferring it to vram).
+
+  ld b, 8
+  ld a, W_VWFCompositeArea >> 8
+  ld [W_HackTempHL], a
+  ld a, W_VWFCompositeArea & $FF
+  ld [W_HackTempHL + 1], a
+
+  ; Get the width of the character.
+
+  push hl
+  push bc
+  ld a, [W_VWFCurrentLetter]
+  ld h, VWFDrawLetterTable >> 8
+  ld l, a
+  ld a, [W_VWFCurrentFont]
+  add h
+  ld h, a
+  ld b, [hl]
+  ld a, [W_VWFTextLength]
+  add b
+  inc a
+  ld [W_VWFTextLength], a
+
+  ; Check if the character overflows into the next tile.
+
+  ld a, [W_VWFLetterShift]
+  add a, b
+  bit 3, a
+  jr nz, .onSecondTile
+  xor a
+  jr .doneCalculatingTile
+
+.onSecondTile
+  ld a, 1
+
+.doneCalculatingTile
+  pop bc
+  pop hl
+
+.tileShiftLoop
+  push bc
+  push de
+  push hl
+  push af
+  ld a, [W_HackTempHL]
+  ld h, a
+  ld a, [W_HackTempHL + 1]
+  ld l, a
+  ld b, [hl]
+  inc hl
+  ld c, [hl]
+  dec hl
+  ld a, [de]
+  ld d, a
+  ld e, 0
+  ld a, [W_VWFOldTileMode]
+  cp 2
+  jr z, .newlineMode
+  cp 1
+  jr z, .secondTileMode
+  jr .firstTileMode
+
+.newlineMode
+  ld c, 0
+
+.secondTileMode
+  ld b, c
+
+.firstTileMode
+  ld a, [W_VWFLetterShift]
+  or a
+  jr z, .stopShifting
+
+.shiftLoop
+  srl d
+  rr e
+  dec a
+  jr nz, .shiftLoop
+
+.stopShifting
+  ld a, d
+  or b
+  ld b, a
+  ld c, e
+  ld [hl], b
+  inc hl
+  ld [hl], c
+  inc hl
+  ld a, h
+  ld [W_HackTempHL], a
+  ld a, l
+  ld [W_HackTempHL + 1], a
+  pop af
+  pop hl
+  ld d, h
+  ld e, l
+  push af
+  ld a, b
+  call VWFExpandGlyph
+  pop af
+  push hl
+  push af
+  or a
+  jr z, .skipSecondTile
+  ld a, [W_VWFDiscardSecondTile]
+  or a
+  jr nz, .skipSecondTile
+  ld hl, $10
+  add hl, de
+  ld a, c
+  call VWFExpandGlyph
+  
+.skipSecondTile
+  pop af
+  pop hl
+  pop de
+  pop bc
+  inc de
+  dec b
+  jr nz, .tileShiftLoop
+  xor a
+  ld [W_VWFOldTileMode], a
+  ld b, VWFDrawLetterTable >> 8
+  ld a, [W_VWFCurrentFont]
+  add b
+  ld b, a
+  ld a, [W_VWFCurrentLetter]
+  ld c, a
+  ld a, [bc]
+  inc a
+  
+.addWidth
+  ld b, a
+  ld a, [W_VWFLetterShift]
+  add a, b
+  bit 3, a
+  jr z, .noSecondTileShiftBack
+  sub 8
+  push af
+  ld a, 1
+  ld [W_VWFOldTileMode], a
+  pop af
+  
+.noSecondTileShiftBack
+  ld [W_VWFLetterShift], a
+  ret
+
+VWFExpandGlyph::
+  push bc
+  ld b, a
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  ld a, b
+  ld [hli], a
+  ld [hli], a
+  ei
+  pop bc
   ret
