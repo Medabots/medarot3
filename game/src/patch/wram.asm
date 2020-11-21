@@ -1,4 +1,4 @@
-SECTION "Hack Variables 1", WRAM0[$C8EC]
+SECTION "Hack Variables 1", WRAM0[$C8E0]
 W_HackTempHL:: ds 2
 W_BankPreservation:: ds 1
 W_VWFTilesDrawn:: ds 1
@@ -10,6 +10,7 @@ W_VWFOldTileMode:: ds 1
 W_VWFTileBaseIdx:: ds 1
 W_VWFIsInit:: ds 1
 W_VWFIsSecondLine:: ds 1
+W_VWFTileLength:: ds 1
 W_VWFTextLength:: ds 1
 W_VWFDiscardSecondTile:: ds 1
 W_VWFCurrentFont:: ds 1
