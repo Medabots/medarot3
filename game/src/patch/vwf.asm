@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "VWF Wrappers", ROM0[$0072]
 VWFControlCodeCCCrossBank2086::
@@ -8,7 +9,7 @@ VWFControlCodeCCCrossBank2086::
   ret
 
 MainScriptProcessorPutCharLoopCrossBank::
-  ld a, [W_BankPreservation]
+  ld a, [W_MainScriptTextBank]
   rst $10
   jp MainScriptProcessorPutCharLoop
 
@@ -131,6 +132,32 @@ VWFRoboticFont::
 VWFRoboticBoldFont::
   INCBIN "build/tilesets/patch/RoboticBoldFont.1bpp"
 
+VWFDrawCharLoop::
+  call VWFCheckInit
+  ld a, [hl]
+  cp $80
+  jp c, VWFWriteChar
+  cp $CC
+  jp z, VWFControlCodeCC
+  cp $CD
+  jp z, VWFControlCodeCD
+  cp $CE
+  jp z, VWFControlCodeCE
+  cp $CF
+  jp z, VWFControlCodeCF
+  cp $D0
+  jp z, VWFControlCodeD0
+  cp $D1
+  jp z, VWFControlCodeD1
+  cp $D2
+  jp z, VWFControlCodeD2
+  cp $D3
+  jp z, VWFControlCodeD3
+  ; This character isn't in the font, so confine the index.
+  and $7F
+  ld [hl], a
+  jp VWFWriteChar
+
 VWFMessageBoxInputHandler::
   ; Advance on button press.
 
@@ -159,7 +186,7 @@ VWFMessageBoxInputHandler::
   xor a
   ret
 
-VWFControlCodeCC::
+VWFControlCodeCC:: ; End code.
   ld a, [W_MainScriptCCSubState]
   or a
   jp nz, .subsequentStateLoader
@@ -196,10 +223,12 @@ VWFControlCodeCC::
   ld a, 7
   ldh [$FFA1], a
   call VWFControlCodeCCCrossBank2086
+  call VWFControlCodeCCTileRestoreHelper
   jp .exitCodeCommon
 
 .exitCode1
   call VWFControlCodeCCCrossBank2086
+  call VWFControlCodeCCTileRestoreHelper
   jp .exitCodeCommon
 
 .exitCode2
@@ -260,6 +289,8 @@ VWFControlCodeCC::
   ld [W_MainScriptCCSubState], a
   ret
 
+.exitCodeRestoreTilesCommon
+
 .exitCodeCommon
   ld a, [W_MainScriptPortraitPlacement]
   cp $FF
@@ -275,14 +306,21 @@ VWFControlCodeCC::
   ld [W_MainScriptCCSubState], a
   ret
 
-VWFControlCodeCD::
+VWFControlCodeCCTileRestoreHelper::
+  call VWFEmptyMessageBoxTilemapLine
+  VRAMSwitchToBank1
+  Load1BPPTileset $8800, PatchTilesetStartMainScriptOldTiles, PatchTilesetEndMainScriptOldTiles
+  VRAMSwitchToBank0
+  ret
+
+VWFControlCodeCD:: ; Newline code.
   call VWFResetForNewline
   pop hl
   ld b, 1
   call MainScriptProgressXChars
   jp MainScriptProcessorPutCharLoopCrossBank
 
-VWFControlCodeCE::
+VWFControlCodeCE:: ; Text speed code.
   inc hl
   ld a, [hl]
   ld [W_MainScriptPauseTimer], a
@@ -297,7 +335,7 @@ VWFControlCodeCE::
   ld [W_MainScriptPauseTimer], a
   jp MainScriptProcessorPutCharLoopCrossBank
 
-VWFControlCodeCF::
+VWFControlCodeCF:: ; New page after input code.
   pop hl
   ld hl, $9C72
   ld b, $F7
@@ -322,7 +360,7 @@ VWFControlCodeCF::
   call MainScriptProgressXChars
   ret
 
-VWFControlCodeD0::
+VWFControlCodeD0:: ; Print subtext code.
   inc hl
   ld a, [hli]
   ld h, [hl]
@@ -341,20 +379,56 @@ VWFControlCodeD0::
   jp VWFWriteChar.extEntryA
 
 .mapCharacter
+  ; Confine the index to characters in the font.
+  and $7F
   ld [W_VWFCurrentLetter], a
   call VWFWriteCharBasic
   ld a, [W_MainScriptIterator]
   inc a
   jp VWFWriteChar.extEntryB
 
-VWFControlCodeD1::
+VWFControlCodeD1:: ; New page without input code.
   call VWFResetMessageBox
   pop hl
   ld b, 1
   call MainScriptProgressXChars
   ret
 
-VWFControlCodeD3::
+VWFControlCodeD2:: ; Portrait display code. We preserve most of the original logic in bank 0, but will handle .clearPortrait differently here.
+  push hl
+  inc hl
+  ld a, [hl]
+  pop hl
+  cp $FF
+  jp nz, ControlCodeD2_changePortrait
+
+.clearPortrait
+  ld a, [W_MainScriptPortraitCharacter]
+  cp $FF
+  jr z, .exit
+  pop hl
+  ld a, [W_MainScriptCCSubState]
+  cp 0
+  jp z, VWFControlCodeCC.exitSubState1
+  cp 1
+  jp z, VWFControlCodeCC.exitSubState2
+  ld a, $FF
+  ld [W_MainScriptPortraitCharacter], a
+  ld [W_MainScriptPortraitPriorPlacement], a
+  ld [W_MainScriptPortraitExpression], a
+  xor a
+  ld [W_MainScriptCCSubState], a
+  ld b, 4
+  call MainScriptProgressXChars
+  jp $2060
+
+.exit
+  pop hl
+  ld b, 4
+  call MainScriptProgressXChars
+  ret
+
+VWFControlCodeD3:: ; Kanji drawing code, except we don't want to draw kanji. Will later be replaced with a universal newline control code.
   pop hl
   ld b, 2
   call MainScriptProgressXChars
@@ -387,11 +461,13 @@ VWFResetMessageBoxTilemaps::
 
 VWFResetMessageBox::
   push hl
+  VRAMSwitchToBank1
   ld b, $22
-  ld hl, $8000
+  ld hl, $8800
   call VWFEmptyDrawingRegion
+  VRAMSwitchToBank0
   pop hl
-  ; "a" should be 0 after calling VWFEmptyDrawingRegion so a "xor a" here would feel redundant.
+  ; "a" should be 0 after using VRAMSwitchToBank0 so a "xor a" here would feel redundant.
   ld [W_VWFTilesDrawn], a
   ld [W_VWFIsSecondLine], a
   jr VWFResetForNewline.common
@@ -439,6 +515,26 @@ VWFEmptyDrawingRegion::
   jr nz, .loop
   dec b
   jr nz, VWFEmptyDrawingRegion
+  ret
+
+VWFEmptyMessageBoxTilemapLine::
+  ld hl, $9C21
+  ld b, 1
+  call VWFEmptyDrawingRegion
+  ld l, $61
+  ld b, 1
+  call VWFEmptyDrawingRegion
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  xor a
+  ld [hli], a
+  ld [$9C31], a
+  ei
   ret
 
 VWFResetMessageBoxTilemapLine::
@@ -500,6 +596,8 @@ VWFWriteChar::
 VWFWriteCharBasic::
   ; Get tile address.
 
+  VRAMSwitchToBank1
+
   ld a, [W_VWFTilesDrawn]
   ld b, a
   ld a, [W_VWFTileBaseIdx]
@@ -511,6 +609,8 @@ VWFWriteCharBasic::
   call VWFDrawLetter
 
   ; Progress to next tile (if applicable).
+  
+  VRAMSwitchToBank0
 
   ld a, [W_VWFOldTileMode]
   cp 1
