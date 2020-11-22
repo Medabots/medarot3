@@ -259,3 +259,5 @@ Index[#version],Pointer[#version|],Original,Translated
 158#kuwagata,0x23013a,"<@RL,0A,02>それざゃ つうしん いってみる-Z<*04>",
 159#kabuto,0x23013e,"<@RL,0A,00>ふ-ん やらないんぞ-<CF><D1><@RL,0A,02>それざゃ まったね-♥",
 159#kuwagata,0x23013c,"<@RL,0A,02>まったね-♥",
+160#kabuto,IGNORED0,,
+160#kuwagata,0x23013e,"<@RL,0A,00>ふ-ん やらないんぞ-<CF><D1><@RL,0A,02>それざゃ まったね-♥",

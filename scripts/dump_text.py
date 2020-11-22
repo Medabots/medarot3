@@ -240,27 +240,32 @@ for info in rom_info:
             text = utils.merge_dicts([text, duplicates])
 
             # If this bank is already parsed from another version, just append to the previous set
-            if csv_filename in texts:
-                idx = 0
-                
+            if csv_filename in texts:                
                 texts_items = list(texts[csv_filename].items())
                 curr_items = list(text.items())
                 number_of_items = max(len(texts_items), len(curr_items))
 
+                # There are indexes not accounted for in the default version
+                if (len(curr_items) > len(texts_items)):
+                    idx = len(texts_items)
+                    ignore_count = 0
+                    while idx < len(curr_items):
+                        texts[csv_filename][f"IGNORED{ignore_count}"] = ""
+                        ignore_count += 1
+                        idx += 1
+                    texts_items = list(texts[csv_filename].items())
+                elif (len(curr_items) < len(texts_items)):
+                    idx = len(curr_items)
+                    ignore_count = 0
+                    while idx < len(texts_items):
+                        text[f"IGNORED{ignore_count}"] = ""
+                        ignore_count += 1
+                        idx += 1
+                    curr_items = list(text.items())
+
+                idx = 0
                 while idx < number_of_items:
                     try:
-                        # If there's a text pointer in one that's not in another, note the version as part of the index and skip
-                        if idx >= len(texts_items):
-                            if idx not in text_version_specific[csv_filename]:
-                                text_version_specific[csv_filename][idx] = {}
-                            text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
-                            continue
-                        elif idx >= len(curr_items):
-                            if idx not in text_version_specific[csv_filename]:
-                                text_version_specific[csv_filename][idx] = {}
-                            text_version_specific[csv_filename][idx][default_suffix] = (p_default, texts[csv_filename][p_default])
-                            continue
-
                         p_default = texts_items[idx][0]
                         p_current = curr_items[idx][0]
 
