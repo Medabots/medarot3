@@ -252,5 +252,5 @@ FA: (empty)
 FB: (empty)
 FC: (empty)
 FD: (empty)
-FE: (empty)
-FF: Patch functions
+FE: Patch-specific 1bpp gfx
+FF: Patch functions and VWF fonts

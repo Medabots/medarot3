@@ -149,12 +149,7 @@ MainScriptProcessorPutCharLoop::
   rst $10
   jp VWFDrawCharLoop
 
-; Free space.
-.free
-REPT $1EEA - .free
-  nop
-ENDR
-
+SECTION "Main Script 2", ROM0[$1EEA]
 ControlCodeD2_changePortrait::
   ld a, [W_MainScriptCCSubState]
   cp 0
