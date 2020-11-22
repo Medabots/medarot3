@@ -13,6 +13,173 @@ MainScriptProcessorPutCharLoopCrossBank::
   rst $10
   jp MainScriptProcessorPutCharLoop
 
+SECTION "PutString", ROM0[$1C53]
+VWFDrawStringLeftFullAddress8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  ld a, 8
+  ; Continues into VWFDrawStringLeftFullAddress.
+
+VWFDrawStringLeftFullAddress::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  call VWFDrawStringInit
+  call VWFStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToLeft
+  jp VWFDrawStringLoop
+
+VWFDrawStringCentredFullAddress8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  ld a, 8
+  ; Continues into VWFDrawStringCentredFullAddress.
+
+VWFDrawStringCentredFullAddress::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  call VWFDrawStringInit
+  call VWFStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToCentre
+  jp VWFDrawStringLoop
+
+VWFDrawStringRightFullAddress8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  ld a, 8
+  ; Continues into VWFDrawStringRightFullAddress.
+
+VWFDrawStringRightFullAddress::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  call VWFDrawStringInit
+  call VWFStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToRight
+  jp VWFDrawStringLoop
+
+VWFDrawStringLeft8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  ld a, 8
+  ; Continues into VWFDrawStringLeft.
+  
+VWFDrawStringLeft::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  call VWFDrawStringInit
+  call VWFExpandMappingPseudoIndexAndStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToLeft
+  jp VWFDrawStringLoop
+
+VWFDrawStringCentred8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  ld a, 8
+  ; Continues into VWFDrawStringCentred.
+  
+VWFDrawStringCentred::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  call VWFDrawStringInit
+  call VWFExpandMappingPseudoIndexAndStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToCentre
+  jp VWFDrawStringLoop
+
+VWFDrawStringRight8Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  ld a, 8
+  ; Continues into VWFDrawStringRight.
+
+VWFDrawStringRight::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; h is the tile index of our drawing area.
+  ; l is a single-byte representation of an address for mapping tiles to.
+  call VWFDrawStringInit
+  call VWFExpandMappingPseudoIndexAndStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToRight
+  jp VWFDrawStringLoop
+
+VWFDrawStringInit::
+  ld [W_VWFTileLength], a
+  ld a, [W_CurrentBank]
+  ld [W_BankPreservation], a
+  ld a, BANK(VWFDrawStringInitContinued)
+  rst $10
+  jp VWFDrawStringInitContinued
+
+VWFDrawStringMeasureString::
+  ld a, [W_VWFInitialPaddingOffset]
+  ld [W_VWFDrawnAreaLength], a
+  push hl
+
+.loop
+  call VWFDrawStringSwitchToStringBank
+  ld a, [hli]
+  cp $CB
+  jr z, .checkLimits
+  ld [W_VWFCurrentLetter], a
+  ld a, BANK(VWFMeasureCharacterInSequence)
+  rst $10
+  call VWFMeasureCharacterInSequence
+  jr .loop
+
+.checkLimits
+  pop hl
+  ld a, BANK(VWFDrawStringCheckLimits)
+  rst $10
+  jp VWFDrawStringCheckLimits
+
+VWFDrawStringLoop::
+  call VWFDrawStringSwitchToStringBank
+  ld a, [hli]
+  cp $CB
+  jr z, .exit
+  ld [W_VWFCurrentLetter], a
+  ld a, BANK(VWFWriteCharLimited)
+  rst $10
+  call VWFWriteCharLimited
+  jr VWFDrawStringLoop
+
+.exit
+  ld a, BANK(VWFMapRenderedString)
+  rst $10
+  call VWFMapRenderedString
+  ; Continue into VWFDrawStringSwitchToStringBank.
+
+VWFDrawStringSwitchToStringBank::
+  ld a, [W_BankPreservation]
+  rst $10
+  ret
+
+; Free space.
+.free
+REPT $1EEA - .free
+  nop
+ENDR
+
 SECTION "VWF Drawing Functions", ROMX[$6000], BANK[$FF]
 VWFDrawLetterTable::
   ; This determines the width of each character (excluding the 1px between characters).
@@ -309,7 +476,7 @@ VWFControlCodeCC:: ; End code.
 VWFControlCodeCCTileRestoreHelper::
   call VWFEmptyMessageBoxTilemapLine
   VRAMSwitchToBank1
-  Load1BPPTileset $8800, PatchTilesetStartMainScriptOldTiles, PatchTilesetEndMainScriptOldTiles
+  Load1BPPTileset $8800, PatchTilesetStartOldFontTiles1, PatchTilesetEndOldFontTiles1
   VRAMSwitchToBank0
   ret
 
@@ -572,6 +739,213 @@ VWFResetMessageBoxTilemapLine::
   inc a
   ld c, a
   ret
+
+VWFDrawStringInitContinued::
+  ld a, h
+  ld [W_VWFTileBaseIdx], a
+  ld a, l
+  ld h, b
+  ld h, c
+  ld c, a
+  xor a
+  ld [W_VWFOldTileMode], a
+  ld [W_VWFTextLength], a
+  ld [W_VWFDiscardSecondTile], a
+  ld a, [W_VWFTileLength]
+  add a
+  add a
+  add a
+  ld [W_VWFDrawingAreaLengthInPixels], a
+  ld a, [W_VWFInitialPaddingOffset]
+  ld [W_VWFDrawnAreaLength], a
+
+  ; Clear all tiles in the designated drawing region.
+
+  push hl
+
+  ld a, [W_VWFTileBaseIdx]
+  call VWFTileIdx2Ptr
+  ld a, [W_VWFTileLength]
+  ld b, a
+  call VWFEmptyDrawingRegion
+
+  ; Clear the first tile in the composite area to avoid visual bugs with centred text.
+
+  ld hl, W_VWFCompositeArea
+  ld b, $10
+
+  ; hl is popped after the jump.
+
+  jp VWFResetForNewline.clearCompositeAreaLoop
+
+VWFExpandMappingPseudoIndexAndStoreMappingAddress::
+  ; Convert our 1 byte representation into a full address for mapping tiles.
+
+  push hl
+  ld h, $4C
+  ld a, c
+  and $F0
+  add $10
+  jr nc, .noOverflow
+  inc h
+.noOverflow
+  ld l, a
+  add hl, hl
+  ld a, c
+  inc a
+  and $F
+  add l
+  ld [W_VWFTileMappingAddress], a
+  ld a, h
+  ld [W_VWFTileMappingAddress + 1], a
+  pop hl
+  ret
+
+VWFStoreMappingAddress::
+  ld a, e
+  ld [W_VWFTileMappingAddress], a
+  ld a, d
+  ld [W_VWFTileMappingAddress + 1], a
+  ret
+
+VWFMeasureCharacterInSequence::
+  ld a, [W_VWFDrawnAreaLength]
+  ld d, a
+  ld a, [W_VWFDrawingAreaLengthInPixels]
+  inc a
+  cp d
+  ret c
+  ld a, [W_VWFCurrentLetter]
+  ; Continues into VWFMeasureCharacter.
+
+VWFMeasureCharacter::
+  push hl
+  ld h, VWFDrawLetterTable >> 8
+  ld l, a
+  ld a, [W_VWFCurrentFont]
+  add h
+  ld h, a
+  ld d, [hl]
+  ld a, [W_VWFDrawnAreaLength]
+  add d
+  inc a
+  ld [W_VWFDrawnAreaLength], a
+  pop hl
+  inc hl
+  ret
+
+VWFDrawStringCheckLimits::
+  ; Trigger narrow font if text is too long and then recalculate length.
+  ld a, [W_VWFDrawnAreaLength]
+  ld d, a
+  ld a, [W_VWFDrawingAreaLengthInPixels]
+  sub d
+  ret nc
+  inc a
+  ret z
+  ld a, [W_VWFCurrentFont]
+  cp 1
+  ret z
+  ld a, 1
+  ld [W_VWFCurrentFont], a
+  jp VWFDrawStringMeasureString
+
+VWFAlignToLeft::
+  ld a, [W_VWFInitialPaddingOffset]
+  jr VWFDrawStringPrepareOffsets
+
+VWFAlignToCentre::
+  ld a, [W_VWFDrawnAreaLength]
+  ld d, a
+  ld a, [W_VWFDrawingAreaLengthInPixels]
+  sub d
+  jr c, VWFAlignToLeft
+  rra
+  jr VWFDrawStringPrepareOffsets
+
+VWFAlignToRight::
+  ld a, [W_VWFDrawnAreaLength]
+  ld d, a
+  ld a, [W_VWFDrawingAreaLengthInPixels]
+  sub d
+  jr nc, VWFDrawStringPrepareOffsets
+  xor a
+  jr VWFDrawStringPrepareOffsets
+
+VWFDrawStringPrepareOffsets::
+  ld e, 0
+
+.loop
+  cp 8
+  jr c, .exitLoop
+  sub 8
+  inc e
+  jr .loop
+
+.exitLoop
+  ld [W_VWFLetterShift], a
+  ld a, e
+  ld [W_VWFTilesDrawn], a
+  xor a
+  ld [W_VWFInitialPaddingOffset], a
+  ret
+
+VWFMapRenderedString::
+  ; Reset font to normal after rendering (for after auto-narrowing).
+
+  xor a
+  ld [W_VWFCurrentFont], a
+  
+  ; Load our mapping address.
+  
+  ld a, [W_VWFTileMappingAddress + 1]
+  ld h, a
+  ld a, [W_VWFTileMappingAddress]
+  ld l, a
+
+  ; Map all tiles within the drawing area.
+
+  ld a, [W_VWFTileBaseIdx]
+  ld c, a
+  ld a, [W_VWFTileLength]
+  ld b, a
+  ld d, a
+
+.loop
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  ld a, c
+  ld [hli], a
+  ei
+  inc c
+  dec b
+  jr nz, .loop
+  ld a, d
+  ret
+
+VWFWriteCharLimited::
+  ld a, [W_VWFTileLength]
+  ld b, a
+  ld a, [W_VWFTilesDrawn]
+
+  ; If the number of tiles drawn match (or exceed) the max number of tiles then stop drawing.
+
+  cp b
+  ret nc
+
+  ; If the number of tiles drawn are 1 less than the max number of tiles then stop drawing the second tile from the composite area.
+
+  inc a
+  cp b
+  jr c, VWFWriteChar
+  ld a, 1
+  ld [W_VWFDiscardSecondTile], a
+  jr VWFWriteCharBasic
 
 VWFWriteChar::
   ld b, 1

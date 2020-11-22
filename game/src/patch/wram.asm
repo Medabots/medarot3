@@ -14,3 +14,7 @@ W_VWFTileLength:: ds 1
 W_VWFTextLength:: ds 1
 W_VWFDiscardSecondTile:: ds 1
 W_VWFCurrentFont:: ds 1
+W_VWFTileMappingAddress:: ds 2
+W_VWFDrawingAreaLengthInPixels:: ds 1
+W_VWFInitialPaddingOffset:: ds 1
+W_VWFDrawnAreaLength:: ds 1

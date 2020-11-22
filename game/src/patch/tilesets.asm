@@ -34,6 +34,15 @@ Load1BPPTiles::
   ret
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
-PatchTilesetStartMainScriptOldTiles::
-  INCBIN "build/tilesets/patch/MainScriptOldTiles.1bpp"
-PatchTilesetEndMainScriptOldTiles::
+PatchTilesetStartEntryFont::
+  INCBIN "build/tilesets/patch/EntryFont.1bpp"
+PatchTilesetEndEntryFont::
+PatchTilesetStartOldFontTiles0::
+  INCBIN "build/tilesets/patch/OldFontTiles0.1bpp"
+PatchTilesetEndOldFontTiles0::
+PatchTilesetStartOldFontTiles1::
+  INCBIN "build/tilesets/patch/OldFontTiles1.1bpp"
+PatchTilesetEndOldFontTiles1::
+PatchTilesetStartOldFontTiles2::
+  INCBIN "build/tilesets/patch/OldFontTiles2.1bpp"
+PatchTilesetEndOldFontTiles2::
