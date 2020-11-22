@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x919ec,えっと ここ...でこぞっけZ<CD>でうして ぶく<CF>ここに いるんぞっけZ<CD>そうぞ ぶく かえらなきゃ...<*03>,
 001,0x919ee,<#FF>あ? なァれ星?<*04>,
 002,0x919f0,あっちの方に おちたぜ<CD>行ってみよう?<*03>,
@@ -65,8 +65,7 @@ Index[#version],Pointer,Original,Translated
 062,0x91a98,何ァ 知リたいのかなZ<*04>,
 063,0x91a9a,今は コマンドを ひらけません?,
 064,0x91a9c,NAIオ-バ- フリ-ズ??<*04>,
-065#kabuto,0x91a9e,<IGNORED:$6614>,
-065#kuwagata,0x91a9e,<IGNORED:$6616>,
+065,0x91a9e,<FINAL>,
 066,0x919fa,=0x919f8,=0x919f8
 067,0x919fc,=0x919f8,=0x919f8
 068,0x919fe,=0x919f8,=0x919f8

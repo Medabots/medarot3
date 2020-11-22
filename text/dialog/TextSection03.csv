@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x958e1,<#FF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
 001,0x958e3,<#FF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
 002,0x958e5,<#FF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
@@ -29,7 +29,7 @@ Index[#version],Pointer,Original,Translated
 027,0x95917,<#FF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
 028,0x95919,<#FF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
 029,0x9591b,<#FF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
-030,0x9591d,<IGNORED:$5E27>,
+030,0x9591d,<FINAL>,
 031,0x9591f,=0x9591d,=0x9591d
 032,0x95921,=0x9591d,=0x9591d
 033,0x95923,=0x9591d,=0x9591d

@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x1e0000,"<@RL,07,03>う う-ん<CD>もう ダメぞ...",
 001,0x1e0002,"<@RL,07,03>う-ん う-ん<CD>ぶくの 家に ゴキブリァ...<CF><D1><@LL,00,05>うなされてる...",
 002,0x1e0004,"<@LL,00,00>アノマロカリス型 メダロットの<CD>「シ-キャッチャ-」ぞ<CF><D1>こぞいせいびつって 本当に<CD>こんなんぞったのかな...",
@@ -22,4 +22,4 @@ Index[#version],Pointer,Original,Translated
 020,0x1e0028,"<@LL,00,06>あ? ここはっ...?",
 021,0x1e002a,"<@RL,1B,00>きゃ--------っ??<CD>エッチ??",
 022,0x1e002c,"<@RL,1B,00>早く 出てってよ もうっ?",
-023,0x1e002e,"<@LL,00,06>げ げめんっ?",
+023,0x1e002e,<FINAL>,

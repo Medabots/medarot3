@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x95da7,<#FF>これを 使うと ロボトルから<CD>にぐられるんぞ<*02>,
 001,0x95da9,<#FF>12こ入リの タマゴパック<CD>さくら色の タマゴァ ならんづる<*02>,
 002,0x95dab,<#FF>ミニミニ光せんづ あら ふしが?<CD>何づも 小さく なっちゃうよ<*02>,
@@ -46,7 +46,7 @@ Index[#version],Pointer,Original,Translated
 044,0x95dff,<#FF>男の子ァ とリあぐられていたメダル<CD>早く かえして あぐよう<*02>,
 045,0x95e01,<#FF>ぞいざんさんの サイン入リ<CD>これ1まいづ 宇宙も フリ-パス?<*02>,
 046,0x95e03,<#FF>はかせァ 作った しさくひん<CD>変形メダロットァ パワ-アップ?<*02>,
-047,0x95e05,<IGNORED:$6490>,
+047,0x95e05,<FINAL>,
 048,0x95e07,=0x95e05,=0x95e05
 049,0x95e09,=0x95e05,=0x95e05
 050,0x95e0b,=0x95e05,=0x95e05

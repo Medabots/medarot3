@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x11c000,"<@LL,00,00>ここは イワノイの家ぞ",
 001,0x11c002,"<@LL,00,00>ここは キクヒメの家ぞ",
 002,0x11c004,"<@LL,00,00>ここは カガミヤマの家ぞ",
@@ -126,4 +126,4 @@ Index[#version],Pointer,Original,Translated
 124,0x11c0f8,"<@LL,00,04>宇宙船や 宇宙ステ-ションの<CD>もけいァ かごられている",
 125,0x11c0fa,"<@LL,00,00>TENの うんてんって<CD>めんきょしょう いるのかなZ",
 126,0x11c0fc,"<@LL,00,04>アイスクリ-ムァ<CD>たくさん はいっている",
-127,0x11c0fe,"<@LL,00,04>のみものァ ならんづる<CD>おさけも たくさん あるよ?",
+127,0x11c0fe,<FINAL>,

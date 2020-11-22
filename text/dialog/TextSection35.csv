@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x240000,"<@RL,0B,00>行くぜ? レアメダル?<CF><D1><@RL,0D,01>足手まといには ならないわよ?<CF><D1><@RL,0B,00>行くぜ?",
 001,0x240002,"<@RL,0B,01>よし? しめいは はたした?",
 002,0x240004,"<@LL,00,07>あ? レトルトさん?",
@@ -33,4 +33,4 @@ Index[#version],Pointer,Original,Translated
 031,0x24003e,"<@LL,00,07>パ-ツ 貝っけ?",
 032,0x240040,"<@LL,00,07>パ-ツぞ?",
 033,0x240042,"<@LL,00,07>これって パ-ツ?Z",
-034,0x240044,"<@RL,18,00>ここに 新しく パ-ツの<CD>自動はんどいきを おいたんぞ",
+034,0x240044,<FINAL>,

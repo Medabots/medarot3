@@ -1,4 +1,4 @@
-Index[#version],Pointer,Original,Translated
+Index[#version],Pointer[#version|],Original,Translated
 000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,
 001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,
 002,0x92318#kabuto|0x9231a#kuwagata,かよわい 女の子ぞからって<CD>手を ぬかないづよ?<*02>,
@@ -197,7 +197,7 @@ Index[#version],Pointer,Original,Translated
 195,0x9249a#kabuto|0x9249c#kuwagata,<CD><*02>,
 196,0x9249c#kabuto|0x9249e#kuwagata,<CD><*02>,
 197,0x9249e#kabuto|0x924a0#kuwagata,<CD><*02>,
-198,0x924a0#kabuto|0x924a2#kuwagata,<IGNORED>,
+198,0x924a0#kabuto|0x924a2#kuwagata,<FINAL>,
 199#kabuto,0x924a2,=0x924a0,=0x924a0
 199#kuwagata,0x924a4,=0x924a2,=0x924a2
 200#kabuto,0x924a4,=0x924a0,=0x924a0

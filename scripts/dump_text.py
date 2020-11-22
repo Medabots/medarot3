@@ -8,6 +8,8 @@ from collections import OrderedDict
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
+MAX_LENGTH = 0xffff
+
 rom_info = ([
             ("baserom_kabuto.gbc", "kabuto", 0x20a0, 0x20c6, 0x20c6-0x20a0), 
             ("baserom_kuwagata.gbc", "kuwagata", 0x20a0, 0x20c6, 0x20c6-0x20a0)
@@ -72,7 +74,9 @@ for info in rom_info:
         table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
         table[0xd3] = SpecialCharacter('K', print_control_code=False, parser=lambda x: kanji[utils.read_byte(x)]) # Kanji
         
-        terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
+        #terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
+
+        terminator_pointers = []
 
         for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
             csv_filename = f"./text/dialog/TextSection{i:02}.csv"
@@ -81,6 +85,9 @@ for info in rom_info:
             realaddr = utils.rom2realaddr(entry)
             rom.seek(realaddr)
             end = utils.rom2realaddr((entry[0], utils.read_short(rom)))
+            rom.seek(end - 2)
+            terminator_pointers.append(utils.rom2realaddr((entry[0], utils.read_short(rom))))
+            rom.seek(realaddr + 2)
             pointers = OrderedDict()
             pointer_lengths = OrderedDict()
             pointer_lengths_key = realaddr
@@ -99,7 +106,7 @@ for info in rom_info:
                 else:
                     reverse_map[val] = realaddr
                     # Record the guessed 'max length'
-                    pointer_lengths[pointer_lengths_key] = min(val - pointer_lengths[pointer_lengths_key], 0xff)
+                    pointer_lengths[pointer_lengths_key] = min(val - pointer_lengths[pointer_lengths_key], MAX_LENGTH)
                     pointer_lengths[realaddr] = val 
                     pointer_lengths_key = realaddr
                     if val > last_ptr:
@@ -109,10 +116,11 @@ for info in rom_info:
                 realaddr = rom.tell()
 
             if pointer_lengths:
-                pointer_lengths[next(reversed(pointer_lengths))] = min(pointer_lengths[next(reversed(pointer_lengths))], 0xff)
+                pointer_lengths[next(reversed(pointer_lengths))] = min(pointer_lengths[next(reversed(pointer_lengths))], MAX_LENGTH)
 
             text = OrderedDict()
             counter = 0
+
             # Instead of reading through the pointer table, parse through all the text in case it's out of order
             while rom.tell() in pointers.values():
                 p = list(pointers.keys())[list(pointers.values()).index(rom.tell())]
@@ -163,13 +171,14 @@ for info in rom_info:
                                     break
                         else: # Not found, print literal bytes instead
                             t += f"<${b:02X}>"
-                    else: # If we never break out of the while loop before the condition fails, this is probably garbage and we should treat it as ignored
+                    else: # If we never break out of the while loop before the condition fails, we should note it
                         if pointer_lengths[p] == -1:
-                            t = f"<IGNORED:${utils.read_short(rom):04X}>"
+                            utils.read_short(rom) # Don't really care what this is
+                            t = f"<FINAL>"
                         else:
-                            t = "<IGNORED>"
+                            t = f"<NOTERM:{t}>"
 
-                    if queued_ptrs_write and not t.startswith("<IGNORED>") or (isinstance(p, str) and p.startswith("UNUSED")):
+                    if queued_ptrs_write or (isinstance(p, str) and p.startswith("UNUSED")):
                         ptrs.write(queued_ptrs_write)
                     
                     text[p] = t
@@ -179,7 +188,7 @@ for info in rom_info:
 
                     p = f"UNUSED{counter:02X}"
                     counter += 1
-                    pointer_lengths[p] = 0xff
+                    pointer_lengths[p] = MAX_LENGTH
 
                     pointers[p] = rom.tell()
 
@@ -216,26 +225,45 @@ for info in rom_info:
 
             text = utils.merge_dicts([text, duplicates])
 
+            # If this bank is already parsed from another version, just append to the previous set
             if csv_filename in texts:
                 idx = 0
-                while idx < len(text):
-                    texts_items = list(texts[csv_filename].items())
-                    curr_items = list(text.items())
-                    p_default = texts_items[idx][0]
-                    p_current = curr_items[idx][0]
-                    # If the text doesn't match or it's already been marked as different, then make sure to record the version string
-                    if curr_items[idx][1] != texts_items[idx][1] or idx in text_version_specific[csv_filename]:
-                        if idx not in text_version_specific[csv_filename]:
-                            text_version_specific[csv_filename][idx] = {}
+                
+                texts_items = list(texts[csv_filename].items())
+                curr_items = list(text.items())
+                number_of_items = max(len(texts_items), len(curr_items))
+
+                while idx < number_of_items:
+                    try:
+                        # If there's a text pointer in one that's not in another, note the version as part of the index and skip
+                        if idx >= len(texts_items):
+                            if idx not in text_version_specific[csv_filename]:
+                                text_version_specific[csv_filename][idx] = {}
+                            text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
+                            continue
+                        elif idx >= len(curr_items):
+                            if idx not in text_version_specific[csv_filename]:
+                                text_version_specific[csv_filename][idx] = {}
                             text_version_specific[csv_filename][idx][default_suffix] = (p_default, texts[csv_filename][p_default])
-                        text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
-                    #If the text matches but the pointer doesn't, we should keep track of it in a single line
-                    elif p_current != p_default or idx in text_shifted_pointers[csv_filename]:
-                        if idx not in text_shifted_pointers[csv_filename]:
-                            text_shifted_pointers[csv_filename][idx] = {}
-                            text_shifted_pointers[csv_filename][idx][default_suffix] = p_default
-                        text_shifted_pointers[csv_filename][idx][suffix] = p_current
-                    idx += 1
+                            continue
+
+                        p_default = texts_items[idx][0]
+                        p_current = curr_items[idx][0]
+
+                        # If the text doesn't match or it's already been marked as different, then make sure to record the version string
+                        if curr_items[idx][1] != texts_items[idx][1] or idx in text_version_specific[csv_filename]:
+                            if idx not in text_version_specific[csv_filename]:
+                                text_version_specific[csv_filename][idx] = {}
+                                text_version_specific[csv_filename][idx][default_suffix] = (p_default, texts[csv_filename][p_default])
+                            text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
+                        #If the text matches but the pointer doesn't, we should keep track of it in a single line
+                        elif p_current != p_default or idx in text_shifted_pointers[csv_filename]:
+                            if idx not in text_shifted_pointers[csv_filename]:
+                                text_shifted_pointers[csv_filename][idx] = {}
+                                text_shifted_pointers[csv_filename][idx][default_suffix] = p_default
+                            text_shifted_pointers[csv_filename][idx][suffix] = p_current
+                    finally:
+                        idx += 1
             else:
                 texts[csv_filename] = copy.deepcopy(text)
 
@@ -243,7 +271,7 @@ for fn in texts:
     text = texts[fn]
     with open(fn, "w", encoding="utf-8") as fp:
         writer = csv.writer(fp, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["Index[#version]","Pointer","Original","Translated"])
+        writer.writerow(["Index[#version]","Pointer[#version|]","Original","Translated"])
         for idx, p in enumerate(text):
             if fn in text_version_specific and idx in text_version_specific[fn]:
                 for suffix in text_version_specific[fn][idx]:
