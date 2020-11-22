@@ -124,55 +124,65 @@ for info in rom_info:
             # Instead of reading through the pointer table, parse through all the text in case it's out of order
             while rom.tell() in pointers.values():
                 p = list(pointers.keys())[list(pointers.values()).index(rom.tell())]
-                if rom.tell() in terminator_pointers:
-                    pointer_lengths[p] = -1
+
                 while True:
                     t = ""
                     queued_ptrs_write = "" # Queue, but don't write immediately until we know it's ignored or not
                     text_bytes = []
-                    while len(text_bytes) < pointer_lengths[p]:
+                    is_terminator = rom.tell() in terminator_pointers
+                    break_loop = False
+
+                    while len(text_bytes) < pointer_lengths[p] and not break_loop:
                         b = utils.read_byte(rom)
                         text_bytes.append(b)
-                        if b in table:
-                            token = table[b]
-                            if type(token) == str: # Normal character
-                                t += token
-                            elif isinstance(token, SpecialCharacter): # Special character
-                                param = token.parser(rom)
-                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
-                                    t += "<" + token.symbol
-                                if param != None:
-                                    if (param != None and not token.end and param != token.default) or (token.end and param != token.default):
-                                        if param != token.default:
-                                            if token.names and param in token.names:
-                                                t += token.names[param]
-                                            else:
-                                                if token.names is not None:
-                                                    n = f"BUF{len(token.names):02X}"
-                                                    token.names[param] = n
-                                                    queued_ptrs_write += f"{n}={hex(param)}\n"
-                                                    t += n
-                                                    # Write the names to the table later, just in case something is ignored
+                        try:
+                            # A hack
+                            if t == '   ':
+                                raise
+                            if b in table:
+                                token = table[b]
+                                if type(token) == str: # Normal character
+                                    t += token
+                                elif isinstance(token, SpecialCharacter): # Special character
+                                    param = token.parser(rom)
+                                    if token.print_control_code and (token.always_print or (param != None and param != token.default)):
+                                        t += "<" + token.symbol
+                                    if param != None:
+                                        if (param != None and not token.end and param != token.default) or (token.end and param != token.default):
+                                            if param != token.default:
+                                                if token.names and param in token.names:
+                                                    t += token.names[param]
                                                 else:
-                                                    if isinstance(param, str):
-                                                        t += param
+                                                    if token.names is not None:
+                                                        n = f"BUF{len(token.names):02X}"
+                                                        token.names[param] = n
+                                                        queued_ptrs_write += f"{n}={hex(param)}\n"
+                                                        t += n
+                                                        # Write the names to the table later, just in case something is ignored
                                                     else:
-                                                        token_format = f"{{:{token.bts * 2:02}X}}"
-                                                        t += token_format.format(param)
-                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
-                                    t += ">"
-                                if token.end:
-                                    if not t:
-                                        t = f"<{token.symbol}{param:02X}>"
+                                                        if isinstance(param, str):
+                                                            t += param
+                                                        else:
+                                                            token_format = f"{{:{token.bts * 2:02}X}}"
+                                                            t += token_format.format(param)
+                                    if token.print_control_code and (token.always_print or (param != None and param != token.default)):
+                                        t += ">"
+                                    if token.end:
+                                        if not t:
+                                            t = f"<{token.symbol}{param:02X}>"
 
-                                    # This is a hack, but step back one because they'll reuse this byte
-                                    if param not in range(0, 4+1):
-                                        rom.seek(-1, 1)
-                                    break
-                        else: # Not found, print literal bytes instead
-                            t += f"<${b:02X}>"
+                                        # This is a hack, but step back one because they'll reuse this byte
+                                        if param not in range(0, 4+1):
+                                            rom.seek(-1, 1)
+                                        break
+                            else: # Not found, print literal bytes instead
+                                t += f"<${b:02X}>"
+                        except:
+                            if is_terminator:
+                                break_loop = True
+                                continue
                     else: # If we never break out of the while loop before the condition fails, we should note it
-                        if pointer_lengths[p] == -1:
+                        if is_terminator:
                             utils.read_short(rom) # Don't really care what this is
                             t = f"<FINAL>"
                         else:
