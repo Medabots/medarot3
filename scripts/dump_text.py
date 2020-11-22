@@ -176,6 +176,10 @@ for info in rom_info:
                                             rom.seek(-1, 1)
                                         break
                             else: # Not found, print literal bytes instead
+                                # A hack
+                                if is_terminator:
+                                    break_loop = True
+                                    continue
                                 t += f"<${b:02X}>"
                         except:
                             if is_terminator:
