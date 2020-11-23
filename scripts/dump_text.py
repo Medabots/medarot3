@@ -67,7 +67,7 @@ for info in rom_info:
 
         table[0xcc] = SpecialCharacter('*', end=True) # End of text
         table[0xcd] = SpecialCharacter("CD", bts=0, always_print=True) # Moves to second line of text box
-        table[0xce] = SpecialCharacter('#') # Text Speed
+        table[0xce] = SpecialCharacter('S') # Text Speed
         table[0xcf] = SpecialCharacter("CF", bts=0, always_print=True) # Create new text box
         table[0xd0] = SpecialCharacter("&", bts=2, names=name_table) # Pull text from RAM
         table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
@@ -137,7 +137,7 @@ for info in rom_info:
                         text_bytes.append(b)
                         try:
                             # A hack
-                            if t == '   ':
+                            if t == '    ':
                                 raise
                             if b in table:
                                 token = table[b]

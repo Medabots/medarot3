@@ -8,7 +8,7 @@ Special commands are surrounded by '<>':
 
 CD - Move text to 2nd line of text box
 
-\#XX - Set Text Speed
+SXX - Set Text Speed
 
 CF - New text box
 
