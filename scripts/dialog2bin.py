@@ -18,9 +18,7 @@ version_suffix = sys.argv[4]
 
 base_name = os.path.splitext(os.path.basename(input_file))[0]
 char_table = utils.reverse_dict(utils.merge_dicts([
-            tilesets.get_tileset("MainDialog1", override_offset=0x0),
-            tilesets.get_tileset("MainDialog2", override_offset=0x80),
-            tilesets.get_tileset("Special", override_offset=0xE0)
+            tilesets.get_tileset("VWF", override_offset=0x0),
         ]))
 kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
 assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
