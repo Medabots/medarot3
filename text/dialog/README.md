@@ -8,7 +8,7 @@ Special commands are surrounded by '<>':
 
 CD - Move text to 2nd line of text box
 
-\#XX - Set Text Speed
+SXX - Set Text Speed
 
 CF - New text box
 
@@ -19,3 +19,7 @@ D1 - New page without input (keeps portrait)
 \@Portrait,\[Orientation:\{LL, LR, RL, RR, CC\}\]\[Character:1\]\[Expression:1\] - Load character portrait, orientation is of the form (Side)(Facing); CC means clear portrait
 
 KXX - Print Kanji, reference res/tilesets/Kanji.lst as a reference (it starts at 0x00)
+
+NOTERM:... - Text without a terminator, unused but needs to be taken into account when rebuilding
+
+FINAL - Indicates the text pointer is the first 'unusable' pointer

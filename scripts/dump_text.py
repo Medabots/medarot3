@@ -34,6 +34,7 @@ text_table_ptrs = {}
 texts = {}
 text_version_specific = {}
 text_shifted_pointers = {}
+text_unused = {}
 
 for info in rom_info:
     filename = info[0]
@@ -66,15 +67,13 @@ for info in rom_info:
 
         table[0xcc] = SpecialCharacter('*', end=True) # End of text
         table[0xcd] = SpecialCharacter("CD", bts=0, always_print=True) # Moves to second line of text box
-        table[0xce] = SpecialCharacter('#') # Text Speed
+        table[0xce] = SpecialCharacter('S') # Text Speed
         table[0xcf] = SpecialCharacter("CF", bts=0, always_print=True) # Create new text box
         table[0xd0] = SpecialCharacter("&", bts=2, names=name_table) # Pull text from RAM
         table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
         # Portrait, [Orientation:{00, 01, 10, 11, FF}][Character:1][Expression:1]
         table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
         table[0xd3] = SpecialCharacter('K', print_control_code=False, parser=lambda x: kanji[utils.read_byte(x)]) # Kanji
-        
-        #terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
 
         terminator_pointers = []
 
@@ -82,6 +81,7 @@ for info in rom_info:
             csv_filename = f"./text/dialog/TextSection{i:02}.csv"
             text_version_specific[csv_filename] = {}
             text_shifted_pointers[csv_filename] = {}
+            text_unused[csv_filename] = {}
             realaddr = utils.rom2realaddr(entry)
             rom.seek(realaddr)
             end = utils.rom2realaddr((entry[0], utils.read_short(rom)))
@@ -137,7 +137,7 @@ for info in rom_info:
                         text_bytes.append(b)
                         try:
                             # A hack
-                            if t == '   ':
+                            if t == '    ':
                                 raise
                             if b in table:
                                 token = table[b]
@@ -240,44 +240,36 @@ for info in rom_info:
             text = utils.merge_dicts([text, duplicates])
 
             # If this bank is already parsed from another version, just append to the previous set
-            if csv_filename in texts:
-                idx = 0
-                
+            if csv_filename in texts:                
                 texts_items = list(texts[csv_filename].items())
                 curr_items = list(text.items())
-                number_of_items = max(len(texts_items), len(curr_items))
 
-                while idx < number_of_items:
-                    try:
-                        # If there's a text pointer in one that's not in another, note the version as part of the index and skip
-                        if idx >= len(texts_items):
-                            if idx not in text_version_specific[csv_filename]:
-                                text_version_specific[csv_filename][idx] = {}
-                            text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
-                            continue
-                        elif idx >= len(curr_items):
-                            if idx not in text_version_specific[csv_filename]:
-                                text_version_specific[csv_filename][idx] = {}
+                idx = 0
+                while idx < max(len(texts_items), len(curr_items)): # Can't precalculate this, as we may delete entries
+                    p_default = texts_items[idx][0]
+                    p_current = curr_items[idx][0]
+
+                    # Take into account unused text that exists in one version but not another
+                    if isinstance(p_current, str) and p_current.startswith("UNUSED") and (not isinstance(p_default, str) or not p_default.startswith("UNUSED")):
+                        if not idx in text_unused[csv_filename]:
+                            text_unused[csv_filename][idx] = {}
+                        text_unused[csv_filename][idx][suffix] = (p_current, text[p_current])
+                        del curr_items[idx]
+                        continue
+
+                    # If the text doesn't match or it's already been marked as different, then make sure to record the version string
+                    if curr_items[idx][1] != texts_items[idx][1] or idx in text_version_specific[csv_filename]:
+                        if idx not in text_version_specific[csv_filename]:
+                            text_version_specific[csv_filename][idx] = {}
                             text_version_specific[csv_filename][idx][default_suffix] = (p_default, texts[csv_filename][p_default])
-                            continue
-
-                        p_default = texts_items[idx][0]
-                        p_current = curr_items[idx][0]
-
-                        # If the text doesn't match or it's already been marked as different, then make sure to record the version string
-                        if curr_items[idx][1] != texts_items[idx][1] or idx in text_version_specific[csv_filename]:
-                            if idx not in text_version_specific[csv_filename]:
-                                text_version_specific[csv_filename][idx] = {}
-                                text_version_specific[csv_filename][idx][default_suffix] = (p_default, texts[csv_filename][p_default])
-                            text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
-                        #If the text matches but the pointer doesn't, we should keep track of it in a single line
-                        elif p_current != p_default or idx in text_shifted_pointers[csv_filename]:
-                            if idx not in text_shifted_pointers[csv_filename]:
-                                text_shifted_pointers[csv_filename][idx] = {}
-                                text_shifted_pointers[csv_filename][idx][default_suffix] = p_default
-                            text_shifted_pointers[csv_filename][idx][suffix] = p_current
-                    finally:
-                        idx += 1
+                        text_version_specific[csv_filename][idx][suffix] = (p_current, text[p_current])
+                    #If the text matches but the pointer doesn't, we should keep track of it in a single line
+                    elif p_current != p_default or idx in text_shifted_pointers[csv_filename]:
+                        if idx not in text_shifted_pointers[csv_filename]:
+                            text_shifted_pointers[csv_filename][idx] = {}
+                            text_shifted_pointers[csv_filename][idx][default_suffix] = p_default
+                        text_shifted_pointers[csv_filename][idx][suffix] = p_current
+                    idx += 1
             else:
                 texts[csv_filename] = copy.deepcopy(text)
 
@@ -287,6 +279,12 @@ for fn in texts:
         writer = csv.writer(fp, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(["Index[#version]","Pointer[#version|]","Original","Translated"])
         for idx, p in enumerate(text):
+            # Write UNUSED text to make sure order is correct
+            if idx in text_unused[fn]:
+                for suffix in text_unused[fn][idx]:
+                    pointer = text_unused[fn][idx][suffix][0]
+                    txt = text_unused[fn][idx][suffix][1]
+                    writer.writerow([f'{pointer}#{suffix}', pointer, txt, None])
             if fn in text_version_specific and idx in text_version_specific[fn]:
                 for suffix in text_version_specific[fn][idx]:
                     p = text_version_specific[fn][idx][suffix][0]
@@ -300,6 +298,7 @@ for fn in texts:
             else:
                 pointer = p if isinstance(p, str) else hex(p)
             writer.writerow([f'{idx:03}', pointer, text[p], text[p] if text[p].startswith("=") else None])
+
 
 text_ptr_versions = [] 
 values = list(text_table_ptrs.values())[0]
