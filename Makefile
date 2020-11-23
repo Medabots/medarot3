@@ -155,7 +155,7 @@ $(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(C
 # Make has trouble with multiple files in a single rule, so we use the asm file to indicate these files were generated
 # NOTE: dialogbin2asm specifically is different between master and translation branches
 .SECONDEXPANSION:
-$(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $$(foreach FILE,$(DIALOG),$(DIALOG_INT)/$$(FILE)_$$*.$(DIALOG_TYPE)) | $(DIALOG_OUT)
+$(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/version/%/text_tables.asm $$(foreach FILE,$(DIALOG),$(DIALOG_INT)/$$(FILE)_$$*.$(DIALOG_TYPE)) | $(DIALOG_OUT)
 	$(PYTHON) $(SCRIPT)/dialogbin2asm.py $@ $(DIALOG_OUT) $* $^
 
 ## Patch Specific

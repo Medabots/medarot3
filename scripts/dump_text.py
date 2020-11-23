@@ -8,6 +8,8 @@ from collections import OrderedDict
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
+MAX_LENGTH = 0xffff
+
 rom_info = ([
             ("baserom_kabuto.gbc", "kabuto", 0x20a0, 0x20c6, 0x20c6-0x20a0), 
             ("baserom_kuwagata.gbc", "kuwagata", 0x20a0, 0x20c6, 0x20c6-0x20a0)
@@ -32,6 +34,7 @@ text_table_ptrs = {}
 texts = {}
 text_version_specific = {}
 text_shifted_pointers = {}
+text_unused = {}
 
 for info in rom_info:
     filename = info[0]
@@ -64,23 +67,27 @@ for info in rom_info:
 
         table[0xcc] = SpecialCharacter('*', end=True) # End of text
         table[0xcd] = SpecialCharacter("CD", bts=0, always_print=True) # Moves to second line of text box
-        table[0xce] = SpecialCharacter('#') # Text Speed
+        table[0xce] = SpecialCharacter('S') # Text Speed
         table[0xcf] = SpecialCharacter("CF", bts=0, always_print=True) # Create new text box
         table[0xd0] = SpecialCharacter("&", bts=2, names=name_table) # Pull text from RAM
         table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
         # Portrait, [Orientation:{00, 01, 10, 11, FF}][Character:1][Expression:1]
         table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
         table[0xd3] = SpecialCharacter('K', print_control_code=False, parser=lambda x: kanji[utils.read_byte(x)]) # Kanji
-        
-        terminator_pointers = [utils.rom2realaddr(t) for t in text_ptrs if t[0] != 0] # They use pointers as placeholders, so we record them
+
+        terminator_pointers = []
 
         for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
             csv_filename = f"./text/dialog/TextSection{i:02}.csv"
             text_version_specific[csv_filename] = {}
             text_shifted_pointers[csv_filename] = {}
+            text_unused[csv_filename] = {}
             realaddr = utils.rom2realaddr(entry)
             rom.seek(realaddr)
             end = utils.rom2realaddr((entry[0], utils.read_short(rom)))
+            rom.seek(end - 2)
+            terminator_pointers.append(utils.rom2realaddr((entry[0], utils.read_short(rom))))
+            rom.seek(realaddr + 2)
             pointers = OrderedDict()
             pointer_lengths = OrderedDict()
             pointer_lengths_key = realaddr
@@ -99,7 +106,7 @@ for info in rom_info:
                 else:
                     reverse_map[val] = realaddr
                     # Record the guessed 'max length'
-                    pointer_lengths[pointer_lengths_key] = min(val - pointer_lengths[pointer_lengths_key], 0xff)
+                    pointer_lengths[pointer_lengths_key] = min(val - pointer_lengths[pointer_lengths_key], MAX_LENGTH)
                     pointer_lengths[realaddr] = val 
                     pointer_lengths_key = realaddr
                     if val > last_ptr:
@@ -109,67 +116,83 @@ for info in rom_info:
                 realaddr = rom.tell()
 
             if pointer_lengths:
-                pointer_lengths[next(reversed(pointer_lengths))] = min(pointer_lengths[next(reversed(pointer_lengths))], 0xff)
+                pointer_lengths[next(reversed(pointer_lengths))] = min(pointer_lengths[next(reversed(pointer_lengths))], MAX_LENGTH)
 
             text = OrderedDict()
             counter = 0
+
             # Instead of reading through the pointer table, parse through all the text in case it's out of order
             while rom.tell() in pointers.values():
                 p = list(pointers.keys())[list(pointers.values()).index(rom.tell())]
-                if rom.tell() in terminator_pointers:
-                    pointer_lengths[p] = -1
+
                 while True:
                     t = ""
                     queued_ptrs_write = "" # Queue, but don't write immediately until we know it's ignored or not
                     text_bytes = []
-                    while len(text_bytes) < pointer_lengths[p]:
+                    is_terminator = rom.tell() in terminator_pointers
+                    break_loop = False
+
+                    while len(text_bytes) < pointer_lengths[p] and not break_loop:
                         b = utils.read_byte(rom)
                         text_bytes.append(b)
-                        if b in table:
-                            token = table[b]
-                            if type(token) == str: # Normal character
-                                t += token
-                            elif isinstance(token, SpecialCharacter): # Special character
-                                param = token.parser(rom)
-                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
-                                    t += "<" + token.symbol
-                                if param != None:
-                                    if (param != None and not token.end and param != token.default) or (token.end and param != token.default):
-                                        if param != token.default:
-                                            if token.names and param in token.names:
-                                                t += token.names[param]
-                                            else:
-                                                if token.names is not None:
-                                                    n = f"BUF{len(token.names):02X}"
-                                                    token.names[param] = n
-                                                    queued_ptrs_write += f"{n}={hex(param)}\n"
-                                                    t += n
-                                                    # Write the names to the table later, just in case something is ignored
+                        try:
+                            # A hack
+                            if t == '    ':
+                                raise
+                            if b in table:
+                                token = table[b]
+                                if type(token) == str: # Normal character
+                                    t += token
+                                elif isinstance(token, SpecialCharacter): # Special character
+                                    param = token.parser(rom)
+                                    if token.print_control_code and (token.always_print or (param != None and param != token.default)):
+                                        t += "<" + token.symbol
+                                    if param != None:
+                                        if (param != None and not token.end and param != token.default) or (token.end and param != token.default):
+                                            if param != token.default:
+                                                if token.names and param in token.names:
+                                                    t += token.names[param]
                                                 else:
-                                                    if isinstance(param, str):
-                                                        t += param
+                                                    if token.names is not None:
+                                                        n = f"BUF{len(token.names):02X}"
+                                                        token.names[param] = n
+                                                        queued_ptrs_write += f"{n}={hex(param)}\n"
+                                                        t += n
+                                                        # Write the names to the table later, just in case something is ignored
                                                     else:
-                                                        token_format = f"{{:{token.bts * 2:02}X}}"
-                                                        t += token_format.format(param)
-                                if token.print_control_code and (token.always_print or (param != None and param != token.default)):
-                                    t += ">"
-                                if token.end:
-                                    if not t:
-                                        t = f"<{token.symbol}{param:02X}>"
+                                                        if isinstance(param, str):
+                                                            t += param
+                                                        else:
+                                                            token_format = f"{{:{token.bts * 2:02}X}}"
+                                                            t += token_format.format(param)
+                                    if token.print_control_code and (token.always_print or (param != None and param != token.default)):
+                                        t += ">"
+                                    if token.end:
+                                        if not t:
+                                            t = f"<{token.symbol}{param:02X}>"
 
-                                    # This is a hack, but step back one because they'll reuse this byte
-                                    if param not in range(0, 4+1):
-                                        rom.seek(-1, 1)
-                                    break
-                        else: # Not found, print literal bytes instead
-                            t += f"<${b:02X}>"
-                    else: # If we never break out of the while loop before the condition fails, this is probably garbage and we should treat it as ignored
-                        if pointer_lengths[p] == -1:
-                            t = f"<IGNORED:${utils.read_short(rom):04X}>"
+                                        # This is a hack, but step back one because they'll reuse this byte
+                                        if param not in range(0, 4+1):
+                                            rom.seek(-1, 1)
+                                        break
+                            else: # Not found, print literal bytes instead
+                                # A hack
+                                if is_terminator:
+                                    break_loop = True
+                                    continue
+                                t += f"<${b:02X}>"
+                        except:
+                            if is_terminator:
+                                break_loop = True
+                                continue
+                    else: # If we never break out of the while loop before the condition fails, we should note it
+                        if is_terminator:
+                            utils.read_short(rom) # Don't really care what this is
+                            t = f"<FINAL>"
                         else:
-                            t = "<IGNORED>"
+                            t = f"<NOTERM:{t}>"
 
-                    if queued_ptrs_write and not t.startswith("<IGNORED>") or (isinstance(p, str) and p.startswith("UNUSED")):
+                    if queued_ptrs_write or (isinstance(p, str) and p.startswith("UNUSED")):
                         ptrs.write(queued_ptrs_write)
                     
                     text[p] = t
@@ -179,7 +202,7 @@ for info in rom_info:
 
                     p = f"UNUSED{counter:02X}"
                     counter += 1
-                    pointer_lengths[p] = 0xff
+                    pointer_lengths[p] = MAX_LENGTH
 
                     pointers[p] = rom.tell()
 
@@ -216,13 +239,24 @@ for info in rom_info:
 
             text = utils.merge_dicts([text, duplicates])
 
-            if csv_filename in texts:
+            # If this bank is already parsed from another version, just append to the previous set
+            if csv_filename in texts:                
+                texts_items = list(texts[csv_filename].items())
+                curr_items = list(text.items())
+
                 idx = 0
-                while idx < len(text):
-                    texts_items = list(texts[csv_filename].items())
-                    curr_items = list(text.items())
+                while idx < max(len(texts_items), len(curr_items)): # Can't precalculate this, as we may delete entries
                     p_default = texts_items[idx][0]
                     p_current = curr_items[idx][0]
+
+                    # Take into account unused text that exists in one version but not another
+                    if isinstance(p_current, str) and p_current.startswith("UNUSED") and (not isinstance(p_default, str) or not p_default.startswith("UNUSED")):
+                        if not idx in text_unused[csv_filename]:
+                            text_unused[csv_filename][idx] = {}
+                        text_unused[csv_filename][idx][suffix] = (p_current, text[p_current])
+                        del curr_items[idx]
+                        continue
+
                     # If the text doesn't match or it's already been marked as different, then make sure to record the version string
                     if curr_items[idx][1] != texts_items[idx][1] or idx in text_version_specific[csv_filename]:
                         if idx not in text_version_specific[csv_filename]:
@@ -243,8 +277,14 @@ for fn in texts:
     text = texts[fn]
     with open(fn, "w", encoding="utf-8") as fp:
         writer = csv.writer(fp, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["Index[#version]","Pointer","Original","Translated"])
+        writer.writerow(["Index[#version]","Pointer[#version|]","Original","Translated"])
         for idx, p in enumerate(text):
+            # Write UNUSED text to make sure order is correct
+            if idx in text_unused[fn]:
+                for suffix in text_unused[fn][idx]:
+                    pointer = text_unused[fn][idx][suffix][0]
+                    txt = text_unused[fn][idx][suffix][1]
+                    writer.writerow([f'{pointer}#{suffix}', pointer, txt, None])
             if fn in text_version_specific and idx in text_version_specific[fn]:
                 for suffix in text_version_specific[fn][idx]:
                     p = text_version_specific[fn][idx][suffix][0]
@@ -258,6 +298,7 @@ for fn in texts:
             else:
                 pointer = p if isinstance(p, str) else hex(p)
             writer.writerow([f'{idx:03}', pointer, text[p], text[p] if text[p].startswith("=") else None])
+
 
 text_ptr_versions = [] 
 values = list(text_table_ptrs.values())[0]
