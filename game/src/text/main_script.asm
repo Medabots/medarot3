@@ -120,6 +120,8 @@ MainScriptProcessor::
   sla c
   rl b
   add hl, bc
+  ld a, [W_CurrentBank] ; Replace with ld a, [hli] rst $10 nop
+  ld [W_VWFTextBank], a
   ld a, [hli]
   ld h, [hl]
   ld l, a
