@@ -18,3 +18,4 @@ W_VWFTileMappingAddress:: ds 2
 W_VWFDrawingAreaLengthInPixels:: ds 1
 W_VWFInitialPaddingOffset:: ds 1
 W_VWFDrawnAreaLength:: ds 1
+W_VWFTextBank:: ds 1

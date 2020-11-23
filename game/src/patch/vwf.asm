@@ -9,11 +9,11 @@ VWFControlCodeCCCrossBank2086::
   ret
 
 MainScriptProcessorPutCharLoopCrossBank::
-  ld a, [W_MainScriptTextBank]
+  ld a, [W_VWFTextBank]
   rst $10
   jp MainScriptProcessorPutCharLoop
 
-SECTION "PutString", ROM0[$1C53]
+SECTION "PutString", ROM0[$1C59]
 VWFDrawStringLeftFullAddress8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
@@ -595,11 +595,11 @@ VWFControlCodeD2:: ; Portrait display code. We preserve most of the original log
   call MainScriptProgressXChars
   ret
 
-VWFControlCodeD3:: ; Kanji drawing code, except we don't want to draw kanji. Will later be replaced with a universal newline control code.
-  pop hl
-  ld b, 2
-  call MainScriptProgressXChars
-  jp MainScriptProcessorPutCharLoopCrossBank
+VWFControlCodeD3:: ; Universal linebreak.
+  ld a, [W_VWFIsSecondLine]
+  or a
+  jp z, VWFControlCodeCD
+  jp VWFControlCodeCF
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
@@ -651,6 +651,7 @@ VWFResetForNewline::
   ld [W_VWFDiscardSecondTile], a
   ld [W_MainScriptIterator], a
   ld [W_MainScriptPauseAutoAdvanceTimer], a
+  ld [W_VWFLetterShift], a
   push hl
   ld hl, W_VWFCompositeArea
   ld b, $10
