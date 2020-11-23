@@ -149,7 +149,7 @@ $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_TEXT)/%.$(RAW_TSET_SRC_TYPE) | $(TI
 # build/dialog/intermediate/*.bin from dialog csv files
 .SECONDEXPANSION:
 $(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(CSV_TYPE) | $(DIALOG_INT)
-	$(PYTHON) $(SCRIPT)/dialog2bin.py $@ $^ "Original" $(subst $(subst .$(CSV_TYPE),,$(<F))_,,$*)
+	$(PYTHON) $(SCRIPT)/dialog2bin.py $@ $^ "Translated" $(subst $(subst .$(CSV_TYPE),,$(<F))_,,$*)
 
 # Use the intermediate files to generate the final dialog files
 # Make has trouble with multiple files in a single rule, so we use the asm file to indicate these files were generated
