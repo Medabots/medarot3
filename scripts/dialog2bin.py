@@ -67,7 +67,7 @@ with open(input_file, 'r', encoding='utf-8') as fp:
             pointer_length_map[pointer] = 0
             continue
         elif not txt: # For translations, it's useful to mark the pointer when not translated
-            txt = f"{pointer:X}"
+            txt = f"{pointer.partition('0x')[-1].upper()}"
 
         # Keep track of the current offset
         # Unused text must be inserted but the offsets won't be recorded in the final output file
