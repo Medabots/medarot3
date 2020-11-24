@@ -117,14 +117,17 @@ MainScriptProcessor::
   ret
 
 .doNotPause
-  sla c
-  rl b
   add hl, bc
-  ld a, [W_CurrentBank] ; Replace with ld a, [hli] rst $10 nop
+  add hl, bc
+  add hl, bc
+  ld a, [hli]
   ld [W_VWFTextBank], a
+  push af
   ld a, [hli]
   ld h, [hl]
   ld l, a
+  pop af
+  rst $10
 
 MainScriptProcessorPutCharLoop::
   push hl

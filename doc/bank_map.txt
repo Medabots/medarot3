@@ -239,14 +239,14 @@ ED:
 EE: 
 EF: 
 F0: 
-F1: 
-F2: (empty)
-F3: (empty)
-F4: (empty)
-F5: (empty)
-F6: (empty)
-F7: (empty)
-F8: (empty)
+F1: Text Pointers 1
+F2: Text Pointers 2
+F3: Text 0
+F4: Text 1
+F5: Text 2
+F6: Text 3
+F7: Text 4
+F8: Text 5
 F9: (empty)
 FA: (empty)
 FB: (empty)
