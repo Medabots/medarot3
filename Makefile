@@ -108,8 +108,7 @@ text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_VERSION.asm
 
 # Patch Specific
-core_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
-#patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
+patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default
 default: kabuto
