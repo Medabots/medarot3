@@ -99,7 +99,7 @@ core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_VERSION.asm
-gfx_tileset_table_ADDITIONAL := $(TILESET_FILES)
+version_tileset_table_ADDITIONAL := $(TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default
 default: kabuto
