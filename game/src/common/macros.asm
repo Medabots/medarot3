@@ -1,3 +1,26 @@
+; macro for putting a byte then a word
+dbw: MACRO
+  db \1
+  dw \2
+  ENDM
+
+; macro for putting a word then a byte
+dwb: MACRO
+  dw \1
+  db \2
+  ENDM
+
+dbww: MACRO
+  db \1
+  dw \2
+  dw \3
+  ENDM
+
+dbwb: MACRO
+  db \1
+  dw \2
+  db \3
+  ENDM
 
 Load1BPPTilesetLocal: MACRO
   ld hl, \1
