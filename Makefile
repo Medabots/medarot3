@@ -80,6 +80,8 @@ CCGFX_ARGS :=
 
 # Helper
 TOUPPER = $(shell echo '$1' | tr '[:lower:]' '[:upper:]')
+FILTER = $(strip $(foreach v,$(2),$(if $(findstring $(1),$(v)),$(v),)))
+FILTER_OUT = $(strip $(foreach v,$(2),$(if $(findstring $(1),$(v)),,$(v))))
 
 # Inputs
 ORIGINALS := $(foreach VERSION,$(VERSIONS),$(BASE)/$(ORIGINAL_PREFIX)$(VERSION).$(ROM_TYPE))
@@ -94,7 +96,9 @@ OBJNAMES := $(foreach MODULE,$(MODULES),$(addprefix $(MODULE)., $(addsuffix .$(I
 COMMON_SRC := $(wildcard $(COMMON)/*.$(SOURCE_TYPE))
 
 DIALOG := $(notdir $(basename $(wildcard $(DIALOG_TEXT)/*.$(CSV_TYPE))))
-TILESETS := $(notdir $(basename $(wildcard $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))
+TILESETS = $(notdir $(basename $(wildcard $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))
+TILESETS_COMMON := $(call FILTER_OUT,_,$(TILESETS))
+TILESETS_VERSIONED := $(call FILTER,_,$(TILESETS))
 
 ## Patch Specific
 PATCH_TEXT_TILESETS := $(notdir $(basename $(wildcard $(PATCH_TILESET_GFX)/*.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE)))) # .1bpp.png -> 1bpp
@@ -107,14 +111,15 @@ PATCH_TILESET_FILES := $(foreach FILE,$(PATCH_TILESETS),$(PATCH_TILESET_OUT)/$(F
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
 OBJECTS := $(foreach OBJECT,$(OBJNAMES), $(addprefix $(BUILD)/,$(OBJECT)))
 
-TILESET_FILES := $(foreach FILE,$(TILESETS),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
+TILESET_FILES_COMMON := $(foreach FILE,$(TILESETS_COMMON),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
+TILESET_FILES_VERSIONED := $(foreach FILE,$(TILESETS_VERSIONED),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
 
 # Additional dependencies, per module granularity (i.e. story, gfx, core) or per file granularity (e.g. story_text_tables_ADDITIONAL)
 core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_VERSION.asm
-gfx_tileset_table_ADDITIONAL := $(TILESET_FILES)
+version_tileset_table_ADDITIONAL := $(TILESET_FILES_COMMON) $(TILESET_OUT)/VERSION.stamp
 
 # Patch Specific
 patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
@@ -157,6 +162,11 @@ $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TIL
 # build/tilesets/*.malias from built 2bpp
 $(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT)
 	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $<
+
+# build/tilesets/*_VERSION.malias
+.SECONDEXPANSION:
+$(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(TILESET_FILES_VERSIONED))
+	touch $@
 
 # build/dialog/intermediate/*.bin from dialog csv files
 .SECONDEXPANSION:
