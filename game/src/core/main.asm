@@ -78,10 +78,10 @@ Main::
   ld [$CD00], a
   ld [$CD13], a
   ld bc, 0
-  call $0CD2
+  call CGBLoadBGPPaletteIndexes
   ld bc, 0
-  call $0D56
-  call $0C84
+  call CGBLoadOBPPaletteIndexes
+  call CGBCommitPalettes
   call DMGSetupDirectPalette
   call $0410
   call SetInitialStateAndSubstate
