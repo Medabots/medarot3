@@ -75,8 +75,8 @@ Main::
   ldh [H_RegIE], a
   ei
   ld a, 1
-  ld [$CD00], a
-  ld [$CD13], a
+  ld [W_CGBPaletteStagedBGP], a
+  ld [W_CGBPaletteStagedOBP], a
   ld bc, 0
   call CGBLoadBGPPaletteIndexes
   ld bc, 0
