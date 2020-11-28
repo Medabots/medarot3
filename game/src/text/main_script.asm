@@ -310,7 +310,7 @@ ControlCodeD2_changePortrait::
   ld a, 6
   call CGBLoadSingleBGPPaletteIndex
   ld a, 1
-  ld [$CD00], a
+  ld [W_CGBPaletteStagedBGP], a
   ld a, [W_MainScriptTextBank]
   rst $10
   xor a
