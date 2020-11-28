@@ -1,8 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-SECTION "Palette Color Table (Kabuto)", ROMX[$4000], BANK[$35]
-PaletteColorTable::
+SECTION "BGP Palette Color Table (Kabuto)", ROMX[$4000], BANK[$35]
+BGPPaletteColorTable::
 ; Palette 0
   dcolor 31, 31, 31
   dcolor 31, 31, 31
@@ -9205,6 +9205,9 @@ PaletteColorTable::
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
+
+SECTION "OBP Palette Color Table (Kuwagata)", ROMX[$7980], BANK[$35]
+OBPPaletteColorTable::
 ; Palette 730
   dcolor 31, 31, 31
   dcolor 31, 31, 31
@@ -10246,8 +10249,8 @@ PaletteColorTable::
   dcolor 0, 0, 0
   dcolor 0, 0, 0
 
-SECTION "Palette Group Table 1 (Kabuto)", ROMX[$4000], BANK[$36]
-PaletteGroupTableA::
+SECTION "BGP Palette Group Table (Kabuto)", ROMX[$4000], BANK[$36]
+BGPPaletteGroupTable::
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 0
   dpalette $1, $1, $1, $1, $1, $1, $1, $1 ; 1
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 2
@@ -10761,8 +10764,8 @@ PaletteGroupTableA::
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FE
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FF
 
-SECTION "Palette Group Table 2 (Kabuto)", ROMX[$6000], BANK[$36]
-PaletteGroupTableB::
+SECTION "OBP Palette Group Table (Kabuto)", ROMX[$6000], BANK[$36]
+OBPPaletteGroupTable::
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 0/200
   dpalette $1, $1, $1, $1, $1, $1, $1, $1 ; 1/201
   dpalette $10, $11, $12, $13, $14, $15, $16, $17 ; 2/202
