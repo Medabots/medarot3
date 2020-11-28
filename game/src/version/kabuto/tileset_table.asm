@@ -151,5 +151,5 @@ Tileset3A5F::
 SECTION "Tileset Data Tileset3A61_GAMEVERSION", ROMX[$6A7F], BANK[$3E]
 Tileset3A61_GAMEVERSION::
 Tileset3A63_GAMEVERSION::
-  INCBIN "build/tilesets/Tileset3A61_GAMEVERSION_kabuto.malias"
+  INCBIN "build/tilesets/Tileset3A61.malias"
 
