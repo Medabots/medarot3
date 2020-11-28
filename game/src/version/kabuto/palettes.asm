@@ -9208,1042 +9208,1042 @@ BGPPaletteColorTable::
 
 SECTION "OBP Palette Color Table (Kuwagata)", ROMX[$7980], BANK[$35]
 OBPPaletteColorTable::
-; Palette 730
+; Palette 0/730
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 31, 31, 31
-; Palette 731
+; Palette 1/731
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 732
+; Palette 2/732
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 733
+; Palette 3/733
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 734
+; Palette 4/734
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 735
+; Palette 5/735
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 736
+; Palette 6/736
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 737
+; Palette 7/737
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 738
+; Palette 8/738
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 739
+; Palette 9/739
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73A
+; Palette A/73A
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73B
+; Palette B/73B
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73C
+; Palette C/73C
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73D
+; Palette D/73D
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73E
+; Palette E/73E
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 73F
+; Palette F/73F
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 740
+; Palette 10/740
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 26, 0, 0
   dcolor 6, 0, 0
-; Palette 741
+; Palette 11/741
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 0, 10, 31
   dcolor 0, 0, 6
-; Palette 742
+; Palette 12/742
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 31, 19, 0
   dcolor 5, 2, 0
-; Palette 743
+; Palette 13/743
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 8, 22, 4
   dcolor 0, 4, 0
-; Palette 744
+; Palette 14/744
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 21, 10, 0
   dcolor 5, 2, 0
-; Palette 745
+; Palette 15/745
   dcolor 31, 31, 31
   dcolor 31, 24, 21
   dcolor 26, 6, 21
   dcolor 6, 0, 0
-; Palette 746
+; Palette 16/746
   dcolor 31, 31, 31
   dcolor 27, 27, 31
   dcolor 0, 21, 31
   dcolor 0, 0, 6
-; Palette 747
+; Palette 17/747
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 15, 16, 15
   dcolor 0, 0, 0
-; Palette 748
+; Palette 18/748
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 26, 0, 0
   dcolor 0, 0, 0
-; Palette 749
+; Palette 19/749
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 10, 31
   dcolor 0, 0, 0
-; Palette 74A
+; Palette 1A/74A
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 31, 19, 0
   dcolor 0, 0, 0
-; Palette 74B
+; Palette 1B/74B
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 8, 22, 4
   dcolor 0, 0, 0
-; Palette 74C
+; Palette 1C/74C
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 21, 10, 0
   dcolor 0, 0, 0
-; Palette 74D
+; Palette 1D/74D
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 26, 6, 21
   dcolor 0, 0, 0
-; Palette 74E
+; Palette 1E/74E
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 21, 31
   dcolor 0, 0, 0
-; Palette 74F
+; Palette 1F/74F
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 15, 16, 15
   dcolor 0, 0, 0
-; Palette 750
+; Palette 20/750
   dcolor 31, 31, 31
   dcolor 31, 12, 12
   dcolor 23, 0, 0
   dcolor 0, 0, 0
-; Palette 751
+; Palette 21/751
   dcolor 31, 31, 31
   dcolor 31, 26, 0
   dcolor 29, 13, 0
   dcolor 0, 0, 0
-; Palette 752
+; Palette 22/752
   dcolor 31, 31, 31
   dcolor 11, 14, 31
   dcolor 0, 0, 27
   dcolor 0, 0, 0
-; Palette 753
+; Palette 23/753
   dcolor 18, 23, 12
   dcolor 15, 18, 8
   dcolor 8, 12, 2
   dcolor 4, 6, 0
-; Palette 754
+; Palette 24/754
   dcolor 0, 0, 8
   dcolor 31, 21, 0
   dcolor 31, 13, 0
   dcolor 28, 0, 0
-; Palette 755
+; Palette 25/755
   dcolor 0, 0, 0
   dcolor 0, 0, 8
   dcolor 0, 0, 0
   dcolor 21, 27, 31
-; Palette 756
+; Palette 26/756
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 757
+; Palette 27/757
   dcolor 31, 31, 31
   dcolor 31, 27, 17
   dcolor 31, 19, 0
   dcolor 16, 0, 0
-; Palette 758
+; Palette 28/758
   dcolor 31, 31, 31
   dcolor 31, 18, 0
   dcolor 26, 0, 0
   dcolor 14, 0, 0
-; Palette 759
+; Palette 29/759
   dcolor 31, 31, 31
   dcolor 10, 26, 31
   dcolor 0, 7, 31
   dcolor 0, 0, 14
-; Palette 75A
+; Palette 2A/75A
   dcolor 31, 31, 31
   dcolor 31, 24, 0
   dcolor 31, 13, 0
   dcolor 10, 3, 0
-; Palette 75B
+; Palette 2B/75B
   dcolor 31, 31, 31
   dcolor 24, 29, 0
   dcolor 6, 24, 0
   dcolor 0, 9, 0
-; Palette 75C
+; Palette 2C/75C
   dcolor 31, 31, 31
   dcolor 31, 23, 10
   dcolor 21, 10, 0
   dcolor 10, 3, 0
-; Palette 75D
+; Palette 2D/75D
   dcolor 31, 31, 31
   dcolor 31, 17, 28
   dcolor 26, 3, 20
   dcolor 11, 0, 7
-; Palette 75E
+; Palette 2E/75E
   dcolor 31, 31, 31
   dcolor 21, 26, 31
   dcolor 0, 21, 31
   dcolor 0, 5, 14
-; Palette 75F
+; Palette 2F/75F
   dcolor 31, 31, 31
   dcolor 24, 24, 28
   dcolor 15, 15, 19
   dcolor 0, 0, 0
-; Palette 760
+; Palette 30/760
   dcolor 31, 31, 31
   dcolor 28, 16, 6
   dcolor 23, 12, 3
   dcolor 16, 8, 0
-; Palette 761
+; Palette 31/761
   dcolor 31, 31, 31
   dcolor 31, 20, 12
   dcolor 0, 23, 0
   dcolor 0, 0, 8
-; Palette 762
+; Palette 32/762
   dcolor 31, 31, 31
   dcolor 31, 18, 0
   dcolor 31, 3, 12
   dcolor 0, 0, 8
-; Palette 763
+; Palette 33/763
   dcolor 31, 31, 31
   dcolor 31, 21, 7
   dcolor 26, 2, 2
   dcolor 0, 0, 0
-; Palette 764
+; Palette 34/764
   dcolor 31, 31, 31
   dcolor 23, 28, 31
   dcolor 12, 20, 31
   dcolor 4, 10, 26
-; Palette 765
+; Palette 35/765
   dcolor 31, 31, 31
   dcolor 31, 26, 0
   dcolor 31, 17, 0
   dcolor 24, 0, 0
-; Palette 766
+; Palette 36/766
   dcolor 31, 31, 31
   dcolor 24, 24, 24
   dcolor 18, 18, 18
   dcolor 12, 12, 12
-; Palette 767
+; Palette 37/767
   dcolor 31, 31, 31
   dcolor 8, 21, 31
   dcolor 0, 0, 24
   dcolor 0, 0, 10
-; Palette 768
+; Palette 38/768
   dcolor 31, 31, 31
   dcolor 31, 21, 10
   dcolor 27, 0, 0
   dcolor 0, 0, 4
-; Palette 769
+; Palette 39/769
   dcolor 31, 31, 31
   dcolor 31, 18, 10
   dcolor 0, 10, 30
   dcolor 0, 0, 0
-; Palette 76A
+; Palette 3A/76A
   dcolor 31, 31, 31
   dcolor 31, 31, 24
   dcolor 31, 21, 0
   dcolor 10, 4, 0
-; Palette 76B
+; Palette 3B/76B
   dcolor 31, 31, 31
   dcolor 8, 31, 31
   dcolor 5, 20, 12
   dcolor 0, 5, 0
-; Palette 76C
+; Palette 3C/76C
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 76D
+; Palette 3D/76D
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 76E
+; Palette 3E/76E
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 76F
+; Palette 3F/76F
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 770
+; Palette 40/770
   dcolor 0, 0, 0
   dcolor 0, 0, 8
   dcolor 0, 0, 0
   dcolor 31, 13, 0
-; Palette 771
+; Palette 41/771
   dcolor 31, 31, 31
   dcolor 29, 29, 16
   dcolor 31, 14, 0
   dcolor 3, 3, 0
-; Palette 772
+; Palette 42/772
   dcolor 31, 31, 31
   dcolor 27, 31, 31
   dcolor 31, 5, 0
   dcolor 0, 0, 10
-; Palette 773
+; Palette 43/773
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 774
+; Palette 44/774
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 775
+; Palette 45/775
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 776
+; Palette 46/776
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 777
+; Palette 47/777
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 778
+; Palette 48/778
   dcolor 31, 31, 31
   dcolor 31, 22, 0
   dcolor 5, 13, 5
   dcolor 0, 0, 0
-; Palette 779
+; Palette 49/779
   dcolor 31, 31, 31
   dcolor 19, 28, 28
   dcolor 8, 12, 12
   dcolor 0, 0, 0
-; Palette 77A
+; Palette 4A/77A
   dcolor 31, 31, 31
   dcolor 25, 18, 7
   dcolor 5, 13, 21
   dcolor 0, 0, 0
-; Palette 77B
+; Palette 4B/77B
   dcolor 31, 31, 31
   dcolor 20, 27, 31
   dcolor 10, 23, 31
   dcolor 0, 19, 31
-; Palette 77C
+; Palette 4C/77C
   dcolor 31, 31, 31
   dcolor 31, 27, 31
   dcolor 31, 23, 31
   dcolor 31, 19, 31
-; Palette 77D
+; Palette 4D/77D
   dcolor 31, 31, 31
   dcolor 25, 31, 24
   dcolor 19, 31, 17
   dcolor 13, 31, 10
-; Palette 77E
+; Palette 4E/77E
   dcolor 31, 31, 31
   dcolor 31, 29, 20
   dcolor 31, 28, 10
   dcolor 31, 27, 0
-; Palette 77F
+; Palette 4F/77F
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 780
+; Palette 50/780
   dcolor 31, 31, 31
   dcolor 31, 18, 12
   dcolor 8, 14, 21
   dcolor 0, 3, 7
-; Palette 781
+; Palette 51/781
   dcolor 31, 31, 31
   dcolor 19, 22, 26
   dcolor 8, 14, 21
   dcolor 0, 3, 7
-; Palette 782
+; Palette 52/782
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 31, 5, 0
   dcolor 0, 3, 7
-; Palette 783
+; Palette 53/783
   dcolor 31, 31, 31
   dcolor 31, 18, 12
   dcolor 31, 5, 0
   dcolor 0, 3, 7
-; Palette 784
+; Palette 54/784
   dcolor 31, 31, 31
   dcolor 31, 31, 31
   dcolor 31, 18, 12
   dcolor 0, 3, 7
-; Palette 785
+; Palette 55/785
   dcolor 31, 31, 31
   dcolor 31, 18, 12
   dcolor 22, 11, 6
   dcolor 0, 3, 7
-; Palette 786
+; Palette 56/786
   dcolor 31, 31, 31
   dcolor 31, 20, 13
   dcolor 14, 8, 1
   dcolor 7, 1, 0
-; Palette 787
+; Palette 57/787
   dcolor 31, 31, 31
   dcolor 31, 20, 13
   dcolor 29, 0, 0
   dcolor 7, 1, 0
-; Palette 788
+; Palette 58/788
   dcolor 31, 31, 31
   dcolor 31, 20, 13
   dcolor 31, 31, 31
   dcolor 7, 1, 0
-; Palette 789
+; Palette 59/789
   dcolor 31, 31, 31
   dcolor 31, 29, 8
   dcolor 31, 19, 0
   dcolor 17, 5, 0
-; Palette 78A
+; Palette 5A/78A
   dcolor 0, 0, 0
   dcolor 31, 17, 0
   dcolor 31, 31, 4
   dcolor 31, 31, 28
-; Palette 78B
+; Palette 5B/78B
   dcolor 0, 0, 0
   dcolor 0, 3, 16
   dcolor 10, 16, 23
   dcolor 20, 29, 31
-; Palette 78C
+; Palette 5C/78C
   dcolor 0, 0, 0
   dcolor 31, 25, 16
   dcolor 18, 14, 8
   dcolor 1, 3, 6
-; Palette 78D
+; Palette 5D/78D
   dcolor 0, 0, 0
   dcolor 31, 25, 16
   dcolor 5, 20, 28
   dcolor 1, 3, 6
-; Palette 78E
+; Palette 5E/78E
   dcolor 0, 0, 0
   dcolor 28, 31, 0
   dcolor 5, 20, 28
   dcolor 1, 3, 6
-; Palette 78F
+; Palette 5F/78F
   dcolor 0, 0, 0
   dcolor 28, 31, 0
   dcolor 4, 31, 18
   dcolor 1, 3, 6
-; Palette 790
+; Palette 60/790
   dcolor 31, 31, 31
   dcolor 13, 29, 31
   dcolor 31, 4, 0
   dcolor 12, 0, 0
-; Palette 791
+; Palette 61/791
   dcolor 31, 31, 31
   dcolor 31, 27, 0
   dcolor 10, 26, 0
   dcolor 0, 14, 0
-; Palette 792
+; Palette 62/792
   dcolor 31, 31, 31
   dcolor 31, 27, 17
   dcolor 31, 10, 18
   dcolor 12, 5, 0
-; Palette 793
+; Palette 63/793
   dcolor 31, 31, 31
   dcolor 31, 27, 17
   dcolor 31, 20, 0
   dcolor 12, 5, 0
-; Palette 794
+; Palette 64/794
   dcolor 31, 31, 31
   dcolor 31, 14, 0
   dcolor 31, 20, 0
   dcolor 12, 5, 0
-; Palette 795
+; Palette 65/795
   dcolor 31, 31, 31
   dcolor 31, 13, 4
   dcolor 31, 0, 0
   dcolor 5, 0, 0
-; Palette 796
+; Palette 66/796
   dcolor 0, 0, 0
   dcolor 31, 31, 21
   dcolor 31, 19, 0
   dcolor 22, 10, 0
-; Palette 797
+; Palette 67/797
   dcolor 0, 0, 0
   dcolor 31, 26, 31
   dcolor 31, 10, 31
   dcolor 18, 4, 9
-; Palette 798
+; Palette 68/798
   dcolor 0, 0, 0
   dcolor 26, 31, 26
   dcolor 0, 31, 3
   dcolor 0, 14, 0
-; Palette 799
+; Palette 69/799
   dcolor 0, 0, 0
   dcolor 18, 28, 31
   dcolor 0, 18, 31
   dcolor 0, 0, 20
-; Palette 79A
+; Palette 6A/79A
   dcolor 0, 0, 0
   dcolor 31, 31, 21
   dcolor 31, 10, 31
   dcolor 22, 10, 0
-; Palette 79B
+; Palette 6B/79B
   dcolor 0, 0, 0
   dcolor 31, 31, 21
   dcolor 0, 31, 3
   dcolor 22, 10, 0
-; Palette 79C
+; Palette 6C/79C
   dcolor 0, 0, 0
   dcolor 31, 31, 21
   dcolor 0, 18, 31
   dcolor 22, 10, 0
-; Palette 79D
+; Palette 6D/79D
   dcolor 0, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 0, 0, 31
-; Palette 79E
+; Palette 6E/79E
   dcolor 0, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 0, 28, 0
-; Palette 79F
+; Palette 6F/79F
   dcolor 0, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 31, 20, 0
-; Palette 7A0
+; Palette 70/7A0
   dcolor 0, 31, 31
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 29, 0, 0
-; Palette 7A1
+; Palette 71/7A1
   dcolor 0, 0, 0
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7A2
+; Palette 72/7A2
   dcolor 31, 31, 31
   dcolor 31, 19, 1
   dcolor 27, 4, 0
   dcolor 11, 3, 0
-; Palette 7A3
+; Palette 73/7A3
   dcolor 31, 31, 31
   dcolor 31, 30, 23
   dcolor 31, 19, 1
   dcolor 27, 4, 0
-; Palette 7A4
+; Palette 74/7A4
   dcolor 31, 31, 31
   dcolor 31, 30, 23
   dcolor 31, 19, 1
   dcolor 11, 3, 0
-; Palette 7A5
+; Palette 75/7A5
   dcolor 31, 31, 31
   dcolor 31, 0, 0
   dcolor 18, 16, 1
   dcolor 0, 0, 0
-; Palette 7A6
+; Palette 76/7A6
   dcolor 31, 31, 31
   dcolor 31, 31, 17
   dcolor 31, 15, 0
   dcolor 31, 3, 0
-; Palette 7A7
+; Palette 77/7A7
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 30, 2, 4
-; Palette 7A8
+; Palette 78/7A8
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 18, 31
-; Palette 7A9
+; Palette 79/7A9
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 31, 23, 0
-; Palette 7AA
+; Palette 7A/7AA
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 8, 22, 4
-; Palette 7AB
+; Palette 7B/7AB
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 26, 9, 26
-; Palette 7AC
+; Palette 7C/7AC
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 31, 31, 31
-; Palette 7AD
+; Palette 7D/7AD
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7AE
+; Palette 7E/7AE
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7AF
+; Palette 7F/7AF
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7B0
+; Palette 80/7B0
   dcolor 31, 31, 31
   dcolor 31, 31, 8
   dcolor 31, 31, 0
   dcolor 0, 0, 0
-; Palette 7B1
+; Palette 81/7B1
   dcolor 0, 0, 0
   dcolor 26, 26, 5
   dcolor 24, 24, 0
   dcolor 0, 0, 0
-; Palette 7B2
+; Palette 82/7B2
   dcolor 31, 31, 31
   dcolor 22, 22, 2
   dcolor 17, 17, 0
   dcolor 0, 0, 0
-; Palette 7B3
+; Palette 83/7B3
   dcolor 31, 31, 31
   dcolor 0, 19, 31
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7B4
+; Palette 84/7B4
   dcolor 31, 31, 31
   dcolor 31, 23, 0
   dcolor 31, 12, 0
   dcolor 12, 0, 0
-; Palette 7B5
+; Palette 85/7B5
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7B6
+; Palette 86/7B6
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7B7
+; Palette 87/7B7
   dcolor 0, 0, 0
   dcolor 31, 31, 31
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7B8
+; Palette 88/7B8
   dcolor 31, 31, 31
   dcolor 27, 31, 27
   dcolor 8, 31, 12
   dcolor 0, 24, 0
-; Palette 7B9
+; Palette 89/7B9
   dcolor 31, 31, 31
   dcolor 30, 22, 3
   dcolor 31, 13, 0
   dcolor 23, 8, 0
-; Palette 7BA
+; Palette 8A/7BA
   dcolor 31, 31, 31
   dcolor 16, 22, 26
   dcolor 8, 16, 28
   dcolor 0, 31, 31
-; Palette 7BB
+; Palette 8B/7BB
   dcolor 31, 31, 31
   dcolor 27, 31, 27
   dcolor 8, 31, 12
   dcolor 0, 24, 0
-; Palette 7BC
+; Palette 8C/7BC
   dcolor 31, 31, 31
   dcolor 18, 23, 31
   dcolor 7, 6, 19
   dcolor 0, 0, 10
-; Palette 7BD
+; Palette 8D/7BD
   dcolor 31, 31, 31
   dcolor 16, 22, 26
   dcolor 8, 16, 28
   dcolor 0, 31, 31
-; Palette 7BE
+; Palette 8E/7BE
   dcolor 31, 31, 31
   dcolor 31, 29, 10
   dcolor 31, 20, 5
   dcolor 31, 13, 0
-; Palette 7BF
+; Palette 8F/7BF
   dcolor 31, 31, 31
   dcolor 20, 27, 31
   dcolor 0, 24, 31
   dcolor 0, 15, 31
-; Palette 7C0
+; Palette 90/7C0
   dcolor 31, 31, 31
   dcolor 31, 31, 19
   dcolor 31, 16, 15
   dcolor 31, 0, 0
-; Palette 7C1
+; Palette 91/7C1
   dcolor 31, 31, 31
   dcolor 31, 26, 20
   dcolor 31, 22, 0
   dcolor 31, 12, 0
-; Palette 7C2
+; Palette 92/7C2
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C3
+; Palette 93/7C3
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C4
+; Palette 94/7C4
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C5
+; Palette 95/7C5
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C6
+; Palette 96/7C6
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C7
+; Palette 97/7C7
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C8
+; Palette 98/7C8
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7C9
+; Palette 99/7C9
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CA
+; Palette 9A/7CA
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CB
+; Palette 9B/7CB
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CC
+; Palette 9C/7CC
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CD
+; Palette 9D/7CD
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CE
+; Palette 9E/7CE
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7CF
+; Palette 9F/7CF
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D0
+; Palette A0/7D0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D1
+; Palette A1/7D1
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D2
+; Palette A2/7D2
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D3
+; Palette A3/7D3
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D4
+; Palette A4/7D4
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D5
+; Palette A5/7D5
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D6
+; Palette A6/7D6
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D7
+; Palette A7/7D7
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D8
+; Palette A8/7D8
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7D9
+; Palette A9/7D9
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DA
+; Palette AA/7DA
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DB
+; Palette AB/7DB
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DC
+; Palette AC/7DC
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DD
+; Palette AD/7DD
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DE
+; Palette AE/7DE
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7DF
+; Palette AF/7DF
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E0
+; Palette B0/7E0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E1
+; Palette B1/7E1
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E2
+; Palette B2/7E2
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E3
+; Palette B3/7E3
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E4
+; Palette B4/7E4
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E5
+; Palette B5/7E5
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E6
+; Palette B6/7E6
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E7
+; Palette B7/7E7
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E8
+; Palette B8/7E8
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7E9
+; Palette B9/7E9
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7EA
+; Palette BA/7EA
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7EB
+; Palette BB/7EB
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7EC
+; Palette BC/7EC
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7ED
+; Palette BD/7ED
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7EE
+; Palette BE/7EE
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7EF
+; Palette BF/7EF
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F0
+; Palette C0/7F0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F1
+; Palette C1/7F1
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F2
+; Palette C2/7F2
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F3
+; Palette C3/7F3
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F4
+; Palette C4/7F4
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F5
+; Palette C5/7F5
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F6
+; Palette C6/7F6
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F7
+; Palette C7/7F7
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F8
+; Palette C8/7F8
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7F9
+; Palette C9/7F9
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FA
+; Palette CA/7FA
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FB
+; Palette CB/7FB
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FC
+; Palette CC/7FC
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FD
+; Palette CD/7FD
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FE
+; Palette CE/7FE
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
-; Palette 7FF
+; Palette CF/7FF
   dcolor 0, 0, 0
   dcolor 0, 0, 0
   dcolor 0, 0, 0
