@@ -45,3 +45,14 @@ WrapClearWRAM::
   ld [W_ReturnBank], a
   rst $18
   ret
+
+SECTION "Load Palette Indexes Wrappers", ROM0[$33BC]
+WrapCGBLoadBGPPaletteIndexes::
+  call CGBLoadBGPPaletteIndexes
+  rst $18
+  ret
+
+WrapCGBLoadOBPPaletteIndexes::
+  call CGBLoadOBPPaletteIndexes
+  rst $18
+  ret

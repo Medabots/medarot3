@@ -683,7 +683,7 @@ ControlCodeD2:: ; Portrait display code.
   ld b, h
   ld c, l
   ld a, 6
-  call $0D03
+  call CGBLoadSingleBGPPaletteIndex
   ld a, 1
   ld [$CD00], a
   ld a, [W_MainScriptTextBank]
