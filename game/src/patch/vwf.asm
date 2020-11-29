@@ -506,7 +506,7 @@ VWFControlCodeCF:: ; New page after input code.
   pop hl
   ld hl, $9C72
   ld b, $F7
-  ld a, [$C460]
+  ld a, [W_UniversalLoopingTimer]
   and 4
   jr nz, .showNextPageIndicator
   ld b, 0
