@@ -60,6 +60,8 @@ H_PushOAM           EQU $ff80
 H_JPInputHeldDown   EQU $ff8c
 H_JPInputChanged    EQU $ff8d
 
+H_VBlankCompleted   EQU $ff92
+
 M_JPInputA          EQU $1
 M_JPInputB          EQU $2
 M_JPInputSelect     EQU $4

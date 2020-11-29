@@ -310,7 +310,7 @@ ControlCodeCF:: ; New page after input code.
   ld bc, $72
   add hl, bc
   ld b, $F7
-  ld a, [$C460]
+  ld a, [W_UniversalLoopingTimer]
   and 4
   jr nz, .showNextPageIndicator
   ld b, 0
