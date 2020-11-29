@@ -102,11 +102,11 @@ Main::
   ld [W_FrameCompleted], a
 
 .waitForNextFrame
-  ldh a, [$FF92]
+  ldh a, [H_VBlankCompleted]
   and a
   jr z, .waitForNextFrame
   
   xor a
-  ldh [$FF92], a
+  ldh [H_VBlankCompleted], a
   ld [W_FrameCompleted], a
   jp .mainGameLoop
