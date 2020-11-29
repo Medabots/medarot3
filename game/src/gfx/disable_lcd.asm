@@ -1,8 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Shadow LCDC Register", WRAM0[$C469]
-W_ShadowREG_LCDC:: ds 1
-
 SECTION "Disable LCD", ROM0[$04C2]
 DisableLCD::
   ldh a, [H_RegIE]

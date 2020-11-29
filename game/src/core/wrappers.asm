@@ -56,3 +56,20 @@ WrapCGBLoadOBPPaletteIndexes::
   call CGBLoadOBPPaletteIndexes
   rst $18
   ret
+
+SECTION "Fade-related Wrappers 1", ROM0[$33CB]
+WrapSetupPalswapAnimation::
+  call SetupPalswapAnimation
+  rst $18
+  ret
+
+SECTION "Fade-related Wrappers 2", ROM0[$3513]
+WrapRestageDestinationBGPalettesForFade::
+  call RestageDestinationBGPalettesForFade
+  rst $18
+  ret
+
+WrapRestageDestinationOBPalettesForFade::
+  call RestageDestinationOBPalettesForFade
+  rst $18
+  ret

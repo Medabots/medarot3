@@ -1,11 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "CGB Palette Management Staging", WRAMX[$DB80], BANK[$3]
-W_PostFadeStagingBGPaletteArea:: ds $40
-W_PostFadeStagingOBPaletteArea:: ds $40
-W_PreFadeStagingBGPaletteArea:: ds $40
-W_PreFadeStagingOBPaletteArea:: ds $40
-
 SECTION "CGB Palette Management Vars 1", WRAM0[$CD00]
 W_CGBPaletteStagedBGP:: ds 1
 W_CGBPaletteBGPGroupIndex:: ds 2
