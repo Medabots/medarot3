@@ -53,6 +53,7 @@ COMMON := $(SRC)/common
 
 # Text Directories
 DIALOG_TEXT := $(TEXT)/dialog
+PTRLISTS_TEXT := $(TEXT)/ptrlists
 
 # Graphics Directories
 TILESET_GFX := $(GFX)/tilesets
@@ -168,14 +169,17 @@ $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/
 
 ### Dump Scripts
 
-.PHONY: dump dump_text dump_tilesets
-dump: dump_text dump_tilesets
+.PHONY: dump dump_text dump_tilesets dump_ptrlists
+dump: dump_text dump_tilesets dump_ptrlists
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_text.py
 
 dump_tilesets: | $(TILESET_GFX) $(TILESET_BIN) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py
+
+dump_ptrlists: | $(PTRLISTS_TEXT)
+	$(PYTHON) $(SCRIPT)/dump_ptrlists.py
 
 #Make directories if necessary
 $(BUILD):
@@ -204,3 +208,6 @@ $(TILESET_GFX):
 
 $(TILESET_OUT):
 	mkdir -p $(TILESET_OUT)
+
+$(PTRLISTS_TEXT):
+	mkdir -p $(PTRLISTS_TEXT)
