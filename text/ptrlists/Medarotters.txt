@@ -1,4 +1,6 @@
-(2, [None, 203], ([3, None], [0, None]), [True, False])
+(2, [None, 203], [(3, 0), (None, None)], [True, False], None, None)
+256
+-1
 \x2b\x00\x01
 シルエット
 \x01\x01\x00
@@ -507,5 +509,9 @@
 シ-ドラゴンズ
 \x05\x5c\x00
 スクリュ-ズ
-\x30\x5d\x00
-ブラックビ-トル
+kabuto#\x30\x5d\x00
+kabuto#ブラックビ-トル
+kuwagata#\x30\x5d\x00
+kuwagata#ブラックスタッグ
+\x34\x5e\x00
+ファ-ストエ-ス

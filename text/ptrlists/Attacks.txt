@@ -1,4 +1,6 @@
-(1, [203], ([None], [None]), [False])
+(1, [203], [(None, None)], [False], None, None)
+80
+32072
 ソ-ド
 ハンマ-
 ライフル

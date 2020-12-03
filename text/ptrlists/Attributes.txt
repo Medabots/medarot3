@@ -1,4 +1,6 @@
-(1, [203], ([None], [None]), [False])
+(1, [203], [(None, None)], [False], None, None)
+48
+26188
 そくど
 いリょく
 しょうじょう

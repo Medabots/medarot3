@@ -1,4 +1,6 @@
-(1, [203], ([None], [None]), [False])
+(1, [203], [(None, None)], [False], None, None)
+16
+26266
 なぐる
 うつ
 がむしゃら
