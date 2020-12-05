@@ -240,16 +240,16 @@ EE:
 EF: 
 F0: 
 F1: Text Pointers 1
-F2: Text Pointers 2
-F3: Text 0
-F4: Text 1
-F5: Text 2
-F6: Text 3
-F7: Text 4
-F8: Text 5
-F9: (empty)
-FA: (empty)
-FB: (empty)
+F2: Text Pointers 2 / Pointer List Pointers / PtrList 0
+F3: PtrList 1
+F4: PtrList 2
+F5: PtrList 3
+F6: Text 0
+F7: Text 1
+F8: Text 2
+F9: Text 3
+FA: Text 4
+FB: Text 5
 FC: (empty)
 FD: (empty)
 FE: Patch-specific 1bpp gfx

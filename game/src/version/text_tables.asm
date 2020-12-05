@@ -79,28 +79,29 @@ TextSection36:
   INCBIN cTextSection36
 TextSection37:
   INCBIN cTextSection37
+; F2:5E4B, start of PtrList Pointer section
 
-SECTION "Text0", ROMX[$4000], BANK[$F3]
+SECTION "Text0", ROMX[$4000], BANK[$F6]
 Text0:
   INCBIN cText0
 
-SECTION "Text1", ROMX[$4000], BANK[$F4]
+SECTION "Text1", ROMX[$4000], BANK[$F7]
 Text1:
   INCBIN cText1
 
-SECTION "Text2", ROMX[$4000], BANK[$F5]
+SECTION "Text2", ROMX[$4000], BANK[$F8]
 Text2:
   INCBIN cText2
 
-SECTION "Text3", ROMX[$4000], BANK[$F6]
+SECTION "Text3", ROMX[$4000], BANK[$F9]
 Text3:
   INCBIN cText3
 
-SECTION "Text4", ROMX[$4000], BANK[$F7]
+SECTION "Text4", ROMX[$4000], BANK[$FA]
 Text4:
   INCBIN cText4
 
-SECTION "Text5", ROMX[$4000], BANK[$F8]
+SECTION "Text5", ROMX[$4000], BANK[$FB]
 Text5:
   INCBIN cText5
 
