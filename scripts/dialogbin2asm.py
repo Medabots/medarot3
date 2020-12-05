@@ -14,6 +14,7 @@ version_data_file = sys.argv[5]
 input_files = sys.argv[6:]
 
 BANK_MAX = 0x7fff
+TYPE_PREFIX = "Text"
 
 sections = {} # Available sections in the ROM to store data
 
@@ -31,21 +32,21 @@ for line in src.splitlines():
             ptr_table_offset = int(o[1].replace('ROMX','').replace('[','').replace(']','').replace('$','0x'), 16)
             bank = int(o[2].replace('BANK','').replace('[','').replace(']','').replace('$','0x'), 16)
         sections[name] = (bank, ptr_table_offset)
-        if name.startswith("Text"):
+        if name.startswith(TYPE_PREFIX):
             open(os.path.join(output_bin_dir, f"{name}.bin"), 'wb').close()
 
 # 'Text#' for text, 'Pointers' is where pointers should go
 # We assume 0x4000 is enough to cover all 3-byte pointers
 current_index = 0 # Text0
-current_bank = sections[f"Text{current_index}"][0]
-current_offset = sections[f"Text{current_index}"][1]
-current_file = os.path.join(output_bin_dir, f"Text{current_index}.bin")
+current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
+current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
+current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
 current_fp = None
 
 with open(output_file, 'w') as output:
     try:
         current_fp = open(current_file, 'wb')
-        output.write(f'cText{current_index}        EQUS "\\"{current_file}\\""\n')
+        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         for input_file in input_files:
             base_name = os.path.basename(input_file)
             output_path = os.path.join(output_bin_dir, base_name)
@@ -62,12 +63,12 @@ with open(output_file, 'w') as output:
                     if length + current_offset > BANK_MAX:
                         current_fp.close()
                         current_index += 1
-                        current_bank = sections[f"Text{current_index}"][0]
-                        current_offset = sections[f"Text{current_index}"][1]
-                        current_file = os.path.join(output_bin_dir, f"Text{current_index}.bin")
+                        current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
+                        current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
+                        current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
                         current_fp = open(current_file, 'wb')
                         assert length + current_offset < BANK_MAX, "Text is too long"
-                        output.write(f'cText{current_index}        EQUS "\\"{current_file}\\""\n')
+                        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
 
                     out_f.write(pack("<BH", current_bank, current_offset))
                     current_fp.write(in_f.read(length))
@@ -79,7 +80,7 @@ with open(output_file, 'w') as output:
             current_fp.close()
     
     current_index += 1
-    while f"Text{current_index}" in sections:
-        current_file = os.path.join(output_bin_dir, f"Text{current_index}.bin")
-        output.write(f'cText{current_index}        EQUS "\\"{current_file}\\""\n')
+    while f"{TYPE_PREFIX}{current_index}" in sections:
+        current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
+        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         current_index += 1
