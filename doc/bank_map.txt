@@ -240,7 +240,7 @@ EE:
 EF: 
 F0: 
 F1: Text Pointers 1
-F2: Text Pointers 2 / Pointer List Pointers / PtrList 0
+F2: Text Pointers 2 / Pointer List Pointers / PtrList 0 / Special pointer list handling code
 F3: PtrList 1
 F4: PtrList 2
 F5: PtrList 3

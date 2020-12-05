@@ -48,7 +48,8 @@ PtrListMedarots::
   INCBIN cMedarots
 ; F2:7C00, fixed
 
-SECTION "PtrList0", ROMX[$7C00], BANK[$F2]
+; 7C00 to 7CFF is dedicated to special code for handling pointer lists
+SECTION "PtrList0", ROMX[$7D00], BANK[$F2]
 PtrList0:
   INCBIN cPtrList0
 
