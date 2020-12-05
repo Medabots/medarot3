@@ -1,4 +1,4 @@
-Index[#version],Pointer[#version|],Original,Translated
+﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x220000,"<@LL,00,06>うっ...<CF><D1><@RL,01,02>あんた こんなやつに<CD>バカにされて くやしくないの!?<CF><D1><@RL,03,01>いじを 貝せてやれ<CD><&BUF0A>!<CF><D1><@RL,02,04>とっても 楽しいですよ♥<CF><D1><@LL,00,05>わ 分かったよ",
 001,0x220002,"<@LL,00,05>こ ここかな...?",
 002,0x220004,"ガシャン!<CF><D1><@RL,01,05>あっちゃ-<CF><D1><@RL,03,03>おいおい<CF><D1><@RL,02,05>だいじょうぶですかっ!",

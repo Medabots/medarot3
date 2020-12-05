@@ -26,7 +26,7 @@ kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
 assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
 ptr_names = utils.read_table(os.path.join(os.path.dirname(__file__), 'res', 'ptrs.tbl'), keystring=True)
 
-with open(input_file, 'r', encoding='utf-8') as fp:
+with open(input_file, 'r', encoding='utf-8-sig') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')
     header = next(reader, None)
     idx_index = header.index("Index[#version]")

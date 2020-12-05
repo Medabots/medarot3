@@ -1,0 +1,309 @@
+(2, [203, 203], [(7, 0), (10, 0)], [False, False], None, None)
+256
+21146
+RAP-11\xcb
+ウォンマスケット\xcb 
+PTL-11\xcb
+ヒドゥンバスタ-\xcb 
+EGL-01\xcb
+リ-クヘッド\xcb   
+HWK-01\xcb
+バ-ンヘッド\xcb   
+SWL-01\xcb
+ブラインドネス\xcb  
+PRN-01\xcb
+ロストレストア\xcb  
+RVN-01\xcb
+コベッタ-\xcb    
+CCD-01\xcb
+ビ-トサラウンド\xcb 
+GRH-01\xcb
+トップノットン\xcb  
+CHC-01\xcb
+アウトプラマ-\xcb  
+TJK-01\xcb
+コアヘッド\xcb    
+PCK-01\xcb
+インデコレ-タ-\xcb 
+SLN-11\xcb
+コンプライン\xcb  ア
+CNR-01\xcb
+オプトナ-ブ\xcb  ア
+PIC-01\xcb
+ディスポ-ズ\xcb  ア
+MQT-01\xcb
+スットル\xcb    ア
+PTM-01\xcb
+フォ-マウント\xcb ア
+JPT-01\xcb
+ジョビアン\xcb   ア
+CRN-01\xcb
+カインド\xcb    ア
+DFL-11\xcb
+ナオブアイソ-\xcb  
+FLS-01\xcb
+ウリボン\xcb     
+ISE-01\xcb
+シュリンプレス\xcb  
+MAN-01\xcb
+ソレナッシ-\xcb   
+CHS-01\xcb
+ディスカウンタ-\xcb 
+DGD-01\xcb
+ジェットブラック\xcb 
+QPD-01\xcb
+ラブリンク\xcb    
+VBL-01\xcb
+ゼロジ-\xcb     
+DVL-01\xcb
+ピキット\xcb     
+GAG-01\xcb
+エンダ-リン\xcb   
+WCH-11\xcb
+カイエン\xcb    ア
+SPN-01\xcb
+AAM\xcb     ア
+BCY-01\xcb
+マックスシャウト\xcbア
+MRS-01\xcb
+ボルケニィ\xcb   ア
+WEA-21\xcb
+デスブレイク\xcb   
+BOW-01\xcb
+ワ-シップ\xcb    
+TLB-01\xcb
+スレイタ-\xcb    
+MMT-01\xcb
+グレ-トバックル\xcb 
+SRC-01\xcb
+チェイサ-\xcb    
+IVP-01\xcb
+ハントヒュ-マン\xcb 
+HMS-01\xcb
+デフォミスティ\xcb  
+KBS-01\xcb
+ウィルスファング\xcb 
+DHN-01\xcb
+ヘッドレス\xcb    
+TIC-01\xcb
+トリッキ-\xcb    
+LOS-01\xcb
+モグリン\xcb     
+FLA-01\xcb
+トッピ-\xcb     
+FAW-01\xcb
+ロングフォ-ン\xcb  
+TMN-01\xcb
+トラップバッグ\xcb ア
+DRI-01\xcb
+ギャザ-\xcb    ア
+CRK-01\xcb
+ヴィオラ\xcb    ア
+ETH-01\xcb
+グラスウォ-タ-\xcbア
+KWG-21\xcb
+アンテナ\xcb     
+KBT-21\xcb
+ミサイル\xcb     
+DDO-01\xcb
+ハンタ-\xcb     
+KLN-01\xcb
+テンションアップ\xcb 
+KBT-31\xcb
+ミサイルかい\xcb   
+KBT-41\xcb
+プロミネンス\xcb   
+LHB-11\xcb
+ダ-リング\xcb    
+MWB-11\xcb
+フォ-リ-\xcb    
+TIR-11\xcb
+スノ-トファイア\xcb 
+BAN-11\xcb
+ゴッツイトサカン\xcb 
+DOG-21\xcb
+ヘッドバルカン\xcb  
+ALN-11\xcb
+オッドボディ\xcb   
+VER-01\xcb
+タ-ゲッタ-\xcb   
+FLL-01\xcb
+フリルン\xcb     
+KWG-36\xcb
+ブラックインコム\xcbア
+APL-01\xcb
+エアフライト\xcb   
+PGM-01\xcb
+パ-ルフィング\xcb  
+KRN-01\xcb
+シュイフトン\xcb   
+TKG-01\xcb
+アンマスク\xcb    
+KWG-31\xcb
+ツインインコム\xcb  
+STG-11\xcb
+インサルト\xcb    
+CHT-01\xcb
+イ-トアップ\xcb   
+WLF-01\xcb
+シタデ-ル\xcb    
+RCM-01\xcb
+スチ-ムボ-ド\xcb  
+KBT-31\xcb
+バリスタ-\xcb    
+KLN-11\xcb
+レインフォ-ス\xcb  
+KBT-36\xcb
+ブラックバリスタ\xcbア
+GNB-01\xcb
+スクラビンブラシ\xcb 
+BAF-01\xcb
+アングラ-\xcb    
+SRU-01\xcb
+フォ-スキャノン\xcb 
+SHP-01\xcb
+ウォ-タフリ-ト\xcb 
+GHL-01\xcb
+デキシ-\xcb     
+SLR-21\xcb
+エクスマイン\xcb  ア
+NAS-21\xcb
+ホ-リ-グランド\xcbア
+CAT-21\xcb
+アジルサ-キット\xcbア
+VAL-11\xcb
+フラックスミラ-\xcbア
+BNY-11\xcb
+パ-ソナルレイン\xcbア
+GRW-01\xcb
+トロピカ-ナ\xcb  ア
+CMP-11\xcb
+フラット\xcb    ア
+MIK-01\xcb
+ホワイトクロ-ス\xcbア
+MID-01\xcb
+チョ-カ-\xcb   ア
+LTS-01\xcb
+ディスミス\xcb   ア
+LDB-01\xcb
+ネビュラスリング\xcbア
+SUN-01\xcb
+コロナビ-ム\xcb  ア
+MON-01\xcb
+クレセントム-ン\xcbア
+HLY-01\xcb
+ガスクロ-ス\xcb  ア
+UNS-01\xcb
+エンプロ-ル\xcb  ア
+NEP-01\xcb
+ナグラック\xcb   ア
+PLT-01\xcb
+ハ-ディ\xcb    ア
+SZK-01\xcb
+ブレインミキサ-\xcbア
+PNT-01\xcb
+ストロングホ-ル\xcbア
+NEK-01\xcb
+プチオティティス\xcbア
+BYC-01\xcb
+パウダ-バ-ン\xcb ア
+IDL-01\xcb
+グレイスバイザ-\xcbア
+MTC-01\xcb
+マグライト\xcb    
+CVL-01\xcb
+ヘッドラダ-\xcb   
+KAB-01\xcb
+フ-リ-ヘア-\xcb  
+BST-01\xcb
+ショルディ\xcb    
+GRF-01\xcb
+ロングネック\xcb   
+CML-01\xcb
+モットレゼルブ\xcb  
+BIC-01\xcb
+ワンポイント\xcb   
+ECF-01\xcb
+ヘッドシェイク\xcb  
+CTP-01\xcb
+カミキラ-\xcb    
+HCT-01\xcb
+チェンジモルト\xcb  
+PLC-01\xcb
+パトロ-ルライト\xcb 
+RSC-01\xcb
+エマ-ジンライト\xcb 
+FFC-01\xcb
+ファイヤ-ライト\xcb 
+RAY-21\xcb
+バックビ-ム\xcb   
+GCT-01\xcb
+チェンジドレス\xcb ア
+VNS-01\xcb
+パ-フュ-ム\xcb  ア
+BRA-11\xcb
+アンチフライヤ-\xcb 
+TOT-21\xcb
+マウスレ-ザ-\xcb  
+HSC-01\xcb
+ノッペリン\xcb    
+STE-01\xcb
+エンプトセット\xcb  
+TOR-01\xcb
+スリ-アタック\xcb  
+MWO-01\xcb
+シズラ-\xcb     
+ESM-01\xcb
+イトマキ-\xcb    
+CCL-01\xcb
+コタメ-\xcb     
+EWM-01\xcb
+スクワ-ム\xcb    
+STN-01\xcb
+シャンプ-ハット\xcbア
+WHL-01\xcb
+フロ-ドウェイ\xcb  
+AMB-01\xcb
+ビスケス\xcb     
+SAM-01\xcb
+チムチムニ-\xcb   
+SEL-01\xcb
+ルラル-ラ-\xcb   
+CFS-01\xcb
+セイズモロジ-\xcb  
+EEL-01\xcb
+グリルエル\xcb    
+CRO-01\xcb
+ヘッドサ-パス\xcb  
+UPA-01\xcb
+ピラピラ\xcb     
+BBS-01\xcb
+グレ-トスワロ-\xcb 
+ARO-01\xcb
+アンモマウス\xcb   
+HLG-01\xcb
+ア-スパペット\xcb  
+JWB-01\xcb
+ブラッドサッカ-\xcb 
+PSK-01\xcb
+クラッシャ-\xcb   
+SHS-01\xcb
+ブルネック\xcb    
+CRP-01\xcb
+アップアイ\xcb    
+DLP-01\xcb
+アミノリンク\xcb  ア
+GFS-01\xcb
+モナカップ\xcb   ア
+TQN-01\xcb
+クロウザ-\xcb   ア
+DUC-01\xcb
+スワニ-\xcb    ア
+MRC-01\xcb
+アクアラング\xcb  ア
+TJO-01\xcb
+ベルディクト\xcb  ア
+BAY-03\xcb
+--------\xcb 
+BAY-03\xcb
+--------\xcbア
