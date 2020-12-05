@@ -1,0 +1,309 @@
+(2, [203, 203], [(7, 0), (10, 0)], [False, False], None, None)
+256
+24259
+RAP-12\xcb
+グラニュ-ブロ-\xcb 
+PTL-12\xcb
+リトルソ-ド\xcb   
+EGL-02\xcb
+リ-クバンドル\xcb  
+HWK-02\xcb
+バ-ンチュ-ブ\xcb  
+SWL-02\xcb
+ノットシ-\xcb    
+PRN-02\xcb
+ト-\xcb       
+RVN-02\xcb
+グリ-ド\xcb     
+CCD-02\xcb
+ビッグノイジ-\xcb  
+GRH-02\xcb
+リバイバ-\xcb    
+CHC-02\xcb
+ボイルダ-\xcb    
+TJK-02\xcb
+ピットグリップ\xcb  
+PCK-02\xcb
+サックアッパ-\xcb  
+SLN-12\xcb
+チミマフラ-\xcb  ア
+CNR-02\xcb
+タッチナ-ブ\xcb  ア
+PIC-02\xcb
+ワスタ-\xcb    ア
+MQT-02\xcb
+ブレイス\xcb    ア
+PTM-02\xcb
+スイッタブル\xcb  ア
+JPT-02\xcb
+ダスタ-\xcb    ア
+CRN-02\xcb
+ペイド\xcb     ア
+DFL-12\xcb
+フサ-\xcb      
+FLS-02\xcb
+バグフリル\xcb    
+ISE-02\xcb
+ニャンマ-\xcb    
+MAN-02\xcb
+カウンセラ-\xcb   
+CHS-02\xcb
+キャッチソ-サ-\xcb 
+DGD-02\xcb
+デスサイズ\xcb    
+QPD-02\xcb
+ラッキ-アロ-\xcb  
+VBL-02\xcb
+ウェイトレス\xcb   
+DVL-02\xcb
+プクット\xcb     
+GAG-02\xcb
+ペトリフィ\xcb    
+WCH-12\xcb
+フロッグボ-ル\xcb ア
+SPN-02\xcb
+ASM\xcb     ア
+BCY-02\xcb
+スクリ-マ-\xcb  ア
+MRS-02\xcb
+マウントヘムレン\xcbア
+WEA-22\xcb
+デスミサイル\xcb   
+BOW-02\xcb
+フォ-カ-\xcb    
+TLB-02\xcb
+ハ-モニカ\xcb    
+MMT-02\xcb
+バックレット\xcb   
+SRC-02\xcb
+レスドライブ\xcb   
+IVP-02\xcb
+ハントアニマル\xcb  
+HMS-02\xcb
+タイフィンガ-\xcb  
+KBS-02\xcb
+ホ-ルドファング\xcb 
+DHN-02\xcb
+ゾリゾン\xcb     
+TIC-02\xcb
+カミン\xcb      
+LOS-02\xcb
+サッシ-\xcb     
+FLA-02\xcb
+カッキ-\xcb     
+FAW-02\xcb
+ニッチフォ-ス\xcb  
+TMN-02\xcb
+トラップサック\xcb ア
+DRI-02\xcb
+トゥギャザ-\xcb  ア
+CRK-02\xcb
+ポッドスピ-カ-\xcbア
+ETH-02\xcb
+ライフウォ-タ-\xcbア
+KWG-22\xcb
+チャンバラソ-ド\xcb 
+KBT-22\xcb
+リボルバ-\xcb    
+DDO-02\xcb
+フレクサ-ソ-ド\xcb 
+KLN-02\xcb
+シュ-トバレル\xcb  
+KBT-32\xcb
+リボルバ-かい\xcb  
+KBT-42\xcb
+イグニッション\xcb  
+LHB-12\xcb
+アブザ-バ-\xcb   
+MWB-12\xcb
+スコッチ\xcb     
+TIR-12\xcb
+クラブコ-ル\xcb   
+BAN-12\xcb
+ライトメリケン\xcb  
+DOG-22\xcb
+リングライフル\xcb  
+ALN-12\xcb
+オッドハンド\xcb   
+VER-02\xcb
+スピ-ダ-\xcb    
+FLL-02\xcb
+パニクル\xcb     
+KWG-37\xcb
+ブラックバイス\xcb ア
+APL-02\xcb
+エアウィング\xcb   
+PGM-02\xcb
+ゴ-ルドフィング\xcb 
+KRN-02\xcb
+スト-ンクラップ\xcb 
+TKG-02\xcb
+ジャッジメント\xcb  
+KWG-32\xcb
+フォ-バイス\xcb   
+STG-12\xcb
+シンソ-ド\xcb    
+CHT-02\xcb
+ロ-カスト\xcb    
+WLF-02\xcb
+サプリケット\xcb   
+RCM-02\xcb
+スチ-ムド-リン\xcb 
+KBT-32\xcb
+ヒュ-ザ-\xcb    
+KLN-12\xcb
+シュ-トスフィア\xcb 
+KBT-37\xcb
+ブラックヒュ-ザ\xcbア
+GNB-02\xcb
+スチ-ルト-タス\xcb 
+BAF-02\xcb
+フ-フ\xcb      
+SRU-02\xcb
+プラクトラム\xcb   
+SHP-02\xcb
+ウォ-タホ-ル\xcb  
+GHL-02\xcb
+ロッタ-\xcb     
+SLR-22\xcb
+クレンレイト\xcb  ア
+NAS-22\xcb
+ドナ-カプセル\xcb ア
+CAT-22\xcb
+アジルジャブ\xcb  ア
+VAL-12\xcb
+トランスフィクサ\xcbア
+BNY-12\xcb
+ベジタリジュ-ス\xcbア
+GRW-02\xcb
+スプリンク\xcb   ア
+CMP-12\xcb
+ステップメ-ル\xcb ア
+MIK-02\xcb
+クリ-ンスタッフ\xcbア
+MID-02\xcb
+ミルクパン\xcb   ア
+LTS-02\xcb
+ケイリックス\xcb  ア
+LDB-02\xcb
+サンスタラ-\xcb  ア
+SUN-02\xcb
+ギアホイ-ル\xcb  ア
+MON-02\xcb
+ニュ-ム-ン\xcb  ア
+HLY-02\xcb
+シェイブアイス\xcb ア
+UNS-02\xcb
+フォ-ルダウン\xcb ア
+NEP-02\xcb
+ハルダ-\xcb    ア
+PLT-02\xcb
+ハンドルキ-\xcb  ア
+SZK-02\xcb
+ワイズフレ-クス\xcbア
+PNT-02\xcb
+リプレイサ-\xcb  ア
+NEK-02\xcb
+ネコパンチ\xcb   ア
+BYC-02\xcb
+ホワイトオニキス\xcbア
+IDL-02\xcb
+ビックリヨ-ヨ-\xcbア
+MTC-02\xcb
+フマフラ-\xcb    
+CVL-02\xcb
+ソコシャベル\xcb   
+KAB-02\xcb
+デサイダ-\xcb    
+BST-02\xcb
+デンデン\xcb     
+GRF-02\xcb
+インベスタ-\xcb   
+CML-02\xcb
+ファットストア\xcb  
+BIC-02\xcb
+ステップホ-\xcb   
+ECF-02\xcb
+ロ-スピ-ド\xcb   
+CTP-02\xcb
+ア-スクラウ\xcb   
+HCT-02\xcb
+カ-リ-ヘア\xcb   
+PLC-02\xcb
+アレスタ-\xcb    
+RSC-02\xcb
+スパ-ダ-\xcb    
+FFC-02\xcb
+ドレイナ-ジ\xcb   
+RAY-22\xcb
+アウェイビ-ム\xcb  
+GCT-02\xcb
+レンジングスキン\xcbア
+VNS-02\xcb
+ジャ-ポット\xcb  ア
+BRA-12\xcb
+グロ-ブラスタ-\xcb 
+TOT-22\xcb
+スリ-ブレ-ザ-\xcb 
+HSC-02\xcb
+ホ-サ-\xcb     
+STE-02\xcb
+スロ-セット\xcb   
+TOR-02\xcb
+スイ-ルアタック\xcb 
+MWO-02\xcb
+エレクトラ-\xcb   
+ESM-02\xcb
+ステッチャ\xcb    
+CCL-02\xcb
+スフィ-ル\xcb    
+EWM-02\xcb
+コンポスト\xcb    
+STN-02\xcb
+ル-プニング\xcb  ア
+WHL-02\xcb
+スプラッシュ\xcb   
+AMB-02\xcb
+ディソルバ-\xcb   
+SAM-02\xcb
+バイバインド\xcb   
+SEL-02\xcb
+キンキング\xcb    
+CFS-02\xcb
+トレモ-\xcb     
+EEL-02\xcb
+ピチロット\xcb    
+CRO-02\xcb
+オ-バ-ウェルム\xcb 
+UPA-02\xcb
+ヒュ-フィン\xcb   
+BBS-02\xcb
+エンベロンメント\xcb 
+ARO-02\xcb
+シュリンプハンド\xcb 
+HLG-02\xcb
+パペットケ-ブル\xcb 
+JWB-02\xcb
+オリエントパイプ\xcb 
+PSK-02\xcb
+デストラ-\xcb    
+SHS-02\xcb
+サプレス\xcb     
+CRP-02\xcb
+インコムペテンシ\xcb 
+DLP-02\xcb
+リタ-ナ-\xcb   ア
+GFS-02\xcb
+ウィッカ-ワ-ク\xcbア
+TQN-02\xcb
+アンプファ-\xcb  ア
+DUC-02\xcb
+フェザ-メンド\xcb ア
+MRC-02\xcb
+ハ-プ-ン\xcb   ア
+TJO-02\xcb
+パニッシャ-\xcb  ア
+BAY-03\xcb
+--------\xcb 
+BAY-03\xcb
+--------\xcbア

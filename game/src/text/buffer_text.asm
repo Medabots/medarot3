@@ -41,25 +41,25 @@ BufferTextFromList::
   ret 
 
 .table
-  dbw $27, $44FC
-  dbw $23, $4671
-  dbw $23, $529A
-  dbw $23, $5EC3
-  dbw $23, $6AEC
-  dbw $22, $65C0
-  dbw $22, $664C
-  dbw $22, $669A
-  dbw $22, $66DC
-  dbw $22, $68BC
-  dbw $22, $6979
-  dbw $23, $795B
-  dbw $22, $6901
-  dbw $23, $7715
-  dbw $20, $4000
-  dbw $20, $4328
-  dbw $20, $4EA4
-  dbw $23, $7A23
-  dbw $23, $7A80
-  dbw $21, $4000
-  dbw $21, $461B
-  dbw $23, $4000
+  dbw BANK(PtrListUnknown00), PtrListUnknown00
+  dbw BANK(PtrListPartsHead), PtrListPartsHead
+  dbw BANK(PtrListPartsRArm), PtrListPartsRArm
+  dbw BANK(PtrListPartsLArm), PtrListPartsLArm
+  dbw BANK(PtrListPartsLegs), PtrListPartsLegs
+  dbw BANK(PtrListAttributes), PtrListAttributes
+  dbw BANK(PtrListSkills), PtrListSkills
+  dbw BANK(PtrListMovement), PtrListMovement
+  dbw BANK(PtrListUnknown08), PtrListUnknown08
+  dbw BANK(PtrListPersonalities), PtrListPersonalities
+  dbw BANK(PtrListMedaforce), PtrListMedaforce
+  dbw BANK(PtrListMedals), PtrListMedals
+  dbw BANK(PtrListUnknown0C), PtrListUnknown0C
+  dbw BANK(PtrListItems), PtrListItems
+  dbw BANK(PtrListUnknown0E), PtrListUnknown0E
+  dbw BANK(PtrListMedarotters), PtrListMedarotters
+  dbw BANK(PtrListUnknown10), PtrListUnknown10
+  dbw BANK(PtrListTerrain), PtrListTerrain
+  dbw BANK(PtrListAttacks), PtrListAttacks
+  dbw BANK(PtrListCharacterNames), PtrListCharacterNames
+  dbw BANK(PtrListUnknown14), PtrListUnknown14
+  dbw BANK(PtrListMedarots), PtrListMedarots

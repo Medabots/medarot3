@@ -20,10 +20,10 @@ TSET_SRC_TYPE := 2bpp
 TSET_TYPE := malias
 TMAP_TYPE := tmap
 TEXT_TYPE := txt
-LISTS_TYPE := bin
 CSV_TYPE = csv
 CREDITS_TYPE := bin
 DIALOG_TYPE := bin
+PTRLIST_TYPE := bin
 TABLE_TYPE := tbl
 
 # Directories
@@ -40,11 +40,12 @@ VERSION_OUT := $(BUILD)/version
 
 TILESET_OUT := $(BUILD)/tilesets
 TILEMAP_OUT := $(BUILD)/tilemaps
-PTRLISTS_OUT := $(BUILD)/ptrlists
-LISTS_OUT := $(BUILD)/lists
 
 DIALOG_INT := $(BUILD)/intermediate/dialog
 DIALOG_OUT := $(BUILD)/dialog
+
+PTRLISTS_INT := $(BUILD)/intermediate/ptrlists
+PTRLISTS_OUT := $(BUILD)/ptrlists
 
 # Game Source Directories
 SRC := $(GAME)/src
@@ -53,6 +54,7 @@ COMMON := $(SRC)/common
 
 # Text Directories
 DIALOG_TEXT := $(TEXT)/dialog
+PTRLISTS_TEXT := $(TEXT)/ptrlists
 
 # Graphics Directories
 TILESET_GFX := $(GFX)/tilesets
@@ -93,6 +95,7 @@ TILESETS_COMMON := $(call FILTER_OUT,_,$(TILESETS))
 TILESETS_VERSIONED := $(call FILTER,_,$(TILESETS))
 # A bit of a hack for the tilesets with shifted pointers
 TILESETS_GAMEVERSION := $(call FILTER,GAMEVERSION,$(TILESETS))
+PTRLISTS := $(notdir $(basename $(wildcard $(PTRLISTS_TEXT)/*.$(TEXT_TYPE))))
 
 # Intermediates for common sources (not in version folder)
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
@@ -108,6 +111,7 @@ gfx_ADDITIONAL :=
 text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_PLACEHOLDER_VERSION.asm
 version_tileset_table_ADDITIONAL := $(TILESET_FILES_COMMON) $(TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
+version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEHOLDER_VERSION.asm
 
 .PHONY: $(VERSIONS) all clean default
 default: kabuto
@@ -154,28 +158,40 @@ $(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT
 $(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(TILESET_FILES_VERSIONED))
 	touch $@
 
-# build/dialog/intermediate/*.bin from dialog csv files
+# build/intermediate/dialog/*.bin from dialog csv files
 .SECONDEXPANSION:
 $(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(CSV_TYPE) | $(DIALOG_INT)
 	$(PYTHON) $(SCRIPT)/dialog2bin.py $@ $^ "Original" $(subst $(subst .$(CSV_TYPE),,$(<F))_,,$*)
 
-# Use the intermediate files to generate the final dialog files
+# build/intermediate/ptrlists/*.bin from dialog csv files
+.SECONDEXPANSION:
+$(PTRLISTS_INT)/%.$(PTRLIST_TYPE): $(PTRLISTS_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(TEXT_TYPE) | $(PTRLISTS_INT)
+	$(PYTHON) $(SCRIPT)/ptrlist2bin.py $@ $< $(subst $(subst .$(TEXT_TYPE),,$(<F))_,,$*)
+
+# Use the intermediate files to generate the final dialog and ptrlist files
 # Make has trouble with multiple files in a single rule, so we use the asm file to indicate these files were generated
 # NOTE: dialogbin2asm specifically is different between master and translation branches
 .SECONDEXPANSION:
 $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/version/%/text_tables.asm $$(foreach FILE,$(DIALOG),$(DIALOG_INT)/$$(FILE)_$$*.$(DIALOG_TYPE)) | $(DIALOG_OUT)
 	$(PYTHON) $(SCRIPT)/dialogbin2asm.py $@ $(DIALOG_OUT) $* $^
 
+.SECONDEXPANSION:
+$(PTRLISTS_OUT)/ptrlist_data_constants_%.asm: $(SRC)/version/ptrlist_data.asm $(SRC)/version/%/ptrlist_data.asm $$(foreach FILE,$(PTRLISTS),$(PTRLISTS_INT)/$$(FILE)_$$*.$(PTRLIST_TYPE)) | $(PTRLISTS_OUT)
+	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(DIALOG_OUT) $* $^
+
 ### Dump Scripts
 
-.PHONY: dump dump_text dump_tilesets
-dump: dump_text dump_tilesets
+.PHONY: dump dump_text dump_tilesets dump_ptrlists
+dump: dump_text dump_tilesets dump_ptrlists
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_text.py
 
 dump_tilesets: | $(TILESET_GFX) $(TILESET_BIN) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py
+
+dump_ptrlists: | $(PTRLISTS_TEXT)
+	$(PYTHON) $(SCRIPT)/dump_ptrlists.py
 
 #Make directories if necessary
 $(BUILD):
@@ -204,3 +220,12 @@ $(TILESET_GFX):
 
 $(TILESET_OUT):
 	mkdir -p $(TILESET_OUT)
+
+$(PTRLISTS_TEXT):
+	mkdir -p $(PTRLISTS_TEXT)
+
+$(PTRLISTS_INT):
+	mkdir -p $(PTRLISTS_INT)
+
+$(PTRLISTS_OUT):
+	mkdir -p $(PTRLISTS_OUT)
