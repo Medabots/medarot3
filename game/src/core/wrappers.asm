@@ -63,6 +63,28 @@ WrapSetupPalswapAnimation::
   rst $18
   ret
 
+SECTION "Main Script Init Functions", ROM0[$347D]
+WrapInitiateMainScript::
+  call InitiateMainScript
+  rst $18
+  ret
+
+WrapInitiateMainScriptAlternate::
+  call InitiateMainScriptAlternate
+  rst $18
+  ret
+
+WrapMainScriptProcessor::
+  call MainScriptProcessor
+  rst $18
+  ret
+
+SECTION "List Buffering Wrapper", ROM0[$34DC]
+WrapBufferTextFromList::
+  call BufferTextFromList
+  rst $18
+  ret
+
 SECTION "Fade-related Wrappers 2", ROM0[$3513]
 WrapRestageDestinationBGPalettesForFade::
   call RestageDestinationBGPalettesForFade
@@ -73,3 +95,10 @@ WrapRestageDestinationOBPalettesForFade::
   call RestageDestinationOBPalettesForFade
   rst $18
   ret
+
+SECTION "Non-Kanji Character Drawing Wrapper", ROM0[$3765]
+WrapMainScriptDrawNonKanjiCharacter::
+  call MainScriptDrawNonKanjiCharacter
+  rst $18
+  ret
+
