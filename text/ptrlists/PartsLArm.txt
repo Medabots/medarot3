@@ -1,0 +1,309 @@
+(2, [203, 203], [(7, 0), (10, 0)], [False, False], None, None)
+256
+27372
+RAP-13\xcb
+ドロップブロ-\xcb  
+PTL-13\xcb
+ヤンクソ-ド\xcb   
+EGL-03\xcb
+リ-クボックス\xcb  
+HWK-03\xcb
+バ-ンカプセル\xcb  
+SWL-03\xcb
+ナットルック\xcb   
+PRN-03\xcb
+ティッパ-\xcb    
+RVN-03\xcb
+クレ-バ-\xcb    
+CCD-03\xcb
+ラ-ジノイジ-\xcb  
+GRH-03\xcb
+コンジュ-マ-\xcb  
+CHC-03\xcb
+フレイマ-\xcb    
+TJK-03\xcb
+ホ-ルハンドル\xcb  
+PCK-03\xcb
+サックアウタ-\xcb  
+SLN-13\xcb
+コ-ドマフラ-\xcb ア
+CNR-03\xcb
+フィ-ルナ-ブ\xcb ア
+PIC-03\xcb
+バイリ-\xcb    ア
+MQT-03\xcb
+インホ-ル\xcb   ア
+PTM-03\xcb
+ビ-スイット\xcb  ア
+JPT-03\xcb
+アッシュ\xcb    ア
+CRN-03\xcb
+リペイド\xcb    ア
+DFL-13\xcb
+フサフサ\xcb     
+FLS-03\xcb
+バグフリッタ-\xcb  
+ISE-03\xcb
+ゲ-マ-\xcb     
+MAN-03\xcb
+インバリッド\xcb   
+CHS-03\xcb
+キャッチプレ-ト\xcb 
+DGD-03\xcb
+デスシックル\xcb   
+QPD-03\xcb
+ハッピ-アロ-\xcb  
+VBL-03\xcb
+ウェイタ-\xcb    
+DVL-03\xcb
+ペケット\xcb     
+GAG-03\xcb
+タ-ンスト-ン\xcb  
+WCH-13\xcb
+ト-ドボ-ル\xcb  ア
+SPN-03\xcb
+ASBM\xcb    ア
+BCY-03\xcb
+シュリ-カ-\xcb  ア
+MRS-03\xcb
+マウントボ-ダ-\xcbア
+WEA-23\xcb
+デスレ-ザ-\xcb   
+BOW-03\xcb
+スライダ-\xcb    
+TLB-03\xcb
+スピネット\xcb    
+MMT-03\xcb
+バックラッシュ\xcb  
+SRC-03\xcb
+センスドライブ\xcb  
+IVP-03\xcb
+ハントプラント\xcb  
+HMS-03\xcb
+タイハンド\xcb    
+KBS-03\xcb
+メルトファング\xcb  
+DHN-03\xcb
+ハンドチャ-ジ\xcb  
+TIC-03\xcb
+チュ-イン\xcb    
+LOS-03\xcb
+プッスン\xcb     
+FLA-03\xcb
+カッキキ-\xcb    
+FAW-03\xcb
+サッチフォ-ス\xcb  
+TMN-03\xcb
+トラップポ-チ\xcb ア
+DRI-03\xcb
+ギャザリング\xcb  ア
+CRK-03\xcb
+ポッドスピ-チ\xcb ア
+ETH-03\xcb
+リブウォ-タ-\xcb ア
+KWG-23\xcb
+ピコペコハンマ-\xcb 
+KBT-23\xcb
+サブマシンガン\xcb  
+DDO-03\xcb
+ストロ-ハンマ-\xcb 
+KLN-03\xcb
+レンジシュ-タ-\xcb 
+KBT-33\xcb
+マシンガンかい\xcb  
+KBT-43\xcb
+エクスプロ-ド\xcb  
+LHB-13\xcb
+ブロウパイプ\xcb   
+MWB-13\xcb
+リンクス\xcb     
+TIR-13\xcb
+ストライクコ-ル\xcb 
+BAN-13\xcb
+レフトメリケン\xcb  
+DOG-23\xcb
+ロ-ルバレル\xcb   
+ALN-13\xcb
+オッドア-ム\xcb   
+VER-03\xcb
+クイックル\xcb    
+FLL-03\xcb
+ロスタ-\xcb     
+KWG-38\xcb
+ブラックビ-ト\xcb ア
+APL-03\xcb
+エアフィン\xcb    
+PGM-03\xcb
+シルバ-フィング\xcb 
+KRN-03\xcb
+ゴ-ルデンロッド\xcb 
+TKG-03\xcb
+ディシジョン\xcb   
+KWG-33\xcb
+インテンスビ-ト\xcb 
+STG-13\xcb
+ソリッドハンマ-\xcb 
+CHT-03\xcb
+コンジュ-ム\xcb   
+WLF-03\xcb
+オ-キシリィ\xcb   
+RCM-03\xcb
+スチ-ムパイプ\xcb  
+KBT-33\xcb
+ブラスタ-\xcb    
+KLN-13\xcb
+ダクトシュ-タ-\xcb 
+KBT-38\xcb
+ブラックブラスタ\xcbア
+GNB-03\xcb
+アイアンタ-トル\xcb 
+BAF-03\xcb
+アンガス\xcb     
+SRU-03\xcb
+プラクトピック\xcb  
+SHP-03\xcb
+ウォ-タポ-ト\xcb  
+GHL-03\xcb
+スポイラ-\xcb    
+SLR-23\xcb
+ファイヤ-ア-ム\xcbア
+NAS-23\xcb
+モバイルカプセル\xcbア
+CAT-23\xcb
+アジルブロ-\xcb  ア
+VAL-13\xcb
+グレイスシ-ルド\xcbア
+BNY-13\xcb
+フル-ツジュ-ス\xcbア
+GRW-03\xcb
+ユニシャベル\xcb  ア
+CMP-13\xcb
+ステップフィ\xcb  ア
+MIK-03\xcb
+ティア-プレ-ト\xcbア
+MID-03\xcb
+フライパン\xcb   ア
+LTS-03\xcb
+スポ-ン\xcb    ア
+LDB-03\xcb
+サンスタリ-\xcb  ア
+SUN-03\xcb
+カグホイ-ル\xcb  ア
+MON-03\xcb
+フルム-ン\xcb   ア
+HLY-03\xcb
+クリップアイス\xcb ア
+UNS-03\xcb
+ホ-ルドダウン\xcb ア
+NEP-03\xcb
+ホイック\xcb    ア
+PLT-03\xcb
+ハンドルゲ-ト\xcb ア
+SZK-03\xcb
+ワイズオ-プン\xcb ア
+PNT-03\xcb
+エフェクティ-ン\xcbア
+NEK-03\xcb
+ネコグロ-ブ\xcb  ア
+BYC-03\xcb
+ストリップクロ-\xcbア
+IDL-03\xcb
+マ-ダ-ヨ-ヨ-\xcbア
+MTC-03\xcb
+ノアボイド\xcb    
+CVL-03\xcb
+シャクレ-ン\xcb   
+KAB-03\xcb
+アクティング\xcb   
+BST-03\xcb
+ドンドン\xcb     
+GRF-03\xcb
+インスペクタ-\xcb  
+CML-03\xcb
+ファットセ-ブ\xcb  
+BIC-03\xcb
+ペダルホ-\xcb    
+ECF-03\xcb
+ハイスピ-ド\xcb   
+CTP-03\xcb
+ア-スクリ-プ\xcb  
+HCT-03\xcb
+キンキ-ヘア\xcb   
+PLC-03\xcb
+キャプチャ-\xcb   
+RSC-03\xcb
+レスキュ-\xcb    
+FFC-03\xcb
+ディスチャ-ジ\xcb  
+RAY-23\xcb
+フリ-ビ-ム\xcb   
+GCT-03\xcb
+アテンダ-スキン\xcbア
+VNS-03\xcb
+ジャグポット\xcb  ア
+BRA-13\xcb
+グロ-マッシャ-\xcb 
+TOT-23\xcb
+レストレ-ザ-\xcb  
+HSC-03\xcb
+ショ-サ-\xcb    
+STE-03\xcb
+ダンプセット\xcb   
+TOR-03\xcb
+トリプアタック\xcb  
+MWO-03\xcb
+マグネッティ-\xcb  
+ESM-03\xcb
+スピコン\xcb     
+CCL-03\xcb
+バルブ\xcb      
+EWM-03\xcb
+マニュレ\xcb     
+STN-03\xcb
+フ-プニング\xcb  ア
+WHL-03\xcb
+スプライン\xcb    
+AMB-03\xcb
+ミュセリッジ\xcb   
+SAM-03\xcb
+タイタイアップ\xcb  
+SEL-03\xcb
+モナモナ-チ\xcb   
+CFS-03\xcb
+テンブロ-\xcb    
+EEL-03\xcb
+ヒポポス\xcb     
+CRO-03\xcb
+オ-バ-パワ-\xcb  
+UPA-03\xcb
+サムフィン\xcb    
+BBS-03\xcb
+サラウンディング\xcb 
+ARO-03\xcb
+シュリンプア-ム\xcb 
+HLG-03\xcb
+パペットワイヤ-\xcb 
+JWB-03\xcb
+オリエントハ-プ\xcb 
+PSK-03\xcb
+デモリッシュ\xcb   
+SHS-03\xcb
+レプレス\xcb     
+CRP-03\xcb
+インネフシンテイ\xcb 
+DLP-03\xcb
+ゲットバック\xcb  ア
+GFS-03\xcb
+バスケットワ-ク\xcbア
+TQN-03\xcb
+インクリ-ズ\xcb  ア
+DUC-03\xcb
+フェザ-ダ-ン\xcb ア
+MRC-03\xcb
+ランサ-\xcb    ア
+TJO-03\xcb
+ラストストライク\xcbア
+BAY-03\xcb
+--------\xcb 
+BAY-03\xcb
+--------\xcbア

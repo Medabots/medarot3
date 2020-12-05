@@ -1,0 +1,309 @@
+(2, [203, 203], [(7, 0), (10, 0)], [False, False], None, None)
+256
+30485
+RAP-14\xcb
+エアポケット\xcb   
+PTL-14\xcb
+アリアルレッグ\xcb  
+EGL-04\xcb
+フライイ-ガ-\xcb  
+HWK-04\xcb
+フライフォ-ン\xcb  
+SWL-04\xcb
+スパロ-テイル\xcb  
+PRN-04\xcb
+ツカモリ\xcb     
+RVN-04\xcb
+デュアルウォ-ク\xcb 
+CCD-04\xcb
+ピスピス\xcb     
+GRH-04\xcb
+ホッパ-\xcb     
+CHC-04\xcb
+デベロッパ-\xcb   
+TJK-04\xcb
+チェンジブレ-ド\xcb 
+PCK-04\xcb
+フォルダ-\xcb    
+SLN-14\xcb
+ソンガ-\xcb    ア
+CNR-04\xcb
+ウィ-カ-\xcb   ア
+PIC-04\xcb
+フラッシ-\xcb   ア
+MQT-04\xcb
+ストア-\xcb    ア
+PTM-04\xcb
+サマ-ブラウン\xcb ア
+JPT-04\xcb
+ウォ-タフォ-ル\xcbア
+CRN-04\xcb
+クレ-ン\xcb    ア
+DFL-14\xcb
+フユ-ンバッグ\xcb  
+FLS-04\xcb
+ド-ナツテン\xcb   
+ISE-04\xcb
+シュリンプン\xcb   
+MAN-04\xcb
+コダカラン\xcb    
+CHS-04\xcb
+オカッケ-\xcb    
+DGD-04\xcb
+カタッポ-\xcb    
+QPD-04\xcb
+ストレッチャ\xcb   
+VBL-04\xcb
+アンドアゲイン\xcb  
+DVL-04\xcb
+ポコット\xcb     
+GAG-04\xcb
+キ-スト-ン\xcb   
+WCH-14\xcb
+パンタロン\xcb   ア
+SPN-04\xcb
+AATC\xcb    ア
+BCY-04\xcb
+テピッドウィンド\xcbア
+MRS-04\xcb
+マスタッチ\xcb   ア
+WEA-24\xcb
+デスクロ-ラ-\xcb  
+BOW-04\xcb
+ペタヒ-ル\xcb    
+TLB-04\xcb
+スキュラ\xcb     
+MMT-04\xcb
+ザッツミ-ト\xcb   
+SRC-04\xcb
+フォ-ピ-ス\xcb   
+IVP-04\xcb
+ロ-ト\xcb      
+HMS-04\xcb
+ア-ンノ\xcb     
+KBS-04\xcb
+タイトルドア-\xcb  
+DHN-04\xcb
+スカルホ-ス\xcb   
+TIC-04\xcb
+マタトリッキ-\xcb  
+LOS-04\xcb
+マタモグリン\xcb   
+FLA-04\xcb
+マタトッピ-\xcb   
+FAW-04\xcb
+キッカ-\xcb     
+TMN-04\xcb
+セグメンタ-\xcb  ア
+DRI-04\xcb
+スティメント\xcb  ア
+CRK-04\xcb
+ジャンプレッグ\xcb ア
+ETH-04\xcb
+スペ-スシップ\xcb ア
+KWG-24\xcb
+タタッカ-\xcb    
+KBT-24\xcb
+オチツカ-\xcb    
+DDO-04\xcb
+シャ-プエッジ\xcb  
+KLN-04\xcb
+アブダクタ-\xcb   
+KBT-34\xcb
+オチツカ-かい\xcb  
+KBT-44\xcb
+ファイヤワ-ク\xcb  
+LHB-14\xcb
+インコ-レント\xcb  
+MWB-14\xcb
+ク-ルダウン\xcb   
+TIR-14\xcb
+ダッシュレッグ\xcb  
+BAN-14\xcb
+ワ-クシュ-ズ\xcb  
+DOG-24\xcb
+サポ-テイル\xcb   
+ALN-14\xcb
+オッドレッグ\xcb   
+VER-04\xcb
+スタンドアロ-\xcb  
+FLL-04\xcb
+ハリヤ-\xcb     
+KWG-39\xcb
+ブラックフラック\xcbア
+APL-04\xcb
+エアタ-ビン\xcb   
+PGM-04\xcb
+プラチナフィング\xcb 
+KRN-04\xcb
+キャメレパ-ド\xcb  
+TKG-04\xcb
+センテンス\xcb    
+KWG-34\xcb
+ウィンドフラック\xcb 
+STG-14\xcb
+キ-ンエッジ\xcb   
+CHT-04\xcb
+オンステディ\xcb   
+WLF-04\xcb
+スト-ムウォ-ク\xcb 
+RCM-04\xcb
+スチ-ムタ-ビン\xcb 
+KBT-34\xcb
+エンプレイス\xcb   
+KLN-14\xcb
+ミグレイタ-\xcb   
+KBT-39\xcb
+ブラックプレイス\xcbア
+GNB-04\xcb
+リタイヤ-\xcb    
+BAF-04\xcb
+ニ-キャップ\xcb   
+SRU-04\xcb
+キ-ル\xcb      
+SHP-04\xcb
+ウォ-タタ-ビン\xcb 
+GHL-04\xcb
+ランシッド\xcb    
+SLR-24\xcb
+ネイビ-ゲイル\xcb ア
+NAS-24\xcb
+エプロンドレス\xcb ア
+CAT-24\xcb
+ボ-クイック\xcb  ア
+VAL-14\xcb
+パラティマスタ-\xcbア
+BNY-14\xcb
+アサイドメ-ル\xcb ア
+GRW-04\xcb
+ドンソック\xcb   ア
+CMP-14\xcb
+マイフィ-ト\xcb  ア
+MIK-04\xcb
+ハカマ\xcb     ア
+MID-04\xcb
+ピニ-\xcb     ア
+LTS-04\xcb
+ブラッキ-\xcb   ア
+LDB-04\xcb
+スリ-スタ-\xcb  ア
+SUN-04\xcb
+サンシャイン\xcb  ア
+MON-04\xcb
+キンコン\xcb    ア
+HLY-04\xcb
+アミノス\xcb    ア
+UNS-04\xcb
+アイシクル\xcb   ア
+NEP-04\xcb
+エクスプレッサ-\xcbア
+PLT-04\xcb
+エモ-ション\xcb  ア
+SZK-04\xcb
+フラワ-パ-ラ-\xcbア
+PNT-04\xcb
+レオパルス\xcb   ア
+NEK-04\xcb
+ニャンマタ\xcb   ア
+BYC-04\xcb
+ドランカ-\xcb   ア
+IDL-04\xcb
+モ-ドスカ-ト\xcb ア
+MTC-04\xcb
+オクタ-ン\xcb    
+CVL-04\xcb
+ド-ザ-\xcb     
+KAB-04\xcb
+フラワ-ロ-ド\xcb  
+BST-04\xcb
+チャングルマ\xcb   
+GRF-04\xcb
+ワイルダ-\xcb    
+CML-04\xcb
+サンドバギ-\xcb   
+BIC-04\xcb
+シャリ-ン\xcb    
+ECF-04\xcb
+コントボックス\xcb  
+CTP-04\xcb
+ストリンガ-\xcb   
+HCT-04\xcb
+クロ-ラ-\xcb    
+PLC-04\xcb
+パ-サ-\xcb     
+RSC-04\xcb
+リ-チャ-\xcb    
+FFC-04\xcb
+カンバッカ-\xcb   
+RAY-24\xcb
+ストリ-トバギ-\xcb 
+GCT-04\xcb
+キャタピ-\xcb   ア
+VNS-04\xcb
+デイブレイク\xcb  ア
+BRA-14\xcb
+ア-スレッグ\xcb   
+TOT-24\xcb
+デュアルタンク\xcb  
+HSC-04\xcb
+キッショ-\xcb    
+STE-04\xcb
+ナロ-レッグ\xcb   
+TOR-04\xcb
+クロ-ズレッグ\xcb  
+MWO-04\xcb
+クイッククッカ-\xcb 
+ESM-04\xcb
+モチテ-\xcb     
+CCL-04\xcb
+ロ-ルキャタピ-\xcb 
+EWM-04\xcb
+アンデリ-ト\xcb   
+STN-04\xcb
+アウトライナ-\xcb ア
+WHL-04\xcb
+ハイタイド\xcb    
+AMB-04\xcb
+フレイビ-\xcb    
+SAM-04\xcb
+プロクトロジ-\xcb  
+SEL-04\xcb
+タマワシ-\xcb    
+CFS-04\xcb
+キャットフィ-\xcb  
+EEL-04\xcb
+サ-フェイス\xcb   
+CRO-04\xcb
+ショウライナ-\xcb  
+UPA-04\xcb
+エクシ-ド\xcb    
+BBS-04\xcb
+レイクダスタ-\xcb  
+ARO-04\xcb
+バンピィフラット\xcb 
+HLG-04\xcb
+メニ-スレンダ-\xcb 
+JWB-04\xcb
+アクアクロッチ\xcb  
+PSK-04\xcb
+スケ-タ-\xcb    
+SHS-04\xcb
+ロ-ルテイル\xcb   
+CRP-04\xcb
+フレクスクリュ-\xcb 
+DLP-04\xcb
+フリッパ-\xcb   ア
+GFS-04\xcb
+ライトフリル\xcb  ア
+TQN-04\xcb
+キャリ-ハンド\xcb ア
+DUC-04\xcb
+エレガンシ-\xcb  ア
+MRC-04\xcb
+ハイドロフォイル\xcbア
+TJO-04\xcb
+ペナルティ\xcb   ア
+BAY-03\xcb
+--------\xcb 
+BAY-03\xcb
+--------\xcbア
