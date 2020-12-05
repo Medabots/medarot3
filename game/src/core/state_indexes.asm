@@ -25,3 +25,9 @@ IncSubStateIndex::
   inc a
   ld [W_CoreSubStateIndex], a
   ret
+
+SECTION "Increment Naming Screen SubSubstate Index", ROMX[$5838], BANK[$01]
+IncNamingScreenSubSubStateIndex::
+  ld hl, W_NamingScreenSubSubStateIndex
+  inc [hl]
+  ret
