@@ -275,7 +275,7 @@ for info in rom_info:
 
 for fn in texts:
     text = texts[fn]
-    with open(fn, "w", encoding="utf-8") as fp:
+    with open(fn, "w", encoding="utf-8-sig") as fp:
         writer = csv.writer(fp, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(["Index[#version]","Pointer[#version|]","Original","Translated"])
         for idx, p in enumerate(text):

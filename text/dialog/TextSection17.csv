@@ -1,4 +1,4 @@
-Index[#version],Pointer[#version|],Original,Translated
+﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x1f8000,"<@LL,00,04>あのさ ママ<CD>おねがいがあるんだけど<CF><D1><@RL,12,00>朝ごはんを 食ベてから!<CF><D1><@LL,00,00>ア-スモ-ルって ところに<CD>行きたいんだ<CF><D1>メダロットの大会があるんだよ",
 001,0x1f8002,"<@RL,12,00>ア-スモ-ル? 聞いたことないわね<CD>どこにあるの?  ",
 002,0x1f8004,"<@LL,00,05>さあ...<CF><D1><@RL,12,01>行き先も 知らないの?<CD>じゃ ダ.メ!",
