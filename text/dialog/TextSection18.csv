@@ -1,4 +1,4 @@
-Index[#version],Pointer[#version|],Original,Translated
+﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x1fc000,"<@RL,44,03>おっと! 大変だ!!<CD>早く きょうしつに もどらないと<CF><D1><@CC,FF,FF><&BUF0A>---!",
 001,0x1fc002,"<@LL,00,00>あっ! アリカだ!",
 002,0x1fc004,ドンッ!,
