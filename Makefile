@@ -67,6 +67,7 @@ gfx\
 text\
 link\
 titlemenu\
+pausemenu\
 nameentry
 
 # Toolchain
