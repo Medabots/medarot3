@@ -10,72 +10,167 @@ SECTION "Buffer Text From List", ROM0[$264B]
 BufferTextFromList::
   ; Arguments
   ;   b = pointer list index (idx)
-  ;   c = max length
+  ;   c = max length (for old buffer)
   ;   [W_ListItemIndexForBuffering]
   ;   [W_ListItemInitialOffsetForBuffering]
 
-  ; Get PointerList address from table
-  xor a
-  ld d, a
-  ld e, b
-  ld hl, .table
-  call .load_triple_byte_pointer_and_bankswap
+  ld a, BANK(BufferTextFromList_OldListHelper)
+  rst $10
+  call BufferTextFromList_OldListHelper
+  jr z, .skipCopyIntoOldBuffer
 
-  ; Get content's address from PointerList
+  ; Get list pointer location.
+  rst $10
   ld a, [W_ListItemIndexForBuffering]
-  ld e, a ; d is still 0
-  call .load_triple_byte_pointer_and_bankswap
-  ; Copy content into buffer
+  ld e, a
+  ; d should already be 0.
+  add hl, de
+  add hl, de
+  
+  ; Get list item address.
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
   ld a, [W_ListItemInitialOffsetForBuffering]
-  ld e, a ; d is still 0
+  ld e, a
+  ; d should already be 0.
   add hl, de
   ld de, W_ListItemBufferArea
+
 .copyLoop
   ld a, [hli]
   ld [de], a
   inc de
   dec c
   jr nz, .copyLoop
-  ret
 
-.load_triple_byte_pointer_and_bankswap
-  add hl, de ; 3 byte pointers
-  add hl, de
-  add hl, de 
-  ld a, [hli]
-  ld e, a ; We cannot switch banks until after retrieving the pointer
-  ld a, [hli] 
-  ld h, [hl]
-  ld l, a
-  ld a, e
+  ld a, BANK(BufferTextFromList_NewListHelper)
   rst $10
-  ret
 
-.table
-  dbw BANK(PtrListUnknown00), PtrListUnknown00
-  dbw BANK(PtrListPartsHead), PtrListPartsHead
-  dbw BANK(PtrListPartsRArm), PtrListPartsRArm
-  dbw BANK(PtrListPartsLArm), PtrListPartsLArm
-  dbw BANK(PtrListPartsLegs), PtrListPartsLegs
-  dbw BANK(PtrListAttributes), PtrListAttributes
-  dbw BANK(PtrListSkills), PtrListSkills
-  dbw BANK(PtrListMovement), PtrListMovement
-  dbw BANK(PtrListUnknown08), PtrListUnknown08
-  dbw BANK(PtrListPersonalities), PtrListPersonalities
-  dbw BANK(PtrListMedaforce), PtrListMedaforce
-  dbw BANK(PtrListMedals), PtrListMedals
-  dbw BANK(PtrListUnknown0C), PtrListUnknown0C
-  dbw BANK(PtrListItems), PtrListItems
-  dbw BANK(PtrListUnknown0E), PtrListUnknown0E
-  dbw BANK(PtrListMedarotters), PtrListMedarotters
-  dbw BANK(PtrListUnknown10), PtrListUnknown10
-  dbw BANK(PtrListTerrain), PtrListTerrain
-  dbw BANK(PtrListAttacks), PtrListAttacks
-  dbw BANK(PtrListCharacterNames), PtrListCharacterNames
-  dbw BANK(PtrListUnknown14), PtrListUnknown14
-  dbw BANK(PtrListMedarots), PtrListMedarots
+.skipCopyIntoOldBuffer
+  call BufferTextFromList_NewListHelper
+  rst $10
+  ld de, W_NewListItemBufferArea
+
+.newCopyLoop
+  ld a, [hli]
+  
+  cp $CB
+  jr z, .addTerminator
+  
+  ld [de], a
+  inc de
+  dec c
+  jr nz, .newCopyLoop
+
+.addTerminator
+  ld a, $CB
+  ld [de], a
+  ret
 
 .free
 REPT $26B7 - .free
   nop
 ENDR
+
+SECTION "Buffer Text From List Pointer Bank Code", ROMX[$7C00], BANK[$F2]
+BufferTextFromList_NewListHelper::
+  ; Get list pointer table address.
+  ld hl, .table
+  ld d, 0
+  ld e, b
+  add hl, de
+  add hl, de
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  
+  ; Get list pointer location.
+  ld a, [W_ListItemIndexForBuffering]
+  ld e, a
+  ; d should already be 0.
+  add hl, de
+  add hl, de
+  add hl, de
+
+  ; Get list item address.
+  ld a, [hli]
+  ld c, a
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, [W_ListItemInitialOffsetForBuffering]
+  ld e, a
+  ; d should already be 0.
+  add hl, de
+  ld a, c
+  ld c, $16
+  ret
+
+.table
+  dw PtrListUnknown00
+  dw PtrListPartsHead
+  dw PtrListPartsRArm
+  dw PtrListPartsLArm
+  dw PtrListPartsLegs
+  dw PtrListAttributes
+  dw PtrListSkills
+  dw PtrListMovement
+  dw PtrListUnknown08
+  dw PtrListPersonalities
+  dw PtrListMedaforce
+  dw PtrListMedals
+  dw PtrListUnknown0C
+  dw PtrListItems
+  dw PtrListUnknown0E
+  dw PtrListMedarotters
+  dw PtrListUnknown10
+  dw PtrListTerrain
+  dw PtrListAttacks
+  dw PtrListCharacterNames
+  dw PtrListUnknown14
+  dw PtrListMedarots
+
+BufferTextFromList_OldListHelper::
+  ; Get list pointer table address.
+  ld hl, .table
+  ld d, 0
+  ld e, b
+  add hl, de
+  add hl, de
+  add hl, de
+  ld a, [hli]
+  ; Don't copy from old buffer if bank is set to 0.
+  or a
+  ret z
+  ld e, a
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, e
+  ; We are assuming that the flags are untouched since the "or a" above. If not then add another "or a" here.
+  ret
+
+.table
+  dbw $27, $44FC
+  dbw $23, $4671
+  dbw $23, $529A
+  dbw $23, $5EC3
+  dbw $23, $6AEC
+  dbw $22, $65C0
+  dbw $22, $664C
+  dbw $22, $669A
+  dbw $22, $66DC
+  dbw $22, $68BC
+  dbw $22, $6979
+  dbw $23, $795B
+  dbw $22, $6901
+  dbw $23, $7715
+  dbw $20, $4000
+  dbw $20, $4328
+  dbw $20, $4EA4
+  dbw $23, $7A23
+  dbw $23, $7A80
+  dbw $21, $4000
+  dbw $21, $461B
+  dbw $23, $4000
