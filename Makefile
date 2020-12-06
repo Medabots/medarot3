@@ -60,7 +60,14 @@ PTRLISTS_TEXT := $(TEXT)/ptrlists
 TILESET_GFX := $(GFX)/tilesets
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
-MODULES := core gfx text link titlemenu nameentry
+# We explicitly separate this with newlines to avoid silly conflicts with tr_EN
+MODULES := \
+core\
+gfx\
+text\
+link\
+titlemenu\
+nameentry
 
 # Toolchain
 CC := rgbasm
