@@ -177,7 +177,7 @@ $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/
 
 .SECONDEXPANSION:
 $(PTRLISTS_OUT)/ptrlist_data_constants_%.asm: $(SRC)/version/ptrlist_data.asm $(SRC)/version/%/ptrlist_data.asm $$(foreach FILE,$(PTRLISTS),$(PTRLISTS_INT)/$$(FILE)_$$*.$(PTRLIST_TYPE)) | $(PTRLISTS_OUT)
-	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(DIALOG_OUT) $* $^
+	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(PTRLISTS_OUT) $* $^
 
 ### Dump Scripts
 
