@@ -68,6 +68,13 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
             continue
         elif not txt: # For translations, it's useful to mark the pointer when not translated
             txt = f"{pointer.partition('0x')[-1].upper()}"
+            try:
+                idx_original = header.index("Original")
+                txt_orig = line[idx_original]
+                # If the original has a special exit code, preserve it
+                txt += txt_orig[txt_orig.index("<*"):]
+            except ValueError:
+                pass
 
         # Keep track of the current offset
         # Unused text must be inserted but the offsets won't be recorded in the final output file
