@@ -68,7 +68,15 @@ PATCH_TILESET_GFX := $(TILESET_GFX)/patch
 PATCH_TILESET_OUT := $(TILESET_OUT)/patch
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
-MODULES := core gfx text link titlemenu patch
+# We explicitly separate this with newlines to avoid silly conflicts with tr_EN
+MODULES := \
+patch\
+core\
+gfx\
+text\
+link\
+titlemenu\
+nameentry
 
 # Toolchain
 CC := rgbasm
@@ -194,7 +202,7 @@ $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/
 
 .SECONDEXPANSION:
 $(PTRLISTS_OUT)/ptrlist_data_constants_%.asm: $(SRC)/version/ptrlist_data.asm $(SRC)/version/%/ptrlist_data.asm $$(foreach FILE,$(PTRLISTS),$(PTRLISTS_INT)/$$(FILE)_$$*.$(PTRLIST_TYPE)) | $(PTRLISTS_OUT)
-	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(DIALOG_OUT) $* $^
+	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(PTRLISTS_OUT) $* $^
 
 ## Patch Specific
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
