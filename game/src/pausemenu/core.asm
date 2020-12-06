@@ -8,11 +8,12 @@ PauseMenuStateMachine::
   jp hl
 
 .table
-  dw $40CB
+  dw PauseMenuInitState
   dw $40E4
   dw $4105
   dw PauseMenuMappingState
   dw $4144
+  ; Exit states.
   dw $417E
   dw $419E
   dw $41BF
@@ -24,8 +25,9 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
-  dw $41FD
-  dw $40AE
+  ; Option 1 states.
+  dw PauseMenuPrepareFadeOutState
+  dw PauseMenuFadeOutState
   dw $420F
   dw $40B9
   dw $422B
@@ -40,9 +42,10 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
+  ; Option 2 states.
   dw $42D6
-  dw $41FD
-  dw $40AE
+  dw PauseMenuPrepareFadeOutState
+  dw PauseMenuFadeOutState
   dw $420F
   dw $40B9
   dw $422B
@@ -56,6 +59,7 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
+  ; Option 3 states.
   dw $4308
   dw $4338
   dw $435D
@@ -72,8 +76,9 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
-  dw $41FD
-  dw $40AE
+  ; Option 4 states.
+  dw PauseMenuPrepareFadeOutState
+  dw PauseMenuFadeOutState
   dw $420F
   dw $40B9
   dw $422B
@@ -92,7 +97,27 @@ PauseMenuStateMachine::
   dw $47DC
   dw PauseMenuPlaceholderState
 
-SECTION "Pause Menu State Machine 2", ROMX[$4118], BANK[$06]
+SECTION "Pause Menu State Machine 2", ROMX[$40AE], BANK[$06]
+PauseMenuFadeOutState::
+  call $34E6
+  ld a, [W_PaletteAnimRunning]
+  or a
+  ret nz
+  jp IncSubStateIndex
+
+SECTION "Pause Menu State Machine 3", ROMX[$40CB], BANK[$06]
+PauseMenuInitState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, 1
+  ld [$C498], a
+  ld a, [W_ShadowREG_SCX]
+  ld [$C490], a
+  ld a, [W_ShadowREG_SCY]
+  ld [$C491], a
+  jp IncSubStateIndex
+
+SECTION "Pause Menu State Machine 4", ROMX[$4118], BANK[$06]
 PauseMenuMappingState::
   ld a, 1
   ld [$C4D9], a
@@ -112,5 +137,16 @@ PauseMenuMappingState::
   call $47F5
   jp IncSubStateIndex
 
-SECTION "Pause Menu State Machine 3", ROMX[$47F4], BANK[$06]
+SECTION "Pause Menu State Machine 5", ROMX[$41FD], BANK[$06]
+PauseMenuPrepareFadeOutState::
+  ld hl, 1
+  ld bc, 1
+  ld d, $BF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+SECTION "Pause Menu State Machine 6", ROMX[$47F4], BANK[$06]
 PauseMenuPlaceholderState::
+  ret
