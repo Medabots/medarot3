@@ -147,9 +147,10 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                         )
                         bintext.append(portrait_id)
                         bintext.append(expression)
-                    elif special_type == 'K': # Kanji
-                        bintext.append(0xD3)
-                        bintext.append(int(''.join(special_data), 16))
+                    # In tr_EN, D3 is reused as a universal linebreak
+                    #elif special_type == 'K': # Kanji
+                    #    bintext.append(0xD3)
+                    #    bintext.append(int(''.join(special_data), 16))
                     elif special_type == 'C' or special_type == 'D': # The remaining types are just single byte control codes
                         bintext.append(int( special_type + ''.join(special_data), 16))
                     else:
