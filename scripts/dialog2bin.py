@@ -153,6 +153,10 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                     #    bintext.append(int(''.join(special_data), 16))
                     elif special_type == 'C' or special_type == 'D': # The remaining types are just single byte control codes
                         bintext.append(int( special_type + ''.join(special_data), 16))
+                    elif special_type == 'f': # Font type
+                        s = ''.join(special_data)
+                        result.append(0xD4)
+                        result.append(special_data, 16) # f[00, FF], 0 is normal
                     else:
                         raise Exception(f"Unknown special_type {special_type} in {txt}")
             finally:
