@@ -130,6 +130,8 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                             s = ptr_names[s].lstrip('0x')
                         bintext.append(int(s[2:4], 16))
                         bintext.append(int(s[0:2], 16))
+                    elif special_type == '$': # Literal byte
+                        bintext.append(int(''.join(special_data), 16))
                     elif special_type == '@': # Portraits
                         s = (''.join(special_data)).split(',')
                         orientation = s[0]
