@@ -118,6 +118,9 @@ if($font>=$numberoffonts||$font<0) {
 $lastpage=trim($_REQUEST['e'].'');
 $lastpage=(intval($lastpage,10)>0?true:false);
 
+$windowless=trim($_REQUEST['ww'].'');
+$windowless=(intval($windowless,10)>0?true:false);
+
 $fontsloaded[$font]=true;
 
 $portrait=$_REQUEST['p'];
@@ -352,11 +355,32 @@ if($portraitexpression>63) {
 }
 
 // Set basic size and positioning variables.
+// Windowless prints text without the messagebox and without truncating text.
 
-$canvaswidth=160;
-$canvasheight=40;
 $portraithorizontaloffset=0;
 $windowverticaloffset=0;
+if($windowless) {
+	$canvaswidth=32;
+	$canvasheight=16;
+	$textverticaloffset=0;
+	$texthorizontaloffset=0;
+	$textlineheight=8;
+	
+	// Adapt canvas width to the content.
+	
+	foreach($linelengths as $linenum => $linelength) {
+		if($linelength>$canvaswidth) {
+			$canvaswidth=$linelength;
+		}
+	}
+	$canvaswidth=$canvaswidth-($canvaswidth%8)+8;
+} else {
+	$canvaswidth=160;
+	$canvasheight=40;
+	$textverticaloffset=8;
+	$texthorizontaloffset=8;
+	$textlineheight=16;
+}
 
 // Load portrait image.
 
@@ -367,6 +391,7 @@ if($showportrait) {
 	
 	$canvasheight+=32;
 	$windowverticaloffset+=32;
+	$textverticaloffset+=32;
 	
 	// Load the portrait image.
 	
@@ -434,10 +459,20 @@ $transparent=imagecolorallocatealpha($im,0,0,0,127);
 imagefill($im,0,0,$transparent);
 imagealphablending($im,true);
 
-// Insert window into canvas image.
+// Insert window into canvas image if applicable.
 
-imagecopy($im,$windowim,0,$windowverticaloffset,0,0,160,40);
-imagedestroy($windowim);
+if($windowless) {
+	
+	// Apply an opaque white background for windowless text unless we specify otherwise.
+	
+	if(!$lastpage) {
+		$white=imagecolorallocatealpha($im,255,255,255,0);
+		imagefilledrectangle($im,0,$windowverticaloffset,$canvaswidth-1,$canvasheight-1,$white);
+	}
+} else {
+	imagecopy($im,$windowim,0,$windowverticaloffset,0,0,160,40);
+	imagedestroy($windowim);
+}
 
 // Insert portrait into canvas image.
 
@@ -454,29 +489,29 @@ foreach($lines as $linenum => $linetext) {
 	$c=strlen($linetext);
 	while($i<$c) {
 
-		// If the length of the current printed text is 136 then don't draw.
+		// If the length of the current printed text is 136 then don't draw... unless in windowless mode.
 
-		if($linelengths[$linenum]<136) {
+		if($linelengths[$linenum]<136||$windowless) {
 			$char=$linetext[$i];
 			$charcode=ord($char);
 			if($charcode<0x80) {
 				
 				// Get font character width.
-				// If too long to fit then adjust width to fit remaining space.
+				// If too long to fit and not in windowless mode then adjust width to fit remaining space.
 				
 				$charwidth=$charwidthtable[$font][$charcode]+1;
-				if($linelengths[$linenum]+$charwidth>136) {
+				if($linelengths[$linenum]+$charwidth>136&&!$windowless) {
 					$charwidth=136-$linelengths[$linenum];
 				}
 				
 				// Calculate font character x and y positions divided by 8. 
 				
-				$charxindex=$charcode%16;
-				$charyindex=round(($charcode-$charxindex)/16);
+				$charxindex=$charcode%0x10;
+				$charyindex=round(($charcode-$charxindex)/0x10);
 				
 				// Draw font character to canvas image.
 				
-				imagecopy($im,$fonts[$font],$linelengths[$linenum]+8,$windowverticaloffset+($linenum*16)+8,$charxindex*8,$charyindex*8,$charwidth,8);
+				imagecopy($im,$fonts[$font],$linelengths[$linenum]+$texthorizontaloffset,($linenum*$textlineheight)+$textverticaloffset,$charxindex*8,$charyindex*8,$charwidth,8);
 				$linelengths[$linenum]+=$charwidth;
 			} else {
 				
