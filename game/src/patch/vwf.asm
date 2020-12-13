@@ -320,6 +320,8 @@ VWFDrawCharLoop::
   jp z, VWFControlCodeD2
   cp $D3
   jp z, VWFControlCodeD3
+  cp $D4
+  jp z, VWFControlCodeD4
   ; This character isn't in the font, so confine the index.
   and $7F
   ld [hl], a
@@ -600,6 +602,17 @@ VWFControlCodeD3:: ; Universal linebreak.
   or a
   jp z, VWFControlCodeCD
   jp VWFControlCodeCF
+
+VWFControlCodeD4:: ; Font switching code.
+  inc hl
+  ld a, [hl]
+  ld [W_VWFCurrentFont], a
+  ld b, 2
+  call MainScriptProgressXChars
+  pop hl
+  xor a
+  ld [W_MainScriptPauseTimer], a
+  jp MainScriptProcessorPutCharLoopCrossBank
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
