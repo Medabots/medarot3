@@ -314,7 +314,7 @@ PauseMenuDisplayMessageState::
   ld [$C4D9], a
   ld bc, $29
   ld a, 1
-  call $3487
+  call WrapMainScriptProcessor
   ld a, [W_MainScriptExitMode]
   or a
   ret z

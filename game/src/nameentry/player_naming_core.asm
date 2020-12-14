@@ -1,5 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "Player Name", WRAM0[$C656]
+W_PlayerName:: ds 1
+
 SECTION "Player Naming Screen State Machine", ROMX[$541A], BANK[$01]
 PlayerNamingScreenStateMachine::
   xor a
@@ -247,7 +250,7 @@ PlayerNamingScreenTextEntryState::
 
 PlayerNamingScreenCopyNameState::
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld de, $C656
+  ld de, W_PlayerName
   ld bc, 9
   call memcpy
   ld hl, W_NamingScreenEnteredTextBuffer
