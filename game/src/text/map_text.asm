@@ -49,3 +49,26 @@ PutStringFixedLength::
   dec b
   jr nz, .clearLoop
   ret
+
+SECTION "Get Tile-Based Centring Offset", ROM0[$25BD]
+GetTileBasedCentringOffset::
+  push hl
+  push bc
+  push af
+  ld h, 0
+
+.loop
+  ld a, [bc]
+  cp $CB
+  jr z, .terminatorFound
+  inc bc
+  inc h
+  jr .loop
+
+.terminatorFound
+  pop af
+  sub h
+  srl a
+  pop bc
+  pop hl
+  ret
