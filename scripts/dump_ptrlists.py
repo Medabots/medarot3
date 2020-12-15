@@ -31,7 +31,7 @@ list_map = ({
     'Medaforce' : ((0x22, 0x6979), 2, [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None),
     'Medals' : ((0x23, 0x795B), 1, [0xCB], [(None, None)], [False], None, None),
     'Unknown0C' : ((0x22, 0x6901), 1, [None], [(2, 0x00)], [True], None, None),
-    'Items' : ((0x23, 0x7715), 1, [0xCB], [(10, 0x00)], [False], None, None),
+    'Items' : ((0x23, 0x7715), 2, [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None),
     'Unknown0E' : ((0x20, 0x4000), 1, [None], [(4, 0x00)], [True], None, None),
     'Medarotters' : ((0x20, 0x4328), 2, [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None),
     'Unknown10' : ((0x20, 0x4EA4), 1, [None], [(35, 0x00)], [True], None, None),
