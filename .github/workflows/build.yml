@@ -1,0 +1,58 @@
+# Simply execute 'make' to verify things still build
+
+name: Build All
+
+on:
+  push:
+    branches:
+      - master
+      - 'tr_*'
+      - 'test_ci'
+  pull_request_target:
+    branches:
+      - master
+      - 'tr_*'
+      - 'test_ci'
+
+  # Allows running manually
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    container: docker://variantxyz/rgbds-20200806:cb4fbdfcd534e43a5f8504b405acd7b8b29f5001
+
+    steps:
+      - name: List versions
+        run: |
+          git --version
+          python --version
+          rgbasm --version
+          rgblink --version
+          rgbgfx --version
+
+      - name: Checkout main repository
+        uses: actions/checkout@v2
+        with:
+          path: 'medarot3'
+
+      - name: Checkout baserom repository
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ secrets.BASEROM3_REPOSITORY }}
+          ssh-key: ${{ secrets.BASEROM3_KEY }}
+          path: 'baserom'
+
+      - name: Copy baserom into main repository
+        run: |
+          cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
+
+      - name: Make all
+        working-directory: 'medarot3'
+        run: |
+          make -j all
+
+      - name: Verify no new untracked files were added
+        working-directory: 'medarot3'
+        run: |
+          git diff --quiet --exit-code && exit 0 || exit 1
