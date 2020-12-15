@@ -1,3 +1,4 @@
+1
 INCLUDE "game/src/common/constants.asm"
 
 SECTION "SerIO Buffers", WRAM0[$CA00]
