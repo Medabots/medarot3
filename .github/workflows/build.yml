@@ -41,6 +41,11 @@ jobs:
         run: |
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
 
+      - name: Make dump
+        working-directory: 'medarot3'
+        run: |
+          make -j dump
+
       - name: Make all
         working-directory: 'medarot3'
         run: |
