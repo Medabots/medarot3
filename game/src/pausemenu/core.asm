@@ -283,7 +283,7 @@ PauseMenuOpenItemMenuState::
   xor a
   ld [$C563], a
   ld a, 1
-  ld [$C577], a
+  ld [W_CurrentItemPage], a
   ld a, $B
   ld [W_CoreStateIndex], a
   xor a
