@@ -60,8 +60,8 @@ ItemMenuMappingState::
   ld e, $4F
   ld a, 0
   call WrapDecompressAttribmap0
-  call $4C87
-  call $4CAE
+  call ItemMenuCountPages
+  call ItemMenuMapPageIndicator
   call $4CC4
   call $4D4E
   call $4D5F
