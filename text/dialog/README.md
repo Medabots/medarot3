@@ -2,6 +2,8 @@ Text is dumped by scripts/dump_text.py, all files are in proper csv format (quot
 
 Special commands are surrounded by '<>':
 
+Lines that start with '@' are pointers to text (duplicates)
+
 (Arguments are denoted by XX for hex notation, NN for decimal notation)
 
 \*XX - Text exit codes, if not explicitly specified then assume it's 00 (normal exit)

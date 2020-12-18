@@ -102,7 +102,7 @@ for info in rom_info:
             while(realaddr < end):
                 val = utils.rom2realaddr((entry[0], utils.read_short(rom)))
                 if val in reverse_map:
-                    val = f"=0x{reverse_map[val]:x}"
+                    val = f"@0x{reverse_map[val]:x}"
                 else:
                     reverse_map[val] = realaddr
                     # Record the guessed 'max length'
@@ -290,14 +290,14 @@ for fn in texts:
                     p = text_version_specific[fn][idx][suffix][0]
                     pointer = p if isinstance(p, str) else hex(p)
                     txt = text_version_specific[fn][idx][suffix][1]
-                    writer.writerow([f'{idx:03}#{suffix}', pointer, txt, txt if txt.startswith("=") else None])
+                    writer.writerow([f'{idx:03}#{suffix}', pointer, txt, txt if txt.startswith("@") else None])
                 continue
             #If the text matches but the pointer doesn't, we should keep track of it in a single line
             elif fn in text_shifted_pointers and idx in text_shifted_pointers[fn]: 
                 pointer = "|".join([f"{hex(text_shifted_pointers[fn][idx][x])}#{x}" for x in text_shifted_pointers[fn][idx]])
             else:
                 pointer = p if isinstance(p, str) else hex(p)
-            writer.writerow([f'{idx:03}', pointer, text[p], text[p] if text[p].startswith("=") else None])
+            writer.writerow([f'{idx:03}', pointer, text[p], text[p] if text[p].startswith("@") else None])
 
 
 text_ptr_versions = [] 
