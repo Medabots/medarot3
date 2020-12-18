@@ -386,14 +386,14 @@ ControlCodeD0:: ; Print subtext code.
   jp MainScriptProcessorPutCharLoop
 
 .mapCharacter
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   cp $D3
   jr z, .kanjiHandling
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a
   ld a, [W_MainScriptLineMappingBaseLocation + 1]
   ld l, a
-  ld a, [W_MaliasSourceBank]
+  ld a, [$C4EE]
   di
   push af
   rst $20
@@ -419,9 +419,9 @@ ControlCodeD0:: ; Print subtext code.
 .kanjiHandling
   inc hl
   ld a, [hl]
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   call MainScriptGetKanjiDrawingAddress
-  ld a, [W_MaliasSourceBank]
+  ld a, [$C4EE]
   call MainScriptDrawKanjiCharacter
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a
@@ -477,12 +477,12 @@ MainScriptMapCharacter::
   ld [W_MainScriptIterator], a
   ld [W_MainScriptPauseAutoAdvanceTimer], a
   ld a, [hl]
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a
   ld a, [W_MainScriptLineMappingBaseLocation + 1]
   ld l, a
-  ld a, [W_MaliasSourceBank]
+  ld a, [$C4EE]
   di
   push af
   rst $20
@@ -577,11 +577,11 @@ ControlCodeD2:: ; Portrait display code.
 
 .firstPortrait
   ld a, 0
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   ld a, $14
   ld [$C4EF], a
   ld a, 9
-  ld [W_MaliasDestinationAddress], a
+  ld [$C4F0], a
   ld a, 4
   ld [$C4F1], a
   ld a, 0
@@ -702,9 +702,9 @@ ControlCodeD3:: ; Kanji drawing code.
   call MainScriptProgressXChars
   inc hl
   ld a, [hl]
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   call MainScriptGetKanjiDrawingAddress
-  ld a, [W_MaliasSourceBank]
+  ld a, [$C4EE]
   call MainScriptDrawKanjiCharacter
   ld a, [W_MainScriptLineMappingBaseLocation]
   ld h, a

@@ -5,8 +5,8 @@ W_MapDigitsBuffer EQU $C4E0 ; Since this address is already symbolised as W_Tile
 SECTION "Number Mapping Variables 1", WRAM0[$C4E2]
 W_MapDigitsAddress:: ds 2
 
-W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; Since this address is already symbolised as W_MaliasSourceBank.
-W_MapDigitsSignificantDigitFound EQU $C4F0 ; Since this address is already symbolised as W_MaliasDestinationAddress.
+W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; This address is overutilised, so EQU is better.
+W_MapDigitsSignificantDigitFound EQU $C4F0 ; This address is overutilised, so EQU is better.
 
 SECTION "Map Four Digit Numbers", ROM0[$1352]
 MapFourDigitNumber::
