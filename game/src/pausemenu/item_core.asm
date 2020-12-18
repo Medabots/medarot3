@@ -62,11 +62,11 @@ ItemMenuMappingState::
   call WrapDecompressAttribmap0
   call ItemMenuCountPages
   call ItemMenuMapPageIndicator
-  call $4CC4
-  call $4D4E
-  call $4D5F
-  call $4D9A
-  call $4DC1
+  call ItemMenuPrintPageItemNames
+  call ItemMenuDetermineSelectedItemInventorySlot
+  call ItemMenuPrintSelectedItemQuantity
+  call LoadSelectedItemDescription
+  call ItemMenuShowPageArrows
   call $4DFA
   ld a, 1
   ld [W_OAM_SpritesReady], a
@@ -85,7 +85,7 @@ ItemMenuItemSelectionInputHandlerState::
   call $5781
   ld de, $C0C0
   call $33B7
-  call $4DAB
+  call ItemMenuAnimatePageArrows
   call $4E07
   call $4EF2
   call $4E31

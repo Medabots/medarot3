@@ -277,7 +277,7 @@ PauseMenuCanOpenItemMenuCheckState::
   ret
 
 PauseMenuOpenItemMenuState::
-  ld hl, $C576
+  ld hl, W_CurrentPageItemSelectionIndex
   ld bc, 8
   call memclr
   xor a
