@@ -59,8 +59,8 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         txt = line[idx_text]
 
         # Pointer to existing text
-        if txt.startswith('='): 
-            ptr = txt.lstrip('=')
+        if txt.startswith('@'): 
+            ptr = txt.lstrip('@')
             pointer_offset_map[pointer] = pointer_offset_map[ptr]
             pointer_length_map[pointer] = 0
             continue
