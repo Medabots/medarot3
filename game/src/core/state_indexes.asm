@@ -4,6 +4,13 @@ SECTION "State Machine Indexes", WRAM0[$C480]
 W_CoreStateIndex:: ds 1
 W_CoreSubStateIndex:: ds 1
 
+SECTION "Item Action State Indexes", WRAM0[$C57C]
+W_ItemActionSubSubStateIndex:: ds 1
+W_ItemActionSubSubSubStateIndex:: ds 1
+
+SECTION "Naming Screen State Indexes", WRAM0[$C580]
+W_NamingScreenSubSubStateIndex:: ds 1
+
 SECTION "Initial State", ROM0[$042E]
 SetInitialStateAndSubstate::
   ld a, 1
@@ -31,3 +38,10 @@ IncNamingScreenSubSubStateIndex::
   ld hl, W_NamingScreenSubSubStateIndex
   inc [hl]
   ret
+
+SECTION "Increment Item Action SubSubSubState Index", ROMX[$516D], BANK[$06]
+IncItemActionSubSubSubStateIndex::
+  ld hl, W_ItemActionSubSubSubStateIndex
+  inc [hl]
+  ret
+

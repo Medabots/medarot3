@@ -68,6 +68,7 @@ text\
 link\
 titlemenu\
 pausemenu\
+townmap\
 nameentry
 
 # Toolchain
