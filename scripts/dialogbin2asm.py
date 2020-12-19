@@ -55,11 +55,17 @@ with open(output_file, 'w') as output:
             with open(input_file, 'rb') as in_f, open(output_path, 'wb') as out_f:
                 count = utils.read_short(in_f)
                 offsets = [(utils.read_short(in_f), utils.read_short(in_f)) for i in range(0, count)]
+                duplicate_offset_map = {} # Keep track of the offsets of everything in case we hit a duplicate
 
                 # At this point, we're at the actual text in the file
                 for ptrs in offsets:
-                    length = ptrs[1] # We only care about the length, the offset is calculated
-                    
+                    offset = ptrs[0]
+                    length = ptrs[1]
+
+                    if offset in duplicate_offset_map:
+                        out_f.write(pack("<BH", duplicate_offset_map[offset][0], duplicate_offset_map[offset][1]))
+                        continue
+
                     if length + current_offset > BANK_MAX:
                         current_fp.close()
                         current_index += 1
@@ -71,6 +77,8 @@ with open(output_file, 'w') as output:
                         output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
 
                     out_f.write(pack("<BH", current_bank, current_offset))
+                    duplicate_offset_map[offset] = (current_bank, current_offset)
+
                     current_fp.write(in_f.read(length))
                     current_offset += length
             
