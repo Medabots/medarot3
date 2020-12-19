@@ -14,18 +14,18 @@ ItemMenuStateMachine::
   dw ItemMenuFadeInState
   dw ItemMenuItemSelectionInputHandlerState
   dw ItemMenuUseItemConfirmationState
-  dw $4C34
+  dw ItemMenuAttemptToUseItemState
   dw ItemMenuPrepareScriptEngineState
-  dw $4C57
-  dw $4C86
+  dw ItemMenuCantUseMessageState
+  dw ItemMenuPlaceholderState
   dw ItemMenuPrepareScriptEngineState
-  dw $4C6D
-  dw $4C86
-  dw $4C86
-  dw $4C86
-  dw $4C86
-  dw $4C83
-  dw $4C86
+  dw ItemMenuCantUseHereMessageState
+  dw ItemMenuPlaceholderState
+  dw ItemMenuPlaceholderState
+  dw ItemMenuPlaceholderState
+  dw ItemMenuPlaceholderState
+  dw ItemMenuTriggerSpecialItemActionState
+  dw ItemMenuPlaceholderState
   
 ItemMenuPrepareScriptEngineState::
   call WrapInitiateMainScript
@@ -118,4 +118,54 @@ ItemMenuUseItemConfirmationState::
   jp z, IncSubStateIndex
   ld a, 4
   ld [W_CoreSubStateIndex], a
+  ret
+
+ItemMenuAttemptToUseItemState::
+  call ItemMenuDetermineSelectedItemInventorySlot
+  call $507B
+  or a
+  jp z, IncSubStateIndex
+  ld [W_ItemActionSubSubStateIndex], a
+  call $5094
+  or a
+  jr z, .canBeUsedFromItemMenu
+  ld a, $A
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.canBeUsedFromItemMenu
+  xor a
+  ld [W_ItemActionSubSubSubStateIndex], a
+  ld a, $10
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ItemMenuCantUseMessageState::
+  ld bc, $20
+  ld a, 1
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  call LoadSelectedItemDescription
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ItemMenuCantUseHereMessageState::
+  ld bc, $21
+  ld a, 1
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  call LoadSelectedItemDescription
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ItemMenuTriggerSpecialItemActionState::
+  jp $50AD
+
+ItemMenuPlaceholderState::
   ret
