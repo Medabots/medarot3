@@ -255,3 +255,32 @@ ItemActionStoreMessageIndex::
   ld [W_ItemActionMessageIndex + 1], a
   ret
 
+SECTION "Item Helper Functions", ROMX[$54D8], BANK[$15]
+IsItemInInventory::
+  ld [$C4EE], a
+  ld a, BANK(W_Inventory)
+  rst 8
+  ld de, W_Inventory
+  ld c, $2F
+
+.loop
+  ld a, [de]
+  cp $80
+  jr c, .itemNotFound
+  and $7F
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jr z, .itemFound
+  inc de
+  inc de
+  dec c
+  jr nz, .loop
+
+.itemNotFound
+  ld a, 1
+  ret  
+
+.itemFound
+  xor a
+  ret
