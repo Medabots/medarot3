@@ -218,6 +218,11 @@ $(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_S
 $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
 
+# TRANSLATION_SHEET="~/sheet.xlsx" make csv_from_xlsx
+.PHONY: csv_from_xlsx
+csv_from_xlsx:
+	$(PYTHON) $(SCRIPT)/xlsx2csv.py $(TRANSLATION_SHEET) $(DIALOG_TEXT) $(DIALOG)
+
 ### Dump Scripts
 
 .PHONY: dump dump_text dump_tilesets dump_ptrlists
