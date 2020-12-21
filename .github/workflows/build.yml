@@ -7,7 +7,6 @@ on:
     branches:
       - master
       - 'tr_*'
-      - xlsx_support
 
   # Allows running manually
   workflow_dispatch:
@@ -46,6 +45,15 @@ jobs:
       - name: Copy baserom into main repository
         run: |
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
+
+      - name: Get latest text from source
+        if: github.event.inputs.use-latest-translations
+        working-directory: 'medarot3'
+        env:
+          TRANSLATION_SHEET: sheet.xlsx
+        run: |
+          wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
+          make csv_from_xlsx
 
       - name: Make all
         working-directory: 'medarot3'
