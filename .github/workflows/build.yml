@@ -47,7 +47,7 @@ jobs:
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
 
       - name: Get latest text from source
-        if: github.event.inputs.use-latest-translations
+        if: github.event.inputs.use-latest-translations == true
         working-directory: 'medarot3'
         env:
           TRANSLATION_SHEET: sheet.xlsx
