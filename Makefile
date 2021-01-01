@@ -139,6 +139,7 @@ version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEH
 
 # Patch Specific
 patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
+patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default
 default: kabuto
