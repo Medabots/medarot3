@@ -47,7 +47,7 @@ jobs:
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
 
       - name: Get latest text from source
-        if: github.event.inputs.use-latest-translations == true
+        if: github.event.inputs.use-latest-translations == 'true'
         working-directory: 'medarot3'
         env:
           TRANSLATION_SHEET: sheet.xlsx
@@ -75,7 +75,7 @@ jobs:
 
       - name: Verify no new untracked files were added
         working-directory: 'medarot3'
-        if: github.event.inputs.use-latest-translations != true
+        if: github.event.inputs.use-latest-translations != 'true'
         run: |
           git diff --quiet --exit-code && exit 0 || exit 1
 
