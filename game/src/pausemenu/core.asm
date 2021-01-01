@@ -39,7 +39,7 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
-  ; Option 1 (Medarot) states.
+  ; Option 1 (Medawatch) states.
   dw PauseMenuPrepareFadeOutState
   dw PauseMenuFadeOutState
   dw $420F
@@ -49,7 +49,7 @@ PauseMenuStateMachine::
   dw PauseMenuClearScrollPositionState
   dw $427C
   dw $429D
-  dw PauseMenuOpenMedarotMenuState
+  dw PauseMenuOpenMedawatchMenuState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
@@ -262,9 +262,9 @@ PauseMenuClearScrollPositionState::
   jp IncSubStateIndex
 
 SECTION "Pause Menu State Machine 6", ROMX[$42C8], BANK[$06]
-PauseMenuOpenMedarotMenuState::
+PauseMenuOpenMedawatchMenuState::
   xor a
-  ld [$C563], a
+  ld [W_MedawatchMenuSelectedOption], a
   ld a, $A
   ld [W_CoreStateIndex], a
   xor a
@@ -288,7 +288,7 @@ PauseMenuOpenItemMenuState::
   ld bc, 8
   call memclr
   xor a
-  ld [$C563], a
+  ld [W_MedawatchMenuSelectedOption], a
   ld a, 1
   ld [W_CurrentItemPage], a
   ld a, $B
