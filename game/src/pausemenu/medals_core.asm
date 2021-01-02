@@ -8,14 +8,17 @@ MedalsStateMachine::
   jp hl
 
 .table
+
+  ; Medal list screen.
+
   dw MedalsDrawingState ; 00
   dw MedalsMappingState ; 01
   dw MedalsPrepareFadeInState ; 02
   dw MedalsFadeState ; 03
-  dw $41F5 ; 04
+  dw MedalsListInputHandlerState ; 04
   dw MedalsSlideInOptionsBoxState ; 05
-  dw $425F ; 06
-  dw $426A ; 07
+  dw MedalsListOptionsBoxInputHandlerState ; 06
+  dw MedalsListOptionsBoxTriggerSubscreenState ; 07
   dw MedalsPlaceholderState ; 08
   dw MedalsPlaceholderState ; 09
   dw MedalsPlaceholderState ; 0A
@@ -24,59 +27,71 @@ MedalsStateMachine::
   dw MedalsPlaceholderState ; 0D
   dw MedalsPlaceholderState ; 0E
   dw MedalsPlaceholderState ; 0F
-  dw $4583 ; 10
+
+  ; Ability subscreen.
+
+  dw MedalsPrepareFadeOutState ; 10
   dw MedalsFadeState ; 11
-  dw $42A7 ; 12
-  dw $42D1 ; 13
-  dw $432A ; 14
+  dw MedalsSubscreenDrawingState ; 12
+  dw MedalsAbilitySubscreenMappingState ; 13
+  dw MedalsAbilitySubscreenPrepareFadeInState ; 14
   dw MedalsDoNothingState ; 15
   dw MedalsFadeState ; 16
-  dw $433C ; 17
+  dw MedalsAbilitySubscreenInputHandlerState ; 17
   dw MedalsSlideInOptionsBoxState ; 18
-  dw $425F ; 19
-  dw $426A ; 1A
-  dw $4583 ; 1B
+  dw MedalsListOptionsBoxInputHandlerState ; 19
+  dw MedalsListOptionsBoxTriggerSubscreenState ; 1A
+  dw MedalsPrepareFadeOutState ; 1B
   dw MedalsFadeState ; 1C
-  dw $4361 ; 1D
+  dw MedalsSubscreenExitState ; 1D
   dw MedalsPlaceholderState ; 1E
   dw MedalsPlaceholderState ; 1F
-  dw $4583 ; 20
+
+  ; Medaforce subscreen.
+
+  dw MedalsPrepareFadeOutState ; 20
   dw MedalsFadeState ; 21
-  dw $42A7 ; 22
-  dw $4392 ; 23
-  dw $43D6 ; 24
+  dw MedalsSubscreenDrawingState ; 22
+  dw MedalsMedaforceSubscreenMappingState ; 23
+  dw MedalsMedaforceSubscreenPrepareFadeInState ; 24
   dw MedalsFadeState ; 25
-  dw $43E8 ; 26
+  dw MedalsMedaforceSubscreenInputHandlerState ; 26
   dw MedalsSlideInOptionsBoxState ; 27
-  dw $425F ; 28
-  dw $426A ; 29
+  dw MedalsListOptionsBoxInputHandlerState ; 28
+  dw MedalsListOptionsBoxTriggerSubscreenState ; 29
   dw MedalsPlaceholderState ; 2A
   dw MedalsPlaceholderState ; 2B
   dw MedalsPlaceholderState ; 2C
   dw MedalsPlaceholderState ; 2D
   dw MedalsPlaceholderState ; 2E
   dw MedalsPlaceholderState ; 2F
-  dw $4583 ; 30
+
+  ; Skill level subscreen.
+
+  dw MedalsPrepareFadeOutState ; 30
   dw MedalsFadeState ; 31
-  dw $42A7 ; 32
-  dw $441B ; 33
-  dw $4458 ; 34
+  dw MedalsSubscreenDrawingState ; 32
+  dw MedalsSkillLevelSubscreenMappingState ; 33
+  dw MedalsSkillLevelSubscreenPrepareFadeInState ; 34
   dw MedalsFadeState ; 35
-  dw $446A ; 36
+  dw MedalsSkillLevelSubscreenInputHandlerState ; 36
   dw MedalsSlideInOptionsBoxState ; 37
-  dw $425F ; 38
-  dw $426A ; 39
+  dw MedalsListOptionsBoxInputHandlerState ; 38
+  dw MedalsListOptionsBoxTriggerSubscreenState ; 39
   dw MedalsPlaceholderState ; 3A
   dw MedalsPlaceholderState ; 3B
   dw MedalsPlaceholderState ; 3C
   dw MedalsPlaceholderState ; 3D
   dw MedalsPlaceholderState ; 3E
   dw MedalsPlaceholderState ; 3F
-  dw $4583 ; 40
+
+  ; Medalia subscreen.
+
+  dw MedalsPrepareFadeOutState ; 40
   dw MedalsFadeState ; 41
-  dw $42A7 ; 42
-  dw $44A3 ; 43
-  dw $44F3 ; 44
+  dw MedalsSubscreenDrawingState ; 42
+  dw MedalsMedaliaSubscreenMappingState ; 43
+  dw MedalsMedaliaSubscreenPrepareFadeInState ; 44
   dw MedalsFadeState ; 45
   dw $451A ; 46
   dw $453D ; 47
@@ -88,13 +103,16 @@ MedalsStateMachine::
   dw MedalsPlaceholderState ; 4D
   dw MedalsPlaceholderState ; 4E
   dw MedalsPlaceholderState ; 4F
-  dw $4583 ; 50
+
+  ; Exit to medawatch menu.
+
+  dw MedalsPrepareFadeOutState ; 50
   dw MedalsFadeState ; 51
-  dw $4595 ; 52
-  dw $45AB ; 53
+  dw MedalsPointlessConditionalExitToMedarotScreenThatDoesntWorkState ; 52
+  dw MedalsMedawatchDrawingState ; 53
   dw $45D2 ; 54
-  dw $4602 ; 55
-  dw $461B ; 56
+  dw MedalsPrepareMedawatchMenuFadeInState ; 55
+  dw MedalsExitToMedawatchMenuState ; 56
   dw MedalsPlaceholderState ; 57
   dw MedalsPlaceholderState ; 58
   dw MedalsPlaceholderState ; 59
@@ -104,6 +122,9 @@ MedalsStateMachine::
   dw MedalsPlaceholderState ; 5D
   dw MedalsPlaceholderState ; 5E
   dw MedalsPlaceholderState ; 5F
+  
+  ; Link-related overlay menu?
+  
   dw $4626 ; 60
   dw $465E ; 61
   dw $4695 ; 62
@@ -120,9 +141,12 @@ MedalsStateMachine::
   dw MedalsPlaceholderState ; 6D
   dw MedalsPlaceholderState ; 6E
   dw MedalsPlaceholderState ; 6F
-  dw $4583 ; 70
+
+  ; Exit to link menu.
+
+  dw MedalsPrepareFadeOutState ; 70
   dw MedalsFadeState ; 71
-  dw $47DA ; 72
+  dw MedalsExitToLinkMenuState ; 72
   dw MedalsPlaceholderState ; 73
   dw MedalsPlaceholderState ; 74
   dw MedalsPlaceholderState ; 75
@@ -166,7 +190,7 @@ MedalsDrawingState::
 
 MedalsMappingState::
   xor a
-  ld [$C57F], a
+  ld [W_MedalMenuCurrentScreen], a
   ld bc, 0
   ld e, $35
   ld a, 0
@@ -227,7 +251,59 @@ MedalsPrepareFadeInState::
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
 
-SECTION "Medals State Machine 2", ROMX[$4254], BANK[$02]
+MedalsListInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call $4C2A
+  call $4E87
+  call $4F03
+  ld a, [$C4EE]
+  or a
+  jr z, .nothingSelected
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 2
+  jp nz, IncSubStateIndex
+  ld a, $60
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.nothingSelected
+  call $4CA9
+  call $4D3C
+  ld a, [$C4EE]
+  or a
+  ret nz
+  call $4DEF
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, [W_ItemActionSubSubSubStateIndex]
+  cp $80
+  jr c, .exitMedalList
+
+  xor a
+  ld [W_ItemActionSubSubSubStateIndex], a
+  ld a, 2
+  call $27DA
+  ret
+
+.exitMedalList
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 2
+  jr z, .exitToLinkMenu
+
+.exitToMedawatchMenu
+  ld a, $50
+  ld [W_CoreSubStateIndex], a
+  ret 
+
+.exitToLinkMenu
+  ld a, $70
+  ld [W_CoreSubStateIndex], a
+  ret
+
 MedalsSlideInOptionsBoxState::
   call $4F96
   ld a, [$C4EE]
@@ -235,6 +311,393 @@ MedalsSlideInOptionsBoxState::
   ret z
   jp IncSubStateIndex
 
-SECTION "Medals State Machine 3", ROMX[$47E5], BANK[$02]
+MedalsListOptionsBoxInputHandlerState::
+  call $4FF4
+  ld a, [W_MedalMenuOptionBoxSelectedItemForProcessing]
+  or a
+  ret z
+  jp IncSubStateIndex
+
+MedalsListOptionsBoxTriggerSubscreenState::
+  ld a, [W_MedalMenuCurrentScreen]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld a, [W_MedalMenuOptionBoxSelectedItemForProcessing]
+  dec a
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [W_CoreSubStateIndex], a
+  cp $17
+  ret nz
+  ld b, $88
+  ld c, $41
+  call $4A82
+  ret
+
+.table
+  db $10,$20,$30,$04
+  db $20,$30,$1B,$17
+  db $30,$10,$1B,$26
+  db $10,$20,$1B,$36
+  db $00,$00,$00,$00
+
+MedalsSubscreenDrawingState::
+  call $3413
+  call $343B
+  call $3475
+  ld bc, $12
+  call WrapLoadMaliasGraphics
+  ld bc, $13
+  call WrapLoadMaliasGraphics
+  ld bc, $14
+  call WrapLoadMaliasGraphics
+  ld bc, $11
+  call WrapLoadMaliasGraphics
+  ld bc, 2
+  call $33C6
+  jp IncSubStateIndex
+
+MedalsAbilitySubscreenMappingState::
+  ld a, 1
+  ld [W_MedalMenuCurrentScreen], a
+  ld bc, 0
+  ld e, $3B
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $3B
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call WrapInitiateMainScript
+  call $51B9
+  call $51E7
+  call $5090
+  call $50FA
+  call $5112
+  call $511C
+  call $512A
+  call $514C
+  call $516E
+  call $517E
+  call $518E
+  ld hl, $984B
+  call MapSelectedMedalName
+  ld hl, $9890
+  call MapSelectedMedalLevel
+  ld hl, $98EE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $41
+  call $4A82
+  jp IncSubStateIndex
+
+MedalsAbilitySubscreenPrepareFadeInState::
+  ld hl, $24
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsAbilitySubscreenInputHandlerState::
+  call $51CC
+  call $4F03
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  call $5225
+  ld a, [$C4EE]
+  or a
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, $1B
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsSubscreenExitState::
+  call $3413
+  call $343B
+  call $3475
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 1
+  jr z, .exitToMedarotScreen
+  ld a, 1
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.exitToMedarotScreen
+  call $6311
+  or a
+  jr nz, .deselectMedal
+  ld a, [W_SelectedItemInventorySlotIndex]
+  jr .specifyMedal
+
+.deselectMedal
+  ld a, $1E
+
+.specifyMedal
+  ld [$C529], a
+  ld a, $F
+  ld [W_CoreStateIndex], a
+  ld a, $1A
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsMedaforceSubscreenMappingState::
+  ld a, 2
+  ld [W_MedalMenuCurrentScreen], a
+  xor a
+  ld [W_ItemActionSubSubStateIndex], a
+  ld bc, 0
+  ld e, $41
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $41
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call WrapInitiateMainScript
+  call $545E
+  call $50FA
+  call $5112
+  call $511C
+  ld hl, $984B
+  call MapSelectedMedalName
+  call $51E7
+  call $52FA
+  call $5386
+  call $53FA
+  call $558D
+  jp IncSubStateIndex
+
+MedalsMedaforceSubscreenPrepareFadeInState::
+  ld hl, $25
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsMedaforceSubscreenInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call $51CC
+  call $4F03
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  call $548D
+  ld a, [$C4EE]
+  or a
+  ret nz
+  call $5536
+  ld a, [$C4EE]
+  or a
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, $1B
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsSkillLevelSubscreenMappingState::
+  ld a, 3
+  ld [W_MedalMenuCurrentScreen], a
+  ld bc, 0
+  ld e, $42
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $42
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call $50FA
+  call $5112
+  call $511C
+  ld hl, $984B
+  call MapSelectedMedalName
+  call $51E7
+  call $55C4
+  call $56E7
+  call $5928
+  call $5AED
+  call $5C74
+  jp IncSubStateIndex
+
+MedalsSkillLevelSubscreenPrepareFadeInState::
+  ld hl, $26
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsSkillLevelSubscreenInputHandlerState::
+  call $5A65
+  call $51CC
+  call $4F03
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  call $59BC
+  ld a, [$C4EE]
+  or a
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputStart
+  jr z, .startNotPressed
+  ld a, 3
+  call $27DA
+  ld a, $40
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.startNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, $1B
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsMedaliaSubscreenMappingState::
+  ld a, 4
+  ld [W_MedalMenuCurrentScreen], a
+  xor a
+  ld [$C564], a
+  ld [$C565], a
+  ld [$C58E], a
+  ld bc, 0
+  ld e, $43
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $43
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call $50FA
+  call $5112
+  call $511C
+  ld hl, $986B
+  call MapSelectedMedalName
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $206
+  call MapMedalImage
+  call $5D82
+  call $5DDC
+  call $5E9E
+  call $5EBC
+  call $6076
+  jp IncSubStateIndex
+
+MedalsMedaliaSubscreenPrepareFadeInState::
+  ld hl, $27
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  call $4C10
+  push bc
+  ld a, 4
+  call WrapRestageDestinationBGPalettesForFade
+  pop bc
+  ld hl, 8
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld a, 5
+  call WrapRestageDestinationBGPalettesForFade
+  jp IncSubStateIndex
+
+SECTION "Medals State Machine 2", ROMX[$4583], BANK[$02]
+MedalsPrepareFadeOutState::
+  ld hl, 1
+  ld bc, 1
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsPointlessConditionalExitToMedarotScreenThatDoesntWorkState::
+  call $3413
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 1
+  jp nz, IncSubStateIndex
+  ld a, $F
+  ld [W_CoreStateIndex], a
+  ld a, $C
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsMedawatchDrawingState::
+  ld bc, 6
+  call WrapLoadMaliasGraphics
+  call $2CEC
+  ld h, 0
+  ld l, a
+  ld bc, 7
+  add hl, bc
+  ld b, h
+  ld c, l
+  call WrapLoadMaliasGraphics
+  ld bc, $C
+  call WrapLoadMaliasGraphics
+  ld bc, $D
+  call WrapLoadMaliasGraphics
+  call $3475
+  jp IncSubStateIndex
+
+SECTION "Medals State Machine 3", ROMX[$4602], BANK[$02]
+MedalsPrepareMedawatchMenuFadeInState::
+  call $2CEC
+  ld h, 0
+  ld l, a
+  ld bc, $12
+  add hl, bc
+  ld bc, $12
+  ld d, $7F
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsExitToMedawatchMenuState::
+  ld a, $A
+  ld [W_CoreStateIndex], a
+  ld a, 3
+  ld [W_CoreSubStateIndex], a
+  ret
+
+SECTION "Medals State Machine 4", ROMX[$47DA], BANK[$02]
+MedalsExitToLinkMenuState::
+  ld a, $1B
+  ld [W_CoreStateIndex], a
+  ld a, $90
+  ld [W_CoreSubStateIndex], a
+  ret
+
 MedalsPlaceholderState::
   ret

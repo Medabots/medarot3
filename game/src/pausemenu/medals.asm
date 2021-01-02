@@ -1,5 +1,11 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "Medal Variables 1",  WRAM0[$C489]
+W_MedalMenuOptionBoxSelectedItemForProcessing:: ds 1
+
+SECTION "Medal Variables 2",  WRAM0[$C57F]
+W_MedalMenuCurrentScreen:: ds 1
+
 SECTION "Medal Menu Helper Functions 1", ROMX[$4802], BANK[$02]
 CalculateMedalMenuPageNumber::
   ld a, [W_SelectedItemInventorySlotIndex]
