@@ -377,17 +377,17 @@ MedalsAbilitySubscreenMappingState::
   ld a, 0
   call WrapDecompressAttribmap0
   call WrapInitiateMainScript
-  call $51B9
-  call $51E7
-  call $5090
-  call $50FA
-  call $5112
-  call $511C
-  call $512A
-  call $514C
-  call $516E
-  call $517E
-  call $518E
+  call DisplayMedalDescriptionForMedalSubscreen
+  call MedalSubscreenDisplayArrows
+  call MedalDisplayAbilitySubscreenIconSprites
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
+  call MapMedalAttributeForMedalSubscreen
+  call MapMedalPersonalityForMedalSubscreen
+  call MapMedalCompatibilityForMedalSubscreen
+  call MapUndefinedMedalStat
+  call MapUndefinedMedalString
   ld hl, $984B
   call MapSelectedMedalName
   ld hl, $9890
@@ -409,12 +409,12 @@ MedalsAbilitySubscreenPrepareFadeInState::
   jp IncSubStateIndex
 
 MedalsAbilitySubscreenInputHandlerState::
-  call $51CC
+  call MedalSubscreenAnimateArrows
   call $4F03
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $5225
+  call MedalsAbilitySubscreenPageNavigationInputHandler
   ld a, [$C4EE]
   or a
   ret nz
@@ -470,16 +470,16 @@ MedalsMedaforceSubscreenMappingState::
   ld a, 0
   call WrapDecompressAttribmap0
   call WrapInitiateMainScript
-  call $545E
-  call $50FA
-  call $5112
-  call $511C
+  call PrintMedalSelectedMedaforceDescriptionForMedalSubscreen
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
   ld hl, $984B
   call MapSelectedMedalName
-  call $51E7
-  call $52FA
-  call $5386
-  call $53FA
+  call MedalSubscreenDisplayArrows
+  call MapMedalMedaforceForMedalSubscreen
+  call MapMedalSelectedMedaforceInfoForMedalSubscreen
+  call MapMedalSelectedMedaforceSkillForMedalSubscreen
   call $558D
   jp IncSubStateIndex
 
@@ -495,12 +495,12 @@ MedalsMedaforceSubscreenPrepareFadeInState::
 MedalsMedaforceSubscreenInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $51CC
+  call MedalSubscreenAnimateArrows
   call $4F03
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $548D
+  call MedalsMedaforceSubscreenPageNavigationInputHandler
   ld a, [$C4EE]
   or a
   ret nz
@@ -528,12 +528,12 @@ MedalsSkillLevelSubscreenMappingState::
   ld e, $42
   ld a, 0
   call WrapDecompressAttribmap0
-  call $50FA
-  call $5112
-  call $511C
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
   ld hl, $984B
   call MapSelectedMedalName
-  call $51E7
+  call MedalSubscreenDisplayArrows
   call $55C4
   call $56E7
   call $5928
@@ -552,7 +552,7 @@ MedalsSkillLevelSubscreenPrepareFadeInState::
 
 MedalsSkillLevelSubscreenInputHandlerState::
   call $5A65
-  call $51CC
+  call MedalSubscreenAnimateArrows
   call $4F03
   ld a, [$C4EE]
   or a
@@ -595,9 +595,9 @@ MedalsMedaliaSubscreenMappingState::
   ld e, $43
   ld a, 0
   call WrapDecompressAttribmap0
-  call $50FA
-  call $5112
-  call $511C
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
   ld hl, $986B
   call MapSelectedMedalName
   call DrawMedalImageLetter
