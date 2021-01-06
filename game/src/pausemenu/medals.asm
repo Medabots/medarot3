@@ -961,3 +961,471 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
   ld a, 2
   call $27DA
   ret
+
+MedalsMedaforceSubscreenItemSelectionInputHandler::
+  xor a
+  ld [$C4EE], a
+  ld a, [$C520]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_ItemActionSubSubStateIndex]
+  sub 1
+  jr nc, .dontWrapToBottom
+  ld a, 2
+
+.dontWrapToBottom
+  ld [W_ItemActionSubSubStateIndex], a
+  call MapMedalSelectedMedaforceInfoForMedalSubscreen
+  call MapMedalSelectedMedaforceSkillForMedalSubscreen
+  call PrintMedalSelectedMedaforceDescriptionForMedalSubscreen
+  call PositionSelectionArrowForMedalMedaforceSubscreen
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+.upNotPressed
+  ld a, [$C520]
+  and M_JPInputDown
+  ret z
+  ld a, [W_ItemActionSubSubStateIndex]
+  inc a
+  cp 3
+  jr nz, .dontWrapToTop
+  xor a
+
+.dontWrapToTop
+  ld [W_ItemActionSubSubStateIndex], a
+  call MapMedalSelectedMedaforceInfoForMedalSubscreen
+  call MapMedalSelectedMedaforceSkillForMedalSubscreen
+  call PrintMedalSelectedMedaforceDescriptionForMedalSubscreen
+  call PositionSelectionArrowForMedalMedaforceSubscreen
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+DisplaySelectionArrowForMedalMedaforceSubscreen::
+  call PositionSelectionArrowForMedalMedaforceSubscreen
+  ld a, $36
+  ld b, 0
+  ld de, $C0C0
+  jp $33B2
+
+PositionSelectionArrowForMedalMedaforceSubscreen::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C0C1], a
+  ld a, 7
+  ld [$C0C5], a
+  ld a, 7
+  ld [$C0C3], a
+  ld a, [W_ItemActionSubSubStateIndex]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $30
+  ld [$C0C4], a
+  ret
+
+MapSkillsForMedalSubscreenLeftColumn::
+  call GetMedalAddress
+  push de
+  ld hl, $19
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98A1
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $1A
+  add hl, de
+  ld a, [hl]
+  ld hl, $98A7
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $1B
+  add hl, de
+  ld a, [hl]
+  ld hl, $98C1
+  call MapSkillBarForMedalSubscreen
+  push de
+  ld hl, $1D
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98E1
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $1E
+  add hl, de
+  ld a, [hl]
+  ld hl, $98E7
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $1F
+  add hl, de
+  ld a, [hl]
+  ld hl, $9901
+  call MapSkillBarForMedalSubscreen
+  push de
+  ld hl, $21
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $9921
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $22
+  add hl, de
+  ld a, [hl]
+  ld hl, $9927
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $23
+  add hl, de
+  ld a, [hl]
+  ld hl, $9941
+  jp MapSkillBarForMedalSubscreen
+
+MapSkillBarForMedalSubscreen::
+  push de
+  push hl
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld d, h
+  ld e, l
+  pop hl
+  ld b, 8
+
+.loop
+  ld a, [de]
+  inc de
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  pop de
+  ret
+
+.table
+  db $42,$42,$42,$42,$42,$42,$42,$42
+  db $45,$42,$42,$42,$42,$42,$42,$42
+  db $45,$45,$42,$42,$42,$42,$42,$42
+  db $45,$45,$45,$42,$42,$42,$42,$42
+  db $45,$45,$45,$45,$42,$42,$42,$42
+  db $45,$45,$45,$45,$45,$42,$42,$42
+  db $45,$45,$45,$45,$45,$45,$42,$42
+  db $45,$45,$45,$45,$45,$45,$45,$42
+  db $45,$45,$45,$45,$45,$45,$45,$45
+
+MapSkillsForMedalSubscreenRightColumn::
+  call GetMedalAddress
+  ld hl, $24
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .skillASlotEmpty
+  push de
+  ld a, [hli]
+  ld b, $50
+  ld c, $29
+  ld de, $C1E0
+  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  pop de
+  push de
+  ld hl, $25
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98AB
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $26
+  add hl, de
+  ld a, [hl]
+  ld hl, $98B1
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $27
+  add hl, de
+  ld a, [hl]
+  ld hl, $98CB
+  call MapAdvancedSkillBarForMedalSubscreen
+  jr .checkSkillBSlot
+
+.skillASlotEmpty
+  ld a, 0
+  ld [$C1E0], a
+  ld hl, $98AB
+  ld b, 5
+  call MedalMenuMapDashes
+  ld hl, $98B1
+  ld b, 2
+  call MedalMenuMapDashes
+  ld hl, $98CB
+  call MedalMenuMapEmptySkillBar
+
+.checkSkillBSlot
+  ld hl, $28
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .skillBSlotEmpty
+  push de
+  ld a, [hli]
+  ld b, $50
+  ld c, $39
+  ld de, $C200
+  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  pop de
+  push de
+  ld hl, $29
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98EB
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $2A
+  add hl, de
+  ld a, [hl]
+  ld hl, $98F1
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $2B
+  add hl, de
+  ld a, [hl]
+  ld hl, $990B
+  call MapAdvancedSkillBarForMedalSubscreen
+  jr .checkSkillCSlot
+
+.skillBSlotEmpty
+  ld a, 0
+  ld [$C200], a
+  ld hl, $98EB
+  ld b, 5
+  call MedalMenuMapDashes
+  ld hl, $98F1
+  ld b, 2
+  call MedalMenuMapDashes
+  ld hl, $990B
+  call MedalMenuMapEmptySkillBar
+
+.checkSkillCSlot
+  ld hl, $2C
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .skillCSlotEmpty
+  push de
+  ld a, [hli]
+  ld b, $50
+  ld c, $49
+  ld de, $C220
+  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  pop de
+  push de
+  ld hl, $2D
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $992B
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  push de
+  ld hl, $2E
+  add hl, de
+  ld a, [hl]
+  ld hl, $9931
+  ld b, 0
+  call $3504
+  pop de
+  ld hl, $2F
+  add hl, de
+  ld a, [hl]
+  ld hl, $994B
+  jp MapAdvancedSkillBarForMedalSubscreen
+
+.skillCSlotEmpty
+  ld a, 0
+  ld [$C220], a
+  ld hl, $992B
+  ld b, 5
+  call MedalMenuMapDashes
+  ld hl, $9931
+  ld b, 2
+  call MedalMenuMapDashes
+  ld hl, $994B
+  jp MedalMenuMapEmptySkillBar
+
+DisplaySkillIndicatorSpriteForMedalSubscreen::
+  push af
+  ld a, 1
+  ld [de], a
+  ld hl, 1
+  add hl, de
+  ld a, 0
+  ld [hl], a
+  ld hl, 2
+  add hl, de
+  ld [hl], $C7
+  pop af
+  push bc
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld hl, 5
+  add hl, de
+  ld [hl], a
+  pop bc
+  ld hl, 3
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+.table
+  db 0,2,0,2,1,1,3,3,5,5
+
+MapAdvancedSkillBarForMedalSubscreen::
+  push de
+  push hl
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld d, h
+  ld e, l
+  pop hl
+  ld b, 8
+
+.loop
+  ld a, [de]
+  inc de
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  pop de
+  ret
+
+.table
+  db $43,$43,$43,$43,$43,$43,$43,$43
+  db $47,$43,$43,$43,$43,$43,$43,$43
+  db $49,$43,$43,$43,$43,$43,$43,$43
+  db $49,$47,$43,$43,$43,$43,$43,$43
+  db $49,$49,$43,$43,$43,$43,$43,$43
+  db $49,$49,$47,$43,$43,$43,$43,$43
+  db $49,$49,$49,$43,$43,$43,$43,$43
+  db $49,$49,$49,$47,$43,$43,$43,$43
+  db $49,$49,$49,$49,$43,$43,$43,$43
+  db $49,$49,$49,$49,$47,$43,$43,$43
+  db $49,$49,$49,$49,$49,$43,$43,$43
+  db $49,$49,$49,$49,$49,$47,$43,$43
+  db $49,$49,$49,$49,$49,$49,$43,$43
+  db $49,$49,$49,$49,$49,$49,$47,$43
+  db $49,$49,$49,$49,$49,$49,$49,$43
+  db $49,$49,$49,$49,$49,$49,$49,$47
+  db $49,$49,$49,$49,$49,$49,$49,$49
+
+MedalMenuMapEmptySkillBar::
+  ld b, 8
+  ld a, $67
+
+.loop
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  ret

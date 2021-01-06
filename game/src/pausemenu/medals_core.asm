@@ -480,7 +480,7 @@ MedalsMedaforceSubscreenMappingState::
   call MapMedalMedaforceForMedalSubscreen
   call MapMedalSelectedMedaforceInfoForMedalSubscreen
   call MapMedalSelectedMedaforceSkillForMedalSubscreen
-  call $558D
+  call DisplaySelectionArrowForMedalMedaforceSubscreen
   jp IncSubStateIndex
 
 MedalsMedaforceSubscreenPrepareFadeInState::
@@ -504,7 +504,7 @@ MedalsMedaforceSubscreenInputHandlerState::
   ld a, [$C4EE]
   or a
   ret nz
-  call $5536
+  call MedalsMedaforceSubscreenItemSelectionInputHandler
   ld a, [$C4EE]
   or a
   ret nz
@@ -534,8 +534,8 @@ MedalsSkillLevelSubscreenMappingState::
   ld hl, $984B
   call MapSelectedMedalName
   call MedalSubscreenDisplayArrows
-  call $55C4
-  call $56E7
+  call MapSkillsForMedalSubscreenLeftColumn
+  call MapSkillsForMedalSubscreenRightColumn
   call $5928
   call $5AED
   call $5C74
