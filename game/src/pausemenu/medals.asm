@@ -3,10 +3,33 @@ INCLUDE "game/src/common/constants.asm"
 SECTION "Medal Variables 1",  WRAM0[$C489]
 W_MedalMenuOptionBoxSelectedItemForProcessing:: ds 1
 
-SECTION "Medal Variables 2",  WRAM0[$C57F]
+SECTION "Medal Variables 2",  WRAM0[$C57E]
+W_MedalMenuNumberOfMedals:: ds 1
 W_MedalMenuCurrentScreen:: ds 1
 
-SECTION "Medal Menu Helper Functions 1", ROMX[$4802], BANK[$02]
+SECTION "Medal Menu Helper Functions 1", ROMX[$47E6], BANK[$02]
+CountMedals::
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, $1E
+  ld c, 0
+
+.loop
+  ld a, [hl]
+  and $80
+  jr z, .slotEmpty
+  inc c
+
+.slotEmpty
+  ld de, $40
+  add hl, de
+  dec b
+  jr nz, .loop
+  ld a, c
+  ld [W_MedalMenuNumberOfMedals], a
+  ret
+
 CalculateMedalMenuPageNumber::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld h, 0
@@ -99,7 +122,12 @@ DrawMedalIcons::
   jr nz, .loop
   ret
 
-SECTION "Medal Menu Helper Functions 2", ROMX[$489D], BANK[$02]
+MapMedalIcons::
+  ld bc, $204
+  ld e, $37
+  ld a, 0
+  jp WrapDecompressTilemap0
+
 MapMedalNamesForMenu::
   ld a, 5
   rst 8
@@ -281,7 +309,133 @@ MapSelectedMedalExpToNextLevel::
   ld b, 5
   jp MedalMenuMapDashes
 
-SECTION "Medal Menu Helper Functions 3", ROMX[$4B6D], BANK[$02]
+SECTION "Medal Menu Helper Functions 2", ROMX[$4A82], BANK[$02]
+DisplayTinpetSpriteAssociatedWithMedal::
+  ld a, b
+  ld [$C4F6], a
+  ld a, c
+  ld [$C4F7], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld c, a
+  ld a, 6
+  call $1446
+  ld hl, 0
+  add hl, de
+  ld a, [hl]
+  and $40
+  jr z, .noTinpetAssociatedWithMedal
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  ld [$C4EE], a
+  ld de, $D000
+  xor a
+  ld [$C4F4], a
+
+.associationSearchLoop
+  ld a, [de]
+  cp 2
+  jr c, .nextPlease
+  cp 3
+  jr z, .hasHeadPart
+
+.noHeadPart
+  ld hl, 2
+  add hl, de
+  ld a, [hl]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jp z, .displaySpriteWithoutHeadPart
+  jr .nextPlease
+
+.hasHeadPart
+  ld hl, 2
+  add hl, de
+  ld a, [hl]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jp z, .displaySpriteWithHeadPart
+
+.nextPlease
+  ld hl, $10
+  add hl, de
+  ld d, h
+  ld e, l
+  ld a, [$C4F4]
+  inc a
+  ld [$C4F4], a
+  cp 9
+  jr nz, .associationSearchLoop
+
+.noTinpetAssociatedWithMedal
+  ld a, 0
+  ld [$C140], a
+  ret
+
+.displaySpriteWithoutHeadPart
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  ld [$C4F0], a
+  ld a, $11
+  ld [$C140], a
+  ld a, $44
+  ld [$C141], a
+  ld a, [$C4F0]
+  sla a
+  add 0
+  ld [$C142], a
+  ld a, [$C4F6]
+  ld [$C143], a
+  ld a, [$C4F7]
+  ld [$C144], a
+  ld a, 1
+  ld [$C145], a
+  ld a, [$C4F0]
+  or a
+  ret z
+  ld a, 5
+  ld [$C145], a
+  ret
+
+.displaySpriteWithHeadPart
+  ld hl, 6
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 3
+  push de
+  call $34FF
+  pop de
+  ld a, $11
+  ld [$C140], a
+  ld a, $44
+  ld [$C141], a
+  ld a, [$C553]
+  sub $50
+  sla a
+  sla a
+  add $10
+  ld [$C142], a
+  ld a, [$C4F6]
+  ld [$C143], a
+  ld a, [$C4F7]
+  ld [$C144], a
+  ld a, [$C553]
+  sub $50
+  add $2D
+  call $34B7
+  ld [$C145], a
+  ret
+
 DrawMedalImageLetter::
   call GetMedalAddress
   call CheckMedalOwnership
@@ -347,7 +501,596 @@ MapMedalImage::
   ld a, 0
   jp WrapDecompressTilemap0
 
-SECTION "Medal Menu Helper Functions 4", ROMX[$5090], BANK[$02]
+LoadMedalImagePalettes::
+  call GetMedalAddress
+  call CheckMedalOwnership
+  or a
+  ret z
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  call $35B4
+  ld hl, $110
+  ld c, b
+  ld b, 0
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld a, 4
+  push bc
+  call CGBLoadSingleBGPPaletteIndex
+  pop bc
+  ld hl, 8
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld a, 5
+  call CGBLoadSingleBGPPaletteIndex
+  ld a, 1
+  ld [W_CGBPaletteStagedBGP], a
+  ret
+
+CalculateMedalImagePaletteIndex::
+  call GetMedalAddress
+  call CheckMedalOwnership
+  or a
+  ret z
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  call $35B4
+  ld hl, $110
+  ld c, b
+  ld b, 0
+  add hl, bc
+  ld b, h
+  ld c, l
+  ret
+
+MedalListAnimateArrows::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, [W_UniversalLoopingTimer]
+  and 8
+  jr nz, MedalListDisplayArrows
+  ld a, 0
+  ld [$C0E0], a
+  ld [$C100], a
+  ret
+
+MedalListDisplayArrows::
+  ld a, 1
+  ld [$C0E0], a
+  ld a, 0
+  ld [$C0E1], a
+  ld a, $A2
+  ld [$C0E2], a
+  ld a, $28
+  ld [$C0E3], a
+  ld a, $19
+  ld [$C0E4], a
+  ld a, 1
+  ld [$C100], a
+  ld a, 0
+  ld [$C101], a
+  ld a, $A3
+  ld [$C102], a
+  ld a, $48
+  ld [$C103], a
+  ld a, $19
+  ld [$C104], a
+  ret
+
+MedalListDisplaySelectorArrow::
+  call MedalListPositionSelectorArrow
+  ld a, $36
+  ld b, 0
+  ld de, $C0C0
+  jp $33B2
+
+MedalListPositionSelectorArrow::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C0C1], a
+  ld a, 7
+  ld [$C0C5], a
+  ld a, 8
+  ld [$C0C3], a
+  ld a, [W_CurrentPageItemSelectionIndex]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $28
+  ld [$C0C4], a
+  ret
+
+MedalListItemNavigationInputHandler::
+  ld a, [$C520]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_CurrentPageItemSelectionIndex]
+  sub 1
+  jr nc, .dontLoopToListEnd
+  ld a, 5
+
+.dontLoopToListEnd
+  ld [W_CurrentPageItemSelectionIndex], a
+  call CalculateMedalMenuPageOffset
+  ld hl, $992B
+  call MapSelectedMedalName
+  ld hl, $9970
+  call MapSelectedMedalLevel
+  ld hl, $99CE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $79
+  call DisplayTinpetSpriteAssociatedWithMedal
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $C00
+  call MapMedalImage
+  call MedalListPositionSelectorArrow
+  call LoadMedalImagePalettes
+  call $62A6
+  ld a, 2
+  call $27DA
+  ret
+
+.upNotPressed
+  ld a, [$C520]
+  and M_JPInputDown
+  ret z
+  ld a, [W_CurrentPageItemSelectionIndex]
+  inc a
+  cp 6
+  jr c, .dontLoopToListStart
+  xor a
+
+.dontLoopToListStart
+  ld [W_CurrentPageItemSelectionIndex], a
+  call CalculateMedalMenuPageOffset
+  ld hl, $992B
+  call MapSelectedMedalName
+  ld hl, $9970
+  call MapSelectedMedalLevel
+  ld hl, $99CE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $79
+  call DisplayTinpetSpriteAssociatedWithMedal
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $C00
+  call MapMedalImage
+  call MedalListPositionSelectorArrow
+  call LoadMedalImagePalettes
+  call $62A6
+  ld a, 2
+  call $27DA
+  ret
+
+MedalListPageNavigationInputHandler::
+  xor a
+  ld [$C4EE], a
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, [W_CurrentItemPage]
+  dec a
+  jr nz, .dontLoopToEnd
+  ld a, 5
+
+.dontLoopToEnd
+  ld [W_CurrentItemPage], a
+  call CalculateMedalMenuPageOffset
+  call MapMedalMenuPageNumber
+  call DrawMedalIcons
+  call MapMedalIcons
+  call MapMedalNamesForMenu
+  ld hl, $992B
+  call MapSelectedMedalName
+  ld hl, $9970
+  call MapSelectedMedalLevel
+  ld hl, $99CE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $79
+  call DisplayTinpetSpriteAssociatedWithMedal
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $C00
+  call MapMedalImage
+  call LoadMedalImagePalettes
+  call $62A6
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, [W_CurrentItemPage]
+  inc a
+  cp 6
+  jr nz, .dontLoopToStart
+  ld a, 1
+
+.dontLoopToStart
+  ld [W_CurrentItemPage], a
+  call CalculateMedalMenuPageOffset
+  call MapMedalMenuPageNumber
+  call DrawMedalIcons
+  call MapMedalIcons
+  call MapMedalNamesForMenu
+  ld hl, $992B
+  call MapSelectedMedalName
+  ld hl, $9970
+  call MapSelectedMedalLevel
+  ld hl, $99CE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $79
+  call DisplayTinpetSpriteAssociatedWithMedal
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $C00
+  call MapMedalImage
+  call LoadMedalImagePalettes
+  call $62A6
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+MedalListSortItemInputHandler::
+  ldh a, [H_JPInputChanged]
+  and M_JPInputSelect
+  ret z
+  ld a, [W_ItemActionSubSubSubStateIndex]
+  cp $80
+  jr nc, .changeOrder
+  ld a, [W_SelectedItemInventorySlotIndex]
+  add $80
+  ld [W_ItemActionSubSubSubStateIndex], a
+  ld a, 2
+  call $27DA
+  ret
+
+.changeOrder
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld b, a
+  ld a, [W_ItemActionSubSubSubStateIndex]
+  and $7F
+  cp b
+  jr z, .targetMatchesDestination
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld c, a
+  ld a, 6
+  call $1446
+  push hl
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_ItemActionSubSubSubStateIndex]
+  and $7F
+  ld c, a
+  ld a, 6
+  call $1446
+  pop hl
+  ld bc, $40
+  call $1546
+  call DrawMedalIcons
+  call MapMedalIcons
+  call MapMedalNamesForMenu
+  ld hl, $992B
+  call MapSelectedMedalName
+  ld hl, $9970
+  call MapSelectedMedalLevel
+  ld hl, $99CE
+  call MapSelectedMedalExpToNextLevel
+  ld b, $88
+  ld c, $79
+  call DisplayTinpetSpriteAssociatedWithMedal
+  call DrawMedalImageLetter
+  call DrawMedalImage
+  ld bc, $C00
+  call MapMedalImage
+  call LoadMedalImagePalettes
+  call $62A6
+  ld a, 2
+  call $27DA
+
+.targetMatchesDestination
+  ld de, $C120
+  call $341B
+  xor a
+  ld [W_ItemActionSubSubSubStateIndex], a
+  ld a, 2
+  call $27DA
+  ret
+
+MedalListDisplaySortingArrow::
+  ld a, [W_ItemActionSubSubSubStateIndex]
+  cp $80
+  jr nc, .arrowMaybe
+
+.noArrow
+  ld a, 0
+  ld [$C120], a
+  ret
+
+.arrowMaybe
+  and $7F
+  ld h, 0
+  ld l, a
+  ld bc, 6
+  call DigitCalculationLoop
+  ld a, [$C4EE]
+  inc a
+  ld b, a
+  ld a, [W_CurrentItemPage]
+  cp b
+  jr nz, .noArrow
+  ld a, 1
+  ld [$C120], a
+  ld a, 0
+  ld [$C121], a
+  ld a, $CB
+  ld [$C122], a
+  ld a, 6
+  ld [$C125], a
+  ld a, 7
+  ld [$C123], a
+  ld a, [W_TilemapPointerTableIndex]
+  ld b, a
+  sla a
+  sla a
+  sla a
+  sla a
+  add $27
+  ld [$C124], a
+  ret
+
+MedalMenuRestoreIkkiOverlay::
+  ld bc, 0
+  ld e, $14
+  ld a, 0
+  call WrapDecompressTilemap1
+  call $2CEC
+  add $14
+  ld e, a
+  ld bc, 0
+  ld a, 0
+  call WrapDecompressAttribmap1
+  ret
+
+MedalMenuRestorePausemenuArrowPlaceholder::
+  push af
+  ld a, [W_PauseMenuSelectedOption]
+  sla a
+  ld c, 2
+  add c
+  ld c, a
+  ld b, $D
+  pop af
+  add 4
+  ld e, a
+  ld a, 0
+  jp WrapDecompressTilemap0ScrollAdjusted
+
+MedalPreOptionBoxInputCheck::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ret z
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld c, a
+  ld a, 6
+  call $1446
+  ld hl, 0
+  add hl, de
+  ld a, [hl]
+  and $80
+  jr z, .emptySlotFound
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, $CC
+  ld [$C0C2], a
+  ld a, 0
+  ld [$C0E0], a
+  ld [$C100], a
+  ld [$C120], a
+  xor a
+  ld [$C48D], a
+  ld a, 3
+  call $27DA
+  ld a, $B
+  ld [$C4EE], a
+  ld a, 9
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, 9
+  ld [$C4F1], a
+  ld a, 0
+  call $1153
+  ld a, [W_MedalMenuCurrentScreen]
+  cp 1
+  jr nz, .notAbilitySubscreen
+  ld a, 0
+  ld [$C140], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+
+.notAbilitySubscreen
+  ld a, [W_MedalMenuCurrentScreen]
+  or a
+  ret nz
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 2
+  jr z, .notInLinkMode
+  ld a, 0
+  ld [$C1E0], a
+  ld [$C200], a
+  ld [$C220], a
+
+.notInLinkMode
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+.emptySlotFound
+  ld a, 5
+  call $27DA
+  ret
+
+MapMedalOptionsBox::
+  xor a
+  ld [$C4EE], a
+  ld a, [$C48D]
+  add $18
+  ld c, a
+  ld b, $B
+  ld a, [W_MedalMenuCurrentScreen]
+  add $3D
+  ld e, a
+  ld a, 0
+  push bc
+  call WrapDecompressTilemap0
+  pop bc
+  ld e, $3D
+  ld a, 0
+  call WrapDecompressAttribmap0
+  ld a, [$C48D]
+  inc a
+  ld [$C48D], a
+  cp 9
+  ret nz
+  xor a
+  ld [$C48D], a
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+MedalOptionsBoxPlaceCursor::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C160], a
+  ld a, $44
+  ld [$C161], a
+  ld a, 4
+  ld [$C162], a
+  ld a, $60
+  ld [$C163], a
+  ld a, [$C48D]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $11
+  ld [$C164], a
+  ret
+
+MedalOptionsBoxInputHandler::
+  xor a
+  ld [W_MedalMenuOptionBoxSelectedItemForProcessing], a
+  call MedalOptionsBoxPlaceCursor
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  ld a, [$C48D]
+  inc a
+  ld [W_MedalMenuOptionBoxSelectedItemForProcessing], a
+  ld a, 5
+  ld [$C162], a
+  ld a, 3
+  call $27DA
+  ret
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  jr z, .bNotPressed
+  ld b, 9
+  ld c, 9
+  ld hl, $980B
+  call $25E5
+  ld a, $B
+  ld [$C4EE], a
+  ld a, 9
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, 9
+  ld [$C4F1], a
+  ld a, 0
+  call $123B
+  ld a, 4
+  call $27DA
+  ld a, 7
+  ld [$C0C5], a
+  ld de, $C160
+  call $341B
+  ld a, 4
+  ld [W_MedalMenuOptionBoxSelectedItemForProcessing], a
+  ld a, [W_MedalMenuCurrentScreen]
+  or a
+  ret nz
+  call $62A6
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+.bNotPressed
+  ld a, [$C520]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [$C48D]
+  sub 1
+  jr nc, .dontLoopToEnd
+  ld a, 2
+
+.dontLoopToEnd
+  ld [$C48D], a
+  ld a, 2
+  call $27DA
+  ret
+
+.upNotPressed
+  ld a, [$C520]
+  and M_JPInputDown
+  ret z
+  ld a, [$C48D]
+  inc a
+  cp 3
+  jr nz, .dontLoopToStart
+  xor a
+
+.dontLoopToStart
+  ld [$C48D], a
+  ld a, 2
+  call $27DA
+  ret
+
 MedalDisplayAbilitySubscreenIconSprites::
   ld a, 1
   ld [W_OAM_SpritesReady], a
@@ -505,7 +1248,7 @@ DisplayMedalDescriptionForMedalSubscreen::
   jp WrapMainScriptProcessor
 
 MedalSubscreenAnimateArrows::
-  ld a, [$C57E]
+  ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
   ld a, [W_UniversalLoopingTimer]
@@ -519,7 +1262,7 @@ MedalSubscreenAnimateArrows::
   ret
 
 MedalSubscreenDisplayArrows::
-  ld a, [$C57E]
+  ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
   ld a, 1
@@ -549,7 +1292,7 @@ MedalSubscreenDisplayArrows::
 MedalsAbilitySubscreenPageNavigationInputHandler::
   xor a
   ld [$C4EE], a
-  ld a, [$C57E]
+  ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
   ld a, [$C520]
@@ -593,7 +1336,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   call MapSelectedMedalExpToNextLevel
   ld b, $88
   ld c, $41
-  call $4A82
+  call DisplayTinpetSpriteAssociatedWithMedal
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -643,7 +1386,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   call MapSelectedMedalExpToNextLevel
   ld b, $88
   ld c, $41
-  call $4A82
+  call DisplayTinpetSpriteAssociatedWithMedal
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -877,7 +1620,7 @@ PrintMedalSelectedMedaforceDescriptionForMedalSubscreen::
 MedalsMedaforceSubscreenPageNavigationInputHandler::
   xor a
   ld [$C4EE], a
-  ld a, [$C57E]
+  ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
   ld a, [$C520]

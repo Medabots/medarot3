@@ -207,11 +207,11 @@ MedalsMappingState::
   ld a, 0
   ld hl, $980B
   call $25FF
-  call $47E6
+  call CountMedals
   call CalculateMedalMenuPageNumber
   call MapMedalMenuPageNumber
   call DrawMedalIcons
-  call $4893
+  call MapMedalIcons
   call MapMedalNamesForMenu
   ld hl, $992B
   call MapSelectedMedalName
@@ -221,13 +221,13 @@ MedalsMappingState::
   call MapSelectedMedalExpToNextLevel
   ld b, $88
   ld c, $79
-  call $4A82
+  call DisplayTinpetSpriteAssociatedWithMedal
   call DrawMedalImageLetter
   call DrawMedalImage
   ld bc, $C00
   call MapMedalImage
-  call $4C72
-  call $4C3F
+  call MedalListDisplaySelectorArrow
+  call MedalListDisplayArrows
   call $62A6
   jp IncSubStateIndex
 
@@ -238,7 +238,7 @@ MedalsPrepareFadeInState::
   ld e, $FF
   ld a, 8
   call WrapSetupPalswapAnimation
-  call $4C10
+  call CalculateMedalImagePaletteIndex
   push bc
   ld a, 4
   call WrapRestageDestinationBGPalettesForFade
@@ -254,9 +254,9 @@ MedalsPrepareFadeInState::
 MedalsListInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $4C2A
-  call $4E87
-  call $4F03
+  call MedalListAnimateArrows
+  call MedalListDisplaySortingArrow
+  call MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jr z, .nothingSelected
@@ -268,12 +268,12 @@ MedalsListInputHandlerState::
   ret
 
 .nothingSelected
-  call $4CA9
-  call $4D3C
+  call MedalListItemNavigationInputHandler
+  call MedalListPageNavigationInputHandler
   ld a, [$C4EE]
   or a
   ret nz
-  call $4DEF
+  call MedalListSortItemInputHandler
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   ret z
@@ -305,14 +305,14 @@ MedalsListInputHandlerState::
   ret
 
 MedalsSlideInOptionsBoxState::
-  call $4F96
+  call MapMedalOptionsBox
   ld a, [$C4EE]
   or a
   ret z
   jp IncSubStateIndex
 
 MedalsListOptionsBoxInputHandlerState::
-  call $4FF4
+  call MedalOptionsBoxInputHandler
   ld a, [W_MedalMenuOptionBoxSelectedItemForProcessing]
   or a
   ret z
@@ -339,7 +339,7 @@ MedalsListOptionsBoxTriggerSubscreenState::
   ret nz
   ld b, $88
   ld c, $41
-  call $4A82
+  call DisplayTinpetSpriteAssociatedWithMedal
   ret
 
 .table
@@ -396,7 +396,7 @@ MedalsAbilitySubscreenMappingState::
   call MapSelectedMedalExpToNextLevel
   ld b, $88
   ld c, $41
-  call $4A82
+  call DisplayTinpetSpriteAssociatedWithMedal
   jp IncSubStateIndex
 
 MedalsAbilitySubscreenPrepareFadeInState::
@@ -410,7 +410,7 @@ MedalsAbilitySubscreenPrepareFadeInState::
 
 MedalsAbilitySubscreenInputHandlerState::
   call MedalSubscreenAnimateArrows
-  call $4F03
+  call MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -496,7 +496,7 @@ MedalsMedaforceSubscreenInputHandlerState::
   ld de, $C0C0
   call $33B7
   call MedalSubscreenAnimateArrows
-  call $4F03
+  call MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -553,7 +553,7 @@ MedalsSkillLevelSubscreenPrepareFadeInState::
 MedalsSkillLevelSubscreenInputHandlerState::
   call $5A65
   call MedalSubscreenAnimateArrows
-  call $4F03
+  call MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -618,7 +618,7 @@ MedalsMedaliaSubscreenPrepareFadeInState::
   ld e, $FF
   ld a, 8
   call WrapSetupPalswapAnimation
-  call $4C10
+  call CalculateMedalImagePaletteIndex
   push bc
   ld a, 4
   call WrapRestageDestinationBGPalettesForFade
