@@ -2,10 +2,23 @@ INCLUDE "game/src/common/constants.asm"
 
 SECTION "Medal Variables 1",  WRAM0[$C489]
 W_MedalMenuOptionBoxSelectedItemForProcessing:: ds 1
+W_MedalMenuWaitTimer:: ds 1
 
-SECTION "Medal Variables 2",  WRAM0[$C57E]
+SECTION "Medal Variables 2",  WRAM0[$C48C]
+W_MedalMenuSkillBarAnimationStage:: ds 1
+
+SECTION "Medal Variables 3",  WRAM0[$C564]
+W_MedalMenuSelectedMedaliaSlot:: ds 1
+
+SECTION "Medal Variables 4",  WRAM0[$C57E]
 W_MedalMenuNumberOfMedals:: ds 1
 W_MedalMenuCurrentScreen:: ds 1
+
+SECTION "Medal Variables 5",  WRAM0[$C58E]
+W_MedalMenuMedaliaListOffsetIndex:: ds 1
+W_MedalMenuNumberOfMedalia:: ds 1
+W_MedalMenuMedaliaListLineToBuffer:: ds 1
+W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen:: ds 1
 
 SECTION "Medal Menu Helper Functions 1", ROMX[$47E6], BANK[$02]
 CountMedals::
@@ -1919,7 +1932,7 @@ MapSkillsForMedalSubscreenRightColumn::
   ld b, $50
   ld c, $29
   ld de, $C1E0
-  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
   ld hl, $25
@@ -1974,7 +1987,7 @@ MapSkillsForMedalSubscreenRightColumn::
   ld b, $50
   ld c, $39
   ld de, $C200
-  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
   ld hl, $29
@@ -2029,7 +2042,7 @@ MapSkillsForMedalSubscreenRightColumn::
   ld b, $50
   ld c, $49
   ld de, $C220
-  call DisplaySkillIndicatorSpriteForMedalSubscreen
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
   ld hl, $2D
@@ -2072,7 +2085,7 @@ MapSkillsForMedalSubscreenRightColumn::
   ld hl, $994B
   jp MedalMenuMapEmptySkillBar
 
-DisplaySkillIndicatorSpriteForMedalSubscreen::
+DisplayMedaliaIndicatorSpriteForMedalSubscreen::
   push af
   ld a, 1
   ld [de], a
@@ -2171,4 +2184,747 @@ MedalMenuMapEmptySkillBar::
   ei
   dec b
   jr nz, .loop
+  ret
+
+MapSkillBarAttributesForMedalSubscreen::
+  call GetMedalAddress
+  push de
+  ld hl, $19
+  add hl, de
+  ld d, h
+  ld e, l
+  ld b, 3
+  ld hl, $98C1
+
+.leftBarsLoop
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ld a, [de]
+  push bc
+  push hl
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  pop hl
+  ld c, 8
+  push hl
+
+.leftBarAttributeMappingLoop
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec c
+  jr nz, .leftBarAttributeMappingLoop
+
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  pop hl
+  ld bc, $40
+  add hl, bc
+  inc de
+  inc de
+  inc de
+  inc de
+  pop bc
+  dec b
+  jr nz, .leftBarsLoop
+
+  pop de
+  ld hl, $24
+  add hl, de
+  ld d, h
+  ld e, l
+  ld b, 3
+  ld hl, $98CB
+
+.rightBarsLoop
+  push bc
+  ld a, [de]
+  cp $FF
+  jr z, .barIsEmpty
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  push de
+  inc de
+  ld a, [de]
+  pop de
+  push hl
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  pop hl
+  ld c, 8
+  push hl
+
+.rightBarAttributeMappingLoop
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec c
+  jr nz, .rightBarAttributeMappingLoop
+
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  pop hl
+
+.barIsEmpty
+  ld bc, $40
+  add hl, bc
+  inc de
+  inc de
+  inc de
+  inc de
+  pop bc
+  dec b
+  jr nz, .rightBarsLoop
+  ret
+
+.table
+  db 1,2,1,2,3,3,4,4,5,5
+
+MedalsSkillLevelSubscreenPageNavigationInputHandler::
+  xor a
+  ld [$C4EE], a
+  ld a, [W_MedalMenuNumberOfMedals]
+  cp 2
+  ret c
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+
+.medalSearchLeftLoop
+  ld a, [W_SelectedItemInventorySlotIndex]
+  sub 1
+  jr nc, .dontWrapToRight
+  ld a, $1D
+
+.dontWrapToRight
+  ld [W_SelectedItemInventorySlotIndex], a
+  call GetMedalAddress
+  ld a, [de]
+  and $80
+  jr z, .medalSearchLeftLoop
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 1
+  jr nz, .exitSearchLeftLoop
+  ld a, [de]
+  and $40
+  jr nz, .medalSearchLeftLoop
+
+.exitSearchLeftLoop
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
+  ld hl, $984B
+  call MapSelectedMedalName
+  call MapSkillsForMedalSubscreenLeftColumn
+  call MapSkillsForMedalSubscreenRightColumn
+  call MapSkillBarAttributesForMedalSubscreen
+  call $5AED
+  call $5C74
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+
+.medalSearchRightLoop
+  ld a, [W_SelectedItemInventorySlotIndex]
+  inc a
+  cp $1E
+  jr nz, .dontWrapToLeft
+  xor a
+
+.dontWrapToLeft
+  ld [W_SelectedItemInventorySlotIndex], a
+  call GetMedalAddress
+  ld a, [de]
+  and $80
+  jr z, .medalSearchRightLoop
+  ld a, [W_TransportOptionSubSubSubStateIndex]
+  cp 1
+  jr nz, .exitSearchRightLoop
+  ld a, [de]
+  and $40
+  jr nz, .medalSearchRightLoop
+
+.exitSearchRightLoop
+  call DrawMedalIconForMedalSubscreen
+  call MapMedalIconForMedalSubscreen
+  call MapMedalNameForMedalSubscreen
+  ld hl, $984B
+  call MapSelectedMedalName
+  call MapSkillsForMedalSubscreenLeftColumn
+  call MapSkillsForMedalSubscreenRightColumn
+  call MapSkillBarAttributesForMedalSubscreen
+  call $5AED
+  call $5C74
+  ld a, 1
+  ld [$C4EE], a
+  ld a, 2
+  call $27DA
+  ret
+
+AnimateMedalSkillBarSegments::
+  ld a, [W_MedalMenuSkillBarAnimationStage]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hl]
+  ld b, a
+  ld a, [W_MedalMenuWaitTimer]
+  cp b
+  jr z, .finishedWaiting
+  inc a
+  ld [W_MedalMenuWaitTimer], a
+  ret
+
+.finishedWaiting
+  inc hl
+  ld a, [hli]
+  ld [$C4EE], a
+  ld a, [hli]
+  ld [$C4EF], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [$C4EE]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 1
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, $10
+  ld hl, $9450
+  call $34E1
+  ld a, [$C4EF]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 1
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, $10
+  ld hl, $9470
+  call $34E1
+  ld a, [$C4F0]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 1
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, $10
+  ld hl, $9490
+  call $34E1
+  xor a
+  ld [W_MedalMenuWaitTimer], a
+  ld a, [W_MedalMenuSkillBarAnimationStage]
+  inc a
+  ld [W_MedalMenuSkillBarAnimationStage], a
+  cp 4
+  ret nz
+  xor a
+  ld [W_MedalMenuSkillBarAnimationStage], a
+  ret
+
+.table
+  db $B4,1,3,5
+  db $05,0,2,4
+  db $05,1,3,5
+  db $05,0,2,4
+
+SECTION "Medal Menu Helper Functions 3", ROMX[$5C58], BANK[$02]
+MapAttributeToSkillName::
+  push af
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  pop af
+  ld b, 8
+
+.loop
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ret
+
+SECTION "Medal Menu Helper Functions 4", ROMX[$5D82], BANK[$02]
+DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
+  call GetMedalAddress
+  ld hl, $24
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .medaliaSlotAEmpty
+  push de
+  ld a, [hli]
+  ld b, $11
+  ld c, $5A
+  ld de, $C1E0
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  jr .checkMedaliaSlotB
+
+.medaliaSlotAEmpty
+  ld a, 0
+  ld [$C1E0], a
+
+.checkMedaliaSlotB
+  ld hl, $28
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .medaliaSlotBEmpty
+  push de
+  ld a, [hli]
+  ld b, $24
+  ld c, $62
+  ld de, $C200
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  jr .checkMedaliaSlotC
+
+.medaliaSlotBEmpty
+  ld a, 0
+  ld [$C200], a
+
+.checkMedaliaSlotC
+  ld hl, $2C
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .medaliaSlotCEmpty
+  push de
+  ld a, [hli]
+  ld b, $37
+  ld c, $5A
+  ld de, $C220
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  ret
+
+.medaliaSlotCEmpty
+  ld a, 0
+  ld [$C220], a
+  ret
+
+DisplayMedaliaInCurrentlySelectedSlot::
+  call GetMedalAddress
+  ld hl, $24
+  add hl, de
+  ld b, 0
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  cp $FF
+  jr z, .slotIsEmpty
+  ld a, [hl]
+  push hl
+  ld hl, $99E1
+  call DisplaySkillNameForMedaliaSubscreen
+  pop hl
+  ld a, [hli]
+  push hl
+  push de
+  ld b, $30
+  ld c, $78
+  ld de, $C240
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  pop hl
+  ld a, [hli]
+  push hl
+  push de
+  ld hl, $99E7
+  ld b, 0
+  call $3504
+  pop de
+  pop hl
+  ld a, [hl]
+  push hl
+  ld hl, $9A01
+  call MapAdvancedSkillBarForMedalSubscreen
+  pop hl
+  dec hl
+  dec hl
+  ld a, [hl]
+  ld hl, $9A01
+  jp MapSkillBarAttributesForSingleMedalia
+
+.slotIsEmpty
+  ld hl, $99E1
+  ld b, 5
+  call MedalMenuMapDashes
+  ld a, 0
+  ld [$C240], a
+  ld hl, $99E7
+  ld b, 2
+  call MedalMenuMapDashes
+  ld hl, $9A01
+  call MedalMenuMapEmptySkillBar
+  ld a, $A
+  ld hl, $9A01
+  jp MapSkillBarAttributesForSingleMedalia
+
+DisplaySkillNameForMedaliaSubscreen::
+  push de
+  push hl
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 6
+  ld c, 6
+  ld a, 0
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  pop hl
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  pop de
+  ret
+
+MapSkillBarAttributesForSingleMedalia::
+  push hl
+  push af
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  pop af
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld c, 8
+  pop hl
+
+.loop
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei 
+  dec c
+  jr nz, .loop
+  ld a, 0
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ret
+
+.table
+  db 0,1,0,1,2,2,3,3,7,7,0
+
+CountMedalia::
+  ld a, 5
+  rst 8
+  xor a
+  ld [W_MedalMenuNumberOfMedalia], a
+  ld hl, $D8A0
+
+.loop
+  ld a, [hl]
+  and $80
+  ret z
+  ld bc, 4
+  add hl, bc
+  ld a, [W_MedalMenuNumberOfMedalia]
+  inc a
+  ld [W_MedalMenuNumberOfMedalia], a
+  cp $1E
+  jr nz, .loop
+  ret
+
+PopulateMedaliaList::
+  ld a, 5
+  rst 8
+  xor a
+  ld [W_MedalMenuMedaliaListLineToBuffer], a
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  or a
+  jr nz, .notFirstLine
+  call GetMedaliaListItemMappingAddress
+  push hl
+  push hl
+  ld de, .emptyTextString
+  ld c, 2
+
+.emptyOptionTextLineLoop
+  ld b, 8
+
+.emptyOptionTextMappingLoop
+  ld a, [de]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .emptyOptionTextMappingLoop
+  dec c
+  jr z, .emptyOptionTextExitLoop
+  pop hl
+  push bc
+  ld bc, $20
+  add hl, bc
+  pop bc
+  jr .emptyOptionTextLineLoop
+
+.emptyOptionTextExitLoop
+  call GetMedalAddress
+  ld hl, $24
+  add hl, de
+  ld b, 0
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  cp $FF
+  jr z, .slotAlreadyEmpty
+  pop hl
+  ld a, 8
+  call MapAttributeToSkillName
+  jr .populateSubsequentLines
+
+.slotAlreadyEmpty
+  pop hl
+  ld a, $E
+  call MapAttributeToSkillName
+
+.populateSubsequentLines
+  ld a, 0
+  ld [$C260], a
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  inc a
+  ld [W_MedalMenuMedaliaListLineToBuffer], a
+
+.notFirstLine
+  xor a
+  ld [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen], a
+
+.loop
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  or a
+  jr z, .noDecA
+  dec a
+
+.noDecA
+  ld h, 0
+  ld l, a
+  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
+  ld b, 0
+  ld c, a
+  add hl, bc
+  sla l
+  rl h
+  sla l
+  rl h
+  ld bc, $D8A0
+  add hl, bc
+  ld a, [hl]
+  and $80
+  jp z, .noMedaliaFound
+  ld a, [hli]
+  ld [$C4F8], a
+  ld a, [hli]
+  ld [$C4F2], a
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F6], a
+  call GetMedaliaListItemMappingAddress
+  push hl
+  ld a, [$C4F8]
+  and $7F
+  call CheckIfMedaliaInUse
+  or a
+  jr nz, .alreadyAssignedToSlot
+  pop hl
+  push hl
+  ld a, 8
+  call MapAttributeToSkillName
+  jr .displayMedaliaInfo
+
+.alreadyAssignedToSlot
+  pop hl
+  push hl
+  ld a, $E
+  call MapAttributeToSkillName
+
+.displayMedaliaInfo
+  pop hl
+  push hl
+  ld a, [$C4F2]
+  call DisplaySkillNameForMedaliaSubscreen
+  ld hl, $C260
+  ld b, 0
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  ld c, a
+  ld a, 5
+  call $1446
+  call GetMedaliaIndicatorSpritePositionForMedaliaSubscreen
+  ld a, [$C4F2]
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop hl
+  push hl
+  ld bc, 6
+  add hl, bc
+  ld a, [$C4F4]
+  ld b, 0
+  call $3504
+  pop hl
+  ld bc, $20
+  add hl, bc
+  push hl
+  ld a, [$C4F6]
+  call MapAdvancedSkillBarForMedalSubscreen
+  pop hl
+  ld a, [$C4F2]
+  call MapSkillBarAttributesForSingleMedalia
+  jr .continue
+
+.noMedaliaFound
+  ld hl, $C260
+  ld b, 0
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  ld c, a
+  ld a, 5
+  call $1446
+  ld a, 0
+  ld [de], a
+  call GetMedaliaListItemMappingAddress
+  push hl
+  ld b, 8
+  ld c, 2
+  call $25E5
+  pop hl
+  ld b, 8
+  ld c, 2
+  ld a, 0
+  call $25FF
+
+.continue
+  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
+  inc a
+  ld [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen], a
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  inc a
+  ld [W_MedalMenuMedaliaListLineToBuffer], a
+  cp 5
+  jp nz, .loop
+  ret
+
+.emptyTextString
+  db $51,$8E,$44,0,0,0,0,0 ; This is text, just fyi.
+  db 0,0,0,0,0,0,0,0
+
+GetMedaliaListItemMappingAddress::
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  ld hl, $98CB
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ret
+
+GetMedaliaIndicatorSpritePositionForMedaliaSubscreen::
+  ld b, $80
+  ld a, [W_MedalMenuMedaliaListLineToBuffer]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $30
+  ld c, a
+  ret
+
+CheckIfMedaliaInUse::
+  ld [W_ItemPageRowIndex], a
+  ld de, $D120
+  ld a, $1E
+  ld [$C4FD], a
+
+.medalLoop
+  ld a, [de]
+  and $80
+  jr z, $6062
+  ld b, 3
+  ld hl, $24
+  add hl, de
+
+.slotLoop
+  ld a, [hl]
+  cp $FF
+  jr z, .slotEmpty
+  and $7F
+  ld c, a
+  ld a, [W_ItemPageRowIndex]
+  cp c
+  jr z, .matchFound
+
+.slotEmpty
+  inc hl
+  inc hl
+  inc hl
+  inc hl
+  dec b
+  jr nz, .slotLoop
+  ld hl, $40
+  add hl, de
+  ld d, h
+  ld e, l
+  ld a, [$C4FD]
+  dec a
+  ld [$C4FD], a
+  jr nz, .medalLoop
+  xor a
+  ret
+
+.matchFound
+  ld a, 1
   ret
