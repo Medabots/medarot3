@@ -536,7 +536,7 @@ MedalsSkillLevelSubscreenMappingState::
   call MedalSubscreenDisplayArrows
   call MapSkillsForMedalSubscreenLeftColumn
   call MapSkillsForMedalSubscreenRightColumn
-  call $5928
+  call MapSkillBarAttributesForMedalSubscreen
   call $5AED
   call $5C74
   jp IncSubStateIndex
@@ -551,13 +551,13 @@ MedalsSkillLevelSubscreenPrepareFadeInState::
   jp IncSubStateIndex
 
 MedalsSkillLevelSubscreenInputHandlerState::
-  call $5A65
+  call AnimateMedalSkillBarSegments
   call MedalSubscreenAnimateArrows
   call MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $59BC
+  call MedalsSkillLevelSubscreenPageNavigationInputHandler
   ld a, [$C4EE]
   or a
   ret nz
@@ -584,9 +584,9 @@ MedalsMedaliaSubscreenMappingState::
   ld a, 4
   ld [W_MedalMenuCurrentScreen], a
   xor a
-  ld [$C564], a
+  ld [W_MedalMenuSelectedMedaliaSlot], a
   ld [$C565], a
-  ld [$C58E], a
+  ld [W_MedalMenuMedaliaListOffsetIndex], a
   ld bc, 0
   ld e, $43
   ld a, 0
@@ -604,10 +604,10 @@ MedalsMedaliaSubscreenMappingState::
   call DrawMedalImage
   ld bc, $206
   call MapMedalImage
-  call $5D82
-  call $5DDC
-  call $5E9E
-  call $5EBC
+  call DisplayMedaliaIndicatorSpritesForMedaliaSubscreen
+  call DisplayMedaliaInCurrentlySelectedSlot
+  call CountMedalia
+  call PopulateMedaliaList
   call $6076
   jp IncSubStateIndex
 
