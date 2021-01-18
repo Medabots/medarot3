@@ -1,7 +1,21 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Medals State Machine 1", ROMX[$401B], BANK[$02]
+SECTION "Medals State Machine 1", ROMX[$4000], BANK[$02]
 MedalsStateMachine::
+  ld a, [$C522]
+  cp 2
+  jr nz, .fireState
+  call $632D
+  ld a, [$C4EE]
+  or a
+  jr z, .fireState
+  ld a, $1B
+  ld [W_CoreStateIndex], a
+  ld a, $B0
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.fireState
   ld a, [W_CoreSubStateIndex]
   ld hl, .table
   rst $30
@@ -93,10 +107,10 @@ MedalsStateMachine::
   dw MedalsMedaliaSubscreenMappingState ; 43
   dw MedalsMedaliaSubscreenPrepareFadeInState ; 44
   dw MedalsFadeState ; 45
-  dw $451A ; 46
-  dw $453D ; 47
+  dw MedalsMedaliaSubscreenSlotNavigationInputHandlerState ; 46
+  dw MedalsMedaliaSubscreenListNavigationInputHandlerState ; 47
   dw MedalsPlaceholderState ; 48
-  dw $457D ; 49
+  dw MedalsJumpToSkillLevelSubscreenState ; 49
   dw MedalsPlaceholderState ; 4A
   dw MedalsPlaceholderState ; 4B
   dw MedalsPlaceholderState ; 4C
@@ -110,7 +124,7 @@ MedalsStateMachine::
   dw MedalsFadeState ; 51
   dw MedalsPointlessConditionalExitToMedarotScreenThatDoesntWorkState ; 52
   dw MedalsMedawatchDrawingState ; 53
-  dw $45D2 ; 54
+  dw MedalsMedawatchRestoreOddsAndEndsState ; 54
   dw MedalsPrepareMedawatchMenuFadeInState ; 55
   dw MedalsExitToMedawatchMenuState ; 56
   dw MedalsPlaceholderState ; 57
@@ -585,7 +599,7 @@ MedalsMedaliaSubscreenMappingState::
   ld [W_MedalMenuCurrentScreen], a
   xor a
   ld [W_MedalMenuSelectedMedaliaSlot], a
-  ld [$C565], a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
   ld [W_MedalMenuMedaliaListOffsetIndex], a
   ld bc, 0
   ld e, $43
@@ -608,7 +622,7 @@ MedalsMedaliaSubscreenMappingState::
   call DisplayMedaliaInCurrentlySelectedSlot
   call CountMedalia
   call PopulateMedaliaList
-  call $6076
+  call DisplayMedaliaSlotSelector
   jp IncSubStateIndex
 
 MedalsMedaliaSubscreenPrepareFadeInState::
@@ -631,7 +645,58 @@ MedalsMedaliaSubscreenPrepareFadeInState::
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
 
-SECTION "Medals State Machine 2", ROMX[$4583], BANK[$02]
+MedalsMedaliaSubscreenSlotNavigationInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call MedaliaSlotNavigationInputHandler
+  call MedaliaSlotConfirmationInputHandler
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, $49
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsMedaliaSubscreenListNavigationInputHandlerState::
+  ld de, $C120
+  call $33B7
+  call AnimateVerticalMedaliaListArrows
+  call MedaliaListNavigationInputHandler
+  call $620E
+  ld a, [$C4EE]
+  or a
+  jr nz, .medaliaSelected
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+
+.medaliaSelected
+  ld a, 0
+  ld [$C120], a
+  ld [$C0E0], a
+  ld [$C100], a
+  xor a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  ld [W_MedalMenuMedaliaListOffsetIndex], a
+  call PopulateMedaliaList
+  call DisplayMedaliaIndicatorSpritesForMedaliaSubscreen
+  call DisplayMedaliaInCurrentlySelectedSlot
+  ld a, $46
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsJumpToSkillLevelSubscreenState::
+  ld a, $30
+  ld [W_CoreSubStateIndex], a
+  ret
+
 MedalsPrepareFadeOutState::
   ld hl, 1
   ld bc, 1
@@ -670,7 +735,26 @@ MedalsMedawatchDrawingState::
   call $3475
   jp IncSubStateIndex
 
-SECTION "Medals State Machine 3", ROMX[$4602], BANK[$02]
+MedalsMedawatchRestoreOddsAndEndsState::
+  ld a, [W_PauseMenuPerserveSCX]
+  ld [W_ShadowREG_SCX], a
+  ld a, [W_PauseMenuPerserveSCY]
+  ld [W_ShadowREG_SCY], a
+  ld a, 0
+  ld [$C4EE], a
+  ld a, $14
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, $12
+  ld [$C4F1], a
+  ld a, 3
+  call $123B
+  call MedalMenuRestoreIkkiOverlay
+  ld a, 1
+  call MedalMenuRestorePausemenuArrowPlaceholder
+  jp IncSubStateIndex
+
 MedalsPrepareMedawatchMenuFadeInState::
   call $2CEC
   ld h, 0
@@ -691,7 +775,7 @@ MedalsExitToMedawatchMenuState::
   ld [W_CoreSubStateIndex], a
   ret
 
-SECTION "Medals State Machine 4", ROMX[$47DA], BANK[$02]
+SECTION "Medals State Machine 2", ROMX[$47DA], BANK[$02]
 MedalsExitToLinkMenuState::
   ld a, $1B
   ld [W_CoreStateIndex], a

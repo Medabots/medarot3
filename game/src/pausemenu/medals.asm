@@ -9,6 +9,7 @@ W_MedalMenuSkillBarAnimationStage:: ds 1
 
 SECTION "Medal Variables 3",  WRAM0[$C564]
 W_MedalMenuSelectedMedaliaSlot:: ds 1
+W_MedalMenuSelectedMedaliaCursorPosition:: ds 1
 
 SECTION "Medal Variables 4",  WRAM0[$C57E]
 W_MedalMenuNumberOfMedals:: ds 1
@@ -2927,4 +2928,221 @@ CheckIfMedaliaInUse::
 
 .matchFound
   ld a, 1
+  ret
+
+DisplayMedaliaSlotSelector::
+  call PositionMedaliaSlotSelector
+  ld a, $37
+  ld b, 0
+  ld de, $C0C0
+  jp $33B2
+
+PositionMedaliaSlotSelector::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C0C1], a
+  ld hl, .table
+  ld b, 0
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld [$C0C3], a
+  ld a, [hl]
+  ld [$C0C4], a
+  ret
+
+.table
+  db $0D,$56
+  db $20,$5E
+  db $33,$56
+
+MedaliaSlotNavigationInputHandler::
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  sub 1
+  jr nc, .dontLoopToEnd
+  ld a, 2
+
+.dontLoopToEnd
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  call DisplayMedaliaIndicatorSpritesForMedaliaSubscreen
+  call DisplayMedaliaInCurrentlySelectedSlot
+  call PopulateMedaliaList
+  ld a, 2
+  call $27DA
+  jp PositionMedaliaSlotSelector
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  inc a
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  cp 3
+  jr nz, .dontLoopToStart
+  xor a
+
+.dontLoopToStart
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  call DisplayMedaliaIndicatorSpritesForMedaliaSubscreen
+  call DisplayMedaliaInCurrentlySelectedSlot
+  call PopulateMedaliaList
+  ld a, 2
+  call $27DA
+  jp PositionMedaliaSlotSelector
+
+MedaliaSlotConfirmationInputHandler::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ret z
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, $CA
+  ld [$C0C2], a
+  xor a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  ld [W_MedalMenuMedaliaListOffsetIndex], a
+  call DisplayMedaliaSelectionArrow
+  ld a, 3
+  call $27DA
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+DisplayMedaliaSelectionArrow::
+  call PositionMedaliaSelectionArrow
+  ld a, $36
+  ld b, 0
+  ld de, $C120
+  jp $33B2
+
+PositionMedaliaSelectionArrow::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C120], a
+  ld a, 0
+  ld [$C121], a
+  ld a, 7
+  ld [$C125], a
+  ld a, $4F
+  ld [$C123], a
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $30
+  ld [$C124], a
+  ret
+
+MedaliaListNavigationInputHandler::
+  ld a, [$C520]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  ld b, a
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  or b
+  ret z
+  ld a, 2
+  call $27DA
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  or a
+  jr z, .moveListDown
+
+.moveCursorUp
+  dec a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  jp PositionMedaliaSelectionArrow
+
+.moveListDown
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  dec a
+  ld [W_MedalMenuMedaliaListOffsetIndex], a
+  jp PopulateMedaliaList
+
+.upNotPressed
+  ld a, [$C520]
+  and M_JPInputDown
+  ret z
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  ld b, a
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  add b
+  ld b, a
+  ld a, [W_MedalMenuNumberOfMedalia]
+  cp b
+  ret z
+  ld a, 2
+  call $27DA
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  cp 4
+  jr z, .moveListUp
+
+.moveCursorDown
+  inc a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  jp PositionMedaliaSelectionArrow
+
+.moveListUp
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  inc a
+  ld [W_MedalMenuMedaliaListOffsetIndex], a
+  jp PopulateMedaliaList
+
+AnimateVerticalMedaliaListArrows::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, [W_UniversalLoopingTimer]
+  and 8
+  jr nz, DisplayVerticalMedaliaListArrows
+  ld a, 0
+  ld [$C0E0], a
+  ld [$C100], a
+  ret
+
+DisplayVerticalMedaliaListArrows::
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  or a
+  jr z, .skipTopArrow
+  ld a, 1
+  ld [$C0E0], a
+  ld a, 0
+  ld [$C0E1], a
+  ld a, $A0
+  ld [$C0E2], a
+  ld a, $58
+  ld [$C0E3], a
+  ld a, $28
+  ld [$C0E4], a
+
+.skipTopArrow
+  ld a, [W_MedalMenuNumberOfMedalia]
+  ld b, a
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  add 4
+  cp b
+  ret nc
+  ld a, 1
+  ld [$C100], a
+  ld a, 0
+  ld [$C101], a
+  ld a, $A1
+  ld [$C102], a
+  ld a, $58
+  ld [$C103], a
+  ld a, $80
+  ld [$C104], a
   ret
