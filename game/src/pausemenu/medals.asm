@@ -649,7 +649,7 @@ MedalListItemNavigationInputHandler::
   call MapMedalImage
   call MedalListPositionSelectorArrow
   call LoadMedalImagePalettes
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 2
   call $27DA
   ret
@@ -682,7 +682,7 @@ MedalListItemNavigationInputHandler::
   call MapMedalImage
   call MedalListPositionSelectorArrow
   call LoadMedalImagePalettes
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 2
   call $27DA
   ret
@@ -719,7 +719,7 @@ MedalListPageNavigationInputHandler::
   ld bc, $C00
   call MapMedalImage
   call LoadMedalImagePalettes
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -757,7 +757,7 @@ MedalListPageNavigationInputHandler::
   ld bc, $C00
   call MapMedalImage
   call LoadMedalImagePalettes
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -821,7 +821,7 @@ MedalListSortItemInputHandler::
   ld bc, $C00
   call MapMedalImage
   call LoadMedalImagePalettes
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 2
   call $27DA
 
@@ -1069,7 +1069,7 @@ MedalOptionsBoxInputHandler::
   ld a, [W_MedalMenuCurrentScreen]
   or a
   ret nz
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ret
@@ -2893,7 +2893,7 @@ CheckIfMedaliaInUse::
 .medalLoop
   ld a, [de]
   and $80
-  jr z, $6062
+  jr z, .skipMedal
   ld b, 3
   ld hl, $24
   add hl, de
@@ -2915,6 +2915,8 @@ CheckIfMedaliaInUse::
   inc hl
   dec b
   jr nz, .slotLoop
+
+.skipMedal
   ld hl, $40
   add hl, de
   ld d, h
@@ -3145,4 +3147,163 @@ DisplayVerticalMedaliaListArrows::
   ld [$C103], a
   ld a, $80
   ld [$C104], a
+  ret
+
+MedaliaListItemToSlotInputHandler::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ret z
+  ld a, 5
+  rst 8
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  ld b, a
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  or b
+  jr nz, .medaliaSelected
+
+.emptySelected
+  call GetSelectedMedaliaSlotAddress
+  ld a, [hl]
+  cp $FF
+  jp z, .medaliaAlreadyUsed
+  ld a, $FF
+  ld [hli], a
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  jp .noteOperationSuccess
+
+.medaliaSelected
+  ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  dec a
+  ld c, a
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  add c
+  ld c, a
+  ld b, 0
+  sla c
+  rl b
+  sla c
+  rl b
+  ld hl, $D8A0
+  add hl, bc
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hl]
+  ld [$C4F6], a
+  ld a, [$C4F0]
+  and $7F
+  call CheckIfMedaliaInUse
+  or a
+  jp nz, .medaliaAlreadyUsed
+  call GetSelectedMedaliaSlotAddress
+  ld a, [$C4F0]
+  ld [hli], a
+  ld a, [$C4F2]
+  ld [hli], a
+  ld a, [$C4F4]
+  ld [hli], a
+  ld a, [$C4F6]
+  ld [hl], a
+
+.noteOperationSuccess
+  ld a, 3
+  call $27DA
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+.medaliaAlreadyUsed
+  ld a, 5
+  call $27DA
+  ret
+
+GetSelectedMedaliaSlotAddress::
+  call GetMedalAddress
+  ld hl, $24
+  add hl, de
+  ld b, 0
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ret
+
+DisplayMedaliaSpritesInSlots::
+  call GetMedalAddress
+  ld a, [de]
+  and $80
+  jr nz, .checkSlotA
+  ld a, 0
+  ld [$C1E0], a
+  ld [$C200], a
+  ld [$C220], a
+  ret
+
+.checkSlotA
+  ld hl, $24
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .emptySlotA
+  push de
+  ld a, [hli]
+  ld b, $61
+  ld c, $2A
+  ld de, $C1E0
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  jr .checkSlotB
+
+.emptySlotA
+  ld a, 0
+  ld [$C1E0], a
+
+.checkSlotB
+  ld hl, $28
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .emptySlotB
+  push de
+  ld a, [hli]
+  ld b, $74
+  ld c, $32
+  ld de, $C200
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  jr .checkSlotC
+
+.emptySlotB
+  ld a, 0
+  ld [$C200], a
+
+.checkSlotC
+  ld hl, $2C
+  add hl, de
+  ld a, [hli]
+  cp $FF
+  jr z, .emptySlotC
+  push de
+  ld a, [hli]
+  ld b, $87
+  ld c, $2A
+  ld de, $C220
+  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
+  pop de
+  ret
+
+.emptySlotC
+  ld a, 0
+  ld [$C220], a
   ret

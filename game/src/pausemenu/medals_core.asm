@@ -242,7 +242,7 @@ MedalsMappingState::
   call MapMedalImage
   call MedalListDisplaySelectorArrow
   call MedalListDisplayArrows
-  call $62A6
+  call DisplayMedaliaSpritesInSlots
   jp IncSubStateIndex
 
 MedalsPrepareFadeInState::
@@ -667,7 +667,7 @@ MedalsMedaliaSubscreenListNavigationInputHandlerState::
   call $33B7
   call AnimateVerticalMedaliaListArrows
   call MedaliaListNavigationInputHandler
-  call $620E
+  call MedaliaListItemToSlotInputHandler
   ld a, [$C4EE]
   or a
   jr nz, .medaliaSelected
