@@ -551,8 +551,8 @@ MedalsSkillLevelSubscreenMappingState::
   call MapSkillsForMedalSubscreenLeftColumn
   call MapSkillsForMedalSubscreenRightColumn
   call MapSkillBarAttributesForMedalSubscreen
-  call $5AED
-  call $5C74
+  call SetLeftColumnSkillNamePalettesForSkillLevelSubscreen
+  call SetRightColumnSkillNamePalettesForSkillLevelSubscreen
   jp IncSubStateIndex
 
 MedalsSkillLevelSubscreenPrepareFadeInState::
