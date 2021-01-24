@@ -2335,8 +2335,8 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   call MapSkillsForMedalSubscreenLeftColumn
   call MapSkillsForMedalSubscreenRightColumn
   call MapSkillBarAttributesForMedalSubscreen
-  call $5AED
-  call $5C74
+  call SetLeftColumnSkillNamePalettesForSkillLevelSubscreen
+  call SetRightColumnSkillNamePalettesForSkillLevelSubscreen
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -2377,8 +2377,8 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   call MapSkillsForMedalSubscreenLeftColumn
   call MapSkillsForMedalSubscreenRightColumn
   call MapSkillBarAttributesForMedalSubscreen
-  call $5AED
-  call $5C74
+  call SetLeftColumnSkillNamePalettesForSkillLevelSubscreen
+  call SetRightColumnSkillNamePalettesForSkillLevelSubscreen
   ld a, 1
   ld [$C4EE], a
   ld a, 2
@@ -2450,7 +2450,220 @@ AnimateMedalSkillBarSegments::
   db $05,1,3,5
   db $05,0,2,4
 
-SECTION "Medal Menu Helper Functions 3", ROMX[$5C58], BANK[$02]
+SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
+  call GetMedalAddress
+  ld hl, W_ListItemBufferArea
+  ld bc, $10
+  call memclr
+
+.checkSkillA
+  call ClearSkillBuffer
+  ld a, 1
+  ld [$C4EE], a
+  ld hl, $19
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  call AddSkillToBuffer
+  call AddMatchingSkillsInMedaliaSlotsToBuffer
+  push de
+  ld a, 6
+  call $35C6
+  pop de
+  ld a, [$DC20]
+  push af
+  ld a, 5
+  rst 8
+  pop af
+  cp 1
+  jr z, .makeSkillABlack
+
+.makeSkillAGrey
+  ld hl, $98A1
+  ld a, $E
+  call MapAttributeToSkillName
+  jr $5B4B
+
+.makeSkillABlack
+  ld hl, $98A1
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $19
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+
+.checkSkillB
+  call ClearSkillBuffer
+  ld a, 2
+  ld [$C4EE], a
+  ld hl, $1D
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  call AddSkillToBuffer
+  call AddMatchingSkillsInMedaliaSlotsToBuffer
+  push de
+  ld a, 6
+  call $35C6
+  pop de
+  ld a, [$DC20]
+  push af
+  ld a, 5
+  rst 8
+  pop af
+  cp 2
+  jr z, .makeSkillBBlack
+
+.makeSkillBGrey
+  ld hl, $98E1
+  ld a, $E
+  call MapAttributeToSkillName
+  jr .checkSkillC
+
+.makeSkillBBlack
+  ld hl, $98E1
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $1D
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+
+.checkSkillC
+  call ClearSkillBuffer
+  ld a, 3
+  ld [$C4EE], a
+  ld hl, $21
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  call AddSkillToBuffer
+  call AddMatchingSkillsInMedaliaSlotsToBuffer
+  push de
+  ld a, 6
+  call $35C6
+  pop de
+  ld a, [$DC20]
+  push af
+  ld a, 5
+  rst 8
+  pop af
+  cp 3
+  jr z, .makeSkillCBlack
+
+.makeSkillCGrey
+  ld hl, $9921
+  ld a, $E
+  jp MapAttributeToSkillName
+
+.makeSkillCBlack
+  ld hl, $9921
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $21
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+  ret
+
+ClearSkillBuffer::
+  ld a, 6
+  rst 8
+  ld hl, $DC20
+  ld bc, $40
+  call memclr
+  ld a, 5
+  rst 8
+  ret
+
+AddSkillToBuffer::
+  ld a, 6
+  rst 8
+  ld hl, $DC20
+
+.loop
+  ld a, [hl]
+  or a
+  jr z, .exitLoop
+  ld bc, 4
+  add hl, bc
+  jr .loop
+
+.exitLoop
+  ld a, [$C4EE]
+  ld [hli], a
+  ld a, [$C4F0]
+  ld [hli], a
+  ld a, [$C4F2]
+  ld [hl], a
+  ld a, 5
+  rst 8
+  ret
+
+AddMatchingSkillsInMedaliaSlotsToBuffer::
+  ld hl, $24
+  add hl, de
+  xor a
+  ld [$C4F6], a
+
+.loop
+  push hl
+  ld a, [hli]
+  cp $FF
+  jr z, .skipMedaliaSlot
+  ld a, [hli]
+  ld b, a
+  ld a, [$C4F4]
+  cp b
+  jr nz, .skipMedaliaSlot
+  ld a, [$C4F6]
+  add $81
+  ld [$C4EE], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  call AddSkillToBuffer
+
+.skipMedaliaSlot
+  pop hl
+  ld bc, 4
+  add hl, bc
+  ld a, [$C4F6]
+  inc a
+  ld [$C4F6], a
+  cp 3
+  jr nz, .loop
+  ret
+
 MapAttributeToSkillName::
   push af
   ld a, 1
@@ -2473,7 +2686,164 @@ MapAttributeToSkillName::
   ldh [H_RegVBK], a
   ret
 
-SECTION "Medal Menu Helper Functions 4", ROMX[$5D82], BANK[$02]
+SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
+  call GetMedalAddress
+
+.checkSkillA
+  ld hl, $24
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr z, .makeSkillAGrey
+  ld a, $81
+  ld [$C4EE], a
+  ld hl, $25
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld a, [$C4F4]
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  or a
+  jr nz, .makeSkillAGrey
+  call ClearSkillBuffer
+  call AddMatchingSkillsInMedaliaSlotsToBuffer
+  push de
+  ld a, 6
+  call $35C6
+  pop de
+  ld a, [$DC20]
+  push af
+  ld a, 5
+  rst 8
+  pop af
+  cp $81
+  jr z, .makeSkillABlack
+
+.makeSkillAGrey
+  ld hl, $98AB
+  ld a, $E
+  call MapAttributeToSkillName
+  jr .checkSkillB
+
+.makeSkillABlack
+  ld hl, $98AB
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $25
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+
+.checkSkillB
+  ld hl, $28
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr z, .makeSkillBGrey
+  ld a, $82
+  ld [$C4EE], a
+  ld hl, $29
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld a, [hli]
+  ld [$C4F0], a
+  ld a, [hli]
+  ld [$C4F2], a
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld a, [$C4F4]
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  or a
+  jr nz, .makeSkillBGrey
+  call ClearSkillBuffer
+  call AddMatchingSkillsInMedaliaSlotsToBuffer
+  push de
+  ld a, 6
+  call $35C6
+  pop de
+  ld a, [$DC20]
+  push af
+  ld a, 5
+  rst 8
+  pop af
+  cp $82
+  jr z, .makeSkillBBlack
+
+.makeSkillBGrey
+  ld hl, $98EB
+  ld a, $E
+  call MapAttributeToSkillName
+  jr .checkSkillC
+
+.makeSkillBBlack
+  ld hl, $98EB
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $29
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+
+.checkSkillC
+  ld hl, $2C
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr z, .makeSkillCGrey
+  ld hl, $2D
+  add hl, de
+  ld a, [hli]
+  ld [$C4F4], a
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld a, [$C4F4]
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  or a
+  jr z, .makeSkillCBlack
+
+.makeSkillCGrey
+  ld hl, $992B
+  ld a, $E
+  jp MapAttributeToSkillName
+
+.makeSkillCBlack
+  ld hl, $992B
+  ld a, 8
+  call MapAttributeToSkillName
+  ld hl, $2D
+  add hl, de
+  ld a, [hl]
+  ld hl, W_ListItemBufferArea
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, 1
+  ld [hl], a
+  ret
+
 DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
   call GetMedalAddress
   ld hl, $24
