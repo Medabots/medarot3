@@ -22,39 +22,48 @@ MedarotsStateMachine::
   jp hl
 
 .table
+
+; Selector screen states.
+
   dw MedarotsSelectionScreenDrawingState ; 00
   dw MedarotsSelectionScreenMappingState ; 01
-  dw MedarotsSelectionScreenPrepareFadeIn ; 02
+  dw MedarotsSelectionScreenPrepareFadeInState ; 02
   dw MedarotsFadeState ; 03
-  dw $41AD ; 04
+  dw MedarotsSelectionScreenInputHandlerState ; 04
   dw MedarotsPrepareMainScriptState ; 05
-  dw $424E ; 06
+  dw MedarotsNoBattleReadyMedarotsMessageState ; 06
   dw MedarotsPlaceholderState ; 07
-  dw $427E ; 08
+  dw MedarotsPrepareFadeOutToWhiteState ; 08
   dw MedarotsFadeState ; 09
-  dw $4290 ; 0A
+  dw MedarotsJumpToStatusScreenState ; 0A
   dw MedarotsPlaceholderState ; 0B
-  dw $4266 ; 0C
+  dw MedarotsMissingStarterMedalMessageState ; 0C
   dw MedarotsPlaceholderState ; 0D
   dw MedarotsPlaceholderState ; 0E
   dw MedarotsPlaceholderState ; 0F
-  dw $4296 ; 10
-  dw $42C0 ; 11
-  dw $432A ; 12
+
+; Status screen states.
+
+  dw MedarotsStatusDrawingState ; 10
+  dw MedarotsStatusMappingState ; 11
+  dw MedarotsStatusPrepareFadeInFromWhiteState ; 12
   dw MedarotsFadeState ; 13
-  dw $433C ; 14
+  dw MedarotsStatusInputHandlerState ; 14
   dw MedarotsPrepareFadeOutState ; 15
   dw MedarotsFadeState ; 16
   dw $439A ; 17
   dw MedarotsPlaceholderState ; 18
   dw MedarotsPlaceholderState ; 19
-  dw $4296 ; 1A
-  dw $42C0 ; 1B
+  dw MedarotsStatusDrawingState ; 1A
+  dw MedarotsStatusMappingState ; 1B
   dw $4449 ; 1C
   dw $4463 ; 1D
   dw MedarotsPlaceholderState ; 1E
   dw MedarotsPlaceholderState ; 1F
-  dw $427E ; 20
+
+; Exit status screen states.
+
+  dw MedarotsPrepareFadeOutToWhiteState ; 20
   dw MedarotsFadeState ; 21
   dw $4469 ; 22
   dw MedarotsPlaceholderState ; 23
@@ -70,6 +79,9 @@ MedarotsStateMachine::
   dw MedarotsPlaceholderState ; 2D
   dw MedarotsPlaceholderState ; 2E
   dw MedarotsPlaceholderState ; 2F
+
+; Medachange states.
+
   dw $446E ; 30
   dw $44CE ; 31
   dw MedarotsPrepareFadeOutState ; 32
@@ -81,11 +93,14 @@ MedarotsStateMachine::
   dw $454F ; 38
   dw MedarotsPrepareFadeOutState ; 39
   dw MedarotsFadeState ; 3A
-  dw $42C0 ; 3B
+  dw MedarotsStatusMappingState ; 3B
   dw $4471 ; 3C
   dw $4565 ; 3D
   dw MedarotsFadeState ; 3E
   dw $458D ; 3F
+
+; Exit selection screen states.
+
   dw $459F ; 40
   dw MedarotsPrepareFadeOutState ; 41
   dw MedarotsFadeState ; 42
@@ -102,6 +117,9 @@ MedarotsStateMachine::
   dw MedarotsPlaceholderState ; 4D
   dw MedarotsPlaceholderState ; 4E
   dw MedarotsPlaceholderState ; 4F
+
+; Battle-specific states.
+
   dw $4639 ; 50
   dw $469F ; 51
   dw $46D2 ; 52
@@ -181,7 +199,7 @@ MedarotsSelectionScreenMappingState::
   ld [$C592], a
   jp IncSubStateIndex
 
-MedarotsSelectionScreenPrepareFadeIn::
+MedarotsSelectionScreenPrepareFadeInState::
   ld a, [$C595]
   cp 1
   jp z, .isBattleSelectionScreen
@@ -207,6 +225,233 @@ MedarotsSelectionScreenPrepareFadeIn::
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
+
+MedarotsSelectionScreenInputHandlerState::
+  ld a, [$C595]
+  cp 1
+  jr nz, .notBattleSystem
+  ld a, $50
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.notBattleSystem
+  ld de, $C0C0
+  call $33B7
+  call $492A
+  call $497B
+  call $4967
+  call $4A79
+  call $4A96
+  ld a, [$C592]
+  cp $80
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  call $4B5E
+  or a
+  ret z
+  ld a, $CD
+  ld [$C0C2], a
+  ld a, 5
+  ld [$C0C5], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  call $4B77
+  call $4B96
+  ld a, 8
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  ld a, [$C584]
+  or a
+  jr z, .notInSortingMode
+  ld a, [$C584]
+  and $7F
+  call $4970
+  ld a, [de]
+  or 1
+  ld [de], a
+  call $4A6F
+  xor a
+  ld [$C584], a
+  ret
+
+.notInSortingMode
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, [$C583]
+  call $4970
+  call $4A6F
+  ld a, 0
+  ld [$C0C0], a
+  call $4B1B
+  or a
+  jp nz, IncSubStateIndex
+  call $4B34
+  or a
+  jr z, .hasStarterMedal
+  call WrapInitiateMainScript
+  ld a, $C
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.hasStarterMedal
+  ld a, $40
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsNoBattleReadyMedarotsMessageState::
+  ld bc, 3
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsMissingStarterMedalMessageState::
+  ld bc, $55
+  ld a, 1
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsPrepareFadeOutToWhiteState::
+  ld hl, 0
+  ld bc, 0
+  ld d, $F7
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedarotsJumpToStatusScreenState::
+  ld a, $10
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsStatusDrawingState::
+  call $3413
+  call $343B
+  call $3475
+  ld bc, $13
+  call WrapLoadMaliasGraphics
+  ld bc, $15
+  call WrapLoadMaliasGraphics
+  ld bc, $11
+  call WrapLoadMaliasGraphics
+  ld bc, $17
+  call WrapLoadMaliasGraphics
+  ld bc, 4
+  call $33C6
+  jp IncSubStateIndex
+
+MedarotsStatusMappingState::
+  ld bc, 0
+  ld e, $45
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $45
+  ld a, 0
+  call WrapDecompressAttribmap0
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  call $4C0C
+  call $4CA2
+  ld bc, $A01
+  call $5592
+  ld bc, $101
+  call $4D16
+  ld bc, $608
+  call $4D4E
+  ld bc, $407
+  call $4D81
+  ld bc, $60A
+  call $4DC6
+  ld bc, $60C
+  call $4DF1
+  ld bc, $60E
+  call $4E1C
+  ld bc, $610
+  call $4E47
+  call $4E94
+  call $4ED6
+  call $4F18
+  call $4F5A
+  call $4F9C
+  call $5097
+  call $577E
+  call $57B6
+  jp IncSubStateIndex
+
+MedarotsStatusPrepareFadeInFromWhiteState::
+  ld hl, $2A
+  ld bc, $16
+  ld d, $F7
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedarotsStatusInputHandlerState::
+  ld de, $C0E0
+  call $33B7
+  ld de, $C100
+  call $33B7
+  call $4CA2
+  call $503B
+  call $50AE
+  call $50FC
+  call $512D
+  call $520C
+  call $52E8
+  call $53C4
+  call $54A0
+  call $55A5
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  call $5AC8
+  ld a, [$C4EE]
+  or a
+  ret nz
+  call $57CF
+  ld a, [$C4EE]
+  or a
+  jr z, .medachangeOverlayNotRequested
+  call $4C0C
+  ld a, $30
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.medachangeOverlayNotRequested
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  call $5668
+  ld a, $20
+  ld [W_CoreSubStateIndex], a
+  ld a, 4
+  call $27DA
+  ret
 
 SECTION "Medarots State Machine 2", ROMX[$46FE], BANK[$07]
 MedarotsPlaceholderState::
