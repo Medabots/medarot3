@@ -51,13 +51,13 @@ MedarotsStateMachine::
   dw MedarotsStatusInputHandlerState ; 14
   dw MedarotsPrepareFadeOutState ; 15
   dw MedarotsFadeState ; 16
-  dw $439A ; 17
+  dw MedarotsStatusOpenExternalSubscreenState ; 17
   dw MedarotsPlaceholderState ; 18
   dw MedarotsPlaceholderState ; 19
   dw MedarotsStatusDrawingState ; 1A
   dw MedarotsStatusMappingState ; 1B
-  dw $4449 ; 1C
-  dw $4463 ; 1D
+  dw MedarotsStatusPrepareFadeInFromExternalSubscreenState ; 1C
+  dw MedarotsJumpToStatusState ; 1D
   dw MedarotsPlaceholderState ; 1E
   dw MedarotsPlaceholderState ; 1F
 
@@ -65,7 +65,7 @@ MedarotsStateMachine::
 
   dw MedarotsPrepareFadeOutToWhiteState ; 20
   dw MedarotsFadeState ; 21
-  dw $4469 ; 22
+  dw MedarotsJumpToSelectorState ; 22
   dw MedarotsPlaceholderState ; 23
   dw MedarotsPlaceholderState ; 24
   dw MedarotsPlaceholderState ; 25
@@ -82,33 +82,33 @@ MedarotsStateMachine::
 
 ; Medachange states.
 
-  dw $446E ; 30
-  dw $44CE ; 31
+  dw MedarotsMedachangeWindowMappingState ; 30
+  dw MedarotsMedachangeWindowInputHandlerState ; 31
   dw MedarotsPrepareFadeOutState ; 32
   dw MedarotsFadeState ; 33
-  dw $4593 ; 34
-  dw $4503 ; 35
-  dw $453D ; 36
+  dw MedarotsResetStuffState ; 34
+  dw MedarotsMedachangeMappingState ; 35
+  dw MedarotsPrepareFadeIntoMedachangeScreenState ; 36
   dw MedarotsFadeState ; 37
-  dw $454F ; 38
+  dw MedarotsMedachangeInputHandler ; 38
   dw MedarotsPrepareFadeOutState ; 39
   dw MedarotsFadeState ; 3A
   dw MedarotsStatusMappingState ; 3B
-  dw $4471 ; 3C
-  dw $4565 ; 3D
+  dw MedarotsMedachangeWindowMappingOnReturnState ; 3C
+  dw MedarotsStatusPrepareFadeInToMedachangeWindowState ; 3D
   dw MedarotsFadeState ; 3E
-  dw $458D ; 3F
+  dw MedarotsJumpToMedachangeWindowState ; 3F
 
 ; Exit selection screen states.
 
-  dw $459F ; 40
+  dw MedarotsConditionalVariableExitState ; 40
   dw MedarotsPrepareFadeOutState ; 41
   dw MedarotsFadeState ; 42
-  dw $4593 ; 43
-  dw $45BE ; 44
-  dw $45E5 ; 45
-  dw $4615 ; 46
-  dw $462E ; 47
+  dw MedarotsResetStuffState ; 43
+  dw MedarotsMedawatchDrawingState ; 44
+  dw MedarotsMedawatchRestoreOddsAndEndsState ; 45
+  dw MedarotsPrepareMedawatchMenuFadeInState ; 46
+  dw MedarotsExitToMedawatchMenuState ; 47
   dw MedarotsPlaceholderState ; 48
   dw MedarotsPlaceholderState ; 49
   dw MedarotsPlaceholderState ; 4A
@@ -451,6 +451,325 @@ MedarotsStatusInputHandlerState::
   ld [W_CoreSubStateIndex], a
   ld a, 4
   call $27DA
+  ret
+
+
+MedarotsStatusOpenExternalSubscreenState::
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 0
+  jr nz, .medalNotSelected
+  call $5DBD
+  ld a, [$C529]
+  ld [W_SelectedItemInventorySlotIndex], a
+  ld a, 1
+  ld [W_TransportOptionSubSubSubStateIndex], a
+  ld a, $E
+  ld [W_CoreStateIndex], a
+  ld a, $12
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.medalNotSelected
+  cp 1
+  jr nz, .headPartNotSelected
+  ld a, 1
+  ld [$C56B], a
+  xor a
+  ld [$C566], a
+  ld a, [$C525]
+  ld [$C56C], a
+  ld a, [$C566]
+  call $5603
+  ld a, $D
+  ld [W_CoreStateIndex], a
+  ld a, 8
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.headPartNotSelected
+  cp 2
+  jr nz, .leftArmPartNotSelected
+  ld a, 1
+  ld [$C56B], a
+  ld a, 1
+  ld [$C566], a
+  ld a, [$C526]
+  ld [$C56C], a
+  ld a, [$C566]
+  call $5603
+  ld a, $D
+  ld [W_CoreStateIndex], a
+  ld a, 8
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.leftArmPartNotSelected
+  cp 3
+  jr nz, .rightArmPartNotSelected
+  ld a, 1
+  ld [$C56B], a
+  ld a, 2
+  ld [$C566], a
+  ld a, [$C527]
+  ld [$C56C], a
+  ld a, [$C566]
+  call $5603
+  ld a, $D
+  ld [W_CoreStateIndex], a
+  ld a, 8
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.rightArmPartNotSelected
+  ld a, 1
+  ld [$C56B], a
+  ld a, 3
+  ld [$C566], a
+  ld a, [$C528]
+  ld [$C56C], a
+  ld a, [$C566]
+  call $5603
+  ld a, $D
+  ld [W_CoreStateIndex], a
+  ld a, 8
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsStatusPrepareFadeInFromExternalSubscreenState::
+  ld hl, $2A
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  call $4869
+  ld a, 3
+  call WrapRestageDestinationBGPalettesForFade
+  jp IncSubStateIndex
+
+MedarotsJumpToStatusState::
+  ld a, $13
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsJumpToSelectorState::
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsMedachangeWindowMappingState::
+  call $5807
+  ; Continues into MedarotsMedachangeWindowMappingOnReturnState
+
+MedarotsMedachangeWindowMappingOnReturnState::
+  ld bc, $206
+  ld e, $4A
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $48
+  ld a, 0
+  call WrapDecompressTilemap1
+  ld bc, 0
+  ld e, $48
+  ld a, 0
+  call WrapDecompressAttribmap1
+  ld bc, $A03
+  ld a, [$C602]
+  add $B0
+  ld e, a
+  ld a, 0
+  call WrapDecompressTilemap1
+  ld hl, $94A0
+  call $3603
+  xor a
+  ld [$C5FB], a
+  ld bc, $101
+  ld a, 1
+  call $360E
+  ld a, 0
+  ld [$C0E0], a
+  ld [$C100], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, $30
+  ld [W_ShadowREG_WX], a
+  ld a, $40
+  ld [W_ShadowREG_WY], a
+  ld a, 1
+  call $1554
+  jp IncSubStateIndex
+
+MedarotsMedachangeWindowInputHandlerState::
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  ld a, 3
+  call $27DA
+  jp IncSubStateIndex
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB | M_JPInputSelect
+  ret z
+  ld a, 4
+  call $27DA
+  call $5097
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  call $1554
+  ld bc, $206
+  ld e, $47
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld a, $14
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsMedachangeMappingState::
+  xor a
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  ld bc, 0
+  ld e, $4B
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $4B
+  ld a, 0
+  call WrapDecompressAttribmap0
+  ld bc, $A00
+  ld e, $4C
+  ld a, 0
+  call WrapDecompressAttribmap0
+  ld bc, $101
+  call $4D16
+  call $5815
+  call $5874
+  call WrapInitiateMainScript
+  call $5A16
+  call $5A3E
+  jp IncSubStateIndex
+
+MedarotsPrepareFadeIntoMedachangeScreenState::
+  ld hl, $2B
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedarotsMedachangeInputHandler::
+  ld de, $C0C0
+  call $33B7
+  call $5A77
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call $27DA
+  jp IncSubStateIndex
+
+MedarotsStatusPrepareFadeInToMedachangeWindowState::
+  ld de, $C0C0
+  call $341B
+  ld hl, $2A
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  call $4869
+  ld a, 3
+  call WrapRestageDestinationBGPalettesForFade
+  call $57E8
+  ld a, 2
+  call WrapRestageDestinationBGPalettesForFade
+  jp IncSubStateIndex
+
+MedarotsJumpToMedachangeWindowState::
+  ld a, $31
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedarotsResetStuffState::
+  call $3413
+  call $343B
+  call $3475
+  jp IncSubStateIndex
+
+MedarotsConditionalVariableExitState::
+  ld a, [$C595]
+  or a
+  jp z, IncSubStateIndex
+  ld a, [$C597]
+  ld [W_CoreStateIndex], a
+  ld a, [$C598]
+  ld [W_CoreSubStateIndex], a
+  ld a, [$C597]
+  cp 8
+  ret nz
+  ld a, $9A
+  ld [$C0A6], a
+  ret
+
+MedarotsMedawatchDrawingState::
+  ld bc, 6
+  call WrapLoadMaliasGraphics
+  call $2CEC
+  ld h, 0
+  ld l, a
+  ld bc, 7
+  add hl, bc
+  ld b, h
+  ld c, l
+  call WrapLoadMaliasGraphics
+  ld bc, $C
+  call WrapLoadMaliasGraphics
+  ld bc, $D
+  call WrapLoadMaliasGraphics
+  call $3475
+  jp IncSubStateIndex
+
+MedarotsMedawatchRestoreOddsAndEndsState::
+  ld a, [W_PauseMenuPerserveSCX]
+  ld [W_ShadowREG_SCX], a
+  ld a, [W_PauseMenuPerserveSCY]
+  ld [W_ShadowREG_SCY], a
+  ld a, 0
+  ld [$C4EE], a
+  ld a, $14
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, $12
+  ld [$C4F1], a
+  ld a, 3
+  call $123B
+  call $5DD9
+  ld a, 1
+  call $5DF2
+  jp IncSubStateIndex
+
+MedarotsPrepareMedawatchMenuFadeInState::
+  call $2CEC
+  ld h, 0
+  ld l, a
+  ld bc, $12
+  add hl, bc
+  ld bc, $12
+  ld d, $7F
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedarotsExitToMedawatchMenuState::
+  ld a, $A
+  ld [W_CoreStateIndex], a
+  ld a, 3
+  ld [W_CoreSubStateIndex], a
   ret
 
 SECTION "Medarots State Machine 2", ROMX[$46FE], BANK[$07]
