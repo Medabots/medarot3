@@ -120,12 +120,12 @@ MedarotsStateMachine::
 
 ; Battle-specific states.
 
-  dw $4639 ; 50
-  dw $469F ; 51
-  dw $46D2 ; 52
+  dw MedarotsBattleSelectionScreenInputHandlerState ; 50
+  dw MedarotsSelectionScreenPrepareBattleEntryState ; 51
+  dw MedarotsBattleSelectionScreenWaitState ; 52
   dw MedarotsPrepareFadeOutState ; 53
   dw MedarotsFadeState ; 54
-  dw $46DD ; 55
+  dw MedarotsSelectionScreenBattleEntryState ; 55
   dw MedarotsPlaceholderState ; 56
 
 MedarotsPrepareMainScriptState::
@@ -772,6 +772,100 @@ MedarotsExitToMedawatchMenuState::
   ld [W_CoreSubStateIndex], a
   ret
 
-SECTION "Medarots State Machine 2", ROMX[$46FE], BANK[$07]
+MedarotsBattleSelectionScreenInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call $492A
+  call $497B
+  call $4967
+  ld a, [$C592]
+  cp $80
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  call $4B5E
+  or a
+  ret z
+  ld a, [de]
+  cp 3
+  jp nz, MedarotsPlayBzztSound
+  call $5C85
+  or a
+  jp nz, MedarotsPlayBzztSound
+  ld a, 3
+  call $27DA
+  ld a, [$C583]
+  call $4970
+  call $4A6F
+  call $5CA5
+  call $5CC8
+  ld a, [$C4EE]
+  or a
+  jp nz, IncSubStateIndex
+  call $5D00
+  ret
+
+.aNotPressed
+  call $5D3F
+  ld a, [$C4EE]
+  or a
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputStart
+  ret z
+  ld a, [$C596]
+  or a
+  ret z
+  ld a, 3
+  call $27DA
+  jp IncSubStateIndex
+
+MedarotsSelectionScreenPrepareBattleEntryState::
+  ld a, [$C583]
+  call $4970
+  call $4A6F
+  ld bc, $A01
+  call $4811
+  ld bc, $B0B
+  call $4899
+  call $488B
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld [$C0C0], a
+  ld bc, $103
+  ld hl, $99C1
+  call $25E5
+  ld a, $3C
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+MedarotsBattleSelectionScreenWaitState::
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  jp IncSubStateIndex
+
+MedarotsSelectionScreenBattleEntryState::
+  ld bc, 5
+  call WrapLoadMaliasGraphics
+  ld a, [$C522]
+  cp 2
+  jr z, .isLink
+  ld a, $10
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.isLink
+  ld a, $1C
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
 MedarotsPlaceholderState::
   ret
