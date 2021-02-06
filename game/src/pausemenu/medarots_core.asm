@@ -189,14 +189,14 @@ MedarotsSelectionScreenMappingState::
   call WrapDecompressAttribmap0
   call $5BA6
   call $5C59
-  call $46FF
+  call MedarotsSelectionScreenDisplayMedarotSprites
   ld bc, $A01
-  call $4811
+  call DrawCurrentMedarot
   ld bc, $B0B
-  call $4899
-  call $491D
+  call MapCurrentMedarotNameForSelectionScreen
+  call DisplayMedarotSelectorArrow
   ld a, $80
-  ld [$C592], a
+  ld [W_MedarotSelectionDirectionalInputWaitTimer], a
   jp IncSubStateIndex
 
 MedarotsSelectionScreenPrepareFadeInState::
@@ -209,7 +209,7 @@ MedarotsSelectionScreenPrepareFadeInState::
   ld e, $FF
   ld a, 8
   call WrapSetupPalswapAnimation
-  call $485F
+  call GetPaletteIndexForSelectedMedarot
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -221,7 +221,7 @@ MedarotsSelectionScreenPrepareFadeInState::
   ld e, $FF
   ld a, 8
   call WrapSetupPalswapAnimation
-  call $485F
+  call GetPaletteIndexForSelectedMedarot
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -237,12 +237,12 @@ MedarotsSelectionScreenInputHandlerState::
 .notBattleSystem
   ld de, $C0C0
   call $33B7
-  call $492A
-  call $497B
-  call $4967
-  call $4A79
+  call PlaceMedarotSelectorArrow
+  call MedarotSelectionScreenDirectionalInputHandler
+  call AnimatedSelectedMedarotSpriteForSelectionScreen
+  call MedarotSelectionSortingFlicker
   call $4A96
-  ld a, [$C592]
+  ld a, [W_MedarotSelectionDirectionalInputWaitTimer]
   cp $80
   ret nz
   ldh a, [H_JPInputChanged]
@@ -269,26 +269,26 @@ MedarotsSelectionScreenInputHandlerState::
   ret z
   ld a, 4
   call $27DA
-  ld a, [$C584]
+  ld a, [W_MedarotSelectionScreenSortItem]
   or a
   jr z, .notInSortingMode
-  ld a, [$C584]
+  ld a, [W_MedarotSelectionScreenSortItem]
   and $7F
-  call $4970
+  call GetSelectedMedarotMetaspriteAddress
   ld a, [de]
   or 1
   ld [de], a
-  call $4A6F
+  call CancelMedarotSpriteAnimation
   xor a
-  ld [$C584], a
+  ld [W_MedarotSelectionScreenSortItem], a
   ret
 
 .notInSortingMode
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, [$C583]
-  call $4970
-  call $4A6F
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetSelectedMedarotMetaspriteAddress
+  call CancelMedarotSpriteAnimation
   ld a, 0
   ld [$C0C0], a
   call $4B1B
@@ -459,7 +459,7 @@ MedarotsStatusOpenExternalSubscreenState::
   cp 0
   jr nz, .medalNotSelected
   call $5DBD
-  ld a, [$C529]
+  ld a, [W_MedarotCurrentMedal]
   ld [W_SelectedItemInventorySlotIndex], a
   ld a, 1
   ld [W_TransportOptionSubSubSubStateIndex], a
@@ -476,7 +476,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld [$C56B], a
   xor a
   ld [$C566], a
-  ld a, [$C525]
+  ld a, [W_MedarotCurrentHeadPart]
   ld [$C56C], a
   ld a, [$C566]
   call $5603
@@ -493,7 +493,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld [$C56B], a
   ld a, 1
   ld [$C566], a
-  ld a, [$C526]
+  ld a, [W_MedarotCurrentLeftArmPart]
   ld [$C56C], a
   ld a, [$C566]
   call $5603
@@ -510,7 +510,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld [$C56B], a
   ld a, 2
   ld [$C566], a
-  ld a, [$C527]
+  ld a, [W_MedarotCurrentRightArmPart]
   ld [$C56C], a
   ld a, [$C566]
   call $5603
@@ -525,7 +525,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld [$C56B], a
   ld a, 3
   ld [$C566], a
-  ld a, [$C528]
+  ld a, [W_MedarotCurrentLegPart]
   ld [$C56C], a
   ld a, [$C566]
   call $5603
@@ -775,10 +775,10 @@ MedarotsExitToMedawatchMenuState::
 MedarotsBattleSelectionScreenInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $492A
-  call $497B
-  call $4967
-  ld a, [$C592]
+  call PlaceMedarotSelectorArrow
+  call MedarotSelectionScreenDirectionalInputHandler
+  call AnimatedSelectedMedarotSpriteForSelectionScreen
+  ld a, [W_MedarotSelectionDirectionalInputWaitTimer]
   cp $80
   ret nz
   ldh a, [H_JPInputChanged]
@@ -795,9 +795,9 @@ MedarotsBattleSelectionScreenInputHandlerState::
   jp nz, MedarotsPlayBzztSound
   ld a, 3
   call $27DA
-  ld a, [$C583]
-  call $4970
-  call $4A6F
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetSelectedMedarotMetaspriteAddress
+  call CancelMedarotSpriteAnimation
   call $5CA5
   call $5CC8
   ld a, [$C4EE]
@@ -822,14 +822,14 @@ MedarotsBattleSelectionScreenInputHandlerState::
   jp IncSubStateIndex
 
 MedarotsSelectionScreenPrepareBattleEntryState::
-  ld a, [$C583]
-  call $4970
-  call $4A6F
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetSelectedMedarotMetaspriteAddress
+  call CancelMedarotSpriteAnimation
   ld bc, $A01
-  call $4811
+  call DrawCurrentMedarot
   ld bc, $B0B
-  call $4899
-  call $488B
+  call MapCurrentMedarotNameForSelectionScreen
+  call UpdateSelectedMedarotPalette
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 0
