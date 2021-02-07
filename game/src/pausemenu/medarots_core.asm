@@ -241,14 +241,14 @@ MedarotsSelectionScreenInputHandlerState::
   call MedarotSelectionScreenDirectionalInputHandler
   call AnimatedSelectedMedarotSpriteForSelectionScreen
   call MedarotSelectionSortingFlicker
-  call $4A96
+  call MedarotSelectionScreenSortingInputHandler
   ld a, [W_MedarotSelectionDirectionalInputWaitTimer]
   cp $80
   ret nz
   ldh a, [H_JPInputChanged]
   and M_JPInputA
   jr z, .aNotPressed
-  call $4B5E
+  call MedarotSelectionScreenEmptySlotCheck
   or a
   ret z
   ld a, $CD
@@ -257,8 +257,8 @@ MedarotsSelectionScreenInputHandlerState::
   ld [$C0C5], a
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  call $4B77
-  call $4B96
+  call GetCurrentMedalAndTypeForMedarotStatusScreen
+  call DeductMedarotEquipmentFromInventoryForStatus
   ld a, 8
   ld [W_CoreSubStateIndex], a
   ret
@@ -268,7 +268,7 @@ MedarotsSelectionScreenInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, [W_MedarotSelectionScreenSortItem]
   or a
   jr z, .notInSortingMode
@@ -291,10 +291,10 @@ MedarotsSelectionScreenInputHandlerState::
   call CancelMedarotSpriteAnimation
   ld a, 0
   ld [$C0C0], a
-  call $4B1B
+  call CheckForBattleReadyMedarots
   or a
   jp nz, IncSubStateIndex
-  call $4B34
+  call CheckForStarterMedarot
   or a
   jr z, .hasStarterMedal
   call WrapInitiateMainScript
@@ -374,24 +374,24 @@ MedarotsStatusMappingState::
   call WrapDecompressAttribmap0
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  call $4C0C
-  call $4CA2
+  call MedarotStatusDisplayIcons
+  call DisplayMedarotSpriteForStatusScreen
   ld bc, $A01
   call $5592
   ld bc, $101
-  call $4D16
+  call MapMedalNicknameForMedarotStatus
   ld bc, $608
-  call $4D4E
+  call MapMedalNameForMedarotStatus
   ld bc, $407
-  call $4D81
+  call MapMedalIconForMedarotStatus
   ld bc, $60A
-  call $4DC6
+  call MapHeadPartNameForMedarotStatus
   ld bc, $60C
-  call $4DF1
+  call MapLeftArmPartNameForMedarotStatus
   ld bc, $60E
-  call $4E1C
+  call MapRightArmPartNameForMedarotStatus
   ld bc, $610
-  call $4E47
+  call MapLegPartNameForMedarotStatus
   call $4E94
   call $4ED6
   call $4F18
@@ -416,7 +416,7 @@ MedarotsStatusInputHandlerState::
   call $33B7
   ld de, $C100
   call $33B7
-  call $4CA2
+  call DisplayMedarotSpriteForStatusScreen
   call $503B
   call $50AE
   call $50FC
@@ -437,7 +437,7 @@ MedarotsStatusInputHandlerState::
   ld a, [$C4EE]
   or a
   jr z, .medachangeOverlayNotRequested
-  call $4C0C
+  call MedarotStatusDisplayIcons
   ld a, $30
   ld [W_CoreSubStateIndex], a
   ret
@@ -450,9 +450,8 @@ MedarotsStatusInputHandlerState::
   ld a, $20
   ld [W_CoreSubStateIndex], a
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ret
-
 
 MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotStatusSelectedOption]
@@ -605,7 +604,7 @@ MedarotsMedachangeWindowInputHandlerState::
   and M_JPInputA
   jr z, .aNotPressed
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   jp IncSubStateIndex
 
 .aNotPressed
@@ -613,7 +612,7 @@ MedarotsMedachangeWindowInputHandlerState::
   and M_JPInputB | M_JPInputSelect
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   call $5097
   ld a, 1
   ld [W_OAM_SpritesReady], a
@@ -643,7 +642,7 @@ MedarotsMedachangeMappingState::
   ld a, 0
   call WrapDecompressAttribmap0
   ld bc, $101
-  call $4D16
+  call MapMedalNicknameForMedarotStatus
   call $5815
   call $5874
   call WrapInitiateMainScript
@@ -668,7 +667,7 @@ MedarotsMedachangeInputHandler::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   jp IncSubStateIndex
 
 MedarotsStatusPrepareFadeInToMedachangeWindowState::
@@ -784,7 +783,7 @@ MedarotsBattleSelectionScreenInputHandlerState::
   ldh a, [H_JPInputChanged]
   and M_JPInputA
   jr z, .aNotPressed
-  call $4B5E
+  call MedarotSelectionScreenEmptySlotCheck
   or a
   ret z
   ld a, [de]
@@ -794,7 +793,7 @@ MedarotsBattleSelectionScreenInputHandlerState::
   or a
   jp nz, MedarotsPlayBzztSound
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, [W_MedarotSelectionScreenSelectedOption]
   call GetSelectedMedarotMetaspriteAddress
   call CancelMedarotSpriteAnimation
@@ -818,7 +817,7 @@ MedarotsBattleSelectionScreenInputHandlerState::
   or a
   ret z
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   jp IncSubStateIndex
 
 MedarotsSelectionScreenPrepareBattleEntryState::
