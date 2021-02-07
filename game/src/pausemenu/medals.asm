@@ -36,7 +36,7 @@ CountMedals::
   inc c
 
 .slotEmpty
-  ld de, $40
+  ld de, M_MedalSlotLength
   add hl, de
   dec b
   jr nz, .loop
@@ -93,19 +93,19 @@ DrawMedalIcons::
   ld b, 0
   ld c, a
   ld a, 6
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   ld a, 6
   ld [$C4EE], a
   ld hl, $8B00
 
 .loop
   push hl
-  ld hl, 0
+  ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
   and $80
   jr z, .blankIcon
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   jr .drawIcon
@@ -123,7 +123,7 @@ DrawMedalIcons::
   push de
   call $34E1
   pop de
-  ld hl, $40
+  ld hl, M_MedalSlotLength
   add hl, de
   ld d, h
   ld e, l
@@ -157,19 +157,19 @@ MapMedalNamesForMenu::
   ld b, 0
   ld c, a
   ld a, 6
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   ld a, 6
   ld [$C4F8], a
   ld hl, $98A4
 
 .loop
   push hl
-  ld hl, 0
+  ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
   and $80
   jr z, .noMedal
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   pop hl
@@ -185,7 +185,7 @@ MapMedalNamesForMenu::
   ld bc, $40
   add hl, bc
   push hl
-  ld hl, $40
+  ld hl, M_MedalSlotLength
   add hl, de
   ld d, h
   ld e, l
@@ -242,10 +242,10 @@ GetMedalAddress::
   ld b, 0
   ld c, a
   ld a, 6
-  jp $1446
+  jp MultiplyBCByPowerOfTwoAndAddToHL
 
 CheckMedalOwnership::
-  ld hl, 0
+  ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
   and $80
@@ -263,7 +263,7 @@ MapSelectedMedalName::
   ld bc, $801
   call $25E5
   pop de
-  ld hl, $30
+  ld hl, M_MedalNickname
   add hl, de
   ld b, h
   ld c, l
@@ -287,7 +287,7 @@ MapSelectedMedalLevel::
   call CheckMedalOwnership
   or a
   jr z, .noMedal
-  ld hl, 9
+  ld hl, M_MedalLevel
   add hl, de
   ld a, [hl]
   pop hl
@@ -304,12 +304,12 @@ MapSelectedMedalExpToNextLevel::
   call CheckMedalOwnership
   or a
   jr z, .noExp
-  ld hl, 9
+  ld hl, M_MedalLevel
   add hl, de
   ld a, [hl]
   cp 100
   jr z, .noExp
-  ld hl, 2
+  ld hl, M_MedalExpLower
   add hl, de
   ld a, [hli]
   ld b, a
@@ -338,13 +338,13 @@ DisplayTinpetSpriteAssociatedWithMedal::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call $1446
-  ld hl, 0
+  call MultiplyBCByPowerOfTwoAndAddToHL
+  ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
   and $40
   jr z, .noTinpetAssociatedWithMedal
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld [$C4EE], a
@@ -360,7 +360,7 @@ DisplayTinpetSpriteAssociatedWithMedal::
   jr z, .hasHeadPart
 
 .noHeadPart
-  ld hl, 2
+  ld hl, M_MedarotMedal
   add hl, de
   ld a, [hl]
   ld b, a
@@ -370,7 +370,7 @@ DisplayTinpetSpriteAssociatedWithMedal::
   jr .nextPlease
 
 .hasHeadPart
-  ld hl, 2
+  ld hl, M_MedarotMedal
   add hl, de
   ld a, [hl]
   ld b, a
@@ -379,7 +379,7 @@ DisplayTinpetSpriteAssociatedWithMedal::
   jp z, .displaySpriteWithHeadPart
 
 .nextPlease
-  ld hl, $10
+  ld hl, M_MedarotSlotLength
   add hl, de
   ld d, h
   ld e, l
@@ -395,7 +395,7 @@ DisplayTinpetSpriteAssociatedWithMedal::
   ret
 
 .displaySpriteWithoutHeadPart
-  ld hl, 1
+  ld hl, M_MedarotType
   add hl, de
   ld a, [hl]
   ld [$C4F0], a
@@ -455,7 +455,7 @@ DrawMedalImageLetter::
   call CheckMedalOwnership
   or a
   ret z
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -470,11 +470,11 @@ DrawMedalImage::
   call CheckMedalOwnership
   or a
   ret z
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld b, a
-  ld hl, 4
+  ld hl, M_MedalImage
   add hl, de
   ld a, [hl]
   ld c, a
@@ -520,7 +520,7 @@ LoadMedalImagePalettes::
   call CheckMedalOwnership
   or a
   ret z
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   call $35B4
@@ -549,7 +549,7 @@ CalculateMedalImagePaletteIndex::
   call CheckMedalOwnership
   or a
   ret z
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   call $35B4
@@ -651,7 +651,7 @@ MedalListItemNavigationInputHandler::
   call LoadMedalImagePalettes
   call DisplayMedaliaSpritesInSlots
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .upNotPressed
@@ -684,7 +684,7 @@ MedalListItemNavigationInputHandler::
   call LoadMedalImagePalettes
   call DisplayMedaliaSpritesInSlots
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MedalListPageNavigationInputHandler::
@@ -723,7 +723,7 @@ MedalListPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .leftNotPressed
@@ -761,7 +761,7 @@ MedalListPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MedalListSortItemInputHandler::
@@ -775,7 +775,7 @@ MedalListSortItemInputHandler::
   add $80
   ld [W_ItemActionSubSubSubStateIndex], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .changeOrder
@@ -792,7 +792,7 @@ MedalListSortItemInputHandler::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   push hl
   ld hl, $D120
   ld b, 0
@@ -800,7 +800,7 @@ MedalListSortItemInputHandler::
   and $7F
   ld c, a
   ld a, 6
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   pop hl
   ld bc, $40
   call $1546
@@ -823,7 +823,7 @@ MedalListSortItemInputHandler::
   call LoadMedalImagePalettes
   call DisplayMedaliaSpritesInSlots
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
 
 .targetMatchesDestination
   ld de, $C120
@@ -831,7 +831,7 @@ MedalListSortItemInputHandler::
   xor a
   ld [W_ItemActionSubSubSubStateIndex], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MedalListDisplaySortingArrow::
@@ -916,8 +916,8 @@ MedalPreOptionBoxInputCheck::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call $1446
-  ld hl, 0
+  call MultiplyBCByPowerOfTwoAndAddToHL
+  ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
   and $80
@@ -935,7 +935,7 @@ MedalPreOptionBoxInputCheck::
   xor a
   ld [$C48D], a
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $B
   ld [$C4EE], a
   ld a, 9
@@ -973,7 +973,7 @@ MedalPreOptionBoxInputCheck::
 
 .emptySlotFound
   ld a, 5
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MapMedalOptionsBox::
@@ -1037,7 +1037,7 @@ MedalOptionsBoxInputHandler::
   ld a, 5
   ld [$C162], a
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .aNotPressed
@@ -1059,7 +1059,7 @@ MedalOptionsBoxInputHandler::
   ld a, 0
   call $123B
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 7
   ld [$C0C5], a
   ld de, $C160
@@ -1086,7 +1086,7 @@ MedalOptionsBoxInputHandler::
 .dontLoopToEnd
   ld [$C48D], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .upNotPressed
@@ -1102,7 +1102,7 @@ MedalOptionsBoxInputHandler::
 .dontLoopToStart
   ld [$C48D], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MedalDisplayAbilitySubscreenIconSprites::
@@ -1152,7 +1152,7 @@ MedalDisplayAbilitySubscreenIconSprites::
 
 DrawMedalIconForMedalSubscreen::
   call GetMedalAddress
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1170,7 +1170,7 @@ MapMedalIconForMedalSubscreen::
 
 MapMedalNameForMedalSubscreen::
   call GetMedalAddress
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld hl, $9864
@@ -1178,7 +1178,7 @@ MapMedalNameForMedalSubscreen::
 
 MapMedalAttributeForMedalSubscreen::
   call GetMedalAddress
-  ld hl, 8
+  ld hl, M_MedalAttribute
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1194,7 +1194,7 @@ MapMedalAttributeForMedalSubscreen::
 
 MapMedalPersonalityForMedalSubscreen::
   call GetMedalAddress
-  ld hl, $A
+  ld hl, M_MedalPersonality
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1210,7 +1210,7 @@ MapMedalPersonalityForMedalSubscreen::
 
 MapMedalCompatibilityForMedalSubscreen::
   call GetMedalAddress
-  ld hl, $B
+  ld hl, M_MedalCompatibility
   add hl, de
   ld a, [hl]
   ld hl, $9925
@@ -1253,7 +1253,7 @@ MapUndefinedMedalString::
 DisplayMedalDescriptionForMedalSubscreen::
   call WrapInitiateMainScriptAlternate
   call GetMedalAddress
-  ld hl, 1
+  ld hl, M_MedalType
   add hl, de
   ld a, [hl]
   ld b, 0
@@ -1354,7 +1354,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .leftNotPressed
@@ -1404,7 +1404,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MapMedalMedaforceForMedalSubscreen::
@@ -1484,7 +1484,7 @@ MapMedalMedaforceForMedalSubscreen::
 
 MapMedalSelectedMedaforceInfoForMedalSubscreen::
   call GetMedalAddress
-  ld hl, 5
+  ld hl, M_MedalMedaforceA
   add hl, de
   ld b, 0
   ld a, [W_ItemActionSubSubStateIndex]
@@ -1546,7 +1546,7 @@ MapMedalSelectedMedaforceInfoForMedalSubscreen::
 
 MapMedalSelectedMedaforceSkillForMedalSubscreen::
   call GetMedalAddress
-  ld hl, 5
+  ld hl, M_MedalMedaforceA
   add hl, de
   ld b, 0
   ld a, [W_ItemActionSubSubStateIndex]
@@ -1610,7 +1610,7 @@ MapMedalSelectedMedaforceSkillForMedalSubscreen::
 PrintMedalSelectedMedaforceDescriptionForMedalSubscreen::
   call WrapInitiateMainScriptAlternate
   call GetMedalAddress
-  ld hl, 5
+  ld hl, M_MedalMedaforceA
   add hl, de
   ld b, 0
   ld a, [W_ItemActionSubSubStateIndex]
@@ -1674,7 +1674,7 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .leftNotPressed
@@ -1716,7 +1716,7 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 MedalsMedaforceSubscreenItemSelectionInputHandler::
@@ -1739,7 +1739,7 @@ MedalsMedaforceSubscreenItemSelectionInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .upNotPressed
@@ -1761,7 +1761,7 @@ MedalsMedaforceSubscreenItemSelectionInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 DisplaySelectionArrowForMedalMedaforceSubscreen::
@@ -1794,7 +1794,7 @@ PositionSelectionArrowForMedalMedaforceSubscreen::
 MapSkillsForMedalSubscreenLeftColumn::
   call GetMedalAddress
   push de
-  ld hl, $19
+  ld hl, M_MedalSkillAIndex
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1809,20 +1809,20 @@ MapSkillsForMedalSubscreenLeftColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $1A
+  ld hl, M_MedalSkillAUses
   add hl, de
   ld a, [hl]
   ld hl, $98A7
   ld b, 0
   call $3504
   pop de
-  ld hl, $1B
+  ld hl, M_MedalSkillAExp
   add hl, de
   ld a, [hl]
   ld hl, $98C1
   call MapSkillBarForMedalSubscreen
   push de
-  ld hl, $1D
+  ld hl, M_MedalSkillBIndex
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1837,20 +1837,20 @@ MapSkillsForMedalSubscreenLeftColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $1E
+  ld hl, M_MedalSkillBUses
   add hl, de
   ld a, [hl]
   ld hl, $98E7
   ld b, 0
   call $3504
   pop de
-  ld hl, $1F
+  ld hl, M_MedalSkillBExp
   add hl, de
   ld a, [hl]
   ld hl, $9901
   call MapSkillBarForMedalSubscreen
   push de
-  ld hl, $21
+  ld hl, M_MedalSkillCIndex
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1865,14 +1865,14 @@ MapSkillsForMedalSubscreenLeftColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $22
+  ld hl, M_MedalSkillCUses
   add hl, de
   ld a, [hl]
   ld hl, $9927
   ld b, 0
   call $3504
   pop de
-  ld hl, $23
+  ld hl, M_MedalSkillCExp
   add hl, de
   ld a, [hl]
   ld hl, $9941
@@ -1923,7 +1923,7 @@ MapSkillBarForMedalSubscreen::
 
 MapSkillsForMedalSubscreenRightColumn::
   call GetMedalAddress
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -1936,7 +1936,7 @@ MapSkillsForMedalSubscreenRightColumn::
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
-  ld hl, $25
+  ld hl, M_MedalMedaliaASkill
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -1951,14 +1951,14 @@ MapSkillsForMedalSubscreenRightColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $26
+  ld hl, M_MedalMedaliaAUses
   add hl, de
   ld a, [hl]
   ld hl, $98B1
   ld b, 0
   call $3504
   pop de
-  ld hl, $27
+  ld hl, M_MedalMedaliaAExp
   add hl, de
   ld a, [hl]
   ld hl, $98CB
@@ -1978,7 +1978,7 @@ MapSkillsForMedalSubscreenRightColumn::
   call MedalMenuMapEmptySkillBar
 
 .checkSkillBSlot
-  ld hl, $28
+  ld hl, M_MedalMedaliaBStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -1991,7 +1991,7 @@ MapSkillsForMedalSubscreenRightColumn::
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
-  ld hl, $29
+  ld hl, M_MedalMedaliaBSkill
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -2006,14 +2006,14 @@ MapSkillsForMedalSubscreenRightColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $2A
+  ld hl, M_MedalMedaliaBUses
   add hl, de
   ld a, [hl]
   ld hl, $98F1
   ld b, 0
   call $3504
   pop de
-  ld hl, $2B
+  ld hl, M_MedalMedaliaBExp
   add hl, de
   ld a, [hl]
   ld hl, $990B
@@ -2033,7 +2033,7 @@ MapSkillsForMedalSubscreenRightColumn::
   call MedalMenuMapEmptySkillBar
 
 .checkSkillCSlot
-  ld hl, $2C
+  ld hl, M_MedalMedaliaCStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -2046,7 +2046,7 @@ MapSkillsForMedalSubscreenRightColumn::
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
   push de
-  ld hl, $2D
+  ld hl, M_MedalMedaliaCSkill
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
@@ -2061,14 +2061,14 @@ MapSkillsForMedalSubscreenRightColumn::
   call PutStringFixedLength
   pop de
   push de
-  ld hl, $2E
+  ld hl, M_MedalMedaliaCUses
   add hl, de
   ld a, [hl]
   ld hl, $9931
   ld b, 0
   call $3504
   pop de
-  ld hl, $2F
+  ld hl, M_MedalMedaliaCExp
   add hl, de
   ld a, [hl]
   ld hl, $994B
@@ -2190,7 +2190,7 @@ MedalMenuMapEmptySkillBar::
 MapSkillBarAttributesForMedalSubscreen::
   call GetMedalAddress
   push de
-  ld hl, $19
+  ld hl, M_MedalSkillAIndex
   add hl, de
   ld d, h
   ld e, l
@@ -2238,7 +2238,7 @@ MapSkillBarAttributesForMedalSubscreen::
   jr nz, .leftBarsLoop
 
   pop de
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld d, h
   ld e, l
@@ -2340,7 +2340,7 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .leftNotPressed
@@ -2382,7 +2382,7 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   ld a, 1
   ld [$C4EE], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 AnimateMedalSkillBarSegments::
@@ -2460,7 +2460,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   call ClearSkillBuffer
   ld a, 1
   ld [$C4EE], a
-  ld hl, $19
+  ld hl, M_MedalSkillAIndex
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2492,7 +2492,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $98A1
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $19
+  ld hl, M_MedalSkillAIndex
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2506,7 +2506,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   call ClearSkillBuffer
   ld a, 2
   ld [$C4EE], a
-  ld hl, $1D
+  ld hl, M_MedalSkillBIndex
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2538,7 +2538,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $98E1
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $1D
+  ld hl, M_MedalSkillBIndex
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2552,7 +2552,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   call ClearSkillBuffer
   ld a, 3
   ld [$C4EE], a
-  ld hl, $21
+  ld hl, M_MedalSkillCIndex
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2583,7 +2583,7 @@ SetLeftColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $9921
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $21
+  ld hl, M_MedalSkillCIndex
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2690,14 +2690,14 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   call GetMedalAddress
 
 .checkSkillA
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .makeSkillAGrey
   ld a, $81
   ld [$C4EE], a
-  ld hl, $25
+  ld hl, M_MedalMedaliaASkill
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2737,7 +2737,7 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $98AB
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $25
+  ld hl, M_MedalMedaliaASkill
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2748,14 +2748,14 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   ld [hl], a
 
 .checkSkillB
-  ld hl, $28
+  ld hl, M_MedalMedaliaBStatus
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .makeSkillBGrey
   ld a, $82
   ld [$C4EE], a
-  ld hl, $29
+  ld hl, M_MedalMedaliaBSkill
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2795,7 +2795,7 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $98EB
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $29
+  ld hl, M_MedalMedaliaBSkill
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2806,12 +2806,12 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   ld [hl], a
 
 .checkSkillC
-  ld hl, $2C
+  ld hl, M_MedalMedaliaCStatus
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .makeSkillCGrey
-  ld hl, $2D
+  ld hl, M_MedalMedaliaCSkill
   add hl, de
   ld a, [hli]
   ld [$C4F4], a
@@ -2833,7 +2833,7 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
   ld hl, $992B
   ld a, 8
   call MapAttributeToSkillName
-  ld hl, $2D
+  ld hl, M_MedalMedaliaCSkill
   add hl, de
   ld a, [hl]
   ld hl, W_ListItemBufferArea
@@ -2846,7 +2846,7 @@ SetRightColumnSkillNamePalettesForSkillLevelSubscreen::
 
 DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
   call GetMedalAddress
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -2865,7 +2865,7 @@ DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
   ld [$C1E0], a
 
 .checkMedaliaSlotB
-  ld hl, $28
+  ld hl, M_MedalMedaliaBStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -2884,7 +2884,7 @@ DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
   ld [$C200], a
 
 .checkMedaliaSlotC
-  ld hl, $2C
+  ld hl, M_MedalMedaliaCStatus
   add hl, de
   ld a, [hli]
   cp $FF
@@ -2905,7 +2905,7 @@ DisplayMedaliaIndicatorSpritesForMedaliaSubscreen::
 
 DisplayMedaliaInCurrentlySelectedSlot::
   call GetMedalAddress
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld b, 0
   ld a, [W_MedalMenuSelectedMedaliaSlot]
@@ -3073,7 +3073,7 @@ PopulateMedaliaList::
 
 .emptyOptionTextExitLoop
   call GetMedalAddress
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld b, 0
   ld a, [W_MedalMenuSelectedMedaliaSlot]
@@ -3166,7 +3166,7 @@ PopulateMedaliaList::
   ld a, [W_MedalMenuMedaliaListLineToBuffer]
   ld c, a
   ld a, 5
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   call GetMedaliaIndicatorSpritePositionForMedaliaSubscreen
   ld a, [$C4F2]
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
@@ -3194,7 +3194,7 @@ PopulateMedaliaList::
   ld a, [W_MedalMenuMedaliaListLineToBuffer]
   ld c, a
   ld a, 5
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   ld a, 0
   ld [de], a
   call GetMedaliaListItemMappingAddress
@@ -3349,7 +3349,7 @@ MedaliaSlotNavigationInputHandler::
   call DisplayMedaliaInCurrentlySelectedSlot
   call PopulateMedaliaList
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   jp PositionMedaliaSlotSelector
 
 .leftNotPressed
@@ -3369,7 +3369,7 @@ MedaliaSlotNavigationInputHandler::
   call DisplayMedaliaInCurrentlySelectedSlot
   call PopulateMedaliaList
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   jp PositionMedaliaSlotSelector
 
 MedaliaSlotConfirmationInputHandler::
@@ -3387,7 +3387,7 @@ MedaliaSlotConfirmationInputHandler::
   ld [W_MedalMenuMedaliaListOffsetIndex], a
   call DisplayMedaliaSelectionArrow
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 1
   ld [$C4EE], a
   ret
@@ -3429,7 +3429,7 @@ MedaliaListNavigationInputHandler::
   or b
   ret z
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
   or a
   jr z, .moveListDown
@@ -3458,7 +3458,7 @@ MedaliaListNavigationInputHandler::
   cp b
   ret z
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
   cp 4
   jr z, .moveListUp
@@ -3585,19 +3585,19 @@ MedaliaListItemToSlotInputHandler::
 
 .noteOperationSuccess
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 1
   ld [$C4EE], a
   ret
 
 .medaliaAlreadyUsed
   ld a, 5
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 GetSelectedMedaliaSlotAddress::
   call GetMedalAddress
-  ld hl, $24
+  ld hl, M_MedalMedaliaAStatus
   add hl, de
   ld b, 0
   ld a, [W_MedalMenuSelectedMedaliaSlot]

@@ -173,7 +173,7 @@ PauseMenuInputHandlerState::
   and M_JPInputA
   ret z
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 1
   call $4880
   ld a, [$C562]
@@ -278,7 +278,7 @@ PauseMenuCanOpenItemMenuCheckState::
   and $80
   jp nz, IncSubStateIndex
   ld a, 5
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 4
   ld [W_CoreSubStateIndex], a
   ret
@@ -444,7 +444,7 @@ TransportMenuExitState::
   ld a, 1
   ld [W_CGBPaletteStagedBGP], a
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 4
   ld [W_CoreSubStateIndex], a
   ret
@@ -463,14 +463,14 @@ TransportMenuCheckIfSelectedOptionAvailableState::
 
 .optionUnavailable
   ld a, 5
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $20
   ld [$C48A], a
   jp IncSubStateIndex
 
 .optionAvailable
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   xor a
   ld [W_TransportOptionSubSubSubStateIndex], a
   ld a, $38

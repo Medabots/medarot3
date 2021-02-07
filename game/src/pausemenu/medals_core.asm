@@ -292,7 +292,7 @@ MedalsListInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, [W_ItemActionSubSubSubStateIndex]
   cp $80
   jr c, .exitMedalList
@@ -300,7 +300,7 @@ MedalsListInputHandlerState::
   xor a
   ld [W_ItemActionSubSubSubStateIndex], a
   ld a, 2
-  call $27DA
+  call ScheduleSoundEffect
   ret
 
 .exitMedalList
@@ -436,7 +436,7 @@ MedalsAbilitySubscreenInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $1B
   ld [W_CoreSubStateIndex], a
   ret
@@ -526,7 +526,7 @@ MedalsMedaforceSubscreenInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $1B
   ld [W_CoreSubStateIndex], a
   ret
@@ -579,7 +579,7 @@ MedalsSkillLevelSubscreenInputHandlerState::
   and M_JPInputStart
   jr z, .startNotPressed
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $40
   ld [W_CoreSubStateIndex], a
   ret
@@ -589,7 +589,7 @@ MedalsSkillLevelSubscreenInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $1B
   ld [W_CoreSubStateIndex], a
   ret
@@ -657,7 +657,7 @@ MedalsMedaliaSubscreenSlotNavigationInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $49
   ld [W_CoreSubStateIndex], a
   ret
@@ -675,7 +675,7 @@ MedalsMedaliaSubscreenListNavigationInputHandlerState::
   and M_JPInputB
   ret z
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
 
 .medaliaSelected
   ld a, 0

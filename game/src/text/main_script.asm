@@ -186,7 +186,7 @@ ControlCodeCC:: ; End code.
   or a
   ret z
   ld a, 7
-  call $27DA
+  call ScheduleSoundEffect
   call $2086
   jp .exitCodeCommon
 
@@ -199,7 +199,7 @@ ControlCodeCC:: ; End code.
   or a
   ret z
   ld a, 7
-  call $27DA
+  call ScheduleSoundEffect
   jp .exitCodeCommon
 
 .exitCode3
@@ -207,7 +207,7 @@ ControlCodeCC:: ; End code.
   or a
   ret z
   ld a, 7
-  call $27DA
+  call ScheduleSoundEffect
   call MapMainScriptWindow
   jp .exitCodeCommon
  
@@ -338,7 +338,7 @@ ControlCodeCF:: ; New page after input code.
 
 .aButtonPressed
   ld a, 7
-  call $27DA
+  call ScheduleSoundEffect
   xor a
   ld [W_MainScriptIterator], a
   ld [W_MainScriptPauseAutoAdvanceTimer], a
@@ -650,7 +650,7 @@ ControlCodeD2:: ; Portrait display code.
   ld b, 0
   ld c, a
   ld a, 8
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   ld de, $9600
   ld bc, $100
   call $04F9

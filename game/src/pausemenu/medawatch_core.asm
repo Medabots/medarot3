@@ -152,7 +152,7 @@ MedawatchInputHandlerState::
   and M_JPInputA
   jr z, .aNotPressed
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, $20
   ld [W_CoreSubStateIndex], a
   ret
@@ -163,7 +163,7 @@ MedawatchInputHandlerState::
 
 MedawatchPreExitPrepareFadeOutState::
   ld a, 4
-  call $27DA
+  call ScheduleSoundEffect
   ld hl, 1
   ld bc, 1
   ld d, $BF
