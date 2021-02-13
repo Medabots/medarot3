@@ -1063,7 +1063,497 @@ CheckMedalAndFetchAttributeAndCompatibility::
   xor a
   ret
 
-SECTION "Medarot Helper Functions 4", ROMX[$51C7], BANK[$07]
+MedarotStatusDisplayMedalCompatibilityIconForHeadPart::
+  call CheckMedalAndFetchAttributeAndCompatibility
+  or a
+  jr nz, .noIcon
+  ld a, [W_MedarotCurrentHeadPart]
+  cp $97
+  jr nc, .noIcon
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 0
+  call $34FF
+  ld a, [$C552]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jr nz, .noIcon
+  ld a, [$C4F0]
+  or $80
+  ld [$C587], a
+  ld a, $F0
+  ld hl, $994E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.noIcon
+  xor a
+  ld [$C587], a
+  xor a
+  ld hl, $994E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart::
+  call CheckMedalAndFetchAttributeAndCompatibility
+  or a
+  jr nz, .noIcon
+  ld a, [W_MedarotCurrentLeftArmPart]
+  cp $97
+  jr nc, .noIcon
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 1
+  call $34FF
+  ld a, [$C552]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jr nz, .noIcon
+  ld a, [$C4F0]
+  or $80
+  ld [$C588], a
+  ld a, $F0
+  ld hl, $998E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.noIcon
+  xor a
+  ld [$C588], a
+  xor a
+  ld hl, $998E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+MedarotStatusDisplayMedalCompatibilityIconForRightArmPart::
+  call CheckMedalAndFetchAttributeAndCompatibility
+  or a
+  jr nz, .noIcon
+  ld a, [W_MedarotCurrentRightArmPart]
+  cp $97
+  jr nc, .noIcon
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 2
+  call $34FF
+  ld a, [$C552]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jr nz, .noIcon
+  ld a, [$C4F0]
+  or $80
+  ld [$C589], a
+  ld a, $F0
+  ld hl, $99CE
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.noIcon
+  xor a
+  ld [$C589], a
+  xor a
+  ld hl, $99CE
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+MedarotStatusDisplayMedalCompatibilityIconForLegPart::
+  call CheckMedalAndFetchAttributeAndCompatibility
+  or a
+  jr nz, .noIcon
+  ld a, [W_MedarotCurrentLegPart]
+  cp $97
+  jr nc, .noIcon
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 3
+  call $34FF
+  ld a, [$C552]
+  ld b, a
+  ld a, [$C4EE]
+  cp b
+  jr nz, .noIcon
+  ld a, [$C4F0]
+  or $80
+  ld [$C58A], a
+  ld a, $F0
+  ld hl, $9A0E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.noIcon
+  xor a
+  ld [$C58A], a
+  xor a
+  ld hl, $9A0E
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+MedarotStatusDisplayMedalCompatibilityBonuses::
+  ld a, [$C587]
+  and $7F
+  ld hl, $994F
+  call MedarotDisplayMedalCompatibilityBonus
+  ld a, [$C588]
+  and $7F
+  ld hl, $998F
+  call MedarotDisplayMedalCompatibilityBonus
+  ld a, [$C589]
+  and $7F
+  ld hl, $99CF
+  call MedarotDisplayMedalCompatibilityBonus
+  ld a, [$C58A]
+  and $7F
+  ld hl, $9A0F
+  jp MedarotDisplayMedalCompatibilityBonus
+
+MedarotDisplayMedalCompatibilityBonus::
+  push hl
+  ld h, 0
+  ld l, a
+  ld bc, 10
+  call DigitCalculationLoop
+  pop hl
+  ld a, [$C4EE]
+  or a
+  jr z, .justOneDigit
+  ld a, $DA
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C4EE]
+  add $D0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C4E1]
+  add $D0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.justOneDigit
+  push hl
+  ld a, [$C4E1]
+  ld h, 0
+  ld l, a
+  ld bc, 1
+  call DigitCalculationLoop
+  pop hl
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C4EE]
+  or a
+  jr z, .zeroPlz
+  ld a, $DA
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C4EE]
+  add $D0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.zeroPlz
+  ld a, $DB
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C4EE]
+  add $D0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+UpdateCurrentlyAnimatedPartIconForMedarotStatus::
+  ld a, [$C520]
+  and M_JPInputUp | M_JPInputDown
+  jr nz, .resetAllAnimations
+  ld a, [W_MedarotStatusSelectedOption]
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  ld hl, $C1E0
+  add hl, bc
+  ld d, h
+  ld e, l
+  jp $33B7
+
+.resetAllAnimations
+  ld a, $38
+  ld b, 0
+  ld de, $C1E0
+  call $33B2
+  ld a, $39
+  ld b, 0
+  ld de, $C200
+  call $33B2
+  ld a, $3A
+  ld b, 0
+  ld de, $C220
+  call $33B2
+  ld a, $3B
+  ld b, 0
+  ld de, $C240
+  call $33B2
+  ld a, $3C
+  ld b, 0
+  ld de, $C260
+  jp $33B2
+
+DisplayMedarotStatusSelectionArrows::
+  call PlaceMedarotStatusSelectionArrows
+  ld a, $3D
+  ld b, 0
+  ld de, $C0E0
+  call $33B2
+  ld a, $36
+  ld b, 0
+  ld de, $C100
+  jp $33B2
+
+PlaceMedarotStatusSelectionArrows::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0E0], a
+  ld a, 0
+  ld [$C0E1], a
+  ld a, 7
+  ld [$C0E5], a
+  ld a, 7
+  ld [$C0E3], a
+  ld a, [W_MedarotStatusSelectedOption]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $40
+  ld [$C0E4], a
+  ld a, 1
+  ld [$C100], a
+  ld a, 0
+  ld [$C101], a
+  ld a, 7
+  ld [$C105], a
+  ld a, $91
+  ld [$C103], a
+  ld a, [W_MedarotStatusSelectedOption]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $40
+  ld [$C104], a
+  ret
+
+MedarotStatusVerticalSelectionInputHandler::
+  ld a, [$C520]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_MedarotStatusSelectedOption]
+  sub 1
+  jr nc, .dontLoopToBottom
+  ld a, 4
+
+.dontLoopToBottom
+  ld [W_MedarotStatusSelectedOption], a
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+.upNotPressed
+  ld a, [$C520]
+  and M_JPInputDown
+  ret z
+  ld a, [W_MedarotStatusSelectedOption]
+  inc a
+  cp 5
+  jr c, .dontLoopToTop
+  xor a
+
+.dontLoopToTop
+  ld [W_MedarotStatusSelectedOption], a
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+MedarotStatusMedalSelectionInputHandler::
+  ld a, [W_MedarotStatusSelectedOption]
+  or a
+  ret nz
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, 0
+  call NavigateMedalListForMedarotStatus
+
+.updateScreen
+  ld bc, $101
+  call MapMedalNicknameForMedarotStatus
+  ld bc, $608
+  call MapMedalNameForMedarotStatus
+  ld bc, $407
+  call MapMedalIconForMedarotStatus
+  call MedarotStatusDisplayMedalCompatibilityIconForHeadPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForRightArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLegPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, 1
+  call NavigateMedalListForMedarotStatus
+  jr .updateScreen
+
+NavigateMedalListForMedarotStatus::
+  or a
+  jr nz, .incrementMode
+ 
+.decrementMode
+  ld a, 5
+  rst 8
+
+.previousMedal
+  ld a, [W_MedarotCurrentMedal]
+  sub 1
+  jr nc, .previousSlotNotEmpty
+  ld a, $1E
+  ld [W_MedarotCurrentMedal], a
+  ret
+
+.previousSlotNotEmpty
+  ld [W_MedarotCurrentMedal], a
+  call IsCurrentMedalSlotUsableForMedarotStatus
+  or a
+  jr nz, .previousMedal
+  ret
+
+.incrementMode
+  ld a, 5
+  rst 8
+
+.nextMedal
+  ld a, [W_MedarotCurrentMedal]
+  inc a
+  cp $1F
+  jr c, .dontLoopToStart
+  xor a
+
+.dontLoopToStart
+  cp $1E
+  jr nz, .nextSlotNotEmpty
+  ld a, $1E
+  ld [W_MedarotCurrentMedal], a
+  ret
+
+.nextSlotNotEmpty
+  ld [W_MedarotCurrentMedal], a
+  call IsCurrentMedalSlotUsableForMedarotStatus
+  or a
+  jr nz, .nextMedal
+  ret
+
+IsCurrentMedalSlotUsableForMedarotStatus::
+  ld a, [W_MedarotCurrentMedal]
+  call GetMedalAddressForMedarotStatusScreen
+  ld hl, M_MedalStatus
+  add hl, de
+  ld a, [hl]
+  cp $80
+  jr c, .nope
+  and $40
+  jr nz, .nope
+  xor a
+  ret
+
+.nope
+  ld a, 1
+  ret
+
 MapMedalNicknameForMedarotStatusScreen::
   push de
   push hl
@@ -1137,7 +1627,586 @@ MapMedalNicknameForMedarotStatusScreen::
   pop de
   ret
 
-SECTION "Medarot Helper Functions 5", ROMX[$5DAD], BANK[$07]
+MedarotStatusHeadPartSelectionInputHandler::
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 1
+  ret nz
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, 0
+  call NavigateHeadPartListForMedarotStatus
+  jr .updateScreen
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, 1
+  call NavigateHeadPartListForMedarotStatus
+
+.updateScreen
+  ld bc, $60A
+  call MapHeadPartNameForMedarotStatus
+  ld bc, $A01
+  call UpdateMedarotImageAndPaletteForStatusScreen
+  call MedarotStatusDisplayMedalCompatibilityIconForHeadPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call $577E
+  call $57B6
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+NavigateHeadPartListForMedarotStatus::
+  or a
+  jr nz, .incrementMode
+
+.decrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentHeadPart]
+  sub 1
+  jr nc, .previousSlotNotEmpty
+  ld b, $97
+  ld a, [W_MedarotStatusTinpetType]
+  add b
+  ld [W_MedarotCurrentHeadPart], a
+  ret
+
+.previousSlotNotEmpty
+  cp $97
+  jr nz, .noTypeBEmptySlotDoubleDecrement
+  dec a
+
+.noTypeBEmptySlotDoubleDecrement
+  ld [W_MedarotCurrentHeadPart], a
+  call IsCurrentHeadPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .decrementMode
+  ret
+
+.incrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotStatusTinpetType]
+  or a
+  jr nz, .typeBTinpet
+  ld a, [W_MedarotCurrentHeadPart]
+  inc a
+  cp $98
+  jr c, .typeADontLoopToStart
+  xor a
+
+.typeADontLoopToStart
+  cp $97
+  jr nz, .typeANextSlotNotEmpty
+  ld a, $97
+  ld [W_MedarotCurrentHeadPart], a
+  ret
+
+.typeANextSlotNotEmpty
+  ld [W_MedarotCurrentHeadPart], a
+  call IsCurrentHeadPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+.typeBTinpet
+  ld a, [W_MedarotCurrentHeadPart]
+  inc a
+  cp $99
+  jr c, .typeBDontLoopToStart
+  xor a
+
+.typeBDontLoopToStart
+  cp $97
+  jr c, .typeBNextSlotNotEmpty
+  ld a, $98
+  ld [W_MedarotCurrentHeadPart], a
+  ret
+
+.typeBNextSlotNotEmpty
+  ld [W_MedarotCurrentHeadPart], a
+  call IsCurrentHeadPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+IsCurrentHeadPartSlotUsableForMedarotStatus::
+  ld a, [W_MedarotCurrentHeadPart]
+  ld hl, $D000
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hld]
+  ld b, a
+  ld a, [hl]
+  sub b
+  jr z, .nope
+  ld b, 1
+  ld c, 1
+  ld a, [W_MedarotCurrentHeadPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $10
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ListItemBufferArea]
+  ld b, a
+  ld a, [W_MedarotStatusTinpetType]
+  cp b
+  jr nz, .nope
+  xor a
+  ret
+
+.nope
+  ld a, 1
+  ret
+
+MedarotStatusLeftArmPartSelectionInputHandler::
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 2
+  ret nz
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, 0
+  call NavigateLeftArmPartListForMedarotStatus
+  jr .updateScreen
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, 1
+  call NavigateLeftArmPartListForMedarotStatus
+
+.updateScreen
+  ld bc, $60C
+  call MapLeftArmPartNameForMedarotStatus
+  ld bc, $A01
+  call UpdateMedarotImageAndPaletteForStatusScreen
+  call MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call $577E
+  call $57B6
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+NavigateLeftArmPartListForMedarotStatus::
+  or a
+  jr nz, .incrementMode
+
+.decrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentLeftArmPart]
+  sub 1
+  jr nc, .previousSlotNotEmpty
+  ld b, $97
+  ld a, [W_MedarotStatusTinpetType]
+  add b
+  ld [W_MedarotCurrentLeftArmPart], a
+  ret
+
+.previousSlotNotEmpty
+  cp $97
+  jr nz, .noTypeBEmptySlotDoubleDecrement
+  dec a
+
+.noTypeBEmptySlotDoubleDecrement
+  ld [W_MedarotCurrentLeftArmPart], a
+  call IsCurrentLeftArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .decrementMode
+  ret
+
+.incrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotStatusTinpetType]
+  or a
+  jr nz, .typeBTinpet
+  ld a, [W_MedarotCurrentLeftArmPart]
+  inc a
+  cp $98
+  jr c, .typeADontLoopToStart
+  xor a
+
+.typeADontLoopToStart
+  cp $97
+  jr nz, .typeANextSlotNotEmpty
+  ld a, $97
+  ld [W_MedarotCurrentLeftArmPart], a
+  ret
+
+.typeANextSlotNotEmpty
+  ld [W_MedarotCurrentLeftArmPart], a
+  call IsCurrentLeftArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+.typeBTinpet
+  ld a, [W_MedarotCurrentLeftArmPart]
+  inc a
+  cp $99
+  jr c, .typeBDontLoopToStart
+  xor a
+
+.typeBDontLoopToStart
+  cp $97
+  jr c, .typeBNextSlotNotEmpty
+  ld a, $98
+  ld [W_MedarotCurrentLeftArmPart], a
+  ret
+
+.typeBNextSlotNotEmpty
+  ld [W_MedarotCurrentLeftArmPart], a
+  call IsCurrentLeftArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+IsCurrentLeftArmPartSlotUsableForMedarotStatus::
+  ld a, [W_MedarotCurrentLeftArmPart]
+  ld hl, $D12E
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hld]
+  ld b, a
+  ld a, [hl]
+  sub b
+  jr z, .nope
+  ld b, 2
+  ld c, 1
+  ld a, [W_MedarotCurrentLeftArmPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $10
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ListItemBufferArea]
+  ld b, a
+  ld a, [W_MedarotStatusTinpetType]
+  cp b
+  jr nz, .nope
+  xor a
+  ret
+
+.nope
+  ld a, 1
+  ret
+
+MedarotStatusRightArmPartSelectionInputHandler::
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 3
+  ret nz
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, 0
+  call NavigateRightArmPartListForMedarotStatus
+  jr .updateScreen
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, 1
+  call NavigateRightArmPartListForMedarotStatus
+
+.updateScreen
+  ld bc, $60E
+  call MapRightArmPartNameForMedarotStatus
+  ld bc, $A01
+  call UpdateMedarotImageAndPaletteForStatusScreen
+  call MedarotStatusDisplayMedalCompatibilityIconForRightArmPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call $577E
+  call $57B6
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+NavigateRightArmPartListForMedarotStatus::
+  or a
+  jr nz, .incrementMode
+
+.decrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentRightArmPart]
+  sub 1
+  jr nc, .previousSlotNotEmpty
+  ld b, $97
+  ld a, [W_MedarotStatusTinpetType]
+  add b
+  ld [W_MedarotCurrentRightArmPart], a
+  ret
+
+.previousSlotNotEmpty
+  cp $97
+  jr nz, .noTypeBEmptySlotDoubleDecrement
+  dec a
+
+.noTypeBEmptySlotDoubleDecrement
+  ld [W_MedarotCurrentRightArmPart], a
+  call IsCurrentRightArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .decrementMode
+  ret
+
+.incrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotStatusTinpetType]
+  or a
+  jr nz, .typeBTinpet
+  ld a, [W_MedarotCurrentRightArmPart]
+  inc a
+  cp $98
+  jr c, .typeADontLoopToStart
+  xor a
+
+.typeADontLoopToStart
+  cp $97
+  jr nz, .typeANextSlotNotEmpty
+  ld a, $97
+  ld [W_MedarotCurrentRightArmPart], a
+  ret
+
+.typeANextSlotNotEmpty
+  ld [W_MedarotCurrentRightArmPart], a
+  call IsCurrentRightArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+.typeBTinpet
+  ld a, [W_MedarotCurrentRightArmPart]
+  inc a
+  cp $99
+  jr c, .typeBDontLoopToStart
+  xor a
+
+.typeBDontLoopToStart
+  cp $97
+  jr c, .typeBNextSlotNotEmpty
+  ld a, $98
+  ld [W_MedarotCurrentRightArmPart], a
+  ret
+
+.typeBNextSlotNotEmpty
+  ld [W_MedarotCurrentRightArmPart], a
+  call IsCurrentRightArmPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+IsCurrentRightArmPartSlotUsableForMedarotStatus::
+  ld a, [W_MedarotCurrentRightArmPart]
+  ld hl, $D25C
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hld]
+  ld b, a
+  ld a, [hl]
+  sub b
+  jr z, .nope
+  ld b, 3
+  ld c, 1
+  ld a, [W_MedarotCurrentRightArmPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $10
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ListItemBufferArea]
+  ld b, a
+  ld a, [W_MedarotStatusTinpetType]
+  cp b
+  jr nz, .nope
+  xor a
+  ret
+
+.nope
+  ld a, 1
+  ret
+
+MedarotStatusLegPartSelectionInputHandler::
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 4
+  ret nz
+  ld a, [$C520]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, 0
+  call NavigateLegPartListForMedarotStatus
+  jr .updateScreen
+
+.leftNotPressed
+  ld a, [$C520]
+  and M_JPInputRight
+  ret z
+  ld a, 1
+  call NavigateLegPartListForMedarotStatus
+
+.updateScreen
+  ld bc, $610
+  call MapLegPartNameForMedarotStatus
+  ld bc, $A01
+  call UpdateMedarotImageAndPaletteForStatusScreen
+  call MedarotStatusDisplayMedalCompatibilityIconForLegPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call $577E
+  call $57B6
+  ld a, 2
+  call ScheduleSoundEffect
+  ret
+
+NavigateLegPartListForMedarotStatus::
+  or a
+  jr nz, .incrementMode
+
+.decrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentLegPart]
+  sub 1
+  jr nc, .previousSlotNotEmpty
+  ld b, $97
+  ld a, [W_MedarotStatusTinpetType]
+  add b
+  ld [W_MedarotCurrentLegPart], a
+  ret
+
+.previousSlotNotEmpty
+  cp $97
+  jr nz, .noTypeBEmptySlotDoubleDecrement
+  dec a
+
+.noTypeBEmptySlotDoubleDecrement
+  ld [W_MedarotCurrentLegPart], a
+  call IsCurrentLegPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .decrementMode
+  ret
+
+.incrementMode
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotStatusTinpetType]
+  or a
+  jr nz, .typeBTinpet
+  ld a, [W_MedarotCurrentLegPart]
+  inc a
+  cp $98
+  jr c, .typeADontLoopToStart
+  xor a
+
+.typeADontLoopToStart
+  cp $97
+  jr nz, .typeANextSlotNotEmpty
+  ld a, $97
+  ld [W_MedarotCurrentLegPart], a
+  ret
+
+.typeANextSlotNotEmpty
+  ld [W_MedarotCurrentLegPart], a
+  call IsCurrentLegPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+.typeBTinpet
+  ld a, [W_MedarotCurrentLegPart]
+  inc a
+  cp $99
+  jr c, .typeBDontLoopToStart
+  xor a
+
+.typeBDontLoopToStart
+  cp $97
+  jr c, .typeBNextSlotNotEmpty
+  ld a, $98
+  ld [W_MedarotCurrentLegPart], a
+  ret
+
+.typeBNextSlotNotEmpty
+  ld [W_MedarotCurrentLegPart], a
+  call IsCurrentLegPartSlotUsableForMedarotStatus
+  or a
+  jr nz, .incrementMode
+  ret
+
+IsCurrentLegPartSlotUsableForMedarotStatus::
+  ld a, [W_MedarotCurrentLegPart]
+  ld hl, $D38A
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hld]
+  ld b, a
+  ld a, [hl]
+  sub b
+  jr z, .nope
+  ld b, 4
+  ld c, 1
+  ld a, [W_MedarotCurrentLegPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $10
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ListItemBufferArea]
+  ld b, a
+  ld a, [W_MedarotStatusTinpetType]
+  cp b
+  jr nz, .nope
+  xor a
+  ret
+
+.nope
+  ld a, 1
+  ret
+
+UpdateMedarotImageAndPaletteForStatusScreen::
+  push bc
+  call $34F5
+  ld de, $8800
+  call $34FA
+  pop bc
+  ld e, 3
+  ld a, 0
+  call WrapDecompressTilemap0
+  call UpdateSelectedMedarotPalette
+  ret
+
+UpdateMedarotImageForStatusScreen::
+  push bc
+  call $34F5
+  ld de, $8800
+  call $34FA
+  pop bc
+  ld e, 3
+  ld a, 0
+  call WrapDecompressTilemap0
+  ret
+
+SECTION "Medarot Helper Functions 4", ROMX[$5DAD], BANK[$07]
 MedarotsMapDashes::
   push de
   push hl

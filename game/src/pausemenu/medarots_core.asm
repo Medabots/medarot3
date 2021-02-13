@@ -377,7 +377,7 @@ MedarotsStatusMappingState::
   call MedarotStatusDisplayIcons
   call DisplayMedarotSpriteForStatusScreen
   ld bc, $A01
-  call $5592
+  call UpdateMedarotImageForStatusScreen
   ld bc, $101
   call MapMedalNicknameForMedarotStatus
   ld bc, $608
@@ -392,12 +392,12 @@ MedarotsStatusMappingState::
   call MapRightArmPartNameForMedarotStatus
   ld bc, $610
   call MapLegPartNameForMedarotStatus
-  call $4E94
-  call $4ED6
-  call $4F18
-  call $4F5A
-  call $4F9C
-  call $5097
+  call MedarotStatusDisplayMedalCompatibilityIconForHeadPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForRightArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLegPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call DisplayMedarotStatusSelectionArrows
   call $577E
   call $57B6
   jp IncSubStateIndex
@@ -417,14 +417,14 @@ MedarotsStatusInputHandlerState::
   ld de, $C100
   call $33B7
   call DisplayMedarotSpriteForStatusScreen
-  call $503B
-  call $50AE
-  call $50FC
-  call $512D
-  call $520C
-  call $52E8
-  call $53C4
-  call $54A0
+  call UpdateCurrentlyAnimatedPartIconForMedarotStatus
+  call PlaceMedarotStatusSelectionArrows
+  call MedarotStatusVerticalSelectionInputHandler
+  call MedarotStatusMedalSelectionInputHandler
+  call MedarotStatusHeadPartSelectionInputHandler
+  call MedarotStatusLeftArmPartSelectionInputHandler
+  call MedarotStatusRightArmPartSelectionInputHandler
+  call MedarotStatusLegPartSelectionInputHandler
   call $55A5
   ld a, [$C4EE]
   or a
@@ -613,7 +613,7 @@ MedarotsMedachangeWindowInputHandlerState::
   ret z
   ld a, 4
   call ScheduleSoundEffect
-  call $5097
+  call DisplayMedarotStatusSelectionArrows
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 0
