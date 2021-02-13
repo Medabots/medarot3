@@ -2206,6 +2206,122 @@ UpdateMedarotImageForStatusScreen::
   call WrapDecompressTilemap0
   ret
 
+MedarotStatusOpenExternalSubscreenInputHandler::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ret z
+  ld a, [W_MedarotStatusSelectedOption]
+  cp 0
+  jr z, .checkMedalSlotForOpening
+  cp 1
+  jr z, .checkHeadPartSlotForOpening
+  cp 2
+  jr z, .checkLeftArmPartSlotForOpening
+  cp 3
+  jr z, .checkRightArmPartSlotForOpening
+  jr .checkLegPartSlotForOpening
+
+.checkMedalSlotForOpening
+  ld a, [W_MedarotCurrentMedal]
+  cp $1E
+  jr z, .cannotOpen
+  jr .canOpen
+
+.checkHeadPartSlotForOpening
+  ld a, [W_MedarotCurrentHeadPart]
+  cp $97
+  jr nc, .cannotOpen
+  jr .canOpen
+
+.checkLeftArmPartSlotForOpening
+  ld a, [W_MedarotCurrentLeftArmPart]
+  cp $97
+  jr nc, .cannotOpen
+  jr .canOpen
+
+.checkRightArmPartSlotForOpening
+  ld a, [W_MedarotCurrentRightArmPart]
+  cp $97
+  jr nc, .cannotOpen
+  jr .canOpen
+
+.checkLegPartSlotForOpening
+  ld a, [W_MedarotCurrentLegPart]
+  cp $97
+  jr nc, .cannotOpen
+
+.canOpen
+  ld a, 3
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+.cannotOpen
+  xor a
+  ld [$C4EE], a
+  ld a, 5
+  call ScheduleSoundEffect
+  ret
+
+CountPartsForExternalPartSubscreen::
+  ld [$C4F2], a
+  ld hl, .table
+  rst $30
+  ld a, 7
+  rst 8
+  xor a
+  ld [$C4EE], a
+  ld [$C4F0], a
+
+.loop
+  push hl
+  ld a, [$C4EE]
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hld]
+  ld b, a
+  ld a, [hl]
+  sub b
+  jr z, .nextPart
+  ld a, [$C4F2]
+  inc a
+  ld b, a
+  ld c, 1
+  ld a, [$C4EE]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $10
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ListItemBufferArea]
+  ld b, a
+  ld a, [W_MedarotStatusTinpetType]
+  cp b
+  jr nz, .nextPart
+  ld a, [$C4F0]
+  inc a
+  ld [$C4F0], a
+
+.nextPart
+  pop hl
+  ld a, [$C4EE]
+  inc a
+  ld [$C4EE], a
+  cp $97
+  jr nz, .loop
+  ld a, [$C4F0]
+  ld [$C58B], a
+  ret
+
+.table
+  dw $D000, $D12E, $D25C, $D38A
+
 SECTION "Medarot Helper Functions 4", ROMX[$5DAD], BANK[$07]
 MedarotsMapDashes::
   push de
