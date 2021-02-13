@@ -425,7 +425,7 @@ MedarotsStatusInputHandlerState::
   call MedarotStatusLeftArmPartSelectionInputHandler
   call MedarotStatusRightArmPartSelectionInputHandler
   call MedarotStatusLegPartSelectionInputHandler
-  call $55A5
+  call MedarotStatusOpenExternalSubscreenInputHandler
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -478,7 +478,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotCurrentHeadPart]
   ld [$C56C], a
   ld a, [$C566]
-  call $5603
+  call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
   ld a, 8
@@ -495,7 +495,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotCurrentLeftArmPart]
   ld [$C56C], a
   ld a, [$C566]
-  call $5603
+  call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
   ld a, 8
@@ -512,7 +512,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotCurrentRightArmPart]
   ld [$C56C], a
   ld a, [$C566]
-  call $5603
+  call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
   ld a, 8
@@ -527,7 +527,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotCurrentLegPart]
   ld [$C56C], a
   ld a, [$C566]
-  call $5603
+  call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
   ld a, 8
