@@ -1,5 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
+W_MedarotMedachangeStatMathBuffer EQU $C48A
+
 SECTION "Medarot Variables 1",  WRAM0[$C525]
 W_MedarotCurrentHeadPart:: ds 1
 W_MedarotCurrentLeftArmPart:: ds 1
@@ -16,6 +18,7 @@ W_MedarotStatusTinpetType:: ds 1
 
 SECTION "Medarot Variables 3",  WRAM0[$C592]
 W_MedarotSelectionDirectionalInputWaitTimer:: ds 1
+W_MedarotMedachange:: ds 1
 
 SECTION "Medarot Helper Functions 1", ROMX[$46FF], BANK[$07]
 MedarotsSelectionScreenDisplayMedarotSprites::
@@ -1652,8 +1655,8 @@ MedarotStatusHeadPartSelectionInputHandler::
   call UpdateMedarotImageAndPaletteForStatusScreen
   call MedarotStatusDisplayMedalCompatibilityIconForHeadPart
   call MedarotStatusDisplayMedalCompatibilityBonuses
-  call $577E
-  call $57B6
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
   ld a, 2
   call ScheduleSoundEffect
   ret
@@ -1791,8 +1794,8 @@ MedarotStatusLeftArmPartSelectionInputHandler::
   call UpdateMedarotImageAndPaletteForStatusScreen
   call MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart
   call MedarotStatusDisplayMedalCompatibilityBonuses
-  call $577E
-  call $57B6
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
   ld a, 2
   call ScheduleSoundEffect
   ret
@@ -1930,8 +1933,8 @@ MedarotStatusRightArmPartSelectionInputHandler::
   call UpdateMedarotImageAndPaletteForStatusScreen
   call MedarotStatusDisplayMedalCompatibilityIconForRightArmPart
   call MedarotStatusDisplayMedalCompatibilityBonuses
-  call $577E
-  call $57B6
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
   ld a, 2
   call ScheduleSoundEffect
   ret
@@ -2069,8 +2072,8 @@ MedarotStatusLegPartSelectionInputHandler::
   call UpdateMedarotImageAndPaletteForStatusScreen
   call MedarotStatusDisplayMedalCompatibilityIconForLegPart
   call MedarotStatusDisplayMedalCompatibilityBonuses
-  call $577E
-  call $57B6
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
   ld a, 2
   call ScheduleSoundEffect
   ret
@@ -2321,6 +2324,515 @@ CountPartsForExternalPartSubscreen::
 
 .table
   dw $D000, $D12E, $D25C, $D38A
+
+UpdateEquipmentDataForMedarotStatus::
+  xor a
+  ld [W_ItemPageRowIndex], a
+  ld a, [W_MedarotCurrentMedal]
+  cp $1E
+  jr nz, .associateMedalWithMedarot
+  ld [$C4EE], a
+  jr .updateMedarotMedalInfo
+
+.associateMedalWithMedarot
+  ld a, [W_MedarotCurrentMedal]
+  call GetMedalAddressForMedarotStatusScreen
+  ld hl, M_MedalStatus
+  add hl, de
+  ld a, [hl]
+  or $40
+  ld [hl], a
+  ld hl, M_MedalType
+  add hl, de
+  ld a, [hl]
+  ld [$C4EE], a
+  ld hl, W_ItemPageRowIndex
+  inc [hl]
+
+.updateMedarotMedalInfo
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetMedarotSlotAddressForSelectionScreen
+  ld hl, M_MedarotMedal
+  add hl, de
+  ld a, [$C4EE]
+  ld [hl], a
+  ld hl, M_MedarotEquipState
+  add hl, de
+  ld a, 2
+  ld [hl], a
+  ld a, [$C4EE]
+  cp $1E
+  jr nz, .checkCurrentHeadPart
+  ld hl, M_MedarotEquipState
+  add hl, de
+  ld a, 1
+  ld [hl], a
+
+.checkCurrentHeadPart
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentHeadPart]
+  cp $97
+  jr nc, .updateMedarotHeadPartInfo
+  ld de, $D000
+  ld a, [W_MedarotCurrentHeadPart]
+  call GetPartAddressForMedarotStatus
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  inc a
+  ld [hl], a
+  ld hl, W_ItemPageRowIndex
+  inc [hl]
+
+.updateMedarotHeadPartInfo
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetMedarotSlotAddressForSelectionScreen
+  ld hl, M_MedarotHead
+  add hl, de
+  ld a, [W_MedarotCurrentHeadPart]
+  ld [hl], a
+
+.checkCurrentLeftArmPart
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentLeftArmPart]
+  cp $97
+  jr nc, .updateMedarotLeftArmPartInfo
+  ld de, $D12E
+  ld a, [W_MedarotCurrentLeftArmPart]
+  call GetPartAddressForMedarotStatus
+  ld hl, M_MedarotType
+  add hl, de
+  ld a, [hl]
+  inc a
+  ld [hl], a
+  ld hl, W_ItemPageRowIndex
+  inc [hl]
+
+.updateMedarotLeftArmPartInfo
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetMedarotSlotAddressForSelectionScreen
+  ld hl, M_MedarotLeftArm
+  add hl, de
+  ld a, [W_MedarotCurrentLeftArmPart]
+  ld [hl], a
+
+.checkCurrentRightArmPart
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentRightArmPart]
+  cp $97
+  jr nc, .updateMedarotRightArmPartInfo
+  ld de, $D25C
+  ld a, [W_MedarotCurrentRightArmPart]
+  call GetPartAddressForMedarotStatus
+  ld hl, M_MedarotType
+  add hl, de
+  ld a, [hl]
+  inc a
+  ld [hl], a
+  ld hl, W_ItemPageRowIndex
+  inc [hl]
+
+.updateMedarotRightArmPartInfo
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetMedarotSlotAddressForSelectionScreen
+  ld hl, M_MedarotRightArm
+  add hl, de
+  ld a, [W_MedarotCurrentRightArmPart]
+  ld [hl], a
+
+.checkCurrentLegPart
+  ld a, 7
+  rst 8
+  ld a, [W_MedarotCurrentLegPart]
+  cp $97
+  jr nc, .updateMedarotLegPartInfo
+  ld de, $D38A
+  ld a, [W_MedarotCurrentLegPart]
+  call GetPartAddressForMedarotStatus
+  ld hl, M_MedarotType
+  add hl, de
+  ld a, [hl]
+  inc a
+  ld [hl], a
+  ld hl, W_ItemPageRowIndex
+  inc [hl]
+
+.updateMedarotLegPartInfo
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  call GetMedarotSlotAddressForSelectionScreen
+  ld hl, M_MedarotLegs
+  add hl, de
+  ld a, [W_MedarotCurrentLegPart]
+  ld [hl], a
+  ld a, [W_ItemPageRowIndex]
+  cp 5
+  ret nz
+  ld hl, M_MedarotEquipState
+  add hl, de
+  ld a, 3
+  ld [hl], a
+  ret
+
+GetPartAddressForMedarotStatus::
+  ld h, 0
+  ld l, a
+  sla l
+  rl h
+  add hl, de
+  ld d, h
+  ld e, l
+  ret
+
+MedarotStatusMedachangeCheck::
+  ld a, [W_MedarotCurrentHeadPart]
+  cp $97
+  jr nc, .cannotMedachange
+  ld b, a
+  ld a, [W_MedarotCurrentLeftArmPart]
+  cp b
+  jr nz, .cannotMedachange
+  ld a, [W_MedarotCurrentRightArmPart]
+  cp b
+  jr nz, .cannotMedachange
+  ld a, [W_MedarotCurrentLegPart]
+  cp b
+  jr nz, .cannotMedachange
+  ld a, b
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 0
+  call $34FF
+  ld a, [$C55E]
+  or a
+  jr nz, .canMedachange
+
+.cannotMedachange
+  xor a
+  ld [W_MedarotMedachange], a
+  ret
+
+.canMedachange
+  ld [W_MedarotMedachange], a
+  ld a, [$C560]
+  ld [$C602], a
+  ret
+
+DisplayMedachangeInputIndicatorForMedarotStatus::
+  ld a, [W_MedarotMedachange]
+  or a
+  jr nz, .hasMedachange
+  ld bc, $701
+  ld hl, $98C2
+  jp $25E5
+
+.hasMedachange
+  ld bc, $206
+  ld e, $47
+  ld a, 0
+  jp WrapDecompressTilemap0
+
+MedarotStatusMedachangeSelectButtonInputHandler::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputSelect
+  ret z
+  ld a, [W_MedarotMedachange]
+  or a
+  ret z
+  ld a, 3
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+GetMedachangePaletteIndexForMedarotStatus::
+  ld a, [W_MedarotCurrentPalette]
+  or a
+  jr nz, .useMedarotDefinedPalette
+  ld a, [W_MedarotMedachange]
+  dec a
+  ld b, 0
+  ld c, a
+  ld hl, $330
+  add hl, bc
+  ld b, h
+  ld c, l
+  ret
+
+.useMedarotDefinedPalette
+  dec a
+  ld b, 0
+  ld c, a
+  ld hl, $370
+  add hl, bc
+  ld b, h
+  ld c, l
+  ret
+
+SetMedachangePaletteForMedarotStatus::
+  call GetMedachangePaletteIndexForMedarotStatus
+  ld a, 2
+  call CGBLoadSingleBGPPaletteIndex
+  ld a, 1
+  ld [W_CGBPaletteStagedBGP], a
+  ret
+
+DisplayMedachangeSpriteForStatusScreen::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C120], a
+  ld a, $44
+  ld [$C121], a
+  ld a, 8
+  ld [$C123], a
+  ld a, $18
+  ld [$C124], a
+  ld a, [W_MedarotCurrentLegPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  call $34FF
+  ld a, [$C553]
+  sub $50
+  sla a
+  sla a
+  add $10
+  ld [$C122], a
+  ld a, [$C553]
+  sub $50
+  add $2D
+  call $34B7
+  ld [$C125], a
+  ret
+
+DisplayIconForMedachangeStatusScreen::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C120], a
+  ld a, 0
+  ld [$C121], a
+  ld a, 8
+  ld [$C123], a
+  ld a, $18
+  ld [$C124], a
+  ld a, $C0
+  ld [$C122], a
+  ret
+
+DisplayCurrentMedachangePage::
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  cp 0
+  jp nz, .statusNotSelected
+  call DisplayMedachangeSpriteForStatusScreen
+  ld bc, $A00
+  ld e, $4C
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld a, [W_MedarotCurrentLegPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  call $34FF
+  ld hl, $9884
+  call MapMedachangeNameForStatusScreen
+  ld a, [$C556]
+  ld hl, $9870
+  call $351D
+  ld a, [$C557]
+  ld hl, $98B0
+  call $351D
+  ld a, [$C558]
+  ld hl, $98F0
+  call $351D
+  ld a, [$C559]
+  ld hl, $9930
+  call $351D
+  ld a, [$C55A]
+  ld hl, $9970
+  call $351D
+  xor a
+  ld [W_MedarotMedachangeStatMathBuffer], a
+  ld [W_MedarotMedachangeStatMathBuffer + 1], a
+  ld a, [$C555]
+  ld l, a
+  call MedachangeStatusMathHelper
+  ld a, [W_MedarotCurrentHeadPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 4
+  call $34FF
+  ld a, [$C555]
+  ld l, a
+  call MedachangeStatusMathHelper
+  ld a, [W_MedarotCurrentLeftArmPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 5
+  call $34FF
+  ld a, [$C555]
+  ld l, a
+  call MedachangeStatusMathHelper
+  ld a, [W_MedarotCurrentRightArmPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 6
+  call $34FF
+  ld a, [$C555]
+  ld l, a
+  call MedachangeStatusMathHelper
+  ld a, [W_MedarotMedachangeStatMathBuffer]
+  ld b, a
+  ld a, [W_MedarotMedachangeStatMathBuffer + 1]
+  ld c, a
+  ld hl, $982F
+  jp $35BE
+
+.statusNotSelected
+  cp 1
+  jp nz, .attackANotSelected
+  call DisplayIconForMedachangeStatusScreen
+  ld bc, $A00
+  ld e, $4D
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld a, [W_MedarotCurrentHeadPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 4
+  call $34FF
+  ld hl, $9884
+  call MapMedachangeAttackNameForStatusScreen
+  ld a, [$C556]
+  ld hl, $9830
+  call $351D
+  ld a, [$C557]
+  ld hl, $9870
+  call $351D
+  ld a, [$C559]
+  ld hl, $98B0
+  call $351D
+  jp MapStarForMedachangeStatus
+
+.attackANotSelected
+  call DisplayIconForMedachangeStatusScreen
+  ld bc, $A00
+  ld bc, $A00
+  ld e, $4E
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld hl, W_MedarotCurrentLeftArmPart
+  ld b, 0
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  sub 2
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, c
+  add 5
+  call $34FF
+  ld hl, $9884
+  call MapMedachangeAttackNameForStatusScreen
+  ld a, [$C556]
+  ld hl, $9830
+  call $351D
+  ld a, [$C557]
+  ld hl, $9870
+  call $351D
+  ld a, [$C559]
+  ld hl, $98B0
+  call $351D
+  ld a, [$C55A]
+  ld hl, $98F0
+  call $351D
+  jp MapStarForMedachangeStatus
+
+MapMedachangeNameForStatusScreen::
+  ld b, 7
+  ld c, 6
+  ld a, [$C553]
+  sub $50
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  jp PutStringFixedLength
+
+MedachangeStatusMathHelper::
+  ld h, 0
+  ld a, [W_MedarotMedachangeStatMathBuffer]
+  ld b, a
+  ld a, [W_MedarotMedachangeStatMathBuffer +1]
+  ld c, a
+  add hl, bc
+  ld a, h
+  ld [W_MedarotMedachangeStatMathBuffer], a
+  ld a, l
+  ld [W_MedarotMedachangeStatMathBuffer + 1], a
+  ret
+
+MapMedachangeAttackNameForStatusScreen::
+  ld b, 6
+  ld c, 6
+  ld a, [$C554]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  jp PutStringFixedLength
+
+MapStarForMedachangeStatus::
+  ld a, [$C558]
+  or a
+  jr nz, .hasStar
+  xor a
+  ld hl, $986F
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+.hasStar
+  ld a, $3F
+  ld hl, $986F
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+DisplayMedachangeDescription::
+  call WrapInitiateMainScriptAlternate
+  ld a, [W_MedarotCurrentLegPart]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  add 4
+  call $34FF
+  ld a, [$C553]
+  ld b, 0
+  ld c, a
+  ld a, 5
+  jp WrapMainScriptProcessor
+
+.table
+  db 3,0,1,2
 
 SECTION "Medarot Helper Functions 4", ROMX[$5DAD], BANK[$07]
 MedarotsMapDashes::

@@ -398,8 +398,8 @@ MedarotsStatusMappingState::
   call MedarotStatusDisplayMedalCompatibilityIconForLegPart
   call MedarotStatusDisplayMedalCompatibilityBonuses
   call DisplayMedarotStatusSelectionArrows
-  call $577E
-  call $57B6
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
   jp IncSubStateIndex
 
 MedarotsStatusPrepareFadeInFromWhiteState::
@@ -433,7 +433,7 @@ MedarotsStatusInputHandlerState::
   ld a, [$C4EE]
   or a
   ret nz
-  call $57CF
+  call MedarotStatusMedachangeSelectButtonInputHandler
   ld a, [$C4EE]
   or a
   jr z, .medachangeOverlayNotRequested
@@ -446,7 +446,7 @@ MedarotsStatusInputHandlerState::
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   ret z
-  call $5668
+  call UpdateEquipmentDataForMedarotStatus
   ld a, $20
   ld [W_CoreSubStateIndex], a
   ld a, 4
@@ -557,7 +557,7 @@ MedarotsJumpToSelectorState::
   ret
 
 MedarotsMedachangeWindowMappingState::
-  call $5807
+  call SetMedachangePaletteForMedarotStatus
   ; Continues into MedarotsMedachangeWindowMappingOnReturnState
 
 MedarotsMedachangeWindowMappingOnReturnState::
@@ -643,10 +643,10 @@ MedarotsMedachangeMappingState::
   call WrapDecompressAttribmap0
   ld bc, $101
   call MapMedalNicknameForMedarotStatus
-  call $5815
-  call $5874
+  call DisplayMedachangeSpriteForStatusScreen
+  call DisplayCurrentMedachangePage
   call WrapInitiateMainScript
-  call $5A16
+  call DisplayMedachangeDescription
   call $5A3E
   jp IncSubStateIndex
 
@@ -682,7 +682,7 @@ MedarotsStatusPrepareFadeInToMedachangeWindowState::
   call $4869
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
-  call $57E8
+  call GetMedachangePaletteIndexForMedarotStatus
   ld a, 2
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
