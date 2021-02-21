@@ -415,13 +415,13 @@ GetSelectedMedarotMetaspriteAddress::
   jp MultiplyBCByPowerOfTwoAndAddToHL
 
 MedarotSelectionScreenDirectionalInputHandler::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
   jr nz, .directionalButtonPressed
   jp .noDirectionalInput
 
 .directionalButtonPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_MedarotSelectionScreenSelectedOption]
@@ -441,7 +441,7 @@ MedarotSelectionScreenDirectionalInputHandler::
   ret
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   jr z, .downNotPressed
   ld a, [W_MedarotSelectionScreenSelectedOption]
@@ -461,7 +461,7 @@ MedarotSelectionScreenDirectionalInputHandler::
   ret
 
 .downNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, [W_MedarotSelectionScreenSelectedOption]
@@ -481,7 +481,7 @@ MedarotSelectionScreenDirectionalInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, [W_MedarotSelectionScreenSelectedOption]
@@ -1337,7 +1337,7 @@ MedarotDisplayMedalCompatibilityBonus::
   ret
 
 UpdateCurrentlyAnimatedPartIconForMedarotStatus::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp | M_JPInputDown
   jr nz, .resetAllAnimations
   ld a, [W_MedarotStatusSelectedOption]
@@ -1428,7 +1428,7 @@ PlaceMedarotStatusSelectionArrows::
   ret
 
 MedarotStatusVerticalSelectionInputHandler::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_MedarotStatusSelectedOption]
@@ -1443,7 +1443,7 @@ MedarotStatusVerticalSelectionInputHandler::
   ret
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   ret z
   ld a, [W_MedarotStatusSelectedOption]
@@ -1462,7 +1462,7 @@ MedarotStatusMedalSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]
   or a
   ret nz
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, 0
@@ -1485,7 +1485,7 @@ MedarotStatusMedalSelectionInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, 1
@@ -1634,7 +1634,7 @@ MedarotStatusHeadPartSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]
   cp 1
   ret nz
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, 0
@@ -1642,7 +1642,7 @@ MedarotStatusHeadPartSelectionInputHandler::
   jr .updateScreen
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, 1
@@ -1773,7 +1773,7 @@ MedarotStatusLeftArmPartSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]
   cp 2
   ret nz
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, 0
@@ -1781,7 +1781,7 @@ MedarotStatusLeftArmPartSelectionInputHandler::
   jr .updateScreen
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, 1
@@ -1912,7 +1912,7 @@ MedarotStatusRightArmPartSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]
   cp 3
   ret nz
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, 0
@@ -1920,7 +1920,7 @@ MedarotStatusRightArmPartSelectionInputHandler::
   jr .updateScreen
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, 1
@@ -2051,7 +2051,7 @@ MedarotStatusLegPartSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]
   cp 4
   ret nz
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, 0
@@ -2059,7 +2059,7 @@ MedarotStatusLegPartSelectionInputHandler::
   jr .updateScreen
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, 1
@@ -2833,6 +2833,313 @@ DisplayMedachangeDescription::
 
 .table
   db 3,0,1,2
+
+DisplayMedachangeOptionSelectorArrow::
+  call PlaceMedachangeOptionSelectorArrow
+  ld a, $36
+  ld b, 0
+  ld de, $C0C0
+  jp $33B2
+
+PlaceMedachangeOptionSelectorArrow::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C0C1], a
+  ld a, 7
+  ld [$C0C5], a
+  ld a, 7
+  ld [$C0C3], a
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [$C0C4], a
+  ret
+
+.table
+  db $30, $40, $48, $50
+
+MedachangeStatusScreenInputHandler::
+  xor a
+  ld [$C4EE], a
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  sub 1
+  jr nc, .dontWrapToEnd
+  ld a, 3
+
+.dontWrapToEnd
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  call DisplayCurrentMedachangePage
+  call DisplayMedachangeDescription
+  call PlaceMedachangeOptionSelectorArrow
+  ld a, 2
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+.upNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputDown
+  ret z
+  ld a, [W_MedalMenuSelectedMedaliaSlot]
+  inc a
+  cp 4
+  jr nz, .dontWrapToStart
+  xor a
+
+.dontWrapToStart
+  ld [W_MedalMenuSelectedMedaliaSlot], a
+  call DisplayCurrentMedachangePage
+  call DisplayMedachangeDescription
+  call PlaceMedachangeOptionSelectorArrow
+  ld a, 2
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+CycleEquipmentSetsInputHandlerForMedarotStatus::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputStart
+  ret z
+  ld a, [W_MedarotStatusSelectedOption]
+  or a
+  jr z, .headPartInteadOfMedal
+  dec a
+
+.headPartInteadOfMedal
+  ld hl, W_MedarotCurrentHeadPart
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld c, a
+  call CheckIfEquipmentMatchesForSetCycle
+  or a
+  jr nz, .initialEquipmentDoesNotMatch
+  ld a, c
+  call PartIndexDecCycleForMedarotStatus
+  ld c, a
+
+.initialEquipmentDoesNotMatch
+  ld a, c
+
+.nextPotentialSet
+  ld [W_MedarotCurrentHeadPart], a
+  ld [W_MedarotCurrentLeftArmPart], a
+  ld [W_MedarotCurrentRightArmPart], a
+  ld [W_MedarotCurrentLegPart], a
+  ld a, 1
+  call NavigateHeadPartListForMedarotStatus
+  ld a, 1
+  call NavigateLeftArmPartListForMedarotStatus
+  ld a, 1
+  call NavigateRightArmPartListForMedarotStatus
+  ld a, 1
+  call NavigateLegPartListForMedarotStatus
+  call CheckIfEquipmentMatchesForSetCycle
+  or a
+  jr z, .equipmentDoesNotMatch
+  call DisplayMedarotSpriteForStatusScreen
+  ld bc, $A01
+  call UpdateMedarotImageAndPaletteForStatusScreen
+  ld bc, $60A
+  call MapHeadPartNameForMedarotStatus
+  ld bc, $60C
+  call MapLeftArmPartNameForMedarotStatus
+  ld bc, $60E
+  call MapRightArmPartNameForMedarotStatus
+  ld bc, $610
+  call MapLegPartNameForMedarotStatus
+  call MedarotStatusDisplayMedalCompatibilityIconForHeadPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLeftArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForRightArmPart
+  call MedarotStatusDisplayMedalCompatibilityIconForLegPart
+  call MedarotStatusDisplayMedalCompatibilityBonuses
+  call MedarotStatusMedachangeCheck
+  call DisplayMedachangeInputIndicatorForMedarotStatus
+  ld a, 2
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+.equipmentDoesNotMatch
+  ld a, 6
+  rst 8
+  ld b, 1
+  ld hl, $DC20
+  ld de, W_MedarotCurrentHeadPart
+
+.loop
+  ld a, b
+  ld [hli], a
+  ld a, [de]
+  ld [hli], a
+  xor a
+  ld [hli], a
+  ld [hli], a
+  inc de
+  inc b
+  ld a, b
+  cp 5
+  jr nz, .loop
+  ld a, 4
+  call $35C6
+  ld a, [$DC21]
+  call PartIndexDecCycleForMedarotStatus
+  jp .nextPotentialSet
+
+CheckIfEquipmentMatchesForSetCycle::
+  ld a, [W_MedarotCurrentHeadPart]
+  ld b, a
+  ld a, [W_MedarotCurrentLeftArmPart]
+  cp b
+  jr nz, .nope
+  ld a, [W_MedarotCurrentRightArmPart]
+  cp b
+  jr nz, .nope
+  ld a, [W_MedarotCurrentLegPart]
+  cp b
+  jr nz, .nope
+  ld a, 1
+  ret
+
+.nope
+  xor a
+  ret
+
+PartIndexDecCycleForMedarotStatus::
+  sub 1
+  jr nc, .noUnderflow
+  ld b, $97
+  ld a, [W_MedarotStatusTinpetType]
+  add b
+  ret
+
+.noUnderflow
+  cp $97
+  ret nz
+  dec a
+  ret
+
+MapMedarotSelectionScreenBattleSpecificTiles::
+  ld a, [$C595]
+  cp 1
+  ret nz
+  ld bc, $D
+  ld e, $7D
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, $D
+  ld e, $7D
+  ld a, 0
+  call WrapDecompressAttribmap0
+  ld a, [$C647]
+  or a
+  jr z, .jpA
+
+; I have no idea where this is used. Maybe link battles?
+  ld hl, $99C2
+  ld bc, W_PlayerName
+  ld a, 8
+  call PutStringFixedLength
+  ld hl, $99E2
+  ld bc, $C5D2
+  ld a, 8
+  call PutStringFixedLength
+  ld hl, $9A02
+  ld bc, $C5E6
+  ld a, 8
+  call PutStringFixedLength
+  ld b, $15
+  ld c, 9
+  ld a, [$C5DB]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $99EB
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call PutStringFixedLength
+  ld b, $15
+  ld c, 9
+  ld a, [$C5EF]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $9A0B
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  jp PutStringFixedLength
+
+.jpA
+  ld a, [$C646]
+  cp 3
+  ret z
+  cp 2
+  jr nz, .onlyOneMedarot
+
+.onlyTwoMedarots
+  ld hl, $9A02
+  ld b, 8
+  call MedarotsMapDashes
+  ld hl, $9A0B
+  ld b, 8
+  jp MedarotsMapDashes
+
+.onlyOneMedarot
+  ld hl, $99E2
+  ld b, 8
+  call MedarotsMapDashes
+  ld hl, $99EB
+  ld b, 8
+  call MedarotsMapDashes
+  ld hl, $9A02
+  ld b, 8
+  call MedarotsMapDashes
+  ld hl, $9A0B
+  ld b, 8
+  jp MedarotsMapDashes
+
+MapStarForBattleMedarotSelectionScreen::
+  ld a, [$C595]
+  cp 1
+  ret nz
+  ld bc, $103
+  ld hl, $99C1
+  call $25E5
+  ld a, [$C596]
+  sla a
+  sla a
+  sla a
+  sla a
+  sla a
+  ld hl, $99C1
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, $3F
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
 
 SECTION "Medarot Helper Functions 4", ROMX[$5DAD], BANK[$07]
 MedarotsMapDashes::
