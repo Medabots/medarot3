@@ -623,7 +623,7 @@ MedalListPositionSelectorArrow::
   ret
 
 MedalListItemNavigationInputHandler::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_CurrentPageItemSelectionIndex]
@@ -655,7 +655,7 @@ MedalListItemNavigationInputHandler::
   ret
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   ret z
   ld a, [W_CurrentPageItemSelectionIndex]
@@ -690,7 +690,7 @@ MedalListItemNavigationInputHandler::
 MedalListPageNavigationInputHandler::
   xor a
   ld [$C4EE], a
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, [W_CurrentItemPage]
@@ -727,7 +727,7 @@ MedalListPageNavigationInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, [W_CurrentItemPage]
@@ -1075,7 +1075,7 @@ MedalOptionsBoxInputHandler::
   ret
 
 .bNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [$C48D]
@@ -1090,7 +1090,7 @@ MedalOptionsBoxInputHandler::
   ret
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   ret z
   ld a, [$C48D]
@@ -1309,7 +1309,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
 
@@ -1358,7 +1358,7 @@ MedalsAbilitySubscreenPageNavigationInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
 
@@ -1637,7 +1637,7 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
   ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
 
@@ -1678,7 +1678,7 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
 
@@ -1722,7 +1722,7 @@ MedalsMedaforceSubscreenPageNavigationInputHandler::
 MedalsMedaforceSubscreenItemSelectionInputHandler::
   xor a
   ld [$C4EE], a
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_ItemActionSubSubStateIndex]
@@ -1743,7 +1743,7 @@ MedalsMedaforceSubscreenItemSelectionInputHandler::
   ret
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   ret z
   ld a, [W_ItemActionSubSubStateIndex]
@@ -2303,7 +2303,7 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   ld a, [W_MedalMenuNumberOfMedals]
   cp 2
   ret c
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
 
@@ -2344,7 +2344,7 @@ MedalsSkillLevelSubscreenPageNavigationInputHandler::
   ret
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
 
@@ -3335,7 +3335,7 @@ PositionMedaliaSlotSelector::
   db $33,$56
 
 MedaliaSlotNavigationInputHandler::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputLeft
   jr z, .leftNotPressed
   ld a, [W_MedalMenuSelectedMedaliaSlot]
@@ -3353,7 +3353,7 @@ MedaliaSlotNavigationInputHandler::
   jp PositionMedaliaSlotSelector
 
 .leftNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputRight
   ret z
   ld a, [W_MedalMenuSelectedMedaliaSlot]
@@ -3420,7 +3420,7 @@ PositionMedaliaSelectionArrow::
   ret
 
 MedaliaListNavigationInputHandler::
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_MedalMenuMedaliaListOffsetIndex]
@@ -3446,7 +3446,7 @@ MedaliaListNavigationInputHandler::
   jp PopulateMedaliaList
 
 .upNotPressed
-  ld a, [$C520]
+  ld a, [W_JPInput_TypematicBtns]
   and M_JPInputDown
   ret z
   ld a, [W_MedalMenuMedaliaListOffsetIndex]

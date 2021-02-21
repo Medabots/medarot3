@@ -90,7 +90,7 @@ MedarotsStateMachine::
   dw MedarotsMedachangeMappingState ; 35
   dw MedarotsPrepareFadeIntoMedachangeScreenState ; 36
   dw MedarotsFadeState ; 37
-  dw MedarotsMedachangeInputHandler ; 38
+  dw MedarotsMedachangeInputHandlerState ; 38
   dw MedarotsPrepareFadeOutState ; 39
   dw MedarotsFadeState ; 3A
   dw MedarotsStatusMappingState ; 3B
@@ -187,8 +187,8 @@ MedarotsSelectionScreenMappingState::
   ld e, $44
   ld a, 0
   call WrapDecompressAttribmap0
-  call $5BA6
-  call $5C59
+  call MapMedarotSelectionScreenBattleSpecificTiles
+  call MapStarForBattleMedarotSelectionScreen
   call MedarotsSelectionScreenDisplayMedarotSprites
   ld bc, $A01
   call DrawCurrentMedarot
@@ -429,7 +429,7 @@ MedarotsStatusInputHandlerState::
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $5AC8
+  call CycleEquipmentSetsInputHandlerForMedarotStatus
   ld a, [$C4EE]
   or a
   ret nz
@@ -647,7 +647,7 @@ MedarotsMedachangeMappingState::
   call DisplayCurrentMedachangePage
   call WrapInitiateMainScript
   call DisplayMedachangeDescription
-  call $5A3E
+  call DisplayMedachangeOptionSelectorArrow
   jp IncSubStateIndex
 
 MedarotsPrepareFadeIntoMedachangeScreenState::
@@ -659,10 +659,10 @@ MedarotsPrepareFadeIntoMedachangeScreenState::
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
 
-MedarotsMedachangeInputHandler::
+MedarotsMedachangeInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $5A77
+  call MedachangeStatusScreenInputHandler
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   ret z
