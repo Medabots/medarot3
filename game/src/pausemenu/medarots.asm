@@ -20,6 +20,9 @@ SECTION "Medarot Variables 3",  WRAM0[$C592]
 W_MedarotSelectionDirectionalInputWaitTimer:: ds 1
 W_MedarotMedachange:: ds 1
 
+SECTION "Medarot Variables 4",  WRAM0[$C596]
+W_MedarotBattleSelectionCurrentSelectionOffset:: ds 1
+
 SECTION "Medarot Helper Functions 1", ROMX[$46FF], BANK[$07]
 MedarotsSelectionScreenDisplayMedarotSprites::
   ld a, 1
@@ -3122,7 +3125,7 @@ MapStarForBattleMedarotSelectionScreen::
   ld bc, $103
   ld hl, $99C1
   call $25E5
-  ld a, [$C596]
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
   sla a
   sla a
   sla a
@@ -3141,7 +3144,187 @@ MapStarForBattleMedarotSelectionScreen::
   ei
   ret
 
-SECTION "Medarot Helper Functions 4", ROMX[$5DAD], BANK[$07]
+CheckIfMedarotAlreadySelectedForBattle::
+  ld a, 6
+  rst 8
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  ld b, a
+  ld c, 3
+  ld hl, $DCA0
+
+.loop
+  ld a, [hli]
+  cp $80
+  jr c, .notAlreadySelected
+  and $F
+  cp b
+  jr z, .alreadySelected
+  dec c
+  jr nz, .loop
+  jr .notAlreadySelected
+
+.alreadySelected
+  ld a, 1
+  ret
+
+.notAlreadySelected
+  xor a
+  ret
+
+SelectMedarotForBattle::
+  ld a, 6
+  rst 8
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  ld hl, $DCA0
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  or $80
+  ld [hl], a
+  ld b, $B
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  add $E
+  ld c, a
+  call MapSelectedMedarotNameForBattleSelection
+  ld hl, W_MedarotBattleSelectionCurrentSelectionOffset
+  inc [hl]
+  ret
+
+CanMoreMedarotsBeSelected::
+  ld a, 5
+  rst 8
+  ld b, 0
+  ld c, 9
+  ld hl, $D000
+
+.loop
+  ld a, [hl]
+  cp 3
+  jr nz, .notBattleReady
+  inc b
+
+.notBattleReady
+  ld de, $10
+  add hl, de
+  dec c
+  jr nz, .loop
+
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  cp b
+  jr z, .noMoreMedarotsToSelect
+  ld a, [$C646]
+  ld b, a
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  cp b
+  jr z, .noMoreMedarotsToSelect
+  ld a, [$C647]
+  or a
+  jr nz, .noMoreMedarotsToSelect
+  xor a
+  ld [$C4EE], a
+  ret
+
+.noMoreMedarotsToSelect
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+AutoProgressBattleMedarotSelector::
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [W_MedarotSelectionScreenSelectedOption], a
+  ld a, 8
+  ld [W_MedarotSelectionDirectionalInputWaitTimer], a
+  jp MapStarForBattleMedarotSelectionScreen
+
+.table
+  db 1,2,0,4,5,3,7,8,6
+
+MapSelectedMedarotNameForBattleSelection::
+  ld a, [W_MedarotSelectionScreenSelectedOption]
+  push bc
+  call GetMedarotSlotAddressForSelectionScreen
+  pop bc
+  call OffsetToMappingAddressForMedarotScreens
+  push hl
+  ld hl, M_MedarotMedal
+  add hl, de
+  ld a, [hl]
+  call GetMedalAddressForCurrentMedarot
+  ld hl, M_MedalNickname
+  add hl, de
+  ld b, h
+  ld c, l
+  pop hl
+  ld a, 8
+  jp PutStringFixedLength
+
+BattleMedarotDeselectionInputHandler::
+  xor a
+  ld [$C4EE], a
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  or a
+  ret z
+  ld a, 4
+  call ScheduleSoundEffect
+  ld hl, W_MedarotBattleSelectionCurrentSelectionOffset
+  dec [hl]
+  ld a, 6
+  rst 8
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  ld hl, $DCA0
+  ld b, 0
+  ld c, a
+  add hl, bc
+  xor a
+  ld [hl], a
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  ld hl, $99CB
+  add hl, bc
+  ld bc, $801
+  call $25E5
+  call MapStarForBattleMedarotSelectionScreen
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+MedarotSelectionLinkConnectionTimeoutCheck::
+  ld a, [W_SerIO_IdleCounter]
+  cp 8
+  jp z, .timeout
+  inc a
+  ld [W_SerIO_IdleCounter], a
+  xor a
+  ld [$C4EE], a
+  ret
+
+.timeout
+  xor a
+  ld [W_SerIO_IdleCounter], a
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
 MedarotsMapDashes::
   push de
   push hl
@@ -3159,3 +3342,52 @@ MedarotsMapDashes::
   pop hl
   pop de
   ret
+
+RecountMedalsForMedarotStatusExternalSubscreen::
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, $1E
+  ld c, 0
+
+.loop
+  ld a, [hl]
+  and $80
+  jr z, .emptySlot
+  inc c
+
+.emptySlot
+  ld de, $40
+  add hl, de
+  dec b
+  jr nz, .loop
+  ld a, c
+  ld [W_MedalMenuNumberOfMedals], a
+  ret
+
+MedarotMenuRestoreIkkiOverlay::
+  ld bc, 0
+  ld e, $14
+  ld a, 0
+  call WrapDecompressTilemap1
+  call $2CEC
+  add $14
+  ld e, a
+  ld bc, 0
+  ld a, 0
+  call WrapDecompressAttribmap1
+  ret
+
+MedarotMenuRestorePausemenuArrowPlaceholder::
+  push af
+  ld a, [W_PauseMenuSelectedOption]
+  sla a
+  ld c, 2
+  add c
+  ld c, a
+  ld b, $D
+  pop af
+  add 4
+  ld e, a
+  ld a, 0
+  jp WrapDecompressTilemap0ScrollAdjusted

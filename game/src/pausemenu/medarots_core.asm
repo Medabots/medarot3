@@ -5,7 +5,7 @@ MedarotsStateMachine::
   ld a, [$C522]
   cp 2
   jr nz, .fireState
-  call $5D92
+  call MedarotSelectionLinkConnectionTimeoutCheck
   ld a, [$C4EE]
   or a
   jr z, .fireState
@@ -457,7 +457,7 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, [W_MedarotStatusSelectedOption]
   cp 0
   jr nz, .medalNotSelected
-  call $5DBD
+  call RecountMedalsForMedarotStatusExternalSubscreen
   ld a, [W_MedarotCurrentMedal]
   ld [W_SelectedItemInventorySlotIndex], a
   ld a, 1
@@ -746,9 +746,9 @@ MedarotsMedawatchRestoreOddsAndEndsState::
   ld [$C4F1], a
   ld a, 3
   call $123B
-  call $5DD9
+  call MedarotMenuRestoreIkkiOverlay
   ld a, 1
-  call $5DF2
+  call MedarotMenuRestorePausemenuArrowPlaceholder
   jp IncSubStateIndex
 
 MedarotsPrepareMedawatchMenuFadeInState::
@@ -789,7 +789,7 @@ MedarotsBattleSelectionScreenInputHandlerState::
   ld a, [de]
   cp 3
   jp nz, MedarotsPlayBzztSound
-  call $5C85
+  call CheckIfMedarotAlreadySelectedForBattle
   or a
   jp nz, MedarotsPlayBzztSound
   ld a, 3
@@ -797,23 +797,23 @@ MedarotsBattleSelectionScreenInputHandlerState::
   ld a, [W_MedarotSelectionScreenSelectedOption]
   call GetSelectedMedarotMetaspriteAddress
   call CancelMedarotSpriteAnimation
-  call $5CA5
-  call $5CC8
+  call SelectMedarotForBattle
+  call CanMoreMedarotsBeSelected
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $5D00
+  call AutoProgressBattleMedarotSelector
   ret
 
 .aNotPressed
-  call $5D3F
+  call BattleMedarotDeselectionInputHandler
   ld a, [$C4EE]
   or a
   ret nz
   ldh a, [H_JPInputChanged]
   and M_JPInputStart
   ret z
-  ld a, [$C596]
+  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
   or a
   ret z
   ld a, 3
