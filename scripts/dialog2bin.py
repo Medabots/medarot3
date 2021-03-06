@@ -67,6 +67,8 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
             pointer_length_map[pointer] = 0
             continue
         elif not txt: # For translations, it's useful to mark the pointer when not translated
+            if txt_orig.startswith("<S"): # Keep track of the speed if it's set initially
+                txt += txt_orig[0:5]
             txt = f"{pointer.partition('0x')[-1].upper()}"
             try:
                 idx_original = header.index("Original")
