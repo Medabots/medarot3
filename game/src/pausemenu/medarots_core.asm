@@ -474,10 +474,10 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, 1
   ld [$C56B], a
   xor a
-  ld [$C566], a
+  ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentHeadPart]
   ld [$C56C], a
-  ld a, [$C566]
+  ld a, [W_CurrentPartTypeForListView]
   call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
@@ -491,10 +491,10 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, 1
   ld [$C56B], a
   ld a, 1
-  ld [$C566], a
+  ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentLeftArmPart]
   ld [$C56C], a
-  ld a, [$C566]
+  ld a, [W_CurrentPartTypeForListView]
   call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
@@ -508,10 +508,10 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, 1
   ld [$C56B], a
   ld a, 2
-  ld [$C566], a
+  ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentRightArmPart]
   ld [$C56C], a
-  ld a, [$C566]
+  ld a, [W_CurrentPartTypeForListView]
   call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
@@ -523,10 +523,10 @@ MedarotsStatusOpenExternalSubscreenState::
   ld a, 1
   ld [$C56B], a
   ld a, 3
-  ld [$C566], a
+  ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentLegPart]
   ld [$C56C], a
-  ld a, [$C566]
+  ld a, [W_CurrentPartTypeForListView]
   call CountPartsForExternalPartSubscreen
   ld a, $D
   ld [W_CoreStateIndex], a
