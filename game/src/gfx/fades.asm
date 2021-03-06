@@ -8,7 +8,7 @@ SECTION "Fade Variables 2", WRAM0[$C473]
 W_PaletteAnimStepController:: ds 1
 W_PaletteAnimRunning:: ds 1
 
-W_FadePaletteForUnpacking EQU $C4EE ; Since this address is already symbolised as W_MaliasSourceBank.
+W_FadePaletteForUnpacking EQU $C4EE ; This address is overutilised, so EQU is better.
 
 SECTION "CGB Fade Palette Staging", WRAMX[$DB40], BANK[$3]
 W_FadeStagingOldBGPaletteIndexes:: ds $10
