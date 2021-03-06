@@ -335,4 +335,26 @@ ConfineAddressToTilemap0::
   or $98
   ld h, a
   ret
-  
+
+SECTION "Load Tilemaps 2", ROM0[$151F]
+DecompressTilemap0ScrollAdjusted::
+  push af
+  call GetOverworldScrollTileOffset
+  pop af
+  jp DecompressTilemap0
+
+SECTION "Load Tilemaps 3", ROM0[$152F]
+GetOverworldScrollTileOffset::
+  ld a, [W_ShadowREG_SCX]
+  srl a
+  srl a
+  srl a
+  add b
+  ld b, a
+  ld a, [W_ShadowREG_SCY]
+  srl a
+  srl a
+  srl a
+  add c
+  ld c, a
+  ret

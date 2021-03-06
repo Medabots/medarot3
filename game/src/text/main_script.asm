@@ -202,11 +202,11 @@ ControlCodeD2_changePortrait::
 
 .firstPortrait
   ld a, 0
-  ld [W_MaliasSourceBank], a
+  ld [$C4EE], a
   ld a, $14
   ld [$C4EF], a
   ld a, 9
-  ld [W_MaliasDestinationAddress], a
+  ld [$C4F0], a
   ld a, 4
   ld [$C4F1], a
   ld a, 0
@@ -275,7 +275,7 @@ ControlCodeD2_changePortrait::
   ld b, 0
   ld c, a
   ld a, 8
-  call $1446
+  call MultiplyBCByPowerOfTwoAndAddToHL
   ld de, $9600
   ld bc, $100
   call $04F9

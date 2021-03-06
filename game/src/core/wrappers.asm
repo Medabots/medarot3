@@ -63,6 +63,17 @@ WrapSetupPalswapAnimation::
   rst $18
   ret
 
+SECTION "Gfx Function Wrappers 2", ROM0[$33D5]
+WrapDecompressTilemap0ScrollAdjusted::
+  call DecompressTilemap0ScrollAdjusted
+  rst $18
+  ret
+
+WrapDecompressAttribmap0ScrollAdjusted::
+  call DecompressAttribmap0ScrollAdjusted
+  rst $18
+  ret
+
 SECTION "Main Script Init Functions", ROM0[$347D]
 WrapInitiateMainScript::
   call InitiateMainScript
@@ -94,6 +105,18 @@ WrapRestageDestinationBGPalettesForFade::
 WrapRestageDestinationOBPalettesForFade::
   call RestageDestinationOBPalettesForFade
   rst $18
+  ret
+
+SECTION "Item Helper Function Wrappers", ROM0[$356A]
+WrapIsItemInInventory::
+  push af
+  ld a, BANK(IsItemInInventory)
+  rst $10
+  pop af
+  call IsItemInInventory
+  push af
+  rst $18
+  pop af
   ret
 
 SECTION "Non-Kanji Character Drawing Wrapper", ROM0[$3765]
