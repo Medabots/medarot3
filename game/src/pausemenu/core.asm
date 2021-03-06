@@ -7,6 +7,13 @@ W_PauseMenuPerserveSCY:: ds 1
 SECTION "Pause Menu Vars 2", WRAM0[$C562]
 W_PauseMenuSelectedOption:: ds 1
 
+W_TransportOptionAAvailable EQU $C576
+W_TransportOptionBAvailable EQU $C577
+W_TransportOptionCAvailable EQU $C578
+
+SECTION "Pause Menu Vars 3", WRAM0[$C579]
+W_SelectedTransportOption:: ds 1
+
 SECTION "Pause Menu State Machine 1", ROMX[$4000], BANK[$06]
 PauseMenuStateMachine::
   ld a, [W_CoreSubStateIndex]
@@ -32,7 +39,7 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
-  ; Option 1 (Medarot) states.
+  ; Option 1 (Medawatch) states.
   dw PauseMenuPrepareFadeOutState
   dw PauseMenuFadeOutState
   dw $420F
@@ -42,7 +49,7 @@ PauseMenuStateMachine::
   dw PauseMenuClearScrollPositionState
   dw $427C
   dw $429D
-  dw PauseMenuOpenMedarotMenuState
+  dw PauseMenuOpenMedawatchMenuState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
@@ -67,15 +74,15 @@ PauseMenuStateMachine::
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   ; Option 3 states.
-  dw $4308
+  dw TransportMenuInitState
   dw $4338
-  dw $435D
-  dw $4395
-  dw $43E7
-  dw $441A
-  dw $4458
-  dw $4487
-  dw $449A
+  dw TransportMenuCheckInventoryState
+  dw TransportMenuMappingState
+  dw TransportMenuInputHandlerState
+  dw TransportMenuExitState
+  dw TransportMenuCheckIfSelectedOptionAvailableState
+  dw TransportMenuOptionUnavailableState
+  dw TransportMenuLoadOptionStateMachineState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
   dw PauseMenuPlaceholderState
@@ -138,11 +145,11 @@ PauseMenuMappingState::
   ld bc, $C00
   ld e, $12
   ld a, 0
-  call $33D5
+  call WrapDecompressTilemap0ScrollAdjusted
   ld bc, $C00
   ld e, $12
   ld a, 0
-  call $33DA
+  call WrapDecompressAttribmap0ScrollAdjusted
   ld bc, 3
   ld a, 6
   call CGBLoadSingleBGPPaletteIndex
@@ -166,7 +173,7 @@ PauseMenuInputHandlerState::
   and M_JPInputA
   ret z
   ld a, 3
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 1
   call $4880
   ld a, [$C562]
@@ -255,9 +262,9 @@ PauseMenuClearScrollPositionState::
   jp IncSubStateIndex
 
 SECTION "Pause Menu State Machine 6", ROMX[$42C8], BANK[$06]
-PauseMenuOpenMedarotMenuState::
+PauseMenuOpenMedawatchMenuState::
   xor a
-  ld [$C563], a
+  ld [W_MedawatchMenuSelectedOption], a
   ld a, $A
   ld [W_CoreStateIndex], a
   xor a
@@ -267,21 +274,21 @@ PauseMenuOpenMedarotMenuState::
 PauseMenuCanOpenItemMenuCheckState::
   ld a, 5
   rst 8
-  ld a, [$D918]
+  ld a, [W_Inventory]
   and $80
   jp nz, IncSubStateIndex
   ld a, 5
-  call $27DA
+  call ScheduleSoundEffect
   ld a, 4
   ld [W_CoreSubStateIndex], a
   ret
 
 PauseMenuOpenItemMenuState::
-  ld hl, $C576
+  ld hl, W_CurrentPageItemSelectionIndex
   ld bc, 8
   call memclr
   xor a
-  ld [$C563], a
+  ld [W_MedawatchMenuSelectedOption], a
   ld a, 1
   ld [W_CurrentItemPage], a
   ld a, $B
@@ -290,7 +297,211 @@ PauseMenuOpenItemMenuState::
   ld [W_CoreSubStateIndex], a
   ret
 
-SECTION "Pause Menu State Machine 7", ROMX[$47BA], BANK[$06]
+TransportMenuInitState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, 5
+  rst 8
+  ld hl, $C0A0
+  ld de, $DA18
+  ld bc, $3C0
+  call memcpy
+  ld a, 2
+  ld [$C4EE], a
+  ld a, $A
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, 7
+  ld [$C4F1], a
+  ld a, 0
+  call $1153
+  jp IncSubStateIndex
+
+SECTION "Pause Menu State Machine 7", ROMX[$435D], BANK[$06]
+TransportMenuCheckInventoryState::
+  ld a, 1
+  ld [$C4D9], a
+  ld hl, W_TransportOptionAAvailable
+  ld bc, 8
+  call memclr
+
+.checkTransportOptionA
+  ld a, 6
+  call WrapIsItemInInventory
+  or a
+  jr nz, .checkTransportOptionB
+  ld a, 1
+  ld [W_TransportOptionAAvailable], a
+ 
+.checkTransportOptionB
+  ld a, $24
+  call WrapIsItemInInventory
+  or a
+  jr nz, .checkTransportOptionC
+  ld a, 1
+  ld [W_TransportOptionBAvailable], a
+
+.checkTransportOptionC
+  ld a, $23
+  call WrapIsItemInInventory
+  or a
+  jr nz, .nextState
+  ld a, 1
+  ld [W_TransportOptionCAvailable], a
+
+.nextState
+  jp IncSubStateIndex
+
+TransportMenuMappingState::
+  ld a, 1
+  ld [$C4D9], a
+  ld bc, $200
+  ld e, $7E
+  ld a, 0
+  call WrapDecompressTilemap0ScrollAdjusted
+  ld bc, $200
+  ld e, $7E
+  ld a, 0
+  call WrapDecompressAttribmap0ScrollAdjusted
+  ld bc, $401
+  ld e, $7F
+  ld a, [W_TransportOptionAAvailable]
+  or a
+  jr z, .hideOptionA
+  ld e, $80
+
+.hideOptionA
+  ld a, 0
+  call WrapDecompressTilemap0ScrollAdjusted
+  ld bc, $403
+  ld e, $7F
+  ld a, [W_TransportOptionBAvailable]
+  or a
+  jr z, .hideOptionB
+  ld e, $81
+
+.hideOptionB
+  ld a, 0
+  call WrapDecompressTilemap0ScrollAdjusted
+  ld bc, $405
+  ld e, $7F
+  ld a, [W_TransportOptionCAvailable]
+  or a
+  jr z, .hideOptionC
+  ld e, $82
+
+.hideOptionC
+  ld a, 0
+  call WrapDecompressTilemap0ScrollAdjusted
+  jp IncSubStateIndex
+
+TransportMenuInputHandlerState::
+  ld a, 1
+  ld [$C4D9], a
+  call $49B5
+  xor a
+  call $49F9
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  jp z, .bNotPressed
+  ld bc, 0
+  ld a, 7
+  call CGBLoadSingleBGPPaletteIndex
+  ld a, 1
+  ld [W_CGBPaletteStagedBGP], a
+  jp IncSubStateIndex
+
+.bNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ret z
+  ld a, 1
+  call $49F9
+  ld a, $36
+  ld [W_CoreSubStateIndex], a
+  ret
+
+TransportMenuExitState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, 2
+  ld [$C4EE], a
+  ld a, $A
+  ld [$C4EF], a
+  ld a, 0
+  ld [$C4F0], a
+  ld a, 7
+  ld [$C4F1], a
+  ld a, 0
+  call $123B
+  call $346D
+  ld a, 1
+  ld [$C498], a
+  ld bc, 2
+  ld a, 7
+  call CGBLoadSingleBGPPaletteIndex
+  ld a, 1
+  ld [W_CGBPaletteStagedBGP], a
+  ld a, 4
+  call ScheduleSoundEffect
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+TransportMenuCheckIfSelectedOptionAvailableState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, [W_SelectedTransportOption]
+  ld hl, W_TransportOptionAAvailable
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  or a
+  jr nz, .optionAvailable
+
+.optionUnavailable
+  ld a, 5
+  call ScheduleSoundEffect
+  ld a, $20
+  ld [$C48A], a
+  jp IncSubStateIndex
+
+.optionAvailable
+  ld a, 3
+  call ScheduleSoundEffect
+  xor a
+  ld [W_TransportOptionSubSubSubStateIndex], a
+  ld a, $38
+  ld [W_CoreSubStateIndex], a
+  ret
+
+TransportMenuOptionUnavailableState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, [$C48A]
+  dec a
+  ld [$C48A], a
+  ret nz
+  ld a, $34
+  ld [W_CoreSubStateIndex], a
+  ret
+
+TransportMenuLoadOptionStateMachineState::
+  ld a, 1
+  ld [$C4D9], a
+  ld a, [W_SelectedTransportOption]
+  ld hl, .table
+  rst $30
+  jp hl
+
+.table
+  dw $44AD
+  dw $45F2
+  dw $4732
+
+SECTION "Pause Menu State Machine 8", ROMX[$47BA], BANK[$06]
 PauseMenuOpenSaveScreenState::
   ld a, $C
   ld [W_CoreStateIndex], a

@@ -5,8 +5,9 @@ W_MapDigitsBuffer EQU $C4E0 ; Since this address is already symbolised as W_Tile
 SECTION "Number Mapping Variables 1", WRAM0[$C4E2]
 W_MapDigitsAddress:: ds 2
 
-W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; Since this address is already symbolised as W_MaliasSourceBank.
-W_MapDigitsSignificantDigitFound EQU $C4F0 ; Since this address is already symbolised as W_MaliasDestinationAddress.
+W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; This address is overutilised, so EQU is better.
+W_MapDigitsSignificantDigitFound EQU $C4F0 ; This address is overutilised, so EQU is better.
+W_MapDigitsMedalExpSignificantDigitFound EQU $C4F2
 
 SECTION "Map Four Digit Numbers", ROM0[$1352]
 MapFourDigitNumber::
@@ -217,3 +218,175 @@ DigitCalculationLoop::
   add d
   ld [W_MapDigitsCurrentCalculatedDigit + 1], a
   jr .loop
+
+SECTION "Medal Menu Exp To Next Level", ROMX[$49A5], BANK[$02]
+MapExpToNextLevel::
+  push hl
+  push de
+  push bc
+  xor a
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+
+.parseTenThousandsDigit
+  push hl
+  ld h, b
+  ld l, c
+  ld bc, 10000
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .tenThousandsDigitNotZero
+  pop hl
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  jr .parseThousandsDigit
+
+.tenThousandsDigitNotZero
+  pop hl
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+
+.parseThousandsDigit
+  push hl
+  ld a, [W_MapDigitsBuffer]
+  ld h, a
+  ld a, [W_MapDigitsBuffer + 1]
+  ld l, a
+  ld bc, 1000
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .thousandsDigitNotZero
+  ld a, [W_MapDigitsMedalExpSignificantDigitFound]
+  or a
+  jr z, .skipThousandsDigit
+  xor a
+
+.thousandsDigitNotZero
+  pop hl
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+  jr .parseHundredsDigit
+
+.skipThousandsDigit
+  pop hl
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+
+.parseHundredsDigit
+  push hl
+  ld a, [W_MapDigitsBuffer]
+  ld h, a
+  ld a, [W_MapDigitsBuffer + 1]
+  ld l, a
+  ld bc, 100
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .hundredsDigitNotZero
+  ld a, [W_MapDigitsMedalExpSignificantDigitFound]
+  or a
+  jr z, .skipHundredsDigit
+  xor a
+  jr .hundredsDigitNotZero
+
+.hundredsDigitNotZero
+  pop hl
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+  jr .parseTensDigit
+
+.skipHundredsDigit
+  pop hl
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+
+.parseTensDigit
+  push hl
+  ld a, [W_MapDigitsBuffer]
+  ld h, a
+  ld a, [W_MapDigitsBuffer + 1]
+  ld l, a
+  ld bc, 10
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .tensDigitNotZero
+  ld a, [W_MapDigitsMedalExpSignificantDigitFound]
+  or a
+  jr z, .skipTensDigit
+  xor a
+  jr .tensDigitNotZero
+
+.tensDigitNotZero
+  pop hl
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+  jr .parseOnesDigit
+
+.skipTensDigit
+  pop hl
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+
+.parseOnesDigit
+  ld a, [W_MapDigitsBuffer + 1]
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  pop bc
+  pop de
+  pop hl
+  ret

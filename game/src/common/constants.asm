@@ -62,6 +62,8 @@ H_JPInputChanged    EQU $ff8d
 
 H_VBlankCompleted   EQU $ff92
 
+H_SoundEffect       EQU $ffa1
+
 M_JPInputA          EQU $1
 M_JPInputB          EQU $2
 M_JPInputSelect     EQU $4
@@ -75,3 +77,53 @@ X_MBC5SRAMEnable    EQU $0000
 X_MBC5ROMBankLow    EQU $2000
 X_MBC5ROMBankHigh   EQU $3000
 X_MBC5SRAMBank      EQU $4000
+
+M_MedarotSlotLength   EQU $10
+
+M_MedarotEquipState   EQU $0
+M_MedarotType         EQU $1
+M_MedarotMedal        EQU $2
+M_MedarotHead         EQU $3
+M_MedarotLeftArm      EQU $4
+M_MedarotRightArm     EQU $5
+M_MedarotLegs         EQU $6
+M_MedarotPalette      EQU $7
+
+M_MedalSlotLength     EQU $40
+
+M_MedalStatus         EQU $0
+M_MedalType           EQU $1
+M_MedalExpLower       EQU $2
+M_MedalExpUpper       EQU $3
+M_MedalImage          EQU $4
+M_MedalMedaforceA     EQU $5
+M_MedalMedaforceB     EQU $6
+M_MedalMedaforceC     EQU $7
+M_MedalAttribute      EQU $8
+M_MedalLevel          EQU $9
+M_MedalPersonality    EQU $A
+M_MedalCompatibility  EQU $B
+M_MedalSkillAIndex    EQU $19
+M_MedalSkillAUses     EQU $1A
+M_MedalSkillAExp      EQU $1B
+M_MedalSkillAPadding  EQU $1C
+M_MedalSkillBIndex    EQU $1D
+M_MedalSkillBUses     EQU $1E
+M_MedalSkillBExp      EQU $1F
+M_MedalSkillBPadding  EQU $20
+M_MedalSkillCIndex    EQU $21
+M_MedalSkillCUses     EQU $22
+M_MedalSkillCExp      EQU $23
+M_MedalMedaliaAStatus EQU $24
+M_MedalMedaliaASkill  EQU $25
+M_MedalMedaliaAUses   EQU $26
+M_MedalMedaliaAExp    EQU $27
+M_MedalMedaliaBStatus EQU $28
+M_MedalMedaliaBSkill  EQU $29
+M_MedalMedaliaBUses   EQU $2A
+M_MedalMedaliaBExp    EQU $2B
+M_MedalMedaliaCStatus EQU $2C
+M_MedalMedaliaCSkill  EQU $2D
+M_MedalMedaliaCUses   EQU $2E
+M_MedalMedaliaCExp    EQU $2F
+M_MedalNickname       EQU $30

@@ -6,11 +6,8 @@ W_MaliasBundleBitsCount:: ds 1
 W_MaliasBundleBits:: ds 2
 W_MaliasDecompressionHead:: ds 2
 
-SECTION "Tileset Variables 2", WRAM0[$C4EE]
-W_MaliasSourceBank:: ds 1
-
-SECTION "Tileset Variables 3", WRAM0[$C4F0]
-W_MaliasDestinationAddress:: ds 2
+W_MaliasSourceBank EQU $C4EE ; This address is overutilised, so EQU is better.
+W_MaliasDestinationAddress EQU $C4F0 ; This address is overutilised, so EQU is better.
 
 SECTION "Load Malias-Compressed Tilesets", ROM0[$0983]
 LoadMaliasGraphics::
