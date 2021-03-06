@@ -69,6 +69,10 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
             try:
                 idx_original = header.index("Original")
                 txt_orig = line[idx_original]
+                
+                # Keep track of the speed if it's set initially
+                txt = (txt_orig[0:5] if txt_orig.startswith("<S") else "") + txt
+                
                 # If the original has a special exit code, preserve it
                 txt += txt_orig[txt_orig.index("<*"):]
             except ValueError:
