@@ -148,20 +148,20 @@ PartsListMappingState::
   ld a, 0
   call WrapDecompressAttribmap0
   call MapTypeNameForPartList
-  call $6330
-  call $635B
-  call $6371
-  call $64E4
-  call $6595
-  call $66E7
-  call $66FA
+  call PartsListCalculatePageNumberAndCursorPosition
+  call MapPageNumbersForPartsList
+  call MapPartModelNumbersForPartsList
+  call MapPartNamesForPartsList
+  call MapPartQuantitiesForPartsList
+  call GetMaxCursorPositionForPartsList
+  call PlaceCursorForPartsList
   call $69BC
-  call $6873
-  call $67D7
+  call CheckIfPartSlotIsNotEmptyForPartsListExtended
+  call CheckIfPartSlotIsNotEmptyForPartsList
   or a
   jp z, IncSubStateIndex
-  call $6824
-  call $67F8
+  call GetSelectedPartIndexForPartsList
+  call DrawPartImageForPartsList
   ld a, [W_CurrentPartTypeForListView]
   add $30
   ld e, a
@@ -177,7 +177,7 @@ PartsListPrepareFadeInState::
   ld e, $A1
   ld a, 8
   call WrapSetupPalswapAnimation
-  ld a, [$C56C]
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld h, 0
   ld l, a
   ld bc, $40
@@ -191,7 +191,7 @@ PartsListPrepareFadeInState::
 PartsListInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $6794
+  call AnimatePageNavigationArrowsForPartsList
   call $6972
   ld a, [$C4EE]
   or a
@@ -219,7 +219,7 @@ PartsListInputHandlerState::
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $672C
+  call VerticalDirectionalInputHandlerForPartsList
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -238,7 +238,7 @@ PartsListInputHandlerState::
 PartsListUpdatePartImageState::
   ld de, $C0C0
   call $33B7
-  call $6794
+  call AnimatePageNavigationArrowsForPartsList
   ld a, [W_MedalMenuWaitTimer]
   or a
   jr nz, .notZero
@@ -298,7 +298,7 @@ PartsStatusInitiateMainScriptState::
   jp IncSubStateIndex
 
 PartsStatusDisplayDescriptionTextState::
-  ld a, [$C56C]
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld [W_ListItemIndexForBuffering], a
   ld a, [W_CurrentPartTypeForListView]
   call $34FF
@@ -319,7 +319,7 @@ PartsStatusPrepareFadeInState::
   ld e, $A2
   ld a, 8
   call WrapSetupPalswapAnimation
-  ld a, [$C56C]
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld h, 0
   ld l, a
   ld bc, $40
@@ -366,7 +366,7 @@ PartsStatusPrepareFadeInPartImageState::
   ld e, 0
   ld a, 8
   call WrapSetupPalswapAnimation
-  ld a, [$C56C]
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld h, 0
   ld l, a
   ld bc, $40
@@ -407,7 +407,7 @@ PartsStatusExitState::
   ld b, 0
   ld c, a
   add hl, bc
-  ld a, [$C56C]
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld [hl], a
   ld a, $F
   ld [W_CoreStateIndex], a
@@ -428,7 +428,7 @@ PartsListPointlessConditionalExitToMedarotScreenThatDoesntWorkState::
   ld a, [$C56B]
   or a
   jp z, IncSubStateIndex
-  call $634A
+  call PartsListCalculatePartIndex
   ld a, $F
   ld [W_CoreStateIndex], a
   ld a, $C
@@ -564,8 +564,8 @@ PartsListLinkOverlayActionState::
 PartsListLinkOverlayJumpToPartExchangeState::
   ld a, [W_CurrentPartTypeForListView]
   ld [$C613], a
-  call $634A
-  ld a, [$C56C]
+  call PartsListCalculatePartIndex
+  ld a, [W_CurrentPartIndexForPartStatus]
   ld [$C615], a
   ld a, $1E
   ld [W_CoreStateIndex], a

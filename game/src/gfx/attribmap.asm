@@ -1,5 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 
+W_AttribmapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
+W_AttribmapPointerTableIndex EQU $C4E1
+
 SECTION "Attribmap Loading Variables 1", WRAM0[$C499]
 W_DecompressAttribmapCurrentValue:: ds 1
 
@@ -8,21 +11,21 @@ DecompressAttribmap0::
   push af
   ld hl, $9800
   xor a
-  ld [W_TilemapWritingBaseLocationIndex], a
+  ld [W_AttribmapWritingBaseLocationIndex], a
   jr DecompressAttribmapCommon
 
 DecompressAttribmap1::
   push af
   ld hl, $9C00
   ld a, 1
-  ld [W_TilemapWritingBaseLocationIndex], a
+  ld [W_AttribmapWritingBaseLocationIndex], a
 
 DecompressAttribmapCommon::
   ld a, 1
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
   pop af
-  ld [W_TilemapPointerTableIndex], a
+  ld [W_AttribmapPointerTableIndex], a
   push hl
   push de
   ld hl, AttribmapBankTable
@@ -59,7 +62,7 @@ DecompressAttribmapCommon::
   pop de
   push hl
   ld hl, AttribmapAddressTable
-  ld a, [W_TilemapPointerTableIndex]
+  ld a, [W_AttribmapPointerTableIndex]
   rst $30
   ld d, 0
   sla e
@@ -98,7 +101,7 @@ DecompressAttribmapCommon::
   pop af
   ld [hli], a
   ei
-  ld a, [W_TilemapWritingBaseLocationIndex]
+  ld a, [W_AttribmapWritingBaseLocationIndex]
   or a
   call z, Tilemap0WrapToLine
   jr .copyLinesMode
@@ -109,7 +112,7 @@ DecompressAttribmapCommon::
   ld h, b
   ld l, c
   add hl, de
-  ld a, [W_TilemapWritingBaseLocationIndex]
+  ld a, [W_AttribmapWritingBaseLocationIndex]
   or a
   call z, ConfineAddressToTilemap0
   ld b, h
@@ -119,7 +122,7 @@ DecompressAttribmapCommon::
 
 .jpA
   inc hl
-  ld a, [W_TilemapWritingBaseLocationIndex]
+  ld a, [W_AttribmapWritingBaseLocationIndex]
   or a
   call z, Tilemap0WrapToLine
   jr .copyLinesMode
@@ -141,7 +144,7 @@ DecompressAttribmapCommon::
   pop af
   ld [hli], a
   ei
-  ld a, [W_TilemapWritingBaseLocationIndex]
+  ld a, [W_AttribmapWritingBaseLocationIndex]
   or a
   call z, Tilemap0WrapToLine
   ld a, [$C4F0]

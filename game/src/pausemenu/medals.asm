@@ -53,7 +53,7 @@ CalculateMedalMenuPageNumber::
   ld a, [$C4EE]
   inc a
   ld [W_CurrentItemPage], a
-  ld a, [W_TilemapPointerTableIndex]
+  ld a, [$C4E1]
   ld [W_CurrentPageItemSelectionIndex], a
   ret
 
@@ -866,7 +866,7 @@ MedalListDisplaySortingArrow::
   ld [$C125], a
   ld a, 7
   ld [$C123], a
-  ld a, [W_TilemapPointerTableIndex]
+  ld a, [$C4E1]
   ld b, a
   sla a
   sla a
