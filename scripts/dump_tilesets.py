@@ -12,8 +12,9 @@ from common import utils, tilesets, png, gfx
 
 raw_path = sys.argv[1]
 prebuilt_path = sys.argv[2]
-scripts_res_path = sys.argv[3]
-version_src_path = sys.argv[4]
+output_path = sys.argv[3]
+scripts_res_path = sys.argv[4]
+version_src_path = sys.argv[5]
 
 meta_tileset_names_file = os.path.join(scripts_res_path, "meta_tileset_names.tbl")
 meta_tileset_load_offsets_file = os.path.join(scripts_res_path, "meta_tileset_load_offsets.tbl")
@@ -191,8 +192,7 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
         
         output.write(f'SECTION "Tileset Data {name}", ROMX[${p[1]:04X}], BANK[${p[0]:02X}]\n')
         output.write(f"{name}::\n")
-        # Hardcoded path for build output
-        output.write(f'  INCBIN "build/tilesets/{name}.malias"\n\n')
+        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n\n')
     output.write('\n')
 
 
@@ -203,7 +203,7 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
         name = nametable[key]
         output.write(f'SECTION "Tileset Data {name}", ROMX[${p[1]:04X}], BANK[${p[0]:02X}]\n')
         output.write(f"{name}::\n")
-        output.write(f'  INCBIN "build/tilesets/{name}_{{GAMEVERSION}}.malias"\n\n')
+        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{{GAMEVERSION}}.malias")}"\n\n')
 
         for version in roms:
             ver = version[1]
@@ -228,7 +228,7 @@ data_map = {}
 for version in roms:
     ver = version[1]
     with open(os.path.join(version_src_path, f"{ver}/tileset_table.asm"), "w") as outputv:
-        outputv.write('INCLUDE "game/src/version/tileset_table.asm"\n\n')
+        outputv.write(f'INCLUDE "{os.path.join(version_src_path, "tileset_table.asm")}"\n\n')
 
         # Unique pointers but tileset is the same
         for key in unique_pointers:
@@ -255,7 +255,7 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "build/tilesets/{name}.malias"\n\n')
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n\n')
 
         for key in unique_pointer_and_tilesets:
             p = utils.real2romaddr(tileset_data[key][ver][0])
@@ -281,7 +281,7 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "build/tilesets/{name}_{ver}.malias"\n\n')
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{ver}.malias")}"\n\n')
 
         for key in missing_pointers:
             if ver not in tileset_data[key]:
@@ -313,7 +313,8 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "build/tilesets/{basename}.malias"\n\n')
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{basename}.malias")}"\n\n')
+
 
 with open(meta_tileset_load_offsets_file,"w") as offsetfile, open(meta_tileset_index_file,"w") as indexfile:
     for i, key in enumerate(tileset_metadata[default_version]):
