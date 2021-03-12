@@ -27,6 +27,7 @@ PTRLIST_TYPE := bin
 TABLE_TYPE := tbl
 
 # Directories
+## It's important these remain relative
 BASE := .
 BUILD := $(BASE)/build
 GAME := $(BASE)/game
@@ -198,13 +199,13 @@ $(PTRLISTS_OUT)/ptrlist_data_constants_%.asm: $(SRC)/version/ptrlist_data.asm $(
 dump: dump_text dump_tilesets dump_ptrlists
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
-	$(PYTHON) $(SCRIPT)/dump_text.py
+	$(PYTHON) $(SCRIPT)/dump_text.py $(SCRIPT_RES) $(VERSION_SRC) $(DIALOG_TEXT) $(DIALOG_OUT)
 
 dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
-	$(PYTHON) $(SCRIPT)/dump_ptrlists.py
+	$(PYTHON) $(SCRIPT)/dump_ptrlists.py "$(SCRIPT_RES)" 
 
 #Make directories if necessary
 $(BUILD):

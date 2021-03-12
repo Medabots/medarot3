@@ -1,4 +1,4 @@
-INCLUDE "game/src/version/text_tables.asm"
+INCLUDE "./game/src/version/text_tables.asm"
 
 SECTION "TextSection07", ROMX[$6316], BANK[$24]
 TextSection07:

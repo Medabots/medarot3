@@ -1,4 +1,4 @@
-INCLUDE "build/dialog/text_table_constants_{GAMEVERSION}.asm"
+INCLUDE "./build/dialog/text_table_constants_{GAMEVERSION}.asm"
 
 SECTION "TextSection00", ROMX[$4000], BANK[$24]
 TextSection00:
