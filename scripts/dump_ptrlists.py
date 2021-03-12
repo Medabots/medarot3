@@ -9,6 +9,11 @@ from functools import partial
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
+
+version_src_path = sys.argv[1]
+text_src_path = sys.argv[2]
+text_build_path = sys.argv[3]
+
 roms = ({
     "kabuto" : "baserom_kabuto.gbc",
     "kuwagata" : "baserom_kuwagata.gbc",
@@ -50,8 +55,9 @@ tileset = utils.merge_dicts([
 
 kanji = tilesets.get_tileset("Kanji", override_offset=0x0)
 
-with open("./game/src/version/ptrlist_data.asm", "w") as datafile:
-    datafile.write(f'INCLUDE "build/ptrlists/ptrlist_data_constants_{{GAMEVERSION}}.asm"\n\n')
+with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
+    constants_file = os.path.join(text_build_path, f"ptrlist_data_constants_{{GAMEVERSION}}.asm")
+    datafile.write(f'INCLUDE "{constants_file}"\n\n')
     for l in list_map:
         addr, spp, term, fix_len, print_hex, null_indicator, data_prefix = list_map[l]
         if isinstance(addr, tuple):
@@ -65,12 +71,13 @@ with open("./game/src/version/ptrlist_data.asm", "w") as datafile:
         datafile.write(f'  INCBIN c{l}\n\n')
 
         entries = OrderedDict()
-        with open(f"./text/ptrlists/{l}.txt", "w", encoding="utf-8") as output:
+        with open(os.path.join(text_src_path, f"{l}.txt"), "w", encoding="utf-8") as output:
             output.write(str(list_map[l][1:]) + "\n")
             count_written = False
-            for version_suffix in roms:
-                with open(f'./game/src/version/{version_suffix}/ptrlist_data.asm', 'w') as datafile_version:
-                    datafile_version.write('INCLUDE "game/src/version/ptrlist_data.asm"\n')
+            for version_suffix in roms:            
+                with open(os.path.join(version_src_path, f"{version_suffix}/ptrlist_data.asm"), 'w') as datafile_version:
+                    include_file = os.path.join(version_src_path, "ptrlist_data.asm")
+                    datafile_version.write(f'INCLUDE "{include_file}"\n')
                 with open(roms[version_suffix], "rb") as rom:
                     rom.seek(addr)
                     # Make the (probably) safe assumption that the end of the table is the pointer 

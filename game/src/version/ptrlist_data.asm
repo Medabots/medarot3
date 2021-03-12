@@ -1,4 +1,4 @@
-INCLUDE "build/ptrlists/ptrlist_data_constants_{GAMEVERSION}.asm"
+INCLUDE "./build/ptrlists/ptrlist_data_constants_{GAMEVERSION}.asm"
 
 SECTION "Pointer List - Unknown00", ROMX[$44fc], BANK[$27]
 PtrListUnknown00::
