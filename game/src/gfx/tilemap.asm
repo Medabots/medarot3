@@ -242,10 +242,16 @@ DecompressTilemapCommon::
   jp .decompressMode
 
 TilemapBankTable::
-  db $33,  $34,  $19,  $AB
+  db BANK(TilemapTable00)
+  db BANK(TilemapTable01)
+  db BANK(TilemapTable02)
+  db BANK(TilemapTable03)
 
 TilemapAddressTable::
-  dw $4000,  $4000,  $4000,  $4000
+  dw TilemapTable00
+  dw TilemapTable01
+  dw TilemapTable02
+  dw TilemapTable03
 
 SECTION "Calculate Tilemap Address", ROM0[$0912]
 Tilemap0WrapToLine::

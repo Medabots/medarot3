@@ -7,8 +7,8 @@ def decompress_tilemap(original):
     tmap = []
     rom = iter(original)
     for b in rom:
-        if b == 0xfe:
-            tmap.append(0xfe)
+        if b in [0xfe, 0xff]:
+            tmap.append(b)
         else:
             command = (b >> 6) & 0b11
             count = b & 0b00111111
@@ -28,8 +28,8 @@ def decompress_tilemap(original):
                 for i in range(count+2):
                     tmap.append((byte-i)%0xff)
     ret = []
-    for i,t in enumerate(tmap):
-        if i != 0 and i % 0x20 == 0:
+    for i, t in enumerate(tmap):
+        if i != 0 and i % 0x20 == 0 and t != 0xFF:
             ret.append(0xfe)
         ret.append(t)
     return ret
