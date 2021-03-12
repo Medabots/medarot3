@@ -39,7 +39,6 @@ SCRIPT_RES := $(SCRIPT)/res
 VERSION_OUT := $(BUILD)/version
 
 TILESET_OUT := $(BUILD)/tilesets
-TILEMAP_OUT := $(BUILD)/tilemaps
 
 DIALOG_INT := $(BUILD)/intermediate/dialog
 DIALOG_OUT := $(BUILD)/dialog
@@ -47,10 +46,12 @@ DIALOG_OUT := $(BUILD)/dialog
 PTRLISTS_INT := $(BUILD)/intermediate/ptrlists
 PTRLISTS_OUT := $(BUILD)/ptrlists
 
+TILEMAP_OUT := $(BUILD)/tilemaps
+
 # Game Source Directories
 SRC := $(GAME)/src
-TILESET_BIN := $(GAME)/tilesets
 COMMON := $(SRC)/common
+VERSION_SRC := $(SRC)/version
 
 # Text Directories
 DIALOG_TEXT := $(TEXT)/dialog
@@ -58,6 +59,9 @@ PTRLISTS_TEXT := $(TEXT)/ptrlists
 
 # Graphics Directories
 TILESET_GFX := $(GFX)/tilesets
+TILESET_PREBUILT := $(GFX)/prebuilt/tilesets
+TILEMAP_GFX := $(TEXT)/tilemaps
+TILEMAP_PREBUILT := $(GFX)/prebuilt/tilemaps
 
 # Source Modules (directories in SRC), version directories (kuwagata/kabuto) are implied
 # We explicitly separate this with newlines to avoid silly conflicts with tr_EN
@@ -160,7 +164,7 @@ $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TIL
 
 # build/tilesets/*.malias from built 2bpp
 $(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT)
-	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $<
+	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $< $(TILESET_PREBUILT)
 
 # build/tilesets/*_VERSION.malias
 .SECONDEXPANSION:
@@ -196,8 +200,8 @@ dump: dump_text dump_tilesets dump_ptrlists
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_text.py
 
-dump_tilesets: | $(TILESET_GFX) $(TILESET_BIN) $(SCRIPT_RES)
-	$(PYTHON) $(SCRIPT)/dump_tilesets.py
+dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
 	$(PYTHON) $(SCRIPT)/dump_ptrlists.py
@@ -221,8 +225,8 @@ $(DIALOG_INT):
 $(DIALOG_OUT):
 	mkdir -p $(DIALOG_OUT)
 
-$(TILESET_BIN):
-	mkdir -p $(TILESET_BIN)
+$(TILESET_PREBUILT):
+	mkdir -p $(TILESET_PREBUILT)
 
 $(TILESET_GFX):
 	mkdir -p $(TILESET_GFX)

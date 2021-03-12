@@ -10,14 +10,8 @@ from pathlib import Path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets, png, gfx
 
-raw_path = sys.argv[1]
-prebuilt_path = sys.argv[2]
-scripts_res_path = sys.argv[3]
-version_src_path = sys.argv[4]
-
-meta_tileset_names_file = os.path.join(scripts_res_path, "meta_tileset_names.tbl")
-meta_tileset_load_offsets_file = os.path.join(scripts_res_path, "meta_tileset_load_offsets.tbl")
-meta_tileset_index_file = os.path.join(scripts_res_path, "meta_tileset_index.tbl")
+prebuilt_path = sys.argv[1]
+output_path = sys.argv[2]
 
 roms = ([
             ("baserom_kabuto.gbc", "kabuto"), 
@@ -35,11 +29,10 @@ namefile = None
 realptr_key_map = {}
 
 # Map real address to a defined name
-
-if os.path.exists(meta_tileset_names_file):
-    nametable = utils.read_table(meta_tileset_names_file)
+if os.path.exists("scripts/res/meta_tileset_names.tbl"):
+    nametable = utils.read_table("scripts/res/meta_tileset_names.tbl")
 else:
-    namefile = open(meta_tileset_names_file, "w")
+    namefile = open("scripts/res/meta_tileset_names.tbl","w")
 
 # M3 keeps source addresses in a table in bank 0 and banks + destination info in a separate table
 # This is pretty much a single table that's been split over 2 banks, and there may be duplicate tileset entries
@@ -143,8 +136,7 @@ if namefile:
         if key != terminator:
             namefile.write(f"{key:04X}={nametable[key]}\n")
 
-with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
-    #Hardcoded path for common source
+with open("game/src/version/tileset_table.asm", "w") as output:
     output.write('INCLUDE "game/src/common/macros.asm"\n\n')
 
     output.write(f'SECTION "Tileset Source Address Table", ROM0[${tiletable:04X}]\n')
@@ -175,8 +167,8 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
         p = utils.real2romaddr(tileset_data[key][default_version][0])
         f = tileset_data[key][default_version][1]
         name = nametable[key]
-        with open(os.path.join(prebuilt_path, f"{name}.malias"),"wb") as compressed, \
-                open(os.path.join(raw_path, f"{name}.png"),"wb") as uncompressed:
+        with open(f"{prebuilt_path}/{name}.malias","wb") as compressed, \
+                open(f"gfx/tilesets/{name}.png","wb") as uncompressed:
             width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
             w = png.Writer(
                 width,
@@ -191,7 +183,6 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
         
         output.write(f'SECTION "Tileset Data {name}", ROMX[${p[1]:04X}], BANK[${p[0]:02X}]\n')
         output.write(f"{name}::\n")
-        # Hardcoded path for build output
         output.write(f'  INCBIN "build/tilesets/{name}.malias"\n\n')
     output.write('\n')
 
@@ -210,8 +201,8 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
             p = utils.real2romaddr(tileset_data[key][ver][0])
             f = tileset_data[key][ver][1]
 
-            with open(os.path.join(prebuilt_path, f"{name}_{ver}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}_{ver}.png"),"wb") as uncompressed:
+            with open(f"game/tilesets/{name}_{ver}.malias","wb") as compressed, \
+                    open(f"gfx/tilesets/{name}_{ver}.png","wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -227,7 +218,7 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
 data_map = {}
 for version in roms:
     ver = version[1]
-    with open(os.path.join(version_src_path, f"{ver}/tileset_table.asm"), "w") as outputv:
+    with open(f"game/src/version/{ver}/tileset_table.asm", "w") as outputv:
         outputv.write('INCLUDE "game/src/version/tileset_table.asm"\n\n')
 
         # Unique pointers but tileset is the same
@@ -236,8 +227,8 @@ for version in roms:
             f = tileset_data[key][ver][1]
             name = nametable[key]
 
-            with open(os.path.join(prebuilt_path, f"{name}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}.png"),"wb") as uncompressed:
+            with open(f"game/tilesets/{name}.malias","wb") as compressed, \
+                    open(f"gfx/tilesets/{name}.png","wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -262,8 +253,8 @@ for version in roms:
             f = tileset_data[key][ver][1]
             name = nametable[key]
 
-            with open(os.path.join(prebuilt_path, f"{name}_{ver}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}_{ver}.png"),"wb") as uncompressed:
+            with open(f"game/tilesets/{name}_{ver}.malias","wb") as compressed, \
+                    open(f"gfx/tilesets/{name}_{ver}.png","wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -292,9 +283,8 @@ for version in roms:
 
             if tuple(f[0]) not in data_map:
                 data_map[tuple(f[0])] = f"{name}_{ver}"
-                
-                with open(os.path.join(prebuilt_path, f"{data_map[tuple(f[0])]}.malias"), "wb") as compressed, \
-                        open(os.path.join(raw_path, f"{data_map[tuple(f[0])]}.png"), "wb") as uncompressed:
+                with open(f"game/tilesets/{data_map[tuple(f[0])]}.malias","wb") as compressed, \
+                        open(f"gfx/tilesets/{data_map[tuple(f[0])]}.png","wb") as uncompressed:
                     width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                     w = png.Writer(
                         width,
@@ -315,7 +305,7 @@ for version in roms:
                     outputv.write(f"{nametable[alias_key]}::\n")
             outputv.write(f'  INCBIN "build/tilesets/{basename}.malias"\n\n')
 
-with open(meta_tileset_load_offsets_file,"w") as offsetfile, open(meta_tileset_index_file,"w") as indexfile:
+with open("scripts/res/meta_tileset_load_offsets.tbl","w") as offsetfile, open("scripts/res/meta_tileset_index.tbl","w") as indexfile:
     for i, key in enumerate(tileset_metadata[default_version]):
         name = nametable[key] if key in nametable else nametable[realptr_key_map[default_version][realptr]]
         vram = tileset_metadata[default_version][key][2]

@@ -8,10 +8,11 @@ from common import utils, tilesets
 if __name__ == '__main__':
     output_file = sys.argv[1]
     input_file = sys.argv[2]
+    prebuilt_root = sys.argv[3]
 
     fname = os.path.splitext(os.path.basename(input_file))[0]
 
-    prebuilt = "game/tilesets/{}.malias".format(fname)
+    prebuilt = os.path.join(prebuilt_root, f"{fname}.malias")
     if os.path.isfile(prebuilt):
         print("\tUsing prebuilt {}".format(prebuilt))
         copyfile(prebuilt, output_file)
