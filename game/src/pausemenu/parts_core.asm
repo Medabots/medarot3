@@ -1,5 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
+W_PartStatsBuffer EQU $C552
+
 SECTION "Parts State Machine 1", ROMX[$5EBB], BANK[$06]
 PartsStateMachine::
   ld a, [W_CoreSubStateIndex]
@@ -22,8 +24,8 @@ PartsStateMachine::
 
 ; Status states.
 
-  dw PartsStatusMappingState ; 08
-  dw PartsStatusDrawingState ; 09
+  dw PartsStatusDrawingState ; 08
+  dw PartsStatusMappingState ; 09
   dw PartsStatusInitiateMainScriptState ; 0A
   dw PartsStatusDisplayDescriptionTextState ; 0B
   dw PartsStatusPrepareFadeInState ; 0C
@@ -155,7 +157,7 @@ PartsListMappingState::
   call MapPartQuantitiesForPartsList
   call GetMaxCursorPositionForPartsList
   call PlaceCursorForPartsList
-  call $69BC
+  call CountPartsForPartStatus
   call CheckIfPartSlotIsNotEmptyForPartsListExtended
   call CheckIfPartSlotIsNotEmptyForPartsList
   or a
@@ -192,11 +194,11 @@ PartsListInputHandlerState::
   ld de, $C0C0
   call $33B7
   call AnimatePageNavigationArrowsForPartsList
-  call $6972
+  call PartOpenInputHandlerForPartsList
   ld a, [$C4EE]
   or a
   jp z, .aButtonNotPressedOrNoPart
-  ld a, [$C56B]
+  ld a, [W_PartsMenuEntrypoint]
   cp 2
   jr z, .isLink
   ld a, 6
@@ -211,11 +213,11 @@ PartsListInputHandlerState::
 .aButtonNotPressedOrNoPart
   xor a
   ld [W_MedalMenuWaitTimer], a
-  call $68BD
+  call HorizontalDirectionalInputHandlerForPartsList
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
-  call $6884
+  call TypeChangeInputHandlerForPartsList
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -226,7 +228,7 @@ PartsListInputHandlerState::
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   ret z
-  ld a, [$C56B]
+  ld a, [W_PartsMenuEntrypoint]
   cp 2
   ret z
   ld a, 4
@@ -254,7 +256,7 @@ PartsListUpdatePartImageState::
   jr nz, .notOne
   ld a, 2
   ld [W_MedalMenuWaitTimer], a
-  jp $6E0D
+  jp UpdatePartImageForPartsList
 
 .notOne
   inc a
@@ -267,7 +269,7 @@ PartsListUpdatePartImageState::
   ld [W_CoreSubStateIndex], a
   ret
 
-PartsStatusMappingState::
+PartsStatusDrawingState::
   call $3413
   call $3475
   ld bc, $E
@@ -276,7 +278,7 @@ PartsStatusMappingState::
   call $33C6
   jp IncSubStateIndex
 
-PartsStatusDrawingState::
+PartsStatusMappingState::
   ld a, [W_CurrentPartTypeForListView]
   add $2C
   ld e, a
@@ -288,9 +290,9 @@ PartsStatusDrawingState::
   ld bc, 0
   ld a, 0
   call WrapDecompressAttribmap0
-  call $69BC
-  call $6A80
-  call $6A40
+  call CountPartsForPartStatus
+  call TileMappingByPartTypeForPartStatus
+  call PlaceIconSpritesForPartStatus
   jp IncSubStateIndex
 
 PartsStatusInitiateMainScriptState::
@@ -302,7 +304,7 @@ PartsStatusDisplayDescriptionTextState::
   ld [W_ListItemIndexForBuffering], a
   ld a, [W_CurrentPartTypeForListView]
   call $34FF
-  ld a, [$C553]
+  ld a, [W_PartStatsBuffer + 1]
   ld b, 0
   ld c, a
   ld a, 5
@@ -331,8 +333,8 @@ PartsStatusPrepareFadeInState::
   jp IncSubStateIndex
 
 PartsStatusInputHandlerState::
-  call $6C41
-  call $6CFD
+  call AnimateArrowsForMedarotStatus
+  call DirectionalInputHandlerForPartStatus
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -341,7 +343,7 @@ PartsStatusInputHandlerState::
   ret z
   ld a, 4
   call ScheduleSoundEffect
-  call $6DB7
+  call ParsePartIndexForExitToPartList
   ld a, $1A
   ld [W_CoreSubStateIndex], a
   ret
@@ -356,7 +358,7 @@ PartsStatusPrepareFadeOutPartImageState::
   jp IncSubStateIndex
 
 PartsStatusRefreshScreenState::
-  call $6A80
+  call TileMappingByPartTypeForPartStatus
   jp IncSubStateIndex
 
 PartsStatusPrepareFadeInPartImageState::
@@ -378,8 +380,8 @@ PartsStatusPrepareFadeInPartImageState::
   jp IncSubStateIndex
 
 PartsStatusRestoreArrowsState::
-  call $6C63
-  call $6CA1
+  call ShowLeftArrowForMedarotStatus
+  call ShowRightArrowForMedarotStatus
   ld a, $E
   ld [W_CoreSubStateIndex], a
   ret
@@ -394,7 +396,7 @@ PartsStatusPrepareFadeOutState::
   jp IncSubStateIndex
 
 PartsStatusExitState::
-  ld a, [$C56B]
+  ld a, [W_PartsMenuEntrypoint]
   cp 1
   jr z, .exitToMedarotStatus
   xor a
@@ -425,7 +427,7 @@ PartsListUnusedState::
 
 PartsListPointlessConditionalExitToMedarotScreenThatDoesntWorkState::
   call $3413
-  ld a, [$C56B]
+  ld a, [W_PartsMenuEntrypoint]
   or a
   jp z, IncSubStateIndex
   call PartsListCalculatePartIndex
@@ -497,16 +499,16 @@ PartsListLinkOverlayMappingState::
   xor a
   ld [W_MedalMenuSelectedMedaliaCursorPosition], a
   xor a
-  call $6E4F
+  call MapLinkOverlayArrowForPartsList
   jp IncSubStateIndex
 
 PartsListLinkOverlayInputHandlerState::
-  call $6E79
+  call LinkOverlayDirectionalInputHandlerForPartsList
   ldh a, [H_JPInputChanged]
   and M_JPInputA
   jr z, .aNotPressed
   ld a, 1
-  call $6E4F
+  call MapLinkOverlayArrowForPartsList
   ld a, $20
   ld [W_MedalMenuWaitTimer], a
   ld a, 3
@@ -520,7 +522,7 @@ PartsListLinkOverlayInputHandlerState::
   ld a, 2
   ld [W_MedalMenuSelectedMedaliaCursorPosition], a
   ld a, 1
-  call $6E4F
+  call MapLinkOverlayArrowForPartsList
   ld a, $20
   ld [W_MedalMenuWaitTimer], a
   ld a, 4
