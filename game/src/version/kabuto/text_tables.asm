@@ -1,1 +1,1 @@
-INCLUDE "game/src/version/text_tables.asm"
+INCLUDE "./game/src/version/text_tables.asm"

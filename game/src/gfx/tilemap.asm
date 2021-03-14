@@ -1,8 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Tilemap Loading Variables 1", WRAM0[$C4E0]
-W_TilemapWritingBaseLocationIndex:: ds 1 ; 0 for $9800, 1 for $9C00, I suck at naming things.
-W_TilemapPointerTableIndex:: ds 1
+W_TilemapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
+W_TilemapPointerTableIndex EQU $C4E1
 
 SECTION "Load Tilemaps", ROM0[$064F]
 DecompressTilemap0::
@@ -243,10 +242,16 @@ DecompressTilemapCommon::
   jp .decompressMode
 
 TilemapBankTable::
-  db $33,  $34,  $19,  $AB
+  db BANK(TilemapTable00)
+  db BANK(TilemapTable01)
+  db BANK(TilemapTable02)
+  db BANK(TilemapTable03)
 
 TilemapAddressTable::
-  dw $4000,  $4000,  $4000,  $4000
+  dw TilemapTable00
+  dw TilemapTable01
+  dw TilemapTable02
+  dw TilemapTable03
 
 SECTION "Calculate Tilemap Address", ROM0[$0912]
 Tilemap0WrapToLine::

@@ -18,7 +18,7 @@ INT_TYPE := o
 RAW_TSET_SRC_TYPE := png
 TSET_SRC_TYPE := 2bpp
 TSET_TYPE := malias
-TMAP_TYPE := tmap
+TMAP_TYPE := map
 TEXT_TYPE := txt
 CSV_TYPE = csv
 CREDITS_TYPE := bin
@@ -27,6 +27,7 @@ PTRLIST_TYPE := bin
 TABLE_TYPE := tbl
 
 # Directories
+## It's important these remain relative
 BASE := .
 BUILD := $(BASE)/build
 GAME := $(BASE)/game
@@ -39,7 +40,6 @@ SCRIPT_RES := $(SCRIPT)/res
 VERSION_OUT := $(BUILD)/version
 
 TILESET_OUT := $(BUILD)/tilesets
-TILEMAP_OUT := $(BUILD)/tilemaps
 
 DIALOG_INT := $(BUILD)/intermediate/dialog
 DIALOG_OUT := $(BUILD)/dialog
@@ -47,10 +47,14 @@ DIALOG_OUT := $(BUILD)/dialog
 PTRLISTS_INT := $(BUILD)/intermediate/ptrlists
 PTRLISTS_OUT := $(BUILD)/ptrlists
 
+TILEMAP_OUT := $(BUILD)/tilemaps
+
+ATTRIBMAP_OUT := $(BUILD)/attribmaps
+
 # Game Source Directories
 SRC := $(GAME)/src
-TILESET_BIN := $(GAME)/tilesets
 COMMON := $(SRC)/common
+VERSION_SRC := $(SRC)/version
 
 # Text Directories
 DIALOG_TEXT := $(TEXT)/dialog
@@ -58,6 +62,13 @@ PTRLISTS_TEXT := $(TEXT)/ptrlists
 
 # Graphics Directories
 TILESET_GFX := $(GFX)/tilesets
+TILESET_PREBUILT := $(GFX)/prebuilt/tilesets
+
+TILEMAP_GFX := $(GFX)/tilemaps
+TILEMAP_PREBUILT := $(GFX)/prebuilt/tilemaps
+
+ATTRIBMAP_GFX := $(GFX)/attribmaps
+ATTRIBMAP_PREBUILT := $(GFX)/prebuilt/attribmaps
 
 # Patch Specific
 VWF_TSET_SRC_TYPE := 1bpp
@@ -115,6 +126,14 @@ TILESETS_VERSIONED := $(call FILTER,_,$(TILESETS))
 TILESETS_GAMEVERSION := $(call FILTER,GAMEVERSION,$(TILESETS))
 PTRLISTS := $(notdir $(basename $(wildcard $(PTRLISTS_TEXT)/*.$(TEXT_TYPE))))
 
+TILEMAPS := $(notdir $(basename $(wildcard $(TILEMAP_GFX)/*.$(TEXT_TYPE))))
+TILEMAPS_COMMON := $(call FILTER_OUT,_,$(TILEMAPS))
+TILEMAPS_VERSIONED := $(call FILTER,_,$(TILEMAPS))
+
+ATTRIBMAPS := $(notdir $(basename $(wildcard $(ATTRIBMAP_GFX)/*.$(TEXT_TYPE))))
+ATTRIBMAPS_COMMON := $(call FILTER_OUT,_,$(ATTRIBMAPS))
+ATTRIBMAPS_VERSIONED := $(call FILTER,_,$(ATTRIBMAPS))
+
 ## Patch Specific
 PATCH_TEXT_TILESETS := $(notdir $(basename $(wildcard $(PATCH_TILESET_GFX)/*.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE)))) # .1bpp.png -> 1bpp
 PATCH_TILESETS := $(filter-out $(PATCH_TEXT_TILESETS), $(notdir $(basename $(wildcard $(PATCH_TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))) # .png -> 2bpp
@@ -130,6 +149,12 @@ TILESET_FILES_COMMON := $(foreach FILE,$(TILESETS_COMMON),$(TILESET_OUT)/$(FILE)
 TILESET_FILES_VERSIONED := $(foreach FILE,$(TILESETS_VERSIONED),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
 TILESET_FILES_GAMEVERSION := $(foreach FILE,$(TILESETS_GAMEVERSION),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
 
+TILEMAP_FILES_COMMON := $(foreach FILE,$(TILEMAPS_COMMON),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
+TILEMAP_FILES_VERSIONED := $(foreach FILE,$(TILEMAPS_VERSIONED),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
+
+ATTRIBMAP_FILES_COMMON := $(foreach FILE,$(ATTRIBMAPS_COMMON),$(ATTRIBMAP_OUT)/$(FILE).$(TMAP_TYPE))
+ATTRIBMAP_FILES_VERSIONED := $(foreach FILE,$(ATTRIBMAPS_VERSIONED),$(ATTRIBMAP_OUT)/$(FILE).$(TMAP_TYPE))
+
 # Additional dependencies, per module granularity (i.e. story, gfx, core) or per file granularity (e.g. story_text_tables_ADDITIONAL)
 core_ADDITIONAL :=
 gfx_ADDITIONAL :=
@@ -137,6 +162,8 @@ text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_PLACEHOLDER_VERSION.asm
 version_tileset_table_ADDITIONAL := $(TILESET_FILES_COMMON) $(TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
 version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEHOLDER_VERSION.asm
+version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
+version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 
 # Patch Specific
 patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
@@ -179,7 +206,7 @@ $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TIL
 
 # build/tilesets/*.malias from built 2bpp
 $(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT)
-	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $<
+	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $< $(TILESET_PREBUILT)
 
 # build/tilesets/*_VERSION.malias
 .SECONDEXPANSION:
@@ -207,6 +234,24 @@ $(DIALOG_OUT)/text_table_constants_%.asm: $(SRC)/version/text_tables.asm $(SRC)/
 $(PTRLISTS_OUT)/ptrlist_data_constants_%.asm: $(SRC)/version/ptrlist_data.asm $(SRC)/version/%/ptrlist_data.asm $$(foreach FILE,$(PTRLISTS),$(PTRLISTS_INT)/$$(FILE)_$$*.$(PTRLIST_TYPE)) | $(PTRLISTS_OUT)
 	$(PYTHON) $(SCRIPT)/ptrlistbin2asm.py $@ $(PTRLISTS_OUT) $* $^
 
+# build/tilemaps/*.map from tilemaps txt
+$(TILEMAP_OUT)/%.$(TMAP_TYPE): $(TILEMAP_GFX)/%.$(TEXT_TYPE) | $(TILEMAP_OUT)
+	$(PYTHON) $(SCRIPT)/txt2map.py $@ $^ $(TILEMAP_PREBUILT)
+
+# build/tilemaps/*_VERSION.map
+.SECONDEXPANSION:
+$(TILEMAP_OUT)/%.stamp: $$(call FILTER,%,$(TILEMAP_FILES_VERSIONED))
+	touch $@
+
+# build/attribmaps/*.map from tilemaps txt
+$(ATTRIBMAP_OUT)/%.$(TMAP_TYPE): $(ATTRIBMAP_GFX)/%.$(TEXT_TYPE) | $(ATTRIBMAP_OUT)
+	$(PYTHON) $(SCRIPT)/txt2map.py $@ $^ $(ATTRIBMAP_PREBUILT)
+
+# build/attribmaps/*_VERSION.map
+.SECONDEXPANSION:
+$(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
+	touch $@
+
 ## Patch Specific
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 	cp $< $@
@@ -227,17 +272,23 @@ csv_from_xlsx:
 
 ### Dump Scripts
 
-.PHONY: dump dump_text dump_tilesets dump_ptrlists
-dump: dump_text dump_tilesets dump_ptrlists
+.PHONY: dump dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
+dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
-	$(PYTHON) $(SCRIPT)/dump_text.py
+	$(PYTHON) $(SCRIPT)/dump_text.py "$(SCRIPT_RES)" "$(VERSION_SRC)" "$(DIALOG_TEXT)" "$(DIALOG_OUT)"
 
-dump_tilesets: | $(TILESET_GFX) $(TILESET_BIN) $(SCRIPT_RES)
-	$(PYTHON) $(SCRIPT)/dump_tilesets.py
+dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
-	$(PYTHON) $(SCRIPT)/dump_ptrlists.py
+	$(PYTHON) $(SCRIPT)/dump_ptrlists.py "$(VERSION_SRC)" "$(PTRLISTS_TEXT)" "$(PTRLISTS_OUT)"
+
+dump_tilemaps: | $(TILEMAP_GFX) $(TILEMAP_PREBUILT) $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_maps.py tilemap "$(TILEMAP_GFX)" "$(TILEMAP_PREBUILT)" "$(TILEMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 78a 78e 4
+
+dump_attribmaps: | $(ATTRIBMAP_GFX) $(ATTRIBMAP_PREBUILT) $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_maps.py attribmap "$(ATTRIBMAP_GFX)" "$(ATTRIBMAP_PREBUILT)" "$(ATTRIBMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 8fe 902 4
 
 #Make directories if necessary
 
@@ -263,8 +314,8 @@ $(DIALOG_INT):
 $(DIALOG_OUT):
 	mkdir -p $(DIALOG_OUT)
 
-$(TILESET_BIN):
-	mkdir -p $(TILESET_BIN)
+$(TILESET_PREBUILT):
+	mkdir -p $(TILESET_PREBUILT)
 
 $(TILESET_GFX):
 	mkdir -p $(TILESET_GFX)
@@ -280,3 +331,21 @@ $(PTRLISTS_INT):
 
 $(PTRLISTS_OUT):
 	mkdir -p $(PTRLISTS_OUT)
+
+$(TILEMAP_PREBUILT):
+	mkdir -p $(TILEMAP_PREBUILT)
+
+$(TILEMAP_GFX):
+	mkdir -p $(TILEMAP_GFX)
+
+$(TILEMAP_OUT):
+	mkdir -p $(TILEMAP_OUT)
+
+$(ATTRIBMAP_PREBUILT):
+	mkdir -p $(ATTRIBMAP_PREBUILT)
+
+$(ATTRIBMAP_GFX):
+	mkdir -p $(ATTRIBMAP_GFX)
+
+$(ATTRIBMAP_OUT):
+	mkdir -p $(ATTRIBMAP_OUT)

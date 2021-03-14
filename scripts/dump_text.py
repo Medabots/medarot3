@@ -10,11 +10,16 @@ from common import utils, tilesets
 
 MAX_LENGTH = 0xffff
 
+scripts_res_path = sys.argv[1]
+version_src_path = sys.argv[2]
+text_src_path = sys.argv[3]
+text_build_path = sys.argv[4]
+
 rom_info = ([
             ("baserom_kabuto.gbc", "kabuto", 0x20a0, 0x20c6, 0x20c6-0x20a0), 
             ("baserom_kuwagata.gbc", "kuwagata", 0x20a0, 0x20c6, 0x20c6-0x20a0)
            ]) # [ROM File, Version Suffix, Text Table Bank Ptr, Address Ptr, Count]
-ptrs = open("./scripts/res/ptrs.tbl", "a+")
+ptrs = open(os.path.join(scripts_res_path, "ptrs.tbl"), "a+")
 table = utils.merge_dicts([
             tilesets.get_tileset("MainDialog1", override_offset=0x0),
             tilesets.get_tileset("MainDialog2", override_offset=0x80),
@@ -78,7 +83,7 @@ for info in rom_info:
         terminator_pointers = []
 
         for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
-            csv_filename = f"./text/dialog/TextSection{i:02}.csv"
+            csv_filename = os.path.join(text_src_path, f"TextSection{i:02}.csv")
             text_version_specific[csv_filename] = {}
             text_shifted_pointers[csv_filename] = {}
             text_unused[csv_filename] = {}
@@ -311,8 +316,9 @@ while i < len(text_ptrs):
             text_ptr_versions.append(i)
     i += 1
 
-with open("./game/src/version/text_tables.asm", "w") as f:
-    f.write(f'INCLUDE "build/dialog/text_table_constants_{{GAMEVERSION}}.asm"\n\n')
+with open(os.path.join(version_src_path, "text_tables.asm"), "w") as f:
+    constants_path = os.path.join(text_build_path, f"text_table_constants_{{GAMEVERSION}}.asm")
+    f.write(f'INCLUDE "{constants_path}"\n\n')
     for i, entry in enumerate([t for t in text_ptrs if t[0] != 0]):
         if i not in text_ptr_versions:
             f.write(f'SECTION "TextSection{i:02}", ROMX[${entry[1]:04x}], BANK[${entry[0]:02x}]\n')
@@ -343,8 +349,8 @@ with open("./game/src/version/text_tables.asm", "w") as f:
         f.write('\n')
 
 for suffix in text_table_ptrs:
-    with open(f"./game/src/version/{suffix}/text_tables.asm", "w") as f:
-        f.write(f'INCLUDE "game/src/version/text_tables.asm"\n\n')
+    with open(os.path.join(version_src_path, f"{suffix}/text_tables.asm"), "w") as f:
+        f.write(f'INCLUDE "{os.path.join(version_src_path, "text_tables.asm")}"\n\n')
         for i in text_ptr_versions:
             f.write(f'SECTION "TextSection{i:02}", ROMX[${text_table_ptrs[suffix][2][i][1]:04x}], BANK[${text_table_ptrs[suffix][2][i][0]:02x}]\n')
             f.write(f'TextSection{i:02}:\n')

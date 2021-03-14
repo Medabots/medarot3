@@ -1,4 +1,4 @@
-INCLUDE "build/dialog/text_table_constants_{GAMEVERSION}.asm"
+INCLUDE "./build/dialog/text_table_constants_{GAMEVERSION}.asm"
 
 SECTION "Text Pointers 0", ROMX[$4000], BANK[$F1]
 TextSection00:

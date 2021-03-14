@@ -1,1 +1,1 @@
-INCLUDE "game/src/version/ptrlist_data.asm"
+INCLUDE "./game/src/version/ptrlist_data.asm"

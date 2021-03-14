@@ -1035,1166 +1035,1166 @@ TilesetInfoTableEnd::
 ; TilesetDataCommon
 SECTION "Tileset Data Tileset3995", ROMX[$4000], BANK[$3E]
 Tileset3995::
-  INCBIN "build/tilesets/Tileset3995.malias"
+  INCBIN "./build/tilesets/Tileset3995.malias"
 
 SECTION "Tileset Data Tileset3997", ROMX[$4943], BANK[$3A]
 Tileset3997::
-  INCBIN "build/tilesets/Tileset3997.malias"
+  INCBIN "./build/tilesets/Tileset3997.malias"
 
 SECTION "Tileset Data MainDialog1", ROMX[$4000], BANK[$3A]
 MainDialog1::
-  INCBIN "build/tilesets/MainDialog1.malias"
+  INCBIN "./build/tilesets/MainDialog1.malias"
 
 SECTION "Tileset Data MainDialog2", ROMX[$44E7], BANK[$3A]
 MainDialog2::
-  INCBIN "build/tilesets/MainDialog2.malias"
+  INCBIN "./build/tilesets/MainDialog2.malias"
 
 SECTION "Tileset Data Special", ROMX[$4780], BANK[$3A]
 Special::
-  INCBIN "build/tilesets/Special.malias"
+  INCBIN "./build/tilesets/Special.malias"
 
 SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
 Tileset399F::
-  INCBIN "build/tilesets/Tileset399F.malias"
+  INCBIN "./build/tilesets/Tileset399F.malias"
 
 SECTION "Tileset Data Tileset39A1", ROMX[$4000], BANK[$3C]
 Tileset39A1::
-  INCBIN "build/tilesets/Tileset39A1.malias"
+  INCBIN "./build/tilesets/Tileset39A1.malias"
 
 SECTION "Tileset Data Tileset39A3", ROMX[$43A0], BANK[$3C]
 Tileset39A3::
-  INCBIN "build/tilesets/Tileset39A3.malias"
+  INCBIN "./build/tilesets/Tileset39A3.malias"
 
 SECTION "Tileset Data Tileset39A5", ROMX[$44D0], BANK[$3C]
 Tileset39A5::
-  INCBIN "build/tilesets/Tileset39A5.malias"
+  INCBIN "./build/tilesets/Tileset39A5.malias"
 
 SECTION "Tileset Data Tileset39A7", ROMX[$4625], BANK[$3C]
 Tileset39A7::
-  INCBIN "build/tilesets/Tileset39A7.malias"
+  INCBIN "./build/tilesets/Tileset39A7.malias"
 
 SECTION "Tileset Data Tileset39A9", ROMX[$4782], BANK[$3C]
 Tileset39A9::
-  INCBIN "build/tilesets/Tileset39A9.malias"
+  INCBIN "./build/tilesets/Tileset39A9.malias"
 
 SECTION "Tileset Data Tileset39AB", ROMX[$48E0], BANK[$3C]
 Tileset39AB::
-  INCBIN "build/tilesets/Tileset39AB.malias"
+  INCBIN "./build/tilesets/Tileset39AB.malias"
 
 SECTION "Tileset Data Tileset39AD", ROMX[$4A5B], BANK[$3C]
 Tileset39AD::
-  INCBIN "build/tilesets/Tileset39AD.malias"
+  INCBIN "./build/tilesets/Tileset39AD.malias"
 
 SECTION "Tileset Data Tileset39AF", ROMX[$4F4D], BANK[$3C]
 Tileset39AF::
-  INCBIN "build/tilesets/Tileset39AF.malias"
+  INCBIN "./build/tilesets/Tileset39AF.malias"
 
 SECTION "Tileset Data Tileset39B1", ROMX[$4FD5], BANK[$3C]
 Tileset39B1::
-  INCBIN "build/tilesets/Tileset39B1.malias"
+  INCBIN "./build/tilesets/Tileset39B1.malias"
 
 SECTION "Tileset Data Tileset39B3", ROMX[$524E], BANK[$3C]
 Tileset39B3::
-  INCBIN "build/tilesets/Tileset39B3.malias"
+  INCBIN "./build/tilesets/Tileset39B3.malias"
 
 SECTION "Tileset Data Tileset39B5", ROMX[$538F], BANK[$3C]
 Tileset39B5::
-  INCBIN "build/tilesets/Tileset39B5.malias"
+  INCBIN "./build/tilesets/Tileset39B5.malias"
 
 SECTION "Tileset Data Tileset39B7", ROMX[$541E], BANK[$3C]
 Tileset39B7::
-  INCBIN "build/tilesets/Tileset39B7.malias"
+  INCBIN "./build/tilesets/Tileset39B7.malias"
 
 SECTION "Tileset Data Tileset39B9", ROMX[$549D], BANK[$3C]
 Tileset39B9::
-  INCBIN "build/tilesets/Tileset39B9.malias"
+  INCBIN "./build/tilesets/Tileset39B9.malias"
 
 SECTION "Tileset Data Tileset39BB", ROMX[$55A3], BANK[$3C]
 Tileset39BB::
-  INCBIN "build/tilesets/Tileset39BB.malias"
+  INCBIN "./build/tilesets/Tileset39BB.malias"
 
 SECTION "Tileset Data Tileset39BD", ROMX[$560E], BANK[$3C]
 Tileset39BD::
-  INCBIN "build/tilesets/Tileset39BD.malias"
+  INCBIN "./build/tilesets/Tileset39BD.malias"
 
 SECTION "Tileset Data Tileset39BF", ROMX[$59BC], BANK[$3C]
 Tileset39BF::
-  INCBIN "build/tilesets/Tileset39BF.malias"
+  INCBIN "./build/tilesets/Tileset39BF.malias"
 
 SECTION "Tileset Data Tileset39C1", ROMX[$5CE8], BANK[$3C]
 Tileset39C1::
-  INCBIN "build/tilesets/Tileset39C1.malias"
+  INCBIN "./build/tilesets/Tileset39C1.malias"
 
 SECTION "Tileset Data Tileset39C3", ROMX[$5D2D], BANK[$3C]
 Tileset39C3::
-  INCBIN "build/tilesets/Tileset39C3.malias"
+  INCBIN "./build/tilesets/Tileset39C3.malias"
 
 SECTION "Tileset Data Tileset39C5", ROMX[$5D95], BANK[$3C]
 Tileset39C5::
-  INCBIN "build/tilesets/Tileset39C5.malias"
+  INCBIN "./build/tilesets/Tileset39C5.malias"
 
 SECTION "Tileset Data Tileset39C7", ROMX[$5FD2], BANK[$3C]
 Tileset39C7::
-  INCBIN "build/tilesets/Tileset39C7.malias"
+  INCBIN "./build/tilesets/Tileset39C7.malias"
 
 SECTION "Tileset Data Tileset39C9", ROMX[$64C5], BANK[$3C]
 Tileset39C9::
-  INCBIN "build/tilesets/Tileset39C9.malias"
+  INCBIN "./build/tilesets/Tileset39C9.malias"
 
 SECTION "Tileset Data Tileset39CB", ROMX[$69F2], BANK[$3C]
 Tileset39CB::
-  INCBIN "build/tilesets/Tileset39CB.malias"
+  INCBIN "./build/tilesets/Tileset39CB.malias"
 
 SECTION "Tileset Data Tileset39CD", ROMX[$4969], BANK[$3A]
 Tileset39CD::
-  INCBIN "build/tilesets/Tileset39CD.malias"
+  INCBIN "./build/tilesets/Tileset39CD.malias"
 
 SECTION "Tileset Data Tileset39CF", ROMX[$4B37], BANK[$3A]
 Tileset39CF::
-  INCBIN "build/tilesets/Tileset39CF.malias"
+  INCBIN "./build/tilesets/Tileset39CF.malias"
 
 SECTION "Tileset Data Tileset39D5", ROMX[$4B5E], BANK[$3A]
 Tileset39D5::
-  INCBIN "build/tilesets/Tileset39D5.malias"
+  INCBIN "./build/tilesets/Tileset39D5.malias"
 
 SECTION "Tileset Data Tileset39D7", ROMX[$5052], BANK[$3A]
 Tileset39D7::
-  INCBIN "build/tilesets/Tileset39D7.malias"
+  INCBIN "./build/tilesets/Tileset39D7.malias"
 
 SECTION "Tileset Data Tileset39D9", ROMX[$50C9], BANK[$3A]
 Tileset39D9::
-  INCBIN "build/tilesets/Tileset39D9.malias"
+  INCBIN "./build/tilesets/Tileset39D9.malias"
 
 SECTION "Tileset Data Tileset39DB", ROMX[$5239], BANK[$3A]
 Tileset39DB::
-  INCBIN "build/tilesets/Tileset39DB.malias"
+  INCBIN "./build/tilesets/Tileset39DB.malias"
 
 SECTION "Tileset Data Tileset39DD", ROMX[$5369], BANK[$3A]
 Tileset39DD::
-  INCBIN "build/tilesets/Tileset39DD.malias"
+  INCBIN "./build/tilesets/Tileset39DD.malias"
 
 SECTION "Tileset Data Tileset39E1", ROMX[$58A2], BANK[$3A]
 Tileset39E1::
-  INCBIN "build/tilesets/Tileset39E1.malias"
+  INCBIN "./build/tilesets/Tileset39E1.malias"
 
 SECTION "Tileset Data Tileset39E3", ROMX[$5BD9], BANK[$3A]
 Tileset39E3::
-  INCBIN "build/tilesets/Tileset39E3.malias"
+  INCBIN "./build/tilesets/Tileset39E3.malias"
 
 SECTION "Tileset Data Tileset39F5", ROMX[$4000], BANK[$3B]
 Tileset39F5::
-  INCBIN "build/tilesets/Tileset39F5.malias"
+  INCBIN "./build/tilesets/Tileset39F5.malias"
 
 SECTION "Tileset Data Tileset39F7", ROMX[$430C], BANK[$3B]
 Tileset39F7::
-  INCBIN "build/tilesets/Tileset39F7.malias"
+  INCBIN "./build/tilesets/Tileset39F7.malias"
 
 SECTION "Tileset Data Tileset39F9", ROMX[$4404], BANK[$3B]
 Tileset39F9::
-  INCBIN "build/tilesets/Tileset39F9.malias"
+  INCBIN "./build/tilesets/Tileset39F9.malias"
 
 SECTION "Tileset Data Tileset39FB", ROMX[$465E], BANK[$3B]
 Tileset39FB::
-  INCBIN "build/tilesets/Tileset39FB.malias"
+  INCBIN "./build/tilesets/Tileset39FB.malias"
 
 SECTION "Tileset Data Tileset39FD", ROMX[$4881], BANK[$3B]
 Tileset39FD::
-  INCBIN "build/tilesets/Tileset39FD.malias"
+  INCBIN "./build/tilesets/Tileset39FD.malias"
 
 SECTION "Tileset Data Tileset39FF", ROMX[$4A64], BANK[$3B]
 Tileset39FF::
-  INCBIN "build/tilesets/Tileset39FF.malias"
+  INCBIN "./build/tilesets/Tileset39FF.malias"
 
 SECTION "Tileset Data Tileset3A01", ROMX[$4C8E], BANK[$3B]
 Tileset3A01::
-  INCBIN "build/tilesets/Tileset3A01.malias"
+  INCBIN "./build/tilesets/Tileset3A01.malias"
 
 SECTION "Tileset Data Tileset3A03", ROMX[$4D08], BANK[$3B]
 Tileset3A03::
-  INCBIN "build/tilesets/Tileset3A03.malias"
+  INCBIN "./build/tilesets/Tileset3A03.malias"
 
 SECTION "Tileset Data Tileset3A05", ROMX[$4D3D], BANK[$3B]
 Tileset3A05::
-  INCBIN "build/tilesets/Tileset3A05.malias"
+  INCBIN "./build/tilesets/Tileset3A05.malias"
 
 SECTION "Tileset Data Tileset3A07", ROMX[$4D71], BANK[$3B]
 Tileset3A07::
-  INCBIN "build/tilesets/Tileset3A07.malias"
+  INCBIN "./build/tilesets/Tileset3A07.malias"
 
 SECTION "Tileset Data Tileset3A09", ROMX[$4E96], BANK[$3B]
 Tileset3A09::
-  INCBIN "build/tilesets/Tileset3A09.malias"
+  INCBIN "./build/tilesets/Tileset3A09.malias"
 
 SECTION "Tileset Data Tileset3A0B", ROMX[$4F4D], BANK[$3B]
 Tileset3A0B::
-  INCBIN "build/tilesets/Tileset3A0B.malias"
+  INCBIN "./build/tilesets/Tileset3A0B.malias"
 
 SECTION "Tileset Data Tileset3A0D", ROMX[$51BB], BANK[$3B]
 Tileset3A0D::
-  INCBIN "build/tilesets/Tileset3A0D.malias"
+  INCBIN "./build/tilesets/Tileset3A0D.malias"
 
 SECTION "Tileset Data Tileset3A0F", ROMX[$52B5], BANK[$3B]
 Tileset3A0F::
-  INCBIN "build/tilesets/Tileset3A0F.malias"
+  INCBIN "./build/tilesets/Tileset3A0F.malias"
 
 SECTION "Tileset Data Tileset3A11", ROMX[$5492], BANK[$3B]
 Tileset3A11::
-  INCBIN "build/tilesets/Tileset3A11.malias"
+  INCBIN "./build/tilesets/Tileset3A11.malias"
 
 SECTION "Tileset Data Tileset3A13", ROMX[$56A1], BANK[$3B]
 Tileset3A13::
-  INCBIN "build/tilesets/Tileset3A13.malias"
+  INCBIN "./build/tilesets/Tileset3A13.malias"
 
 SECTION "Tileset Data Tileset3A15", ROMX[$579A], BANK[$3B]
 Tileset3A15::
-  INCBIN "build/tilesets/Tileset3A15.malias"
+  INCBIN "./build/tilesets/Tileset3A15.malias"
 
 SECTION "Tileset Data Tileset3A17", ROMX[$582B], BANK[$3B]
 Tileset3A17::
-  INCBIN "build/tilesets/Tileset3A17.malias"
+  INCBIN "./build/tilesets/Tileset3A17.malias"
 
 SECTION "Tileset Data Tileset3A19", ROMX[$571D], BANK[$3B]
 Tileset3A19::
-  INCBIN "build/tilesets/Tileset3A19.malias"
+  INCBIN "./build/tilesets/Tileset3A19.malias"
 
 SECTION "Tileset Data Tileset3A1B", ROMX[$5C0B], BANK[$3B]
 Tileset3A1B::
-  INCBIN "build/tilesets/Tileset3A1B.malias"
+  INCBIN "./build/tilesets/Tileset3A1B.malias"
 
 SECTION "Tileset Data Tileset3A1D", ROMX[$5CEA], BANK[$3B]
 Tileset3A1D::
-  INCBIN "build/tilesets/Tileset3A1D.malias"
+  INCBIN "./build/tilesets/Tileset3A1D.malias"
 
 SECTION "Tileset Data Tileset3A27", ROMX[$4361], BANK[$3E]
 Tileset3A27::
-  INCBIN "build/tilesets/Tileset3A27.malias"
+  INCBIN "./build/tilesets/Tileset3A27.malias"
 
 SECTION "Tileset Data Tileset3A29", ROMX[$462F], BANK[$3E]
 Tileset3A29::
-  INCBIN "build/tilesets/Tileset3A29.malias"
+  INCBIN "./build/tilesets/Tileset3A29.malias"
 
 SECTION "Tileset Data Tileset3A2B", ROMX[$4998], BANK[$3E]
 Tileset3A2B::
-  INCBIN "build/tilesets/Tileset3A2B.malias"
+  INCBIN "./build/tilesets/Tileset3A2B.malias"
 
 SECTION "Tileset Data Tileset3A2D", ROMX[$4C96], BANK[$3E]
 Tileset3A2D::
-  INCBIN "build/tilesets/Tileset3A2D.malias"
+  INCBIN "./build/tilesets/Tileset3A2D.malias"
 
 SECTION "Tileset Data Tileset3A35", ROMX[$4952], BANK[$3A]
 Tileset3A35::
-  INCBIN "build/tilesets/Tileset3A35.malias"
+  INCBIN "./build/tilesets/Tileset3A35.malias"
 
 SECTION "Tileset Data Tileset3A59", ROMX[$4CA1], BANK[$3E]
 Tileset3A59::
-  INCBIN "build/tilesets/Tileset3A59.malias"
+  INCBIN "./build/tilesets/Tileset3A59.malias"
 
 SECTION "Tileset Data Tileset3A5B", ROMX[$5172], BANK[$3E]
 Tileset3A5B::
-  INCBIN "build/tilesets/Tileset3A5B.malias"
+  INCBIN "./build/tilesets/Tileset3A5B.malias"
 
 SECTION "Tileset Data Tileset3A5D", ROMX[$595D], BANK[$3E]
 Tileset3A5D::
-  INCBIN "build/tilesets/Tileset3A5D.malias"
+  INCBIN "./build/tilesets/Tileset3A5D.malias"
 
 SECTION "Tileset Data Tileset3A65", ROMX[$5E18], BANK[$46]
 Tileset3A65::
-  INCBIN "build/tilesets/Tileset3A65.malias"
+  INCBIN "./build/tilesets/Tileset3A65.malias"
 
 SECTION "Tileset Data Tileset3A67", ROMX[$669C], BANK[$46]
 Tileset3A67::
-  INCBIN "build/tilesets/Tileset3A67.malias"
+  INCBIN "./build/tilesets/Tileset3A67.malias"
 
 SECTION "Tileset Data Tileset3A69", ROMX[$58C1], BANK[$A5]
 Tileset3A69::
-  INCBIN "build/tilesets/Tileset3A69.malias"
+  INCBIN "./build/tilesets/Tileset3A69.malias"
 
 SECTION "Tileset Data Tileset3A6F", ROMX[$6E5D], BANK[$46]
 Tileset3A6F::
-  INCBIN "build/tilesets/Tileset3A6F.malias"
+  INCBIN "./build/tilesets/Tileset3A6F.malias"
 
 SECTION "Tileset Data Tileset3A71", ROMX[$747B], BANK[$46]
 Tileset3A71::
-  INCBIN "build/tilesets/Tileset3A71.malias"
+  INCBIN "./build/tilesets/Tileset3A71.malias"
 
 SECTION "Tileset Data Tileset3A75", ROMX[$6A90], BANK[$3C]
 Tileset3A75::
-  INCBIN "build/tilesets/Tileset3A75.malias"
+  INCBIN "./build/tilesets/Tileset3A75.malias"
 
 SECTION "Tileset Data Tileset3A77", ROMX[$6DCB], BANK[$3C]
 Tileset3A77::
-  INCBIN "build/tilesets/Tileset3A77.malias"
+  INCBIN "./build/tilesets/Tileset3A77.malias"
 
 SECTION "Tileset Data Tileset3A79", ROMX[$6E6A], BANK[$3C]
 Tileset3A79::
-  INCBIN "build/tilesets/Tileset3A79.malias"
+  INCBIN "./build/tilesets/Tileset3A79.malias"
 
 SECTION "Tileset Data Tileset3A7B", ROMX[$706E], BANK[$3C]
 Tileset3A7B::
-  INCBIN "build/tilesets/Tileset3A7B.malias"
+  INCBIN "./build/tilesets/Tileset3A7B.malias"
 
 SECTION "Tileset Data Tileset3A7D", ROMX[$71AD], BANK[$3C]
 Tileset3A7D::
-  INCBIN "build/tilesets/Tileset3A7D.malias"
+  INCBIN "./build/tilesets/Tileset3A7D.malias"
 
 SECTION "Tileset Data Tileset3A7F", ROMX[$7200], BANK[$3C]
 Tileset3A7F::
-  INCBIN "build/tilesets/Tileset3A7F.malias"
+  INCBIN "./build/tilesets/Tileset3A7F.malias"
 
 SECTION "Tileset Data Tileset3A81", ROMX[$737F], BANK[$3C]
 Tileset3A81::
-  INCBIN "build/tilesets/Tileset3A81.malias"
+  INCBIN "./build/tilesets/Tileset3A81.malias"
 
 SECTION "Tileset Data Tileset3A83", ROMX[$7402], BANK[$3C]
 Tileset3A83::
-  INCBIN "build/tilesets/Tileset3A83.malias"
+  INCBIN "./build/tilesets/Tileset3A83.malias"
 
 SECTION "Tileset Data Tileset3A85", ROMX[$7486], BANK[$3C]
 Tileset3A85::
-  INCBIN "build/tilesets/Tileset3A85.malias"
+  INCBIN "./build/tilesets/Tileset3A85.malias"
 
 SECTION "Tileset Data Tileset3A87", ROMX[$74EE], BANK[$3C]
 Tileset3A87::
-  INCBIN "build/tilesets/Tileset3A87.malias"
+  INCBIN "./build/tilesets/Tileset3A87.malias"
 
 SECTION "Tileset Data Tileset3A89", ROMX[$7526], BANK[$3C]
 Tileset3A89::
-  INCBIN "build/tilesets/Tileset3A89.malias"
+  INCBIN "./build/tilesets/Tileset3A89.malias"
 
 SECTION "Tileset Data Tileset3A8B", ROMX[$7683], BANK[$3C]
 Tileset3A8B::
-  INCBIN "build/tilesets/Tileset3A8B.malias"
+  INCBIN "./build/tilesets/Tileset3A8B.malias"
 
 SECTION "Tileset Data Tileset3A8D", ROMX[$78BA], BANK[$3C]
 Tileset3A8D::
-  INCBIN "build/tilesets/Tileset3A8D.malias"
+  INCBIN "./build/tilesets/Tileset3A8D.malias"
 
 SECTION "Tileset Data Tileset3A8F", ROMX[$4000], BANK[$A5]
 Tileset3A8F::
-  INCBIN "build/tilesets/Tileset3A8F.malias"
+  INCBIN "./build/tilesets/Tileset3A8F.malias"
 
 SECTION "Tileset Data Tileset3A91", ROMX[$43CB], BANK[$A5]
 Tileset3A91::
-  INCBIN "build/tilesets/Tileset3A91.malias"
+  INCBIN "./build/tilesets/Tileset3A91.malias"
 
 SECTION "Tileset Data Tileset3A95", ROMX[$4000], BANK[$1B]
 Tileset3A95::
-  INCBIN "build/tilesets/Tileset3A95.malias"
+  INCBIN "./build/tilesets/Tileset3A95.malias"
 
 SECTION "Tileset Data Tileset3A97", ROMX[$44B6], BANK[$1B]
 Tileset3A97::
-  INCBIN "build/tilesets/Tileset3A97.malias"
+  INCBIN "./build/tilesets/Tileset3A97.malias"
 
 SECTION "Tileset Data Tileset3A99", ROMX[$486C], BANK[$1B]
 Tileset3A99::
-  INCBIN "build/tilesets/Tileset3A99.malias"
+  INCBIN "./build/tilesets/Tileset3A99.malias"
 
 SECTION "Tileset Data Tileset3A9B", ROMX[$4D11], BANK[$1B]
 Tileset3A9B::
-  INCBIN "build/tilesets/Tileset3A9B.malias"
+  INCBIN "./build/tilesets/Tileset3A9B.malias"
 
 SECTION "Tileset Data Tileset3A9D", ROMX[$51BD], BANK[$1B]
 Tileset3A9D::
-  INCBIN "build/tilesets/Tileset3A9D.malias"
+  INCBIN "./build/tilesets/Tileset3A9D.malias"
 
 SECTION "Tileset Data Tileset3A9F", ROMX[$561C], BANK[$1B]
 Tileset3A9F::
-  INCBIN "build/tilesets/Tileset3A9F.malias"
+  INCBIN "./build/tilesets/Tileset3A9F.malias"
 
 SECTION "Tileset Data Tileset3AA1", ROMX[$5AAB], BANK[$1B]
 Tileset3AA1::
-  INCBIN "build/tilesets/Tileset3AA1.malias"
+  INCBIN "./build/tilesets/Tileset3AA1.malias"
 
 SECTION "Tileset Data Tileset3AA3", ROMX[$5ECA], BANK[$1B]
 Tileset3AA3::
-  INCBIN "build/tilesets/Tileset3AA3.malias"
+  INCBIN "./build/tilesets/Tileset3AA3.malias"
 
 SECTION "Tileset Data Tileset3AA5", ROMX[$619B], BANK[$1B]
 Tileset3AA5::
-  INCBIN "build/tilesets/Tileset3AA5.malias"
+  INCBIN "./build/tilesets/Tileset3AA5.malias"
 
 SECTION "Tileset Data Tileset3AA7", ROMX[$6556], BANK[$1B]
 Tileset3AA7::
-  INCBIN "build/tilesets/Tileset3AA7.malias"
+  INCBIN "./build/tilesets/Tileset3AA7.malias"
 
 SECTION "Tileset Data Tileset3AA9", ROMX[$69B0], BANK[$1B]
 Tileset3AA9::
-  INCBIN "build/tilesets/Tileset3AA9.malias"
+  INCBIN "./build/tilesets/Tileset3AA9.malias"
 
 SECTION "Tileset Data Tileset3AAB", ROMX[$6DF5], BANK[$1B]
 Tileset3AAB::
-  INCBIN "build/tilesets/Tileset3AAB.malias"
+  INCBIN "./build/tilesets/Tileset3AAB.malias"
 
 SECTION "Tileset Data Tileset3AB5", ROMX[$4A6A], BANK[$1F]
 Tileset3AB5::
-  INCBIN "build/tilesets/Tileset3AB5.malias"
+  INCBIN "./build/tilesets/Tileset3AB5.malias"
 
 SECTION "Tileset Data Tileset3AB7", ROMX[$4D1B], BANK[$1F]
 Tileset3AB7::
-  INCBIN "build/tilesets/Tileset3AB7.malias"
+  INCBIN "./build/tilesets/Tileset3AB7.malias"
 
 SECTION "Tileset Data Tileset3AB9", ROMX[$5049], BANK[$1F]
 Tileset3AB9::
-  INCBIN "build/tilesets/Tileset3AB9.malias"
+  INCBIN "./build/tilesets/Tileset3AB9.malias"
 
 SECTION "Tileset Data Tileset3ABB", ROMX[$5405], BANK[$1F]
 Tileset3ABB::
-  INCBIN "build/tilesets/Tileset3ABB.malias"
+  INCBIN "./build/tilesets/Tileset3ABB.malias"
 
 SECTION "Tileset Data Tileset3ABD", ROMX[$57D9], BANK[$1F]
 Tileset3ABD::
-  INCBIN "build/tilesets/Tileset3ABD.malias"
+  INCBIN "./build/tilesets/Tileset3ABD.malias"
 
 SECTION "Tileset Data Tileset3ABF", ROMX[$5B67], BANK[$1F]
 Tileset3ABF::
-  INCBIN "build/tilesets/Tileset3ABF.malias"
+  INCBIN "./build/tilesets/Tileset3ABF.malias"
 
 SECTION "Tileset Data Tileset3AC1", ROMX[$5F3A], BANK[$1F]
 Tileset3AC1::
-  INCBIN "build/tilesets/Tileset3AC1.malias"
+  INCBIN "./build/tilesets/Tileset3AC1.malias"
 
 SECTION "Tileset Data Tileset3AC3", ROMX[$623F], BANK[$1F]
 Tileset3AC3::
-  INCBIN "build/tilesets/Tileset3AC3.malias"
+  INCBIN "./build/tilesets/Tileset3AC3.malias"
 
 SECTION "Tileset Data Tileset3AC5", ROMX[$6497], BANK[$1F]
 Tileset3AC5::
-  INCBIN "build/tilesets/Tileset3AC5.malias"
+  INCBIN "./build/tilesets/Tileset3AC5.malias"
 
 SECTION "Tileset Data Tileset3AC7", ROMX[$67C6], BANK[$1F]
 Tileset3AC7::
-  INCBIN "build/tilesets/Tileset3AC7.malias"
+  INCBIN "./build/tilesets/Tileset3AC7.malias"
 
 SECTION "Tileset Data Tileset3AC9", ROMX[$6A6A], BANK[$1F]
 Tileset3AC9::
-  INCBIN "build/tilesets/Tileset3AC9.malias"
+  INCBIN "./build/tilesets/Tileset3AC9.malias"
 
 SECTION "Tileset Data Tileset3ACB", ROMX[$6E25], BANK[$1F]
 Tileset3ACB::
-  INCBIN "build/tilesets/Tileset3ACB.malias"
+  INCBIN "./build/tilesets/Tileset3ACB.malias"
 
 SECTION "Tileset Data Tileset3AD5", ROMX[$44C1], BANK[$A5]
 Tileset3AD5::
-  INCBIN "build/tilesets/Tileset3AD5.malias"
+  INCBIN "./build/tilesets/Tileset3AD5.malias"
 
 SECTION "Tileset Data Tileset3AD7", ROMX[$46B9], BANK[$A5]
 Tileset3AD7::
-  INCBIN "build/tilesets/Tileset3AD7.malias"
+  INCBIN "./build/tilesets/Tileset3AD7.malias"
 
 SECTION "Tileset Data Tileset3AD9", ROMX[$472F], BANK[$A5]
 Tileset3AD9::
-  INCBIN "build/tilesets/Tileset3AD9.malias"
+  INCBIN "./build/tilesets/Tileset3AD9.malias"
 
 SECTION "Tileset Data Tileset3ADB", ROMX[$48A6], BANK[$A5]
 Tileset3ADB::
-  INCBIN "build/tilesets/Tileset3ADB.malias"
+  INCBIN "./build/tilesets/Tileset3ADB.malias"
 
 SECTION "Tileset Data Tileset3ADD", ROMX[$4997], BANK[$A5]
 Tileset3ADD::
-  INCBIN "build/tilesets/Tileset3ADD.malias"
+  INCBIN "./build/tilesets/Tileset3ADD.malias"
 
 SECTION "Tileset Data Tileset3ADF", ROMX[$4D6B], BANK[$A5]
 Tileset3ADF::
-  INCBIN "build/tilesets/Tileset3ADF.malias"
+  INCBIN "./build/tilesets/Tileset3ADF.malias"
 
 SECTION "Tileset Data Tileset3AE1", ROMX[$505A], BANK[$A5]
 Tileset3AE1::
-  INCBIN "build/tilesets/Tileset3AE1.malias"
+  INCBIN "./build/tilesets/Tileset3AE1.malias"
 
 SECTION "Tileset Data Tileset3AE3", ROMX[$50AF], BANK[$A5]
 Tileset3AE3::
-  INCBIN "build/tilesets/Tileset3AE3.malias"
+  INCBIN "./build/tilesets/Tileset3AE3.malias"
 
 SECTION "Tileset Data Tileset3AE5", ROMX[$51E0], BANK[$A5]
 Tileset3AE5::
-  INCBIN "build/tilesets/Tileset3AE5.malias"
+  INCBIN "./build/tilesets/Tileset3AE5.malias"
 
 SECTION "Tileset Data Tileset3AE7", ROMX[$580E], BANK[$A5]
 Tileset3AE7::
-  INCBIN "build/tilesets/Tileset3AE7.malias"
+  INCBIN "./build/tilesets/Tileset3AE7.malias"
 
 SECTION "Tileset Data Tileset3AF5", ROMX[$4848], BANK[$49]
 Tileset3AF5::
-  INCBIN "build/tilesets/Tileset3AF5.malias"
+  INCBIN "./build/tilesets/Tileset3AF5.malias"
 
 SECTION "Tileset Data Tileset3AF7", ROMX[$4000], BANK[$48]
 Tileset3AF7::
-  INCBIN "build/tilesets/Tileset3AF7.malias"
+  INCBIN "./build/tilesets/Tileset3AF7.malias"
 
 SECTION "Tileset Data Tileset3AF9", ROMX[$41B8], BANK[$48]
 Tileset3AF9::
-  INCBIN "build/tilesets/Tileset3AF9.malias"
+  INCBIN "./build/tilesets/Tileset3AF9.malias"
 
 SECTION "Tileset Data Tileset3AFB", ROMX[$4336], BANK[$48]
 Tileset3AFB::
-  INCBIN "build/tilesets/Tileset3AFB.malias"
+  INCBIN "./build/tilesets/Tileset3AFB.malias"
 
 SECTION "Tileset Data Tileset3AFF", ROMX[$4506], BANK[$48]
 Tileset3AFF::
-  INCBIN "build/tilesets/Tileset3AFF.malias"
+  INCBIN "./build/tilesets/Tileset3AFF.malias"
 
 SECTION "Tileset Data Tileset3B01", ROMX[$46E2], BANK[$48]
 Tileset3B01::
-  INCBIN "build/tilesets/Tileset3B01.malias"
+  INCBIN "./build/tilesets/Tileset3B01.malias"
 
 SECTION "Tileset Data Tileset3B03", ROMX[$48AE], BANK[$48]
 Tileset3B03::
-  INCBIN "build/tilesets/Tileset3B03.malias"
+  INCBIN "./build/tilesets/Tileset3B03.malias"
 
 SECTION "Tileset Data Tileset3B05", ROMX[$4A9E], BANK[$48]
 Tileset3B05::
-  INCBIN "build/tilesets/Tileset3B05.malias"
+  INCBIN "./build/tilesets/Tileset3B05.malias"
 
 SECTION "Tileset Data Tileset3B09", ROMX[$4C13], BANK[$48]
 Tileset3B09::
-  INCBIN "build/tilesets/Tileset3B09.malias"
+  INCBIN "./build/tilesets/Tileset3B09.malias"
 
 SECTION "Tileset Data Tileset3B0B", ROMX[$4DD6], BANK[$48]
 Tileset3B0B::
-  INCBIN "build/tilesets/Tileset3B0B.malias"
+  INCBIN "./build/tilesets/Tileset3B0B.malias"
 
 SECTION "Tileset Data Tileset3B0F", ROMX[$4F87], BANK[$48]
 Tileset3B0F::
-  INCBIN "build/tilesets/Tileset3B0F.malias"
+  INCBIN "./build/tilesets/Tileset3B0F.malias"
 
 SECTION "Tileset Data Tileset3B13", ROMX[$518A], BANK[$48]
 Tileset3B13::
-  INCBIN "build/tilesets/Tileset3B13.malias"
+  INCBIN "./build/tilesets/Tileset3B13.malias"
 
 SECTION "Tileset Data Tileset3B15", ROMX[$5360], BANK[$48]
 Tileset3B15::
-  INCBIN "build/tilesets/Tileset3B15.malias"
+  INCBIN "./build/tilesets/Tileset3B15.malias"
 
 SECTION "Tileset Data Tileset3B1B", ROMX[$54F0], BANK[$48]
 Tileset3B1B::
-  INCBIN "build/tilesets/Tileset3B1B.malias"
+  INCBIN "./build/tilesets/Tileset3B1B.malias"
 
 SECTION "Tileset Data Tileset3B1D", ROMX[$566E], BANK[$48]
 Tileset3B1D::
-  INCBIN "build/tilesets/Tileset3B1D.malias"
+  INCBIN "./build/tilesets/Tileset3B1D.malias"
 
 SECTION "Tileset Data Tileset3B1F", ROMX[$582F], BANK[$48]
 Tileset3B1F::
-  INCBIN "build/tilesets/Tileset3B1F.malias"
+  INCBIN "./build/tilesets/Tileset3B1F.malias"
 
 SECTION "Tileset Data Tileset3B21", ROMX[$59FF], BANK[$48]
 Tileset3B21::
-  INCBIN "build/tilesets/Tileset3B21.malias"
+  INCBIN "./build/tilesets/Tileset3B21.malias"
 
 SECTION "Tileset Data Tileset3B23", ROMX[$5BAE], BANK[$48]
 Tileset3B23::
-  INCBIN "build/tilesets/Tileset3B23.malias"
+  INCBIN "./build/tilesets/Tileset3B23.malias"
 
 SECTION "Tileset Data Tileset3B25", ROMX[$5D84], BANK[$48]
 Tileset3B25::
-  INCBIN "build/tilesets/Tileset3B25.malias"
+  INCBIN "./build/tilesets/Tileset3B25.malias"
 
 SECTION "Tileset Data Tileset3B27", ROMX[$5F78], BANK[$48]
 Tileset3B27::
-  INCBIN "build/tilesets/Tileset3B27.malias"
+  INCBIN "./build/tilesets/Tileset3B27.malias"
 
 SECTION "Tileset Data Tileset3B29", ROMX[$6100], BANK[$48]
 Tileset3B29::
-  INCBIN "build/tilesets/Tileset3B29.malias"
+  INCBIN "./build/tilesets/Tileset3B29.malias"
 
 SECTION "Tileset Data Tileset3B2B", ROMX[$6321], BANK[$48]
 Tileset3B2B::
-  INCBIN "build/tilesets/Tileset3B2B.malias"
+  INCBIN "./build/tilesets/Tileset3B2B.malias"
 
 SECTION "Tileset Data Tileset3B2D", ROMX[$64A1], BANK[$48]
 Tileset3B2D::
-  INCBIN "build/tilesets/Tileset3B2D.malias"
+  INCBIN "./build/tilesets/Tileset3B2D.malias"
 
 SECTION "Tileset Data Tileset3B2F", ROMX[$6647], BANK[$48]
 Tileset3B2F::
-  INCBIN "build/tilesets/Tileset3B2F.malias"
+  INCBIN "./build/tilesets/Tileset3B2F.malias"
 
 SECTION "Tileset Data Tileset3B31", ROMX[$67CE], BANK[$48]
 Tileset3B31::
-  INCBIN "build/tilesets/Tileset3B31.malias"
+  INCBIN "./build/tilesets/Tileset3B31.malias"
 
 SECTION "Tileset Data Tileset3B33", ROMX[$6953], BANK[$48]
 Tileset3B33::
-  INCBIN "build/tilesets/Tileset3B33.malias"
+  INCBIN "./build/tilesets/Tileset3B33.malias"
 
 SECTION "Tileset Data Tileset3B37", ROMX[$6B40], BANK[$48]
 Tileset3B37::
-  INCBIN "build/tilesets/Tileset3B37.malias"
+  INCBIN "./build/tilesets/Tileset3B37.malias"
 
 SECTION "Tileset Data Tileset3B39", ROMX[$6D11], BANK[$48]
 Tileset3B39::
-  INCBIN "build/tilesets/Tileset3B39.malias"
+  INCBIN "./build/tilesets/Tileset3B39.malias"
 
 SECTION "Tileset Data Tileset3B3B", ROMX[$6EF2], BANK[$48]
 Tileset3B3B::
-  INCBIN "build/tilesets/Tileset3B3B.malias"
+  INCBIN "./build/tilesets/Tileset3B3B.malias"
 
 SECTION "Tileset Data Tileset3B3D", ROMX[$707F], BANK[$48]
 Tileset3B3D::
-  INCBIN "build/tilesets/Tileset3B3D.malias"
+  INCBIN "./build/tilesets/Tileset3B3D.malias"
 
 SECTION "Tileset Data Tileset3B3F", ROMX[$4000], BANK[$49]
 Tileset3B3F::
-  INCBIN "build/tilesets/Tileset3B3F.malias"
+  INCBIN "./build/tilesets/Tileset3B3F.malias"
 
 SECTION "Tileset Data Tileset3B41", ROMX[$41B5], BANK[$49]
 Tileset3B41::
-  INCBIN "build/tilesets/Tileset3B41.malias"
+  INCBIN "./build/tilesets/Tileset3B41.malias"
 
 SECTION "Tileset Data Tileset3B43", ROMX[$43D5], BANK[$49]
 Tileset3B43::
-  INCBIN "build/tilesets/Tileset3B43.malias"
+  INCBIN "./build/tilesets/Tileset3B43.malias"
 
 SECTION "Tileset Data Tileset3B45", ROMX[$466B], BANK[$49]
 Tileset3B45::
-  INCBIN "build/tilesets/Tileset3B45.malias"
+  INCBIN "./build/tilesets/Tileset3B45.malias"
 
 SECTION "Tileset Data Tileset3B4F", ROMX[$4999], BANK[$49]
 Tileset3B4F::
-  INCBIN "build/tilesets/Tileset3B4F.malias"
+  INCBIN "./build/tilesets/Tileset3B4F.malias"
 
 SECTION "Tileset Data Tileset3B51", ROMX[$4B35], BANK[$49]
 Tileset3B51::
-  INCBIN "build/tilesets/Tileset3B51.malias"
+  INCBIN "./build/tilesets/Tileset3B51.malias"
 
 SECTION "Tileset Data Tileset3B53", ROMX[$4C85], BANK[$49]
 Tileset3B53::
-  INCBIN "build/tilesets/Tileset3B53.malias"
+  INCBIN "./build/tilesets/Tileset3B53.malias"
 
 SECTION "Tileset Data Tileset3B55", ROMX[$4E2C], BANK[$49]
 Tileset3B55::
-  INCBIN "build/tilesets/Tileset3B55.malias"
+  INCBIN "./build/tilesets/Tileset3B55.malias"
 
 SECTION "Tileset Data Tileset3B57", ROMX[$4FB8], BANK[$49]
 Tileset3B57::
-  INCBIN "build/tilesets/Tileset3B57.malias"
+  INCBIN "./build/tilesets/Tileset3B57.malias"
 
 SECTION "Tileset Data Tileset3B59", ROMX[$514C], BANK[$49]
 Tileset3B59::
-  INCBIN "build/tilesets/Tileset3B59.malias"
+  INCBIN "./build/tilesets/Tileset3B59.malias"
 
 SECTION "Tileset Data Tileset3B5B", ROMX[$528D], BANK[$49]
 Tileset3B5B::
-  INCBIN "build/tilesets/Tileset3B5B.malias"
+  INCBIN "./build/tilesets/Tileset3B5B.malias"
 
 SECTION "Tileset Data Tileset3B5D", ROMX[$540C], BANK[$49]
 Tileset3B5D::
-  INCBIN "build/tilesets/Tileset3B5D.malias"
+  INCBIN "./build/tilesets/Tileset3B5D.malias"
 
 SECTION "Tileset Data Tileset3B6B", ROMX[$5556], BANK[$49]
 Tileset3B6B::
-  INCBIN "build/tilesets/Tileset3B6B.malias"
+  INCBIN "./build/tilesets/Tileset3B6B.malias"
 
 SECTION "Tileset Data Tileset3B6D", ROMX[$5823], BANK[$49]
 Tileset3B6D::
-  INCBIN "build/tilesets/Tileset3B6D.malias"
+  INCBIN "./build/tilesets/Tileset3B6D.malias"
 
 SECTION "Tileset Data Tileset3B6F", ROMX[$5A05], BANK[$49]
 Tileset3B6F::
-  INCBIN "build/tilesets/Tileset3B6F.malias"
+  INCBIN "./build/tilesets/Tileset3B6F.malias"
 
 SECTION "Tileset Data Tileset3B71", ROMX[$5C40], BANK[$49]
 Tileset3B71::
-  INCBIN "build/tilesets/Tileset3B71.malias"
+  INCBIN "./build/tilesets/Tileset3B71.malias"
 
 SECTION "Tileset Data Tileset3B73", ROMX[$5E55], BANK[$49]
 Tileset3B73::
-  INCBIN "build/tilesets/Tileset3B73.malias"
+  INCBIN "./build/tilesets/Tileset3B73.malias"
 
 SECTION "Tileset Data Tileset3B75", ROMX[$600D], BANK[$49]
 Tileset3B75::
-  INCBIN "build/tilesets/Tileset3B75.malias"
+  INCBIN "./build/tilesets/Tileset3B75.malias"
 
 SECTION "Tileset Data Tileset3B77", ROMX[$6156], BANK[$49]
 Tileset3B77::
-  INCBIN "build/tilesets/Tileset3B77.malias"
+  INCBIN "./build/tilesets/Tileset3B77.malias"
 
 SECTION "Tileset Data Tileset3B7B", ROMX[$639B], BANK[$49]
 Tileset3B7B::
-  INCBIN "build/tilesets/Tileset3B7B.malias"
+  INCBIN "./build/tilesets/Tileset3B7B.malias"
 
 SECTION "Tileset Data Tileset3B7D", ROMX[$6518], BANK[$49]
 Tileset3B7D::
-  INCBIN "build/tilesets/Tileset3B7D.malias"
+  INCBIN "./build/tilesets/Tileset3B7D.malias"
 
 SECTION "Tileset Data Tileset3B7F", ROMX[$6702], BANK[$49]
 Tileset3B7F::
-  INCBIN "build/tilesets/Tileset3B7F.malias"
+  INCBIN "./build/tilesets/Tileset3B7F.malias"
 
 SECTION "Tileset Data Tileset3B81", ROMX[$6879], BANK[$49]
 Tileset3B81::
-  INCBIN "build/tilesets/Tileset3B81.malias"
+  INCBIN "./build/tilesets/Tileset3B81.malias"
 
 SECTION "Tileset Data Tileset3B83", ROMX[$6A17], BANK[$49]
 Tileset3B83::
-  INCBIN "build/tilesets/Tileset3B83.malias"
+  INCBIN "./build/tilesets/Tileset3B83.malias"
 
 SECTION "Tileset Data Tileset3B85", ROMX[$6BA4], BANK[$49]
 Tileset3B85::
-  INCBIN "build/tilesets/Tileset3B85.malias"
+  INCBIN "./build/tilesets/Tileset3B85.malias"
 
 SECTION "Tileset Data Tileset3B87", ROMX[$6D1C], BANK[$49]
 Tileset3B87::
-  INCBIN "build/tilesets/Tileset3B87.malias"
+  INCBIN "./build/tilesets/Tileset3B87.malias"
 
 SECTION "Tileset Data Tileset3B89", ROMX[$6EC8], BANK[$49]
 Tileset3B89::
-  INCBIN "build/tilesets/Tileset3B89.malias"
+  INCBIN "./build/tilesets/Tileset3B89.malias"
 
 SECTION "Tileset Data Tileset3B8B", ROMX[$706A], BANK[$49]
 Tileset3B8B::
-  INCBIN "build/tilesets/Tileset3B8B.malias"
+  INCBIN "./build/tilesets/Tileset3B8B.malias"
 
 SECTION "Tileset Data Tileset3B8D", ROMX[$7226], BANK[$49]
 Tileset3B8D::
-  INCBIN "build/tilesets/Tileset3B8D.malias"
+  INCBIN "./build/tilesets/Tileset3B8D.malias"
 
 SECTION "Tileset Data Tileset3B8F", ROMX[$73C4], BANK[$49]
 Tileset3B8F::
-  INCBIN "build/tilesets/Tileset3B8F.malias"
+  INCBIN "./build/tilesets/Tileset3B8F.malias"
 
 SECTION "Tileset Data Tileset3B91", ROMX[$7554], BANK[$49]
 Tileset3B91::
-  INCBIN "build/tilesets/Tileset3B91.malias"
+  INCBIN "./build/tilesets/Tileset3B91.malias"
 
 SECTION "Tileset Data Tileset3B93", ROMX[$7703], BANK[$49]
 Tileset3B93::
-  INCBIN "build/tilesets/Tileset3B93.malias"
+  INCBIN "./build/tilesets/Tileset3B93.malias"
 
 SECTION "Tileset Data Tileset3B95", ROMX[$4000], BANK[$67]
 Tileset3B95::
-  INCBIN "build/tilesets/Tileset3B95.malias"
+  INCBIN "./build/tilesets/Tileset3B95.malias"
 
 SECTION "Tileset Data Tileset3B97", ROMX[$4957], BANK[$67]
 Tileset3B97::
-  INCBIN "build/tilesets/Tileset3B97.malias"
+  INCBIN "./build/tilesets/Tileset3B97.malias"
 
 SECTION "Tileset Data Tileset3B99", ROMX[$5428], BANK[$67]
 Tileset3B99::
-  INCBIN "build/tilesets/Tileset3B99.malias"
+  INCBIN "./build/tilesets/Tileset3B99.malias"
 
 SECTION "Tileset Data Tileset3B9B", ROMX[$5DBA], BANK[$67]
 Tileset3B9B::
-  INCBIN "build/tilesets/Tileset3B9B.malias"
+  INCBIN "./build/tilesets/Tileset3B9B.malias"
 
 SECTION "Tileset Data Tileset3B9D", ROMX[$6936], BANK[$67]
 Tileset3B9D::
-  INCBIN "build/tilesets/Tileset3B9D.malias"
+  INCBIN "./build/tilesets/Tileset3B9D.malias"
 
 SECTION "Tileset Data Tileset3B9F", ROMX[$713A], BANK[$67]
 Tileset3B9F::
-  INCBIN "build/tilesets/Tileset3B9F.malias"
+  INCBIN "./build/tilesets/Tileset3B9F.malias"
 
 SECTION "Tileset Data Tileset3BA1", ROMX[$4000], BANK[$68]
 Tileset3BA1::
-  INCBIN "build/tilesets/Tileset3BA1.malias"
+  INCBIN "./build/tilesets/Tileset3BA1.malias"
 
 SECTION "Tileset Data Tileset3BA3", ROMX[$48B0], BANK[$68]
 Tileset3BA3::
-  INCBIN "build/tilesets/Tileset3BA3.malias"
+  INCBIN "./build/tilesets/Tileset3BA3.malias"
 
 SECTION "Tileset Data Tileset3BA5", ROMX[$5182], BANK[$68]
 Tileset3BA5::
-  INCBIN "build/tilesets/Tileset3BA5.malias"
+  INCBIN "./build/tilesets/Tileset3BA5.malias"
 
 SECTION "Tileset Data Tileset3BA7", ROMX[$58E2], BANK[$68]
 Tileset3BA7::
-  INCBIN "build/tilesets/Tileset3BA7.malias"
+  INCBIN "./build/tilesets/Tileset3BA7.malias"
 
 SECTION "Tileset Data Tileset3BA9", ROMX[$6295], BANK[$68]
 Tileset3BA9::
-  INCBIN "build/tilesets/Tileset3BA9.malias"
+  INCBIN "./build/tilesets/Tileset3BA9.malias"
 
 SECTION "Tileset Data Tileset3BAB", ROMX[$6C26], BANK[$68]
 Tileset3BAB::
-  INCBIN "build/tilesets/Tileset3BAB.malias"
+  INCBIN "./build/tilesets/Tileset3BAB.malias"
 
 SECTION "Tileset Data Tileset3BAD", ROMX[$75D9], BANK[$68]
 Tileset3BAD::
-  INCBIN "build/tilesets/Tileset3BAD.malias"
+  INCBIN "./build/tilesets/Tileset3BAD.malias"
 
 SECTION "Tileset Data Tileset3BAF", ROMX[$4000], BANK[$69]
 Tileset3BAF::
-  INCBIN "build/tilesets/Tileset3BAF.malias"
+  INCBIN "./build/tilesets/Tileset3BAF.malias"
 
 SECTION "Tileset Data Tileset3BB1", ROMX[$482C], BANK[$69]
 Tileset3BB1::
-  INCBIN "build/tilesets/Tileset3BB1.malias"
+  INCBIN "./build/tilesets/Tileset3BB1.malias"
 
 SECTION "Tileset Data Tileset3BB3", ROMX[$52E4], BANK[$69]
 Tileset3BB3::
-  INCBIN "build/tilesets/Tileset3BB3.malias"
+  INCBIN "./build/tilesets/Tileset3BB3.malias"
 
 SECTION "Tileset Data Tileset3BB5", ROMX[$5BF9], BANK[$69]
 Tileset3BB5::
-  INCBIN "build/tilesets/Tileset3BB5.malias"
+  INCBIN "./build/tilesets/Tileset3BB5.malias"
 
 SECTION "Tileset Data Tileset3BB7", ROMX[$65B8], BANK[$69]
 Tileset3BB7::
-  INCBIN "build/tilesets/Tileset3BB7.malias"
+  INCBIN "./build/tilesets/Tileset3BB7.malias"
 
 SECTION "Tileset Data Tileset3BB9", ROMX[$6FB5], BANK[$69]
 Tileset3BB9::
-  INCBIN "build/tilesets/Tileset3BB9.malias"
+  INCBIN "./build/tilesets/Tileset3BB9.malias"
 
 SECTION "Tileset Data Tileset3BBB", ROMX[$4000], BANK[$6A]
 Tileset3BBB::
-  INCBIN "build/tilesets/Tileset3BBB.malias"
+  INCBIN "./build/tilesets/Tileset3BBB.malias"
 
 SECTION "Tileset Data Tileset3BBD", ROMX[$4968], BANK[$6A]
 Tileset3BBD::
-  INCBIN "build/tilesets/Tileset3BBD.malias"
+  INCBIN "./build/tilesets/Tileset3BBD.malias"
 
 SECTION "Tileset Data Tileset3BBF", ROMX[$52D9], BANK[$6A]
 Tileset3BBF::
-  INCBIN "build/tilesets/Tileset3BBF.malias"
+  INCBIN "./build/tilesets/Tileset3BBF.malias"
 
 SECTION "Tileset Data Tileset3BC1", ROMX[$5C5B], BANK[$6A]
 Tileset3BC1::
-  INCBIN "build/tilesets/Tileset3BC1.malias"
+  INCBIN "./build/tilesets/Tileset3BC1.malias"
 
 SECTION "Tileset Data Tileset3BC3", ROMX[$6176], BANK[$6A]
 Tileset3BC3::
-  INCBIN "build/tilesets/Tileset3BC3.malias"
+  INCBIN "./build/tilesets/Tileset3BC3.malias"
 
 SECTION "Tileset Data Tileset3BC5", ROMX[$6A22], BANK[$6A]
 Tileset3BC5::
-  INCBIN "build/tilesets/Tileset3BC5.malias"
+  INCBIN "./build/tilesets/Tileset3BC5.malias"
 
 SECTION "Tileset Data Tileset3BC7", ROMX[$71E1], BANK[$6A]
 Tileset3BC7::
-  INCBIN "build/tilesets/Tileset3BC7.malias"
+  INCBIN "./build/tilesets/Tileset3BC7.malias"
 
 SECTION "Tileset Data Tileset3BC9", ROMX[$4000], BANK[$6B]
 Tileset3BC9::
-  INCBIN "build/tilesets/Tileset3BC9.malias"
+  INCBIN "./build/tilesets/Tileset3BC9.malias"
 
 SECTION "Tileset Data Tileset3BCB", ROMX[$497D], BANK[$6B]
 Tileset3BCB::
-  INCBIN "build/tilesets/Tileset3BCB.malias"
+  INCBIN "./build/tilesets/Tileset3BCB.malias"
 
 SECTION "Tileset Data Tileset3BCD", ROMX[$5153], BANK[$6B]
 Tileset3BCD::
-  INCBIN "build/tilesets/Tileset3BCD.malias"
+  INCBIN "./build/tilesets/Tileset3BCD.malias"
 
 SECTION "Tileset Data Tileset3BCF", ROMX[$58E7], BANK[$6B]
 Tileset3BCF::
-  INCBIN "build/tilesets/Tileset3BCF.malias"
+  INCBIN "./build/tilesets/Tileset3BCF.malias"
 
 SECTION "Tileset Data Tileset3BD1", ROMX[$606E], BANK[$6B]
 Tileset3BD1::
-  INCBIN "build/tilesets/Tileset3BD1.malias"
+  INCBIN "./build/tilesets/Tileset3BD1.malias"
 
 SECTION "Tileset Data Tileset3BD3", ROMX[$68EF], BANK[$6B]
 Tileset3BD3::
-  INCBIN "build/tilesets/Tileset3BD3.malias"
+  INCBIN "./build/tilesets/Tileset3BD3.malias"
 
 SECTION "Tileset Data Tileset3BD5", ROMX[$725E], BANK[$6B]
 Tileset3BD5::
-  INCBIN "build/tilesets/Tileset3BD5.malias"
+  INCBIN "./build/tilesets/Tileset3BD5.malias"
 
 SECTION "Tileset Data Tileset3BD7", ROMX[$4000], BANK[$6C]
 Tileset3BD7::
-  INCBIN "build/tilesets/Tileset3BD7.malias"
+  INCBIN "./build/tilesets/Tileset3BD7.malias"
 
 SECTION "Tileset Data Tileset3BF5", ROMX[$4000], BANK[$62]
 Tileset3BF5::
-  INCBIN "build/tilesets/Tileset3BF5.malias"
+  INCBIN "./build/tilesets/Tileset3BF5.malias"
 
 SECTION "Tileset Data Tileset3BF7", ROMX[$434F], BANK[$62]
 Tileset3BF7::
-  INCBIN "build/tilesets/Tileset3BF7.malias"
+  INCBIN "./build/tilesets/Tileset3BF7.malias"
 
 SECTION "Tileset Data Tileset3BF9", ROMX[$442D], BANK[$62]
 Tileset3BF9::
-  INCBIN "build/tilesets/Tileset3BF9.malias"
+  INCBIN "./build/tilesets/Tileset3BF9.malias"
 
 SECTION "Tileset Data Tileset3BFB", ROMX[$4612], BANK[$62]
 Tileset3BFB::
-  INCBIN "build/tilesets/Tileset3BFB.malias"
+  INCBIN "./build/tilesets/Tileset3BFB.malias"
 
 SECTION "Tileset Data Tileset3BFD", ROMX[$473E], BANK[$62]
 Tileset3BFD::
-  INCBIN "build/tilesets/Tileset3BFD.malias"
+  INCBIN "./build/tilesets/Tileset3BFD.malias"
 
 SECTION "Tileset Data Tileset3BFF", ROMX[$487C], BANK[$62]
 Tileset3BFF::
-  INCBIN "build/tilesets/Tileset3BFF.malias"
+  INCBIN "./build/tilesets/Tileset3BFF.malias"
 
 SECTION "Tileset Data Tileset3C01", ROMX[$4A1E], BANK[$62]
 Tileset3C01::
-  INCBIN "build/tilesets/Tileset3C01.malias"
+  INCBIN "./build/tilesets/Tileset3C01.malias"
 
 SECTION "Tileset Data Tileset3C03", ROMX[$4C29], BANK[$62]
 Tileset3C03::
-  INCBIN "build/tilesets/Tileset3C03.malias"
+  INCBIN "./build/tilesets/Tileset3C03.malias"
 
 SECTION "Tileset Data Tileset3C05", ROMX[$4DFC], BANK[$62]
 Tileset3C05::
-  INCBIN "build/tilesets/Tileset3C05.malias"
+  INCBIN "./build/tilesets/Tileset3C05.malias"
 
 SECTION "Tileset Data Tileset3C07", ROMX[$4FDF], BANK[$62]
 Tileset3C07::
-  INCBIN "build/tilesets/Tileset3C07.malias"
+  INCBIN "./build/tilesets/Tileset3C07.malias"
 
 SECTION "Tileset Data Tileset3C09", ROMX[$512E], BANK[$62]
 Tileset3C09::
-  INCBIN "build/tilesets/Tileset3C09.malias"
+  INCBIN "./build/tilesets/Tileset3C09.malias"
 
 SECTION "Tileset Data Tileset3C0B", ROMX[$5265], BANK[$62]
 Tileset3C0B::
-  INCBIN "build/tilesets/Tileset3C0B.malias"
+  INCBIN "./build/tilesets/Tileset3C0B.malias"
 
 SECTION "Tileset Data Tileset3C0D", ROMX[$53C8], BANK[$62]
 Tileset3C0D::
-  INCBIN "build/tilesets/Tileset3C0D.malias"
+  INCBIN "./build/tilesets/Tileset3C0D.malias"
 
 SECTION "Tileset Data Tileset3C0F", ROMX[$54E8], BANK[$62]
 Tileset3C0F::
-  INCBIN "build/tilesets/Tileset3C0F.malias"
+  INCBIN "./build/tilesets/Tileset3C0F.malias"
 
 SECTION "Tileset Data Tileset3C11", ROMX[$574F], BANK[$62]
 Tileset3C11::
-  INCBIN "build/tilesets/Tileset3C11.malias"
+  INCBIN "./build/tilesets/Tileset3C11.malias"
 
 SECTION "Tileset Data Tileset3C13", ROMX[$58B8], BANK[$62]
 Tileset3C13::
-  INCBIN "build/tilesets/Tileset3C13.malias"
+  INCBIN "./build/tilesets/Tileset3C13.malias"
 
 SECTION "Tileset Data Tileset3C15", ROMX[$59DD], BANK[$62]
 Tileset3C15::
-  INCBIN "build/tilesets/Tileset3C15.malias"
+  INCBIN "./build/tilesets/Tileset3C15.malias"
 
 SECTION "Tileset Data Tileset3C17", ROMX[$5B6A], BANK[$62]
 Tileset3C17::
-  INCBIN "build/tilesets/Tileset3C17.malias"
+  INCBIN "./build/tilesets/Tileset3C17.malias"
 
 SECTION "Tileset Data Tileset3C19", ROMX[$5C6E], BANK[$62]
 Tileset3C19::
-  INCBIN "build/tilesets/Tileset3C19.malias"
+  INCBIN "./build/tilesets/Tileset3C19.malias"
 
 SECTION "Tileset Data Tileset3C1B", ROMX[$5D12], BANK[$62]
 Tileset3C1B::
-  INCBIN "build/tilesets/Tileset3C1B.malias"
+  INCBIN "./build/tilesets/Tileset3C1B.malias"
 
 SECTION "Tileset Data Tileset3C1D", ROMX[$5EBA], BANK[$62]
 Tileset3C1D::
-  INCBIN "build/tilesets/Tileset3C1D.malias"
+  INCBIN "./build/tilesets/Tileset3C1D.malias"
 
 SECTION "Tileset Data Tileset3C1F", ROMX[$60BF], BANK[$62]
 Tileset3C1F::
-  INCBIN "build/tilesets/Tileset3C1F.malias"
+  INCBIN "./build/tilesets/Tileset3C1F.malias"
 
 SECTION "Tileset Data Tileset3C21", ROMX[$643B], BANK[$62]
 Tileset3C21::
-  INCBIN "build/tilesets/Tileset3C21.malias"
+  INCBIN "./build/tilesets/Tileset3C21.malias"
 
 SECTION "Tileset Data Tileset3C23", ROMX[$656C], BANK[$62]
 Tileset3C23::
-  INCBIN "build/tilesets/Tileset3C23.malias"
+  INCBIN "./build/tilesets/Tileset3C23.malias"
 
 SECTION "Tileset Data Tileset3C25", ROMX[$66F4], BANK[$62]
 Tileset3C25::
-  INCBIN "build/tilesets/Tileset3C25.malias"
+  INCBIN "./build/tilesets/Tileset3C25.malias"
 
 SECTION "Tileset Data Tileset3C27", ROMX[$6844], BANK[$62]
 Tileset3C27::
-  INCBIN "build/tilesets/Tileset3C27.malias"
+  INCBIN "./build/tilesets/Tileset3C27.malias"
 
 SECTION "Tileset Data Tileset3C29", ROMX[$69D9], BANK[$62]
 Tileset3C29::
-  INCBIN "build/tilesets/Tileset3C29.malias"
+  INCBIN "./build/tilesets/Tileset3C29.malias"
 
 SECTION "Tileset Data Tileset3C2B", ROMX[$6B96], BANK[$62]
 Tileset3C2B::
-  INCBIN "build/tilesets/Tileset3C2B.malias"
+  INCBIN "./build/tilesets/Tileset3C2B.malias"
 
 SECTION "Tileset Data Tileset3C35", ROMX[$4000], BANK[$72]
 Tileset3C35::
-  INCBIN "build/tilesets/Tileset3C35.malias"
+  INCBIN "./build/tilesets/Tileset3C35.malias"
 
 SECTION "Tileset Data Tileset3C37", ROMX[$4808], BANK[$72]
 Tileset3C37::
-  INCBIN "build/tilesets/Tileset3C37.malias"
+  INCBIN "./build/tilesets/Tileset3C37.malias"
 
 SECTION "Tileset Data Tileset3C41", ROMX[$4000], BANK[$73]
 Tileset3C41::
-  INCBIN "build/tilesets/Tileset3C41.malias"
+  INCBIN "./build/tilesets/Tileset3C41.malias"
 
 SECTION "Tileset Data Tileset3C43", ROMX[$44E4], BANK[$73]
 Tileset3C43::
-  INCBIN "build/tilesets/Tileset3C43.malias"
+  INCBIN "./build/tilesets/Tileset3C43.malias"
 
 SECTION "Tileset Data Tileset3C45", ROMX[$4947], BANK[$73]
 Tileset3C45::
-  INCBIN "build/tilesets/Tileset3C45.malias"
+  INCBIN "./build/tilesets/Tileset3C45.malias"
 
 SECTION "Tileset Data Tileset3C47", ROMX[$4EDE], BANK[$73]
 Tileset3C47::
-  INCBIN "build/tilesets/Tileset3C47.malias"
+  INCBIN "./build/tilesets/Tileset3C47.malias"
 
 SECTION "Tileset Data Tileset3C49", ROMX[$5064], BANK[$73]
 Tileset3C49::
-  INCBIN "build/tilesets/Tileset3C49.malias"
+  INCBIN "./build/tilesets/Tileset3C49.malias"
 
 SECTION "Tileset Data Tileset3C4B", ROMX[$55D8], BANK[$73]
 Tileset3C4B::
-  INCBIN "build/tilesets/Tileset3C4B.malias"
+  INCBIN "./build/tilesets/Tileset3C4B.malias"
 
 SECTION "Tileset Data Tileset3C5B", ROMX[$4000], BANK[$74]
 Tileset3C5B::
-  INCBIN "build/tilesets/Tileset3C5B.malias"
+  INCBIN "./build/tilesets/Tileset3C5B.malias"
 
 SECTION "Tileset Data Tileset3C5D", ROMX[$455D], BANK[$74]
 Tileset3C5D::
-  INCBIN "build/tilesets/Tileset3C5D.malias"
+  INCBIN "./build/tilesets/Tileset3C5D.malias"
 
 SECTION "Tileset Data Tileset3C5F", ROMX[$4989], BANK[$74]
 Tileset3C5F::
-  INCBIN "build/tilesets/Tileset3C5F.malias"
+  INCBIN "./build/tilesets/Tileset3C5F.malias"
 
 SECTION "Tileset Data Tileset3C61", ROMX[$4F8C], BANK[$74]
 Tileset3C61::
-  INCBIN "build/tilesets/Tileset3C61.malias"
+  INCBIN "./build/tilesets/Tileset3C61.malias"
 
 SECTION "Tileset Data Tileset3C67", ROMX[$53F1], BANK[$74]
 Tileset3C67::
-  INCBIN "build/tilesets/Tileset3C67.malias"
+  INCBIN "./build/tilesets/Tileset3C67.malias"
 
 SECTION "Tileset Data Tileset3C69", ROMX[$5929], BANK[$74]
 Tileset3C69::
-  INCBIN "build/tilesets/Tileset3C69.malias"
+  INCBIN "./build/tilesets/Tileset3C69.malias"
 
 SECTION "Tileset Data Tileset3C95", ROMX[$4000], BANK[$A7]
 Tileset3C95::
-  INCBIN "build/tilesets/Tileset3C95.malias"
+  INCBIN "./build/tilesets/Tileset3C95.malias"
 
 SECTION "Tileset Data Tileset3C97", ROMX[$44F8], BANK[$A7]
 Tileset3C97::
-  INCBIN "build/tilesets/Tileset3C97.malias"
+  INCBIN "./build/tilesets/Tileset3C97.malias"
 
 SECTION "Tileset Data Tileset3C99", ROMX[$4A1F], BANK[$A7]
 Tileset3C99::
-  INCBIN "build/tilesets/Tileset3C99.malias"
+  INCBIN "./build/tilesets/Tileset3C99.malias"
 
 SECTION "Tileset Data Tileset3C9D", ROMX[$4FB1], BANK[$A7]
 Tileset3C9D::
-  INCBIN "build/tilesets/Tileset3C9D.malias"
+  INCBIN "./build/tilesets/Tileset3C9D.malias"
 
 SECTION "Tileset Data Tileset3C9F", ROMX[$55AA], BANK[$A7]
 Tileset3C9F::
-  INCBIN "build/tilesets/Tileset3C9F.malias"
+  INCBIN "./build/tilesets/Tileset3C9F.malias"
 
 SECTION "Tileset Data Tileset3CA1", ROMX[$58CE], BANK[$A7]
 Tileset3CA1::
-  INCBIN "build/tilesets/Tileset3CA1.malias"
+  INCBIN "./build/tilesets/Tileset3CA1.malias"
 
 SECTION "Tileset Data Tileset3CA3", ROMX[$5E85], BANK[$A7]
 Tileset3CA3::
-  INCBIN "build/tilesets/Tileset3CA3.malias"
+  INCBIN "./build/tilesets/Tileset3CA3.malias"
 
 SECTION "Tileset Data Tileset3CA5", ROMX[$4000], BANK[$A8]
 Tileset3CA5::
-  INCBIN "build/tilesets/Tileset3CA5.malias"
+  INCBIN "./build/tilesets/Tileset3CA5.malias"
 
 SECTION "Tileset Data Tileset3CA7", ROMX[$44BB], BANK[$A8]
 Tileset3CA7::
-  INCBIN "build/tilesets/Tileset3CA7.malias"
+  INCBIN "./build/tilesets/Tileset3CA7.malias"
 
 SECTION "Tileset Data Tileset3CA9", ROMX[$49CE], BANK[$A8]
 Tileset3CA9::
-  INCBIN "build/tilesets/Tileset3CA9.malias"
+  INCBIN "./build/tilesets/Tileset3CA9.malias"
 
 SECTION "Tileset Data Tileset3CAD", ROMX[$4F04], BANK[$A8]
 Tileset3CAD::
-  INCBIN "build/tilesets/Tileset3CAD.malias"
+  INCBIN "./build/tilesets/Tileset3CAD.malias"
 
 SECTION "Tileset Data Tileset3CAF", ROMX[$54FA], BANK[$A8]
 Tileset3CAF::
-  INCBIN "build/tilesets/Tileset3CAF.malias"
+  INCBIN "./build/tilesets/Tileset3CAF.malias"
 
 SECTION "Tileset Data Tileset3CB1", ROMX[$5831], BANK[$A8]
 Tileset3CB1::
-  INCBIN "build/tilesets/Tileset3CB1.malias"
+  INCBIN "./build/tilesets/Tileset3CB1.malias"
 
 SECTION "Tileset Data Tileset3CB3", ROMX[$5DEB], BANK[$A8]
 Tileset3CB3::
-  INCBIN "build/tilesets/Tileset3CB3.malias"
+  INCBIN "./build/tilesets/Tileset3CB3.malias"
 
 SECTION "Tileset Data Tileset3CB5", ROMX[$4000], BANK[$A9]
 Tileset3CB5::
-  INCBIN "build/tilesets/Tileset3CB5.malias"
+  INCBIN "./build/tilesets/Tileset3CB5.malias"
 
 SECTION "Tileset Data Tileset3CB7", ROMX[$44D8], BANK[$A9]
 Tileset3CB7::
-  INCBIN "build/tilesets/Tileset3CB7.malias"
+  INCBIN "./build/tilesets/Tileset3CB7.malias"
 
 SECTION "Tileset Data Tileset3CB9", ROMX[$4A00], BANK[$A9]
 Tileset3CB9::
-  INCBIN "build/tilesets/Tileset3CB9.malias"
+  INCBIN "./build/tilesets/Tileset3CB9.malias"
 
 SECTION "Tileset Data Tileset3CBB", ROMX[$501D], BANK[$A9]
 Tileset3CBB::
-  INCBIN "build/tilesets/Tileset3CBB.malias"
+  INCBIN "./build/tilesets/Tileset3CBB.malias"
 
 SECTION "Tileset Data Tileset3CBD", ROMX[$50AD], BANK[$A9]
 Tileset3CBD::
-  INCBIN "build/tilesets/Tileset3CBD.malias"
+  INCBIN "./build/tilesets/Tileset3CBD.malias"
 
 SECTION "Tileset Data Tileset3CBF", ROMX[$56D6], BANK[$A9]
 Tileset3CBF::
-  INCBIN "build/tilesets/Tileset3CBF.malias"
+  INCBIN "./build/tilesets/Tileset3CBF.malias"
 
 SECTION "Tileset Data Tileset3CC1", ROMX[$5A4E], BANK[$A9]
 Tileset3CC1::
-  INCBIN "build/tilesets/Tileset3CC1.malias"
+  INCBIN "./build/tilesets/Tileset3CC1.malias"
 
 SECTION "Tileset Data Tileset3CC3", ROMX[$5F58], BANK[$A9]
 Tileset3CC3::
-  INCBIN "build/tilesets/Tileset3CC3.malias"
+  INCBIN "./build/tilesets/Tileset3CC3.malias"
 
 SECTION "Tileset Data Tileset3CC5", ROMX[$4000], BANK[$AA]
 Tileset3CC5::
-  INCBIN "build/tilesets/Tileset3CC5.malias"
+  INCBIN "./build/tilesets/Tileset3CC5.malias"
 
 SECTION "Tileset Data Tileset3CC7", ROMX[$44B1], BANK[$AA]
 Tileset3CC7::
-  INCBIN "build/tilesets/Tileset3CC7.malias"
+  INCBIN "./build/tilesets/Tileset3CC7.malias"
 
 SECTION "Tileset Data Tileset3CC9", ROMX[$498C], BANK[$AA]
 Tileset3CC9::
-  INCBIN "build/tilesets/Tileset3CC9.malias"
+  INCBIN "./build/tilesets/Tileset3CC9.malias"
 
 SECTION "Tileset Data Tileset3CCB", ROMX[$4F97], BANK[$AA]
 Tileset3CCB::
-  INCBIN "build/tilesets/Tileset3CCB.malias"
+  INCBIN "./build/tilesets/Tileset3CCB.malias"
 
 SECTION "Tileset Data Tileset3CCD", ROMX[$506D], BANK[$AA]
 Tileset3CCD::
-  INCBIN "build/tilesets/Tileset3CCD.malias"
+  INCBIN "./build/tilesets/Tileset3CCD.malias"
 
 SECTION "Tileset Data Tileset3CCF", ROMX[$569D], BANK[$AA]
 Tileset3CCF::
-  INCBIN "build/tilesets/Tileset3CCF.malias"
+  INCBIN "./build/tilesets/Tileset3CCF.malias"
 
 SECTION "Tileset Data Tileset3CD1", ROMX[$59BC], BANK[$AA]
 Tileset3CD1::
-  INCBIN "build/tilesets/Tileset3CD1.malias"
+  INCBIN "./build/tilesets/Tileset3CD1.malias"
 
 SECTION "Tileset Data Tileset3CD3", ROMX[$5ECA], BANK[$AA]
 Tileset3CD3::
-  INCBIN "build/tilesets/Tileset3CD3.malias"
+  INCBIN "./build/tilesets/Tileset3CD3.malias"
 
 
 SECTION "Tileset Data Tileset3A1F", ROMX[$5FC6], BANK[$3B]
 Tileset3A1F::
-  INCBIN "build/tilesets/Tileset3A1F_{GAMEVERSION}.malias"
+  INCBIN "./build/tilesets/Tileset3A1F_{GAMEVERSION}.malias"
 
 SECTION "Tileset Data Tileset3C39", ROMX[$4C87], BANK[$72]
 Tileset3C39::
-  INCBIN "build/tilesets/Tileset3C39_{GAMEVERSION}.malias"
+  INCBIN "./build/tilesets/Tileset3C39_{GAMEVERSION}.malias"
 
 SECTION "Tileset Data Tileset3C55", ROMX[$5D33], BANK[$74]
 Tileset3C55::
-  INCBIN "build/tilesets/Tileset3C55_{GAMEVERSION}.malias"
+  INCBIN "./build/tilesets/Tileset3C55_{GAMEVERSION}.malias"
 

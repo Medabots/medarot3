@@ -1,4 +1,4 @@
-INCLUDE "build/ptrlists/ptrlist_data_constants_{GAMEVERSION}.asm"
+INCLUDE "./build/ptrlists/ptrlist_data_constants_{GAMEVERSION}.asm"
 
 ; End of text pointer section (fixed length)
 SECTION "PtrList Pointers", ROMX[$5E4B], BANK[$F2]

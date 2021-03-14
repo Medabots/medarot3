@@ -1,7 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_MapDigitsBuffer EQU $C4E0 ; Since this address is already symbolised as W_TilemapWritingBaseLocationIndex.
-
 SECTION "Number Mapping Variables 1", WRAM0[$C4E2]
 W_MapDigitsAddress:: ds 2
 
@@ -9,7 +7,62 @@ W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; This address is overutilised, so E
 W_MapDigitsSignificantDigitFound EQU $C4F0 ; This address is overutilised, so EQU is better.
 W_MapDigitsMedalExpSignificantDigitFound EQU $C4F2
 
-SECTION "Map Four Digit Numbers", ROM0[$1352]
+SECTION "Map Three/Four Digit Numbers", ROM0[$1315]
+ParseThreeDigitNumberForMapping::
+  push de
+  push bc
+  push hl
+  ld b, 100 ; in decimal
+  push af
+  xor a
+  ld [$C4EE], a
+  ld [$C4EF], a
+  ld de, 0
+  pop af
+
+.hundredsDigitLoop
+  ld c, a
+  sub b
+  jr c, .parseTensDigit
+  inc d
+  jr .hundredsDigitLoop
+
+.parseTensDigit
+  ld a, c
+  ld b, 10 ; in decimal
+
+.tensDigitLoop
+  ld c, a
+  sub b
+  jr c, .parseOnesDigit
+  push af
+  ld a, e
+  add $10
+  ld e, a
+  pop af
+  jr .tensDigitLoop
+
+.parseOnesDigit
+  ld a, c
+  ld b, 1
+
+.onesDigitLoop
+  ld c, a
+  sub b
+  jr c, .exit
+  inc e
+  jr .onesDigitLoop
+
+.exit
+  ld a, d
+  ld [$C4EE], a
+  ld a, e
+  ld [$C4EF], a
+  pop hl
+  pop bc
+  pop de
+  ret
+
 MapFourDigitNumber::
   push hl
   push de
@@ -53,9 +106,9 @@ MapFourDigitNumber::
   ld [W_MapDigitsSignificantDigitFound], a
 
 .skipThousandsDigit
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
 
 .parseHundredsDigit
@@ -94,9 +147,9 @@ MapFourDigitNumber::
   ld [W_MapDigitsSignificantDigitFound], a
 
 .skipHundredsDigit
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
 
 .parseTensDigit
@@ -135,9 +188,9 @@ MapFourDigitNumber::
   ei
 
 .skipTensDigit
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
 
 .parseOnesDigit
@@ -188,9 +241,9 @@ DigitCalculationLoop::
 
 .loop
   ld a, h
-  ld [W_MapDigitsBuffer], a
+  ld [$C4E0], a
   ld a, l
-  ld [W_MapDigitsBuffer + 1], a
+  ld [$C4E1], a
   ld d, b
   ld a, h
   sub d
@@ -202,10 +255,10 @@ DigitCalculationLoop::
   ret c
 
 .noChanceOfOverflow
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   sub c
   ld l, a
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   sbc b
   ld h, a
   ld a, [W_MapDigitsCurrentCalculatedDigit]
@@ -260,9 +313,9 @@ MapExpToNextLevel::
 
 .parseThousandsDigit
   push hl
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
   ld bc, 1000
   call DigitCalculationLoop
@@ -299,9 +352,9 @@ MapExpToNextLevel::
 
 .parseHundredsDigit
   push hl
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
   ld bc, 100
   call DigitCalculationLoop
@@ -339,9 +392,9 @@ MapExpToNextLevel::
 
 .parseTensDigit
   push hl
-  ld a, [W_MapDigitsBuffer]
+  ld a, [$C4E0]
   ld h, a
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   ld l, a
   ld bc, 10
   call DigitCalculationLoop
@@ -378,7 +431,7 @@ MapExpToNextLevel::
   ei
 
 .parseOnesDigit
-  ld a, [W_MapDigitsBuffer + 1]
+  ld a, [$C4E1]
   add $E0
   di
   push af
