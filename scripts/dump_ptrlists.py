@@ -9,7 +9,6 @@ from functools import partial
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
-
 version_src_path = sys.argv[1]
 text_src_path = sys.argv[2]
 text_build_path = sys.argv[3]

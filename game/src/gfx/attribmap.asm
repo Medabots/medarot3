@@ -263,10 +263,16 @@ DecompressAttribmapCommon::
   ret
 
 AttribmapBankTable::
-  db $37, $38, $19, $AB
+  db BANK(AttribmapTable00)
+  db BANK(AttribmapTable01)
+  db BANK(AttribmapTable02)
+  db BANK(AttribmapTable03)
 
 AttribmapAddressTable::
-  dw $4000,  $4000,  $47A0,  $5692
+  dw AttribmapTable00
+  dw AttribmapTable01
+  dw AttribmapTable02
+  dw AttribmapTable03
 
 AttribmapRecallValue::
   push bc
