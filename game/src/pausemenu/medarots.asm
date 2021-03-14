@@ -2322,7 +2322,7 @@ CountPartsForExternalPartSubscreen::
   cp $97
   jr nz, .loop
   ld a, [$C4F0]
-  ld [$C58B], a
+  ld [W_NumPartsForPartStatus], a
   ret
 
 .table

@@ -472,7 +472,7 @@ MedarotsStatusOpenExternalSubscreenState::
   cp 1
   jr nz, .headPartNotSelected
   ld a, 1
-  ld [$C56B], a
+  ld [W_PartsMenuEntrypoint], a
   xor a
   ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentHeadPart]
@@ -489,7 +489,7 @@ MedarotsStatusOpenExternalSubscreenState::
   cp 2
   jr nz, .leftArmPartNotSelected
   ld a, 1
-  ld [$C56B], a
+  ld [W_PartsMenuEntrypoint], a
   ld a, 1
   ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentLeftArmPart]
@@ -506,7 +506,7 @@ MedarotsStatusOpenExternalSubscreenState::
   cp 3
   jr nz, .rightArmPartNotSelected
   ld a, 1
-  ld [$C56B], a
+  ld [W_PartsMenuEntrypoint], a
   ld a, 2
   ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentRightArmPart]
@@ -521,7 +521,7 @@ MedarotsStatusOpenExternalSubscreenState::
 
 .rightArmPartNotSelected
   ld a, 1
-  ld [$C56B], a
+  ld [W_PartsMenuEntrypoint], a
   ld a, 3
   ld [W_CurrentPartTypeForListView], a
   ld a, [W_MedarotCurrentLegPart]
