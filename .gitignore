@@ -9,7 +9,7 @@ build/
 scripts/common/__pycache__/
 *.ips
 *.pyc
-*.map
+/*.map
 *.sym
 /*.xlsx
 
