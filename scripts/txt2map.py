@@ -29,7 +29,7 @@ with open(input_file, 'r', encoding='utf-8-sig') as f:
         text = []
         # Assumes every 32 bytes is a new line unless fe is explicitly provided before that
         for line in f:
-            b = utils.txt2bin(line, char_table)[0:0x1F]
+            b = utils.txt2bin(line, char_table)[0:0x20]
             text += b
         tmap += tilemaps.compress_tmap(text)
     else:

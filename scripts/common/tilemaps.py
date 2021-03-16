@@ -94,16 +94,18 @@ def compress_tmap(tmap):
     while idx < len(tmap):
         best_method = MODE_LIT
         best_size = MIN_COUNT
-        curbyte = tmap[idx]
         for m in COMPRESSION_METHODS: # Just greedily figure out how to compress the next N bytes
             size = COMPRESSION_METHODS[m](idx, tmap)
             if size > best_size:
                 best_size = size
                 best_method = m
         command = (best_method << 6) | (best_size - 1)
+        print(hex(command))
+        print(tmap[idx:])
         compressed_tmap.append(command)
-        compressed_tmap.append(curbyte)
+        compressed_tmap.append(tmap[idx])
         idx += best_size
+        # best_size is the number of bytes that matched the current byte when it's not a literal
         if best_method != MODE_LIT:
-            idx += 1 # In non-literal mode, skip the next byte 
+            idx += 1
     return compressed_tmap
