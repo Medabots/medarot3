@@ -15,11 +15,11 @@ LoadMaliasGraphics::
   ld [$C4DC], a
   ld a, 1
   ld [$C4DA], a
-  ld a, $39 ; Bank of table with banks and destination addresses for tile data.
+  ld a, BANK(TilesetInfoTable) ; Bank of table with banks and destination addresses for tile data.
   rst $10
   push bc
   pop de
-  ld hl, $706A ; Address of table with banks and destination addresses for tile data.
+  ld hl, TilesetInfoTable ; Address of table with banks and destination addresses for tile data.
   sla e
   rl d
   sla e
@@ -37,7 +37,7 @@ LoadMaliasGraphics::
   ldh [H_RegVBK], a
   ld a, [W_MaliasSourceBank]
   rst $10
-  ld hl, $3995 ; Address of table with source addresses for tile data.
+  ld hl, TilesetSourceAddressTable ; Address of table with source addresses for tile data.
   sla c
   rl b
   add hl, bc
