@@ -27,15 +27,14 @@ with open(input_file, 'r', encoding='utf-8-sig') as f:
     tmap = [mode]
     if mode & 3:
         text = []
-        # Assumes every 32 bytes is a new line unless fe is explicitly provided before that
         for line in f:
-            b = utils.txt2bin(line, char_table)[0:0x20]
+            b = utils.txt2bin(line, char_table)
             text += b
+        text.append(0xFF) # tmap compression expects 0xFF at the end
         tmap += tilemaps.compress_tmap(text)
     else:
         text = f.read().replace('\r\n','\n')
         tmap += utils.txt2bin(text, char_table)
-
-    tmap.append(0xFF)
+        tmap.append(0xFF)
     with open(output_file, 'wb') as of:
         of.write(bytearray(tmap))

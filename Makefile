@@ -149,9 +149,10 @@ version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEH
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 
-.PHONY: $(VERSIONS) all clean default
+.PHONY: $(VERSIONS) all clean default test
 default: kabuto
-all: $(VERSIONS)
+all: $(VERSIONS) test
+test: test_tilemaps test_attribmaps
 
 clean:
 	rm -r $(BUILD) $(TARGETS) $(SYM_OUT) $(MAP_OUT) || exit 0
@@ -252,6 +253,15 @@ dump_tilemaps: | $(TILEMAP_GFX) $(TILEMAP_PREBUILT) $(SCRIPT_RES)
 
 dump_attribmaps: | $(ATTRIBMAP_GFX) $(ATTRIBMAP_PREBUILT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_maps.py attribmap "$(ATTRIBMAP_GFX)" "$(ATTRIBMAP_PREBUILT)" "$(ATTRIBMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 8fe 902 4
+
+# Tests
+.PHONY: test_tilemaps test_attribmaps
+
+test_tilemaps:
+	$(PYTHON) $(SCRIPT)/test_maps.py "$(TILEMAP_PREBUILT)"
+
+test_attribmaps:
+	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 #Make directories if necessary
 $(BUILD):

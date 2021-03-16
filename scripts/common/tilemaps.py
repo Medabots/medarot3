@@ -94,7 +94,21 @@ COMPRESSION_METHODS = {
     MODE_INC : compress_mode_increment,
     MODE_DEC : compress_mode_decrement,
 }
-def compress_tmap(tmap):
+def compress_tmap(input_tmap):
+    # Remove 'implied' 0xfe from the input tmap
+    tmap = []
+    c = 0
+    assert input_tmap[-1] == 0xff, print(input_tmap)
+    for b in input_tmap[:-1]:
+        if c == 32:
+           assert b == 0xfe, f"{input_tmap}"
+           c = 0
+           continue
+        tmap.append(b)
+        c += 1
+        if b == 0xfe:
+            c = 0
+
     compressed_tmap = []
     idx = 0
     last_method = None
@@ -121,5 +135,4 @@ def compress_tmap(tmap):
         compressed_tmap.append(curbyte)
         last_method = best_method
 
-
-    return compressed_tmap
+    return compressed_tmap + [0xff]
