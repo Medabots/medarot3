@@ -171,7 +171,7 @@ patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
-all: $(VERSIONS) test
+all: $(VERSIONS)
 test: test_tilemaps test_attribmaps
 
 clean:
