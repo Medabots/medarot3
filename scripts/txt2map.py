@@ -26,8 +26,15 @@ with open(input_file, 'r', encoding='utf-8-sig') as f:
     mode = int(f.readline().strip().strip('[]'), 16)
     tmap = [mode]
     if mode & 3:
-        text = f.read().replace('\n','').replace('\r\n','')
-        tmap += tilemaps.compress_tmap(utils.txt2bin(text, char_table))
+        text = []
+        # Assumes every 32 bytes is a new line unless fe is explicitly provided before that
+        for line in f:
+            b = utils.txt2bin(text, char_table)
+            assert len(b) <= 32
+            text += b
+            if len(b) < 32:
+                text.append(0xfe)
+        tmap += tilemaps.compress_tmap()
     else:
         text = f.read().replace('\r\n','\n')
         tmap += utils.txt2bin(text, char_table)

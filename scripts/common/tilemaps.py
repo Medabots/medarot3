@@ -7,7 +7,7 @@ def decompress_tilemap(original):
     tmap = []
     rom = iter(original)
     for b in rom:
-        if b in [0xfe, 0xff]:
+        if b in [0xfc, 0xfd, 0xfe, 0xff]:
             tmap.append(b)
         else:
             command = (b >> 6) & 0b11
@@ -27,11 +27,29 @@ def decompress_tilemap(original):
                 byte = next(rom)
                 for i in range(count+2):
                     tmap.append((byte-i)%0xff)
+
+    assert tmap[-1] == 0xff 
+    assert len(tmap[:-1]) % 0x20 == 0
+    assert len(tmap) > 1
     ret = []
-    for i, t in enumerate(tmap):
-        if i != 0 and i % 0x20 == 0 and t != 0xFF:
+    row = []
+    # Each line is at max 32 bytes
+    # If 0xfe was not explicitly specified by 32 bytes, we need to add a newline
+    t = tmap[0]
+    for t in tmap:
+        if (len(row) != 0 and len(row) % 0x20 == 0) or t == 0xfe:
+            ret += row
             ret.append(0xfe)
-        ret.append(t)
+            row = []
+        if t != 0xfe:
+            row.append(t)
+    else:
+        # If the row is only one character, it must be 0xff
+        # Remove the unnecessary final newline
+        if len(row) == 1:
+            assert row == [0xff]
+            del ret[-1]
+        ret += row[0:0x1F]
     return ret
 
 MAX_COUNT = 63
