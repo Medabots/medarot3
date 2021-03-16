@@ -151,7 +151,7 @@ version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/
 
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
-all: $(VERSIONS) test
+all: $(VERSIONS)
 test: test_tilemaps test_attribmaps
 
 clean:
