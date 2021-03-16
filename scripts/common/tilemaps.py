@@ -59,7 +59,7 @@ def compress_mode_literal(idx, tmap):
 
 # All non-literal methods must have a minimum size of 2 bytes to make sense
 def compress_mode_repeat(idx, tmap):
-    i = 0
+    i = -1
     curbyte = tmap[idx]
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != curbyte:
@@ -69,7 +69,7 @@ def compress_mode_repeat(idx, tmap):
     return i
 
 def compress_mode_increment(idx, tmap):
-    i = 0
+    i = -1
     curbyte = tmap[idx]
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != (curbyte + 1 + i) & 0xFF:
@@ -79,7 +79,7 @@ def compress_mode_increment(idx, tmap):
     return i
 
 def compress_mode_decrement(idx, tmap):
-    i = 0
+    i = -1
     curbyte = tmap[idx]
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != (curbyte - 1 - i) & 0xFF:
@@ -97,6 +97,8 @@ COMPRESSION_METHODS = {
 def compress_tmap(tmap):
     compressed_tmap = []
     idx = 0
+    last_method = None
+    last_cmd_idx = -1
     while idx < len(tmap):
         best_method = MODE_LIT
         best_size = 0
@@ -110,7 +112,14 @@ def compress_tmap(tmap):
         if best_method != MODE_LIT:
             best_size -= 1
         command = (best_method << 6) | (best_size)
-        compressed_tmap.append(command)
+        # if the last and current method are literal, don't re-do the command byte
+        if not (last_method == best_method == MODE_LIT):
+            compressed_tmap.append(command)
+            last_cmd_idx = len(compressed_tmap) - 1
+        else:
+            compressed_tmap[last_cmd_idx] += 1
         compressed_tmap.append(curbyte)
+        last_method = best_method
+
 
     return compressed_tmap
