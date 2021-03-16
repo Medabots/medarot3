@@ -55,7 +55,7 @@ def decompress_tilemap(original):
 MAX_COUNT = 63
 MIN_COUNT = 1
 def compress_mode_literal(idx, tmap):
-    return MIN_COUNT
+    return 0
 
 # All non-literal methods must have a minimum size of 2 bytes to make sense
 def compress_mode_repeat(idx, tmap):
@@ -64,6 +64,8 @@ def compress_mode_repeat(idx, tmap):
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != curbyte:
             break
+    else:
+        i += 1 # if it's the last element in the tmap, i will be off by one
     return i
 
 def compress_mode_increment(idx, tmap):
@@ -72,6 +74,8 @@ def compress_mode_increment(idx, tmap):
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != (curbyte + 1 + i) & 0xFF:
             break
+    else:
+        i += 1 # if it's the last element in the tmap, i will be off by one
     return i
 
 def compress_mode_decrement(idx, tmap):
@@ -80,6 +84,8 @@ def compress_mode_decrement(idx, tmap):
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
         if byte != (curbyte - 1 - i) & 0xFF:
             break
+    else:
+        i += 1 # if it's the last element in the tmap, i will be off by one
     return i
 
 COMPRESSION_METHODS = {
@@ -93,19 +99,18 @@ def compress_tmap(tmap):
     idx = 0
     while idx < len(tmap):
         best_method = MODE_LIT
-        best_size = MIN_COUNT
+        best_size = 0
+        curbyte = tmap[idx]
         for m in COMPRESSION_METHODS: # Just greedily figure out how to compress the next N bytes
             size = COMPRESSION_METHODS[m](idx, tmap)
             if size > best_size:
                 best_size = size
                 best_method = m
-        command = (best_method << 6) | (best_size - 1)
-        print(hex(command))
-        print(tmap[idx:])
-        compressed_tmap.append(command)
-        compressed_tmap.append(tmap[idx])
-        idx += best_size
-        # best_size is the number of bytes that matched the current byte when it's not a literal
+        idx += best_size + 1 # best_size is the number of bytes that matched
         if best_method != MODE_LIT:
-            idx += 1
+            best_size -= 1
+        command = (best_method << 6) | (best_size)
+        compressed_tmap.append(command)
+        compressed_tmap.append(curbyte)
+
     return compressed_tmap
