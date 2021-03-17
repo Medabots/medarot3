@@ -913,7 +913,7 @@ Tilemap01_19::
 Tilemap01_1A::
   INCBIN "./build/tilemaps/011A.map"
 Tilemap01_1B::
-  INCBIN "./build/tilemaps/011B.map"
+  INCBIN "./build/tilemaps/ContinueNewGame.map"
 Tilemap01_1C::
   INCBIN "./build/tilemaps/011C.map"
 Tilemap01_1D::
