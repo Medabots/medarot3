@@ -71,7 +71,7 @@ DecompressTilemapCommon::
   ld a, [de]
   cp $FF
   ret z
-  and 3
+  and 1 ; Previously 'and 3', but only 0 and 1 matter for tilemaps
   jr nz, .decompressMode
 
 .copyLinesMode
