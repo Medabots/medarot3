@@ -46,3 +46,6 @@ PatchTilesetEndOldFontTiles1::
 PatchTilesetStartOldFontTiles2::
   INCBIN "build/tilesets/patch/OldFontTiles2.1bpp"
 PatchTilesetEndOldFontTiles2::
+PatchTilesetStartContinueNewGame::
+  INCBIN "build/tilesets/patch/ContinueNewGame.1bpp"
+PatchTilesetEndContinueNewGame::
