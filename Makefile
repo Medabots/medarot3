@@ -240,18 +240,26 @@ $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
+	rm $(DIALOG_TEXT)/*.$(CSV_TYPE)
 	$(PYTHON) $(SCRIPT)/dump_text.py "$(SCRIPT_RES)" "$(VERSION_SRC)" "$(DIALOG_TEXT)" "$(DIALOG_OUT)"
 
 dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
+	rm $(TILESET_PREBUILT)/*.$(TSET_TYPE)
+	rm $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE)
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
+	rm $(PTRLISTS_TEXT)/*.$(TEXT_TYPE)
 	$(PYTHON) $(SCRIPT)/dump_ptrlists.py "$(VERSION_SRC)" "$(PTRLISTS_TEXT)" "$(PTRLISTS_OUT)"
 
 dump_tilemaps: | $(TILEMAP_GFX) $(TILEMAP_PREBUILT) $(SCRIPT_RES)
+	rm $(TILEMAP_PREBUILT)/*.$(TMAP_TYPE)
+	rm $(TILEMAP_GFX)/*.$(TEXT_TYPE)
 	$(PYTHON) $(SCRIPT)/dump_maps.py tilemap "$(TILEMAP_GFX)" "$(TILEMAP_PREBUILT)" "$(TILEMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 78a 78e 4
 
 dump_attribmaps: | $(ATTRIBMAP_GFX) $(ATTRIBMAP_PREBUILT) $(SCRIPT_RES)
+	rm $(ATTRIBMAP_PREBUILT)/*.$(TMAP_TYPE)
+	rm $(ATTRIBMAP_GFX)/*.$(TEXT_TYPE)
 	$(PYTHON) $(SCRIPT)/dump_maps.py attribmap "$(ATTRIBMAP_GFX)" "$(ATTRIBMAP_PREBUILT)" "$(ATTRIBMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 8fe 902 4
 
 # Tests
