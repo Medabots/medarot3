@@ -66,4 +66,4 @@ TilemapLoadTileset:
   ret
 .table
   ; TilemapTilesetTableEntry Tileset Start Address, Tileset End Address, Load Offset
-  TilemapTilesetTableEntry PatchTilesetStartContinueNewGame, PatchTilesetEndContinueNewGame, $9100
+  TilemapTilesetTableEntry PatchTilesetStartContinueNewGame, PatchTilesetEndContinueNewGame, $9010
