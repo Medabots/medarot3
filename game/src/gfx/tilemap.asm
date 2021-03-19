@@ -37,7 +37,8 @@ DecompressTilemapCommon::
   ld a, c
   and $1F
   ld c, a
-  ld d, 0
+  xor a
+  ld d, a ; a = 0 here
   ld e, c
   sla e
   rl d
@@ -50,15 +51,15 @@ DecompressTilemapCommon::
   sla e
   rl d
   ld c, b
-  ld b, 0
+  ld b, a ; a = 0 here
   add hl, bc
   add hl, de
   pop de
   push hl
   ld hl, TilemapAddressTable
+  ld d, a ; a = 0 here
   ld a, [W_TilemapPointerTableIndex]
   rst $30
-  ld d, 0
   sla e
   rl d
   add hl, de
@@ -66,12 +67,22 @@ DecompressTilemapCommon::
   ld d, [hl]
   ld e, a
   pop hl
-  ld b, h
-  ld c, l
   ld a, [de]
   cp $FF
   ret z
-  and 3
+
+  push af
+  ld c, a
+  and $FE
+  jr z, .noTileset
+  xor a ; TilemapLoadTileset
+  rst $38
+.noTileset
+  pop af
+
+  ld b, h
+  ld c, l
+  and 1 ; Previously 'and 3', but only 0 and 1 matter for tilemaps
   jr nz, .decompressMode
 
 .copyLinesMode
@@ -150,11 +161,11 @@ DecompressTilemapCommon::
   ld a, [de]
   and $C0
   cp $C0
-  jp z, .cmd3
+  jr z, .cmd3
   cp $80
-  jp z, .cmd2
+  jr z, .cmd2
   cp $40
-  jp z, .cmd1
+  jr z, .cmd1
 
 .cmd0
   push bc
@@ -174,7 +185,7 @@ DecompressTilemapCommon::
   dec b
   jp nz, .cmd0Loop
   pop bc
-  jp .decompressMode
+  jr .decompressMode
 
 .cmd1
   push bc
@@ -195,7 +206,7 @@ DecompressTilemapCommon::
   dec b
   jp nz, .cmd1Repeat
   pop bc
-  jp .decompressMode
+  jr .decompressMode
 
 .cmd2
   push bc
@@ -217,7 +228,7 @@ DecompressTilemapCommon::
   dec b
   jp nz, .cmd2RepeatAndIncrement
   pop bc
-  jp .decompressMode
+  jr .decompressMode
 
 .cmd3
   push bc
@@ -239,8 +250,11 @@ DecompressTilemapCommon::
   dec b
   jp nz, .cmd3RepeatAndDecrement
   pop bc
-  jp .decompressMode
-
+  jr .decompressMode
+.end
+REPT $078A - .end
+  nop
+ENDR
 TilemapBankTable::
   db BANK(TilemapTable00)
   db BANK(TilemapTable01)

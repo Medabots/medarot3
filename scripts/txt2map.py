@@ -23,9 +23,12 @@ if os.path.isfile(prebuilt):
     quit()
 
 with open(input_file, 'r', encoding='utf-8-sig') as f:
-    mode = int(f.readline().strip().strip('[]'), 16)
-    tmap = [mode]
-    if mode & 3:
+    mode = f.readline().strip().strip('[]').split('|')
+    mode[0] = int(mode[0], 16)
+    if len(mode) == 2:
+        mode[0] |= int(mode[1], 16) << 1
+    tmap = [mode[0]]
+    if mode[0] & 3:
         text = []
         for line in f:
             b = utils.txt2bin(line, char_table)
