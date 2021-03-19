@@ -281,13 +281,13 @@ Tilemap00_09::
 Tilemap00_0A::
   INCBIN "./build/tilemaps/000A.map"
 Tilemap00_0B::
-  INCBIN "./build/tilemaps/000B.map"
+  INCBIN "./build/tilemaps/OptionYesNo.map"
 Tilemap00_0C::
   INCBIN "./build/tilemaps/000C.map"
 Tilemap00_11::
   INCBIN "./build/tilemaps/0011.map"
 Tilemap00_12::
-  INCBIN "./build/tilemaps/0012.map"
+  INCBIN "./build/tilemaps/MenuMainGame.map"
 Tilemap00_13::
   INCBIN "./build/tilemaps/0013.map"
 Tilemap00_14::
@@ -405,7 +405,7 @@ Tilemap00_4E::
 Tilemap00_4F::
   INCBIN "./build/tilemaps/004F.map"
 Tilemap00_50::
-  INCBIN "./build/tilemaps/0050.map"
+  INCBIN "./build/tilemaps/InfoSaveScreen.map"
 Tilemap00_51::
   INCBIN "./build/tilemaps/0051.map"
 Tilemap00_52::
@@ -913,11 +913,11 @@ Tilemap01_19::
 Tilemap01_1A::
   INCBIN "./build/tilemaps/011A.map"
 Tilemap01_1B::
-  INCBIN "./build/tilemaps/ContinueNewGame.map"
+  INCBIN "./build/tilemaps/MenuStartScreen.map"
 Tilemap01_1C::
   INCBIN "./build/tilemaps/011C.map"
 Tilemap01_1D::
-  INCBIN "./build/tilemaps/000B.map"
+  INCBIN "./build/tilemaps/OptionYesNo.map"
 Tilemap01_1E::
   INCBIN "./build/tilemaps/011E.map"
 Tilemap01_1F::
