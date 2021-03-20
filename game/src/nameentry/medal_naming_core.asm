@@ -208,9 +208,9 @@ DefaultMedalNameA::
   db $78
 
 DefaultMedalNameB::
-  db $22, $10, $7D, $EE, $00, $00, $00, $00
-  db 4
-  db $70
+  db "M", "e", "t", "a", "b", "e", "e", $00
+  db 8
+  db $88
 
 DefaultMedalNameC::
   db $00, $00, $00, $00, $00, $00, $00, $00
