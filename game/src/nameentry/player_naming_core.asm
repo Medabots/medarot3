@@ -43,11 +43,12 @@ PlayerNamingScreenInitState::
   ld bc, $0080
   call memclr
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld a, $02 ; 'イ'
+  ld a, "I"
   ld [hli], a
-  ld a, $34 ; 'ッ'
+  ld a, "k"
   ld [hli], a
-  ld a, $07 ; 'キ'
+  ld [hli], a
+  ld a, "i"
   ld [hli], a
   xor a
   ld [hli], a
@@ -55,8 +56,7 @@ PlayerNamingScreenInitState::
   ld [hli], a
   ld [hli], a
   ld [hli], a
-  ld [hli], a
-  ld a, 3 ; Initial Name Length
+  ld a, 4 ; Initial Name Length
   ld [W_NamingScreenEnteredTextLength], a
   xor a
   ld [$C761], a
@@ -131,25 +131,20 @@ PlayerNamingScreenMapScreenAndPrepareSpritesState::
   call WrapDecompressTilemap0
   call $51AD
   call $519F
-  ld a, $02 ; 'イ'
   di
-  push af
   rst $20
-  pop af
+  ld a, "I"
   ld [hli], a
   ei
-  ld a, $34 ; 'ッ'
   di
-  push af
   rst $20
-  pop af
+  ld a, "k"
+  ld [hli], a
   ld [hli], a
   ei
-  ld a, $07 ; 'キ'
   di
-  push af
   rst $20
-  pop af
+  ld a, "i"
   ld [hli], a
   ei
   ld a, 1
@@ -158,7 +153,7 @@ PlayerNamingScreenMapScreenAndPrepareSpritesState::
   ld [$C1E1], a
   ld a, $80
   ld [$C1E2], a
-  ld a, $70 ; Text cursor position: (textlength*8)+$50
+  ld a, $78 ; Text cursor position: (textlength*8)+$50
   ld [$C1E3], a
   ld a, 8
   ld [$C1E4], a
@@ -268,3 +263,7 @@ PlayerNamingScreenExitState::
 
 PlayerNamingScreenPlaceholderState::
   ret
+.end
+REPT $562e - .end
+  nop
+ENDR
