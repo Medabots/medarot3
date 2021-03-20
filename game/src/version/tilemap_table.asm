@@ -919,17 +919,17 @@ Tilemap01_1C::
 Tilemap01_1D::
   INCBIN "./build/tilemaps/OptionYesNo.map"
 Tilemap01_1E::
-  INCBIN "./build/tilemaps/011E.map"
+  INCBIN "./build/tilemaps/InputNameScreen.map"
 Tilemap01_1F::
-  INCBIN "./build/tilemaps/011F.map"
+  INCBIN "./build/tilemaps/InputNameCharacterMap1.map"
 Tilemap01_20::
-  INCBIN "./build/tilemaps/0120.map"
+  INCBIN "./build/tilemaps/InputNameCharacterMap2.map"
 Tilemap01_21::
-  INCBIN "./build/tilemaps/0121.map"
+  INCBIN "./build/tilemaps/InputNamePlayerName.map"
 Tilemap01_22::
-  INCBIN "./build/tilemaps/0122.map"
+  INCBIN "./build/tilemaps/InputNameMedabotName.map"
 Tilemap01_23::
-  INCBIN "./build/tilemaps/0123.map"
+  INCBIN "./build/tilemaps/InputNameUnderscores.map"
 Tilemap01_24::
   INCBIN "./build/tilemaps/0124.map"
 Tilemap01_25::
