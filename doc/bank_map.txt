@@ -252,5 +252,5 @@ FA: Text 4
 FB: Text 5
 FC: (empty)
 FD: (empty)
-FE: Patch-specific 1bpp gfx
+FE: Patch-specific 1bpp gfx and the 2bpp main dialog font
 FF: Patch functions and VWF fonts

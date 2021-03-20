@@ -1041,9 +1041,10 @@ SECTION "Tileset Data Tileset3997", ROMX[$4943], BANK[$3A]
 Tileset3997::
   INCBIN "./build/tilesets/Tileset3997.malias"
 
-SECTION "Tileset Data MainDialog1", ROMX[$4000], BANK[$3A]
-MainDialog1::
-  INCBIN "./build/tilesets/MainDialog1.malias"
+; Main Dialog is defined with the other Patch Tilesets
+;SECTION "Tileset Data MainDialog1", ROMX[$4000], BANK[$3A]
+;MainDialog1::
+;  INCBIN "./build/tilesets/MainDialog1.malias"
 
 SECTION "Tileset Data MainDialog2", ROMX[$44E7], BANK[$3A]
 MainDialog2::
