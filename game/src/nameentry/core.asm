@@ -22,7 +22,7 @@ NamingScreenStateMachine::
 .table
   dw NamingScreenPlayerNamingState
   dw NamingScreenExitAState
-  dw NamingScreenTinpetNamingState
+  dw NamingScreenMedalNamingState
   dw NamingScreenExitAState
   dw NamingScreenExitBState
 
@@ -33,8 +33,8 @@ NamingScreenPlayerNamingState::
   ret z
   jp IncSubStateIndex
 
-NamingScreenTinpetNamingState::
-  call TinpetNamingScreenStateMachine
+NamingScreenMedalNamingState::
+  call MedalNamingScreenStateMachine
   ld a, [W_NamingScreenExitIndicator]
   or a
   ret z

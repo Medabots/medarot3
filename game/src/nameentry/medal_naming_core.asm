@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Tinpet Naming Screen State Machine 1", ROMX[$562F], BANK[$01]
-TinpetNamingScreenStateMachine::
+SECTION "Medal Naming Screen State Machine 1", ROMX[$562F], BANK[$01]
+MedalNamingScreenStateMachine::
   xor a
   ld [W_NamingScreenExitIndicator], a
   ld hl, .table
@@ -12,20 +12,20 @@ TinpetNamingScreenStateMachine::
 .table
   dw PlayerNamingScreenPrepareFadeOutState
   dw PlayerNamingScreenFadeOutState
-  dw TinpetNamingScreenInitState
-  dw TinpetNamingScreenDrawScreenState
-  dw TinpetNamingScreenMapScreenAndPrepareSpritesState
+  dw MedalNamingScreenInitState
+  dw MedalNamingScreenDrawScreenState
+  dw MedalNamingScreenMapScreenAndPrepareSpritesState
   dw PlayerNamingScreenPrepareFadeInState
-  dw TinpetNamingScreenFadeInState
+  dw MedalNamingScreenFadeInState
   dw PlayerNamingScreenTextEntryState
   dw PlayerNamingScreenPrepareFadeOutState
   dw PlayerNamingScreenFadeOutState
-  dw TinpetNamingScreenCopyNameState
+  dw MedalNamingScreenCopyNameState
   dw PlayerNamingScreenExitState
   dw PlayerNamingScreenPlaceholderState
 
-SECTION "Tinpet Naming Screen State Machine 2", ROMX[$568C], BANK[$01]
-TinpetNamingScreenInitState:
+SECTION "Medal Naming Screen State Machine 2", ROMX[$568C], BANK[$01]
+MedalNamingScreenInitState:
   ld a, 5
   rst 8
   ld hl, $C0A0
@@ -46,7 +46,7 @@ TinpetNamingScreenInitState:
   ld [$C762], a
   ld a, 1
   ld [$C761], a
-  call GetDefaultTinpetNameAddress
+  call GetDefaultMedalNameAddress
   ld de, W_NamingScreenEnteredTextBuffer
   ld bc, 8
   call memcpy
@@ -56,7 +56,7 @@ TinpetNamingScreenInitState:
   ld [$C1E3], a
   jp IncNamingScreenSubSubStateIndex
 
-TinpetNamingScreenDrawScreenState::
+MedalNamingScreenDrawScreenState::
   ld bc, $13
   call WrapLoadMaliasGraphics
   ld bc, $50
@@ -72,7 +72,7 @@ TinpetNamingScreenDrawScreenState::
   call $33C6
   jp IncNamingScreenSubSubStateIndex
 
-TinpetNamingScreenMapScreenAndPrepareSpritesState::
+MedalNamingScreenMapScreenAndPrepareSpritesState::
   ld bc, 4
   ld e, $20
   ld a, 1
@@ -110,7 +110,7 @@ TinpetNamingScreenMapScreenAndPrepareSpritesState::
   call $259C
   call $519F
   push hl
-  call GetDefaultTinpetNameAddress
+  call GetDefaultMedalNameAddress
   pop de
   ld bc, 8
   call $04F9
@@ -146,7 +146,7 @@ TinpetNamingScreenMapScreenAndPrepareSpritesState::
   call $33B2
   jp IncNamingScreenSubSubStateIndex
 
-TinpetNamingScreenFadeInState::
+MedalNamingScreenFadeInState::
   ld de, $C1E0
   call $33B7
   ld de, $C220
@@ -160,7 +160,7 @@ TinpetNamingScreenFadeInState::
   ld [W_MainScriptExitMode], a
   jp IncNamingScreenSubSubStateIndex
 
-TinpetNamingScreenCopyNameState::
+MedalNamingScreenCopyNameState::
   ld a, [$C762]
   call $3555
   ld hl, $30
@@ -184,7 +184,7 @@ TinpetNamingScreenCopyNameState::
   call memcpy
   jp IncNamingScreenSubSubStateIndex
 
-GetDefaultTinpetNameAddress::
+GetDefaultMedalNameAddress::
   ld a, [$C762]
   cp 0
   jr z, .withinBoundaries
@@ -198,21 +198,21 @@ GetDefaultTinpetNameAddress::
   ret
 
 .table
-  dw DefaultTinpetNameA, DefaultTinpetNameB, DefaultTinpetNameC
+  dw DefaultMedalNameA, DefaultMedalNameB, DefaultMedalNameC
 
 ; Format below is 8 bytes of zero-padded text, one byte for text length, and another for cursor position, or (length*8)+$50.
 
-DefaultTinpetNameA::
+DefaultMedalNameA::
   db $2B, $08, $0C, $37, $03, $00, $00, $00
   db 5
   db $78
 
-DefaultTinpetNameB::
+DefaultMedalNameB::
   db $22, $10, $7D, $EE, $00, $00, $00, $00
   db 4
   db $70
 
-DefaultTinpetNameC::
+DefaultMedalNameC::
   db $00, $00, $00, $00, $00, $00, $00, $00
   db 0
   db $50
