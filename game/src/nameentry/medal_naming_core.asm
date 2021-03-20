@@ -107,7 +107,7 @@ MedalNamingScreenMapScreenAndPrepareSpritesState::
   ld hl, $9843
   ld bc, W_NewListItemBufferArea
   ld a, 5
-  call $259C
+  call PutStringFixedLength
   call $519F
   push hl
   call GetDefaultMedalNameAddress
