@@ -677,6 +677,7 @@ VWFResetForNewline::
   ret
 
 VWFEmptyDrawingRegion::
+  VRAMSwitchToBank1
   ld c, 4
 
 .loop
@@ -696,6 +697,7 @@ VWFEmptyDrawingRegion::
   jr nz, .loop
   dec b
   jr nz, VWFEmptyDrawingRegion
+  VRAMSwitchToBank0
   ret
 
 VWFEmptyMessageBoxTilemapLine::
@@ -759,7 +761,7 @@ VWFDrawStringInitContinued::
   ld [W_VWFTileBaseIdx], a
   ld a, l
   ld h, b
-  ld h, c
+  ld l, c
   ld c, a
   xor a
   ld [W_VWFOldTileMode], a
@@ -956,7 +958,7 @@ VWFWriteCharLimited::
 
   inc a
   cp b
-  jr c, VWFWriteChar
+  jr c, VWFWriteCharBasic
   ld a, 1
   ld [W_VWFDiscardSecondTile], a
   jr VWFWriteCharBasic

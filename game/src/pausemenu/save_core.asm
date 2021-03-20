@@ -44,21 +44,16 @@ SaveMenuDrawingState::
 SaveMenuMappingState::
   ld bc, 0
   ld e, $50
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld bc, 0
   ld e, $50
-  ld a, 0
+  xor a
   call WrapDecompressAttribmap0
   ld bc, W_PlayerName
-  ld a, 8
-  call GetTileBasedCentringOffset
-  ld d, 0
-  ld e, a
-  ld hl, $9823
-  add hl, de
-  ld a, 8
-  call PutStringVariableLength
+  ld de, $9823
+  ld h, $74
+  call VWFDrawStringCentredFullAddress8Tiles
   call $5360
   call $5388
   call $53BC
@@ -96,6 +91,10 @@ SaveMenuInputHandlerState::
   ld a, 8
   ld [W_CoreSubStateIndex], a
   ret
+.end
+REPT $5328 - .end
+  nop
+ENDR
 
 SECTION "Save Menu State Machine 2", ROMX[$532F], BANK[$06]
 SaveMenuPrepareScriptEngineState::

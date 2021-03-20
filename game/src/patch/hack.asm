@@ -70,3 +70,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MenuStartScreen, $9010 ; 1
   TilemapTilesetTableEntry MenuMainGame, $9010 ; 2
   TilemapTilesetTableEntry OptionYesNo, $97C0 ; 3
+  TilemapTilesetTableEntry InfoSaveScreen, $9120 ; 4 (Loaded with main menu)

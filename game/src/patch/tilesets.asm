@@ -48,3 +48,4 @@ SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
   PatchTilesetEntry MenuStartScreen
   PatchTilesetEntry MenuMainGame
   PatchTilesetEntry OptionYesNo
+  PatchTilesetEntry InfoSaveScreen
