@@ -65,9 +65,14 @@ TilemapLoadTileset:
   ret
 .table
   ; TilemapTilesetTableEntry Tileset Name, Load Address
-  ; Dialog uses $8000 to $8A10, leaving $8A20 to $8B90 and $9010 to $97F0 available
+  ; Dialog uses $8000 to $8A10
+  ; This leaves $8A20 to $8B90 and $9010 to $97F0 available
   ; Tilemap format requires that these entries are referenced at index-1
   TilemapTilesetTableEntry MenuStartScreen, $9010 ; 1
   TilemapTilesetTableEntry MenuMainGame, $9010 ; 2
   TilemapTilesetTableEntry OptionYesNo, $97C0 ; 3
   TilemapTilesetTableEntry InfoSaveScreen, $9120 ; 4 (Loaded with main menu)
+  TilemapTilesetTableEntry InputNameScreen, $8A20 ; 5
+  TilemapTilesetTableEntry InputNameCharacterMap1, $8A80 ; 6 (Swapped between 1 and 2, with InputNameScreen)
+  TilemapTilesetTableEntry InputNameCharacterMap2, $8A80 ; 7
+  TilemapTilesetTableEntry InputNamePlayerName, $8AC0 ; 8
