@@ -137,7 +137,7 @@ VWFDrawStringMeasureString::
 
 .loop
   call VWFDrawStringSwitchToStringBank
-  ld a, [hli]
+  ld a, [hl]
   cp $CB
   jr z, .checkLimits
   ld [W_VWFCurrentLetter], a
@@ -160,7 +160,9 @@ VWFDrawStringLoop::
   ld [W_VWFCurrentLetter], a
   ld a, BANK(VWFWriteCharLimited)
   rst $10
+  push hl
   call VWFWriteCharLimited
+  pop hl
   jr VWFDrawStringLoop
 
 .exit
@@ -392,12 +394,12 @@ VWFControlCodeCC:: ; End code.
   ld a, 7
   ldh [$FFA1], a
   call VWFControlCodeCCCrossBank2086
-  call VWFControlCodeCCTileRestoreHelper
+  call VWFEmptyMessageBoxTilemapLine
   jp .exitCodeCommon
 
 .exitCode1
   call VWFControlCodeCCCrossBank2086
-  call VWFControlCodeCCTileRestoreHelper
+  call VWFEmptyMessageBoxTilemapLine
   jp .exitCodeCommon
 
 .exitCode2
@@ -473,13 +475,6 @@ VWFControlCodeCC:: ; End code.
 .continueIntoState1
   ld a, 1
   ld [W_MainScriptCCSubState], a
-  ret
-
-VWFControlCodeCCTileRestoreHelper::
-  call VWFEmptyMessageBoxTilemapLine
-  VRAMSwitchToBank1
-  Load1BPPTileset $8800, PatchTilesetStartOldFontTiles1, PatchTilesetEndOldFontTiles1
-  VRAMSwitchToBank0
   ret
 
 VWFControlCodeCD:: ; Newline code.
