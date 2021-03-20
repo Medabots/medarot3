@@ -25,10 +25,11 @@ if os.path.isfile(prebuilt):
 with open(input_file, 'r', encoding='utf-8-sig') as f:
     mode = f.readline().strip().strip('[]').split('|')
     mode[0] = int(mode[0], 16)
+    is_compressed = mode[0] & 3
     if len(mode) == 2:
         mode[0] |= int(mode[1], 16) << 1
     tmap = [mode[0]]
-    if mode[0] & 3:
+    if is_compressed:
         text = []
         for line in f:
             b = utils.txt2bin(line, char_table)

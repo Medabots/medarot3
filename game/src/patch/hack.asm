@@ -24,10 +24,9 @@ HackPredefTable:
   dw TilemapLoadTileset ; 0
 
 
-
 TilemapTilesetTableEntry: MACRO
   ; Number of Tiles, Tileset, Load Offset
-  dbww (\2 - \1)/$8, \1, \3
+  dbww (PatchTilesetEnd\1 - PatchTilesetStart\1)/$8, PatchTilesetStart\1, \2
 ENDM
 ; c == table index
 TilemapLoadTileset:
@@ -65,5 +64,9 @@ TilemapLoadTileset:
   pop de
   ret
 .table
-  ; TilemapTilesetTableEntry Tileset Start Address, Tileset End Address, Load Offset
-  TilemapTilesetTableEntry PatchTilesetStartContinueNewGame, PatchTilesetEndContinueNewGame, $9010
+  ; TilemapTilesetTableEntry Tileset Name, Load Address
+  ; Dialog uses $8000 to $8A10, leaving $8A20 to $8B90 and $9010 to $97F0 available
+  ; Tilemap format requires that these entries are referenced at index-1
+  TilemapTilesetTableEntry MenuStartScreen, $9010 ; 1
+  TilemapTilesetTableEntry MenuMainGame, $9010 ; 2
+  TilemapTilesetTableEntry OptionYesNo, $97C0 ; 3

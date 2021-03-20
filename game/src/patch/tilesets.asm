@@ -33,19 +33,18 @@ Load1BPPTiles::
   jr nz, Load1BPPTiles
   ret
 
+; PatchTilesetEntry FontName
+PatchTilesetEntry: MACRO
+PatchTilesetStart\1::
+  INCBIN "./build/tilesets/patch/\1.1bpp"
+PatchTilesetEnd\1::
+ENDM
+
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
-PatchTilesetStartEntryFont::
-  INCBIN "build/tilesets/patch/EntryFont.1bpp"
-PatchTilesetEndEntryFont::
-PatchTilesetStartOldFontTiles0::
-  INCBIN "build/tilesets/patch/OldFontTiles0.1bpp"
-PatchTilesetEndOldFontTiles0::
-PatchTilesetStartOldFontTiles1::
-  INCBIN "build/tilesets/patch/OldFontTiles1.1bpp"
-PatchTilesetEndOldFontTiles1::
-PatchTilesetStartOldFontTiles2::
-  INCBIN "build/tilesets/patch/OldFontTiles2.1bpp"
-PatchTilesetEndOldFontTiles2::
-PatchTilesetStartContinueNewGame::
-  INCBIN "build/tilesets/patch/ContinueNewGame.1bpp"
-PatchTilesetEndContinueNewGame::
+  PatchTilesetEntry EntryFont
+  PatchTilesetEntry OldFontTiles0
+  PatchTilesetEntry OldFontTiles1
+  PatchTilesetEntry OldFontTiles2
+  PatchTilesetEntry MenuStartScreen
+  PatchTilesetEntry MenuMainGame
+  PatchTilesetEntry OptionYesNo
