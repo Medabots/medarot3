@@ -39,15 +39,15 @@ PlayerNamingScreenInitState::
   call $3413
   call $343B
   call $3475
-  ld hl, $C720
-  ld bc, $80
+  ld hl, W_HasSaveData
+  ld bc, $0080
   call memclr
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld a, 2
+  ld a, $02 ; 'イ'
   ld [hli], a
-  ld a, $34
+  ld a, $34 ; 'ッ'
   ld [hli], a
-  ld a, 7
+  ld a, $07 ; 'キ'
   ld [hli], a
   xor a
   ld [hli], a
@@ -56,7 +56,7 @@ PlayerNamingScreenInitState::
   ld [hli], a
   ld [hli], a
   ld [hli], a
-  ld a, 3
+  ld a, 3 ; Initial Name Length
   ld [W_NamingScreenEnteredTextLength], a
   xor a
   ld [$C761], a
@@ -131,21 +131,21 @@ PlayerNamingScreenMapScreenAndPrepareSpritesState::
   call WrapDecompressTilemap0
   call $51AD
   call $519F
-  ld a, 2
+  ld a, $02 ; 'イ'
   di
   push af
   rst $20
   pop af
   ld [hli], a
   ei
-  ld a, $34
+  ld a, $34 ; 'ッ'
   di
   push af
   rst $20
   pop af
   ld [hli], a
   ei
-  ld a, 7
+  ld a, $07 ; 'キ'
   di
   push af
   rst $20
