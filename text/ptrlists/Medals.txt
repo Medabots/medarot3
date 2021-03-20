@@ -1,8 +1,8 @@
 (1, [203], [(None, None)], [False], None, None)
 30
 -1
-クワガタ
-カブト
+Kuwagata
+Kabuto
 ザウルス
 ビ-クル
 バ-ド
