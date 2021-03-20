@@ -101,13 +101,14 @@ MedalNamingScreenMapScreenAndPrepareSpritesState::
   ld [W_ListItemIndexForBuffering], a
   ld b, $B
   ld c, 6
-  ld a, 0
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9843
+  ld de, $9843
   ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  ld h, $80
+  call VWFDrawStringLeftFullAddress
   call $519F
   push hl
   call GetDefaultMedalNameAddress
@@ -128,7 +129,6 @@ MedalNamingScreenMapScreenAndPrepareSpritesState::
   call $33B2
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 1
   ld [$C220], a
   ld a, $11
   ld [$C221], a
@@ -216,3 +216,7 @@ DefaultMedalNameC::
   db $00, $00, $00, $00, $00, $00, $00, $00
   db 0
   db $50
+.end
+REPT $5838 - .end
+  nop
+ENDR
