@@ -671,8 +671,15 @@ VWFResetForNewline::
   pop hl
   ret
 
+
+VWFEmptyMappingRegion::
+  VRAMSwitchToBank0
+  jr VWFEmptyDrawingRegion.outerLoop
+
 VWFEmptyDrawingRegion::
   VRAMSwitchToBank1
+
+.outerLoop
   ld c, 4
 
 .loop
@@ -691,17 +698,17 @@ VWFEmptyDrawingRegion::
   dec c
   jr nz, .loop
   dec b
-  jr nz, VWFEmptyDrawingRegion
+  jr nz, .outerLoop
   VRAMSwitchToBank0
   ret
 
 VWFEmptyMessageBoxTilemapLine::
   ld hl, $9C21
   ld b, 1
-  call VWFEmptyDrawingRegion
+  call VWFEmptyMappingRegion
   ld l, $61
   ld b, 1
-  call VWFEmptyDrawingRegion
+  call VWFEmptyMappingRegion
   di
 
 .wfb
