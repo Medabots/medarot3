@@ -107,7 +107,7 @@ MedalNamingScreenMapScreenAndPrepareSpritesState::
   ld de, $9843
   ld bc, W_NewListItemBufferArea
   ld a, 5
-  ld h, $80
+  ld h, $AC
   call VWFDrawStringLeftFullAddress
   call $519F
   push hl
