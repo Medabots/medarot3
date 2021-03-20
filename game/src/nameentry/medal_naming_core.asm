@@ -202,14 +202,14 @@ GetDefaultMedalNameAddress::
 
 ; Format below is 8 bytes of zero-padded text, one byte for text length, and another for cursor position, or (length*8)+$50.
 
-DefaultMedalNameA:: ; Rokusho
-  db $2B, $08, $0C, $37, $03, $00, $00, $00
-  db 5
-  db $78
+DefaultMedalNameA::
+  db "R", "o", "k", "u", "s", "h", "o", $00
+  db 7
+  db $88
 
 DefaultMedalNameB::
   db "M", "e", "t", "a", "b", "e", "e", $00
-  db 8
+  db 7
   db $88
 
 DefaultMedalNameC::
