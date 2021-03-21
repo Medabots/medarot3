@@ -1057,7 +1057,6 @@ VWFDrawLetter::
   ld a, [W_VWFCurrentFont]
   add a
   add a
-  add a
   add h
   ld h, a
   add hl, bc
