@@ -80,6 +80,7 @@ link\
 titlemenu\
 pausemenu\
 townmap\
+battle\
 nameentry
 
 # Toolchain
