@@ -1,10 +1,10 @@
 (1, [203], [(None, None)], [False], None, None)
 16
 26332
-ひこう
-ふゆう
-たきゃく
-にきゃく
-しゃリょう
-せんしゃ
-せんすい
+Air
+Float
+Multi-Legged
+Two-Legged
+Wheels
+Tank
+Sea
