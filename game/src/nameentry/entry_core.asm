@@ -13,9 +13,9 @@ NamingEntryStateMachine::
   dw NamingEntryDoNothingState ; 00
   dw NamingEntryInputHandlerState ; 01
   dw NamingEntrySwitchCaseState ; 02
-  dw $4A5E ; 03
-  dw $4BC2 ; 04
-  dw $4BD2 ; 05
+  dw NamingEntryInputCharacterState ; 03
+  dw NamingEntryBackspaceState ; 04
+  dw NamingEntrySubmitNameState ; 05
   dw NamingEntryPlaceholderState ; 06
   dw NamingEntryPlaceholderState ; 07
   dw NamingEntryPlaceholderState ; 08
@@ -200,6 +200,257 @@ NamingEntryInputHandlerState::
 
 NamingEntrySwitchCaseState::
   call $5214
+  ld a, 1
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntryInputCharacterState::
+  ld a, 6
+  call ScheduleSoundEffect
+  ld a, [$C223]
+  add 8
+  ldh [$FF8F], a
+  ld a, [$C224]
+  add $10
+  add 4
+  ldh [$FF8E], a
+  call GetTileMappingAddressFromCoordinatesForNameEntry
+  di
+  rst $20
+  ld a, [hl]
+  ei
+  call NameEntryDiacriticCheck
+  cp 1
+  jp z, .dakuten
+  call NameEntryDiacriticCheck
+  cp 2
+  jp z, .handakuten
+  ld a, [W_NamingScreenEnteredTextLength]
+  cp 8
+  jp z, .exit
+  di
+  rst $20
+  ld a, [hl]
+  ei
+  ld [$C4EE], a
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld a, [W_NamingScreenEnteredTextLength]
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [$C4EE]
+  ld [hl], a
+  call $519F
+  ld a, [W_NamingScreenEnteredTextLength]
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [$C4EE]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [W_NamingScreenEnteredTextLength]
+  inc a
+  ld [W_NamingScreenEnteredTextLength], a
+  ld a, [$C1E3]
+  add 8
+  ld [$C1E3], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  call $51AD
+  jp .exit
+
+.dakuten
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jp z, .exit
+  dec a
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, h
+  ld [$C4E0], a
+  ld a, l
+  ld [$C4E1], a
+  ld a, [hl]
+  ld hl, DiacriticConversionTable
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hl]
+  or a
+  jp z, .exit
+  push af
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  pop af
+  push af
+  ld [hl], a
+  ld [$C4EE], a
+  call $539B
+  ld a, [W_NamingScreenEnteredTextLength]
+  dec a
+  ld b, 0
+  ld c, a
+  call $519F
+  add hl, bc
+  ld a, [$C4EE]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  pop af
+  ld b, a
+  push hl
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld a, b
+  ld [hl], a
+  pop hl
+  jp .exit
+
+.handakuten
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jp z, .exit
+  dec a
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, h
+  ld [$C4E0], a
+  ld a, l
+  ld [$C4E1], a
+  ld a, [hl]
+  ld hl, DiacriticConversionTable
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  inc hl
+  ld a, [hl]
+  or a
+  jp z, .exit
+  push af
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  pop af
+  push af
+  ld [hl], a
+  ld [$C4EE], a
+  call $539B
+  ld a, [W_NamingScreenEnteredTextLength]
+  dec a
+  ld b, 0
+  ld c, a
+  call $519F
+  add hl, bc
+  ld a, [$C4EE]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  pop af
+  ld b, a
+  push hl
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld a, b
+  ld [hl], a
+  pop hl
+  jp .exit
+
+.exit
+  ld a, 1
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ld a, [W_NamingScreenEnteredTextLength]
+  cp 8
+  ret nz
+  ld a, $87
+  ld [$C222], a
+  ld a, $70
+  ld [$C223], a
+  ld a, $80
+  ld [$C224], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 2
+  ld [$C763], a
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ld a, 0
+  ld [$C1E0], a
+  ret
+
+NamingEntryBackspaceState::
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jp z, .exit
+  call $5235
+
+.exit
+  ld a, 1
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntrySubmitNameState::
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jp z, .cannotAcceptName
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld b, 8
+  xor a
+  ld d, a
+
+.loop
+  ld a, [hli]
+  or d
+  ld d, a
+  dec b
+  jp nz, .loop
+
+  ld a, d
+  or a
+  jp nz, .nameHasNonSpaceCharacters
+  call $5305
+  jp .cannotAcceptName
+
+.nameHasNonSpaceCharacters
+  ld a, 3
+  call ScheduleSoundEffect
+  ld a, 1
+  ld [W_MainScriptExitMode], a
+  xor a
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ld a, [W_NamingScreenEnteredTextLength]
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld [hl], $CB
+  ret
+
+.cannotAcceptName
   ld a, 1
   ld [W_NamingScreenSubSubSubStateIndex], a
   ret
