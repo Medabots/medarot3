@@ -9,4 +9,4 @@ Set Up
 Recover
 Cancel
 Transform
-Disrupt
+Interrupt
