@@ -1,97 +1,97 @@
 (2, [203, None], [(9, 0), (1, None)], [False, True], None, None)
 56
 31067
-ロボロボメダル\xcb 
+Rubberobo Medal\xcb
 \x00
-タマゴパック\xcb  
+Egg Carton\xcb
 \x00
 ミニミニマシ-ン\xcb
 \x00
-タウンマップ\xcb  
+Town Map\xcb
 \x01
-メダリンバッジ\xcb 
+メダリンバッジ\xcb
 \x00
-はなぞのバッジ\xcb 
+Rosewood Badge\xcb
 \x00
-ミニハンドル\xcb  
+ミニハンドル\xcb
 \x00
-ハチロウのメダル\xcb
+Hachiro's Medal\xcb
 \x00
 6かくかヘいせき\xcb
 \x00
-なふだ\xcb     
+Nametag\xcb
 \x00
 リかのきょうざい\xcb
 \x00
-コガネのはな\xcb  
+コガネのはな\xcb
 \x00
-マリンチケット\xcb 
+Ship Ticket\xcb
 \x00
-コガネのメダル\xcb 
+コガネのメダル\xcb
 \x00
-Tメダル\xcb    
+T Medal\xcb
 \x00
-Qメダル\xcb    
+Q Medal\xcb
 \x00
-Rメダル\xcb    
+R Medal\xcb
 \x00
-Sメダル\xcb    
+S Medal\xcb
 \x00
-Bカブトメダル\xcb 
+B Kabuto Medal\xcb
 \x00
-Bクワガタメダル\xcb
+B Kuwagata Medal\xcb
 \x00
-♥スト-ン\xcb   
+♥スト-ン\xcb
 \x00
-ラブレタ-\xcb   
+Love Letter\xcb
 \x00
-バブルチケット\xcb 
+バブルチケット\xcb
 \x00
-マ-マンのふく\xcb 
+マ-マンのふく\xcb
 \x0e
-マ-メイドのふく\xcb
+Mermaid Costume\xcb
 \x09
-♥ペンダント\xcb  
+♥Pendant\xcb
 \x00
-ブラックBOX\xcb 
+Black Box\xcb
 \x00
-カ-ドキ-\xcb   
+カ-ドキ-\xcb
 \x00
-こわれたメダル\xcb 
+Broken Medal\xcb
 \x00
-トランシ-バ-\xcb 
+Transceiver\xcb
 \x00
-COMPのカギ\xcb 
+COMP Key\xcb
 \x00
-COCKのカギ\xcb 
+COCK Key\xcb
 \x00
-MOVEのカギ\xcb 
+MOVE Key\xcb
 \x00
-DEVILのカギ\xcb
+DEVIL Key\xcb
 \x00
-うちゅうふく\xcb  
+Space Suit\xcb
 \x0a
-せんぼうきょう\xcb 
+Periscope\xcb
 \x00
-かぜのつばさ\xcb  
+Wings of Wind\xcb
 \x00
-Sバブルチケット\xcb
+Mini S. Wheel\xcb
 \x00
-パスカ-ド\xcb   
+パスカ-ド\xcb
 \x00
-パスポイント\xcb  
+パスポイント\xcb
 \x00
-パスワ-ド1\xcb  
+Password 1\xcb
 \x00
-パスワ-ド2\xcb  
+Password 2\xcb
 \x00
-パスワ-ド3\xcb  
+Password 3\xcb
 \x00
-パスワ-ド4\xcb  
+Password 4\xcb
 \x00
-おとこのこメダル\xcb
+Boy's Medal\xcb
 \x00
-スペ-スチケット\xcb
+Space Ticket\xcb
 \x00
-オプションパ-ツ\xcb
+Optional Parts\xcb
 \x00
