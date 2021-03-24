@@ -1,13 +1,13 @@
 (1, [203], [(None, None)], [False], None, None)
 16
 26266
-なぐる
-うつ
-がむしゃら
-ねらいうち
-まもる
-せっち
-なおす
-とくしゅ
-おうえん
-ぼうがい
+Strike
+Shoot
+Berserk
+Aim-Shot
+Defend
+Set-up
+Heal
+Special
+Support
+Interrupt
