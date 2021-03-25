@@ -1,154 +1,154 @@
 (1, [203], [(None, None)], [False], None, None)
 256
 18033
-ピ-
-スカイプテラ
-フライイ-グル
-フライファルコン
-ヤングスパロ-
-オ-ルドワイズ
-ブラックロ-バ-
-セミシケ-ド
-ヘッドロ-カスト
-スト-ルボ-ト
-ジャッカル
-ゴ-ジャイン
-スィ-カマ-
-ナ-バスバ-ド
-チェアピクシ-
-ブラッドストック
-ホワイトグラウス
-メダジュピタ-
-ビ-トブレス
-ネオさくらちゃん
-フライスクワイア
-シュリンプレッサ
-リンボマンボ
-スパイン
-G.O.デス
-キュ-
-チェンジリング
-パカット
-チェンジガ-ゴ-
-フ-ドウィッチ-
-フロ-トスピナ-
-クライバンシ-
-メダマ-ズ
-ゴッドエンペラ-
-ナチュラリ-
-トリロバイド
-マンマンモス
-グランシア
-フライトラップ
-ハムエニシ-ン
-ヘロケロベロス
-デュラホ-ス
-ダニン
-シラミン
-ノミン
-リトルディア
-ノットタッチ
-スティドリア-ド
-リンクリケット
-メダア-ス
-ロクショウ
-メタビ-
-スミロドナッド
-ウォ-バニット
-カンタロス
-ア-クビ-トル
-エイシイスト2
-アンビギュアス2
-アサルトティラノ
-バンチュ-
-パ-プルカ-ラ-
-ワイヤエイリアン
-ダッシュラプトル
-フリルフリリ-
-ブラックスタッグ
-スカイカ-ゴ
-プレミアム2K
-ジェニアス
-ガンキング
-ロクショウプラス
-エクサイズ
-ライトチ-タ-
-ストレイウォルフ
-ヴェイパ-レ-ル
-メタビ-プラス
-ユニトリス
-ブラックビ-トル
-バサルト
-ブラウンバイソン
-ロンガン
-オ-トクル-ズ
-パスグ-ル
-ラストセ-ラ-
-ブレイブナ-ス
-ノクトキャット
-ギャラントレディ
-バニ-マインド
-ライザ
-マルシェ
-ホリィオラクル
-ロイヤルメイド
-プリミロ-タス
-ハニ-フォ-ス
-メダサン
-メダム-ン
-メダコメット
-メダウラヌス
-メダネプチュ-ン
-メダプル-ト
-スフィンク
-ダ-クパンサ-
-プットキャット
-ツンドル
-ディアアイドル
-バイバイク-ン
-コノトラクタ-
-グレ-ドカブキ
-チルドシッタ-
-ハイジラフ
-ハンプキャメル
-ワンホイ-ル
-ゴ-ファン
-センチペイド
-ヘアリインセクト
-ブレイブポリス
-ブレイブレスキュ
-ブレイブファイヤ
-ディストスタ-
-ポタトインセクト
-メダヴィ-ナス
-ア-スブラキオ
-リックタ-トル
-キングフラグ
-セットステゴ
-アタックトリケル
-でんしレンジャ-
-ミラクルミシン
-デングリロ-ル
-ランドリ-チ
-メダサタ-ン
-ブル-ハウンテン
-ソフトアメ-バ
-アネモネ
-シャインシ-ル
-ニャ-ブック
-スライムエ-ル
-クロノフォルム
-アホロ-トル
-バストロイヤ-
-シ-キャッチャ-
-シ-モンスタ-
-ウォ-タ-ビ-ト
-オイルスライダ-
-コ-シ-ホ-ス
-オ-ルドカ-プ
-ドルドルフィン
-ゴ-ルドフィン
-メイクイ-ン
-アグリィダック
-メダマ-キュリ-
-ファ-ストエ-ス
+Pii
+Sky-Ptera
+Fly-Eagle
+Fly-Falcon
+Youngsparrow
+Oldwise
+Blackrover
+Semi-Cicade
+Head Locust
+Stoleboat
+Jackal
+Gorgine
+Seekamar
+Nervous Bird
+Chair Pixie
+Bloodstock
+White Grouse
+Meda-Jupiter
+Beatbreath
+Neo Sakura-Chan
+Flysquire
+Shrimpresser
+Limbo-Mambo
+Spyne
+G.O. Death
+Cu
+Changeling
+Pakat
+Change-Gargo
+Hoodwitchy
+Float Spinner
+Cry Banshee
+Meda-Mars
+God Emperor
+Naturally
+Trilobide
+Man-Mammoth
+Grancia
+FlyTrap
+Ham-Anything
+Hellcerberus
+Dullahorse
+Danin
+Shiramin
+Nomin
+Littledeer
+Not-Touch
+Sti-Dryad
+RinCricket
+Meda-Earth
+Rokusho
+Metabee
+Smilodonad
+Warbonnet
+Kantaros
+Arcbeetle
+Atheist 2
+Ambiguous 2
+Assault-Tyranno
+Banchuu
+Purple Collar
+Wire-Alien
+Dash-Raptor
+Frill-Frilly
+Blackstag
+Skycargo
+Premium 2K
+Genius
+Gan-King
+Dorcus
+Excise
+Light Cheetah
+Straywolf
+Vapor-Rail
+Saikachis
+Unitris
+Blackbeetle
+Basalt
+Brownbison
+Lon-Gan
+Auto-Cruise
+Passghoul
+Last Sailor
+Bravenurse
+Noctocat
+Gallant Lady
+Bunnymind
+Riza
+Marche
+Holy Oracle
+Royal Maid
+Primi-Lotus
+Honeyforce
+Meda-Sun
+Meda-Moon
+Meda-Comet
+Meda-Uranus
+Meda-Neptune
+Meda-Pluto
+Sphink
+Darkpanther
+Put-Cat
+Tundre
+Dear Idol
+Bi-Bikoon
+Konotractor
+Grade Kabuki
+Childsitter
+High-Giraffe
+Humpcamel
+Onewheel
+Go-Fan
+Centipade
+Hairy-Insect
+Brave Police
+Brave Rescue
+Brave Fire
+Diststar
+Potato-Insect
+Meda-Venus
+Earth-Brachio
+Rickturtle
+King Flag
+Set-Stego
+Attack-Tricer
+Denshi Ranger
+Miracle Machine
+Denguri Roll
+Landreach
+Meda-Saturn
+Blue Hountain
+Soft Amoeba
+Anemone
+Shine Seal
+Nya-Buck
+Slime Eel
+Kronoform
+Axolotl
+Basstroyer
+Sea-Catcher
+Sea-Monster
+Water-Beat
+Oil Slider
+Co-Seahorse
+Old Carp
+Dol-Dolphin
+Goldfin
+Mayqueen
+Uglyduck
+Meda-Mercury
+First Ace
