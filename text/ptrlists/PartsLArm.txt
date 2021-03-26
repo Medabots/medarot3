@@ -2,307 +2,307 @@
 256
 27372
 RAP-13\xcb
-ドロップブロ-\xcb  
+DROP BLOW\xcb  
 PTL-13\xcb
-ヤンクソ-ド\xcb   
+YOUNG SWORD\xcb   
 EGL-03\xcb
-リ-クボックス\xcb  
+LEAK BOX\xcb  
 HWK-03\xcb
-バ-ンカプセル\xcb  
+BURN CAPSULE\xcb  
 SWL-03\xcb
-ナットルック\xcb   
+NOT LOOK\xcb   
 PRN-03\xcb
-ティッパ-\xcb    
+TIPPER\xcb    
 RVN-03\xcb
-クレ-バ-\xcb    
+CRAVER\xcb    
 CCD-03\xcb
-ラ-ジノイジ-\xcb  
+LARGE NOISY\xcb  
 GRH-03\xcb
-コンジュ-マ-\xcb  
+CONSUMER\xcb  
 CHC-03\xcb
-フレイマ-\xcb    
+FLAMER\xcb    
 TJK-03\xcb
-ホ-ルハンドル\xcb  
+WHOLE HANDLE\xcb  
 PCK-03\xcb
-サックアウタ-\xcb  
+SUCK OUTER\xcb  
 SLN-13\xcb
-コ-ドマフラ-\xcb ア
+CHORD MUFFLER\xcb ア
 CNR-03\xcb
-フィ-ルナ-ブ\xcb ア
+FEEL NERVE\xcb ア
 PIC-03\xcb
-バイリ-\xcb    ア
+VILELY\xcb    ア
 MQT-03\xcb
-インホ-ル\xcb   ア
+INHOLE\xcb   ア
 PTM-03\xcb
-ビ-スイット\xcb  ア
+BE SUIT\xcb  ア
 JPT-03\xcb
-アッシュ\xcb    ア
+ASH\xcb    ア
 CRN-03\xcb
-リペイド\xcb    ア
+REPAID\xcb    ア
 DFL-13\xcb
-フサフサ\xcb     
+SHAKE-SHAKE\xcb     
 FLS-03\xcb
-バグフリッタ-\xcb  
+BAG FLITTER\xcb  
 ISE-03\xcb
-ゲ-マ-\xcb     
+GAMER\xcb     
 MAN-03\xcb
-インバリッド\xcb   
+INVALID\xcb   
 CHS-03\xcb
-キャッチプレ-ト\xcb 
+CATCH PLATE\xcb 
 DGD-03\xcb
-デスシックル\xcb   
+DEATH SICKLE\xcb   
 QPD-03\xcb
-ハッピ-アロ-\xcb  
+HAPPY ARROW\xcb  
 VBL-03\xcb
-ウェイタ-\xcb    
+WEIGHTER\xcb    
 DVL-03\xcb
-ペケット\xcb     
+PEKET\xcb     
 GAG-03\xcb
-タ-ンスト-ン\xcb  
+TURN STONE\xcb  
 WCH-13\xcb
-ト-ドボ-ル\xcb  ア
+TOAD BALL\xcb  ア
 SPN-03\xcb
 ASBM\xcb    ア
 BCY-03\xcb
-シュリ-カ-\xcb  ア
+SHRIEKER\xcb  ア
 MRS-03\xcb
-マウントボ-ダ-\xcbア
+MOUNT BORDER\xcbア
 WEA-23\xcb
-デスレ-ザ-\xcb   
+DEATH LASER\xcb   
 BOW-03\xcb
-スライダ-\xcb    
+SLIDER\xcb    
 TLB-03\xcb
-スピネット\xcb    
+SPINETTE\xcb    
 MMT-03\xcb
-バックラッシュ\xcb  
+BUCK RUSH\xcb  
 SRC-03\xcb
-センスドライブ\xcb  
+SENSE DRIVE\xcb  
 IVP-03\xcb
-ハントプラント\xcb  
+HUNT PLANT\xcb  
 HMS-03\xcb
-タイハンド\xcb    
+TIE HAND\xcb    
 KBS-03\xcb
-メルトファング\xcb  
+MELT FANG\xcb  
 DHN-03\xcb
-ハンドチャ-ジ\xcb  
+HAND CHARGE\xcb  
 TIC-03\xcb
-チュ-イン\xcb    
+CHEWIN'\xcb    
 LOS-03\xcb
-プッスン\xcb     
+SPUTTERING\xcb     
 FLA-03\xcb
-カッキキ-\xcb    
+SCRATCHY\xcb    
 FAW-03\xcb
-サッチフォ-ス\xcb  
+SUCH FORCE\xcb  
 TMN-03\xcb
-トラップポ-チ\xcb ア
+TRAP POUCH\xcb ア
 DRI-03\xcb
-ギャザリング\xcb  ア
+GATHERING\xcb  ア
 CRK-03\xcb
-ポッドスピ-チ\xcb ア
+POD SPEECH\xcb ア
 ETH-03\xcb
-リブウォ-タ-\xcb ア
+LIVE WATER\xcb ア
 KWG-23\xcb
-ピコペコハンマ-\xcb 
+PICOPECO HAMMER\xcb 
 KBT-23\xcb
-サブマシンガン\xcb  
+SUBMACHINEGUN\xcb  
 DDO-03\xcb
-ストロ-ハンマ-\xcb 
+STRAW HAMMER\xcb 
 KLN-03\xcb
-レンジシュ-タ-\xcb 
+RANGE SHOOTER\xcb 
 KBT-33\xcb
-マシンガンかい\xcb  
+IMPROVED MACHINEGUN\xcb  
 KBT-43\xcb
-エクスプロ-ド\xcb  
+EXPLODE\xcb  
 LHB-13\xcb
-ブロウパイプ\xcb   
+BLOWPIPE\xcb   
 MWB-13\xcb
-リンクス\xcb     
+LINKS\xcb     
 TIR-13\xcb
-ストライクコ-ル\xcb 
+STRIKE CALL\xcb 
 BAN-13\xcb
-レフトメリケン\xcb  
+LEFT FIST\xcb  
 DOG-23\xcb
-ロ-ルバレル\xcb   
+ROLL BARREL\xcb   
 ALN-13\xcb
-オッドア-ム\xcb   
+ODD ARM\xcb   
 VER-03\xcb
-クイックル\xcb    
+QUICKLY\xcb    
 FLL-03\xcb
-ロスタ-\xcb     
+ROSTER\xcb     
 KWG-38\xcb
-ブラックビ-ト\xcb ア
+BLACK BEAT\xcb ア
 APL-03\xcb
-エアフィン\xcb    
+AIR FIN\xcb    
 PGM-03\xcb
-シルバ-フィング\xcb 
+SILVER FINGER\xcb 
 KRN-03\xcb
-ゴ-ルデンロッド\xcb 
+GOLDENROD\xcb 
 TKG-03\xcb
-ディシジョン\xcb   
+DECISION\xcb   
 KWG-33\xcb
-インテンスビ-ト\xcb 
+INTENSE BEAT\xcb 
 STG-13\xcb
-ソリッドハンマ-\xcb 
+SOLID HAMMER\xcb 
 CHT-03\xcb
-コンジュ-ム\xcb   
+CONSUME\xcb   
 WLF-03\xcb
-オ-キシリィ\xcb   
+AUXILIARY\xcb   
 RCM-03\xcb
-スチ-ムパイプ\xcb  
+STEAM PIPE\xcb  
 KBT-33\xcb
-ブラスタ-\xcb    
+BLASTER\xcb    
 KLN-13\xcb
-ダクトシュ-タ-\xcb 
+DUCT SHOOTER\xcb 
 KBT-38\xcb
-ブラックブラスタ\xcbア
+BLACK BLASTER\xcbア
 GNB-03\xcb
-アイアンタ-トル\xcb 
+IRON TURTLE\xcb 
 BAF-03\xcb
-アンガス\xcb     
+ANGUS\xcb     
 SRU-03\xcb
-プラクトピック\xcb  
+PLECTOPIC\xcb  
 SHP-03\xcb
-ウォ-タポ-ト\xcb  
+WATER PORT\xcb  
 GHL-03\xcb
-スポイラ-\xcb    
+SPOILER\xcb    
 SLR-23\xcb
-ファイヤ-ア-ム\xcbア
+FIREARM\xcbア
 NAS-23\xcb
-モバイルカプセル\xcbア
+MOBILE CAPSULE\xcbア
 CAT-23\xcb
-アジルブロ-\xcb  ア
+AGILE BLOW\xcb  ア
 VAL-13\xcb
-グレイスシ-ルド\xcbア
+GRACE SHIELD\xcbア
 BNY-13\xcb
-フル-ツジュ-ス\xcbア
+FRUIT JUICE\xcbア
 GRW-03\xcb
-ユニシャベル\xcb  ア
+UNISHOVEL\xcb  ア
 CMP-13\xcb
-ステップフィ\xcb  ア
+STEP FE\xcb  ア
 MIK-03\xcb
-ティア-プレ-ト\xcbア
+TEAR PLATE\xcbア
 MID-03\xcb
-フライパン\xcb   ア
+FRY PAN\xcb   ア
 LTS-03\xcb
-スポ-ン\xcb    ア
+SPAWN\xcb    ア
 LDB-03\xcb
-サンスタリ-\xcb  ア
+THREE STARRY\xcb  ア
 SUN-03\xcb
-カグホイ-ル\xcb  ア
+COGWHEEL\xcb  ア
 MON-03\xcb
-フルム-ン\xcb   ア
+FULL MOON\xcb   ア
 HLY-03\xcb
-クリップアイス\xcb ア
+CLIPPED ICE\xcb ア
 UNS-03\xcb
-ホ-ルドダウン\xcb ア
+HOLD DOWN\xcb ア
 NEP-03\xcb
-ホイック\xcb    ア
+WHICK\xcb    ア
 PLT-03\xcb
-ハンドルゲ-ト\xcb ア
+HANDLE GATE\xcb ア
 SZK-03\xcb
-ワイズオ-プン\xcb ア
+WISE OPEN\xcb ア
 PNT-03\xcb
-エフェクティ-ン\xcbア
+EFFECTING\xcbア
 NEK-03\xcb
-ネコグロ-ブ\xcb  ア
+CAT GLOVE\xcb  ア
 BYC-03\xcb
-ストリップクロ-\xcbア
+STRIP CLAW\xcbア
 IDL-03\xcb
-マ-ダ-ヨ-ヨ-\xcbア
+MURDER YOYO\xcbア
 MTC-03\xcb
-ノアボイド\xcb    
+NO-AVOID\xcb    
 CVL-03\xcb
-シャクレ-ン\xcb   
+CONCAVE CRANE\xcb   
 KAB-03\xcb
-アクティング\xcb   
+ACTING\xcb   
 BST-03\xcb
-ドンドン\xcb     
+DON DON\xcb     
 GRF-03\xcb
-インスペクタ-\xcb  
+INSPECTOR\xcb  
 CML-03\xcb
-ファットセ-ブ\xcb  
+FAT SAVE\xcb  
 BIC-03\xcb
-ペダルホ-\xcb    
+PEDAL CANNON\xcb    
 ECF-03\xcb
-ハイスピ-ド\xcb   
+HI SPEED\xcb   
 CTP-03\xcb
-ア-スクリ-プ\xcb  
+EARTH CREEP\xcb  
 HCT-03\xcb
-キンキ-ヘア\xcb   
+KINKY HAIR\xcb   
 PLC-03\xcb
-キャプチャ-\xcb   
+CAPTURE\xcb   
 RSC-03\xcb
-レスキュ-\xcb    
+RESCUE\xcb    
 FFC-03\xcb
-ディスチャ-ジ\xcb  
+DISCHARGE\xcb  
 RAY-23\xcb
-フリ-ビ-ム\xcb   
+FLEE BEAM\xcb   
 GCT-03\xcb
-アテンダ-スキン\xcbア
+ATTENDER SKIN\xcbア
 VNS-03\xcb
-ジャグポット\xcb  ア
+JUG POT\xcb  ア
 BRA-13\xcb
-グロ-マッシャ-\xcb 
+GLOW MASHER\xcb 
 TOT-23\xcb
-レストレ-ザ-\xcb  
+REST LASER\xcb  
 HSC-03\xcb
-ショ-サ-\xcb    
+SHOWSER\xcb    
 STE-03\xcb
-ダンプセット\xcb   
+DUMP SET\xcb   
 TOR-03\xcb
-トリプアタック\xcb  
+TRIP ATTACK\xcb  
 MWO-03\xcb
-マグネッティ-\xcb  
+MAGNETTY\xcb  
 ESM-03\xcb
-スピコン\xcb     
+SPICON\xcb     
 CCL-03\xcb
-バルブ\xcb      
+BULB\xcb      
 EWM-03\xcb
-マニュレ\xcb     
+MANURE\xcb     
 STN-03\xcb
-フ-プニング\xcb  ア
+HOOPENING\xcb  ア
 WHL-03\xcb
-スプライン\xcb    
+SPLINE\xcb    
 AMB-03\xcb
-ミュセリッジ\xcb   
+MUCILAGE\xcb   
 SAM-03\xcb
-タイタイアップ\xcb  
+TIE-TIE UP\xcb  
 SEL-03\xcb
-モナモナ-チ\xcb   
+MONA-MONARCH\xcb   
 CFS-03\xcb
-テンブロ-\xcb    
+TEMBLOR\xcb    
 EEL-03\xcb
-ヒポポス\xcb     
+HIPOPOS\xcb     
 CRO-03\xcb
-オ-バ-パワ-\xcb  
+OVERPOWER\xcb  
 UPA-03\xcb
-サムフィン\xcb    
+SUM FIN\xcb    
 BBS-03\xcb
-サラウンディング\xcb 
+SURROUNDING\xcb 
 ARO-03\xcb
-シュリンプア-ム\xcb 
+SHRIMP ARM\xcb 
 HLG-03\xcb
-パペットワイヤ-\xcb 
+PUPPET WIRE\xcb 
 JWB-03\xcb
-オリエントハ-プ\xcb 
+ORIENT HARP\xcb 
 PSK-03\xcb
-デモリッシュ\xcb   
+DEMOLISH\xcb   
 SHS-03\xcb
-レプレス\xcb     
+REPRESS\xcb     
 CRP-03\xcb
-インネフシンテイ\xcb 
+INEFFICIENCY\xcb 
 DLP-03\xcb
-ゲットバック\xcb  ア
+GET BACK\xcb  ア
 GFS-03\xcb
-バスケットワ-ク\xcbア
+BASKET WORK\xcbア
 TQN-03\xcb
-インクリ-ズ\xcb  ア
+INCREASE\xcb  ア
 DUC-03\xcb
-フェザ-ダ-ン\xcb ア
+FEATHER DARN\xcb ア
 MRC-03\xcb
-ランサ-\xcb    ア
+LANCER\xcb    ア
 TJO-03\xcb
-ラストストライク\xcbア
+LAST STRIKE\xcbア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb

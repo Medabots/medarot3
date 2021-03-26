@@ -2,307 +2,307 @@
 256
 30485
 RAP-14\xcb
-エアポケット\xcb   
+AIR POCKET\xcb   
 PTL-14\xcb
-アリアルレッグ\xcb  
+AERIAL LEG\xcb  
 EGL-04\xcb
-フライイ-ガ-\xcb  
+FLY EAGER\xcb  
 HWK-04\xcb
-フライフォ-ン\xcb  
+FLY PHONE\xcb  
 SWL-04\xcb
-スパロ-テイル\xcb  
+SPARROW TAIL\xcb  
 PRN-04\xcb
-ツカモリ\xcb     
+FOREST HILL\xcb     
 RVN-04\xcb
-デュアルウォ-ク\xcb 
+DUAL WALK\xcb 
 CCD-04\xcb
-ピスピス\xcb     
+CHIRP CHIRP\xcb     
 GRH-04\xcb
-ホッパ-\xcb     
+HOPPER\xcb     
 CHC-04\xcb
-デベロッパ-\xcb   
+DEVELOPER\xcb   
 TJK-04\xcb
-チェンジブレ-ド\xcb 
+CHANGE BLADE\xcb 
 PCK-04\xcb
-フォルダ-\xcb    
+FOLDER\xcb    
 SLN-14\xcb
-ソンガ-\xcb    ア
+SONGER\xcb    ア
 CNR-04\xcb
-ウィ-カ-\xcb   ア
+WEAKER\xcb   ア
 PIC-04\xcb
-フラッシ-\xcb   ア
+FLASHY\xcb   ア
 MQT-04\xcb
-ストア-\xcb    ア
+STORE\xcb    ア
 PTM-04\xcb
-サマ-ブラウン\xcb ア
+SUMMER BROWN\xcb ア
 JPT-04\xcb
-ウォ-タフォ-ル\xcbア
+WATERFALL\xcbア
 CRN-04\xcb
-クレ-ン\xcb    ア
+CRANE\xcb    ア
 DFL-14\xcb
-フユ-ンバッグ\xcb  
+FLOATING BAG\xcb  
 FLS-04\xcb
-ド-ナツテン\xcb   
+DONUTS TEN\xcb   
 ISE-04\xcb
-シュリンプン\xcb   
+SHRIMPLIN\xcb   
 MAN-04\xcb
-コダカラン\xcb    
+TREASURED CHILD\xcb    
 CHS-04\xcb
-オカッケ-\xcb    
+CHASE SCENE\xcb    
 DGD-04\xcb
-カタッポ-\xcb    
+KATAPPO\xcb    
 QPD-04\xcb
-ストレッチャ\xcb   
+STRETCHER\xcb   
 VBL-04\xcb
-アンドアゲイン\xcb  
+AND AGAIN\xcb  
 DVL-04\xcb
-ポコット\xcb     
+POKOT\xcb     
 GAG-04\xcb
-キ-スト-ン\xcb   
+KEYSTONE\xcb   
 WCH-14\xcb
-パンタロン\xcb   ア
+PANTALOONS\xcb   ア
 SPN-04\xcb
 AATC\xcb    ア
 BCY-04\xcb
-テピッドウィンド\xcbア
+TEPID WIND\xcbア
 MRS-04\xcb
-マスタッチ\xcb   ア
+MUST-TOUCH\xcb   ア
 WEA-24\xcb
-デスクロ-ラ-\xcb  
+DEATH CRAWLER\xcb  
 BOW-04\xcb
-ペタヒ-ル\xcb    
+PETAL HEEL\xcb    
 TLB-04\xcb
-スキュラ\xcb     
+SCYLLA\xcb     
 MMT-04\xcb
-ザッツミ-ト\xcb   
+THAT'S MEAT\xcb   
 SRC-04\xcb
-フォ-ピ-ス\xcb   
+FOUR-PIECE\xcb   
 IVP-04\xcb
-ロ-ト\xcb      
+ROOT\xcb      
 HMS-04\xcb
-ア-ンノ\xcb     
+UNKNOW\xcb     
 KBS-04\xcb
-タイトルドア-\xcb  
+TITLE DOOR\xcb  
 DHN-04\xcb
-スカルホ-ス\xcb   
+SKULL HORSE\xcb   
 TIC-04\xcb
-マタトリッキ-\xcb  
+TRICKY AGAIN\xcb  
 LOS-04\xcb
-マタモグリン\xcb   
+CRAWLING IN AGAIN\xcb   
 FLA-04\xcb
-マタトッピ-\xcb   
+OFFBEAT AGAIN\xcb   
 FAW-04\xcb
-キッカ-\xcb     
+KICKER\xcb     
 TMN-04\xcb
-セグメンタ-\xcb  ア
+SEGMENTER\xcb  ア
 DRI-04\xcb
-スティメント\xcb  ア
+STAMENT\xcb  ア
 CRK-04\xcb
-ジャンプレッグ\xcb ア
+JUMP LEG\xcb ア
 ETH-04\xcb
-スペ-スシップ\xcb ア
+SPACESHIP\xcb ア
 KWG-24\xcb
-タタッカ-\xcb    
+TATACKER\xcb    
 KBT-24\xcb
-オチツカ-\xcb    
+OCHITSUKA\xcb    
 DDO-04\xcb
-シャ-プエッジ\xcb  
+SHARP EDGE\xcb  
 KLN-04\xcb
-アブダクタ-\xcb   
+ABDUCTOR\xcb   
 KBT-34\xcb
-オチツカ-かい\xcb  
+IMPROVED OCHITSUKA\xcb  
 KBT-44\xcb
-ファイヤワ-ク\xcb  
+FIREWORKS\xcb  
 LHB-14\xcb
-インコ-レント\xcb  
+INCOHERENT\xcb  
 MWB-14\xcb
-ク-ルダウン\xcb   
+COOL DOWN\xcb   
 TIR-14\xcb
-ダッシュレッグ\xcb  
+DASH LEG\xcb  
 BAN-14\xcb
-ワ-クシュ-ズ\xcb  
+WORK SHOES\xcb  
 DOG-24\xcb
-サポ-テイル\xcb   
+SUPPORTAIL\xcb   
 ALN-14\xcb
-オッドレッグ\xcb   
+ODD LEG\xcb   
 VER-04\xcb
-スタンドアロ-\xcb  
+STAND ARROW\xcb  
 FLL-04\xcb
-ハリヤ-\xcb     
+HARRIER\xcb     
 KWG-39\xcb
-ブラックフラック\xcbア
+BLACK FLACK\xcbア
 APL-04\xcb
-エアタ-ビン\xcb   
+AIR TURBINE\xcb   
 PGM-04\xcb
-プラチナフィング\xcb 
+PLATINUM FINGER\xcb 
 KRN-04\xcb
-キャメレパ-ド\xcb  
+CAMELEOPARD\xcb  
 TKG-04\xcb
-センテンス\xcb    
+SENTENCE\xcb    
 KWG-34\xcb
-ウィンドフラック\xcb 
+WIND FLACK\xcb 
 STG-14\xcb
-キ-ンエッジ\xcb   
+KEEN EDGE\xcb   
 CHT-04\xcb
-オンステディ\xcb   
+ON STEADY\xcb   
 WLF-04\xcb
-スト-ムウォ-ク\xcb 
+STORM WALK\xcb 
 RCM-04\xcb
-スチ-ムタ-ビン\xcb 
+STEAM TURBINE\xcb 
 KBT-34\xcb
-エンプレイス\xcb   
+ENPLACE\xcb   
 KLN-14\xcb
-ミグレイタ-\xcb   
+MIGRATOR\xcb   
 KBT-39\xcb
-ブラックプレイス\xcbア
+BLACK PLACE\xcbア
 GNB-04\xcb
-リタイヤ-\xcb    
+RETIRE\xcb    
 BAF-04\xcb
-ニ-キャップ\xcb   
+KNEECAP\xcb   
 SRU-04\xcb
-キ-ル\xcb      
+KEEL\xcb      
 SHP-04\xcb
-ウォ-タタ-ビン\xcb 
+WATER TURBINE\xcb 
 GHL-04\xcb
-ランシッド\xcb    
+RANCID\xcb    
 SLR-24\xcb
-ネイビ-ゲイル\xcb ア
+NAVY GALE\xcb ア
 NAS-24\xcb
-エプロンドレス\xcb ア
+APRON DRESS\xcb ア
 CAT-24\xcb
-ボ-クイック\xcb  ア
+BOW QUICK\xcb  ア
 VAL-14\xcb
-パラティマスタ-\xcbア
+PALADIN MASTER\xcbア
 BNY-14\xcb
-アサイドメ-ル\xcb ア
+ASIDE MAIL\xcb ア
 GRW-04\xcb
-ドンソック\xcb   ア
+SLOW-FOOTED\xcb   ア
 CMP-14\xcb
-マイフィ-ト\xcb  ア
+MY FEET\xcb  ア
 MIK-04\xcb
-ハカマ\xcb     ア
+HAKAMA\xcb     ア
 MID-04\xcb
-ピニ-\xcb     ア
+PINNY\xcb     ア
 LTS-04\xcb
-ブラッキ-\xcb   ア
+BLACKY\xcb   ア
 LDB-04\xcb
-スリ-スタ-\xcb  ア
+THREE STAR\xcb  ア
 SUN-04\xcb
-サンシャイン\xcb  ア
+SUNSHINE\xcb  ア
 MON-04\xcb
-キンコン\xcb    ア
+LOINCLOTH\xcb    ア
 HLY-04\xcb
-アミノス\xcb    ア
+AMINOS\xcb    ア
 UNS-04\xcb
-アイシクル\xcb   ア
+ICICLE\xcb   ア
 NEP-04\xcb
-エクスプレッサ-\xcbア
+EXPRESSOR\xcbア
 PLT-04\xcb
-エモ-ション\xcb  ア
+EMOTION\xcb  ア
 SZK-04\xcb
-フラワ-パ-ラ-\xcbア
+FLOWER PARLOUR\xcbア
 PNT-04\xcb
-レオパルス\xcb   ア
+LEOPARDUS\xcb   ア
 NEK-04\xcb
-ニャンマタ\xcb   ア
+MEOW FORK\xcb   ア
 BYC-04\xcb
-ドランカ-\xcb   ア
+DRUNKER\xcb   ア
 IDL-04\xcb
-モ-ドスカ-ト\xcb ア
+MODE SKIRT\xcb ア
 MTC-04\xcb
-オクタ-ン\xcb    
+OCTANE\xcb    
 CVL-04\xcb
-ド-ザ-\xcb     
+DOZER\xcb     
 KAB-04\xcb
-フラワ-ロ-ド\xcb  
+FLOWER ROAD\xcb  
 BST-04\xcb
-チャングルマ\xcb   
+KID CART\xcb   
 GRF-04\xcb
-ワイルダ-\xcb    
+WILDER\xcb    
 CML-04\xcb
-サンドバギ-\xcb   
+SAND BUGGY\xcb   
 BIC-04\xcb
-シャリ-ン\xcb    
+WHEELIN'\xcb    
 ECF-04\xcb
-コントボックス\xcb  
+CONTROL BOX\xcb  
 CTP-04\xcb
-ストリンガ-\xcb   
+STRINGER\xcb   
 HCT-04\xcb
-クロ-ラ-\xcb    
+CRAWLER\xcb    
 PLC-04\xcb
-パ-サ-\xcb     
+PURSUER\xcb     
 RSC-04\xcb
-リ-チャ-\xcb    
+REACHER\xcb    
 FFC-04\xcb
-カンバッカ-\xcb   
+CAN BACKER\xcb   
 RAY-24\xcb
-ストリ-トバギ-\xcb 
+STREET BUGGY\xcb 
 GCT-04\xcb
-キャタピ-\xcb   ア
+CATERPEE\xcb   ア
 VNS-04\xcb
-デイブレイク\xcb  ア
+DAYBREAK\xcb  ア
 BRA-14\xcb
-ア-スレッグ\xcb   
+EARTH LEG\xcb   
 TOT-24\xcb
-デュアルタンク\xcb  
+DUAL TANK\xcb  
 HSC-04\xcb
-キッショ-\xcb    
+YUCK\xcb    
 STE-04\xcb
-ナロ-レッグ\xcb   
+NARROW LEG\xcb   
 TOR-04\xcb
-クロ-ズレッグ\xcb  
+CLOSE LEG\xcb  
 MWO-04\xcb
-クイッククッカ-\xcb 
+QUICK-COOKER\xcb 
 ESM-04\xcb
-モチテ-\xcb     
+HANDLE\xcb     
 CCL-04\xcb
-ロ-ルキャタピ-\xcb 
+ROLL CATERPILLAR\xcb 
 EWM-04\xcb
-アンデリ-ト\xcb   
+UNDELETE\xcb   
 STN-04\xcb
-アウトライナ-\xcb ア
+OUTLINER\xcb ア
 WHL-04\xcb
-ハイタイド\xcb    
+HIGH TIDE\xcb    
 AMB-04\xcb
-フレイビ-\xcb    
+FLAVY\xcb    
 SAM-04\xcb
-プロクトロジ-\xcb  
+PROCTOLOGY\xcb  
 SEL-04\xcb
-タマワシ-\xcb    
+BESTOWED\xcb    
 CFS-04\xcb
-キャットフィ-\xcb  
+CATFI\xcb  
 EEL-04\xcb
-サ-フェイス\xcb   
+SURFACE\xcb   
 CRO-04\xcb
-ショウライナ-\xcb  
+SHOW LINER\xcb  
 UPA-04\xcb
-エクシ-ド\xcb    
+EXCEED\xcb    
 BBS-04\xcb
-レイクダスタ-\xcb  
+LAKE DUSTER\xcb  
 ARO-04\xcb
-バンピィフラット\xcb 
+BUMPY FLAT\xcb 
 HLG-04\xcb
-メニ-スレンダ-\xcb 
+MANY SLENDER\xcb 
 JWB-04\xcb
-アクアクロッチ\xcb  
+AQUA CROTCH\xcb  
 PSK-04\xcb
-スケ-タ-\xcb    
+SKATER\xcb    
 SHS-04\xcb
-ロ-ルテイル\xcb   
+ROLL TAIL\xcb   
 CRP-04\xcb
-フレクスクリュ-\xcb 
+FLEX SCREW\xcb 
 DLP-04\xcb
-フリッパ-\xcb   ア
+FLIPPER\xcb   ア
 GFS-04\xcb
-ライトフリル\xcb  ア
+LIGHT FRILL\xcb  ア
 TQN-04\xcb
-キャリ-ハンド\xcb ア
+CARRY HAND\xcb ア
 DUC-04\xcb
-エレガンシ-\xcb  ア
+ELEGANCY\xcb  ア
 MRC-04\xcb
-ハイドロフォイル\xcbア
+HYDROFOIL\xcbア
 TJO-04\xcb
-ペナルティ\xcb   ア
+PENALTY\xcb   ア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb
