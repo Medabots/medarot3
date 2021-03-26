@@ -76,3 +76,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry InputNameCharacterMap1, $8A80 ; 6 (Swapped between 1 and 2, with InputNameScreen)
   TilemapTilesetTableEntry InputNameCharacterMap2, $8A80 ; 7
   TilemapTilesetTableEntry InputNamePlayerName, $8AC0 ; 8
+  TilemapTilesetTableEntry ItemUseCancel, $97B0 ; 9
