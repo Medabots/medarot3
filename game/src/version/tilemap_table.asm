@@ -889,7 +889,7 @@ Tilemap01_06::
 Tilemap01_07::
   INCBIN "./build/tilemaps/0107.map"
 Tilemap01_08::
-  INCBIN "./build/tilemaps/0108.map"
+  INCBIN "./build/tilemaps/ItemYesNo.map"
 Tilemap01_10::
   INCBIN "./build/tilemaps/0110.map"
 Tilemap01_11::

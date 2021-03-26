@@ -240,7 +240,7 @@ PlayerNamingScreenTextEntryState::
   jp IncNamingScreenSubSubStateIndex
 
 .textEntryActive
-  call $48F7
+  call NamingEntryStateMachine
   ret
 
 PlayerNamingScreenCopyNameState::
