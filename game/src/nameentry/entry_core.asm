@@ -26,7 +26,7 @@ NamingEntryStateMachine::
   dw NamingEntryPlaceholderState ; 0D
   dw NamingEntryPlaceholderState ; 0E
   dw NamingEntryPlaceholderState ; 0F
-  dw $4C13 ; 10
+  dw NamingEntryBottomRowInputHandlerState ; 10
   dw $4CB2 ; 11
   dw $4CBB ; 12
   dw $4CF7 ; 13
@@ -148,7 +148,7 @@ NamingEntryInputHandlerState::
   ld a, [W_NamingScreenCursorPositionIndex]
   cp $FF
   jp z, .cursorPositionIsDoneOption
-  call $52D4
+  call NameEntryGetCursorPositionIndexDetailsAndPositionCursor
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ret
@@ -163,7 +163,7 @@ NamingEntryInputHandlerState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 0
-  ld [$C763], a
+  ld [W_NamingEntryBottomRowSelection], a
   ld a, $10
   ld [W_NamingScreenSubSubSubStateIndex], a
   ret
@@ -178,7 +178,7 @@ NamingEntryInputHandlerState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 1
-  ld [$C763], a
+  ld [W_NamingEntryBottomRowSelection], a
   ld a, $10
   ld [W_NamingScreenSubSubSubStateIndex], a
   ret
@@ -193,7 +193,7 @@ NamingEntryInputHandlerState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 2
-  ld [$C763], a
+  ld [W_NamingEntryBottomRowSelection], a
   ld a, $10
   ld [W_NamingScreenSubSubSubStateIndex], a
   ret
@@ -395,7 +395,7 @@ NamingEntryInputCharacterState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 2
-  ld [$C763], a
+  ld [W_NamingEntryBottomRowSelection], a
   ld a, $10
   ld [W_NamingScreenSubSubSubStateIndex], a
   ld a, 0
@@ -453,6 +453,104 @@ NamingEntrySubmitNameState::
 .cannotAcceptName
   ld a, 1
   ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntryBottomRowInputHandlerState::
+  ld de, $C1E0
+  call $33B7
+  ld a, [$C761]
+  or a
+  jr nz, .noWalkingAnimation
+  ld de, $C200
+  call $33B7
+
+.noWalkingAnimation
+  ldh a, [H_JPInputChanged]
+  and M_JPInputStart
+  jr z, .startNotPressed
+  ld a, $14
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.startNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputSelect
+  jr z, .selectNotPressed
+  ld a, $11
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.selectNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  ld a, $12
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  jr z, .bNotPressed
+  ld a, 4
+  call ScheduleSoundEffect
+  ld a, $13
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.bNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
+  ret z
+  ld a, 2
+  call ScheduleSoundEffect
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  xor a
+  call NameEntryNavigateAwayFromBottomRow
+  ret
+
+.upNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputDown
+  jr z, .downNotPressed
+  ld a, 1
+  call NameEntryNavigateAwayFromBottomRow
+  ret
+
+.downNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, [W_NamingEntryBottomRowSelection]
+  dec a
+  cp $FF
+  jp nz, .dontLoopToEnd
+  ld a, 2
+
+.dontLoopToEnd
+  ld [W_NamingEntryBottomRowSelection], a
+  call PositionNameEntryBottomRowCursor
+  ret
+  jr .exit
+
+.leftNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputRight
+  jr z, .exit
+  ld a, [W_NamingEntryBottomRowSelection]
+  inc a
+  cp 3
+  jp nz, .dontLoopToStart
+  xor a
+
+.dontLoopToStart
+  ld [W_NamingEntryBottomRowSelection], a
+  call PositionNameEntryBottomRowCursor
+  ret
+
+.exit
   ret
 
 SECTION "Naming Screen Entry State Machine 2", ROMX[$4D48], BANK[$01]
