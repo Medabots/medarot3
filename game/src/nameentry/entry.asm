@@ -247,6 +247,80 @@ NameEntryGetCursorPositionIndexDetailsAndPositionCursor::
   ld [W_NamingEntryCursorRowIndex], a
   ret
 
+AutofillImagineerAsEnteredName::
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld a, 2
+  ld [hli], a
+  ld a, $1F
+  ld [hli], a
+  ld a, $73
+  ld [hli], a
+  ld a, $16
+  ld [hli], a
+  ld a, 1
+  ld [hli], a
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ld a, 5
+  ld [W_NamingScreenEnteredTextLength], a
+  call $51AD
+  call $519F
+  ld a, 2
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, $1F
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, $73
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, $16
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [$C1E0], a
+  ld a, [$C761]
+  ld hl, .table
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C1E3], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 6
+  call ScheduleSoundEffect
+  ret
+
+.table
+  db $80, $78
+
 SECTION "Naming Screen Entry Functions 5", ROMX[$536F], BANK[$01]
 NameEntryDiacriticCheck::
   ld [$C4EE], a
