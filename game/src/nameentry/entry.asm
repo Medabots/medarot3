@@ -247,6 +247,66 @@ NameEntryGetCursorPositionIndexDetailsAndPositionCursor::
   ld [W_NamingEntryCursorRowIndex], a
   ret
 
+AutofillImagineerAsEnteredName::
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld de, .imagineer
+  ld b, 8
+
+.copyLoop
+  ld a, [de]
+  ld [hli], a
+  inc de
+  dec b
+  jr nz, .copyLoop
+
+  ld a, 8
+  ld [W_NamingScreenEnteredTextLength], a
+  call $51AD
+  call $519F
+  
+  ld de, .imagineer
+  ld b, 8
+
+.mapLoop
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  ld a, [de]
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .mapLoop
+
+  xor a
+  ld [$C1E0], a
+  ld a, [$C761]
+  ld hl, .table
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C1E3], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 6
+  jp ScheduleSoundEffect
+
+.table
+  db $98, $90
+
+.imagineer
+  db "Imag",$1D,"eer"
+
+.free
+REPT $536D - .free
+  nop
+ENDR
+
 SECTION "Naming Screen Entry Functions 5", ROMX[$536F], BANK[$01]
 NameEntryDiacriticCheck::
   ld [$C4EE], a

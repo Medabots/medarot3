@@ -27,10 +27,10 @@ NamingEntryStateMachine::
   dw NamingEntryPlaceholderState ; 0E
   dw NamingEntryPlaceholderState ; 0F
   dw NamingEntryBottomRowInputHandlerState ; 10
-  dw $4CB2 ; 11
-  dw $4CBB ; 12
-  dw $4CF7 ; 13
-  dw $4D07 ; 14
+  dw NamingEntrySwitchCaseFromBottomRowState ; 11
+  dw NamingEntryDirectSelectionFromBottomRowState ; 12
+  dw NamingEntryBackspaceFromBottomRowState ; 13
+  dw NamingEntrySubmitNameFromBottomRowState ; 14
 
 NamingEntryDoNothingState::
   ld a, 1
@@ -437,7 +437,7 @@ NamingEntrySubmitNameState::
   ld a, d
   or a
   jp nz, .nameHasNonSpaceCharacters
-  call $5305
+  call AutofillImagineerAsEnteredName
   jr .cannotAcceptName
 
 .nameHasNonSpaceCharacters
@@ -558,6 +558,111 @@ NamingEntryBottomRowInputHandlerState::
 .exit
   ret
 
-SECTION "Naming Screen Entry State Machine 2", ROMX[$4D48], BANK[$01]
+NamingEntrySwitchCaseFromBottomRowState::
+  call $5214
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntryDirectSelectionFromBottomRowState::
+  ld hl, .table
+  ld a, [W_NamingEntryBottomRowSelection]
+  ld d, 0
+  ld e, a
+  sla e
+  rl d
+  add hl, de
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  jp hl
+
+.table
+  dw .switchCase
+  dw .backspace
+  dw .submitName
+
+.switchCase
+  call $5214
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.backspace
+  ld a, 4
+  call ScheduleSoundEffect
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jr z, .backspaceExit
+  call $5235
+
+.backspaceExit
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+.submitName
+  ld a, $14
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntryBackspaceFromBottomRowState::
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jr z, .exit
+  call $5235
+
+.exit
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
+NamingEntrySubmitNameFromBottomRowState::
+  ld a, [W_NamingScreenEnteredTextLength]
+  or a
+  jp z, .cannotAcceptName
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld b, 8
+  xor a
+  ld d, a
+
+.loop
+  ld a, [hli]
+  cp $20
+  jr nz, .notAsciiSpace
+  xor a
+
+.notAsciiSpace
+  or d
+  ld d, a
+  dec b
+  jp nz, .loop
+
+  ld a, d
+  or a
+  jr nz, .nameHasNonSpaceCharacters
+  call AutofillImagineerAsEnteredName
+  jp .cannotAcceptName
+
+.nameHasNonSpaceCharacters
+  ld a, 3
+  call ScheduleSoundEffect
+  xor a
+  ld b, a
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  inc a
+  ld [W_MainScriptExitMode], a
+  ld a, [W_NamingScreenEnteredTextLength]
+  ld hl, W_NamingScreenEnteredTextBuffer
+  ld c, a
+  add hl, bc
+  ld [hl], $CB
+  ret
+
+.cannotAcceptName
+  ld a, $10
+  ld [W_NamingScreenSubSubSubStateIndex], a
+  ret
+
 NamingEntryPlaceholderState::
   ret
