@@ -249,61 +249,40 @@ NameEntryGetCursorPositionIndexDetailsAndPositionCursor::
 
 AutofillImagineerAsEnteredName::
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld a, 2
+  ld de, .imagineer
+  ld b, 8
+
+.copyLoop
+  ld a, [de]
   ld [hli], a
-  ld a, $1F
-  ld [hli], a
-  ld a, $73
-  ld [hli], a
-  ld a, $16
-  ld [hli], a
-  ld a, 1
-  ld [hli], a
-  xor a
-  ld [hli], a
-  ld [hli], a
-  ld [hli], a
-  ld [hli], a
-  ld a, 5
+  inc de
+  dec b
+  jr nz, .copyLoop
+
+  ld a, 8
   ld [W_NamingScreenEnteredTextLength], a
   call $51AD
   call $519F
-  ld a, 2
+  
+  ld de, .imagineer
+  ld b, 8
+
+.mapLoop
   di
-  push af
-  rst $20
-  pop af
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  ld a, [de]
   ld [hli], a
   ei
-  ld a, $1F
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  ld a, $73
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  ld a, $16
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  ld a, 1
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  ld a, 1
+  inc de
+  dec b
+  jr nz, .mapLoop
+
+  xor a
   ld [$C1E0], a
   ld a, [$C761]
   ld hl, .table
@@ -315,11 +294,18 @@ AutofillImagineerAsEnteredName::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 6
-  call ScheduleSoundEffect
-  ret
+  jp ScheduleSoundEffect
 
 .table
-  db $80, $78
+  db $98, $90
+
+.imagineer
+  db "Imag",$1D,"eer"
+
+.free
+REPT $536D - .free
+  nop
+ENDR
 
 SECTION "Naming Screen Entry Functions 5", ROMX[$536F], BANK[$01]
 NameEntryDiacriticCheck::

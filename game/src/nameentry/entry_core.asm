@@ -593,7 +593,7 @@ NamingEntryDirectSelectionFromBottomRowState::
   call ScheduleSoundEffect
   ld a, [W_NamingScreenEnteredTextLength]
   or a
-  jp z, .backspaceExit
+  jr z, .backspaceExit
   call $5235
 
 .backspaceExit
@@ -609,7 +609,7 @@ NamingEntryDirectSelectionFromBottomRowState::
 NamingEntryBackspaceFromBottomRowState::
   ld a, [W_NamingScreenEnteredTextLength]
   or a
-  jp z, .exit
+  jr z, .exit
   call $5235
 
 .exit
@@ -628,6 +628,11 @@ NamingEntrySubmitNameFromBottomRowState::
 
 .loop
   ld a, [hli]
+  cp $20
+  jr nz, .notAsciiSpace
+  xor a
+
+.notAsciiSpace
   or d
   ld d, a
   dec b
@@ -635,20 +640,20 @@ NamingEntrySubmitNameFromBottomRowState::
 
   ld a, d
   or a
-  jp nz, .nameHasNonSpaceCharacters
+  jr nz, .nameHasNonSpaceCharacters
   call AutofillImagineerAsEnteredName
   jp .cannotAcceptName
 
 .nameHasNonSpaceCharacters
   ld a, 3
   call ScheduleSoundEffect
-  ld a, 1
-  ld [W_MainScriptExitMode], a
   xor a
+  ld b, a
   ld [W_NamingScreenSubSubSubStateIndex], a
+  inc a
+  ld [W_MainScriptExitMode], a
   ld a, [W_NamingScreenEnteredTextLength]
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld b, 0
   ld c, a
   add hl, bc
   ld [hl], $CB
