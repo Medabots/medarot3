@@ -405,11 +405,11 @@ NamingEntryInputCharacterState::
 NamingEntryBackspaceState::
   ld a, [W_NamingScreenEnteredTextLength]
   or a
-  jp z, .exit
+  jr z, .exit
   call $5235
 
 .exit
-  ld a, 1
+  inc a
   ld [W_NamingScreenSubSubSubStateIndex], a
   ret
 
@@ -424,6 +424,11 @@ NamingEntrySubmitNameState::
 
 .loop
   ld a, [hli]
+  cp $20
+  jr nz, .notAsciiSpace
+  xor a
+
+.notAsciiSpace
   or d
   ld d, a
   dec b
@@ -433,18 +438,18 @@ NamingEntrySubmitNameState::
   or a
   jp nz, .nameHasNonSpaceCharacters
   call $5305
-  jp .cannotAcceptName
+  jr .cannotAcceptName
 
 .nameHasNonSpaceCharacters
   ld a, 3
   call ScheduleSoundEffect
-  ld a, 1
-  ld [W_MainScriptExitMode], a
   xor a
   ld [W_NamingScreenSubSubSubStateIndex], a
+  ld b, a
+  inc a
+  ld [W_MainScriptExitMode], a
   ld a, [W_NamingScreenEnteredTextLength]
   ld hl, W_NamingScreenEnteredTextBuffer
-  ld b, 0
   ld c, a
   add hl, bc
   ld [hl], $CB
