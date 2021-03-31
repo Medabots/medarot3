@@ -101,7 +101,7 @@ ItemMenuPrintPageItemNames::
   rlca ; 8 tiles per
   rlca
   rlca
-  add $20
+  add $18 ; Draw right after fixed text in item menu
   ld h, a ; Tile index of drawing area
   push de ; de is mapping address
   call VWFDrawStringLeftFullAddress8Tiles
@@ -171,12 +171,12 @@ ItemMenuPrintSelectedItemQuantity::
   ld a, [hl]
   cp $80
   jr c, .printQuantity
-  ld hl, $9968
+  ld hl, $9969
   ld b, 2
   jp ItemMenuPrintDashes
 
 .printQuantity
-  ld hl, $9968
+  ld hl, $9969
   ld b, 0
   jp $3504
 

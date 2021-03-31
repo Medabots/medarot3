@@ -57,3 +57,4 @@ MainDialog1::
   PatchTilesetEntry InputNameCharacterMap2
   PatchTilesetEntry InputNamePlayerName
   PatchTilesetEntry ItemUseCancel
+  PatchTilesetEntry ItemScreen

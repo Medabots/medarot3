@@ -77,3 +77,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry InputNameCharacterMap2, $8A80 ; 7
   TilemapTilesetTableEntry InputNamePlayerName, $8AC0 ; 8
   TilemapTilesetTableEntry ItemUseCancel, $97B0 ; 9
+  TilemapTilesetTableEntry ItemScreen, $9120 ; A

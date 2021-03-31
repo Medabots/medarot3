@@ -81,7 +81,7 @@ AttribmapTable00::
   dw Attribmap00_4C ; 4C
   dw Attribmap00_4D ; 4D
   dw Attribmap00_4D ; 4E (00_4E)
-  dw Attribmap00_4D ; 4F (00_4F)
+  dw Attribmap00_4F ; 4F (Copy of 4D, but modified for patch)
   dw Attribmap00_50 ; 50
   dw Attribmap00_51 ; 51
   dw Attribmap00_52 ; 52
@@ -334,6 +334,8 @@ Attribmap00_4C::
   INCBIN "./build/attribmaps/004C.map"
 Attribmap00_4D::
   INCBIN "./build/attribmaps/004D.map"
+Attribmap00_4F:: ; Added, item screen attribmap
+  INCBIN "./build/attribmaps/ItemScreen.map"
 Attribmap00_50::
   INCBIN "./build/attribmaps/0050.map"
 Attribmap00_51::
