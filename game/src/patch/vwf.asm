@@ -832,7 +832,7 @@ VWFMeasureCharacterInSequence::
   ld a, [W_VWFDrawingAreaLengthInPixels]
   inc a
   cp d
-  ret c
+  jr c, VWFMeasureCharacter.return
   ld a, [W_VWFCurrentLetter]
   ; Continues into VWFMeasureCharacter.
 
@@ -849,6 +849,7 @@ VWFMeasureCharacter::
   inc a
   ld [W_VWFDrawnAreaLength], a
   pop hl
+.return
   inc hl
   ret
 

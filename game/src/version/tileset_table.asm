@@ -1050,9 +1050,10 @@ SECTION "Tileset Data MainDialog2", ROMX[$44E7], BANK[$3A]
 MainDialog2::
   INCBIN "./build/tilesets/MainDialog2.malias"
 
-SECTION "Tileset Data Special", ROMX[$4780], BANK[$3A]
-Special::
-  INCBIN "./build/tilesets/Special.malias"
+; Special is defined with the other Patch Tilesets
+;SECTION "Tileset Data Special", ROMX[$4780], BANK[$3A]
+;Special::
+;  INCBIN "./build/tilesets/Special.malias"
 
 SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
 Tileset399F::

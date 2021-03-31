@@ -65,83 +65,94 @@ ItemMenuMapPageIndicator::
   jp $3504
 
 ItemMenuPrintPageItemNames::
+  xor a
+  ld [W_ItemPageRowIndex], a
+  ld [W_ListItemInitialOffsetForBuffering], a ; Should never change
   ld a, BANK(W_Inventory)
   rst 8
   ld a, [W_CurrentItemPage]
   dec a
-  ld hl, W_Inventory
-  ld b, 0
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
+  ; 2 bytes per entry, 4 items per page, so x8 (2^3)
+  ld h, $0
+  ld l, a
+  ld bc, W_Inventory
+  add hl, hl
+  add hl, hl
+  add hl, hl
+  add hl, bc ; hl = pointer to start of page
+  ld de, $9863 ; de = map address
+
+.filledSlotLoop
+  ; Load text to buffer
+  ld a, [hli]
+  cp $80 ; Check if item is empty slot
+  jr c, .emptySlot
+  and $7F ; Get actual index
+  ld b, $D
+  ld c, $9
+  ld [W_ListItemIndexForBuffering], a
+  push hl
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ; Print text
+  ld bc, W_NewListItemBufferArea ; String address
+  ld a, [W_ItemPageRowIndex] ; only from 0-3 so there's no risk of overflow anyway
+  rlca ; 8 tiles per
+  rlca
+  rlca
+  add $18 ; Draw right after fixed text in item menu
+  ld h, a ; Tile index of drawing area
+  push de ; de is mapping address
+  call VWFDrawStringLeftFullAddress8Tiles
+  ; Increment mapping area
+  pop hl ; hl = de
+  ld bc, $40
   add hl, bc
   ld d, h
   ld e, l
-  ld hl, $9863
-  xor a
-  ld [W_ItemPageRowIndex], a
-
-.filledSlotLoop
-  push de
-  push hl
-  ld a, [de]
-  and $7F
-  ld b, $D
-  ld c, 9
-  ld [W_ListItemIndexForBuffering], a
-  xor a
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
+  ; Increment item index
   pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  push hl
-  call PutStringFixedLength
-  pop hl
-  ld de, $40
-  add hl, de
-  pop de
-  inc de
-  inc de
-  ld a, [de]
-  cp $80
-  jr c, .emptySlotLoop
+  inc hl
   ld a, [W_ItemPageRowIndex]
   inc a
   ld [W_ItemPageRowIndex], a
-  cp 4
+  cp 4 ; 4 items per page
   jr nz, .filledSlotLoop
   ret
 
+.emptySlot
+  ; The rest of this row is empty slots
+  ld a, [W_ItemPageRowIndex]
+  rlca
+  rlca
+  rlca
+  rlca
+  rlca
+  rlca ; $40 (2^6) tiles per row
+  ld d, 0
+  ld e, a ; max row index is 3, so no risk of overflow
 .emptySlotLoop
+  push de
+  ld hl, $9863
+  ld bc, $0801
+  add hl, de
+  call $25E5 ; Clear the row
+  pop de
+  ld a, e
+  add $40
+  ld e, a
   ld a, [W_ItemPageRowIndex]
   inc a
   ld [W_ItemPageRowIndex], a
   cp 4
-  ret z
-  ld b, 0
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  ld hl, $9863
-  add hl, bc
-  ld bc, $801
-  call $25E5
-  jr .emptySlotLoop
+  jr nz, .emptySlotLoop
+  ret
+
+.end
+REPT $4d4e - .end
+  nop
+ENDR
 
 ItemMenuDetermineSelectedItemInventorySlot::
   ld a, [W_CurrentItemPage]
@@ -160,13 +171,13 @@ ItemMenuPrintSelectedItemQuantity::
   ld a, [hl]
   cp $80
   jr c, .printQuantity
-  ld hl, $9968
+  ld hl, $9969
   ld b, 2
   jp ItemMenuPrintDashes
 
 .printQuantity
-  ld hl, $9968
-  ld b, 0
+  ld hl, $9969
+  ld b, 0 ; Pad right
   jp $3504
 
 ItemMenuGetInventorySlotAddress::

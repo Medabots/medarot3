@@ -37,9 +37,9 @@ R Medal\xcb
 \x00
 S Medal\xcb
 \x00
-B Kabuto Medal\xcb
+KabutoB Medal\xcb
 \x00
-B Kuwagata Medal\xcb
+KuwagataB Medal\xcb
 \x00
 ♥スト-ン\xcb
 \x00

@@ -41,9 +41,11 @@ PatchTilesetEnd\1::
 ENDM
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
-; Include the 2bpp 'malias' uncompressed main dialog font here
+; Include certain 2bpp 'malias' uncompressed fonts here
 MainDialog1::
   INCBIN "./build/tilesets/MainDialog1.malias"
+Special::
+  INCBIN "./build/tilesets/Special.malias"
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
   PatchTilesetEntry OldFontTiles1
@@ -57,3 +59,4 @@ MainDialog1::
   PatchTilesetEntry InputNameCharacterMap2
   PatchTilesetEntry InputNamePlayerName
   PatchTilesetEntry ItemUseCancel
+  PatchTilesetEntry ItemScreen
