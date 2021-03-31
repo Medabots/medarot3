@@ -177,7 +177,7 @@ ItemMenuPrintSelectedItemQuantity::
 
 .printQuantity
   ld hl, $9969
-  ld b, 0
+  ld b, 0 ; Pad right
   jp $3504
 
 ItemMenuGetInventorySlotAddress::
