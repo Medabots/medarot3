@@ -1,7 +1,7 @@
 (1, [203], [(None, None)], [False], None, None)
 256
 -1
-シルエット
+Silhouette
 Erika
 Erika
 Erika
@@ -42,12 +42,12 @@ Nae
 Nae
 Nae
 Nae
-カラス
-カラス
+Crow
+Crow
 Kamome
 Kamome
 Yuki
-パディ
+Paddy
 Cosmo-Alien
 Erika
 Erika
