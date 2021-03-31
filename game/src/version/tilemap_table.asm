@@ -403,7 +403,7 @@ Tilemap00_4D::
 Tilemap00_4E::
   INCBIN "./build/tilemaps/004E.map"
 Tilemap00_4F::
-  INCBIN "./build/tilemaps/004F.map"
+  INCBIN "./build/tilemaps/ItemScreen.map"
 Tilemap00_50::
   INCBIN "./build/tilemaps/InfoSaveScreen.map"
 Tilemap00_51::
