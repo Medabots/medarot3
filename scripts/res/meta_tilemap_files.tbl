@@ -111,9 +111,9 @@
 00_7D=007D
 00_7E=007E
 00_7F=007F
-00_80=0080
-00_81=0081
-00_82=0082
+00_80=VehiclesMiniHandle
+00_81=VehiclesWingsOfWind
+00_82=VehiclesPeriscope
 00_83=0083
 00_91=0091
 00_92=0092

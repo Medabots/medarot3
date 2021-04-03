@@ -499,11 +499,11 @@ Tilemap00_7E::
 Tilemap00_7F::
   INCBIN "./build/tilemaps/007F.map"
 Tilemap00_80::
-  INCBIN "./build/tilemaps/0080.map"
+  INCBIN "./build/tilemaps/VehiclesMiniHandle.map"
 Tilemap00_81::
-  INCBIN "./build/tilemaps/0081.map"
+  INCBIN "./build/tilemaps/VehiclesWingsOfWind.map"
 Tilemap00_82::
-  INCBIN "./build/tilemaps/0082.map"
+  INCBIN "./build/tilemaps/VehiclesPeriscope.map"
 Tilemap00_83::
   INCBIN "./build/tilemaps/0083.map"
 Tilemap00_91::
