@@ -78,3 +78,6 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry InputNamePlayerName, $8AC0 ; 8
   TilemapTilesetTableEntry ItemUseCancel, $97B0 ; 9
   TilemapTilesetTableEntry ItemScreen, $9120 ; A
+  TilemapTilesetTableEntry VehiclesMiniHandle, $9120 ; B
+  TilemapTilesetTableEntry VehiclesWingsOfWind, $9180 ; C
+  TilemapTilesetTableEntry VehiclesPeriscope, $91f0 ; D

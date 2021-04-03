@@ -5,7 +5,7 @@ Rubberobo Medal\xcb
 \x00
 Egg Carton\xcb
 \x00
-ミニミニマシ-ン\xcb
+Mini-mini Machine\xcb
 \x00
 Town Map\xcb
 \x01
@@ -13,7 +13,7 @@ Town Map\xcb
 \x00
 Rosewood Badge\xcb
 \x00
-ミニハンドル\xcb
+Mini Handle\xcb
 \x00
 Hachiro's Medal\xcb
 \x00

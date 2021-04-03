@@ -60,3 +60,6 @@ Special::
   PatchTilesetEntry InputNamePlayerName
   PatchTilesetEntry ItemUseCancel
   PatchTilesetEntry ItemScreen
+  PatchTilesetEntry VehiclesMiniHandle
+  PatchTilesetEntry VehiclesWingsOfWind
+  PatchTilesetEntry VehiclesPeriscope
