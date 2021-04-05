@@ -111,7 +111,7 @@ DisplayIconForCurrentlySelectedTutorial::
 
 TutorialDirectionalInputHandling::
   ld a, [W_JPInput_TypematicBtns]
-  and .upNotPressed
+  and M_JPInputUp
   jr z, .upNotPressed
   ld a, [W_TutorialScrollOffset]
   ld b, a
