@@ -18,7 +18,7 @@ TutorialStateMachine::
   dw TutorialIntroMainscriptInitState
   dw TutorialIntroMessageState
   dw TutorialInputHandlerState
-  dw TutorialHideVerticalNavigationArrowsState
+  dw TutorialHideVerticalNavigationArrowsAndChangePortraitState
   dw TutorialDescriptionMainscriptInitState
   dw TutorialDescriptionMessageState
   dw TutorialReturnToIntroState
@@ -95,8 +95,8 @@ TutorialMappingState::
   ld e, $C2
   ld a, 0
   call WrapDecompressTilemap0
-  call $5F6B
-  call $5FB6
+  call MapTutorialNamesToScreen
+  call AnimateTutorialListCursor
   jp IncSubStateIndex
 
 TutorialPrepareFadeInState::
@@ -118,8 +118,8 @@ TutorialInputHandlerState::
   ld [W_OAM_SpritesReady], a
   ld de, $C0C0
   call $33B7
-  call $6086
-  call $601E
+  call AnimateTutorialScrollingArrows
+  call TutorialDirectionalInputHandling
   ldh a, [H_JPInputChanged]
   and M_JPInputA
   jp nz, IncSubStateIndex
@@ -132,7 +132,7 @@ TutorialInputHandlerState::
   ld [W_CoreSubStateIndex], a
   ret
 
-TutorialHideVerticalNavigationArrowsState::
+TutorialHideVerticalNavigationArrowsAndChangePortraitState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   ld a, 3
