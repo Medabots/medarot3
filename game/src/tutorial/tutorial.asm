@@ -13,46 +13,47 @@ PrepareMainScriptForTutorial::
 
 MapTutorialNamesToScreen::
   ld a, [W_TutorialScrollOffset]
-  ld [$C4EE], a
-  xor a
-  ld [$C4F0], a
-  ld b, 5
-
-.loop
-  push bc
-  ld a, [$C4EE]
+  ld de, $984C
   ld hl, PtrListTutorialLessons
-  rst $30
+  ld b, 1
+  ld c, 5
+
+; Print 5 at a time
+.loop
+  push hl
+  push af
+  push bc
+  rst $30 ; hl += [hl + a << 1]
   inc hl
   ld b, h
   ld c, l
-  ld hl, $984C
-  ld d, 0
-  ld a, [$C4F0]
-  ld e, a
-  sla e
-  rl d
-  sla e
-  rl d
-  sla e
-  rl d
-  sla e
-  rl d
-  sla e
-  rl d
-  sla e
-  rl d
+  pop hl ; hl = bc, b is the current tile idx
+  push hl
+  ; bc = text to map
+  ; de = location to map
+  ; h = tile work area
+  push de
+  ld a, $7 ; 7 tiles to draw
+  call VWFDrawStringLeftFullAddress
+  pop de
+  ld hl, $0040 ; next line
   add hl, de
-  ld a, 7
-  call PutStringFixedLength
-  ld hl, $C4EE
-  inc [hl]
-  ld hl, $C4F0
-  inc [hl]
+  ld d, h
+  ld e, l
   pop bc
-  dec b
+  ld a, b
+  add a, $07
+  ld b, a
+  pop af
+  pop hl
+  inc a
+  dec c 
   jr nz, .loop
   ret
+.end
+REPT $5fb6 - .end
+  nop
+ENDR
 
 AnimateTutorialListCursor::
   call PlaceTutorialListCursor
