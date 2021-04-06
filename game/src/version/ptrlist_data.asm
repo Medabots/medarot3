@@ -65,6 +65,6 @@ SECTION "PtrList3", ROMX[$4000], BANK[$F5]
 PtrList3:
   INCBIN cPtrList3
 
-SECTION "Pointer List - TutorialLessons", ROMX[$60d5], BANK[$07]
+SECTION "TutorialLessons", ROMX[$60d5], BANK[$07]
 PtrListTutorialLessons::
   INCBIN cTutorialLessons

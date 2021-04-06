@@ -1,4 +1,4 @@
-(1, [None], [(11, 0)], [True], None, None)
+(1, [None], [(11, 0)], [True], None, None, True)
 256
 -1
 \x3d\x3d\x3d\x3d\x08\x64\x21\x03\x10\x23\x05

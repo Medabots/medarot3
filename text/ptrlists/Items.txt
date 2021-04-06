@@ -1,4 +1,4 @@
-(2, [203, None], [(18, 0), (1, None)], [False, True], None, None)
+(2, [203, None], [(18, 0), (1, None)], [False, True], None, None, True)
 56
 31067
 Rubberobo Medal\xcb

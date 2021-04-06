@@ -21,30 +21,30 @@ roms = ({
 default_version = "kabuto"
 
 list_map = ({
-    # 'Type' : (Start of Pointers, Strings per pointer, Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix)
-    'Unknown00' : ((0x27, 0x44FC), 1, [None], [(20, 0x00)], [True], None, [0xC9]),
-    'PartsHead' : ((0x23, 0x4671), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None),
-    'PartsRArm' : ((0x23, 0x529A), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None),
-    'PartsLArm' : ((0x23, 0x5EC3), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None),
-    'PartsLegs' : ((0x23, 0x6AEC), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None),
-    'Attributes' : ((0x22, 0x65C0), 1, [0xCB], [(None, None)], [False], None, None),
-    'Skills' : ((0x22, 0x664C), 1, [0xCB], [(None, None)], [False], None, None),
-    'Movement' : ((0x22, 0x669A), 1, [0xCB], [(None, None)], [False], None, None),
-    'Unknown08' : ((0x22, 0x66DC), 1, [None], [(14, 0x00)], [True], None, None),
-    'Personalities' : ((0x22, 0x68BC), 1, [0xCB], [(None, None)], [False], None, None),
-    'Medaforce' : ((0x22, 0x6979), 2, [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None),
-    'Medals' : ((0x23, 0x795B), 1, [0xCB], [(None, None)], [False], None, None),
-    'Unknown0C' : ((0x22, 0x6901), 1, [None], [(2, 0x00)], [True], None, None),
-    'Items' : ((0x23, 0x7715), 2, [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None),
-    'Unknown0E' : ((0x20, 0x4000), 1, [None], [(4, 0x00)], [True], None, None),
-    'Medarotters' : ((0x20, 0x4328), 2, [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None),
-    'Unknown10' : ((0x20, 0x4EA4), 1, [None], [(35, 0x00)], [True], None, None),
-    'Terrain' : ((0x23, 0x7A23), 1, [0xCB], [(None, None)], [False], None, None),
-    'Attacks' : ((0x23, 0x7A80), 1, [0xCB], [(None, None)], [False], None, None),
-    'CharacterNames' : ((0x21, 0x4000), 1, [0xCB], [(None, None)], [False], None, None),
-    'Unknown14' : ((0x21, 0x461B), 1, [None], [(11, 0x00)], [True], None, None),
-    'Medarots' : ((0x23, 0x4000), 1, [0xCB], [(None, None)], [False], None, None),
-    'TutorialLessons' : ((0x7, 0x60d5), 2, [None, 0xCB], [(1, None), (None, None)], [True, False], None, None),
+    # 'Type' : (Start of Pointers, Strings per pointer, Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list)
+    'Unknown00' : ((0x27, 0x44FC), 1, [None], [(20, 0x00)], [True], None, [0xC9], True),
+    'PartsHead' : ((0x23, 0x4671), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
+    'PartsRArm' : ((0x23, 0x529A), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
+    'PartsLArm' : ((0x23, 0x5EC3), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
+    'PartsLegs' : ((0x23, 0x6AEC), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
+    'Attributes' : ((0x22, 0x65C0), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Skills' : ((0x22, 0x664C), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Movement' : ((0x22, 0x669A), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown08' : ((0x22, 0x66DC), 1, [None], [(14, 0x00)], [True], None, None, True),
+    'Personalities' : ((0x22, 0x68BC), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Medaforce' : ((0x22, 0x6979), 2, [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None, True),
+    'Medals' : ((0x23, 0x795B), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown0C' : ((0x22, 0x6901), 1, [None], [(2, 0x00)], [True], None, None, True),
+    'Items' : ((0x23, 0x7715), 2, [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None, True),
+    'Unknown0E' : ((0x20, 0x4000), 1, [None], [(4, 0x00)], [True], None, None, True),
+    'Medarotters' : ((0x20, 0x4328), 2, [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None, True),
+    'Unknown10' : ((0x20, 0x4EA4), 1, [None], [(35, 0x00)], [True], None, None, True),
+    'Terrain' : ((0x23, 0x7A23), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Attacks' : ((0x23, 0x7A80), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'CharacterNames' : ((0x21, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown14' : ((0x21, 0x461B), 1, [None], [(11, 0x00)], [True], None, None, True),
+    'Medarots' : ((0x23, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
+    'TutorialLessons' : ((0x7, 0x60d5), 2, [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
 })
 
 tileset = utils.merge_dicts([
@@ -59,7 +59,7 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
     constants_file = os.path.join(text_build_path, f"ptrlist_data_constants_{{GAMEVERSION}}.asm")
     datafile.write(f'INCLUDE "{constants_file}"\n\n')
     for l in list_map:
-        addr, spp, term, fix_len, print_hex, null_indicator, data_prefix = list_map[l]
+        addr, spp, term, fix_len, print_hex, null_indicator, data_prefix, is_general = list_map[l]
         if isinstance(addr, tuple):
             bank = addr[0]
             addr = utils.rom2realaddr(addr)

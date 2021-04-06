@@ -54,32 +54,41 @@ with open(output_file, 'w') as output:
             key = os.path.splitext(base_name)[0].rpartition(f"_{version_suffix}")[0]
 
             with open(input_file, 'rb') as in_f, open(output_path, 'wb') as out_f:
+                is_general = utils.read_byte(in_f)
                 total = utils.read_short(in_f)
                 dummy = utils.read_short(in_f)
                 count = utils.read_short(in_f)
 
-                # We don't need to account for the dummy or total, just the actual count
 
+                # We don't need to account for the dummy or total, just the actual count
                 offsets = [(utils.read_short(in_f), utils.read_short(in_f)) for i in range(0, count)]
 
-                # At this point, we're at the actual text in the file
-                for ptrs in offsets:
-                    length = ptrs[1] # We only care about the length, the offset is calculated
-                    
-                    if length + current_offset > BANK_MAX:
-                        current_fp.close()
-                        current_index += 1
-                        current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
-                        current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
-                        current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
-                        current_fp = open(current_file, 'wb')
-                        assert length + current_offset < BANK_MAX, "Text is too long"
-                        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
+                if not is_general:
+                    # If the text isn't meant to be part of the general list, just use 2-byte pointers and handle it 'normally'
+                    initial_offset = sections[key][1] + len(offsets) * 2
+                    pointers = [pack("<H", ptrs[0] + initial_offset) for ptrs in offsets]
+                    pointers[0] = bytearray(pointers[0])
+                    b = reduce((lambda x, y: x + bytearray(y)), pointers)  
+                    out_f.write(b)
+                    out_f.write(in_f.read())
+                else:
+                    # At this point, we're at the actual text in the file
+                    for ptrs in offsets:
+                        length = ptrs[1] # We only care about the length, the offset is calculated
+                        
+                        if length + current_offset > BANK_MAX:
+                            current_fp.close()
+                            current_index += 1
+                            current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
+                            current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
+                            current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
+                            current_fp = open(current_file, 'wb')
+                            assert length + current_offset < BANK_MAX, "Text is too long"
+                            output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
 
-                    out_f.write(pack("<BH", current_bank, current_offset))
-                    current_fp.write(in_f.read(length))
-                    current_offset += length
-            
+                        out_f.write(pack("<BH", current_bank, current_offset))
+                        current_fp.write(in_f.read(length))
+                        current_offset += length           
             output.write(f'c{key}        EQUS "\\"{output_path}\\""\n')
     finally:
         if current_fp:

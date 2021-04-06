@@ -83,8 +83,7 @@ count = 0
 dummy_ptr = -1
 
 with open(input_file, 'r', encoding='utf-8') as fp:
-    # (Strings per pointer, Terminator(s), (fixed length, fixed padding), print hex)
-    spp, term, fix_len, _, null_indicator, data_prefix = literal_eval(fp.readline().strip())
+    spp, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
     assert(spp > 0)
     # Total count, includes empty entries in the table
     count = int(fp.readline().strip())
@@ -139,6 +138,7 @@ with open(input_file, 'r', encoding='utf-8') as fp:
 
 # Generate binary
 with open(output_file, 'wb') as bin_file:
+    bin_file.write(pack("B", is_general))
     bin_file.write(pack("<H", count))
     bin_file.write(pack("<H", dummy_ptr if dummy_ptr != -1 else 0xFFFF))
     offsets = [(idx_offset_map[key], idx_length_map[key]) for key in sorted(idx_offset_map.keys())]
