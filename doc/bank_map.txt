@@ -5,7 +5,7 @@
 04: 
 05: 
 06: 
-07: 
+07: Tutorial names (from 60d5)
 08: 
 09: 
 0A: 
