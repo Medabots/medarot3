@@ -37,6 +37,7 @@ for input_file in input_files:
         raise Exception(f"Could not find {key} section in {data_file}")
 
     with open(input_file, 'rb') as in_f:
+        is_general = utils.read_byte(in_f)
         total = utils.read_short(in_f)
         dummy = utils.read_short(in_f)
         count = utils.read_short(in_f)

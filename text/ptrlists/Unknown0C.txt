@@ -1,4 +1,4 @@
-(1, [None], [(2, 0)], [True], None, None)
+(1, [None], [(2, 0)], [True], None, None, True)
 30
 -1
 \x00\x0a
