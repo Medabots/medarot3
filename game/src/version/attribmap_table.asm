@@ -1513,7 +1513,7 @@ Attribmap02_76::
 Attribmap02_77::
   INCBIN "./build/attribmaps/0277.map"
 Attribmap02_78::
-  INCBIN "./build/attribmaps/0278.map"
+  INCBIN "./build/attribmaps/GlossaryTerms.map"
 Attribmap02_79::
   INCBIN "./build/attribmaps/0279.map"
 Attribmap02_81::
