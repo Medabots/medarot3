@@ -88,7 +88,7 @@ SECTION "Pointer List - Medarots", ROMX[$4000], BANK[$23]
 PtrListMedarots::
   INCBIN cMedarots
 
-SECTION "Pointer List - TutorialLessons", ROMX[$60d5], BANK[$07]
-PtrListTutorialLessons::
-  INCBIN cTutorialLessons
+SECTION "Pointer List - GlossaryTerms", ROMX[$60d5], BANK[$07]
+PtrListGlossaryTerms::
+  INCBIN cGlossaryTerms
 

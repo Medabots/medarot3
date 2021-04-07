@@ -21,7 +21,7 @@ MapTutorialNamesToScreen::
 .loop
   push bc
   ld a, [$C4EE]
-  ld hl, PtrListTutorialLessons
+  ld hl, PtrListGlossaryTerms
   rst $30
   inc hl
   ld b, h
@@ -86,7 +86,7 @@ DisplayIconForCurrentlySelectedTutorial::
   ld b, a
   ld a, [W_TutorialCursorPosition]
   add b
-  ld hl, PtrListTutorialLessons
+  ld hl, PtrListGlossaryTerms
   rst $30
   ld a, [hl]
   or a

@@ -44,7 +44,7 @@ list_map = ({
     'CharacterNames' : ((0x21, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
     'Unknown14' : ((0x21, 0x461B), 1, [None], [(11, 0x00)], [True], None, None, True),
     'Medarots' : ((0x23, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'TutorialLessons' : ((0x7, 0x60d5), 2, [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
+    'GlossaryTerms' : ((0x7, 0x60d5), 2, [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
 })
 
 tileset = utils.merge_dicts([
