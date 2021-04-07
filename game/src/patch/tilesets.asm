@@ -63,3 +63,4 @@ Special::
   PatchTilesetEntry VehiclesMiniHandle
   PatchTilesetEntry VehiclesWingsOfWind
   PatchTilesetEntry VehiclesPeriscope
+  PatchTilesetEntry GlossaryTerms

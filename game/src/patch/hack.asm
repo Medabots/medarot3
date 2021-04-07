@@ -81,3 +81,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry VehiclesMiniHandle, $9120 ; B
   TilemapTilesetTableEntry VehiclesWingsOfWind, $9180 ; C
   TilemapTilesetTableEntry VehiclesPeriscope, $91f0 ; D
+  TilemapTilesetTableEntry GlossaryTerms, $9010 ; E

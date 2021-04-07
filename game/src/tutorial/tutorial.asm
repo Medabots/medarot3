@@ -15,7 +15,7 @@ MapTutorialNamesToScreen::
   ld a, [W_TutorialScrollOffset]
   ld de, $984C
   ld hl, PtrListGlossaryTerms
-  ld b, 1
+  ld b, $07 ; Initial tile work area
   ld c, 5
 
 ; Print 5 at a time
