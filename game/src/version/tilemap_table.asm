@@ -1477,7 +1477,7 @@ Tilemap02_76::
 Tilemap02_77::
   INCBIN "./build/tilemaps/0277.map"
 Tilemap02_78::
-  INCBIN "./build/tilemaps/0278.map"
+  INCBIN "./build/tilemaps/GlossaryScreen.map"
 TilemapTable02Terminator::
 
 SECTION "Tilemap Table 03", ROMX[$4000], BANK[$AB]

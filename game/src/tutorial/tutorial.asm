@@ -14,7 +14,7 @@ PrepareMainScriptForTutorial::
 MapTutorialNamesToScreen::
   ld a, [W_TutorialScrollOffset]
   ld de, $984C
-  ld hl, PtrListTutorialLessons
+  ld hl, PtrListGlossaryTerms
   ld b, 1
   ld c, 5
 
@@ -87,7 +87,7 @@ DisplayIconForCurrentlySelectedTutorial::
   ld b, a
   ld a, [W_TutorialCursorPosition]
   add b
-  ld hl, PtrListTutorialLessons
+  ld hl, PtrListGlossaryTerms
   rst $30
   ld a, [hl]
   or a
