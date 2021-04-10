@@ -55,7 +55,7 @@ BattleStatusMappingState::
   ld e, $5F
   ld a, 0
   call WrapDecompressAttribmap0
-  call $662B
+  call BattleStatusDisplayCurrentMedarot
   call $69DB
   call $6B66
   call $6C2D

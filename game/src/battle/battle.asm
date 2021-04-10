@@ -1,6 +1,14 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Battle Helper Functions 1", ROMX[$5778], BANK[$0A]
+SECTION "Battle Helper Functions 1", ROMX[$5662], BANK[$0A]
+CalculateBattleParticipantAddress::
+  ld hl, $D000
+  ld b, 0
+  ld c, a
+  ld a, 9
+  jp MultiplyBCByPowerOfTwoAndAddToHL
+
+SECTION "Battle Helper Functions 2", ROMX[$5778], BANK[$0A]
 MapAttackNamesForBattle::
   ld a, [$DCB6]
   ld hl, .table
@@ -14,21 +22,21 @@ MapAttackNamesForBattle::
 
 .standardAttacks
   ld a, [$DCB9]
-  call $5662
+  call CalculateBattleParticipantAddress
   call MapPlayerAttackANamePlusAmmoForBattle
   call MapPlayerAttackBNameForBattle
   jp MapPlayerAttackCNameForBattle
 
 .medaliaAttacks
   ld a, [$DCB9]
-  call $5662
+  call CalculateBattleParticipantAddress
   call MapPlayerMedaliaAttackANamePlusAmmoForBattle
   call MapPlayerMedaliaAttackBNameForBattle
   jp MapPlayerMedaliaAttackCNameForBattle
 
 .medachangeAttacks
   ld a, [$DCB9]
-  call $5662
+  call CalculateBattleParticipantAddress
   call MapPlayerMedachangeAttackANamePlusAmmoForBattle
   call MapPlayerMedachangeAttackBNameForBattle
   jp MapPlayerMedachangeAttackCNameForBattle
