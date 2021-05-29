@@ -1,8 +1,10 @@
-![Build All](https://github.com/Medabots/medarot3/actions/workflows/build.yml/badge.svg?branch=master)
+![Build All](https://github.com/Medabots/medarot3/actions/workflows/build.yml/badge.svg?branch=tr_EN)
 
 # Building
 
-The master branch is focused on extracting components of the game and making sure that the rebuilt output is identical to the originals.
+The tr_LANGCODE branches are focused on modifying extracted components to play the game in other languages (corresponding with the language code in the branch).
+
+The majority of text to be translated is in the text/ directory. 
 
 ## Dependencies
 
@@ -17,8 +19,3 @@ The master branch is focused on extracting components of the game and making sur
 1. Place the renamed ROMs into the root folder of the project
 1. Execute make (optionally pass -j to speed up the build)
 1. medarot3_kabuto.gbc and/or medarot3_kuwagata.gbc will be built in the root folder of the project
-
-# Dumping
-
-1. Execute make dump (optionally with -j)
-1. Ideally, no changed files should appear as they're all checked in
