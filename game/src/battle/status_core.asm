@@ -1,5 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 
+SECTION "Battle Status Variables 1", WRAMX[$DCCA], BANK[6]
+W_BattleStatusCursorPosition:: ds 1
+
 SECTION "Battle Status State Machine 1", ROMX[$64C4], BANK[$10]
 BattleStatusStateMachine::
   ld a, [W_CoreSubStateIndex]
@@ -46,7 +49,7 @@ BattleStatusDrawingState::
 
 BattleStatusMappingState::
   xor a
-  ld [$DCCA], a
+  ld [W_BattleStatusCursorPosition], a
   ld bc, 0
   ld e, $5F
   ld a, 0
@@ -56,9 +59,9 @@ BattleStatusMappingState::
   ld a, 0
   call WrapDecompressAttribmap0
   call BattleStatusDisplayCurrentMedarot
-  call $69DB
-  call $6B66
-  call $6C2D
+  call DisplayMedarotSpritesForBattleStatus
+  call DisplayMedarotNamesForBattleStatus
+  call PlaceCursorForBattleStatus
   ld a, 1
   ld [W_OAM_SpritesReady], a
   jp IncSubStateIndex
@@ -70,7 +73,7 @@ BattleStatusPrepareFadeInState::
   ld e, $FF
   ld a, $E
   call WrapSetupPalswapAnimation
-  call $69BD
+  call GetMedarotImagePaletteForBattleStatus
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   ld a, 6
@@ -80,7 +83,7 @@ BattleStatusPrepareFadeInState::
 BattleStatusInputHandlerState::
   ld de, $C0A0
   call $33B7
-  call $6C69
+  call DirectionalInputHandlingForBattleStatus
   ldh a, [H_JPInputChanged]
   and M_JPInputA | M_JPInputB
   ret z
