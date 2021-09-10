@@ -1084,9 +1084,10 @@ SECTION "Tileset Data Tileset39AB", ROMX[$48E0], BANK[$3C]
 Tileset39AB::
   INCBIN "./build/tilesets/Tileset39AB.malias"
 
-SECTION "Tileset Data MenuMedawatchTextSprites", ROMX[$4A5B], BANK[$3C]
-MenuMedawatchTextSprites::
-  INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
+; MenuMedawatchTextSprites is defined with the other patch tilesets
+;SECTION "Tileset Data MenuMedawatchTextSprites", ROMX[$4A5B], BANK[$3C]
+;MenuMedawatchTextSprites::
+;  INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
 
 SECTION "Tileset Data Tileset39AF", ROMX[$4F4D], BANK[$3C]
 Tileset39AF::

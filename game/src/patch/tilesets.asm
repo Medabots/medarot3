@@ -48,6 +48,8 @@ Special::
   INCBIN "./build/tilesets/Special.malias"
 MenuMedawatchGraphics::
   INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
+MenuMedawatchTextSprites::
+  INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
