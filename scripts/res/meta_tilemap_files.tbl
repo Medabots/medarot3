@@ -15,9 +15,9 @@
 00_12=MenuMainGame
 00_13=0013
 00_14=0014
-00_15=MedawatchScreenMenuTopSelect
-00_16=MedawatchScreenMenuMidSelect
-00_17=MedawatchScreenMenuBotSelect
+00_15=MenuMedawatchScreenTopSelect
+00_16=MenuMedawatchScreenMidSelect
+00_17=MenuMedawatchScreenBotSelect
 00_18=0018
 00_19=0019
 00_1A=001A
