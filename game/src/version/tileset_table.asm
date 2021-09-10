@@ -1059,9 +1059,10 @@ SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
 Tileset399F::
   INCBIN "./build/tilesets/Tileset399F.malias"
 
-SECTION "Tileset Data MenuMedawatchGraphics", ROMX[$4000], BANK[$3C]
-MenuMedawatchGraphics::
-  INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
+; MenuMedawatchGraphics is defined with the other patch tilesets
+;SECTION "Tileset Data MenuMedawatchGraphics", ROMX[$4000], BANK[$3C]
+;MenuMedawatchGraphics::
+;  INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
 
 SECTION "Tileset Data Tileset39A3", ROMX[$43A0], BANK[$3C]
 Tileset39A3::

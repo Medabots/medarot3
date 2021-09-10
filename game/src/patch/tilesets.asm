@@ -41,11 +41,14 @@ PatchTilesetEnd\1::
 ENDM
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
-; Include certain 2bpp 'malias' uncompressed fonts here
+; Include certain 2bpp 'malias' uncompressed graphics here
 MainDialog1::
   INCBIN "./build/tilesets/MainDialog1.malias"
 Special::
   INCBIN "./build/tilesets/Special.malias"
+MenuMedawatchGraphics::
+  INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
+PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
   PatchTilesetEntry OldFontTiles1
