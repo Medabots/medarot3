@@ -167,8 +167,13 @@ version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEH
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 
-# Patch Specific
-patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES) $(TILESET_OUT)/MainDialog1.$(TSET_TYPE) $(TILESET_OUT)/Special.$(TSET_TYPE) $(TILESET_OUT)/MenuMedawatchGraphics.$(TSET_TYPE)
+# Patch Specific, including any tilesets we move into the patch tileset
+patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
+ $(TILESET_OUT)/MainDialog1.$(TSET_TYPE)\
+ $(TILESET_OUT)/Special.$(TSET_TYPE)\
+ $(TILESET_OUT)/MenuMedawatchGraphics.$(TSET_TYPE)\
+ $(TILESET_OUT)/MenuMedawatchTextSprites.$(TSET_TYPE)
+
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default test
