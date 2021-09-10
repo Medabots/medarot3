@@ -14,7 +14,7 @@ TilesetSourceAddressTable::
   dw Tileset39A7 ; 09 (39A7)
   dw Tileset39A9 ; 0A (39A9)
   dw Tileset39AB ; 0B (39AB)
-  dw Tileset39AD ; 0C (39AD)
+  dw MenuMedawatchTextSprites ; 0C (39AD)
   dw Tileset39AF ; 0D (39AF)
   dw Tileset39B1 ; 0E (39B1)
   dw Tileset39B3 ; 0F (39B3)
@@ -530,7 +530,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset39A7), $9500, $0 ; 009
   dbwb BANK(Tileset39A9), $9500, $0 ; 00A
   dbwb BANK(Tileset39AB), $9500, $0 ; 00B
-  dbwb BANK(Tileset39AD), $8000, $0 ; 00C
+  dbwb BANK(MenuMedawatchTextSprites), $8000, $0 ; 00C
   dbwb BANK(Tileset39AF), $86C0, $0 ; 00D
   dbwb BANK(Tileset39B1), $9000, $0 ; 00E
   dbwb BANK(Tileset39B3), $8CC0, $0 ; 00F
@@ -1084,9 +1084,9 @@ SECTION "Tileset Data Tileset39AB", ROMX[$48E0], BANK[$3C]
 Tileset39AB::
   INCBIN "./build/tilesets/Tileset39AB.malias"
 
-SECTION "Tileset Data Tileset39AD", ROMX[$4A5B], BANK[$3C]
-Tileset39AD::
-  INCBIN "./build/tilesets/Tileset39AD.malias"
+SECTION "Tileset Data MenuMedawatchTextSprites", ROMX[$4A5B], BANK[$3C]
+MenuMedawatchTextSprites::
+  INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
 
 SECTION "Tileset Data Tileset39AF", ROMX[$4F4D], BANK[$3C]
 Tileset39AF::
