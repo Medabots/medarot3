@@ -8,7 +8,7 @@ TilesetSourceAddressTable::
   dw MainDialog2 ; 03 (399B)
   dw Special ; 04 (399D)
   dw Tileset399F ; 05 (399F)
-  dw Tileset39A1 ; 06 (39A1)
+  dw MenuMedawatchGraphics ; 06 (39A1)
   dw Tileset39A3 ; 07 (39A3)
   dw Tileset39A5 ; 08 (39A5)
   dw Tileset39A7 ; 09 (39A7)
@@ -524,7 +524,7 @@ TilesetInfoTable::
   dbwb BANK(MainDialog2), $8800, $1 ; 003
   dbwb BANK(Special), $8E00, $1 ; 004
   dbwb BANK(Tileset399F), $8D40, $1 ; 005
-  dbwb BANK(Tileset39A1), $9000, $0 ; 006
+  dbwb BANK(MenuMedawatchGraphics), $9000, $0 ; 006
   dbwb BANK(Tileset39A3), $9500, $0 ; 007
   dbwb BANK(Tileset39A5), $9500, $0 ; 008
   dbwb BANK(Tileset39A7), $9500, $0 ; 009
@@ -1059,9 +1059,9 @@ SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
 Tileset399F::
   INCBIN "./build/tilesets/Tileset399F.malias"
 
-SECTION "Tileset Data Tileset39A1", ROMX[$4000], BANK[$3C]
-Tileset39A1::
-  INCBIN "./build/tilesets/Tileset39A1.malias"
+SECTION "Tileset Data MenuMedawatchGraphics", ROMX[$4000], BANK[$3C]
+MenuMedawatchGraphics::
+  INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
 
 SECTION "Tileset Data Tileset39A3", ROMX[$43A0], BANK[$3C]
 Tileset39A3::
