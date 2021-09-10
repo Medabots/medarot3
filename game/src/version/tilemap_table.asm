@@ -293,11 +293,11 @@ Tilemap00_13::
 Tilemap00_14::
   INCBIN "./build/tilemaps/0014.map"
 Tilemap00_15::
-  INCBIN "./build/tilemaps/0015.map"
+  INCBIN "./build/tilemaps/MedawatchScreenMenuTopSelect.map"
 Tilemap00_16::
-  INCBIN "./build/tilemaps/0016.map"
+  INCBIN "./build/tilemaps/MedawatchScreenMenuMidSelect.map"
 Tilemap00_17::
-  INCBIN "./build/tilemaps/0017.map"
+  INCBIN "./build/tilemaps/MedawatchScreenMenuBotSelect.map"
 Tilemap00_18::
   INCBIN "./build/tilemaps/0018.map"
 Tilemap00_19::
