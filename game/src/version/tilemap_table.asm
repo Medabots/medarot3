@@ -291,7 +291,7 @@ Tilemap00_12::
 Tilemap00_13::
   INCBIN "./build/tilemaps/0013.map"
 Tilemap00_14::
-  INCBIN "./build/tilemaps/0014.map"
+  INCBIN "./build/tilemaps/MenuMedawatchScreenIkki.map"
 Tilemap00_15::
   INCBIN "./build/tilemaps/MenuMedawatchScreenTopSelect.map"
 Tilemap00_16::
