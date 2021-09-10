@@ -168,7 +168,7 @@ version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tile
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 
 # Patch Specific
-patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES) $(TILESET_OUT)/MainDialog1.$(TSET_TYPE) $(TILESET_OUT)/Special.$(TSET_TYPE)
+patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES) $(TILESET_OUT)/MainDialog1.$(TSET_TYPE) $(TILESET_OUT)/Special.$(TSET_TYPE) $(TILESET_OUT)/MenuMedawatchGraphics.$(TSET_TYPE)
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
 .PHONY: $(VERSIONS) all clean default test
