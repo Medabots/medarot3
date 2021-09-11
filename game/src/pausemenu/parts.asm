@@ -253,18 +253,18 @@ MapPartNamesForPartsList::
   call GetPageOffsetForPartList
   ld a, 4
   ld [$C4F4], a
-  ld a, [$C4E0]
+  ld hl, $C4E0
+  ld a, [hli]
   ld d, a
-  ld a, [$C4E1]
-  ld e, a
+  ld e, [hl]
   ld a, $99
   ld [$C4E6], a
   ld a, $43
   ld [$C4E7], a
 
 .loop
-  ld hl, 0
-  add hl, de
+  push de
+  pop hl
   ld a, [hli]
   ld b, a
   ld a, [hl]
@@ -277,25 +277,35 @@ MapPartNamesForPartsList::
   ld a, [$C4F2]
   ld [W_ListItemIndexForBuffering], a
   ld a, 7
-  ld [W_ListItemInitialOffsetForBuffering], a
+  ld [W_ListItemInitialOffsetForBuffering], a ; Skip part number
   push de
   call WrapBufferTextFromList
   pop de
-  ld a, [$C4E6]
-  ld h, a
-  ld a, [$C4E7]
-  ld l, a
-  ld bc, W_ListItemBufferArea
-  ld a, 8
+  ; Draw text
   push de
-  call PutStringFixedLength
+  
+  ld hl, $C4E7
+  ld a, [hld]
+  ld d, [hl]
+  ld e, a
+
+  ld a, [$C4F4] ; Remaining number of rows
+  dec a
+  rlca ; 8 tiles per
+  rlca 
+  rlca ; Only 4 entries per page so no risk of overflowing
+  add $18 ; Draw right after fixed text in parts menu
+  ld h, a ; Tile index of drawing area
+
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress8Tiles
   pop de
   jr .nextSlot
 
 .slotEmpty
-  ld a, [$C4E6]
-  ld h, a
-  ld a, [$C4E7]
+  ld hl, $C4E7
+  ld a, [hld]
+  ld h, [hl]
   ld l, a
   ld b, 8
   ld a, $EE
@@ -321,9 +331,9 @@ MapPartNamesForPartsList::
   jr z, .oobSlot
   inc de
   inc de
-  ld a, [$C4E6]
-  ld h, a
-  ld a, [$C4E7]
+  ld hl, $C4E7
+  ld a, [hld]
+  ld h, [hl]
   ld l, a
   ld bc, $40
   add hl, bc
@@ -357,6 +367,11 @@ MapPartNamesForPartsList::
   dec b
   jr nz, .clearLoop
   ret
+
+.end
+REPT $6595 - .end
+  nop
+ENDR
 
 MapPartQuantitiesForPartsList::
   call GetPartPageAddressInInventoryForPartList
