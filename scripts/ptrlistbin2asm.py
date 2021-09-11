@@ -33,7 +33,7 @@ for line in src.splitlines():
             bank = int(o[2].replace('BANK','').replace('[','').replace(']','').replace('$','0x'), 16)
         sections[name] = (bank, ptr_table_offset)
         if name.startswith(TYPE_PREFIX):
-            open(os.path.join(output_bin_dir, f"{name}.bin"), 'wb').close()
+            open(os.path.join(output_bin_dir, f"{name}_{version_suffix}.bin"), 'wb').close()
 
 # '{TYPE_PREFIX}#' for text, 'Pointers' is where pointers should go
 # We assume 0x4000 is enough to cover all 3-byte pointers
@@ -41,7 +41,7 @@ for line in src.splitlines():
 current_index = 0 # {TYPE_PREFIX}0
 current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
 current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
-current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
+current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
 current_fp = None
 
 with open(output_file, 'w') as output:
@@ -81,7 +81,7 @@ with open(output_file, 'w') as output:
                             current_index += 1
                             current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
                             current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
-                            current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
+                            current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
                             current_fp = open(current_file, 'wb')
                             assert length + current_offset < BANK_MAX, "Text is too long"
                             output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
@@ -96,6 +96,6 @@ with open(output_file, 'w') as output:
     
     current_index += 1
     while f"{TYPE_PREFIX}{current_index}" in sections:
-        current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}.bin")
+        current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
         output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         current_index += 1
