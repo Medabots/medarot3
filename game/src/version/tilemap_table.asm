@@ -301,15 +301,15 @@ Tilemap00_17::
 Tilemap00_18::
   INCBIN "./build/tilemaps/0018.map"
 Tilemap00_19::
-  INCBIN "./build/tilemaps/0019.map"
+  INCBIN "./build/tilemaps/PartsScreen.map"
 Tilemap00_1A::
-  INCBIN "./build/tilemaps/001A.map"
+  INCBIN "./build/tilemaps/PartsHead.map"
 Tilemap00_1B::
-  INCBIN "./build/tilemaps/001B.map"
+  INCBIN "./build/tilemaps/PartsRightArm.map"
 Tilemap00_1C::
-  INCBIN "./build/tilemaps/001C.map"
+  INCBIN "./build/tilemaps/PartsLeftArm.map"
 Tilemap00_1D::
-  INCBIN "./build/tilemaps/001D.map"
+  INCBIN "./build/tilemaps/PartsLegs.map"
 Tilemap00_1E::
   INCBIN "./build/tilemaps/001E.map"
 Tilemap00_1F::
