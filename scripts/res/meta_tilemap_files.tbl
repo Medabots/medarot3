@@ -19,11 +19,11 @@
 00_16=MenuMedawatchScreenMidSelect
 00_17=MenuMedawatchScreenBotSelect
 00_18=0018
-00_19=0019
-00_1A=001A
-00_1B=001B
-00_1C=001C
-00_1D=001D
+00_19=PartsScreen
+00_1A=PartsHead
+00_1B=PartsRightArm
+00_1C=PartsLeftArm
+00_1D=PartsLegs
 00_1E=001E
 00_1F=001F
 00_20=0020
