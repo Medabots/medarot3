@@ -99,7 +99,7 @@ MapPartModelNumbersForPartsList::
   ld h, a
   ld a, [$C4E7]
   ld l, a
-  ld bc, W_ListItemBufferArea
+  ld bc, W_NewListItemBufferArea
   push de
   call MapPartModelNumberForPartsList
   pop de
@@ -224,7 +224,7 @@ MapPartModelNumberForPartsList::
   cp $CB
   ret z
   push hl
-  sub $90
+  sub $2D ; The earliest character is '-'
   ld hl, .table
   ld d, 0
   ld e, a
@@ -241,12 +241,12 @@ MapPartModelNumberForPartsList::
   jr MapPartModelNumberForPartsList
 
 .table
-  db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$CC,$CD
-  db $CE,$CF,$D0,$D1,$D2,$D3,$D4,$D5,$D6,$D7,$D8,$D9,$DA,$DB,$DC,$DD
-  db $DE,$DF,$E0,$E1,$E2,$E3,$E4,$E5,$00,$00,$00,$00,$00,$00,$00,$00
+  db $E6,$00,$00,$E9,$EA,$EB,$EC,$ED,$EE,$EF,$F0,$F1,$F2,$00,$00,$00 ; -, and numbers
+  db $00,$00,$00,$00,$CC,$CD,$CE,$CF,$D0,$D1,$D2,$D3,$D4,$D5,$D6,$D7 ; letters start
+  db $D8,$D9,$DA,$DB,$DC,$DD,$DE,$DF,$E0,$E1,$E2,$E3,$E4,$E5,$00,$00 ; letters end
   db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-  db $E9,$EA,$EB,$EC,$ED,$EE,$EF,$F0,$F1,$F2,$F3,$00,$00,$00,$E6,$00
+  db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 
 MapPartNamesForPartsList::
   call GetPartPageAddressInInventoryForPartList
