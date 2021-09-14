@@ -50,6 +50,8 @@ MenuMedawatchGraphics::
   INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
 MenuMedawatchTextSprites::
   INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
+PartsScreen::
+  INCBIN "./build/tilesets/PartsScreen.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
@@ -69,3 +71,4 @@ PatchTilesets::
   PatchTilesetEntry VehiclesWingsOfWind
   PatchTilesetEntry VehiclesPeriscope
   PatchTilesetEntry GlossaryTerms
+  PatchTilesetEntry PartsScreenPartTypes

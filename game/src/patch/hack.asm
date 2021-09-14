@@ -82,3 +82,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry VehiclesWingsOfWind, $9180 ; C
   TilemapTilesetTableEntry VehiclesPeriscope, $91f0 ; D
   TilemapTilesetTableEntry GlossaryTerms, $9010 ; E
+  TilemapTilesetTableEntry PartsScreenPartTypes, $9120 ; F (loaded with the main PartsScreen, must preserve menu)

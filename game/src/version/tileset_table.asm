@@ -1093,9 +1093,10 @@ SECTION "Tileset Data Tileset39AF", ROMX[$4F4D], BANK[$3C]
 Tileset39AF::
   INCBIN "./build/tilesets/Tileset39AF.malias"
 
-SECTION "Tileset Data PartsScreen", ROMX[$4FD5], BANK[$3C]
-PartsScreen::
-  INCBIN "./build/tilesets/PartsScreen.malias"
+; PartsScreen is defined with the other patch tilesets
+;SECTION "Tileset Data PartsScreen", ROMX[$4FD5], BANK[$3C]
+;PartsScreen::
+;  INCBIN "./build/tilesets/PartsScreen.malias"
 
 SECTION "Tileset Data Tileset39B3", ROMX[$524E], BANK[$3C]
 Tileset39B3::

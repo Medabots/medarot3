@@ -294,7 +294,7 @@ MapPartNamesForPartsList::
   rlca ; 8 tiles per
   rlca 
   rlca ; Only 4 entries per page so no risk of overflowing
-  add $18 ; Draw right after fixed text in parts menu
+  add $26 ; Draw right after fixed text in parts menu
   ld h, a ; Tile index of drawing area
 
   ld bc, W_NewListItemBufferArea
