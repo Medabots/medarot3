@@ -1173,7 +1173,7 @@ TileMappingByPartTypeForPartStatus::
   ld b, a
   ld a, [W_CurrentPartIndexForPartStatus]
   ld c, a
-  ld hl, $98E2
+  ld hl, $98E1
   call MapPartNameForPartStatus
   call GetPartStatValuesForPartStatus
   ld hl, $9924
@@ -1204,7 +1204,7 @@ TileMappingByPartTypeForPartStatus::
   ld b, a
   ld a, [W_CurrentPartIndexForPartStatus]
   ld c, a
-  ld hl, $98E2
+  ld hl, $98E1
   call MapPartNameForPartStatus
   call GetPartStatValuesForPartStatus
   ld hl, $9924
@@ -1233,15 +1233,14 @@ TileMappingByPartTypeForPartStatus::
   jp .leftArmPart
 
 .legPart
-  ld b, 8
-  ld c, 1
+  ld bc, $0801
   ld hl, $98E2
   call $25E5
   ld a, [W_CurrentPartTypeForListView]
   ld b, a
   ld a, [W_CurrentPartIndexForPartStatus]
   ld c, a
-  ld hl, $98E2
+  ld hl, $98E1
   call MapPartNameForPartStatus
   call GetPartStatValuesForPartStatus
   ld hl, $9924
@@ -1276,15 +1275,11 @@ MapPartNameForPartStatus::
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call GetTileBasedCentringOffset
-  ld b, 0
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
+  pop de ; de = hl, location to map tiles to
+  ld h, $12 ; Tile drawing index
+  ld bc, W_NewListItemBufferArea
+  ld a, $9
+  call VWFDrawStringCentredFullAddress
   ret
 
 GetPartStatValuesForPartStatus::
@@ -1294,33 +1289,33 @@ GetPartStatValuesForPartStatus::
   jp $34FF
 
 MapAttributeNameForPartStatus::
-  ld b, 5
-  ld c, 7
+  ld bc, $0507
   ld a, [W_PartStatsBuffer + 0]
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
+  pop de ; de = hl, location to map tiles to
+  ld h, $1b ; Tile drawing index
+  ld bc, W_NewListItemBufferArea
   ld a, 6
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   ret
 
 MapSkillNameForPartStatus::
-  ld b, 6
-  ld c, 6
+  ld bc, $0606
   ld a, [W_PartStatsBuffer + 2]
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
+  pop de ; de = hl, location to map tiles to
+  ld h, $21 ; Tile drawing index
+  ld bc, W_NewListItemBufferArea
+  ld a, 6 ; originally 5, but we can support 6
+  call VWFDrawStringLeftFullAddress
   ret
 
 StarMappingForPartStatus::
@@ -1427,9 +1422,9 @@ ShowRightArrowForMedarotStatusUnused::
   ld [$C104], a
   ret
 
+; Shown instead of 'Skill' for legs
 MapMovementNameForPartStatus::
-  ld b, 7
-  ld c, 6
+  ld bc, $0706
   ld a, [W_PartStatsBuffer + 1]
   sub $50
   ld [W_ListItemIndexForBuffering], a
@@ -1437,11 +1432,17 @@ MapMovementNameForPartStatus::
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
+  pop de ; Address to map to
+  ld h, $21 ; Tile drawing index
+  ld bc, W_NewListItemBufferArea
+  ld a, 6 ; originally 5, but we have room for 6
+  call VWFDrawStringLeftFullAddress
   ret
+
+.end
+REPT $6CFC - .end
+  nop
+ENDR
 
 DirectionalInputHandlerForPartStatus::
   xor a
