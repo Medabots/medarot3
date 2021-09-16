@@ -339,11 +339,11 @@ Tilemap00_2A::
 Tilemap00_2B::
   INCBIN "./build/tilemaps/002B.map"
 Tilemap00_2C::
-  INCBIN "./build/tilemaps/002C.map"
+  INCBIN "./build/tilemaps/PartsInfoHead.map"
 Tilemap00_2D::
-  INCBIN "./build/tilemaps/002D.map"
+  INCBIN "./build/tilemaps/PartsInfoArms.map"
 Tilemap00_2F::
-  INCBIN "./build/tilemaps/002F.map"
+  INCBIN "./build/tilemaps/PartsInfoLegs.map"
 Tilemap00_30::
   INCBIN "./build/tilemaps/0030.map"
 Tilemap00_31::
