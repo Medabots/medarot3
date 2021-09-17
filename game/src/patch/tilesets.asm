@@ -74,3 +74,4 @@ PatchTilesets::
   PatchTilesetEntry PartsScreenPartTypes
   PatchTilesetEntry PartsInfoHead
   PatchTilesetEntry PartsInfoArms
+  PatchTilesetEntry PartsInfoLegs
