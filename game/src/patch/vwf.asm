@@ -877,6 +877,7 @@ VWFAlignToCentre::
   ld a, [W_VWFDrawnAreaLength]
   ld d, a
   ld a, [W_VWFDrawingAreaLengthInPixels]
+  inc a
   sub d
   jr c, VWFAlignToLeft
   rra

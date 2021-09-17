@@ -1165,9 +1165,8 @@ TileMappingByPartTypeForPartStatus::
   dw .headPart, .leftArmPart, .rightArmPart, .legPart
 
 .headPart
-  ld b, 8
-  ld c, 1
-  ld hl, $98E2
+  ld bc, $0901
+  ld hl, $98E1
   call $25E5
   ld a, [W_CurrentPartTypeForListView]
   ld b, a
@@ -1196,9 +1195,8 @@ TileMappingByPartTypeForPartStatus::
   ret
 
 .leftArmPart
-  ld b, 8
-  ld c, 1
-  ld hl, $98E2
+  ld bc, $0901
+  ld hl, $98E1
   call $25E5
   ld a, [W_CurrentPartTypeForListView]
   ld b, a
@@ -1233,8 +1231,8 @@ TileMappingByPartTypeForPartStatus::
   jp .leftArmPart
 
 .legPart
-  ld bc, $0801
-  ld hl, $98E2
+  ld bc, $0901
+  ld hl, $98E1
   call $25E5
   ld a, [W_CurrentPartTypeForListView]
   ld b, a

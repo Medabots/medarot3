@@ -72,3 +72,4 @@ PatchTilesets::
   PatchTilesetEntry VehiclesPeriscope
   PatchTilesetEntry GlossaryTerms
   PatchTilesetEntry PartsScreenPartTypes
+  PatchTilesetEntry PartsInfoHead

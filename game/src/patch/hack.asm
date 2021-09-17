@@ -83,3 +83,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry VehiclesPeriscope, $91f0 ; D
   TilemapTilesetTableEntry GlossaryTerms, $9010 ; E
   TilemapTilesetTableEntry PartsScreenPartTypes, $9120 ; F (loaded with the main PartsScreen, must preserve menu)
+  TilemapTilesetTableEntry PartsInfoHead, $9270 ; 10, PartsInfo 'stat names' are loaded after the actual attributes, which are fixed
