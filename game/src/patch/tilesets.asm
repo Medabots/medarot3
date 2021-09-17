@@ -73,3 +73,4 @@ PatchTilesets::
   PatchTilesetEntry GlossaryTerms
   PatchTilesetEntry PartsScreenPartTypes
   PatchTilesetEntry PartsInfoHead
+  PatchTilesetEntry PartsInfoArms
