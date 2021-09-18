@@ -4,8 +4,8 @@
 Strike
 Shoot
 Berserk
-Aim-Shot
-Defend
+Snipe
+Protect
 Set-up
 Heal
 Special

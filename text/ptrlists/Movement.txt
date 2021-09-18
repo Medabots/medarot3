@@ -1,10 +1,10 @@
 (1, [203], [(None, None)], [False], None, None, True)
 16
 26332
-Air
-Float
-Multi-Legged
-Two-Legged
-Wheels
+Flying
+Hover
+Multi-legged
+Bipedal
+Wheeled
 Tank
-Sea
+Aquatic
