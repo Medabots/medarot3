@@ -2,307 +2,307 @@
 256
 30485
 RAP-14\xcb
-AIR POCKET\xcb   
+Air Pocket\xcb   
 PTL-14\xcb
-AERIAL LEG\xcb  
+Aerial Leg\xcb  
 EGL-04\xcb
-FLY EAGER\xcb  
+Fly Eager\xcb  
 HWK-04\xcb
-FLY PHONE\xcb  
+Fly Phone\xcb  
 SWL-04\xcb
-SPARROW TAIL\xcb  
+Sparrow Tail\xcb  
 PRN-04\xcb
-FOREST HILL\xcb     
+Forest Hill\xcb     
 RVN-04\xcb
-DUAL WALK\xcb 
+Dual Walk\xcb 
 CCD-04\xcb
-CHIRP CHIRP\xcb     
+Chirp Chirp\xcb     
 GRH-04\xcb
-HOPPER\xcb     
+Hopper\xcb     
 CHC-04\xcb
-DEVELOPER\xcb   
+Developer\xcb   
 TJK-04\xcb
-CHANGE BLADE\xcb 
+Change Blade\xcb 
 PCK-04\xcb
-FOLDER\xcb    
+Folder\xcb    
 SLN-14\xcb
-SONGER\xcb    ア
+Songer\xcb    ア
 CNR-04\xcb
-WEAKER\xcb   ア
+Weaker\xcb   ア
 PIC-04\xcb
-FLASHY\xcb   ア
+Flashy\xcb   ア
 MQT-04\xcb
-STORE\xcb    ア
+Store\xcb    ア
 PTM-04\xcb
-SUMMER BROWN\xcb ア
+Summer Brown\xcb ア
 JPT-04\xcb
-WATERFALL\xcbア
+Waterfall\xcbア
 CRN-04\xcb
-CRANE\xcb    ア
+Crane\xcb    ア
 DFL-14\xcb
-FLOATING BAG\xcb  
+Floating Bag\xcb  
 FLS-04\xcb
-DONUTS TEN\xcb   
+Donuts Ten\xcb   
 ISE-04\xcb
-SHRIMPLIN\xcb   
+Shrimplin\xcb   
 MAN-04\xcb
-TREASURED CHILD\xcb    
+Treasured Child\xcb    
 CHS-04\xcb
-CHASE SCENE\xcb    
+Chase Scene\xcb    
 DGD-04\xcb
-KATAPPO\xcb    
+Katappo\xcb    
 QPD-04\xcb
-STRETCHER\xcb   
+Stretcher\xcb   
 VBL-04\xcb
-AND AGAIN\xcb  
+And Again\xcb  
 DVL-04\xcb
-POKOT\xcb     
+Pokot\xcb     
 GAG-04\xcb
-KEYSTONE\xcb   
+Keystone\xcb   
 WCH-14\xcb
-PANTALOONS\xcb   ア
+Pantaloons\xcb   ア
 SPN-04\xcb
-AATC\xcb    ア
+Aatc\xcb    ア
 BCY-04\xcb
-TEPID WIND\xcbア
+Tepid Wind\xcbア
 MRS-04\xcb
-MUST-TOUCH\xcb   ア
+Must-touch\xcb   ア
 WEA-24\xcb
-DEATH CRAWLER\xcb  
+Death Crawler\xcb  
 BOW-04\xcb
-PETAL HEEL\xcb    
+Petal Heel\xcb    
 TLB-04\xcb
-SCYLLA\xcb     
+Scylla\xcb     
 MMT-04\xcb
-THAT'S MEAT\xcb   
+That's Meat\xcb   
 SRC-04\xcb
-FOUR-PIECE\xcb   
+Four-piece\xcb   
 IVP-04\xcb
-ROOT\xcb      
+Root\xcb      
 HMS-04\xcb
-UNKNOW\xcb     
+Unknow\xcb     
 KBS-04\xcb
-TITLE DOOR\xcb  
+Title Door\xcb  
 DHN-04\xcb
-SKULL HORSE\xcb   
+Skull Horse\xcb   
 TIC-04\xcb
-TRICKY AGAIN\xcb  
+Tricky Again\xcb  
 LOS-04\xcb
-CRAWLING IN AGAIN\xcb   
+Crawling In Again\xcb   
 FLA-04\xcb
-OFFBEAT AGAIN\xcb   
+Offbeat Again\xcb   
 FAW-04\xcb
-KICKER\xcb     
+Kicker\xcb     
 TMN-04\xcb
-SEGMENTER\xcb  ア
+Segmenter\xcb  ア
 DRI-04\xcb
-STAMENT\xcb  ア
+Stament\xcb  ア
 CRK-04\xcb
-JUMP LEG\xcb ア
+Jump Leg\xcb ア
 ETH-04\xcb
-SPACESHIP\xcb ア
+Spaceship\xcb ア
 KWG-24\xcb
-TATACKER\xcb    
+Tatacker\xcb    
 KBT-24\xcb
-OCHITSUKA\xcb    
+Ochitsuka\xcb    
 DDO-04\xcb
-SHARP EDGE\xcb  
+Sharp Edge\xcb  
 KLN-04\xcb
-ABDUCTOR\xcb   
+Abductor\xcb   
 KBT-34\xcb
-IMPROVED OCHITSUKA\xcb  
+Improved Ochitsuka\xcb  
 KBT-44\xcb
-FIREWORKS\xcb  
+Fireworks\xcb  
 LHB-14\xcb
-INCOHERENT\xcb  
+Incoherent\xcb  
 MWB-14\xcb
-COOL DOWN\xcb   
+Cool Down\xcb   
 TIR-14\xcb
-DASH LEG\xcb  
+Dash Leg\xcb  
 BAN-14\xcb
-WORK SHOES\xcb  
+Work Shoes\xcb  
 DOG-24\xcb
-SUPPORTAIL\xcb   
+Supportail\xcb   
 ALN-14\xcb
-ODD LEG\xcb   
+Odd Leg\xcb   
 VER-04\xcb
-STAND ARROW\xcb  
+Stand Arrow\xcb  
 FLL-04\xcb
-HARRIER\xcb     
+Harrier\xcb     
 KWG-39\xcb
-BLACK FLACK\xcbア
+Black Flack\xcbア
 APL-04\xcb
-AIR TURBINE\xcb   
+Air Turbine\xcb   
 PGM-04\xcb
-PLATINUM FINGER\xcb 
+Platinum Finger\xcb 
 KRN-04\xcb
-CAMELEOPARD\xcb  
+Cameleopard\xcb  
 TKG-04\xcb
-SENTENCE\xcb    
+Sentence\xcb    
 KWG-34\xcb
-WIND FLACK\xcb 
+Wind Flack\xcb 
 STG-14\xcb
-KEEN EDGE\xcb   
+Keen Edge\xcb   
 CHT-04\xcb
-ON STEADY\xcb   
+On Steady\xcb   
 WLF-04\xcb
-STORM WALK\xcb 
+Storm Walk\xcb 
 RCM-04\xcb
-STEAM TURBINE\xcb 
+Steam Turbine\xcb 
 KBT-34\xcb
-ENPLACE\xcb   
+Enplace\xcb   
 KLN-14\xcb
-MIGRATOR\xcb   
+Migrator\xcb   
 KBT-39\xcb
-BLACK PLACE\xcbア
+Black Place\xcbア
 GNB-04\xcb
-RETIRE\xcb    
+Retire\xcb    
 BAF-04\xcb
-KNEECAP\xcb   
+Kneecap\xcb   
 SRU-04\xcb
-KEEL\xcb      
+Keel\xcb      
 SHP-04\xcb
-WATER TURBINE\xcb 
+Water Turbine\xcb 
 GHL-04\xcb
-RANCID\xcb    
+Rancid\xcb    
 SLR-24\xcb
-NAVY GALE\xcb ア
+Navy Gale\xcb ア
 NAS-24\xcb
-APRON DRESS\xcb ア
+Apron Dress\xcb ア
 CAT-24\xcb
-BOW QUICK\xcb  ア
+Bow Quick\xcb  ア
 VAL-14\xcb
-PALADIN MASTER\xcbア
+Paladin Master\xcbア
 BNY-14\xcb
-ASIDE MAIL\xcb ア
+Aside Mail\xcb ア
 GRW-04\xcb
-SLOW-FOOTED\xcb   ア
+Slow-footed\xcb   ア
 CMP-14\xcb
-MY FEET\xcb  ア
+My Feet\xcb  ア
 MIK-04\xcb
-HAKAMA\xcb     ア
+Hakama\xcb     ア
 MID-04\xcb
-PINNY\xcb     ア
+Pinny\xcb     ア
 LTS-04\xcb
-BLACKY\xcb   ア
+Blacky\xcb   ア
 LDB-04\xcb
-THREE STAR\xcb  ア
+Three Star\xcb  ア
 SUN-04\xcb
-SUNSHINE\xcb  ア
+Sunshine\xcb  ア
 MON-04\xcb
-LOINCLOTH\xcb    ア
+Loincloth\xcb    ア
 HLY-04\xcb
-AMINOS\xcb    ア
+Aminos\xcb    ア
 UNS-04\xcb
-ICICLE\xcb   ア
+Icicle\xcb   ア
 NEP-04\xcb
-EXPRESSOR\xcbア
+Expressor\xcbア
 PLT-04\xcb
-EMOTION\xcb  ア
+Emotion\xcb  ア
 SZK-04\xcb
-FLOWER PARLOUR\xcbア
+Flower Parlour\xcbア
 PNT-04\xcb
-LEOPARDUS\xcb   ア
+Leopardus\xcb   ア
 NEK-04\xcb
-MEOW FORK\xcb   ア
+Meow Fork\xcb   ア
 BYC-04\xcb
-DRUNKER\xcb   ア
+Drunker\xcb   ア
 IDL-04\xcb
-MODE SKIRT\xcb ア
+Mode Skirt\xcb ア
 MTC-04\xcb
-OCTANE\xcb    
+Octane\xcb    
 CVL-04\xcb
-DOZER\xcb     
+Dozer\xcb     
 KAB-04\xcb
-FLOWER ROAD\xcb  
+Flower Road\xcb  
 BST-04\xcb
-KID CART\xcb   
+Kid Cart\xcb   
 GRF-04\xcb
-WILDER\xcb    
+Wilder\xcb    
 CML-04\xcb
-SAND BUGGY\xcb   
+Sand Buggy\xcb   
 BIC-04\xcb
-WHEELIN'\xcb    
+Wheelin'\xcb    
 ECF-04\xcb
-CONTROL BOX\xcb  
+Control Box\xcb  
 CTP-04\xcb
-STRINGER\xcb   
+Stringer\xcb   
 HCT-04\xcb
-CRAWLER\xcb    
+Crawler\xcb    
 PLC-04\xcb
-PURSUER\xcb     
+Pursuer\xcb     
 RSC-04\xcb
-REACHER\xcb    
+Reacher\xcb    
 FFC-04\xcb
-CAN BACKER\xcb   
+Can Backer\xcb   
 RAY-24\xcb
-STREET BUGGY\xcb 
+Street Buggy\xcb 
 GCT-04\xcb
-CATERPEE\xcb   ア
+Caterpee\xcb   ア
 VNS-04\xcb
-DAYBREAK\xcb  ア
+Daybreak\xcb  ア
 BRA-14\xcb
-EARTH LEG\xcb   
+Earth Leg\xcb   
 TOT-24\xcb
-DUAL TANK\xcb  
+Dual Tank\xcb  
 HSC-04\xcb
-YUCK\xcb    
+Yuck\xcb    
 STE-04\xcb
-NARROW LEG\xcb   
+Narrow Leg\xcb   
 TOR-04\xcb
-CLOSE LEG\xcb  
+Close Leg\xcb  
 MWO-04\xcb
-QUICK-COOKER\xcb 
+Quick-cooker\xcb 
 ESM-04\xcb
-HANDLE\xcb     
+Handle\xcb     
 CCL-04\xcb
-ROLL CATERPILLAR\xcb 
+Roll Caterpillar\xcb 
 EWM-04\xcb
-UNDELETE\xcb   
+Undelete\xcb   
 STN-04\xcb
-OUTLINER\xcb ア
+Outliner\xcb ア
 WHL-04\xcb
-HIGH TIDE\xcb    
+High Tide\xcb    
 AMB-04\xcb
-FLAVY\xcb    
+Flavy\xcb    
 SAM-04\xcb
-PROCTOLOGY\xcb  
+Proctology\xcb  
 SEL-04\xcb
-BESTOWED\xcb    
+Bestowed\xcb    
 CFS-04\xcb
-CATFI\xcb  
+Catfi\xcb  
 EEL-04\xcb
-SURFACE\xcb   
+Surface\xcb   
 CRO-04\xcb
-SHOW LINER\xcb  
+Show Liner\xcb  
 UPA-04\xcb
-EXCEED\xcb    
+Exceed\xcb    
 BBS-04\xcb
-LAKE DUSTER\xcb  
+Lake Duster\xcb  
 ARO-04\xcb
-BUMPY FLAT\xcb 
+Bumpy Flat\xcb 
 HLG-04\xcb
-MANY SLENDER\xcb 
+Many Slender\xcb 
 JWB-04\xcb
-AQUA CROTCH\xcb  
+Aqua Crotch\xcb  
 PSK-04\xcb
-SKATER\xcb    
+Skater\xcb    
 SHS-04\xcb
-ROLL TAIL\xcb   
+Roll Tail\xcb   
 CRP-04\xcb
-FLEX SCREW\xcb 
+Flex Screw\xcb 
 DLP-04\xcb
-FLIPPER\xcb   ア
+Flipper\xcb   ア
 GFS-04\xcb
-LIGHT FRILL\xcb  ア
+Light Frill\xcb  ア
 TQN-04\xcb
-CARRY HAND\xcb ア
+Carry Hand\xcb ア
 DUC-04\xcb
-ELEGANCY\xcb  ア
+Elegancy\xcb  ア
 MRC-04\xcb
-HYDROFOIL\xcbア
+Hydrofoil\xcbア
 TJO-04\xcb
-PENALTY\xcb   ア
+Penalty\xcb   ア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb

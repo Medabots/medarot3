@@ -2,307 +2,307 @@
 256
 27372
 RAP-13\xcb
-DROP BLOW\xcb  
+Drop Blow\xcb  
 PTL-13\xcb
-YOUNG SWORD\xcb   
+Young Sword\xcb   
 EGL-03\xcb
-LEAK BOX\xcb  
+Leak Box\xcb  
 HWK-03\xcb
-BURN CAPSULE\xcb  
+Burn Capsule\xcb  
 SWL-03\xcb
-NOT LOOK\xcb   
+Not Look\xcb   
 PRN-03\xcb
-TIPPER\xcb    
+Tipper\xcb    
 RVN-03\xcb
-CRAVER\xcb    
+Craver\xcb    
 CCD-03\xcb
-LARGE NOISY\xcb  
+Large Noisy\xcb  
 GRH-03\xcb
-CONSUMER\xcb  
+Consumer\xcb  
 CHC-03\xcb
-FLAMER\xcb    
+Flamer\xcb    
 TJK-03\xcb
-WHOLE HANDLE\xcb  
+Whole Handle\xcb  
 PCK-03\xcb
-SUCK OUTER\xcb  
+Suck Outer\xcb  
 SLN-13\xcb
-CHORD MUFFLER\xcb ア
+Chord Muffler\xcb ア
 CNR-03\xcb
-FEEL NERVE\xcb ア
+Feel Nerve\xcb ア
 PIC-03\xcb
-VILELY\xcb    ア
+Vilely\xcb    ア
 MQT-03\xcb
-INHOLE\xcb   ア
+Inhole\xcb   ア
 PTM-03\xcb
-BE SUIT\xcb  ア
+Be Suit\xcb  ア
 JPT-03\xcb
-ASH\xcb    ア
+Ash\xcb    ア
 CRN-03\xcb
-REPAID\xcb    ア
+Repaid\xcb    ア
 DFL-13\xcb
-SHAKE-SHAKE\xcb     
+Shake-shake\xcb     
 FLS-03\xcb
-BAG FLITTER\xcb  
+Bag Flitter\xcb  
 ISE-03\xcb
-GAMER\xcb     
+Gamer\xcb     
 MAN-03\xcb
-INVALID\xcb   
+Invalid\xcb   
 CHS-03\xcb
-CATCH PLATE\xcb 
+Catch Plate\xcb 
 DGD-03\xcb
-DEATH SICKLE\xcb   
+Death Sickle\xcb   
 QPD-03\xcb
-HAPPY ARROW\xcb  
+Happy Arrow\xcb  
 VBL-03\xcb
-WEIGHTER\xcb    
+Weighter\xcb    
 DVL-03\xcb
-PEKET\xcb     
+Peket\xcb     
 GAG-03\xcb
-TURN STONE\xcb  
+Turn Stone\xcb  
 WCH-13\xcb
-TOAD BALL\xcb  ア
+Toad Ball\xcb  ア
 SPN-03\xcb
-ASBM\xcb    ア
+Asbm\xcb    ア
 BCY-03\xcb
-SHRIEKER\xcb  ア
+Shrieker\xcb  ア
 MRS-03\xcb
-MOUNT BORDER\xcbア
+Mount Border\xcbア
 WEA-23\xcb
-DEATH LASER\xcb   
+Death Laser\xcb   
 BOW-03\xcb
-SLIDER\xcb    
+Slider\xcb    
 TLB-03\xcb
-SPINETTE\xcb    
+Spinette\xcb    
 MMT-03\xcb
-BUCK RUSH\xcb  
+Buck Rush\xcb  
 SRC-03\xcb
-SENSE DRIVE\xcb  
+Sense Drive\xcb  
 IVP-03\xcb
-HUNT PLANT\xcb  
+Hunt Plant\xcb  
 HMS-03\xcb
-TIE HAND\xcb    
+Tie Hand\xcb    
 KBS-03\xcb
-MELT FANG\xcb  
+Melt Fang\xcb  
 DHN-03\xcb
-HAND CHARGE\xcb  
+Hand Charge\xcb  
 TIC-03\xcb
-CHEWIN'\xcb    
+Chewin'\xcb    
 LOS-03\xcb
-SPUTTERING\xcb     
+Sputtering\xcb     
 FLA-03\xcb
-SCRATCHY\xcb    
+Scratchy\xcb    
 FAW-03\xcb
-SUCH FORCE\xcb  
+Such Force\xcb  
 TMN-03\xcb
-TRAP POUCH\xcb ア
+Trap Pouch\xcb ア
 DRI-03\xcb
-GATHERING\xcb  ア
+Gathering\xcb  ア
 CRK-03\xcb
-POD SPEECH\xcb ア
+Pod Speech\xcb ア
 ETH-03\xcb
-LIVE WATER\xcb ア
+Live Water\xcb ア
 KWG-23\xcb
-PICOPECO HAMMER\xcb 
+Picopeco Hammer\xcb 
 KBT-23\xcb
-SUBMACHINEGUN\xcb  
+Submachinegun\xcb  
 DDO-03\xcb
-STRAW HAMMER\xcb 
+Straw Hammer\xcb 
 KLN-03\xcb
-RANGE SHOOTER\xcb 
+Range Shooter\xcb 
 KBT-33\xcb
-IMPROVED MACHINEGUN\xcb  
+Improved Machinegun\xcb  
 KBT-43\xcb
-EXPLODE\xcb  
+Explode\xcb  
 LHB-13\xcb
-BLOWPIPE\xcb   
+Blowpipe\xcb   
 MWB-13\xcb
-LINKS\xcb     
+Links\xcb     
 TIR-13\xcb
-STRIKE CALL\xcb 
+Strike Call\xcb 
 BAN-13\xcb
-LEFT FIST\xcb  
+Left Fist\xcb  
 DOG-23\xcb
-ROLL BARREL\xcb   
+Roll Barrel\xcb   
 ALN-13\xcb
-ODD ARM\xcb   
+Odd Arm\xcb   
 VER-03\xcb
-QUICKLY\xcb    
+Quickly\xcb    
 FLL-03\xcb
-ROSTER\xcb     
+Roster\xcb     
 KWG-38\xcb
-BLACK BEAT\xcb ア
+Black Beat\xcb ア
 APL-03\xcb
-AIR FIN\xcb    
+Air Fin\xcb    
 PGM-03\xcb
-SILVER FINGER\xcb 
+Silver Finger\xcb 
 KRN-03\xcb
-GOLDENROD\xcb 
+Goldenrod\xcb 
 TKG-03\xcb
-DECISION\xcb   
+Decision\xcb   
 KWG-33\xcb
-INTENSE BEAT\xcb 
+Intense Beat\xcb 
 STG-13\xcb
-SOLID HAMMER\xcb 
+Solid Hammer\xcb 
 CHT-03\xcb
-CONSUME\xcb   
+Consume\xcb   
 WLF-03\xcb
-AUXILIARY\xcb   
+Auxiliary\xcb   
 RCM-03\xcb
-STEAM PIPE\xcb  
+Steam Pipe\xcb  
 KBT-33\xcb
-BLASTER\xcb    
+Blaster\xcb    
 KLN-13\xcb
-DUCT SHOOTER\xcb 
+Duct Shooter\xcb 
 KBT-38\xcb
-BLACK BLASTER\xcbア
+Black Blaster\xcbア
 GNB-03\xcb
-IRON TURTLE\xcb 
+Iron Turtle\xcb 
 BAF-03\xcb
-ANGUS\xcb     
+Angus\xcb     
 SRU-03\xcb
-PLECTOPIC\xcb  
+Plectopic\xcb  
 SHP-03\xcb
-WATER PORT\xcb  
+Water Port\xcb  
 GHL-03\xcb
-SPOILER\xcb    
+Spoiler\xcb    
 SLR-23\xcb
-FIREARM\xcbア
+Firearm\xcbア
 NAS-23\xcb
-MOBILE CAPSULE\xcbア
+Mobile Capsule\xcbア
 CAT-23\xcb
-AGILE BLOW\xcb  ア
+Agile Blow\xcb  ア
 VAL-13\xcb
-GRACE SHIELD\xcbア
+Grace Shield\xcbア
 BNY-13\xcb
-FRUIT JUICE\xcbア
+Fruit Juice\xcbア
 GRW-03\xcb
-UNISHOVEL\xcb  ア
+Unishovel\xcb  ア
 CMP-13\xcb
-STEP FE\xcb  ア
+Step Fe\xcb  ア
 MIK-03\xcb
-TEAR PLATE\xcbア
+Tear Plate\xcbア
 MID-03\xcb
-FRY PAN\xcb   ア
+Fry Pan\xcb   ア
 LTS-03\xcb
-SPAWN\xcb    ア
+Spawn\xcb    ア
 LDB-03\xcb
-THREE STARRY\xcb  ア
+Three Starry\xcb  ア
 SUN-03\xcb
-COGWHEEL\xcb  ア
+Cogwheel\xcb  ア
 MON-03\xcb
-FULL MOON\xcb   ア
+Full Moon\xcb   ア
 HLY-03\xcb
-CLIPPED ICE\xcb ア
+Clipped Ice\xcb ア
 UNS-03\xcb
-HOLD DOWN\xcb ア
+Hold Down\xcb ア
 NEP-03\xcb
-WHICK\xcb    ア
+Whick\xcb    ア
 PLT-03\xcb
-HANDLE GATE\xcb ア
+Handle Gate\xcb ア
 SZK-03\xcb
-WISE OPEN\xcb ア
+Wise Open\xcb ア
 PNT-03\xcb
-EFFECTING\xcbア
+Effecting\xcbア
 NEK-03\xcb
-CAT GLOVE\xcb  ア
+Cat Glove\xcb  ア
 BYC-03\xcb
-STRIP CLAW\xcbア
+Strip Claw\xcbア
 IDL-03\xcb
-MURDER YOYO\xcbア
+Murder Yoyo\xcbア
 MTC-03\xcb
-NO-AVOID\xcb    
+No-avoid\xcb    
 CVL-03\xcb
-CONCAVE CRANE\xcb   
+Concave Crane\xcb   
 KAB-03\xcb
-ACTING\xcb   
+Acting\xcb   
 BST-03\xcb
-DON DON\xcb     
+Don Don\xcb     
 GRF-03\xcb
-INSPECTOR\xcb  
+Inspector\xcb  
 CML-03\xcb
-FAT SAVE\xcb  
+Fat Save\xcb  
 BIC-03\xcb
-PEDAL CANNON\xcb    
+Pedal Cannon\xcb    
 ECF-03\xcb
-HI SPEED\xcb   
+Hi Speed\xcb   
 CTP-03\xcb
-EARTH CREEP\xcb  
+Earth Creep\xcb  
 HCT-03\xcb
-KINKY HAIR\xcb   
+Kinky Hair\xcb   
 PLC-03\xcb
-CAPTURE\xcb   
+Capture\xcb   
 RSC-03\xcb
-RESCUE\xcb    
+Rescue\xcb    
 FFC-03\xcb
-DISCHARGE\xcb  
+Discharge\xcb  
 RAY-23\xcb
-FLEE BEAM\xcb   
+Flee Beam\xcb   
 GCT-03\xcb
-ATTENDER SKIN\xcbア
+Attender Skin\xcbア
 VNS-03\xcb
-JUG POT\xcb  ア
+Jug Pot\xcb  ア
 BRA-13\xcb
-GLOW MASHER\xcb 
+Glow Masher\xcb 
 TOT-23\xcb
-REST LASER\xcb  
+Rest Laser\xcb  
 HSC-03\xcb
-SHOWSER\xcb    
+Showser\xcb    
 STE-03\xcb
-DUMP SET\xcb   
+Dump Set\xcb   
 TOR-03\xcb
-TRIP ATTACK\xcb  
+Trip Attack\xcb  
 MWO-03\xcb
-MAGNETTY\xcb  
+Magnetty\xcb  
 ESM-03\xcb
-SPICON\xcb     
+Spicon\xcb     
 CCL-03\xcb
-BULB\xcb      
+Bulb\xcb      
 EWM-03\xcb
-MANURE\xcb     
+Manure\xcb     
 STN-03\xcb
-HOOPENING\xcb  ア
+Hoopening\xcb  ア
 WHL-03\xcb
-SPLINE\xcb    
+Spline\xcb    
 AMB-03\xcb
-MUCILAGE\xcb   
+Mucilage\xcb   
 SAM-03\xcb
-TIE-TIE UP\xcb  
+Tie-tie Up\xcb  
 SEL-03\xcb
-MONA-MONARCH\xcb   
+Mona-monarch\xcb   
 CFS-03\xcb
-TEMBLOR\xcb    
+Temblor\xcb    
 EEL-03\xcb
-HIPOPOS\xcb     
+Hipopos\xcb     
 CRO-03\xcb
-OVERPOWER\xcb  
+Overpower\xcb  
 UPA-03\xcb
-SUM FIN\xcb    
+Sum Fin\xcb    
 BBS-03\xcb
-SURROUNDING\xcb 
+Surrounding\xcb 
 ARO-03\xcb
-SHRIMP ARM\xcb 
+Shrimp Arm\xcb 
 HLG-03\xcb
-PUPPET WIRE\xcb 
+Puppet Wire\xcb 
 JWB-03\xcb
-ORIENT HARP\xcb 
+Orient Harp\xcb 
 PSK-03\xcb
-DEMOLISH\xcb   
+Demolish\xcb   
 SHS-03\xcb
-REPRESS\xcb     
+Repress\xcb     
 CRP-03\xcb
-INEFFICIENCY\xcb 
+Inefficiency\xcb 
 DLP-03\xcb
-GET BACK\xcb  ア
+Get Back\xcb  ア
 GFS-03\xcb
-BASKET WORK\xcbア
+Basket Work\xcbア
 TQN-03\xcb
-INCREASE\xcb  ア
+Increase\xcb  ア
 DUC-03\xcb
-FEATHER DARN\xcb ア
+Feather Darn\xcb ア
 MRC-03\xcb
-LANCER\xcb    ア
+Lancer\xcb    ア
 TJO-03\xcb
-LAST STRIKE\xcbア
+Last Strike\xcbア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb

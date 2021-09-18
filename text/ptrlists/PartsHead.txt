@@ -2,307 +2,307 @@
 256
 21146
 RAP-11\xcb
-WON MUSKET\xcb 
+Won Musket\xcb 
 PTL-11\xcb
-HIDDEN BUSTER\xcb 
+Hidden Buster\xcb 
 EGL-01\xcb
-LEAK HEAD\xcb   
+Leak Head\xcb   
 HWK-01\xcb
-BURN HEAD\xcb   
+Burn Head\xcb   
 SWL-01\xcb
-BLINDNESS\xcb  
+Blindness\xcb  
 PRN-01\xcb
-LOST RESTORE\xcb  
+Lost Restore\xcb  
 RVN-01\xcb
-COVETTER\xcb    
+Covetter\xcb    
 CCD-01\xcb
-BEAT SURROUND\xcb 
+Beat Surround\xcb 
 GRH-01\xcb
-TOPKNOTTON\xcb  
+Topknotton\xcb  
 CHC-01\xcb
-OUT PLUMBER\xcb  
+Out Plumber\xcb  
 TJK-01\xcb
-CORE HEAD\xcb    
+Core Head\xcb    
 PCK-01\xcb
-INTERIOR DECORATOR\xcb 
+Interior Decorator\xcb 
 SLN-11\xcb
-COMPLINE\xcb  ア
+Compline\xcb  ア
 CNR-01\xcb
-OPTIC NERVE\xcb  ア
+Optic Nerve\xcb  ア
 PIC-01\xcb
-DISPOSE\xcb  ア
+Dispose\xcb  ア
 MQT-01\xcb
-SUTTOL\xcb    ア
+Suttol\xcb    ア
 PTM-01\xcb
-FORE MOUNT\xcb ア
+Fore Mount\xcb ア
 JPT-01\xcb
-JOVIAN\xcb   ア
+Jovian\xcb   ア
 CRN-01\xcb
-KIND\xcb    ア
+Kind\xcb    ア
 DFL-11\xcb
-BLANKER EXPRESSION\xcb  
+Blanker Expression\xcb  
 FLS-01\xcb
-MELON\xcb     
+Melon\xcb     
 ISE-01\xcb
-SHRIMPRESS\xcb  
+Shrimpress\xcb  
 MAN-01\xcb
-WITHOUT THAT\xcb   
+Without That\xcb   
 CHS-01\xcb
-DISCOUNTER\xcb 
+Discounter\xcb 
 DGD-01\xcb
-JET BLACK\xcb 
+Jet Black\xcb 
 QPD-01\xcb
-LOVE-LINK\xcb    
+Love-link\xcb    
 VBL-01\xcb
-ZERO G\xcb     
+Zero G\xcb     
 DVL-01\xcb
-PIKIT\xcb     
+Pikit\xcb     
 GAG-01\xcb
-ENDEARING\xcb   
+Endearing\xcb   
 WCH-11\xcb
-CAYENNE\xcb    ア
+Cayenne\xcb    ア
 SPN-01\xcb
-AAM\xcb     ア
+Aam\xcb     ア
 BCY-01\xcb
-MAX SHOUT\xcbア
+Max Shout\xcbア
 MRS-01\xcb
-VOLCANY\xcb   ア
+Volcany\xcb   ア
 WEA-21\xcb
-DEATH BREAK\xcb   
+Death Break\xcb   
 BOW-01\xcb
-WORSHIP\xcb    
+Worship\xcb    
 TLB-01\xcb
-SLATER\xcb    
+Slater\xcb    
 MMT-01\xcb
-GREAT BUCKLE\xcb 
+Great Buckle\xcb 
 SRC-01\xcb
-CHASER\xcb    
+Chaser\xcb    
 IVP-01\xcb
-HUNT HUMAN\xcb 
+Hunt Human\xcb 
 HMS-01\xcb
-DEFORMISTY\xcb  
+Deformisty\xcb  
 KBS-01\xcb
-VIRUS FANG\xcb 
+Virus Fang\xcb 
 DHN-01\xcb
-HEADLESS\xcb    
+Headless\xcb    
 TIC-01\xcb
-TRICKY\xcb    
+Tricky\xcb    
 LOS-01\xcb
-CRAWLING IN\xcb     
+Crawling In\xcb     
 FLA-01\xcb
-OFFBEAT\xcb     
+Offbeat\xcb     
 FAW-01\xcb
-LONG FAWN\xcb  
+Long Fawn\xcb  
 TMN-01\xcb
-TRAP BAG\xcb ア
+Trap Bag\xcb ア
 DRI-01\xcb
-GATHER\xcb    ア
+Gather\xcb    ア
 CRK-01\xcb
-VIOLA\xcb    ア
+Viola\xcb    ア
 ETH-01\xcb
-GRASS WATER\xcbア
+Grass Water\xcbア
 KWG-21\xcb
-ANTENNA\xcb     
+Antenna\xcb     
 KBT-21\xcb
-MISSILE\xcb     
+Missile\xcb     
 DDO-01\xcb
-HUNTER\xcb     
+Hunter\xcb     
 KLN-01\xcb
-TENSION UP\xcb 
+Tension Up\xcb 
 KBT-31\xcb
-IMPROVED MISSILE\xcb   
+Improved Missile\xcb   
 KBT-41\xcb
-PROMINENCE\xcb   
+Prominence\xcb   
 LHB-11\xcb
-DARLING\xcb    
+Darling\xcb    
 MWB-11\xcb
-FOLLY\xcb    
+Folly\xcb    
 TIR-11\xcb
-SNORT FIRE\xcb 
+Snort Fire\xcb 
 BAN-11\xcb
-ROUGH TOSAKAN\xcb 
+Rough Tosakan\xcb 
 DOG-21\xcb
-HEAD VULCAN\xcb  
+Head Vulcan\xcb  
 ALN-11\xcb
-ODD BODY\xcb   
+Odd Body\xcb   
 VER-01\xcb
-TARGETTER\xcb   
+Targetter\xcb   
 FLL-01\xcb
-FRILLIN\xcb     
+Frillin\xcb     
 KWG-36\xcb
-BLACK INCOM\xcbア
+Black Incom\xcbア
 APL-01\xcb
-AIR FLIGHT\xcb   
+Air Flight\xcb   
 PGM-01\xcb
-PEARL FINGER\xcb  
+Pearl Finger\xcb  
 KRN-01\xcb
-SHIFTON\xcb   
+Shifton\xcb   
 TKG-01\xcb
-UNMASK\xcb    
+Unmask\xcb    
 KWG-31\xcb
-TWIN INCOM\xcb  
+Twin Incom\xcb  
 STG-11\xcb
-INSULT\xcb    
+Insult\xcb    
 CHT-01\xcb
-EAT UP\xcb   
+Eat Up\xcb   
 WLF-01\xcb
-CITADEL\xcb    
+Citadel\xcb    
 RCM-01\xcb
-STEAM BOARD\xcb  
+Steam Board\xcb  
 KBT-31\xcb
-BALLISTA\xcb    
+Ballista\xcb    
 KLN-11\xcb
-REINFORCE\xcb  
+Reinforce\xcb  
 KBT-36\xcb
-BLACK BALLISTA\xcbア
+Black Ballista\xcbア
 GNB-01\xcb
-SCRUBBING BRUSH\xcb 
+Scrubbing Brush\xcb 
 BAF-01\xcb
-ANGLER\xcb    
+Angler\xcb    
 SRU-01\xcb
-FORCE CANNON\xcb 
+Force Cannon\xcb 
 SHP-01\xcb
-WATER FLEET\xcb 
+Water Fleet\xcb 
 GHL-01\xcb
-DEXY\xcb     
+Dexy\xcb     
 SLR-21\xcb
-EX MINE\xcb  ア
+Ex Mine\xcb  ア
 NAS-21\xcb
-HOLY GROUND\xcbア
+Holy Ground\xcbア
 CAT-21\xcb
-AGILE CIRCUIT\xcbア
+Agile Circuit\xcbア
 VAL-11\xcb
-FLAX MIRROR\xcbア
+Flax Mirror\xcbア
 BNY-11\xcb
-PERSONAL LANE\xcbア
+Personal Lane\xcbア
 GRW-01\xcb
-TROPICANA\xcb  ア
+Tropicana\xcb  ア
 CMP-11\xcb
-FLAT\xcb    ア
+Flat\xcb    ア
 MIK-01\xcb
-WHITE CLOTH\xcbア
+White Cloth\xcbア
 MID-01\xcb
-CHOKER\xcb   ア
+Choker\xcb   ア
 LTS-01\xcb
-DISMISS\xcb   ア
+Dismiss\xcb   ア
 LDB-01\xcb
-NEBULA SLING\xcbア
+Nebula Sling\xcbア
 SUN-01\xcb
-CORONA BEAM\xcb  ア
+Corona Beam\xcb  ア
 MON-01\xcb
-CRESCENT MOON\xcbア
+Crescent Moon\xcbア
 HLY-01\xcb
-GAS CLOTH\xcb  ア
+Gas Cloth\xcb  ア
 UNS-01\xcb
-IMPLORE\xcb  ア
+Implore\xcb  ア
 NEP-01\xcb
-NAGLACK\xcb   ア
+Naglack\xcb   ア
 PLT-01\xcb
-HARDY\xcb    ア
+Hardy\xcb    ア
 SZK-01\xcb
-BRAIN MIXER\xcbア
+Brain Mixer\xcbア
 PNT-01\xcb
-STRONGHOLD\xcbア
+Stronghold\xcbア
 NEK-01\xcb
-PETIT OTITIS\xcbア
+Petit Otitis\xcbア
 BYC-01\xcb
-POWDER BURN\xcb ア
+Powder Burn\xcb ア
 IDL-01\xcb
-GRACE VISOR\xcbア
+Grace Visor\xcbア
 MTC-01\xcb
-MAGLITE\xcb    
+Maglite\xcb    
 CVL-01\xcb
-HEAD LADDER\xcb   
+Head Ladder\xcb   
 KAB-01\xcb
-FULLY HAIR\xcb  
+Fully Hair\xcb  
 BST-01\xcb
-SHOULDER\xcb    
+Shoulder\xcb    
 GRF-01\xcb
-LONGNECK\xcb   
+Longneck\xcb   
 CML-01\xcb
-FURTHER RESERVE\xcb  
+Further Reserve\xcb  
 BIC-01\xcb
-ONE-POINT\xcb   
+One-point\xcb   
 ECF-01\xcb
-HEAD SHAKE\xcb  
+Head Shake\xcb  
 CTP-01\xcb
-KAMIKILLER\xcb    
+Kamikiller\xcb    
 HCT-01\xcb
-CHANGE MOLT\xcb  
+Change Molt\xcb  
 PLC-01\xcb
-PATROL LIGHT\xcb 
+Patrol Light\xcb 
 RSC-01\xcb
-EMERGENCY LIGHT\xcb 
+Emergency Light\xcb 
 FFC-01\xcb
-FIRE LIGHT\xcb 
+Fire Light\xcb 
 RAY-21\xcb
-BACK BEAM\xcb   
+Back Beam\xcb   
 GCT-01\xcb
-CHANGE DRESS\xcb ア
+Change Dress\xcb ア
 VNS-01\xcb
-PERFUME\xcb  ア
+Perfume\xcb  ア
 BRA-11\xcb
-ANTI-FLIER\xcb 
+Anti-flier\xcb 
 TOT-21\xcb
-MOUTH LASER\xcb  
+Mouth Laser\xcb  
 HSC-01\xcb
-SMOOTH\xcb    
+Smooth\xcb    
 STE-01\xcb
-EMPTY SET\xcb  
+Empty Set\xcb  
 TOR-01\xcb
-THREE ATTACK\xcb  
+Three Attack\xcb  
 MWO-01\xcb
-SIZZLER\xcb     
+Sizzler\xcb     
 ESM-01\xcb
-THREAD SPOOL\xcb    
+Thread Spool\xcb    
 CCL-01\xcb
-KOTAME\xcb     
+Kotame\xcb     
 EWM-01\xcb
-SQUIRM\xcb    
+Squirm\xcb    
 STN-01\xcb
-SHAMPOO HAT\xcbア
+Shampoo Hat\xcbア
 WHL-01\xcb
-FLOWED WAY\xcb  
+Flowed Way\xcb  
 AMB-01\xcb
-VISCOUS\xcb     
+Viscous\xcb     
 SAM-01\xcb
-CHIM-CHIMNEY\xcb   
+Chim-chimney\xcb   
 SEL-01\xcb
-RULA-RULER\xcb   
+Rula-ruler\xcb   
 CFS-01\xcb
-SEISMOLOGY\xcb  
+Seismology\xcb  
 EEL-01\xcb
-GRILLED EEL\xcb    
+Grilled Eel\xcb    
 CRO-01\xcb
-HEAD SURPASS\xcb  
+Head Surpass\xcb  
 UPA-01\xcb
-FLUTTERING\xcb     
+Fluttering\xcb     
 BBS-01\xcb
-GREAT SWALLOW\xcb 
+Great Swallow\xcb 
 ARO-01\xcb
-AMMOMOUTH\xcb   
+Ammomouth\xcb   
 HLG-01\xcb
-EARTH PUPPET\xcb  
+Earth Puppet\xcb  
 JWB-01\xcb
-BLOODSUCKER\xcb 
+Bloodsucker\xcb 
 PSK-01\xcb
-CRASHER\xcb   
+Crasher\xcb   
 SHS-01\xcb
-BULL NECK\xcb    
+Bull Neck\xcb    
 CRP-01\xcb
-UP-EYE\xcb    
+Up-eye\xcb    
 DLP-01\xcb
-AMINO LINK\xcb  ア
+Amino Link\xcb  ア
 GFS-01\xcb
-MONACAP\xcb   ア
+Monacap\xcb   ア
 TQN-01\xcb
-CLOSER\xcb   ア
+Closer\xcb   ア
 DUC-01\xcb
-SWANEE\xcb    ア
+Swanee\xcb    ア
 MRC-01\xcb
-AQUALUNG\xcb  ア
+Aqualung\xcb  ア
 TJO-01\xcb
-VERDICT\xcb  ア
+Verdict\xcb  ア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb

@@ -2,307 +2,307 @@
 256
 24259
 RAP-12\xcb
-GRANULE BLOW\xcb 
+Granule Blow\xcb 
 PTL-12\xcb
-LITTLE SWORD\xcb   
+Little Sword\xcb   
 EGL-02\xcb
-LEAK BUNDLE\xcb  
+Leak Bundle\xcb  
 HWK-02\xcb
-BURN TUBE\xcb  
+Burn Tube\xcb  
 SWL-02\xcb
-NOT SEE\xcb    
+Not See\xcb    
 PRN-02\xcb
-TOE\xcb       
+Toe\xcb       
 RVN-02\xcb
-GREED\xcb     
+Greed\xcb     
 CCD-02\xcb
-BIG NOISY\xcb  
+Big Noisy\xcb  
 GRH-02\xcb
-REVIVER\xcb    
+Reviver\xcb    
 CHC-02\xcb
-BOILDER\xcb    
+Boilder\xcb    
 TJK-02\xcb
-BIT GRIP\xcb  
+Bit Grip\xcb  
 PCK-02\xcb
-SUCK UPPER\xcb  
+Suck Upper\xcb  
 SLN-12\xcb
-TIMID MUFFLER\xcb  ア
+Timid Muffler\xcb  ア
 CNR-02\xcb
-TOUCH NERVE\xcb  ア
+Touch Nerve\xcb  ア
 PIC-02\xcb
-WASTER\xcb    ア
+Waster\xcb    ア
 MQT-02\xcb
-BRACE\xcb    ア
+Brace\xcb    ア
 PTM-02\xcb
-SUITABLE\xcb  ア
+Suitable\xcb  ア
 JPT-02\xcb
-DUSTER\xcb    ア
+Duster\xcb    ア
 CRN-02\xcb
-PAID\xcb     ア
+Paid\xcb     ア
 DFL-12\xcb
-SHAKE\xcb      
+Shake\xcb      
 FLS-02\xcb
-BAG FRILL\xcb    
+Bag Frill\xcb    
 ISE-02\xcb
-MEOWMER\xcb    
+Meowmer\xcb    
 MAN-02\xcb
-COUNCILLOR\xcb   
+Councillor\xcb   
 CHS-02\xcb
-CATCH SAUCER\xcb 
+Catch Saucer\xcb 
 DGD-02\xcb
-DEATH SCYTHE\xcb    
+Death Scythe\xcb    
 QPD-02\xcb
-LUCKY ARROW\xcb  
+Lucky Arrow\xcb  
 VBL-02\xcb
-WEIGHTLESS\xcb   
+Weightless\xcb   
 DVL-02\xcb
-PUKUT\xcb     
+Pukut\xcb     
 GAG-02\xcb
-PETRIFY\xcb    
+Petrify\xcb    
 WCH-12\xcb
-FROG BALL\xcb ア
+Frog Ball\xcb ア
 SPN-02\xcb
-ASM\xcb     ア
+Asm\xcb     ア
 BCY-02\xcb
-SCREAMER\xcb  ア
+Screamer\xcb  ア
 MRS-02\xcb
-MOUNT HEMULEN\xcbア
+Mount Hemulen\xcbア
 WEA-22\xcb
-DEATH MISSILE\xcb   
+Death Missile\xcb   
 BOW-02\xcb
-FORKER\xcb    
+Forker\xcb    
 TLB-02\xcb
-HARMONICA\xcb    
+Harmonica\xcb    
 MMT-02\xcb
-BUCKLET\xcb   
+Bucklet\xcb   
 SRC-02\xcb
-RESPONSE DRIVE\xcb   
+Response Drive\xcb   
 IVP-02\xcb
-HUNT ANIMAL\xcb  
+Hunt Animal\xcb  
 HMS-02\xcb
-TIE FINGER\xcb  
+Tie Finger\xcb  
 KBS-02\xcb
-HOLD FANG\xcb 
+Hold Fang\xcb 
 DHN-02\xcb
-ZORIZON\xcb     
+Zorizon\xcb     
 TIC-02\xcb
-CHIMNEY\xcb      
+Chimney\xcb      
 LOS-02\xcb
-SASSY\xcb     
+Sassy\xcb     
 FLA-02\xcb
-LIVELY\xcb     
+Lively\xcb     
 FAW-02\xcb
-NICHE FORCE\xcb  
+Niche Force\xcb  
 TMN-02\xcb
-TRAP SACK\xcb ア
+Trap Sack\xcb ア
 DRI-02\xcb
-TOGETHER\xcb  ア
+Together\xcb  ア
 CRK-02\xcb
-POD SPEAKER\xcbア
+Pod Speaker\xcbア
 ETH-02\xcb
-LIFE WATER\xcbア
+Life Water\xcbア
 KWG-22\xcb
-SAMURAI SWORD\xcb 
+Samurai Sword\xcb 
 KBT-22\xcb
-REVOLVER\xcb    
+Revolver\xcb    
 DDO-02\xcb
-FLEXOR SWORD\xcb 
+Flexor Sword\xcb 
 KLN-02\xcb
-SHOOT BARREL\xcb  
+Shoot Barrel\xcb  
 KBT-32\xcb
-IMPROVED REVOLVER\xcb  
+Improved Revolver\xcb  
 KBT-42\xcb
-IGNITION\xcb  
+Ignition\xcb  
 LHB-12\xcb
-ABSORBER\xcb   
+Absorber\xcb   
 MWB-12\xcb
-SCOTCH\xcb     
+Scotch\xcb     
 TIR-12\xcb
-CLUB CALL\xcb   
+Club Call\xcb   
 BAN-12\xcb
-RIGHT FIST\xcb  
+Right Fist\xcb  
 DOG-22\xcb
-RING RIFLE\xcb  
+Ring Rifle\xcb  
 ALN-12\xcb
-ODD HAND\xcb   
+Odd Hand\xcb   
 VER-02\xcb
-SPEEDER\xcb    
+Speeder\xcb    
 FLL-02\xcb
-PANICKLE\xcb     
+Panickle\xcb     
 KWG-37\xcb
-BLACK VICE\xcb ア
+Black Vice\xcb ア
 APL-02\xcb
-AIR WING\xcb   
+Air Wing\xcb   
 PGM-02\xcb
-GOLD FINGER\xcb 
+Gold Finger\xcb 
 KRN-02\xcb
-STONE CLUB\xcb 
+Stone Club\xcb 
 TKG-02\xcb
-JUDGEMENT\xcb  
+Judgement\xcb  
 KWG-32\xcb
-FORVICE\xcb   
+Forvice\xcb   
 STG-12\xcb
-SIN SWORD\xcb    
+Sin Sword\xcb    
 CHT-02\xcb
-LOCUST\xcb    
+Locust\xcb    
 WLF-02\xcb
-SUPPLICATE\xcb   
+Supplicate\xcb   
 RCM-02\xcb
-STEAM DOLIN\xcb 
+Steam Dolin\xcb 
 KBT-32\xcb
-FUSER\xcb    
+Fuser\xcb    
 KLN-12\xcb
-SHOOT SPHERE\xcb 
+Shoot Sphere\xcb 
 KBT-37\xcb
-BLACK FUSER\xcbア
+Black Fuser\xcbア
 GNB-02\xcb
-STEEL TORTOISE\xcb 
+Steel Tortoise\xcb 
 BAF-02\xcb
-HOOF\xcb      
+Hoof\xcb      
 SRU-02\xcb
-PLECTRUM\xcb   
+Plectrum\xcb   
 SHP-02\xcb
-WATER HOLE\xcb  
+Water Hole\xcb  
 GHL-02\xcb
-ROTTER\xcb     
+Rotter\xcb     
 SLR-22\xcb
-CLEAN MIGHT\xcb  ア
+Clean Might\xcb  ア
 NAS-22\xcb
-DONOR CAPSULE\xcb ア
+Donor Capsule\xcb ア
 CAT-22\xcb
-AGILE JAB\xcb  ア
+Agile Jab\xcb  ア
 VAL-12\xcb
-TRANSFIXER\xcbア
+Transfixer\xcbア
 BNY-12\xcb
-VEGETABLE JUICE\xcbア
+Vegetable Juice\xcbア
 GRW-02\xcb
-SPRINKLER\xcb   ア
+Sprinkler\xcb   ア
 CMP-12\xcb
-STEP MALE\xcb ア
+Step Male\xcb ア
 MIK-02\xcb
-CLEAN STAFF\xcbア
+Clean Staff\xcbア
 MID-02\xcb
-MILK PAN\xcb   ア
+Milk Pan\xcb   ア
 LTS-02\xcb
-CALYX\xcb  ア
+Calyx\xcb  ア
 LDB-02\xcb
-THREE STARRER\xcb  ア
+Three Starrer\xcb  ア
 SUN-02\xcb
-GEARWHEEL\xcb  ア
+Gearwheel\xcb  ア
 MON-02\xcb
-NEW MOON\xcb  ア
+New Moon\xcb  ア
 HLY-02\xcb
-SHAVED ICE\xcb ア
+Shaved Ice\xcb ア
 UNS-02\xcb
-FALL DOWN\xcb ア
+Fall Down\xcb ア
 NEP-02\xcb
-HALTER\xcb    ア
+Halter\xcb    ア
 PLT-02\xcb
-HANDLE KEY\xcb  ア
+Handle Key\xcb  ア
 SZK-02\xcb
-WISE FLAKES\xcbア
+Wise Flakes\xcbア
 PNT-02\xcb
-REPLACER\xcb  ア
+Replacer\xcb  ア
 NEK-02\xcb
-CAT PUNCH\xcb   ア
+Cat Punch\xcb   ア
 BYC-02\xcb
-WHITE ONYX\xcbア
+White Onyx\xcbア
 IDL-02\xcb
-SURPRISE YOYO\xcbア
+Surprise Yoyo\xcbア
 MTC-02\xcb
-FUMUFFLER\xcb    
+Fumuffler\xcb    
 CVL-02\xcb
-BOTTOMLESS SHOVEL\xcb   
+Bottomless Shovel\xcb   
 KAB-02\xcb
-DECIDER\xcb    
+Decider\xcb    
 BST-02\xcb
-DEN DEN\xcb     
+Den Den\xcb     
 GRF-02\xcb
-INVESTOR\xcb   
+Investor\xcb   
 CML-02\xcb
-FAT STORE\xcb  
+Fat Store\xcb  
 BIC-02\xcb
-STEP CANNON\xcb   
+Step Cannon\xcb   
 ECF-02\xcb
-LO SPEED\xcb   
+Lo Speed\xcb   
 CTP-02\xcb
-EARTH CRAWL\xcb   
+Earth Crawl\xcb   
 HCT-02\xcb
-CURLY HAIR\xcb   
+Curly Hair\xcb   
 PLC-02\xcb
-ARRESTER\xcb    
+Arrester\xcb    
 RSC-02\xcb
-SPADA\xcb    
+Spada\xcb    
 FFC-02\xcb
-DRAINAGE\xcb   
+Drainage\xcb   
 RAY-22\xcb
-AWAY BEAM\xcb  
+Away Beam\xcb  
 GCT-02\xcb
-LENSING SKIN\xcbア
+Lensing Skin\xcbア
 VNS-02\xcb
-JAR POP\xcb  ア
+Jar Pop\xcb  ア
 BRA-12\xcb
-GLOW BLASTER\xcb 
+Glow Blaster\xcb 
 TOT-22\xcb
-SLEEVE LASER\xcb 
+Sleeve Laser\xcb 
 HSC-02\xcb
-HORSER\xcb     
+Horser\xcb     
 STE-02\xcb
-THROW SET\xcb   
+Throw Set\xcb   
 TOR-02\xcb
-THEER ATTACK\xcb 
+Theer Attack\xcb 
 MWO-02\xcb
-ELECTRER\xcb   
+Electrer\xcb   
 ESM-02\xcb
-STITCHER\xcb    
+Stitcher\xcb    
 CCL-02\xcb
-SPHERE\xcb    
+Sphere\xcb    
 EWM-02\xcb
-COMPOST\xcb    
+Compost\xcb    
 STN-02\xcb
-LOOPENING\xcb  ア
+Loopening\xcb  ア
 WHL-02\xcb
-SPLASH\xcb   
+Splash\xcb   
 AMB-02\xcb
-DISSOLVER\xcb   
+Dissolver\xcb   
 SAM-02\xcb
-BI-BIND\xcb   
+Bi-bind\xcb   
 SEL-02\xcb
-KIN-KING\xcb    
+Kin-king\xcb    
 CFS-02\xcb
-TREMOR\xcb     
+Tremor\xcb     
 EEL-02\xcb
-PITITOR\xcb    
+Pititor\xcb    
 CRO-02\xcb
-OVERWHELM\xcb 
+Overwhelm\xcb 
 UPA-02\xcb
-WHOOSH FIN\xcb   
+Whoosh Fin\xcb   
 BBS-02\xcb
-ENVELOPMENT\xcb 
+Envelopment\xcb 
 ARO-02\xcb
-SHRIMP HAND\xcb 
+Shrimp Hand\xcb 
 HLG-02\xcb
-PUPPET CABLE\xcb 
+Puppet Cable\xcb 
 JWB-02\xcb
-ORIENT PIPE\xcb 
+Orient Pipe\xcb 
 PSK-02\xcb
-DESTROYER\xcb    
+Destroyer\xcb    
 SHS-02\xcb
-SUPPRESS\xcb     
+Suppress\xcb     
 CRP-02\xcb
-INCOMPETENCY\xcb 
+Incompetency\xcb 
 DLP-02\xcb
-RETURNER\xcb   ア
+Returner\xcb   ア
 GFS-02\xcb
-WICKER WORK\xcbア
+Wicker Work\xcbア
 TQN-02\xcb
-AMPFER\xcb  ア
+Ampfer\xcb  ア
 DUC-02\xcb
-FEATHER MEND\xcb ア
+Feather Mend\xcb ア
 MRC-02\xcb
-HARPOON\xcb   ア
+Harpoon\xcb   ア
 TJO-02\xcb
-PUNISHER\xcb  ア
+Punisher\xcb  ア
 BAY-03\xcb
 --------\xcb 
 BAY-03\xcb
