@@ -23,10 +23,10 @@ default_version = "kabuto"
 list_map = ({
     # 'Type' : (Start of Pointers, Strings per pointer, Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list)
     'Unknown00' : ((0x27, 0x44FC), 1, [None], [(20, 0x00)], [True], None, [0xC9], True),
-    'PartsHead' : ((0x23, 0x4671), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
-    'PartsRArm' : ((0x23, 0x529A), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
-    'PartsLArm' : ((0x23, 0x5EC3), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
-    'PartsLegs' : ((0x23, 0x6AEC), 2, [0xCB, 0xCB], [(7, 0x00), (10, 0x00)], [False, False], None, None, True),
+    'PartsHead' : ((0x23, 0x4671), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsRArm' : ((0x23, 0x529A), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsLArm' : ((0x23, 0x5EC3), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsLegs' : ((0x23, 0x6AEC), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
     'Attributes' : ((0x22, 0x65C0), 1, [0xCB], [(None, None)], [False], None, None, True),
     'Skills' : ((0x22, 0x664C), 1, [0xCB], [(None, None)], [False], None, None, True),
     'Movement' : ((0x22, 0x669A), 1, [0xCB], [(None, None)], [False], None, None, True),
