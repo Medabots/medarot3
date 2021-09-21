@@ -1,458 +1,458 @@
-(3, [203, 203, None], [(7, 0), (9, 0), (1, 0)], [False, False, True], None, None, True)
+(3, [203, 203, None], [(7, 0), (24, 0), (1, 0)], [False, False, True], None, None, True)
 256
 21146
 RAP-11\xcb
-ウォンマスケット\xcb
+Won Musket\xcb
 \x00
 PTL-11\xcb
-ヒドゥンバスタ-\xcb
+Hidden Buster\xcb
 \x00
 EGL-01\xcb
-リ-クヘッド\xcb  
+Leak Head\xcb
 \x00
 HWK-01\xcb
-バ-ンヘッド\xcb  
+Burn Head\xcb
 \x00
 SWL-01\xcb
-ブラインドネス\xcb 
+Blindness\xcb
 \x00
 PRN-01\xcb
-ロストレストア\xcb 
+Lost Restore\xcb
 \x00
 RVN-01\xcb
-コベッタ-\xcb   
+Covetter\xcb
 \x00
 CCD-01\xcb
-ビ-トサラウンド\xcb
+Beat Surround\xcb
 \x00
 GRH-01\xcb
-トップノットン\xcb 
+Topknotton\xcb
 \x00
 CHC-01\xcb
-アウトプラマ-\xcb 
+Out Plumber\xcb
 \x00
 TJK-01\xcb
-コアヘッド\xcb   
+Core Head\xcb
 \x00
 PCK-01\xcb
-インデコレ-タ-\xcb
+Interior Decorator\xcb
 \x00
 SLN-11\xcb
-コンプライン\xcb  
+Compline\xcb
 \x01
 CNR-01\xcb
-オプトナ-ブ\xcb  
+Optic Nerve\xcb
 \x01
 PIC-01\xcb
-ディスポ-ズ\xcb  
+Dispose\xcb
 \x01
 MQT-01\xcb
-スットル\xcb    
+Suttol\xcb
 \x01
 PTM-01\xcb
-フォ-マウント\xcb 
+Fore Mount\xcb
 \x01
 JPT-01\xcb
-ジョビアン\xcb   
+Jovian\xcb
 \x01
 CRN-01\xcb
-カインド\xcb    
+Kind\xcb
 \x01
 DFL-11\xcb
-ナオブアイソ-\xcb 
+Blanker Expression\xcb
 \x00
 FLS-01\xcb
-ウリボン\xcb    
+Melon\xcb
 \x00
 ISE-01\xcb
-シュリンプレス\xcb 
+Shrimpress\xcb
 \x00
 MAN-01\xcb
-ソレナッシ-\xcb  
+Without That\xcb
 \x00
 CHS-01\xcb
-ディスカウンタ-\xcb
+Discounter\xcb
 \x00
 DGD-01\xcb
-ジェットブラック\xcb
+Jet Black\xcb
 \x00
 QPD-01\xcb
-ラブリンク\xcb   
+Love-link\xcb
 \x00
 VBL-01\xcb
-ゼロジ-\xcb    
+Zero G\xcb
 \x00
 DVL-01\xcb
-ピキット\xcb    
+Pikit\xcb
 \x00
 GAG-01\xcb
-エンダ-リン\xcb  
+Endearing\xcb
 \x00
 WCH-11\xcb
-カイエン\xcb    
+Cayenne\xcb
 \x01
 SPN-01\xcb
-AAM\xcb     
+Aam\xcb
 \x01
 BCY-01\xcb
-マックスシャウト\xcb
+Max Shout\xcb
 \x01
 MRS-01\xcb
-ボルケニィ\xcb   
+Volcany\xcb
 \x01
 WEA-21\xcb
-デスブレイク\xcb  
+Death Break\xcb
 \x00
 BOW-01\xcb
-ワ-シップ\xcb   
+Worship\xcb
 \x00
 TLB-01\xcb
-スレイタ-\xcb   
+Slater\xcb
 \x00
 MMT-01\xcb
-グレ-トバックル\xcb
+Great Buckle\xcb
 \x00
 SRC-01\xcb
-チェイサ-\xcb   
+Chaser\xcb
 \x00
 IVP-01\xcb
-ハントヒュ-マン\xcb
+Hunt Human\xcb
 \x00
 HMS-01\xcb
-デフォミスティ\xcb 
+Deformisty\xcb
 \x00
 KBS-01\xcb
-ウィルスファング\xcb
+Virus Fang\xcb
 \x00
 DHN-01\xcb
-ヘッドレス\xcb   
+Headless\xcb
 \x00
 TIC-01\xcb
-トリッキ-\xcb   
+Tricky\xcb
 \x00
 LOS-01\xcb
-モグリン\xcb    
+Crawling In\xcb
 \x00
 FLA-01\xcb
-トッピ-\xcb    
+Offbeat\xcb
 \x00
 FAW-01\xcb
-ロングフォ-ン\xcb 
+Long Fawn\xcb
 \x00
 TMN-01\xcb
-トラップバッグ\xcb 
+Trap Bag\xcb
 \x01
 DRI-01\xcb
-ギャザ-\xcb    
+Gather\xcb
 \x01
 CRK-01\xcb
-ヴィオラ\xcb    
+Viola\xcb
 \x01
 ETH-01\xcb
-グラスウォ-タ-\xcb
+Grass Water\xcb
 \x01
 KWG-21\xcb
-アンテナ\xcb    
+Antenna\xcb
 \x00
 KBT-21\xcb
-ミサイル\xcb    
+Missile\xcb
 \x00
 DDO-01\xcb
-ハンタ-\xcb    
+Hunter\xcb
 \x00
 KLN-01\xcb
-テンションアップ\xcb
+Tension Up\xcb
 \x00
 KBT-31\xcb
-ミサイルかい\xcb  
+Improved Missile\xcb
 \x00
 KBT-41\xcb
-プロミネンス\xcb  
+Prominence\xcb
 \x00
 LHB-11\xcb
-ダ-リング\xcb   
+Darling\xcb
 \x00
 MWB-11\xcb
-フォ-リ-\xcb   
+Folly\xcb
 \x00
 TIR-11\xcb
-スノ-トファイア\xcb
+Snort Fire\xcb
 \x00
 BAN-11\xcb
-ゴッツイトサカン\xcb
+Rough Tosakan\xcb
 \x00
 DOG-21\xcb
-ヘッドバルカン\xcb 
+Head Vulcan\xcb
 \x00
 ALN-11\xcb
-オッドボディ\xcb  
+Odd Body\xcb
 \x00
 VER-01\xcb
-タ-ゲッタ-\xcb  
+Targetter\xcb
 \x00
 FLL-01\xcb
-フリルン\xcb    
+Frillin\xcb
 \x00
 KWG-36\xcb
-ブラックインコム\xcb
+Black Incom\xcb
 \x01
 APL-01\xcb
-エアフライト\xcb  
+Air Flight\xcb
 \x00
 PGM-01\xcb
-パ-ルフィング\xcb 
+Pearl Finger\xcb
 \x00
 KRN-01\xcb
-シュイフトン\xcb  
+Shifton\xcb
 \x00
 TKG-01\xcb
-アンマスク\xcb   
+Unmask\xcb
 \x00
 KWG-31\xcb
-ツインインコム\xcb 
+Twin Incom\xcb
 \x00
 STG-11\xcb
-インサルト\xcb   
+Insult\xcb
 \x00
 CHT-01\xcb
-イ-トアップ\xcb  
+Eat Up\xcb
 \x00
 WLF-01\xcb
-シタデ-ル\xcb   
+Citadel\xcb
 \x00
 RCM-01\xcb
-スチ-ムボ-ド\xcb 
+Steam Board\xcb
 \x00
 KBT-31\xcb
-バリスタ-\xcb   
+Ballista\xcb
 \x00
 KLN-11\xcb
-レインフォ-ス\xcb 
+Reinforce\xcb
 \x00
 KBT-36\xcb
-ブラックバリスタ\xcb
+Black Ballista\xcb
 \x01
 GNB-01\xcb
-スクラビンブラシ\xcb
+Scrubbing Brush\xcb
 \x00
 BAF-01\xcb
-アングラ-\xcb   
+Angler\xcb
 \x00
 SRU-01\xcb
-フォ-スキャノン\xcb
+Force Cannon\xcb
 \x00
 SHP-01\xcb
-ウォ-タフリ-ト\xcb
+Water Fleet\xcb
 \x00
 GHL-01\xcb
-デキシ-\xcb    
+Dexy\xcb
 \x00
 SLR-21\xcb
-エクスマイン\xcb  
+Ex Mine\xcb
 \x01
 NAS-21\xcb
-ホ-リ-グランド\xcb
+Holy Ground\xcb
 \x01
 CAT-21\xcb
-アジルサ-キット\xcb
+Agile Circuit\xcb
 \x01
 VAL-11\xcb
-フラックスミラ-\xcb
+Flax Mirror\xcb
 \x01
 BNY-11\xcb
-パ-ソナルレイン\xcb
+Personal Lane\xcb
 \x01
 GRW-01\xcb
-トロピカ-ナ\xcb  
+Tropicana\xcb
 \x01
 CMP-11\xcb
-フラット\xcb    
+Flat\xcb
 \x01
 MIK-01\xcb
-ホワイトクロ-ス\xcb
+White Cloth\xcb
 \x01
 MID-01\xcb
-チョ-カ-\xcb   
+Choker\xcb
 \x01
 LTS-01\xcb
-ディスミス\xcb   
+Dismiss\xcb
 \x01
 LDB-01\xcb
-ネビュラスリング\xcb
+Nebula Sling\xcb
 \x01
 SUN-01\xcb
-コロナビ-ム\xcb  
+Corona Beam\xcb
 \x01
 MON-01\xcb
-クレセントム-ン\xcb
+Crescent Moon\xcb
 \x01
 HLY-01\xcb
-ガスクロ-ス\xcb  
+Gas Cloth\xcb
 \x01
 UNS-01\xcb
-エンプロ-ル\xcb  
+Implore\xcb
 \x01
 NEP-01\xcb
-ナグラック\xcb   
+Naglack\xcb
 \x01
 PLT-01\xcb
-ハ-ディ\xcb    
+Hardy\xcb
 \x01
 SZK-01\xcb
-ブレインミキサ-\xcb
+Brain Mixer\xcb
 \x01
 PNT-01\xcb
-ストロングホ-ル\xcb
+Stronghold\xcb
 \x01
 NEK-01\xcb
-プチオティティス\xcb
+Petit Otitis\xcb
 \x01
 BYC-01\xcb
-パウダ-バ-ン\xcb 
+Powder Burn\xcb
 \x01
 IDL-01\xcb
-グレイスバイザ-\xcb
+Grace Visor\xcb
 \x01
 MTC-01\xcb
-マグライト\xcb   
+Maglite\xcb
 \x00
 CVL-01\xcb
-ヘッドラダ-\xcb  
+Head Ladder\xcb
 \x00
 KAB-01\xcb
-フ-リ-ヘア-\xcb 
+Fully Hair\xcb
 \x00
 BST-01\xcb
-ショルディ\xcb   
+Shoulder\xcb
 \x00
 GRF-01\xcb
-ロングネック\xcb  
+Longneck\xcb
 \x00
 CML-01\xcb
-モットレゼルブ\xcb 
+Further Reserve\xcb
 \x00
 BIC-01\xcb
-ワンポイント\xcb  
+One-point\xcb
 \x00
 ECF-01\xcb
-ヘッドシェイク\xcb 
+Head Shake\xcb
 \x00
 CTP-01\xcb
-カミキラ-\xcb   
+Kamikiller\xcb
 \x00
 HCT-01\xcb
-チェンジモルト\xcb 
+Change Molt\xcb
 \x00
 PLC-01\xcb
-パトロ-ルライト\xcb
+Patrol Light\xcb
 \x00
 RSC-01\xcb
-エマ-ジンライト\xcb
+Emergency Light\xcb
 \x00
 FFC-01\xcb
-ファイヤ-ライト\xcb
+Fire Light\xcb
 \x00
 RAY-21\xcb
-バックビ-ム\xcb  
+Back Beam\xcb
 \x00
 GCT-01\xcb
-チェンジドレス\xcb 
+Change Dress\xcb
 \x01
 VNS-01\xcb
-パ-フュ-ム\xcb  
+Perfume\xcb
 \x01
 BRA-11\xcb
-アンチフライヤ-\xcb
+Anti-flier\xcb
 \x00
 TOT-21\xcb
-マウスレ-ザ-\xcb 
+Mouth Laser\xcb
 \x00
 HSC-01\xcb
-ノッペリン\xcb   
+Smooth\xcb
 \x00
 STE-01\xcb
-エンプトセット\xcb 
+Empty Set\xcb
 \x00
 TOR-01\xcb
-スリ-アタック\xcb 
+Three Attack\xcb
 \x00
 MWO-01\xcb
-シズラ-\xcb    
+Sizzler\xcb
 \x00
 ESM-01\xcb
-イトマキ-\xcb   
+Thread Spool\xcb
 \x00
 CCL-01\xcb
-コタメ-\xcb    
+Kotame\xcb
 \x00
 EWM-01\xcb
-スクワ-ム\xcb   
+Squirm\xcb
 \x00
 STN-01\xcb
-シャンプ-ハット\xcb
+Shampoo Hat\xcb
 \x01
 WHL-01\xcb
-フロ-ドウェイ\xcb 
+Flowed Way\xcb
 \x00
 AMB-01\xcb
-ビスケス\xcb    
+Viscous\xcb
 \x00
 SAM-01\xcb
-チムチムニ-\xcb  
+Chim-chimney\xcb
 \x00
 SEL-01\xcb
-ルラル-ラ-\xcb  
+Rula-ruler\xcb
 \x00
 CFS-01\xcb
-セイズモロジ-\xcb 
+Seismology\xcb
 \x00
 EEL-01\xcb
-グリルエル\xcb   
+Grilled Eel\xcb
 \x00
 CRO-01\xcb
-ヘッドサ-パス\xcb 
+Head Surpass\xcb
 \x00
 UPA-01\xcb
-ピラピラ\xcb    
+Fluttering\xcb
 \x00
 BBS-01\xcb
-グレ-トスワロ-\xcb
+Great Swallow\xcb
 \x00
 ARO-01\xcb
-アンモマウス\xcb  
+Ammomouth\xcb
 \x00
 HLG-01\xcb
-ア-スパペット\xcb 
+Earth Puppet\xcb
 \x00
 JWB-01\xcb
-ブラッドサッカ-\xcb
+Bloodsucker\xcb
 \x00
 PSK-01\xcb
-クラッシャ-\xcb  
+Crasher\xcb
 \x00
 SHS-01\xcb
-ブルネック\xcb   
+Bull Neck\xcb
 \x00
 CRP-01\xcb
-アップアイ\xcb   
+Up-eye\xcb
 \x00
 DLP-01\xcb
-アミノリンク\xcb  
+Amino Link\xcb
 \x01
 GFS-01\xcb
-モナカップ\xcb   
+Monacap\xcb
 \x01
 TQN-01\xcb
-クロウザ-\xcb   
+Closer\xcb
 \x01
 DUC-01\xcb
-スワニ-\xcb    
+Swanee\xcb
 \x01
 MRC-01\xcb
-アクアラング\xcb  
+Aqualung\xcb
 \x01
 TJO-01\xcb
-ベルディクト\xcb  
+Verdict\xcb
 \x01
 BAY-03\xcb
 --------\xcb
