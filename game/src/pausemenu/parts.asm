@@ -445,18 +445,11 @@ MapPartQuantitiesForPartsList::
   pop hl
   ld a, [W_ListItemBufferArea]
   or a
-  jr z, .heartless
-  ld a, $F3
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  jr .nextSlot
-
-.heartless
-  xor a
+  ld a, $23 ; Male symbol
+  ; Most are male, so we opt to spend more cycles only when it's female
+  jr z, .draw_gender
+  inc a ; Female symbol is at $24
+.draw_gender
   di
   push af
   rst $20
@@ -567,6 +560,10 @@ MapPartQuantitiesForPartsList::
   dec b
   jr nz, .clearLoop
   ret
+.end
+REPT $66A6 - .end
+  nop
+ENDR
 
 MapPartQuantityForPartsList::
   push hl
