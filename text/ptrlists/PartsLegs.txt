@@ -92,7 +92,7 @@ WCH-14\xcb
 Pantaloons\xcb
 \x01
 SPN-04\xcb
-Aatc\xcb
+AATC\xcb
 \x01
 BCY-04\xcb
 Tepid Wind\xcb

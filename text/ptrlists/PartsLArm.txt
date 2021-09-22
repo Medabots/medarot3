@@ -92,7 +92,7 @@ WCH-13\xcb
 Toad Ball\xcb
 \x01
 SPN-03\xcb
-Asbm\xcb
+ASBM\xcb
 \x01
 BCY-03\xcb
 Shrieker\xcb

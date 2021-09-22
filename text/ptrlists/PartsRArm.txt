@@ -92,7 +92,7 @@ WCH-12\xcb
 Frog Ball\xcb
 \x01
 SPN-02\xcb
-Asm\xcb
+ASM\xcb
 \x01
 BCY-02\xcb
 Screamer\xcb

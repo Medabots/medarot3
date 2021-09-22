@@ -92,7 +92,7 @@ WCH-11\xcb
 Cayenne\xcb
 \x01
 SPN-01\xcb
-Aam\xcb
+AAM\xcb
 \x01
 BCY-01\xcb
 Max Shout\xcb
