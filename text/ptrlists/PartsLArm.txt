@@ -1,462 +1,157 @@
-(3, [203, 203, None], [(7, 0), (9, 0), (1, 0)], [False, False, True], None, None, True)
+(3, ['Model', 'Name', 'IsFemale'], [203, 203, None], [(7, 0), (9, 0), (1, 0)], [False, False, True], None, None, True)
 256
 27372
-RAP-13\xcb
-ドロップブロ-\xcb 
-\x00
-PTL-13\xcb
-ヤンクソ-ド\xcb  
-\x00
-EGL-03\xcb
-リ-クボックス\xcb 
-\x00
-HWK-03\xcb
-バ-ンカプセル\xcb 
-\x00
-SWL-03\xcb
-ナットルック\xcb  
-\x00
-PRN-03\xcb
-ティッパ-\xcb   
-\x00
-RVN-03\xcb
-クレ-バ-\xcb   
-\x00
-CCD-03\xcb
-ラ-ジノイジ-\xcb 
-\x00
-GRH-03\xcb
-コンジュ-マ-\xcb 
-\x00
-CHC-03\xcb
-フレイマ-\xcb   
-\x00
-TJK-03\xcb
-ホ-ルハンドル\xcb 
-\x00
-PCK-03\xcb
-サックアウタ-\xcb 
-\x00
-SLN-13\xcb
-コ-ドマフラ-\xcb 
-\x01
-CNR-03\xcb
-フィ-ルナ-ブ\xcb 
-\x01
-PIC-03\xcb
-バイリ-\xcb    
-\x01
-MQT-03\xcb
-インホ-ル\xcb   
-\x01
-PTM-03\xcb
-ビ-スイット\xcb  
-\x01
-JPT-03\xcb
-アッシュ\xcb    
-\x01
-CRN-03\xcb
-リペイド\xcb    
-\x01
-DFL-13\xcb
-フサフサ\xcb    
-\x00
-FLS-03\xcb
-バグフリッタ-\xcb 
-\x00
-ISE-03\xcb
-ゲ-マ-\xcb    
-\x00
-MAN-03\xcb
-インバリッド\xcb  
-\x00
-CHS-03\xcb
-キャッチプレ-ト\xcb
-\x00
-DGD-03\xcb
-デスシックル\xcb  
-\x00
-QPD-03\xcb
-ハッピ-アロ-\xcb 
-\x00
-VBL-03\xcb
-ウェイタ-\xcb   
-\x00
-DVL-03\xcb
-ペケット\xcb    
-\x00
-GAG-03\xcb
-タ-ンスト-ン\xcb 
-\x00
-WCH-13\xcb
-ト-ドボ-ル\xcb  
-\x01
-SPN-03\xcb
-ASBM\xcb    
-\x01
-BCY-03\xcb
-シュリ-カ-\xcb  
-\x01
-MRS-03\xcb
-マウントボ-ダ-\xcb
-\x01
-WEA-23\xcb
-デスレ-ザ-\xcb  
-\x00
-BOW-03\xcb
-スライダ-\xcb   
-\x00
-TLB-03\xcb
-スピネット\xcb   
-\x00
-MMT-03\xcb
-バックラッシュ\xcb 
-\x00
-SRC-03\xcb
-センスドライブ\xcb 
-\x00
-IVP-03\xcb
-ハントプラント\xcb 
-\x00
-HMS-03\xcb
-タイハンド\xcb   
-\x00
-KBS-03\xcb
-メルトファング\xcb 
-\x00
-DHN-03\xcb
-ハンドチャ-ジ\xcb 
-\x00
-TIC-03\xcb
-チュ-イン\xcb   
-\x00
-LOS-03\xcb
-プッスン\xcb    
-\x00
-FLA-03\xcb
-カッキキ-\xcb   
-\x00
-FAW-03\xcb
-サッチフォ-ス\xcb 
-\x00
-TMN-03\xcb
-トラップポ-チ\xcb 
-\x01
-DRI-03\xcb
-ギャザリング\xcb  
-\x01
-CRK-03\xcb
-ポッドスピ-チ\xcb 
-\x01
-ETH-03\xcb
-リブウォ-タ-\xcb 
-\x01
-KWG-23\xcb
-ピコペコハンマ-\xcb
-\x00
-KBT-23\xcb
-サブマシンガン\xcb 
-\x00
-DDO-03\xcb
-ストロ-ハンマ-\xcb
-\x00
-KLN-03\xcb
-レンジシュ-タ-\xcb
-\x00
-KBT-33\xcb
-マシンガンかい\xcb 
-\x00
-KBT-43\xcb
-エクスプロ-ド\xcb 
-\x00
-LHB-13\xcb
-ブロウパイプ\xcb  
-\x00
-MWB-13\xcb
-リンクス\xcb    
-\x00
-TIR-13\xcb
-ストライクコ-ル\xcb
-\x00
-BAN-13\xcb
-レフトメリケン\xcb 
-\x00
-DOG-23\xcb
-ロ-ルバレル\xcb  
-\x00
-ALN-13\xcb
-オッドア-ム\xcb  
-\x00
-VER-03\xcb
-クイックル\xcb   
-\x00
-FLL-03\xcb
-ロスタ-\xcb    
-\x00
-KWG-38\xcb
-ブラックビ-ト\xcb 
-\x01
-APL-03\xcb
-エアフィン\xcb   
-\x00
-PGM-03\xcb
-シルバ-フィング\xcb
-\x00
-KRN-03\xcb
-ゴ-ルデンロッド\xcb
-\x00
-TKG-03\xcb
-ディシジョン\xcb  
-\x00
-KWG-33\xcb
-インテンスビ-ト\xcb
-\x00
-STG-13\xcb
-ソリッドハンマ-\xcb
-\x00
-CHT-03\xcb
-コンジュ-ム\xcb  
-\x00
-WLF-03\xcb
-オ-キシリィ\xcb  
-\x00
-RCM-03\xcb
-スチ-ムパイプ\xcb 
-\x00
-KBT-33\xcb
-ブラスタ-\xcb   
-\x00
-KLN-13\xcb
-ダクトシュ-タ-\xcb
-\x00
-KBT-38\xcb
-ブラックブラスタ\xcb
-\x01
-GNB-03\xcb
-アイアンタ-トル\xcb
-\x00
-BAF-03\xcb
-アンガス\xcb    
-\x00
-SRU-03\xcb
-プラクトピック\xcb 
-\x00
-SHP-03\xcb
-ウォ-タポ-ト\xcb 
-\x00
-GHL-03\xcb
-スポイラ-\xcb   
-\x00
-SLR-23\xcb
-ファイヤ-ア-ム\xcb
-\x01
-NAS-23\xcb
-モバイルカプセル\xcb
-\x01
-CAT-23\xcb
-アジルブロ-\xcb  
-\x01
-VAL-13\xcb
-グレイスシ-ルド\xcb
-\x01
-BNY-13\xcb
-フル-ツジュ-ス\xcb
-\x01
-GRW-03\xcb
-ユニシャベル\xcb  
-\x01
-CMP-13\xcb
-ステップフィ\xcb  
-\x01
-MIK-03\xcb
-ティア-プレ-ト\xcb
-\x01
-MID-03\xcb
-フライパン\xcb   
-\x01
-LTS-03\xcb
-スポ-ン\xcb    
-\x01
-LDB-03\xcb
-サンスタリ-\xcb  
-\x01
-SUN-03\xcb
-カグホイ-ル\xcb  
-\x01
-MON-03\xcb
-フルム-ン\xcb   
-\x01
-HLY-03\xcb
-クリップアイス\xcb 
-\x01
-UNS-03\xcb
-ホ-ルドダウン\xcb 
-\x01
-NEP-03\xcb
-ホイック\xcb    
-\x01
-PLT-03\xcb
-ハンドルゲ-ト\xcb 
-\x01
-SZK-03\xcb
-ワイズオ-プン\xcb 
-\x01
-PNT-03\xcb
-エフェクティ-ン\xcb
-\x01
-NEK-03\xcb
-ネコグロ-ブ\xcb  
-\x01
-BYC-03\xcb
-ストリップクロ-\xcb
-\x01
-IDL-03\xcb
-マ-ダ-ヨ-ヨ-\xcb
-\x01
-MTC-03\xcb
-ノアボイド\xcb   
-\x00
-CVL-03\xcb
-シャクレ-ン\xcb  
-\x00
-KAB-03\xcb
-アクティング\xcb  
-\x00
-BST-03\xcb
-ドンドン\xcb    
-\x00
-GRF-03\xcb
-インスペクタ-\xcb 
-\x00
-CML-03\xcb
-ファットセ-ブ\xcb 
-\x00
-BIC-03\xcb
-ペダルホ-\xcb   
-\x00
-ECF-03\xcb
-ハイスピ-ド\xcb  
-\x00
-CTP-03\xcb
-ア-スクリ-プ\xcb 
-\x00
-HCT-03\xcb
-キンキ-ヘア\xcb  
-\x00
-PLC-03\xcb
-キャプチャ-\xcb  
-\x00
-RSC-03\xcb
-レスキュ-\xcb   
-\x00
-FFC-03\xcb
-ディスチャ-ジ\xcb 
-\x00
-RAY-23\xcb
-フリ-ビ-ム\xcb  
-\x00
-GCT-03\xcb
-アテンダ-スキン\xcb
-\x01
-VNS-03\xcb
-ジャグポット\xcb  
-\x01
-BRA-13\xcb
-グロ-マッシャ-\xcb
-\x00
-TOT-23\xcb
-レストレ-ザ-\xcb 
-\x00
-HSC-03\xcb
-ショ-サ-\xcb   
-\x00
-STE-03\xcb
-ダンプセット\xcb  
-\x00
-TOR-03\xcb
-トリプアタック\xcb 
-\x00
-MWO-03\xcb
-マグネッティ-\xcb 
-\x00
-ESM-03\xcb
-スピコン\xcb    
-\x00
-CCL-03\xcb
-バルブ\xcb     
-\x00
-EWM-03\xcb
-マニュレ\xcb    
-\x00
-STN-03\xcb
-フ-プニング\xcb  
-\x01
-WHL-03\xcb
-スプライン\xcb   
-\x00
-AMB-03\xcb
-ミュセリッジ\xcb  
-\x00
-SAM-03\xcb
-タイタイアップ\xcb 
-\x00
-SEL-03\xcb
-モナモナ-チ\xcb  
-\x00
-CFS-03\xcb
-テンブロ-\xcb   
-\x00
-EEL-03\xcb
-ヒポポス\xcb    
-\x00
-CRO-03\xcb
-オ-バ-パワ-\xcb 
-\x00
-UPA-03\xcb
-サムフィン\xcb   
-\x00
-BBS-03\xcb
-サラウンディング\xcb
-\x00
-ARO-03\xcb
-シュリンプア-ム\xcb
-\x00
-HLG-03\xcb
-パペットワイヤ-\xcb
-\x00
-JWB-03\xcb
-オリエントハ-プ\xcb
-\x00
-PSK-03\xcb
-デモリッシュ\xcb  
-\x00
-SHS-03\xcb
-レプレス\xcb    
-\x00
-CRP-03\xcb
-インネフシンテイ\xcb
-\x00
-DLP-03\xcb
-ゲットバック\xcb  
-\x01
-GFS-03\xcb
-バスケットワ-ク\xcb
-\x01
-TQN-03\xcb
-インクリ-ズ\xcb  
-\x01
-DUC-03\xcb
-フェザ-ダ-ン\xcb 
-\x01
-MRC-03\xcb
-ランサ-\xcb    
-\x01
-TJO-03\xcb
-ラストストライク\xcb
-\x01
-BAY-03\xcb
---------\xcb
-\x00
-BAY-03\xcb
---------\xcb
-\x01
+[Version]#Index,Model,Name,IsFemale
+0,RAP-13\xcb,ドロップブロ-\xcb ,\x00
+1,PTL-13\xcb,ヤンクソ-ド\xcb  ,\x00
+2,EGL-03\xcb,リ-クボックス\xcb ,\x00
+3,HWK-03\xcb,バ-ンカプセル\xcb ,\x00
+4,SWL-03\xcb,ナットルック\xcb  ,\x00
+5,PRN-03\xcb,ティッパ-\xcb   ,\x00
+6,RVN-03\xcb,クレ-バ-\xcb   ,\x00
+7,CCD-03\xcb,ラ-ジノイジ-\xcb ,\x00
+8,GRH-03\xcb,コンジュ-マ-\xcb ,\x00
+9,CHC-03\xcb,フレイマ-\xcb   ,\x00
+10,TJK-03\xcb,ホ-ルハンドル\xcb ,\x00
+11,PCK-03\xcb,サックアウタ-\xcb ,\x00
+12,SLN-13\xcb,コ-ドマフラ-\xcb ,\x01
+13,CNR-03\xcb,フィ-ルナ-ブ\xcb ,\x01
+14,PIC-03\xcb,バイリ-\xcb    ,\x01
+15,MQT-03\xcb,インホ-ル\xcb   ,\x01
+16,PTM-03\xcb,ビ-スイット\xcb  ,\x01
+17,JPT-03\xcb,アッシュ\xcb    ,\x01
+18,CRN-03\xcb,リペイド\xcb    ,\x01
+19,DFL-13\xcb,フサフサ\xcb    ,\x00
+20,FLS-03\xcb,バグフリッタ-\xcb ,\x00
+21,ISE-03\xcb,ゲ-マ-\xcb    ,\x00
+22,MAN-03\xcb,インバリッド\xcb  ,\x00
+23,CHS-03\xcb,キャッチプレ-ト\xcb,\x00
+24,DGD-03\xcb,デスシックル\xcb  ,\x00
+25,QPD-03\xcb,ハッピ-アロ-\xcb ,\x00
+26,VBL-03\xcb,ウェイタ-\xcb   ,\x00
+27,DVL-03\xcb,ペケット\xcb    ,\x00
+28,GAG-03\xcb,タ-ンスト-ン\xcb ,\x00
+29,WCH-13\xcb,ト-ドボ-ル\xcb  ,\x01
+30,SPN-03\xcb,ASBM\xcb    ,\x01
+31,BCY-03\xcb,シュリ-カ-\xcb  ,\x01
+32,MRS-03\xcb,マウントボ-ダ-\xcb,\x01
+33,WEA-23\xcb,デスレ-ザ-\xcb  ,\x00
+34,BOW-03\xcb,スライダ-\xcb   ,\x00
+35,TLB-03\xcb,スピネット\xcb   ,\x00
+36,MMT-03\xcb,バックラッシュ\xcb ,\x00
+37,SRC-03\xcb,センスドライブ\xcb ,\x00
+38,IVP-03\xcb,ハントプラント\xcb ,\x00
+39,HMS-03\xcb,タイハンド\xcb   ,\x00
+40,KBS-03\xcb,メルトファング\xcb ,\x00
+41,DHN-03\xcb,ハンドチャ-ジ\xcb ,\x00
+42,TIC-03\xcb,チュ-イン\xcb   ,\x00
+43,LOS-03\xcb,プッスン\xcb    ,\x00
+44,FLA-03\xcb,カッキキ-\xcb   ,\x00
+45,FAW-03\xcb,サッチフォ-ス\xcb ,\x00
+46,TMN-03\xcb,トラップポ-チ\xcb ,\x01
+47,DRI-03\xcb,ギャザリング\xcb  ,\x01
+48,CRK-03\xcb,ポッドスピ-チ\xcb ,\x01
+49,ETH-03\xcb,リブウォ-タ-\xcb ,\x01
+50,KWG-23\xcb,ピコペコハンマ-\xcb,\x00
+51,KBT-23\xcb,サブマシンガン\xcb ,\x00
+52,DDO-03\xcb,ストロ-ハンマ-\xcb,\x00
+53,KLN-03\xcb,レンジシュ-タ-\xcb,\x00
+54,KBT-33\xcb,マシンガンかい\xcb ,\x00
+55,KBT-43\xcb,エクスプロ-ド\xcb ,\x00
+56,LHB-13\xcb,ブロウパイプ\xcb  ,\x00
+57,MWB-13\xcb,リンクス\xcb    ,\x00
+58,TIR-13\xcb,ストライクコ-ル\xcb,\x00
+59,BAN-13\xcb,レフトメリケン\xcb ,\x00
+60,DOG-23\xcb,ロ-ルバレル\xcb  ,\x00
+61,ALN-13\xcb,オッドア-ム\xcb  ,\x00
+62,VER-03\xcb,クイックル\xcb   ,\x00
+63,FLL-03\xcb,ロスタ-\xcb    ,\x00
+64,KWG-38\xcb,ブラックビ-ト\xcb ,\x01
+65,APL-03\xcb,エアフィン\xcb   ,\x00
+66,PGM-03\xcb,シルバ-フィング\xcb,\x00
+67,KRN-03\xcb,ゴ-ルデンロッド\xcb,\x00
+68,TKG-03\xcb,ディシジョン\xcb  ,\x00
+69,KWG-33\xcb,インテンスビ-ト\xcb,\x00
+70,STG-13\xcb,ソリッドハンマ-\xcb,\x00
+71,CHT-03\xcb,コンジュ-ム\xcb  ,\x00
+72,WLF-03\xcb,オ-キシリィ\xcb  ,\x00
+73,RCM-03\xcb,スチ-ムパイプ\xcb ,\x00
+74,KBT-33\xcb,ブラスタ-\xcb   ,\x00
+75,KLN-13\xcb,ダクトシュ-タ-\xcb,\x00
+76,KBT-38\xcb,ブラックブラスタ\xcb,\x01
+77,GNB-03\xcb,アイアンタ-トル\xcb,\x00
+78,BAF-03\xcb,アンガス\xcb    ,\x00
+79,SRU-03\xcb,プラクトピック\xcb ,\x00
+80,SHP-03\xcb,ウォ-タポ-ト\xcb ,\x00
+81,GHL-03\xcb,スポイラ-\xcb   ,\x00
+82,SLR-23\xcb,ファイヤ-ア-ム\xcb,\x01
+83,NAS-23\xcb,モバイルカプセル\xcb,\x01
+84,CAT-23\xcb,アジルブロ-\xcb  ,\x01
+85,VAL-13\xcb,グレイスシ-ルド\xcb,\x01
+86,BNY-13\xcb,フル-ツジュ-ス\xcb,\x01
+87,GRW-03\xcb,ユニシャベル\xcb  ,\x01
+88,CMP-13\xcb,ステップフィ\xcb  ,\x01
+89,MIK-03\xcb,ティア-プレ-ト\xcb,\x01
+90,MID-03\xcb,フライパン\xcb   ,\x01
+91,LTS-03\xcb,スポ-ン\xcb    ,\x01
+92,LDB-03\xcb,サンスタリ-\xcb  ,\x01
+93,SUN-03\xcb,カグホイ-ル\xcb  ,\x01
+94,MON-03\xcb,フルム-ン\xcb   ,\x01
+95,HLY-03\xcb,クリップアイス\xcb ,\x01
+96,UNS-03\xcb,ホ-ルドダウン\xcb ,\x01
+97,NEP-03\xcb,ホイック\xcb    ,\x01
+98,PLT-03\xcb,ハンドルゲ-ト\xcb ,\x01
+99,SZK-03\xcb,ワイズオ-プン\xcb ,\x01
+100,PNT-03\xcb,エフェクティ-ン\xcb,\x01
+101,NEK-03\xcb,ネコグロ-ブ\xcb  ,\x01
+102,BYC-03\xcb,ストリップクロ-\xcb,\x01
+103,IDL-03\xcb,マ-ダ-ヨ-ヨ-\xcb,\x01
+104,MTC-03\xcb,ノアボイド\xcb   ,\x00
+105,CVL-03\xcb,シャクレ-ン\xcb  ,\x00
+106,KAB-03\xcb,アクティング\xcb  ,\x00
+107,BST-03\xcb,ドンドン\xcb    ,\x00
+108,GRF-03\xcb,インスペクタ-\xcb ,\x00
+109,CML-03\xcb,ファットセ-ブ\xcb ,\x00
+110,BIC-03\xcb,ペダルホ-\xcb   ,\x00
+111,ECF-03\xcb,ハイスピ-ド\xcb  ,\x00
+112,CTP-03\xcb,ア-スクリ-プ\xcb ,\x00
+113,HCT-03\xcb,キンキ-ヘア\xcb  ,\x00
+114,PLC-03\xcb,キャプチャ-\xcb  ,\x00
+115,RSC-03\xcb,レスキュ-\xcb   ,\x00
+116,FFC-03\xcb,ディスチャ-ジ\xcb ,\x00
+117,RAY-23\xcb,フリ-ビ-ム\xcb  ,\x00
+118,GCT-03\xcb,アテンダ-スキン\xcb,\x01
+119,VNS-03\xcb,ジャグポット\xcb  ,\x01
+120,BRA-13\xcb,グロ-マッシャ-\xcb,\x00
+121,TOT-23\xcb,レストレ-ザ-\xcb ,\x00
+122,HSC-03\xcb,ショ-サ-\xcb   ,\x00
+123,STE-03\xcb,ダンプセット\xcb  ,\x00
+124,TOR-03\xcb,トリプアタック\xcb ,\x00
+125,MWO-03\xcb,マグネッティ-\xcb ,\x00
+126,ESM-03\xcb,スピコン\xcb    ,\x00
+127,CCL-03\xcb,バルブ\xcb     ,\x00
+128,EWM-03\xcb,マニュレ\xcb    ,\x00
+129,STN-03\xcb,フ-プニング\xcb  ,\x01
+130,WHL-03\xcb,スプライン\xcb   ,\x00
+131,AMB-03\xcb,ミュセリッジ\xcb  ,\x00
+132,SAM-03\xcb,タイタイアップ\xcb ,\x00
+133,SEL-03\xcb,モナモナ-チ\xcb  ,\x00
+134,CFS-03\xcb,テンブロ-\xcb   ,\x00
+135,EEL-03\xcb,ヒポポス\xcb    ,\x00
+136,CRO-03\xcb,オ-バ-パワ-\xcb ,\x00
+137,UPA-03\xcb,サムフィン\xcb   ,\x00
+138,BBS-03\xcb,サラウンディング\xcb,\x00
+139,ARO-03\xcb,シュリンプア-ム\xcb,\x00
+140,HLG-03\xcb,パペットワイヤ-\xcb,\x00
+141,JWB-03\xcb,オリエントハ-プ\xcb,\x00
+142,PSK-03\xcb,デモリッシュ\xcb  ,\x00
+143,SHS-03\xcb,レプレス\xcb    ,\x00
+144,CRP-03\xcb,インネフシンテイ\xcb,\x00
+145,DLP-03\xcb,ゲットバック\xcb  ,\x01
+146,GFS-03\xcb,バスケットワ-ク\xcb,\x01
+147,TQN-03\xcb,インクリ-ズ\xcb  ,\x01
+148,DUC-03\xcb,フェザ-ダ-ン\xcb ,\x01
+149,MRC-03\xcb,ランサ-\xcb    ,\x01
+150,TJO-03\xcb,ラストストライク\xcb,\x01
+151,BAY-03\xcb,--------\xcb,\x00
+152,BAY-03\xcb,--------\xcb,\x01

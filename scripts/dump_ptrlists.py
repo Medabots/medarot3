@@ -3,6 +3,7 @@
 # Script to dump text lists with pointers
 # We make an assumption that objects will be adjacent to each other
 
+import csv
 import os, sys
 from collections import OrderedDict
 from functools import partial
@@ -21,30 +22,30 @@ roms = ({
 default_version = "kabuto"
 
 list_map = ({
-    # 'Type' : (Start of Pointers, Strings per pointer, Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list)
-    'Unknown00' : ((0x27, 0x44FC), 1, [None], [(20, 0x00)], [True], None, [0xC9], True),
-    'PartsHead' : ((0x23, 0x4671), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsRArm' : ((0x23, 0x529A), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsLArm' : ((0x23, 0x5EC3), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsLegs' : ((0x23, 0x6AEC), 3, [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'Attributes' : ((0x22, 0x65C0), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Skills' : ((0x22, 0x664C), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Movement' : ((0x22, 0x669A), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown08' : ((0x22, 0x66DC), 1, [None], [(14, 0x00)], [True], None, None, True),
-    'Personalities' : ((0x22, 0x68BC), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Medaforce' : ((0x22, 0x6979), 2, [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None, True),
-    'Medals' : ((0x23, 0x795B), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown0C' : ((0x22, 0x6901), 1, [None], [(2, 0x00)], [True], None, None, True),
-    'Items' : ((0x23, 0x7715), 2, [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None, True),
-    'Unknown0E' : ((0x20, 0x4000), 1, [None], [(4, 0x00)], [True], None, None, True),
-    'Medarotters' : ((0x20, 0x4328), 2, [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None, True),
-    'Unknown10' : ((0x20, 0x4EA4), 1, [None], [(35, 0x00)], [True], None, None, True),
-    'Terrain' : ((0x23, 0x7A23), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Attacks' : ((0x23, 0x7A80), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'CharacterNames' : ((0x21, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown14' : ((0x21, 0x461B), 1, [None], [(11, 0x00)], [True], None, None, True),
-    'Medarots' : ((0x23, 0x4000), 1, [0xCB], [(None, None)], [False], None, None, True),
-    'GlossaryTerms' : ((0x7, 0x60d5), 2, [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
+    # 'Type' : (Start of Pointers, Strings per pointer, Label(s), Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list)
+    'Unknown00' : ((0x27, 0x44FC), 1, [], [None], [(20, 0x00)], [True], None, [0xC9], True),
+    'PartsHead' : ((0x23, 0x4671), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsRArm' : ((0x23, 0x529A), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsLArm' : ((0x23, 0x5EC3), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'PartsLegs' : ((0x23, 0x6AEC), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
+    'Attributes' : ((0x22, 0x65C0), 1, ["AttributeName"], [0xCB], [(None, None)], [False], None, None, True),
+    'Skills' : ((0x22, 0x664C), 1, ["SkillName"], [0xCB], [(None, None)], [False], None, None, True),
+    'Movement' : ((0x22, 0x669A), 1, ["Movement"], [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown08' : ((0x22, 0x66DC), 1, [], [None], [(14, 0x00)], [True], None, None, True),
+    'Personalities' : ((0x22, 0x68BC), 1, ["Personality"], [0xCB], [(None, None)], [False], None, None, True),
+    'Medaforce' : ((0x22, 0x6979), 2, ["Unknown", "Medaforce"], [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None, True),
+    'Medals' : ((0x23, 0x795B), 1, ["MedalName"], [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown0C' : ((0x22, 0x6901), 1, [], [None], [(2, 0x00)], [True], None, None, True),
+    'Items' : ((0x23, 0x7715), 2, ["ItemName", "Flags"], [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None, True),
+    'Unknown0E' : ((0x20, 0x4000), 1, [], [None], [(4, 0x00)], [True], None, None, True),
+    'Medarotters' : ((0x20, 0x4328), 2, ["Unknown", "Name"], [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None, True),
+    'Unknown10' : ((0x20, 0x4EA4), 1, [], [None], [(35, 0x00)], [True], None, None, True),
+    'Terrain' : ((0x23, 0x7A23), 1, ["Terrain"], [0xCB], [(None, None)], [False], None, None, True),
+    'Attacks' : ((0x23, 0x7A80), 1, ["AttackName"], [0xCB], [(None, None)], [False], None, None, True),
+    'CharacterNames' : ((0x21, 0x4000), 1, ["CharacterName"], [0xCB], [(None, None)], [False], None, None, True),
+    'Unknown14' : ((0x21, 0x461B), 1, [], [None], [(11, 0x00)], [True], None, None, True),
+    'Medarots' : ((0x23, 0x4000), 1, ["MedarotName"], [0xCB], [(None, None)], [False], None, None, True),
+    'GlossaryTerms' : ((0x7, 0x60d5), 2, ["Unknown", "Term"], [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
 })
 
 tileset = utils.merge_dicts([
@@ -59,7 +60,8 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
     constants_file = os.path.join(text_build_path, f"ptrlist_data_constants_{{GAMEVERSION}}.asm")
     datafile.write(f'INCLUDE "{constants_file}"\n\n')
     for l in list_map:
-        addr, spp, term, fix_len, print_hex, null_indicator, data_prefix, is_general = list_map[l]
+        addr, spp, labels, term, fix_len, print_hex, null_indicator, data_prefix, is_general = list_map[l]
+        assert len(labels) == 0 or len(labels) == spp, f"Incorrect number of labels for {l}"
         if isinstance(addr, tuple):
             bank = addr[0]
             addr = utils.rom2realaddr(addr)
@@ -95,6 +97,7 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
 
                     ptrs = []
                     
+                    # This is a bit of a hack, but we do assume that both versions have the same number of items
                     if not count_written:
                         output.write(f"{((end - addr) // 2) + 1}\n")
                         output.write(f"{dummy_pointer}\n")
@@ -152,14 +155,16 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
                                 if txt == null_indicator:
                                     break
             
+            # Output as a CSV
+            writer = csv.writer(output, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            if(len(labels) == 0):
+                labels = ["Entry"] * spp
+            writer.writerow(["[Version]#Index"] + labels) # Always print the index, at the bare minimum
             for idx in entries:
                 unique_set = set("".join(v) for v in entries[idx].values())
                 if len(entries[idx]) != 2 or len(unique_set) > 1:
                     for version in entries[idx]:
-                        for entry in entries[idx][version]:
-                            output.write(f"{version}#{entry}")
-                            output.write('\n')
+                        index = f"{version}#{idx}"
+                        writer.writerow([index] + entries[idx][version])
                 else:
-                    for entry in entries[idx][default_version]:
-                        output.write(entry)
-                        output.write('\n')
+                    writer.writerow([idx] + entries[idx][default_version])
