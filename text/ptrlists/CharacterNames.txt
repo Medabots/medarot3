@@ -1,7 +1,7 @@
 (1, ['CharacterName'], [203], [(None, None)], [False], None, None, True)
 256
 -1
-[Version]#Index,CharacterName
+Index[#version],CharacterName
 0,シルエット
 1,アリカ
 2,アリカ

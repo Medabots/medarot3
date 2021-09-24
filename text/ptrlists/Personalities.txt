@@ -1,7 +1,7 @@
 (1, ['Personality'], [203], [(None, None)], [False], None, None, True)
 16
 26881
-[Version]#Index,Personality
+Index[#version],Personality
 0,スピ-ド
 1,パワ-
 2,テクニック

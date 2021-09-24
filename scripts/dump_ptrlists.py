@@ -159,12 +159,12 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
             writer = csv.writer(output, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             if(len(labels) == 0):
                 labels = ["Entry"] * spp
-            writer.writerow(["[Version]#Index"] + labels) # Always print the index, at the bare minimum
+            writer.writerow(["Index[#version]"] + labels) # Always print the index, at the bare minimum
             for idx in entries:
                 unique_set = set("".join(v) for v in entries[idx].values())
                 if len(entries[idx]) != 2 or len(unique_set) > 1:
                     for version in entries[idx]:
-                        index = f"{version}#{idx}"
+                        index = f"{idx}#{version}"
                         writer.writerow([index] + entries[idx][version])
                 else:
                     writer.writerow([idx] + entries[idx][default_version])

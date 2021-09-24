@@ -1,7 +1,7 @@
 (2, ['ItemName', 'Flags'], [203, None], [(9, 0), (1, None)], [False, True], None, None, True)
 56
 31067
-[Version]#Index,ItemName,Flags
+Index[#version],ItemName,Flags
 0,ロボロボメダル\xcb ,\x00
 1,タマゴパック\xcb  ,\x00
 2,ミニミニマシ-ン\xcb,\x00

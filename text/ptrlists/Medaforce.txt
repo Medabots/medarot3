@@ -1,7 +1,7 @@
 (2, ['Unknown', 'Medaforce'], [None, 203], [(6, 0), (None, None)], [True, False], '\\x00\\x00\\x00\\x00\\x00\\x00', None, True)
 96
 -1
-[Version]#Index,Unknown,Medaforce
+Index[#version],Unknown,Medaforce
 0,\x00\x14\x14\x00\x1e\x00,たていっせん
 1,\x02\x28\x28\x01\x28\x00,よこいっせん
 2,\x04\x0a\x14\x0d\x28\x00,デ-タそうさ

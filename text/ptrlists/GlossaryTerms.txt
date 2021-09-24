@@ -1,7 +1,7 @@
 (2, ['Unknown', 'Term'], [None, 203], [(1, None), (None, None)], [True, False], None, None, False)
 128
 25400
-[Version]#Index,Unknown,Term
+Index[#version],Unknown,Term
 0,\x00,レベル
 1,\x00,けいけんち
 2,\x01,ぞくせい

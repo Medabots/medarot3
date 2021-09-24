@@ -1,7 +1,7 @@
 (1, ['SkillName'], [203], [(None, None)], [False], None, None, True)
 16
 26266
-[Version]#Index,SkillName
+Index[#version],SkillName
 0,なぐる
 1,うつ
 2,がむしゃら

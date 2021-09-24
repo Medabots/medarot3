@@ -104,10 +104,10 @@ with open(input_file, 'r', encoding='utf-8') as fp:
         idx = line[0].split("#")
         if len(idx) > 1:
             # Check if versioned, and if version matches
-            if idx[0] != version_suffix:
+            if idx[1] != version_suffix:
                 continue
             else:
-                idx = int(idx[1])
+                idx = int(idx[0])
         else:
             idx = int(idx[0])
 

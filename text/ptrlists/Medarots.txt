@@ -1,7 +1,7 @@
 (1, ['MedarotName'], [203], [(None, None)], [False], None, None, True)
 256
 18033
-[Version]#Index,MedarotName
+Index[#version],MedarotName
 0,ピ-
 1,スカイプテラ
 2,フライイ-グル

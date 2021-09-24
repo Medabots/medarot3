@@ -1,7 +1,7 @@
 (3, ['Model', 'Name', 'IsFemale'], [203, 203, None], [(7, 0), (9, 0), (1, 0)], [False, False, True], None, None, True)
 256
 24259
-[Version]#Index,Model,Name,IsFemale
+Index[#version],Model,Name,IsFemale
 0,RAP-12\xcb,グラニュ-ブロ-\xcb,\x00
 1,PTL-12\xcb,リトルソ-ド\xcb  ,\x00
 2,EGL-02\xcb,リ-クバンドル\xcb ,\x00

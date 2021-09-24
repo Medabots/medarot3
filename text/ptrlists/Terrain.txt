@@ -1,7 +1,7 @@
 (1, ['Terrain'], [203], [(None, None)], [False], None, None, True)
 16
 31360
-[Version]#Index,Terrain
+Index[#version],Terrain
 0,さばく
 1,アリじごく
 2,さんち

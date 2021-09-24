@@ -1,7 +1,7 @@
 (1, ['AttackName'], [203], [(None, None)], [False], None, None, True)
 80
 32072
-[Version]#Index,AttackName
+Index[#version],AttackName
 0,ソ-ド
 1,ハンマ-
 2,ライフル

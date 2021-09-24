@@ -1,7 +1,7 @@
 (2, ['Unknown', 'Name'], [None, 203], [(3, 0), (None, None)], [True, False], None, None, True)
 256
 -1
-[Version]#Index,Unknown,Name
+Index[#version],Unknown,Name
 0,\x2b\x00\x01,シルエット
 1,\x01\x01\x00,アリカ
 2,\x01\x01\x00,アリカ
@@ -256,6 +256,6 @@
 251,\x4a\x5a\x00,シ-フェアリ-ズ
 252,\x4b\x5b\x00,シ-ドラゴンズ
 253,\x05\x5c\x00,スクリュ-ズ
-kabuto#254,\x30\x5d\x00,ブラックビ-トル
-kuwagata#254,\x30\x5d\x00,ブラックスタッグ
+254#kabuto,\x30\x5d\x00,ブラックビ-トル
+254#kuwagata,\x30\x5d\x00,ブラックスタッグ
 255,\x34\x5e\x00,ファ-ストエ-ス
