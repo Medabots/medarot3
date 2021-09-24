@@ -1,154 +1,155 @@
-(1, [203], [(None, None)], [False], None, None, True)
+(1, ['MedarotName'], [203], [(None, None)], [False], None, None, True)
 256
 18033
-Pii
-Sky-Ptera
-Fly-Eagle
-Fly-Falcon
-Youngsparrow
-Oldwise
-Blackrover
-Semi-Cicade
-Head Locust
-Stoleboat
-Jackal
-Gorgine
-Seekamar
-Nervous Bird
-Chair Pixie
-Bloodstock
-White Grouse
-Meda-Jupiter
-Beatbreath
-Neo Sakura-Chan
-Flysquire
-Shrimpresser
-Limbo-Mambo
-Spyne
-G.O. Death
-Cu
-Changeling
-Pakat
-Change-Gargo
-Hoodwitchy
-Float Spinner
-Cry Banshee
-Meda-Mars
-God Emperor
-Naturally
-Trilobide
-Man-Mammoth
-Grancia
-FlyTrap
-Ham-Anything
-Hellcerberus
-Dullahorse
-Danin
-Shiramin
-Nomin
-Littledeer
-Not-Touch
-Sti-Dryad
-RinCricket
-Meda-Earth
-Rokusho
-Metabee
-Smilodonad
-Warbonnet
-Kantaros
-Arcbeetle
-Atheist 2
-Ambiguous 2
-Assault-Tyranno
-Banchuu
-Purple Collar
-Wire-Alien
-Dash-Raptor
-Frill-Frilly
-Blackstag
-Skycargo
-Premium 2K
-Genius
-Gan-King
-Dorcus
-Excise
-Light Cheetah
-Straywolf
-Vapor-Rail
-Saikachis
-Unitris
-Blackbeetle
-Basalt
-Brownbison
-Lon-Gan
-Auto-Cruise
-Passghoul
-Last Sailor
-Bravenurse
-Noctocat
-Gallant Lady
-Bunnymind
-Riza
-Marche
-Holy Oracle
-Royal Maid
-Primi-Lotus
-Honeyforce
-Meda-Sun
-Meda-Moon
-Meda-Comet
-Meda-Uranus
-Meda-Neptune
-Meda-Pluto
-Sphink
-Darkpanther
-Put-Cat
-Tundre
-Dear Idol
-Bi-Bikoon
-Konotractor
-Grade Kabuki
-Childsitter
-High-Giraffe
-Humpcamel
-Onewheel
-Go-Fan
-Centipade
-Hairy-Insect
-Brave Police
-Brave Rescue
-Brave Fire
-Diststar
-Potato-Insect
-Meda-Venus
-Earth-Brachio
-Rickturtle
-King Flag
-Set-Stego
-Attack-Tricer
-Denshi Ranger
-Miracle Machine
-Denguri Roll
-Landreach
-Meda-Saturn
-Blue Hountain
-Soft Amoeba
-Anemone
-Shine Seal
-Nya-Buck
-Slime Eel
-Kronoform
-Axolotl
-Basstroyer
-Sea-Catcher
-Sea-Monster
-Water-Beat
-Oil Slider
-Co-Seahorse
-Old Carp
-Dol-Dolphin
-Goldfin
-Mayqueen
-Uglyduck
-Meda-Mercury
-First Ace
+Index[#version],MedarotName
+0,ピ-
+1,スカイプテラ
+2,フライイ-グル
+3,フライファルコン
+4,ヤングスパロ-
+5,オ-ルドワイズ
+6,ブラックロ-バ-
+7,セミシケ-ド
+8,ヘッドロ-カスト
+9,スト-ルボ-ト
+10,ジャッカル
+11,ゴ-ジャイン
+12,スィ-カマ-
+13,ナ-バスバ-ド
+14,チェアピクシ-
+15,ブラッドストック
+16,ホワイトグラウス
+17,メダジュピタ-
+18,ビ-トブレス
+19,ネオさくらちゃん
+20,フライスクワイア
+21,シュリンプレッサ
+22,リンボマンボ
+23,スパイン
+24,G.O.デス
+25,キュ-
+26,チェンジリング
+27,パカット
+28,チェンジガ-ゴ-
+29,フ-ドウィッチ-
+30,フロ-トスピナ-
+31,クライバンシ-
+32,メダマ-ズ
+33,ゴッドエンペラ-
+34,ナチュラリ-
+35,トリロバイド
+36,マンマンモス
+37,グランシア
+38,フライトラップ
+39,ハムエニシ-ン
+40,ヘロケロベロス
+41,デュラホ-ス
+42,ダニン
+43,シラミン
+44,ノミン
+45,リトルディア
+46,ノットタッチ
+47,スティドリア-ド
+48,リンクリケット
+49,メダア-ス
+50,ロクショウ
+51,メタビ-
+52,スミロドナッド
+53,ウォ-バニット
+54,カンタロス
+55,ア-クビ-トル
+56,エイシイスト2
+57,アンビギュアス2
+58,アサルトティラノ
+59,バンチュ-
+60,パ-プルカ-ラ-
+61,ワイヤエイリアン
+62,ダッシュラプトル
+63,フリルフリリ-
+64,ブラックスタッグ
+65,スカイカ-ゴ
+66,プレミアム2K
+67,ジェニアス
+68,ガンキング
+69,ロクショウプラス
+70,エクサイズ
+71,ライトチ-タ-
+72,ストレイウォルフ
+73,ヴェイパ-レ-ル
+74,メタビ-プラス
+75,ユニトリス
+76,ブラックビ-トル
+77,バサルト
+78,ブラウンバイソン
+79,ロンガン
+80,オ-トクル-ズ
+81,パスグ-ル
+82,ラストセ-ラ-
+83,ブレイブナ-ス
+84,ノクトキャット
+85,ギャラントレディ
+86,バニ-マインド
+87,ライザ
+88,マルシェ
+89,ホリィオラクル
+90,ロイヤルメイド
+91,プリミロ-タス
+92,ハニ-フォ-ス
+93,メダサン
+94,メダム-ン
+95,メダコメット
+96,メダウラヌス
+97,メダネプチュ-ン
+98,メダプル-ト
+99,スフィンク
+100,ダ-クパンサ-
+101,プットキャット
+102,ツンドル
+103,ディアアイドル
+104,バイバイク-ン
+105,コノトラクタ-
+106,グレ-ドカブキ
+107,チルドシッタ-
+108,ハイジラフ
+109,ハンプキャメル
+110,ワンホイ-ル
+111,ゴ-ファン
+112,センチペイド
+113,ヘアリインセクト
+114,ブレイブポリス
+115,ブレイブレスキュ
+116,ブレイブファイヤ
+117,ディストスタ-
+118,ポタトインセクト
+119,メダヴィ-ナス
+120,ア-スブラキオ
+121,リックタ-トル
+122,キングフラグ
+123,セットステゴ
+124,アタックトリケル
+125,でんしレンジャ-
+126,ミラクルミシン
+127,デングリロ-ル
+128,ランドリ-チ
+129,メダサタ-ン
+130,ブル-ハウンテン
+131,ソフトアメ-バ
+132,アネモネ
+133,シャインシ-ル
+134,ニャ-ブック
+135,スライムエ-ル
+136,クロノフォルム
+137,アホロ-トル
+138,バストロイヤ-
+139,シ-キャッチャ-
+140,シ-モンスタ-
+141,ウォ-タ-ビ-ト
+142,オイルスライダ-
+143,コ-シ-ホ-ス
+144,オ-ルドカ-プ
+145,ドルドルフィン
+146,ゴ-ルドフィン
+147,メイクイ-ン
+148,アグリィダック
+149,メダマ-キュリ-
+150,ファ-ストエ-ス

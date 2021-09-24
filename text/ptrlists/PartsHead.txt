@@ -1,462 +1,157 @@
-(3, [203, 203, None], [(7, 0), (24, 0), (1, 0)], [False, False, True], None, None, True)
+(3, ['Model', 'Name', 'IsFemale'], [203, 203, None], [(7, 0), (9, 0), (1, 0)], [False, False, True], None, None, True)
 256
 21146
-RAP-11\xcb
-Won Musket\xcb
-\x00
-PTL-11\xcb
-Hidden Buster\xcb
-\x00
-EGL-01\xcb
-Leak Head\xcb
-\x00
-HWK-01\xcb
-Burn Head\xcb
-\x00
-SWL-01\xcb
-Blindness\xcb
-\x00
-PRN-01\xcb
-Lost Restore\xcb
-\x00
-RVN-01\xcb
-Covetter\xcb
-\x00
-CCD-01\xcb
-Beat Surround\xcb
-\x00
-GRH-01\xcb
-Topknotton\xcb
-\x00
-CHC-01\xcb
-Out Plumber\xcb
-\x00
-TJK-01\xcb
-Core Head\xcb
-\x00
-PCK-01\xcb
-Interior Decorator\xcb
-\x00
-SLN-11\xcb
-Compline\xcb
-\x01
-CNR-01\xcb
-Optic Nerve\xcb
-\x01
-PIC-01\xcb
-Dispose\xcb
-\x01
-MQT-01\xcb
-Suttol\xcb
-\x01
-PTM-01\xcb
-Fore Mount\xcb
-\x01
-JPT-01\xcb
-Jovian\xcb
-\x01
-CRN-01\xcb
-Kind\xcb
-\x01
-DFL-11\xcb
-Blanker Expression\xcb
-\x00
-FLS-01\xcb
-Melon\xcb
-\x00
-ISE-01\xcb
-Shrimpress\xcb
-\x00
-MAN-01\xcb
-Without That\xcb
-\x00
-CHS-01\xcb
-Discounter\xcb
-\x00
-DGD-01\xcb
-Jet Black\xcb
-\x00
-QPD-01\xcb
-Love-link\xcb
-\x00
-VBL-01\xcb
-Zero G\xcb
-\x00
-DVL-01\xcb
-Pikit\xcb
-\x00
-GAG-01\xcb
-Endearing\xcb
-\x00
-WCH-11\xcb
-Cayenne\xcb
-\x01
-SPN-01\xcb
-AAM\xcb
-\x01
-BCY-01\xcb
-Max Shout\xcb
-\x01
-MRS-01\xcb
-Volcany\xcb
-\x01
-WEA-21\xcb
-Death Break\xcb
-\x00
-BOW-01\xcb
-Worship\xcb
-\x00
-TLB-01\xcb
-Slater\xcb
-\x00
-MMT-01\xcb
-Great Buckle\xcb
-\x00
-SRC-01\xcb
-Chaser\xcb
-\x00
-IVP-01\xcb
-Hunt Human\xcb
-\x00
-HMS-01\xcb
-Deformisty\xcb
-\x00
-KBS-01\xcb
-Virus Fang\xcb
-\x00
-DHN-01\xcb
-Headless\xcb
-\x00
-TIC-01\xcb
-Tricky\xcb
-\x00
-LOS-01\xcb
-Crawling In\xcb
-\x00
-FLA-01\xcb
-Offbeat\xcb
-\x00
-FAW-01\xcb
-Long Fawn\xcb
-\x00
-TMN-01\xcb
-Trap Bag\xcb
-\x01
-DRI-01\xcb
-Gather\xcb
-\x01
-CRK-01\xcb
-Viola\xcb
-\x01
-ETH-01\xcb
-Grass Water\xcb
-\x01
-KWG-21\xcb
-Antenna\xcb
-\x00
-KBT-21\xcb
-Missile\xcb
-\x00
-DDO-01\xcb
-Hunter\xcb
-\x00
-KLN-01\xcb
-Tension Up\xcb
-\x00
-KBT-31\xcb
-Improved Missile\xcb
-\x00
-KBT-41\xcb
-Prominence\xcb
-\x00
-LHB-11\xcb
-Darling\xcb
-\x00
-MWB-11\xcb
-Folly\xcb
-\x00
-TIR-11\xcb
-Snort Fire\xcb
-\x00
-BAN-11\xcb
-Rough Tosakan\xcb
-\x00
-DOG-21\xcb
-Head Vulcan\xcb
-\x00
-ALN-11\xcb
-Odd Body\xcb
-\x00
-VER-01\xcb
-Targetter\xcb
-\x00
-FLL-01\xcb
-Frillin\xcb
-\x00
-KWG-36\xcb
-Black Incom\xcb
-\x01
-APL-01\xcb
-Air Flight\xcb
-\x00
-PGM-01\xcb
-Pearl Finger\xcb
-\x00
-KRN-01\xcb
-Shifton\xcb
-\x00
-TKG-01\xcb
-Unmask\xcb
-\x00
-KWG-31\xcb
-Twin Incom\xcb
-\x00
-STG-11\xcb
-Insult\xcb
-\x00
-CHT-01\xcb
-Eat Up\xcb
-\x00
-WLF-01\xcb
-Citadel\xcb
-\x00
-RCM-01\xcb
-Steam Board\xcb
-\x00
-KBT-31\xcb
-Ballista\xcb
-\x00
-KLN-11\xcb
-Reinforce\xcb
-\x00
-KBT-36\xcb
-Black Ballista\xcb
-\x01
-GNB-01\xcb
-Scrubbing Brush\xcb
-\x00
-BAF-01\xcb
-Angler\xcb
-\x00
-SRU-01\xcb
-Force Cannon\xcb
-\x00
-SHP-01\xcb
-Water Fleet\xcb
-\x00
-GHL-01\xcb
-Dexy\xcb
-\x00
-SLR-21\xcb
-Ex Mine\xcb
-\x01
-NAS-21\xcb
-Holy Ground\xcb
-\x01
-CAT-21\xcb
-Agile Circuit\xcb
-\x01
-VAL-11\xcb
-Flax Mirror\xcb
-\x01
-BNY-11\xcb
-Personal Lane\xcb
-\x01
-GRW-01\xcb
-Tropicana\xcb
-\x01
-CMP-11\xcb
-Flat\xcb
-\x01
-MIK-01\xcb
-White Cloth\xcb
-\x01
-MID-01\xcb
-Choker\xcb
-\x01
-LTS-01\xcb
-Dismiss\xcb
-\x01
-LDB-01\xcb
-Nebula Sling\xcb
-\x01
-SUN-01\xcb
-Corona Beam\xcb
-\x01
-MON-01\xcb
-Crescent Moon\xcb
-\x01
-HLY-01\xcb
-Gas Cloth\xcb
-\x01
-UNS-01\xcb
-Implore\xcb
-\x01
-NEP-01\xcb
-Naglack\xcb
-\x01
-PLT-01\xcb
-Hardy\xcb
-\x01
-SZK-01\xcb
-Brain Mixer\xcb
-\x01
-PNT-01\xcb
-Stronghold\xcb
-\x01
-NEK-01\xcb
-Petit Otitis\xcb
-\x01
-BYC-01\xcb
-Powder Burn\xcb
-\x01
-IDL-01\xcb
-Grace Visor\xcb
-\x01
-MTC-01\xcb
-Maglite\xcb
-\x00
-CVL-01\xcb
-Head Ladder\xcb
-\x00
-KAB-01\xcb
-Fully Hair\xcb
-\x00
-BST-01\xcb
-Shoulder\xcb
-\x00
-GRF-01\xcb
-Longneck\xcb
-\x00
-CML-01\xcb
-Further Reserve\xcb
-\x00
-BIC-01\xcb
-One-point\xcb
-\x00
-ECF-01\xcb
-Head Shake\xcb
-\x00
-CTP-01\xcb
-Kamikiller\xcb
-\x00
-HCT-01\xcb
-Change Molt\xcb
-\x00
-PLC-01\xcb
-Patrol Light\xcb
-\x00
-RSC-01\xcb
-Emergency Light\xcb
-\x00
-FFC-01\xcb
-Fire Light\xcb
-\x00
-RAY-21\xcb
-Back Beam\xcb
-\x00
-GCT-01\xcb
-Change Dress\xcb
-\x01
-VNS-01\xcb
-Perfume\xcb
-\x01
-BRA-11\xcb
-Anti-flier\xcb
-\x00
-TOT-21\xcb
-Mouth Laser\xcb
-\x00
-HSC-01\xcb
-Smooth\xcb
-\x00
-STE-01\xcb
-Empty Set\xcb
-\x00
-TOR-01\xcb
-Three Attack\xcb
-\x00
-MWO-01\xcb
-Sizzler\xcb
-\x00
-ESM-01\xcb
-Thread Spool\xcb
-\x00
-CCL-01\xcb
-Kotame\xcb
-\x00
-EWM-01\xcb
-Squirm\xcb
-\x00
-STN-01\xcb
-Shampoo Hat\xcb
-\x01
-WHL-01\xcb
-Flowed Way\xcb
-\x00
-AMB-01\xcb
-Viscous\xcb
-\x00
-SAM-01\xcb
-Chim-chimney\xcb
-\x00
-SEL-01\xcb
-Rula-ruler\xcb
-\x00
-CFS-01\xcb
-Seismology\xcb
-\x00
-EEL-01\xcb
-Grilled Eel\xcb
-\x00
-CRO-01\xcb
-Head Surpass\xcb
-\x00
-UPA-01\xcb
-Fluttering\xcb
-\x00
-BBS-01\xcb
-Great Swallow\xcb
-\x00
-ARO-01\xcb
-Ammomouth\xcb
-\x00
-HLG-01\xcb
-Earth Puppet\xcb
-\x00
-JWB-01\xcb
-Bloodsucker\xcb
-\x00
-PSK-01\xcb
-Crasher\xcb
-\x00
-SHS-01\xcb
-Bull Neck\xcb
-\x00
-CRP-01\xcb
-Up-eye\xcb
-\x00
-DLP-01\xcb
-Amino Link\xcb
-\x01
-GFS-01\xcb
-Monacap\xcb
-\x01
-TQN-01\xcb
-Closer\xcb
-\x01
-DUC-01\xcb
-Swanee\xcb
-\x01
-MRC-01\xcb
-Aqualung\xcb
-\x01
-TJO-01\xcb
-Verdict\xcb
-\x01
-BAY-03\xcb
---------\xcb
-\x00
-BAY-03\xcb
---------\xcb
-\x01
+Index[#version],Model,Name,IsFemale
+0,RAP-11\xcb,ウォンマスケット\xcb,\x00
+1,PTL-11\xcb,ヒドゥンバスタ-\xcb,\x00
+2,EGL-01\xcb,リ-クヘッド\xcb  ,\x00
+3,HWK-01\xcb,バ-ンヘッド\xcb  ,\x00
+4,SWL-01\xcb,ブラインドネス\xcb ,\x00
+5,PRN-01\xcb,ロストレストア\xcb ,\x00
+6,RVN-01\xcb,コベッタ-\xcb   ,\x00
+7,CCD-01\xcb,ビ-トサラウンド\xcb,\x00
+8,GRH-01\xcb,トップノットン\xcb ,\x00
+9,CHC-01\xcb,アウトプラマ-\xcb ,\x00
+10,TJK-01\xcb,コアヘッド\xcb   ,\x00
+11,PCK-01\xcb,インデコレ-タ-\xcb,\x00
+12,SLN-11\xcb,コンプライン\xcb  ,\x01
+13,CNR-01\xcb,オプトナ-ブ\xcb  ,\x01
+14,PIC-01\xcb,ディスポ-ズ\xcb  ,\x01
+15,MQT-01\xcb,スットル\xcb    ,\x01
+16,PTM-01\xcb,フォ-マウント\xcb ,\x01
+17,JPT-01\xcb,ジョビアン\xcb   ,\x01
+18,CRN-01\xcb,カインド\xcb    ,\x01
+19,DFL-11\xcb,ナオブアイソ-\xcb ,\x00
+20,FLS-01\xcb,ウリボン\xcb    ,\x00
+21,ISE-01\xcb,シュリンプレス\xcb ,\x00
+22,MAN-01\xcb,ソレナッシ-\xcb  ,\x00
+23,CHS-01\xcb,ディスカウンタ-\xcb,\x00
+24,DGD-01\xcb,ジェットブラック\xcb,\x00
+25,QPD-01\xcb,ラブリンク\xcb   ,\x00
+26,VBL-01\xcb,ゼロジ-\xcb    ,\x00
+27,DVL-01\xcb,ピキット\xcb    ,\x00
+28,GAG-01\xcb,エンダ-リン\xcb  ,\x00
+29,WCH-11\xcb,カイエン\xcb    ,\x01
+30,SPN-01\xcb,AAM\xcb     ,\x01
+31,BCY-01\xcb,マックスシャウト\xcb,\x01
+32,MRS-01\xcb,ボルケニィ\xcb   ,\x01
+33,WEA-21\xcb,デスブレイク\xcb  ,\x00
+34,BOW-01\xcb,ワ-シップ\xcb   ,\x00
+35,TLB-01\xcb,スレイタ-\xcb   ,\x00
+36,MMT-01\xcb,グレ-トバックル\xcb,\x00
+37,SRC-01\xcb,チェイサ-\xcb   ,\x00
+38,IVP-01\xcb,ハントヒュ-マン\xcb,\x00
+39,HMS-01\xcb,デフォミスティ\xcb ,\x00
+40,KBS-01\xcb,ウィルスファング\xcb,\x00
+41,DHN-01\xcb,ヘッドレス\xcb   ,\x00
+42,TIC-01\xcb,トリッキ-\xcb   ,\x00
+43,LOS-01\xcb,モグリン\xcb    ,\x00
+44,FLA-01\xcb,トッピ-\xcb    ,\x00
+45,FAW-01\xcb,ロングフォ-ン\xcb ,\x00
+46,TMN-01\xcb,トラップバッグ\xcb ,\x01
+47,DRI-01\xcb,ギャザ-\xcb    ,\x01
+48,CRK-01\xcb,ヴィオラ\xcb    ,\x01
+49,ETH-01\xcb,グラスウォ-タ-\xcb,\x01
+50,KWG-21\xcb,アンテナ\xcb    ,\x00
+51,KBT-21\xcb,ミサイル\xcb    ,\x00
+52,DDO-01\xcb,ハンタ-\xcb    ,\x00
+53,KLN-01\xcb,テンションアップ\xcb,\x00
+54,KBT-31\xcb,ミサイルかい\xcb  ,\x00
+55,KBT-41\xcb,プロミネンス\xcb  ,\x00
+56,LHB-11\xcb,ダ-リング\xcb   ,\x00
+57,MWB-11\xcb,フォ-リ-\xcb   ,\x00
+58,TIR-11\xcb,スノ-トファイア\xcb,\x00
+59,BAN-11\xcb,ゴッツイトサカン\xcb,\x00
+60,DOG-21\xcb,ヘッドバルカン\xcb ,\x00
+61,ALN-11\xcb,オッドボディ\xcb  ,\x00
+62,VER-01\xcb,タ-ゲッタ-\xcb  ,\x00
+63,FLL-01\xcb,フリルン\xcb    ,\x00
+64,KWG-36\xcb,ブラックインコム\xcb,\x01
+65,APL-01\xcb,エアフライト\xcb  ,\x00
+66,PGM-01\xcb,パ-ルフィング\xcb ,\x00
+67,KRN-01\xcb,シュイフトン\xcb  ,\x00
+68,TKG-01\xcb,アンマスク\xcb   ,\x00
+69,KWG-31\xcb,ツインインコム\xcb ,\x00
+70,STG-11\xcb,インサルト\xcb   ,\x00
+71,CHT-01\xcb,イ-トアップ\xcb  ,\x00
+72,WLF-01\xcb,シタデ-ル\xcb   ,\x00
+73,RCM-01\xcb,スチ-ムボ-ド\xcb ,\x00
+74,KBT-31\xcb,バリスタ-\xcb   ,\x00
+75,KLN-11\xcb,レインフォ-ス\xcb ,\x00
+76,KBT-36\xcb,ブラックバリスタ\xcb,\x01
+77,GNB-01\xcb,スクラビンブラシ\xcb,\x00
+78,BAF-01\xcb,アングラ-\xcb   ,\x00
+79,SRU-01\xcb,フォ-スキャノン\xcb,\x00
+80,SHP-01\xcb,ウォ-タフリ-ト\xcb,\x00
+81,GHL-01\xcb,デキシ-\xcb    ,\x00
+82,SLR-21\xcb,エクスマイン\xcb  ,\x01
+83,NAS-21\xcb,ホ-リ-グランド\xcb,\x01
+84,CAT-21\xcb,アジルサ-キット\xcb,\x01
+85,VAL-11\xcb,フラックスミラ-\xcb,\x01
+86,BNY-11\xcb,パ-ソナルレイン\xcb,\x01
+87,GRW-01\xcb,トロピカ-ナ\xcb  ,\x01
+88,CMP-11\xcb,フラット\xcb    ,\x01
+89,MIK-01\xcb,ホワイトクロ-ス\xcb,\x01
+90,MID-01\xcb,チョ-カ-\xcb   ,\x01
+91,LTS-01\xcb,ディスミス\xcb   ,\x01
+92,LDB-01\xcb,ネビュラスリング\xcb,\x01
+93,SUN-01\xcb,コロナビ-ム\xcb  ,\x01
+94,MON-01\xcb,クレセントム-ン\xcb,\x01
+95,HLY-01\xcb,ガスクロ-ス\xcb  ,\x01
+96,UNS-01\xcb,エンプロ-ル\xcb  ,\x01
+97,NEP-01\xcb,ナグラック\xcb   ,\x01
+98,PLT-01\xcb,ハ-ディ\xcb    ,\x01
+99,SZK-01\xcb,ブレインミキサ-\xcb,\x01
+100,PNT-01\xcb,ストロングホ-ル\xcb,\x01
+101,NEK-01\xcb,プチオティティス\xcb,\x01
+102,BYC-01\xcb,パウダ-バ-ン\xcb ,\x01
+103,IDL-01\xcb,グレイスバイザ-\xcb,\x01
+104,MTC-01\xcb,マグライト\xcb   ,\x00
+105,CVL-01\xcb,ヘッドラダ-\xcb  ,\x00
+106,KAB-01\xcb,フ-リ-ヘア-\xcb ,\x00
+107,BST-01\xcb,ショルディ\xcb   ,\x00
+108,GRF-01\xcb,ロングネック\xcb  ,\x00
+109,CML-01\xcb,モットレゼルブ\xcb ,\x00
+110,BIC-01\xcb,ワンポイント\xcb  ,\x00
+111,ECF-01\xcb,ヘッドシェイク\xcb ,\x00
+112,CTP-01\xcb,カミキラ-\xcb   ,\x00
+113,HCT-01\xcb,チェンジモルト\xcb ,\x00
+114,PLC-01\xcb,パトロ-ルライト\xcb,\x00
+115,RSC-01\xcb,エマ-ジンライト\xcb,\x00
+116,FFC-01\xcb,ファイヤ-ライト\xcb,\x00
+117,RAY-21\xcb,バックビ-ム\xcb  ,\x00
+118,GCT-01\xcb,チェンジドレス\xcb ,\x01
+119,VNS-01\xcb,パ-フュ-ム\xcb  ,\x01
+120,BRA-11\xcb,アンチフライヤ-\xcb,\x00
+121,TOT-21\xcb,マウスレ-ザ-\xcb ,\x00
+122,HSC-01\xcb,ノッペリン\xcb   ,\x00
+123,STE-01\xcb,エンプトセット\xcb ,\x00
+124,TOR-01\xcb,スリ-アタック\xcb ,\x00
+125,MWO-01\xcb,シズラ-\xcb    ,\x00
+126,ESM-01\xcb,イトマキ-\xcb   ,\x00
+127,CCL-01\xcb,コタメ-\xcb    ,\x00
+128,EWM-01\xcb,スクワ-ム\xcb   ,\x00
+129,STN-01\xcb,シャンプ-ハット\xcb,\x01
+130,WHL-01\xcb,フロ-ドウェイ\xcb ,\x00
+131,AMB-01\xcb,ビスケス\xcb    ,\x00
+132,SAM-01\xcb,チムチムニ-\xcb  ,\x00
+133,SEL-01\xcb,ルラル-ラ-\xcb  ,\x00
+134,CFS-01\xcb,セイズモロジ-\xcb ,\x00
+135,EEL-01\xcb,グリルエル\xcb   ,\x00
+136,CRO-01\xcb,ヘッドサ-パス\xcb ,\x00
+137,UPA-01\xcb,ピラピラ\xcb    ,\x00
+138,BBS-01\xcb,グレ-トスワロ-\xcb,\x00
+139,ARO-01\xcb,アンモマウス\xcb  ,\x00
+140,HLG-01\xcb,ア-スパペット\xcb ,\x00
+141,JWB-01\xcb,ブラッドサッカ-\xcb,\x00
+142,PSK-01\xcb,クラッシャ-\xcb  ,\x00
+143,SHS-01\xcb,ブルネック\xcb   ,\x00
+144,CRP-01\xcb,アップアイ\xcb   ,\x00
+145,DLP-01\xcb,アミノリンク\xcb  ,\x01
+146,GFS-01\xcb,モナカップ\xcb   ,\x01
+147,TQN-01\xcb,クロウザ-\xcb   ,\x01
+148,DUC-01\xcb,スワニ-\xcb    ,\x01
+149,MRC-01\xcb,アクアラング\xcb  ,\x01
+150,TJO-01\xcb,ベルディクト\xcb  ,\x01
+151,BAY-03\xcb,--------\xcb,\x00
+152,BAY-03\xcb,--------\xcb,\x01

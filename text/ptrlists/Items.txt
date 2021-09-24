@@ -1,97 +1,51 @@
-(2, [203, None], [(18, 0), (1, None)], [False, True], None, None, True)
+(2, ['ItemName', 'Flags'], [203, None], [(9, 0), (1, None)], [False, True], None, None, True)
 56
 31067
-Rubberobo Medal\xcb
-\x00
-Egg Carton\xcb
-\x00
-Mini-mini Machine\xcb
-\x00
-Town Map\xcb
-\x01
-メダリンバッジ\xcb
-\x00
-Rosewood Badge\xcb
-\x00
-Mini Handle\xcb
-\x00
-Hachiro's Medal\xcb
-\x00
-6かくかヘいせき\xcb
-\x00
-Nametag\xcb
-\x00
-リかのきょうざい\xcb
-\x00
-コガネのはな\xcb
-\x00
-Ship Ticket\xcb
-\x00
-コガネのメダル\xcb
-\x00
-T Medal\xcb
-\x00
-Q Medal\xcb
-\x00
-R Medal\xcb
-\x00
-S Medal\xcb
-\x00
-KabutoB Medal\xcb
-\x00
-KuwagataB Medal\xcb
-\x00
-♥スト-ン\xcb
-\x00
-Love Letter\xcb
-\x00
-バブルチケット\xcb
-\x00
-マ-マンのふく\xcb
-\x0e
-Mermaid Costume\xcb
-\x09
-♥Pendant\xcb
-\x00
-Black Box\xcb
-\x00
-カ-ドキ-\xcb
-\x00
-Broken Medal\xcb
-\x00
-Transceiver\xcb
-\x00
-COMP Key\xcb
-\x00
-COCK Key\xcb
-\x00
-MOVE Key\xcb
-\x00
-DEVIL Key\xcb
-\x00
-Space Suit\xcb
-\x0a
-Periscope\xcb
-\x00
-Wings of Wind\xcb
-\x00
-Mini S. Wheel\xcb
-\x00
-パスカ-ド\xcb
-\x00
-パスポイント\xcb
-\x00
-Password 1\xcb
-\x00
-Password 2\xcb
-\x00
-Password 3\xcb
-\x00
-Password 4\xcb
-\x00
-Boy's Medal\xcb
-\x00
-Space Ticket\xcb
-\x00
-Optional Parts\xcb
-\x00
+Index[#version],ItemName,Flags
+0,ロボロボメダル\xcb ,\x00
+1,タマゴパック\xcb  ,\x00
+2,ミニミニマシ-ン\xcb,\x00
+3,タウンマップ\xcb  ,\x01
+4,メダリンバッジ\xcb ,\x00
+5,はなぞのバッジ\xcb ,\x00
+6,ミニハンドル\xcb  ,\x00
+7,ハチロウのメダル\xcb,\x00
+8,6かくかヘいせき\xcb,\x00
+9,なふだ\xcb     ,\x00
+10,リかのきょうざい\xcb,\x00
+11,コガネのはな\xcb  ,\x00
+12,マリンチケット\xcb ,\x00
+13,コガネのメダル\xcb ,\x00
+14,Tメダル\xcb    ,\x00
+15,Qメダル\xcb    ,\x00
+16,Rメダル\xcb    ,\x00
+17,Sメダル\xcb    ,\x00
+18,Bカブトメダル\xcb ,\x00
+19,Bクワガタメダル\xcb,\x00
+20,♥スト-ン\xcb   ,\x00
+21,ラブレタ-\xcb   ,\x00
+22,バブルチケット\xcb ,\x00
+23,マ-マンのふく\xcb ,\x0e
+24,マ-メイドのふく\xcb,\x09
+25,♥ペンダント\xcb  ,\x00
+26,ブラックBOX\xcb ,\x00
+27,カ-ドキ-\xcb   ,\x00
+28,こわれたメダル\xcb ,\x00
+29,トランシ-バ-\xcb ,\x00
+30,COMPのカギ\xcb ,\x00
+31,COCKのカギ\xcb ,\x00
+32,MOVEのカギ\xcb ,\x00
+33,DEVILのカギ\xcb,\x00
+34,うちゅうふく\xcb  ,\x0a
+35,せんぼうきょう\xcb ,\x00
+36,かぜのつばさ\xcb  ,\x00
+37,Sバブルチケット\xcb,\x00
+38,パスカ-ド\xcb   ,\x00
+39,パスポイント\xcb  ,\x00
+40,パスワ-ド1\xcb  ,\x00
+41,パスワ-ド2\xcb  ,\x00
+42,パスワ-ド3\xcb  ,\x00
+43,パスワ-ド4\xcb  ,\x00
+44,おとこのこメダル\xcb,\x00
+45,スペ-スチケット\xcb,\x00
+46,オプションパ-ツ\xcb,\x00

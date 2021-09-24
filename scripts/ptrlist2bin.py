@@ -1,5 +1,6 @@
 #!/bin/python
 
+import csv
 import os, sys
 from collections import OrderedDict
 from functools import reduce
@@ -83,58 +84,51 @@ count = 0
 dummy_ptr = -1
 
 with open(input_file, 'r', encoding='utf-8') as fp:
-    spp, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
-    assert(spp > 0)
+    spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
+    assert spp > 0, f"{input_file} is marked as having 0 strings per pointer"
+    assert len(labels) == 0 or len(labels) == spp, f"{input_file} has a label count that doesn't match strings per pointer"
     # Total count, includes empty entries in the table
     count = int(fp.readline().strip())
     dummy_ptr = int(fp.readline().strip())
 
+    next(fp) # Ignore the next line as it's effectively a CSV header, treat it like a comment since 'labels' already fulfills this for us
+    
+    reader = csv.reader(fp, delimiter=',', quotechar='"')    
+
     if data_prefix:
         bintext += bytearray(data_prefix)
 
-    idx = 0
-    for line in fp:
-        # Duplicate pointer
-        if line.startswith("##="): 
-            i = int(line.split('=')[1])
+    for line in reader:
+        idx = line[0].split("#")
+        if len(idx) > 1:
+            # Check if versioned, and if version matches
+            if idx[1] != version_suffix:
+                continue
+            else:
+                idx = int(idx[0])
+        else:
+            idx = int(idx[0])
+
+        data = line[1:]
+        assert len(data) == spp or data[0] == null_indicator, f"Index {idx} in {input_file} does not have enough entries ({len(data)}/{spp})"
+
+        # Duplicate pointer, check first entry
+        if data[0].startswith("##="): 
+            i = int(data[0].split('=')[1])
             idx_offset_map[idx] = idx_offset_map[i]
             idx_length_map[idx] = 0
-            idx += 1
             continue
 
         current_offset = len(bintext)
         idx_offset_map[idx] = current_offset
-        
-        # For each string in this pointer, note it
-        s = 0
-        while s < spp:
-            line = line.split("#")
-            if len(line) > 1:
-                if line[0] != version_suffix:
-                    # In a single string situation, break out of the loop and just let the iterator handle it
-                    if spp == 1:
-                        break
-                    line = next(fp)
-                    continue
-                else:
-                    line = line[1]
-            else:
-                line = line[0]
-            line = line.strip('\r\n')
-            bintext += convert_text(line, term[s], fix_len[s])
-            if line == null_indicator:
-                # Skip so we normally break out instead of skipping the index
-                s = spp
-                continue
-            s += 1
-            # Manually iterate for each string in this pointer
-            if s != spp:
-                line = next(fp)
-        else:
-            # The length is just the old length minus the new length            
-            idx_length_map[idx] = len(bintext) - current_offset
-            idx += 1
 
+        # Not a duplicate, and valid for this version
+        for s, d in enumerate(data):
+            d = d.strip('\r\n')
+            bintext += convert_text(d, term[s], fix_len[s])
+        else:
+            # On a clean exit, update the length, which is just the old length minus the new length
+            idx_length_map[idx] = len(bintext) - current_offset
 
 # Generate binary
 with open(output_file, 'wb') as bin_file:
