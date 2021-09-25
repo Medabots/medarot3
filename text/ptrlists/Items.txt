@@ -1,51 +1,51 @@
-﻿(2, ['ItemName', 'Flags'], [203, None], [(9, 0), (1, None)], [False, True], None, None, True)
+﻿(2, ['ItemName', 'Flags'], [203, None], [(18, 0), (1, None)], [False, True], None, None, True)
 56
 31067
 Index[#version],ItemName,Flags
-0,?,\x00
-1,?,\x00
-2,?,\x00
-3,?,\x01
+0,Rubberobo Medal\xcb,\x00
+1,Egg Carton\xcb,\x00
+2,Mini-mini Machine\xcb,\x00
+3,Town Map\xcb,\x01
 4,?,\x00
-5,?,\x00
-6,?,\x00
-7,?,\x00
+5,Rosewood Badge\xcb,\x00
+6,Mini Handle\xcb,\x00
+7,Hachiro's Medal\xcb,\x00
 8,?,\x00
-9,?,\x00
+9,Nametag\xcb,\x00
 10,?,\x00
 11,?,\x00
-12,?,\x00
+12,Ship Ticket\xcb,\x00
 13,?,\x00
-14,?,\x00
-15,?,\x00
-16,?,\x00
-17,?,\x00
-18,?,\x00
-19,?,\x00
+14,T Medal\xcb,\x00
+15,Q Medal\xcb,\x00
+16,R Medal\xcb,\x00
+17,S Medal\xcb,\x00
+18,KabutoB Medal\xcb,\x00
+19,KuwagataB Medal\xcb,\x00
 20,?,\x00
-21,?,\x00
+21,Love Letter\xcb,\x00
 22,?,\x00
 23,?,\x0e
-24,?,\x09
-25,?,\x00
-26,?,\x00
+24,Mermaid Costume\xcb,\x09
+25,♥Pendant\xcb,\x00
+26,Black Box\xcb,\x00
 27,?,\x00
-28,?,\x00
-29,?,\x00
-30,?,\x00
-31,?,\x00
-32,?,\x00
-33,?,\x00
-34,?,\x0a
-35,?,\x00
-36,?,\x00
-37,?,\x00
+28,Broken Medal\xcb,\x00
+29,Transceiver\xcb,\x00
+30,COMP Key\xcb,\x00
+31,COCK Key\xcb,\x00
+32,MOVE Key\xcb,\x00
+33,DEVIL Key\xcb,\x00
+34,Space Suit\xcb,\x0a
+35,Periscope\xcb,\x00
+36,Wings of Wind\xcb,\x00
+37,Mini S. Wheel\xcb,\x00
 38,?,\x00
 39,?,\x00
-40,?,\x00
-41,?,\x00
-42,?,\x00
-43,?,\x00
-44,?,\x00
-45,?,\x00
-46,?,\x00
+40,Password 1\xcb,\x00
+41,Password 2\xcb,\x00
+42,Password 3\xcb,\x00
+43,Password 4\xcb,\x00
+44,Boy's Medal\xcb,\x00
+45,Space Ticket\xcb,\x00
+46,Optional Parts\xcb,\x00
