@@ -2,10 +2,10 @@
 16
 26332
 Index[#version],Movement
-0,?
-1,?
-2,?
-3,?
-4,?
-5,?
-6,?
+0,Flying
+1,Hover
+2,Multi-legged
+3,Bipedal
+4,Wheeled
+5,Tank
+6,Aquatic

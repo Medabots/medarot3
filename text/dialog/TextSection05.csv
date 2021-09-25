@@ -1,39 +1,39 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x963d0,<SFF>ソ-ド攻撃<CD>スピ-ドの はやい かくとう攻撃<*04>,<SFF>Sword<D3>A high speed melee attack.<*04>
-001,0x963d2,<SFF>ハンマ-攻撃<CD>スピ-ドの はやい かくとう攻撃<*04>,<SFF>Hammer<D3>A high speed melee attack.<*04>
-002,0x963d4,<SFF>ライフル攻撃<CD>スピ-ドの はやい しゃげき攻撃<*04>,<SFF> Rifle<D3>A high speed ranged attack.<*04>
-003,0x963d6,<SFF>ガトリング攻撃<CD>スピ-ドの はやい しゃげき攻撃<*04>,<SFF>Gatling<D3>A high speed ranged attack.<*04>
-004,0x963d8,<SFF>レ-ザ-攻撃<CD>いリょくが 2ばいになる<*04>,<SFF>Laser<D3>An attack with double power.<*04>
-005,0x963da,<SFF>ビ-ム攻撃<CD>いリょくが 2ばいになる<*04>,<SFF>Beam<D3>An attack with double power.<*04>
-006,0x963dc,<SFF>ミサイル攻撃<CD>ぜったいヒットと かんつうダメ-ジ<*04>,<SFF>Missile<D3>A piercing attack <D3>that never misses.<*04>
-007,0x963de,<SFF>ナパ-ム攻撃<CD>ぜったいヒットと かんつうダメ-ジ<*04>,<SFF>Napalm<D3>A piercing attack <D3>that never misses.<*04>
-008,0x963e0,<SFF>ブレイク攻撃<CD>せいこうが 2ばいになる<*04>,<SFF>Break<D3>The success rate of <D3>this attack is doubled.<*04>
-009,0x963e2,<SFF>プレス攻撃<CD>せいこうが 2ばいになる<*04>,<SFF>Press<D3>The success rate of <D3>this attack is doubled. <*04>
-010,0x963e4,<SFF>デストロイ攻撃    (ダイレクト)<CD>せなかを むけた てきを はかいする<*04>,<SFF>Destroy (Direct Attack)<D3>Hits the opponent during <D3>cooldown to completely <D3>destroy a part.<*04>
-011,0x963e6,<SFF>サクリファイス攻撃  (ダイレクト)<CD>パ-ツを ぎせいにして 大ダメ-ジ<*04>,<SFF>Sacrifice (Direct Attack)<D3>Sacrifice a part <D3>for massive damage.<*04><D3>
-012,0x963e8,<SFF>バグ攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF>Bug<D3>Decrease the success rate <D3>of the the opponent's <D3>actions. <*04>
-013,0x963ea,<SFF>ウィルス攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF>Virus<D3>Decrease the success rate<D3> of the the opponent's <D3>actions. <*04>
-014,0x963ec,<SFF>ウェ-ブ攻撃<CD>じゅんび時間を ながくする<*04>,<SFF>Wave<D3>Extends opponent's <D3>preparation time.<*04>
-015,0x963ee,<SFF>ホ-ルド攻撃<CD>じゅんび時間を ながくする<*04>,<SFF>Hold<D3>Extends opponent's <D3>preparation time.<*04>
-016,0x963f0,<SFF>ファイヤ-攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF>Fire<D3>Does damage to your <D3>opponent during preparation.<*04><D3>
-017,0x963f2,<SFF>メルト攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF>Melt<D3>Does damage to your <D3>opponent during preparation.<*04><D3>
-018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF>Thunder<D3>An attack that stops <D3>your opponent from moving.<*04><D3>
-019,0x963f6,<SFF>フリ-ズ攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF>Freeze<D3>An attack that stops<D3> your opponent from moving.<*04>
-020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,"<SFF>Countdown<D3>When the countdown <D3>becomes 0, your opponent <D3>will stop functioning.<*04>"
-021,0x963fa,<SFF>ホ-ムシック攻撃   (ダイレクト)<CD>時々 行動せずに 引きかえす<*04>,"<SFF>Homesick (Direct)<D3>Sometimes, your opponent <D3>will retreat, retracing <D3>their steps.<*04>"
-022,0x963fc,<SFF>ぼうぎょ行動<CD>みかたの メダロットを えんごする<*04>,<SFF>Defend<D3>Protect your allies.<*04>
-023,0x963fe,<SFF>かんぜんぼうぎょ行動<CD>みかたヘの 攻撃を ブロックする<*04>,<SFF>Complete Defense<D3>Block attacks aimed<D3>at your allies.<*04>
-024,0x96400,<SFF>みまんぼうぎょ行動<CD>よわい攻撃を ブロックする<*04>,<SFF>Lesser Defense<D3>Block weak attacks<D3>aimed at your allies.<*04>
-025,0x96402,<SFF>アンチエア攻撃<CD>ひこうメダロットに 大ダメ-ジ<*04>,<SFF>Anti-Air<D3>Does massive damage <D3>to flying Medarots.<*04>
-026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF>Anti-Sea<D3>Does massive damage <D3>to submerged Medarots.<*04>
-027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF>Search<D3>Your allies' attacks <D3>hit more easily.<*04>
-028,0x96408,<SFF>いんペい行動<CD>てきの 攻撃を よけやすくなる<*04>,<SFF>Conceal<D3>Your enemies' attacks <D3>are easier to avoid.<*04>
-029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,"<SFF>Fighting Trap<D3>Does aggressive damage to<D3>your opponent before <D3>they do a ""strike"" attack.<*04>"
-030,0x9640c,<SFF>しゃげきトラップ行動<CD>「うつ.ねらいうち」攻撃にダメ-ジ<*04>,"<SFF>Shooting Trap<D3>Does aggressive damage to <D3>your opponent before <D3>they do a ""shooting"" attack.<*04>"
-031,0x9640e,<SFF>フォ-スプラント行動<CD>行動するたびに フォ-スアップ<*04>,<SFF>Force Plant<D3>Your Medaforce increases <D3>each time you act.<*04>
+000,0x963d0,<SFF>ソ-ド攻撃<CD>スピ-ドの はやい かくとう攻撃<*04>,<SFF><f02>Sword<f00>: A high speed melee<D3>attack.<*04>
+001,0x963d2,<SFF>ハンマ-攻撃<CD>スピ-ドの はやい かくとう攻撃<*04>,<SFF><f02>Hammer<f00>: A high speed melee<D3>attack.<*04>
+002,0x963d4,<SFF>ライフル攻撃<CD>スピ-ドの はやい しゃげき攻撃<*04>,<SFF><f02>Rifle<f00>: A high speed ranged<D3>attack.<*04>
+003,0x963d6,<SFF>ガトリング攻撃<CD>スピ-ドの はやい しゃげき攻撃<*04>,<SFF><f02>Gatling<f00>: A high speed ranged<D3>attack.<*04>
+004,0x963d8,<SFF>レ-ザ-攻撃<CD>いリょくが 2ばいになる<*04>,<SFF><f02>Laser<f00>: An attack with double<D3>power.<*04>
+005,0x963da,<SFF>ビ-ム攻撃<CD>いリょくが 2ばいになる<*04>,<SFF><f02>Beam<f00>: An attack with double<D3>power.<*04>
+006,0x963dc,<SFF>ミサイル攻撃<CD>ぜったいヒットと かんつうダメ-ジ<*04>,<SFF><f02>Missile<f00>: A piercing attack.<D3>It never misses.<*04>
+007,0x963de,<SFF>ナパ-ム攻撃<CD>ぜったいヒットと かんつうダメ-ジ<*04>,<SFF><f02>Napalm<f00>: A piercing attack.<D3>It never misses.<*04>
+008,0x963e0,<SFF>ブレイク攻撃<CD>せいこうが 2ばいになる<*04>,<SFF><f02>Break<f00>: Has double the usual<D3>success rate.<*04>
+009,0x963e2,<SFF>プレス攻撃<CD>せいこうが 2ばいになる<*04>,<SFF><f02>Press<f00>: Has double the usual<D3>success rate.<*04>
+010,0x963e4,<SFF>デストロイ攻撃    (ダイレクト)<CD>せなかを むけた てきを はかいする<*04>,<SFF><f02>Destroy (Direct)<f00>:<f01>Target loses<D3>a part if target is cooling down.<f00><*04>
+011,0x963e6,<SFF>サクリファイス攻撃  (ダイレクト)<CD>パ-ツを ぎせいにして 大ダメ-ジ<*04>,<SFF><f02>Sacrifice (Direct)<f00>: <f01>Sacrifice<D3>this part for massive damage.<f00><*04><D3>
+012,0x963e8,<SFF>バグ攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Bug<f00>: Decreases target's<D3>success rate. <*04>
+013,0x963ea,<SFF>ウィルス攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Virus<f00>: Decreases target's<D3>success rate. <*04>
+014,0x963ec,<SFF>ウェ-ブ攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Wave<f00>:<f01>Slows opponent's preparation<D3>time.<f00><*04>
+015,0x963ee,<SFF>ホ-ルド攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Hold<f00>:<f01>Slows opponent's preparation<D3>time.<f00><*04>
+016,0x963f0,<SFF>ファイヤ-攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Fire<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
+017,0x963f2,<SFF>メルト攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Melt<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
+018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Thunder<f00>:<f01>Stops your opponent<D3>from moving.<f00><*04><D3>
+019,0x963f6,<SFF>フリ-ズ攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Freeze<f00>:<f01>Stops your opponent<D3>from moving.<f00><*04>
+020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,<SFF><f02>Counter<f00>: <f01> Target will shutdown<f00><D3><f01>when countdown reaches 0.<f00><*04>
+021,0x963fa,<SFF>ホ-ムシック攻撃   (ダイレクト)<CD>時々 行動せずに 引きかえす<*04>,<SFF><f02>Homesick (Direct)<f00>:<f01> Target<D3>sometimes retreats mid-action.<f00><*04>
+022,0x963fc,<SFF>ぼうぎょ行動<CD>みかたの メダロットを えんごする<*04>,<SFF><f02>Defend<f00>: Protect your allies.<*04>
+023,0x963fe,<SFF>かんぜんぼうぎょ行動<CD>みかたヘの 攻撃を ブロックする<*04>,<SFF><f02>Complete Defense<f00>: <f01>Block<D3>attacks aimed at your allies.<f00><*04>
+024,0x96400,<SFF>みまんぼうぎょ行動<CD>よわい攻撃を ブロックする<*04>,<SFF><f02>Lesser Defense<f00>: <f01>Block weak<D3>attacks aimed at your allies.<f00><*04>
+025,0x96402,<SFF>アンチエア攻撃<CD>ひこうメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Air<f00>: <f01>Does massive damage <D3>to flying Medarots.<f00><*04>
+026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Sea<f00>: <f01>Does massive damage <D3>to aquatic Medarots.<f00><*04>
+027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF><f02>Search<f00>: <f01>Your allies' attacks will<D3>hit more easily.<f00><*04>
+028,0x96408,<SFF>いんペい行動<CD>てきの 攻撃を よけやすくなる<*04>,<SFF><f02>Conceal<f00>: <f01>Your enemies' attacks <D3>are easier to avoid.<f00><*04>
+029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,<SFF><f02>Fighting Trap<f00>:<f01>Does damage to<D3>target before they do a melee attack<f00><*04>
+030,0x9640c,<SFF>しゃげきトラップ行動<CD>「うつ.ねらいうち」攻撃にダメ-ジ<*04>,<SFF><f02>Shooting Trap<f00>:<f01>Does damage to<D3>target before they do a shot attack.<f00><*04><*04>
+031,0x9640e,<SFF>フォ-スプラント行動<CD>行動するたびに フォ-スアップ<*04>,<SFF>Force Plant: <f01>Your Medaforce<D3>increases each time you act.<f00><*04>
 032,0x96410,<SFF>さくてきクリア行動<CD>さくてきの こうかを ぼうがいする<*04>,<SFF>Search Clear<D3>Disrupts a search effect.<*04>
 033,0x96412,<SFF>いんペいクリア行動<CD>いんペいの こうかを ぼうがいする<*04>,<SFF>Conceal Clear<D3>Disrupts a conceal effect.<*04>
-034,0x96414,<SFF>たんぱつクリア行動<CD>攻撃を 1回だけ ふせぐ<*04>,<SFF>Single-Shot Clear<D3>Protects against a <D3>single shot.<*04>
+034,0x96414,<SFF>たんぱつクリア行動<CD>攻撃を 1回だけ ふせぐ<*04>,<SFF><f02>Single-Shot Clear<f00>:<f01>Protects<D3>against a single shot.<f00><*04>
 035,0x96416,<SFF>ファ-ストエイド行動<CD>こわれたパ-ツを ふっかつさせる<*04>,<SFF>First Aid<D3>Repairs a broken part.<*04>
 036,0x96418,<SFF>クロス攻撃セット行動<CD>「クロスこうげき」を セットする<*04>,"<SFF>Cross Attack Set<D3>Sets ""Cross Attack"".<*04>"
 037,0x9641a,<SFF>クロス攻撃ファイア行動<CD>「クロスこうげき」で 攻撃する<*04>,"<SFF>Cross Attack Fire<D3>Fires with ""Cross Attack"".<*04>"
@@ -71,18 +71,18 @@
 069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF>Change (Support)<D3>Change to a ""support"" part.<*04>"
 070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF>Positive Symptom Clear<D3>Clear positive symptoms.<*04>
 071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF>Unusable<D3>Parts are made unusable.<*04>
-072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF>Disorder<D3>Your opponent cannot <D3>choose a target.<*04>
-073,0x96462,<SFF>回数ドレイン行動<CD>頭パ-ツの 回数を うばいとる<*04>,<SFF>Number Drain<D3>Drains number of times <D3>head parts have been used.<*04>
-074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF>Inevitable<D3>Makes avoiding attacks <D3>impossible.<*04>
-075,0x96466,<SFF>ぼうぎょふのう行動<CD>ぼうぎょを できなくする<*04>,<SFF>Undefendable<D3>Makes defending against <D3>attacks impossible.<*04>
-076,0x96468,<SFF>フォ-スドレイン行動<CD>メダフォ-スを うばいとる<*04>,<SFF>Force Drain<D3>Drains the opponent's <D3>Medaforce.<*04>
-077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,"<SFF>Flying Medarot<D3>Strong in ""desert"" and <D3>""antlion"" fields.<*04>"
-078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF>Float Medarot<D3>Comfortable in any field.<*04>
-079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,"<SFF>Multi-Leg Medarot<D3>Strong in ""mountain"" and <D3>""volcano"" fields.<*04>"
-080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,"<SFF>Dual-Leg Medarot<D3>Strong in ""forest"" and <D3>""jungle"" fields.<*04>"
-081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,"<SFF>Vehicle Medarot<D3>Strong in ""downtown"" and <D3>""stadium"" fields.<*04>"
-082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF>Tank Medarot<D3>Not affected by the field.<*04>
-083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,"<SFF>Diving Medarot<D3>Strong in ""underwater"" and <D3>""glacial"" fields.<*04>"
+072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF><f02>Confusion<f00>:Your opponent<D3>randomly chooses a target.<*04>
+073,0x96462,<SFF>回数ドレイン行動<CD>頭パ-ツの 回数を うばいとる<*04>,<SFF><f02>Number Drain<f00>: Drains head<D3>part ammo.<*04>
+074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF><f02>Inevitable<f00>:<f01>Makes avoiding<D3>attacks impossible.<f00><*04>
+075,0x96466,<SFF>ぼうぎょふのう行動<CD>ぼうぎょを できなくする<*04>,<SFF><f02>Undefendable<f00>: <f01>Makes defending<D3>against attacks impossible.<f00><*04>
+076,0x96468,<SFF>フォ-スドレイン行動<CD>メダフォ-スを うばいとる<*04>,<SFF><f02>Force Drain<f00>: Drains the<D3>opponent's Medaforce.<*04>
+077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,"<SFF><f02>Flying Medarot<f00>: <f01>Strong in<D3>""desert"" and ""antlion"" fields.<f00><*04>"
+078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF><f02>Float Medaro<f00>t: Comfortable<D3>in any field.<*04>
+079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,"<SFF><f02>Multi-Leg Medarot<f00>: <f01>Strong in<D3>""mountain"" and ""volcano"" fields.<f00><*04>"
+080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,"<SFF><f02>Bipedal Medarot<f00>: <f01>Strong in <D3>""forest"" and ""jungle"" fields.<f00><*04>"
+081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,"<SFF><f02>Vehicle Medarot<f00>: <f01>Strong in<D3>""downtown"" and ""stadium"" fields.<f00><*04>"
+082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF><f02>Tank Medarot<f00>: <f01>Not affected by<D3>the field.<f00><*04>
+083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,"<SFF><f02>Diving Medarot<f00>: <f01>Strong in<D3>""underwater"" and ""glacial"" fields.<f00><*04>"
 084,0x9647e,<FINAL>,
 085,0x9646c,@0x9646a,@0x9646a
 086,0x9646e,@0x9646a,@0x9646a
