@@ -278,6 +278,7 @@ $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_T
 .PHONY: csv_from_xlsx
 csv_from_xlsx:
 	$(PYTHON) $(SCRIPT)/xlsx2csv.py $(TRANSLATION_SHEET) $(DIALOG_TEXT) $(DIALOG)
+	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py $(TRANSLATION_SHEET) $(PTRLISTS_TEXT) $(PTRLISTS)
 
 ### Dump Scripts
 

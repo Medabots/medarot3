@@ -3,155 +3,155 @@
 24259
 Index[#version],Model,Name,IsFemale
 0,RAP-12\xcb,グラニュ-ブロ-\xcb,\x00
-1,PTL-12\xcb,リトルソ-ド\xcb  ,\x00
-2,EGL-02\xcb,リ-クバンドル\xcb ,\x00
-3,HWK-02\xcb,バ-ンチュ-ブ\xcb ,\x00
-4,SWL-02\xcb,ノットシ-\xcb   ,\x00
-5,PRN-02\xcb,ト-\xcb      ,\x00
-6,RVN-02\xcb,グリ-ド\xcb    ,\x00
-7,CCD-02\xcb,ビッグノイジ-\xcb ,\x00
-8,GRH-02\xcb,リバイバ-\xcb   ,\x00
-9,CHC-02\xcb,ボイルダ-\xcb   ,\x00
-10,TJK-02\xcb,ピットグリップ\xcb ,\x00
-11,PCK-02\xcb,サックアッパ-\xcb ,\x00
-12,SLN-12\xcb,チミマフラ-\xcb  ,\x01
-13,CNR-02\xcb,タッチナ-ブ\xcb  ,\x01
-14,PIC-02\xcb,ワスタ-\xcb    ,\x01
-15,MQT-02\xcb,ブレイス\xcb    ,\x01
-16,PTM-02\xcb,スイッタブル\xcb  ,\x01
-17,JPT-02\xcb,ダスタ-\xcb    ,\x01
-18,CRN-02\xcb,ペイド\xcb     ,\x01
-19,DFL-12\xcb,フサ-\xcb     ,\x00
-20,FLS-02\xcb,バグフリル\xcb   ,\x00
-21,ISE-02\xcb,ニャンマ-\xcb   ,\x00
-22,MAN-02\xcb,カウンセラ-\xcb  ,\x00
+1,PTL-12\xcb,リトルソ-ド\xcb,\x00
+2,EGL-02\xcb,リ-クバンドル\xcb,\x00
+3,HWK-02\xcb,バ-ンチュ-ブ\xcb,\x00
+4,SWL-02\xcb,ノットシ-\xcb,\x00
+5,PRN-02\xcb,ト-\xcb,\x00
+6,RVN-02\xcb,グリ-ド\xcb,\x00
+7,CCD-02\xcb,ビッグノイジ-\xcb,\x00
+8,GRH-02\xcb,リバイバ-\xcb,\x00
+9,CHC-02\xcb,ボイルダ-\xcb,\x00
+10,TJK-02\xcb,ピットグリップ\xcb,\x00
+11,PCK-02\xcb,サックアッパ-\xcb,\x00
+12,SLN-12\xcb,チミマフラ-\xcb,\x01
+13,CNR-02\xcb,タッチナ-ブ\xcb,\x01
+14,PIC-02\xcb,ワスタ-\xcb,\x01
+15,MQT-02\xcb,ブレイス\xcb,\x01
+16,PTM-02\xcb,スイッタブル\xcb,\x01
+17,JPT-02\xcb,ダスタ-\xcb,\x01
+18,CRN-02\xcb,ペイド\xcb,\x01
+19,DFL-12\xcb,フサ-\xcb,\x00
+20,FLS-02\xcb,バグフリル\xcb,\x00
+21,ISE-02\xcb,ニャンマ-\xcb,\x00
+22,MAN-02\xcb,カウンセラ-\xcb,\x00
 23,CHS-02\xcb,キャッチソ-サ-\xcb,\x00
-24,DGD-02\xcb,デスサイズ\xcb   ,\x00
-25,QPD-02\xcb,ラッキ-アロ-\xcb ,\x00
-26,VBL-02\xcb,ウェイトレス\xcb  ,\x00
-27,DVL-02\xcb,プクット\xcb    ,\x00
-28,GAG-02\xcb,ペトリフィ\xcb   ,\x00
-29,WCH-12\xcb,フロッグボ-ル\xcb ,\x01
-30,SPN-02\xcb,ASM\xcb     ,\x01
-31,BCY-02\xcb,スクリ-マ-\xcb  ,\x01
+24,DGD-02\xcb,デスサイズ\xcb,\x00
+25,QPD-02\xcb,ラッキ-アロ-\xcb,\x00
+26,VBL-02\xcb,ウェイトレス\xcb,\x00
+27,DVL-02\xcb,プクット\xcb,\x00
+28,GAG-02\xcb,ペトリフィ\xcb,\x00
+29,WCH-12\xcb,フロッグボ-ル\xcb,\x01
+30,SPN-02\xcb,ASM\xcb,\x01
+31,BCY-02\xcb,スクリ-マ-\xcb,\x01
 32,MRS-02\xcb,マウントヘムレン\xcb,\x01
-33,WEA-22\xcb,デスミサイル\xcb  ,\x00
-34,BOW-02\xcb,フォ-カ-\xcb   ,\x00
-35,TLB-02\xcb,ハ-モニカ\xcb   ,\x00
-36,MMT-02\xcb,バックレット\xcb  ,\x00
-37,SRC-02\xcb,レスドライブ\xcb  ,\x00
-38,IVP-02\xcb,ハントアニマル\xcb ,\x00
-39,HMS-02\xcb,タイフィンガ-\xcb ,\x00
+33,WEA-22\xcb,デスミサイル\xcb,\x00
+34,BOW-02\xcb,フォ-カ-\xcb,\x00
+35,TLB-02\xcb,ハ-モニカ\xcb,\x00
+36,MMT-02\xcb,バックレット\xcb,\x00
+37,SRC-02\xcb,レスドライブ\xcb,\x00
+38,IVP-02\xcb,ハントアニマル\xcb,\x00
+39,HMS-02\xcb,タイフィンガ-\xcb,\x00
 40,KBS-02\xcb,ホ-ルドファング\xcb,\x00
-41,DHN-02\xcb,ゾリゾン\xcb    ,\x00
-42,TIC-02\xcb,カミン\xcb     ,\x00
-43,LOS-02\xcb,サッシ-\xcb    ,\x00
-44,FLA-02\xcb,カッキ-\xcb    ,\x00
-45,FAW-02\xcb,ニッチフォ-ス\xcb ,\x00
-46,TMN-02\xcb,トラップサック\xcb ,\x01
-47,DRI-02\xcb,トゥギャザ-\xcb  ,\x01
+41,DHN-02\xcb,ゾリゾン\xcb,\x00
+42,TIC-02\xcb,カミン\xcb,\x00
+43,LOS-02\xcb,サッシ-\xcb,\x00
+44,FLA-02\xcb,カッキ-\xcb,\x00
+45,FAW-02\xcb,ニッチフォ-ス\xcb,\x00
+46,TMN-02\xcb,トラップサック\xcb,\x01
+47,DRI-02\xcb,トゥギャザ-\xcb,\x01
 48,CRK-02\xcb,ポッドスピ-カ-\xcb,\x01
 49,ETH-02\xcb,ライフウォ-タ-\xcb,\x01
 50,KWG-22\xcb,チャンバラソ-ド\xcb,\x00
-51,KBT-22\xcb,リボルバ-\xcb   ,\x00
+51,KBT-22\xcb,リボルバ-\xcb,\x00
 52,DDO-02\xcb,フレクサ-ソ-ド\xcb,\x00
-53,KLN-02\xcb,シュ-トバレル\xcb ,\x00
-54,KBT-32\xcb,リボルバ-かい\xcb ,\x00
-55,KBT-42\xcb,イグニッション\xcb ,\x00
-56,LHB-12\xcb,アブザ-バ-\xcb  ,\x00
-57,MWB-12\xcb,スコッチ\xcb    ,\x00
-58,TIR-12\xcb,クラブコ-ル\xcb  ,\x00
-59,BAN-12\xcb,ライトメリケン\xcb ,\x00
-60,DOG-22\xcb,リングライフル\xcb ,\x00
-61,ALN-12\xcb,オッドハンド\xcb  ,\x00
-62,VER-02\xcb,スピ-ダ-\xcb   ,\x00
-63,FLL-02\xcb,パニクル\xcb    ,\x00
-64,KWG-37\xcb,ブラックバイス\xcb ,\x01
-65,APL-02\xcb,エアウィング\xcb  ,\x00
+53,KLN-02\xcb,シュ-トバレル\xcb,\x00
+54,KBT-32\xcb,リボルバ-かい\xcb,\x00
+55,KBT-42\xcb,イグニッション\xcb,\x00
+56,LHB-12\xcb,アブザ-バ-\xcb,\x00
+57,MWB-12\xcb,スコッチ\xcb,\x00
+58,TIR-12\xcb,クラブコ-ル\xcb,\x00
+59,BAN-12\xcb,ライトメリケン\xcb,\x00
+60,DOG-22\xcb,リングライフル\xcb,\x00
+61,ALN-12\xcb,オッドハンド\xcb,\x00
+62,VER-02\xcb,スピ-ダ-\xcb,\x00
+63,FLL-02\xcb,パニクル\xcb,\x00
+64,KWG-37\xcb,ブラックバイス\xcb,\x01
+65,APL-02\xcb,エアウィング\xcb,\x00
 66,PGM-02\xcb,ゴ-ルドフィング\xcb,\x00
 67,KRN-02\xcb,スト-ンクラップ\xcb,\x00
-68,TKG-02\xcb,ジャッジメント\xcb ,\x00
-69,KWG-32\xcb,フォ-バイス\xcb  ,\x00
-70,STG-12\xcb,シンソ-ド\xcb   ,\x00
-71,CHT-02\xcb,ロ-カスト\xcb   ,\x00
-72,WLF-02\xcb,サプリケット\xcb  ,\x00
+68,TKG-02\xcb,ジャッジメント\xcb,\x00
+69,KWG-32\xcb,フォ-バイス\xcb,\x00
+70,STG-12\xcb,シンソ-ド\xcb,\x00
+71,CHT-02\xcb,ロ-カスト\xcb,\x00
+72,WLF-02\xcb,サプリケット\xcb,\x00
 73,RCM-02\xcb,スチ-ムド-リン\xcb,\x00
-74,KBT-32\xcb,ヒュ-ザ-\xcb   ,\x00
+74,KBT-32\xcb,ヒュ-ザ-\xcb,\x00
 75,KLN-12\xcb,シュ-トスフィア\xcb,\x00
 76,KBT-37\xcb,ブラックヒュ-ザ\xcb,\x01
 77,GNB-02\xcb,スチ-ルト-タス\xcb,\x00
-78,BAF-02\xcb,フ-フ\xcb     ,\x00
-79,SRU-02\xcb,プラクトラム\xcb  ,\x00
-80,SHP-02\xcb,ウォ-タホ-ル\xcb ,\x00
-81,GHL-02\xcb,ロッタ-\xcb    ,\x00
-82,SLR-22\xcb,クレンレイト\xcb  ,\x01
-83,NAS-22\xcb,ドナ-カプセル\xcb ,\x01
-84,CAT-22\xcb,アジルジャブ\xcb  ,\x01
+78,BAF-02\xcb,フ-フ\xcb,\x00
+79,SRU-02\xcb,プラクトラム\xcb,\x00
+80,SHP-02\xcb,ウォ-タホ-ル\xcb,\x00
+81,GHL-02\xcb,ロッタ-\xcb,\x00
+82,SLR-22\xcb,クレンレイト\xcb,\x01
+83,NAS-22\xcb,ドナ-カプセル\xcb,\x01
+84,CAT-22\xcb,アジルジャブ\xcb,\x01
 85,VAL-12\xcb,トランスフィクサ\xcb,\x01
 86,BNY-12\xcb,ベジタリジュ-ス\xcb,\x01
-87,GRW-02\xcb,スプリンク\xcb   ,\x01
-88,CMP-12\xcb,ステップメ-ル\xcb ,\x01
+87,GRW-02\xcb,スプリンク\xcb,\x01
+88,CMP-12\xcb,ステップメ-ル\xcb,\x01
 89,MIK-02\xcb,クリ-ンスタッフ\xcb,\x01
-90,MID-02\xcb,ミルクパン\xcb   ,\x01
-91,LTS-02\xcb,ケイリックス\xcb  ,\x01
-92,LDB-02\xcb,サンスタラ-\xcb  ,\x01
-93,SUN-02\xcb,ギアホイ-ル\xcb  ,\x01
-94,MON-02\xcb,ニュ-ム-ン\xcb  ,\x01
-95,HLY-02\xcb,シェイブアイス\xcb ,\x01
-96,UNS-02\xcb,フォ-ルダウン\xcb ,\x01
-97,NEP-02\xcb,ハルダ-\xcb    ,\x01
-98,PLT-02\xcb,ハンドルキ-\xcb  ,\x01
+90,MID-02\xcb,ミルクパン\xcb,\x01
+91,LTS-02\xcb,ケイリックス\xcb,\x01
+92,LDB-02\xcb,サンスタラ-\xcb,\x01
+93,SUN-02\xcb,ギアホイ-ル\xcb,\x01
+94,MON-02\xcb,ニュ-ム-ン\xcb,\x01
+95,HLY-02\xcb,シェイブアイス\xcb,\x01
+96,UNS-02\xcb,フォ-ルダウン\xcb,\x01
+97,NEP-02\xcb,ハルダ-\xcb,\x01
+98,PLT-02\xcb,ハンドルキ-\xcb,\x01
 99,SZK-02\xcb,ワイズフレ-クス\xcb,\x01
-100,PNT-02\xcb,リプレイサ-\xcb  ,\x01
-101,NEK-02\xcb,ネコパンチ\xcb   ,\x01
+100,PNT-02\xcb,リプレイサ-\xcb,\x01
+101,NEK-02\xcb,ネコパンチ\xcb,\x01
 102,BYC-02\xcb,ホワイトオニキス\xcb,\x01
 103,IDL-02\xcb,ビックリヨ-ヨ-\xcb,\x01
-104,MTC-02\xcb,フマフラ-\xcb   ,\x00
-105,CVL-02\xcb,ソコシャベル\xcb  ,\x00
-106,KAB-02\xcb,デサイダ-\xcb   ,\x00
-107,BST-02\xcb,デンデン\xcb    ,\x00
-108,GRF-02\xcb,インベスタ-\xcb  ,\x00
-109,CML-02\xcb,ファットストア\xcb ,\x00
-110,BIC-02\xcb,ステップホ-\xcb  ,\x00
-111,ECF-02\xcb,ロ-スピ-ド\xcb  ,\x00
-112,CTP-02\xcb,ア-スクラウ\xcb  ,\x00
-113,HCT-02\xcb,カ-リ-ヘア\xcb  ,\x00
-114,PLC-02\xcb,アレスタ-\xcb   ,\x00
-115,RSC-02\xcb,スパ-ダ-\xcb   ,\x00
-116,FFC-02\xcb,ドレイナ-ジ\xcb  ,\x00
-117,RAY-22\xcb,アウェイビ-ム\xcb ,\x00
+104,MTC-02\xcb,フマフラ-\xcb,\x00
+105,CVL-02\xcb,ソコシャベル\xcb,\x00
+106,KAB-02\xcb,デサイダ-\xcb,\x00
+107,BST-02\xcb,デンデン\xcb,\x00
+108,GRF-02\xcb,インベスタ-\xcb,\x00
+109,CML-02\xcb,ファットストア\xcb,\x00
+110,BIC-02\xcb,ステップホ-\xcb,\x00
+111,ECF-02\xcb,ロ-スピ-ド\xcb,\x00
+112,CTP-02\xcb,ア-スクラウ\xcb,\x00
+113,HCT-02\xcb,カ-リ-ヘア\xcb,\x00
+114,PLC-02\xcb,アレスタ-\xcb,\x00
+115,RSC-02\xcb,スパ-ダ-\xcb,\x00
+116,FFC-02\xcb,ドレイナ-ジ\xcb,\x00
+117,RAY-22\xcb,アウェイビ-ム\xcb,\x00
 118,GCT-02\xcb,レンジングスキン\xcb,\x01
-119,VNS-02\xcb,ジャ-ポット\xcb  ,\x01
+119,VNS-02\xcb,ジャ-ポット\xcb,\x01
 120,BRA-12\xcb,グロ-ブラスタ-\xcb,\x00
 121,TOT-22\xcb,スリ-ブレ-ザ-\xcb,\x00
-122,HSC-02\xcb,ホ-サ-\xcb    ,\x00
-123,STE-02\xcb,スロ-セット\xcb  ,\x00
+122,HSC-02\xcb,ホ-サ-\xcb,\x00
+123,STE-02\xcb,スロ-セット\xcb,\x00
 124,TOR-02\xcb,スイ-ルアタック\xcb,\x00
-125,MWO-02\xcb,エレクトラ-\xcb  ,\x00
-126,ESM-02\xcb,ステッチャ\xcb   ,\x00
-127,CCL-02\xcb,スフィ-ル\xcb   ,\x00
-128,EWM-02\xcb,コンポスト\xcb   ,\x00
-129,STN-02\xcb,ル-プニング\xcb  ,\x01
-130,WHL-02\xcb,スプラッシュ\xcb  ,\x00
-131,AMB-02\xcb,ディソルバ-\xcb  ,\x00
-132,SAM-02\xcb,バイバインド\xcb  ,\x00
-133,SEL-02\xcb,キンキング\xcb   ,\x00
-134,CFS-02\xcb,トレモ-\xcb    ,\x00
-135,EEL-02\xcb,ピチロット\xcb   ,\x00
+125,MWO-02\xcb,エレクトラ-\xcb,\x00
+126,ESM-02\xcb,ステッチャ\xcb,\x00
+127,CCL-02\xcb,スフィ-ル\xcb,\x00
+128,EWM-02\xcb,コンポスト\xcb,\x00
+129,STN-02\xcb,ル-プニング\xcb,\x01
+130,WHL-02\xcb,スプラッシュ\xcb,\x00
+131,AMB-02\xcb,ディソルバ-\xcb,\x00
+132,SAM-02\xcb,バイバインド\xcb,\x00
+133,SEL-02\xcb,キンキング\xcb,\x00
+134,CFS-02\xcb,トレモ-\xcb,\x00
+135,EEL-02\xcb,ピチロット\xcb,\x00
 136,CRO-02\xcb,オ-バ-ウェルム\xcb,\x00
-137,UPA-02\xcb,ヒュ-フィン\xcb  ,\x00
+137,UPA-02\xcb,ヒュ-フィン\xcb,\x00
 138,BBS-02\xcb,エンベロンメント\xcb,\x00
 139,ARO-02\xcb,シュリンプハンド\xcb,\x00
 140,HLG-02\xcb,パペットケ-ブル\xcb,\x00
 141,JWB-02\xcb,オリエントパイプ\xcb,\x00
-142,PSK-02\xcb,デストラ-\xcb   ,\x00
-143,SHS-02\xcb,サプレス\xcb    ,\x00
+142,PSK-02\xcb,デストラ-\xcb,\x00
+143,SHS-02\xcb,サプレス\xcb,\x00
 144,CRP-02\xcb,インコムペテンシ\xcb,\x00
-145,DLP-02\xcb,リタ-ナ-\xcb   ,\x01
+145,DLP-02\xcb,リタ-ナ-\xcb,\x01
 146,GFS-02\xcb,ウィッカ-ワ-ク\xcb,\x01
-147,TQN-02\xcb,アンプファ-\xcb  ,\x01
-148,DUC-02\xcb,フェザ-メンド\xcb ,\x01
-149,MRC-02\xcb,ハ-プ-ン\xcb   ,\x01
-150,TJO-02\xcb,パニッシャ-\xcb  ,\x01
+147,TQN-02\xcb,アンプファ-\xcb,\x01
+148,DUC-02\xcb,フェザ-メンド\xcb,\x01
+149,MRC-02\xcb,ハ-プ-ン\xcb,\x01
+150,TJO-02\xcb,パニッシャ-\xcb,\x01
 151,BAY-03\xcb,--------\xcb,\x00
 152,BAY-03\xcb,--------\xcb,\x01
