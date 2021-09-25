@@ -139,11 +139,11 @@
 8A: 
 8B: 
 8C: 
-8D: 
-8E: 
-8F: 
-90: 
-91: 
+8D: JP Text Bank 32
+8E: JP Text Bank 33
+8F: JP Text Bank 34
+90: JP Text Bank 35
+91: JP Text Bank 36
 92: 
 93: 
 94: 
@@ -164,7 +164,7 @@ A2:
 A3: 
 A4: 
 A5: 
-A6: 
+A6: JP Text Bank 37
 A7: 
 A8: 
 A9: 
