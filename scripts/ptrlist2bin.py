@@ -83,7 +83,7 @@ idx_length_map = OrderedDict()
 count = 0
 dummy_ptr = -1
 
-with open(input_file, 'r', encoding='utf-8') as fp:
+with open(input_file, 'r', encoding='utf-8-sig') as fp:
     spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
     assert spp > 0, f"{input_file} is marked as having 0 strings per pointer"
     assert len(labels) == 0 or len(labels) == spp, f"{input_file} has a label count that doesn't match strings per pointer"

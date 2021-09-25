@@ -1,4 +1,4 @@
-(1, ['MedarotName'], [203], [(None, None)], [False], None, None, True)
+﻿(1, ['MedarotName'], [203], [(None, None)], [False], None, None, True)
 256
 18033
 Index[#version],MedarotName
