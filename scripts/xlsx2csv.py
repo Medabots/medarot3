@@ -60,7 +60,9 @@ for sheet in wb.worksheets:
 	translated_idx = header.index('Translated') # Translated is the end of useful data, everything after this is ignored
 	file_path = path.join(csvdir, "{0}.csv".format(sheet.title))
 	text = {}
-	for line in data: 
+	for line in data:
+		if data is None:
+			continue
 		# 'line' is a tuple of Cells
 		if str(line[0].value).startswith('#'):
 			continue
