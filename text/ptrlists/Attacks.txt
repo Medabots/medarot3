@@ -1,4 +1,4 @@
-(1, ['AttackName'], [203], [(None, None)], [False], None, None, True)
+﻿(1, ['AttackName'], [203], [(None, None)], [False], None, None, True)
 80
 32072
 Index[#version],AttackName

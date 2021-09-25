@@ -1,4 +1,4 @@
-(1, ['SkillName'], [203], [(None, None)], [False], None, None, True)
+﻿(1, ['SkillName'], [203], [(None, None)], [False], None, None, True)
 16
 26266
 Index[#version],SkillName

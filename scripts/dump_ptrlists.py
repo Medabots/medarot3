@@ -73,7 +73,7 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
         datafile.write(f'  INCBIN c{l}\n\n')
 
         entries = OrderedDict()
-        with open(os.path.join(text_src_path, f"{l}.txt"), "w", encoding="utf-8") as output:
+        with open(os.path.join(text_src_path, f"{l}.txt"), "w", encoding="utf-8-sig") as output:
             output.write(str(list_map[l][1:]) + "\n")
             count_written = False
             for version_suffix in roms:            

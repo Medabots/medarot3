@@ -1,4 +1,4 @@
-(1, ['MedalName'], [203], [(None, None)], [False], None, None, True)
+﻿(1, ['MedalName'], [203], [(None, None)], [False], None, None, True)
 30
 -1
 Index[#version],MedalName
