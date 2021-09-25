@@ -105,13 +105,25 @@ SECTION "Text5", ROMX[$4000], BANK[$FB]
 Text5:
   INCBIN cText5
 
-SECTION "Text6", ROMX[$4000], BANK[$FC]
+SECTION "Text6", ROMX[$4000], BANK[$8D]
 Text6:
   INCBIN cText6
 
-SECTION "Text7", ROMX[$4000], BANK[$FD]
+SECTION "Text7", ROMX[$4000], BANK[$8E]
 Text7:
   INCBIN cText7
+
+SECTION "Text8", ROMX[$4000], BANK[$8F]
+Text8:
+  INCBIN cText8
+
+SECTION "Text9", ROMX[$4000], BANK[$90]
+Text9:
+  INCBIN cText9
+
+SECTION "Text10", ROMX[$4000], BANK[$91]
+Text10:
+  INCBIN cText10
 
 SECTION "Dialog Text Tables", ROM0[$20a0]
 TextTableBanks:: ; 0x20a0

@@ -139,11 +139,11 @@
 8A: 
 8B: 
 8C: 
-8D: JP Text Bank 32
-8E: JP Text Bank 33
-8F: JP Text Bank 34
-90: JP Text Bank 35
-91: JP Text Bank 36
+8D: Text 6 (JP Text Bank 32)
+8E: Text 7 (JP Text Bank 33)
+8F: Text 8 (JP Text Bank 34)
+90: Text 9 (JP Text Bank 35)
+91: Text 10 (JP Text Bank 36)
 92: 
 93: 
 94: 
@@ -164,7 +164,7 @@ A2:
 A3: 
 A4: 
 A5: 
-A6: JP Text Bank 37
+A6: Text 11 (JP Text Bank 37)
 A7: 
 A8: 
 A9: 
@@ -250,7 +250,7 @@ F8: Text 2
 F9: Text 3
 FA: Text 4
 FB: Text 5
-FC: Text 6
-FD: Text 7
+FC: (empty)
+FD: (empty)
 FE: Patch-specific 1bpp gfx and the 2bpp main dialog font
 FF: Patch functions and VWF fonts
