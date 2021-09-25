@@ -1,34 +1,34 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x958e1,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-001,0x958e3,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-002,0x958e5,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-003,0x958e7,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-004,0x958e9,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-005,0x958eb,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-006,0x958ed,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-007,0x958ef,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-008,0x958f1,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-009,0x958f3,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-010,0x958f5,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
-011,0x958f7,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
-012,0x958f9,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
-013,0x958fb,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
-014,0x958fd,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-015,0x958ff,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-016,0x95901,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-017,0x95903,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-018,0x95905,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-019,0x95907,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-020,0x95909,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-021,0x9590b,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-022,0x9590d,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-023,0x9590f,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-024,0x95911,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-025,0x95913,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-026,0x95915,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-027,0x95917,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-028,0x95919,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,
-029,0x9591b,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,
+000,0x958e1,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prefers to target leg parts.<*04>
+001,0x958e3,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prefers to target leg parts.<*04>
+002,0x958e5,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>without status effects.<*04>
+003,0x958e7,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>with the most armor (HP)<*04>
+004,0x958e9,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>with the most armor (HP)<*04>
+005,0x958eb,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>without status effects.<*04>
+006,0x958ed,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Heal<f00> and <f02>Special<f00> parts.<*04>
+007,0x958ef,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Heal<f00> and <f02>Special<f00> parts.<*04>
+008,0x958f1,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3>offensive parts (i.e. <f02>Punch<f00>).<*04>
+009,0x958f3,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3>offensive parts (i.e. <f02>Punch<f00>).<*04>
+010,0x958f5,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,<SFF>Will target random parts.<*04>
+011,0x958f7,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,<SFF>Will target random parts.<*04>
+012,0x958f9,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,<SFF>Will target random parts.<*04>
+013,0x958fb,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,<SFF>Will target random parts.<*04>
+014,0x958fd,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Protect <f00>and <f02>Set-Up<f00> parts.<*04>
+015,0x958ff,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Protect<f00> and <f02>Set-Up<f00> parts.<*04>
+016,0x95901,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Heal<f00> and <f02>Special<f00> parts.<*04>
+017,0x95903,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3>offensive parts (i.e. <f02>Punch<f00>).<*04>
+018,0x95905,<SFF>「なぐる」などの 攻撃パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3>offensive parts (i.e. <f02>Punch<f00>).<*04>
+019,0x95907,<SFF>「なおす」「とくしゅ」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Heal<f00> and <f02>Special<f00> parts.<*04>
+020,0x95909,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Protect <f00>and <f02>Set-Up<f00> parts.<*04>
+021,0x9590b,<SFF>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking <D3><f02>Protect<f00> and <f02>Set-Up<f00> parts.<*04>
+022,0x9590d,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>with the most armor (HP).<*04>
+023,0x9590f,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts <D3>without status effects.<*04>
+024,0x95911,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking leg<D3>parts.<*04><D3>
+025,0x95913,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking leg<D3>parts.<*04><D3>
+026,0x95915,<SFF>脚部パ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking leg<D3>parts.<*04><D3>
+027,0x95917,<SFF>のこリ そうこうの 高いパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts<D3>with the most armor (HP).<*04>
+028,0x95919,<SFF>症状の ついていないパ-ツを<CD>ゆうせんてきに ねらって 行動する<*04>,<SFF>Prioritizes attacking parts <D3>without status effects.<*04>
+029,0x9591b,<SFF>ランダムに パ-ツを<CD>ねらって 行動する<*04>,<SFF>Will target random parts.<*04>
 030,0x9591d,<FINAL>,
 031,0x9591f,@0x9591d,@0x9591d
 032,0x95921,@0x9591d,@0x9591d

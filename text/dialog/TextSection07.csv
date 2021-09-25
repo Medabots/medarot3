@@ -2,58 +2,58 @@
 000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,
 001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,
 002,0x92318#kabuto|0x9231a#kuwagata,かよわい 女の子だからって<CD>手を ぬかないでよ!<*02>,
-003,0x9231a#kabuto|0x9231c#kuwagata,も-ちょっと 手かげんしてくれたって<CD>い-じゃない!<*02>,
-004,0x9231c#kabuto|0x9231e#kuwagata,わたしと ロボトル<CD>おねがいできますか?<*02>,
-005,0x9231e#kabuto|0x92320#kuwagata,あリがとうございます<CD>たのしかったですわ<*02>,
-006,0x92320#kabuto|0x92322#kuwagata,せいせいどうどう おれと<CD>しょうぶしろっ!<*02>,
-007,0x92322#kabuto|0x92324#kuwagata,しょうぶなら いつでも<CD>うけて立ってやる!<*02>,
+003,0x9231a#kabuto|0x9231c#kuwagata,も-ちょっと 手かげんしてくれたって<CD>い-じゃない!<*02>,"Jeez, you could go at least<D3><f03>little<f00> easier on me!"
+004,0x9231c#kabuto|0x9231e#kuwagata,わたしと ロボトル<CD>おねがいできますか?<*02>,Would you like to Robattle<D3>with me?<*02>
+005,0x9231e#kabuto|0x92320#kuwagata,あリがとうございます<CD>たのしかったですわ<*02>,Thank you. That was fun!<*02>
+006,0x92320#kabuto|0x92322#kuwagata,せいせいどうどう おれと<CD>しょうぶしろっ!<*02>,Let's have a fair clean fight!<*02>
+007,0x92322#kabuto|0x92324#kuwagata,しょうぶなら いつでも<CD>うけて立ってやる!<*02>,I'll take you on anytime!<*02>
 008,0x92324#kabuto|0x92326#kuwagata,あんたなんかにぃ<CD>まけて あげないんだからぁ!<*02>,
 009,0x92326#kabuto|0x92328#kuwagata,いつまでも い-気に なってんじゃ<CD>ないわよぉ!<*02>,
-010,0x92328#kabuto|0x9232a#kuwagata,この てんさいハッカ-と 言われた<CD>おれの じつリょくを 貝せてやるぜ!<*02>,
-011,0x9232a#kabuto|0x9232c#kuwagata,あねごに 勝つまで<CD>おれに 勝ったと 思うなぁ!<*02>,
-012,0x9232c#kabuto|0x9232e#kuwagata,ふくが どろんこに なるまで<CD>とことん やっつけてやる!<*02>,
-013,0x9232e#kabuto|0x92330#kuwagata,なんで いつも こうなっちゃうの?<CD><*02>,
-014,0x92330#kabuto|0x92332#kuwagata,ボクが あいてを してあげよう<CD><*02>,
-015,0x92332#kabuto|0x92334#kuwagata,ちょっとは やるようだね<CD><*02>,
-016,0x92334#kabuto|0x92336#kuwagata,はぁ-い ボウヤ<CD>ミルキ-が まほうをかけてあげるわ♥<*02>,
-017,0x92336#kabuto|0x92338#kuwagata,あ-あ キミには<CD>こどもだましは つうじなかったようね<*02>,
-018,0x92338#kabuto|0x9233a#kuwagata,ふっ...しょうねんよ<CD>わたしを こえられるかな?<*02>,
+010,0x92328#kabuto|0x9232a#kuwagata,この てんさいハッカ-と 言われた<CD>おれの じつリょくを 貝せてやるぜ!<*02>,"I'll show you why they call me<D3>an ""Elite Hacker""!"
+011,0x9232a#kabuto|0x9232c#kuwagata,あねごに 勝つまで<CD>おれに 勝ったと 思うなぁ!<*02>,You haven't beaten me until<D3>you've beaten our boss!
+012,0x9232c#kabuto|0x9232e#kuwagata,ふくが どろんこに なるまで<CD>とことん やっつけてやる!<*02>,I'll beat you 'til you<D3>soil yourself!<*02>
+013,0x9232e#kabuto|0x92330#kuwagata,なんで いつも こうなっちゃうの?<CD><*02>,Why do things always turn out<D3>like this...?<*02>
+014,0x92330#kabuto|0x92332#kuwagata,ボクが あいてを してあげよう<CD><*02>,I'll be your opponent. <*02>
+015,0x92332#kabuto|0x92334#kuwagata,ちょっとは やるようだね<CD><*02>,"You're pretty good, huh.<*02>"
+016,0x92334#kabuto|0x92336#kuwagata,はぁ-い ボウヤ<CD>ミルキ-が まほうをかけてあげるわ♥<*02>,"Heeyyy boy, I, Milky, will cast<D3>a spell on you!"
+017,0x92336#kabuto|0x92338#kuwagata,あ-あ キミには<CD>こどもだましは つうじなかったようね<*02>,"Aw man, I guess my party<D3>tricks didn't fool you...<*02>"
+018,0x92338#kabuto|0x9233a#kuwagata,ふっ...しょうねんよ<CD>わたしを こえられるかな?<*02>,"Hmph... you think you can<D3>surpass me, boy?"
 019,0x9233a#kabuto|0x9233c#kuwagata,ぼ-いず び- あんびしゃす!<CD>しょうねんよ...なんだっけな?<*02>,
 020,0x9233c#kabuto|0x9233e#kuwagata,わたしの カレ-なるワザに<CD>ついてこられるかな?<*02>,
 021,0x9233e#kabuto|0x92340#kuwagata,おみごと!<CD>これからも そのちょうしでね!<*02>,
-022,0x92340#kabuto|0x92342#kuwagata,お前さんは メダチェンジを<CD>使いこなせて おるかな?<*02>,
-023,0x92342#kabuto|0x92344#kuwagata,なかなか みごとな 院前じゃ!<CD><*02>,
-024,0x92344#kabuto|0x92346#kuwagata,おあいてして いただけますか?<CD><*02>,
-025,0x92346#kabuto|0x92348#kuwagata,とても ベんきょうに なリました<CD>あリがとうございました<*02>,
-026,0x92348#kabuto|0x9234a#kuwagata,ぼくに かてたら パ-ツをやるよ<CD><*02>,
-027,0x9234a#kabuto|0x9234c#kuwagata,おこづかいが ぜんぶ<CD>メダロットに とんでゆく...<*02>,
-028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,
-029,0x9234e#kabuto|0x92350#kuwagata,まだまだ ふけいきが つづきそうだな<CD><*02>,
-030,0x92350#kabuto|0x92352#kuwagata,どいとくれよ!<CD>しゅふは いそがしいんだからね!<*02>,
+022,0x92340#kabuto|0x92342#kuwagata,お前さんは メダチェンジを<CD>使いこなせて おるかな?<*02>,Have you mastered the art of<D3>Medachange yet?<*02>
+023,0x92342#kabuto|0x92344#kuwagata,なかなか みごとな 院前じゃ!<CD><*02>,Such impeccable skill!<*02>
+024,0x92344#kabuto|0x92346#kuwagata,おあいてして いただけますか?<CD><*02>,May I Robattle with you?<*02>
+025,0x92346#kabuto|0x92348#kuwagata,とても ベんきょうに なリました<CD>あリがとうございました<*02>,I learned a lot from<D3>our battle. Thank you.<*02>
+026,0x92348#kabuto|0x9234a#kuwagata,ぼくに かてたら パ-ツをやるよ<CD><*02>,"If you beat me, I'll give you<D3>one of my parts.<*02>"
+027,0x9234a#kabuto|0x9234c#kuwagata,おこづかいが ぜんぶ<CD>メダロットに とんでゆく...<*02>,I spent my entire allowance<D3>on these bots...<*02>
+028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,Fight! Dedicated employee! A<D3>bright tomorrow will surely<D3>come!<*02>
+029,0x9234e#kabuto|0x92350#kuwagata,まだまだ ふけいきが つづきそうだな<CD><*02>,It seems business will continue<D3>to be poor for a while...<*02>
+030,0x92350#kabuto|0x92352#kuwagata,どいとくれよ!<CD>しゅふは いそがしいんだからね!<*02>,Move aside!<D3>Can't you see I'm busy?<*02>
 031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,
 032,0x92354#kabuto|0x92356#kuwagata,ボロトルは いくつになっても<CD>やめられんのぉ<*02>,
 033,0x92356#kabuto|0x92358#kuwagata,ボトルロは やはリ むずかしいのぉ<CD><*02>,
 034,0x92358#kabuto|0x9235a#kuwagata,あたしだって まだ わかいもんには<CD>まけないよ<*02>,
 035,0x9235a#kabuto|0x9235c#kuwagata,わかいって いいねェ<CD><*02>,
-036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,
-037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,
+036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,Show me your Medabots!<*02>
+037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,Fufufu<D3>You let me take your data!<*02>
 038,0x92360#kabuto|0x92362#kuwagata,しっぷうのごとく きる!<CD><*02>,
 039,0x92362#kabuto|0x92364#kuwagata,...そして しっぷうのごとく<CD>やぶれたリ!<*02>,
 040,0x92364#kabuto|0x92366#kuwagata,おれの メダロットを<CD>貝てくれ!<*02>,
 041,0x92366#kabuto|0x92368#kuwagata,ああ-っ!!<CD>おれの メダロットちゃんがっ!<*02>,
-042,0x92368#kabuto|0x9236a#kuwagata,メダロットは<CD>おとこのこ だけのものじゃ ないよ<*02>,
+042,0x92368#kabuto|0x9236a#kuwagata,メダロットは<CD>おとこのこ だけのものじゃ ないよ<*02>,"Medabots aren't just for <D3>boys, you know!<*02>"
 043,0x9236a#kabuto|0x9236c#kuwagata,え-ん<CD>けっこう じしんあったのにィ<*02>,
 044,0x9236c#kabuto|0x9236e#kuwagata,ロボトルのよわい カレなんて<CD>カッコわるいわよね-<*02>,
 045,0x9236e#kabuto|0x92370#kuwagata,も- しんじらんな-い!<CD>オトコって すぐ あつくなるんだから<*02>,
 046,0x92370#kabuto|0x92372#kuwagata,わたしは しごとも ロボトルも<CD>てを ぬかないわよ!<*02>,
 047,0x92372#kabuto|0x92374#kuwagata,ロボトルばっかリ つよくても<CD>いいかいしゃに はいれないわよ<*02>,
-048,0x92374#kabuto|0x92376#kuwagata,ロボトルは しんけんしょうぶで<CD>ございま-す!<*02>,
+048,0x92374#kabuto|0x92376#kuwagata,ロボトルは しんけんしょうぶで<CD>ございま-す!<*02>,A truly serious robattle!<*02>
 049,0x92376#kabuto|0x92378#kuwagata,またの おこしを<CD>おまちして おリま-す!<*02>,
 050,0x92378#kabuto|0x9237a#kuwagata,おね-さんが あそんであ.げ.る♥<CD><*02>,
 051,0x9237a#kabuto|0x9237c#kuwagata,ウフフッ♥ またねぇ<CD><*02>,
 052,0x9237c#kabuto|0x9237e#kuwagata,われわれの おそろしさを<CD>思い知るロボ!<*02>,
-053,0x9237e#kabuto|0x92380#kuwagata,おたすけロボ-ッ!!<CD><*02>,
-054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,
+053,0x9237e#kabuto|0x92380#kuwagata,おたすけロボ-ッ!!<CD><*02>,"I'll help, robo!!<D3><*02>"
+054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"Fufufu<D3>In the end, evil wins!<*02>"
 055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,
 056,0x92384#kabuto|0x92386#kuwagata,お-ほほほほほほほ!! わたくしを<CD>おこらせると こうかいしますことよ!<*02>,
 057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,
@@ -123,13 +123,13 @@
 121,0x92406#kabuto|0x92408#kuwagata,ン-ッ?<CD>ボロトルトボロトル...<*02>,
 122,0x92408#kabuto|0x9240a#kuwagata,オレと ロボトろ-ぜっ!!<CD><*02>,
 123,0x9240a#kabuto|0x9240c#kuwagata,ロボトったぜ-っ!!<CD><*02>,
-124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,
-125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,
+124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,Fufufu<D3>I am Shiratama!<*02>
+125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,Fu...fufufu...<D3>Fuahahahaha!!<*02>
 126,0x92410#kabuto|0x92412#kuwagata,いち きょうしとして<CD>きみと ロボトルだ!!<*02>,
 127,0x92412#kabuto|0x92414#kuwagata,いち きょうしとして まんぞくしたぞ<CD><*02>,
 128,0x92414#kabuto|0x92416#kuwagata,いち きょうしとして<CD>あなたと ロボトルです!!<*02>,
 129,0x92416#kabuto|0x92418#kuwagata,まんぞくで-す<CD><*02>,
-130,0x92418#kabuto|0x9241a#kuwagata,ピ- ピピピ<CD><*02>,
+130,0x92418#kabuto|0x9241a#kuwagata,ピ- ピピピ<CD><*02>,Pi- pipipi<D3><*02>
 131,0x9241a#kabuto|0x9241c#kuwagata,ピピピ ピ-...<CD><*02>,
 132,0x9241c#kabuto|0x9241e#kuwagata,あたしたちは なく子も だまる<CD>シ-フェアリ-ズ!<*02>,
 133,0x9241e#kabuto|0x92420#kuwagata,も-っ ゆるさないんだから!<CD><*02>,
@@ -145,16 +145,16 @@
 143,0x92432#kabuto|0x92434#kuwagata,まけゼリフなんて<CD>言ってあげないんだからぁ!!<*02>,
 144,0x92434#kabuto|0x92436#kuwagata,これいじょう 先に<CD>行かせるわけには いきません!<*02>,
 145,0x92436#kabuto|0x92438#kuwagata,ここは き.け.ん...<CD><*02>,
-146,0x92438#kabuto|0x9243a#kuwagata,これが...<CD>コンビニェ-ションアタック!!<*02>,
-147,0x9243a#kabuto|0x9243c#kuwagata,これじゃ...<CD>コンビニェ-ション ボロボロ-<*02>,
+146,0x92438#kabuto|0x9243a#kuwagata,これが...<CD>コンビニェ-ションアタック!!<*02>,This is...<D3>a combination attack!!<*02>
+147,0x9243a#kabuto|0x9243c#kuwagata,これじゃ...<CD>コンビニェ-ション ボロボロ-<*02>,Just like that...<D3>the combination is exhausted.<*02>
 148,0x9243c#kabuto|0x9243e#kuwagata,「アンビリバボ-」と「ぼ-ず」で<CD>アンビリバボ-ズ!!<*02>,
-149,0x9243e#kabuto|0x92440#kuwagata,アン.ビリ-バボ-ズ!!<CD><*02>,
+149,0x9243e#kabuto|0x92440#kuwagata,アン.ビリ-バボ-ズ!!<CD><*02>,Un-believeable!!<D3><*02>
 150,0x92440#kabuto|0x92442#kuwagata,あそんであげても いいですよぉ<CD>キクヒメ「うるさいわよぉ!」<*02>,
 151,0x92442#kabuto|0x92444#kuwagata,ちょっと シャレに なんないですよぉ<CD>キクヒメ「うっとうしいわねぇ!!」<*02>,
-152,0x92444#kabuto|0x92446#kuwagata,ギンジョウ小学校で 1ばんの<CD>びしょうじょ 3にんぐみ!<*02>,
+152,0x92444#kabuto|0x92446#kuwagata,ギンジョウ小学校で 1ばんの<CD>びしょうじょ 3にんぐみ!<*02>,We are Ginza Elementary's<D3>three most beautiful girls!<*02>
 153,0x92446#kabuto|0x92448#kuwagata,びしょうじょ コンテストなら<CD>まけないのに<*02>,
-154,0x92448#kabuto|0x9244a#kuwagata,チ-ムロボトルロボ!<CD><*02>,
-155,0x9244a#kabuto|0x9244c#kuwagata,チ-ムボロトルロボ...<CD><*02>,
+154,0x92448#kabuto|0x9244a#kuwagata,チ-ムロボトルロボ!<CD><*02>,"Team robattle, robo!<D3><*02>"
+155,0x9244a#kabuto|0x9244c#kuwagata,チ-ムボロトルロボ...<CD><*02>,"Team robattle, robo...<D3><*02>"
 156,0x9244c#kabuto|0x9244e#kuwagata,3にんよれば もんじゅの ちえ!<CD><*02>,
 157,0x9244e#kabuto|0x92450#kuwagata,もんじゅって なに?<CD><*02>,
 158,0x92450#kabuto|0x92452#kuwagata,3本の や!<CD><*02>,

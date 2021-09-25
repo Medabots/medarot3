@@ -5,17 +5,17 @@
 003,0x919f2,あれっ? 小さな 男の子だ<CD>ながれ星かと 思ったのに<CF>そうだ この子に 聞いてみよう<CD>でも ぼくの家が どこかなんて<CF>この子が 知ってるわけ<CD>ないよなぁ...<*03>,Huh? A kid?<CF>I thought it was a shooting<D3>star.<CF>Maybe I can ask them how to<D3>get home.<CF>...but how could they know?<*03>
 004,0x919f4,......<CF>何? 上? 上が どうしたの?<CD>上に 何か あるの?<*03>,...<CF>Up?<D3>What's up there?<*03><D3>
 005,0x919f6,えっ! ちきゅう!?<CD>そんな! じゃあ ここは...?<*03>,Is that... Earth!?<CF>That can't be right!<CF>Then where am I now...?<*03>
-006,0x919f8,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,
-007,0x91a0e,<SFF>メダロットが 自分で考えて行動します<*04>,<SFF>Medabots act on their own.<*04>
-008,0x91a10,<SFF>頭パ-ツを使います<CD>変形の時は ドライブAを使います<*04>,
-009,0x91a12,<SFF>右院パ-ツを使います<CD>変形の時は ドライブBを使います<*04>,
-010,0x91a14,<SFF>左院パ-ツを使います<CD>変形の時は ドライブCを使います<*04>,
+006,0x919f8,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,<SFF>Please select the rotation<D3>order of your Medarots.<*04>
+007,0x91a0e,<SFF>メダロットが 自分で考えて行動します<*04>,<SFF>Your Medarots will act of<D3>their own accord.<*04>
+008,0x91a10,<SFF>頭パ-ツを使います<CD>変形の時は ドライブAを使います<*04>,"<SFF>Use the head part.<D3>When Medachanged, drive A will be used.<*04>"
+009,0x91a12,<SFF>右院パ-ツを使います<CD>変形の時は ドライブBを使います<*04>,"<SFF>Use the right arm part.<D3>When Medachanged, drive B will be used.<*04>"
+010,0x91a14,<SFF>左院パ-ツを使います<CD>変形の時は ドライブCを使います<*04>,"<SFF>Use the left arm part.<D3>When Medachanged, drive C will be used.<*04>"
 011,0x91a16,<SFF>メダフォ-スをためます<*04>,<SFF>Build up Medaforce.<*04>
 012,0x91a18,<SFF>メダフォ-ス1を使います<*04>,<SFF>Use Medaforce 1.<*04>
 013,0x91a1a,<SFF>メダフォ-ス2を使います<*04>,<SFF>Use Medaforce 2.<*04>
 014,0x91a1c,<SFF>メダフォ-ス3を使います<*04>,<SFF>Use Medaforce 3.<*04>
-015,0x91a1e,<SFF>変形します<CD>すでに 変形している時は ?と同じ<*04>,
-016,0x91a20,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,
+015,0x91a1e,<SFF>変形します<CD>すでに 変形している時は ?と同じ<*04>,<SFF>Medachange.<D3>Already Medachanged? The same action will happen.<*04>
+016,0x91a20,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,<SFF>Please select the left and right rotation point.<*04>
 017,0x91a22,このアイテムは 使えません!<*03>,You can't use this item!<*03>
 018,0x91a2e,ここでは 使えません!<*03>,You can't use this here!<*03>
 019,0x91a30,今は 使えません!<*03>,You can't use this right now!<*03>
@@ -25,46 +25,46 @@
 023,0x91a3a,メダロット「スカイカ-ゴ」が<CD>租まれてないよ!<CF>頭パ-ツ 「エアフライト」!<CD>右院パ-ツ 「エアウィング」!<CF>左院パ-ツ 「エアフィン」!<CD>脚部パ-ツ 「エアタ-ビン」!<CF>メダロット「スカイカ-ゴ」が<CD>かんせいだよ!,
 024,0x91a3c,メダロット「オ-トクル-ズ」が<CD>租まれてないよ!<CF>頭パ-ツ 「ウォ-タフリ-ト」!<CD>右院パ-ツ 「ウォ-タホ-ル」!<CF>左院パ-ツ 「ウォ-タポ-ト」!<CD>脚部パ-ツ 「ウォ-タタ-ビン」!<CF>メダロット「オ-トクル-ズ」が<CD>かんせいだよ!,
 025,0x91a3e,このバ-ジョンでは セ-ブできません,Cannot save with this version.
-026,0x91a40,"<@RL,0A,01>ざんねん! このバ-ジョンでは<CD>つうしんできません!<*03>","<@RL,0A,01>Sorry!<D3>I can't do it in this version!<*03>"
-027,0x91a42,"<@RL,0A,01>つうしん前に セ-ブします!<CD>よろしいですか?<*04>","<@RL,0A,01>Do you want to save<D3>before the event?<*04>"
-028,0x91a4e,"<@RL,0A,00>つうしんを あきらめた!",
-029,0x91a50,"<@RL,0A,02>つうしんネットに せつぞくします!<S46><*04>",
-030,0x91a52,"<@RL,0A,00>つうしんネットヘの せつぞくに<CD>しっぱいした!",
-031,0x91a54,セ-ブ中!<*04>,
-032,0x91a56,<SFF>ともだちと きがるに ロボトル!<*04>,
-033,0x91a58,<SFF>ともだちと パ-ツをかけた<CD>しんけんロボトル!<*04>,
-034,0x91a5a,<SFF>ともだちと パ-ツトレ-ド!<*04>,
-035,0x91a5c,<SFF>ともだちに メダルをあげます!<*04>,
-036,0x91a5e,<SFF>つうしんネットを おわる時は<CD>かならず 選択してください!<*04>,
-037,0x91a60,2体いじょう 租まれた<CD>メダロットがないと できません!<S46><*04>,
-038,0x91a62,さあ しょうぶだ!<S5A><*04>,
-039,0x91a64,デ-タ転送エラ-!<S5A><*04>,
-040,0x91a66,モ-ドを 選んでください!<*04>,
-041,0x91a68,つうしんチェック中!<*04>,
-042,0x91a6a,ロボトルに 勝ちました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,
-043,0x91a6c,ロボトルに まけました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,
+026,0x91a40,"<@RL,0A,01>ざんねん! このバ-ジョンでは<CD>つうしんできません!<*03>","<@RL,0A,01>Sorry!<D3>I can't link with this version!<*03>"
+027,0x91a42,"<@RL,0A,01>つうしん前に セ-ブします!<CD>よろしいですか?<*04>","<@RL,0A,01>Do you want to save<D3>beforehand?<*04>"
+028,0x91a4e,"<@RL,0A,00>つうしんを あきらめた!","<@RL,0A,00>Link aborted!"
+029,0x91a50,"<@RL,0A,02>つうしんネットに せつぞくします!<S46><*04>","<@RL,0A,02>Link will now connect!"
+030,0x91a52,"<@RL,0A,00>つうしんネットヘの せつぞくに<CD>しっぱいした!","<@RL,0A,00>Link connection failed!"
+031,0x91a54,セ-ブ中!<*04>,Saving!<*04>
+032,0x91a56,<SFF>ともだちと きがるに ロボトル!<*04>,<SFF>A casual Robattle with<D3>a friend!<*04>
+033,0x91a58,<SFF>ともだちと パ-ツをかけた<CD>しんけんロボトル!<*04>,<SFF>a serious Robattle where your<D3>parts are at stake!<*04>
+034,0x91a5a,<SFF>ともだちと パ-ツトレ-ド!<*04>,Trade parts with your friends!<*04>
+035,0x91a5c,<SFF>ともだちに メダルをあげます!<*04>,Give Medals to your friends!<*04>
+036,0x91a5e,<SFF>つうしんネットを おわる時は<CD>かならず 選択してください!<*04>,<SFF>Select this when you want<D3>to disconnect the link.<*04>
+037,0x91a60,2体いじょう 租まれた<CD>メダロットがないと できません!<S46><*04>,You need at least two or<D3>more assembled Medarots!<S46><*04>
+038,0x91a62,さあ しょうぶだ!<S5A><*04>,"Ok, fight!<S5A><*04>"
+039,0x91a64,デ-タ転送エラ-!<S5A><*04>,Data transfer error!<S5A><*04>
+040,0x91a66,モ-ドを 選んでください!<*04>,Please select a mode!<*04>
+041,0x91a68,つうしんチェック中!<*04>,Checking link!<*04>
+042,0x91a6a,ロボトルに 勝ちました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,Robattle won!<D3>Link Robattle <&BUF02>win<&BUF01>lose<*03>
+043,0x91a6c,ロボトルに まけました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,Robattle lost!<D3>Link Robattle <&BUF02>win<&BUF01>lose<*03>
 044,0x91a6e,あいてが 「ロボと-る」中です!<S5A><*04>,
-045,0x91a72,タイミングよく Aボタンを おして<CD>パ-ツを ゲットしよう!<S5A><*04>,
-046,0x91a74,ざんねん! 「ハズレ」です!<CD>何も ゲットできなかった!<*03>,
-047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,
-048,0x91a78,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*03>,
-049,0x91a7a,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*03>,
+045,0x91a72,タイミングよく Aボタンを おして<CD>パ-ツを ゲットしよう!<S5A><*04>,Press the A button with good timing to get the parts!<S5A><*04>
+046,0x91a74,ざんねん! 「ハズレ」です!<CD>何も ゲットできなかった!<*03>,"Too bad! You got a ""Miss""!<D3>You get nothing!<*03>"
+047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,"How lucky! You got a ""Miss""!<D3>You get nothing!<*03>"
+048,0x91a78,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*03>,<&BUF03><&BUF01>Part<&BUF04>recieved!
+049,0x91a7a,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*03>,<&BUF03><&BUF01>Part<&BUF04>recieved!
 050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,
 051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,
-052,0x91a80,パ-ツ転送!<S5A><*04>,
-053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,
-054,0x91a88,そうびされている メダルは<CD>あげることが できません!,
-055,0x91a8a,メダリアのついている メダルは<CD>あげることが できません!,
-056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,
-057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,
-058,0x91a90,メダル転送!<S5A><*04>,
-059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,
-060,0x91a94,<&BUF03>の<CD><&BUF05>メダルが なくなった!<*03>,
-061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,
-061#kuwagata,0x91a96,<&BUF03>!<CD>おれの クワガタメダルを<CF>外したままに するな<CD>みうごきが とれなくなる<*03>,
-062,0x91a98,何が 知リたいのかな?<*04>,
-063,0x91a9a,今は コマンドを ひらけません!,
-064,0x91a9c,OBJオ-バ- フリ-ズ!!<*04>,
+052,0x91a80,パ-ツ転送!<S5A><*04>,Part transfer!<S5A><*04>
+053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> <&BUF00>part<D3><&BUF01>was acquired!<*03>
+054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal you currently have equipped!
+055,0x91a8a,メダリアのついている メダルは<CD>あげることが できません!,You can not give away a Medal that has Medalia equipped!
+056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The opponent already owns this Medal!
+057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,Your opponent is choosing a<D3>Medal. Please wait!<*04>
+058,0x91a90,メダル転送!<S5A><*04>,Medal transfer!<S5A><*04>
+059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> <&BUF00>medal<D3><&BUF01>was acquired!<*03>
+060,0x91a94,<&BUF03>の<CD><&BUF05>メダルが なくなった!<*03>,<&BUF03>'s<&BUF05>Medal was lost!<*03>
+061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,"Hey, <&BUF03>!<D3>Equip my Kabuto Medal to<D3>something, will ya?!<D3>I can't move at all like this!!<*03>"
+061#kuwagata,0x91a96,<&BUF03>!<CD>おれの クワガタメダルを<CF>外したままに するな<CD>みうごきが とれなくなる<*03>,<&BUF03>! Do try not to<D3>leave my Kuwagata Medal<D3>out in the open.<D3>I can not move freely like this.<*03>
+062,0x91a98,何が 知リたいのかな?<*04>,What do you want to know?<*04>
+063,0x91a9a,今は コマンドを ひらけません!,Can't open command now!
+064,0x91a9c,OBJオ-バ- フリ-ズ!!<*04>,Object overfreeze!!<*04>
 065,0x91a9e,<FINAL>,
 066,0x919fa,@0x919f8,@0x919f8
 067,0x919fc,@0x919f8,@0x919f8
