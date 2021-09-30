@@ -81,49 +81,117 @@ TextSection37:
   INCBIN cTextSection37
 ; F2:5E4B, start of PtrList Pointer section
 
-SECTION "Text0", ROMX[$4000], BANK[$F6]
+SECTION "Text0", ROMX[$4000], BANK[$76]
 Text0:
   INCBIN cText0
 
-SECTION "Text1", ROMX[$4000], BANK[$F7]
+SECTION "Text1", ROMX[$4000], BANK[$77]
 Text1:
   INCBIN cText1
 
-SECTION "Text2", ROMX[$4000], BANK[$F8]
+SECTION "Text2", ROMX[$4000], BANK[$78]
 Text2:
   INCBIN cText2
 
-SECTION "Text3", ROMX[$4000], BANK[$F9]
+SECTION "Text3", ROMX[$4000], BANK[$79]
 Text3:
   INCBIN cText3
 
-SECTION "Text4", ROMX[$4000], BANK[$FA]
+SECTION "Text4", ROMX[$4000], BANK[$7A]
 Text4:
   INCBIN cText4
 
-SECTION "Text5", ROMX[$4000], BANK[$FB]
+SECTION "Text5", ROMX[$4000], BANK[$7B]
 Text5:
   INCBIN cText5
 
-SECTION "Text6", ROMX[$4000], BANK[$8D]
+SECTION "Text6", ROMX[$4000], BANK[$7C]
 Text6:
   INCBIN cText6
 
-SECTION "Text7", ROMX[$4000], BANK[$8E]
+SECTION "Text7", ROMX[$4000], BANK[$7D]
 Text7:
   INCBIN cText7
 
-SECTION "Text8", ROMX[$4000], BANK[$8F]
+SECTION "Text8", ROMX[$4000], BANK[$7E]
 Text8:
   INCBIN cText8
 
-SECTION "Text9", ROMX[$4000], BANK[$90]
+SECTION "Text9", ROMX[$4000], BANK[$7F]
 Text9:
   INCBIN cText9
 
-SECTION "Text10", ROMX[$4000], BANK[$91]
+SECTION "Text10", ROMX[$4000], BANK[$80]
 Text10:
   INCBIN cText10
+
+SECTION "Text11", ROMX[$4000], BANK[$81]
+Text11:
+  INCBIN cText11
+
+SECTION "Text12", ROMX[$4000], BANK[$82]
+Text12:
+  INCBIN cText12
+
+SECTION "Text13", ROMX[$4000], BANK[$83]
+Text13:
+  INCBIN cText13
+
+SECTION "Text14", ROMX[$4000], BANK[$84]
+Text14:
+  INCBIN cText14
+
+SECTION "Text15", ROMX[$4000], BANK[$85]
+Text15:
+  INCBIN cText15
+
+SECTION "Text16", ROMX[$4000], BANK[$86]
+Text16:
+  INCBIN cText16
+
+SECTION "Text17", ROMX[$4000], BANK[$87]
+Text17:
+  INCBIN cText17
+
+SECTION "Text18", ROMX[$4000], BANK[$88]
+Text18:
+  INCBIN cText18
+
+SECTION "Text19", ROMX[$4000], BANK[$89]
+Text19:
+  INCBIN cText19
+
+SECTION "Text20", ROMX[$4000], BANK[$8A]
+Text20:
+  INCBIN cText20
+
+SECTION "Text21", ROMX[$4000], BANK[$8B]
+Text21:
+  INCBIN cText21
+
+SECTION "Text22", ROMX[$4000], BANK[$8C]
+Text22:
+  INCBIN cText22
+
+SECTION "Text23", ROMX[$4000], BANK[$8D]
+Text23:
+  INCBIN cText23
+
+SECTION "Text24", ROMX[$4000], BANK[$8E]
+Text24:
+  INCBIN cText24
+
+SECTION "Text25", ROMX[$4000], BANK[$8F]
+Text25:
+  INCBIN cText25
+
+SECTION "Text26", ROMX[$4000], BANK[$90]
+Text26:
+  INCBIN cText26
+
+SECTION "Text27", ROMX[$4000], BANK[$91]
+Text27:
+  INCBIN cText27
 
 SECTION "Dialog Text Tables", ROM0[$20a0]
 TextTableBanks:: ; 0x20a0

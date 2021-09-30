@@ -116,34 +116,34 @@
 73: 
 74: 
 75: 
-76: JP Text Bank 09
-77: JP Text Bank 10
-78: JP Text Bank 11
-79: JP Text Bank 12
-7A: JP Text Bank 13
-7B: JP Text Bank 14
-7C: JP Text Bank 15
-7D: JP Text Bank 16
-7E: JP Text Bank 17
-7F: JP Text Bank 18
-80: JP Text Bank 19
-81: JP Text Bank 20
-82: JP Text Bank 21
-83: JP Text Bank 22
-84: JP Text Bank 23
-85: JP Text Bank 24
-86: JP Text Bank 25
-87: JP Text Bank 26
-88: JP Text Bank 27
-89: JP Text Bank 28
-8A: JP Text Bank 29
-8B: JP Text Bank 30
-8C: JP Text Bank 31
-8D: Text 6 (JP Text Bank 32)
-8E: Text 7 (JP Text Bank 33)
-8F: Text 8 (JP Text Bank 34)
-90: Text 9 (JP Text Bank 35)
-91: Text 10 (JP Text Bank 36)
+76: Text Section 00 (JP Text Bank 09)
+77: Text Section 01 (JP Text Bank 10)
+78: Text Section 02 (JP Text Bank 11)
+79: Text Section 03 (JP Text Bank 12)
+7A: Text Section 04 (JP Text Bank 13)
+7B: Text Section 05 (JP Text Bank 14)
+7C: Text Section 06 (JP Text Bank 15)
+7D: Text Section 07 (JP Text Bank 16)
+7E: Text Section 08 (JP Text Bank 17)
+7F: Text Section 09 (JP Text Bank 18)
+80: Text Section 10 (JP Text Bank 19)
+81: Text Section 11 (JP Text Bank 20)
+82: Text Section 12 (JP Text Bank 21)
+83: Text Section 13 (JP Text Bank 22)
+84: Text Section 14 (JP Text Bank 23)
+85: Text Section 15 (JP Text Bank 24)
+86: Text Section 16 (JP Text Bank 25)
+87: Text Section 17 (JP Text Bank 26)
+88: Text Section 18 (JP Text Bank 27)
+89: Text Section 19 (JP Text Bank 28)
+8A: Text Section 20 (JP Text Bank 29)
+8B: Text Section 21 (JP Text Bank 30)
+8C: Text Section 22 (JP Text Bank 31)
+8D: Text Section 23 (JP Text Bank 32)
+8E: Text Section 24 (JP Text Bank 33)
+8F: Text Section 25 (JP Text Bank 34)
+90: Text Section 26 (JP Text Bank 35)
+91: Text Section 27 (JP Text Bank 36)
 92: 
 93: 
 94: 
@@ -244,12 +244,12 @@ F2: Text Pointers 2 / Pointer List Pointers / PtrList 0 / Special pointer list h
 F3: PtrList 1
 F4: PtrList 2
 F5: PtrList 3
-F6: Text 0
-F7: Text 1
-F8: Text 2
-F9: Text 3
-FA: Text 4
-FB: Text 5
+F6: (empty)
+F7: (empty)
+F8: (empty)
+F9: (empty)
+FA: (empty)
+FB: (empty)
 FC: (empty)
 FD: (empty)
 FE: Patch-specific 1bpp gfx and the 2bpp main dialog font
