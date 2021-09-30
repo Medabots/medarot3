@@ -116,29 +116,29 @@
 73: 
 74: 
 75: 
-76: 
-77: 
-78: 
-79: 
-7A: 
-7B: 
-7C: 
-7D: 
-7E: 
-7F: 
-80: 
-81: 
-82: 
-83: 
-84: 
-85: 
-86: 
-87: 
-88: 
-89: 
-8A: 
-8B: 
-8C: 
+76: JP Text Bank 09
+77: JP Text Bank 10
+78: JP Text Bank 11
+79: JP Text Bank 12
+7A: JP Text Bank 13
+7B: JP Text Bank 14
+7C: JP Text Bank 15
+7D: JP Text Bank 16
+7E: JP Text Bank 17
+7F: JP Text Bank 18
+80: JP Text Bank 19
+81: JP Text Bank 20
+82: JP Text Bank 21
+83: JP Text Bank 22
+84: JP Text Bank 23
+85: JP Text Bank 24
+86: JP Text Bank 25
+87: JP Text Bank 26
+88: JP Text Bank 27
+89: JP Text Bank 28
+8A: JP Text Bank 29
+8B: JP Text Bank 30
+8C: JP Text Bank 31
 8D: Text 6 (JP Text Bank 32)
 8E: Text 7 (JP Text Bank 33)
 8F: Text 8 (JP Text Bank 34)
