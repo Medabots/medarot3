@@ -16,6 +16,8 @@ input_files = sys.argv[6:]
 BANK_MAX = 0x7fff
 TYPE_PREFIX = "Text"
 
+total_free_space = 0
+
 sections = {} # Available sections in the ROM to store data
 
 with open(data_file, 'r') as df, open(version_data_file, 'r') as vdf:
@@ -34,9 +36,14 @@ for line in src.splitlines():
         sections[name] = (bank, ptr_table_offset)
         if name.startswith(TYPE_PREFIX):
             open(os.path.join(output_bin_dir, f"{name}_{version_suffix}.bin"), 'wb').close()
+            # 'TextPointers' specifically only contains the pointers and is fixed, so we don't care about that length
+            if not name.startswith(f"{TYPE_PREFIX}Pointers"):
+                total_free_space += BANK_MAX - ptr_table_offset + 1
+
+current_free_space = total_free_space
 
 # 'Text#' for text, 'Pointers' is where pointers should go
-# We assume 0x4000 is enough to cover all 3-byte pointers
+# We actually need 1.5ish banks to cover all 3-byte pointers, but it's a fixed size (refer to text_tables.asm)
 current_index = 0 # Text0
 current_bank = sections[f"{TYPE_PREFIX}{current_index}"][0]
 current_offset = sections[f"{TYPE_PREFIX}{current_index}"][1]
@@ -81,6 +88,7 @@ with open(output_file, 'w') as output:
 
                     current_fp.write(in_f.read(length))
                     current_offset += length
+                    current_free_space -= length
             
             output.write(f'c{key}        EQUS "\\"{output_path}\\""\n')
     finally:
@@ -92,3 +100,9 @@ with open(output_file, 'w') as output:
         current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
         output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         current_index += 1
+
+    # Note how much free space is remaining, and send a warning to GitHub Actions if we're running low
+    percent_remaining = (current_free_space/total_free_space) * 100
+    if current_free_space <= 0x4000:
+        print(f"::warning file=scripts/dialogbin2asm.py,line=1,col=1,endColumn=1::Less than one bank of free space remaining.")
+    print(f"Free space remaining: {current_free_space} bytes ({percent_remaining:.0f}%) out of {total_free_space} bytes")
