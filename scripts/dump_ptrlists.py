@@ -158,7 +158,8 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
             # Output as a CSV
             writer = csv.writer(output, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             if(len(labels) == 0):
-                labels = ["Entry"] * spp
+                for i in range(0, spp):
+                    labels.append(f"Entry{i:02X}")
             writer.writerow(["Index[#version]"] + labels) # Always print the index, at the bare minimum
             for idx in entries:
                 unique_set = set("".join(v) for v in entries[idx].values())
