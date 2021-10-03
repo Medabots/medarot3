@@ -201,20 +201,24 @@ MapMedalNameForMenu::
   push bc
   push hl
   ld [W_ListItemIndexForBuffering], a
-  ld b, $B
-  ld c, 6
-  ld a, 0
+  ld bc, $0B06
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
+  pop de ; hl -> de, the address to actually draw to
+  ld h, $12 ; tile index to draw
+  ld bc, W_NewListItemBufferArea
+  ld a, 5 ; Medals only have 5 tiles of space to draw
+  call VWFDrawStringLeftFullAddress
   pop hl
   pop bc
   pop de
   ret
+.end
+REPT $490F - .end
+  nop
+ENDR
 
 MedalMenuMapDashes::
   push de
