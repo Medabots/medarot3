@@ -355,13 +355,13 @@ Tilemap00_33::
 Tilemap00_34::
   INCBIN "./build/tilemaps/0034.map"
 Tilemap00_35::
-  INCBIN "./build/tilemaps/0035.map"
+  INCBIN "./build/tilemaps/MedalsScreen.map"
 Tilemap00_36::
-  INCBIN "./build/tilemaps/0036.map"
+  INCBIN "./build/tilemaps/MedalsListSymbols.map"
 Tilemap00_38::
   INCBIN "./build/tilemaps/0038.map"
 Tilemap00_39::
-  INCBIN "./build/tilemaps/0039.map"
+  INCBIN "./build/tilemaps/MedalsImage.map"
 Tilemap00_3A::
   INCBIN "./build/tilemaps/003A.map"
 Tilemap00_3C::
