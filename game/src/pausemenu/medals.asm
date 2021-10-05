@@ -270,20 +270,19 @@ MapSelectedMedalName::
   ld hl, M_MedalNickname
   add hl, de
   ld b, h
-  ld c, l
-  ld a, 8
-  call GetTileBasedCentringOffset
-  pop hl
-  ld d, 0
-  ld e, a
-  add hl, de
-  ld a, 8
-  jp PutStringVariableLength
+  ld c, l ; bc is string location
+  pop de ; hl -> de, tile mapping location
+  ld h, $17 ; Draw tiles here
+  jp VWFDrawStringCentredFullAddress8Tiles
 
 .noMedal
   pop hl
   ld b, 8
   jp MedalMenuMapDashes
+.end
+REPT $4967 - .end
+  nop
+ENDR
 
 MapSelectedMedalLevel::
   push hl
