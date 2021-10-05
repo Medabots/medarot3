@@ -207,7 +207,7 @@ MapMedalNameForMenu::
   push hl
   call WrapBufferTextFromList
   pop de ; hl -> de, the address to actually draw to
-  ld h, $12 ; tile index to draw
+  ld h, $26 ; tile index to draw
   ld bc, W_NewListItemBufferArea
   ld a, 5 ; Medals only have 5 tiles of space to draw
   call VWFDrawStringLeftFullAddress
@@ -272,7 +272,7 @@ MapSelectedMedalName::
   ld b, h
   ld c, l ; bc is string location
   pop de ; hl -> de, tile mapping location
-  ld h, $17 ; Draw tiles here
+  ld h, $2B ; Draw tiles here
   jp VWFDrawStringCentredFullAddress8Tiles
 
 .noMedal

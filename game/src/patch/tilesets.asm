@@ -75,3 +75,4 @@ PatchTilesets::
   PatchTilesetEntry PartsInfoHead
   PatchTilesetEntry PartsInfoArms
   PatchTilesetEntry PartsInfoLegs
+  PatchTilesetEntry MedalScreen
