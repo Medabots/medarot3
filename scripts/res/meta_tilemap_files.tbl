@@ -52,10 +52,10 @@
 00_39=MedalsImage
 00_3A=003A
 00_3C=003C
-00_3D=003D
-00_3E=003E
-00_3F=003F
-00_40=0040
+00_3D=MedalsScreenSubmenu
+00_3E=MedalAbilitySubmenu
+00_3F=MedalMedaforceSubmenu
+00_40=MedalSkillSubmenu
 00_41=0041
 00_42=0042
 00_43=0043

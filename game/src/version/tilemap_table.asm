@@ -367,13 +367,13 @@ Tilemap00_3A::
 Tilemap00_3C::
   INCBIN "./build/tilemaps/003C.map"
 Tilemap00_3D::
-  INCBIN "./build/tilemaps/003D.map"
+  INCBIN "./build/tilemaps/MedalsScreenSubmenu.map"
 Tilemap00_3E::
-  INCBIN "./build/tilemaps/003E.map"
+  INCBIN "./build/tilemaps/MedalAbilitySubmenu.map"
 Tilemap00_3F::
-  INCBIN "./build/tilemaps/003F.map"
+  INCBIN "./build/tilemaps/MedalMedaforceSubmenu.map"
 Tilemap00_40::
-  INCBIN "./build/tilemaps/0040.map"
+  INCBIN "./build/tilemaps/MedalSkillSubmenu.map"
 Tilemap00_41::
   INCBIN "./build/tilemaps/0041.map"
 Tilemap00_42::
