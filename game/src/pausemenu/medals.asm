@@ -139,26 +139,27 @@ DrawMedalIcons::
 MapMedalIcons::
   ld bc, $204
   ld e, $37
-  ld a, 0
+  xor a
   jp WrapDecompressTilemap0
 
 MapMedalNamesForMenu::
   ld a, 5
   rst 8
+  xor a
+  ld b, a
   ld a, [W_CurrentItemPage]
   dec a
-  ld b, a
-  add b
-  add b
-  add b
-  add b
-  add b
-  ld hl, $D120
-  ld b, 0
   ld c, a
+  add c
+  add c
+  add c
+  add c
+  add c
+  ld c, a
+  ld hl, $D120
   ld a, 6
   call MultiplyBCByPowerOfTwoAndAddToHL
-  ld a, 6
+  ld a, 6 * 5 ; 6 entries, 5 tiles each
   ld [$C4F8], a
   ld hl, $98A4
 
@@ -174,7 +175,7 @@ MapMedalNamesForMenu::
   ld a, [hl]
   pop hl
   call MapMedalNameForMenu
-  jp .continue
+  jr .continue
 
 .noMedal
   pop hl
@@ -191,14 +192,13 @@ MapMedalNamesForMenu::
   ld e, l
   pop hl
   ld a, [$C4F8]
-  dec a
+  sub a, 5
   ld [$C4F8], a
   jr nz, .loop
   ret
 
 MapMedalNameForMenu::
   push de
-  push bc
   push hl
   ld [W_ListItemIndexForBuffering], a
   ld bc, $0B06
@@ -207,23 +207,19 @@ MapMedalNameForMenu::
   push hl
   call WrapBufferTextFromList
   pop de ; hl -> de, the address to actually draw to
-  ld h, $33 ; tile index to draw
+  ld h, $3B - 5 ; tile index to draw, 5 less than the actual initial (as 'a' will be base-1)
+  ld a, [$C4F8]
+  add a, h
+  ld h, a
   ld bc, W_NewListItemBufferArea
   ld a, 5 ; Medals only have 5 tiles of space to draw
   call VWFDrawStringLeftFullAddress
   pop hl
-  pop bc
   pop de
   ret
-.end
-REPT $490F - .end
-  nop
-ENDR
 
 MedalMenuMapDashes::
-  push de
   push hl
-
 .loop
   ld a, $EE
   di
@@ -235,8 +231,12 @@ MedalMenuMapDashes::
   dec b
   jr nz, .loop
   pop hl
-  pop de
   ret
+
+.end
+REPT $491F - .end
+  nop
+ENDR
 
 GetMedalAddress::
   ld a, 5
@@ -272,7 +272,7 @@ MapSelectedMedalName::
   ld b, h
   ld c, l ; bc is string location
   pop de ; hl -> de, tile mapping location
-  ld h, $38 ; tile index to draw
+  ld h, $33 ; tile index to draw
   jp VWFDrawStringCentredFullAddress8Tiles
 
 .noMedal
