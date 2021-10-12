@@ -22,7 +22,7 @@ TilesetSourceAddressTable::
   dw Tileset39B7 ; 11 (39B7)
   dw Tileset39B9 ; 12 (39B9)
   dw Tileset39BB ; 13 (39BB)
-  dw Tileset39BD ; 14 (39BD)
+  dw MedalInfoText ; 14 (39BD)
   dw Tileset39BF ; 15 (39BF)
   dw Tileset39C1 ; 16 (39C1)
   dw Tileset39C3 ; 17 (39C3)
@@ -538,7 +538,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset39B7), $8000, $0 ; 011
   dbwb BANK(Tileset39B9), $8900, $0 ; 012
   dbwb BANK(Tileset39BB), $8ED0, $0 ; 013
-  dbwb BANK(Tileset39BD), $9000, $0 ; 014
+  dbwb BANK(MedalInfoText), $9000, $0 ; 014
   dbwb BANK(Tileset39BF), $9000, $0 ; 015
   dbwb BANK(Tileset39C1), $8000, $0 ; 016
   dbwb BANK(Tileset39C3), $8D00, $0 ; 017
@@ -1113,9 +1113,9 @@ SECTION "Tileset Data Tileset39BB", ROMX[$55A3], BANK[$3C]
 Tileset39BB::
   INCBIN "./build/tilesets/Tileset39BB.malias"
 
-SECTION "Tileset Data Tileset39BD", ROMX[$560E], BANK[$3C]
-Tileset39BD::
-  INCBIN "./build/tilesets/Tileset39BD.malias"
+SECTION "Tileset Data MedalInfoText", ROMX[$560E], BANK[$3C]
+MedalInfoText::
+  INCBIN "./build/tilesets/MedalInfoText.malias"
 
 SECTION "Tileset Data Tileset39BF", ROMX[$59BC], BANK[$3C]
 Tileset39BF::

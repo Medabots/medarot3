@@ -363,9 +363,9 @@ Tilemap00_38::
 Tilemap00_39::
   INCBIN "./build/tilemaps/MedalsImage.map"
 Tilemap00_3A::
-  INCBIN "./build/tilemaps/003A.map"
+  INCBIN "./build/tilemaps/MedalInfoAbility.map"
 Tilemap00_3C::
-  INCBIN "./build/tilemaps/003C.map"
+  INCBIN "./build/tilemaps/MedalInfoSymbol.map"
 Tilemap00_3D::
   INCBIN "./build/tilemaps/MedalsScreenSubmenu.map"
 Tilemap00_3E::
@@ -375,9 +375,9 @@ Tilemap00_3F::
 Tilemap00_40::
   INCBIN "./build/tilemaps/MedalSkillSubmenu.map"
 Tilemap00_41::
-  INCBIN "./build/tilemaps/0041.map"
+  INCBIN "./build/tilemaps/MedalInfoMedaforce.map"
 Tilemap00_42::
-  INCBIN "./build/tilemaps/0042.map"
+  INCBIN "./build/tilemaps/MedalInfoSkills.map"
 Tilemap00_43::
   INCBIN "./build/tilemaps/0043.map"
 Tilemap00_44::
