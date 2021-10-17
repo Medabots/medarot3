@@ -89,6 +89,7 @@ link\
 titlemenu\
 pausemenu\
 townmap\
+shop\
 tutorial\
 battle\
 nameentry
