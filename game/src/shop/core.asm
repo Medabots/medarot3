@@ -9,6 +9,7 @@ W_ShopStockLevel:: ds 1
 
 SECTION "Shop Vars 3", WRAM0[$C7C0]
 W_ShopMainMenuSelection:: ds 1
+W_ShopBuyMenuSelection:: ds 1
 
 SECTION "Shop Vars 4", WRAM0[$C7D6]
 W_ShopSelectedPartIndex:: ds 1
@@ -56,16 +57,16 @@ ShopStateMachine::
   dw ShopFadeState ; 09
   dw ShopBuySellDisplayPartTypeState ; 0A
   dw ShopParseStockState ; 0B
-  dw $461F ; 0C
-  dw $46F9 ; 0D
+  dw ShopBuyMappingState ; 0C
+  dw ShopBuyDisplayPartNamesPricesAndGenderState ; 0D
   dw $541B ; 0E
   dw ShopFadeState ; 0F
-  dw $488D ; 10
+  dw ShopBuyInputHandlerState ; 10
   dw $4926 ; 11
   dw $49A3 ; 12
-  dw $40BC ; 13
-  dw $40BC ; 14
-  dw $40BC ; 15
+  dw ShopDoNothingState ; 13
+  dw ShopDoNothingState ; 14
+  dw ShopDoNothingState ; 15
   dw $49B4 ; 16
   dw $4AC0 ; 17
   dw $541B ; 18
@@ -74,10 +75,10 @@ ShopStateMachine::
   dw $4BF4 ; 1B
   dw $4C86 ; 1C
   dw $4CEB ; 1D
-  dw $40BC ; 1E
-  dw $40BC ; 1F
-  dw $40BC ; 20
-  dw $40BC ; 21
+  dw ShopDoNothingState ; 1E
+  dw ShopDoNothingState ; 1F
+  dw ShopDoNothingState ; 20
+  dw ShopDoNothingState ; 21
   dw $5433 ; 22
   dw ShopFadeState ; 23
   dw $4D29 ; 24
@@ -87,15 +88,15 @@ ShopStateMachine::
   dw $50B3 ; 28
   dw $51BF ; 29
   dw $51B9 ; 2A
-  dw $40BC ; 2B
+  dw ShopDoNothingState ; 2B
   dw $5202 ; 2C
   dw $5233 ; 2D
   dw $51A1 ; 2E
-  dw $40BC ; 2F
+  dw ShopDoNothingState ; 2F
   dw $524B ; 30
   dw $5233 ; 31
-  dw $40BC ; 32
-  dw $40BC ; 33
+  dw ShopDoNothingState ; 32
+  dw ShopDoNothingState ; 33
   dw $5433 ; 34
   dw ShopFadeState ; 35
   dw $52EE ; 36
@@ -108,8 +109,8 @@ ShopStateMachine::
   dw $541B ; 3D
   dw ShopFadeState ; 3E
   dw $53F8 ; 3F
-  dw $40BC ; 40
-  dw $40BC ; 41
+  dw ShopDoNothingState ; 40
+  dw ShopDoNothingState ; 41
   dw $5504 ; 42
   dw $547A ; 43
   dw $54BB ; 44
@@ -121,7 +122,7 @@ ShopStateMachine::
   dw ShopFadeState ; 4A
   dw $5463 ; 4B
 
-ShopUnusedSubstateIncrement::
+ShopDoNothingState::
   ld a, [W_CoreSubStateIndex]
   inc a
   ld [W_CoreSubStateIndex], a
@@ -822,6 +823,402 @@ ShopBuySellDisplayPartTypeState::
 .buySelected
   ld a, $B
   ld [W_CoreSubStateIndex], a
+  ret
+
+ShopBuyMappingState::
+  ld bc, 0
+  ld e, $82
+  ld a, 1
+  call $339E
+  ld bc, 0
+  ld e, $82
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld hl, $982A
+  ld a, $E1
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $982C
+  ld a, $E1
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [W_ShopPartTypeSelectionIndex]
+  cp 1
+  jr z, .headParts
+  cp 2
+  jr z, .rightArmParts
+  cp 3
+  jr z, .leftArmParts
+  cp 4
+  jr z, .legParts
+
+.headParts
+  ld bc, $402
+  ld e, $84
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .continue
+
+.rightArmParts
+  ld bc, $402
+  ld e, $85
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .continue
+
+.leftArmParts
+  ld bc, $402
+  ld e, $86
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .continue
+
+.legParts
+  ld bc, $402
+  ld e, $87
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .continue
+
+.continue
+  ld a, 1
+  ld [$C120], a
+  ld a, $22
+  ld [$C121], a
+  ld a, $82
+  ld [$C122], a
+  ld a, 7
+  ld [$C125], a
+  ld a, $88
+  ld [$C123], a
+  ld a, 8
+  ld [$C124], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld b, a
+  ld a, $85
+  ld de, $C120
+  call $33B2
+  ld bc, $510
+  ld hl, $C670
+  call $557A
+  call $566F
+  call $572C
+  call $59D8
+  jp ShopSubstateIncrement
+
+ShopBuyUnusedCheckPart0OwnershipState::
+  ld a, [W_ShopPartTypeSelectionIndex]
+  dec a
+  ld d, a
+  ld a, [W_ShopStockPart0Index]
+  call $358A
+  cp 0
+  jr z, .doOwn ; This should be jr nz if it was working correctly, but this is an unused state, so it doesn't matter.
+  ld a, [$C4EE]
+  ld c, a
+  xor a
+  ld b, a
+  ld hl, $9A0E
+  call $55D2
+  jp ShopSubstateIncrement
+
+.doOwn
+  ld a, 2
+  ld b, a
+  ld hl, $9A10
+  call $571C
+  jp ShopSubstateIncrement
+
+ShopBuyDisplayPartNamesPricesAndGenderState::
+  ld a, [W_ShopPartTypeSelectionIndex]
+  ld b, a
+  ld c, $A
+  ld a, [W_ShopStockPart0Index]
+  cp $FF
+  jp z, .part0SlotEmpty
+
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98A2
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call $259C
+  ld a, [W_ShopStockPart0Index]
+  call ShopGetPartStatus
+  ld hl, $98AC
+  call $55D2
+  ld hl, $98B0
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $98B1
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C54B]
+  ld hl, $98AB
+  call $55C3
+  ld a, [W_ShopPartTypeSelectionIndex]
+  ld b, a
+  ld c, $A
+  ld a, [W_ShopStockPart1Index]
+  cp $FF
+  jp z, .part1SlotEmpty
+
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $98E2
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call $259C
+  ld a, [W_ShopStockPart1Index]
+  call ShopGetPartStatus
+  ld hl, $98EC
+  call $55D2
+  ld hl, $98F0
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $98F1
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C54B]
+  ld hl, $98EB
+  call $55C3
+  ld a, [W_ShopPartTypeSelectionIndex]
+  ld b, a
+  ld c, $A
+  ld a, [W_ShopStockPart2Index]
+  cp $FF
+  jp z, .part2SlotEmpty
+
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $9922
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call $259C
+  ld a, [W_ShopStockPart2Index]
+  call ShopGetPartStatus
+  ld hl, $992C
+  call $55D2
+  ld hl, $9930
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $9931
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C54B]
+  ld hl, $992B
+  call $55C3
+  ld a, [W_ShopPartTypeSelectionIndex]
+  ld b, a
+  ld c, $A
+  ld a, [W_ShopStockPart3Index]
+  cp $FF
+  jp z, .part3SlotEmpty
+
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, $9962
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call $259C
+  ld a, [W_ShopStockPart3Index]
+  call ShopGetPartStatus
+  ld hl, $996C
+  call $55D2
+  ld hl, $9970
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $9971
+  ld a, $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [$C54B]
+  ld hl, $996B
+  call $55C3
+  jp ShopSubstateIncrement
+
+.part0SlotEmpty
+  ld hl, $98A2
+  ld a, 8
+  ld b, a
+  call $571C
+  ld hl, $98AD
+  ld a, 5
+  ld b, a
+  call $571C
+
+.part1SlotEmpty
+  ld hl, $98E2
+  ld a, 8
+  ld b, a
+  call $571C
+  ld hl, $98ED
+  ld a, 5
+  ld b, a
+  call $571C
+
+.part2SlotEmpty
+  ld hl, $9922
+  ld a, 8
+  ld b, a
+  call $571C
+  ld hl, $992D
+  ld a, 5
+  ld b, a
+  call $571C
+
+.part3SlotEmpty
+  ld hl, $9962
+  ld a, 8
+  ld b, a
+  call $571C
+  ld hl, $996D
+  ld a, 5
+  ld b, a
+  call $571C
+  jp ShopSubstateIncrement
+
+ShopGetPartStatus::
+  ld [W_ListItemIndexForBuffering], a
+  call $59C9
+  ld c, a
+  ld b, 0
+  ret
+
+ShopBuyInputHandlerState::
+  ld de, $C0E0
+  call $33B7
+  ld de, $C120
+  call $33B7
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_ShopBuyMenuSelection]
+  dec a
+  cp $FF
+  jr nz, .dontLoopToEnd
+  ld a, 3
+
+.dontLoopToEnd
+  ld [W_ShopBuyMenuSelection], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C0C
+  call $566F
+  call $572C
+  call $59D8
+  ret
+
+.upNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputDown
+  jr z, .downNotPressed
+  ld a, [W_ShopBuyMenuSelection]
+  inc a
+  cp 4
+  jr nz, .dontLoopToStart
+  xor a
+
+.dontLoopToStart
+  ld [W_ShopBuyMenuSelection], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C0C
+  call $566F
+  call $572C
+  call $59D8
+  ret
+
+.downNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jp z, .aNotSelected
+  ld a, [W_ShopSelectedPartIndex]
+  cp $FF
+  jr z, .slotEmpty
+  ld a, 3
+  call ScheduleSoundEffect
+  ld a, $CC
+  ld [$C0E2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  call $1554
+  jp ShopSubstateIncrement
+  ret
+
+.slotEmpty
+  ld a, 5
+  call ScheduleSoundEffect
+  ret
+
+.aNotSelected
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call ScheduleSoundEffect
+  ld a, $34
+  ld [W_CoreSubStateIndex], a
+  call WrapInitiateMainScript
+  call $5C81
   ret
 
 SECTION "Shop State Machine 2", ROMX[$5410], BANK[$04]
