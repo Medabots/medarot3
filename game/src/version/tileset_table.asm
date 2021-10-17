@@ -1118,9 +1118,10 @@ SECTION "Tileset Data Tileset39BB", ROMX[$55A3], BANK[$3C]
 Tileset39BB::
   INCBIN "./build/tilesets/Tileset39BB.malias"
 
-SECTION "Tileset Data MedalInfoText", ROMX[$560E], BANK[$3C]
-MedalInfoText::
-  INCBIN "./build/tilesets/MedalInfoText.malias"
+; MedalInfoText is defined with the other patch tilesets
+;SECTION "Tileset Data MedalInfoText", ROMX[$560E], BANK[$3C]
+;MedalInfoText::
+;  INCBIN "./build/tilesets/MedalInfoText.malias"
 
 SECTION "Tileset Data Tileset39BF", ROMX[$59BC], BANK[$3C]
 Tileset39BF::

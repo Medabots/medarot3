@@ -52,6 +52,8 @@ MenuMedawatchTextSprites::
   INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
 PartsScreen::
   INCBIN "./build/tilesets/PartsScreen.malias"
+MedalInfoText::
+  INCBIN "./build/tilesets/MedalInfoText.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
