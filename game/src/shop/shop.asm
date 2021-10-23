@@ -1,6 +1,53 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Shop Helper Functions", ROMX[$551C], BANK[$04]
+SECTION "Shop Helper Functions 1", ROMX[$4883], BANK[$04]
+ShopGetPartStatus::
+  ld [W_ListItemIndexForBuffering], a
+  call $59C9
+  ld c, a
+  ld b, 0
+  ret
+
+SECTION "Shop Helper Functions 2", ROMX[$4CFC], BANK[$04]
+ShopEnforceMonetaryLimit::
+  ld a, [W_PlayerMoolah]
+  cp $27
+  jr c, .pointlessLowerByteCheck
+  jr z, .checkLowerByte
+
+.setMoneyToMax
+  ld a, $27
+  ld [W_PlayerMoolah], a
+  ld a, $F
+  ld [W_PlayerMoolah + 1], a
+  ret
+
+.checkLowerByte
+  ld a, [W_PlayerMoolah + 1]
+  cp $F
+  jr c, .lowerByteWithinBounds
+  jr z, .lowerByteTooHigh
+  jr .setMoneyToMax
+
+.lowerByteWithinBounds
+  ret 
+
+.lowerByteTooHigh
+  jr .setMoneyToMax
+
+.pointlessLowerByteCheck
+  ld a, [W_PlayerMoolah + 1]
+  cp $F
+  jr c, .pointlessJumpB
+  jr z, .pointlessJumpA
+
+.pointlessJumpA
+  ret
+
+.pointlessJumpB
+  ret
+
+SECTION "Shop Helper Functions 3", ROMX[$551C], BANK[$04]
 PrepareShopFadeByShopkeeper::
   ld a, [W_ShopIndex]
   ld hl, .table
