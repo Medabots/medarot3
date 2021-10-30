@@ -10,6 +10,8 @@ W_ShopStockLevel:: ds 1
 SECTION "Shop Vars 3", WRAM0[$C7C0]
 W_ShopMainMenuSelection:: ds 1
 W_ShopBuyMenuSelection:: ds 1
+W_ShopPasswordSelectionXAxis:: ds 1
+W_ShopPasswordSelectionYAxis:: ds 1
 
 SECTION "Shop Vars 4", WRAM0[$C7CA]
 W_ShopPageIndex:: ds 1
@@ -25,8 +27,10 @@ W_ShopStockPart0Index:: ds 1
 W_ShopStockPart1Index:: ds 1
 W_ShopStockPart2Index:: ds 1
 W_ShopStockPart3Index:: ds 1
-
-SECTION "Shop Vars 8", WRAM0[$C7F0]
+W_ShopPasswordEntryBuffer:: ds 6
+W_ShopPasswordNumEnteredDigits:: ds 1
+W_ShopPasswordLastEnteredDigit:: ds 1
+W_ShopPasswordIsMatch:: ds 1
 W_ShopShopkeeper:: ds 1
 
 SECTION "Player Money", WRAM0[$C670]
@@ -62,13 +66,13 @@ ShopStateMachine::
   dw ShopMainMenuInputHandlerState ; 05
   dw ShopMainMenuSelectionBranchingState ; 06
   dw ShopPartTypeSelectionInputHandler ; 07
-  dw $5433 ; 08
+  dw ShopPrepareFadeOutState ; 08
   dw ShopFadeState ; 09
   dw ShopBuySellDisplayPartTypeState ; 0A
   dw ShopParseStockState ; 0B
   dw ShopBuyMappingState ; 0C
   dw ShopBuyDisplayPartNamesPricesAndGenderState ; 0D
-  dw $541B ; 0E
+  dw ShopPrepareFadeInState ; 0E
   dw ShopFadeState ; 0F
   dw ShopBuyInputHandlerState ; 10
   dw ShopBuyYNBoxState ; 11
@@ -78,7 +82,7 @@ ShopStateMachine::
   dw ShopDoNothingState ; 15
   dw ShopSellMappingState ; 16
   dw ShopSellMapMoneyAndSelectedPartInfoState ; 17
-  dw $541B ; 18
+  dw ShopPrepareFadeInState ; 18
   dw ShopFadeState ; 19
   dw ShopSellInputHandlerState ; 1A
   dw ShopSellYNBoxState ; 1B
@@ -88,48 +92,48 @@ ShopStateMachine::
   dw ShopDoNothingState ; 1F
   dw ShopDoNothingState ; 20
   dw ShopDoNothingState ; 21
-  dw $5433 ; 22
+  dw ShopPrepareFadeOutState ; 22
   dw ShopFadeState ; 23
   dw ShopPasswordMappingState ; 24
-  dw $5421 ; 25
+  dw ShopPasswordPrepareFadeInState ; 25
   dw ShopFadeState ; 26
-  dw $4E90 ; 27
-  dw $50B3 ; 28
-  dw $51BF ; 29
-  dw $51B9 ; 2A
+  dw ShopPasswordInputHandlerState ; 27
+  dw ShopPasswordYNInputHandler ; 28
+  dw ShopPasswordSuccessMessageState ; 29
+  dw ShopPasswordSuccessExitToShopWrapperState ; 2A
   dw ShopDoNothingState ; 2B
-  dw $5202 ; 2C
-  dw $5233 ; 2D
-  dw $51A1 ; 2E
+  dw ShopPasswordErrorAMessageState ; 2C
+  dw ShopPasswordPostErrorMessageState ; 2D
+  dw ShopPasswordAfterNoMessageState ; 2E
   dw ShopDoNothingState ; 2F
-  dw $524B ; 30
-  dw $5233 ; 31
+  dw ShopPasswordErrorBMessageState ; 30
+  dw ShopPasswordPostErrorMessageState ; 31
   dw ShopDoNothingState ; 32
   dw ShopDoNothingState ; 33
-  dw $5433 ; 34
+  dw ShopPrepareFadeOutState ; 34
   dw ShopFadeState ; 35
-  dw $52EE ; 36
-  dw $541B ; 37
+  dw ShopBuySellRemapShopState ; 36
+  dw ShopPrepareFadeInState ; 37
   dw ShopFadeState ; 38
-  dw $53BD ; 39
-  dw $5433 ; 3A
-  dw $527C ; 3B
-  dw $5287 ; 3C
-  dw $541B ; 3D
+  dw ShopBuySellReturnToShopMessageState ; 39
+  dw ShopPrepareFadeOutState ; 3A
+  dw ShopFadeOutState ; 3B
+  dw ShopPasswordRemapShopState ; 3C
+  dw ShopPrepareFadeInState ; 3D
   dw ShopFadeState ; 3E
-  dw $53F8 ; 3F
+  dw ShopRestorePasswordMenuItemDescriptionState ; 3F
   dw ShopDoNothingState ; 40
   dw ShopDoNothingState ; 41
-  dw $5504 ; 42
-  dw $547A ; 43
-  dw $54BB ; 44
-  dw $54D3 ; 45
-  dw $54EB ; 46
-  dw $5503 ; 47
-  dw $5445 ; 48
-  dw $5451 ; 49
+  dw ShopPasswordMessageBState ; 42
+  dw ShopUnusedRestoreMessageState ; 43
+  dw ShopPasswordMessageAState ; 44
+  dw ShopBuyCannotAffordMessageState ; 45
+  dw ShopPreExitMessageState ; 46
+  dw ShopPlaceholderState ; 47
+  dw ShopPreparePreExitMessageState ; 48
+  dw ShopPrepareFadeOutOnExitState ; 49
   dw ShopFadeState ; 4A
-  dw $5463 ; 4B
+  dw ShopExitState ; 4B
 
 ShopDoNothingState::
   ld a, [W_CoreSubStateIndex]
@@ -1880,22 +1884,874 @@ ShopPasswordMappingState::
   ld b, a
   call $571C
   xor a
-  ld [$C7C2], a
-  ld [$C7C3], a
-  ld [$C7E7], a
-  ld [$C7E8], a
-  ld [$C7E9], a
-  ld [$C7EA], a
-  ld [$C7EB], a
-  ld [$C7EC], a
-  ld [$C7ED], a
-  ld [$C7EE], a
+  ld [W_ShopPasswordSelectionXAxis], a
+  ld [W_ShopPasswordSelectionYAxis], a
+  ld [W_ShopPasswordEntryBuffer], a
+  ld [W_ShopPasswordEntryBuffer + 1], a
+  ld [W_ShopPasswordEntryBuffer + 2], a
+  ld [W_ShopPasswordEntryBuffer + 3], a
+  ld [W_ShopPasswordEntryBuffer + 4], a
+  ld [W_ShopPasswordEntryBuffer + 5], a
+  ld [W_ShopPasswordNumEnteredDigits], a
+  ld [W_ShopPasswordLastEnteredDigit], a
   jp ShopSubstateIncrement
 
-SECTION "Shop State Machine 4", ROMX[$5410], BANK[$04]
+ShopPasswordInputHandlerState::
+  ld de, $C180
+  call $33B7
+  ld de, $C1A0
+  call $33B7
+  ld de, $C200
+  call $33B7
+  ld de, $C220
+  call $33B7
+  ld de, $C240
+  call $33B7
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_ShopPasswordSelectionYAxis]
+  dec a
+  cp $FF
+  jr nz, .dontLoopToBottom
+  ld a, 3
+
+.dontLoopToBottom
+  ld [W_ShopPasswordSelectionYAxis], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C20
+  ret
+
+.upNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputDown
+  jr z, .downNotPressed
+  ld a, [W_ShopPasswordSelectionYAxis]
+  inc a
+  cp 4
+  jr nz, .dontLoopToTop
+  xor a
+
+.dontLoopToTop
+  ld [W_ShopPasswordSelectionYAxis], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C20
+  ret
+
+.downNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputRight
+  jr z, .rightNotPressed
+  ld a, [W_ShopPasswordSelectionXAxis]
+  inc a
+  cp 4
+  jr nz, .dontLoopToLeft
+  xor a
+
+.dontLoopToLeft
+  ld [W_ShopPasswordSelectionXAxis], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C20
+  ret
+
+.rightNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputLeft
+  jr z, .leftNotPressed
+  ld a, [W_ShopPasswordSelectionXAxis]
+  dec a
+  cp $FF
+  jr nz, .dontLoopToRight
+  ld a, 3
+
+.dontLoopToRight
+  ld [W_ShopPasswordSelectionXAxis], a
+  ld a, 2
+  call ScheduleSoundEffect
+  call $5C20
+  ret
+
+.leftNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jp z, .aNotPressed
+  ld a, 3
+  call ScheduleSoundEffect
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  cp 6
+  jr z, .allDigitsEntered
+  ld a, 0
+  ld b, a
+  ld a, $8D
+  ld de, $C220
+  call $33B2
+  call .bufferDigit
+  push af
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  inc a
+  ld [W_ShopPasswordNumEnteredDigits], a
+  call .highlightPressedDigitButton
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  add $20
+  ld l, a
+  ld h, $98
+  pop af
+  push hl
+  call .getDigitTileIndex
+  pop hl
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 0
+  ld b, a
+  ld a, $8B
+  ld de, $C180
+  call $33B2
+  ld hl, $9841
+  ld a, 6
+  ld b, a
+  call $571C
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  inc a
+  ld b, a
+  ld c, $2
+  ld e, $8A
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld a, [$C203]
+  add 8
+  ld [$C203], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  cp 6
+  jr z, .allDigitsEntered
+  ret
+
+.allDigitsEntered
+  ld a, 0
+  ld [$C200], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  call $3482
+  call $5C81
+  jp ShopSubstateIncrement
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call ScheduleSoundEffect
+  call .clearDigitFromBufferOrNot
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  cp 0
+  jr z, .exitPasswordScreen
+  cp 6
+  call z, .restoreTextCursor
+  ld a, 1
+  ld [$C200], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  add $20
+  ld l, a
+  ld h, $98
+  ld a, 0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  dec a
+  ld [W_ShopPasswordNumEnteredDigits], a
+  ld hl, $9841
+  ld a, 6
+  ld b, a
+  call $571C
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  inc a
+  ld b, a
+  ld c, $2
+  ld e, $8A
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld a, [$C203]
+  sub 8
+  ld [$C203], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+.restoreTextCursor
+  ld a, 0
+  ld b, a
+  ld a, $89
+  ld de, $C1A0
+  call $33B2
+  ret
+
+.exitPasswordScreen
+  xor a
+  ld [W_ShopPasswordSelectionXAxis], a
+  ld [W_ShopPasswordSelectionYAxis], a
+  ld a, 0
+  ld [$C180], a
+  ld [$C1A0], a
+  ld [$C1C0], a
+  ld [$C1E0], a
+  ld [$C200], a
+  ld [$C240], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, $3A
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.getDigitTileIndex
+  ld hl, .table
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ret
+
+.table
+  db $E0,$E1,$E2,$E3
+  db $E4,$E5,$E6,$E7
+  db $E8,$E9,$9E,$9F
+  db $A0,$A1,$A2,$A3
+
+.highlightPressedDigitButton
+  ld a, [W_ShopPasswordLastEnteredDigit]
+  add $88
+  ld [$C222], a
+  ld a, [W_ShopPasswordSelectionXAxis]
+  sla a
+  sla a
+  sla a
+  sla a
+  add 4
+  ld [$C223], a
+  ld a, [W_ShopPasswordSelectionYAxis]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $24
+  ld [$C224], a
+  ld a, 0
+  ld b, a
+  ld a, [W_ShopPasswordLastEnteredDigit]
+  add $8D
+  ld de, $C220
+  call $33B2
+  ret
+
+.bufferDigit
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  ld c, a
+  xor a
+  ld b, a
+  ld hl, W_ShopPasswordEntryBuffer
+  add hl, bc
+  ld a, [W_ShopPasswordSelectionYAxis]
+  sla a
+  sla a
+  ld b, a
+  ld a, [W_ShopPasswordSelectionXAxis]
+  add b
+  ld [hl], a
+  ld [W_ShopPasswordLastEnteredDigit], a
+  ret
+
+.clearDigitFromBufferOrNot
+  ; The devs fucked up. The "ld b, a" and "ld c, a" should be swapped. Inadvertantly clobbers one of $C8E7, $C9E7, $CAE7, $CBE7, and $CCE7 when clearing any digit other than the first.
+  ld a, [W_ShopPasswordNumEnteredDigits]
+  ld b, a
+  xor a
+  ld c, a
+  ld hl, W_ShopPasswordEntryBuffer
+  add hl, bc
+  xor a
+  ld [hl], a
+  ret
+
+ShopPasswordYNInputHandler::
+  ld de, $C180
+  call $33B7
+  ld de, $C220
+  call $33B7
+  ld a, [W_ShopShopkeeper]
+  add $E7
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 5
+  call $35DA
+  ld a, [$C771]
+  or a
+  ret z
+  cp 1
+  jp z, .yesSelected
+  call $3482
+  call $5C81
+  ld a, $2E
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.yesSelected
+  call $3482
+  call $5C81
+  xor a
+  ld [W_ShopPasswordIsMatch], a
+  call $5C8C
+  ld a, [W_ShopPasswordIsMatch]
+  cp 1
+  jr nz, .passwordErrorA
+  ld a, [W_CurrentPartTypeForListView]
+  ld d, a
+  ld a, [W_CurrentPartIndexForPartStatus]
+  call $358A
+  or a
+  jp z, .passwordErrorB
+  call $5CFA
+  ld a, $27
+  ld b, 1
+  call $3580
+  call $5A5C
+  call $5A73
+  ld a, [W_CurrentPartTypeForListView]
+  add $BC
+  ld [$C1C2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld b, a
+  ld a, $8A
+  ld de, $C1A0
+  call $33B2
+  ld a, 0
+  ld [$C240], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  jp ShopSubstateIncrement
+
+.passwordErrorA
+  ld a, 1
+  ld [$C240], a
+  ld a, $22
+  ld [$C241], a
+  ld a, $BF
+  ld [$C242], a
+  ld a, $60
+  ld [$C243], a
+  ld a, $18
+  ld [$C244], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld b, a
+  ld a, $AA
+  ld de, $C240
+  call $33B2
+  ld a, $2C
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.passwordErrorB
+  ld a, 1
+  ld [$C240], a
+  ld a, $22
+  ld [$C241], a
+  ld a, $BF
+  ld [$C242], a
+  ld a, $60
+  ld [$C243], a
+  ld a, $18
+  ld [$C244], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld b, a
+  ld a, $AA
+  ld de, $C240
+  call $33B2
+  ld a, $30
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPasswordAfterNoMessageState::
+  ld a, [W_ShopShopkeeper]
+  add $BD
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, $27
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPasswordSuccessExitToShopWrapperState::
+  ld a, $3A
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPasswordSuccessMessageState::
+  ld a, [W_CurrentPartTypeForListView]
+  inc a
+  ld b, a
+  ld c, $A
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld a, [W_ShopShopkeeper]
+  add $C2
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  xor a
+  ld [W_ShopPasswordEntryBuffer], a
+  ld [W_ShopPasswordEntryBuffer + 1], a
+  ld [W_ShopPasswordEntryBuffer + 2], a
+  ld [W_ShopPasswordEntryBuffer + 3], a
+  ld [W_ShopPasswordEntryBuffer + 4], a
+  ld [W_ShopPasswordEntryBuffer + 5], a
+  ld [W_ShopPasswordNumEnteredDigits], a
+  ld [W_ShopPasswordLastEnteredDigit], a
+  jp ShopSubstateIncrement
+
+ShopPasswordErrorAMessageState::
+  ld de, $C240
+  call $33B7
+  ld a, [W_ShopShopkeeper]
+  add $CE
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA | M_JPInputB | M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
+  ret z
+  ld a, 0
+  ld b, a
+  ld a, $AB
+  ld de, $C240
+  call $33B2
+  call $3482
+  call $5C81
+  jp ShopSubstateIncrement
+
+ShopPasswordPostErrorMessageState::
+  ld a, [W_ShopShopkeeper]
+  add $D2
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, $27
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPasswordErrorBMessageState::
+  ld de, $C240
+  call $33B7
+  ld a, [W_ShopShopkeeper]
+  add $EB
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA | M_JPInputB | M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
+  ret z
+  ld a, 0
+  ld b, a
+  ld a, $AB
+  ld de, $C240
+  call $33B2
+  call $3482
+  call $5C81
+  jp ShopSubstateIncrement
+
+ShopFadeOutState::
+  call $34E6
+  ld a, [W_PaletteAnimRunning]
+  or a
+  ret nz
+  jp ShopSubstateIncrement
+
+ShopPasswordRemapShopState::
+  ld a, 1
+  ld [$C0A0], a
+  ld [$C100], a
+  ld a, 0
+  ld [$C120], a
+  ld [$C140], a
+  ld [$C0E0], a
+  ld [$C160], a
+  ld [$C180], a
+  ld [$C1A0], a
+  ld [$C1C0], a
+  ld [$C1E0], a
+  ld [$C200], a
+  ld [$C220], a
+  ld [$C240], a
+  ld [$C0C0], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, 0
+  ld e, $80
+  ld a, 1
+  call $339E
+  ld bc, $B06
+  ld a, [W_ShopShopkeeper]
+  add $85
+  ld e, a
+  ld a, 1
+  call $339E
+  ld bc, 0
+  ld e, $80
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld bc, $D01
+  ld hl, W_PlayerMoolah
+  call $557A
+  call $3482
+  call $5C81
+  jp ShopSubstateIncrement
+
+ShopBuySellRemapShopState::
+  ld a, 1
+  ld [$C0A0], a
+  ld [$C100], a
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C120], a
+  ld [$C140], a
+  ld [$C0E0], a
+  ld [$C160], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, 0
+  ld e, $80
+  ld a, 1
+  call $339E
+  ld bc, $B06
+  ld a, [W_ShopShopkeeper]
+  add $85
+  ld e, a
+  ld a, 1
+  call $339E
+  ld bc, 0
+  ld e, $80
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld bc, 8
+  ld e, $81
+  ld a, 1
+  call $339E
+  ld bc, 8
+  ld e, $81
+  ld a, 1
+  call WrapDecompressTilemap0
+  ld bc, $D01
+  ld hl, W_PlayerMoolah
+  call $557A
+  xor a
+  ld [W_ShopBuyMenuSelection], a
+  ld a, [W_ShopPartTypeSelectionIndex]
+  cp 1
+  jr z, .headParts
+  cp 2
+  jr z, .rightArmParts
+  cp 3
+  jr z, .leftArmParts
+  cp 4
+  jr z, .legParts
+
+.headParts
+  ld a, $BC
+  ld [$C0C2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, $40A
+  ld e, $84
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .nextState
+
+.rightArmParts
+  ld a, $BE
+  ld [$C0C2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, $40A
+  ld e, $85
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .nextState
+
+.leftArmParts
+  ld a, $BD
+  ld [$C0C2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, $40A
+  ld e, $86
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .nextState
+
+.legParts
+  ld a, $BF
+  ld [$C0C2], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld bc, $40A
+  ld e, $87
+  ld a, 1
+  call WrapDecompressTilemap0
+  jr .nextState
+
+.nextState
+  jp ShopSubstateIncrement
+
+ShopBuySellReturnToShopMessageState::
+  ld a, [W_ShopMainMenuSelection]
+  cp 0
+  jr z, .cameFromBuyScreen
+  cp 1
+  jr z, .cameFromSellScreen
+  jr .afterMessage
+
+.cameFromBuyScreen
+  ld a, [W_ShopShopkeeper]
+  add $B1
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  jr .afterMessage
+
+.cameFromSellScreen
+  ld a, [W_ShopShopkeeper]
+  add $B5
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  jr .afterMessage
+
+.afterMessage
+  ld a, 7
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopRestorePasswordMenuItemDescriptionState::
+  ld a, [W_ShopShopkeeper]
+  add $B9
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 5
+  ld [W_CoreSubStateIndex], a
+  ret
+
 ShopFadeState::
   call $34E6
   ld a, [W_PaletteAnimRunning]
   or a
   ret nz
   jp ShopSubstateIncrement
+
+ShopPrepareFadeInState::
+  call PrepareShopFadeByShopkeeper
+  jp ShopSubstateIncrement
+
+ShopPasswordPrepareFadeInState::
+  ld hl, $34
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, $E
+  call WrapSetupPalswapAnimation
+  jp ShopSubstateIncrement
+
+ShopPrepareFadeOutState::
+  ld hl, 1
+  ld bc, 1
+  ld d, $FF
+  ld e, $FF
+  ld a, $E
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+ShopPreparePreExitMessageState::
+  call WrapInitiateMainScript
+  call $5C81
+  ld a, $46
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPrepareFadeOutOnExitState::
+  ld hl, 1
+  ld bc, 1
+  ld d, $FF
+  ld e, $FF
+  ld a, $10
+  call WrapSetupPalswapAnimation
+  jp ShopSubstateIncrement
+
+ShopExitState::
+  ld a, 0
+  call $1554
+  call $3433
+  jp $36A3
+
+ShopUnusedExitState::
+  ld a, [W_CoreStateIndex]
+  inc a
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopUnusedRestoreMessageState::
+  ld a, [W_ShopMainMenuSelection]
+  cp 0
+  jr z, .otherSelected
+  cp 1
+  jr z, .otherSelected
+  cp 2
+  jr z, .passwordSelected
+  cp 3
+  jr z, .otherSelected
+
+.otherSelected
+  ld a, [W_ShopShopkeeper]
+  add $D6
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  jr .continue
+
+.passwordSelected
+  ld a, [W_ShopShopkeeper]
+  add $B9
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  jr .continue
+
+.continue
+  ld a, 5
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPasswordMessageAState::
+  ld a, [W_ShopShopkeeper]
+  add $CA
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 5
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopBuyCannotAffordMessageState::
+  ld a, [W_ShopShopkeeper]
+  add $C6
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, $12
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPreExitMessageState::
+  ld a, [W_ShopShopkeeper]
+  add $DA
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, $49
+  ld [W_CoreSubStateIndex], a
+  ret
+
+ShopPlaceholderState::
+  ret
+
+ShopPasswordMessageBState::
+  ld a, [W_ShopShopkeeper]
+  add $E3
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 5
+  ld [W_CoreSubStateIndex], a
+  ret
