@@ -443,3 +443,114 @@ MapExpToNextLevel::
   pop de
   pop hl
   ret
+
+SECTION "Shop Map Three Digit Number", ROMX[$55D2], BANK[$04]
+ShopMapThreeDigitNumber::
+  push hl
+  push de
+  push bc
+  xor a
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+
+.parseHundredsDigit
+  ld a, h
+  ld [W_MapDigitsAddress], a
+  ld a, l
+  ld [W_MapDigitsAddress + 1], a
+  ld h, b
+  ld l, c
+  ld bc, 100
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .hundredsDigitNotZero
+  jr .parseTensDigit
+
+.hundredsDigitNotZero
+  add $E0
+  push af
+  ld a, [W_MapDigitsAddress]
+  ld h, a
+  ld a, [W_MapDigitsAddress + 1]
+  ld l, a
+  ld bc, 1
+  add hl, bc
+  pop af
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld a, 1
+  ld [W_MapDigitsMedalExpSignificantDigitFound], a
+
+.parseTensDigit
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, 10
+  call DigitCalculationLoop
+  ld a, [W_MapDigitsCurrentCalculatedDigit]
+  or a
+  jr nz, .tensDigitNotZero
+  ld a, [W_MapDigitsMedalExpSignificantDigitFound]
+  or a
+  jr z, .skipTensDigit
+
+  xor a
+  jr .tensDigitNotZero
+
+.skipTensDigit
+  ld a, [W_MapDigitsAddress]
+  ld h, a
+  ld a, [W_MapDigitsAddress + 1]
+  ld l, a
+  ld bc, 2
+  add hl, bc
+  xor a
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  jr .parseOnesDigit
+
+.tensDigitNotZero
+  add $E0
+  push af
+  ld a, [W_MapDigitsAddress]
+  ld h, a
+  ld a, [W_MapDigitsAddress + 1]
+  ld l, a
+  ld bc, 2
+  add hl, bc
+  pop af
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+
+.parseOnesDigit
+  ld a, [W_MapDigitsAddress]
+  ld h, a
+  ld a, [W_MapDigitsAddress + 1]
+  ld l, a
+  ld bc, 3
+  add hl, bc
+  ld a, [$C4E1]
+  add $E0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  pop bc
+  pop de
+  pop hl
+  ret

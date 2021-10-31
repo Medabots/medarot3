@@ -15,14 +15,26 @@ W_ShopPasswordSelectionYAxis:: ds 1
 
 SECTION "Shop Vars 4", WRAM0[$C7CA]
 W_ShopPageIndex:: ds 1
+W_ShopPointlessSingleRunCheck:: ds 1
 
-SECTION "Shop Vars 5", WRAM0[$C7D6]
+SECTION "Shop Vars 5", WRAM0[$C7D3]
+W_ShopSelectedPartPrice:: ds 2
+
+SECTION "Shop Vars 6", WRAM0[$C7D6]
 W_ShopSelectedPartIndex:: ds 1
 
-SECTION "Shop Vars 6", WRAM0[$C7D8]
+SECTION "Shop Vars 7", WRAM0[$C7D8]
 W_ShopSellLastPageIndex:: ds 1
+W_ShopPartIndexBuffer:: ds 1
 
-SECTION "Shop Vars 7", WRAM0[$C7E3]
+SECTION "Shop Vars 8", WRAM0[$C7DD]
+W_ShopSellNumParts:: ds 1
+
+SECTION "Shop Vars 9", WRAM0[$C7DF]
+W_ShopSellPartIndexBuffer:: ds 1
+W_ShopSellStartOfNextPageIndex:: ds 1
+W_ShopSellPartsOnPage:: ds 1
+W_ShopStockLastPartInSellList:: ds 1
 W_ShopStockPart0Index:: ds 1
 W_ShopStockPart1Index:: ds 1
 W_ShopStockPart2Index:: ds 1
@@ -32,6 +44,7 @@ W_ShopPasswordNumEnteredDigits:: ds 1
 W_ShopPasswordLastEnteredDigit:: ds 1
 W_ShopPasswordIsMatch:: ds 1
 W_ShopShopkeeper:: ds 1
+W_ShopStockFirstPartByPage:: ds $27
 
 SECTION "Player Money", WRAM0[$C670]
 W_PlayerMoolah:: ds 2
@@ -409,7 +422,7 @@ ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
   call $33B2
   ld bc, $D01
   ld hl, W_PlayerMoolah
-  call $557A
+  call ShopMapMoney
   call PrepareShopFadeByShopkeeper
   jp ShopSubstateIncrement
 
@@ -923,10 +936,10 @@ ShopBuyMappingState::
   call $33B2
   ld bc, $510
   ld hl, W_PlayerMoolah
-  call $557A
-  call $566F
-  call $572C
-  call $59D8
+  call ShopMapMoney
+  call ShopBuyMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   jp ShopSubstateIncrement
 
 ShopBuyUnusedCheckPart0OwnershipState::
@@ -942,14 +955,14 @@ ShopBuyUnusedCheckPart0OwnershipState::
   xor a
   ld b, a
   ld hl, $9A0E
-  call $55D2
+  call ShopMapThreeDigitNumber
   jp ShopSubstateIncrement
 
 .doOwn
   ld a, 2
   ld b, a
   ld hl, $9A10
-  call $571C
+  call ShopMapDashes
   jp ShopSubstateIncrement
 
 ShopBuyDisplayPartNamesPricesAndGenderState::
@@ -969,9 +982,9 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   call $259C
   ld a, [W_ShopStockPart0Index]
-  call ShopGetPartStatus
+  call WrapShopGetPartPriceAndStatus
   ld hl, $98AC
-  call $55D2
+  call ShopMapThreeDigitNumber
   ld hl, $98B0
   ld a, $E0
   di
@@ -990,7 +1003,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ei
   ld a, [$C54B]
   ld hl, $98AB
-  call $55C3
+  call ShopMapHeartMaybe
   ld a, [W_ShopPartTypeSelectionIndex]
   ld b, a
   ld c, $A
@@ -1007,9 +1020,9 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   call $259C
   ld a, [W_ShopStockPart1Index]
-  call ShopGetPartStatus
+  call WrapShopGetPartPriceAndStatus
   ld hl, $98EC
-  call $55D2
+  call ShopMapThreeDigitNumber
   ld hl, $98F0
   ld a, $E0
   di
@@ -1028,7 +1041,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ei
   ld a, [$C54B]
   ld hl, $98EB
-  call $55C3
+  call ShopMapHeartMaybe
   ld a, [W_ShopPartTypeSelectionIndex]
   ld b, a
   ld c, $A
@@ -1045,9 +1058,9 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   call $259C
   ld a, [W_ShopStockPart2Index]
-  call ShopGetPartStatus
+  call WrapShopGetPartPriceAndStatus
   ld hl, $992C
-  call $55D2
+  call ShopMapThreeDigitNumber
   ld hl, $9930
   ld a, $E0
   di
@@ -1066,7 +1079,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ei
   ld a, [$C54B]
   ld hl, $992B
-  call $55C3
+  call ShopMapHeartMaybe
   ld a, [W_ShopPartTypeSelectionIndex]
   ld b, a
   ld c, $A
@@ -1083,9 +1096,9 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   call $259C
   ld a, [W_ShopStockPart3Index]
-  call ShopGetPartStatus
+  call WrapShopGetPartPriceAndStatus
   ld hl, $996C
-  call $55D2
+  call ShopMapThreeDigitNumber
   ld hl, $9970
   ld a, $E0
   di
@@ -1104,48 +1117,48 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ei
   ld a, [$C54B]
   ld hl, $996B
-  call $55C3
+  call ShopMapHeartMaybe
   jp ShopSubstateIncrement
 
 .part0SlotEmpty
   ld hl, $98A2
   ld a, 8
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld hl, $98AD
   ld a, 5
   ld b, a
-  call $571C
+  call ShopMapDashes
 
 .part1SlotEmpty
   ld hl, $98E2
   ld a, 8
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld hl, $98ED
   ld a, 5
   ld b, a
-  call $571C
+  call ShopMapDashes
 
 .part2SlotEmpty
   ld hl, $9922
   ld a, 8
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld hl, $992D
   ld a, 5
   ld b, a
-  call $571C
+  call ShopMapDashes
 
 .part3SlotEmpty
   ld hl, $9962
   ld a, 8
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld hl, $996D
   ld a, 5
   ld b, a
-  call $571C
+  call ShopMapDashes
   jp ShopSubstateIncrement
 
 SECTION "Shop State Machine 2", ROMX[$488D], BANK[$04]
@@ -1168,9 +1181,9 @@ ShopBuyInputHandlerState::
   ld a, 2
   call ScheduleSoundEffect
   call $5C0C
-  call $566F
-  call $572C
-  call $59D8
+  call ShopBuyMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .upNotPressed
@@ -1188,9 +1201,9 @@ ShopBuyInputHandlerState::
   ld a, 2
   call ScheduleSoundEffect
   call $5C0C
-  call $566F
-  call $572C
-  call $59D8
+  call ShopBuyMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .downNotPressed
@@ -1237,14 +1250,14 @@ ShopBuyYNBoxState::
   cp 1
   jp z, .yesSelected
   call WrapInitiateMainScript
-  call $59D8
+  call ShopDisplayPartDescription
   ld a, $10
   ld [W_CoreSubStateIndex], a
   ret
 
 .yesSelected
-  call $5799
-  call $57C5
+  call ShopBuyGetPrice
+  call ShopPartPriceToPlayerMoney
   ld a, [W_PlayerMoolah]
   cp d
   jr c, .cannotAfford
@@ -1257,7 +1270,7 @@ ShopBuyYNBoxState::
   jr c, .cannotAfford
 
 .canAfford
-  call $57C5
+  call ShopPartPriceToPlayerMoney
   ld a, [W_PlayerMoolah]
   ld h, a
   ld a, [W_PlayerMoolah + 1]
@@ -1286,10 +1299,10 @@ ShopBuyYNBoxState::
   ld b, a
   ld a, [W_ShopSelectedPartIndex]
   call $3596
-  call $572C
+  call ShopMapQty
   ld bc, $510
   ld hl, W_PlayerMoolah
-  call $557A
+  call ShopMapMoney
   jp .nextState
 
 .cannotAfford
@@ -1308,13 +1321,13 @@ ShopBuyPostYesInputCheckState::
   and M_JPInputA | M_JPInputB | M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
   ret z
   call WrapInitiateMainScript
-  call $59D8
+  call ShopDisplayPartDescription
   ld a, $10
   ld [W_CoreSubStateIndex], a
   ret
 
 ShopSellMappingState::
-  call $57DF
+  call ShopSellCalculatePages
   ld a, [W_ShopSellLastPageIndex]
   cp 0
   jr z, .skipPageArrows
@@ -1347,7 +1360,7 @@ ShopSellMappingState::
   ld e, $83
   ld a, 1
   call WrapDecompressTilemap0
-  call $58CB
+  call ShopMapPageNumbers
   ld a, [W_ShopPartTypeSelectionIndex]
   cp 1
   jr z, .headParts
@@ -1409,9 +1422,9 @@ ShopSellMappingState::
   xor a
   ld [W_ShopPageIndex], a
   ld a, 1
-  ld [$C7CB], a
-  call $5867
-  call $58E4
+  ld [W_ShopPointlessSingleRunCheck], a
+  call ShopSellGetPartsByPage
+  call WrapShopMapPartInfoForPage
   ld a, [$C7CC]
   ld hl, W_ShopStockPart0Index
   ld d, 0
@@ -1420,7 +1433,7 @@ ShopSellMappingState::
   ld a, [hl]
   ld [W_ShopSelectedPartIndex], a
   cp $FF
-  jr z, .jpA
+  jr z, .notSellable
   ld b, a
   ld a, [W_ShopPartTypeSelectionIndex]
   dec a
@@ -1428,17 +1441,17 @@ ShopSellMappingState::
   ld a, b
   call $358A
   or a
-  jr nz, .jpA
+  jr nz, .notSellable
   ld a, [$C4F0]
   ld b, a
   ld a, [$C4EE]
   sub b
-  jr z, .jpA
+  jr z, .notSellable
   xor a
   ld [$C7DC], a
   jp ShopSubstateIncrement
 
-.jpA
+.notSellable
   ld a, 1
   ld [$C7DC], a
   ld a, 1
@@ -1448,10 +1461,10 @@ ShopSellMappingState::
 ShopSellMapMoneyAndSelectedPartInfoState::
   ld bc, $510
   ld hl, W_PlayerMoolah
-  call $557A
-  call $56DB
-  call $572C
-  call $59D8
+  call ShopMapMoney
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   jp ShopSubstateIncrement
 
 ShopSellInputHandlerState::
@@ -1480,16 +1493,16 @@ ShopSellInputHandlerState::
 
 .dontLoopToFirstPage
   ld [W_ShopPageIndex], a
-  call $5867
+  call ShopSellGetPartsByPage
   ld a, 1
-  ld [$C7CB], a
+  ld [W_ShopPointlessSingleRunCheck], a
   ld a, 1
   ld [$C7DA], a
-  call $58E4
-  call $58CB
-  call $56DB
-  call $572C
-  call $59D8
+  call WrapShopMapPartInfoForPage
+  call ShopMapPageNumbers
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .rightNotPressed
@@ -1509,16 +1522,16 @@ ShopSellInputHandlerState::
 
 .dontLoopToLastPage
   ld [W_ShopPageIndex], a
-  call $5867
+  call ShopSellGetPartsByPage
   ld a, 1
-  ld [$C7CB], a
+  ld [W_ShopPointlessSingleRunCheck], a
   ld a, 1
   ld [$C7DA], a
-  call $58E4
-  call $58CB
-  call $56DB
-  call $572C
-  call $59D8
+  call WrapShopMapPartInfoForPage
+  call ShopMapPageNumbers
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .leftNotPressed
@@ -1536,9 +1549,9 @@ ShopSellInputHandlerState::
   ld a, 2
   call ScheduleSoundEffect
   call $5C0C
-  call $56DB
-  call $572C
-  call $59D8
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .upNotPressed
@@ -1556,9 +1569,9 @@ ShopSellInputHandlerState::
   ld a, 2
   call ScheduleSoundEffect
   call $5C0C
-  call $56DB
-  call $572C
-  call $59D8
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopDisplayPartDescription
   ret
 
 .downNotPressed
@@ -1606,14 +1619,14 @@ ShopSellYNBoxState::
   cp 1
   jp z, .yesSelected
   call WrapInitiateMainScript
-  call $59D8
+  call ShopDisplayPartDescription
   ld a, $1A
   ld [W_CoreSubStateIndex], a
   ret
 
 .yesSelected
-  call $57AE
-  call $57C5
+  call ShopSellGetPrice
+  call ShopPartPriceToPlayerMoney
   ld a, [W_PlayerMoolah]
   ld h, a
   ld a, [W_PlayerMoolah + 1]
@@ -1667,7 +1680,7 @@ ShopSellYNBoxState::
   ld a, [hli]
   ld h, [hl]
   ld l, a
-  call $5A01
+  call ShopMapPartInfoDashes
 
 .partIsSellable
   ld a, 1
@@ -1688,7 +1701,7 @@ ShopSellYNBoxState::
 ShopSellPostYesListRefreshState::
   ld bc, $510
   ld hl, W_PlayerMoolah
-  call $557A
+  call ShopMapMoney
   ld a, [W_ShopStockPart1Index]
   cp $FF
   jr nz, .refreshList
@@ -1714,17 +1727,17 @@ ShopSellPostYesListRefreshState::
   ld [W_ShopPageIndex], a
 
 .refreshList
-  call $57DF
+  call ShopSellCalculatePages
   ld a, [W_ShopSellLastPageIndex]
   cp 0
   call z, .downToOnePage
   ld a, 1
-  ld [$C7CB], a
-  call $5867
-  call $58E4
-  call $56DB
-  call $572C
-  call $58CB
+  ld [W_ShopPointlessSingleRunCheck], a
+  call ShopSellGetPartsByPage
+  call WrapShopMapPartInfoForPage
+  call ShopSellMapSelectionPrice
+  call ShopMapQty
+  call ShopMapPageNumbers
   jp ShopSubstateIncrement
   ret
 
@@ -1741,7 +1754,7 @@ ShopSellPostYesInputCheckState::
   and M_JPInputA | M_JPInputB | M_JPInputRight | M_JPInputLeft | M_JPInputUp | M_JPInputDown
   ret z
   call WrapInitiateMainScript
-  call $59D8
+  call ShopDisplayPartDescription
   ld a, $1A
   ld [W_CoreSubStateIndex], a
   ret
@@ -1882,7 +1895,7 @@ ShopPasswordMappingState::
   ld hl, $9842
   ld a, 5
   ld b, a
-  call $571C
+  call ShopMapDashes
   xor a
   ld [W_ShopPasswordSelectionXAxis], a
   ld [W_ShopPasswordSelectionYAxis], a
@@ -2016,7 +2029,7 @@ ShopPasswordInputHandlerState::
   ld hl, $9841
   ld a, 6
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld a, [W_ShopPasswordNumEnteredDigits]
   inc a
   ld b, a
@@ -2076,7 +2089,7 @@ ShopPasswordInputHandlerState::
   ld hl, $9841
   ld a, 6
   ld b, a
-  call $571C
+  call ShopMapDashes
   ld a, [W_ShopPasswordNumEnteredDigits]
   inc a
   ld b, a
@@ -2217,7 +2230,7 @@ ShopPasswordYNInputHandler::
   call $5C81
   xor a
   ld [W_ShopPasswordIsMatch], a
-  call $5C8C
+  call ShopCheckPassword
   ld a, [W_ShopPasswordIsMatch]
   cp 1
   jr nz, .passwordErrorA
@@ -2227,7 +2240,7 @@ ShopPasswordYNInputHandler::
   call $358A
   or a
   jp z, .passwordErrorB
-  call $5CFA
+  call ShopAddPasswordObtainedPartToInventory
   ld a, $27
   ld b, 1
   call $3580
@@ -2446,7 +2459,7 @@ ShopPasswordRemapShopState::
   call WrapDecompressTilemap0
   ld bc, $D01
   ld hl, W_PlayerMoolah
-  call $557A
+  call ShopMapMoney
   call $3482
   call $5C81
   jp ShopSubstateIncrement
@@ -2487,7 +2500,7 @@ ShopBuySellRemapShopState::
   call WrapDecompressTilemap0
   ld bc, $D01
   ld hl, W_PlayerMoolah
-  call $557A
+  call ShopMapMoney
   xor a
   ld [W_ShopBuyMenuSelection], a
   ld a, [W_ShopPartTypeSelectionIndex]
