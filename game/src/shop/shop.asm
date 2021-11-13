@@ -680,7 +680,7 @@ ShopMapPartNameHeartAndPrice::
   push hl
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call $259C
+  call PutStringFixedLength
   pop hl
   ld de, 9
   add hl, de
@@ -750,7 +750,7 @@ ShopGetPartPriceAndStatus::
 
 ShopDisplayPartDescription::
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, [W_ShopSelectedPartIndex]
   cp $FF
   jr z, .exit
@@ -863,7 +863,319 @@ ShopMapPartInfoDashes::
   pop hl
   ret
 
-SECTION "Shop Helper Functions 5", ROMX[$5C8C], BANK[$04]
+ShopPasswordGetObtainedPartPalette::
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld h, 0
+  ld l, a
+  ld bc, $40
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld a, 3
+  call CGBLoadSingleBGPPaletteIndex
+  ld a, 1
+  ld [W_CGBPaletteStagedBGP], a
+  ret
+
+ShopPasswordDrawAndMapPartObtainedWindow::
+  call .pointlessCall
+  ret
+
+.pointlessCall
+  call ShopPasswordDrawObtainedPart
+  ld a, [W_CurrentPartTypeForListView]
+  add $30
+  ld e, a
+  ld bc, $B01
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, $B01
+  ld e, $30
+  ld a, 0
+  call $339E
+  ld hl, .table
+  ld b, 0
+  ld a, [W_CurrentPartTypeForListView]
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  jp hl
+
+.table
+  dw .headPart
+  dw .rightArmPart
+  dw .leftArmPart
+  dw .legPart
+
+.headPart
+  ld b, 8
+  ld c, 1
+  ld hl, $98EB
+  call $25E5
+  ld a, [W_CurrentPartTypeForListView]
+  ld b, a
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld c, a
+  ld hl, $98EB
+  call ShopPasswordMapObtainedPartName
+  call ShopPasswordGetPartStatValues
+  call ShopPasswordMapObtainedPartNature
+  call ShopPasswordMapObtainedPartSkillName
+  ret
+
+.rightArmPart
+  ld b, 8
+  ld c, 1
+  ld hl, $98EB
+  call $25E5
+  ld a, [W_CurrentPartTypeForListView]
+  ld b, a
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld c, a
+  ld hl, $98EB
+  call ShopPasswordMapObtainedPartName
+  call ShopPasswordGetPartStatValues
+  call ShopPasswordMapObtainedPartNature
+  call ShopPasswordMapObtainedPartSkillName
+  ret
+
+.leftArmPart
+  jp .rightArmPart
+
+.legPart
+  ld b, 8
+  ld c, 1
+  ld hl, $98EB
+  call $25E5
+  ld a, [W_CurrentPartTypeForListView]
+  ld b, a
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld c, a
+  ld hl, $98EB
+  call ShopPasswordMapObtainedPartName
+  call ShopPasswordGetPartStatValues
+  call ShopPasswordMapObtainedPartNature
+  call ShopPasswordMapObtainedPartMovementName
+  ret
+
+ShopPasswordMapObtainedPartName::
+  inc b
+  ld [W_ListItemIndexForBuffering], a
+  ld c, 9
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld bc, W_ListItemBufferArea
+  ld a, 8
+  call GetTileBasedCentringOffset
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld bc, W_ListItemBufferArea
+  call $258F
+  ret
+
+ShopPasswordGetPartStatValues::
+  ld a, [W_CurrentPartIndexForPartStatus]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, [W_CurrentPartTypeForListView]
+  jp $34FF
+
+ShopPasswordMapObtainedPartNature::
+  ld b, 5
+  ld c, 7
+  ld a, [$C552]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld hl, $992D
+  ld bc, W_ListItemBufferArea
+  ld a, 6
+  call PutStringFixedLength
+  ret
+
+ShopPasswordMapObtainedPartSkillName::
+  ld b, 6
+  ld c, 6
+  ld a, [$C554]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld hl, $996D
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  ret
+
+ShopPasswordMapObtainedPartMovementName::
+  ld b, 7
+  ld c, 6
+  ld a, [$C553]
+  sub $50
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  call WrapBufferTextFromList
+  pop hl
+  ld hl, $996D
+  ld bc, W_ListItemBufferArea
+  ld a, 5
+  call PutStringFixedLength
+  ret
+
+ShopPasswordDrawObtainedPart::
+  call ShopPasswordObtainedPartIndexToPartImageIndex
+  ld a, [$C4F0]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, [W_CurrentPartTypeForListView]
+  ld hl, .table
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, [W_CurrentPartTypeForListView]
+  ld b, a
+  add b
+  add b
+  ld b, a
+  ld a, [$C4EE]
+  add b
+  ld hl, $8800
+  jp $34E1
+
+.table
+  db $13,$11,$11,$13
+
+ShopPasswordObtainedPartIndexToPartImageIndex::
+  ld a, [W_CurrentPartIndexForPartStatus]
+  cp $33
+  jr nc, .notFirstBank
+  ld [$C4F0], a
+  xor a
+  ld [$C4EE], a
+  ret
+
+.notFirstBank
+  cp $66
+  jr nc, .notSecondBank
+  sub $33
+  ld [$C4F0], a
+  ld a, 1
+  ld [$C4EE], a
+  ret
+
+.notSecondBank
+  sub $66
+  ld [$C4F0], a
+  ld a, 2
+  ld [$C4EE], a
+  ret
+
+ShopPositionMainMenuCursor::
+  ld a, [W_ShopMainMenuSelection]
+  ld hl, ShopMainMenuCursorMap
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C0A4], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+ShopPositionBuySellMenuCursor::
+  ld a, [W_ShopBuyMenuSelection]
+  ld hl, ShopBuySellMenuCursorMap
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C0E4], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+ShopPasswordPositionEntryCursor::
+  ld a, [W_ShopPasswordSelectionXAxis]
+  ld hl, ShopPasswordCursorXMap
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C183], a
+  ld a, [W_ShopPasswordSelectionYAxis]
+  ld hl, ShopPasswordCursorYMap
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld a, [hl]
+  ld [$C184], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+ShopPasswordCursorXMap::
+  db $10,$20,$30,$40
+
+ShopPasswordCursorYMap::
+  db $30,$40,$50,$60
+
+ShopMainMenuCursorMap::
+  db $10,$20,$30,$40
+
+ShopBuySellMenuCursorMap::
+  db $28,$38,$48,$58
+
+ShopDisplayMenuMenuSelectionMessage::
+  ld a, [W_ShopMainMenuSelection]
+  cp 0
+  jr z, .everythingElseSelected
+  cp 1
+  jr z, .everythingElseSelected
+  cp 2
+  jr z, .passwordSelected
+  cp 3
+  jr z, .everythingElseSelected
+
+.everythingElseSelected
+  ld a, [W_ShopShopkeeper]
+  add $D6
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ret
+
+.passwordSelected
+  ld a, [W_ShopShopkeeper]
+  add $B9
+  ld c, a
+  ld b, 0
+  ld a, 2
+  call WrapMainScriptProcessor
+  ret
+
+ShopMapMessageboxAttributes::
+  ld bc, 0
+  ld e, $9C
+  ld a, 1
+  call WrapDecompressAttribmap1
+  ret
+
 ShopCheckPassword::
   ld hl, ShopPasswordTable
 
