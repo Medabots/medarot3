@@ -380,7 +380,7 @@ ShopMappingState::
   ld a, 1
   call WrapDecompressTilemap0
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   jp ShopSubstateIncrement
 
 ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
@@ -456,10 +456,10 @@ ShopMainMenuInputHandlerState::
   ld [W_ShopMainMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5BF8
+  call ShopPositionMainMenuCursor
   call $3482
-  call $5C81
-  call $5C52
+  call ShopMapMessageboxAttributes
+  call ShopDisplayMenuMenuSelectionMessage
   ret
 
 .upNotPressed
@@ -476,10 +476,10 @@ ShopMainMenuInputHandlerState::
   ld [W_ShopMainMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5BF8
+  call ShopPositionMainMenuCursor
   call $3482
-  call $5C81
-  call $5C52
+  call ShopMapMessageboxAttributes
+  call ShopDisplayMenuMenuSelectionMessage
   ret
 
 .downNotPressed
@@ -516,20 +516,20 @@ ShopMainMenuInputHandlerState::
   ld a, 1
   ld [W_ShopPartTypeSelectionIndex], a
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   call ShopSubstateIncrement
   ret
 
 .passwordMessageA
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, $44
   ld [W_CoreSubStateIndex], a
   ret
 
 .passwordMessageB
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, $42
   ld [W_CoreSubStateIndex], a
   ret
@@ -766,8 +766,8 @@ ShopPartTypeSelectionInputHandler::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   call WrapInitiateMainScript
-  call $5C81
-  call $5C52
+  call ShopMapMessageboxAttributes
+  call ShopDisplayMenuMenuSelectionMessage
   ld a, 5
   ld [W_CoreSubStateIndex], a
   ret
@@ -980,7 +980,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld hl, $98A2
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call $259C
+  call PutStringFixedLength
   ld a, [W_ShopStockPart0Index]
   call WrapShopGetPartPriceAndStatus
   ld hl, $98AC
@@ -1018,7 +1018,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld hl, $98E2
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call $259C
+  call PutStringFixedLength
   ld a, [W_ShopStockPart1Index]
   call WrapShopGetPartPriceAndStatus
   ld hl, $98EC
@@ -1056,7 +1056,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld hl, $9922
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call $259C
+  call PutStringFixedLength
   ld a, [W_ShopStockPart2Index]
   call WrapShopGetPartPriceAndStatus
   ld hl, $992C
@@ -1094,7 +1094,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld hl, $9962
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call $259C
+  call PutStringFixedLength
   ld a, [W_ShopStockPart3Index]
   call WrapShopGetPartPriceAndStatus
   ld hl, $996C
@@ -1180,7 +1180,7 @@ ShopBuyInputHandlerState::
   ld [W_ShopBuyMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C0C
+  call ShopPositionBuySellMenuCursor
   call ShopBuyMapSelectionPrice
   call ShopMapQty
   call ShopDisplayPartDescription
@@ -1200,7 +1200,7 @@ ShopBuyInputHandlerState::
   ld [W_ShopBuyMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C0C
+  call ShopPositionBuySellMenuCursor
   call ShopBuyMapSelectionPrice
   call ShopMapQty
   call ShopDisplayPartDescription
@@ -1238,7 +1238,7 @@ ShopBuyInputHandlerState::
   ld a, $34
   ld [W_CoreSubStateIndex], a
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ret
 
 ShopBuyYNBoxState::
@@ -1307,7 +1307,7 @@ ShopBuyYNBoxState::
 
 .cannotAfford
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, $45
   ld [W_CoreSubStateIndex], a
   ret
@@ -1548,7 +1548,7 @@ ShopSellInputHandlerState::
   ld [W_ShopBuyMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C0C
+  call ShopPositionBuySellMenuCursor
   call ShopSellMapSelectionPrice
   call ShopMapQty
   call ShopDisplayPartDescription
@@ -1568,7 +1568,7 @@ ShopSellInputHandlerState::
   ld [W_ShopBuyMenuSelection], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C0C
+  call ShopPositionBuySellMenuCursor
   call ShopSellMapSelectionPrice
   call ShopMapQty
   call ShopDisplayPartDescription
@@ -1607,7 +1607,7 @@ ShopSellInputHandlerState::
   xor a
   ld [W_ShopPageIndex], a
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ret
 
 ShopSellYNBoxState::
@@ -1933,7 +1933,7 @@ ShopPasswordInputHandlerState::
   ld [W_ShopPasswordSelectionYAxis], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C20
+  call ShopPasswordPositionEntryCursor
   ret
 
 .upNotPressed
@@ -1950,7 +1950,7 @@ ShopPasswordInputHandlerState::
   ld [W_ShopPasswordSelectionYAxis], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C20
+  call ShopPasswordPositionEntryCursor
   ret
 
 .downNotPressed
@@ -1967,7 +1967,7 @@ ShopPasswordInputHandlerState::
   ld [W_ShopPasswordSelectionXAxis], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C20
+  call ShopPasswordPositionEntryCursor
   ret
 
 .rightNotPressed
@@ -1984,7 +1984,7 @@ ShopPasswordInputHandlerState::
   ld [W_ShopPasswordSelectionXAxis], a
   ld a, 2
   call ScheduleSoundEffect
-  call $5C20
+  call ShopPasswordPositionEntryCursor
   ret
 
 .leftNotPressed
@@ -2053,7 +2053,7 @@ ShopPasswordInputHandlerState::
   ld a, 1
   ld [W_OAM_SpritesReady], a
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   jp ShopSubstateIncrement
 
 .aNotPressed
@@ -2220,14 +2220,14 @@ ShopPasswordYNInputHandler::
   cp 1
   jp z, .yesSelected
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, $2E
   ld [W_CoreSubStateIndex], a
   ret
 
 .yesSelected
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   xor a
   ld [W_ShopPasswordIsMatch], a
   call ShopCheckPassword
@@ -2244,8 +2244,8 @@ ShopPasswordYNInputHandler::
   ld a, $27
   ld b, 1
   call $3580
-  call $5A5C
-  call $5A73
+  call ShopPasswordGetObtainedPartPalette
+  call ShopPasswordDrawAndMapPartObtainedWindow
   ld a, [W_CurrentPartTypeForListView]
   add $BC
   ld [$C1C2], a
@@ -2376,7 +2376,7 @@ ShopPasswordErrorAMessageState::
   ld de, $C240
   call $33B2
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   jp ShopSubstateIncrement
 
 ShopPasswordPostErrorMessageState::
@@ -2414,7 +2414,7 @@ ShopPasswordErrorBMessageState::
   ld de, $C240
   call $33B2
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   jp ShopSubstateIncrement
 
 ShopFadeOutState::
@@ -2461,7 +2461,7 @@ ShopPasswordRemapShopState::
   ld hl, W_PlayerMoolah
   call ShopMapMoney
   call $3482
-  call $5C81
+  call ShopMapMessageboxAttributes
   jp ShopSubstateIncrement
 
 ShopBuySellRemapShopState::
@@ -2642,7 +2642,7 @@ ShopPrepareFadeOutState::
 
 ShopPreparePreExitMessageState::
   call WrapInitiateMainScript
-  call $5C81
+  call ShopMapMessageboxAttributes
   ld a, $46
   ld [W_CoreSubStateIndex], a
   ret
