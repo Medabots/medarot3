@@ -272,7 +272,7 @@ MapSelectedMedalName::
   ld b, h
   ld c, l ; bc is string location
   pop de ; hl -> de, tile mapping location
-  ld h, $33 ; tile index to draw
+  ld h, $78 ; tile index to draw, drawing at the very end since name is used in every screen
   jp VWFDrawStringCentredFullAddress8Tiles
 
 .noMedal
@@ -1185,15 +1185,15 @@ MapMedalAttributeForMedalSubscreen::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 5
-  ld c, 7
-  ld a, 0
+  ld bc, $0507
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98A4
-  ld bc, W_ListItemBufferArea
+  ld de, $98A4
+  ld h, $3B
+  ld bc, W_NewListItemBufferArea
   ld a, 6
-  jp PutStringFixedLength
+  jp VWFDrawStringLeftFullAddress
 
 MapMedalPersonalityForMedalSubscreen::
   call GetMedalAddress
@@ -1201,15 +1201,15 @@ MapMedalPersonalityForMedalSubscreen::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 9
-  ld c, 7
-  ld a, 0
+  ld bc, $0907
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98E4
-  ld bc, W_ListItemBufferArea
+  ld de, $98E4
+  ld h, $41
+  ld bc, W_NewListItemBufferArea
   ld a, 6
-  jp PutStringFixedLength
+  jp VWFDrawStringLeftFullAddress
 
 MapMedalCompatibilityForMedalSubscreen::
   call GetMedalAddress
@@ -1244,9 +1244,9 @@ MapUndefinedMedalString::
   add hl, de
   ld b, h
   ld c, l
-  ld hl, $9968
-  ld a, 8
-  jp PutStringFixedLength
+  ld de, $9968
+  ld h, $47
+  jp VWFDrawStringLeftFullAddress8Tiles
 
 .mapDashes
   ld hl, $9968
