@@ -1783,15 +1783,15 @@ MapSkillsForMedalSubscreenLeftColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98A1
-  ld bc, W_ListItemBufferArea
+  ld de, $98a1
+  ld h, $4e
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalSkillAUses
@@ -1811,15 +1811,15 @@ MapSkillsForMedalSubscreenLeftColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98E1
-  ld bc, W_ListItemBufferArea
+  ld de, $98e1
+  ld h, $53
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalSkillBUses
@@ -1839,15 +1839,15 @@ MapSkillsForMedalSubscreenLeftColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9921
-  ld bc, W_ListItemBufferArea
+  ld de, $9921
+  ld h, $58
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalSkillCUses
@@ -1862,6 +1862,11 @@ MapSkillsForMedalSubscreenLeftColumn::
   ld a, [hl]
   ld hl, $9941
   jp MapSkillBarForMedalSubscreen
+
+.end
+REPT $5678 - .end
+  nop
+ENDR
 
 MapSkillBarForMedalSubscreen::
   push de
@@ -1925,15 +1930,15 @@ MapSkillsForMedalSubscreenRightColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98AB
-  ld bc, W_ListItemBufferArea
+  ld de, $98ab
+  ld h, $5d
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalMedaliaAUses
@@ -1980,15 +1985,15 @@ MapSkillsForMedalSubscreenRightColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98EB
-  ld bc, W_ListItemBufferArea
+  ld de, $98eb
+  ld h, $62
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalMedaliaBUses
@@ -2035,15 +2040,15 @@ MapSkillsForMedalSubscreenRightColumn::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $992B
-  ld bc, W_ListItemBufferArea
+  ld de, $992b
+  ld h, $67
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  call PutStringFixedLength
+  call VWFDrawStringLeftFullAddress
   pop de
   push de
   ld hl, M_MedalMedaliaCUses
@@ -2070,6 +2075,11 @@ MapSkillsForMedalSubscreenRightColumn::
   call MedalMenuMapDashes
   ld hl, $994B
   jp MedalMenuMapEmptySkillBar
+
+.end
+REPT $5832 - .end
+  nop
+ENDR
 
 DisplayMedaliaIndicatorSpriteForMedalSubscreen::
   push af
