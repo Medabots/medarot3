@@ -86,6 +86,6 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry PartsInfoHead, $9270 ; 10, PartsInfo 'stat names' are loaded after the actual attributes, which are fixed
   TilemapTilesetTableEntry PartsInfoArms, $9270 ; 11
   TilemapTilesetTableEntry PartsInfoLegs, $9270 ; 12
-  TilemapTilesetTableEntry MedalScreen, $9120 ; 13
+  TilemapTilesetTableEntry MedalScreen, $9120 ; 13, loaded as part of the MedalInfoAbility screen too
   TilemapTilesetTableEntry MedalInfoMedaforce, $93A0 ; 14
   TilemapTilesetTableEntry MedalInfoSkills, $93A0 ; 15
