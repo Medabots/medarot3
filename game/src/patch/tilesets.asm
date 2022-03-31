@@ -77,4 +77,5 @@ PatchTilesets::
   PatchTilesetEntry PartsInfoHead
   PatchTilesetEntry PartsInfoArms
   PatchTilesetEntry PartsInfoLegs
-  PatchTilesetEntry MedalScreen
+  PatchTilesetEntry MedalScreen ; Used on MedalInfoAbility as well
+  PatchTilesetEntry MedalInfoMedaforce

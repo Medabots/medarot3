@@ -87,3 +87,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry PartsInfoArms, $9270 ; 11
   TilemapTilesetTableEntry PartsInfoLegs, $9270 ; 12
   TilemapTilesetTableEntry MedalScreen, $9120 ; 13
+  TilemapTilesetTableEntry MedalInfoMedaforce, $93A0 ; 14
