@@ -379,7 +379,7 @@ Tilemap00_41::
 Tilemap00_42::
   INCBIN "./build/tilemaps/MedalInfoSkills.map"
 Tilemap00_43::
-  INCBIN "./build/tilemaps/0043.map"
+  INCBIN "./build/tilemaps/MedalInfoMedalia.map"
 Tilemap00_44::
   INCBIN "./build/tilemaps/0044.map"
 Tilemap00_45::
