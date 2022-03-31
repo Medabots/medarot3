@@ -1430,7 +1430,7 @@ MapMedalMedaforceForMedalSubscreen::
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld h, $4e
+  ld h, $4b
   ld de, $98C2
   ld bc, W_NewListItemBufferArea
   call VWFDrawStringLeftFullAddress8Tiles
@@ -1454,7 +1454,7 @@ MapMedalMedaforceForMedalSubscreen::
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld h, $56
+  ld h, $53
   ld de, $9902
   ld bc, W_NewListItemBufferArea
   call VWFDrawStringLeftFullAddress8Tiles
@@ -1477,7 +1477,7 @@ MapMedalMedaforceForMedalSubscreen::
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld h, $5e
+  ld h, $5b
   ld de, $9942
   ld bc, W_NewListItemBufferArea
   jp VWFDrawStringLeftFullAddress8Tiles
@@ -1510,20 +1510,20 @@ MapMedalSelectedMedaforceInfoForMedalSubscreen::
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld a, [$C546]
-  ld hl, $98B0
+  ld hl, $9890 ; Originally 98b0, MF Cost
   call $351D
   ld a, [$C543]
-  ld hl, $9931
+  ld hl, $9911 ; Originally 9931, Success
   ld b, 0
   call $3504
   ld a, [$C544]
-  ld hl, $9970
+  ld hl, $9950 ; Originally 9970, Power
   call $351D
   ld a, [$C547]
   or a
   jr z, .noStar
   ld a, $4B
-  ld hl, $996F
+  ld hl, $994F ; Originally 996f, Power Star
   di
   push af
   rst $20
@@ -1533,19 +1533,19 @@ MapMedalSelectedMedaforceInfoForMedalSubscreen::
   ret
 
 .emptySlotSelected
-  ld hl, $98B0
+  ld hl, $9890 ; Originally 98b0, MF Cost
   ld b, 3
   call MedalMenuMapDashes
-  ld hl, $9931
+  ld hl, $9911 ; Originally 9931, Success
   ld b, 2
   call MedalMenuMapDashes
-  ld hl, $9970
+  ld hl, $9950 ; Originally 9970, Power
   ld b, 3
   call MedalMenuMapDashes
 
 .noStar
   xor a
-  ld hl, $996F
+  ld hl, $994F ; Originally 996f, Power Star
   di
   push af
   rst $20
@@ -1576,14 +1576,14 @@ MapMedalSelectedMedaforceSkillForMedalSubscreen::
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld h, $66
-  ld de, $992B
+  ld h, $5b
+  ld de, $98ce ; Originally $992B, Skill
   ld bc, W_NewListItemBufferArea
   ld a, $5
   jp VWFDrawStringRightFullAddress
 
 .noSkill
-  ld hl, $992B
+  ld hl, $98ce ; Originally $992B, Skill
   ld b, 5
   jp MedalMenuMapDashes
 
