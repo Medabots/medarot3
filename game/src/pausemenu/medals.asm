@@ -159,7 +159,7 @@ MapMedalNamesForMenu::
   ld hl, $D120
   ld a, 6
   call MultiplyBCByPowerOfTwoAndAddToHL
-  ld a, 6 * 5 ; 6 entries, 5 tiles each
+  ld a, (6 - 1) * 5 ; 6 entries, 5 tiles each
   ld [$C4F8], a
   ld hl, $98A4
 
@@ -194,8 +194,13 @@ MapMedalNamesForMenu::
   ld a, [$C4F8]
   sub a, 5
   ld [$C4F8], a
-  jr nz, .loop
+  jr nc, .loop
   ret
+
+.end
+REPT $48ee - .end
+  nop
+ENDR
 
 MapMedalNameForMenu::
   push de
@@ -207,7 +212,7 @@ MapMedalNameForMenu::
   push hl
   call WrapBufferTextFromList
   pop de ; hl -> de, the address to actually draw to
-  ld h, $3B - 5 ; tile index to draw, 5 less than the actual initial (as 'a' will be base-1)
+  ld h, $3A - 5 ; tile index to draw, 5 less than the actual initial (as 'a' will be base-1)
   ld a, [$C4F8]
   add a, h
   ld h, a
@@ -1190,7 +1195,7 @@ MapMedalAttributeForMedalSubscreen::
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld de, $98A4
-  ld h, $3B
+  ld h, $3A
   ld bc, W_NewListItemBufferArea
   ld a, 6
   jp VWFDrawStringLeftFullAddress
@@ -1206,7 +1211,7 @@ MapMedalPersonalityForMedalSubscreen::
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld de, $98E4
-  ld h, $41
+  ld h, $40
   ld bc, W_NewListItemBufferArea
   ld a, 6
   jp VWFDrawStringLeftFullAddress
@@ -1245,7 +1250,7 @@ MapUndefinedMedalString::
   ld b, h
   ld c, l
   ld de, $9968
-  ld h, $47
+  ld h, $46
   jp VWFDrawStringLeftFullAddress8Tiles
 
 .mapDashes
