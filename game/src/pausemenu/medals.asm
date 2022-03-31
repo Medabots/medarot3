@@ -1426,15 +1426,14 @@ MapMedalMedaforceForMedalSubscreen::
   jr z, .slotAEmpty
   push de
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98C2
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld h, $3A
+  ld de, $98C2
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress8Tiles
   pop de
   jr .checkSlotB
 
@@ -1451,15 +1450,14 @@ MapMedalMedaforceForMedalSubscreen::
   jr z, .slotBEmpty
   push de
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9902
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld h, $42
+  ld de, $9902
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress8Tiles
   pop de
   jr .checkSlotC
 
@@ -1475,20 +1473,24 @@ MapMedalMedaforceForMedalSubscreen::
   cp $FF
   jr z, .slotCEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9942
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  ld h, $4a
+  ld de, $9942
+  ld bc, W_NewListItemBufferArea
+  jp VWFDrawStringLeftFullAddress8Tiles
 
 .slotCEmpty
   ld hl, $9942
   ld b, 8
   jp MedalMenuMapDashes
+
+.end
+REPT $5386 - .end
+  nop
+ENDR
 
 MapMedalSelectedMedaforceInfoForMedalSubscreen::
   call GetMedalAddress
