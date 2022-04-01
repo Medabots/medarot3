@@ -174,7 +174,8 @@ patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
  $(TILESET_OUT)/Special.$(TSET_TYPE)\
  $(TILESET_OUT)/MenuMedawatchGraphics.$(TSET_TYPE)\
  $(TILESET_OUT)/MenuMedawatchTextSprites.$(TSET_TYPE)\
- $(TILESET_OUT)/PartsScreen.$(TSET_TYPE)
+ $(TILESET_OUT)/PartsScreen.$(TSET_TYPE)\
+ $(TILESET_OUT)/MedalInfoText.$(TSET_TYPE)
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 

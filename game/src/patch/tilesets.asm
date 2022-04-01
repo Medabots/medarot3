@@ -52,6 +52,8 @@ MenuMedawatchTextSprites::
   INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
 PartsScreen::
   INCBIN "./build/tilesets/PartsScreen.malias"
+MedalInfoText::
+  INCBIN "./build/tilesets/MedalInfoText.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
@@ -75,4 +77,7 @@ PatchTilesets::
   PatchTilesetEntry PartsInfoHead
   PatchTilesetEntry PartsInfoArms
   PatchTilesetEntry PartsInfoLegs
-  PatchTilesetEntry MedalScreen
+  PatchTilesetEntry MedalScreen ; Used on other MedalInfo screens as well
+  PatchTilesetEntry MedalInfoMedaforce
+  PatchTilesetEntry MedalInfoSkills
+  PatchTilesetEntry MedalInfoMedalia
