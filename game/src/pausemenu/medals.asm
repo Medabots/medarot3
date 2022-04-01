@@ -2914,15 +2914,17 @@ DisplayMedaliaInCurrentlySelectedSlot::
   cp $FF
   jr z, .slotIsEmpty
   ld a, [hl]
+  push de
   push hl
-  ld hl, $99E1
+  ld de, $99E1
+  ld h, $3e ; Where to draw current skill name
   call DisplaySkillNameForMedaliaSubscreen
   pop hl
+  pop de
   ld a, [hli]
   push hl
   push de
-  ld b, $30
-  ld c, $78
+  ld bc, $3078
   ld de, $C240
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
   pop de
@@ -2944,7 +2946,7 @@ DisplayMedaliaInCurrentlySelectedSlot::
   dec hl
   ld a, [hl]
   ld hl, $9A01
-  jp MapSkillBarAttributesForSingleMedalia
+  jr MapSkillBarAttributesForSingleMedalia
 
 .slotIsEmpty
   ld hl, $99E1
@@ -2960,22 +2962,32 @@ DisplayMedaliaInCurrentlySelectedSlot::
   ld a, $A
   ld hl, $9A01
   jp MapSkillBarAttributesForSingleMedalia
+.end
+REPT $5e53 - .end
+  nop
+ENDR
 
 DisplaySkillNameForMedaliaSubscreen::
-  push de
-  push hl
+  ; de is address to draw to
+  ; h is draw area for VWF
+  ; a is skill list index
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  push de
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
   pop de
+  pop hl
+  ld bc, W_NewListItemBufferArea
+  ld a, 5
+  call VWFDrawStringLeftFullAddress
   ret
+.end
+REPT $5e6d - .end
+  nop
+ENDR
 
 MapSkillBarAttributesForSingleMedalia::
   push hl
@@ -3047,11 +3059,9 @@ PopulateMedaliaList::
   ld b, 8
 
 .emptyOptionTextMappingLoop
-  ld a, [de]
   di
-  push af
   rst $20
-  pop af
+  ld a, [de]
   ld [hli], a
   ei
   inc de
@@ -3092,7 +3102,7 @@ PopulateMedaliaList::
   call MapAttributeToSkillName
 
 .populateSubsequentLines
-  ld a, 0
+  xor a
   ld [$C260], a
   ld a, [W_MedalMenuMedaliaListLineToBuffer]
   inc a
@@ -3109,10 +3119,11 @@ PopulateMedaliaList::
   dec a
 
 .noDecA
-  ld h, 0
   ld l, a
+  xor a
+  ld h, a
+  ld b, a
   ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
-  ld b, 0
   ld c, a
   add hl, bc
   sla l
@@ -3123,7 +3134,7 @@ PopulateMedaliaList::
   add hl, bc
   ld a, [hl]
   and $80
-  jp z, .noMedaliaFound
+  jr z, .noMedaliaFound
   ld a, [hli]
   ld [$C4F8], a
   ld a, [hli]
@@ -3152,9 +3163,15 @@ PopulateMedaliaList::
   call MapAttributeToSkillName
 
 .displayMedaliaInfo
-  pop hl
-  push hl
-  ld a, [$C4F2]
+  pop de ; hl -> de (address to draw to)
+  push de ; loaded into hl to increment later
+  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
+  rlca
+  rlca
+  rlca ; We only need 5, but we can afford to waste the tiles so it's OK 
+  add $43
+  ld h, a
+  ld a, [$C4F2] ; List index of Skill
   call DisplaySkillNameForMedaliaSubscreen
   ld hl, $C260
   ld b, 0
@@ -3190,17 +3207,15 @@ PopulateMedaliaList::
   ld c, a
   ld a, 5
   call MultiplyBCByPowerOfTwoAndAddToHL
-  ld a, 0
+  xor a
   ld [de], a
   call GetMedaliaListItemMappingAddress
   push hl
-  ld b, 8
-  ld c, 2
+  ld bc, $0802
   call $25E5
   pop hl
-  ld b, 8
-  ld c, 2
-  ld a, 0
+  ld bc, $0802
+  xor a
   call $25FF
 
 .continue
@@ -3215,8 +3230,13 @@ PopulateMedaliaList::
   ret
 
 .emptyTextString
-  db $51,$8E,$44,0,0,0,0,0 ; This is text, just fyi.
-  db 0,0,0,0,0,0,0,0
+  db $3a,$3b,$3c,$3d,0,0,0,0 ; "Remove" defined by pre-rendered tileset
+  db 0,0,0,0,0,0,0,0 ; Empty space underneath Remove (to clear the bar)
+.end
+REPT $6003 - .end
+  nop
+ENDR
+
 
 GetMedaliaListItemMappingAddress::
   ld a, [W_MedalMenuMedaliaListLineToBuffer]

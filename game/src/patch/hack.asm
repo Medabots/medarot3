@@ -89,3 +89,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MedalScreen, $9120 ; 13, loaded as part of the MedalInfoAbility screen too
   TilemapTilesetTableEntry MedalInfoMedaforce, $93A0 ; 14
   TilemapTilesetTableEntry MedalInfoSkills, $93A0 ; 15
+  TilemapTilesetTableEntry MedalInfoMedalia, $93A0 ; 16
