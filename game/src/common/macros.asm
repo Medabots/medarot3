@@ -37,3 +37,10 @@ dpalette: MACRO
   dw (\7 >> 8) | ((\7 & $FF) << 8)
   dw (\8 >> 8) | ((\8 & $FF) << 8)
   ENDM
+
+padend: MACRO
+  .end\@
+    REPT \1 - .end\@
+      nop
+    ENDR
+  ENDM
