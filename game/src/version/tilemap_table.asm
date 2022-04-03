@@ -493,7 +493,7 @@ Tilemap00_7B::
 Tilemap00_7C::
   INCBIN "./build/tilemaps/007C.map"
 Tilemap00_7D::
-  INCBIN "./build/tilemaps/007D.map"
+  INCBIN "./build/tilemaps/RobattleSelectionText.map"
 Tilemap00_7E::
   INCBIN "./build/tilemaps/007E.map"
 Tilemap00_7F::
