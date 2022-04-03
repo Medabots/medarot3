@@ -381,11 +381,11 @@ Tilemap00_42::
 Tilemap00_43::
   INCBIN "./build/tilemaps/MedalInfoMedalia.map"
 Tilemap00_44::
-  INCBIN "./build/tilemaps/0044.map"
+  INCBIN "./build/tilemaps/MedarotsScreen.map"
 Tilemap00_45::
-  INCBIN "./build/tilemaps/0045.map"
+  INCBIN "./build/tilemaps/MedarotsInfo.map"
 Tilemap00_46::
-  INCBIN "./build/tilemaps/0046.map"
+  INCBIN "./build/tilemaps/MedalIcon.map"
 Tilemap00_47::
   INCBIN "./build/tilemaps/0047.map"
 Tilemap00_48::
