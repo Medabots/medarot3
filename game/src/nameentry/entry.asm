@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_NamingScreenCursorPositionIndex EQU $C48D
 
@@ -302,10 +303,7 @@ AutofillImagineerAsEnteredName::
 .imagineer
   db "Imag",$1D,"eer"
 
-.free
-REPT $536D - .free
-  nop
-ENDR
+  padend($536d)
 
 SECTION "Naming Screen Entry Functions 5", ROMX[$536F], BANK[$01]
 NameEntryDiacriticCheck::

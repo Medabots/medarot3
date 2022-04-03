@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_PartStatsBuffer EQU $C552
 
@@ -368,10 +369,7 @@ MapPartNamesForPartsList::
   jr nz, .clearLoop
   ret
 
-.end
-REPT $6595 - .end
-  nop
-ENDR
+  padend $6595
 
 MapPartQuantitiesForPartsList::
   call GetPartPageAddressInInventoryForPartList
@@ -560,10 +558,7 @@ MapPartQuantitiesForPartsList::
   dec b
   jr nz, .clearLoop
   ret
-.end
-REPT $66A6 - .end
-  nop
-ENDR
+  padend $66A6
 
 MapPartQuantityForPartsList::
   push hl
@@ -1434,10 +1429,7 @@ MapMovementNameForPartStatus::
   call VWFDrawStringLeftFullAddress
   ret
 
-.end
-REPT $6CFC - .end
-  nop
-ENDR
+  padend $6CFC
 
 DirectionalInputHandlerForPartStatus::
   xor a

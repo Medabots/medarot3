@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Item Action Message Index Variable", WRAM0[$C495]
 W_ItemActionMessageIndex:: ds 2
@@ -149,10 +150,7 @@ ItemMenuPrintPageItemNames::
   jr nz, .emptySlotLoop
   ret
 
-.end
-REPT $4d4e - .end
-  nop
-ENDR
+  padend $4d4e
 
 ItemMenuDetermineSelectedItemInventorySlot::
   ld a, [W_CurrentItemPage]

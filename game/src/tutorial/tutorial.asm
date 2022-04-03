@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_TutorialScrollOffset EQU $C562
 W_TutorialCursorPosition EQU $C563
@@ -50,10 +51,7 @@ MapTutorialNamesToScreen::
   dec c 
   jr nz, .loop
   ret
-.end
-REPT $5fb6 - .end
-  nop
-ENDR
+  padend $5fb6
 
 AnimateTutorialListCursor::
   call PlaceTutorialListCursor

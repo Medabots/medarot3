@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Main Script Variables 1", WRAM0[$C4C3]
 W_MainScriptPointerLocationOffset:: ds 2
@@ -323,10 +324,7 @@ ControlCodeD2_changePortrait::
   db 0,$C,$26,$44
 
 ; Free space.
-.free
-REPT $2060 - .free
-  nop
-ENDR
+  padend $2060
 
 SECTION "Main Script Helper Functions 1", ROM0[$2112]
 MainScriptProgressXChars::

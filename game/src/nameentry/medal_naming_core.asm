@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Medal Naming Screen State Machine 1", ROMX[$562F], BANK[$01]
 MedalNamingScreenStateMachine::
@@ -216,7 +217,4 @@ DefaultMedalNameC::
   db $00, $00, $00, $00, $00, $00, $00, $00
   db 0
   db $50
-.end
-REPT $5838 - .end
-  nop
-ENDR
+  padend $5838

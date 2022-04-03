@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_TilemapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
 W_TilemapPointerTableIndex EQU $C4E1
@@ -251,10 +252,7 @@ DecompressTilemapCommon::
   jp nz, .cmd3RepeatAndDecrement
   pop bc
   jr .decompressMode
-.end
-REPT $078A - .end
-  nop
-ENDR
+  padend $078A
 TilemapBankTable::
   db BANK(TilemapTable00)
   db BANK(TilemapTable01)

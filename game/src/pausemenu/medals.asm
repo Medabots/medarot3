@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Medal Variables 1",  WRAM0[$C489]
 W_MedalMenuOptionBoxSelectedItemForProcessing:: ds 1
@@ -197,10 +198,7 @@ MapMedalNamesForMenu::
   jr nc, .loop
   ret
 
-.end
-REPT $48ee - .end
-  nop
-ENDR
+  padend $48ee
 
 MapMedalNameForMenu::
   push de
@@ -238,10 +236,7 @@ MedalMenuMapDashes::
   pop hl
   ret
 
-.end
-REPT $491F - .end
-  nop
-ENDR
+  padend $491F
 
 GetMedalAddress::
   ld a, 5
@@ -284,10 +279,7 @@ MapSelectedMedalName::
   pop hl
   ld b, 8
   jp MedalMenuMapDashes
-.end
-REPT $4967 - .end
-  nop
-ENDR
+  padend $4967
 
 MapSelectedMedalLevel::
   push hl
@@ -1487,10 +1479,7 @@ MapMedalMedaforceForMedalSubscreen::
   ld b, 8
   jp MedalMenuMapDashes
 
-.end
-REPT $5386 - .end
-  nop
-ENDR
+  padend $5386
 
 MapMedalSelectedMedaforceInfoForMedalSubscreen::
   call GetMedalAddress
@@ -1587,10 +1576,7 @@ MapMedalSelectedMedaforceSkillForMedalSubscreen::
   ld b, 5
   jp MedalMenuMapDashes
 
-.end
-REPT $545e - .end
-  nop
-ENDR
+  padend $545e
 
 PrintMedalSelectedMedaforceDescriptionForMedalSubscreen::
   call WrapInitiateMainScriptAlternate
@@ -1863,10 +1849,7 @@ MapSkillsForMedalSubscreenLeftColumn::
   ld hl, $9941
   jp MapSkillBarForMedalSubscreen
 
-.end
-REPT $5678 - .end
-  nop
-ENDR
+  padend $5678
 
 MapSkillBarForMedalSubscreen::
   push de
@@ -2076,10 +2059,7 @@ MapSkillsForMedalSubscreenRightColumn::
   ld hl, $994B
   jp MedalMenuMapEmptySkillBar
 
-.end
-REPT $5832 - .end
-  nop
-ENDR
+  padend $5832
 
 DisplayMedaliaIndicatorSpriteForMedalSubscreen::
   push af
@@ -2962,10 +2942,7 @@ DisplayMedaliaInCurrentlySelectedSlot::
   ld a, $A
   ld hl, $9A01
   jp MapSkillBarAttributesForSingleMedalia
-.end
-REPT $5e53 - .end
-  nop
-ENDR
+  padend $5e53
 
 DisplaySkillNameForMedaliaSubscreen::
   ; de is address to draw to
@@ -2984,10 +2961,7 @@ DisplaySkillNameForMedaliaSubscreen::
   ld a, 5
   call VWFDrawStringLeftFullAddress
   ret
-.end
-REPT $5e6d - .end
-  nop
-ENDR
+  padend $5e6d
 
 MapSkillBarAttributesForSingleMedalia::
   push hl
@@ -3232,10 +3206,7 @@ PopulateMedaliaList::
 .emptyTextString
   db $3a,$3b,$3c,$3d,0,0,0,0 ; "Remove" defined by pre-rendered tileset
   db 0,0,0,0,0,0,0,0 ; Empty space underneath Remove (to clear the bar)
-.end
-REPT $6003 - .end
-  nop
-ENDR
+  padend $6003
 
 
 GetMedaliaListItemMappingAddress::

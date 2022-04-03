@@ -177,10 +177,7 @@ VWFDrawStringSwitchToStringBank::
   ret
 
 ; Free space.
-.free
-REPT $1EEA - .free
-  nop
-ENDR
+  padend ($1EEA)
 
 SECTION "VWF Drawing Functions", ROMX[$6000], BANK[$FF]
 VWFDrawLetterTable::

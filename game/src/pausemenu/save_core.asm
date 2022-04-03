@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Save Menu State Machine 1", ROMX[$526C], BANK[$06]
 SaveMenuStateMachine::
@@ -91,10 +92,7 @@ SaveMenuInputHandlerState::
   ld a, 8
   ld [W_CoreSubStateIndex], a
   ret
-.end
-REPT $5328 - .end
-  nop
-ENDR
+  padend $5328
 
 SECTION "Save Menu State Machine 2", ROMX[$532F], BANK[$06]
 SaveMenuPrepareScriptEngineState::

@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Player Name", WRAM0[$C656]
 W_PlayerName:: ds 1
@@ -263,7 +264,4 @@ PlayerNamingScreenExitState::
 
 PlayerNamingScreenPlaceholderState::
   ret
-.end
-REPT $562e - .end
-  nop
-ENDR
+  padend $562e

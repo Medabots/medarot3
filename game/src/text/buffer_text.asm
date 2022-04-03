@@ -68,10 +68,7 @@ BufferTextFromList::
   ld [de], a
   ret
 
-.free
-REPT $26B7 - .free
-  nop
-ENDR
+  padend $26b7
 
 SECTION "Buffer Text From List Pointer Bank Code", ROMX[$7C00], BANK[$F2]
 BufferTextFromList_NewListHelper::
