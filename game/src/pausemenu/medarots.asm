@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_MedarotMedachangeStatMathBuffer EQU $C48A
 
@@ -292,8 +293,7 @@ MapCurrentMedarotNameForSelectionScreen::
 .hasName
   call OffsetToMappingAddressForMedarotScreens
   push hl
-  ld b, 8
-  ld c, 1
+  ld bc, $0801
   push de
   call $25E5
   pop de
@@ -305,19 +305,10 @@ MapCurrentMedarotNameForSelectionScreen::
   add hl, de
   ld b, h
   ld c, l
-  ld a, 8
-  call GetTileBasedCentringOffset
-  pop hl
-  ld b, 0
-  ld c, a
-  add hl, bc
-  push hl
-  ld hl, M_MedalNickname
-  add hl, de
-  ld b, h
-  ld c, l
-  pop hl
-  jp PutStringVariableLength
+  pop de ; hl -> de
+  ld h, $78
+  jp VWFDrawStringCentredFullAddress8Tiles
+  padend $48de
 
 OffsetToMappingAddressForMedarotScreens::
   ld h, 0
@@ -915,16 +906,18 @@ MapMedalNameForMedarotStatus::
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a
-  ld b, $B
-  ld c, 6
-  ld a, 0
+  ld bc, $0B06
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   pop bc
   call OffsetToMappingAddressForMedarotScreens
-  ld bc, W_ListItemBufferArea
+  ld bc, W_NewListItemBufferArea
+  ld d, $15
   ld a, 5
-  jp PutStringFixedLength
+  jp VWFDrawStringLeftFullAddressAlternate
+  
+  padend $4d81
 
 MapMedalIconForMedarotStatus::
   push bc
@@ -963,90 +956,63 @@ MapMedalIconForMedarotStatus::
 MapHeadPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentHeadPart]
   cp $97
-  jr c, .partEquipped
-  call OffsetToMappingAddressForMedarotScreens
-  ld b, 8
-  jp MedarotsMapDashes
-
-.partEquipped
+  jr nc, PartNotEquipped
+  ld h, $1a
+  push hl
   push bc
-  ld [W_ListItemIndexForBuffering], a
   ld b, 1
-  ld c, 9
-  ld a, 7
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
-  pop bc
-  call OffsetToMappingAddressForMedarotScreens
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  jr PartDraw
 
 MapLeftArmPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentLeftArmPart]
   cp $97
-  jr c, .partEquipped
-  call OffsetToMappingAddressForMedarotScreens
-  ld b, 8
-  jp MedarotsMapDashes
-
-.partEquipped
+  jr nc, PartNotEquipped
+  ld h, $22
+  push hl
   push bc
-  ld [W_ListItemIndexForBuffering], a
   ld b, 2
-  ld c, 9
-  ld a, 7
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
-  pop bc
-  call OffsetToMappingAddressForMedarotScreens
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  jr PartDraw
 
 MapRightArmPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentRightArmPart]
   cp $97
-  jr c, .partEquipped
-  call OffsetToMappingAddressForMedarotScreens
-  ld b, 8
-  jp MedarotsMapDashes
-
-.partEquipped
+  jr nc, PartNotEquipped
+  ld h, $2a
+  push hl
   push bc
-  ld [W_ListItemIndexForBuffering], a
   ld b, 3
-  ld c, 9
-  ld a, 7
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
-  pop bc
-  call OffsetToMappingAddressForMedarotScreens
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  jr PartDraw
 
 MapLegPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentLegPart]
   cp $97
-  jr c, .partEquipped
-  call OffsetToMappingAddressForMedarotScreens
-  ld b, 8
-  jp MedarotsMapDashes
-
-.partEquipped
+  jr nc, PartNotEquipped
+  ld h, $32
+  push hl
   push bc
-  ld [W_ListItemIndexForBuffering], a
   ld b, 4
+  jr PartDraw
+
+PartDraw:
+  ld [W_ListItemIndexForBuffering], a
   ld c, 9
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   pop bc
   call OffsetToMappingAddressForMedarotScreens
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  ld d, h
+  ld e, l
+  pop hl
+  ld bc, W_NewListItemBufferArea
+  jp VWFDrawStringLeftFullAddress8Tiles
+
+PartNotEquipped:
+  call OffsetToMappingAddressForMedarotScreens
+  ld b, 8
+  jp MedarotsMapDashes
+
+  padend $4e72
 
 CheckMedalAndFetchAttributeAndCompatibility::
   ld a, [W_MedarotCurrentMedal]
@@ -1561,77 +1527,26 @@ IsCurrentMedalSlotUsableForMedarotStatus::
   ret
 
 MapMedalNicknameForMedarotStatusScreen::
+  ; hl is address to draw to
+  ; bc is string
   push de
   push hl
   push bc
   push af
-  ld d, 0
 
-.countLoop
-  ld a, [bc]
-  cp $CB
-  jr z, .exitCountLoop
-  inc bc
-  inc d
-  jr .countLoop
+  ld d, h
+  ld e, l
+  ld h, $78 ; As a rule of thumb, we draw the Medarot name in the last available tiles
+  call VWFDrawStringCentredFullAddress8Tiles
 
-.exitCountLoop
   pop af
-  ld e, a
-  sub d
-  srl a
-  ld d, a
-
-.leftBlankFillLoop
-  ld a, d
-  or a
-  jr z, .exitLeftBlankFillLoop
-  xor a
-  di 
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  dec e
-  dec d
-  jr .leftBlankFillLoop
-
-.exitLeftBlankFillLoop
   pop bc
-
-.mapTextLoop
-  ld a, [bc]
-  cp $CB
-  jr z, .rightBlankFillLoop
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  inc bc
-  dec e
-  jr .mapTextLoop
-
-.rightBlankFillLoop
-  ld a, e
-  or a
-  jr z, .exitRightBlankFillLoop
-  xor a
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  dec e
-  jr .rightBlankFillLoop
-
-.exitRightBlankFillLoop
   pop hl
   pop de
-  ret
+.end
+REPT $520c - .end
+  nop
+ENDR
 
 MedarotStatusHeadPartSelectionInputHandler::
   ld a, [W_MedarotStatusSelectedOption]

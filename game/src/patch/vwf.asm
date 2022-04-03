@@ -122,6 +122,21 @@ VWFDrawStringRight::
   call VWFAlignToRight
   jp VWFDrawStringLoop
 
+; Since 'hl' is sometimes the target address, these functions just swap hl and de
+VWFDrawStringLeftFullAddressAlternate::
+  ; a is the number of tiles our drawing area is comprised of.
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; hl is the address we are mapping tiles to.
+  ; d is the tile index of our drawing area
+  push hl
+  ld h, d
+  pop de
+  call VWFDrawStringInit
+  call VWFStoreMappingAddress
+  call VWFDrawStringMeasureString
+  call VWFAlignToLeft
+  jp VWFDrawStringLoop
+
 VWFDrawStringInit::
   ld [W_VWFTileLength], a
   ld a, [W_CurrentBank]
