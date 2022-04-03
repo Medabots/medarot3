@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Encounter Opponent Buffering", WRAM0[$C5A0]
 W_EncounterTerrainListItemIndex:: ds 1
@@ -127,7 +128,7 @@ BufferOpponentForEncounterScreen::
   ld a, 0
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, W_EncounterOpponentBufferArea
   ld b, $C
 
@@ -231,31 +232,23 @@ LoadOpponentImageWithoutPaletteForEncounterScreen::
   ret
 
 MapTextForEncounterScreen::
-  ld b, $11
-  ld c, 7
+  ld bc, $1107
   ld a, [W_EncounterTerrainListItemIndex]
   ld [W_ListItemIndexForBuffering], a
-  ld a, 0
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld bc, W_ListItemBufferArea
-  ld a, 6
-  call GetTileBasedCentringOffset
-  ld hl, $9821
-  ld b, 0
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
+  ld bc, W_NewListItemBufferArea
+  ld de, $9821
+  ld h, $01
+  ld a, $06
+  call VWFDrawStringCentredFullAddress
   ld bc, W_EncounterOpponentBufferArea + 3
-  ld a, 8
-  call GetTileBasedCentringOffset
-  ld hl, $996B
-  ld b, 0
-  ld c, a
-  add hl, bc
-  ld bc, W_EncounterOpponentBufferArea + 3
-  jp PutStringVariableLength
+  ld de, $996B
+  ld h, $07
+  jp VWFDrawStringCentredFullAddress8Tiles
+
+  padend $5c0f
 
 SECTION "Encounter Helper Functions 4", ROMX[$609E], BANK[$05]
 CalculateParticipantAddressForVictoryResultsScreen::
