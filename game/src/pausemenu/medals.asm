@@ -3016,196 +3016,238 @@ CountMedalia::
   ret
 
 PopulateMedaliaList::
-  ld a, 5
-  rst 8
-  xor a
-  ld [W_MedalMenuMedaliaListLineToBuffer], a
+  call MedaliaListPositionSprites
+  ld b, 0
+  call DisplayMedaliaListItem
+  ld b, 1
+  call DisplayMedaliaListItem
+  ld b, 2
+  call DisplayMedaliaListItem
+  ld b, 3
+  call DisplayMedaliaListItem
+  ld b, 4
+  ; Continues into DisplayMedaliaListItem...
+
+DisplayMedaliaListItem::
+; b = line number on screen
+
   ld a, [W_MedalMenuMedaliaListOffsetIndex]
+  add b
   or a
   jr nz, .notFirstLine
-  call GetMedaliaListItemMappingAddress
-  push hl
-  push hl
-  ld de, .emptyTextString
-  ld c, 2
 
-.emptyOptionTextLineLoop
-  ld b, 8
+; Clear sprite
 
-.emptyOptionTextMappingLoop
+  call MedaliaListItemClearSprite
+  
+; Display "Remove".
+
+  ld hl, $98CB
+  ld de, $3A3D
   di
-  rst $20
-  ld a, [de]
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  ld a, d
   ld [hli], a
-  ei
-  inc de
-  dec b
-  jr nz, .emptyOptionTextMappingLoop
-  dec c
-  jr z, .emptyOptionTextExitLoop
-  pop hl
-  push bc
-  ld bc, $20
-  add hl, bc
-  pop bc
-  jr .emptyOptionTextLineLoop
-
-.emptyOptionTextExitLoop
-  call GetMedalAddress
-  ld hl, M_MedalMedaliaAStatus
-  add hl, de
-  ld b, 0
-  ld a, [W_MedalMenuSelectedMedaliaSlot]
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  add hl, bc
-  ld a, [hli]
-  cp $FF
-  jr z, .slotAlreadyEmpty
-  pop hl
-  ld a, 8
-  call MapAttributeToSkillName
-  jr .populateSubsequentLines
-
-.slotAlreadyEmpty
-  pop hl
-  ld a, $E
-  call MapAttributeToSkillName
-
-.populateSubsequentLines
-  xor a
-  ld [$C260], a
-  ld a, [W_MedalMenuMedaliaListLineToBuffer]
   inc a
-  ld [W_MedalMenuMedaliaListLineToBuffer], a
+  ld [hli], a
+  inc a
+  ld [hli], a
+  ld [hl], e
+  ei
+
+  inc l
+  ld d, 0
+  call MedaliaListItem4TileClearer
+  ld l, $EB
+  call MedaliaListItem8TileClearer
+  ld l, $CB
+
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ld d, 8
+  call MedaliaListItem8TileClearer
+  ld l, $EB
+  call MedaliaListItem8TileClearer
+  xor a
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ret
 
 .notFirstLine
-  xor a
-  ld [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen], a
-
-.loop
-  ld a, [W_MedalMenuMedaliaListOffsetIndex]
-  or a
-  jr z, .noDecA
-  dec a
-
-.noDecA
-  ld l, a
-  xor a
-  ld h, a
-  ld b, a
-  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
   ld c, a
-  add hl, bc
-  sla l
-  rl h
-  sla l
-  rl h
+  push bc
+
+  ld a, 5
+  rst 8
+  ld l, c
+  dec l
+  ld h, 0
+  add hl, hl
+  add hl, hl
   ld bc, $D8A0
   add hl, bc
   ld a, [hl]
   and $80
-  jr z, .noMedaliaFound
+  jr nz, .medaliaFound
+
+; Empty this line.
+
+  pop bc
+
+; Clear sprite
+
+  call MedaliaListItemClearSprite
+
+; Clear tile mappings.
+
+  call MedaliaGetListItemMappingAddress
+  ld bc, $18
+  call MedaliaListItem8TileClearer
+  add hl, bc
+  call MedaliaListItem8TileClearer
+
+; Clear attribute mappings.
+
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ld bc, $FFD8
+  add hl, bc
+  ld bc, $18
+  call MedaliaListItem8TileClearer
+  add hl, bc
+  call MedaliaListItem8TileClearer
+  xor a
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ret
+
+.medaliaFound
+  
   ld a, [hli]
   ld [$C4F8], a
   ld a, [hli]
   ld [$C4F2], a
+  ld [W_ListItemIndexForBuffering], a
   ld a, [hli]
   ld [$C4F4], a
   ld a, [hli]
   ld [$C4F6], a
-  call GetMedaliaListItemMappingAddress
+
+  ld bc, $606
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+
+  pop bc
+
+; Get sprite config address.
+
+  ld h, $61
+  ld l, b
+  inc l
+  inc l
+  inc l
+  swap l
+  add hl, hl
+
+; Display sprite.
+
+  ld [hl], 1
+  ld a, 5
+  add l
+  ld l, a
+  
+  ld a, [$C4F2]
+  ld d, DisplayMedaliaIndicatorSpriteForMedalSubscreen.table >> 8
+  add DisplayMedaliaIndicatorSpriteForMedalSubscreen.table & $FF
+  jr nc, .noIncD
+  inc d
+  
+.noIncD
+  ld e, a
+  ld a, [de]
+  ld [hl], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  
+; Get tile drawing index.
+
+  ld h, MedaliaListModFiveTable >> 8
+  ld l, c
+  ld a, [hl]
+  dec h
+  add MedaliaListDrawingIndexTable & $FF
+  ld l, a
+  ld h, [hl]
+
   push hl
+
+; Get tile mapping address.
+
+  call MedaliaGetListItemMappingAddress
+  push hl
+
+; Map attributes for top row.
+
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+
   ld a, [$C4F8]
   and $7F
   call CheckIfMedaliaInUse
   or a
+  ld a, $E
   jr nz, .alreadyAssignedToSlot
-  pop hl
-  push hl
-  ld a, 8
-  call MapAttributeToSkillName
-  jr .displayMedaliaInfo
+  sub 6
 
 .alreadyAssignedToSlot
   pop hl
   push hl
-  ld a, $E
-  call MapAttributeToSkillName
+  ld d, a
+  call MedaliaListItem8TileClearer
 
-.displayMedaliaInfo
-  pop de ; hl -> de (address to draw to)
-  push de ; loaded into hl to increment later
-  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
-  rlca
-  rlca
-  rlca ; We only need 5, but we can afford to waste the tiles so it's OK 
-  add $43
-  ld h, a
-  ld a, [$C4F2] ; List index of Skill
-  call DisplaySkillNameForMedaliaSubscreen
-  ld hl, $C260
-  ld b, 0
-  ld a, [W_MedalMenuMedaliaListLineToBuffer]
-  ld c, a
-  ld a, 5
-  call MultiplyBCByPowerOfTwoAndAddToHL
-  call GetMedaliaIndicatorSpritePositionForMedaliaSubscreen
-  ld a, [$C4F2]
-  call DisplayMedaliaIndicatorSpriteForMedalSubscreen
-  pop hl
-  push hl
-  ld bc, 6
-  add hl, bc
+  xor a
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+
+; Map number tiles.
+
+  dec l
+  dec l
   ld a, [$C4F4]
   ld b, 0
   call $3504
-  pop hl
-  ld bc, $20
-  add hl, bc
-  push hl
+
+; Map bar tiles.
+
+  ld de, $1A
+  add hl, de
   ld a, [$C4F6]
   call MapAdvancedSkillBarForMedalSubscreen
-  pop hl
+
+; Map bar attributes.
+
+  ld a, l
+  sub 8
+  ld l, a
   ld a, [$C4F2]
   call MapSkillBarAttributesForSingleMedalia
-  jr .continue
 
-.noMedaliaFound
-  ld hl, $C260
-  ld b, 0
-  ld a, [W_MedalMenuMedaliaListLineToBuffer]
-  ld c, a
-  ld a, 5
-  call MultiplyBCByPowerOfTwoAndAddToHL
-  xor a
-  ld [de], a
-  call GetMedaliaListItemMappingAddress
-  push hl
-  ld bc, $0802
-  call $25E5
+  pop de
   pop hl
-  ld bc, $0802
-  xor a
-  call $25FF
 
-.continue
-  ld a, [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen]
-  inc a
-  ld [W_MedalMenuNumberOfNonEmptyTextMedaliaLinesOnScreen], a
-  ld a, [W_MedalMenuMedaliaListLineToBuffer]
-  inc a
-  ld [W_MedalMenuMedaliaListLineToBuffer], a
-  cp 5
-  jp nz, .loop
-  ret
+; Draw name.
 
-.emptyTextString
-  db $3a,$3b,$3c,$3d,0,0,0,0 ; "Remove" defined by pre-rendered tileset
-  db 0,0,0,0,0,0,0,0 ; Empty space underneath Remove (to clear the bar)
+  ld a, 5
+  ld bc, W_NewListItemBufferArea
+  jp VWFDrawStringLeftFullAddress
   padend $6003
 
 
@@ -3663,3 +3705,248 @@ DisplayMedaliaSpritesInSlots::
   ld a, 0
   ld [$C220], a
   ret
+
+SECTION "Medalia Scrolling", ROMX[$6611], BANK[$02]
+ShiftMedaliaListDown::
+  ld hl, $998B
+  ld de, $99CB
+  call MedaliaListItemCopyMappings
+  ld l, $8B
+  ld e, $CB
+  call MedaliaListItemCopyAttrMappings
+  ld l, $4B
+  ld e, $8B
+  call MedaliaListItemCopyMappings
+  ld l, $4B
+  ld e, $8B
+  call MedaliaListItemCopyAttrMappings
+  ld l, $0B
+  ld e, $4B
+  call MedaliaListItemCopyMappings
+  ld l, $0B
+  ld e, $4B
+  call MedaliaListItemCopyAttrMappings
+  ld hl, $98CB
+  ld e, $0B
+  call MedaliaListItemCopyMappings
+  ld l, $CB
+  ld e, $0B
+  call MedaliaListItemCopyAttrMappings
+  ld a, [$C2C0]
+  ld [$C2E0], a
+  ld a, [$C2C5]
+  ld [$C2E5], a
+  ld a, [$C2A0]
+  ld [$C2C0], a
+  ld a, [$C2A5]
+  ld [$C2C5], a
+  ld a, [$C280]
+  ld [$C2A0], a
+  ld a, [$C285]
+  ld [$C2A5], a
+  ld a, [$C260]
+  ld [$C280], a
+  ld a, [$C265]
+  ld [$C285], a
+  ld b, 0
+  jp DisplayMedaliaListItem
+
+ShiftMedaliaListUp::
+  ld hl, $990B
+  ld de, $98CB
+  call MedaliaListItemCopyMappings
+  ld l, $0B
+  ld e, $CB
+  call MedaliaListItemCopyAttrMappings
+  ld l, $4B
+  ld de, $990B
+  call MedaliaListItemCopyMappings
+  ld l, $4B
+  ld e, $0B
+  call MedaliaListItemCopyAttrMappings
+  ld l, $8B
+  ld e, $4B
+  call MedaliaListItemCopyMappings
+  ld l, $8B
+  ld e, $4B
+  call MedaliaListItemCopyAttrMappings
+  ld l, $CB
+  ld e, $8B
+  call MedaliaListItemCopyMappings
+  ld l, $CB
+  ld e, $8B
+  call MedaliaListItemCopyAttrMappings
+  ld a, [$C280]
+  ld [$C260], a
+  ld a, [$C285]
+  ld [$C265], a
+  ld a, [$C2A0]
+  ld [$C280], a
+  ld a, [$C2A5]
+  ld [$C285], a
+  ld a, [$C2C0]
+  ld [$C2A0], a
+  ld a, [$C2C5]
+  ld [$C2A5], a
+  ld a, [$C2E0]
+  ld [$C2C0], a
+  ld a, [$C2E5]
+  ld [$C2C5], a
+  ld b, 4
+  jp DisplayMedaliaListItem
+
+MedaliaListPositionSprites::
+  ld hl, $C260
+  ld de, $1C
+  ld bc, $C780
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hli], a
+  ld [hl], $30
+  add hl, de
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hli], a
+  ld [hl], $40
+  add hl, de
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hli], a
+  ld [hl], $50
+  add hl, de
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hli], a
+  ld [hl], $60
+  add hl, de
+  xor a
+  ld [hli], a
+  ld [hli], a
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hli], a
+  ld [hl], $70
+  ret
+
+MedaliaGetListItemMappingAddress::
+  ld h, MedaliaListMappingAddressTable >> 8
+  ld a, b
+  add a
+  add MedaliaListMappingAddressTable & $FF
+  ld l, a
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ret
+
+MedaliaListItem8TileClearer::
+  call MedaliaListItem4TileClearer
+  ; continues into MedaliaListItem4TileClearer
+
+MedaliaListItem4TileClearer::
+  di
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  ld a, d
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ld [hli], a
+  ei
+  ret
+
+MedaliaListItemCopyAttrMappings::
+  ld a, 1
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  call MedaliaListItemCopyMappings
+  xor a
+  ld [W_CurrentVRAMBank], a
+  ldh [H_RegVBK], a
+  ret
+
+MedaliaListItemCopyMappings::
+  ld b, 2
+
+.rowloop
+  ld c, 4
+ 
+.loop
+  di
+
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+
+  ld a, [hli]
+  ld [de], a
+  inc de
+  ld a, [hli]
+  ld [de], a
+  ei
+  inc de
+  dec c
+  jr nz, .loop
+
+  dec b
+  ret z
+  ld a, $18
+  add l
+  ld l, a
+  jr nc, .noIncH
+  inc h
+
+.noIncH
+  ld a, $18
+  add e
+  ld e, a
+  jr nc, .rowloop
+  inc d
+  jr .rowloop
+
+MedaliaListItemClearSprite::
+  ld h, $61
+  ld l, b
+  inc l
+  inc l
+  inc l
+  swap l
+  add hl, hl
+  ld [hl], 0
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+SECTION "Medalia Scrolling Tables", ROMX[$7EF1], BANK[$02]
+; Moving this section will break stuff.
+MedaliaListDrawingIndexTable::
+  db $43, $48, $4D, $52, $57
+
+MedaliaListMappingAddressTable::
+  dw $98CB, $990B, $994B, $998B, $99CB
+
+MedaliaListModFiveTable::
+REPT $33
+  db 0, 1, 2, 3, 4
+ENDR
+  db 0
