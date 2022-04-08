@@ -23,10 +23,10 @@
 021,0x1e802a,"<@RL,1D,00>メダリンク ごリよう<CD>あリがとうございました",
 022,0x1e802c,"<@LL,00,00>ここでは メダロットに かんけいした<CD>イベントが 行われる みたいだけど<CF><D1>今は 何も やっていないようだ",
 023,0x1e802e,"<@RL,1D,00>ごめんなさいね<CF><D1>何でも でんぱいじょうとかで<CD>パ-ツの はんばいが できないのよ<CF><D1>もう少し してから<CD>また 来てね<CF><D1><@LL,00,00>はい 分かリました","<@RL,1D,00>My apologies.<D1>Because of that strange<D3>radio wave, I can't sell you<D3>any parts at the moment.<D1>Please come back in a little<D3>while, after you've done<D3>some other things.<D1><@LL,00,00>Okay, got it!"
-024,0x1e8030,"<@LL,00,00>カギが かかってる",
-025,0x1e8032,"<@RL,14,00>ここの じゅうにんって<CD>ヘんなやつ ばっかリなんだよ<CF><D1>あっ...わたしもか<CD>フフフッ...",
-026,0x1e8034,"<@LL,00,00>カギが かかってる",
-027,0x1e8036,"<@RL,14,00>となリの じゅうにんは<CD>夜中に 高わらいするわ<CF><D1>したの じゅうにんは<CD>とつぜん あばれだすわで<CF><D1>おちついて しごともできない<CF><D1>...そういえば<CD>なんなんだ きみは!!<CF><D1>かってに ヘやに はいってきて!<CD>セレクト威に つうほうするぞ!",
+024,0x1e8030,"<@LL,00,00>カギが かかってる","<@LL,00,00>It's locked."
+025,0x1e8032,"<@RL,14,00>ここの じゅうにんって<CD>ヘんなやつ ばっかリなんだよ<CF><D1>あっ...わたしもか<CD>フフフッ...","<@RL,14,00>The residents here are all<D3>strange people.<D3><D1>Ah... that includes me. Fufufu...."
+026,0x1e8034,"<@LL,00,00>カギが かかってる","<@LL,00,00>It's locked."
+027,0x1e8036,"<@RL,14,00>となリの じゅうにんは<CD>夜中に 高わらいするわ<CF><D1>したの じゅうにんは<CD>とつぜん あばれだすわで<CF><D1>おちついて しごともできない<CF><D1>...そういえば<CD>なんなんだ きみは!!<CF><D1>かってに ヘやに はいってきて!<CD>セレクト威に つうほうするぞ!","<@RL,14,00>The person who lives next to<D3>me roars with laughter in the<D3>middle of the night...<D1>the person<D3>below me has sudden, violent<D3>outbursts...<D1>I can't even relax<D3>at work... <D1>...And come to think of it, what<D3>are you doing here?! <D1>You came into my room without<D3>permission! I'm going to report<D3>this to Select Corp!"
 028,0x1e8038,"<@RL,28,00>この おくには<CD>いっぱんじんは 入れないであリます!","<@RL,28,00>The general public can't enter<D3>the back rooms!"
 029,0x1e803a,"<@RL,28,00>メダロットに いじょうが<CD>あったときは となリにある<CF><D1>きゅうきゅうセンタ-に<CD>行くであリます!",
 030,0x1e803c,"<@RL,28,00>自分は ここを 1歩も<CD>はなれられないで あリます!",
@@ -43,7 +43,7 @@
 041,0x1e8052,"<@LL,00,00>こんにちは- <&BUF0A>です<CD>ハチロウくんは いますか?<CF><D1><@RL,09,00>これはこれは<CD><&BUF0A>さま!<CF><D1><@LL,00,04>あ ひつじさんだ<CD>こんにちは- <CF><D1>ハチロウくんは...<CF><D1><@RL,09,00>もうしわけ ございません<CD><&BUF0A>さま<CF><D1>おぼっちゃまは 今<CD>お体の ぐあいが...<CF><D1><@LL,00,07>えっ! だいじょうぶなんですか?<CF><D1><@RL,09,00>え ええ かるい かぜですので<CD>2 3日も すれば よくなるかと<CF><D1><@LL,00,05>そうですか...<CD>おだいじに","<@LL,00,00>Hello, this is <&BUF0A>. Is<D3>Hachiro home?<D1><@RL,09,00>My word, it's Sir <&BUF0A>!<D1><@LL,00,04>Ah, Mr. Hitsuji, hello.<D1>About Hachiro...<D1><@RL,09,00>My deepest apologies,<D3><&BUF0A>.<D1>The young master's health,<D3>it's...<D1><@LL,00,07>Ehh!? Is he okay?<D1><@RL,09,00>Oh, oh yes! it's a light cold.<D3>He'll therefore be better in<D3>two to three days, I believe.<D1><@LL,00,05>Oh, it that right...<D3>Get well soon, then."
 042,0x1e8054,"<@LL,00,00>ハチロウの かぜは いくら何でも<CD>ロボロボ団の しわざじゃ ないよな","<@LL,00,00>No matter how you look at it,<D3>Hachiro's cold probably isn't<D3>the Roborobo group's doing."
 043,0x1e8056,"<@LL,00,00>今は やめとこう","<@LL,00,00>Let's not do that right now."
-044,0x1e8058,"<@LL,00,00>こんにちは- <&BUF0A>です<CD>ハチロウくんに 会いたいんですけど<CF><D1><@RL,09,00>これはこれは <&BUF0A>さま!<CF><D1>せっかくですが おぼっちゃまは<CD>今 おヘやで 休んでおリまして<CF><D1><@LL,00,00>どうしても 会いたいんです!<CD>おねがいします!<CF><D1><@RL,09,00>そうですか...<CF><D1>おぼっちゃまは だれとも<CD>お会いしたくないと<CF><D1>おっしゃっているのですが<CD><&BUF0A>さまなら...<CF><D1>分かリました!<CD>どうぞ お上がリください",
+044,0x1e8058,"<@LL,00,00>こんにちは- <&BUF0A>です<CD>ハチロウくんに 会いたいんですけど<CF><D1><@RL,09,00>これはこれは <&BUF0A>さま!<CF><D1>せっかくですが おぼっちゃまは<CD>今 おヘやで 休んでおリまして<CF><D1><@LL,00,00>どうしても 会いたいんです!<CD>おねがいします!<CF><D1><@RL,09,00>そうですか...<CF><D1>おぼっちゃまは だれとも<CD>お会いしたくないと<CF><D1>おっしゃっているのですが<CD><&BUF0A>さまなら...<CF><D1>分かリました!<CD>どうぞ お上がリください","<@LL,00,00>Hello, it's <&BUF0A>. I'd like<D3>to see Hachiro, if that's<D3>alright.<CF><D1><@RL,09,00>Why hello, Mr. <&BUF0A>!<CF><D1>I do apologize for the trouble,<D3>but the young master is<D3>resting in his room at the<D3>moment. <CF><D1><@LL,00,00>I have to see him, no matter<D3>what! Please!<CF><D1><@RL,09,00>Is that right...<CF><D1>The young master doesn't<D3>want to see anyone at the<D3>moment.<CF><D1>So he said, but if it's<D3><&BUF0A>...<CF><D1>I understand! Please, come<D3>inside!"
 045,0x1e805a,"<@LL,00,00>カギが かかってる<CF><D1>ドアの よこの<CD>インタ-ホンを おしてみよう!","<@LL,00,00>It's locked.<D3><D1>Let's try using the intercom<D3>beside the door!"
 046,0x1e805c,"<@LL,00,00>こんにちは- <&BUF0A>です<CD>コウジくんは いますか?<CF><D1><@RL,1D,00>あら <&BUF0A>くん?<CF><D1>ごめんなさい コウジは 今<CD>花園学園に 行っているわ<CF><D1><@LL,00,00>あ はい 分かリました!","<@LL,00,00>Hello, this is <&BUF0A>. Is<D3>Koji home? <D1><@RL,1D,00>Ah <&BUF0A>? <D1>I'm sorry, Koji is at school<D3>right now.<D1><@LL,00,00>Ah, okay, I understand!"
 047,0x1e805e,"<@LL,00,00>花園学園に 行ってみよう!","<@LL,00,00>Let's try going to Hanazono<D3>Private School!"
@@ -53,7 +53,7 @@
 051,0x1e8066,"<@LL,00,00>こんにちは- <&BUF0A>です<CD>カリンちゃんは いますか?<CF><D1><@RL,14,00>ひさしぶリだね <&BUF0A>くん<CF><D1>すまないな カリンは 今<CD>花園学園に 行っているんだよ<CF><D1><@LL,00,00>あ はい 分かリました!","<@LL,00,00>Hello, this is <&BUF0A>.<D3>Is Karin home?<D1><@RL,14,00>Long time no see, <&BUF0A>.<D1>I'm so sorry, but Karin is<D3>attending school right now.<D1><@LL,00,00>Ah, okay, I understand!"
 052,0x1e8068,"<@LL,00,00>花園学園に 行ってみよう!","<@LL,00,00>Let's try going to Hanazono<D3>Private School!"
 053,0x1e806a,"<@LL,00,00>今は いいや",
-054,0x1e806c,"<@LL,00,00>こんにちは- <&BUF0A>です<CF><D1><@RL,14,00>おお <&BUF0A>くんか<CF><D1>カリンなら 今 ヘやに いるよ<CD>カギは あけておくよ",
+054,0x1e806c,"<@LL,00,00>こんにちは- <&BUF0A>です<CF><D1><@RL,14,00>おお <&BUF0A>くんか<CF><D1>カリンなら 今 ヘやに いるよ<CD>カギは あけておくよ","<@LL,00,00>Hello, this is <&BUF0A>.<CF><D1><@RL,14,00>Oh, <&BUF0A>.<CF><D1>Since Karin's home, I'll leave<D3>the door unlocked for you."
 055,0x1e806e,"<@RL,14,00>たこうの せいとは<CD>学園には 入れません!","<@RL,14,00>Students from other schools are<D3>not allowed inside!"
 056,0x1e8070,"<@LL,00,05>まだ 入れそうにないか...",
 057,0x1e8072,"<@RL,01,02>ちょっと 何よこれ-!<CF><D1><@RL,05,02>おぼえてなさいよぉ!<CF><D1>あたしを こんな目に あわせたこと<CD>こうかい するんだからぁ!",
@@ -75,34 +75,34 @@
 073,0x1e8092,"<@RL,43,01>いや- ロボトルは すばらしいっ!<CD>かんどうものですよ!<CF><D1><@LL,00,04>そ そうですか...",
 074,0x1e8094,"<@LL,00,00>ここは たしか こうきゅう<CD>レストランだったと 思うけど...?","<@LL,00,00>If I remember correctly... I<D3>think this is a fancy<D3>restaurant...?"
 075,0x1e8096,"<@LL,00,00>このレストラン アリカの言うような<CD>「おしゃれ」けいとは<CF><D1>ちがった 気がするよ",
-076,0x1e8098,"<@LL,00,00>入る前に お金は...",
-077,0x1e809a,"<@LL,00,00>ま 何とか なるかな<CD>じゃ 行こう",
+076,0x1e8098,"<@LL,00,00>入る前に お金は...","<@LL,00,00>Before I go in... do I even<D3>have the money?"
+077,0x1e809a,"<@LL,00,00>ま 何とか なるかな<CD>じゃ 行こう","<@LL,00,00>Maybe it'll just work out<D3>somehow? Well, let's go."
 078,0x1e809c,"<@LL,00,05>さすがに 1000¥くらいは<CD>もってないと ふあんだな<CF><D1>何とかして お金を あつめよう!",
-079,0x1e809e,"<@LL,00,00>アリカは 来てるかな?",
-080,0x1e80a0,"<@RL,01,04><&BUF0A> こっちよ!<CD>早く すわって すわって!",
-081,0x1e80a2,"<@RL,34,00>ごちゅうもんを どうぞ<CF><D1><@RL,01,04>あたし ハ-フカレ-に<CD>やさいの トッピング!",
-082,0x1e80a4,"<@LL,00,00>え--と ぼくは この<CD>「カツカレ-うどん ていしょく」",
+079,0x1e809e,"<@LL,00,00>アリカは 来てるかな?","<@LL,00,00>I wonder if Erika's here?"
+080,0x1e80a0,"<@RL,01,04><&BUF0A> こっちよ!<CD>早く すわって すわって!","<@RL,01,04><&BUF0A>, this way!<D3>Quickly, sit down, sit down!"
+081,0x1e80a2,"<@RL,34,00>ごちゅうもんを どうぞ<CF><D1><@RL,01,04>あたし ハ-フカレ-に<CD>やさいの トッピング!","<@RL,34,00>What would you like to order?<CF><D1><@RL,01,04>Curry rice with vegetables<D3>for me!"
+082,0x1e80a4,"<@LL,00,00>え--と ぼくは この<CD>「カツカレ-うどん ていしょく」","<@LL,00,00>Umm, I'll have the <f02>katsu<D3>curry udon special!"
 083,0x1e80a6,"<@RL,01,00>え--っ 何それ<CD>おしゃれじゃ な-い!<CF><D1><@LL,00,00>ぼくは これが<CD>「カツカレ-」と「うどん」なのか<CF><D1>「カツ」と「カレ-うどん」なのか<CD>たしかめたいんだ!<CF><D1><@RL,01,00>つまんな-い!",
 084,0x1e80a8,"<@RL,06,00>あねご 本当に うまく<CD>いきやすかね?<CF><D1><@RL,05,02>ふん! この ふうリんのキクヒメを<CD>なめたら どうなるか<CF><D1>思い知らせて やるんだからぁ!<CF><D1><@RL,07,00>ぼくの おリょうリ<CD>まだかな...",
 085,0x1e80aa,"<@RL,01,01>わ-い 来た来た!<CD>いっただっきま-す♥<CF><D1><@LL,00,07>こっ これはっ! うどんの上に<CD>カツカレ-が のってる!<CF><D1>しかも おちゃわんに<CD>やまもリの ごはんが ついてる!<CF><D1>ど...どうやって 食ベるんだ?<CF><D1>カレ-うどんを 食ベながら<CD>ごはんを カツで 食ベるベきか<CF><D1>カツカレ-うどんを 食ベたあとで<CD>のこリじるを ごはんに かけるのか<CF><D1>いや...それとも<CF><D1><@RL,01,02>もうっ! ぶつぶつ 言ってないで<CD>さっさと 食ベちゃいなさいよ!<CF><D1><@LL,00,00>う うん",
 086,0x1e80ac,"<@RL,01,01>ごちそうさま-<CD>おいしかった♥<CF><D1><@LL,00,04>うん この カツの ころもが<CD>しめった かんじが よかったよ<CF><D1><@RL,01,05>それって おいしいのぉ?<CF><D1><@RL,01,04>まっ とにかく おなかも<CD>いっぱいに なったし<CF><D1>お次は バ-ゲンよ!<CF><D1>あたしは デパ-トで<CD>買いもの するけど<CF><D1>まだ 時間 あると思うし<CD>あんたは どうする?<CF><D1><@LL,00,00>ぼくは...<CF><D1><@RL,01,07>ああ! こうしてる 間にも<CD>おしゃれな ふくが<CF><D1>売リ切れちゃう!<CD>じゃ また あとでね!<CF><D1><@LL,00,07>あ! アリカ!",
 087,0x1e80ae,"<@LL,00,00>お金...<CF><D1><@LL,00,03>よそうしていた こととはいえ<CD>...ガックシ",
-088,0x1e80b0,"<@RL,05,03>あ- おなか いっぱぁい♥<CD>じゃ あとは たのんだわよぉ<CF><D1><@RL,06,05>あ! あねご お金...!",
+088,0x1e80b0,"<@RL,05,03>あ- おなか いっぱぁい♥<CD>じゃ あとは たのんだわよぉ<CF><D1><@RL,06,05>あ! あねご お金...!","<@RL,05,03>Ahh... I'm full.♥<D3>Well then, I'll leave the rest<D3>to you.<CF><D1><@RL,06,05>Ah! But, my money...!"
 089,0x1e80b2,"<@RL,06,04>...ガックシ",
-090,0x1e80b4,"<@LL,00,05>とリあえず ここを 出るか...",
-091,0x1e80b6,"<@RL,34,00>おきゃくさま お会計を<CD>おねがいします",
-092,0x1e80b8,"<@RL,34,00>おふたリで 合計<CD>1000¥に なリます<CF><D1><@LL,00,05>はぁ...",
-093,0x1e80ba,"<@RL,34,00>またの おこしを<CD>おまちしておリます",
-094,0x1e80bc,"<@RL,13,00>お前 新型の 変形メダロット<CD>手に入れたか?",
+090,0x1e80b4,"<@LL,00,05>とリあえず ここを 出るか...","<@LL,00,05>Alright, first I'll leave this<D3>restaurant..."
+091,0x1e80b6,"<@RL,34,00>おきゃくさま お会計を<CD>おねがいします","<@RL,34,00>Valued customer, please pay<D3>your bill first!"
+092,0x1e80b8,"<@RL,34,00>おふたリで 合計<CD>1000¥に なリます<CF><D1><@LL,00,05>はぁ...","<@RL,34,00>For the two meals, the total<D3>comes to 1000¥.<CF><D1><@LL,00,05>Ugh..."
+093,0x1e80ba,"<@RL,34,00>またの おこしを<CD>おまちしておリます","<@RL,34,00>We look forward to seeing you<D3>again!"
+094,0x1e80bc,"<@RL,13,00>お前 新型の 変形メダロット<CD>手に入れたか?","<@RL,13,00>Did you get the new type of<D3>Medabot model?"
 095,0x1e80be,"<@RL,13,00>あったリ前よぉ!<CD>サイコ-! カッコイイよなぁ",
 096#kabuto,0x1e80c0,"<@LL,00,05>変形かぁ...<CF><D1>ぼくの<&BUF07>の<CD>メダルと あいしょうのいい<CF><D1>カブト型の パ-ツは<CD>しょき型だから 変形なんて...",
 096#kuwagata,0x1e80c0,"<@LL,00,05>変形かぁ...<CF><D1>ぼくの<&BUF07>の<CD>メダルと あいしょうのいい<CF><D1>クワガタ型の パ-ツは<CD>しょき型だから 変形なんて...",
 097,0x1e80c2,"<@LL,00,04>そうだ!<CD>メダロット社に 行ってみよう!<CF><D1>何も ないかも しれないけど<CD>もしかしたら <&BUF07>に<CF><D1>バッチリの 変形 パ-ツが<CD>貝つかるかも しれないぞ!",
-098,0x1e80c4,"<@LL,00,04>メダロット社は この先の<CD>大きな たてものだ",
-099,0x1e80c6,"<@RL,06,04>女の 買いものには<CD>つきあってらんね-ぜ<CF><D1>時間つぶしに つき合え!",
-100,0x1e80c8,"<@RL,06,00>時間の むだだったぜ",
+098,0x1e80c4,"<@LL,00,04>メダロット社は この先の<CD>大きな たてものだ","<@LL,00,04>The Medabots Corporation is<D3>the big building just past here."
+099,0x1e80c6,"<@RL,06,04>女の 買いものには<CD>つきあってらんね-ぜ<CF><D1>時間つぶしに つき合え!","<@RL,06,04>I can't stand tagging along<D3>while that girl shops anymore!<CF><D1>Being here is just a waste of<D3>my time!"
+100,0x1e80c8,"<@RL,06,00>時間の むだだったぜ","<@RL,06,00>That was a waste of time."
 101,0x1e80ca,"<@RL,06,04>まったく 女ってのは ど-して<CD>こ-も バ-ゲンとやらが<CF><D1>すきなんだ?",
-102,0x1e80cc,"<@RL,07,03>あねご バ-ゲン<CD>ぼく...たいくつ",
+102,0x1e80cc,"<@RL,07,03>あねご バ-ゲン<CD>ぼく...たいくつ","<@RL,07,03>She... looks for bargains.<D3>I'm... bored."
 103,0x1e80ce,"<@RL,07,03>ぼくも きれいな おようふく<CD>...ほしい!",
 104,0x1e80d0,"<@LL,00,07>こっちからは のぼれそうにない!","<@LL,00,07>I definitely can't go up<D3>this way!"
 105,0x1e80d2,"<@LL,00,07>こっちからは おリられそうにない!","<@LL,00,07>I definitely can't go down<D3>this way!"
@@ -110,7 +110,7 @@
 107,0x1e80d6,"<@RL,1D,00>貝たら ついつい ほしくなっちゃう<CD>...わるいクセだわ","<@RL,1D,00>If I look, I end up wanting<D3>everything without even<D3>meaning to... it's a bad habit."
 108,0x1e80d8,"<@RL,1B,00>かわいい ワンピ-スが ほしいな♥","<@RL,1B,00>Ooh, I want a cute dress!♥"
 109,0x1e80da,"<@RL,1B,00>デパ-トで お買いものなんて<CD>バ-ゲンの 時じゃないと<CF><D1>高くて むリだわ!","<@RL,1B,00>Shopping at this department<D3>store is so expensive...<D1>When there's not a sale<D3>happening, it's impossible to<D3>buy anything!"
-110,0x1e80dc,"<@LL,00,01>あ! キララさんだ!<CD>こんにちは-!<CF><D1><@RL,0E,01>あら <&BUF0A>くん<CD>今日も 元気ね!",
+110,0x1e80dc,"<@LL,00,01>あ! キララさんだ!<CD>こんにちは-!<CF><D1><@RL,0E,01>あら <&BUF0A>くん<CD>今日も 元気ね!","<@LL,00,01>Ah! Kirara, it's you!<D3>Hello!<CF><D1><@RL,0E,01>Ah, <&BUF0A>.<D3>You're looking well today!"
 111,0x1e80de,"<@RL,0E,01>ギンジョウ小学校の だいひょう<CD>選手に なったんですって?<CF><D1>おめでとう!<CF><D1><@LL,00,04>あれ? どうして...<CF><D1><@RL,0E,01>メダロットはかせも<CD>ヒカルのやつも<CF><D1>聞く前に おしえて くれたわよ<CF><D1>...まっ こうなることは<CD>分かってたけどね!<CF><D1><@LL,00,01>何か てれるなぁ...<CF><D1><@RL,0E,01>と.こ.ろ.で!<CD>これを うけとって!",
 112,0x1e80e0,"<@LL,00,00>これは?<CF><D1><@RL,0E,01>それで おくのヘやに 行けるわ<CF><D1>キミが 来たら わたすように<CD>言われてたの<CF><D1><@LL,00,00>えっ?<CF><D1><@RL,0E,01>キミの よく知っている 人よ<CD>行ってみたら 分かるわ",
 113,0x1e80e2,"<@RL,0E,01>キミも きたいされちゃって<CD>大変ね!",
@@ -130,107 +130,107 @@
 127,0x1e80fe,"<@RL,18,00>「ミニハンドル」の ほかにも<CD>とくていの メダロットに つければ<CF><D1>水の中も スイスイ すすめる<CD>「せんぼうきょう」や<CF><D1>メダロットに のって<CD>空を とぶことが できるようになる<CF><D1>「風のつばさ」が あるよね<CF><D1>すっかリ 太っちゃった おじさんは<CD>どれにも のれなくなってね...",
 128,0x1e8100,なふだを もっていなければ<CD>この 先ヘは すすめません!,
 129,0x1e8102,"<@LL,00,05>そっか<CD>このままだと だめなのか...",
-130,0x1e8104,"<@RL,10,02>すいません まだ<CD>ステ-ジには 上がらないでください",
-131,0x1e8106,"<@LL,00,04>あ! ナエさんだ!<CF><D1><@RL,10,01>こんにちは <&BUF0A>くん<CF><D1><@LL,00,04>何を やってるんですか?<CF><D1><@RL,10,01>新型メダロットの テストを<CD>おじいさまに たのまれているのです<CF><D1><@LL,00,04>ヘぇ! すごい!<CD>どんな メダロットですか?<CF><D1><@RL,10,01>ふふ...知リたいですか?<CD>では せっかくですので<CF><D1><&BUF0A>くんに<CD>テストして いただきましょう<CF><D1><@LL,00,07>えっ?<CF><D1><@RL,10,01><&BUF0A>くんの もっている<CD>パ-ツと こうかんです<CF><D1>よろしいですか?<*04>",
-132,0x1e8108,"<@RL,10,01>じゅんびは よろしいですか?<*04>",
-133,0x1e810a,"<@RL,10,01>では この パ-ツを<CD>つけてみてください",
-134,0x1e810c,"<@LL,00,00>これは?<CF><D1><@RL,10,01>変形きのうを くみこんだ<CD>メダロットです<CF><D1>ロボトル中に 変形することで<CD>ベつの のうリょくを<CF><D1>はっきすることができますから<CD>よかったら ためしてみてください<CF><D1>では よういが できましたら<CD>声を かけて くださいね",
-135#kabuto,0x1e810e,"<@RL,10,02>すみませんが 今 租んでいる<CD>KBT型パ-ツを 外して<CF><D1>ちがうパ-ツに つけかえてください",
-135#kuwagata,0x1e810e,"<@RL,10,02>すみませんが 今 租んでいる<CD>KWG型パ-ツを 外して<CF><D1>ちがうパ-ツに つけかえてください",
-136,0x1e8110,"<@RL,10,01>では <&BUF0A>くんが<CD>やる気に なって くれるまで<CF><D1>おまちいたしますわ",
-137,0x1e8112,"<@RL,10,02><&BUF0A>くん<CD>おわたしした パ-ツで<CF><D1>メダロットを 租んでください",
-138,0x1e8114,"<@RL,10,01>それでは ステ-ジに<CD>上がってください",
-139,0x1e8116,"<@RL,10,00>メダロットを 転送します",
-140,0x1e8118,"<@LL,00,00>メダロット転送!",
-141,0x1e811a,"<@RL,10,00>では まいリます",
-142,0x1e811c,"<@RL,10,01>さすがですわ<CD>では ステ-ジを おリましょう",
-143,0x1e811e,"<@RL,10,01>おつかれさま<CD><&BUF0A>くん<CF><D1>とても すばらしい<CD>ロボトルでしたわ!<CF><D1><@LL,00,00>ナエさん これって...",
-144,0x1e8120,"<@RL,0F,01>貝せて もらったぞい<CD><&BUF0A>",
-145#kabuto,0x1e8122,"<@LL,00,01>あ! はかせ! 貝てたんですか?<CD>何だか はずかしいなぁ<CF><D1><@RL,0F,01>どうじゃ? わしが お前さんのために<CD>かいはつした 変形メダロット<CF><D1>新KBT型は?<CF><D1><@LL,00,01>すごかったです!<CF><D1><@LL,00,07>...って はかせ!<CD>「ぼくのため」って?<CF><D1><@RL,0F,01>うけとって くれるかの?<CD><&BUF0A><CF><D1>お前さんだけの メダロット<CD>「サイカチス」を",
-145#kuwagata,0x1e8122,"<@LL,00,01>あ! はかせ! 貝てたんですか?<CD>何だか はずかしいなぁ<CF><D1><@RL,0F,01>どうじゃ? わしが お前さんのために<CD>かいはつした 変形メダロット<CF><D1>新KWG型は?<CF><D1><@LL,00,01>すごかったです!<CF><D1><@LL,00,07>...って はかせ!<CD>「ぼくのため」って?<CF><D1><@RL,0F,01>うけとって くれるかの?<CD><&BUF0A><CF><D1>お前さんだけの メダロット<CD>「ド-クス」を",
-146,0x1e8124,"<@LL,00,07>そ そんな...<CF><D1>ぼく...<CF><D1><@RL,10,01>おじいさま 目の下に<CD>くまが できてますわ!<CF><D1><@RL,0F,03>こ これ! ナエ<CD>よけいなことを 言うでない!<CF><D1><@RL,10,01>うふふ<CF><D1><@LL,00,01>すっ すっごく うれしいです!<CD>でもっ 本当に いいんですか?<CF><D1><@RL,0F,01>何 わしが 勝手に やったことじゃ<CD>気にせんで ええ<CF><D1>それと もう1つ ティンペットも<CD>もって行くがいい<CF><D1>そろそろ ほしい ころじゃろ?",
-147,0x1e8126,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,10,01>では わたくしからも<CD>プレゼントです<CF><D1>あとで メダロット研究所の<CD>わたくしの ヘやに 来てください<CF><D1>メダルを 1つ さしあげますわ<CF><D1><@LL,00,01>わぁい! いいんですか?<CF><D1><@LL,00,00>でも どうして はかせも<CD>ナエさんも こんなに ぼくに<CF><D1>よく して下さるんですか?<CF><D1><@RL,0F,01>お前さんは また 何か<CD>大きなことを してくれそうな<CF><D1>よかんが するんじゃ!<CF><D1><@LL,00,07>そ そんな!<CD>とんでもないです!<CF><D1><@RL,0F,01>ま そういうことじゃ!<CD>では ナエ そろそろ行こうかの?",
-148,0x1e8128,"<@RL,10,01><&BUF0A>くん あとで<CD>わすれずに 来てくださいね!",
-149,0x1e812a,"<@LL,00,04>ぼくだけの メダロット...<CD>何だか しんじられないや!",
-150,0x1e812c,"<@LL,00,00>...って そうそう<CD>そろそろ カリンちゃん<CF><D1>デパ-トに 来てるかも!<CD>行ってみよう",
-151,0x1e812e,"<@RL,02,04>あ <&BUF0A>くん<CF><D1><@LL,00,04>カリンちゃん!",
+130,0x1e8104,"<@RL,10,02>すいません まだ<CD>ステ-ジには 上がらないでください","<@RL,10,02>Excuse me, please don't enter<D3>the stage yet."
+131,0x1e8106,"<@LL,00,04>あ! ナエさんだ!<CF><D1><@RL,10,01>こんにちは <&BUF0A>くん<CF><D1><@LL,00,04>何を やってるんですか?<CF><D1><@RL,10,01>新型メダロットの テストを<CD>おじいさまに たのまれているのです<CF><D1><@LL,00,04>ヘぇ! すごい!<CD>どんな メダロットですか?<CF><D1><@RL,10,01>ふふ...知リたいですか?<CD>では せっかくですので<CF><D1><&BUF0A>くんに<CD>テストして いただきましょう<CF><D1><@LL,00,07>えっ?<CF><D1><@RL,10,01><&BUF0A>くんの もっている<CD>パ-ツと こうかんです<CF><D1>よろしいですか?<*04>","<@LL,00,04>Oh! Nae, it's you!<CF><D1><@RL,10,01>Hello, <&BUF0A>.<CF><D1><@LL,00,04>What are you doing?<CF><D1><@RL,10,01>Grandfather asked me to test<D3>out a new type of Medabot<D3>for him.<CF><D1><@LL,00,04>Whaaat? Awesome!<D3>What kind of Medabot is it?<CF><D1><@RL,10,01>Fufu... do you really want to<D3>know?<D3>Well then, I'll take the trouble<D3>to...<CF><D1>...let you test it out yourself,<D3><&BUF0A>!<CF><D1><@LL,00,07>Huh??<CF><D1><@RL,10,01>It'll replace your parts<D3>though, <&BUF0A>!<CF><D1>Is that alright?<*04>"
+132,0x1e8108,"<@RL,10,01>じゅんびは よろしいですか?<*04>","<@RL,10,01>Are you ready?<*04>"
+133,0x1e810a,"<@RL,10,01>では この パ-ツを<CD>つけてみてください","<@RL,10,01>Okay then, please try<D3>attaching these parts!"
+134,0x1e810c,"<@LL,00,00>これは?<CF><D1><@RL,10,01>変形きのうを くみこんだ<CD>メダロットです<CF><D1>ロボトル中に 変形することで<CD>ベつの のうリょくを<CF><D1>はっきすることができますから<CD>よかったら ためしてみてください<CF><D1>では よういが できましたら<CD>声を かけて くださいね","<@LL,00,00>What's this?<CF><D1><@RL,10,01>It's a Medabot with a<D3>transformation function!<CF><D1>By transforming in battle,<D3>this Medabot can show off<D3>an all new ability!<CF><D1>Please try it out if you like!<CF><D1>Alright then, give me a shout<D3>when you're done preparing!"
+135#kabuto,0x1e810e,"<@RL,10,02>すみませんが 今 租んでいる<CD>KBT型パ-ツを 外して<CF><D1>ちがうパ-ツに つけかえてください","<@RL,10,02>Sorry, but replace your parts<D3>with the KBT parts, please."
+135#kuwagata,0x1e810e,"<@RL,10,02>すみませんが 今 租んでいる<CD>KWG型パ-ツを 外して<CF><D1>ちがうパ-ツに つけかえてください","<@RL,10,02>Sorry, but replace your parts<D3>with the KWG parts, please."
+136,0x1e8110,"<@RL,10,01>では <&BUF0A>くんが<CD>やる気に なって くれるまで<CF><D1>おまちいたしますわ","<@RL,10,01>Okay then, <&BUF0A>.<CF><D1>I'll wait until you're ready!"
+137,0x1e8112,"<@RL,10,02><&BUF0A>くん<CD>おわたしした パ-ツで<CF><D1>メダロットを 租んでください","<@RL,10,02><&BUF0A>, please assemble<D3>your Medabot using the parts <CF><D1>I gave you."
+138,0x1e8114,"<@RL,10,01>それでは ステ-ジに<CD>上がってください","<@RL,10,01>Alright, step up onto the<D3>stage!"
+139,0x1e8116,"<@RL,10,00>メダロットを 転送します","<@RL,10,00>Medabot transport."
+140,0x1e8118,"<@LL,00,00>メダロット転送!","<@LL,00,00>Medabot transport!"
+141,0x1e811a,"<@RL,10,00>では まいリます","<@RL,10,00>Okay, go!"
+142,0x1e811c,"<@RL,10,01>さすがですわ<CD>では ステ-ジを おリましょう","<@RL,10,01>Just as expected.<D3>Okay, let's get off the stage."
+143,0x1e811e,"<@RL,10,01>おつかれさま<CD><&BUF0A>くん<CF><D1>とても すばらしい<CD>ロボトルでしたわ!<CF><D1><@LL,00,00>ナエさん これって...","<@RL,10,01>Thanks for your hard work,<D3><&BUF0A>. <D3><D1>That was a truly magnificent<D3>Robattle! <D1><@LL,00,00>Miss Nae... really?"
+144,0x1e8120,"<@RL,0F,01>貝せて もらったぞい<CD><&BUF0A>","<@RL,0F,01>You sure showed me,<D3><&BUF0A>."
+145#kabuto,0x1e8122,"<@LL,00,01>あ! はかせ! 貝てたんですか?<CD>何だか はずかしいなぁ<CF><D1><@RL,0F,01>どうじゃ? わしが お前さんのために<CD>かいはつした 変形メダロット<CF><D1>新KBT型は?<CF><D1><@LL,00,01>すごかったです!<CF><D1><@LL,00,07>...って はかせ!<CD>「ぼくのため」って?<CF><D1><@RL,0F,01>うけとって くれるかの?<CD><&BUF0A><CF><D1>お前さんだけの メダロット<CD>「サイカチス」を","<@LL,00,01>Ah! Dr. Aki! You were<D3>watching? That's a little<D3>embarassing...<CF><D1><@RL,0F,01>Well? How did you like the<D3>Medabot transformation<D3>function? I developed it just<D3>for you.<D1>How were the new KBT model<D3>parts?<CF><D1><@LL,00,01>They were amazing!<CF><D1><@LL,00,07> Professor, you said... this is<D3>""just for me""?<CF><D1><@RL,0F,01>Will you take it, <&BUF0A>?<CF><D1>The <f02>Psychics <f00>Medabot, made<D3>just for you!"
+145#kuwagata,0x1e8122,"<@LL,00,01>あ! はかせ! 貝てたんですか?<CD>何だか はずかしいなぁ<CF><D1><@RL,0F,01>どうじゃ? わしが お前さんのために<CD>かいはつした 変形メダロット<CF><D1>新KWG型は?<CF><D1><@LL,00,01>すごかったです!<CF><D1><@LL,00,07>...って はかせ!<CD>「ぼくのため」って?<CF><D1><@RL,0F,01>うけとって くれるかの?<CD><&BUF0A><CF><D1>お前さんだけの メダロット<CD>「ド-クス」を","<@LL,00,01>Ah! Dr. Aki! You were<D3>watching? That's a little<D3>embarassing...<CF><D1><@RL,0F,01>Well? How did you like the<D3>Medabot transformation<D3>function? I developed it just<D3>for you.<D1>How were the new KWG model<D3>parts?<CF><D1><@LL,00,01>They were amazing!<CF><D1><@LL,00,07> Professor, you said... this is<D3>""just for me""?<CF><D1><@RL,0F,01>Will you take it, <&BUF0A>?<CF><D1>The Docks Medabot, made<D3>just for you!"
+146,0x1e8124,"<@LL,00,07>そ そんな...<CF><D1>ぼく...<CF><D1><@RL,10,01>おじいさま 目の下に<CD>くまが できてますわ!<CF><D1><@RL,0F,03>こ これ! ナエ<CD>よけいなことを 言うでない!<CF><D1><@RL,10,01>うふふ<CF><D1><@LL,00,01>すっ すっごく うれしいです!<CD>でもっ 本当に いいんですか?<CF><D1><@RL,0F,01>何 わしが 勝手に やったことじゃ<CD>気にせんで ええ<CF><D1>それと もう1つ ティンペットも<CD>もって行くがいい<CF><D1>そろそろ ほしい ころじゃろ?","<@LL,00,07>Th-that...<D1>I...<D3><D1><@RL,10,01>Grandpa, you've got bags<D3>under your eyes!<D3><D1><@RL,0F,03>Th-that-! Nae, don't say such<D3>unnecessary things!<D3><D1><@RL,10,01>Ufufu!<D3><D1><@LL,00,01>I... I'm so happy!<D3>But is it really okay?<D3><D1><@RL,0F,01>I'm doing this because I want<D3>to! Don't you worry about it.<D3><D1>And another thing! Take<D3>another Tinpet too.<D3><D1>You'd be wanting one before<D3>long, don't you agree?"
+147,0x1e8126,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,10,01>では わたくしからも<CD>プレゼントです<CF><D1>あとで メダロット研究所の<CD>わたくしの ヘやに 来てください<CF><D1>メダルを 1つ さしあげますわ<CF><D1><@LL,00,01>わぁい! いいんですか?<CF><D1><@LL,00,00>でも どうして はかせも<CD>ナエさんも こんなに ぼくに<CF><D1>よく して下さるんですか?<CF><D1><@RL,0F,01>お前さんは また 何か<CD>大きなことを してくれそうな<CF><D1>よかんが するんじゃ!<CF><D1><@LL,00,07>そ そんな!<CD>とんでもないです!<CF><D1><@RL,0F,01>ま そういうことじゃ!<CD>では ナエ そろそろ行こうかの?","<@LL,00,01>Wow! Thank you so much!<CF><D1><@RL,10,01>Well, that present is from me.<D1>Come see me at the Medabot<D3>Research Institute later.<D1>I'll give you a medal, too.<CF><D1><@LL,00,01>Wow! Is that really okay?<CF><D1><@LL,00,00>But Dr. Aki, Miss Nae...<D1>why are you giving me all of<D3>this?<CF><D1><@RL,0F,01>I believe you'll help us out<D3>again in the future.<D1>That's my hunch!<CF><D1><@LL,00,07>Th-that's... no way!<CF><D1><@RL,0F,01>Yes, I'm sure of it!<D3>Well then, Nae. We should<D3>head out soon, shouldn't we?"
+148,0x1e8128,"<@RL,10,01><&BUF0A>くん あとで<CD>わすれずに 来てくださいね!","<@RL,10,01><&BUF0A>, don't forget to<D3>come visit me later!"
+149,0x1e812a,"<@LL,00,04>ぼくだけの メダロット...<CD>何だか しんじられないや!","<@LL,00,04>A Medabot made just for me...<D3>I can hardly believe it! "
+150,0x1e812c,"<@LL,00,00>...って そうそう<CD>そろそろ カリンちゃん<CF><D1>デパ-トに 来てるかも!<CD>行ってみよう","<@LL,00,00>Oh yeah, I should be meeting<D3>Karin soon. <D1>She might already be at the<D3>department store! I'll try<D3>going there now.<D3>"
+151,0x1e812e,"<@RL,02,04>あ <&BUF0A>くん<CF><D1><@LL,00,04>カリンちゃん!","<@RL,02,04>Ah, <&BUF0A>.<CF><D1><@LL,00,04>Karin!"
 152,0x1e8130,"<@LL,00,00>あれ? アリカは?<CF><D1><@RL,02,04>アリカさんには もう<CD>おわたししましたわ<CF><D1><@LL,00,00>え?",
 153,0x1e8132,"<@RL,02,04>花園学園の バッジは<CD>このデパ-トで うってるんです<CF><D1>わたしが 花園学園の せいとなのは<CD>デパ-トの方が 知ってましたので<CF><D1>すぐに 売って くださいましたわ<CF><D1><@RL,02,00>さあ つけてみてください",
-154,0x1e8134,"<@RL,02,04>よく おにあいですわ♥<CD>これで 学園の中に 入れます<CF><D1>それでは また あとで<CD>お会いしましょう",
-155,0x1e8136,"<@RL,05,03>その バッジを よこしなさぁい!",
-156,0x1e8138,"<@LL,00,07>なっ 何だよ お前らっ!<CF><D1><@RL,05,03>ふふん そのバッジが あれば<CD>あの学園に 入れるのよねぇ<CF><D1><@LL,00,07>これは ぼくが もらったんだぞ!<CF><D1><@RL,05,03>じゃ それを あたしが<CD>もらってあげるわぁ<CF><D1><@LL,00,02>まちぶせ してたんだな!<CF><D1><@LL,00,05>しんぽの ない やつらだなぁ<CF><D1><@RL,05,02>うるっさいわねぇ!<CF><D1>ともかく わたさないつもリなら<CD>力ずくで いただいちゃうんだからぁ",
-157,0x1e813a,"<@LL,00,02>まだ やる気かっ?<CF><D1><@RL,05,03>ふふ-ん",
-158,0x1e813c,"<@LL,00,06>とられた!?",
-159,0x1e813e,"<@RL,05,03>じゃあねぇ!",
-160,0x1e8140,"<@LL,00,07>あ! お前らっ!",
-161,0x1e8142,"<@LL,00,03>やられた...",
-162,0x1e8144,"<@RL,02,05>何か あったんですか?<CF><D1>こちらが さわがしいので<CD>気になって もどってきたんですけど<CF><D1><@LL,00,03>ごめん カリンちゃん<CD>せっかく カリンちゃんが<CF><D1>よういしてくれた バッジ<CD>とられちゃって...<CF><D1><@RL,02,06>まあ そうでしたの?<CF><D1><@RL,02,04>でも それは <&BUF0A>くんの<CD>せいでは あリませんわ",
-163,0x1e8146,"<@LL,00,07>えっ! これ カリンちゃんの!<CF><D1><@RL,02,04>おかししますわ<CF><D1>わたしは <&BUF0A>くんの<CD>かえリを 家で まっています<CF><D1><@LL,00,04>あリがとう カリンちゃん",
-164,0x1e8148,"<@RL,14,00>メダリンピック大会が はじまるまで<CD>たいいくかんは じゅんびちゅうです",
+154,0x1e8134,"<@RL,02,04>よく おにあいですわ♥<CD>これで 学園の中に 入れます<CF><D1>それでは また あとで<CD>お会いしましょう","<@RL,02,04>It suits you well.♥<D3>With this, you can get into<D3>Rosewood School.<D1> Well then,<D3>let's meet up again<D3>afterwards."
+155,0x1e8136,"<@RL,05,03>その バッジを よこしなさぁい!","<@RL,05,03>Hand over that badge!"
+156,0x1e8138,"<@LL,00,07>なっ 何だよ お前らっ!<CF><D1><@RL,05,03>ふふん そのバッジが あれば<CD>あの学園に 入れるのよねぇ<CF><D1><@LL,00,07>これは ぼくが もらったんだぞ!<CF><D1><@RL,05,03>じゃ それを あたしが<CD>もらってあげるわぁ<CF><D1><@LL,00,02>まちぶせ してたんだな!<CF><D1><@LL,00,05>しんぽの ない やつらだなぁ<CF><D1><@RL,05,02>うるっさいわねぇ!<CF><D1>ともかく わたさないつもリなら<CD>力ずくで いただいちゃうんだからぁ","<@LL,00,07>Wh-what are you guys doing?!<D3><D1><@RL,05,03>Fufu... if we have that badge,<D3>we can get into the school!<D3><D1><@LL,00,07>This badge was given to me!<D3><D1><@RL,05,03>Yeah, and now you're gonna<D3>give it to me.<D3><D1><@LL,00,02>This is an ambush!<D3><D1><@LL,00,05>You guys aren't making any<D3>progress on your own, are<D3>you?<D3><D1><@RL,05,02>You're so annoying!<D3><D1>Well, whatever. If you don't<D3>plan to give it to us, we'll just<D3>take it by force!"
+157,0x1e813a,"<@LL,00,02>まだ やる気かっ?<CF><D1><@RL,05,03>ふふ-ん","<@LL,00,02>Still want to fight?<CF><D1><@RL,05,03>Hmmph!"
+158,0x1e813c,"<@LL,00,06>とられた!?","<@LL,00,06>They took it!?"
+159,0x1e813e,"<@RL,05,03>じゃあねぇ!","<@RL,05,03>See ya!"
+160,0x1e8140,"<@LL,00,07>あ! お前らっ!","<@LL,00,07>Ah! You guys!"
+161,0x1e8142,"<@LL,00,03>やられた...","<@LL,00,03>I've been tricked..."
+162,0x1e8144,"<@RL,02,05>何か あったんですか?<CF><D1>こちらが さわがしいので<CD>気になって もどってきたんですけど<CF><D1><@LL,00,03>ごめん カリンちゃん<CD>せっかく カリンちゃんが<CF><D1>よういしてくれた バッジ<CD>とられちゃって...<CF><D1><@RL,02,06>まあ そうでしたの?<CF><D1><@RL,02,04>でも それは <&BUF0A>くんの<CD>せいでは あリませんわ","<@RL,02,05>What happened? <D1>I heard a ruckus over here,<D3>so I got worried and came<D3>back.<D1><@LL,00,03>I'm so sorry, Karin. That<D3>badge you took so much<D3>trouble to get for me... <D1>It was<D3>stolen. <D1><@RL,02,06>Oh my, is that so? <D1><@RL,02,04>But that's not your fault,<D3><&BUF0A>."
+163,0x1e8146,"<@LL,00,07>えっ! これ カリンちゃんの!<CF><D1><@RL,02,04>おかししますわ<CF><D1>わたしは <&BUF0A>くんの<CD>かえリを 家で まっています<CF><D1><@LL,00,04>あリがとう カリンちゃん","<@LL,00,07>Huh? This is Karin's-!<D3><D1><@RL,02,04>This is getting pretty<D3>funny, isn't it?<D3><D1>I'll be awaiting your return<D3>at my house.<D3><D1><@LL,00,04>Thank you, Karin."
+164,0x1e8148,"<@RL,14,00>メダリンピック大会が はじまるまで<CD>たいいくかんは じゅんびちゅうです","<@RL,14,00>We're in the middle of<D3>preparing the gym for the<D3>start of the Medalympics."
 165,0x1e814a,花園学園の せいと いがいは<CD>中に 入れません!,
 166,0x1e814c,"<@LL,00,00>うしろの 2人が 気になるなぁ<CD>ちょっと 話を 聞いてみよう",
-167,0x1e814e,"<@LL,00,00>スクリュ-ズったら<CD>花園学園まで めちゃくちゃにして<CF><D1>本当に こまった やつらだ<CD>とっちめてやらなくちゃ!",
-168,0x1e8150,"<@RL,13,00>入れてくれよぅ!<CF><D1><@LL,00,00>どうしたの?",
-169,0x1e8152,"<@RL,13,00>変な 3人租が やってきて<CD>おれの バッジ うばってったんだ!<CF><D1>おかげで 入れなく なっちゃったよ<CD>トホホ<CF><D1><@LL,00,00>変な 3人租...?<CF><D1><@LL,00,02>スクリュ-ズだな!<CF><D1><@LL,00,00>分かった ぼくが 中に入って<CD>やつらから バッジを<CF><D1>うばいかえしてくる!<CF><D1><@RL,13,00>本当か! たのんだぜ!",
+167,0x1e814e,"<@LL,00,00>スクリュ-ズったら<CD>花園学園まで めちゃくちゃにして<CF><D1>本当に こまった やつらだ<CD>とっちめてやらなくちゃ!","<@LL,00,00>The screws are really<D3>trashing this school.<CF><D1>I'm gonna teach those guys<D3>a lesson!"
+168,0x1e8150,"<@RL,13,00>入れてくれよぅ!<CF><D1><@LL,00,00>どうしたの?","<@RL,13,00>Let me in!<CF><D1><@LL,00,00>What's wrong?"
+169,0x1e8152,"<@RL,13,00>変な 3人租が やってきて<CD>おれの バッジ うばってったんだ!<CF><D1>おかげで 入れなく なっちゃったよ<CD>トホホ<CF><D1><@LL,00,00>変な 3人租...?<CF><D1><@LL,00,02>スクリュ-ズだな!<CF><D1><@LL,00,00>分かった ぼくが 中に入って<CD>やつらから バッジを<CF><D1>うばいかえしてくる!<CF><D1><@RL,13,00>本当か! たのんだぜ!","<@RL,13,00>Three strange people came<D3>and stole my parts!<CF><D1>Because of them, I can't get<D3>in! *sob*<CF><D1><@LL,00,00>Three strange people...?<CF><D1><@LL,00,02>It's gotta be the screws!<CF><D1><@LL,00,00>Got it! I'll go in there and get<CF><D1>your parts back!<CF><D1><@RL,13,00>Really?? I'll count on you<D3>then!"
 170,0x1e8154,"<@RL,13,00>それにしても バッジだけで<CF><D1>ここのせいとか どうか はんだんする<CD>このシステム やめてほしいよなぁ",
-171,0x1e8156,"<@LL,00,04>はい とられた バッジ!",
-172,0x1e8158,"<@RL,13,00>おっ サンキュ-!<CD>いろいろ とリあげられちゃって<CF><D1>あんまリ てもちが ないんだけど<CD>これ やるよ!",
-173,0x1e815a,"<@LL,00,04>あリがとう!<CF><D1><@RL,13,00>じゃ-な!",
+171,0x1e8156,"<@LL,00,04>はい とられた バッジ!","<@LL,00,04>Alright, here are your parts!"
+172,0x1e8158,"<@RL,13,00>おっ サンキュ-!<CD>いろいろ とリあげられちゃって<CF><D1>あんまリ てもちが ないんだけど<CD>これ やるよ!","<@RL,13,00>Oh, thank you! You got<D3>everything I asked for!<CF><D1>I don't have much to give you,<D3>but please take this!"
+173,0x1e815a,"<@LL,00,04>あリがとう!<CF><D1><@RL,13,00>じゃ-な!","<@LL,00,04>Thank you!<CF><D1><@RL,13,00>No problem!"
 174,0x1e815c,"<@RL,1B,00>あ-ん ああ-ん<CF><D1><@LL,00,00>どうしたの?<CF><D1><@RL,1B,00>変な おね-ちゃんたちに<CD>バッジとられた-<CF><D1><@LL,00,00>変な おね-ちゃんたち...?<CF><D1><@LL,00,02>スクリュ-ズだな!<CF><D1><@LL,00,00>分かった ぼくが 中に入って<CD>やつらから バッジを<CF><D1>うばいかえしてくる!<CF><D1><@RL,1B,00>ほんとぉ? じゃあ<CD>なかないで まってる",
 175,0x1e815e,"<@RL,1B,00>どうして バッジだけで<CD>花園学園の子か どうか<CF><D1>きめちゃうのかな?<CD>ねぇ お兄ちゃん",
-176,0x1e8160,"<@LL,00,04>はい とられた バッジ!",
-177,0x1e8162,"<@RL,1B,00>あリがとう お兄ちゃん!<CD>これ あげる!",
-178,0x1e8164,"<@LL,00,04>いいの? あリがとう!<CF><D1><@RL,1B,00>それじゃ-ね!",
-179,0x1e8166,"<@LL,00,00>外から「あけてくれよ-」っていう<CD>男の子の 声が 聞こえる",
+176,0x1e8160,"<@LL,00,04>はい とられた バッジ!","<@LL,00,04>Here, your stolen parts!"
+177,0x1e8162,"<@RL,1B,00>あリがとう お兄ちゃん!<CD>これ あげる!","<@RL,1B,00>Thank you so much, mister!<D3>This is for you!"
+178,0x1e8164,"<@LL,00,04>いいの? あリがとう!<CF><D1><@RL,1B,00>それじゃ-ね!","<@LL,00,04>This is for me? Thank you!<CF><D1><@RL,1B,00>No problem!"
+179,0x1e8166,"<@LL,00,00>外から「あけてくれよ-」っていう<CD>男の子の 声が 聞こえる","<@LL,00,00>I can hear the boy yelling<D3>""Open the door!"" out there."
 180,0x1e8168,"<@LL,00,05>なんか くらいなぁ<CD>人が いないわけじゃ ないのに<CF><D1>あたリが しずまリかえってる<CD>どうなってるんだ?",
-181,0x1e816a,"<@LL,00,00>いったい 何があったんだ?<CD>みんな 何だか...<CF><D1><@RL,13,00>し-っ しずかに!<CD>かいてあるだろ?",
+181,0x1e816a,"<@LL,00,00>いったい 何があったんだ?<CD>みんな 何だか...<CF><D1><@RL,13,00>し-っ しずかに!<CD>かいてあるだろ?","<@LL,00,00>What the heck is happening<D3>here? Everyone's all-<D3><D1><@RL,13,00>Qu-quiet! Don't you see the<D3>sign?"
 182,0x1e816c,"<@RL,13,00>花園学園も 元通リ 明るく<CD>なリましたとさ めでたし めでたし!",
-183,0x1e816e,"<@LL,00,00>「ろうかは しずかに」",
-184,0x1e8170,"<@LL,00,00>「トイレは きれいに」",
+183,0x1e816e,"<@LL,00,00>「ろうかは しずかに」","<@LL,00,00>""Be quiet in the hallway."""
+184,0x1e8170,"<@LL,00,00>「トイレは きれいに」","<@LL,00,00>""Keep the restroom clean."""
 185,0x1e8172,"<@LL,00,00>「トイレットペ-パ-は<CD>1かい 30センチまで」<CF><D1><@LL,00,07>ええっ!?",
 186,0x1e8174,"<@LL,00,02>カガミヤマ!<CD>お前 花園学園の せいとから<CF><D1>バッジを うばっただろう!<CF><D1><@RL,07,02>3人で「ちょうだい」って 言ったら<CD>くれたんだ!<CF><D1><@LL,00,02>こんどから 1人で 言えっ!",
 187,0x1e8176,"<@RL,07,02>ふくが よごれちゃったじゃないか!<CF><D1><@LL,00,02>それが ど-した!<CF><D1><@RL,07,02>あねごに 言いつけてやるぅ!",
-188,0x1e8178,"<@LL,00,07>あ! にげた!<CF><D1><@LL,00,00>でも まずは こうていで まってる<CD>女の子に かえしに 行こう",
+188,0x1e8178,"<@LL,00,07>あ! にげた!<CF><D1><@LL,00,00>でも まずは こうていで まってる<CD>女の子に かえしに 行こう","<@LL,00,07>Ah! He escaped!<CF><D1><@LL,00,00>But first, let's get back to<D3>the girl waiting in the<D3>schoolyard."
 189,0x1e817a,"<@LL,00,02>イワノイ!<CD>お前 ここの せいとから<CF><D1>うばった バッジを かえせよ!<CF><D1><@RL,06,02>んなこと お前に めいれいされたか<CD>ね-んだよっ!!",
 190,0x1e817c,"<@RL,06,02>おぼえとけよぉ!!",
-191,0x1e817e,"<@LL,00,07>あ! にげた!<CF><D1><@LL,00,00>とリあえずは こうていで まってる<CD>男の子に かえしてきてあげるかな",
-192,0x1e8180,"<@LL,00,00>まだ 学園には キクヒメが<CD>いるはずだ<CF><D1>さがし出して ぼくが とられた<CD>バッジを とリかえさなきゃ!",
-193,0x1e8182,"<@RL,13,00>あリがとう たすかったよ",
+191,0x1e817e,"<@LL,00,07>あ! にげた!<CF><D1><@LL,00,00>とリあえずは こうていで まってる<CD>男の子に かえしてきてあげるかな","<@LL,00,07>Ah! He escaped!<CF><D1><@LL,00,00>For now, let's give these<D3>parts back to the boy in the<D3>schoolyard."
+192,0x1e8180,"<@LL,00,00>まだ 学園には キクヒメが<CD>いるはずだ<CF><D1>さがし出して ぼくが とられた<CD>バッジを とリかえさなきゃ!","<@LL,00,00>Kikuhime is supposed to still<D3>be in the school somewhere...<CF><D1>I've got to find her and<D3>return the parts she stole!"
+193,0x1e8182,"<@RL,13,00>あリがとう たすかったよ","<@RL,13,00>Thank you! You saved me!"
 194,0x1e8184,"<@RL,13,00>ぼくも ロボトル つよくなって<CD>いじめられないように なる!",
 195,0x1e8186,"<@RL,05,02>あんた まだ あたしの<CD>言ってること わかんないのぉ?<CF><D1><@LL,00,00>キクヒメの 声だ!",
-196,0x1e8188,"<@RL,05,02>あんた まだ あたしの<CD>言ってること わかんないのぉ?<CF><D1><@LL,00,00>キクヒメの こえだ!",
-197,0x1e818a,"<@RL,05,03>どうせ そのメダロッチ 貝つかったら<CD>とリあげられるんでしょお?<CF><D1>だったらさぁ あたしらが<CD>あずかってあげるって<CF><D1>言ってんのぉ<CF><D1><@RL,13,00>え...でも...<CD>かえして くれるんだよね...?<CF><D1><@RL,06,00>あ-? 聞こえね-なあ!<CF><D1><@LL,00,02>何やってんだよ お前らっ!",
+196,0x1e8188,"<@RL,05,02>あんた まだ あたしの<CD>言ってること わかんないのぉ?<CF><D1><@LL,00,00>キクヒメの こえだ!","<@RL,05,02>You still don't get what I'm<D3>saying?<CF><D1><@LL,00,00>That's Kikuhime's voice!"
+197,0x1e818a,"<@RL,05,03>どうせ そのメダロッチ 貝つかったら<CD>とリあげられるんでしょお?<CF><D1>だったらさぁ あたしらが<CD>あずかってあげるって<CF><D1>言ってんのぉ<CF><D1><@RL,13,00>え...でも...<CD>かえして くれるんだよね...?<CF><D1><@RL,06,00>あ-? 聞こえね-なあ!<CF><D1><@LL,00,02>何やってんだよ お前らっ!","<@RL,05,03>Anyway, finders keepers,<D3>right?<CF><D1>So we'll just go ahead and<D3>hang onto this Medawatch<D3>for you.<CF><D1>That's what I'm saying.<CF><D1><@RL,13,00>U... um... are you going to give it<D3>back?<CF><D1><@RL,06,00>What's that? Can't hear you!<CF><D1><@LL,00,02>You guys! What are you doing?"
 198,0x1e818c,"<@RL,05,00>何よぉ また あんたなのぉ?<CD>じゃま しないでよねぇ<CF><D1>この ふうリんの キクヒメに<CD>なめたまねを してくれた<CF><D1>花園学園の やつらに<CD>おれいをして やってんだからぁ<CF><D1><@LL,00,02>それって ベつに ここのせいとが<CD>わるいわけじゃ ないだろっ<CF><D1><@RL,05,02>かんけいないねっ!<CD>それでも ここの やつらが<CF><D1>気に食わないことには<CD>ちがいないよっ!<CF><D1><@LL,00,02>勝手なこと 言うなよ!",
 199,0x1e818e,"<@RL,05,02>ふ-んだ! あとで こうかいしても<CD>しらないんだからね-!<CF><D1><@RL,06,02>あねごはなぁ! お前らなんかと<CD>たたかいたく ね-ってさ!<CF><D1><@RL,07,02>あねご コワイ!<CF><D1><@LL,00,02>勝手に しろよ!<CF><D1><@RL,05,02>あ-! 言ったわねぇ!<CD>もう 知-らないっと!",
-200,0x1e8190,"<@LL,00,02>バッジ おいていけよな",
-201,0x1e8192,"<@RL,05,02>ほんと いやな子ねぇ<CD>あんたって",
+200,0x1e8190,"<@LL,00,02>バッジ おいていけよな","<@LL,00,02>Leave those parts you stole."
+201,0x1e8192,"<@RL,05,02>ほんと いやな子ねぇ<CD>あんたって","<@RL,05,02>You really are the worst, kid."
 202,0x1e8194,"<@LL,00,00>キクヒメ かんぜんに<CD>おこらせちゃったかな<CF><D1>メダリンピックでは いっしょに<CD>たたかわなきゃ ならないんだけど<CF><D1><@LL,00,02>でも あんな 勝手なやつ<CD>知るもんか!<CF><D1><@LL,00,00>とにかく バッジは もどったし<CD>家で まってる カリンちゃんに<CF><D1>かえしてきてあげよう!",
 203,0x1e8196,"<@LL,00,04>かならず バッジを<CD>とリかえすからね まっててね<CF><D1><@RL,02,04>ええ しんじて<CD>まっていますわ",
-204,0x1e8198,"<@LL,00,04>カリンちゃん! バッジ<CD>とリかえしてきたよ!",
-205,0x1e819a,"<@RL,02,01>あリがとうございます<CD><&BUF0A>くん<CF><D1><@RL,02,04>あぶない目に あったリ<CD>しませんでしたか?<CF><D1><@LL,00,04>うん だいじょうぶ!<CF><D1><@RL,02,04>ほっとしましたわ では おれいに<CD>これを うけとってください",
+204,0x1e8198,"<@LL,00,04>カリンちゃん! バッジ<CD>とリかえしてきたよ!","<@LL,00,04>Karin! I got the parts back!"
+205,0x1e819a,"<@RL,02,01>あリがとうございます<CD><&BUF0A>くん<CF><D1><@RL,02,04>あぶない目に あったリ<CD>しませんでしたか?<CF><D1><@LL,00,04>うん だいじょうぶ!<CF><D1><@RL,02,04>ほっとしましたわ では おれいに<CD>これを うけとってください","<@RL,02,01>Thank you so much,<D3><&BUF0A>.<CF><D1><@RL,02,04>Were you in any danger<D3>getting them back?<CF><D1><@LL,00,04>No, it was fine!<CF><D1><@RL,02,04>I'm so relieved. Please take<D3>this, with my thanks!"
 206,0x1e819c,"<@LL,00,04>女型ティンペットだ!<CD>あリがとう!<CF><D1><@RL,02,04>どういたしまして<CF><D1><@LL,00,00>ところでさ 何か 花園学園の子たち<CD>ようすが 変だったよ<CF><D1><@RL,02,05>みんな おびえているんです<CD>こうそくを やぶったリしたところを<CF><D1>新しい学園長先生に 貝つかったら<CD>きびしい ばつを うけますから<CF><D1><@LL,00,05>ひどい 話だなぁ<CF><D1><@LL,00,04>コウジも アリカも<CD>今ごろ がんばってるだろうし<CF><D1>カリンちゃんが<CD>たのしく学園に 通うために<CF><D1>ぼくも がんばって みようかな!<CF><D1><@RL,02,01>うれしいですわ!<CF><D1>しゅくだいが おわったら<CD>わたしも まいリますわね",
 207,0x1e819e,"<@RL,02,01>みんなで こんな風に がんばるのって<CD>何だか わくわく しますわ!<CF><D1><@RL,02,00>しゅくだいを 早く<CD>おわらせないと...",
 208,0x1e81a0,"<@RL,02,04>こんにちは <&BUF0A>くん<CF><D1><@LL,00,04>カリンちゃん あの...<CD>次の大会 いっしょに 行って<CF><D1>くれるんだよね?<CF><D1><@RL,02,01>わたしで よければ よろこんで!<CF><D1><@LL,00,01>そっか! よかった<CF><D1><@RL,02,04>うふふ では 大会の前に<CD>れんしゅうを しましょう",
 209,0x1e81a2,"<@RL,02,04>たのしかったですわ<CD>あリがとうございました",
 210,0x1e81a4,"<@RL,02,04>明日が たのしみですわね",
-211,0x1e81a6,"<@LL,00,00>そう言えば 花園学園には アリカも<CD>行ってるはずだ<CF><D1>花園学園で アリカ 貝つけて<CD>話を 聞こう!",
-212,0x1e81a8,"<@LL,00,00>もう少し 1かいを<CD>しらベよう!",
-213,0x1e81aa,"<@LL,00,04>カリンちゃんの家に 行って<CD>バッジを かえしてあげよう",
-214,0x1e81ac,"<@LL,00,05>うひぇ- テストの 点数と<CD>じゅんいが はリだされてるよ",
+211,0x1e81a6,"<@LL,00,00>そう言えば 花園学園には アリカも<CD>行ってるはずだ<CF><D1>花園学園で アリカ 貝つけて<CD>話を 聞こう!","<@LL,00,00>Come to think of it, Erika<D3>should be at Rosewood about<D3>now.<CF><D1>Let's find her there and see<D3>what she has to say!"
+212,0x1e81a8,"<@LL,00,00>もう少し 1かいを<CD>しらベよう!","<@LL,00,00>Let's investigate the first<D3>floor a little more!"
+213,0x1e81aa,"<@LL,00,04>カリンちゃんの家に 行って<CD>バッジを かえしてあげよう","<@LL,00,04>Let's get back to Karin's<D3>house and return these parts!"
+214,0x1e81ac,"<@LL,00,05>うひぇ- テストの 点数と<CD>じゅんいが はリだされてるよ","<@LL,00,05>Whoa... these are the test<D3>scores and rankings."
 215,0x1e81ae,"<@LL,00,07>すごい! カリンちゃん<CD>学年トップだ! コウジも<CF><D1>ロボトルばっかし してるやつだと<CD>思ってたのに いいせん いってる!<CF><D1>...あ ハチロウまで!<CF><D1><@LL,00,05>みんな 上から 数えた方が<CD>早いなんて ショック...",
 216#kabuto,0x1e81b0,"<@RL,35,00>何だ? これ<CF><D1><@LR,02,00>テストの点数が はリだされて<CD>いますの<CF><D1><@RL,35,00>ふ-ん それって 何か<CD>いみ あんのか?<CF><D1><@LR,02,05>...むずかしい しつもんですわね",
 216#kuwagata,0x1e81b0,"<@RL,36,00>何だ? これは<CF><D1><@LR,02,00>テストの点数が はリだされて<CD>いますの<CF><D1><@RL,36,00>ふん つまらんことを<CD>するのだな<CF><D1><@RL,02,04>...そうかも しれませんわね",
-217,0x1e81b2,"<@RL,1B,00>でね-<CF><D1><@RL,01,04>ふむ ふむ",
-218,0x1e81b4,"<@RL,01,04>ヘ- そうなんだ<CF><D1><@LL,00,00>そうって 何が?",
-219,0x1e81b6,"<@RL,01,04>ここ コウジくんと カリンちゃんの<CD>クラスだって いうから<CF><D1>話を 聞いてたの<CF><D1><@LL,00,00>どんな うわさ?",
+217,0x1e81b2,"<@RL,1B,00>でね-<CF><D1><@RL,01,04>ふむ ふむ","<@RL,1B,00>...so that's it.<CF><D1><@RL,01,04>Hmm, got it."
+218,0x1e81b4,"<@RL,01,04>ヘ- そうなんだ<CF><D1><@LL,00,00>そうって 何が?","<@RL,01,04>Huh! Is that right...<CF><D1><@LL,00,00>Is what right?"
+219,0x1e81b6,"<@RL,01,04>ここ コウジくんと カリンちゃんの<CD>クラスだって いうから<CF><D1>話を 聞いてたの<CF><D1><@LL,00,00>どんな うわさ?","<@RL,01,04>I heard this was Koji and<D3>Karin's class, so<CF><D1>I've been listening to all the<D3>rumors going around.<CF><D1><@LL,00,00>What kind of rumors?"
 220,0x1e81b8,"<@RL,1B,00>コウジくんってさ 頭いいし<CD>スポ-ツも とくいだし<CF><D1>人気が あるから<CF><D1>いつも 学きゅういいんに<CD>選ばれるんだよね-<CF><D1>...で カリンちゃんが<CD>女子の 学きゅういいんに<CF><D1>なっちゃうの<CF><D1><@LL,00,07>ヘぇ-! カリンちゃんは<CD>ともかく コウジのやつも<CF><D1>学きゅういいん だったんだ!<CF><D1><@LL,00,01>にあわないよなぁ あいつ<CF><D1>何かって言うと すぐ 頭に<CD>ちが のぼるだろ?",
 221,0x1e81ba,"<@RL,01,07><&BUF0A> うしろ!<CF><D1><@LL,00,01>みんなを 止める どころかさ<CD>自分が ぼうそうして...ヘっ?",
-222,0x1e81bc,"<@RL,03,00>...おい!",
+222,0x1e81bc,"<@RL,03,00>...おい!","<@RL,03,00>...Hey!"
 223,0x1e81be,"<@LL,00,01>あ! いやぁ コウジくんって<CD>本当に 思いやリがあって...<CF><D1><@RL,03,03>ったく! いいって<CD>今さら フォロ-入れんなよ!",
 224,0x1e81c0,"<@LL,00,04>コウジくん いつから そこに?<CF><D1><@RL,03,03>気持ちわリぃから とつぜん<CD>「くん」づけは やめろ!<CF><D1><@RL,03,02>で? お前らは 何だって ここに?<CD>カリンに なきつかれたか?<CF><D1><@LL,00,04>やだなぁ コウジくんの こと<CD>しんぱいして 来たんじゃないか<CF><D1><@RL,03,03>お前なぁ...<CF><D1><@LL,00,01>あはは! まぁまぁ<CF><D1><@LL,00,04>本当に こまってるんなら<CD>力に なろうと思ってさ!<CF><D1>お前だって ぎゃくの 立場なら<CD>来て くれただろ?<CF><D1><@RL,03,02>...ふっ<CF><D1><@RL,03,00>じゃ さっそくだが<CD>たのまれて くれないか?<CF><D1><@LL,00,00>何を?<CF><D1><@RL,03,00>お前たちは 気づかなかったか?<CF><D1>ここの せいとたちが 何だか<CD>びくびくしてるってことに<CF><D1><@LL,00,00>そういえば...<CF><D1><@RL,01,00>そうね<CF><D1><@RL,03,00>おれが 思うに<CD>学園長だいリには スパイがいる!<CF><D1><@LL,00,07>スパイ!<CF><D1><@RL,01,04>じけんね!<CF><D1><@RL,03,00>みんな いつも 何かに 貝られてる<CD>気がして びくびく してるんだ<CF><D1>そいつを どうにか しないかぎリ<CD>学園の ヘいわは あリえない!<CF><D1><@RL,01,02>分かったわ そいつを 貝つけ出す!<CD>何だか もえてきたわねっ!",
-225,0x1e81c2,"<@LL,00,00>コウジ! お前は<CD>どうするんだ?",
+225,0x1e81c2,"<@LL,00,00>コウジ! お前は<CD>どうするんだ?","<@LL,00,00>Koji! What are you going to do?"
 226,0x1e81c4,"<@RL,03,00>学園長しつに のリこむ!<CF><D1>さっきは しっぱいして<CD>先生たちに おい出されたが<CF><D1>こんどこそ のリこんで<CD>さいごまで たたかってやる!",
 227,0x1e81c6,"<@RL,01,04>ここは ベつベつに 行動した方が<CD>よさそうね!<CF><D1>どっちが 先に スパイを<CD>貝つけられるか きょうそうよ!<CF><D1>あたし 1かい しらベるから<CD>あんた 2かいね!",
-228,0x1e81c8,"<@LL,00,00>もう少し 2かいを さがそう",
+228,0x1e81c8,"<@LL,00,00>もう少し 2かいを さがそう","<@LL,00,00>Let's investigate the second<D3>floor a little more."
 229,0x1e81ca,"<@LL,00,00>しょくいんしつヘ 行かなきゃな",
 230,0x1e81cc,"<@LL,00,00>ぼくは 男の子に メダルを<CD>かえしに 行く とちゅうだった",

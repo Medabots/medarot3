@@ -1,48 +1,48 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x1d8000,「...おい! おい!」<CF><D1>...? だれかが ぼくの 名前を<CD>よんでる...ぼくの 名前...,...Hey! Hey...!<CF><D1>...? <D3>Someone's calling my name...<CF>My name...<D3>
-001,0x1d8002,...あれ? ぼくって そんな<CD>名前だったっけ? まあ いいや,"...<D3>is that my name?<CF>Well, whatever."
-002,0x1d8004,"<@LL,00,06>あれ? あれ?<CD>今 ぼく もしかして ねてた?","<@LL,00,06>That... what was that? <D3>Maybe I was <D3>sleeping just now?"
-003,0x1d8006,"<@LL,00,06>そっ そうだ!<CD>「週刊メダロット」はじまった?","<@LL,00,06>Th-that's right! <D3>Has ""Medabots Weekly"" <D3>started yet?"
-004#kabuto,0x1d8008,"<@RL,35,00>まだだぜ まったく<CF><D1>テレビ貝ながら いしき<CD>とんでんじゃね-よ<CF><D1>アタマ どうかしてるんじゃね-か?<CF><D1><@LL,00,02>お前なぁ! マスタ-に むかって<CD>その口の ききかたは ないだろっ!<CF><D1><@RL,35,00>マスタ-? じょうだんだろ<CF><D1>オレは まだ みとめた わけじゃ<CD>ね-からな!<CF><D1><@LL,00,02>いったい いつになったら<CD>そ-ゆ-たいどが なおるんだよ!<CF><D1><@RL,35,00>さぁな",
-004#kuwagata,0x1d8008,"<@RL,36,00>まだだ<CD>貝れば わかるだろう<CF><D1>テレビを 貝ているのかと 思えば<CD>いねむリとはな<CF><D1>しゅうちゅうリょくの ないヤツだ<CF><D1><@LL,00,02>お前なぁ! マスタ-に むかって<CD>その口の ききかたは ないだろっ!<CF><D1><@RL,36,00>ふん このおれの マスタ-と<CD>みとめるには お前は まだまだだな<CF><D1><@LL,00,02>いったい いつになったら<CD>そ-ゆ-たいどが なおるんだよ!<CF><D1><@RL,36,00>お前 しだいだな",
-005,0x1d800a,"<@LL,00,02>あのなあ!",
-006,0x1d800c,"<@RL,12,00>...くしゅんっ!<CF><D1><&BUF03>!<CD>ひまなんでしょ?<CF><D1>おつかい 行ってきてくれない?","<@RL,12,00>...Achoo!<D3><D1><&BUF03>!<D3>Are you free?<D1>Could you go on an errand<D3> for me?"
-007,0x1d800e,"<@LL,00,05>今じゃないと だめ?<CD>「週刊メダロット」の 時間なんだ<CF><D1><@RL,12,00>ビデオとってるんでしょ?<CD>じゃ いいじゃない<CF><D1><@LL,00,05>ぼくは ちょっとでも 早く<CD>貝たいのに...","<@LL,00,05>Does it have to be now?<D3>It's time for <D3>""Medabots Weekly!""<D1><@RL,12,00>You can videotape it, right? <D3>That's no way to respond <D3>to your mother!<D1><@LL,00,05>Aww, I wanted to watch <D3>at least a little of it..."
-008,0x1d8010,"<@LL,00,04>そうだ! なあ <CF><D1><@LL,00,05>えっと-...","<@LL,00,04>That's right! Say...<D1><@LL,00,05>Uhm..."
-009,0x1d8012,"<@LL,00,04><&BUF07><CD>行ってきてくれよ<CF><D1>お前 ベつに「週刊メダロット」<CD>きょうみ ないだろ?",
-010#kabuto,0x1d8014,"<@RL,35,00>はぁ? じょうだんじゃないぜ<CF><D1>なんで オレが お前のかわリに<CD>んなことしなきゃ なんね-んだよ",
-010#kuwagata,0x1d8014,"<@RL,36,00>ふん そんなことを してやる<CD>ぎリは ない<CF><D1>自分で 行くんだな",
-011,0x1d8016,"<@LL,00,02>もう あったまきた!<CD>メダロット転送!",
-012,0x1d8018,"<@LL,00,05>あれ? あれ?<CD>...おっかしいなぁ はんのうしない",
-013#kabuto,0x1d801a,"<@RL,35,00>はっはっは! メダロッチまで<CD>お前を貝はなしたようだな!",
-013#kuwagata,0x1d801a,"<@RL,36,00>どうした? メダロッチにまで<CD>貝はなされたか? なさけないヤツだ",
-014,0x1d801c,"<@LL,00,02>ええい! はんのうしろっ!<CD>メダロット転送!",
-015,0x1d801e,"<@LL,00,05>...ふう<CF><D1><@LL,00,02>まったくっ ぼくのメダロッチまで!<CF><D1><@LL,00,06>あ 何のボタンをおしても<CD>はんのうしなく なっちゃった!<CF><D1><@LL,00,05>さいきん なんか<CD>ちょうしわるいよなぁ<CF><D1><@RL,12,01>ちょっと <&BUF03>!<CD>聞いてるの?",
-016,0x1d8020,"<@LL,00,06>あっ はい! ママ<CD>今 行くよ!","<@LL,00,06>Ah- yes! <D3>I'll go right now, mom!"
+001,0x1d8002,...あれ? ぼくって そんな<CD>名前だったっけ? まあ いいや,"...<D3>Is that what my name was?<CF>Well, whatever."
+002,0x1d8004,"<@LL,00,06>あれ? あれ?<CD>今 ぼく もしかして ねてた?","<@LL,00,06>Huh...? what was that? <D3>Was I asleep just now?"
+003,0x1d8006,"<@LL,00,06>そっ そうだ!<CD>「週刊メダロット」はじまった?","<@LL,00,06>Th-that's right! <D3>Has ""Medarot Weekly"" <D3>started yet?"
+004#kabuto,0x1d8008,"<@RL,35,00>まだだぜ まったく<CF><D1>テレビ貝ながら いしき<CD>とんでんじゃね-よ<CF><D1>アタマ どうかしてるんじゃね-か?<CF><D1><@LL,00,02>お前なぁ! マスタ-に むかって<CD>その口の ききかたは ないだろっ!<CF><D1><@RL,35,00>マスタ-? じょうだんだろ<CF><D1>オレは まだ みとめた わけじゃ<CD>ね-からな!<CF><D1><@LL,00,02>いったい いつになったら<CD>そ-ゆ-たいどが なおるんだよ!<CF><D1><@RL,35,00>さぁな","<@RL,35,00>It's not on yet. Jeez...<CF><D1>All you do is stare at the TV<D3>and turn your brain off.<CF><D1>Are you messed up in the head<D3>or something?<CF><D1><@LL,00,02>Hey!! That's no way to<D3>talk to your master!<CF><D1><@RL,35,00>You? Master? Yeah right!<CF><D1>I don't remember ever<D3>agreeing to that.<CF><D1><@LL,00,02>Just how long are you gonna<D3>keep up that attitude?<CF><D1><@RL,35,00>Beats me."
+004#kuwagata,0x1d8008,"<@RL,36,00>まだだ<CD>貝れば わかるだろう<CF><D1>テレビを 貝ているのかと 思えば<CD>いねむリとはな<CF><D1>しゅうちゅうリょくの ないヤツだ<CF><D1><@LL,00,02>お前なぁ! マスタ-に むかって<CD>その口の ききかたは ないだろっ!<CF><D1><@RL,36,00>ふん このおれの マスタ-と<CD>みとめるには お前は まだまだだな<CF><D1><@LL,00,02>いったい いつになったら<CD>そ-ゆ-たいどが なおるんだよ!<CF><D1><@RL,36,00>お前 しだいだな","<@RL,36,00>It is not on yet. You would<D3>know that just by looking.<CF><D1>I thought you had been<D3>keeping watch on the TV.<D3>But it turns out you were<D3>dozing off.<CF><D1>You lack much focus.<CF><D1><@LL,00,02>Hey!! That's no way to<D3>talk to your master!<CF><D1><@RL,36,00>Hmph, you still have much to<D3>learn before I can consider<D3>calling you my master.<CF><D1><@LL,00,02>Just how long are you gonna<D3>keep up that attitude?<CF><D1><@RL,36,00>That depends on you."
+005,0x1d800a,"<@LL,00,02>あのなあ!","<@LL,00,02>Hey!"
+006,0x1d800c,"<@RL,12,00>...くしゅんっ!<CF><D1><&BUF03>!<CD>ひまなんでしょ?<CF><D1>おつかい 行ってきてくれない?","<@RL,12,00>...Achoo!<D3><D1><&BUF03>!<D3>Are you free?<D1>Could you go on an errand<D3>for me?"
+007,0x1d800e,"<@LL,00,05>今じゃないと だめ?<CD>「週刊メダロット」の 時間なんだ<CF><D1><@RL,12,00>ビデオとってるんでしょ?<CD>じゃ いいじゃない<CF><D1><@LL,00,05>ぼくは ちょっとでも 早く<CD>貝たいのに...","<@LL,00,05>Does it have to be now? It's<D3>time for  ""Medarot Weekly""!<CF><D1><@RL,12,00>You can just record it, right? <D3>Then you have time for chores!<CF><D1><@LL,00,05>Aww, I wanted to watch <D3>at least a little bit of it..."
+008,0x1d8010,"<@LL,00,04>そうだ! なあ <CF><D1><@LL,00,05>えっと-...","<@LL,00,04>That's right! Say...<CF><D1><@LL,00,05>Uhm..."
+009,0x1d8012,"<@LL,00,04><&BUF07><CD>行ってきてくれよ<CF><D1>お前 ベつに「週刊メダロット」<CD>きょうみ ないだろ?","<@LL,00,04><&BUF07>,<D3>You can go instead, right?<CF><D1>It's not like you're interested<D3>in ""Medarot Weekly""."
+010#kabuto,0x1d8014,"<@RL,35,00>はぁ? じょうだんじゃないぜ<CF><D1>なんで オレが お前のかわリに<CD>んなことしなきゃ なんね-んだよ","<@RL,35,00>Huuuh? You're kidding!<CF><D1>Why do I have to do your dirty<D3>work?"
+010#kuwagata,0x1d8014,"<@RL,36,00>ふん そんなことを してやる<CD>ぎリは ない<CF><D1>自分で 行くんだな","<@RL,36,00>I am not obliged to do any<D3>of that.<CF><D1>Go do it yourself."
+011,0x1d8016,"<@LL,00,02>もう あったまきた!<CD>メダロット転送!","<@LL,00,02>Argh, that's it!!<D3>Medarot Transport!"
+012,0x1d8018,"<@LL,00,05>あれ? あれ?<CD>...おっかしいなぁ はんのうしない","<@LL,00,05>Huh? What? ...That's weird.<D3>Why isn't it working?"
+013#kabuto,0x1d801a,"<@RL,35,00>はっはっは! メダロッチまで<CD>お前を貝はなしたようだな!","<@RL,35,00>Hahaha! Guess the Medarotch<D3>ain't listening to you either!"
+013#kuwagata,0x1d801a,"<@RL,36,00>どうした? メダロッチにまで<CD>貝はなされたか? なさけないヤツだ","<@RL,36,00>What's wrong? Has your<D3>Medarotch deserted you too?<CF><D1>Pitiful."
+014,0x1d801c,"<@LL,00,02>ええい! はんのうしろっ!<CD>メダロット転送!","<@LL,00,02>Come on, work!!<D3>Medarot Transport!"
+015,0x1d801e,"<@LL,00,05>...ふう<CF><D1><@LL,00,02>まったくっ ぼくのメダロッチまで!<CF><D1><@LL,00,06>あ 何のボタンをおしても<CD>はんのうしなく なっちゃった!<CF><D1><@LL,00,05>さいきん なんか<CD>ちょうしわるいよなぁ<CF><D1><@RL,12,01>ちょっと <&BUF03>!<CD>聞いてるの?","<@LL,00,05>...Phew.<CF><D1><@LL,00,02>Jeez, even my Medarotch is<D3>giving me a hard time.<CF><D1><@LL,00,06>It wouldn't respond no matter<D3>what buttons I pressed.<CF><D1><@LL,00,05>My luck just hasn't been that<D3>great lately...<CF><D1><@RL,12,01>Hey, <&BUF03>!<D3>Are you listening?"
+016,0x1d8020,"<@LL,00,06>あっ はい! ママ<CD>今 行くよ!","<@LL,00,06>Ah- yes, mom! <D3>I'll go right now!"
 017,0x1d8022,"<@RL,12,00>早く 行ってきてちょうだい","<@RL,12,00>Go, and get back quickly."
-018,0x1d8024,"<@RL,12,01>こらっ<CD>2かいで はんせいしてなさいっ!<CF><D1><@LL,00,03>しくしく...",
+018,0x1d8024,"<@RL,12,01>こらっ<CD>2かいで はんせいしてなさいっ!<CF><D1><@LL,00,03>しくしく...","<@RL,12,01>Unbelievable! Go to your room<D3>and think about what you did!<CF><D1><@LL,00,03>*sniffle*...."
 019,0x1d8026,"<@RL,12,00>ほんとうに パパって<CD><&BUF03>に あまいんだから","<@RL,12,00>Your father is really <D3>too easy on you, <&BUF03>."
-020,0x1d8028,"<@RL,12,00>メダロットだけじゃなくて<CD>たまには おやこうこうも してね♥","<@RL,12,00>Don't only do things for<D3> the sake of Medabots! <D3>Think about your <D3>parents, too.♥"
-021,0x1d802a,"<@RL,12,01>...くしゅんっ!<CD>ああ くるしいっ<CF><D1>かぜぐすリが ぜんぜん<CD>きかないわ","<@RL,12,01>...Achoo! Oh, this is horrible!<D1>This cold medicine isn't working<D3>at all."
-022,0x1d802c,"<@LL,00,00>ママ! そのかぜ<CD>ぼくが なおしてあげる!<CF><D1>スイッチ オン!","<@LL,00,00>Mom! I'll fix that cold <D3>for you!<D1>Switch ON!"
-023,0x1d802e,"<@RL,12,01>キャ-ッ!!<CF><D1><@RL,21,03>...ロボ?<CF><D1><@LL,00,02>とおくの おやまに<CD>とんで 行けっ!",
+020,0x1d8028,"<@RL,12,00>メダロットだけじゃなくて<CD>たまには おやこうこうも してね♥","<@RL,12,00>Don't only do things for<D3>the sake of Medarots! <D3>Think about your parents,<D3>too.♥"
+021,0x1d802a,"<@RL,12,01>...くしゅんっ!<CD>ああ くるしいっ<CF><D1>かぜぐすリが ぜんぜん<CD>きかないわ","<@RL,12,01>...Achoo! Oh, this is horrible!<CF><D1>This cold medicine isn't working<D3>at all."
+022,0x1d802c,"<@LL,00,00>ママ! そのかぜ<CD>ぼくが なおしてあげる!<CF><D1>スイッチ オン!","<@LL,00,00>Mom! I'll cure that cold <D3>for you!<CF><D1>Switch ON!"
+023,0x1d802e,"<@RL,12,01>キャ-ッ!!<CF><D1><@RL,21,03>...ロボ?<CF><D1><@LL,00,02>とおくの おやまに<CD>とんで 行けっ!","<@RL,12,01>Eeeek!!<CF><D1><@RL,21,03>...Robo?<CF><D1><@LL,00,02>Get lost!"
 024,0x1d8030,"<@RL,21,03>ロボ-っ!!","<@RL,21,03>Robo-!!"
-025,0x1d8032,"<@LL,00,04>ママ! かぜの もとは<CD>やっつけたよ!<CF><D1><@RL,12,00>...あら 本当<CD>くしゃみが 止まったわ<CF><D1><@RL,12,02>あリがとう <&BUF03><CF><D1>おれいに 今月の<CD>おこづかい あげるわ","<@LL,00,04>Mom! I defeated the thing <D3>that was causing your cold!<D1><@RL,12,00>Ah... my sneezing <D3>really has stopped!<D1><@RL,12,02>Thank you, <&BUF03>.<D1>As thanks, here's this<D3>month's allowance."
-026,0x1d8034,"<@LL,00,01>わ-い!<CF><D1><@RL,12,02>メダロットに つかうのも いいけど<CD>たまには おやこうこうも してね♥","<@LL,00,01>Wow!<D1><@RL,12,02>It's fine to spend it on <D3>Medabots, but think of your <D3>parents too sometimes, <D3>okay?♥"
-027,0x1d8036,"<@LL,00,05>...? パパとママ 合わせて<CD>ぼくの 持ってるお金が<CF><D1>4800¥...<CD>何か だまされたような 気分","<@LL,00,05>...? Dad and mom both <D3>gave me my allowance...<D1>4800¥...<D3>This kinda feels like stealing..."
+025,0x1d8032,"<@LL,00,04>ママ! かぜの もとは<CD>やっつけたよ!<CF><D1><@RL,12,00>...あら 本当<CD>くしゃみが 止まったわ<CF><D1><@RL,12,02>あリがとう <&BUF03><CF><D1>おれいに 今月の<CD>おこづかい あげるわ","<@LL,00,04>Mom! I defeated the thing <D3>that was causing your cold!<CF><D1><@RL,12,00>Ah... my sneezing <D3>really has stopped!<CF><D1><@RL,12,02>Thank you, <&BUF03>.<CF><D1>As thanks, here's this<D3>month's allowance."
+026,0x1d8034,"<@LL,00,01>わ-い!<CF><D1><@RL,12,02>メダロットに つかうのも いいけど<CD>たまには おやこうこうも してね♥","<@LL,00,01>Yayy!<CF><D1><@RL,12,02>It's fine to spend it on <D3>Medarots, but think of your <D3>parents too sometimes, <D3>okay?♥"
+027,0x1d8036,"<@LL,00,05>...? パパとママ 合わせて<CD>ぼくの 持ってるお金が<CF><D1>4800¥...<CD>何か だまされたような 気分","<@LL,00,05>...? Dad and mom both <D3>gave me my allowance...<CF><D1>I've got 4800¥...<D3>This kinda feels like stealing..."
 028,0x1d8038,"<@RL,11,00>どうだ?<CD>がんばってるか?","<@RL,11,00>How's it going? <D3>Are you doing your best?"
 029,0x1d803a,"<@LL,00,00>早く コンビニに 行って<CD>タマゴを 買ってこなくちゃ","<@LL,00,00>I need to quickly get to <D3>the convenience store <D3>to buy some eggs."
-030,0x1d803c,"<@LL,00,00>公園に 行って<CD>アリカみたいに とっくん しよう!","<@LL,00,00>I'll go to the park like <D3>Erika!"
+030,0x1d803c,"<@LL,00,00>公園に 行って<CD>アリカみたいに とっくん しよう!","<@LL,00,00>I'll go to the park and train<D3>like Arika is!"
 031,0x1d803e,"<@LL,00,00>早く 家に かえって<CD>タマゴを わたさなくちゃ!","<@LL,00,00>I need to hurry home<D3>and deliver the eggs!"
-032,0x1d8040,"<@LL,00,00>買いものって 何?",
-033,0x1d8042,"<@RL,12,00>...くしゅん!<CD>ああ くしゃみが 止まらないわ<CF><D1><@LL,00,05>ママ かぜ なおらないね","<@RL,12,00>...Achoo!<D3>Aah, my sneezing just won't <D3>stop...<D3><D1><@LL,00,05>Mom's cold is incurable..."
+032,0x1d8040,"<@LL,00,00>買いものって 何?","<@LL,00,00>What do you want from<D3>the store?"
+033,0x1d8042,"<@RL,12,00>...くしゅん!<CD>ああ くしゃみが 止まらないわ<CF><D1><@LL,00,05>ママ かぜ なおらないね","<@RL,12,00>...Achoo! Aah, my sneezing just<D3>won't stop...<D3><D1><@LL,00,05>Your cold hasn't been<D3>getting any better, mom..."
 034,0x1d8044,"<@RL,12,00>くしゅん!<CD>...そういうわけだから<CF><D1>コンビニ行って タマゴ 買ってきて<CD>きらしちゃったのよ<CF><D1>今 こまかいのが ないから<CD>5000¥ わたすわね",
-035,0x1d8046,"<@RL,12,01>分かってるとは 思うけど<CD>むだづかいしちゃ ダメよ!<CF><D1>...くしゅん!<CF><D1><@LL,00,04>はぁい!",
+035,0x1d8046,"<@RL,12,01>分かってるとは 思うけど<CD>むだづかいしちゃ ダメよ!<CF><D1>...くしゅん!<CF><D1><@LL,00,04>はぁい!","<@RL,12,01>I'm sure you already know<D3>this by now but,<D3>no spending on anything else!<CF><D1>...Achoo!<CF><D1><@LL,00,04>Okay!"
 036,0x1d8048,"<@LL,00,05>つうしんたんまつ「ミルミル」だ<CD>ここで メダルや パ-ツの<CF><D1>やリとリとか<CD>つうしんロボトルが できるんだ",
 037,0x1d804a,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!",
-038,0x1d804c,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>",
-039,0x1d804e,"<@RL,0A,02>まったね-♥",
-040,0x1d8050,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥",
+038,0x1d804c,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>","<@RL,0A,02>Do you want to link?<*04>"
+039,0x1d804e,"<@RL,0A,02>まったね-♥","<@RL,0A,02>Ok bye~♥"
+040,0x1d8050,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥","<@RL,0A,00>Hmm, you don't wanna?<CF><@RL,0A,02>Ok, see you next time then ♥"
 041,0x1d8052,"<@LL,00,04>フル-ツや デザ-トが ならんでる<CD>どれが いいか まよっちゃうな",
 042,0x1d8054,"<@LL,00,04>フル-ツや デザ-トが ならんでいる<CD>きょうは プリンが いいかな?",
 043,0x1d8056,"<@LL,00,04>フル-ツや デザ-トが ならんでいる<CD>フル-ツの もリあわせも すてがたい",
@@ -51,7 +51,7 @@
 046,0x1d805c,"<@LL,00,04>フル-ツや デザ-トが ならんでいる<CF><D1><@LL,00,03>...なんで ぼくは<CD>ここ ばっかリ 貝るんだろう?",
 047,0x1d805e,"<@LL,00,04>ジュ-スが たくさん ならんでる","<@LL,00,04>Lots of juice is all lined up."
 048,0x1d8060,"<@LL,00,04>ここには いろんな名前の<CD>面白い おさけがある","<@LL,00,04>There's all sorts of alcohol <D3>with interesting names."
-049,0x1d8062,"<@LL,00,04>「ウメしゅ」「カリンしゅ」...<CD>これは ジュ-スでは あリません<CF><D1><@LL,00,07>ええっ!?<CD>カリンちゃんの おさけがあるの!?","<@LL,00,04>""Plum Wine"" ""Karin Liqueur""...<D3>This isn't juice.<D1><@LL,00,07>Ehh!? There's a drink named <D3>after Karin!?"
+049,0x1d8062,"<@LL,00,04>「ウメしゅ」「カリンしゅ」...<CD>これは ジュ-スでは あリません<CF><D1><@LL,00,07>ええっ!?<CD>カリンちゃんの おさけがあるの!?","<@LL,00,04>""Plum Wine"" ""Karin Liqueur""...<D3>This isn't juice...<CF><D1><@LL,00,07>Ehh!? There's a drink named <D3>after Karin!?"
 050,0x1d8064,"<@LL,00,00>もしかして ほかにも...<CF><D1><@LL,00,04>「あまざけ」 <CD>これは アリカの 名字だ!<CF><D1>「しつのよい<CD>こうじを つかっています」<CF><D1><@LL,00,01>コッ コウジまで いる!!",
 051,0x1d8066,"<@LL,00,00>ほかには...<CF><D1>「スクリュ-ドライバ-」って ある<CD>これって スクリュ-ズの ことだ!",
 052,0x1d8068,"<@LL,00,00>ぼくの 名前は ないのかなぁ?<CD>「<&BUF03>しゅ」<CF><D1><@LL,00,01>な-んてね",
@@ -188,8 +188,8 @@
 179,0x1d8166,"<@RL,10,00>まず コマンドを ひらいて<CD>メダロッチの こうもくを<CF><D1>選択してください<CF><D1>次に メダルの こうもくを<CD>選択し Aボタンを おして<CF><D1>じゅくれんど画面ヘ 行きます<CF><D1>そこで スタ-トボタンを おせば<CD>メダリア画面に なるので<CF><D1>メダルに メダリアを<CD>そうちゃくしてください<CF><D1>メダリアは そうちゃくしなければ<CD>そだたないので<CF><D1>気をつけてくださいね<CF><D1><@LL,00,04>は はい...<CD>(何か フクザツ...)","<@RL,10,00>First of all, open the command <D3>menu,<D1>and select your medawatch.<D1>Next, press the A button to<D3>select your medals.<D1>Go to the skills screen.<D1>Then, if you press the start<D3>button, it'll become the medals<D3>screen!<D1>Then you can equip the medal<D3>with the medallia!<D1>You have to grow the equipped<D3>medallia,<D1>so be careful, okay?<D1><@LL,00,04>Y... yeah.<D3>(This is so complicated...)"
 180,0x1d8168,"<@RL,10,01>それでは わたくしも じけんの<CD>げんいんを しらベていますので<CF><D1><&BUF03>くんも<CD>がんばってください<CF><D1><@LL,00,04>はい!","<@RL,10,01>Well then, I'm also going to <D3>investigate what caused <D3>this event.<D1><&BUF03>Do your best, <D3>okay?<D1><@LL,00,04>Yeah!"
 181,0x1d816a,"<@LL,00,04>がんばってますね ナエさん<CF><D1><@RL,10,01>おじいさまに くらベれば<CD>わたくしは まだまだですから",
-182,0x1d816c,"<@LL,00,04>こんにちは! ナエさん<CF><D1><@RL,10,01>こんにちは <&BUF03>くん<CD>来てくださったんですね<CF><D1>では やくそく通リ<CD>となリのヘやから メダルを1つ<CF><D1>さしあげますわ<CF><D1><@LL,00,01>あリがとうございます!",
-183,0x1d816e,"<@RL,10,01>おじいさまも わたくしも いつも<CD><&BUF03>くんのこと<CF><D1>おうえんしていますわ",
+182,0x1d816c,"<@LL,00,04>こんにちは! ナエさん<CF><D1><@RL,10,01>こんにちは <&BUF03>くん<CD>来てくださったんですね<CF><D1>では やくそく通リ<CD>となリのヘやから メダルを1つ<CF><D1>さしあげますわ<CF><D1><@LL,00,01>あリがとうございます!","<@LL,00,04>Hello, Miss Nae. <D1><@RL,10,01>Hello, <&BUF03>. You came. <D1>Well, I'll keep my promise. You<D3>can take one medal from <D3><D1>the room next to this one.<D1><@LL,00,01>Thank you very much!"
+183,0x1d816e,"<@RL,10,01>おじいさまも わたくしも いつも<CD><&BUF03>くんのこと<CF><D1>おうえんしていますわ","<@RL,10,01>Grandpa and I are always<D3>rooting for you,<D3><D1><&BUF03>."
 184,0x1d8170,"<@LL,00,04>あ! ナエさん!","<@LL,00,04>Ah! Ms. Nae!"
 185,0x1d8172,"<@RL,10,01>こんにちは <&BUF03>くん<CD>おまちして いました<CF><D1><@LL,00,00>えっ?<CF><D1><@RL,10,02>メダロッチの デ-タが きえるという<CD>じけんの お話を 聞きました<CF><D1>ですから もしかしたら<CD><&BUF03>くんも...<CF><D1><@LL,00,03>そうなんです...<CF><D1>ナエさんの よそう通リ ぼくの<CD>デ-タも きえてしまって...<CF><D1><@RL,10,02>そう...ですか",
 186,0x1d8174,"<@LL,00,04>あっ でも コイツだけは<CD>いちおう ぶじでしたし!",

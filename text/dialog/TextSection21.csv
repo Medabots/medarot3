@@ -1,13 +1,13 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x208000,"<@LL,00,01>ただいま-!<CF><D1><@RL,11,01>おかえリ <&BUF03><CD>楽しかったか?<CF><D1><@LL,00,01>うん! ぼく また 勝ったんだよ!<CD>あのね...","<@LL,00,01>I'm home!<CF><D1><@RL,11,01>Welcome home, <&BUF03>!<D3>Did you have fun?<CF><D1><@LL,00,01>Yeah! I won again! Well... "
-001,0x208002,"<@LL,00,00>「人間は 土を よごす」...か<CD>気になるな あのネコが 言ったこと<CF><D1>それに「レアメダル」って ことばとか<CD>何だか 分からないこと だらけだ<CF><D1>明日は...そうだな まず<CD>メダロットはかせに 会って...すぅ",
-002,0x208004,"<@LL,00,01>う---ん! よくねた!<CF><D1><@LL,00,04>それじゃ さっそく 研究所の<CD>はかせに 会いに行こう!",
-003,0x208006,"<@RL,04,00>わん わんっ!",
-004,0x208008,"<@RL,11,01>ア-スモ-ルは 楽しかったかい?",
-005,0x20800a,"<@RL,12,00>あそんでばかリ いないで たまには<CD>家の お手つだいも してちょうだい",
-006,0x20800c,"<@LL,00,04>研究所の はかせに<CD>会いに行こう!",
-007,0x20800e,"<@LL,00,00>あれ? はかせが いない<CD>そうだ ナエさんに きいてみよう",
-008,0x208010,"<@LL,00,04>こんにちは! ナエさん",
+000,0x208000,"<@LL,00,01>ただいま-!<CF><D1><@RL,11,01>おかえリ <&BUF03><CD>楽しかったか?<CF><D1><@LL,00,01>うん! ぼく また 勝ったんだよ!<CD>あのね...","<@LL,00,01>I'm home!<CF><D1><@RL,11,01>Welcome home, <&BUF03>!<D3>Did you have fun?<CF><D1><@LL,00,01>Yeah! I won again! Ok so... "
+001,0x208002,"<@LL,00,00>「人間は 土を よごす」...か<CD>気になるな あのネコが 言ったこと<CF><D1>それに「レアメダル」って ことばとか<CD>何だか 分からないこと だらけだ<CF><D1>明日は...そうだな まず<CD>メダロットはかせに 会って...すぅ","<@LL,00,00>What that odd cat said<D3>bothers me a bit though....<CF><D1>He said that ""humans are<D3>contaminating the Earth"".<CF><D1>and then he said something<D3>about a ""rare Medal"".<CF><D1>I don't really get any of this<D3>stuff...<CF><D1>I'll talk to the professor<D3>about it tomorrow... Zzz......"
+002,0x208004,"<@LL,00,01>う---ん! よくねた!<CF><D1><@LL,00,04>それじゃ さっそく 研究所の<CD>はかせに 会いに行こう!","<@LL,00,01>Hnnng! Ah, that was a good<D3>sleep! <CF><D1><@LL,00,04>Ok, I better head over to the<D3>professor's lab!"
+003,0x208006,"<@RL,04,00>わん わんっ!","<@RL,04,00>Woof woof!"
+004,0x208008,"<@RL,11,01>ア-スモ-ルは 楽しかったかい?","<@RL,11,01>Did you have fun at Earth<D3>Mall?"
+005,0x20800a,"<@RL,12,00>あそんでばかリ いないで たまには<CD>家の お手つだいも してちょうだい","<@RL,12,00>You shouldn't just always go<D3>play all day. <D3><D1>Help out with house work<D3>once in a while too."
+006,0x20800c,"<@LL,00,04>研究所の はかせに<CD>会いに行こう!","<@LL,00,04>On to the professor's lab!"
+007,0x20800e,"<@LL,00,00>あれ? はかせが いない<CD>そうだ ナエさんに きいてみよう","<@LL,00,00>Huh? The professor's not<D3>here. Maybe I should ask Nae."
+008,0x208010,"<@LL,00,04>こんにちは! ナエさん","<@LL,00,04>Hello, Miss Nae!"
 009,0x208012,"<@RL,10,01>こんにちは <&BUF03>くん<CD>また メダリンピック大会<CF><D1>勝ったんですってね<CD>おめでとうございます<CF><D1><@LL,00,01>いやぁ 知ってたんですか<CD>ナエさん<CF><D1><@RL,10,01>ええ ア-スモ-ルという<CD>地下じっけんとしのことも<CF><D1><@LL,00,04>さすがは ナエさん!<CF><D1><@LL,00,00>あの ところで<CD>メダロットはかせは...<CF><D1><@RL,10,00>おじいさまは 今 メダロット社ですわ<CD>ごめんなさいね<CF><D1><@LL,00,04>あ いえ いいんです",
 010,0x208014,"<@LL,00,00>...あのっ ナエさん!<CD>レアメダルって 知ってますか?<CF><D1><@RL,10,00>...<&BUF03>くんが<CD>どこで その話を 耳にしたのか<CF><D1>知リませんが...<CD>それは いせきなどから<CF><D1>ごく まれに はっけんされる<CD>メダルのことです<CF><D1>レアメダルには<CF><D1>「せかいを せいふくする 力をもつ」<CF><D1>という でんせつが あリます<CF><D1><@LL,00,00>何だか すごいんですね",
 011,0x208016,"<@LL,00,00>あの もしかして<CD><&BUF07>の メダル...<CF><D1><@RL,10,00>はい?<CF><D1><@LL,00,01>...って そんなわけ ないか!<CF><D1><@LL,00,04>何でも ないです",
@@ -20,12 +20,12 @@
 018,0x208024,"<@RL,0E,01>このパ-ツ 次は どこで手に入るか<CD>分からないから 大切にしてね!<CF><D1><@LL,00,01>はいっ!","<@RL,0E,01>I'm not sure where else you<D3>can get these parts.<D3>So take good care of them.<CF><D1><@LL,00,01>Ok!"
 019,0x208026,"<@RL,0E,01>はかせも いいけど たまには<CD>わたしにも 会いに来てよね","<@RL,0E,01>It's fine if you wanna see the<D3>professor, but come visit me<D3>too once in a while, okay?"
 020,0x208028,"<@LL,00,00>はかせに 絵の入った 6負かヘい石を<CD>貝せようと 思ったのにな...<CF><D1>次の大会の こともあるし<CD>そろそろ おみくじ町に<CF><D1>かえっとこうかな","<@LL,00,00>I thought I'd be able to ask<D3>the professor about the<D3>fossil I found...<CF><D1>Oh well, I still have another<D3>tournament I need to go to.<CF><D1>Better head back.<D3>"
-021,0x20802a,"<@RL,01,04><&BUF03> 早く!<CD>れっしゃが 行っちゃう!<CF><D1><@LL,00,07>れっしゃ!? だって こんどの<CD>行き先は 海ていだろ?<CF><D1><@RL,01,04>何言ってるの!「船つき場」は<CD>「マリンステ-ション」に<CF><D1>生まれかわったのよ!<CF><D1><@LL,00,07>マリンステ-ション!?<CF><D1><@RL,01,02>あんた 何おどろいてんのよ!<CF><D1>「ア-スモ-ル」で うるちさんが<CD>言ってたじゃない!<CF><D1>つまリ 海を走る れっしゃの<CD>えきって こと!<CF><D1><@LL,00,00>あ そうだった...でも れっしゃで<CD>海ていに 行くのか...?<CF><D1><@RL,01,04>のってみれば 分かるじゃない!<CD>さっ 行こっ!",
+021,0x20802a,"<@RL,01,04><&BUF03> 早く!<CD>れっしゃが 行っちゃう!<CF><D1><@LL,00,07>れっしゃ!? だって こんどの<CD>行き先は 海ていだろ?<CF><D1><@RL,01,04>何言ってるの!「船つき場」は<CD>「マリンステ-ション」に<CF><D1>生まれかわったのよ!<CF><D1><@LL,00,07>マリンステ-ション!?<CF><D1><@RL,01,02>あんた 何おどろいてんのよ!<CF><D1>「ア-スモ-ル」で うるちさんが<CD>言ってたじゃない!<CF><D1>つまリ 海を走る れっしゃの<CD>えきって こと!<CF><D1><@LL,00,00>あ そうだった...でも れっしゃで<CD>海ていに 行くのか...?<CF><D1><@RL,01,04>のってみれば 分かるじゃない!<CD>さっ 行こっ!","<@RL,01,04><&BUF03>, Come on, hurry!<D3>The train is about to leave!<CF><D1><@LL,00,07>Train!? But aren't we going<D3>in the ocean?<CF><D1><@RL,01,04>What are you so confused<D3>about?<CF><D1>The harbor was just rebuilt as<D3>the <f02>Marine Station<f00>!<CF><D1><@LL,00,07>Marine Station!?<CF><D1><@RL,01,02>Mr. Uruchi even said so back<D3>at Earth Mall.<CF><D1>Why are you so surprised?<CF><D1>Anyways, It's a train that<D3>travels underwater!<CF><D1><@LL,00,00>Oh, I see... But is that really<D3>possible though...?<CF><D1><@RL,01,04>You'll see once you get there!<D3>Come on!"
 022,0x20802c,"<@RL,01,04>早く 早く! もう コウジくんと<CD>カリンちゃん 行っちゃったわよ!","<@RL,01,04>Come on, come on! Koji and<D3>Karin are already here!"
 023,0x20802e,"<@LL,00,04>ぼくも 早く 行こう!<CD>おいてきぼリは やだもんね","<@LL,00,04>I should get going!<D3>I'd hate to get left behind."
 024,0x208030,"<@RL,1E,00>この アンダ-シェルで<CD>海ていの せかいを<CF><D1>お楽しみ下さい","<@RL,1E,00>At Under-Shell, you can enjoy<D3>the world of the deep ocean<CF>to your heart's content!"
-025,0x208032,"<@RL,1E,00>マリンエキスプレスは まだ<CD>とうちゃく していませんよ?","<@RL,1E,00>The Marin Express currently<D3>has not arrived yet."
-026,0x208034,"<@LL,00,00>ここに「マリンチケット」を 入れて<CD>...っと","<@LL,00,00>Just insert my <f02>Marin Ticket<D3><f00>here and.... There we go!"
+025,0x208032,"<@RL,1E,00>マリンエキスプレスは まだ<CD>とうちゃく していませんよ?","<@RL,1E,00>The Marine Express currently<D3>has not arrived yet."
+026,0x208034,"<@LL,00,00>ここに「マリンチケット」を 入れて<CD>...っと","<@LL,00,00>Just insert my <f02>Marine Ticket<D3><f00>here and.... There we go!"
 027,0x208036,"<@RL,01,04>わあ! 外を 魚が およいでる!<CD>きれ-い♥<CF><D1><@LL,00,04>とうめいな チュ-ブの中を<CD>走ってるから 海中が 貝えるんだね<CF><D1><@RL,1E,00>みなさま もうすぐ<CD>海ていとし「アンダ-シェル」に<CF><D1>とうちゃくで ございます<CF><D1>アンダ-シェルは 右と左に<CD>分かれています とくに 左にある<CF><D1>「金魚のぞう」と♥(ハ-ト)スト-ン<CD>のでんせつが 面白いですよ<CF><D1>だけど さいきん その♥スト-ンが<CD>盗まれるというじけんが おきました<CF><D1>かなしい話ですね<CF><D1><@RL,01,04>...あ! 本当!<CD>貝えてきたわ!",
 028,0x208038,"<@RL,02,00>あら? やねのまわリに あるあれは<CD>いったい 何でしょう?<CF><D1><@RL,1E,00>アンダ-シェルには がいてきから<CD>みをまもるための かんペきな<CF><D1>ぼうえいシステムが<CD>そなわって おリます",
 029,0x20803a,"<@RL,03,02>ふっ さあ どうだかな...","<@RL,03,02>Hmph, I wonder about that..."
@@ -76,10 +76,10 @@
 072,0x208090,"<@RL,4A,00>ふん! 何さ!","<@RL,4A,00>Hmph! So what!"
 073,0x208092,"<@RL,4A,00>な-に? そのていど? 弱いわねぇ","<@RL,4A,00>Is that really your best?<D3>How weak."
 074,0x208094,"<@RL,4A,00>男は 女の てきよ!","<@RL,4A,00>Men are the mortal enemies<D3>of women!"
-075,0x208096,"<@RL,4B,00>マ-メイド学底の者が<CD>何の用だ!!",
-076,0x208098,"<@LL,00,06>ぼく...いいえ わたしは <CD>さ さようなら-",
-077,0x20809a,"<@RL,4B,00>ここは 「マ-マン学底」だ!<CD>女は おことわリだぜ!<CF><D1>あ きみは 男だから 通っていいよ",
-078,0x20809c,"<@RL,4B,00>ん?! あれぇ?<CD>どこかで 会ったような ないような<CF><D1><@LL,00,06>あは あははっ...<CD>気のせいよ 気のせい♥",
+075,0x208096,"<@RL,4B,00>マ-メイド学底の者が<CD>何の用だ!!","<@RL,4B,00>What does a Mermaid student<D3>like you want with us!"
+076,0x208098,"<@LL,00,06>ぼく...いいえ わたしは <CD>さ さようなら-","<@LL,00,06>S-sorry.... I'll go now."
+077,0x20809a,"<@RL,4B,00>ここは 「マ-マン学底」だ!<CD>女は おことわリだぜ!<CF><D1>あ きみは 男だから 通っていいよ","<@RL,4B,00>This is the Merman Academy!<D3>No girls allowed!<CF><D1>Ah, but you're a boy, so you<D3>may go inside."
+078,0x20809c,"<@RL,4B,00>ん?! あれぇ?<CD>どこかで 会ったような ないような<CF><D1><@LL,00,06>あは あははっ...<CD>気のせいよ 気のせい♥","<@RL,4B,00>Hm? I feel like I've seen you<D3>somewhere before...<CF><D1><@LL,00,06>Ahaha.... No, no, you're just<D3>imagining things ♥<D3>"
 079,0x20809e,"<@RL,4B,00>ここは マ-マン学底 だいひょう<CD>シ-ドラゴンズの 選手ひかえ室だ<CF><D1>どれも 海の男って かんじのやつらだ",
 080,0x2080a0,"<@RL,4B,00>どうも ぼくが ここに 立たなくても<CD>いい日は 近いようだね<CF><D1>きみの おかげだよ あリがとう",
 081,0x2080a2,"<@RL,4A,00>ここは「マ-メイド学底」よ!<CD>男子は 立ち入リきんし!","<@RL,4A,00>This is the Mermaid Academy!<D3>No boys allowed!"

@@ -2,7 +2,7 @@
 000,0x11c000,"<@LL,00,00>ここは イワノイの家だ","<@LL,00,00>This is Iwanoi's house."
 001,0x11c002,"<@LL,00,00>ここは キクヒメの家だ","<@LL,00,00>This is Kikuhime's house."
 002,0x11c004,"<@LL,00,00>ここは カガミヤマの家だ","<@LL,00,00>This is Kagamiyama's house."
-003,0x11c006,"<@LL,00,00>ここは メダロット研究所だ","<@LL,00,00>This is the Medabot Research <D3>Institute."
+003,0x11c006,"<@LL,00,00>ここは メダロット研究所だ","<@LL,00,00>This is the Medarot Research <D3>Institute."
 004,0x11c008,"<@LL,00,00>ここは はい工場だ",
 005,0x11c00a,「セレクト しぶ」,
 006,0x11c00c,"<@LL,00,00>ここは アリカの家だ","<@LL,00,00>Erika's house is here."
@@ -70,15 +70,15 @@
 068,0x11c088,"<@LL,00,00>かってに しらベたら<CD>おこられそうだ",
 069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch <D3>anything right now."
 070,0x11c08c,"<@LL,00,04>いろんな人の ししゅうが<CD>たくさん ならんでる<CF>カリンちゃんも<CD>しを かくのかな?",
-071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are <D3>lined up here.<CF>Seems jjust like Karin..."
+071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are <D3>lined up here.<CF>Seems just like Karin..."
 072,0x11c090,「レアパ-ツずかん」,"""A Guide to Rare Parts"""
 073,0x11c092,"<@LL,00,04>心が やすらぐねえ","<@LL,00,04>My mind feels at ease."
 074,0x11c094,"<@LL,00,00>この学園の 園長先生の ぞうかな?","<@LL,00,00>I wonder if this is what this<D3>academy's principal looks like?"
 075,0x11c096,"<@LL,00,00>このぞうだけ<CD>ほかのと ちがう...<CF>しかも どこかで<CD>貝たこと あるぞ.....?",
 076,0x11c098,"ふぃっしゅ!ふぃっしゅ!<CF><@LL,00,07>このぞう くしゃみした!?<CF><@LL,00,00>..........<CF>気のせいか.....",
 077,0x11c09a,"<@LL,00,00>ふつうの げたばこだ","<@LL,00,00>It's an ordinary shoe rack."
-078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...",
-079,0x11c09e,「アワノざいばつ ぞうてい」,
+078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness! <@LL,00,05>Geez, it's<D3>not like this is an onsen..."
+079,0x11c09e,「アワノざいばつ ぞうてい」,"""A gift from Awano Financial Group"""
 080,0x11c0a0,"<@LL,00,00>かってに 貝たら<CD>おこられるだろうな.....<CF>やめておこう",
 081,0x11c0a2,「花園学園の れきし」,"""The History of <D3>Hanazono School"""
 082,0x11c0a4,"<@LL,00,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,00,07>A lot of different kinds <D3>of trophies were lined up here!"
@@ -88,7 +88,7 @@
 086,0x11c0ac,「レストラン ドン.ペリ」,
 087,0x11c0ae,「メダロット社」,"""Medabot Company"""
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,
-089,0x11c0b2,"<@LL,00,04>ん- いいにおい!",
+089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?",
 091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる",A lot of magazines are lined up.
 092,0x11c0b8,"<@LL,00,00>ひらかないみたいだ",

@@ -7,8 +7,8 @@
 005,0x9400a,デ-タをセ-ブしました!<S1E><*04>,Game data saved!<S1E><*04>
 006,0x9400c,ロボロボメダルを使いますか?<*04>,Use a Roborobo medal?<*04>
 007,0x9400e,せんとうから にげられた!!<*02>,Escaped from the battle!<*02>
-008,0x94010,「<&BUF06>」を てにいれた,<f02><&BUF06><f00> obtained
-009,0x94012,「<&BUF06>」が なくなった,<f02><&BUF06><f00> was lost
+008,0x94010,「<&BUF06>」を てにいれた,<f02><&BUF06><f00> obtained.
+009,0x94012,「<&BUF06>」が なくなった,<f02><&BUF06><f00> was lost.
 010,0x94014,これいじょう もてない!,Can't hold any more!
 011,0x94016,<&BUF03>は<CD>「<&BUF06>」を もってない,"<&BUF03>Does not have<D3>""<f02><&BUF06><f00>""."
 012,0x94018,<&BUF03>は<CD><&BUF06>0¥を てにいれた,<&BUF03>got<D3><&BUF06>0¥.

@@ -2,10 +2,10 @@
 16
 26881
 Index[#version],Personality
-0,?
-1,?
-2,?
-3,?
-4,?
-5,?
-6,?
+0,Speed
+1,Power
+2,Technique
+3,Protect
+4,Reduce
+5,Change
+6,Random
