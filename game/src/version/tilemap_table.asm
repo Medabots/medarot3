@@ -413,27 +413,27 @@ Tilemap00_52::
 Tilemap00_53::
   INCBIN "./build/tilemaps/0053.map"
 Tilemap00_54::
-  INCBIN "./build/tilemaps/0054.map"
+  INCBIN "./build/tilemaps/RobattleScreenTopHalf.map"
 Tilemap00_55::
-  INCBIN "./build/tilemaps/0055.map"
+  INCBIN "./build/tilemaps/RobattleScreenBottomHalf.map"
 Tilemap00_56::
-  INCBIN "./build/tilemaps/0056.map"
+  INCBIN "./build/tilemaps/RobattleTopAction.map"
 Tilemap00_57::
-  INCBIN "./build/tilemaps/0057.map"
+  INCBIN "./build/tilemaps/RobattleTopActionHighlighted.map"
 Tilemap00_58::
-  INCBIN "./build/tilemaps/0058.map"
+  INCBIN "./build/tilemaps/RobattleRightAction.map"
 Tilemap00_59::
-  INCBIN "./build/tilemaps/0059.map"
+  INCBIN "./build/tilemaps/RobattleRightActionHighlighted.map"
 Tilemap00_5A::
-  INCBIN "./build/tilemaps/005A.map"
+  INCBIN "./build/tilemaps/RobattleLeftAction.map"
 Tilemap00_5B::
-  INCBIN "./build/tilemaps/005B.map"
+  INCBIN "./build/tilemaps/RobattleLeftActionHighlighted.map"
 Tilemap00_5C::
   INCBIN "./build/tilemaps/005C.map"
 Tilemap00_5D::
   INCBIN "./build/tilemaps/005D.map"
 Tilemap00_5E::
-  INCBIN "./build/tilemaps/005E.map"
+  INCBIN "./build/tilemaps/RobattleSubmenu.map"
 Tilemap00_5F::
   INCBIN "./build/tilemaps/005F.map"
 Tilemap00_60::
@@ -585,35 +585,35 @@ Tilemap00_C8::
 Tilemap00_C9::
   INCBIN "./build/tilemaps/00C9.map"
 Tilemap00_CA::
-  INCBIN "./build/tilemaps/00CA.map"
+  INCBIN "./build/tilemaps/RobattleTextChargeMF.map"
 Tilemap00_F1::
-  INCBIN "./build/tilemaps/00F1.map"
+  INCBIN "./build/tilemaps/RobattleTextMedachange.map"
 Tilemap00_F2::
-  INCBIN "./build/tilemaps/00F2.map"
+  INCBIN "./build/tilemaps/RobattleTextStrike.map"
 Tilemap00_F3::
-  INCBIN "./build/tilemaps/00F3.map"
+  INCBIN "./build/tilemaps/RobattleTextShoot.map"
 Tilemap00_F4::
-  INCBIN "./build/tilemaps/00F4.map"
+  INCBIN "./build/tilemaps/RobattleTextBerserk.map"
 Tilemap00_F5::
-  INCBIN "./build/tilemaps/00F5.map"
+  INCBIN "./build/tilemaps/RobattleTextSnipe.map"
 Tilemap00_F6::
-  INCBIN "./build/tilemaps/00F6.map"
+  INCBIN "./build/tilemaps/RobattleTextProtect.map"
 Tilemap00_F7::
-  INCBIN "./build/tilemaps/00F7.map"
+  INCBIN "./build/tilemaps/RobattleTextSetup.map"
 Tilemap00_F8::
-  INCBIN "./build/tilemaps/00F8.map"
+  INCBIN "./build/tilemaps/RobattleTextHeal.map"
 Tilemap00_F9::
-  INCBIN "./build/tilemaps/00F9.map"
+  INCBIN "./build/tilemaps/RobattleTextSpecial.map"
 Tilemap00_FA::
-  INCBIN "./build/tilemaps/00FA.map"
+  INCBIN "./build/tilemaps/RobattleTextSupport.map"
 Tilemap00_FB::
-  INCBIN "./build/tilemaps/00FB.map"
+  INCBIN "./build/tilemaps/RobattleTextDisrupt.map"
 Tilemap00_FC::
-  INCBIN "./build/tilemaps/00FC.map"
+  INCBIN "./build/tilemaps/RobattleTextDisabled.map"
 Tilemap00_FD::
-  INCBIN "./build/tilemaps/00FD.map"
+  INCBIN "./build/tilemaps/RobattleTextShiftChange.map"
 Tilemap00_FE::
-  INCBIN "./build/tilemaps/00FE.map"
+  INCBIN "./build/tilemaps/RobattleTextPowerChange.map"
 TilemapTable00Terminator::
 
 SECTION "Tilemap Table 01", ROMX[$4000], BANK[$34]
