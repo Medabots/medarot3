@@ -387,13 +387,13 @@ Tilemap00_45::
 Tilemap00_46::
   INCBIN "./build/tilemaps/MedalIcon.map"
 Tilemap00_47::
-  INCBIN "./build/tilemaps/0047.map"
+  INCBIN "./build/tilemaps/MedarotsInfoTextSelectToMedachange.map"
 Tilemap00_48::
-  INCBIN "./build/tilemaps/0048.map"
+  INCBIN "./build/tilemaps/MedarotsInfoMedachangeSubscreen.map"
 Tilemap00_49::
   INCBIN "./build/tilemaps/0049.map"
 Tilemap00_4A::
-  INCBIN "./build/tilemaps/004A.map"
+  INCBIN "./build/tilemaps/MedarotsInfoTextSelectToReturn.map"
 Tilemap00_4B::
   INCBIN "./build/tilemaps/004B.map"
 Tilemap00_4C::
@@ -555,9 +555,9 @@ Tilemap00_AA::
 Tilemap00_AB::
   INCBIN "./build/tilemaps/00AB.map"
 Tilemap00_AC::
-  INCBIN "./build/tilemaps/00AC.map"
+  INCBIN "./build/tilemaps/MedachangeTextShift.map"
 Tilemap00_B1::
-  INCBIN "./build/tilemaps/00B1.map"
+  INCBIN "./build/tilemaps/MedachangeTextPower.map"
 Tilemap00_B2::
   INCBIN "./build/tilemaps/0004.map"
 Tilemap00_B3::

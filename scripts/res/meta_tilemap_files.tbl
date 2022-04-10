@@ -62,10 +62,10 @@
 00_44=MedarotsScreen
 00_45=MedarotsInfo
 00_46=MedalIcon
-00_47=0047
-00_48=0048
+00_47=MedarotsInfoTextSelectToMedachange
+00_48=MedarotsInfoMedachangeSubscreen
 00_49=0049
-00_4A=004A
+00_4A=MedarotsInfoTextSelectToReturn
 00_4B=004B
 00_4C=004C
 00_4D=004D
@@ -139,8 +139,8 @@
 00_A9=00A9
 00_AA=00AA
 00_AB=00AB
-00_AC=00AC
-00_B1=00B1
+00_AC=MedachangeTextShift
+00_B1=MedachangeTextPower
 00_B4=00B4
 00_B5=00B5
 00_C1=00C1
