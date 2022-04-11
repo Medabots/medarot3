@@ -913,7 +913,7 @@ MapMedalNameForMedarotStatus::
   pop bc
   call OffsetToMappingAddressForMedarotScreens
   ld bc, W_NewListItemBufferArea
-  ld d, $15
+  ld d, $53
   ld a, 5
   jp VWFDrawStringLeftFullAddressAlternate
   
@@ -957,7 +957,7 @@ MapHeadPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentHeadPart]
   cp $97
   jr nc, PartNotEquipped
-  ld h, $1a
+  ld h, $58
   push hl
   push bc
   ld b, 1
@@ -967,7 +967,7 @@ MapLeftArmPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentLeftArmPart]
   cp $97
   jr nc, PartNotEquipped
-  ld h, $22
+  ld h, $60
   push hl
   push bc
   ld b, 2
@@ -977,7 +977,7 @@ MapRightArmPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentRightArmPart]
   cp $97
   jr nc, PartNotEquipped
-  ld h, $2a
+  ld h, $68
   push hl
   push bc
   ld b, 3
@@ -987,7 +987,7 @@ MapLegPartNameForMedarotStatus::
   ld a, [W_MedarotCurrentLegPart]
   cp $97
   jr nc, PartNotEquipped
-  ld h, $32
+  ld h, $70
   push hl
   push bc
   ld b, 4
@@ -2441,7 +2441,7 @@ DisplayMedachangeInputIndicatorForMedarotStatus::
   ld a, [W_MedarotMedachange]
   or a
   jr nz, .hasMedachange
-  ld bc, $701
+  ld bc, $0801 ; previously 0701
   ld hl, $98C2
   jp $25E5
 
@@ -2665,8 +2665,7 @@ DisplayCurrentMedachangePage::
   jp MapStarForMedachangeStatus
 
 MapMedachangeNameForStatusScreen::
-  ld b, 7
-  ld c, 6
+  ld bc, $0706
   ld a, [$C553]
   sub $50
   ld [W_ListItemIndexForBuffering], a
@@ -2678,6 +2677,8 @@ MapMedachangeNameForStatusScreen::
   ld bc, W_ListItemBufferArea
   ld a, 5
   jp PutStringFixedLength
+
+  padend $59ca
 
 MedachangeStatusMathHelper::
   ld h, 0
