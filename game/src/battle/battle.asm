@@ -1,6 +1,468 @@
 INCLUDE "game/src/common/constants.asm"
 
-SECTION "Battle Helper Functions 1", ROMX[$5662], BANK[$0A]
+SECTION "Battle Helper Functions 1", ROMX[$4DCF], BANK[$0A]
+; Part of initial state (0A:40C1 -> 0A:4B84 -> 0A:4DCF)
+BattleInitializeLoadParticipantData::
+  xor a
+  ld [$C4EE], a
+
+.loop
+  ld hl, $60
+  add hl, de
+  ld a, [$C4F2]
+  ld [hl], a
+  ld hl, $62
+  add hl, de
+  ld a, 1
+  ld [hl], a
+  ld hl, 3
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 1
+  ld c, 9
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push de
+  call WrapBufferTextFromList
+  pop de
+  push de
+  ld hl, $D0
+  add hl, de
+  ld d, h
+  ld e, l
+  ld hl, W_ListItemBufferArea
+  ld bc, 9
+  call memcpy
+  pop de
+  ld hl, 3
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 0
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $D9
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C555]
+  ld hl, $E6
+  add hl, de
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld hl, $ED
+  add hl, de
+  ld a, [$C55C]
+  ld [hl], a
+  ld hl, $EE
+  add hl, de
+  ld a, [$C55E]
+  ld [hl], a
+  ld hl, $E8
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 4
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 2
+  ld c, 9
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push de
+  call WrapBufferTextFromList
+  pop de
+  push de
+  ld hl, $F0
+  add hl, de
+  ld d, h
+  ld e, l
+  ld hl, W_ListItemBufferArea
+  ld bc, 9
+  call memcpy
+  pop de
+  ld hl, 4
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 1
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $F9
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld a, [$C555]
+  ld hl, $106
+  add hl, de
+  ld [hli], a
+  ld hl, $10D
+  add hl, de
+  ld a, [$C55C]
+  ld [hl], a
+  ld hl, $108
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 5
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 3
+  ld c, 9
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push de
+  call WrapBufferTextFromList
+  pop de
+  push de
+  ld hl, $110
+  add hl, de
+  ld d, h
+  ld e, l
+  ld hl, W_ListItemBufferArea
+  ld bc, 9
+  call memcpy
+  pop de
+  ld hl, 5
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 2
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $119
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld a, [$C555]
+  ld hl, $126
+  add hl, de
+  ld [hli], a
+  ld hl, $12D
+  add hl, de
+  ld a, [$C55C]
+  ld [hl], a
+  ld hl, $128
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 6
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, 4
+  ld c, 9
+  ld a, 7
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push de
+  call WrapBufferTextFromList
+  pop de
+  push de
+  ld hl, $130
+  add hl, de
+  ld d, h
+  ld e, l
+  ld hl, W_ListItemBufferArea
+  ld bc, 9
+  call memcpy
+  pop de
+  ld hl, 6
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 3
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $139
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  inc hl
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld hl, $146
+  add hl, de
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld hl, $14D
+  add hl, de
+  ld a, [$C55C]
+  ld [hl], a
+  ld hl, $EE
+  add hl, de
+  ld a, [hl]
+  or a
+  jp z, .nextParticipant
+  ld hl, 3
+  add hl, de
+  ld a, [hli]
+  ld b, a
+  ld a, [hli]
+  cp b
+  jr nz, .jpA
+
+  ld a, [hli]
+  cp b
+  jr nz, .jpA
+
+  ld a, [hli]
+  cp b
+  jr z, .jpB
+
+.jpA
+  xor a
+  ld hl, $EE
+  add hl, de
+  ld [hl], a
+  jp .nextParticipant
+
+.jpB
+  ld hl, 3
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 4
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $159
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld hl, $168
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 4
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 5
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $179
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld hl, $188
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 5
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 6
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $199
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  ld a, [$C554]
+  ld [hli], a
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld hl, $1A8
+  add hl, de
+  ld a, [$C55F]
+  ld [hl], a
+  ld hl, 6
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7
+  push de
+  call $34FF
+  pop de
+  ld a, [$C552]
+  ld hl, $1B9
+  add hl, de
+  ld [hli], a
+  ld a, [$C553]
+  ld [hli], a
+  inc hl
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+  ld hl, $1C6
+  add hl, de
+  ld a, [$C555]
+  ld [hli], a
+  ld a, [$C556]
+  ld [hli], a
+  ld a, [$C557]
+  ld [hli], a
+  ld a, [$C558]
+  ld [hli], a
+  ld a, [$C559]
+  ld [hli], a
+  ld a, [$C55A]
+  ld [hli], a
+
+.nextParticipant
+  ld hl, $DC
+  add hl, de
+  ld a, [hl]
+  call $5137
+  ld hl, $FC
+  add hl, de
+  ld a, [hl]
+  call $5137
+  ld hl, $11C
+  add hl, de
+  ld a, [hl]
+  call $5137
+  ld hl, $13C
+  add hl, de
+  ld a, [hl]
+  call $5137
+  ld hl, $200
+  add hl, de
+  ld d, h
+  ld e, l
+  ld a, [$C4EE]
+  inc a
+  ld [$C4EE], a
+  ld a, [$C4F2]
+  inc a
+  ld [$C4F2], a
+  ld a, [$C4F0]
+  dec a
+  ld [$C4F0], a
+  jp nz, .loop
+  ret
+
+SECTION "Battle Helper Functions 2", ROMX[$5662], BANK[$0A]
 CalculateBattleParticipantAddress::
   ld hl, $D000
   ld b, 0
@@ -8,7 +470,7 @@ CalculateBattleParticipantAddress::
   ld a, 9
   jp MultiplyBCByPowerOfTwoAndAddToHL
 
-SECTION "Battle Helper Functions 2", ROMX[$5778], BANK[$0A]
+SECTION "Battle Helper Functions 3", ROMX[$5778], BANK[$0A]
 MapAttackNamesForBattle::
   ld a, [$DCB6]
   ld hl, .table
