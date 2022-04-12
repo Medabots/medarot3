@@ -2673,10 +2673,10 @@ MapMedachangeNameForStatusScreen::
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  jp PutStringFixedLength
+  pop de ; hl -> de, VRAM address to write to
+  ld h, $73
+  ld bc, W_NewListItemBufferArea
+  jp VWFDrawStringLeftFullAddress5Tiles
 
   padend $59ca
 
@@ -2694,18 +2694,17 @@ MedachangeStatusMathHelper::
   ret
 
 MapMedachangeAttackNameForStatusScreen::
-  ld b, 6
-  ld c, 6
+  ld bc, $0606
   ld a, [$C554]
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  jp PutStringFixedLength
+  pop de ; hl -> de, VRAM address to write to
+  ld h, $73
+  ld bc, W_NewListItemBufferArea
+  jp VWFDrawStringLeftFullAddress5Tiles
 
 MapStarForMedachangeStatus::
   ld a, [$C558]

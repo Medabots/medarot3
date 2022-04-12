@@ -92,3 +92,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MedalInfoMedalia, $93A0 ; 16
   TilemapTilesetTableEntry MedarotsScreen, $9120 ; 17
   TilemapTilesetTableEntry MedarotInfo, $9120 ; 18
+  TilemapTilesetTableEntry MedachangeInfo, $9120 ; 19

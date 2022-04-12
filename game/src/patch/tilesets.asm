@@ -83,3 +83,4 @@ PatchTilesets::
   PatchTilesetEntry MedalInfoMedalia
   PatchTilesetEntry MedarotsScreen
   PatchTilesetEntry MedarotInfo
+  PatchTilesetEntry MedachangeInfo

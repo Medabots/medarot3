@@ -14,6 +14,14 @@ MainScriptProcessorPutCharLoopCrossBank::
   jp MainScriptProcessorPutCharLoop
 
 SECTION "PutString", ROM0[$1C5A]
+
+VWFDrawStringLeftFullAddress5Tiles::
+  ; bc is the address of the string to print, terminated by 0xCB.
+  ; de is the address we are mapping tiles to.
+  ; h is the tile index of our drawing area.
+  ld a, 5 ; 5 tiles happens fairly commonly
+  jr VWFDrawStringLeftFullAddress
+
 VWFDrawStringLeftFullAddress8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
