@@ -784,13 +784,13 @@ MapPlayerMedachangeAttackANamePlusAmmoForBattle::
   ret
 
 MedachangeAttackAName::
-  db $00,$7B,$27,$02,$7E,$00,$9E,$00
+  db $00,$00,$56,$57,$58,$59,$00,$00
 
 MedachangeAttackBName::
-  db $00,$7B,$27,$02,$7E,$00,$9F,$00
+  db $00,$00,$56,$57,$58,$5A,$00,$00
 
 MedachangeAttackCName::
-  db $00,$7B,$27,$02,$7E,$00,$A0,$00
+  db $00,$00,$56,$57,$58,$5B,$00,$00
 
 MapPlayerMedachangeAttackBNameForBattle::
   push de

@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Battle Status Functions 1", ROMX[$6607], BANK[$10]
 BufferParticipantDataForBattleStatus::
@@ -64,15 +65,17 @@ MapMedalNameForBattleStatus::
   call BufferParticipantDataForBattleStatus
   ld a, [$C552]
   ld [W_ListItemIndexForBuffering], a
-  ld b, $B
-  ld c, 6
-  ld a, 0
+  ld bc, $0B06
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9823
-  ld bc, W_ListItemBufferArea
+  ld de, $9823
+  ld h, $01
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  jp PutStringFixedLength
+  jp VWFDrawStringLeftFullAddress
+
+  padend $669d
 
 MapHeadPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]

@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Battle Status Variables 1", WRAMX[$DCCA], BANK[6]
 W_BattleStatusCursorPosition:: ds 1
@@ -125,19 +126,25 @@ BattleStatusPreExitRedrawState::
   ld de, $C0A0
   ld bc, $3C0
   call memcpy
-  ld a, 0
+  xor a
   ld [$C4EE], a
+  ; Reload patch tileset
+  ld c, ($1B << 1) ; PatchTilesetRobattle
+  ; a is 0, TilemapLoadTileset
+  rst $38
   ld a, $14
   ld [$C4EF], a
-  ld a, 0
-  ld [$C4F0], a
   ld a, $12
   ld [$C4F1], a
-  ld a, 1
+  xor a
+  ld [$C4F0], a
+  inc a ; instead of ld a, 1
   call $123B
   ld a, 6
   rst 8
   jp IncSubStateIndex
+
+  padend $65e4
 
 BattleStatusExitState::
   ld a, 1

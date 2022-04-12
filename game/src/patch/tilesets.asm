@@ -85,3 +85,4 @@ PatchTilesets::
   PatchTilesetEntry MedarotInfo
   PatchTilesetEntry MedachangeInfo
   PatchTilesetEntry RobattleSelection
+  PatchTilesetEntry Robattle
