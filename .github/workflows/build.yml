@@ -51,7 +51,7 @@ jobs:
         run: |
           make -j all
 
-      - name: Verify no new untracked files were added
+      - name: Verify there are no uncommitted changes
         working-directory: 'medarot3'
         run: |
-          git diff --quiet --exit-code && exit 0 || exit 1
+          [ -z "$(git status --porcelain)" ] && exit 0 || exit 1
