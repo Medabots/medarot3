@@ -261,7 +261,7 @@ TilemapTable00::
 Tilemap00_00::
   INCBIN "./build/tilemaps/0000.map"
 Tilemap00_01::
-  INCBIN "./build/tilemaps/0001.map"
+  INCBIN "./build/tilemaps/MessageBox.map"
 Tilemap00_02::
   INCBIN "./build/tilemaps/0002.map"
 Tilemap00_03::
@@ -395,13 +395,13 @@ Tilemap00_49::
 Tilemap00_4A::
   INCBIN "./build/tilemaps/MedarotsInfoTextSelectToReturn.map"
 Tilemap00_4B::
-  INCBIN "./build/tilemaps/004B.map"
+  INCBIN "./build/tilemaps/MedachangeInfo.map"
 Tilemap00_4C::
-  INCBIN "./build/tilemaps/004C.map"
+  INCBIN "./build/tilemaps/MedachangeInfoOverallStats.map"
 Tilemap00_4D::
-  INCBIN "./build/tilemaps/004D.map"
+  INCBIN "./build/tilemaps/MedachangeInfoDriveAStats.map"
 Tilemap00_4E::
-  INCBIN "./build/tilemaps/004E.map"
+  INCBIN "./build/tilemaps/MedachangeInfoDriveBCStats.map"
 Tilemap00_4F::
   INCBIN "./build/tilemaps/ItemScreen.map"
 Tilemap00_50::
