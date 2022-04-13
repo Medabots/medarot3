@@ -492,9 +492,9 @@ MapAttackNamesForBattle::
 .medaliaAttacks
   ld a, [$DCB9]
   call CalculateBattleParticipantAddress
-  call MapPlayerMedaliaAttackANamePlusAmmoForBattle
-  call MapPlayerMedaliaAttackBNameForBattle
-  jp MapPlayerMedaliaAttackCNameForBattle
+  call MapMedaforceANamePlusAmmoForBattle
+  call MapMedaforceBNameForBattle
+  jp MapMedaforceCNameForBattle
 
 .medachangeAttacks
   ld a, [$DCB9]
@@ -644,7 +644,7 @@ BufferCentredAttackNameForBattle::
   pop de
   ret
 
-MapPlayerMedaliaAttackANamePlusAmmoForBattle::
+MapMedaforceANamePlusAmmoForBattle::
   ld hl, $15
   add hl, de
   ld a, [hl]
@@ -674,7 +674,7 @@ MapPlayerMedaliaAttackANamePlusAmmoForBattle::
   ld a, 5
   jp MapDashesForBattle
 
-MapPlayerMedaliaAttackBNameForBattle::
+MapMedaforceBNameForBattle::
   ld hl, $16
   add hl, de
   ld a, [hl]
@@ -701,7 +701,7 @@ MapPlayerMedaliaAttackBNameForBattle::
   ld bc, $DCBA
   jp PutStringVariableLength
 
-MapPlayerMedaliaAttackCNameForBattle::
+MapMedaforceCNameForBattle::
   ld hl, $17
   add hl, de
   ld a, [hl]
