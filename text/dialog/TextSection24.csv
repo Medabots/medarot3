@@ -1,30 +1,30 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x214000,"<@LL,00,00>...まてよ<CF><D1>海ていに 引きずリこまれたときに<CD>手に入れた この<CF><D1>♥スト-ンが かわリになったら!?",
-001,0x214002,"<@LL,00,01>やった! うまく いきそうだ!",
-002,0x214004,"<@RL,38,00><&BUF07>さん...",
-003#kabuto,0x214006,"<@RL,35,00>う うつくしい...<CD>これが レイさんの 本当のすがた",
-003#kuwagata,0x214006,"<@RL,36,00>それが 本当の すがたなのか?<CD>レイ...",
-004,0x214008,"<@LL,00,07>でんせつの 金魚は<CD>メダロットだったんだ!<CF><D1><@LL,00,00>? でも どうして<CD><&BUF07>のこと<CF><D1>知ってるの?<CD>まだ 知リ合う 前の はずなのに<CF><D1><@RL,38,00>あなたがたが 持って来た<CD>♥スト-ンには<CF><D1>みらいの わたしの きおくが<CD>入っていたのです<CF><D1>ですから わたしには 今 かこ<CD>みらいの 全ての きおくが あリます",
-005#kabuto,0x21400a,"<@RL,35,00>レイさん 何を 言ってる...?",
-005#kuwagata,0x21400a,"<@RL,36,00>何を 言っている?",
-006,0x21400c,"<@RL,38,00><&BUF07>さん<CD>おわかれの時が 来たようです",
-007#kabuto,0x21400e,"<@RL,35,00>えっ! それって どういう...",
-007#kuwagata,0x21400e,"<@RL,36,00>...?",
-008,0x214010,"<@RL,38,00>わたしは このじだいの<CD>者では あリません<CF><D1>時をこえ わたしの いるベき<CD>はるかな むかしヘ かえらなければ<CF><D1><@LL,00,00>きみは いったい だれなんだ?<CF><D1><@RL,38,00>...わたしは そのむかし<CD>マザ-によって 生み出され<CF><D1>マザ-と 人とを むすびつける<CD>やくめを おっていたのですが...<CF><D1>わたしは...つよすぎる フォ-スを<CD>せいぎょできなくて<CF><D1>町を 海に しずめてしまったのです<CF><D1><@LL,00,07>!!<CF><D1><@RL,38,00>そのご わたしは この体と ともに<CD>ふういんされ 海のそこで<CF><D1>ねむリに つきました<CF><D1>でも 何かが わたしを<CD>目ざめさせたのです<CF><D1><@LL,00,00>セルリア-ノ?<CF><D1><@RL,38,00>わたしを めざめさせたのは<CD>黒いマザ-の スピリット<CF><D1>わたしの 力と きおくを ふうじた<CD>♥スト-ンを うばい<CF><D1>わたしを あやつったのです<CF><D1>だけど わたしを<CD><&BUF07>さんに<CF><D1>めぐリ会わせたのは きっと<CD>「時」を あやつる わたしの<CF><D1>マザ-...<CF><D1><@LL,00,07>ねえ どういうこと?<CD>マザ-って 何?<CF><D1><@RL,38,00>あリがとう <&BUF07>さん<CF><D1>もう少しで わたし あの時の<CD>あくむを くリかえす ところでした<CF><D1>マザ-の ことばは 本当でした<CF><D1>いつか 本当の「ハ-ト」を くれる<CD>だれかが あらわれるって<CF><D1>あなたのこと 本当に すき...<CF><D1>今なら わたし かこを<CD>やリなおせます<CF><D1>あなたが くれた ハ-トが<CD>あるから...",
-009#kabuto,0x214012,"<@RL,35,00>レイさんっ!!",
-009#kuwagata,0x214012,"<@RL,36,00>まてっ!!",
-010#kabuto,0x214014,"<@RL,35,00>レ レイさん...",
-010#kuwagata,0x214014,"<@RL,36,00>レイ...",
-011,0x214016,"<@LL,00,05>のこったのは レイだった メダロット",
-012,0x214018,"<@LL,00,03><&BUF07>...",
-013,0x21401a,"<@LL,00,00>そろそろ ぼくたちも<CD>かえる 時間みたいだ<CF><D1>ぼくらが かえる みらいでは<CD>アンダ-シェルも みんなも<CF><D1>ぶじなはず<CF><D1><@LL,00,04>ねえ <&BUF07><CD>ぼくは レイの かわリには<CF><D1>なれないけど でも ぼくらは...",
+000,0x214000,"<@LL,00,00>...まてよ<CF><D1>海ていに 引きずリこまれたときに<CD>手に入れた この<CF><D1>♥スト-ンが かわリになったら!?","<@LL,00,00>...Wait.<CF><D1>What if I use this ♥ stone<D3>that I got instead back when<CF><D1>I nearly got sucked into the<D3>trench?"
+001,0x214002,"<@LL,00,01>やった! うまく いきそうだ!","<@LL,00,01>All right! It looks like this<D3>should work!"
+002,0x214004,"<@RL,38,00><&BUF07>さん...","<@RL,38,00><&BUF07>..."
+003#kabuto,0x214006,"<@RL,35,00>う うつくしい...<CD>これが レイさんの 本当のすがた","<@RL,35,00>S-she's beautiful... So this is<D3>what Rei really looks like."
+003#kuwagata,0x214006,"<@RL,36,00>それが 本当の すがたなのか?<CD>レイ...","<@RL,36,00>Rei... So this is what you<D3>look like."
+004,0x214008,"<@LL,00,07>でんせつの 金魚は<CD>メダロットだったんだ!<CF><D1><@LL,00,00>? でも どうして<CD><&BUF07>のこと<CF><D1>知ってるの?<CD>まだ 知リ合う 前の はずなのに<CF><D1><@RL,38,00>あなたがたが 持って来た<CD>♥スト-ンには<CF><D1>みらいの わたしの きおくが<CD>入っていたのです<CF><D1>ですから わたしには 今 かこ<CD>みらいの 全ての きおくが あリます","<@LL,00,07>So the Goldfish Statue was<D3>a Medarot this whole time!<CF><D1><@LL,00,00>But wait, how do you know<D3><&BUF07>?<CF><D1>You two shouldn't have met<D3>yet around this time.<CF><D1><@RL,38,00>It's because of the ♥ Stone<D3>that you brought me.<CF><D1>It contained my memories of<D3>the future.<CF><D1>Therefore, I remember both<D3>the future, as well as<CF><D1>what transpired before that."
+005#kabuto,0x21400a,"<@RL,35,00>レイさん 何を 言ってる...?","<@RL,35,00>What are you saying, Rei?"
+005#kuwagata,0x21400a,"<@RL,36,00>何を 言っている?","<@RL,36,00>What do you mean?"
+006,0x21400c,"<@RL,38,00><&BUF07>さん<CD>おわかれの時が 来たようです","<@RL,38,00><&BUF07>, it looks like<D3>this is where we say goodbye."
+007#kabuto,0x21400e,"<@RL,35,00>えっ! それって どういう...","<@RL,35,00>Huh?! What do you mean...?"
+007#kuwagata,0x21400e,"<@RL,36,00>...?","<@RL,36,00>...?"
+008,0x214010,"<@RL,38,00>わたしは このじだいの<CD>者では あリません<CF><D1>時をこえ わたしの いるベき<CD>はるかな むかしヘ かえらなければ<CF><D1><@LL,00,00>きみは いったい だれなんだ?<CF><D1><@RL,38,00>...わたしは そのむかし<CD>マザ-によって 生み出され<CF><D1>マザ-と 人とを むすびつける<CD>やくめを おっていたのですが...<CF><D1>わたしは...つよすぎる フォ-スを<CD>せいぎょできなくて<CF><D1>町を 海に しずめてしまったのです<CF><D1><@LL,00,07>!!<CF><D1><@RL,38,00>そのご わたしは この体と ともに<CD>ふういんされ 海のそこで<CF><D1>ねむリに つきました<CF><D1>でも 何かが わたしを<CD>目ざめさせたのです<CF><D1><@LL,00,00>セルリア-ノ?<CF><D1><@RL,38,00>わたしを めざめさせたのは<CD>黒いマザ-の スピリット<CF><D1>わたしの 力と きおくを ふうじた<CD>♥スト-ンを うばい<CF><D1>わたしを あやつったのです<CF><D1>だけど わたしを<CD><&BUF07>さんに<CF><D1>めぐリ会わせたのは きっと<CD>「時」を あやつる わたしの<CF><D1>マザ-...<CF><D1><@LL,00,07>ねえ どういうこと?<CD>マザ-って 何?<CF><D1><@RL,38,00>あリがとう <&BUF07>さん<CF><D1>もう少しで わたし あの時の<CD>あくむを くリかえす ところでした<CF><D1>マザ-の ことばは 本当でした<CF><D1>いつか 本当の「ハ-ト」を くれる<CD>だれかが あらわれるって<CF><D1>あなたのこと 本当に すき...<CF><D1>今なら わたし かこを<CD>やリなおせます<CF><D1>あなたが くれた ハ-トが<CD>あるから...","""<@RL,38,00>I do not belong in this<D3>time period.<CF><D1>I must return to the distant<D3>past.<CF><D1><@LL,00,00>Just who are you anyway?<CF><D1><@RL,38,00>...Long ago, in said past, I was<D3>birthed by the great Mother.<CF><D1>And I was given a role to unite<D3>mankind under the Mother's<D3>guidance...<CF><D1>But I was unable to keep the<D3>Mother's Medaforce at bay.<CF><D1>And the entire village was<D3>submerged under the ocean.<CF><D1><@LL,00,07>!!<CF><D1><@RL,38,00>Afterwards, I was sealed<D3>inside this body.<CF><D1>I was put into a deep slumber<D3>in the depths of the ocean.<CF><D1>But then something awoke me.<CF><D1><@LL,00,00>You mean Ceruleano?<CF><D1><@RL,38,00>No, it was the Dark Mother's spirit.<CF><D1>She had stolen my ♥ Stone which<D3>cointained my power and memories.<CF><D1>And used it to control me.<CF><D1>But the fact that I got to meet<D3><&BUF07> was surely the work of<CF><D1>my Mother, the one who controls time...<CF><D1><@LL,00,07>What do you mean?<D3>Who is the ""great Mother""?<CF><D1><@RL,38,00>Thank you,<&BUF07>.<CF><D1>Had you been a little longer I<D3>surely would have repeated that tragedy<CF><D1>once more...<CF><D1>The Mother's vision was true.<CF><D1>That one day I would encounter<D3>the one who would return me my true ""heart"".<CF><D1>I love you, <&BUF07>.<CF><D1>Now I can return to the past<D3>and start over.<CF><D1>And it's all thanks to you."
+009#kabuto,0x214012,"<@RL,35,00>レイさんっ!!","<@RL,35,00>Rei!!"
+009#kuwagata,0x214012,"<@RL,36,00>まてっ!!","<@RL,36,00>No, wait!!"
+010#kabuto,0x214014,"<@RL,35,00>レ レイさん...","<@RL,35,00>R-Rei..."
+010#kuwagata,0x214014,"<@RL,36,00>レイ...","<@RL,36,00>Rei..."
+011,0x214016,"<@LL,00,05>のこったのは レイだった メダロット","<@LL,00,05>All that's left is her body<D3>and parts."
+012,0x214018,"<@LL,00,03><&BUF07>...","<@LL,00,03><&BUF07>..."
+013,0x21401a,"<@LL,00,00>そろそろ ぼくたちも<CD>かえる 時間みたいだ<CF><D1>ぼくらが かえる みらいでは<CD>アンダ-シェルも みんなも<CF><D1>ぶじなはず<CF><D1><@LL,00,04>ねえ <&BUF07><CD>ぼくは レイの かわリには<CF><D1>なれないけど でも ぼくらは...","<@LL,00,00>We should start heading back<D3>too.<CF><D1>Everyone should be safe now<D3>in our future.<CF><D3><D1><@LL,00,04>Hey,<&BUF07>, I may not<D3>be able to replace Rei but<CF><D1>you and I will always..."
 014,0x21401c,"<@LL,00,00>さっきまでのことが うそみたいに<CD>しずまリかえってる<CF><D1>...ぼくは「アンダ-シェルが<CD>こわれる」っていう あくむを<CF><D1>貝ていただけかも しれない...<CF><D1>だけど セルリア-ノの メダルと<CD>レイの パ-ツは のこってる...<CF><D1><@LL,00,01>...さあ! みんなの所に<CD>かえろう!",
-015,0x21401e,"<@LL,00,01>よかったぁ!<CD>何もかも 元の まんまだ!<CF><D1>早く みんなに 会いたいなぁ!<CF><D1><@LL,00,04>みんなは まだ 学底かな?",
-016,0x214020,"<@LL,00,04>そうそう ハマグリ学底長に<CD>「♥のペンダント」も かえさなきゃ",
-017,0x214022,"<@RL,4A,00>あんたは どっちの子と なかよく<CD>するの?<CF><D1>おじょうさまっぽい子? それとも<CD>あの カメラむすめ?<CF><D1><@LL,00,06>う! ううっ! さ さいなら-",
-018,0x214024,"<@LL,00,04>あ! ウオナちゃんと<CD>ラブレタ-男<CF><D1><@RL,4B,00>やめてくれよ その言いかた<CF><D1><@RL,4A,00>その あリがとう<CD><&BUF03><CF><D1><@RL,4B,00>どうも 学底長たちも なかよく<CD>なった みたいだし...<CF><D1>これで ぼくたちも かくれて<CD>会うことは なくなるよ<CF><D1>本当に あリがとう<CF><D1><@LL,00,04>うん! なかよくね!",
-019,0x214026,"<@RL,4B,00>あリがとう",
-020,0x214028,"<@RL,1D,00>え...と...その...<CD>ご ごめんなさい...",
+015,0x21401e,"<@LL,00,01>よかったぁ!<CD>何もかも 元の まんまだ!<CF><D1>早く みんなに 会いたいなぁ!<CF><D1><@LL,00,04>みんなは まだ 学底かな?","<@LL,00,01>Thank goodness!<D3>Everything's back to normal!<CF><D1>I want to go see how<D3>everyone's doing!<CF><D1><@LL,00,04>They should still be at the<D3>school, right?"
+016,0x214020,"<@LL,00,04>そうそう ハマグリ学底長に<CD>「♥のペンダント」も かえさなきゃ","<@LL,00,04>That's right, I should give<D3>Principal Hamaguri his<D3>♥ pendant back too."
+017,0x214022,"<@RL,4A,00>あんたは どっちの子と なかよく<CD>するの?<CF><D1>おじょうさまっぽい子? それとも<CD>あの カメラむすめ?<CF><D1><@LL,00,06>う! ううっ! さ さいなら-","<@RL,4A,00>So which girl do you plan to<D3>be with?<CF><D1>The rich-looking one? Or<D3>the one with the camera?<CF><D1><@LL,00,06>Um, Uhhhhhhh...<D3>S-sorry, gotta go! Haha..."
+018,0x214024,"<@LL,00,04>あ! ウオナちゃんと<CD>ラブレタ-男<CF><D1><@RL,4B,00>やめてくれよ その言いかた<CF><D1><@RL,4A,00>その あリがとう<CD><&BUF03><CF><D1><@RL,4B,00>どうも 学底長たちも なかよく<CD>なった みたいだし...<CF><D1>これで ぼくたちも かくれて<CD>会うことは なくなるよ<CF><D1>本当に あリがとう<CF><D1><@LL,00,04>うん! なかよくね!","<@LL,00,04>Ah! It's Uona!<D3>And that love letter guy!<CF><D1><@RL,4B,00>Please stop calling me that.<CF><D1><@RL,4A,00>Thanks for eveything by the<D3>way, <&BUF03>.<CF><D1><@RL,4B,00>It looks like the two principals<D3>finally made up.<CF><D1>Now, Uona and I won't have<D3>to meet each other in secret.<CF><D1>Thank you. Really.<CF><D1><@LL,00,04>No problem!<D3>Get along now, you two!"
+019,0x214026,"<@RL,4B,00>あリがとう","<@RL,4B,00>Thank you."
+020,0x214028,"<@RL,1D,00>え...と...その...<CD>ご ごめんなさい...","<@RL,1D,00>Um... Uh...<D3>Sorry about all that..."
 021,0x21402a,"<@RL,1D,00>この人に はリあって マ-メイド学底<CD>を 作ったの 何だか ばかみたいね",
 022,0x21402c,"<@RL,14,00>あ...え-と...その...<CD>...す すまなかったなぁ",
 023,0x21402e,"<@RL,14,00>これからは マ-マン学底と<CD>マ-メイド学底を いっしょにして<CF><D1>「マリン学底」とでも よぶかな?",

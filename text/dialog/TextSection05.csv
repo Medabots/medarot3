@@ -68,7 +68,7 @@
 066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,"<SFF>Change (Symptom)<D3>Change to a ""symptom"" part.<*04>"
 067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,"<SFF>Change (Defense)<D3>Change to a ""defense"" part.<*04>"
 068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,"<SFF>Change (Recovery)<D3>Change to a ""recovery"" part.<*04>"
-069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF>Change (Support)<D3>Change to a ""support"" part.<*04>"
+069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF>Change (Support)<D3>Change to a ""disrupt"" part.<*04>"
 070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF>Positive Symptom Clear<D3>Clear positive symptoms.<*04>
 071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF>Unusable<D3>Parts are made unusable.<*04>
 072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF><f02>Confusion<f00>:Your opponent<D3>randomly chooses a target.<*04>

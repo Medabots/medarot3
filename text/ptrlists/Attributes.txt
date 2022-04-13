@@ -5,9 +5,9 @@ Index[#version],AttributeName
 0,Speed
 1,Power
 2,Status
-3,Defend
-4,Set Up
+3,Defense
+4,Set-up
 5,Recover
 6,Cancel
 7,Transform
-8,Interrupt
+8,Disrupt

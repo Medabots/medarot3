@@ -99,7 +99,8 @@ for sheet in wb.worksheets:
 				row = orig_text[ptr]
 				row.append(original_text)
 			elif ptr not in text:
-				print("\tWarning: Missing text for {}".format(ptr))
+				if not ptr.startswith("UNUSED"):
+					print("\tWarning: Missing text for {}".format(ptr))
 				row = orig_text[ptr]
 				row.append("")
 			else:

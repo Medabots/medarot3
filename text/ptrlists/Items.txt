@@ -2,46 +2,46 @@
 56
 31067
 Index[#version],ItemName,Flags
-0,Rubberobo Medal\xcb,\x00
+0,Roborobo Medal\xcb,\x00
 1,Egg Carton\xcb,\x00
 2,Mini-mini Machine\xcb,\x00
 3,Town Map\xcb,\x01
 4,Medalympics Badge\xcb,\x00
-5,Rosewood Badge\xcb,\x00
+5,Hanazono Badge\xcb,\x00
 6,Mini Handle\xcb,\x00
 7,Hachiro's Medal\xcb,\x00
-8,?,\x00
-9,Nametag\xcb,\x00
-10,?,\x00
-11,?,\x00
+8,Six-sided Fossil\xcb,\x00
+9,Name Tag\xcb,\x00
+10,Lesson Materials\xcb,\x00
+11,Kogane's Flower\xcb,\x00
 12,Ship Ticket\xcb,\x00
 13,Kogane's Medal\xcb,\x00
 14,T Medal\xcb,\x00
 15,Q Medal\xcb,\x00
 16,R Medal\xcb,\x00
 17,S Medal\xcb,\x00
-18,KabutoB Medal\xcb,\x00
-19,KuwagataB Medal\xcb,\x00
-20,?,\x00
+18,B Kabuto Medal\xcb,\x00
+19,B Kuwagata Medal\xcb,\x00
+20,♥ Stone\xcb,\x00
 21,Love Letter\xcb,\x00
-22,?,\x00
-23,?,\x0e
-24,Mermaid Costume\xcb,\x09
-25,♥Pendant\xcb,\x00
+22,Bubble Ticket\xcb,\x00
+23,Merman Uniform\xcb,\x0e
+24,Mermaid Uniform\xcb,\x09
+25,♥ Pendant\xcb,\x00
 26,Black Box\xcb,\x00
-27,?,\x00
+27,Card Key\xcb,\x00
 28,Broken Medal\xcb,\x00
 29,Transceiver\xcb,\x00
 30,COMP Key\xcb,\x00
-31,COCK Key\xcb,\x00
+31,COCKPIT Key\xcb,\x00
 32,MOVE Key\xcb,\x00
 33,DEVIL Key\xcb,\x00
 34,Space Suit\xcb,\x0a
 35,Periscope\xcb,\x00
 36,Wings of Wind\xcb,\x00
-37,Mini S. Wheel\xcb,\x00
-38,?,\x00
-39,?,\x00
+37,S-Bubble Ticket\xcb,\x00
+38,Pass Card\xcb,\x00
+39,Pass Point\xcb,\x00
 40,Password 1\xcb,\x00
 41,Password 2\xcb,\x00
 42,Password 3\xcb,\x00

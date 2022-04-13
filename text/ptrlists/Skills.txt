@@ -11,4 +11,4 @@ Index[#version],SkillName
 6,Heal
 7,Special
 8,Support
-9,Interrupt
+9,Disrupt

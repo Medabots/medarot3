@@ -2,80 +2,80 @@
 80
 32072
 Index[#version],AttackName
-0,?
-1,?
-2,?
-3,?
-4,?
-5,?
-6,?
-7,?
-8,?
-9,?
-10,?
-11,?
-12,?
-13,?
-14,?
-15,?
-16,?
-17,?
-18,?
-19,?
-20,?
-21,?
-22,?
-23,?
-24,?
-25,?
-26,?
-27,?
-28,?
-29,?
-30,?
-31,?
-32,?
-33,?
-34,?
-35,?
-36,?
-37,?
-38,?
-39,?
-40,?
-41,?
-42,?
-43,?
-44,?
-45,?
+0,Sword
+1,Hammer
+2,Rifle
+3,Gatling
+4,Laser
+5,Beam
+6,Missile
+7,Napalm
+8,Break
+9,Press
+10,Destroy
+11,Sacrifice
+12,Bug
+13,Virus
+14,Wave
+15,Hold
+16,Fire
+17,Melt
+18,Thunder
+19,Freeze
+20,Countdown
+21,Homesick
+22,Defend
+23,Perfect Defense
+24,Lesser Defense
+25,Anti-Air
+26,Anti-Sea
+27,Scan
+28,Conceal
+29,Melee Trap
+30,Shooting Trap
+31,Force Plant
+32,Scan Clear
+33,Conceal Clear
+34,Shot Clear
+35,First Aid
+36,Cross-Attack Set
+37,Cross-Attack Fire
+38,Minus Clear
+39,Trap Clear
+40,Force Control
+41,Repair
+42,Revive
+43,Resurrect
+44,Level Drain
+45,Null-All
 46,?
-47,?
-48,?
-49,?
-50,?
-51,?
-52,?
-53,?
-54,?
-55,?
-56,?
-57,?
-58,?
-59,?
-60,?
-61,?
-62,?
-63,?
-64,?
-65,?
-66,?
-67,?
-68,?
-69,?
-70,?
-71,?
-72,?
-73,?
-74,?
-75,?
-76,?
+47,Null-Optical
+48,Null-Gunpowder
+49,Null-Gravity
+50,Status Clear
+51,Auto-Repair
+52,Damage Reduce
+53,Reflect
+54,Counter
+55,Gravity Control
+56,Enemy Detection
+57,Rapid Charge
+58,Boost Charge
+59,Charge
+60,Charge Drain
+61,Tripping
+62,Force Up
+63,Transform
+64,Transform (Speed)
+65,Transform (Power)
+66,Transform (Status)
+67,Transform (Defense)
+68,Transform (Heal)
+69,Transform (Support)
+70,Plus Clear
+71,Disable
+72,Confusion
+73,Ammo Drain
+74,No Dodge
+75,No Defend
+76,Force Defend
