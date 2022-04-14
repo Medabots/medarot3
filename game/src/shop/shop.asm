@@ -978,7 +978,7 @@ ShopPasswordMapObtainedPartName::
   ld c, a
   add hl, bc
   ld bc, W_ListItemBufferArea
-  call $258F
+  call PutStringVariableLength
   ret
 
 ShopPasswordGetPartStatValues::

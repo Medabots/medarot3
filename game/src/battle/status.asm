@@ -822,7 +822,7 @@ DisplayMedarotNamesForBattleStatus::
   ld c, a
   add hl, bc
   pop bc
-  call $258F
+  call PutStringVariableLength
 
 .checkParticipantB
   ld a, 1
@@ -844,7 +844,7 @@ DisplayMedarotNamesForBattleStatus::
   ld c, a
   add hl, bc
   pop bc
-  call $258F
+  call PutStringVariableLength
 
 .checkParticipantC
   ld a, 2
@@ -866,7 +866,7 @@ DisplayMedarotNamesForBattleStatus::
   ld c, a
   add hl, bc
   pop bc
-  call $258F
+  call PutStringVariableLength
 
 .checkParticipantD
   ld a, 3
@@ -881,7 +881,7 @@ DisplayMedarotNamesForBattleStatus::
   ld b, h
   ld c, l
   ld hl, $998C
-  call $258F
+  call PutStringVariableLength
 
 .checkParticipantE
   ld a, 4
@@ -896,7 +896,7 @@ DisplayMedarotNamesForBattleStatus::
   ld b, h
   ld c, l
   ld hl, $99CC
-  call $258F
+  call PutStringVariableLength
 
 .checkParticipantF
   ld a, 5
@@ -911,7 +911,7 @@ DisplayMedarotNamesForBattleStatus::
   ld b, h
   ld c, l
   ld hl, $9A0C
-  jp $258F
+  jp PutStringVariableLength
 
 PlaceCursorForBattleStatus::
   ld a, 1
