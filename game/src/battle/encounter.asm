@@ -381,7 +381,7 @@ MapMedarotNameForVictoryResultsScreen::
   ld b, h
   ld c, l
   pop hl
-  call $258F
+  call PutStringVariableLength
   pop de
   ret
 
@@ -508,7 +508,7 @@ MapBasicSkillsForVictoryResultsScreen::
   ld l, a
   ld bc, W_ListItemBufferArea
   ld a, 5
-  call $258F
+  call PutStringVariableLength
   pop hl
   ld a, [hl]
   push af
@@ -648,7 +648,7 @@ MapMedaliaSkillsForVictoryResultsScreen::
   ld l, a
   ld bc, W_ListItemBufferArea
   ld a, 5
-  call $258F
+  call PutStringVariableLength
   pop hl
   ld a, [hl]
   push af
