@@ -118,7 +118,7 @@ BattleEncounterStateMachine::
   dw $542B ; 66
   dw $5454 ; 67
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; 68
-  dw $5469 ; 69
+  dw BattleEncounterResultsDrawPrizeState ; 69
   dw $54F7 ; 6A
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; 6B
   dw $551D ; 6C
@@ -178,7 +178,7 @@ BattleEncounterStateMachine::
   dw $57F8 ; A2
   dw $5454 ; A3
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; A4
-  dw $5469 ; A5
+  dw BattleEncounterResultsDrawPrizeState ; A5
   dw $54F7 ; A6
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; A7
   dw $5811 ; A8
@@ -407,7 +407,69 @@ BattleEncounterVictoryPrepareFadeInState::
   call WrapRestageDestinationBGPalettesForFade
   jp BattleEncounterIncSubsubstateIndex
 
-SECTION "Encounter State Machine 5", ROMX[$55A0], BANK[$05]
+SECTION "Encounter State Machine 5", ROMX[$5469], BANK[$05]
+BattleEncounterResultsDrawPrizeState::
+  call $5dc9
+  ld bc, $809
+  ld hl, $982b
+  call $25e5
+  ld bc, $809
+  ld hl, $982b
+  ld a, $02
+  call $25ff
+  ld bc, $801
+  ld hl, $996b
+  call $25e5
+  ld a, [$c600]
+  call $604a
+  ld a, [$c4f0]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, [$c601]
+  ld hl, $54f3
+  ld b, $00
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, [$c601]
+  ld b, a
+  add b
+  add b
+  ld b, a
+  ld a, [$c4ee]
+  add b
+  ld hl, $9200
+  call $34e1
+  ld a, [$c601]
+  add $6a
+  ld e, a
+  ld bc, $b03
+  ld a, $00
+  call WrapDecompressTilemap0
+  ld a, [$c601]
+  inc a
+  ld b, a
+  ld c, $09
+  ld a, [$c600]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $07
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld bc, W_ListItemBufferArea
+  ld a, $08
+  call GetTileBasedCentringOffset
+  ld hl, $996b
+  ld b, $00
+  ld c, a
+  add hl, bc
+  ld bc, W_ListItemBufferArea
+  ld a, $08
+  call PutStringVariableLength
+  jp BattleEncounterIncSubsubstateIndex
+
+SECTION "Encounter State Machine 6", ROMX[$55A0], BANK[$05]
 BattleEncounterVictoryResultsDrawingAndMappingState::
   ld a, [W_BattleEncounterSubsubstateIndex]
   push af
@@ -437,7 +499,7 @@ BattleEncounterVictoryResultsDrawingAndMappingState::
   ld [$CF96], a
   jp BattleEncounterIncSubsubstateIndex
 
-SECTION "Encounter State Machine 6", ROMX[$5869], BANK[$05]
+SECTION "Encounter State Machine 7", ROMX[$5869], BANK[$05]
 BattleEncounterIncSubsubstateIndex::
   ld hl, W_BattleEncounterSubsubstateIndex
   inc [hl]
