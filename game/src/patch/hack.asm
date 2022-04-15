@@ -95,3 +95,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MedachangeInfo, $9120 ; 19
   TilemapTilesetTableEntry RobattleSelection, $9190 ; 1A
   TilemapTilesetTableEntry Robattle, $9010 ; 1B
+  TilemapTilesetTableEntry RobattleMedalResults, $9010 ; 1C

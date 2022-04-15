@@ -359,22 +359,22 @@ DisplayEmptyMedalIconForVictoryResultsScreen::
 MapMedarotNameForVictoryResultsScreen::
   push de
   ld hl, .table
-  ld b, 0
   ld a, [$C4F2]
-  ld c, a
-  sla c
-  rl b
-  add hl, bc
-  ld a, [hli]
-  ld h, [hl]
-  ld l, a
+  push af
+  rst $30 ; hl = .table[a]
+  pop af ; a is still table index
   push hl
   ld hl, $30
   add hl, de
   ld b, h
   ld c, l
-  pop hl
-  call PutStringVariableLength
+  pop de ; hl -> de, mapping address
+  rla
+  rla
+  rla
+  add $10
+  ld h, a ; h = drawing address
+  call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
 
@@ -382,6 +382,8 @@ MapMedarotNameForVictoryResultsScreen::
   dw $9864
   dw $9904
   dw $99A4
+
+  padend $6747
 
 MapEmptyMedarotNameForVictoryResultsScreen::
   ld hl, MapMedarotNameForVictoryResultsScreen.table
@@ -456,52 +458,52 @@ MapEmptyMedalLevelForVictoryResultsScreen::
   jp MapDashesForVictoryResultsScreen
 
 MapBasicSkillsForVictoryResultsScreen::
-  push de
   ld hl, .table
-  ld b, 0
+  xor a
+  ld [$C4F4], a
   ld a, [$C4F2]
-  ld c, a
-  sla c
-  rl b
-  add hl, bc
-  ld a, [hli]
-  ld h, [hl]
-  ld l, a
+  push af
+  rst $30
   ld a, h
   ld [$C4E4], a
   ld a, l
   ld [$C4E5], a
-  xor a
-  ld [$C4F4], a
-
+  pop af
+  rla
+  rla
+  rla
+  rla
+  add $28 - $5 ; we increment before drawing
 .loop
   push de
+  push af
   ld hl, $18
   add hl, de
-  ld b, 0
   ld a, [$C4F4]
-  ld c, a
-  sla c
-  rl b
+  rst $28
   sla c
   rl b
   add hl, bc
   inc hl
   ld a, [hli]
-  push hl
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
   call WrapBufferTextFromList
-  ld a, [$C4E4]
+  pop hl
+  pop af
+  add $5 ; increment drawing index before drawing, note that the initial offset is -5
+  push af
+  push hl
   ld h, a
+  ld a, [$C4E4]
+  ld d, a
   ld a, [$C4E5]
-  ld l, a
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringVariableLength
+  ld e, a
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress5Tiles
   pop hl
   ld a, [hl]
   push af
@@ -514,7 +516,6 @@ MapBasicSkillsForVictoryResultsScreen::
   ld b, 0
   pop af
   call $3504
-  pop de
   ld a, [$C4E4]
   ld h, a
   ld a, [$C4E5]
@@ -528,11 +529,14 @@ MapBasicSkillsForVictoryResultsScreen::
   ld a, [$C4F4]
   inc a
   ld [$C4F4], a
-  cp 3
-  jr nz, .loop
+  cp 3 ; set flags before overwriting a
+  pop bc ; af -> bc
+  ld a, b
   pop de
+  jr nz, .loop
   ret
-
+  padend $6832
+  ; Table might be loaded by other routines, keep it in place
 .table
   dw $9881
   dw $9921
@@ -592,34 +596,32 @@ MapEmptyBasicSkillsForVictoryResultsScreen::
   pop de
   ret
 
+  padend $6895
+
 MapMedaliaSkillsForVictoryResultsScreen::
-  push de
-  ld hl, .table
-  ld b, 0
-  ld a, [$C4F2]
-  ld c, a
-  sla c
-  rl b
-  add hl, bc
-  ld a, [hli]
-  ld h, [hl]
-  ld l, a
-  ld a, h
-  ld [$C4E4], a
-  ld a, l
-  ld [$C4E5], a
   xor a
-  ld [$C4F4], a
+  ld [$C4F4], a ; skill idx
+  ld hl, .table
+  ld a, [$C4F2] ; bot index
+  push af
+  rst $30 ; hl = .table[a]
+  ld [$C4E5], a ; a = l
+  ld a, h
+  ld [$C4E4], a ; current base tilemap address
+  pop af
+  rla
+  rla
+  rla
+  rla
+  add $58 - $5; 3 skills x 5 tiles, allocate 16 per bot
 
 .loop
   push de
+  push af
   ld hl, $24
   add hl, de
-  ld b, 0
   ld a, [$C4F4]
-  ld c, a
-  sla c
-  rl b
+  rst $28
   sla c
   rl b
   add hl, bc
@@ -628,20 +630,24 @@ MapMedaliaSkillsForVictoryResultsScreen::
   jr z, .medaliaSlotEmpty
   inc hl
   ld a, [hli]
-  push hl
   ld [W_ListItemIndexForBuffering], a
-  ld b, 6
-  ld c, 6
-  ld a, 0
+  ld bc, $0606
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
   call WrapBufferTextFromList
-  ld a, [$C4E4]
+  pop hl
+  pop af
+  add $5 ; increment drawing index before drawing, note that the initial offset is -5
+  push af
+  push hl
   ld h, a
+  ld a, [$C4E4]
+  ld d, a
   ld a, [$C4E5]
-  ld l, a
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringVariableLength
+  ld e, a
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress5Tiles
   pop hl
   ld a, [hl]
   push af
@@ -662,18 +668,14 @@ MapMedaliaSkillsForVictoryResultsScreen::
   ld a, [$C4E5]
   ld l, a
   ld b, 5
+  ; hl and de are preserved
   call MapDashesForVictoryResultsScreen
-  ld a, [$C4E4]
-  ld h, a
-  ld a, [$C4E5]
-  ld l, a
-  ld bc, 6
+  ld bc, 6 ; Skill Value
   add hl, bc
   ld b, 2
   call MapDashesForVictoryResultsScreen
 
 .nextSkill
-  pop de
   ld a, [$C4E4]
   ld h, a
   ld a, [$C4E5]
@@ -688,10 +690,14 @@ MapMedaliaSkillsForVictoryResultsScreen::
   inc a
   ld [$C4F4], a
   cp 3
-  jp nz, .loop
+  pop bc ; af -> bc
+  ld a, b
   pop de
+  jp nz, .loop
   ret
 
+  padend $6946
+  ; Table might be loaded by other routines, keep it in place
 .table
   dw $988B
   dw $992B
@@ -710,7 +716,6 @@ MapEmptyMedaliaSkillsForVictoryResultsScreen::
   ld h, [hl]
   ld l, a
   jp MapEmptyBasicSkillsForVictoryResultsScreen.extEntry
-
 
 SECTION "Encounter Helper Functions 6", ROMX[$6c6b], BANK[$05]
 MapNewMedaforceTextForVictoryResultsScreen::
@@ -739,37 +744,44 @@ MapNewMedaforceTextForVictoryResultsScreen::
   ld a, [hli]
   ld h, [hl]
   ld l, a
-  ld a, $ea ; Opening quote
+  
+  ; $04 - $08 is prerendered text 'Learned '
+  ld a, $04
+.new_medaforce_draw_loop
   di
   push af
   rst $20
   pop af
   ld [hli], a
   ei
+  inc a
+  cp $08 + 1
+  jr nz, .new_medaforce_draw_loop
+
+  ; Draw Medaforce name in same location as skills, since they get overwritten
   push hl
   ld a, [$c4f4]
   ld [W_ListItemIndexForBuffering], a
-  ld b, $0a
-  ld c, $09
+  ld bc, $0A09
   ld a, $06
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
-  ld de, .text
-  ld b, $08
-.new_medaforce_draw_loop
-  ld a, [de]
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  inc de
-  dec b
-  jr nz, .new_medaforce_draw_loop
+  pop de ; hl -> de, address to draw to
+  ld bc, W_NewListItemBufferArea
+  ld a, [$c4f6]
+  rla
+  rla
+  rla
+  rla
+  add $28
+  ld h, a
+  ld a, $02 ; Bold font
+  ld [W_VWFCurrentFont], a
+  ld a, $0c ; 12 characters to draw 'Learned xxxxxxxxxxxx !'
+  call VWFDrawStringLeftFullAddress
+
+  ; hl is final tile
+
 .no_new_medaforce
   ld a, [$c4f6]
   inc a
@@ -781,5 +793,5 @@ MapNewMedaforceTextForVictoryResultsScreen::
   dw $98c1
   dw $9961
   dw $9a01
-.text
-  db $EB,$62,$00,$3C,$99,$3B,$47,$B9 ; (Japanese) '(end quote) Learned Medaforce'
+
+  padend $6ce2
