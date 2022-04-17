@@ -717,3 +717,76 @@ MapEmptyMedaliaSkillsForVictoryResultsScreen::
   ld h, [hl]
   ld l, a
   jp MapEmptyBasicSkillsForVictoryResultsScreen.extEntry
+
+
+SECTION "Encounter Helper Functions 6", ROMX[$6c6b], BANK[$05]
+MapNewMedaforceTextForVictoryResultsScreen::
+  xor a
+  ld [$c4f6], a
+.loop
+  ld a, [$c4f6]
+  ld hl, $c7b7
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  or a
+  jr z, .no_new_medaforce
+  ld a, [hl]
+  ld [$c4f4], a
+  ld a, [$c4f6]
+  ld hl, .table
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, $ea ; Opening quote
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  push hl
+  ld a, [$c4f4]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $0a
+  ld c, $09
+  ld a, $06
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  pop hl
+  ld bc, W_ListItemBufferArea
+  call PutStringVariableLength
+  ld de, .text
+  ld b, $08
+.new_medaforce_draw_loop
+  ld a, [de]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .new_medaforce_draw_loop
+.no_new_medaforce
+  ld a, [$c4f6]
+  inc a
+  ld [$c4f6], a
+  cp $03
+  jr nz, .loop
+  ret
+.table
+  dw $98c1
+  dw $9961
+  dw $9a01
+.text
+  db $EB,$62,$00,$3C,$99,$3B,$47,$B9 ; (Japanese) '(end quote) Learned Medaforce'
