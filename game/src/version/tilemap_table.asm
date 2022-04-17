@@ -465,9 +465,9 @@ Tilemap00_6C::
 Tilemap00_6D::
   INCBIN "./build/tilemaps/006D.map"
 Tilemap00_6E::
-  INCBIN "./build/tilemaps/006E.map"
+  INCBIN "./build/tilemaps/RobattleResultsMedalScreen.map"
 Tilemap00_6F::
-  INCBIN "./build/tilemaps/006F.map"
+  INCBIN "./build/tilemaps/RobattleResultsMedalScreenMedalIcons.map"
 Tilemap00_70::
   INCBIN "./build/tilemaps/0070.map"
 Tilemap00_71::
