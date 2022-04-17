@@ -437,7 +437,7 @@ Tilemap00_5E::
 Tilemap00_5F::
   INCBIN "./build/tilemaps/005F.map"
 Tilemap00_60::
-  INCBIN "./build/tilemaps/0060.map"
+  INCBIN "./build/tilemaps/RobattleAutoRotationScreen.map"
 Tilemap00_61::
   INCBIN "./build/tilemaps/0061.map"
 Tilemap00_62::
