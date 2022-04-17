@@ -372,7 +372,7 @@ MapMedarotNameForVictoryResultsScreen::
   rla
   rla
   rla
-  add $10
+  add $09
   ld h, a ; h = drawing address
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
@@ -473,7 +473,7 @@ MapBasicSkillsForVictoryResultsScreen::
   rla
   rla
   rla
-  add $28 - $5 ; we increment before drawing
+  add $21 - $5 ; we increment before drawing
 .loop
   push de
   push af
@@ -613,7 +613,7 @@ MapMedaliaSkillsForVictoryResultsScreen::
   rla
   rla
   rla
-  add $58 - $5; 3 skills x 5 tiles, allocate 16 per bot
+  add $51 - $5; 3 skills x 5 tiles, allocate 16 per bot
 
 .loop
   push de
@@ -773,7 +773,7 @@ MapNewMedaforceTextForVictoryResultsScreen::
   rla
   rla
   rla
-  add $28
+  add $21
   ld h, a
   ld a, $02 ; Bold font
   ld [W_VWFCurrentFont], a
