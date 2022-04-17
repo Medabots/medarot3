@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Battle Helper Functions 1", ROMX[$4DCF], BANK[$0A]
 ; Part of initial state (0A:40C1 -> 0A:4B84 -> 0A:4DCF)
@@ -462,6 +463,8 @@ BattleInitializeLoadParticipantData::
   jp nz, .loop
   ret
 
+  padend $5137
+
 SECTION "Battle Helper Functions 2", ROMX[$5662], BANK[$0A]
 CalculateBattleParticipantAddress::
   ld hl, $D000
@@ -504,18 +507,7 @@ MapAttackNamesForBattle::
   jp MapPlayerMedachangeAttackCNameForBattle
 
 MapPlayerAttackANamePlusAmmoForBattle::
-  ld hl, $D0
-  add hl, de
-  ld b, h
-  ld c, l
-  call BufferCentredAttackNameForBattle
-  jr .mapName
-  call MapEightDashesForBattle
-
-.mapName
-  ld hl, $99C6
-  ld bc, $DCBA
-  call PutStringVariableLength
+.mapAmmo
   ld hl, $E7
   add hl, de
   ld a, [hl]
@@ -536,54 +528,90 @@ MapPlayerAttackANamePlusAmmoForBattle::
   pop af
   ld [hli], a
   ei
+
+  ; Head part can't be broken
+  ld hl, 3
+  add hl, de
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $99C6
+  ld b, $01
+  ld h, $70
+  call HelperPullPartsTextAndDraw
+  pop de
   ret
 
 MapPlayerAttackBNameForBattle::
+  ; Check if part is broken
   ld hl, $106
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, $F0
+  ld hl, 4
   add hl, de
-  ld b, h
-  ld c, l
-  call BufferCentredAttackNameForBattle
-  jr .mapName
-
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $9A0B
+  ld b, $02
+  ld h, $68
+  call HelperPullPartsTextAndDraw
+  pop de
+  ret
 .mapDashes
-  call MapEightDashesForBattle
-
-.mapName
   ld hl, $9A0B
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jr HelperMapDashes
 
 MapPlayerAttackCNameForBattle::
+  ; Check if part is broken
   ld hl, $126
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, $110
+  ld hl, 5
   add hl, de
-  ld b, h
-  ld c, l
-  call BufferCentredAttackNameForBattle
-  jr .mapName
-
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $9A01
+  ld b, $03
+  ld h, $60
+  call HelperPullPartsTextAndDraw
+  pop de
+  ret
 .mapDashes
-  call MapEightDashesForBattle
-
-.mapName
   ld hl, $9A01
+  jr HelperMapDashes
+
+HelperMapDashes:
+  ; hl is position to draw
+  push hl
+  call MapEightDashesForBattle
+  pop hl
   ld bc, $DCBA
   jp PutStringVariableLength
+
+HelperPullPartsTextAndDraw:
+  ; a - list index
+  ; b - part index
+  ; de - location to draw
+  ; h - tile address
+  ld c, $09 ; All parts are c == 09
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7 ; skip the the part model
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  push de
+  call WrapBufferTextFromList
+  pop de
+  pop hl
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCentredFullAddress8Tiles
+  ret
 
 MapEightDashesForBattle::
   ld hl, $DCBA
   ld b, 8
-
 .loop
   ld a, $EE
   ld [hli], a
@@ -593,57 +621,6 @@ MapEightDashesForBattle::
   ld [hl], a
   ret
 
-BufferCentredAttackNameForBattle::
-  push de
-  push hl
-  ld a, 8
-  call GetTileBasedCentringOffset
-  pop de
-  ld b, a
-  ld a, 8
-  ld [$C4EE], a
-  ld hl, $DCBA
-
-.paddingLoop
-  ld a, b
-  or a
-  jr z, .copyLoop
-  xor a
-  ld [hli], a
-  dec b
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .paddingLoop
-
-.copyLoop
-  ld a, [de]
-  cp $CB
-  jr z, .endPaddingLoop
-  ld [hli], a
-  inc de
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .copyLoop
-
-.endPaddingLoop
-  ld a, [$C4EE]
-  or a
-  jr z, .addTerminator
-  xor a
-  ld [hli], a
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .endPaddingLoop
-
-.addTerminator
-  ld a, $CB
-  ld [hl], a
-  pop de
-  ret
-
 MapMedaforceANamePlusAmmoForBattle::
   ld hl, $15
   add hl, de
@@ -651,25 +628,23 @@ MapMedaforceANamePlusAmmoForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $70
+  ld de, $99c6
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call BufferCentredAttackNameForBattle
-  jr .mapName
+  jr .mapDashes
 
 .slotEmpty
-  call MapEightDashesForBattle
-
-.mapName
   ld hl, $99C6
-  ld bc, $DCBA
-  call PutStringVariableLength
+  call HelperMapDashes
+
+.mapDashes
   ld hl, $99CF
   ld a, 5
   jp MapDashesForBattle
@@ -681,25 +656,21 @@ MapMedaforceBNameForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $68
+  ld de, $9A0B
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call BufferCentredAttackNameForBattle
-  jr .mapName
+  ret
 
 .slotEmpty
-  call MapEightDashesForBattle
-
-.mapName
   ld hl, $9A0B
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jp HelperMapDashes
 
 MapMedaforceCNameForBattle::
   ld hl, $17
@@ -708,25 +679,21 @@ MapMedaforceCNameForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $60
+  ld de, $9A01
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call BufferCentredAttackNameForBattle
-  jr .mapName
+  ret
 
 .slotEmpty
-  call MapEightDashesForBattle
-
-.mapName
   ld hl, $9A01
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jp HelperMapDashes
 
 MapDashesForBattle::
   ld b, a
@@ -742,6 +709,8 @@ MapDashesForBattle::
   dec b
   jr nz, .loop
   ret
+
+  padend $592c
 
 MapPlayerMedachangeAttackANamePlusAmmoForBattle::
   push de
@@ -784,13 +753,13 @@ MapPlayerMedachangeAttackANamePlusAmmoForBattle::
   ret
 
 MedachangeAttackAName::
-  db $00,$7B,$27,$02,$7E,$00,$9E,$00
+  db $00,$00,$56,$57,$58,$59,$00,$00
 
 MedachangeAttackBName::
-  db $00,$7B,$27,$02,$7E,$00,$9F,$00
+  db $00,$00,$56,$57,$58,$5A,$00,$00
 
 MedachangeAttackCName::
-  db $00,$7B,$27,$02,$7E,$00,$A0,$00
+  db $00,$00,$56,$57,$58,$5B,$00,$00
 
 MapPlayerMedachangeAttackBNameForBattle::
   push de

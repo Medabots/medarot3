@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Battle Status Functions 1", ROMX[$6607], BANK[$10]
 BufferParticipantDataForBattleStatus::
@@ -54,7 +55,7 @@ DisplayMedalIconForBattleStatus::
   call $34E1
   ld bc, $100
   ld e, $46
-  ld a, 0
+  xor a
   jp WrapDecompressTilemap0
 
 MapMedalNameForBattleStatus::
@@ -64,121 +65,121 @@ MapMedalNameForBattleStatus::
   call BufferParticipantDataForBattleStatus
   ld a, [$C552]
   ld [W_ListItemIndexForBuffering], a
-  ld b, $B
-  ld c, 6
-  ld a, 0
+  ld bc, $0B06
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9823
-  ld bc, W_ListItemBufferArea
+  ld de, $9823
+  ld h, $01
+  ld bc, W_NewListItemBufferArea
   ld a, 5
-  jp PutStringFixedLength
+  jp VWFDrawStringLeftFullAddress
 
 MapHeadPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $E6
+  ld hl, $E6 ; Part HP
   ld b, 1
   call BufferParticipantDataForBattleStatus
+  ld bc, Dashes
   ld a, [$C552]
   or a
-  jr nz, .hasPart
-  ld hl, $9863
-  ld b, 8
-  jp MapDashesForBattleStatus
-
-.hasPart
+  jr z, .draw
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $D0
-  ld b, 9
-  call BufferParticipantDataForBattleStatus
-  ld hl, $9863
-  ld bc, $C552
-  ld a, 8
-  jp PutStringFixedLength
+  ld hl, $0103 ; h is always 00, use it to store 'b' for indexing
+  call HelperGetPartNameFromBufferedIndex
+.draw
+  push de
+  ld de, $9863
+  ld h, $06
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
+  ret
 
 MapLeftArmPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $106
+  ld hl, $106 ; Part HP
   ld b, 1
   call BufferParticipantDataForBattleStatus
+  ld bc, Dashes
   ld a, [$C552]
   or a
-  jr nz, .hasPart
-  ld hl, $98A3
-  ld b, 8
-  jp MapDashesForBattleStatus
-
-.hasPart
+  jr z, .draw
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $F0
-  ld b, 9
-  call BufferParticipantDataForBattleStatus
-  ld hl, $98A3
-  ld bc, $C552
-  ld a, 8
-  jp PutStringFixedLength
+  ld hl, $0204 ; h is always 00, use it to store 'b' for indexing
+  call HelperGetPartNameFromBufferedIndex
+.draw
+  push de
+  ld de, $98A3
+  ld h, $0E
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
+  ret
 
 MapRightArmPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $126
+  ld hl, $126 ; Part HP
   ld b, 1
   call BufferParticipantDataForBattleStatus
+  ld bc, Dashes
   ld a, [$C552]
   or a
-  jr nz, .hasPart
-  ld hl, $98E3
-  ld b, 8
-  jp MapDashesForBattleStatus
-
-.hasPart
+  jr z, .draw
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $110
-  ld b, 9
-  call BufferParticipantDataForBattleStatus
-  ld hl, $98E3
-  ld bc, $C552
-  ld a, 8
-  jp PutStringFixedLength
+  ld hl, $0305 ; h is always 00, use it to store 'b' for indexing
+  call HelperGetPartNameFromBufferedIndex
+.draw
+  push de
+  ld de, $98E3
+  ld h, $16
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
+  ret
 
 MapLegPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $146
+  ld hl, $146 ; Part HP
   ld b, 1
   call BufferParticipantDataForBattleStatus
+  ld bc, Dashes
   ld a, [$C552]
   or a
-  jr nz, .hasPart
-  ld hl, $9923
-  ld b, 8
-  jp MapDashesForBattleStatus
-
-.hasPart
+  jr z, .draw
   ld a, [W_BattleStatusCursorPosition]
-  ld hl, $130
-  ld b, 9
-  call BufferParticipantDataForBattleStatus
-  ld hl, $9923
-  ld bc, $C552
-  ld a, 8
-  jp PutStringFixedLength
-
-MapDashesForBattleStatus::
+  ld hl, $0406 ; h is always 00, use it to store 'b' for indexing
+  call HelperGetPartNameFromBufferedIndex
+.draw
   push de
-  push hl
-
-.loop
-  ld a, $EE
-  di
-  push af
-  rst $20
-  pop af
-  ld [hli], a
-  ei
-  dec b
-  jr nz, .loop
-  pop hl
+  ld de, $9923
+  ld h, $1E
+  call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
+
+HelperGetPartNameFromBufferedIndex:
+  
+  ; Get part ID
+  push hl
+  ld h, $0 ; l is index, 3 to 6
+  ld b, $1
+  call BufferParticipantDataForBattleStatus
+  pop hl
+
+  ; Populate bc with buffer
+  push de
+  ld b, h
+  ld c, $09 ; All parts are c == 09
+  ld a, [$C552]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7 ; Skip model
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld bc, W_NewListItemBufferArea
+  pop de
+  ret
+
+Dashes:
+  db "--------", $CB
+  padend $6769
 
 MapHeadPartCompatibilityBonusForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
@@ -803,26 +804,18 @@ DisplayMedarotSpritesForBattleStatus::
   ret
 
 DisplayMedarotNamesForBattleStatus::
+; Player bot names max out at 8 characters, they fit within normal bounds
   xor a
-  ld hl, 0
+  ld h, a
+  ld l, a
   ld b, 1
   call BufferParticipantDataForBattleStatus
   ld a, [$C552]
   or a
   jr z, .checkParticipantB
-  ld hl, $40
-  add hl, de
-  ld b, h
-  ld c, l
-  push bc
-  ld a, 8
-  call $25D2
   ld hl, $9980
-  ld b, 0
-  ld c, a
-  add hl, bc
-  pop bc
-  call PutStringVariableLength
+  ld a, $26
+  call HelperDrawPlayerNameString
 
 .checkParticipantB
   ld a, 1
@@ -832,19 +825,9 @@ DisplayMedarotNamesForBattleStatus::
   ld a, [$C552]
   or a
   jr z, .checkParticipantC
-  ld hl, $40
-  add hl, de
-  ld b, h
-  ld c, l
-  push bc
-  ld a, 8
-  call $25D2
-  ld hl, $99C0
-  ld b, 0
-  ld c, a
-  add hl, bc
-  pop bc
-  call PutStringVariableLength
+  ld hl, $99c0
+  ld a, $2e
+  call HelperDrawPlayerNameString
 
 .checkParticipantC
   ld a, 2
@@ -854,20 +837,12 @@ DisplayMedarotNamesForBattleStatus::
   ld a, [$C552]
   or a
   jr z, .checkParticipantD
-  ld hl, $40
-  add hl, de
-  ld b, h
-  ld c, l
-  push bc
-  ld a, 8
-  call $25D2
   ld hl, $9A00
-  ld b, 0
-  ld c, a
-  add hl, bc
-  pop bc
-  call PutStringVariableLength
+  ld a, $36
+  ld a, $2e
+  call HelperDrawPlayerNameString
 
+; Enemy bot names are loaded from a list, based on head part idx
 .checkParticipantD
   ld a, 3
   ld hl, 0
@@ -876,12 +851,12 @@ DisplayMedarotNamesForBattleStatus::
   ld a, [$C552]
   or a
   jr z, .checkParticipantE
-  ld hl, $40
-  add hl, de
-  ld b, h
-  ld c, l
-  ld hl, $998C
-  call PutStringVariableLength
+  call HelperGetMedarotNameFromHead ; sets bc
+  push de
+  ld de, $998C
+  ld h, $3e
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
 
 .checkParticipantE
   ld a, 4
@@ -891,12 +866,12 @@ DisplayMedarotNamesForBattleStatus::
   ld a, [$C552]
   or a
   jr z, .checkParticipantF
-  ld hl, $40
-  add hl, de
-  ld b, h
-  ld c, l
-  ld hl, $99CC
-  call PutStringVariableLength
+  call HelperGetMedarotNameFromHead ; sets bc
+  push de
+  ld de, $99CC
+  ld h, $46
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
 
 .checkParticipantF
   ld a, 5
@@ -906,12 +881,46 @@ DisplayMedarotNamesForBattleStatus::
   ld a, [$C552]
   or a
   ret z
+  call HelperGetMedarotNameFromHead ; sets bc
+  push de
+  ld de, $9A0C
+  ld h, $4e
+  call VWFDrawStringLeftFullAddress8Tiles
+  pop de
+  ret
+
+HelperDrawPlayerNameString:
+  ; hl -> de, address to draw to
+  ; a -> h, index to draw
+  push de
+  push hl
   ld hl, $40
   add hl, de
+  pop de ; hl -> de, address to draw to
   ld b, h
-  ld c, l
-  ld hl, $9A0C
-  jp PutStringVariableLength
+  ld c, l ; bc = string address
+  ld h, a ; h = tile drawing index
+  call VWFDrawStringRightFullAddress8Tiles
+  pop de ; restore de to original
+  ret
+
+HelperGetMedarotNameFromHead:
+  ; The enemy bot names are based on the head part (loaded in 0A:519c)
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld bc, W_NewListItemBufferArea
+  ret
+
+  padend $6c2d
 
 PlaceCursorForBattleStatus::
   ld a, 1

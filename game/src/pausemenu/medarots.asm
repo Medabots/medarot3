@@ -3090,21 +3090,25 @@ SelectMedarotForBattle::
   ld a, 6
   rst 8
   ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
-  ld hl, $DCA0
-  ld b, 0
+  push af
+  ld hl, $DCA0 - $0b0e ; Do the math here to save bytes and set b and c earlier
+  ld b, $B
+  add $E
   ld c, a
   add hl, bc
   ld a, [W_MedarotSelectionScreenSelectedOption]
   or $80
   ld [hl], a
-  ld b, $B
-  ld a, [W_MedarotBattleSelectionCurrentSelectionOffset]
-  add $E
-  ld c, a
+  pop af
+  rlca ; preset 'a' to 8 x selection offset, for use in map function
+  rlca
+  rlca
   call MapSelectedMedarotNameForBattleSelection
   ld hl, W_MedarotBattleSelectionCurrentSelectionOffset
   inc [hl]
   ret
+
+  padend $5cc8
 
 CanMoreMedarotsBeSelected::
   ld a, 5
@@ -3161,12 +3165,12 @@ AutoProgressBattleMedarotSelector::
   db 1,2,0,4,5,3,7,8,6
 
 MapSelectedMedarotNameForBattleSelection::
+  add $24 ; 'a' is 8 x offset, use it for drawing location
+  push af
   ld a, [W_MedarotSelectionScreenSelectedOption]
-  push bc
-  call GetMedarotSlotAddressForSelectionScreen
-  pop bc
   call OffsetToMappingAddressForMedarotScreens
   push hl
+  call GetMedarotSlotAddressForSelectionScreen
   ld hl, M_MedarotMedal
   add hl, de
   ld a, [hl]
@@ -3174,10 +3178,12 @@ MapSelectedMedarotNameForBattleSelection::
   ld hl, M_MedalNickname
   add hl, de
   ld b, h
-  ld c, l
-  pop hl
-  ld a, 8
-  jp PutStringFixedLength
+  ld c, l ; bc string to draw
+  pop de ; hl -> de, address to write to
+  pop hl ; a(f) -> h(l) working area for VWF
+  jp VWFDrawStringLeftFullAddress8Tiles
+
+  padend $5d3f
 
 BattleMedarotDeselectionInputHandler::
   xor a

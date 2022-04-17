@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 W_BattleEncounterSubsubstateIndex EQU $C0A6
 
@@ -456,18 +457,14 @@ BattleEncounterResultsDrawPrizeState::
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld bc, W_NewListItemBufferArea
+  ld de, $996b
+  ld h, $07
+  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ld bc, W_ListItemBufferArea
-  ld a, $08
-  call GetTileBasedCentringOffset
-  ld hl, $996b
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  ld a, $08
-  call PutStringVariableLength
   jp BattleEncounterIncSubsubstateIndex
+
+  padend $54f3
 
 SECTION "Encounter State Machine 6", ROMX[$55A0], BANK[$05]
 BattleEncounterVictoryResultsDrawingAndMappingState::

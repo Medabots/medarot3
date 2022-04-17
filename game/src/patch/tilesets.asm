@@ -84,3 +84,6 @@ PatchTilesets::
   PatchTilesetEntry MedarotsScreen
   PatchTilesetEntry MedarotInfo
   PatchTilesetEntry MedachangeInfo
+  PatchTilesetEntry RobattleSelection
+  PatchTilesetEntry Robattle
+  PatchTilesetEntry RobattleMedalResults
