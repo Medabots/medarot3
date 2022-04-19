@@ -211,3 +211,197 @@ LoadMaliasGraphics::
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
   ret
+
+SECTION "Parse tileset loading scripts", ROM0[$0d9d]
+ParseTilesetScript::
+  ld a, $2e
+  ld [$c4dd], a
+  rst $10
+  ld a, b
+  cp $02
+  jr c, .asm_dae
+  ld a, $63
+  ld [$c4dd], a
+  rst $10
+.asm_dae
+  ld a, $00
+  ld [W_CurrentVRAMBank], a
+  ld [$ff4f], a
+  ld a, b
+  ld [$c4e0], a
+  ld a, c
+  ld [$c4e1], a
+  ld hl, $4000
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+.asm_dc8
+  ld a, [hl]
+  cp $ff
+  jp z, .asm_ed5
+  cp $fe
+  jp z, .asm_e19
+  cp $fd
+  jp z, .asm_e3f
+  cp $fc
+  jp z, .asm_e47
+  cp $fb
+  jp z, .asm_ebc
+  ld a, [hli]
+  ld [$c4b1], a
+  ld a, [hli]
+  ld [$c4ee], a
+  ld a, [$c4e0]
+  or a
+  jr z, .asm_e11
+  ld a, [$c4ee]
+  cp $60
+  jr nc, .asm_e05
+  ld a, $28
+  ld b, a
+  ld a, [$c4e1]
+  and $01
+  add b
+  ld [$c4b0], a
+  jr .asm_e11
+.asm_e05
+  ld a, $2a
+  ld b, a
+  ld a, [$c4e1]
+  and $01
+  add b
+  ld [$c4b0], a
+.asm_e11
+  push hl
+  ld a, [$c4b0]
+  rst $10
+  jp .asm_e7d
+.asm_e19: ; e19 (0:e19)
+  inc hl
+  ld a, [hli]
+  push hl
+  ld hl, $8000
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld a, h
+  ld [$c4ad], a
+  ld a, l
+  ld [$c4ae], a
+  pop hl
+  jp .asm_dc8
+.asm_e3f:
+  inc hl
+  ld a, [hli]
+  ld [$c4b0], a
+  jp .asm_dc8
+.asm_e47:
+  inc hl
+  ld a, [hli]
+  push hl
+  push af
+  ld a, $2e
+  rst $10
+  pop af
+  ld hl, $5a74
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  push hl
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  ld a, [hl]
+  ld [$c4ee], a
+  pop hl
+  inc hl
+  inc hl
+  ld a, [hli]
+  ld [$c4b1], a
+  ld b, $00
+  ld a, [$c4ee]
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld [$c4ee], a
+  ld a, [hl]
+  rst $10
+.asm_e7d
+  ld hl, $4000
+  ld b, $00
+  ld a, [$c4ee]
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  push hl
+  pop de
+  ld a, [$c4b1]
+  ld c, a
+  ld a, [$c4ad]
+  ld h, a
+  ld a, [$c4ae]
+  ld l, a
+.asm_e9c
+  ld b, $10
+.asm_e9e
+  ld a, [de]
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  inc de
+  dec b
+  jr nz, .asm_e9e
+  dec c
+  jr nz, .asm_e9c
+  ld a, h
+  ld [$c4ad], a
+  ld a, l
+  ld [$c4ae], a
+  ld a, [$c4dd]
+  rst $10
+  pop hl
+  jp .asm_dc8
+.asm_ebc:
+  inc hl
+  ld a, [hli]
+  or a
+  jr nz, .asm_ecb
+  ld a, $00
+  ld [W_CurrentVRAMBank], a
+  ld [$ff4f], a
+  jp .asm_dc8
+.asm_ecb
+  ld a, $01
+  ld [W_CurrentVRAMBank], a
+  ld [$ff4f], a
+  jp .asm_dc8
+.asm_ed5:
+  ld a, $00
+  ld [W_CurrentVRAMBank], a
+  ld [$ff4f], a
+  ret
