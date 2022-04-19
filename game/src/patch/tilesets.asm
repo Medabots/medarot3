@@ -87,3 +87,4 @@ PatchTilesets::
   PatchTilesetEntry RobattleSelection
   PatchTilesetEntry Robattle
   PatchTilesetEntry RobattleMedalResults
+  PatchTilesetEntry RobattleAutoBattlePlan
