@@ -257,6 +257,7 @@ dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
 	rm $(TILESET_PREBUILT)/*.$(TSET_TYPE) || echo ""
 	rm $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE) || echo ""
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
+	$(PYTHON) $(SCRIPT)/dump_tileset_scripts.py "$(TILESET_GFX)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
 	rm $(PTRLISTS_TEXT)/*.$(TEXT_TYPE) || echo ""
