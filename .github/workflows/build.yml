@@ -20,7 +20,7 @@ jobs:
       - name: List versions
         run: |
           git --version
-          python --version
+          python3 --version
           rgbasm --version
           rgblink --version
           rgbgfx --version
