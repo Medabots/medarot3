@@ -2,6 +2,7 @@
 
 import os, sys
 from shutil import copyfile
+from pathlib import Path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
@@ -10,9 +11,10 @@ if __name__ == '__main__':
     input_file = sys.argv[2]
     prebuilt_root = sys.argv[3]
 
-    fname = os.path.splitext(os.path.basename(input_file))[0]
+    fname = Path(input_file).stem.rsplit('.', 1)[0]
 
     prebuilt = os.path.join(prebuilt_root, f"{fname}.malias")
+
     if os.path.isfile(prebuilt):
         print("\tUsing prebuilt {}".format(prebuilt))
         copyfile(prebuilt, output_file)

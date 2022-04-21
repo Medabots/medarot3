@@ -17,7 +17,8 @@ INT_TYPE := o
 
 RAW_TSET_SRC_TYPE := png
 TSET_SRC_TYPE := 2bpp
-TSET_TYPE := malias
+COMPRESSED_TSET_SRC_TYPE := malias.$(TSET_SRC_TYPE)
+COMPRESSED_TSET_TYPE := malias
 TMAP_TYPE := map
 TEXT_TYPE := txt
 CSV_TYPE = csv
@@ -132,9 +133,9 @@ ATTRIBMAPS_VERSIONED := $(call FILTER,_,$(ATTRIBMAPS))
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
 OBJECTS := $(foreach OBJECT,$(OBJNAMES), $(addprefix $(BUILD)/,$(OBJECT)))
 
-TILESET_FILES_COMMON := $(foreach FILE,$(TILESETS_COMMON),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
-TILESET_FILES_VERSIONED := $(foreach FILE,$(TILESETS_VERSIONED),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
-TILESET_FILES_GAMEVERSION := $(foreach FILE,$(TILESETS_GAMEVERSION),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
+COMPRESSED_TILESET_FILES_COMMON := $(foreach FILE,$(TILESETS_COMMON),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
+COMPRESSED_TILESET_FILES_VERSIONED := $(foreach FILE,$(TILESETS_VERSIONED),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
+COMPRESSED_TILESET_FILES_GAMEVERSION := $(foreach FILE,$(TILESETS_GAMEVERSION),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
 
 TILEMAP_FILES_COMMON := $(foreach FILE,$(TILEMAPS_COMMON),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
 TILEMAP_FILES_VERSIONED := $(foreach FILE,$(TILEMAPS_VERSIONED),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
@@ -147,7 +148,7 @@ core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_PLACEHOLDER_VERSION.asm
-version_tileset_table_ADDITIONAL := $(TILESET_FILES_COMMON) $(VERSION_SRC)/tileset_table.asm $(TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
+version_tileset_table_ADDITIONAL := $(COMPRESSED_TILESET_FILES_COMMON) $(VERSION_SRC)/tileset_table.asm $(COMPRESSED_TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
 version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEHOLDER_VERSION.asm
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
@@ -189,13 +190,13 @@ $(BUILD)/%.$(INT_TYPE): $(SRC)/$$(firstword $$(subst ., ,$$*))/$$(lastword $$(su
 $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TILESET_OUT)
 	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
 
-# build/tilesets/*.malias from built 2bpp
-$(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT)
+# build/tilesets/*.malias from built malias.2bpp
+$(TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(TILESET_OUT)/%.$(COMPRESSED_TSET_SRC_TYPE) | $(TILESET_OUT)
 	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $< $(TILESET_PREBUILT)
 
 # build/tilesets/*_VERSION.malias
 .SECONDEXPANSION:
-$(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(TILESET_FILES_VERSIONED))
+$(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(COMPRESSED_TILESET_FILES_VERSIONED))
 	touch $@
 
 # build/intermediate/dialog/*.bin from dialog csv files
