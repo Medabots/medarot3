@@ -214,13 +214,13 @@ LoadMaliasGraphics::
 
 SECTION "Parse tileset loading scripts", ROM0[$0d9d]
 ParseTilesetScript::
-  ld a, $2e
+  ld a, BANK(TilesetScripts0)
   ld [$c4dd], a
   rst $10
   ld a, b
   cp $02
   jr c, .asm_dae
-  ld a, $63
+  ld a, BANK(TilesetScripts1)
   ld [$c4dd], a
   rst $10
 .asm_dae
@@ -231,7 +231,7 @@ ParseTilesetScript::
   ld [$c4e0], a
   ld a, c
   ld [$c4e1], a
-  ld hl, $4000
+  ld hl, $4000 ; Assume it's always at the start of the bank for both
   sla c
   rl b
   add hl, bc
@@ -311,7 +311,7 @@ ParseTilesetScript::
   ld a, [hli]
   push hl
   push af
-  ld a, $2e
+  ld a, $2e ; 'Preset' instructions are stored in a table here
   rst $10
   pop af
   ld hl, $5a74
@@ -345,7 +345,7 @@ ParseTilesetScript::
   ld a, [hl]
   rst $10
 .asm_e7d
-  ld hl, $4000
+  ld hl, $4000 ; There is a tileset table at the start of every referenced bank
   ld b, $00
   ld a, [$c4ee]
   ld c, a
