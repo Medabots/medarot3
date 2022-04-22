@@ -17,7 +17,9 @@ INT_TYPE := o
 
 RAW_TSET_SRC_TYPE := png
 TSET_SRC_TYPE := 2bpp
-TSET_TYPE := malias
+COMPRESSED_RAW_TSET_SRC_TYPE = malias.$(RAW_TSET_SRC_TYPE)
+COMPRESSED_TSET_SRC_TYPE := malias.$(TSET_SRC_TYPE)
+COMPRESSED_TSET_TYPE := malias
 TMAP_TYPE := map
 TEXT_TYPE := txt
 CSV_TYPE = csv
@@ -53,6 +55,7 @@ ATTRIBMAP_OUT := $(BUILD)/attribmaps
 
 # Game Source Directories
 SRC := $(GAME)/src
+GFX_SRC := $(SRC)/gfx
 COMMON := $(SRC)/common
 VERSION_SRC := $(SRC)/version
 
@@ -123,10 +126,13 @@ COMMON_SRC := $(wildcard $(COMMON)/*.$(SOURCE_TYPE))
 
 DIALOG := $(notdir $(basename $(wildcard $(DIALOG_TEXT)/*.$(CSV_TYPE))))
 TILESETS = $(notdir $(basename $(wildcard $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))
-TILESETS_COMMON := $(call FILTER_OUT,_,$(TILESETS))
-TILESETS_VERSIONED := $(call FILTER,_,$(TILESETS))
+COMPRESSED_TILESETS := $(call FILTER,.$(COMPRESSED_TSET_TYPE),$(TILESETS))
+COMPRESSED_TILESETS_COMMON := $(call FILTER_OUT,_,$(COMPRESSED_TILESETS))
+COMPRESSED_TILESETS_VERSIONED := $(call FILTER,_,$(COMPRESSED_TILESETS))
+UNCOMPRESSED_TILESETS := $(call FILTER_OUT,.$(COMPRESSED_TSET_TYPE),$(TILESETS))
+
 # A bit of a hack for the tilesets with shifted pointers
-TILESETS_GAMEVERSION := $(call FILTER,GAMEVERSION,$(TILESETS))
+COMPRESSED_TILESETS_GAMEVERSION := $(call FILTER,GAMEVERSION,$(COMPRESSED_TILESETS))
 PTRLISTS := $(notdir $(basename $(wildcard $(PTRLISTS_TEXT)/*.$(TEXT_TYPE))))
 
 TILEMAPS := $(notdir $(basename $(wildcard $(TILEMAP_GFX)/*.$(TEXT_TYPE))))
@@ -148,9 +154,10 @@ PATCH_TILESET_FILES := $(foreach FILE,$(PATCH_TILESETS),$(PATCH_TILESET_OUT)/$(F
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
 OBJECTS := $(foreach OBJECT,$(OBJNAMES), $(addprefix $(BUILD)/,$(OBJECT)))
 
-TILESET_FILES_COMMON := $(foreach FILE,$(TILESETS_COMMON),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
-TILESET_FILES_VERSIONED := $(foreach FILE,$(TILESETS_VERSIONED),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
-TILESET_FILES_GAMEVERSION := $(foreach FILE,$(TILESETS_GAMEVERSION),$(TILESET_OUT)/$(FILE).$(TSET_TYPE))
+COMPRESSED_TILESET_FILES_COMMON := $(foreach FILE,$(COMPRESSED_TILESETS_COMMON),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
+COMPRESSED_TILESET_FILES_VERSIONED := $(foreach FILE,$(COMPRESSED_TILESETS_VERSIONED),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
+COMPRESSED_TILESET_FILES_GAMEVERSION := $(foreach FILE,$(COMPRESSED_TILESETS_GAMEVERSION),$(TILESET_OUT)/$(basename $(FILE)).$(COMPRESSED_TSET_TYPE))
+UNCOMPRESSED_TILESET_FILES := $(foreach FILE,$(UNCOMPRESSED_TILESETS),$(TILESET_OUT)/$(basename $(FILE)).$(TSET_SRC_TYPE)) # Uncompressed just need to be converted to 2bpp
 
 TILEMAP_FILES_COMMON := $(foreach FILE,$(TILEMAPS_COMMON),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
 TILEMAP_FILES_VERSIONED := $(foreach FILE,$(TILEMAPS_VERSIONED),$(TILEMAP_OUT)/$(FILE).$(TMAP_TYPE))
@@ -162,8 +169,9 @@ ATTRIBMAP_FILES_VERSIONED := $(foreach FILE,$(ATTRIBMAPS_VERSIONED),$(ATTRIBMAP_
 core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
+version_partial_tilesets_table_ADDITIONAL := $(UNCOMPRESSED_TILESET_FILES)
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_PLACEHOLDER_VERSION.asm
-version_tileset_table_ADDITIONAL := $(TILESET_FILES_COMMON) $(VERSION_SRC)/tileset_table.asm $(TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
+version_tileset_table_ADDITIONAL := $(COMPRESSED_TILESET_FILES_COMMON) $(VERSION_SRC)/tileset_table.asm $(COMPRESSED_TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
 version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEHOLDER_VERSION.asm
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
@@ -215,13 +223,13 @@ $(BUILD)/%.$(INT_TYPE): $(SRC)/$$(firstword $$(subst ., ,$$*))/$$(lastword $$(su
 $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TILESET_OUT)
 	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
 
-# build/tilesets/*.malias from built 2bpp
-$(TILESET_OUT)/%.$(TSET_TYPE): $(TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(TILESET_OUT)
+# build/tilesets/*.malias from built malias.2bpp
+$(TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(TILESET_OUT)/%.$(COMPRESSED_TSET_SRC_TYPE) | $(TILESET_OUT)
 	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $< $(TILESET_PREBUILT)
 
 # build/tilesets/*_VERSION.malias
 .SECONDEXPANSION:
-$(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(TILESET_FILES_VERSIONED))
+$(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(COMPRESSED_TILESET_FILES_VERSIONED))
 	touch $@
 
 # build/intermediate/dialog/*.bin from dialog csv files
@@ -292,9 +300,10 @@ dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_text.py "$(SCRIPT_RES)" "$(VERSION_SRC)" "$(DIALOG_TEXT)" "$(DIALOG_OUT)"
 
 dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
-	rm $(TILESET_PREBUILT)/*.$(TSET_TYPE) || echo ""
+	rm $(TILESET_PREBUILT)/*.$(COMPRESSED_TSET_TYPE) || echo ""
 	rm $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE) || echo ""
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
+	$(PYTHON) $(SCRIPT)/dump_tileset_scripts.py "$(TILESET_GFX)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(GFX_SRC)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
 	rm $(PTRLISTS_TEXT)/*.$(TEXT_TYPE) || echo ""

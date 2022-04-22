@@ -1,6 +1,6 @@
 #!/bin/python
 
-# Script to initially dump tilesets
+# Script to initially dump "malias" format tilesets
 
 import os, sys
 from collections import OrderedDict
@@ -177,7 +177,7 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
         f = tileset_data[key][default_version][1]
         name = nametable[key]
         with open(os.path.join(prebuilt_path, f"{name}.malias"),"wb") as compressed, \
-                open(os.path.join(raw_path, f"{name}.png"),"wb") as uncompressed:
+                open(os.path.join(raw_path, f"{name}.malias.png"),"wb") as uncompressed:
             width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
             w = png.Writer(
                 width,
@@ -211,7 +211,7 @@ with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
             f = tileset_data[key][ver][1]
 
             with open(os.path.join(prebuilt_path, f"{name}_{ver}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}_{ver}.png"),"wb") as uncompressed:
+                    open(os.path.join(raw_path, f"{name}_{ver}.malias.png"),"wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -237,7 +237,7 @@ for version in roms:
             name = nametable[key]
 
             with open(os.path.join(prebuilt_path, f"{name}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}.png"),"wb") as uncompressed:
+                    open(os.path.join(raw_path, f"{name}.malias.png"),"wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -263,7 +263,7 @@ for version in roms:
             name = nametable[key]
 
             with open(os.path.join(prebuilt_path, f"{name}_{ver}.malias"),"wb") as compressed, \
-                    open(os.path.join(raw_path, f"{name}_{ver}.png"),"wb") as uncompressed:
+                    open(os.path.join(raw_path, f"{name}_{ver}.malias.png"),"wb") as uncompressed:
                 width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                 w = png.Writer(
                     width,
@@ -294,7 +294,7 @@ for version in roms:
                 data_map[tuple(f[0])] = f"{name}_{ver}"
                 
                 with open(os.path.join(prebuilt_path, f"{data_map[tuple(f[0])]}.malias"), "wb") as compressed, \
-                        open(os.path.join(raw_path, f"{data_map[tuple(f[0])]}.png"), "wb") as uncompressed:
+                        open(os.path.join(raw_path, f"{data_map[tuple(f[0])]}.malias.png"), "wb") as uncompressed:
                     width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(f[0])
                     w = png.Writer(
                         width,
