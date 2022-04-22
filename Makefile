@@ -148,7 +148,7 @@ PATCH_TEXT_TILESETS := $(notdir $(basename $(wildcard $(PATCH_TILESET_GFX)/*.$(V
 PATCH_TILESETS := $(filter-out $(PATCH_TEXT_TILESETS), $(notdir $(basename $(wildcard $(PATCH_TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))) # .png -> 2bpp
 
 PATCH_TEXT_TILESET_FILES := $(foreach FILE,$(PATCH_TEXT_TILESETS),$(PATCH_TILESET_OUT)/$(FILE))
-PATCH_TILESET_FILES := $(foreach FILE,$(PATCH_TILESETS),$(PATCH_TILESET_OUT)/$(FILE).$(TSET_TYPE))
+PATCH_TILESET_FILES := $(foreach FILE,$(PATCH_TILESETS),$(PATCH_TILESET_OUT)/$(FILE).$(COMPRESSED_TSET_TYPE))
 
 # Intermediates for common sources (not in version folder)
 ## We explicitly rely on second expansion to handle version-specific files in the version specific objects
@@ -178,12 +178,12 @@ version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/
 
 # Patch Specific, including any tilesets we move into the patch tileset
 patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
- $(TILESET_OUT)/MainDialog1.$(TSET_TYPE)\
- $(TILESET_OUT)/Special.$(TSET_TYPE)\
- $(TILESET_OUT)/MenuMedawatchGraphics.$(TSET_TYPE)\
- $(TILESET_OUT)/MenuMedawatchTextSprites.$(TSET_TYPE)\
- $(TILESET_OUT)/PartsScreen.$(TSET_TYPE)\
- $(TILESET_OUT)/MedalInfoText.$(TSET_TYPE)
+ $(TILESET_OUT)/MainDialog1.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/Special.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/MenuMedawatchGraphics.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/MenuMedawatchTextSprites.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/PartsScreen.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/MedalInfoText.$(COMPRESSED_TSET_TYPE)
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
@@ -275,7 +275,7 @@ $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 	cp $< $@
 
-#$(PATCH_TILESET_OUT)/%.$(TSET_TYPE): $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
+#$(PATCH_TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 #	$(PYTHON) $(SCRIPT)/tileset2malias.py $< $@
 
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
