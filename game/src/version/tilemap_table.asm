@@ -1071,21 +1071,21 @@ Tilemap01_73::
 Tilemap01_74::
   INCBIN "./build/tilemaps/0174.map"
 Tilemap01_75::
-  INCBIN "./build/tilemaps/0175.map"
+  INCBIN "./build/tilemaps/ShopMainScreen.map"
 Tilemap01_81::
-  INCBIN "./build/tilemaps/0181.map"
+  INCBIN "./build/tilemaps/ShopPartTypeSelect.map"
 Tilemap01_82::
-  INCBIN "./build/tilemaps/0182.map"
+  INCBIN "./build/tilemaps/ShopBuyParts.map"
 Tilemap01_83::
-  INCBIN "./build/tilemaps/0183.map"
+  INCBIN "./build/tilemaps/ShopSellParts.map"
 Tilemap01_84::
-  INCBIN "./build/tilemaps/0184.map"
+  INCBIN "./build/tilemaps/ShopPartHead.map"
 Tilemap01_85::
-  INCBIN "./build/tilemaps/0185.map"
+  INCBIN "./build/tilemaps/ShopPartRightArm.map"
 Tilemap01_86::
-  INCBIN "./build/tilemaps/0186.map"
+  INCBIN "./build/tilemaps/ShopPartLeftArm.map"
 Tilemap01_87::
-  INCBIN "./build/tilemaps/0187.map"
+  INCBIN "./build/tilemaps/ShopPartLegs.map"
 Tilemap01_88::
   INCBIN "./build/tilemaps/0188.map"
 Tilemap01_89::
