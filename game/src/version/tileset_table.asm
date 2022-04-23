@@ -56,7 +56,7 @@ TilesetSourceAddressTable::
   dw Tileset39FB ; 33 (39FB)
   dw Tileset39FD ; 34 (39FD)
   dw Tileset39FF ; 35 (39FF)
-  dw Tileset3A01 ; 36 (3A01)
+  dw ShopBuySellKanji ; 36 (3A01)
   dw Tileset3A03 ; 37 (3A03)
   dw Tileset3A05 ; 38 (3A05)
   dw Tileset3A07 ; 39 (3A07)
@@ -572,7 +572,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset39FB), $8C00, $0 ; 033
   dbwb BANK(Tileset39FD), $8C00, $0 ; 034
   dbwb BANK(Tileset39FF), $8C00, $0 ; 035
-  dbwb BANK(Tileset3A01), $8600, $0 ; 036
+  dbwb BANK(ShopBuySellKanji), $8600, $0 ; 036
   dbwb BANK(Tileset3A03), $82C0, $0 ; 037
   dbwb BANK(Tileset3A05), $8300, $0 ; 038
   dbwb BANK(Tileset3A07), $8000, $1 ; 039
@@ -1205,9 +1205,9 @@ SECTION "Tileset Data Tileset39FF", ROMX[$4A64], BANK[$3B]
 Tileset39FF::
   INCBIN "./build/tilesets/Tileset39FF.malias"
 
-SECTION "Tileset Data Tileset3A01", ROMX[$4C8E], BANK[$3B]
-Tileset3A01::
-  INCBIN "./build/tilesets/Tileset3A01.malias"
+SECTION "Tileset Data ShopBuySellKanji", ROMX[$4C8E], BANK[$3B]
+ShopBuySellKanji::
+  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
 
 SECTION "Tileset Data Tileset3A03", ROMX[$4D08], BANK[$3B]
 Tileset3A03::
