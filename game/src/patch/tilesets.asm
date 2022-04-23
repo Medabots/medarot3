@@ -92,3 +92,4 @@ PatchTilesets::
   PatchTilesetEntry Robattle
   PatchTilesetEntry RobattleMedalResults
   PatchTilesetEntry RobattleAutoBattlePlan
+  PatchTilesetEntry ShopScreen

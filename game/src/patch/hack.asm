@@ -97,3 +97,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry Robattle, $9010 ; 1B
   TilemapTilesetTableEntry RobattleMedalResults, $9010 ; 1C
   TilemapTilesetTableEntry RobattleAutoBattlePlan, $9010 ; 1D
+  TilemapTilesetTableEntry ShopScreen, $9010 ; 1E
