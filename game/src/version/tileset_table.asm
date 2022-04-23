@@ -119,7 +119,7 @@ TilesetSourceAddressTable::
   dw Tileset3A79 ; 72 (3A79)
   dw Tileset3A7B ; 73 (3A7B)
   dw Tileset3A7D ; 74 (3A7D)
-  dw Tileset3A7F ; 75 (3A7F)
+  dw AutoBattleSymbols ; 75 (3A7F)
   dw Tileset3A81 ; 76 (3A81)
   dw Tileset3A83 ; 77 (3A83)
   dw Tileset3A85 ; 78 (3A85)
@@ -635,7 +635,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset3A79), $8910, $0 ; 072
   dbwb BANK(Tileset3A7B), $8C10, $0 ; 073
   dbwb BANK(Tileset3A7D), $8F60, $0 ; 074
-  dbwb BANK(Tileset3A7F), $9000, $0 ; 075
+  dbwb BANK(AutoBattleSymbols), $9000, $0 ; 075
   dbwb BANK(Tileset3A81), $8DC0, $0 ; 076
   dbwb BANK(Tileset3A83), $8D00, $0 ; 077
   dbwb BANK(Tileset3A85), $8E00, $0 ; 078
@@ -1337,9 +1337,9 @@ SECTION "Tileset Data Tileset3A7D", ROMX[$71AD], BANK[$3C]
 Tileset3A7D::
   INCBIN "./build/tilesets/Tileset3A7D.malias"
 
-SECTION "Tileset Data Tileset3A7F", ROMX[$7200], BANK[$3C]
-Tileset3A7F::
-  INCBIN "./build/tilesets/Tileset3A7F.malias"
+SECTION "Tileset Data AutoBattleSymbols", ROMX[$7200], BANK[$3C]
+AutoBattleSymbols::
+  INCBIN "./build/tilesets/AutoBattleSymbols.malias"
 
 SECTION "Tileset Data Tileset3A81", ROMX[$737F], BANK[$3C]
 Tileset3A81::
