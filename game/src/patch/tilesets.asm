@@ -56,6 +56,8 @@ MedalInfoText::
   INCBIN "./build/tilesets/MedalInfoText.malias"
 AutoBattleSymbols::
   INCBIN "./build/tilesets/AutoBattleSymbols.malias"
+ShopBuySellKanji::
+  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
