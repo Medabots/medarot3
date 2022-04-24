@@ -58,6 +58,8 @@ AutoBattleSymbols::
   INCBIN "./build/tilesets/AutoBattleSymbols.malias"
 ShopBuySellKanji::
   INCBIN "./build/tilesets/ShopBuySellKanji.malias"
+ShopBubbleText::
+  INCBIN "./build/tilesets/ShopBubbleText.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
