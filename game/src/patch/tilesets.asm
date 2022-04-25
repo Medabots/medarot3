@@ -54,6 +54,8 @@ PartsScreen::
   INCBIN "./build/tilesets/PartsScreen.malias"
 MedalInfoText::
   INCBIN "./build/tilesets/MedalInfoText.malias"
+AutoBattleSymbols::
+  INCBIN "./build/tilesets/AutoBattleSymbols.malias"
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
