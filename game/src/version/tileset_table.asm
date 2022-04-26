@@ -1187,9 +1187,10 @@ SECTION "Tileset Data Tileset39E3", ROMX[$5BD9], BANK[$3A]
 Tileset39E3::
   INCBIN "./build/tilesets/Tileset39E3.malias"
 
-SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
-ShopBuySellText::
-  INCBIN "./build/tilesets/ShopBuySellText.malias"
+; ShopBuySellText is defined with the other patch tilesets
+;SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
+;ShopBuySellText::
+;  INCBIN "./build/tilesets/ShopBuySellText.malias"
 
 ; ShopBubbleText is defined with the other patch tilesets
 ;SECTION "Tileset Data ShopBubbleText", ROMX[$430C], BANK[$3B]

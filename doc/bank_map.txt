@@ -251,6 +251,6 @@ F9: (empty)
 FA: (empty)
 FB: (empty)
 FC: (empty)
-FD: (empty)
-FE: Patch-specific 1bpp gfx and the 2bpp main dialog font
+FD: Patched 2bpp gfx
+FE: Patch-specific 1bpp gfx
 FF: Patch functions and VWF fonts

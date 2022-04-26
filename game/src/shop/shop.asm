@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Shop Helper Functions 1", ROMX[$4883], BANK[$04]
 WrapShopGetPartPriceAndStatus::
@@ -168,11 +169,12 @@ ShopWriteByteToVRam::
   ret
 
 ShopMapHeartMaybe::
-  ld d, 0
+  ; In the patch, map male/female symbols instead of a heart for female
   or a
-  jr z, $55CA
-  ld d, $F3
-  ld a, d
+  ld a, $31 ; $31 is male, $32 is female
+  jr z, .draw
+  inc a
+.draw
   di
   push af
   rst $20
@@ -180,6 +182,8 @@ ShopMapHeartMaybe::
   ld [hli], a
   ei
   ret
+
+  padend $55d1
 
 SECTION "Shop Helper Functions 4", ROMX[$566F], BANK[$04]
 ShopBuyMapSelectionPrice::
@@ -217,7 +221,7 @@ ShopBuyMapSelectionPrice::
   cp $FF
   jr z, ShopMapSelectionPriceDashes
   call WrapShopGetPartPriceAndStatus
-  ld hl, $99C8
+  ld hl, $99C9 ; Previously 99c8
   ld a, $E0
   di
   push af
@@ -225,7 +229,7 @@ ShopBuyMapSelectionPrice::
   pop af
   ld [hli], a
   ei
-  ld hl, $99C9
+  ld hl, $99CA ; Previously 99c9
   ld a, $E0
   di
   push af
@@ -233,7 +237,7 @@ ShopBuyMapSelectionPrice::
   pop af
   ld [hli], a
   ei
-  ld hl, $99C5
+  ld hl, $99C6 ; Previously 99c5
   ld a, 0
   di
   push af
@@ -241,12 +245,12 @@ ShopBuyMapSelectionPrice::
   pop af
   ld [hli], a
   ei
-  ld hl, $99C4
+  ld hl, $99C5 ; Previously 99c4
   call ShopMapThreeDigitNumber
   ret
 
 ShopMapSelectionPriceDashes::
-  ld hl, $99C5
+  ld hl, $99C7 ; previously 99c6
   ld a, 5
   ld b, a
   call ShopMapDashes
@@ -287,7 +291,7 @@ ShopSellMapSelectionPrice::
   cp $FF
   jr z, ShopMapSelectionPriceDashes
   ld [W_ShopPartIndexBuffer], a
-  ld hl, $99C4
+  ld hl, $99C5 ; previously 99c4
   call ShopMapPartPrice
   ret
 
@@ -296,7 +300,7 @@ ShopMapDashes::
   push hl
 
 .loop
-  ld a, $EE
+  ld a, $01
   di
   push af
   rst $20
@@ -354,7 +358,7 @@ ShopMapQty::
   ld c, a
   xor a
   ld b, a
-  ld hl, $9A0E
+  ld hl, $9A0F ; Previously 9A0E
   call ShopMapThreeDigitNumber
   ret
 
@@ -371,14 +375,14 @@ ShopMapQty::
   ld c, a
   xor a
   ld b, a
-  ld hl, $9A0E
+  ld hl, $9A0F ; Previously 9A0E
   call ShopMapThreeDigitNumber
   ret
 
 .mapDashes
   ld a, 2
   ld b, a
-  ld hl, $9A10
+  ld hl, $9A11 ; Previously 9A10
   call ShopMapDashes
   ret
 
@@ -598,65 +602,53 @@ WrapShopMapPartInfoForPage::
   ret
 
 ShopMapPartInfoForPage::
-  ld a, [W_ShopStockPart0Index]
+  ld de, $98A2
+  ld hl, W_ShopStockPart0Index ; 0-3 are sequential
+  ld b, $4
+.loop
+  push bc
+  ld a, [hli]
   ld [W_ShopPartIndexBuffer], a
-  ld hl, $98A2
   cp $FF
-  jr z, .part0Dashes
-  call ShopMapPartNameHeartAndPrice
-  jr .part1
-
-.part0Dashes
+  jr z, .dashes
+  push de
   push hl
-  pop bc
-  call ShopMapPartInfoDashes
-
-.part1
-  ld a, [W_ShopStockPart1Index]
-  ld [W_ShopPartIndexBuffer], a
-  ld hl, $98E2
-  cp $FF
-  jr z, .part1Dashes
+  ld h, d
+  ld l, e
+  ld a, b
+  dec a
+  rlca
+  rlca
+  rlca
+  add $3e ; Starting address to draw to
   call ShopMapPartNameHeartAndPrice
-  jr .part2
-
-.part1Dashes
+  pop hl
+  pop de
+  jr .increment
+.dashes
   push hl
-  pop bc
+  ld h, d
+  ld l, e
   call ShopMapPartInfoDashes
-
-.part2
-  ld a, [W_ShopStockPart2Index]
-  ld [W_ShopPartIndexBuffer], a
-  ld hl, $9922
-  cp $FF
-  jr z, .part2Dashes
-  call ShopMapPartNameHeartAndPrice
-  jr .part3
-
-.part2Dashes
+  pop hl
+.increment
+  pop bc
+  dec b
+  jr z, .exit
   push hl
-  pop bc
-  call ShopMapPartInfoDashes
-
-.part3
-  ld a, [W_ShopStockPart3Index]
-  ld [W_ShopPartIndexBuffer], a
-  ld hl, $9962
-  cp $FF
-  jr z, .part3Dashes
-  call ShopMapPartNameHeartAndPrice
-  jr .exit
-
-.part3Dashes
-  push hl
-  pop bc
-  call ShopMapPartInfoDashes
-
+  ld hl, $0040
+  add hl, de
+  ld d, h
+  ld e, l
+  pop hl
+  jr .loop
 .exit
   ret
 
+  padend $594e
+
 ShopMapPartNameHeartAndPrice::
+  push af ; a has drawing tile
   push hl
   ld a, [W_ShopPartIndexBuffer]
   ld b, a
@@ -676,23 +668,26 @@ ShopMapPartNameHeartAndPrice::
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  pop hl
-  push hl
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  pop de ; hl -> de, address to draw to
+  pop af
+  push de
+  ld h, a
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringLeftFullAddress8Tiles
   pop hl
   ld de, 9
   add hl, de
   ld a, [$C54B]
   call ShopMapHeartMaybe
-  call ShopMapPartPrice
-  ret
+  inc hl ; Push HL one forward to skip the Yen symbol
+  jr ShopMapPartPrice
 
 .dashesPlz
   pop hl
-  call ShopMapPartInfoDashes
-  ret
+  pop af
+  jr ShopMapPartInfoDashes
+
+  padend $5994
 
 ShopMapPartPrice::
   push hl
@@ -773,95 +768,86 @@ ShopDisplayPartDescription::
 
 ShopMapPartInfoDashes::
   push hl
-  ld a, $EE
+  push de
+  ld d, $01
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   inc hl
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   inc hl
+  inc hl
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
   di
-  push af
   rst $20
-  pop af
+  ld a, d
   ld [hli], a
   ei
+  pop de
   pop hl
   ret
+
+  padend $5a5c
 
 ShopPasswordGetObtainedPartPalette::
   ld a, [W_CurrentPartIndexForPartStatus]

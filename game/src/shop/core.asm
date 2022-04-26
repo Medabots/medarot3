@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Shop Vars 1", WRAM0[$C7A0]
 W_ShopPartTypeSelectionIndex:: ds 1
@@ -934,7 +935,7 @@ ShopBuyMappingState::
   ld a, $85
   ld de, $C120
   call $33B2
-  ld bc, $510
+  ld bc, $0610 ; Previously 0510, VRAM address to map player funds to
   ld hl, W_PlayerMoolah
   call ShopMapMoney
   call ShopBuyMapSelectionPrice
@@ -977,15 +978,15 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98A2
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld de, $98A2
+  ld bc, W_NewListItemBufferArea
+  ld h, $3e
+  call VWFDrawStringLeftFullAddress8Tiles
   ld a, [W_ShopStockPart0Index]
   call WrapShopGetPartPriceAndStatus
-  ld hl, $98AC
+  ld hl, $98AD ; Previously 98AC
   call ShopMapThreeDigitNumber
-  ld hl, $98B0
+  ld hl, $98B1 ; Previously 98B0
   ld a, $E0
   di
   push af
@@ -993,7 +994,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   pop af
   ld [hli], a
   ei
-  ld hl, $98B1
+  ld hl, $98B2 ; Previously 98B1
   ld a, $E0
   di
   push af
@@ -1015,15 +1016,15 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $98E2
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld de, $98E2
+  ld bc, W_NewListItemBufferArea
+  ld h, $46
+  call VWFDrawStringLeftFullAddress8Tiles
   ld a, [W_ShopStockPart1Index]
   call WrapShopGetPartPriceAndStatus
-  ld hl, $98EC
+  ld hl, $98ED ; Previously 98EC
   call ShopMapThreeDigitNumber
-  ld hl, $98F0
+  ld hl, $98F1 ; Previously 98F0
   ld a, $E0
   di
   push af
@@ -1031,7 +1032,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   pop af
   ld [hli], a
   ei
-  ld hl, $98F1
+  ld hl, $98F2 ; Previously 98F1
   ld a, $E0
   di
   push af
@@ -1053,15 +1054,15 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9922
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld de, $9922
+  ld bc, W_NewListItemBufferArea
+  ld h, $4e
+  call VWFDrawStringLeftFullAddress8Tiles
   ld a, [W_ShopStockPart2Index]
   call WrapShopGetPartPriceAndStatus
-  ld hl, $992C
+  ld hl, $992D ; Previously 992C
   call ShopMapThreeDigitNumber
-  ld hl, $9930
+  ld hl, $9931 ; Previously 9930
   ld a, $E0
   di
   push af
@@ -1069,7 +1070,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   pop af
   ld [hli], a
   ei
-  ld hl, $9931
+  ld hl, $9932 ; Previously 9931
   ld a, $E0
   di
   push af
@@ -1091,15 +1092,15 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 7
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $9962
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
+  ld de, $9962
+  ld bc, W_NewListItemBufferArea
+  ld h, $56
+  call VWFDrawStringLeftFullAddress8Tiles
   ld a, [W_ShopStockPart3Index]
   call WrapShopGetPartPriceAndStatus
-  ld hl, $996C
+  ld hl, $996D ; Previously 996C
   call ShopMapThreeDigitNumber
-  ld hl, $9970
+  ld hl, $9971 ; Previously 9970
   ld a, $E0
   di
   push af
@@ -1107,7 +1108,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   pop af
   ld [hli], a
   ei
-  ld hl, $9971
+  ld hl, $9972 ; Previously 9971
   ld a, $E0
   di
   push af
@@ -1125,7 +1126,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   ld b, a
   call ShopMapDashes
-  ld hl, $98AD
+  ld hl, $98AE ; Previously 98AD
   ld a, 5
   ld b, a
   call ShopMapDashes
@@ -1135,7 +1136,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   ld b, a
   call ShopMapDashes
-  ld hl, $98ED
+  ld hl, $98EE ; Previously 98ED
   ld a, 5
   ld b, a
   call ShopMapDashes
@@ -1145,7 +1146,7 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   ld b, a
   call ShopMapDashes
-  ld hl, $992D
+  ld hl, $992E ; Previously 992D
   ld a, 5
   ld b, a
   call ShopMapDashes
@@ -1155,11 +1156,13 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 8
   ld b, a
   call ShopMapDashes
-  ld hl, $996D
+  ld hl, $996E ; Previously 996D
   ld a, 5
   ld b, a
   call ShopMapDashes
   jp ShopSubstateIncrement
+
+  padend $4883
 
 SECTION "Shop State Machine 2", ROMX[$488D], BANK[$04]
 ShopBuyInputHandlerState::
@@ -1300,7 +1303,7 @@ ShopBuyYNBoxState::
   ld a, [W_ShopSelectedPartIndex]
   call $3596
   call ShopMapQty
-  ld bc, $510
+  ld bc, $0610 ; Previously '0510', draw money 1 tile over
   ld hl, W_PlayerMoolah
   call ShopMapMoney
   jp .nextState
@@ -1459,7 +1462,7 @@ ShopSellMappingState::
   jp ShopSubstateIncrement
 
 ShopSellMapMoneyAndSelectedPartInfoState::
-  ld bc, $510
+  ld bc, $0610 ; previously 0510
   ld hl, W_PlayerMoolah
   call ShopMapMoney
   call ShopSellMapSelectionPrice
@@ -1699,7 +1702,7 @@ ShopSellYNBoxState::
   ret
 
 ShopSellPostYesListRefreshState::
-  ld bc, $510
+  ld bc, $0610 ; previously 0510
   ld hl, W_PlayerMoolah
   call ShopMapMoney
   ld a, [W_ShopStockPart1Index]
