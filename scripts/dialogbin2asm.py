@@ -62,6 +62,7 @@ with open(output_file, 'w') as output:
             with open(input_file, 'rb') as in_f, open(output_path, 'wb') as out_f:
                 count = utils.read_short(in_f)
                 offsets = [(utils.read_short(in_f), utils.read_short(in_f)) for i in range(0, count)]
+                text_start = in_f.tell() # Use this to adjust the offset later
                 duplicate_offset_map = {} # Keep track of the offsets of everything in case we hit a duplicate
 
                 # At this point, we're at the actual text in the file
@@ -85,6 +86,9 @@ with open(output_file, 'w') as output:
 
                     out_f.write(pack("<BH", current_bank, current_offset))
                     duplicate_offset_map[offset] = (current_bank, current_offset)
+
+                    # Follow the offset so we avoid UNUSED text
+                    in_f.seek(offset + text_start) 
 
                     current_fp.write(in_f.read(length))
                     current_offset += length
