@@ -50,7 +50,7 @@ TilesetSourceAddressTable::
   dw TilesetSourceAddressTableEnd ; 2D (39EF)
   dw TilesetSourceAddressTableEnd ; 2E (39F1)
   dw TilesetSourceAddressTableEnd ; 2F (39F3)
-  dw Tileset39F5 ; 30 (39F5)
+  dw ShopBuySellText ; 30 (39F5)
   dw ShopBubbleText ; 31 (39F7)
   dw Tileset39F9 ; 32 (39F9)
   dw Tileset39FB ; 33 (39FB)
@@ -566,7 +566,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 02D
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 02E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 02F
-  dbwb BANK(Tileset39F5), $9000, $0 ; 030
+  dbwb BANK(ShopBuySellText), $9000, $0 ; 030
   dbwb BANK(ShopBubbleText), $8400, $0 ; 031
   dbwb BANK(Tileset39F9), $8C00, $0 ; 032
   dbwb BANK(Tileset39FB), $8C00, $0 ; 033
@@ -1187,9 +1187,9 @@ SECTION "Tileset Data Tileset39E3", ROMX[$5BD9], BANK[$3A]
 Tileset39E3::
   INCBIN "./build/tilesets/Tileset39E3.malias"
 
-SECTION "Tileset Data Tileset39F5", ROMX[$4000], BANK[$3B]
-Tileset39F5::
-  INCBIN "./build/tilesets/Tileset39F5.malias"
+SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
+ShopBuySellText::
+  INCBIN "./build/tilesets/ShopBuySellText.malias"
 
 SECTION "Tileset Data ShopBubbleText", ROMX[$430C], BANK[$3B]
 ShopBubbleText::
