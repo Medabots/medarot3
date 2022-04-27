@@ -70,7 +70,7 @@ TilemapLoadTileset:
   ; Tilemap format requires that these entries are referenced at index-1
   TilemapTilesetTableEntry MenuStartScreen, $9010 ; 1
   TilemapTilesetTableEntry MenuMainGame, $9010 ; 2
-  TilemapTilesetTableEntry OptionYesNo, $97C0 ; 3
+  TilemapTilesetTableEntry OptionYesNo, $8B00 ; 3
   TilemapTilesetTableEntry InfoSaveScreen, $9120 ; 4 (Loaded with main menu)
   TilemapTilesetTableEntry InputNameScreen, $8A20 ; 5
   TilemapTilesetTableEntry InputNameCharacterMap1, $8A80 ; 6 (Swapped between 1 and 2, with InputNameScreen)
