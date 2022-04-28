@@ -40,7 +40,7 @@ PatchTilesetStart\1::
 PatchTilesetEnd\1::
 ENDM
 
-SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
+SECTION "Patch 2bpp Tilesets 1", ROMX[$4000], BANK[$FD]
 ; Include certain 2bpp 'malias' uncompressed graphics here
 MainDialog1::
   INCBIN "./build/tilesets/MainDialog1.malias"
@@ -56,6 +56,14 @@ MedalInfoText::
   INCBIN "./build/tilesets/MedalInfoText.malias"
 AutoBattleSymbols::
   INCBIN "./build/tilesets/AutoBattleSymbols.malias"
+ShopBuySellKanji::
+  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
+ShopBubbleText::
+  INCBIN "./build/tilesets/ShopBubbleText.malias"
+ShopBuySellText::
+  INCBIN "./build/tilesets/ShopBuySellText.malias"
+
+SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::
   PatchTilesetEntry EntryFont
   PatchTilesetEntry OldFontTiles0
@@ -90,3 +98,4 @@ PatchTilesets::
   PatchTilesetEntry Robattle
   PatchTilesetEntry RobattleMedalResults
   PatchTilesetEntry RobattleAutoBattlePlan
+  PatchTilesetEntry ShopScreen

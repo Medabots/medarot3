@@ -1187,13 +1187,15 @@ SECTION "Tileset Data Tileset39E3", ROMX[$5BD9], BANK[$3A]
 Tileset39E3::
   INCBIN "./build/tilesets/Tileset39E3.malias"
 
-SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
-ShopBuySellText::
-  INCBIN "./build/tilesets/ShopBuySellText.malias"
+; ShopBuySellText is defined with the other patch tilesets
+;SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
+;ShopBuySellText::
+;  INCBIN "./build/tilesets/ShopBuySellText.malias"
 
-SECTION "Tileset Data ShopBubbleText", ROMX[$430C], BANK[$3B]
-ShopBubbleText::
-  INCBIN "./build/tilesets/ShopBubbleText.malias"
+; ShopBubbleText is defined with the other patch tilesets
+;SECTION "Tileset Data ShopBubbleText", ROMX[$430C], BANK[$3B]
+;ShopBubbleText::
+;  INCBIN "./build/tilesets/ShopBubbleText.malias"
 
 SECTION "Tileset Data Tileset39F9", ROMX[$4404], BANK[$3B]
 Tileset39F9::
@@ -1211,9 +1213,10 @@ SECTION "Tileset Data Tileset39FF", ROMX[$4A64], BANK[$3B]
 Tileset39FF::
   INCBIN "./build/tilesets/Tileset39FF.malias"
 
-SECTION "Tileset Data ShopBuySellKanji", ROMX[$4C8E], BANK[$3B]
-ShopBuySellKanji::
-  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
+; ShopBuySellKanji is defined with the other Patch Tilesets
+;SECTION "Tileset Data ShopBuySellKanji", ROMX[$4C8E], BANK[$3B]
+;ShopBuySellKanji::
+;  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
 
 SECTION "Tileset Data Tileset3A03", ROMX[$4D08], BANK[$3B]
 Tileset3A03::
