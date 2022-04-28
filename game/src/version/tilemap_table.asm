@@ -1089,7 +1089,7 @@ Tilemap01_87::
 Tilemap01_88::
   INCBIN "./build/tilemaps/0188.map"
 Tilemap01_89::
-  INCBIN "./build/tilemaps/0189.map"
+  INCBIN "./build/tilemaps/ShopPasswordScreen.map"
 Tilemap01_8A::
   INCBIN "./build/tilemaps/018A.map"
 Tilemap01_8B::
