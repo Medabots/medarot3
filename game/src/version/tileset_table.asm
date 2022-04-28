@@ -1343,9 +1343,10 @@ SECTION "Tileset Data Tileset3A7D", ROMX[$71AD], BANK[$3C]
 Tileset3A7D::
   INCBIN "./build/tilesets/Tileset3A7D.malias"
 
-SECTION "Tileset Data AutoBattleSymbols", ROMX[$7200], BANK[$3C]
-AutoBattleSymbols::
-  INCBIN "./build/tilesets/AutoBattleSymbols.malias"
+; Moved to patch tilesets
+;SECTION "Tileset Data AutoBattleSymbols", ROMX[$7200], BANK[$3C]
+;AutoBattleSymbols::
+;  INCBIN "./build/tilesets/AutoBattleSymbols.malias"
 
 SECTION "Tileset Data Tileset3A81", ROMX[$737F], BANK[$3C]
 Tileset3A81::
