@@ -6,7 +6,19 @@ W_MaliasBundleBitsCount:: ds 1
 W_MaliasBundleBits:: ds 2
 W_MaliasDecompressionHead:: ds 2
 
+SECTION "Tileset Variables 2", WRAM0[$C4AD]
+W_TilesetScript_VRAMAddress:: ds 2
+
+SECTION "Tileset Variables 3", WRAM0[$C4B0]
+W_TilesetScript_TileBank:: ds 1
+W_TilesetScript_NumTiles:: ds 1
+
+SECTION "Tileset Variables 4", WRAM0[$C4DD]
+W_TilesetScript_Bank:: ds 1
+
+W_TilesetScript_PointerIndex EQU $C4E0 ; This address is overutilised, so EQU is better.
 W_MaliasSourceBank EQU $C4EE ; This address is overutilised, so EQU is better.
+W_TilesetScript_TilesetPointerIndex EQU $C4EE ; This address is overutilised, so EQU is better.
 W_MaliasDestinationAddress EQU $C4F0 ; This address is overutilised, so EQU is better.
 
 SECTION "Load Malias-Compressed Tilesets", ROM0[$0983]
@@ -215,76 +227,83 @@ LoadMaliasGraphics::
 SECTION "Parse tileset loading scripts", ROM0[$0d9d]
 ParseTilesetScript::
   ld a, BANK(TilesetScripts0)
-  ld [$c4dd], a
+  ld [W_TilesetScript_Bank], a
   rst $10
   ld a, b
-  cp $02
-  jr c, .asm_dae
+  cp 2
+  jr c, .dontUseSecondScriptBank
   ld a, BANK(TilesetScripts1)
-  ld [$c4dd], a
+  ld [W_TilesetScript_Bank], a
   rst $10
-.asm_dae
-  ld a, $00
+
+.dontUseSecondScriptBank
+  ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [$ff4f], a
+  ld [H_RegVBK], a
   ld a, b
-  ld [$c4e0], a
+  ld [W_TilesetScript_PointerIndex], a
   ld a, c
-  ld [$c4e1], a
-  ld hl, $4000 ; Assume it's always at the start of the bank for both
+  ld [W_TilesetScript_PointerIndex + 1], a
+  ld hl, $4000 ; Assume it's always at the start of the bank for both.
   sla c
   rl b
   add hl, bc
   ld a, [hli]
   ld h, [hl]
   ld l, a
-.asm_dc8
+
+.tilesetScriptProcessingLoop
   ld a, [hl]
   cp $ff
-  jp z, .asm_ed5
+  jp z, .endScriptParsing
   cp $fe
-  jp z, .asm_e19
+  jp z, .setVRAMIndex
   cp $fd
-  jp z, .asm_e3f
+  jp z, .setTileBank
   cp $fc
-  jp z, .asm_e47
+  jp z, .loadPresetVariablesAndRender
   cp $fb
-  jp z, .asm_ebc
+  jp z, .setVRAMBank
   ld a, [hli]
-  ld [$c4b1], a
+  ld [W_TilesetScript_NumTiles], a
   ld a, [hli]
-  ld [$c4ee], a
-  ld a, [$c4e0]
+  ld [W_TilesetScript_TilesetPointerIndex], a
+  ld a, [W_TilesetScript_PointerIndex]
   or a
-  jr z, .asm_e11
-  ld a, [$c4ee]
+  jr z, .changeBank
+  ld a, [W_TilesetScript_TilesetPointerIndex]
   cp $60
-  jr nc, .asm_e05
+  jr nc, .useOneOfSecondTwoDefaultBanks
+
+.useOneOfFirstTwoDefaultBanks
   ld a, $28
   ld b, a
-  ld a, [$c4e1]
-  and $01
+  ld a, [W_TilesetScript_PointerIndex + 1]
+  and 1
   add b
-  ld [$c4b0], a
-  jr .asm_e11
-.asm_e05
+  ld [W_TilesetScript_TileBank], a
+  jr .changeBank
+
+.useOneOfSecondTwoDefaultBanks
   ld a, $2a
   ld b, a
-  ld a, [$c4e1]
-  and $01
+  ld a, [W_TilesetScript_PointerIndex + 1]
+  and 1
   add b
-  ld [$c4b0], a
-.asm_e11
+  ld [W_TilesetScript_TileBank], a
+
+.changeBank
   push hl
-  ld a, [$c4b0]
+  ld a, [W_TilesetScript_TileBank]
   rst $10
-  jp .asm_e7d
-.asm_e19: ; e19 (0:e19)
+  jp .doRender
+
+.setVRAMIndex
   inc hl
   ld a, [hli]
   push hl
   ld hl, $8000
-  ld b, $00
+  ld b, 0
   ld c, a
   sla c
   rl b
@@ -296,26 +315,28 @@ ParseTilesetScript::
   rl b
   add hl, bc
   ld a, h
-  ld [$c4ad], a
+  ld [W_TilesetScript_VRAMAddress], a
   ld a, l
-  ld [$c4ae], a
+  ld [W_TilesetScript_VRAMAddress + 1], a
   pop hl
-  jp .asm_dc8
-.asm_e3f:
+  jp .tilesetScriptProcessingLoop
+
+.setTileBank
   inc hl
   ld a, [hli]
-  ld [$c4b0], a
-  jp .asm_dc8
-.asm_e47:
+  ld [W_TilesetScript_TileBank], a
+  jp .tilesetScriptProcessingLoop
+
+.loadPresetVariablesAndRender
   inc hl
   ld a, [hli]
   push hl
   push af
-  ld a, $2e ; 'Preset' instructions are stored in a table here
+  ld a, $2e ; 'Preset' values are stored in a table here.
   rst $10
   pop af
   ld hl, $5a74
-  ld b, $00
+  ld b, 0
   ld c, a
   sla c
   rl b
@@ -328,26 +349,27 @@ ParseTilesetScript::
   ld h, [hl]
   ld l, a
   ld a, [hl]
-  ld [$c4ee], a
+  ld [W_TilesetScript_TilesetPointerIndex], a
   pop hl
   inc hl
   inc hl
   ld a, [hli]
-  ld [$c4b1], a
-  ld b, $00
-  ld a, [$c4ee]
+  ld [W_TilesetScript_NumTiles], a
+  ld b, 0
+  ld a, [W_TilesetScript_TilesetPointerIndex]
   ld c, a
   sla c
   rl b
   add hl, bc
   ld a, [hli]
-  ld [$c4ee], a
+  ld [W_TilesetScript_TilesetPointerIndex], a
   ld a, [hl]
   rst $10
-.asm_e7d
+
+.doRender
   ld hl, $4000 ; There is a tileset table at the start of every referenced bank
-  ld b, $00
-  ld a, [$c4ee]
+  ld b, 0
+  ld a, [W_TilesetScript_TilesetPointerIndex]
   ld c, a
   sla c
   rl b
@@ -357,15 +379,17 @@ ParseTilesetScript::
   ld l, a
   push hl
   pop de
-  ld a, [$c4b1]
+  ld a, [W_TilesetScript_NumTiles]
   ld c, a
-  ld a, [$c4ad]
+  ld a, [W_TilesetScript_VRAMAddress]
   ld h, a
-  ld a, [$c4ae]
+  ld a, [W_TilesetScript_VRAMAddress + 1]
   ld l, a
-.asm_e9c
+
+.drawTilesLoop
   ld b, $10
-.asm_e9e
+
+.drawTileLoop
   ld a, [de]
   di
   push af
@@ -375,33 +399,38 @@ ParseTilesetScript::
   ei
   inc de
   dec b
-  jr nz, .asm_e9e
+  jr nz, .drawTileLoop
+
   dec c
-  jr nz, .asm_e9c
+  jr nz, .drawTilesLoop
+
   ld a, h
-  ld [$c4ad], a
+  ld [W_TilesetScript_VRAMAddress], a
   ld a, l
-  ld [$c4ae], a
-  ld a, [$c4dd]
+  ld [W_TilesetScript_VRAMAddress + 1], a
+  ld a, [W_TilesetScript_Bank]
   rst $10
   pop hl
-  jp .asm_dc8
-.asm_ebc:
+  jp .tilesetScriptProcessingLoop
+
+.setVRAMBank
   inc hl
   ld a, [hli]
   or a
-  jr nz, .asm_ecb
-  ld a, $00
+  jr nz, .vramBankOnePlz
+  ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [$ff4f], a
-  jp .asm_dc8
-.asm_ecb
-  ld a, $01
+  ld [H_RegVBK], a
+  jp .tilesetScriptProcessingLoop
+
+.vramBankOnePlz
+  ld a, 1
   ld [W_CurrentVRAMBank], a
-  ld [$ff4f], a
-  jp .asm_dc8
-.asm_ed5:
-  ld a, $00
+  ld [H_RegVBK], a
+  jp .tilesetScriptProcessingLoop
+
+.endScriptParsing
+  ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [$ff4f], a
+  ld [H_RegVBK], a
   ret
