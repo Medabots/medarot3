@@ -50,11 +50,11 @@ BattleAutoConfigMappingState::
   ld bc, 0
   ld e, $60
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, 0
   ld e, $60
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   call WrapInitiateMainScript
   call $6F40
   call $7113

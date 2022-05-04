@@ -368,13 +368,13 @@ ShopMappingState::
   ld bc, 0
   ld e, $80
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, $B06
   ld a, [W_ShopShopkeeper]
   add $85
   ld e, a
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $80
   ld a, 1
@@ -599,7 +599,7 @@ ShopMainMenuSelectionBranchingState::
   ld bc, 8
   ld e, $81
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 8
   ld e, $81
   ld a, 1
@@ -855,7 +855,7 @@ ShopBuyMappingState::
   ld bc, 0
   ld e, $82
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $82
   ld a, 1
@@ -1355,7 +1355,7 @@ ShopSellMappingState::
   ld bc, 0
   ld e, $83
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $83
   ld a, 1
@@ -1887,7 +1887,7 @@ ShopPasswordMappingState::
   ld bc, 0
   ld e, $84
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $89
   ld a, 1
@@ -2446,13 +2446,13 @@ ShopPasswordRemapShopState::
   ld bc, 0
   ld e, $80
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, $B06
   ld a, [W_ShopShopkeeper]
   add $85
   ld e, a
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $80
   ld a, 1
@@ -2479,13 +2479,13 @@ ShopBuySellRemapShopState::
   ld bc, 0
   ld e, $80
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, $B06
   ld a, [W_ShopShopkeeper]
   add $85
   ld e, a
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 0
   ld e, $80
   ld a, 1
@@ -2493,7 +2493,7 @@ ShopBuySellRemapShopState::
   ld bc, 8
   ld e, $81
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ld bc, 8
   ld e, $81
   ld a, 1

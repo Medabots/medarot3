@@ -172,13 +172,13 @@ LoadTerrainWithoutPaletteForEncounterScreen::
   ld bc, $104
   ld e, $53
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld a, [W_EncounterTerrainListItemIndex]
   add $B0
   ld e, a
   ld bc, $104
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   ret
 
 LoadOpponentImageForEncounterScreen::
@@ -221,13 +221,13 @@ LoadOpponentImageWithoutPaletteForEncounterScreen::
   ld bc, $C02
   ld e, $16
   ld a, 1
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, $C02
   ld a, [W_EncounterOpponentBufferArea]
   add $B0
   ld e, a
   ld a, 1
-  call $339E
+  call WrapDecompressAttribmap0
   ret
 
 MapTextForEncounterScreen::
