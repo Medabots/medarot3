@@ -66,10 +66,10 @@ LinkMenuStateMachine::
   dw LinkMenuMappingState ; 22
   dw LinkMenuPrepareFadeIntoMenuState ; 23
   dw LinkMenuDoFadeState ; 24
-  dw LinkMenuCommonHandshakeResponseCheckState ; 25
+  dw LinkMenuAwaitEmptyResponseState ; 25
   dw LinkMenuInputHandlerState ; 26
   dw LinkMenuDoEightFrameTimerState ; 27
-  dw LinkMenuCommonHandshakeResponseCheckState ; 28
+  dw LinkMenuAwaitEmptyResponseState ; 28
   dw LinkMenuSetSelectionCommunicationTimerState ; 29
   dw LinkMenuDoSelectionCommunicationTimerState ; 2A
   dw LinkMenuSelectionResendState ; 2B
@@ -83,7 +83,7 @@ LinkMenuStateMachine::
   dw $421A ; 32
   dw LinkMenuPrepareFadeOutToBlackState ; 33
   dw LinkMenuDoFadeState ; 34
-  dw LinkMenuCommonHandshakeResponseCheckState ; 35
+  dw LinkMenuAwaitEmptyResponseState ; 35
   dw LinkMenuDoEightFrameTimerState ; 36
   dw $4457 ; 37
   dw $4477 ; 38
@@ -99,7 +99,7 @@ LinkMenuStateMachine::
   dw LinkMenuDisplayMessageState ; 42
   dw LinkMenuPrepareFadeOutToBlackState ; 43
   dw LinkMenuDoFadeState ; 44
-  dw LinkMenuCommonHandshakeResponseCheckState ; 45
+  dw LinkMenuAwaitEmptyResponseState ; 45
   dw $45BB ; 46
   dw LinkMenuPlaceholderState ; 47
   dw LinkMenuPlaceholderState ; 48
@@ -188,7 +188,7 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 96
   dw LinkMenuPlaceholderState ; 97
   dw LinkMenuDoEightFrameTimerState ; 98
-  dw LinkMenuCommonHandshakeResponseCheckState ; 99
+  dw LinkMenuAwaitEmptyResponseState ; 99
   dw LinkMenuDoEightFrameTimerState ; 9A
   dw $471D ; 9B
   dw $4725 ; 9C
@@ -288,13 +288,13 @@ LinkMenuPrepareFadeOutToWhiteState::
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
 
-LinkMenuCommonHandshakeResponseCheckState::
+LinkMenuAwaitEmptyResponseState::
   call $5420
   ld a, [hl]
   or a
   jp z, IncSubStateIndex
   call $542B
-  jr LinkMenuCommonHandshakeResponseCheckState
+  jr LinkMenuAwaitEmptyResponseState
 
 SECTION "Link Menu State Machine 2", ROMX[$4222], BANK[$11]
 LinkMenuPrepareConnectionConfirmationMessageState::
