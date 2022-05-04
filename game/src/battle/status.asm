@@ -586,7 +586,7 @@ DisplayMedarotImageForBattleStatus::
   ld bc, $B02
   ld e, 3
   ld a, 0
-  jp $3394
+  jp WrapDecompressTilemap0
 
 SetMedarotImagePaletteForBattleStatus::
   call GetMedarotImagePaletteForBattleStatus

@@ -48,10 +48,10 @@ LinkMenuStateMachine::
   dw LinkMenuExitToOverworldState ; 13
   dw LinkMenuPlaceholderState ; 14
   dw LinkMenuPlaceholderState ; 15
-  dw $42E3 ; 16
+  dw LinkMenuFinalInitialConnectionCheckState ; 16
   dw LinkMenuPrepareFadeOutToBlackState ; 17
   dw LinkMenuDoFadeState ; 18
-  dw $42FF ; 19
+  dw LinkMenuJumpToMenuState ; 19
   dw LinkMenuPlaceholderState ; 1A
   dw LinkMenuPlaceholderState ; 1B
   dw LinkMenuPlaceholderState ; 1C
@@ -59,21 +59,23 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 1E
   dw LinkMenuPlaceholderState ; 1F
 
-  dw $4309 ; 20
-  dw $4318 ; 21
-  dw $433A ; 22
-  dw $4370 ; 23
+; Link menu.
+
+  dw LinkMenuInitMenuState ; 20
+  dw LinkMenuDrawingState ; 21
+  dw LinkMenuMappingState ; 22
+  dw LinkMenuPrepareFadeIntoMenuState ; 23
   dw LinkMenuDoFadeState ; 24
-  dw $420D ; 25
-  dw $4382 ; 26
+  dw LinkMenuCommonHandshakeResponseCheckState ; 25
+  dw LinkMenuInputHandlerState ; 26
   dw LinkMenuDoEightFrameTimerState ; 27
-  dw $420D ; 28
-  dw $43BA ; 29
-  dw $43C8 ; 2A
-  dw $43D9 ; 2B
-  dw $43E8 ; 2C
-  dw $4411 ; 2D
-  dw $4426 ; 2E
+  dw LinkMenuCommonHandshakeResponseCheckState ; 28
+  dw LinkMenuSetSelectionCommunicationTimerState ; 29
+  dw LinkMenuDoSelectionCommunicationTimerState ; 2A
+  dw LinkMenuSelectionResendState ; 2B
+  dw LinkMenuSelectionRereceiveState ; 2C
+  dw LinkMenuFinaliseSelectionState ; 2D
+  dw LinkMenuJumpToSelectedMenuItemState ; 2E
   dw LinkMenuPlaceholderState ; 2F
 
   dw LinkMenuSetTimerToEightFramesState ; 30
@@ -81,7 +83,7 @@ LinkMenuStateMachine::
   dw $421A ; 32
   dw LinkMenuPrepareFadeOutToBlackState ; 33
   dw LinkMenuDoFadeState ; 34
-  dw $420D ; 35
+  dw LinkMenuCommonHandshakeResponseCheckState ; 35
   dw LinkMenuDoEightFrameTimerState ; 36
   dw $4457 ; 37
   dw $4477 ; 38
@@ -97,7 +99,7 @@ LinkMenuStateMachine::
   dw LinkMenuDisplayMessageState ; 42
   dw LinkMenuPrepareFadeOutToBlackState ; 43
   dw LinkMenuDoFadeState ; 44
-  dw $420D ; 45
+  dw LinkMenuCommonHandshakeResponseCheckState ; 45
   dw $45BB ; 46
   dw LinkMenuPlaceholderState ; 47
   dw LinkMenuPlaceholderState ; 48
@@ -178,15 +180,15 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 8F
 
   dw $4702 ; 90
-  dw $4318 ; 91
-  dw $433A ; 92
-  dw $4370 ; 93
+  dw LinkMenuDrawingState ; 91
+  dw LinkMenuMappingState ; 92
+  dw LinkMenuPrepareFadeIntoMenuState ; 93
   dw LinkMenuDoFadeState ; 94
   dw $4712 ; 95
   dw LinkMenuPlaceholderState ; 96
   dw LinkMenuPlaceholderState ; 97
   dw LinkMenuDoEightFrameTimerState ; 98
-  dw $420D ; 99
+  dw LinkMenuCommonHandshakeResponseCheckState ; 99
   dw LinkMenuDoEightFrameTimerState ; 9A
   dw $471D ; 9B
   dw $4725 ; 9C
@@ -286,6 +288,14 @@ LinkMenuPrepareFadeOutToWhiteState::
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
 
+LinkMenuCommonHandshakeResponseCheckState::
+  call $5420
+  ld a, [hl]
+  or a
+  jp z, IncSubStateIndex
+  call $542B
+  jr LinkMenuCommonHandshakeResponseCheckState
+
 SECTION "Link Menu State Machine 2", ROMX[$4222], BANK[$11]
 LinkMenuPrepareConnectionConfirmationMessageState::
   ld bc, $30
@@ -380,6 +390,203 @@ LinkMenuConnectionFailedState::
   ld bc, $33
   call $5415
   jp IncSubStateIndex
+
+LinkMenuFinalInitialConnectionCheckState::
+  call $543E
+  ld a, [$C4EE]
+  or a
+  jr nz, .connectionLost
+  call $55A0
+  ld a, [$C4EE]
+  or a
+  ret z
+  cp 1
+  jp z, IncSubStateIndex
+
+.connectionLost
+  ld a, $11
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuJumpToMenuState::
+  xor a
+  ld [$C612], a
+  ld a, $20
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuInitMenuState::
+  call $3413
+  call $343B
+  call $3475
+  call $5642
+  jp IncSubStateIndex
+
+LinkMenuDrawingState::
+  ld bc, $7D
+  call WrapLoadMaliasGraphics
+  ld bc, $7E
+  call WrapLoadMaliasGraphics
+  ld bc, $11
+  call WrapLoadMaliasGraphics
+  ld bc, 3
+  call $33C6
+  ld a, $A
+  ld b, 1
+  call $3527
+  jp IncSubStateIndex
+
+LinkMenuMappingState::
+  ld bc, 0
+  ld e, $C0
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, $E07
+  ld e, $C2
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $C0
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call $5658
+  call WrapInitiateMainScript
+  call $568F
+  ld a, [$C612]
+  or a
+  jp nz, IncSubStateIndex
+  ld a, $2E
+  call $27BA
+  jp IncSubStateIndex
+
+LinkMenuPrepareFadeIntoMenuState::
+  ld hl, $8D
+  ld bc, $16
+  ld d, $FF
+  ld e, $A0
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+LinkMenuInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call $56A3
+  call $5420
+  ld a, [hl]
+  or a
+  jr z, .optionNotSelectedViaLink
+  ld [W_LinkMenuItemIndex], a
+  call $542B
+  xor a
+  ld [$CC4A], a
+  jr .nextStatePlz
+
+.optionNotSelectedViaLink
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA | M_JPInputStart
+  ret z
+  ld a, [W_LinkMenuItemIndex]
+  inc a
+  ld [W_LinkMenuItemIndex], a
+  ld [W_SerIO_ProcessOutByte], a
+  ld a, 1
+  ld [$CC4A], a
+
+.nextStatePlz
+  ld a, 3
+  call ScheduleSoundEffect
+  jp IncSubStateIndex
+
+LinkMenuSetSelectionCommunicationTimerState::
+  ld de, $C0C0
+  call $33B7
+  ld a, 8
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+LinkMenuDoSelectionCommunicationTimerState::
+  ld de, $C0C0
+  call $33B7
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  jp IncSubStateIndex
+
+LinkMenuSelectionResendState::
+  ld de, $C0C0
+  call $33B7
+  ld a, [W_LinkMenuItemIndex]
+  ld [W_SerIO_ProcessOutByte], a
+  jp IncSubStateIndex
+
+LinkMenuSelectionRereceiveState::
+  ld de, $C0C0
+  call $33B7
+  call $5420
+  ld a, [hl]
+  or a
+  ret z
+  call $542B
+  ld b, a
+  ld a, [W_LinkMenuItemIndex]
+  cp b
+  jp z, IncSubStateIndex
+  ld a, [W_SerIO_SentMysteryPacket]
+  or a
+  jp nz, IncSubStateIndex
+  ld a, b
+  ld [W_LinkMenuItemIndex], a
+  xor a
+  ld [$CC4A], a
+  jp IncSubStateIndex
+
+LinkMenuFinaliseSelectionState::
+  ld a, [W_LinkMenuItemIndex]
+  dec a
+  ld [W_LinkMenuItemIndex], a
+  call $5658
+  call $568F
+  ld a, $CC
+  ld [$C0C2], a
+  jp IncSubStateIndex
+
+LinkMenuJumpToSelectedMenuItemState::
+  ld a, [W_LinkMenuItemIndex]
+  cp 0
+  jr z, .practiceBattle
+  cp 1
+  jr z, .officialBattle
+  cp 2
+  jr z, .partTrading
+  cp 3
+  jr z, .medals
+
+.exitMenu
+  ld a, $B0
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.practiceBattle
+  ld a, $30
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.officialBattle
+  ld a, $50
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.partTrading
+  ld a, $60
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.medals
+  ld a, $70
+  ld [W_CoreSubStateIndex], a
+  ret
 
 SECTION "Link Menu State Machine 3", ROMX[$473D], BANK[$11]
 LinkMenuResetConnectionState::
