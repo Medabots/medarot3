@@ -78,6 +78,8 @@ LinkMenuStateMachine::
   dw LinkMenuJumpToSelectedMenuItemState ; 2E
   dw LinkMenuPlaceholderState ; 2F
 
+; Battles / practice battles.
+
   dw LinkMenuSetTimerToEightFramesState ; 30
   dw LinkMenuDoCountdownTimerState ; 31
   dw $421A ; 32
@@ -91,16 +93,16 @@ LinkMenuStateMachine::
   dw $449F ; 3A
   dw $44E5 ; 3B
   dw $4527 ; 3C
-  dw $455D ; 3D
-  dw $4575 ; 3E
-  dw $459B ; 3F
-  dw $45A3 ; 40
+  dw LinkMenuBattleDrawingState ; 3D
+  dw LinkMenuBattleMappingState ; 3E
+  dw LinkMenuBattleChangeMusicState ; 3F
+  dw LinkMenuPrepareFadeIntoBattleState ; 40
   dw LinkMenuDoFadeState ; 41
   dw LinkMenuDisplayMessageState ; 42
   dw LinkMenuPrepareFadeOutToBlackState ; 43
   dw LinkMenuDoFadeState ; 44
   dw LinkMenuAwaitEmptyResponseState ; 45
-  dw $45BB ; 46
+  dw LinkMenuEnterBattleState ; 46
   dw LinkMenuPlaceholderState ; 47
   dw LinkMenuPlaceholderState ; 48
   dw LinkMenuPlaceholderState ; 49
@@ -111,12 +113,14 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 4E
   dw LinkMenuPlaceholderState ; 4F
 
-  dw $45ED ; 50
-  dw $45F6 ; 51
-  dw $4600 ; 52
-  dw $4610 ; 53
-  dw $4626 ; 54
-  dw $4636 ; 55
+; Official battles.
+
+  dw LinkMenuOfficialBattlePlayerEligibilityCheckState ; 50
+  dw LinkMenuOfficialBattleSendPlayerEligibilityState ; 51
+  dw LinkMenuOfficialBattleReceiveOpponentEligibilityState ; 52
+  dw LinkMenuOfficialBattleOverallEligibilityCheckState ; 53
+  dw LinkMenuOfficialBattleUneligibileMessageState ; 54
+  dw LinkMenuOfficialBattleReturnToMenuState ; 55
   dw LinkMenuPlaceholderState ; 56
   dw LinkMenuPlaceholderState ; 57
   dw LinkMenuPlaceholderState ; 58
@@ -127,6 +131,8 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 5D
   dw LinkMenuPlaceholderState ; 5E
   dw LinkMenuPlaceholderState ; 5F
+
+; Part trading.
 
   dw $421A ; 60
   dw LinkMenuPrepareFadeOutToBlackState ; 61
@@ -144,7 +150,9 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 6D
   dw LinkMenuPlaceholderState ; 6E
   dw LinkMenuPlaceholderState ; 6F
- 
+
+; Status/medals.
+
   dw $465F ; 70
   dw $4669 ; 71
   dw $468E ; 72
@@ -211,6 +219,8 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; AD
   dw LinkMenuPlaceholderState ; AE
   dw LinkMenuPlaceholderState ; AF
+
+; Exit.
 
   dw LinkMenuPrepareFadeOutToWhiteState ; B0
   dw LinkMenuDoFadeState ; B1
@@ -588,7 +598,124 @@ LinkMenuJumpToSelectedMenuItemState::
   ld [W_CoreSubStateIndex], a
   ret
 
-SECTION "Link Menu State Machine 3", ROMX[$473D], BANK[$11]
+SECTION "Link Menu State Machine 3", ROMX[$455D], BANK[$11]
+LinkMenuBattleDrawingState::
+  call $3413
+  ld bc, $13
+  call WrapLoadMaliasGraphics
+  ld bc, $1B
+  call WrapLoadMaliasGraphics
+  ld bc, 6
+  call $33C6
+  jp IncSubStateIndex
+
+LinkMenuBattleMappingState::
+  ld bc, 0
+  ld e, $52
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $52
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call $5709
+  call $5734
+  call $5783
+  ld bc, $3B
+  call $5415
+  jp IncSubStateIndex
+
+LinkMenuBattleChangeMusicState::
+  ld a, $33
+  call $27BA
+  jp IncSubStateIndex
+
+LinkMenuPrepareFadeIntoBattleState::
+  ld hl, $8E
+  ld bc, 3
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  call $574E
+  call $576B
+  jp IncSubStateIndex
+
+LinkMenuEnterBattleState::
+  ld hl, W_MedarotSelectionScreenSelectedOption
+  ld bc, 8
+  call memclr
+  ld a, 6
+  rst 8
+  ld hl, $DC20
+  ld bc, $300
+  call memclr
+  ld a, 1
+  ld [$C595], a
+  xor a
+  ld [W_MedarotBattleSelectionCurrentSelectionOffset], a
+  ld a, 3
+  ld [$C646], a
+  xor a
+  ld [$C647], a
+  ld a, $F
+  ld [W_CoreStateIndex], a
+  ld a, 0
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuOfficialBattlePlayerEligibilityCheckState::
+  call $56DE
+  ld [W_LinkMenuBattlePlayerIneligibility], a
+  jp IncSubStateIndex
+
+LinkMenuOfficialBattleSendPlayerEligibilityState::
+  ld a, [W_LinkMenuBattlePlayerIneligibility]
+  inc a
+  ld [W_SerIO_ProcessOutByte], a
+  jp IncSubStateIndex
+
+LinkMenuOfficialBattleReceiveOpponentEligibilityState::
+  call $5420
+  ld a, [hl]
+  or a
+  ret z
+  dec a
+  ld [W_LinkMenuBattleOpponentIneligibility], a
+  call $542B
+  jp IncSubStateIndex
+
+LinkMenuOfficialBattleOverallEligibilityCheckState::
+  ld a, [W_LinkMenuBattlePlayerIneligibility]
+  ld b, a
+  ld a, [W_LinkMenuBattleOpponentIneligibility]
+  or b
+  jr nz, .uneligibile
+  ld a, $30
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.uneligibile
+  call $3482
+  jp IncSubStateIndex
+
+LinkMenuOfficialBattleUneligibileMessageState::
+  ld bc, $3A
+  ld a, 1
+  call $3487
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  jp IncSubStateIndex
+
+LinkMenuOfficialBattleReturnToMenuState::
+  call $5658
+  call $568F
+  ld a, $25
+  ld [W_CoreSubStateIndex], a
+  ret
+
+SECTION "Link Menu State Machine 4", ROMX[$473D], BANK[$11]
 LinkMenuResetConnectionState::
   call SerIO_ResetConnection
   ld a, 0
