@@ -8,7 +8,7 @@ LinkMenuStateMachine::
   ld a, [W_CoreSubStateIndex]
   cp $B0
   jr nc, .fireState
-  call $543E
+  call LinkMenuHasConnectionTimedOut
   ld a, [$C4EE]
   or a
   jr z, .fireState
@@ -48,7 +48,7 @@ LinkMenuStateMachine::
   dw LinkMenuExitToOverworldState ; 13
   dw LinkMenuPlaceholderState ; 14
   dw LinkMenuPlaceholderState ; 15
-  dw LinkMenuFinalInitialConnectionCheckState ; 16
+  dw LinkMenuCommunicationCheckState ; 16
   dw LinkMenuPrepareFadeOutToBlackState ; 17
   dw LinkMenuDoFadeState ; 18
   dw LinkMenuJumpToMenuState ; 19
@@ -299,24 +299,24 @@ LinkMenuPrepareFadeOutToWhiteState::
   jp IncSubStateIndex
 
 LinkMenuAwaitEmptyResponseState::
-  call $5420
+  call LinkMenuReadFromRecvBuffer
   ld a, [hl]
   or a
   jp z, IncSubStateIndex
-  call $542B
+  call LinkMenuAdvanceRecvBufferReadOffset
   jr LinkMenuAwaitEmptyResponseState
 
 SECTION "Link Menu State Machine 2", ROMX[$4222], BANK[$11]
 LinkMenuPrepareConnectionConfirmationMessageState::
   ld bc, $30
-  call $5415
+  call LinkMenuInitiateMainScript
   ld hl, W_CurrentPageItemSelectionIndex
   ld bc, 8
   call memclr
   jp IncSubStateIndex
 
 LinkMenuConnectionConfirmationInputHandlerState::
-  call $5459
+  call LinkConfirmationStateMachine
   ld a, [W_TotalItemPages]
   or a
   ret z
@@ -329,7 +329,7 @@ LinkMenuConnectionConfirmationInputHandlerState::
 
 LinkMenuPrepareConnectionAbortedMessageState::
   ld bc, $31
-  call $5415
+  call LinkMenuInitiateMainScript
   jp IncSubStateIndex
 
 LinkMenuExitToOverworldState::
@@ -341,7 +341,7 @@ LinkMenuExitToOverworldState::
 
 LinkMenuPrepareConnectingMessageAState::
   ld bc, $34
-  call $5415
+  call LinkMenuInitiateMainScript
   jp IncSubStateIndex
 
 LinkMenuSetConnectingMessageTimerState::
@@ -365,7 +365,7 @@ LinkMenuSetConnectingMessageTimerState::
 
 LinkMenuPrepareConnectingMessageBState::
   ld bc, $32
-  call $5415
+  call LinkMenuInitiateMainScript
   ld a, $4B
   call ScheduleSoundEffect
   jp IncSubStateIndex
@@ -386,9 +386,9 @@ LinkMenuCheckConnectionState::
   xor a
   ld [W_MedalMenuOptionBoxSelectedItemForProcessing], a
   ld a, 2
-  ld [$CC41], a
+  ld [W_LinkMenuInitialHandshakeTimer], a
   ld a, $58
-  ld [$CC42], a
+  ld [W_LinkMenuInitialHandshakeTimer + 1], a
   ld a, $16
   ld [W_CoreSubStateIndex], a
   ret
@@ -398,11 +398,11 @@ LinkMenuConnectionFailedState::
   ld a, 0
   ld [$C522], a
   ld bc, $33
-  call $5415
+  call LinkMenuInitiateMainScript
   jp IncSubStateIndex
 
-LinkMenuFinalInitialConnectionCheckState::
-  call $543E
+LinkMenuCommunicationCheckState::
+  call LinkMenuHasConnectionTimedOut
   ld a, [$C4EE]
   or a
   jr nz, .connectionLost
@@ -482,12 +482,12 @@ LinkMenuInputHandlerState::
   ld de, $C0C0
   call $33B7
   call $56A3
-  call $5420
+  call LinkMenuReadFromRecvBuffer
   ld a, [hl]
   or a
   jr z, .optionNotSelectedViaLink
   ld [W_LinkMenuItemIndex], a
-  call $542B
+  call LinkMenuAdvanceRecvBufferReadOffset
   xor a
   ld [$CC4A], a
   jr .nextStatePlz
@@ -534,11 +534,11 @@ LinkMenuSelectionResendState::
 LinkMenuSelectionRereceiveState::
   ld de, $C0C0
   call $33B7
-  call $5420
+  call LinkMenuReadFromRecvBuffer
   ld a, [hl]
   or a
   ret z
-  call $542B
+  call LinkMenuAdvanceRecvBufferReadOffset
   ld b, a
   ld a, [W_LinkMenuItemIndex]
   cp b
@@ -622,7 +622,7 @@ LinkMenuBattleMappingState::
   call $5734
   call $5783
   ld bc, $3B
-  call $5415
+  call LinkMenuInitiateMainScript
   jp IncSubStateIndex
 
 LinkMenuBattleChangeMusicState::
@@ -676,13 +676,13 @@ LinkMenuOfficialBattleSendPlayerEligibilityState::
   jp IncSubStateIndex
 
 LinkMenuOfficialBattleReceiveOpponentEligibilityState::
-  call $5420
+  call LinkMenuReadFromRecvBuffer
   ld a, [hl]
   or a
   ret z
   dec a
   ld [W_LinkMenuBattleOpponentIneligibility], a
-  call $542B
+  call LinkMenuAdvanceRecvBufferReadOffset
   jp IncSubStateIndex
 
 LinkMenuOfficialBattleOverallEligibilityCheckState::
