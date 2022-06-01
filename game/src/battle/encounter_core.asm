@@ -275,11 +275,11 @@ BattleEncounterMappingState::
   ld bc, 0
   ld e, $52
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, 0
   ld e, $52
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   call LoadTerrainForEncounterScreen
   call LoadOpponentImageForEncounterScreen
   xor a
@@ -319,11 +319,11 @@ BattleEncounterVictoryDrawingAndMappingState::
   ld bc, 0
   ld e, $52
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, 0
   ld e, $52
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   call LoadTerrainWithoutPaletteForEncounterScreen
   call LoadOpponentImageWithoutPaletteForEncounterScreen
   call MapTextForEncounterScreen
@@ -482,15 +482,15 @@ BattleEncounterVictoryResultsDrawingAndMappingState::
   ld bc, 0
   ld e, $6E
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, $102
   ld e, $6F
   ld a, 0
-  call $3394
+  call WrapDecompressTilemap0
   ld bc, 0
   ld e, $6E
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   call $6675
   ld a, 2
   ld [$CF96], a

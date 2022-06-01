@@ -878,7 +878,7 @@ ShopPasswordDrawAndMapPartObtainedWindow::
   ld bc, $B01
   ld e, $30
   ld a, 0
-  call $339E
+  call WrapDecompressAttribmap0
   ld hl, .table
   ld b, 0
   ld a, [W_CurrentPartTypeForListView]

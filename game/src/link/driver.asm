@@ -42,6 +42,9 @@ W_SerIO_RecvBufferRead:: ds 1
 SECTION "SerIO Driver Variables 11", WRAM0[$CC3C]
 W_SerIO_RecvBufferReady:: ds 1
 
+SECTION "SerIO Driver Variables 12", WRAM0[$CC3E]
+W_SerIO_RecvBufferReadOffset:: ds 1
+
 SECTION "SerIO Driver 1", ROM0[$31FD]
 SerIO_SwitchToInternalClock::
   ld a, [W_SerIO_State]
