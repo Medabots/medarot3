@@ -8,7 +8,7 @@ InstallODMADriver::
 
 .copyLoop
   ld a, [hli]
-  ld [c], a
+  ldh [$ff00+c], a
   inc c
   dec b
   jr nz, .copyLoop
@@ -16,7 +16,7 @@ InstallODMADriver::
 
 ODMADriver:
   ld a, $C0
-  ld [H_RegDMA], a
+  ldh [H_RegDMA], a
   ld a, $28
 
 .spinLock
