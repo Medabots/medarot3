@@ -956,15 +956,11 @@ ShopPasswordMapObtainedPartName::
   ld [W_ListItemInitialOffsetForBuffering], a
   push hl
   call WrapBufferTextFromList
-  pop hl
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call GetTileBasedCentringOffset
-  ld b, 0
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
+  pop de ; hl -> de, VRAM address to map
+  ld h, $02
+  ld bc, W_NewListItemBufferArea
+  ld a, $07
+  call VWFDrawStringCentredFullAddress
   ret
 
 ShopPasswordGetPartStatValues::
@@ -974,52 +970,44 @@ ShopPasswordGetPartStatValues::
   jp $34FF
 
 ShopPasswordMapObtainedPartNature::
-  ld b, 5
-  ld c, 7
+  ld bc, $0507
   ld a, [$C552]
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
-  push hl
   call WrapBufferTextFromList
-  pop hl
-  ld hl, $992D
-  ld bc, W_ListItemBufferArea
+  ld de, $992D
+  ld bc, W_NewListItemBufferArea
   ld a, 6
-  call PutStringFixedLength
+  ld h, $09
+  call VWFDrawStringLeftFullAddress
   ret
 
 ShopPasswordMapObtainedPartSkillName::
-  ld b, 6
-  ld c, 6
+  ld bc, $0606
   ld a, [$C554]
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
-  push hl
   call WrapBufferTextFromList
-  pop hl
-  ld hl, $996D
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
+  ld de, $996D
+  ld bc, W_NewListItemBufferArea
+  ld h, $0F
+  call VWFDrawStringLeftFullAddress5Tiles
   ret
 
 ShopPasswordMapObtainedPartMovementName::
-  ld b, 7
-  ld c, 6
+  ld bc, $0706
   ld a, [$C553]
   sub $50
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
-  push hl
   call WrapBufferTextFromList
-  pop hl
-  ld hl, $996D
-  ld bc, W_ListItemBufferArea
-  ld a, 5
-  call PutStringFixedLength
+  ld de, $996D
+  ld bc, W_NewListItemBufferArea
+  ld h, $0F
+  call VWFDrawStringLeftFullAddress5Tiles
   ret
 
 ShopPasswordDrawObtainedPart::
@@ -1932,3 +1920,5 @@ Shop10Stock::
   db $8B,$8C,$FF,$FF
   db $8B,$8C,$08,$FF
   db $8B,$8C,$08,$27
+
+  padend $70a4

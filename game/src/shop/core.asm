@@ -511,7 +511,7 @@ ShopMainMenuInputHandlerState::
   ld a, $27
   call WrapIsItemInInventory
   cp 1
-  jr z, .passwordMessageB
+  ;jr z, .passwordMessageB
 
 .passwordNotSelected
   ld a, 1
@@ -2143,8 +2143,8 @@ ShopPasswordInputHandlerState::
 .table
   db $E0,$E1,$E2,$E3
   db $E4,$E5,$E6,$E7
-  db $E8,$E9,$9E,$9F
-  db $A0,$A1,$A2,$A3
+  db $E8,$E9,$A2,$A3
+  db $A4,$A5,$A6,$A7
 
 .highlightPressedDigitButton
   ld a, [W_ShopPasswordLastEnteredDigit]
