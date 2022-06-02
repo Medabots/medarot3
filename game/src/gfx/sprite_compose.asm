@@ -161,7 +161,21 @@ LoadMetasprite::
   ret
 
 .banktable
-  db $2F, $2F, $2F, $A4, $30, $30, $30, $32
+  db BANK(MetaspriteTable00)
+  db BANK(MetaspriteTable01)
+  db BANK(MetaspriteTable02)
+  db BANK(MetaspriteTable03)
+  db BANK(MetaspriteTable04)
+  db BANK(MetaspriteTable05)
+  db BANK(MetaspriteTable06)
+  db BANK(MetaspriteTable07)
 
 .addresstable
-  dw $4000, $4E66, $68E8, $4000, $4000, $5162, $6606, $640C
+  dw MetaspriteTable00
+  dw MetaspriteTable01
+  dw MetaspriteTable02
+  dw MetaspriteTable03
+  dw MetaspriteTable04
+  dw MetaspriteTable05
+  dw MetaspriteTable06
+  dw MetaspriteTable07

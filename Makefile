@@ -175,6 +175,7 @@ version_tileset_table_ADDITIONAL := $(COMPRESSED_TILESET_FILES_COMMON) $(VERSION
 version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEHOLDER_VERSION.asm
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
+version_metasprites_ADDITIONAL := $(VERSION_SRC)/metasprites00.asm $(VERSION_SRC)/metasprites01.asm $(VERSION_SRC)/metasprites02.asm $(VERSION_SRC)/metasprites03.asm $(VERSION_SRC)/metasprites04.asm $(VERSION_SRC)/metasprites05.asm $(VERSION_SRC)/metasprites06.asm $(VERSION_SRC)/metasprites07.asm
 
 # Patch Specific, including any tilesets we move into the patch tileset
 patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
@@ -296,8 +297,8 @@ csv_from_xlsx:
 
 ### Dump Scripts
 
-.PHONY: dump dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
-dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
+.PHONY: dump dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps dump_metasprites
+dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps dump_metasprites
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	rm $(DIALOG_TEXT)/*.$(CSV_TYPE) || echo ""
@@ -322,6 +323,9 @@ dump_attribmaps: | $(ATTRIBMAP_GFX) $(ATTRIBMAP_PREBUILT) $(SCRIPT_RES)
 	rm $(ATTRIBMAP_PREBUILT)/*.$(TMAP_TYPE) || echo ""
 	rm $(ATTRIBMAP_GFX)/*.$(TEXT_TYPE) || echo ""
 	$(PYTHON) $(SCRIPT)/dump_maps.py attribmap "$(ATTRIBMAP_GFX)" "$(ATTRIBMAP_PREBUILT)" "$(ATTRIBMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 8fe 902 4
+
+dump_metasprites: | $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_metasprites.py "$(VERSION_SRC)"
 
 # Tests
 .PHONY: test_tilemaps test_attribmaps
