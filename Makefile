@@ -247,8 +247,8 @@ $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 
 ### Dump Scripts
 
-.PHONY: dump dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
-dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps
+.PHONY: dump dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps dump_metasprites
+dump: dump_text dump_tilesets dump_ptrlists dump_tilemaps dump_attribmaps dump_metasprites
 
 dump_text: | $(DIALOG_TEXT) $(SCRIPT_RES)
 	rm $(DIALOG_TEXT)/*.$(CSV_TYPE) || echo ""
@@ -273,6 +273,9 @@ dump_attribmaps: | $(ATTRIBMAP_GFX) $(ATTRIBMAP_PREBUILT) $(SCRIPT_RES)
 	rm $(ATTRIBMAP_PREBUILT)/*.$(TMAP_TYPE) || echo ""
 	rm $(ATTRIBMAP_GFX)/*.$(TEXT_TYPE) || echo ""
 	$(PYTHON) $(SCRIPT)/dump_maps.py attribmap "$(ATTRIBMAP_GFX)" "$(ATTRIBMAP_PREBUILT)" "$(ATTRIBMAP_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)" 8fe 902 4
+
+dump_metasprites: | $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/dump_metasprites.py "$(VERSION_SRC)"
 
 # Tests
 .PHONY: test_tilemaps test_attribmaps
