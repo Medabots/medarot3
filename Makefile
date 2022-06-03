@@ -188,7 +188,21 @@ patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
  $(TILESET_OUT)/AutoBattleSymbols.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/ShopBuySellKanji.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/ShopBubbleText.$(COMPRESSED_TSET_TYPE)\
- $(TILESET_OUT)/ShopBuySellText.$(COMPRESSED_TSET_TYPE)
+ $(TILESET_OUT)/ShopBuySellText.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenHeaderFooter.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber1.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber2.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber3.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber4.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber5.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterNumber6.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle1.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle2.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle3.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle4.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle5.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ChapterScreenChapterTitle6.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/TextSubaru.$(COMPRESSED_TSET_TYPE)
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 

@@ -62,6 +62,34 @@ ShopBubbleText::
   INCBIN "./build/tilesets/ShopBubbleText.malias"
 ShopBuySellText::
   INCBIN "./build/tilesets/ShopBuySellText.malias"
+ChapterScreenHeaderFooter::
+  INCBIN "./build/tilesets/ChapterScreenHeaderFooter.malias"
+ChapterScreenChapterNumber1::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber1.malias"
+ChapterScreenChapterNumber2::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber2.malias"
+ChapterScreenChapterNumber3::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber3.malias"
+ChapterScreenChapterNumber4::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber4.malias"
+ChapterScreenChapterNumber5::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber5.malias"
+ChapterScreenChapterNumber6::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber6.malias"
+ChapterScreenChapterTitle1::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle1.malias"
+ChapterScreenChapterTitle2::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle2.malias"
+ChapterScreenChapterTitle3::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle3.malias"
+ChapterScreenChapterTitle4::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4.malias"
+ChapterScreenChapterTitle5::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle5.malias"
+ChapterScreenChapterTitle6::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
+TextSubaru::
+  INCBIN "./build/tilesets/TextSubaru.malias"
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::
