@@ -83,20 +83,20 @@ TilesetSourceAddressTable::
   dw Tileset3A31 ; 4E (3A31)
   dw Tileset3A33 ; 4F (3A33)
   dw Tileset3A35 ; 50 (3A35)
-  dw Tileset3A37 ; 51 (3A37)
-  dw Tileset3A39 ; 52 (3A39)
-  dw Tileset3A3B ; 53 (3A3B)
-  dw Tileset3A3D ; 54 (3A3D)
-  dw Tileset3A3F ; 55 (3A3F)
-  dw Tileset3A41 ; 56 (3A41)
-  dw Tileset3A43 ; 57 (3A43)
-  dw Tileset3A45 ; 58 (3A45)
-  dw Tileset3A47 ; 59 (3A47)
-  dw Tileset3A49 ; 5A (3A49)
-  dw Tileset3A4B ; 5B (3A4B)
-  dw Tileset3A4D ; 5C (3A4D)
-  dw Tileset3A4F ; 5D (3A4F)
-  dw Tileset3A51 ; 5E (3A51)
+  dw ChapterScreenHeaderFooter ; 51 (3A37)
+  dw ChapterScreenChapterNumber1 ; 52 (3A39)
+  dw ChapterScreenChapterNumber2 ; 53 (3A3B)
+  dw ChapterScreenChapterNumber3 ; 54 (3A3D)
+  dw ChapterScreenChapterNumber4 ; 55 (3A3F)
+  dw ChapterScreenChapterNumber5 ; 56 (3A41)
+  dw ChapterScreenChapterNumber6 ; 57 (3A43)
+  dw ChapterScreenChapterTitle1 ; 58 (3A45)
+  dw ChapterScreenChapterTitle2 ; 59 (3A47)
+  dw ChapterScreenChapterTitle3 ; 5A (3A49)
+  dw ChapterScreenChapterTitle4 ; 5B (3A4B)
+  dw ChapterScreenChapterTitle5 ; 5C (3A4D)
+  dw ChapterScreenChapterTitle6 ; 5D (3A4F)
+  dw TextSubaru ; 5E (3A51)
   dw Tileset3A53 ; 5F (3A53)
   dw TilesetSourceAddressTableEnd ; 60 (3A55)
   dw TilesetSourceAddressTableEnd ; 61 (3A57)
@@ -599,20 +599,20 @@ TilesetInfoTable::
   dbwb BANK(Tileset3A31), $8000, $0 ; 04E
   dbwb BANK(Tileset3A33), $8000, $0 ; 04F
   dbwb BANK(Tileset3A35), $9000, $0 ; 050
-  dbwb BANK(Tileset3A37), $9000, $0 ; 051
-  dbwb BANK(Tileset3A39), $9160, $0 ; 052
-  dbwb BANK(Tileset3A3B), $9160, $0 ; 053
-  dbwb BANK(Tileset3A3D), $9160, $0 ; 054
-  dbwb BANK(Tileset3A3F), $9160, $0 ; 055
-  dbwb BANK(Tileset3A41), $9160, $0 ; 056
-  dbwb BANK(Tileset3A43), $9160, $0 ; 057
-  dbwb BANK(Tileset3A45), $91E0, $0 ; 058
-  dbwb BANK(Tileset3A47), $91E0, $0 ; 059
-  dbwb BANK(Tileset3A49), $91E0, $0 ; 05A
-  dbwb BANK(Tileset3A4B), $91E0, $0 ; 05B
-  dbwb BANK(Tileset3A4D), $91E0, $0 ; 05C
-  dbwb BANK(Tileset3A4F), $91E0, $0 ; 05D
-  dbwb BANK(Tileset3A51), $91E0, $0 ; 05E
+  dbwb BANK(ChapterScreenHeaderFooter), $9000, $0 ; 051
+  dbwb BANK(ChapterScreenChapterNumber1), $9160, $0 ; 052
+  dbwb BANK(ChapterScreenChapterNumber2), $9160, $0 ; 053
+  dbwb BANK(ChapterScreenChapterNumber3), $9160, $0 ; 054
+  dbwb BANK(ChapterScreenChapterNumber4), $9160, $0 ; 055
+  dbwb BANK(ChapterScreenChapterNumber5), $9160, $0 ; 056
+  dbwb BANK(ChapterScreenChapterNumber6), $9160, $0 ; 057
+  dbwb BANK(ChapterScreenChapterTitle1), $91E0, $0 ; 058
+  dbwb BANK(ChapterScreenChapterTitle2), $91E0, $0 ; 059
+  dbwb BANK(ChapterScreenChapterTitle3), $91E0, $0 ; 05A
+  dbwb BANK(ChapterScreenChapterTitle4), $91E0, $0 ; 05B
+  dbwb BANK(ChapterScreenChapterTitle5), $91E0, $0 ; 05C
+  dbwb BANK(ChapterScreenChapterTitle6), $91E0, $0 ; 05D
+  dbwb BANK(TextSubaru), $91E0, $0 ; 05E
   dbwb BANK(Tileset3A53), $8800, $0 ; 05F
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 060
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 061
