@@ -82,14 +82,14 @@ ChapterScreenChapterTitle2::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle2.malias"
 ChapterScreenChapterTitle3::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle3.malias"
-ChapterScreenChapterTitle4::
-  INCBIN "./build/tilesets/ChapterScreenChapterTitle4.malias"
+ChapterScreenChapterTitle4Kabuto::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4Kabuto.malias"
+ChapterScreenChapterTitle4Kuwagata::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4Kuwagata.malias"
 ChapterScreenChapterTitle5::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle5.malias"
 ChapterScreenChapterTitle6::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
-TextSubaru::
-  INCBIN "./build/tilesets/TextSubaru.malias"
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::
