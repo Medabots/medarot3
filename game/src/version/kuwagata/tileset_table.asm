@@ -16,61 +16,61 @@ SECTION "Tileset Data Tileset3A33", ROMX[$7953], BANK[$3E]
 Tileset3A33::
   INCBIN "./build/tilesets/Tileset3A33.malias"
 
-SECTION "Tileset Data Tileset3A37", ROMX[$685C], BANK[$3B]
-Tileset3A37::
-  INCBIN "./build/tilesets/Tileset3A37.malias"
+SECTION "Tileset Data ChapterScreenHeaderFooter", ROMX[$685C], BANK[$3B]
+ChapterScreenHeaderFooter::
+  INCBIN "./build/tilesets/ChapterScreenHeaderFooter.malias"
 
-SECTION "Tileset Data Tileset3A39", ROMX[$6957], BANK[$3B]
-Tileset3A39::
-  INCBIN "./build/tilesets/Tileset3A39.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber1", ROMX[$6957], BANK[$3B]
+ChapterScreenChapterNumber1::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber1.malias"
 
-SECTION "Tileset Data Tileset3A3B", ROMX[$69C4], BANK[$3B]
-Tileset3A3B::
-  INCBIN "./build/tilesets/Tileset3A3B.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber2", ROMX[$69C4], BANK[$3B]
+ChapterScreenChapterNumber2::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber2.malias"
 
-SECTION "Tileset Data Tileset3A3D", ROMX[$6A33], BANK[$3B]
-Tileset3A3D::
-  INCBIN "./build/tilesets/Tileset3A3D.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber3", ROMX[$6A33], BANK[$3B]
+ChapterScreenChapterNumber3::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber3.malias"
 
-SECTION "Tileset Data Tileset3A3F", ROMX[$6AA2], BANK[$3B]
-Tileset3A3F::
-  INCBIN "./build/tilesets/Tileset3A3F.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber4", ROMX[$6AA2], BANK[$3B]
+ChapterScreenChapterNumber4::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber4.malias"
 
-SECTION "Tileset Data Tileset3A41", ROMX[$6B12], BANK[$3B]
-Tileset3A41::
-  INCBIN "./build/tilesets/Tileset3A41.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber5", ROMX[$6B12], BANK[$3B]
+ChapterScreenChapterNumber5::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber5.malias"
 
-SECTION "Tileset Data Tileset3A43", ROMX[$6B7F], BANK[$3B]
-Tileset3A43::
-  INCBIN "./build/tilesets/Tileset3A43.malias"
+SECTION "Tileset Data ChapterScreenChapterNumber6", ROMX[$6B7F], BANK[$3B]
+ChapterScreenChapterNumber6::
+  INCBIN "./build/tilesets/ChapterScreenChapterNumber6.malias"
 
-SECTION "Tileset Data Tileset3A45", ROMX[$6BED], BANK[$3B]
-Tileset3A45::
-  INCBIN "./build/tilesets/Tileset3A45.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle1", ROMX[$6BED], BANK[$3B]
+ChapterScreenChapterTitle1::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle1.malias"
 
-SECTION "Tileset Data Tileset3A47", ROMX[$6D2F], BANK[$3B]
-Tileset3A47::
-  INCBIN "./build/tilesets/Tileset3A47.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle2", ROMX[$6D2F], BANK[$3B]
+ChapterScreenChapterTitle2::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle2.malias"
 
-SECTION "Tileset Data Tileset3A49", ROMX[$6E4B], BANK[$3B]
-Tileset3A49::
-  INCBIN "./build/tilesets/Tileset3A49.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle3", ROMX[$6E4B], BANK[$3B]
+ChapterScreenChapterTitle3::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle3.malias"
 
-SECTION "Tileset Data Tileset3A4B", ROMX[$6FAC], BANK[$3B]
-Tileset3A4B::
-  INCBIN "./build/tilesets/Tileset3A4B.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle4", ROMX[$6FAC], BANK[$3B]
+ChapterScreenChapterTitle4::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4.malias"
 
-SECTION "Tileset Data Tileset3A4D", ROMX[$70E3], BANK[$3B]
-Tileset3A4D::
-  INCBIN "./build/tilesets/Tileset3A4D.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle5", ROMX[$70E3], BANK[$3B]
+ChapterScreenChapterTitle5::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle5.malias"
 
-SECTION "Tileset Data Tileset3A4F", ROMX[$723C], BANK[$3B]
-Tileset3A4F::
-  INCBIN "./build/tilesets/Tileset3A4F.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle6", ROMX[$723C], BANK[$3B]
+ChapterScreenChapterTitle6::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
 
-SECTION "Tileset Data Tileset3A51", ROMX[$736D], BANK[$3B]
-Tileset3A51::
-  INCBIN "./build/tilesets/Tileset3A51.malias"
+SECTION "Tileset Data TextSubaru", ROMX[$736D], BANK[$3B]
+TextSubaru::
+  INCBIN "./build/tilesets/TextSubaru.malias"
 
 SECTION "Tileset Data Tileset3A53", ROMX[$7A2F], BANK[$3E]
 Tileset3A53::
