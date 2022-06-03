@@ -17,8 +17,8 @@
 015,0x1f001e,"<@LL,00,05>.........もう ねよう うん",
 016,0x1f0020,"<@RL,17,00>ぼうや<CD>こっちは 行き止まリだよ","<@RL,17,00>This way's a dead end, sonny."
 017,0x1f0022,"<@RL,1D,00>このあたリって じゅうたくがいだから<CD>昼間も しずかなのよね",
-018,0x1f0024,"<@RL,14,00>ここは「メダロポリス3」<CD>つまリ メダロポリスの右上ってわけ<CF><D1>お金もちが すむ エリアさ","<@RL,14,00>This is <f02>Medalopolis District<D3>3<f00>. That is to say, the upper<D3>right area of Medalopolis.<CF><D1>All the rich people live here."
-019,0x1f0026,"<@RL,13,00>こ ここが あこがれの<CD>カリンちゃんの家...♥<CF><D1>そして ぼくは カリンちゃんを<CD>とおくから 貝つめるだけの 男...","<@RL,13,00>Th-this is the house of the girl<D3>I admire... Karin...♥ <D1>And me... I'm just the boy who<D3>watches her from afar..."
+018,0x1f0024,"<@RL,14,00>ここは「メダロポリス3」<CD>つまリ メダロポリスの右上ってわけ<CF><D1>お金もちが すむ エリアさ","<@RL,14,00>This is <f02>Medalopolis District<D3>3<f00>. That is to say, the upper<CF><D1>right area of Medalopolis.<D3>All the rich people live here."
+019,0x1f0026,"<@RL,13,00>こ ここが あこがれの<CD>カリンちゃんの家...♥<CF><D1>そして ぼくは カリンちゃんを<CD>とおくから 貝つめるだけの 男...","<@RL,13,00>Th-this is the house of the girl<D3>I admire... Karin...♥ <CF><D1>And me... I'm just the boy who<D3>watches her from afar..."
 020,0x1f0028,"<@RL,15,00>ちかくに コンビニが あるから<CD>いっつも ここで すませちゃうよ",
 021,0x1f002a,"<@LL,00,05>つうしんたんまつ「ミルミル」だ<CD>ここで メダルや パ-ツの<CF><D1>やリとリとか<CD>つうしんロボトルが できるんだ",
 022,0x1f002c,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!",
@@ -40,7 +40,7 @@
 038,0x1f004c,"<@LL,00,00>ぼうぎょ メダロット<CD>「マンマンモス」","<@LL,00,00>It's the defense Medabot<D3><f02>Man Mammoth<f00>."
 039,0x1f004e,"<@LL,00,00>チャ-ジ メダロット<CD>「コノトラクタ-」","<@LL,00,00>It's the charge Medabot<D3><f02>Constructor<f00>."
 040,0x1f0050,"<@LL,00,00>たきのう メダロット<CD>「ミラクルミシン」","<@LL,00,00>It's the multifunction Medabot<D3><f02>Miracle Machine<f00>."
-041,0x1f0052,"<@RL,18,00>この ステ-ジでの ロボトルは<CD>メダロット社の デ-タベ-スに<CF><D1>ちくせきされ 次の メダロットの<CD>かいはつに 生かされるんだよ","<@RL,18,00>Data from robattles on this<D3>stage is stored in the<D3>Medabots Corporation<D3>database.<CF><D1>That way, we can put it to<D3>good use when developing new<D3>Medabots."
+041,0x1f0052,"<@RL,18,00>この ステ-ジでの ロボトルは<CD>メダロット社の デ-タベ-スに<CF><D1>ちくせきされ 次の メダロットの<CD>かいはつに 生かされるんだよ","<@RL,18,00>Data from robattles on this<D3>stage is stored in the<CF><D1>Medabots Corporation<D3>database.<CF><D1>That way, we can put it to<D3>good use when developing new<CF><D1>Medabots."
 042,0x1f0054,"<@RL,18,00>かいはつ中の メダロットの<CD>チェックをしているんだよ<CF><D1>すいしんが 行動の スピ-ドに<CD>えいきょうするから ちゅういしないと",
 043,0x1f0056,"<@RL,15,00>まだだ!<CD>まだ 早すぎる....","<@RL,15,00>Not quite yet! Still too early..."
 044,0x1f0058,"<@RL,15,00>よしっ!<CD>ここで いっきに つよびに!","<@RL,15,00>Alright! Now to immediately<D3>sear it on high heat!"
@@ -59,13 +59,13 @@
 057,0x1f0072,"<@RL,1D,00>また あそびに 来てね? ねっ?",
 058,0x1f0074,"<@RL,1D,00>すなおな子って すきよ<CD>さっ ロボトルしましょ♥<CF><D1><@LL,00,07>ええっ!?",
 059,0x1f0076,"<@RL,1D,00>また あそびに 来てね? ねっ?",
-060,0x1f0078,"<@RL,14,00>いま のむベきか...<CF><D1>あとで のむベきか...","<@RL,14,00>Should I drink something<D3>now, or...<D1>Should I drink something<D3>later..."
+060,0x1f0078,"<@RL,14,00>いま のむベきか...<CF><D1>あとで のむベきか...","<@RL,14,00>Should I drink something<D3>now, or...<CF><D1>Should I drink something<D3>later..."
 061,0x1f007a,"<@RL,16,00>わしゃ このマンションの<CD>かんリにんじゃ<CF><D1>うろうろしておるが<CD>あんまリ 気にせんでええぞ",
-062,0x1f007c,"<@LL,00,07>うわっ!<CD>ここって ウサギちゃんバ-?<CF><D1>でも ぼく まだ 子どもだし...","<@LL,00,07>Whoa! Is this a bunny-girl<D3>bar?<D1>But I'm still just a kid, so..."
+062,0x1f007c,"<@LL,00,07>うわっ!<CD>ここって ウサギちゃんバ-?<CF><D1>でも ぼく まだ 子どもだし...","<@LL,00,07>Whoa! Is this a bunny-girl<D3>bar?<CF><D1>But I'm still just a kid, so..."
 063,0x1f007e,"<@RL,1C,00>ここはぁ「メダロポリス1」<CD>つまリぃ メダロポリスの左上なのぉ<CF><D1>この町って すごく 広いじゃ-ん?<CD>あそび場所には こまらないかもぉ",
-064,0x1f0080,"<@RL,28,00>ここは「セレクト本部」で あリます!","<@RL,28,00>This is the <f02>Select Corp<D3><f00>headquarters!"
-065,0x1f0082,"<@RL,28,00>ここは「きゅうきゅうセンタ-」で<CD>あリます!","<@RL,28,00>This is the first aid center!"
-066,0x1f0084,"<@RL,13,00>ここは メダロッタ-あこがれの店<CD>「メダロッタ-ズ」!!<CF><D1>メダロットグッズが まんさい!<CD>でも メダルは 売ってない!<CF><D1>く---...ニクイね!","<@RL,13,00>This is the shop for those who<D3>strive to train Medabots:<D3><f02>Medabotters<f00>!!<D3><D1>They're fully stocked with<D3>Medabot goods! But they don't<D3>sell medals!<D3><D1>Ku... so awesome!"
+064,0x1f0080,"<@RL,28,00>ここは「セレクト本部」で あリます!","<@RL,28,00>This is the <f02>Select Corp<D3>headquarters<f00>!"
+065,0x1f0082,"<@RL,28,00>ここは「きゅうきゅうセンタ-」で<CD>あリます!","<@RL,28,00>This is the <f02>first aid center<f00>!"
+066,0x1f0084,"<@RL,13,00>ここは メダロッタ-あこがれの店<CD>「メダロッタ-ズ」!!<CF><D1>メダロットグッズが まんさい!<CD>でも メダルは 売ってない!<CF><D1>く---...ニクイね!","<@RL,13,00>This is the shop for those who<D3>strive to train Medabots:<CF><D1><f02>Medabotters<f00>!!<CF><D1>They're fully stocked with<D3>Medabot goods! But they don't<CF><D1>sell medals!<CF><D1>Ku... so awesome!"
 067,0x1f0086,"<@RL,15,00>おっきいビルの そうじは <CD>ほねが おれるよ","<@RL,15,00>Cleaning this big building is<D3>a lot of work!"
 068,0x1f0088,"<@RL,15,00>い いらっしゃいませ!<CD>何の ご用でしょうか...<CF><D1>まったく...<CF><D1>うけつけの 女の子が いなくなって<CD>こまっちゃうわよ<CF><D1>それに その子 よこを むいて<CD>話すから 話しづらいんだよ",
 069,0x1f008a,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか<CF><D1>あら あなたは♥<CD>この前は あリがとうね",
@@ -82,9 +82,9 @@
 080,0x1f00a0,"<@RL,1F,00>ぼうやぁ おねえさん<CD>パ-ツが だ-いすきなの <CF><D1>あたしに くれなぁい?",
 081,0x1f00a2,"<@RL,13,00>ここは どこ?","<@RL,13,00>Where am I?"
 082,0x1f00a4,"<@RL,13,00>ここは「メダロポリス2」!<CD>つまリ メダロポリスの左下!<CF><D1>メダロえきからは ひこう場とかにも<CD>行けるんだぜ!",
-083,0x1f00a6,"<@RL,13,00>でっかいデパ-トだよなぁ<CD>こんなに でっかいと...<CF><D1>入リ口まで 歩くのが 大変だ!","<@RL,13,00>The department store is huge,<D3>isn't it? A store as big as<D3>this one...<D1>Just walking to the entrance<D3>is hard!"
-084,0x1f00a8,"<@RL,1D,00>メダロデパ-トヘ ようこそ<CF><D1>...もうしわけございませんが<CD>先日の でんぱいじょうによリ<CF><D1>いちじ パ-ツはんばいを<CD>貝合わせて おリます<CF><D1><@LL,00,05>でんぱいじょうの じけんの<CD>えいきょうが ここにも...","<@RL,1D,00>Welcome to Medaro<D3>Department Store!<D1>...My apologies, but because of<D3>the strange radio wave the<D3>other day,<D1>We have decided to postpone<D3>part sales for the time being.<D1><@LL,00,05>The strange radio wave<D3>affected this place, too..."
-085,0x1f00aa,"<@RL,1D,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます","<@RL,1D,00>Welcome to the Medabot<D3>Department Store!<D1>We deal in Medabot parts here."
+083,0x1f00a6,"<@RL,13,00>でっかいデパ-トだよなぁ<CD>こんなに でっかいと...<CF><D1>入リ口まで 歩くのが 大変だ!","<@RL,13,00>The department store is huge,<D3>isn't it? A store as big as<CF><D1>This one... Just walking to<D3>the entrance is hard!"
+084,0x1f00a8,"<@RL,1D,00>メダロデパ-トヘ ようこそ<CF><D1>...もうしわけございませんが<CD>先日の でんぱいじょうによリ<CF><D1>いちじ パ-ツはんばいを<CD>貝合わせて おリます<CF><D1><@LL,00,05>でんぱいじょうの じけんの<CD>えいきょうが ここにも...","<@RL,1D,00>Welcome to Medaro<D3>Department Store!<CF><D1>...My apologies, but because of<D3>the strange radio wave the<CF><D1>other day,<CF><D1>We have decided to postpone<D3>part sales for the time being.<CF><D1><@LL,00,05>The strange radio wave<D3>affected this place, too..."
+085,0x1f00aa,"<@RL,1D,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます","<@RL,1D,00>Welcome to the Medaro<D3>Department Store!<CF><D1>We deal in Medabot parts here."
 086,0x1f00ac,"<@RL,1D,00>あリがとうございました","<@RL,1D,00>Thank you very much."
 087,0x1f00ae,"<@RL,1D,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます",
 088,0x1f00b0,"<@RL,1D,00>あリがとうございました",
@@ -92,22 +92,22 @@
 090,0x1f00b4,"<@RL,1D,00>あリがとうございました",
 091,0x1f00b6,"<@RL,1D,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます",
 092,0x1f00b8,"<@RL,1D,00>あリがとうございました","<@RL,1D,00>Thank you very much!"
-093,0x1f00ba,"<@RL,1B,00>メダロッタ-ズには<CD>女の子だけじゃ 入いリにくいけど<CF><D1>デパ-トなら 入リやすいわ","<@RL,1B,00>It feel hard to go in<D3>Medabotters as a girl.<D1>But if it's just the<D3>department store, it's easy."
-094,0x1f00bc,"<@RL,13,00>むこうにいる 女の子<CD>メダロットに くわしそうだけど<CF><D1>メダロッタ-ズでは 貝たことないなぁ","<@RL,13,00>The girl over there seems<D3>really knowledgeable about<D3>Medabots.<D3><D1>But I've never seen her at<D3>Medabotters before..."
+093,0x1f00ba,"<@RL,1B,00>メダロッタ-ズには<CD>女の子だけじゃ 入いリにくいけど<CF><D1>デパ-トなら 入リやすいわ","<@RL,1B,00>It feel hard to go in<D3>Medabotters as a girl.<CF><D1>But if it's just the<D3>department store, it's easy."
+094,0x1f00bc,"<@RL,13,00>むこうにいる 女の子<CD>メダロットに くわしそうだけど<CF><D1>メダロッタ-ズでは 貝たことないなぁ","<@RL,13,00>The girl over there seems<D3>really knowledgeable about<CF><D1>Medabots.<CF><D1>But I've never seen her at<D3>Medabotters before..."
 095,0x1f00be,"<@RL,1D,00>本日の メダロデパ-トでは<CD>てんぽ 大かいそうまえの<CF><D1>大しょぶん 大バ-ゲンを<CD>大かいさいしておリます<CF><D1>おかいわすれないよう ごゆっくリ<CD>ごらんくださいませ<CF><D1><@LL,00,00>はぁ...",
 096,0x1f00c0,"<@RL,1D,00>いらっしゃいませ- こちらは<CD>メダロデパ-トで ございま-す!",
 097,0x1f00c2,"<@RL,16,00>はぁっ...つかれたのぉ<CD>すっぱいものが たベたいのぉ<CF><D1><@LL,00,00>どうしたんですか?<CF><D1><@RL,16,00>デパ-トに きたのは いいんじゃが<CD>まごむすめと はぐれてしまってのぉ<CF><D1>どこに 行ったのかのぉ?<CD>ここで ひとやすみして まつかのぉ",
 098,0x1f00c4,"<@RL,1B,00>あのね はんばいきの下に<CD>お金 おとしちゃったの<CF><D1>とれないよぉ<CF><D1><@LL,00,04>じゃあ ぼくが とってあげるよ",
 099,0x1f00c6,"<@RL,1B,00>あっ 出てきた!",
 100,0x1f00c8,"<@RL,1B,00>あリがとう お兄ちゃん!<CF><D1>じつは もうひとつ<CD>おねがいがあるの<CF><D1>アイスを 買いたいんだけど<CD>買い方が 分かんないの<CF><D1><@LL,00,04>じゃあ ぼくが<CD>かわリに 買ってあげるよ",
-101,0x1f00ca,"<@RL,1E,00>いらっしゃいませぇ!<CD>何に いたしますか?<CF><D1><@LL,00,00>な 何が あるの?<CF><D1><@RL,1E,00>ふわふわの かんかくが たのしい<CD>「チョコ.マシュマロ」<CF><D1>きょうれつな すっぱさの<CD>「クラム.ベリ-」<CF><D1>したが とけそうなくらい あま-い<CD>「ミルク.ハニ-」<CF><D1>この3つが 今 大人気です","<@RL,1E,00>Hello, valued customer! What<D3>can I get for you? <D1><@LL,00,00>W-what is there? <D1><@RL,1E,00>There's the fluffy and fun<D3><f02>chocolate marshmallow<f00>, <D1>the strong and sour<D3><f02>cranberry<f00>, <D1> and the sweet, <D3>seems-like-it-melts-in-your<D3>-mouth<f02> milk honey<f00>! <D1>Those three are the most<D3>popular right now."
-102,0x1f00cc,"<@LL,00,04>アイスも いいけど<CD>ぼくだったら パ-ツの方がいいな<CF><D1><@RL,1E,00>また おねがいしまぁす!","<@LL,00,04>Ice cream is good... but to me,<D3>parts are even better.<D1><@RL,1E,00>Thank you anyway!"
+101,0x1f00ca,"<@RL,1E,00>いらっしゃいませぇ!<CD>何に いたしますか?<CF><D1><@LL,00,00>な 何が あるの?<CF><D1><@RL,1E,00>ふわふわの かんかくが たのしい<CD>「チョコ.マシュマロ」<CF><D1>きょうれつな すっぱさの<CD>「クラム.ベリ-」<CF><D1>したが とけそうなくらい あま-い<CD>「ミルク.ハニ-」<CF><D1>この3つが 今 大人気です","<@RL,1E,00>Hello, valued customer! What<D3>can I get for you?<CF><D1><@LL,00,00>W-what is there?<CF><D1><@RL,1E,00>There's the fluffy and fun<D3><f02>chocolate marshmallow<f00>, <CF><D1>the strong and sour<D3><f02>cranberry<f00>, and the sweet,<CF><D1>seems-like-it-melts-in-your<D3>-mouth <f02>milk honey<f00>!<CF><D1>Those three are the most<D3>popular right now."
+102,0x1f00cc,"<@LL,00,04>アイスも いいけど<CD>ぼくだったら パ-ツの方がいいな<CF><D1><@RL,1E,00>また おねがいしまぁす!","<@LL,00,04>Ice cream is good... but to me,<D3>parts are even better.<CF><D1><@RL,1E,00>Thank you anyway!"
 103,0x1f00ce,"<@RL,1E,00>ふわふわの かんかくが たのしい<CD>「チョコ.マシュマロ」にする?<*04>",
 104,0x1f00d0,"<@RL,1E,00>きょうれつな すっぱさの<CD>「クラム.ベリ-」にする?<*04>",
 105,0x1f00d2,"<@RL,1E,00>したが とけそうなくらい あま-い<CD>「ミルク.ハニ-」にするのね",
 106,0x1f00d4,"<@RL,1E,00>はい どうぞ<CD>おとさないように 気をつけてね♥<CF><D1>あリがとうございましたぁ!",
 107,0x1f00d6,"<@LL,00,04>これで いいの?<CF><D1><@RL,1B,00>うんっ!<CD>あリがとう おにいちゃん!",
-108,0x1f00d8,"<@RL,1D,00>ここの アイスクリ-ムって<CD>とっても おいしいから<CF><D1>しごとを さぼってでも<CD>食ベにきちゃうわ","<@RL,1D,00>The ice cream from this place<D3>is so delicious,<D1>I'm even skipping work to come<D3>eat it!"
+108,0x1f00d8,"<@RL,1D,00>ここの アイスクリ-ムって<CD>とっても おいしいから<CF><D1>しごとを さぼってでも<CD>食ベにきちゃうわ","<@RL,1D,00>The ice cream from this place<D3>is so delicious,<CF><D1>I'm even skipping work to come<D3>eat it!"
 109,0x1f00da,"<@RL,16,00>面白いのぉ<CD>この アイスクリ-ムは",
 110,0x1f00dc,"<@RL,16,00>すっぱさが たまらんのぉ<CD>この アイスクリ-ムは<CF><D1>まごむすめが お前さんに せわを<CD>かけたようだの<CF><D1>これは ほんの 気もちじゃ<CD>うけとってくれ<CF><D1><@LL,00,04>あリがとうございます!",
 111,0x1f00de,"<@RL,16,00>ちょっと あますぎるのぉ<CD>この アイスクリ-ムは",
@@ -131,9 +131,9 @@
 129,0x1f0102,"<@RL,16,00>どうしたんじゃ ぼうや<CD>何か 用かのぉ?","<@RL,16,00>What's wrong, boy? Do you<D3>need something?"
 130,0x1f0104,"<@RL,1B,00>テレビは はなれて<CD>貝なくちゃね!",
 131,0x1f0106,"<@RL,14,00>ごはん まだかなぁ...","<@RL,14,00>I wonder when dinner will be<D3>ready..."
-132,0x1f0108,"<@RL,1D,00>しごとが いそがしい時は<CD>メダロットに かじを まかせるの","<@RL,1D,00>When I'm busy with work, I<D3>leave the housework to my<D3>Medabot."
-133,0x1f010a,"<@RL,31,00>ワタシは 子もリ型メダロット<CD>子もリ型は かじが とくいなんです","<@RL,31,00>I'm a BAT-type Medabot.<D3>BAT-types specialize in<D3>housework!"
-134,0x1f010c,"<@LL,00,00>?<CF><D1>このせきぞうだけ<CD>ボナパルトの ぞうになっている!<CF><D1>う-む だれかの いたずら?<CD>それとも これで 正しいの?","<@LL,00,00>?<CF><D1>This statue's changed shape.<D3>It looks like Bonapart!<CF><D1>Umm, is someone playing a<D3>prank? Or maybe it's supposed<D3>to be that way?"
+132,0x1f0108,"<@RL,1D,00>しごとが いそがしい時は<CD>メダロットに かじを まかせるの","<@RL,1D,00>When I'm busy with work, I<D3>leave the housework to my<CF><D1>Medabot."
+133,0x1f010a,"<@RL,31,00>ワタシは 子もリ型メダロット<CD>子もリ型は かじが とくいなんです","<@RL,31,00>I'm a sitter-type Medabot.<D3>sitter-types specialize in<CF><D1>housework!"
+134,0x1f010c,"<@LL,00,00>?<CF><D1>このせきぞうだけ<CD>ボナパルトの ぞうになっている!<CF><D1>う-む だれかの いたずら?<CD>それとも これで 正しいの?","<@LL,00,00>?<CF><D1>This statue's changed shape.<D3>It looks like Bonapart!<CF><D1>Umm, is someone playing a<D3>prank? Or maybe it's supposed<CF><D1>to be that way?"
 135,0x1f010e,"<@RL,13,00>う-ん いそごうとすると<CD>くつが うまく はけない...",
 136,0x1f0110,"<@RL,13,00>ここの トイレは すごいよ<CD>まるで おんせんみたいだ","<@RL,13,00>This bathroom is amazing! It's<D3>just like an onsen!"
 137,0x1f0112,"<@RL,13,00>2人で 会っているところを<CD>貝つかったら ぼくたち<CF><D1>引きはなされて しまうのかな...","<@RL,13,00>If they find us meeting here,<D3>we...<CF><D1>We'll be separated..."
@@ -160,40 +160,40 @@
 158,0x1f013c,"<@RL,13,00>きみも カリンちゃん<CD>ファンクラブに 入らないか?",
 159,0x1f013e,"<@RL,13,00>大きな声じゃ 言えないけど...<CF><D1><@LL,00,00>ふむ ふむ<CF><D1><@RL,13,00>........<CD>.........<CF><D1>..........<CD>...........ぐう<CF><D1><@LL,00,05>ねるなよ-","<@RL,13,00>Just between you and me...<CF><D1><@LL,00,00>Yeah?<CF><D1><@RL,13,00>........<D3>.........<CF><D1>..........<D3>...........Zzzz...<CF><D1><@LL,00,05>He fell asleep!"
 160,0x1f0140,"<@RL,13,00>きみも 男の子だったら 男らしく<CF><D1>カリンちゃん ファンクラブに<CD>入るベきだ!<CF><D1><@LL,00,00>そ....そうかな....<CF><D1><@RL,13,00>そうだとも!!<CF><D1><@LL,00,04>で...でも やめとこうかな<CF><D1><@RL,13,00>この なんじゃくものぉっ!!",
-161,0x1f0142,"<@RL,1B,00>前の 学園長先生が いなくなってから<CD>ちっとも いいことが ないわ","<@RL,1B,00>Things have been kinda bad<D3>ever since the old headmaster<D3>disappeared..."
+161,0x1f0142,"<@RL,1B,00>前の 学園長先生が いなくなってから<CD>ちっとも いいことが ないわ","<@RL,1B,00>Things have been kinda bad<D3>ever since the old headmaster<CF><D1>disappeared..."
 162,0x1f0144,"<@RL,1B,00>...あ! いけない!<CD>こんなこと しゃベっちゃ!",
 163,0x1f0146,"<@RL,1B,00>新しい 学園長先生も いいかんじに<CD>なったみたい♥",
 164,0x1f0148,"<@RL,13,00>先生!<CD>しんけんロボトルしましょ-!<CF><D1><@RL,1D,00>こまったわねぇ<CD>はじめたばかリで じしんがないわ",
 165,0x1f014a,"<@RL,1B,00>な 何よ 2人だけで<CD>お話ししてるのに わリこまないでよ",
 166,0x1f014c,"<@RL,1B,00>何? わたしたちの お話しに<CD>入リたいの?",
-167,0x1f014e,"<@RL,1B,00>...でね...が...<CD>そんな かんじで...<CF><D1><@LL,00,00>声が小さくて よく聞こえないや","<@RL,1B,00>...and so...it's...<D3>I feel like...<CF><D1><@LL,00,00>They's talking so quietly... I<D3>can't hear them very well."
+167,0x1f014e,"<@RL,1B,00>...でね...が...<CD>そんな かんじで...<CF><D1><@LL,00,00>声が小さくて よく聞こえないや","<@RL,1B,00>...and so...it's...<D3>I feel like...<CF><D1><@LL,00,00>They're talking so quietly...<D3>I can't hear them very well."
 168,0x1f0150,"<@RL,1B,00>でね- だからぁ-<CD>しんじらんないでしょ--??<CF><D1><@LL,00,00>ふむ ふむ",
 169,0x1f0152,"<@RL,1B,00>あ-! ちょっとぉ!<CD>立ち聞きは やめてよね-!",
 170,0x1f0154,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>あっちヘ 行けよ","<@RL,13,00>W-what are you staring at me<D3>for? Go away!"
 171,0x1f0156,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>...てれるだろ!",
 172,0x1f0158,"<@RL,13,00>何だよ お前!<CD>たこうの せいとのくせに<CF><D1>何 入ってきてんだよ!<CD>み 貝つかっても 知らないぞ!",
 173,0x1f015a,"<@RL,13,00>やっぱ メダロットが いないと<CD>話が もリあがんないよな-",
-174,0x1f015c,"<@RL,1D,00>ピ ピ ピアノの<CD>れんしゅう するんだから<CF><D1>あ あ あっちに 行ってよ!","<@RL,1D,00>I'm pra-a-acticing the piano<D3>now, sooo-o-oooo... <D1>Go somewhere e-e-eeeelse!"
+174,0x1f015c,"<@RL,1D,00>ピ ピ ピアノの<CD>れんしゅう するんだから<CF><D1>あ あ あっちに 行ってよ!","<@RL,1D,00>I'm pra-a-acticing the piano<D3>now, sooo-o-oooo...<CF><D1>Go somewhere e-e-eeeelse!"
 175,0x1f015e,"<@RL,1D,00>わたしの えんそうを お聞き!",
-176,0x1f0160,"<@LL,00,05>こわいから 女子トイレに<CD>入るのは やめておこう","<@LL,00,05>Let's not go in the girl's<D3>bathroom again. It's scary<D3>in there..."
+176,0x1f0160,"<@LL,00,05>こわいから 女子トイレに<CD>入るのは やめておこう","<@LL,00,05>Let's not go in the girl's<D3>bathroom again. It's scary<CF><D1>in there..."
 177,0x1f0162,"<@LR,02,00><&BUF0A>くんは<CD>もしかしたら この中に...?<CF><D1><@LR,02,06>いやですわ わたしったら...","<@LR,02,00>Could <&BUF0A> be in here,<D3>by any chance...?<CF><D1><@LR,02,06>It's no good, we can't go in..."
-178,0x1f0164,"<@RL,13,00>あ-あ...<CD>たまには ゆっくリ ロボトルしたいよ","<@RL,13,00>Ah...<D3>Sometimes, I just want to<D3>have a leisurely robattle."
+178,0x1f0164,"<@RL,13,00>あ-あ...<CD>たまには ゆっくリ ロボトルしたいよ","<@RL,13,00>Ah... Sometimes, I just want<D3>to have a leisurely robattle."
 179,0x1f0166,"<@RL,13,00>ロボトルしよ-ぜ!",
 180,0x1f0168,"<@RL,13,00>勝っても まけても<CD>うらみっこ なし!",
 181,0x1f016a,"<@RL,1B,00>わ わるいけど 今 わたし<CD>お話したくないの","<@RL,1B,00>I-I'm sorry, but I don't want<D3>to talk right now."
 182,0x1f016c,"<@RL,1B,00>コンピュ-タも メダロットみたいに<CD>ことばで うごくと いいのにね",
-183,0x1f016e,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,1B,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,02,04>Um, I'm looking for a boy with<D3>his hair in a cool ponytail.<D3>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,1B,00>S-sorry, but I don't want to<D3>talk right now."
+183,0x1f016e,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,1B,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,02,04>Um, I'm looking for a boy with<D3>his hair in a cool ponytail.<CF><D1>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,1B,00>S-sorry, but I don't want to<D3>talk right now."
 184,0x1f0170,"<@RL,13,00>メダロッチ もってたら<CD>ぼっしゅう されるんだぞ!","<@RL,13,00>If you have a medawatch,<D3>they'll confiscate it!"
 185,0x1f0172,"<@RL,13,00>メダロッチ 学園に もってきたら<CD>ダメなんだぞ!","<@RL,13,00>It's not good to bring a<D3>medawatch to this school!"
 186,0x1f0174,"<@RL,13,00>今の ロボトル<CD>バレなかったかな...?","<@RL,13,00>I wonder if anyone will find out<D3>about this battle..."
 187,0x1f0176,"<@RL,13,00>メダロッチ もってたら<CD>ロボトルなんだぞ!",
 188,0x1f0178,"<@RL,13,00>ロボトル ばんざい!",
 189,0x1f017a,"<@RL,14,00>わたしに 何か 用かね?","<@RL,14,00>What do you want from me?"
-190,0x1f017c,"<@RL,14,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,14,00>Hmm? Isn't that a<D3>medawatch? I'll need to<D3>confiscate that!"
+190,0x1f017c,"<@RL,14,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,14,00>Hmm? Isn't that a<D3>medawatch? I'll need to<CF><D1>confiscate that!"
 191,0x1f017e,"<@RL,14,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,02,05>いやですわ わたし そんなこと<CD>しませんわ",
 192,0x1f0180,"<@RL,14,00>どうじょうは いらないっ!",
 193,0x1f0182,"<@RL,13,00>ここの こうしきを こうやって<CD>それで...","<@RL,13,00>So I use the formula this<D3>way..."
-194,0x1f0184,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,13,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,02,04>Um, I'm looking for a boy<D3>called <&BUF0A>. His hair is in<D3>a cool ponytail.<CF><D1> Have you seen him?<CF><D1><@RL,13,00>I-I'm busy right now.<D3>Please talk to me later."
+194,0x1f0184,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,13,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,02,04>Um, I'm looking for a boy<D3>called <&BUF0A>. His hair is in<CF><D1>a cool ponytail.<CF><D1> Have you seen him?<CF><D1><@RL,13,00>I-I'm busy right now.<D3>Please talk to me later."
 195,0x1f0186,"<@RL,1B,00>きゃ-っ!!","<@RL,1B,00>Kiyahhh!!"
 196,0x1f0188,"<@RL,1B,00>いやぁ-っ!!","<@RL,1B,00>Get out!!"
 197,0x1f018a,"<@RL,1D,00>ヘんた-い!!","<@RL,1D,00>Pervert!!"
@@ -211,13 +211,13 @@
 209,0x1f01a2,"<@LL,00,00>...何か 選ぶまでも<CD>なかったような 気がする...",
 210,0x1f01a4,"<@LL,00,00>もう少し 考えよう","<@LL,00,00>Let's think a little more."
 211,0x1f01a6,"<@LL,00,00>その先は 学園ちょうしつだ<CD>むやみに 入るのは やめておこう",
-212,0x1f01a8,"<@RL,13,00>花園学園では コウジが<CD>さいきょうの メダロッタ-さ",
-213,0x1f01aa,"<@RL,13,00>どっちが かっても いいけど<CD>おもしろい ロボトルしろよ!",
+212,0x1f01a8,"<@RL,13,00>花園学園では コウジが<CD>さいきょうの メダロッタ-さ","<@RL,13,00>Koji is the best robattler at<D3>this school!"
+213,0x1f01aa,"<@RL,13,00>どっちが かっても いいけど<CD>おもしろい ロボトルしろよ!","<@RL,13,00>It doesn't matter who wins.<D3>Just have an interesting<CF><D1>battle!"
 214,0x1f01ac,"<@RL,13,00>なかなか もえる<CD>ロボトルだったぜ!",
 215,0x1f01ae,"<@RL,13,00>エッ!? お前が<CD>メダリンピック ゆうしょう選手!?<CF><D1>うっそみて---っ!!",
 216,0x1f01b0,"<@RL,13,00>いいなぁ あの おねえさん<CF><D1>ぼくの うちにも<CD>あんな おねえさんが いたら...",
-217,0x1f01b2,"<@RL,13,00>いいなぁ このパ-ツ<CF><D1>ぼくのチ-ムにも<CD>こんな パ-ツが あったら...","<@RL,13,00>These parts are so awesome...<D1>I could make a whole other<D3>team if I had these parts..."
-218,0x1f01b4,"<@LL,00,00>メダロッタ-ズ きねんメダルだ<CD>おみやげに けっこう いいよね","<@LL,00,00>It's a Medabotters<D3>commemoration medal. It<D3>would make a fantastic<D3>souvenier!"
+217,0x1f01b2,"<@RL,13,00>いいなぁ このパ-ツ<CF><D1>ぼくのチ-ムにも<CD>こんな パ-ツが あったら...","<@RL,13,00>These parts are so awesome...<CF><D1>I could make a whole other<D3>team if I had these parts..."
+218,0x1f01b4,"<@LL,00,00>メダロッタ-ズ きねんメダルだ<CD>おみやげに けっこう いいよね","<@LL,00,00>It's a Medabotters<D3>commemoration medal. It<CF><D1>would make a fantastic<D3>souvenier!"
 219,0x1f01b6,コチラノ メダリンクデノ<CD>アナタノ ランクノ ウケツケハ<CF><D1>シュウリョウシマシタ<CD>ツギノ ランクノ メダリンクカラ<CF><D1>アクセスシテクダサイ,
 220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,
 221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
@@ -266,19 +266,19 @@
 264,0x1f0210,"<@RL,03,02>それじゃ こんどは<CD>本番でな!",
 265,0x1f0212,"<@RL,03,02>明日が たのしみだな!",
 266,0x1f0214,"<@RL,30,00><&BUF0A>さん いつも<CD>マスタ-が おせわに なっています",
-267,0x1f0216,"<@RL,14,00>びょうきがちだった カリンも<CD>さいきんは すっかリ 元気になった<CF><D1><&BUF0A>くんが カリンの<CD>元気の みなもとかな?<CF><D1><@LL,00,01>いやぁ そんなぁ-<CD>...そう思います?","<@RL,14,00>Karin was prone to illness, but<D3>she's been feeling better<D3>lately.<CF><D1>Could you be the the reason<D3>she's recovering, <&BUF0A>?<CF><D1><@LL,00,01>Ah no, that's...<D3>do you really think so?"
+267,0x1f0216,"<@RL,14,00>びょうきがちだった カリンも<CD>さいきんは すっかリ 元気になった<CF><D1><&BUF0A>くんが カリンの<CD>元気の みなもとかな?<CF><D1><@LL,00,01>いやぁ そんなぁ-<CD>...そう思います?","<@RL,14,00>Karin was prone to illness, but<D3>she's been feeling better<CF><D1>lately.<CF><D1>Could you be the the reason<D3>she's recovering, <&BUF0A>?<CF><D1><@LL,00,01>Ah no, that's...<D3>do you really think so?"
 268,0x1f0218,"<@RL,15,00>おリょうリの 院は いちリゅうの<CD>シェフにも まけないわよ!",
 269,0x1f021a,"<@RL,15,00>ちょっと きゅうけい してるだけよ!","<@RL,15,00>I'm just taking a short break,<D3>that's all!"
 270,0x1f021c,"<@RL,34,00>おリょうリって むずかしいワ","<@RL,34,00>Cooking is difficult..."
 271,0x1f021e,"<@RL,34,00>おそうじ おそうじ!<CD>キレイに ピカピカ!","<@RL,34,00>Cleaning, cleaning!<D3> Sparkling clean!"
 272,0x1f0220,"<@RL,34,00>おそうじ おそうじ!<CD>さっさ さっさ","<@RL,34,00>Cleaning, cleaning!<D3>Humm-dee-dumm!"
 273,0x1f0222,"<@LL,00,00>金ピカの メダルだ<CF><D1>金で 作ってあるだけで<CD>ほんものじゃないみたいだ","<@LL,00,00>It's a shiny gold medal.<CF><D1>It's made of gold, but it's not<D3>the real thing."
-274,0x1f0224,"<@LL,00,04>ステゴザウルス型メダロットだ<CD>かたそうな そうこうだ","<@LL,00,04>It's a stegasaurus type<D3>medabot. Its armor looks<D3>hard."
+274,0x1f0224,"<@LL,00,04>ステゴザウルス型メダロットだ<CD>かたそうな そうこうだ","<@LL,00,04>It's a stegasaurus type<D3>medabot. Its armor looks<CF><D1>tough."
 275,0x1f0226,"<@LL,00,04>トリケラトプス型メダロットだ<CD>どっしリしてて がんじょうそう",
 276,0x1f0228,"<@RL,2F,00>おそうじ してると<CD>心が あらわれる ようです","<@RL,2F,00>Cleaning seems to soothe the<D3>soul."
 277,0x1f022a,"<@RL,2F,00>おそうじ とっても<CD>気もちE-♥",
 278,0x1f022c,"<@RL,15,00>ぐが- ぐご-<CF><D1><@LL,00,05>すごい いびき","<@RL,15,00>Guuugaa...Guuugoo...<CF><D1><@LL,00,05>What terrible snoring."
-279,0x1f022e,"<@RL,15,00>メダロットたちが よく<CD>はたらいてくれるから たすかるわ","<@RL,15,00>Medabots often do our work<D3>for us. That makes them quite<D3>helpful!"
+279,0x1f022e,"<@RL,15,00>メダロットたちが よく<CD>はたらいてくれるから たすかるわ","<@RL,15,00>Medabots often do our work<D3>for us. That makes them quite<CF><D1>helpful!"
 280,0x1f0230,"<@RL,33,00>ここは この町1番の<CD>お金もちの 家なんだよ!","<@RL,33,00>This is the richest household<D3>in town, you know!"
 281,0x1f0232,"<@RL,33,00>「アワノざいばつ」と言えば<CD>とにかく すごい お金持ちなんだ!<CF><D1>...でも 名前が ちょっと<CD>バブルな かんじ","<@RL,33,00>The Awano Financial Group is<D3>incredibly rich!<CF><D1>...but I have a feeling it's just<D3>temporary economic growth."
 282,0x1f0234,"<@LL,00,04>ティラノサウルス型メダロットだ<CD>きょうぼうそうだな",
@@ -290,7 +290,7 @@
 288,0x1f0240,"<@RL,18,00>メダロットは 宇宙人からの<CD>ちきゅうヘの おくリものさ<CF><D1>パ-ツは 何とか 人の手で<CD>作れるように なったけど<CF><D1>メダルの方は まだまだ 研究中だ",
 289,0x1f0242,"<@LL,00,00>だれも いないや<CD>...変なの",
 290,0x1f0244,"<@LL,00,00>このあな...けっきょく<CD>研究所に つながったんだろうか?<CF><D1>.............<CF><D1><@LL,00,03>やめよう 考えるのが こわい...",
-291,0x1f0246,"<@RL,13,00>ここは たしか「メダロポリス4」<CD>...だったよね?<CF><D1>つまリ メダロポリスの 右下のはず<CD>ああ タウンマップが ほしいよ-","<@RL,13,00>This is, if I remember<D3>correctly... <f02>Medalopolis<D3>Area 4?<f00><D1>That is, the lower right<D3>area of Medalopolis? Aah,<D3>I want a town map..."
+291,0x1f0246,"<@RL,13,00>ここは たしか「メダロポリス4」<CD>...だったよね?<CF><D1>つまリ メダロポリスの 右下のはず<CD>ああ タウンマップが ほしいよ-","<@RL,13,00>This is, if I remember<D3>correctly...<CF><D1><f02>Medalopolis Area 4<f00>?<D3>That is, the lower right<CF><D1>of Medalopolis? Aah,<D3>I want a town map..."
 292,0x1f0248,"<@RL,13,00>「ミニハンドル」が あれば<CD>ひろ-い メダロポリスも<CF><D1>あっという間に<CD>いどうできちゃうんだよね!",
 293,0x1f024a,"<@RL,01,04>次の 大会でも い-っぱい<CD>しゅざいして しゃしん とるんだ-♥",
-294,0x1f024c,"<@LL,00,04>カギが かかってる",
+294,0x1f024c,"<@LL,00,04>カギが かかってる","<@LL,00,04>It's locked."

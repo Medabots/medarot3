@@ -13,13 +13,13 @@
 011,0x963e6,<SFF>サクリファイス攻撃  (ダイレクト)<CD>パ-ツを ぎせいにして 大ダメ-ジ<*04>,<SFF><f02>Sacrifice (Direct)<f00>: <f01>Sacrifice<D3>this part for massive damage.<f00><*04><D3>
 012,0x963e8,<SFF>バグ攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Bug<f00>: Decreases target's<D3>success rate. <*04>
 013,0x963ea,<SFF>ウィルス攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Virus<f00>: Decreases target's<D3>success rate. <*04>
-014,0x963ec,<SFF>ウェ-ブ攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Wave<f00>:<f01>Slows opponent's preparation<D3>time.<f00><*04>
-015,0x963ee,<SFF>ホ-ルド攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Hold<f00>:<f01>Slows opponent's preparation<D3>time.<f00><*04>
+014,0x963ec,<SFF>ウェ-ブ攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Wave<f00>: <f01>Slows opponent's<D3>preparation time.<f00><*04>
+015,0x963ee,<SFF>ホ-ルド攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Hold<f00>: <f01>Slows opponent's preparation<D3>time.<f00><*04>
 016,0x963f0,<SFF>ファイヤ-攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Fire<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
 017,0x963f2,<SFF>メルト攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Melt<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
-018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Thunder<f00>:<f01>Stops your opponent<D3>from moving.<f00><*04><D3>
-019,0x963f6,<SFF>フリ-ズ攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Freeze<f00>:<f01>Stops your opponent<D3>from moving.<f00><*04>
-020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,<SFF><f02>Counter<f00>: <f01> Target will shutdown<f00><D3><f01>when countdown reaches 0.<f00><*04>
+018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Thunder<f00>: <f01>Stops your opponent<D3>from moving.<f00><*04><D3>
+019,0x963f6,<SFF>フリ-ズ攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Freeze<f00>: <f01>Stops your opponent<D3>from moving.<f00><*04>
+020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,<SFF><f02>Counter<f00>:<f01> Target will shutdown<f00><D3><f01>when countdown reaches 0.<f00><*04>
 021,0x963fa,<SFF>ホ-ムシック攻撃   (ダイレクト)<CD>時々 行動せずに 引きかえす<*04>,<SFF><f02>Homesick (Direct)<f00>:<f01> Target<D3>sometimes retreats mid-action.<f00><*04>
 022,0x963fc,<SFF>ぼうぎょ行動<CD>みかたの メダロットを えんごする<*04>,<SFF><f02>Defend<f00>: Protect your allies.<*04>
 023,0x963fe,<SFF>かんぜんぼうぎょ行動<CD>みかたヘの 攻撃を ブロックする<*04>,<SFF><f02>Complete Defense<f00>: <f01>Block<D3>attacks aimed at your allies.<f00><*04>
@@ -28,52 +28,52 @@
 026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Sea<f00>: <f01>Does massive damage <D3>to aquatic Medarots.<f00><*04>
 027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF><f02>Search<f00>: <f01>Your allies' attacks will<D3>hit more easily.<f00><*04>
 028,0x96408,<SFF>いんペい行動<CD>てきの 攻撃を よけやすくなる<*04>,<SFF><f02>Conceal<f00>: <f01>Your enemies' attacks <D3>are easier to avoid.<f00><*04>
-029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,<SFF><f02>Fighting Trap<f00>:<f01>Does damage to<D3>target before they do a melee attack<f00><*04>
-030,0x9640c,<SFF>しゃげきトラップ行動<CD>「うつ.ねらいうち」攻撃にダメ-ジ<*04>,<SFF><f02>Shooting Trap<f00>:<f01>Does damage to<D3>target before they do a shot attack.<f00><*04><*04>
-031,0x9640e,<SFF>フォ-スプラント行動<CD>行動するたびに フォ-スアップ<*04>,<SFF>Force Plant: <f01>Your Medaforce<D3>increases each time you act.<f00><*04>
-032,0x96410,<SFF>さくてきクリア行動<CD>さくてきの こうかを ぼうがいする<*04>,<SFF>Search Clear<D3>Disrupts a search effect.<*04>
-033,0x96412,<SFF>いんペいクリア行動<CD>いんペいの こうかを ぼうがいする<*04>,<SFF>Conceal Clear<D3>Disrupts a conceal effect.<*04>
-034,0x96414,<SFF>たんぱつクリア行動<CD>攻撃を 1回だけ ふせぐ<*04>,<SFF><f02>Single-Shot Clear<f00>:<f01>Protects<D3>against a single shot.<f00><*04>
-035,0x96416,<SFF>ファ-ストエイド行動<CD>こわれたパ-ツを ふっかつさせる<*04>,<SFF>First Aid<D3>Repairs a broken part.<*04>
-036,0x96418,<SFF>クロス攻撃セット行動<CD>「クロスこうげき」を セットする<*04>,"<SFF>Cross Attack Set<D3>Sets ""Cross Attack"".<*04>"
-037,0x9641a,<SFF>クロス攻撃ファイア行動<CD>「クロスこうげき」で 攻撃する<*04>,"<SFF>Cross Attack Fire<D3>Fires with ""Cross Attack"".<*04>"
-038,0x9641c,<SFF>マイナス症状クリア行動<CD>マイナス症状を かいじょする<*04>,<SFF>Minus Status Clear<D3>Removes negative status <D3>effects.<*04>
-039,0x9641e,<SFF>トラップクリア行動<CD>「トラップ」を はかいする<*04>,"<SFF>Trap Clear<D3>Destroys a ""trap"".<*04>"
-040,0x96420,<SFF>フォ-スせいぎょ行動<CD>「メダフォ-ス」を 使えなくする<*04>,"<SFF>Force Control<D3>Makes ""Medaforce"" unusable.<*04>"
-041,0x96422,<SFF>かいふく行動<CD>ダメ-ジをうけたパ-ツを かいふく<*04>,<SFF>Repair<D3>Repairs a damaged part.<*04>
-042,0x96424,<SFF>ふっかつ行動<CD>きのうていしパ-ツを ふっかつさせる<*04>,<SFF>Restore<D3>Restores a destroyed part.<*04>
-043,0x96426,<SFF>そせい行動<CD>たおれた みかたを ふっかつさせる<*04>,<SFF>Resuscitation<D3>Revives a fallen ally.<*04>
-044,0x96428,<SFF>レベルドレイン行動<CD>てきの レベルを うばいとる<*04>,<SFF>Level Drain<D3>Drains an opponent's level.<*04>
-045,0x9642a,<SFF>かんぜんむこう行動<CD>全ての 攻撃を むこうにする<*04>,<SFF>Perfect Disable<D3>Disables all attacks.<*04>
-046,0x9642c,<SFF>たいせいはかい行動<CD>「えんご」「かまえ」を はかいする<*04>,"<SFF>Stance Disable<D3>Disables ""Ready"" and <D3>""Defense"" skills.<*04>"
+029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,<SFF><f02>Fighting Trap<f00>: <f01>Does damage to<D3>target before they do a melee attack<f00><*04>
+030,0x9640c,<SFF>しゃげきトラップ行動<CD>「うつ.ねらいうち」攻撃にダメ-ジ<*04>,<SFF><f02>Shooting Trap<f00>: <f01>Does damage to<D3>target before they do a shot attack.<f00><*04><*04>
+031,0x9640e,<SFF>フォ-スプラント行動<CD>行動するたびに フォ-スアップ<*04>,<SFF><f02>Force Plant<f00>: <f01>Your Medaforce<D3>increases each time you act.<f00><*04>
+032,0x96410,<SFF>さくてきクリア行動<CD>さくてきの こうかを ぼうがいする<*04>,<SFF><f02>Search Clear<f00>:<D3>Disrupts a search effect.<*04>
+033,0x96412,<SFF>いんペいクリア行動<CD>いんペいの こうかを ぼうがいする<*04>,<SFF><f02>Conceal Clear<f00>:<D3>Disrupts a conceal effect.<*04>
+034,0x96414,<SFF>たんぱつクリア行動<CD>攻撃を 1回だけ ふせぐ<*04>,<SFF><f02>Single-Shot Clear<f00>: <f01>Protects<D3>against a single shot.<f00><*04>
+035,0x96416,<SFF>ファ-ストエイド行動<CD>こわれたパ-ツを ふっかつさせる<*04>,<SFF><f02>First Aid<f00>:<D3>Repairs a broken part.<*04>
+036,0x96418,<SFF>クロス攻撃セット行動<CD>「クロスこうげき」を セットする<*04>,"<SFF><f02>Cross Attack Set<f00>:<D3>Sets ""Cross Attack"".<*04>"
+037,0x9641a,<SFF>クロス攻撃ファイア行動<CD>「クロスこうげき」で 攻撃する<*04>,"<SFF><f02>Cross Attack Fire<f00>:<D3>Fires with ""Cross Attack"".<*04>"
+038,0x9641c,<SFF>マイナス症状クリア行動<CD>マイナス症状を かいじょする<*04>,<SFF><f02>Minus Status Clear<f00>:<D3><f01>Removes negative status effects.<f00><*04>
+039,0x9641e,<SFF>トラップクリア行動<CD>「トラップ」を はかいする<*04>,"<SFF><f02>Trap Clear<f00>:<D3>Destroys a ""trap"".<*04>"
+040,0x96420,<SFF>フォ-スせいぎょ行動<CD>「メダフォ-ス」を 使えなくする<*04>,"<SFF><f02>Force Control<f00>:<D3>Makes ""Medaforce"" unusable.<*04>"
+041,0x96422,<SFF>かいふく行動<CD>ダメ-ジをうけたパ-ツを かいふく<*04>,<SFF><f02>Repair<f00>:<D3>Repairs a damaged part.<*04>
+042,0x96424,<SFF>ふっかつ行動<CD>きのうていしパ-ツを ふっかつさせる<*04>,<SFF><f02>Restore<f00>:<D3>Restores a destroyed part.<*04>
+043,0x96426,<SFF>そせい行動<CD>たおれた みかたを ふっかつさせる<*04>,<SFF><f02>Resuscitation<f00>:<D3>Revives a fallen ally.<*04>
+044,0x96428,<SFF>レベルドレイン行動<CD>てきの レベルを うばいとる<*04>,<SFF><f02>Level Drain<f00>:<D3>Drains an opponent's level.<*04>
+045,0x9642a,<SFF>かんぜんむこう行動<CD>全ての 攻撃を むこうにする<*04>,<SFF><f02>Perfect Disable<f00>:<D3>Disables all attacks.<*04>
+046,0x9642c,<SFF>たいせいはかい行動<CD>「えんご」「かまえ」を はかいする<*04>,"<SFF><f02>Stance Disable<f00>: <f01>Disables<D3>""Ready"" and ""Defense"" skills.<f00><*04>"
 047,0x9642e,<SFF>こうがく むこう行動   (そうび)<CD>「レ-ザ-」「ビ-ム」を ブロック<*04>,"<SFF>Optics Disable (Equipment)<D3>Disables ""Laser"" and<D3>""Beam"" attacks.<*04>"
 048,0x96430,<SFF>かやく むこう行動    (そうび)<CD>「ミサイル」「ナパ-ム」を ブロック<*04>,"<SFF>Gunpowder Disable (Equipment)<D3>Disables ""Missile"" and <D3>""Napalm"" attacks.<*04>"
 049,0x96432,<SFF>じゅうリょく むこう行動 (そうび)<CD>「ブレイク」「プレス」を ブロック<*04>,"<SFF>Gravity Disable (Equipment)<D3>Disables ""Break"" and <D3>""Press"" attacks.<*04>"
-050,0x96434,<SFF>症状クリア        (そうび)<CD>全ての 症状が つかない<*04>,<SFF>Symptom Clear (Equip)<D3>Clears all symptoms.<*04>
-051,0x96436,<SFF>けいぞくリペア行動<CD>じゅんび中も ダメ-ジをかいふく<*04>,<SFF>Continuous Repair<D3>Heals damage <D3>during preparation.<*04>
-052,0x96438,<SFF>ダメ-ジげんしょう行動<CD>うけるダメ-ジを ヘらす<*04>,<SFF>Damage Reduction<D3>Reduces damage taken.<*04>
-053,0x9643a,<SFF>はんしゃ行動<CD>あいての 攻撃を はじきかえす<*04>,<SFF>Reflect<D3>Repels enemy attacks.<*04>
-054,0x9643c,<SFF>はんげき行動<CD>つよい攻撃だけを はじきかえす<*04>,<SFF>Counterattack<D3>Reflects only strong attacks.<*04>
-055,0x9643e,<SFF>じゅうリょくせいぎょ   (そうび)<CD>じゅんび時間を いっていにする<*04>,<SFF>Gravity Control (Equipment)<D3>Makes preparation time <D3>consistent.<*04>
+050,0x96434,<SFF>症状クリア        (そうび)<CD>全ての 症状が つかない<*04>,<SFF><f02>Symptom Clear (Equip)<f00>:<D3>Clears all symptoms.<*04>
+051,0x96436,<SFF>けいぞくリペア行動<CD>じゅんび中も ダメ-ジをかいふく<*04>,<SFF><f02>Continuous Repair<f00>:<D3><f01>Heals damage during preparation.<f00><*04>
+052,0x96438,<SFF>ダメ-ジげんしょう行動<CD>うけるダメ-ジを ヘらす<*04>,<SFF><f02>Damage Reduction<f00>:<D3>Reduces damage taken.<*04>
+053,0x9643a,<SFF>はんしゃ行動<CD>あいての 攻撃を はじきかえす<*04>,<SFF><f02>Reflect<f00>:<D3>Repels enemy attacks.<*04>
+054,0x9643c,<SFF>はんげき行動<CD>つよい攻撃だけを はじきかえす<*04>,<SFF><f02>Counterattack<f00>:<D3>Reflects only strong attacks.<*04>
+055,0x9643e,<SFF>じゅうリょくせいぎょ   (そうび)<CD>じゅんび時間を いっていにする<*04>,<SFF><f02>Gravity Control (Equip)<f00>:<D3><f01>Makes preparation time consistent.<f00><*04>
 056,0x96440,<SFF>てきえい かんち     (そうび)<CD>タ-ゲットそうび と ダメ-ジアップ<*04>,<SFF>Enemy Sense (Equipment)<D3>Equipment may be targeted <D3>and damage is increased.<*04>
-057,0x96442,<SFF>きゅうそくチャ-ジ行動<CD>じゅんび時間を ゼロにする<*04>,<SFF>Rapid Charge<D3>Preparation time is reduced<D3>to zero.<*04>
-058,0x96444,<SFF>ほじょチャ-ジ行動<CD>じゅんび時間を みじかくする<*04>,<SFF>Auxilliary Charge<D3>Preparation time is shortened.<*04>
+057,0x96442,<SFF>きゅうそくチャ-ジ行動<CD>じゅんび時間を ゼロにする<*04>,<SFF><f02>Rapid Charge<f00>:<D3><f01>Preparation time is reduced to zero.<f00><*04>
+058,0x96444,<SFF>ほじょチャ-ジ行動<CD>じゅんび時間を みじかくする<*04>,<SFF><f02>Auxilliary Charge<f00>:<D3>Preparation time is shortened.<*04>
 059,0x96446,<SFF>じょうじチャ-ジ     (そうび)<CD>じゅんび時間が みじかくなる<*04>,<SFF>Continuous Charge (Equipment)<D3>Preparation time is shortened.<*04>
-060,0x96448,<SFF>チャ-ジドレイン行動<CD>じゅんび時間を うばいとる<*04>,<SFF>Charge Drain<D3>Drains preparation time from <D3>your opponent.<*04>
-061,0x9644a,<SFF>てんとう行動<CD>ころばせて めいれいを わすれさせる<*04>,<SFF>Fall<D3>The opponent falls and <D3>forgets their command.<*04>
-062,0x9644c,<SFF>フォ-スアップ行動<CD>メダフォ-スを ふやす<*04>,<SFF>Force Up<D3>Increases Medaforce.<*04>
-063,0x9644e,<SFF>ヘんか行動<CD>ベつのパ-ツに ヘんかする<*04>,<SFF>Change<D3>Change to a different part.<*04>
-064,0x96450,<SFF>ヘんか(そくど)行動<CD>「スピ-ド」のパ-ツに ヘんかする<*04>,"<SFF>Change (Speed)<D3>Change to a ""speed"" part.<*04>"
-065,0x96452,<SFF>ヘんか(いリょく)行動<CD>「いリょく」のパ-ツに ヘんかする<*04>,"<SFF>Change (Power)<D3>Change to a ""power"" part.<*04>"
-066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,"<SFF>Change (Symptom)<D3>Change to a ""symptom"" part.<*04>"
-067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,"<SFF>Change (Defense)<D3>Change to a ""defense"" part.<*04>"
-068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,"<SFF>Change (Recovery)<D3>Change to a ""recovery"" part.<*04>"
-069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF>Change (Support)<D3>Change to a ""disrupt"" part.<*04>"
-070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF>Positive Symptom Clear<D3>Clear positive symptoms.<*04>
-071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF>Unusable<D3>Parts are made unusable.<*04>
-072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF><f02>Confusion<f00>:Your opponent<D3>randomly chooses a target.<*04>
+060,0x96448,<SFF>チャ-ジドレイン行動<CD>じゅんび時間を うばいとる<*04>,<SFF><f02>Charge Drain<f00>: <f01>Drains<D3>preparation time from your opponent.<f00><*04>
+061,0x9644a,<SFF>てんとう行動<CD>ころばせて めいれいを わすれさせる<*04>,<SFF><f02>Fall<f00>: The opponent falls<D3>and forgets their command.<*04>
+062,0x9644c,<SFF>フォ-スアップ行動<CD>メダフォ-スを ふやす<*04>,<SFF><f02>Force Up<f00>:<D3>Increases Medaforce.<*04>
+063,0x9644e,<SFF>ヘんか行動<CD>ベつのパ-ツに ヘんかする<*04>,<SFF><f02>Change<f00>:<D3>Change to a different part.<*04>
+064,0x96450,<SFF>ヘんか(そくど)行動<CD>「スピ-ド」のパ-ツに ヘんかする<*04>,"<SFF><f02>Change (Speed)<f00>:<D3>Change to a ""speed"" part.<*04>"
+065,0x96452,<SFF>ヘんか(いリょく)行動<CD>「いリょく」のパ-ツに ヘんかする<*04>,"<SFF><f02>Change (Power)<f00>:<D3>Change to a ""power"" part.<*04>"
+066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,"<SFF><f02>Change (Symptom)<f00>:<D3>Change to a ""symptom"" part.<*04>"
+067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,"<SFF><f02>Change (Defense)<f00>:<D3>Change to a ""defense"" part.<*04>"
+068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,"<SFF><f02>Change (Recovery)<f00>:<D3>Change to a ""recovery"" part.<*04>"
+069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF><f02>Change (Support)<f00>:<D3>Change to a ""disrupt"" part.<*04>"
+070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF><f02>Positive Symptom Clear<f00>:<D3>Clear positive symptoms.<*04>
+071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF><f02>Unusable<f00>:<D3>Parts are made unusable.<*04>
+072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF><f02>Confusion<f00>: Your opponent<D3>randomly chooses a target.<*04>
 073,0x96462,<SFF>回数ドレイン行動<CD>頭パ-ツの 回数を うばいとる<*04>,<SFF><f02>Number Drain<f00>: Drains head<D3>part ammo.<*04>
-074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF><f02>Inevitable<f00>:<f01>Makes avoiding<D3>attacks impossible.<f00><*04>
+074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF><f02>Inevitable<f00>: <f01>Makes avoiding<D3>attacks impossible.<f00><*04>
 075,0x96466,<SFF>ぼうぎょふのう行動<CD>ぼうぎょを できなくする<*04>,<SFF><f02>Undefendable<f00>: <f01>Makes defending<D3>against attacks impossible.<f00><*04>
 076,0x96468,<SFF>フォ-スドレイン行動<CD>メダフォ-スを うばいとる<*04>,<SFF><f02>Force Drain<f00>: Drains the<D3>opponent's Medaforce.<*04>
 077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,"<SFF><f02>Flying Medarot<f00>: <f01>Strong in<D3>""desert"" and ""antlion"" fields.<f00><*04>"

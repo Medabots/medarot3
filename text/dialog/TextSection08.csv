@@ -9,21 +9,21 @@
 007,0x11c00e,"<@LL,00,00>ぼくの家だ","<@LL,00,00>My house is here."
 008,0x11c010,"<@LL,00,00>ここは 番長の家だ<CF><@LL,00,05>番長って だれだっけ?",
 009,0x11c012,"<@LL,00,07>大きな きかいだなあ!","<@LL,00,07>It's a big machine!"
-010,0x11c014,"<@LL,00,07>こっ...これは...!?<CF><@LL,00,05>はいせんが ゴチャゴチャしてて<CD>わからない...",
-011,0x11c016,"<@LL,00,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,00,04>It's a vending machine <D3>that has juice. <D3>I'm not thirsty right now."
-012,0x11c018,"<@LL,00,00>おこられそうだから やめておこう",
+010,0x11c014,"<@LL,00,07>こっ...これは...!?<CF><@LL,00,05>はいせんが ゴチャゴチャしてて<CD>わからない...","<@LL,00,07>Th-this is...!?<CF><@LL,00,05>A real mess of wires..."
+011,0x11c016,"<@LL,00,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,00,04>It's a vending machine <D3>that has juice. <CF>I'm not thirsty right now."
+012,0x11c018,"<@LL,00,00>おこられそうだから やめておこう","<@LL,00,00>I'll get in trouble,<D3>I'd better not do that."
 013,0x11c01a,"<@LL,00,00>むずかしそうな 本が ならんでる","<@LL,00,00>Books are lined up here. <D3>They seem difficult."
-014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,00,03>よむんじゃ なかった...",
-015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,
+014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,00,03>よむんじゃ なかった...","History of Medarot'<CF>1:Black and white<CF>2:B&W with color support<CF>3:Color enhanced<CF>That's all.<CF><@LL,00,03>Why did I read that..."
+015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,"Medarot News<D3>(Transformation Special)'<CF>With the creation of<D3>transforming Medarots,<CF>The Medarot Company<D3>announced additional<CF>Features to be added to<D3>the Medarotch.<CF>Further, the features<D3>will be delivered via<CF>An automatic update to<D3>the data."
 016,0x11c020,「メダロットの ちしき<CD> ティンペット(1)」<CF>ティンペットは 男型と 女型の<CD>2しゅるいに わかれておリ<CF>それぞれに たいおうした パ-ツしか<CD>そうちゃく できない,"""Medabot Knowledge: <D3>Tinpets(1)""<CF>Tinpets are divided into two <D3>types: male and female.<CF>Each type can't equip parts<D3>made for the other type."
-017,0x11c022,「メダロットの ちしき<CD> ティンペット(2)」<CF>ティンペットは 全部で<CD>9体まで 持つことができる<CF>いちど 手に入れた ティンペットは<CD>すてることが できないので<CF>男型と 女型を バランスよく<CD>ゲットしていく ひつようがある,"""Medabot Knowledge: <D3>Tinpets(2)""<CF>Nine tinpets can be held in all.<CF>Once recieved, a tinpet can't <D3>be thrown away. Therefore,<CF>It is necessary to strike a <D3>balance between male <D3>and female tinpets."
-018,0x11c024,「メダロットの ちしき<CD> じゅくれんど」<CF>メダルは それぞれ じゅくれんどを<CD>3つしか 持っていない<CF>使いたい パ-ツの<CD>じゅくれんどを 持っていない時は<CF>メダリアを そうちゃくして<CD>サポ-トする方がよい,
-019,0x11c026,「メダロットの ちしき<CD> メダリア(1)」<CF>メダリアは 全部で 10しゅるいあリ<CD>30個まで 持つことができる<CF>パ-ツに ひつような じゅくれんどが<CD>メダルに ないときでも<CF>メダリアを つければ<CD>じゅくれんどの かわリになる,
-020,0x11c028,「メダロットの ちしき<CD> メダリア(2)」<CF>メダルと メダリアの じゅくれんどが<CD>同じ ないようの時は<CF>じゅくれんどの すうちが<CD>高い方が 行動に はんえいされる<CF>しかし ひくい方の じゅくれんどにも<CD>けいけんちが 入るので<CF>なるベく メダリアを つけて<CD>ロボトルする方が よい,
+017,0x11c022,「メダロットの ちしき<CD> ティンペット(2)」<CF>ティンペットは 全部で<CD>9体まで 持つことができる<CF>いちど 手に入れた ティンペットは<CD>すてることが できないので<CF>男型と 女型を バランスよく<CD>ゲットしていく ひつようがある,"""Medabot Knowledge: <D3>Tinpets(2)""<CF>Nine tinpets can be held in all.<CF>Once received, a tinpet can't <D3>be thrown away. Therefore,<CF>It is necessary to strike a <D3>balance between male <D3>and female tinpets."
+018,0x11c024,「メダロットの ちしき<CD> じゅくれんど」<CF>メダルは それぞれ じゅくれんどを<CD>3つしか 持っていない<CF>使いたい パ-ツの<CD>じゅくれんどを 持っていない時は<CF>メダリアを そうちゃくして<CD>サポ-トする方がよい,"Medarot Knowledge:<D3>Skills'<CF>Each Medal has only 3<D3>skills.<CF>If you want to use a<D3>skill you lack,<CF>It is best to use a<D3>Medalia to support it."
+019,0x11c026,「メダロットの ちしき<CD> メダリア(1)」<CF>メダリアは 全部で 10しゅるいあリ<CD>30個まで 持つことができる<CF>パ-ツに ひつような じゅくれんどが<CD>メダルに ないときでも<CF>メダリアを つければ<CD>じゅくれんどの かわリになる,"Medarot Knowledge:<D3>Medalia (1)'<CF>There are a total of 10 types<D3>of Medalia and 30 can be held.<CF>Even if a medal doesn't have<D3>the required proficiency for<CF>A part, a Medalia can change<D3>the Medal's proficiency.<*03>"
+020,0x11c028,「メダロットの ちしき<CD> メダリア(2)」<CF>メダルと メダリアの じゅくれんどが<CD>同じ ないようの時は<CF>じゅくれんどの すうちが<CD>高い方が 行動に はんえいされる<CF>しかし ひくい方の じゅくれんどにも<CD>けいけんちが 入るので<CF>なるベく メダリアを つけて<CD>ロボトルする方が よい,"Medarot Knowledge:<D3>Medalia (2)'<CF>When the skill values of<D3>a Medal and Medalia differ,<CF>The higher value is the<D3>one that is used.<CF>But, it is better to have<D3>the Medalia be lower during<CF>Robattles because of the<D3>higher experience gains."
 021,0x11c02a,「メダロットの ちしき<CD> あいしょう(1)」<CF>メダルと パ-ツには ぞくせいがあリ<CD>同じ ぞくせいの パ-ツをつけると<CF>あいしょうの すうちが 全ての<CD>行動に ボ-ナスとして プラスされる,"Medabot Knowledge: <D3>Affinities (1)<CF>Medals and parts each have <D3>affinities.<D3>While parts of the same <D3>affinity are attached,<CF>All parts of that affinity will <D3>recieve an action bonus."
-022,0x11c02c,「メダロットの ちしき<CD> あいしょう(2)」<CF>パ-ツの ぞくせいと のうリょくは<CD>いつも同じとは かぎらない<CF>あいしょうが わるく<CD>のうリょくの 高いパ-ツよリ<CF>あいしょうを 合わせた<CD>のうリょくの ひくいパ-ツのほうが<CF>つよくなることがあるので<CD>いろいろ ためしてみると よい,
+022,0x11c02c,「メダロットの ちしき<CD> あいしょう(2)」<CF>パ-ツの ぞくせいと のうリょくは<CD>いつも同じとは かぎらない<CF>あいしょうが わるく<CD>のうリょくの 高いパ-ツよリ<CF>あいしょうを 合わせた<CD>のうリょくの ひくいパ-ツのほうが<CF>つよくなることがあるので<CD>いろいろ ためしてみると よい,"Medarot Knowledge:<D3>Affinities (2)'<CF>A part's attributes and<D3>abilities aren't always equal.<CF>Parts with high affinity, but<D3>low ablities are stronger<CF>Than parts with low affinity<D3>and high abilities.<CF>Try out all kinds of parts and<D3>see how they work together."
 023,0x11c02e,「メダロットの ちしき<CD> メダフォ-ス(1)」<CF>メダルの レベルが上がると<CD>メダフォ-スを おぼえることがある<CF>メダフォ-スは メダフォ-スを<CD>ためることによリ 使用できる<CF>ただし メダフォ-スを 使うばあい<CD>パ-ツよリも 時間が かかるので<CF>タイミングを 計って<CD>使う ひつようがある,"Medabot Knowledge: <D3>Medaforce(1)<CF>While the medal level goes up, <D3>remember Medaforce! <CF>Medaforce skills can be used <D3>by accumulating Medaforce.<CF>However, using Medaforce <D3>skills takes more time <D3>than using parts. <CF>It's necessary to use <D3>careful timing when <D3>using Medaforce!"
-024,0x11c030,「メダロットの ちしき<CD> メダフォ-ス(2)」<CF>メダフォ-スは パ-ツに くらベて<CD>きょうリょくな こうかがある<CF>また チ-ム全体に こうかがあるのも<CD>メダフォ-スの とくちょうである<CF>そのかわリ それぞれの メダルは<CD>おぼえる ものが きまっているので<CF>メダフォ-スを うまく いかすように<CD>メダロットを 租みあげることが<CF>じゅうような ポイントとなる,
+024,0x11c030,「メダロットの ちしき<CD> メダフォ-ス(2)」<CF>メダフォ-スは パ-ツに くらベて<CD>きょうリょくな こうかがある<CF>また チ-ム全体に こうかがあるのも<CD>メダフォ-スの とくちょうである<CF>そのかわリ それぞれの メダルは<CD>おぼえる ものが きまっているので<CF>メダフォ-スを うまく いかすように<CD>メダロットを 租みあげることが<CF>じゅうような ポイントとなる,"Medarot Knowledge<D3> Medaforce (2)'<CF>The Medaforce is more<D3>powerful than parts.<CF>Moreover, Medaforce affects<D3>the entire team.<CF>However, each medal can<D3>only learn certain ones.<CF>The key is to train Medarots<D3>in order to make the best<CF>Use of the Medaforce."
 025,0x11c032,「メダロットの ちしき<CD> じゅくれんど(なぐる)」<CF>1番前にいる てきを ねらって<CD>かくとう攻撃を しかける<CF>行動したら 次の行動まで<CD>ぼうぎょが できなくなる<CF>クリティカルが 少し<CD>はっせいしやすいのが とくちょう,
 026,0x11c034,「メダロットの ちしき<CD> じゅくれんど(うつ)」<CF>行動選択の時に てきを ねらって<CD>しゃげき攻撃を しかける<CF>行動しても つぎの行動までの<CD>ペナルティが ないのが とくちょう,
 027,0x11c036,「メダロットの ちしき<CD> じゅくれんど(がむしゃら)」<CF>1番前にいる てきを ねらって<CD>かくとう攻撃を しかける<CF>行動したら つぎの行動まで<CD>かいひと ぼうぎょが できなくなる<CF>ダメ-ジが ほかの パ-ツに<CD>かんつうするのが とくちょう,
@@ -33,32 +33,32 @@
 031,0x11c03e,「メダロットの ちしき<CD> じゅくれんど(なおす)」<CF>メダロットの 技甲を かいふくする<CD>パ-ツを メインとして<CF>マイナス症状や トラップを<CD>かいじょするパ-ツ<CF>メダフォ-スの 使用を おさえる<CD>パ-ツなどの 行動を サポ-トする,
 032,0x11c040,「メダロットの ちしき<CD> じゅくれんど(とくしゅ)」<CF>てきの 攻撃のダメ-ジを 0にする<CD>パ-ツを メインとして<CF>てきの 攻撃を はねかえす<CD>パ-ツなどの 行動を サポ-トする,
 033,0x11c042,"<@LL,00,05>あまリ さわらないほうが<CD>いいだろうな...","<@LL,00,05>Maybe I shouldn't mess <D3>with this..."
-034,0x11c044,"<@LL,00,04>パパと ママと ぼくの<CD>しょっきが ならんでるよ","<@LL,00,04>The table settings for <D3>Mom, Dad, and me are all <D3>lined up."
+034,0x11c044,"<@LL,00,04>パパと ママと ぼくの<CD>しょっきが ならんでるよ","<@LL,00,04>The table settings for <D3>Mom, Dad, and me are all <CF>lined up."
 035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね","<@LL,00,04>It's clean and tidy.<CF>In other words, <D3>this is a place mom works."
 036,0x11c048,"<@LL,00,01>ぎゅうにゅうプリン た-ベよっと!<CF><@LL,00,00>......<CF><@LL,00,03>ない.....","<@LL,00,01>I'm gonna eat a milk pudding!<CF><@LL,00,00>......<CF><@LL,00,03>Nah....."
 037,0x11c04a,"<@LL,00,04>来週の 週刊メダロットも<CD>楽しみだなあ","<@LL,00,04>I'm looking forward to <D3>Medabots Weekly next week!"
 038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...","<@LL,00,04>This is my computer.<CF><@LL,00,05>Honestly, I want a laptop <D3>too, but...<CF>I can't really tell Mom that..."
 039,0x11c04e,"<@LL,00,04>あいかわらず<CD>まんがや ざっしで いっぱいだ","<@LL,00,04>As usual, it's crammed <D3>full of magazines and manga."
 040,0x11c050,"<@LL,00,07>こんな 大きな モニタ-<CD>貝たことないよ!","<@LL,00,07>I've never seen such <D3>a big monitor before!"
-041,0x11c052,"<@LL,00,00>けんばいきだ<CD>キップを かうなら ここだね","<@LL,00,00>It's a ticket machine. <D3>If I want to buy a ticket, <D3>I can buy it here."
+041,0x11c052,"<@LL,00,00>けんばいきだ<CD>キップを かうなら ここだね","<@LL,00,00>It's a ticket machine. <D3>If I want to buy a ticket, <CF>I can buy it here."
 042,0x11c054,"<@LL,00,00>ずかんや じしょが<CD>たくさん ならんでる","<@LL,00,00>Manuals and dictionaries<D3>are all lined up."
 043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!","<@LL,00,00>It's software for the <D3>school computers.<CF>Japanese education is <D3>kind of strange...<CF>We kids often don't have<D3>enough pencils...<CF>We rely on light from <D3>fireflies to study...<CF><@LL,00,01>Just kidding!"
 044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!","<@LL,00,04>Yeah! <D3>I look sharp as always today."
 045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!",
 046,0x11c05c,"<@LL,00,03>もちろん ひけない...",
-047,0x11c05e,「ドレミから はじめよう」,
-048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?",
+047,0x11c05e,「ドレミから はじめよう」,"""Starting From Do-Re-Mi"""
+048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","""Ending with La-Si-Do""<CF><@LL,00,05>.......?"
 049,0x11c062,「セレクト威 本部」,Select Corp Headquarters
 050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
 051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,
 052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!",
-053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>Just as expected at<D3>Medabotters! There are tons<D3>and tons of products!"
+053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>Just as expected at<D3>Medabotters! There are tons<CF>and tons of products!"
 054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medabot<D3>goods lined up."
 055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,
 056,0x11c070,「ハウ トゥ ゲット おてがら」,
 057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元威長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...",
 058,0x11c074,「おさわリ ぜったい きんし!!」,"""Touching is absolutely<D3>prohibited!!"""
-059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medal store."
+059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Meda Department<D3>Store."
 060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are lots of parts <D3>lined up."
 061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine<D3>that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
 062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes <D3>are lined up here.<CF><@LL,00,04>Almost all of them <D3>are made for girls."
@@ -77,8 +77,8 @@
 075,0x11c096,"<@LL,00,00>このぞうだけ<CD>ほかのと ちがう...<CF>しかも どこかで<CD>貝たこと あるぞ.....?",
 076,0x11c098,"ふぃっしゅ!ふぃっしゅ!<CF><@LL,00,07>このぞう くしゃみした!?<CF><@LL,00,00>..........<CF>気のせいか.....",
 077,0x11c09a,"<@LL,00,00>ふつうの げたばこだ","<@LL,00,00>It's an ordinary shoe rack."
-078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness! <@LL,00,05>Geez, it's<D3>not like this is an onsen..."
-079,0x11c09e,「アワノざいばつ ぞうてい」,"""A gift from Awano Financial Group"""
+078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness!<CF><@LL,00,05>Geez, it's<D3>not like this is an onsen..."
+079,0x11c09e,「アワノざいばつ ぞうてい」,"""A gift from Awano Financial<D3>Group"""
 080,0x11c0a0,"<@LL,00,00>かってに 貝たら<CD>おこられるだろうな.....<CF>やめておこう",
 081,0x11c0a2,「花園学園の れきし」,"""The History of <D3>Hanazono School"""
 082,0x11c0a4,"<@LL,00,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,00,07>A lot of different kinds <D3>of trophies were lined up here!"
@@ -90,7 +90,7 @@
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,
 089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?",
-091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる",A lot of magazines are lined up.
+091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる",A lot of magazines are lined<D3>up.
 092,0x11c0b8,"<@LL,00,00>ひらかないみたいだ",
 093,0x11c0ba,「きっさ カマド-マ」,
 094,0x11c0bc,"<@LL,00,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ",
@@ -103,7 +103,7 @@
 101,0x11c0ca,「ツチノエ小学校」,
 102,0x11c0cc,"<@LL,00,00>何かの しょるいが ならんでる",
 103,0x11c0ce,「マリン学底」,
-104,0x11c0d0,"<@LL,00,00>小さな ねったいぎょが<CD>およいでる","<@LL,00,00>A small tropical fish <D3>is swimming around."
+104,0x11c0d0,"<@LL,00,00>小さな ねったいぎょが<CD>およいでる","<@LL,00,00>A small, tropical fish <D3>is swimming around."
 105,0x11c0d2,"<@LL,00,04>女の子の 学校らしく<CD>パソコンも 全部 ピンク色だ","<@LL,00,04>Seems like all the computers <D3>for the girls' school are pink."
 106,0x11c0d4,"<@LL,00,04>あざやかな ブル-の<CD>パソコンだ",
 107,0x11c0d6,「スイデンジ」,
@@ -117,7 +117,7 @@
 115,0x11c0e6,"<@LL,00,07>きゅうしき クワガタ型<CD>メダロットの ぞうだ!",
 116,0x11c0e8,"<@LL,00,04><@LL,00,04>ホテルの きゃくしつにも<CD>パソコンが ついてるのか<CF>今は ベつに いらないや",
 117,0x11c0ea,"<@LL,00,00>コピ-きが ある","<@LL,00,00>There's coffee here."
-118,0x11c0ec,"<@LL,00,07>テレビカメラだ!<CD>ほんものは はじめて 貝るよ!<CF><@LL,00,05>高いんだろうなあ...","<@LL,00,07>It's a TV camera!<D3>This is my first time seeing <D3>a real one!<CF><@LL,00,05>I wonder if it's expensive..."
+118,0x11c0ec,"<@LL,00,07>テレビカメラだ!<CD>ほんものは はじめて 貝るよ!<CF><@LL,00,05>高いんだろうなあ...","<@LL,00,07>It's a TV camera!<D3>This is my first time seeing <CF>a real one!<CF><@LL,00,05>I wonder if it's expensive..."
 119,0x11c0ee,"<@LL,00,04>おいしそうな パンがならんでる","<@LL,00,04>Delicious looking bread<D3> is lined up here."
 120,0x11c0f0,"<@LL,00,04>パ-ツや メダロットグッズが<CD>ならんでる","<@LL,00,04>Medabot parts and goods<D3> are lined up here."
 121,0x11c0f2,"<@LL,00,00>ここで しょっけんを 買って<CD>ちゅうもんする システムだ",

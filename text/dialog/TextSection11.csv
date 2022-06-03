@@ -1,24 +1,24 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x1e0000,"<@RL,07,03>う う-ん<CD>もう ダメだ...",".<@RL,07,03>No... I can't go on..."
-001,0x1e0002,"<@RL,07,03>う-ん う-ん<CD>ぼくの 家に ゴキブリが...<CF><D1><@LL,00,05>うなされてる...","<@RL,07,03>No... no...<D3>Cockroaches in my house...<D3><D1><@LL,00,05>He's having a nightmare..."
-002,0x1e0004,"<@LL,00,00>アノマロカリス型 メダロットの<CD>「シ-キャッチャ-」だ<CF><D1>こだいせいぶつって 本当に<CD>こんなんだったのかな...","<@LL,00,00>It's the Anomalocaris-type <D3>Medarot ""Sea-Catcher"".<D1>""An ancient organism."" Really?<D3>I wonder what it was like..."
-003,0x1e0006,"<@LL,00,00>ハルキゲニア型 メダロットの<CD>「シ-モンスタ-」だ<CF><D1>かなリ きけんな デザインだ","<@LL,00,00>It's the Hallucegenia-type<D3>Medarot ""Sea-Monster"".<D1>It's design looks pretty <D3>dangerous."
-004,0x1e0008,"<@LL,00,00>イミテ-ションの メダルだ<CD>じっけんとかに 使うのかな?","<@LL,00,00>It's a fake medal. Maybe it's used for experiements and things like that?"
+001,0x1e0002,"<@RL,07,03>う-ん う-ん<CD>ぼくの 家に ゴキブリが...<CF><D1><@LL,00,05>うなされてる...","<@RL,07,03>No... no...<D3>Cockroaches in my house...<CF><D1><@LL,00,05>He's having a nightmare..."
+002,0x1e0004,"<@LL,00,00>アノマロカリス型 メダロットの<CD>「シ-キャッチャ-」だ<CF><D1>こだいせいぶつって 本当に<CD>こんなんだったのかな...","<@LL,00,00>It's the Anomalocaris-type <D3>Medarot ""Sea-Catcher"".<CF><D1>""An ancient organism."" Really?<D3>I wonder what it was like..."
+003,0x1e0006,"<@LL,00,00>ハルキゲニア型 メダロットの<CD>「シ-モンスタ-」だ<CF><D1>かなリ きけんな デザインだ","<@LL,00,00>It's the Hallucegenia-type<D3>Medarot ""Sea-Monster"".<CF><D1>It's design looks pretty <D3>dangerous."
+004,0x1e0008,"<@LL,00,00>イミテ-ションの メダルだ<CD>じっけんとかに 使うのかな?","<@LL,00,00>A fake medal. It may be for<D3>experiements and the like?"
 005,0x1e000a,"<@LL,00,00>わくせいシリ-ズ<CD>「メダマ-ズ」","<@LL,00,00>Planet series <f02>MedaMars"
 006,0x1e000c,"<@LL,00,00>わくせいシリ-ズ<CD>「メダア-ス」","<@LL,00,00>Planet series <f02>MedaEarth"
 007,0x1e000e,"<@LL,00,00>わくせいシリ-ズ<CD>「メダジュピタ-」","<@LL,00,00>Planet series <f02>MedaJupiter"
 008,0x1e0010,"<@LL,00,00>わくせいシリ-ズ<CD>「メダヴィ-ナス」","<@LL,00,00>Planet series <f02>MedaVenus"
 009,0x1e0012,"<@RL,14,00>ラ-ラ-♪ ♪♪ラリラ-♪<CD>ア♪アアアア---♪ ♪ア♪<CF><D1><@LL,00,06>せ 先生 しっかリ!<CD>だいじょうぶですかっ!?","<@RL,14,00>La-La-♪ ♪♪LaLiLa-♪<D3>Ah♪Ahhhhh---♪ ♪Ah♪<CF><D1><@LL,00,06>T-Teacher!! Are you okay??"
-010,0x1e0014,"<@RL,14,00>何だね? キミは<CF><D1>先生は はっせい れんしゅう中なんだ<CD>じゃまするんじゃない!<CF><D1><@LL,00,04>は はっせい れんしゅうですか...<CD>(さけび声かと 思った)","<@RL,14,00>What? You-<CF><D1>I'm in the middle of practicing my singing. Don't disturb me!<CF><D1><@LL,00,04>S-singing practice... is that what that is...<D3>(I thought he was screaming...)"
-011,0x1e0016,"<@RL,1B,00>あんなに オンチな 音楽の先生も<CD>めずらしいよね-","<@RL,1B,00>Kinda rare to have such a tone-deaf music teacher, huh?"
-012,0x1e0018,"<@RL,13,00>先生の声が 耳に入らないように<CD>できるだけ はなれてるんだ","<@RL,13,00>I'm as far away from the teacher as possible so I won't hear him sing."
-013,0x1e001a,"<@LL,00,00>あれ? キクヒメ<CD>1人でいるなんて めずらしいな<CF><D1><@RL,05,04>何よぉ もんくあるぅ-?","<@LL,00,00>Huh? It's unusual to see Samantha all by herself...<CF><D1><@RL,05,04>What are YOU mumbling about?"
-014,0x1e001c,"<@RL,13,00>スクリュ-ズなんて<CD>こわくない...こわくない...","<@RL,13,00>A group like The Screws... I'm not scared... I'm not scared..."
-015,0x1e001e,"<@RL,1B,00>スクリュ-ズと おなじクラスに<CD>なるなんて うんが わるいったら!",
-016,0x1e0020,"<@RL,30,00>ベんきょうしても じゅくれんどは<CD>上がらないかな?",
-017,0x1e0022,"<@RL,13,00>メダロットに ベんきょうさせても<CD>せいせきは 上がらないかな?",
-018,0x1e0024,"<@RL,1D,00>メダロットの方が おぼえがよくて<CD>こまっちゃう",
-019,0x1e0026,"<@RL,1B,00>どんな メダロットでも<CD>自分が そだてた メダロットは<CF><D1>かわいいわね!",
+010,0x1e0014,"<@RL,14,00>何だね? キミは<CF><D1>先生は はっせい れんしゅう中なんだ<CD>じゃまするんじゃない!<CF><D1><@LL,00,04>は はっせい れんしゅうですか...<CD>(さけび声かと 思った)","<@RL,14,00>What? You-<CF><D1>I'm in the middle of practicing<D3>my singing. Don't disturb me!<CF><D1><@LL,00,04>S-singing practice...<D3>is that what that is...<CF><D1>(I thought he was screaming...)"
+011,0x1e0016,"<@RL,1B,00>あんなに オンチな 音楽の先生も<CD>めずらしいよね-","<@RL,1B,00><f01>It's kinda rare to have such a<D3>tone-deaf music teacher, huh?<f00>"
+012,0x1e0018,"<@RL,13,00>先生の声が 耳に入らないように<CD>できるだけ はなれてるんだ","<@RL,13,00>I'm as far away from the<D3>teacher as possible so I<CF><D1>Won't hear him sing."
+013,0x1e001a,"<@LL,00,00>あれ? キクヒメ<CD>1人でいるなんて めずらしいな<CF><D1><@RL,05,04>何よぉ もんくあるぅ-?","<@LL,00,00>Huh? It's unusual to see<D3>Samantha all by herself...<CF><D1><@RL,05,04>What are YOU mumbling about?"
+014,0x1e001c,"<@RL,13,00>スクリュ-ズなんて<CD>こわくない...こわくない...","<@RL,13,00>A group like The Screws...<D3>I'm not scared... Not scared..."
+015,0x1e001e,"<@RL,1B,00>スクリュ-ズと おなじクラスに<CD>なるなんて うんが わるいったら!","<@RL,1B,00>My lucks so bad, I've <D3>got class with the Screws'!"
+016,0x1e0020,"<@RL,30,00>ベんきょうしても じゅくれんどは<CD>上がらないかな?","<@RL,30,00>Will studying raise my<D3>proficiencies?"
+017,0x1e0022,"<@RL,13,00>メダロットに ベんきょうさせても<CD>せいせきは 上がらないかな?","<@RL,13,00>Won't I get better grades if I<D3>study with my Medarot?"
+018,0x1e0024,"<@RL,1D,00>メダロットの方が おぼえがよくて<CD>こまっちゃう","<@RL,1D,00>Medarots are so complicated,<D3>I can't remember everything."
+019,0x1e0026,"<@RL,1B,00>どんな メダロットでも<CD>自分が そだてた メダロットは<CF><D1>かわいいわね!","<@RL,1B,00>Any Medarot is cute if you<D3>raise it yourself!"
 020,0x1e0028,"<@LL,00,06>あ! ここはっ...!","<@LL,00,06>Ah! This is....!"
 021,0x1e002a,"<@RL,1B,00>きゃ--------っ!!<CD>エッチ!!","<@RL,1B,00>Kyaa-! Pervert!!"
 022,0x1e002c,"<@RL,1B,00>早く 出てってよ もうっ!","<@RL,1B,00>Get out right now!"
