@@ -899,7 +899,7 @@ Attribmap01_94::
 Attribmap01_95::
   INCBIN "./build/attribmaps/0195.map"
 Attribmap01_96::
-  INCBIN "./build/attribmaps/0196.map"
+  INCBIN "./build/attribmaps/ChapterTitleScreen.map"
 Attribmap01_97::
   INCBIN "./build/attribmaps/0197.map"
 Attribmap01_98::
