@@ -101,7 +101,6 @@ PatchTilesets::
   PatchTilesetEntry MenuMainGame
   PatchTilesetEntry OptionYesNo
   PatchTilesetEntry InfoSaveScreen
-  PatchTilesetEntry InputNameScreen
   PatchTilesetEntry InputNameCharacterMap1
   PatchTilesetEntry InputNameCharacterMap2
   PatchTilesetEntry InputNamePlayerName

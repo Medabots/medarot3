@@ -72,9 +72,9 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MenuMainGame, $9010 ; 2
   TilemapTilesetTableEntry OptionYesNo, $8B60 ; 3
   TilemapTilesetTableEntry InfoSaveScreen, $9120 ; 4 (Loaded with main menu)
-  TilemapTilesetTableEntry InputNameScreen, $8A20 ; 5
-  TilemapTilesetTableEntry InputNameCharacterMap1, $8A80 ; 6 (Swapped between 1 and 2, with InputNameScreen)
-  TilemapTilesetTableEntry InputNameCharacterMap2, $8A80 ; 7
+  TilemapTilesetTableEntry EntryFont, $9000 ; 5 (Used for name entry)
+  TilemapTilesetTableEntry InputNameCharacterMap1, $8A20 ; 6 (Swapped between 1 and 2, with InputNameScreen)
+  TilemapTilesetTableEntry InputNameCharacterMap2, $8A20 ; 7
   TilemapTilesetTableEntry InputNamePlayerName, $8AC0 ; 8
   TilemapTilesetTableEntry ItemUseCancel, $97B0 ; 9
   TilemapTilesetTableEntry ItemScreen, $9120 ; A
