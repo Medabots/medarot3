@@ -1155,7 +1155,7 @@ Tilemap01_A8::
 Tilemap01_AB::
   INCBIN "./build/tilemaps/01AB.map"
 Tilemap01_AC::
-  INCBIN "./build/tilemaps/01AC.map"
+  INCBIN "./build/tilemaps/ChapterTitleScreen.map"
 Tilemap01_AD::
   INCBIN "./build/tilemaps/01AD.map"
 Tilemap01_AE::
