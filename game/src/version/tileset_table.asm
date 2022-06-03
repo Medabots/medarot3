@@ -93,10 +93,10 @@ TilesetSourceAddressTable::
   dw ChapterScreenChapterTitle1 ; 58 (3A45)
   dw ChapterScreenChapterTitle2 ; 59 (3A47)
   dw ChapterScreenChapterTitle3 ; 5A (3A49)
-  dw ChapterScreenChapterTitle4 ; 5B (3A4B)
-  dw ChapterScreenChapterTitle5 ; 5C (3A4D)
-  dw ChapterScreenChapterTitle6 ; 5D (3A4F)
-  dw TextSubaru ; 5E (3A51)
+  dw ChapterScreenChapterTitle4Kabuto ; 5B (3A4B)
+  dw ChapterScreenChapterTitle4Kuwagata ; 5C (3A4D)
+  dw ChapterScreenChapterTitle5 ; 5D (3A4F)
+  dw ChapterScreenChapterTitle6 ; 5E (3A51)
   dw Tileset3A53 ; 5F (3A53)
   dw TilesetSourceAddressTableEnd ; 60 (3A55)
   dw TilesetSourceAddressTableEnd ; 61 (3A57)
@@ -609,10 +609,10 @@ TilesetInfoTable::
   dbwb BANK(ChapterScreenChapterTitle1), $91E0, $0 ; 058
   dbwb BANK(ChapterScreenChapterTitle2), $91E0, $0 ; 059
   dbwb BANK(ChapterScreenChapterTitle3), $91E0, $0 ; 05A
-  dbwb BANK(ChapterScreenChapterTitle4), $91E0, $0 ; 05B
-  dbwb BANK(ChapterScreenChapterTitle5), $91E0, $0 ; 05C
-  dbwb BANK(ChapterScreenChapterTitle6), $91E0, $0 ; 05D
-  dbwb BANK(TextSubaru), $91E0, $0 ; 05E
+  dbwb BANK(ChapterScreenChapterTitle4Kabuto), $91E0, $0 ; 05B
+  dbwb BANK(ChapterScreenChapterTitle4Kuwagata), $91E0, $0 ; 05C
+  dbwb BANK(ChapterScreenChapterTitle5), $91E0, $0 ; 05D
+  dbwb BANK(ChapterScreenChapterTitle6), $91E0, $0 ; 05E
   dbwb BANK(Tileset3A53), $8800, $0 ; 05F
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 060
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 061

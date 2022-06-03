@@ -56,21 +56,21 @@ SECTION "Tileset Data ChapterScreenChapterTitle3", ROMX[$6E9E], BANK[$3B]
 ChapterScreenChapterTitle3::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle3.malias"
 
-SECTION "Tileset Data ChapterScreenChapterTitle4", ROMX[$6FFF], BANK[$3B]
-ChapterScreenChapterTitle4::
-  INCBIN "./build/tilesets/ChapterScreenChapterTitle4.malias"
+SECTION "Tileset Data ChapterScreenChapterTitle4Kabuto", ROMX[$6FFF], BANK[$3B]
+ChapterScreenChapterTitle4Kabuto::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4Kabuto.malias"
 
-SECTION "Tileset Data ChapterScreenChapterTitle5", ROMX[$7136], BANK[$3B]
+SECTION "Tileset Data ChapterScreenChapterTitle4Kuwagata", ROMX[$7136], BANK[$3B]
+ChapterScreenChapterTitle4Kuwagata::
+  INCBIN "./build/tilesets/ChapterScreenChapterTitle4Kuwagata.malias"
+
+SECTION "Tileset Data ChapterScreenChapterTitle5", ROMX[$728F], BANK[$3B]
 ChapterScreenChapterTitle5::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle5.malias"
 
-SECTION "Tileset Data ChapterScreenChapterTitle6", ROMX[$728F], BANK[$3B]
+SECTION "Tileset Data ChapterScreenChapterTitle6", ROMX[$73C0], BANK[$3B]
 ChapterScreenChapterTitle6::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
-
-SECTION "Tileset Data TextSubaru", ROMX[$73C0], BANK[$3B]
-TextSubaru::
-  INCBIN "./build/tilesets/TextSubaru.malias"
 
 SECTION "Tileset Data Tileset3A53", ROMX[$79B2], BANK[$3E]
 Tileset3A53::
