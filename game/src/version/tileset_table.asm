@@ -606,13 +606,13 @@ TilesetInfoTable::
   dbwb BANK(ChapterScreenChapterNumber4), $9160, $0 ; 055
   dbwb BANK(ChapterScreenChapterNumber5), $9160, $0 ; 056
   dbwb BANK(ChapterScreenChapterNumber6), $9160, $0 ; 057
-  dbwb BANK(ChapterScreenChapterTitle1), $91E0, $0 ; 058
-  dbwb BANK(ChapterScreenChapterTitle2), $91E0, $0 ; 059
-  dbwb BANK(ChapterScreenChapterTitle3), $91E0, $0 ; 05A
-  dbwb BANK(ChapterScreenChapterTitle4Kabuto), $91E0, $0 ; 05B
-  dbwb BANK(ChapterScreenChapterTitle4Kuwagata), $91E0, $0 ; 05C
-  dbwb BANK(ChapterScreenChapterTitle5), $91E0, $0 ; 05D
-  dbwb BANK(ChapterScreenChapterTitle6), $91E0, $0 ; 05E
+  dbwb BANK(ChapterScreenChapterTitle1), $9000, $1 ; 058
+  dbwb BANK(ChapterScreenChapterTitle2), $9000, $1 ; 059
+  dbwb BANK(ChapterScreenChapterTitle3), $9000, $1 ; 05A
+  dbwb BANK(ChapterScreenChapterTitle4Kabuto), $9000, $1 ; 05B
+  dbwb BANK(ChapterScreenChapterTitle4Kuwagata), $9000, $1 ; 05C
+  dbwb BANK(ChapterScreenChapterTitle5), $9000, $1 ; 05D
+  dbwb BANK(ChapterScreenChapterTitle6), $9000, $1 ; 05E
   dbwb BANK(Tileset3A53), $8800, $0 ; 05F
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 060
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 061

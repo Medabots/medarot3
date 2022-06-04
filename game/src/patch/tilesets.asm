@@ -40,7 +40,7 @@ PatchTilesetStart\1::
 PatchTilesetEnd\1::
 ENDM
 
-SECTION "Patch 2bpp Tilesets 1", ROMX[$4000], BANK[$FD]
+SECTION "Patch 2bpp Tilesets 1", ROMX[$4000], BANK[$FC]
 ; Include certain 2bpp 'malias' uncompressed graphics here
 MainDialog1::
   INCBIN "./build/tilesets/MainDialog1.malias"
@@ -76,6 +76,9 @@ ChapterScreenChapterNumber5::
   INCBIN "./build/tilesets/ChapterScreenChapterNumber5.malias"
 ChapterScreenChapterNumber6::
   INCBIN "./build/tilesets/ChapterScreenChapterNumber6.malias"
+
+SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FD]
+; Include certain 2bpp 'malias' uncompressed graphics here
 ChapterScreenChapterTitle1::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle1.malias"
 ChapterScreenChapterTitle2::

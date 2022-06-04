@@ -250,7 +250,7 @@ F8: (empty)
 F9: (empty)
 FA: (empty)
 FB: (empty)
-FC: (empty)
+FC: Patched 2bpp gfx
 FD: Patched 2bpp gfx
 FE: Patch-specific 1bpp gfx
 FF: Patch functions and VWF fonts
