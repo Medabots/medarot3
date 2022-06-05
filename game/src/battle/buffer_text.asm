@@ -99,17 +99,13 @@ BattleLoadPartDamageNumber:: ;
   ret
 BattleLoadPartDefendedText:
   push de
-  ld hl, BattleLoadPartsTable
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
+  ld bc, BattleLoadPartsTable
+  ld h, $00
+  ld l, a
+  add hl, hl
+  add hl, hl
+  add hl, hl
+  add hl, hl
   add hl, bc
   ld de, cBUF01
 .copyLoop
