@@ -35,7 +35,68 @@ BattleLoadTextBuf01::
 
   padend $51b6
 
-SECTION "Load part name text data", ROMX[$56df], BANK[$0C]
+SECTION "Load text for part damage", ROMX[$5676], BANK[$0C]
+BattleLoadPartDamageNumber:: ;
+  push de
+  xor a
+  ld [W_ItemPageRowIndex], a
+  ld de, cBUF00
+  ld a, [$ddb4]
+  ld h, a
+  ld a, [$ddb5]
+  ld l, a
+  ld bc, $64
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$c4ee]
+  or a
+  jr z, .start_calc
+  add $e0
+  ld [de], a
+  inc de
+  ld a, $01
+  ld [W_ItemPageRowIndex], a
+.start_calc
+  ld a, [$c4e0]
+  ld h, a
+  ld a, [$c4e1]
+  ld l, a
+  ld bc, $a
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$c4ee]
+  or a
+  jr z, .next_digit_1
+  add $e0
+  ld [de], a
+  inc de
+  jr .next_digit_2
+.next_digit_1
+  ld a, [W_ItemPageRowIndex]
+  or a
+  jr z, .next_digit_2
+  ld a, $e0
+  ld [de], a
+  inc de
+.next_digit_2
+  ld a, [$c4e0]
+  ld h, a
+  ld a, [$c4e1]
+  ld l, a
+  ld bc, $1
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$c4ee]
+  add $e0
+  ld [de], a
+  inc de
+  ld a, $cb
+  ld [de], a
+  pop de
+  ret
 BattleLoadPartDefendedText:
   push de
   ld hl, .table
