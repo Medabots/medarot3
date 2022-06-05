@@ -67,15 +67,17 @@ IF !STRCMP("{GAMEVERSION}", "kuwagata")
 SECTION "Load items into buffer for text", ROMX[$597c], BANK[$09]
 ENDC
 TextLoadItemIntoBuffer::
-  ld b, $0d
-  ld c, $09
+  ld bc, $0d09
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF06
-  ld bc, $9
+  ; Copy 17 characters instead of 9
+  ; Note that we don't know if BUF06 (cd80) has the available space...
+  ; This may cause unintended bugs, so we'll need to keep an eye on it
+  ld bc, $11
   call memcpy
   ret
 IF !STRCMP("{GAMEVERSION}", "kabuto")
