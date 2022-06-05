@@ -160,6 +160,7 @@ version_ptrlist_data_ADDITIONAL := $(PTRLISTS_OUT)/ptrlist_data_constants_PLACEH
 version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tilemap_table.asm $(TILEMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_metasprites_ADDITIONAL := $(VERSION_SRC)/metasprites00.asm $(VERSION_SRC)/metasprites01.asm $(VERSION_SRC)/metasprites02.asm $(VERSION_SRC)/metasprites03.asm $(VERSION_SRC)/metasprites04.asm $(VERSION_SRC)/metasprites05.asm $(VERSION_SRC)/metasprites06.asm $(VERSION_SRC)/metasprites07.asm
+version_misc_ADDITIONAL := $(VERSION_SRC)/misc.asm
 
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
