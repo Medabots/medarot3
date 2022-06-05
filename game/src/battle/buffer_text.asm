@@ -126,9 +126,9 @@ BattleLoadPartDefendedText:
   db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
   db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
 
-SECTION "Load text into buffers for battle messages 2", ROMX[$59f4], BANK[$0C]
-BattleLoadTextBuf02::
-  ld hl, $40
+SECTION "Load participant name into cBUF02", ROMX[$59f4], BANK[$0C]
+BattleLoadParticipantNameBuf02::
+  ld hl, $40 ; Offset to name in participant data structure
   add hl, de
   push de
   ld de, cBUF02
