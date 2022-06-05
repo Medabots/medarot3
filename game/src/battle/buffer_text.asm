@@ -52,7 +52,7 @@ BattleLoadPartDamageNumber:: ;
   ld a, [$c4ee]
   or a
   jr z, .start_calc
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $01
@@ -69,7 +69,7 @@ BattleLoadPartDamageNumber:: ;
   ld a, [$c4ee]
   or a
   jr z, .next_digit_1
-  add $e0
+  add $30
   ld [de], a
   inc de
   jr .next_digit_2
@@ -77,7 +77,7 @@ BattleLoadPartDamageNumber:: ;
   ld a, [W_ItemPageRowIndex]
   or a
   jr z, .next_digit_2
-  ld a, $e0
+  ld a, $30
   ld [de], a
   inc de
 .next_digit_2
@@ -90,7 +90,7 @@ BattleLoadPartDamageNumber:: ;
   call DigitCalculationLoop
   pop de
   ld a, [$c4ee]
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $cb
@@ -99,15 +99,13 @@ BattleLoadPartDamageNumber:: ;
   ret
 BattleLoadPartDefendedText:
   push de
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
+  ld bc, BattleLoadPartsTable
+  ld h, $00
+  ld l, a
+  add hl, hl
+  add hl, hl
+  add hl, hl
+  add hl, hl
   add hl, bc
   ld de, cBUF01
 .copyLoop
@@ -120,21 +118,47 @@ BattleLoadPartDefendedText:
 .return
   pop de
   ret
-.table
-  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
-  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
-  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
-  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
+
+  padend $5721
 
 SECTION "Load participant name into cBUF02", ROMX[$59f4], BANK[$0C]
 BattleLoadParticipantNameBuf02::
-  ld hl, $40 ; Offset to name in participant data structure
-  add hl, de
+  call BattleLoadParticipantNameBuf02Cont ; set hl
   push de
   ld de, cBUF02
-  ld bc, $09
+  ld bc, $1a ; Take over old cBUF00 and cBUF01, dd90 to dda2
   call memcpy
   pop de
   ret
 
   padend $5a04
+
+
+; For more complex logic and extra space
+SECTION "Free space", ROMX[$7e24], BANK[$0C]
+BattleLoadPartsTable::
+  db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "right arm",$CB,$00,$00,$00,$00,$00,$00
+  db "left arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+BattleLoadParticipantNameBuf02Cont::
+  ld a, d
+  cp $d6
+  jr nc, .enemy
+  ld hl, $40 ; Offset to name in participant data structure for player
+  add hl, de
+  ret
+.enemy
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03 ; Use the head part to get the idx for the name
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld hl, W_NewListItemBufferArea
+  ret

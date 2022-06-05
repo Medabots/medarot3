@@ -1,12 +1,12 @@
-﻿(2, ['ItemName', 'Flags'], [203, None], [(18, 0), (1, None)], [False, True], None, None, True)
+﻿(2, ['ItemName', 'Flags'], [203, None], [(17, 0), (1, None)], [False, True], None, None, True)
 56
 31067
 Index[#version],ItemName,Flags
 0,Roborobo Medal\xcb,\x00
 1,Egg Carton\xcb,\x00
-2,Mini-mini Machine\xcb,\x00
+2,MiniMini Machine\xcb,\x00
 3,Town Map\xcb,\x01
-4,Medalympics Badge\xcb,\x00
+4,Medalympic Badge\xcb,\x00
 5,Hanazono Badge\xcb,\x00
 6,Mini Handle\xcb,\x00
 7,Hachiro's Medal\xcb,\x00
@@ -20,8 +20,8 @@ Index[#version],ItemName,Flags
 15,Q Medal\xcb,\x00
 16,R Medal\xcb,\x00
 17,S Medal\xcb,\x00
-18,B Kabuto Medal\xcb,\x00
-19,B Kuwagata Medal\xcb,\x00
+18,B-Kabuto Medal\xcb,\x00
+19,B-Kuwagata Medal\xcb,\x00
 20,♥ Stone\xcb,\x00
 21,Love Letter\xcb,\x00
 22,Bubble Ticket\xcb,\x00
