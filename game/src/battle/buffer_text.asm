@@ -35,6 +35,36 @@ BattleLoadTextBuf01::
 
   padend $51b6
 
+SECTION "Load part name text data", ROMX[$56df], BANK[$0C]
+BattleLoadPartDefendedText:
+  push de
+  ld hl, .table
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld de, cBUF01
+.copyLoop
+  ld a, [hli]
+  ld [de], a
+  cp $cb
+  jr z, .return
+  inc de
+  jr .copyLoop
+.return
+  pop de
+  ret
+.table
+  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
+  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
+  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
+  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
+
 SECTION "Load text into buffers for battle messages 2", ROMX[$59f4], BANK[$0C]
 BattleLoadTextBuf02::
   ld hl, $40
