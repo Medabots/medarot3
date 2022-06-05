@@ -133,7 +133,6 @@ BattleLoadParticipantNameBuf02::
 
   padend $5a04
 
-
 ; For more complex logic and extra space
 SECTION "Free space", ROMX[$7e24], BANK[$0C]
 BattleLoadPartsTable::
@@ -162,3 +161,36 @@ BattleLoadParticipantNameBuf02Cont::
   pop de
   ld hl, W_NewListItemBufferArea
   ret
+
+SECTION "Load part type for encounter reward", ROMX[$5c17], BANK[$15]
+EncounterLoadRewardPartTypeText::
+  push de
+  push hl
+  ld hl, .table
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  pop de
+.loop
+  ld a, [hli]
+  ld [de], a
+  cp $cb
+  jr z, .return
+  inc de
+  jr .loop
+.return
+  pop de
+  ret
+.table
+  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
+  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
+  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
+  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
+
+  padend $5c58

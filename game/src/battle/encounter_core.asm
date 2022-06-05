@@ -1,5 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
+INCLUDE "build/pointer_constants.asm"
 
 W_BattleEncounterSubsubstateIndex EQU $C0A6
 
@@ -122,7 +123,7 @@ BattleEncounterStateMachine::
   dw BattleEncounterResultsDrawPrizeState ; 69
   dw $54F7 ; 6A
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; 6B
-  dw $551D ; 6C
+  dw BattleEncounterResultsPrintPrizeMessageState ; 6C
   dw $4FA0 ; 6D
   dw $553C ; 6E
   dw $554C ; 6F
@@ -466,7 +467,22 @@ BattleEncounterResultsDrawPrizeState::
 
   padend $54f3
 
-SECTION "Encounter State Machine 6", ROMX[$55A0], BANK[$05]
+SECTION "Encounter State Machine 6", ROMX[$551D], BANK[$05]
+BattleEncounterResultsPrintPrizeMessageState::
+  call $5DC9
+  ld a, $06
+  rst $8
+  ld hl, cBUF01
+  ld a, [$c601]
+  call WrapEncounterLoadRewardPartTypeText
+  call WrapInitiateMainScript
+  ld a, $00
+  ld [W_ItemActionMessageIndex], a
+  ld a, $98
+  ld [$c496], a
+  jp BattleEncounterIncSubsubstateIndex
+
+SECTION "Encounter State Machine 7", ROMX[$55A0], BANK[$05]
 BattleEncounterVictoryResultsDrawingAndMappingState::
   ld a, [W_BattleEncounterSubsubstateIndex]
   push af
@@ -496,7 +512,7 @@ BattleEncounterVictoryResultsDrawingAndMappingState::
   ld [$CF96], a
   jp BattleEncounterIncSubsubstateIndex
 
-SECTION "Encounter State Machine 7", ROMX[$5869], BANK[$05]
+SECTION "Encounter State Machine 8", ROMX[$5869], BANK[$05]
 BattleEncounterIncSubsubstateIndex::
   ld hl, W_BattleEncounterSubsubstateIndex
   inc [hl]

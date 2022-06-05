@@ -119,9 +119,18 @@ WrapIsItemInInventory::
   pop af
   ret
 
+SECTION "Load Part Type Reward Wrapper", ROM0[$3731]
+WrapEncounterLoadRewardPartTypeText::
+  push af
+  ld a, $15
+  rst $10
+  pop af
+  call EncounterLoadRewardPartTypeText
+  rst $18
+  ret
+
 SECTION "Non-Kanji Character Drawing Wrapper", ROM0[$3765]
 WrapMainScriptDrawNonKanjiCharacter::
   call MainScriptDrawNonKanjiCharacter
   rst $18
   ret
-
