@@ -13,8 +13,9 @@ from common import utils, tilesets
 
 output_file = sys.argv[1]
 input_file = sys.argv[2]
-column_name = sys.argv[3]
-version_suffix = sys.argv[4]
+ptrs_table = sys.argv[3]
+column_name = sys.argv[4]
+version_suffix = sys.argv[5]
 
 base_name = os.path.splitext(os.path.basename(input_file))[0]
 char_table = utils.reverse_dict(utils.merge_dicts([
@@ -24,7 +25,7 @@ char_table = utils.reverse_dict(utils.merge_dicts([
         ]))
 kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
 assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
-ptr_names = utils.read_table(os.path.join(os.path.dirname(__file__), 'res', 'ptrs.tbl'), keystring=True)
+ptr_names = utils.read_table(ptrs_table, keystring=True)
 
 with open(input_file, 'r', encoding='utf-8-sig') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')

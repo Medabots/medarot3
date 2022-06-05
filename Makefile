@@ -209,7 +209,7 @@ $(TILESET_OUT)/%.stamp: $$(call FILTER,%,$(COMPRESSED_TILESET_FILES_VERSIONED))
 
 # build/intermediate/dialog/*.bin from dialog csv files
 .SECONDEXPANSION:
-$(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(CSV_TYPE) | $(DIALOG_INT)
+$(DIALOG_INT)/%.$(DIALOG_TYPE): $(DIALOG_TEXT)/$$(word 1, $$(subst _, ,$$*)).$(CSV_TYPE) $(SCRIPT_RES)/ptrs.tbl | $(DIALOG_INT)
 	$(PYTHON) $(SCRIPT)/dialog2bin.py $@ $^ "Original" $(subst $(subst .$(CSV_TYPE),,$(<F))_,,$*)
 
 # build/intermediate/ptrlists/*.bin from dialog csv files
