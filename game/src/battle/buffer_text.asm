@@ -99,9 +99,11 @@ BattleLoadPartDamageNumber:: ;
   ret
 BattleLoadPartDefendedText:
   push de
-  ld hl, .table
+  ld hl, BattleLoadPartsTable
   ld b, $00
   ld c, a
+  sla c
+  rl b
   sla c
   rl b
   sla c
@@ -120,11 +122,15 @@ BattleLoadPartDefendedText:
 .return
   pop de
   ret
-.table
-  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
-  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
-  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
-  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
+
+  padend $5721
+
+SECTION "Parts table for more space", ROMX[$7e24], BANK[$0C]
+BattleLoadPartsTable::
+  db "Head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "Right Arm",$CB,$00,$00,$00,$00,$00,$00
+  db "Left Arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "Legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 
 SECTION "Load participant name into cBUF02", ROMX[$59f4], BANK[$0C]
 BattleLoadParticipantNameBuf02::
