@@ -62,7 +62,7 @@
 060,0x1f0078,"<@RL,14,00>いま のむベきか...<CF><D1>あとで のむベきか...","<@RL,14,00>Should I drink something<D3>now, or...<CF><D1>Should I drink something<D3>later..."
 061,0x1f007a,"<@RL,16,00>わしゃ このマンションの<CD>かんリにんじゃ<CF><D1>うろうろしておるが<CD>あんまリ 気にせんでええぞ",
 062,0x1f007c,"<@LL,00,07>うわっ!<CD>ここって ウサギちゃんバ-?<CF><D1>でも ぼく まだ 子どもだし...","<@LL,00,07>Whoa! Is this a bunny-girl<D3>bar?<CF><D1>But I'm still just a kid, so..."
-063,0x1f007e,"<@RL,1C,00>ここはぁ「メダロポリス1」<CD>つまリぃ メダロポリスの左上なのぉ<CF><D1>この町って すごく 広いじゃ-ん?<CD>あそび場所には こまらないかもぉ",
+063,0x1f007e,"<@RL,1C,00>ここはぁ「メダロポリス1」<CD>つまリぃ メダロポリスの左上なのぉ<CF><D1>この町って すごく 広いじゃ-ん?<CD>あそび場所には こまらないかもぉ","<@RL,1C,00>This is ""Medaropolis 1,"" we're<D3>in the upper-left of the town.<CF><D1>Isn't this town huge? You<D3>won't have trouble finding<CF><D1>places to play."
 064,0x1f0080,"<@RL,28,00>ここは「セレクト本部」で あリます!","<@RL,28,00>This is the <f02>Select Corp<D3>headquarters<f00>!"
 065,0x1f0082,"<@RL,28,00>ここは「きゅうきゅうセンタ-」で<CD>あリます!","<@RL,28,00>This is the <f02>first aid center<f00>!"
 066,0x1f0084,"<@RL,13,00>ここは メダロッタ-あこがれの店<CD>「メダロッタ-ズ」!!<CF><D1>メダロットグッズが まんさい!<CD>でも メダルは 売ってない!<CF><D1>く---...ニクイね!","<@RL,13,00>This is the shop for those who<D3>strive to train Medabots:<CF><D1><f02>Medabotters<f00>!!<CF><D1>They're fully stocked with<D3>Medabot goods! But they don't<CF><D1>sell medals!<CF><D1>Ku... so awesome!"

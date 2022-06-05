@@ -2,15 +2,15 @@
 16
 31360
 Index[#version],Terrain
-0,さばく
-1,アリじごく
-2,さんち
-3,かざん
-4,しんリん
-5,ジャングル
-6,まちなか
-7,スタジアム
-8,すいちゅう
-9,ひょうが
-10,うちゅう
-11,サイバー
+0,Desert
+1,Antlion Trap
+2,Mountain
+3,Volcano
+4,Forest
+5,Jungle
+6,Street
+7,Stadium
+8,Underwater
+9,Glacier
+10,Space
+11,Cyberspace
