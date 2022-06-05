@@ -137,10 +137,10 @@ BattleLoadParticipantNameBuf02::
 ; For more complex logic and extra space
 SECTION "Free space", ROMX[$7e24], BANK[$0C]
 BattleLoadPartsTable::
-  db "Head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-  db "Right Arm",$CB,$00,$00,$00,$00,$00,$00
-  db "Left Arm",$CB,$00,$00,$00,$00,$00,$00,$00
-  db "Legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "right arm",$CB,$00,$00,$00,$00,$00,$00
+  db "left arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 BattleLoadParticipantNameBuf02Cont::
   ld a, d
   cp $d6
