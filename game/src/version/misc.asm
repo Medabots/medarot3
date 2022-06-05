@@ -59,3 +59,28 @@ TextLoadNumberIntoBuffer::
   ld a, $cb
   ld [hl], a
   ret
+
+IF !STRCMP("{GAMEVERSION}", "kabuto")
+SECTION "Load items into buffer for text", ROMX[$597d], BANK[$09]
+ENDC
+IF !STRCMP("{GAMEVERSION}", "kuwagata")
+SECTION "Load items into buffer for text", ROMX[$597c], BANK[$09]
+ENDC
+TextLoadItemIntoBuffer::
+  ld b, $0d
+  ld c, $09
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF06
+  ld bc, $9
+  call memcpy
+  ret
+IF !STRCMP("{GAMEVERSION}", "kabuto")
+  padend $5998
+ENDC
+IF !STRCMP("{GAMEVERSION}", "kuwagata")
+  padend $5997
+ENDC
