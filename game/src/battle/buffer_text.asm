@@ -121,22 +121,44 @@ BattleLoadPartDefendedText:
 
   padend $5721
 
-SECTION "Parts table for more space", ROMX[$7e24], BANK[$0C]
-BattleLoadPartsTable::
-  db "Head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-  db "Right Arm",$CB,$00,$00,$00,$00,$00,$00
-  db "Left Arm",$CB,$00,$00,$00,$00,$00,$00,$00
-  db "Legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
-
 SECTION "Load participant name into cBUF02", ROMX[$59f4], BANK[$0C]
 BattleLoadParticipantNameBuf02::
-  ld hl, $40 ; Offset to name in participant data structure
-  add hl, de
+  call BattleLoadParticipantNameBuf02Cont ; set hl
   push de
   ld de, cBUF02
-  ld bc, $09
+  ld bc, $1a ; Take over old cBUF00 and cBUF01, dd90 to dda2
   call memcpy
   pop de
   ret
 
   padend $5a04
+
+
+; For more complex logic and extra space
+SECTION "Free space", ROMX[$7e24], BANK[$0C]
+BattleLoadPartsTable::
+  db "Head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "Right Arm",$CB,$00,$00,$00,$00,$00,$00
+  db "Left Arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "Legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+BattleLoadParticipantNameBuf02Cont::
+  ld a, d
+  cp $d6
+  jr nc, .enemy
+  ld hl, $40 ; Offset to name in participant data structure for player
+  add hl, de
+  ret
+.enemy
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03 ; Use the head part to get the idx for the name
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld hl, W_NewListItemBufferArea
+  ret
