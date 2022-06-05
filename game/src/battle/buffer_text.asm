@@ -14,9 +14,9 @@ BattleLoadTextBuf00::
   ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF00
-  ld bc, $e
+  ld bc, $17
   jp memcpy
 BattleLoadTextBuf01::
   call $5ae6
@@ -28,9 +28,9 @@ BattleLoadTextBuf01::
   ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF01
-  ld bc, $6
+  ld bc, $17
   jp memcpy
 
   padend $51b6
@@ -41,7 +41,7 @@ BattleLoadTextBuf02::
   add hl, de
   push de
   ld de, cBUF02
-  ld bc, $9
+  ld bc, $09
   call memcpy
   pop de
   ret
