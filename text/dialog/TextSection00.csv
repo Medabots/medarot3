@@ -13,16 +13,16 @@
 011,0x90016,ゆうこうパワ-アップ!<CD>行動せいこうちが 上がった!<S46><*04>,Ally Power Up!<D3>Success Rate has been raised!<S46><*04>
 012,0x90018,メダフォ-スプラントはつどう!<CD>メダフォ-スが上がった!<S46><*04>,Medaforce Plant Activate!<D3>Medaforce gauge was charged!<S46><*04>
 013,0x9001a,ファ-ストエイドはつどう!<CD><&BUF00>パ-ツが ふっかつした!<S46><*04>,First Aid activate! <CF><&BUF00>'s parts were<D3>repaired!<S46><*04>
-014,0x9001c,メダフォ-ス!<CD>「<&BUF01>」 はつどう!<S46><*04>,"Medaforce!<D3>""<&BUF01>"" activate!<S46><*04>"
+014,0x9001c,メダフォ-ス!<CD>「<&BUF01>」 はつどう!<S46><*04>,Medaforce!<D3>Go! <f02><&BUF01><f00>!<S46><*04>
 015,0x9001e,メダフォ-スの はつどうに<CD>しっぱいした!<S46><*04>,Medaforce failed!<S46><*04>
 016,0x90020,フィ-ルドせいぎょのため<CD>メダフォ-スが使えない!<S46><*04>,Unable to use Medaforce due<D3>to the terrain! <S46><*04>
-017,0x90022,メダフォ-スが ふえた<CD>全しんに パワ-がみなぎってくる!<S46><*04>,You feel power flow through<D3>you. Medaforce increased!<S46><*04>
-018,0x90024,パワ-ぜんかいだ!<CD>これいじょう メダフォ-スはふえない<S46><*04>,Fully charged! Your Medaforce<D3>will not go any higher!<S46><*04>
+017,0x90022,メダフォ-スが ふえた<CD>全しんに パワ-がみなぎってくる!<S46><*04>,Charging up!<D3>Medaforce charge increased!<S46><*04>
+018,0x90024,パワ-ぜんかいだ!<CD>これいじょう メダフォ-スはふえない<S46><*04>,The Medaforce charge cannot<D3>go any higher!<S46><*04>
 019,0x90026,ねらった メダロットは<CD>すでに きのうていし していた!<S46><*04>,The target Medarot has<D3>already been shutdown!<S46><*04>
 020,0x90028,ねらった パ-ツは<CD>すでに こわれていた!<S46><*04>,The targeted part has<D3>already been destroyed!<S46><*04>
 021,0x9002a,<&BUF01>は<CD>行動ないようを わすれた!<S46><*04>,<&BUF01> has forgotten its<D3>actions!<S46><*04>
 022,0x9002c,行動パ-ツは こわれていた!<S46><*04>,That part is broken! <S46><*04>
-023,0x9002e,<&BUF00>パ-ツは<CD>「使用ふのう」で 使えなかった!<S46><*04>,"<&BUF00> could not be used <D3>due to ""Disable""! <S46><*04>"
+023,0x9002e,<&BUF00>パ-ツは<CD>「使用ふのう」で 使えなかった!<S46><*04>,<&BUF00> could not be used <D3>due to <f02>Disable<f00>! <S46><*04>
 024,0x90030,頭パ-ツの 使用回数がなかった!<S46><*04>,This Head part has no more<D3>uses left!<S46><*04>
 025,0x90032,そせいする メダロットがなかった!<S46><*04>,There are no Medarots to <D3>revive! <S46><*04>
 026,0x90034,こわれたパ-ツが あるため<CD>変形できなかった!<S46><*04>,You can not transform with<D3>broken parts!<S46><*04>
@@ -33,7 +33,7 @@
 031,0x9003e,<&BUF02>は<CD>しゃげきトラップに かかった!<S46><*04>,<&BUF02> triggered the<D3><f02>Shooting<f00> trap!<S46><*04>
 032,0x90040,<&BUF02>は<CD>攻撃トラップに かかった!<S46><*04>,<&BUF02> triggered the<D3><f02>Attack<f00> trap!<S46><*04>
 033,0x90042,<&BUF02>の<CD><&BUF01>パ-ツに <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02>'s <f02><&BUF01><D3><f00>took <f02><&BUF00><f00> damage!<S46><*04>
-034,0x90044,<&BUF01>パ-ツは こわれた!<S46><*04>,<&BUF01> part destroyed!
+034,0x90044,<&BUF01>パ-ツは こわれた!<S46><*04>,The attack destroyed the<D3><&BUF01>!
 035,0x90046,本体の きのうが ていしした!<S46><*04>,The Medarot has been<D3>shutdown!<S46><*04>
 036,0x90048,たんぱつクリア トラップで<CD>攻撃が うちけされた!<S46><*04>,Attack will be nullified by<D3>Single-engine Clear!<S46><*04>
 037,0x9004a,<&BUF02>に <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02> took <&BUF00><D3>damage!<S46><*04>
@@ -151,10 +151,10 @@
 149,0x9012a,メダチェ------ンジ!<S46><*04>,Medachaaaaaange!<S46><*04>
 150,0x9012c,てきの リ-ダ-の<CD>きのうが ていしした!<CF>そこまでっ!<CD>勝者 <&BUF02>!,The opponent's leader has<D3>ceased functioning!<CF><&BUF02> wins!
 151,0x9012e,みかたの リ-ダ-の<CD>きのうが ていしした!<CF>そこまでっ!<CD>勝者 <&BUF02>!,
-152,0x90130,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*02>,<&BUF03> <&BUF01> part<D3><&BUF04> acquired!<*02>
-153,0x90132,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*02>,<&BUF03> <&BUF01> part<D3><&BUF04> taken!<*02>
+152,0x90130,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*02>,<&BUF03> got the <&BUF01> part<D3><&BUF04>!<*02>
+153,0x90132,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*02>,<&BUF03>'s <&BUF01> part<D3><&BUF04> was taken!<*02>
 154,0x90134,ロボロボメダルを 手に入れた!<*02>,Rubberobo medal acquired!<*02>
-155,0x90136,<&BUF03>の メダルは<CD><&BUF00>の けいけんちを手に入れた!<*02>,<&BUF03> medal received<D3><&BUF00> experience!<*02>
+155,0x90136,<&BUF03>の メダルは<CD><&BUF00>の けいけんちを手に入れた!<*02>,<&BUF03>'s medals received <&BUF00><D3>experience!<*02>
 156,0x90138,あっ......!<CD>「<&BUF05>」メダルが...!<*03>,Ah...!<D3>The '<&BUF05>' Medal...! <*03>
 157,0x9013a,新たな すがたに ヘんかした!<*03>,It morphed into a new form!<*03>
 158,0x9013c,<&BUF03>は<CD>ロボトルにまけてしまった!<*02>,<&BUF03> has lost the<D3>robattle!<*02>
