@@ -134,7 +134,7 @@ BattleLoadParticipantNameBuf02::
   padend $5a04
 
 ; For more complex logic and extra space
-SECTION "Free space", ROMX[$7e24], BANK[$0C]
+SECTION "Free space Bank 0C", ROMX[$7e24], BANK[$0C]
 BattleLoadPartsTable::
   db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   db "right arm",$CB,$00,$00,$00,$00,$00,$00
@@ -166,15 +166,13 @@ SECTION "Load part type for encounter reward", ROMX[$5c17], BANK[$15]
 EncounterLoadRewardPartTypeText::
   push de
   push hl
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
+  ld bc, EncounterLoadPartsTable
+  ld h, $00
+  ld l, a
+  add hl, hl
+  add hl, hl
+  add hl, hl
+  add hl, hl
   add hl, bc
   pop de
 .loop
@@ -187,10 +185,12 @@ EncounterLoadRewardPartTypeText::
 .return
   pop de
   ret
-.table
-  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
-  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
-  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
-  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
 
   padend $5c58
+
+SECTION "Free space Bank 15", ROMX[$6220], BANK[$15]
+EncounterLoadPartsTable::
+  db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "right arm",$CB,$00,$00,$00,$00,$00,$00
+  db "left arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
