@@ -243,7 +243,13 @@ MapTextForEncounterScreen::
   ld h, $01
   ld a, $06
   call VWFDrawStringCentredFullAddress
-  ld bc, W_EncounterOpponentBufferArea + 3
+  ld bc, $0f07
+  ld a, [W_EncounterOpponentListItemIndex]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $03
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld bc, W_NewListItemBufferArea
   ld de, $996B
   ld h, $07
   jp VWFDrawStringCentredFullAddress8Tiles
