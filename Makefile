@@ -122,7 +122,7 @@ MAP_OUT := $(foreach VERSION,$(VERSIONS),$(BASE)/$(OUTPUT_PREFIX)$(VERSION).$(MA
 
 # Sources
 OBJNAMES := $(foreach MODULE,$(MODULES),$(addprefix $(MODULE)., $(addsuffix .$(INT_TYPE), $(notdir $(basename $(wildcard $(SRC)/$(MODULE)/*.$(SOURCE_TYPE)))))))
-COMMON_SRC := $(wildcard $(COMMON)/*.$(SOURCE_TYPE))
+COMMON_SRC := $(wildcard $(COMMON)/*.$(SOURCE_TYPE)) $(BUILD)/pointer_constants.asm
 
 DIALOG := $(notdir $(basename $(wildcard $(DIALOG_TEXT)/*.$(CSV_TYPE))))
 TILESETS = $(notdir $(basename $(wildcard $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE))))
@@ -289,6 +289,10 @@ $(ATTRIBMAP_OUT)/%.$(TMAP_TYPE): $(ATTRIBMAP_GFX)/%.$(TEXT_TYPE) | $(ATTRIBMAP_O
 .SECONDEXPANSION:
 $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 	touch $@
+
+# build/pointer_constants.asm from scripts/res/ptrs.tbl
+$(BUILD)/pointer_constants.asm: $(SCRIPT_RES)/ptrs.tbl
+	awk -F "=0x" '{ print "c"$$1 " EQU " "$$"$$2 > "$@" }' $<
 
 ## Patch Specific
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
