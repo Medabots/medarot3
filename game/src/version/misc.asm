@@ -47,14 +47,14 @@ TextLoadNumberIntoBuffer::
 .loop_digit_2
   ld a, [de]
   inc de
-  add $e0
+  add $30
   ld [hli], a
   dec c
   jr nz, .loop_digit_2
 .return
   ld a, [de]
   inc de
-  add $e0
+  add $30
   ld [hli], a
   ld a, $cb
   ld [hl], a
