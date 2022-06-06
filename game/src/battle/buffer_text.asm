@@ -143,11 +143,26 @@ BattleLoadPartsTable::
 BattleLoadParticipantNameBuf02Cont::
   ld a, d
   cp $d6
-  jr nc, .enemy
+  jr nc, .npc
+  sub $d0 ; d0 is always the player
+  jr z, .player
+  ; check if it's an ally
+  srl a ; 1 or 2
+  ; c648 and c649 indicate if it's an ally
+  ld hl, $c647
+  ld b, $00
+  ld c, a
+  ld a, [hl]
+  and a ; if flag c647 isn't set, it's the player
+  jr z, .player
+  add hl, bc
+  ld a, [hl]
+  jr nz, .npc
+.player
   ld hl, $40 ; Offset to name in participant data structure for player
   add hl, de
   ret
-.enemy
+.npc
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   ld h, a
@@ -238,11 +253,26 @@ BattleStatusLoadPartsTable::
 BattleStatusLoadParticipantNameBuf02Cont::
   ld a, d
   cp $d6
-  jr nc, .enemy
+  jr nc, .npc
+  sub $d0 ; d0 is always the player
+  jr z, .player
+  ; check if it's an ally
+  srl a ; 1 or 2
+  ; c648 and c649 indicate if it's an ally
+  ld hl, $c647
+  ld b, $00
+  ld c, a
+  ld a, [hl]
+  and a ; if flag c647 isn't set, it's the player
+  jr z, .player
+  add hl, bc
+  ld a, [hl]
+  jr nz, .npc
+.player
   ld hl, $40 ; Offset to name in participant data structure for player
   add hl, de
   ret
-.enemy
+.npc
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   ld h, a
