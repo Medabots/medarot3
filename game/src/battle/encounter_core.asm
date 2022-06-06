@@ -182,7 +182,7 @@ BattleEncounterStateMachine::
   dw BattleEncounterResultsDrawPrizeState ; A5
   dw $54F7 ; A6
   dw BattleEncounterPrepareMedarotterOrPartFadeOutState ; A7
-  dw $5811 ; A8
+  dw BattleEncounterResultsPrintLostPartMessageState ; A8
   dw $4FA0 ; A9
   dw $5830 ; AA
   dw $5840 ; AB
@@ -515,7 +515,22 @@ BattleEncounterVictoryResultsDrawingAndMappingState::
   ld [$CF96], a
   jp BattleEncounterIncSubsubstateIndex
 
-SECTION "Encounter State Machine 8", ROMX[$5869], BANK[$05]
+SECTION "Encounter State Machine 8", ROMX[$5811], BANK[$05]
+BattleEncounterResultsPrintLostPartMessageState::
+  call $5dc9
+  ld a, $06
+  rst $8
+  ld hl, cBUF01
+  ld a, [$c601]
+  call WrapEncounterLoadRewardPartTypeText
+  call WrapInitiateMainScript
+  ld a, $00
+  ld [W_ItemActionMessageIndex], a
+  ld a, $99
+  ld [$c496], a
+  jp BattleEncounterIncSubsubstateIndex
+
+SECTION "Encounter State Machine 9", ROMX[$5869], BANK[$05]
 BattleEncounterIncSubsubstateIndex::
   ld hl, W_BattleEncounterSubsubstateIndex
   inc [hl]
