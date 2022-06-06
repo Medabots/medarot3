@@ -2973,24 +2973,24 @@ MapMedarotSelectionScreenBattleSpecificTiles::
   ; Draw Medafighter names
   ld de, $99C2
   ld bc, W_PlayerName
-  ld h, $3D
+  ld h, $3C
   call VWFDrawStringLeftFullAddress8Tiles
   ld a, [$C648] ; index of medafighter
   ld de, $99E2
-  ld h, $45
+  ld h, $44
   call .load_medafighter
   ld a, [$C649] ; index of medafighter
   ld de, $9A02
-  ld h, $4D
+  ld h, $4C
   call .load_medafighter
   ; Draw Medabot names
   ld a, [$C5DB] ; index of medabot
   ld de, $99EB
-  ld h, $55
+  ld h, $24 + 8*1 ; Where Medabot 2 would be drawn
   call .load_medabot
   ld a, [$C5EF] ; index of medabot
   ld de, $9A0B
-  ld h, $5D
+  ld h, $24 + 8*2 ; Where Medabot 3 would be drawn
   call .load_medabot
   pop de
   ret
