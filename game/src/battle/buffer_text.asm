@@ -174,9 +174,9 @@ BattleStatusLoadAttackIntoBuf00::
   ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF00
-  ld bc, $e
+  ld bc, $17
   jp memcpy
 BattleStatusLoadSkillIntoBuf01::
   call $4b3a
@@ -188,21 +188,19 @@ BattleStatusLoadSkillIntoBuf01::
   ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF01
-  ld bc, $6
+  ld bc, $17
   jp memcpy
 BattleStatusLoadPartType::
   push de
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
+  ld bc, BattleStatusLoadPartsTable
+  ld h, $00
+  ld l, a
+  add hl, hl
+  add hl, hl
+  add hl, hl
+  add hl, hl
   add hl, bc
   ld de, cBUF01
 .loop
@@ -215,26 +213,49 @@ BattleStatusLoadPartType::
 .return
   pop de
   ret
-.table
-  db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
-  db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
-  db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
-  db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
 
   padend $4783
 
 SECTION "Load text into buffers for battle messages, bank 0d 2", ROMX[$48b7], BANK[$0D]
 BattleStatusLoadParticipantName::
-  ld hl, $40 ; offset to name in participant structure
-  add hl, de
+  call BattleStatusLoadParticipantNameBuf02Cont
   push de
   ld de, cBUF02
-  ld bc, $9
+  ld bc, $1a ; Take over old BUF01 and BUF00
   call memcpy
   pop de
   ret
 
   padend $48c7
+
+; For more complex logic and extra space
+SECTION "Free space Bank 0D", ROMX[$7930], BANK[$0D]
+BattleStatusLoadPartsTable::
+  db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+  db "right arm",$CB,$00,$00,$00,$00,$00,$00
+  db "left arm",$CB,$00,$00,$00,$00,$00,$00,$00
+  db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
+BattleStatusLoadParticipantNameBuf02Cont::
+  ld a, d
+  cp $d6
+  jr nc, .enemy
+  ld hl, $40 ; Offset to name in participant data structure for player
+  add hl, de
+  ret
+.enemy
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03 ; Use the head part to get the idx for the name
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld hl, W_NewListItemBufferArea
+  ret
 
 SECTION "Load part type for encounter reward", ROMX[$5c17], BANK[$15]
 EncounterLoadRewardPartTypeText::
