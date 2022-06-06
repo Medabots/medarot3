@@ -2968,41 +2968,48 @@ MapMedarotSelectionScreenBattleSpecificTiles::
   or a
   jr z, .jpA
 
-; I have no idea where this is used. Maybe link battles?
-  ld hl, $99C2
+  ; Used in group battles (Medalympics)
+  push de
+  ; Draw Medafighter names
+  ld de, $99C2
   ld bc, W_PlayerName
-  ld a, 8
-  call PutStringFixedLength
-  ld hl, $99E2
-  ld bc, $C5D2
-  ld a, 8
-  call PutStringFixedLength
-  ld hl, $9A02
-  ld bc, $C5E6
-  ld a, 8
-  call PutStringFixedLength
-  ld b, $15
-  ld c, 9
-  ld a, [$C5DB]
+  ld h, $3D
+  call VWFDrawStringLeftFullAddress8Tiles
+  ld a, [$C648] ; index of medafighter
+  ld de, $99E2
+  ld h, $45
+  call .load_medafighter
+  ld a, [$C649] ; index of medafighter
+  ld de, $9A02
+  ld h, $4D
+  call .load_medafighter
+  ; Draw Medabot names
+  ld a, [$C5DB] ; index of medabot
+  ld de, $99EB
+  ld h, $55
+  call .load_medabot
+  ld a, [$C5EF] ; index of medabot
+  ld de, $9A0B
+  ld h, $5D
+  call .load_medabot
+  pop de
+  ret
+.load_medafighter
+  ld bc, $1309
+  jr .load_and_draw
+.load_medabot
+  ld bc, $1509
+.load_and_draw
+  push hl
+  push de
   ld [W_ListItemIndexForBuffering], a
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, $99EB
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  call PutStringFixedLength
-  ld b, $15
-  ld c, 9
-  ld a, [$C5EF]
-  ld [W_ListItemIndexForBuffering], a
-  xor a
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
-  ld hl, $9A0B
-  ld bc, W_ListItemBufferArea
-  ld a, 8
-  jp PutStringFixedLength
+  ld bc, W_NewListItemBufferArea
+  pop de
+  pop hl
+  jp VWFDrawStringLeftFullAddress8Tiles
 
 .jpA
   ld a, [$C646]
@@ -3021,17 +3028,22 @@ MapMedarotSelectionScreenBattleSpecificTiles::
 
 .onlyOneMedarot
   ld hl, $99E2
-  ld b, 8
-  call MedarotsMapDashes
+  call .map_dashes
+
   ld hl, $99EB
-  ld b, 8
-  call MedarotsMapDashes
+  call .map_dashes
+  
   ld hl, $9A02
-  ld b, 8
-  call MedarotsMapDashes
+  call .map_dashes
+
   ld hl, $9A0B
+  jr .map_dashes
+
+.map_dashes
   ld b, 8
   jp MedarotsMapDashes
+
+  padend $5c58 ; Probably unnecessary but just to be safe
 
 MapStarForBattleMedarotSelectionScreen::
   ld a, [$C595]
