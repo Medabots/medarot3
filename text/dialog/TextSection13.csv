@@ -28,13 +28,13 @@
 026,0x1e8034,"<@LL,00,00>カギが かかってる","<@LL,00,00>It's locked."
 027,0x1e8036,"<@RL,14,00>となリの じゅうにんは<CD>夜中に 高わらいするわ<CF><D1>したの じゅうにんは<CD>とつぜん あばれだすわで<CF><D1>おちついて しごともできない<CF><D1>...そういえば<CD>なんなんだ きみは!!<CF><D1>かってに ヘやに はいってきて!<CD>セレクト威に つうほうするぞ!","<@RL,14,00>The person who lives next to<D3>me roars with laughter in the<CF><D1>middle of the night...<CF><D1>the person below me has<D3>sudden, violent outbursts...<CF><D1>I can't even relax<D3>at work...<CF><D1>...And come to think of it, what<D3>are you doing here?!<CF><D1>You came into my room without<D3>permission! I'm going to report<CF><D1>this to Select Corp!"
 028,0x1e8038,"<@RL,28,00>この おくには<CD>いっぱんじんは 入れないであリます!","<@RL,28,00>The general public can't enter<D3>the back rooms!"
-029,0x1e803a,"<@RL,28,00>メダロットに いじょうが<CD>あったときは となリにある<CF><D1>きゅうきゅうセンタ-に<CD>行くであリます!",
-030,0x1e803c,"<@RL,28,00>自分は ここを 1歩も<CD>はなれられないで あリます!",
+029,0x1e803a,"<@RL,28,00>メダロットに いじょうが<CD>あったときは となリにある<CF><D1>きゅうきゅうセンタ-に<CD>行くであリます!","<@RL,28,00>If something happens to your<D3>Medarot, take it to the<CF><D1>first-aid center located next<D3>door!"
+030,0x1e803c,"<@RL,28,00>自分は ここを 1歩も<CD>はなれられないで あリます!","<@RL,28,00>I can't move even a single<D3>step from here!"
 031,0x1e803e,"<@RL,28,00>ロボロボ団の ひがいが あリましたら<CD>セレクト威に つうほうするであリます","<@RL,28,00>If the Roborobo Group is<D3>causing harm, please report it<CF><D1>to the Select Corp!"
 032,0x1e8040,"<@RL,28,00>ロボトルに はげんでおリますか?<CF><D1>さあ わたくしと<CD>ロボトルで あリます!<CF><D1><@LL,00,07>ええっ!?","<@RL,28,00>Are you working hard in your<D3>robattles?<CF><D1>Well then, you shall have a<D3>robattle with me!<CF><D1><@LL,00,07>Huh!?"
 033,0x1e8042,"<@RL,28,01>たのしかったであリます!<CD>また あそんで ほしいであリます!","<@RL,28,01>That was fun! I'd like you to<D3>battle me again!"
-034,0x1e8044,"<@RL,34,00>メダロットの ちょうしは<CD>いかがですか?",
-035,0x1e8046,"<@RL,34,00>まちなかでは しゃリょう型の<CD>メダロットが はやくはしれますよ♥",
+034,0x1e8044,"<@RL,34,00>メダロットの ちょうしは<CD>いかがですか?","<@RL,34,00>How is your Medarot holding<D3>up?"
+035,0x1e8046,"<@RL,34,00>まちなかでは しゃリょう型の<CD>メダロットが はやくはしれますよ♥","<@RL,34,00>You can find vehicle-type<D3>Medarots all around town. ♥"
 036,0x1e8048,"<@RL,13,00>どうだい ぼくの メダロット<CD>かっこいいだろう?<CF><D1><@LL,00,00>ねえ こっちくらい むいてよ...","<@RL,13,00>How do you like my Medabots?<D3>Aren't they cool?<CF><D1><@LL,00,00>Hey, look this way at least..."
 037,0x1e804a,"<@RL,1B,00>ねえ 貝て 貝て!<CF><D1>わたしの メダロット<CD>かわいいでしょ?<CF><D1><@LL,00,00>ぼくの 話なんか きいてないや...","<@RL,1B,00>Hey, look, look!<CF><D1>Aren't my Medabots cute?<CF><D1><@LL,00,00>They aren't listening to<D3>anything I'm saying..."
 038,0x1e804c,"<@LL,00,04>ちゅうけん ボナパルトのぞうだ<CD>ボナパルトって犬は<CF><D1>ミニチュアブルテリアなんだってね<CF><D1>フォックステリアの ソルティとは<CD>しんせきみたいな ものかな?","<@LL,00,04>It's a statue of the faithful<D3>dog, Bonaparte.<CF><D1>He's a miniature bull terrier.<CF><D1>Salty's a fox terrier. I<D3>wonder if they're related?"

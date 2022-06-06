@@ -68,7 +68,7 @@
 066,0x1f0084,"<@RL,13,00>ここは メダロッタ-あこがれの店<CD>「メダロッタ-ズ」!!<CF><D1>メダロットグッズが まんさい!<CD>でも メダルは 売ってない!<CF><D1>く---...ニクイね!","<@RL,13,00>This is the shop for those who<D3>strive to train Medabots:<CF><D1><f02>Medabotters<f00>!!<CF><D1>They're fully stocked with<D3>Medabot goods! But they don't<CF><D1>sell medals!<CF><D1>Ku... so awesome!"
 067,0x1f0086,"<@RL,15,00>おっきいビルの そうじは <CD>ほねが おれるよ","<@RL,15,00>Cleaning this big building is<D3>a lot of work!"
 068,0x1f0088,"<@RL,15,00>い いらっしゃいませ!<CD>何の ご用でしょうか...<CF><D1>まったく...<CF><D1>うけつけの 女の子が いなくなって<CD>こまっちゃうわよ<CF><D1>それに その子 よこを むいて<CD>話すから 話しづらいんだよ",
-069,0x1f008a,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか<CF><D1>あら あなたは♥<CD>この前は あリがとうね",
+069,0x1f008a,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか<CF><D1>あら あなたは♥<CD>この前は あリがとうね","<@RL,1D,00>Welcome, valued customer!<D3>What would you like?<CF><D1>Oh my, it's you ♥<D3>Thank you for earlier!"
 070,0x1f008c,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか","<@RL,1D,00>Welcome, valued customer!<D3>What would you like?"
 071,0x1f008e,"<@RL,1D,00>どうしたの?<CF><D1>おねえさんの かおに<CD>何か ついてるの?<CF><D1><@LL,00,00>おねえさん ここの ビルの人?<CF><D1><@RL,1D,00>そうよ それが どうかしたの?<CF><D1><@LL,00,00>よこを むいて話す人を<CD>さがしている おばさんが...",
 072,0x1f0090,"<@RL,1D,00>いっけない!!<CD>わたし また やっちゃったんだわ",

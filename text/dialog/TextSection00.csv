@@ -40,7 +40,7 @@
 038,0x9004c,<&BUF02>は<CD>たんぱつクリアトラップに かかった!<S46><*04>,<&BUF02> was caught in a<D3>Single-engine Clear!<S46><*04>
 039,0x9004e,<&BUF02>が えんごに入った!<S46><*04>,<&BUF02> came in to shield!<S46><*04>
 040,0x90050,<&BUF02>の<CD><&BUF01>攻撃 <&BUF00>!<*04>,<&BUF02> used <D3><f02><&BUF01><f00>! <f02><&BUF00><f00>!<*04>
-041,0x90052,<&BUF02>の<CD><&BUF01>行動 <&BUF00>!<*04>,<&BUF02> actioned <&BUF01>!<D3><&BUF00>!<*04>
+041,0x90052,<&BUF02>の<CD><&BUF01>行動 <&BUF00>!<*04>,<&BUF02> actioned<D3><f02><&BUF01><f00>! <f02><&BUF00><f00>!<*04>
 042,0x90054,かんぜんむこうに しっぱいした!<*04>,Nullification failed! <*04>
 043,0x90056,ダメ-ジげんしょうに しっぱいした!<*04>,Damage Reduction failed!<*04>
 044,0x90058,はんしゃに しっぱいした!<*04>,Reflect failed!<*04>
@@ -154,7 +154,7 @@
 152,0x90130,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*02>,<&BUF03> got the <&BUF01> part<D3><&BUF04>!<*02>
 153,0x90132,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*02>,<&BUF03>'s <&BUF01> part<D3><&BUF04> was taken!<*02>
 154,0x90134,ロボロボメダルを 手に入れた!<*02>,Rubberobo medal acquired!<*02>
-155,0x90136,<&BUF03>の メダルは<CD><&BUF00>の けいけんちを手に入れた!<*02>,<&BUF03>'s medals received <&BUF00><D3>experience!<*02>
+155,0x90136,<&BUF03>の メダルは<CD><&BUF00>の けいけんちを手に入れた!<*02>,<&BUF03>'s medals received<D3><&BUF00> experience!<*02>
 156,0x90138,あっ......!<CD>「<&BUF05>」メダルが...!<*03>,Ah...!<D3>The '<&BUF05>' Medal...! <*03>
 157,0x9013a,新たな すがたに ヘんかした!<*03>,It morphed into a new form!<*03>
 158,0x9013c,<&BUF03>は<CD>ロボトルにまけてしまった!<*02>,<&BUF03> has lost the<D3>robattle!<*02>

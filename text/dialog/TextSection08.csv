@@ -48,10 +48,10 @@
 046,0x11c05c,"<@LL,00,03>もちろん ひけない...",
 047,0x11c05e,「ドレミから はじめよう」,"""Starting From Do-Re-Mi"""
 048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","""Ending with La-Si-Do""<CF><@LL,00,05>.......?"
-049,0x11c062,「セレクト威 本部」,Select Corp Headquarters
+049,0x11c062,「セレクト威 本部」,Select Corp<D3>Headquarters
 050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
-051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,
-052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!",
+051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always<D3>wanted, mwah!"
+052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!","<@LL,00,04>This is the place of a<D3>Medarotter's dreams:<CF><D1><f02>Medarotters<f00>!"
 053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>Just as expected at<D3>Medabotters! There are tons<CF>and tons of products!"
 054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medabot<D3>goods lined up."
 055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,

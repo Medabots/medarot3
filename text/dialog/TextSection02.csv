@@ -50,7 +50,7 @@
 048,0x9407c,<SFF>「ビ-ハイブ」<CD>月面の町 じゅうリょくは 6分の1<*02>,<SFF><f02>Beehive<f00><f01> - A town on the moon<D3>with a sixth the gravity of Earth.<f00><*02>
 049,0x9407e,<SFF>「ランデブ-」<CD>宇宙ステ-ションだよ<*02>,<SFF><f02>Rendezvous<f00><f01> - A space station.<f00><*02>
 050,0x94080,<SFF>「ちきゅう」<CD>ぼくたちの すむ 小さな 青い星<*02>,<SFF><f02>Earth<f00><f01> - Our small blue planet.<f00><*02>
-051,0x94082,ゲ-ムの デ-タを 全て けします<CD>よろしいですか?<*04>,This will delete all your game data.<D3>Are you sure?<*04>
+051,0x94082,ゲ-ムの デ-タを 全て けします<CD>よろしいですか?<*04>,This will delete all your data.<D3>Are you sure?<*04>
 052,0x94092,もういちど はじめから<CD>ゲ-ムを プレイしてください<*02>,Play the game from the start<D3>once more.<*02>
 053,0x94094,まちがって けさないように<CD>ちゅういしてください<*02>,Be careful not to accidentally<D3>delete your save data.<*02>
 054,0x94096,<SFF>全国の ロボトルファンのみなさん<CD>おまたせ いたしました!<*04>,"<SFF>Fans from around the<D3>country, sorry for the wait!<*04>"
