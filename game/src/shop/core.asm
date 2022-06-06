@@ -511,7 +511,7 @@ ShopMainMenuInputHandlerState::
   ld a, $27
   call WrapIsItemInInventory
   cp 1
-  ;jr z, .passwordMessageB
+  jr z, .passwordMessageB
 
 .passwordNotSelected
   ld a, 1
