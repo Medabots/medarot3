@@ -3,13 +3,13 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
-macro PartTypeTable
+PartTypeTable: MACRO
 .table
   db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
   db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
   db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
   db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
-endm
+  ENDM
 
 SECTION "Load text into buffers for battle messages 0B", ROMX[$45DD], BANK[$0B]
 BattleAllyStatusLoadPartTypeTextBuf00::
