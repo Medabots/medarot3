@@ -12,9 +12,9 @@ SECTION "Load numbers into buffer for text", ROMX[$5697], BANK[$09]
 ENDC
 TextLoadListTextIntoBuffer::
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF06
-  ld bc, $0010
+  ld bc, $0011 ; Load $11 instead of $10 characters, be careful that we don't override something
   call memcpy
   ret
 TextLoadNumberIntoBuffer::
