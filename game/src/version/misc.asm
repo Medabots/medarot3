@@ -5,11 +5,18 @@ INCLUDE "game/src/common/macros.asm"
 INCLUDE "build/pointer_constants.asm"
 
 IF !STRCMP("{GAMEVERSION}", "kabuto")
-SECTION "Load numbers into buffer for text", ROMX[$56a8], BANK[$09]
+SECTION "Load numbers into buffer for text", ROMX[$5698], BANK[$09]
 ENDC
 IF !STRCMP("{GAMEVERSION}", "kuwagata")
-SECTION "Load numbers into buffer for text", ROMX[$56a7], BANK[$09]
+SECTION "Load numbers into buffer for text", ROMX[$5697], BANK[$09]
 ENDC
+TextLoadListTextIntoBuffer::
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF06
+  ld bc, $0010
+  call memcpy
+  ret
 TextLoadNumberIntoBuffer::
   ld bc, $3e8
   call DigitCalculationLoop
