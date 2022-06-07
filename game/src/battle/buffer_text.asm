@@ -43,10 +43,9 @@ BattleAllyStatusLoadPartTypeTextBuf00::
 SECTION "Load text into buffers for battle messages 2 0B", ROMX[$4666], BANK[$0B]
 BattleAllyStatusLoadTextIntoBuf01::
   call $4b56
-  ld hl, $40
-  add hl, de
+  call BattleAllyStatusLoadParticipantNameBuf01Cont
   ld de, cBUF01
-  ld bc, $9
+  ld bc, $17
   call memcpy
   call $4b56
   ld hl, $69
@@ -59,6 +58,8 @@ BattleAllyStatusLoadTextIntoBuf01::
   ld a, $4a
   ld [$c481], a
   ret
+
+  padend $468d
 
 BattleAllyStatusUnknownFunction::
   ld bc, $16
@@ -107,9 +108,46 @@ BattleAllyStatusLoadPartType::
 
   padend $50dc
 
-SECTION "Free space Bank 0B", ROMX[$7cef], BANK[$0C]
+SECTION "Free space Bank 0B", ROMX[$7cef], BANK[$0B]
 BattleAllyStatusPartsTable::
   PartTypeTable
+BattleAllyStatusLoadParticipantNameBuf01Cont::
+  ld a, d
+  cp $d6
+  jr nc, .npc
+  sub $d0 ; d0 is always the player
+  jr z, .player
+  ; check if it's an ally
+  srl a ; 1 or 2
+  ; c648 and c649 indicate if it's an ally
+  ld hl, $c647
+  ld b, $00
+  ld c, a
+  ld a, [hl]
+  and a ; if flag c647 isn't set, it's the player
+  jr z, .player
+  add hl, bc
+  ld a, [hl]
+  jr nz, .npc
+.player
+  ld hl, $40 ; Offset to name in participant data structure for player
+  add hl, de
+  ret
+.npc
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03 ; Use the head part to get the idx for the name
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld hl, W_NewListItemBufferArea
+  ret
+
 
 SECTION "Load text into buffers for battle messages 0C", ROMX[$516e], BANK[$0C]
 BattleLoadTextBuf00::
