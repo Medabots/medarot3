@@ -14,10 +14,10 @@
 012,0x1e8018,"<@RL,1E,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,1E,00>Hello, valued customer! Welcome<D3>to Metabotters! "
 013,0x1e801a,"<@RL,1E,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,1E,00>Hello, valued customer! Welcome<D3>to Metabotters! "
 014,0x1e801c,"<@LL,00,04>いろんな メダロットが ならんでいる<CD>貝たことない メダロットまであるぞ","<@LL,00,04>There are different types of<D3>Medabots lined up here. Even<CF><D1>ones I've never seen before!"
-015,0x1e801e,"<@RL,1D,00>いらっしゃいませ<CF><D1>こちらでは メダリンクの<CD>うけつけを おこなっています<CF><D1>メダロッタ-とうろくカ-ドは<CD>おもちですか?<CF><D1>はい<CD>かくにんしました<CF><D1>それでは メダリンクについて<CD>ごせつめい いたします",
-016,0x1e8020,"<@RL,1D,00>メダリンクの ごリよう<CD>あリがとうございます<CF><D1>メダリンクの せつめいを<CD>しましょうか?<*04>",
-017,0x1e8022,"<@RL,1D,00>またの ごリよう<CD>おまちしておリます",
-018,0x1e8024,"<@RL,1D,00>メダリンクの せつぞくは<CD>下の4だいの マシンで 行います<CF><D1>左上のマシンから はじめて<CD>メダリンクで かちぬくと<CF><D1>つぎの メダリンクヘの<CD>ランクアップが かのうになリます<CF><D1>ランクアップしたら していされた<CD>マシンにせつぞくしてください<CF><D1>みごと トップランカ-と なった<CD>方には けいひんを さしあげます!<CF><D1>みなさん がんばってください<CF><D1><@LL,00,04>はいっ",
+015,0x1e801e,"<@RL,1D,00>いらっしゃいませ<CF><D1>こちらでは メダリンクの<CD>うけつけを おこなっています<CF><D1>メダロッタ-とうろくカ-ドは<CD>おもちですか?<CF><D1>はい<CD>かくにんしました<CF><D1>それでは メダリンクについて<CD>ごせつめい いたします","<@RL,1D,00>Welcome valued customer.<CF><D1>This is the information desk,<D3>where you can register for<CF><D1>MedaLink.<CF><D1>Do you have a Medarotter<D3>Registration Card?<CF><D1>Okay, I've confirmed that you<D3>do.<CF><D1>Well then, I shall now explain<D3>MedaLink to you."
+016,0x1e8020,"<@RL,1D,00>メダリンクの ごリよう<CD>あリがとうございます<CF><D1>メダリンクの せつめいを<CD>しましょうか?<*04>","<@RL,1D,00>Thank you for using MedaLink!<CF><D1>Would you like an explanation?<*04>"
+017,0x1e8022,"<@RL,1D,00>またの ごリよう<CD>おまちしておリます","<@RL,1D,00>I look forward to seeing<D3>you again."
+018,0x1e8024,"<@RL,1D,00>メダリンクの せつぞくは<CD>下の4だいの マシンで 行います<CF><D1>左上のマシンから はじめて<CD>メダリンクで かちぬくと<CF><D1>つぎの メダリンクヘの<CD>ランクアップが かのうになリます<CF><D1>ランクアップしたら していされた<CD>マシンにせつぞくしてください<CF><D1>みごと トップランカ-と なった<CD>方には けいひんを さしあげます!<CF><D1>みなさん がんばってください<CF><D1><@LL,00,04>はいっ","<@RL,1D,00>MedaLink connections are<D3>made using the machines below.<CF><D1>Starting with the upper-left<D3>machine, if you win your<CF><D1>MedaLink, then you can move<D3>up to the next MedaLink level.<CF><D1>Once you can move on, please<D3>connect to the designated<CF><D1>machine.<CF><D1>The ones who reach the<D3>highest level will get a gift!<CF><D1>Do your best!<CF><D1><@LL,00,04>Yes!"
 019,0x1e8026,"<@RL,1D,00>おめでとう ございます!<CD>みごと メダリンクだい1いに<CF><D1>なられた あなたに けいひんを<CD>さしあげます!",
 020,0x1e8028,"<@RL,1D,00>それでは このあとは ミニゲ-ムを<CD>お楽しみください<CF><D1>ごリよう あリがとうございました",
 021,0x1e802a,"<@RL,1D,00>メダリンク ごリよう<CD>あリがとうございました",

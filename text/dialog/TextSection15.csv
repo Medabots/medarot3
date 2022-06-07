@@ -67,12 +67,12 @@
 065,0x1f0082,"<@RL,28,00>ここは「きゅうきゅうセンタ-」で<CD>あリます!","<@RL,28,00>This is the <f02>first aid center<f00>!"
 066,0x1f0084,"<@RL,13,00>ここは メダロッタ-あこがれの店<CD>「メダロッタ-ズ」!!<CF><D1>メダロットグッズが まんさい!<CD>でも メダルは 売ってない!<CF><D1>く---...ニクイね!","<@RL,13,00>This is the shop for those who<D3>strive to train Medabots:<CF><D1><f02>Medabotters<f00>!!<CF><D1>They're fully stocked with<D3>Medabot goods! But they don't<CF><D1>sell medals!<CF><D1>Ku... so awesome!"
 067,0x1f0086,"<@RL,15,00>おっきいビルの そうじは <CD>ほねが おれるよ","<@RL,15,00>Cleaning this big building is<D3>a lot of work!"
-068,0x1f0088,"<@RL,15,00>い いらっしゃいませ!<CD>何の ご用でしょうか...<CF><D1>まったく...<CF><D1>うけつけの 女の子が いなくなって<CD>こまっちゃうわよ<CF><D1>それに その子 よこを むいて<CD>話すから 話しづらいんだよ",
+068,0x1f0088,"<@RL,15,00>い いらっしゃいませ!<CD>何の ご用でしょうか...<CF><D1>まったく...<CF><D1>うけつけの 女の子が いなくなって<CD>こまっちゃうわよ<CF><D1>それに その子 よこを むいて<CD>話すから 話しづらいんだよ","<@RL,15,00>W-welcome valued customer!<D3>What would you like...?<CF><D1>Geez...<CF><D1>That receptionist that<D3>disappeared is gonna be<CF><D1>in trouble. And to top it off.<D3>she always looks to the side<CF><D1>when talking, it makes<D3>talking to her difficult."
 069,0x1f008a,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか<CF><D1>あら あなたは♥<CD>この前は あリがとうね","<@RL,1D,00>Welcome, valued customer!<D3>What would you like?<CF><D1>Oh my, it's you ♥<D3>Thank you for earlier!"
 070,0x1f008c,"<@RL,1D,00>いらっしゃいませ<CD>何の ご用でしょうか","<@RL,1D,00>Welcome, valued customer!<D3>What would you like?"
-071,0x1f008e,"<@RL,1D,00>どうしたの?<CF><D1>おねえさんの かおに<CD>何か ついてるの?<CF><D1><@LL,00,00>おねえさん ここの ビルの人?<CF><D1><@RL,1D,00>そうよ それが どうかしたの?<CF><D1><@LL,00,00>よこを むいて話す人を<CD>さがしている おばさんが...",
-072,0x1f0090,"<@RL,1D,00>いっけない!!<CD>わたし また やっちゃったんだわ",
-073,0x1f0092,"<@RL,1D,00>おしえてくれて あリがとうね<CD>これは わたしからの 気持ち",
+071,0x1f008e,"<@RL,1D,00>どうしたの?<CF><D1>おねえさんの かおに<CD>何か ついてるの?<CF><D1><@LL,00,00>おねえさん ここの ビルの人?<CF><D1><@RL,1D,00>そうよ それが どうかしたの?<CF><D1><@LL,00,00>よこを むいて話す人を<CD>さがしている おばさんが...","<@RL,1D,00>What's wrong?<CF><D1>Is there something on<D3>my face?<CF><D1><@LL,00,00>Do you happen to work<D3>at the high-rise?<CF><D1><@RL,1D,00>I do, what about it?<CF><D1><@LL,00,00>A lady was looking for someone<D3>that looks to the side when<CF><D1>talking..."
+072,0x1f0090,"<@RL,1D,00>いっけない!!<CD>わたし また やっちゃったんだわ","<@RL,1D,00>Oh snap!!<D3>I did it again."
+073,0x1f0092,"<@RL,1D,00>おしえてくれて あリがとうね<CD>これは わたしからの 気持ち","<@RL,1D,00>Thanks for letting me know.<D3>You can have this in return."
 074,0x1f0094,"<@RL,14,00>おさけは ハタチに なってからだよ",
 075,0x1f0096,"<@RL,14,00>あっ キミ もしかして<CD>メダリンピックしゅうしょうの<CF><D1><&BUF0A>かっ!?<CF><D1>みんな!<CD>かわいがってやリな!!<CF><D1><@LL,00,07>えぇっ!?",
 076,0x1f0098,"<@RL,14,00>たのしんでるかぃっ!?",
@@ -81,7 +81,7 @@
 079,0x1f009e,"<@RL,1F,00>あたしの むねに とびこんで来て♥",
 080,0x1f00a0,"<@RL,1F,00>ぼうやぁ おねえさん<CD>パ-ツが だ-いすきなの <CF><D1>あたしに くれなぁい?",
 081,0x1f00a2,"<@RL,13,00>ここは どこ?","<@RL,13,00>Where am I?"
-082,0x1f00a4,"<@RL,13,00>ここは「メダロポリス2」!<CD>つまリ メダロポリスの左下!<CF><D1>メダロえきからは ひこう場とかにも<CD>行けるんだぜ!",
+082,0x1f00a4,"<@RL,13,00>ここは「メダロポリス2」!<CD>つまリ メダロポリスの左下!<CF><D1>メダロえきからは ひこう場とかにも<CD>行けるんだぜ!","<@RL,13,00>This is 'Medaropolis 2,' we're<D3>the bottom left section of<CF><D1>Medaropolis. From Medaro<D3>Station, you can reache the<CF><D1>airport and other places too!"
 083,0x1f00a6,"<@RL,13,00>でっかいデパ-トだよなぁ<CD>こんなに でっかいと...<CF><D1>入リ口まで 歩くのが 大変だ!","<@RL,13,00>The department store is huge,<D3>isn't it? A store as big as<CF><D1>This one... Just walking to<D3>the entrance is hard!"
 084,0x1f00a8,"<@RL,1D,00>メダロデパ-トヘ ようこそ<CF><D1>...もうしわけございませんが<CD>先日の でんぱいじょうによリ<CF><D1>いちじ パ-ツはんばいを<CD>貝合わせて おリます<CF><D1><@LL,00,05>でんぱいじょうの じけんの<CD>えいきょうが ここにも...","<@RL,1D,00>Welcome to Medaro<D3>Department Store!<CF><D1>...My apologies, but because of<D3>the strange radio wave the<CF><D1>other day,<CF><D1>We have decided to postpone<D3>part sales for the time being.<CF><D1><@LL,00,05>The strange radio wave<D3>affected this place, too..."
 085,0x1f00aa,"<@RL,1D,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます","<@RL,1D,00>Welcome to the Medaro<D3>Department Store!<CF><D1>We deal in Medabot parts here."
@@ -116,12 +116,12 @@
 114,0x1f00e4,"<@RL,1B,00>すっぱさが たまんなぁい<CD>この アイスクリ-ム♥",
 115,0x1f00e6,"<@RL,1B,00>すごく あま-い<CD>この アイスクリ-ム♥",
 116,0x1f00e8,"<@RL,14,00>Sくんは しごとを さぼって<CD>どこに 行ったんだぁ!","<@RL,14,00>Where did S go after they<D3>skipped work!?"
-117,0x1f00ea,"<@RL,14,00>いや すまん<CD>とリみだしてしまった<CF><D1>まったく デパ-トで アイスでも<CD>食ベてるんじゃないだろうな",
+117,0x1f00ea,"<@RL,14,00>いや すまん<CD>とリみだしてしまった<CF><D1>まったく デパ-トで アイスでも<CD>食ベてるんじゃないだろうな","<@RL,14,00>Oh, sorry,<D3>I lost myself a bit there.<CF><D1>Really, that guy had better<D3>not be eating ice cream at<CF><D1>the department store."
 118,0x1f00ec,"<@RL,14,00>どれに しようかな<CD>かみさまの 言うとおリ...","<@RL,14,00>Eenie, meenie, minie, moe..."
-119,0x1f00ee,"<@RL,14,00>このあとの セリフって<CD>うまれた ちほうに よって<CF><D1>ぜんぜんちがうんだよね<CD>きみの ばあいは なんていう?",
+119,0x1f00ee,"<@RL,14,00>このあとの セリフって<CD>うまれた ちほうに よって<CF><D1>ぜんぜんちがうんだよね<CD>きみの ばあいは なんていう?","<@RL,14,00>The part after that changes<D3>based on where you grew up,<CF><D1>how would you continue it?"
 120,0x1f00f0,"<@LL,00,00>ここの ビルって だれもいないなぁ<CD>ちょっと きけんじゃない?","<@LL,00,00>There's no one in this building...<D3>Isn't that a little dangerous?"
-121,0x1f00f2,"<@RL,14,00>うい-っ<CD>もう のめましぇ-んっ!",
-122,0x1f00f4,"<@LL,00,07>うわっ ジュ-スくさいっ!",
+121,0x1f00f2,"<@RL,14,00>うい-っ<CD>もう のめましぇ-んっ!","<@RL,14,00>Urk,<D3>I can't drink anymore!"
+122,0x1f00f4,"<@LL,00,07>うわっ ジュ-スくさいっ!","<@LL,00,07>Woah, it reeks of juice!"
 123,0x1f00f6,"<@RL,1D,00>ふんふ-んっ♪<CD>ふんふふ-ん♪",
 124,0x1f00f8,"<@RL,1D,00>きゃっ!!<CD>おどかさないでちょうだい",
 125,0x1f00fa,"<@RL,30,00>メダロットの アニメは<CD>ギャグの きわどさが いいよな",
@@ -215,36 +215,36 @@
 213,0x1f01aa,"<@RL,13,00>どっちが かっても いいけど<CD>おもしろい ロボトルしろよ!","<@RL,13,00>It doesn't matter who wins.<D3>Just have an interesting<CF><D1>battle!"
 214,0x1f01ac,"<@RL,13,00>なかなか もえる<CD>ロボトルだったぜ!",
 215,0x1f01ae,"<@RL,13,00>エッ!? お前が<CD>メダリンピック ゆうしょう選手!?<CF><D1>うっそみて---っ!!",
-216,0x1f01b0,"<@RL,13,00>いいなぁ あの おねえさん<CF><D1>ぼくの うちにも<CD>あんな おねえさんが いたら...",
+216,0x1f01b0,"<@RL,13,00>いいなぁ あの おねえさん<CF><D1>ぼくの うちにも<CD>あんな おねえさんが いたら...","<@RL,13,00>What a lovely lady.<CF><D1>I wish she were my sister..."
 217,0x1f01b2,"<@RL,13,00>いいなぁ このパ-ツ<CF><D1>ぼくのチ-ムにも<CD>こんな パ-ツが あったら...","<@RL,13,00>These parts are so awesome...<CF><D1>I could make a whole other<D3>team if I had these parts..."
 218,0x1f01b4,"<@LL,00,00>メダロッタ-ズ きねんメダルだ<CD>おみやげに けっこう いいよね","<@LL,00,00>It's a Medabotters<D3>commemoration medal. It<CF><D1>would make a fantastic<D3>souvenier!"
 219,0x1f01b6,コチラノ メダリンクデノ<CD>アナタノ ランクノ ウケツケハ<CF><D1>シュウリョウシマシタ<CD>ツギノ ランクノ メダリンクカラ<CF><D1>アクセスシテクダサイ,
 220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,
-221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-222,0x1f01bc,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-223,0x1f01be,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-224,0x1f01c0,コチラノ メダリンクデハ<CD>ランク35カラ ランク31マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-225,0x1f01c2,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-226,0x1f01c4,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-227,0x1f01c6,コチラノ メダリンクデハ<CD>ランク30カラ ランク26マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-228,0x1f01c8,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-229,0x1f01ca,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-230,0x1f01cc,コチラノ メダリンクデハ<CD>ランク25カラ ランク21マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-231,0x1f01ce,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-232,0x1f01d0,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-233,0x1f01d2,コチラノ メダリンクデハ<CD>ランク20カラ ランク16マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-234,0x1f01d4,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-235,0x1f01d6,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-236,0x1f01d8,コチラノ メダリンクデハ<CD>ランク15カラ ランク11マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-237,0x1f01da,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-238,0x1f01dc,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-239,0x1f01de,コチラノ メダリンクデハ<CD>ランク10カラ ランク6マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-240,0x1f01e0,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-241,0x1f01e2,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
-242,0x1f01e4,コチラノ メダリンクデハ<CD>ランク5カラ ランク1マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,
-243,0x1f01e6,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,
-244,0x1f01e8,オメデトウゴザイマス<CF><D1>ゲンザイ アナタハ サイコウノ<CD>ランカ-ト ナリマシタ!<CF><D1>カウンタ-デ ケイヒンヲ<CD>オウケトリ クダサイ<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,
-245,0x1f01ea,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,
+221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 40 to rank 36.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+222,0x1f01bc,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+223,0x1f01be,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+224,0x1f01c0,コチラノ メダリンクデハ<CD>ランク35カラ ランク31マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 35 to rank 31.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+225,0x1f01c2,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+226,0x1f01c4,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+227,0x1f01c6,コチラノ メダリンクデハ<CD>ランク30カラ ランク26マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 30 to rank 26.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+228,0x1f01c8,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+229,0x1f01ca,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+230,0x1f01cc,コチラノ メダリンクデハ<CD>ランク25カラ ランク21マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 25 to rank 21.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+231,0x1f01ce,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+232,0x1f01d0,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+233,0x1f01d2,コチラノ メダリンクデハ<CD>ランク20カラ ランク16マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 20 to rank 16.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+234,0x1f01d4,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+235,0x1f01d6,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+236,0x1f01d8,コチラノ メダリンクデハ<CD>ランク15カラ ランク11マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 15 to rank 11.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+237,0x1f01da,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+238,0x1f01dc,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+239,0x1f01de,コチラノ メダリンクデハ<CD>ランク10カラ ランク6マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 10 to rank 6.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+240,0x1f01e0,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+241,0x1f01e2,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
+242,0x1f01e4,コチラノ メダリンクデハ<CD>ランク5カラ ランク1マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This MedaLink is for from<D3>rank 5 to rank 1.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
+243,0x1f01e6,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
+244,0x1f01e8,オメデトウゴザイマス<CF><D1>ゲンザイ アナタハ サイコウノ<CD>ランカ-ト ナリマシタ!<CF><D1>カウンタ-デ ケイヒンヲ<CD>オウケトリ クダサイ<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,Congratulations!<CF><D1>You have become the highest<D3>ranked player!<CF><D1>Please pick up your prize at<D3>the counter.<CF><D1>Thank you very much for<D3>visiting.
+245,0x1f01ea,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"
 246,0x1f01ec,"<@LL,00,00>「ジャンプでゴ-ル!」の ゲ-ムだ<CD>1回100¥だけど やってみる?<*04>",
 247,0x1f01ee,"<@LL,00,03>まけちゃった...",
 248,0x1f01f0,"<@LL,00,05>お金が ないや...",
@@ -253,10 +253,10 @@
 251,0x1f01f6,"<@LL,00,03>まけちゃった...",
 252,0x1f01f8,"<@LL,00,05>お金が ないや...",
 253,0x1f01fa,"<@LL,00,00>やっぱリ いいや",
-254,0x1f01fc,"<@RL,1B,00>ここで コウジくんを<CD>貝かけることが あるんだけど<CF><D1>今日は 来ないのかなぁ?",
-255,0x1f01fe,"<@RL,13,00>こっちの メダリンクは<CD>じょういランクの たんまつなんだ<CF><D1>よこから 貝てるだけで<CD>すごい ロボトルだって わかるよ",
-256,0x1f0200,"<@RL,13,00>メダリンクで <CD>勝てなくなっちゃったから<CF><D1>あいてに あわせて<CD>チ-ムを 作リなおさなくちゃ",
-257,0x1f0202,"<@RL,13,00>ええいっ!<CD>ステ-ジ3から 先にすすめないっ!",
+254,0x1f01fc,"<@RL,1B,00>ここで コウジくんを<CD>貝かけることが あるんだけど<CF><D1>今日は 来ないのかなぁ?","<@RL,1B,00>Sometimes, you get to see Koji<D3>here.<CF><D1>Will he be here today, I<D3>wonder?"
+255,0x1f01fe,"<@RL,13,00>こっちの メダリンクは<CD>じょういランクの たんまつなんだ<CF><D1>よこから 貝てるだけで<CD>すごい ロボトルだって わかるよ","<@RL,13,00>This MedaLink is high-level<D3>terminal, even I can tell the<CF><D1>robattles are amazing!"
+256,0x1f0200,"<@RL,13,00>メダリンクで <CD>勝てなくなっちゃったから<CF><D1>あいてに あわせて<CD>チ-ムを 作リなおさなくちゃ","<@RL,13,00>I'm not able to win anymore<D3>MedaLinks, so I need to<CF><D1>rebuild my team to be a better<D3>match against my opponents."
+257,0x1f0202,"<@RL,13,00>ええいっ!<CD>ステ-ジ3から 先にすすめないっ!","<@RL,13,00>Come on!<D3>I can't get past stage 3!"
 258,0x1f0204,"<@RL,1D,00>いらっしゃい <&BUF0A>くん<CD>コウジと なかよく してやってね",
 259,0x1f0206,"<@RL,14,00>コウジは ああ貝えて けっこう<CD>人を貝る目がある!<CF><D1>きみのような 友だちを もって<CD>あいつも しあわせだ<CF><D1><@LL,00,04>いやぁ 何だか てれますね",
 260,0x1f0208,"<@RL,15,00>だんなさまは リょうリに<CD>うるさいからねぇ",
@@ -291,6 +291,6 @@
 289,0x1f0242,"<@LL,00,00>だれも いないや<CD>...変なの",
 290,0x1f0244,"<@LL,00,00>このあな...けっきょく<CD>研究所に つながったんだろうか?<CF><D1>.............<CF><D1><@LL,00,03>やめよう 考えるのが こわい...",
 291,0x1f0246,"<@RL,13,00>ここは たしか「メダロポリス4」<CD>...だったよね?<CF><D1>つまリ メダロポリスの 右下のはず<CD>ああ タウンマップが ほしいよ-","<@RL,13,00>This is, if I remember<D3>correctly...<CF><D1><f02>Medalopolis Area 4<f00>?<D3>That is, the lower right<CF><D1>of Medalopolis? Aah,<D3>I want a town map..."
-292,0x1f0248,"<@RL,13,00>「ミニハンドル」が あれば<CD>ひろ-い メダロポリスも<CF><D1>あっという間に<CD>いどうできちゃうんだよね!",
+292,0x1f0248,"<@RL,13,00>「ミニハンドル」が あれば<CD>ひろ-い メダロポリスも<CF><D1>あっという間に<CD>いどうできちゃうんだよね!","<@RL,13,00>If you have a 'Mini Handle'<D3>you can zip aaaaall around<CF><D1>Medaropolis in no time!"
 293,0x1f024a,"<@RL,01,04>次の 大会でも い-っぱい<CD>しゅざいして しゃしん とるんだ-♥",
 294,0x1f024c,"<@LL,00,04>カギが かかってる","<@LL,00,04>It's locked."

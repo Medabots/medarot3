@@ -28,11 +28,11 @@
 026,0x94034,みぎうでパ-ツ<CD>「<&BUF06>」が なくなった,Right arm part <f02><&BUF06><D3><f00>was lost.
 027,0x94036,ひだリうでパ-ツ<CD>「<&BUF06>」が なくなった,Left arm part <f02><&BUF06><D3><f00>was lost.
 028,0x94038,きゃくぶパ-ツ<CD>「<&BUF06>」が なくなった,Leg part <f02><&BUF06><D3><f00>was lost.
-029,0x9403a,<&BUF03>は あたまパ-ツ<CD>「<&BUF06>」を もってない,"<&BUF03> doesn't have the <D3>head part ""<&BUF06>""."
-030,0x9403c,<&BUF03>は みぎうでパ-ツ<CD>「<&BUF06>」を もってない,"<&BUF03> doesn't have the<D3>right arm part ""<&BUF06>""."
-031,0x9403e,<&BUF03>は ひだリうでパ-ツ<CD>「<&BUF06>」を もってない,"<&BUF03> doesn't have the <D3>left arm part ""<&BUF06>""."
-032,0x94040,<&BUF03>は きゃくぶパ-ツ<CD>「<&BUF06>」を もってない,"<&BUF03> doesn't have the<D3>leg part ""<&BUF06>""."
-033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,"Obtained the ""<&BUF06>""<D3>Medalia!"
+029,0x9403a,<&BUF03>は あたまパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the <D3>head part <f02><&BUF06><f00>.
+030,0x9403c,<&BUF03>は みぎうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the<D3>right arm part <f02><&BUF06><f00>.
+031,0x9403e,<&BUF03>は ひだリうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the <D3>left arm part <f02><&BUF06><f00>.
+032,0x94040,<&BUF03>は きゃくぶパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the<D3>leg part <f02><&BUF06><f00>.
+033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,Obtained the <f02><&BUF06><f00><D3>Medalia!
 034,0x94044,何だっ!?<*02>,What was...!?<*02>
 035,0x94062,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?<*02>,"Sorry, foolish humans-<D3>But I took your data!<CF>Wh... who is that!?<CF>My name is Electra!<D3>Humans are my enemy!<CF>What did you say!?<*02>"
 036,0x94064,...あ! まてっ!<*02>,...Hey! Wait!<*02>
