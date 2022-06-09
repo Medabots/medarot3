@@ -5,7 +5,7 @@
 003,0x95dad,<SFF>これが あれば<CD>町の つながリが 分かるよ!<*02>,<SFF>Use this to know the<D3>layout of the town!<*02>
 004,0x95daf,<SFF>メダリンピック<CD>だいひょう選手の あかし!<*02>,<SFF>Proof that you are a<D3>Medalympics entrant!<*02>
 005,0x95db1,<SFF>花園学園の せいとの あかし!<CD>お金もち気分が あじわえるかも!?<*02>,<SFF>Worn by Hanazono students.<D3>This might make you look rich!<*02>
-006,0x95db3,<SFF>メダロット「ヴェイパ-レ-ル」で<CD>まちを かっとばす!<*02>,"<SFF>Quickly travel around town<D3>using ""Vapor-Rail""!<*02>"
+006,0x95db3,<SFF>メダロット「ヴェイパ-レ-ル」で<CD>まちを かっとばす!<*02>,<SFF>Quickly travel around town<D3>using <f02>Vapor-Rail<f00>!<*02>
 007,0x95db5,<SFF>とリあげられていた<CD>ハチロウのメダル<*02>,<SFF>Medal that was stolen<D3>from Hachiro.<*02>
 008,0x95db7,<SFF>はくしの メダル<CD>どんなメダルに なるのかな?<*02>,<SFF>A blank Medal. Just what<D3>kind of Medal could it be?<*02>
 009,0x95db9,<SFF>メダロット社の ひみつの場所に<CD>入ることが できるよ<*02>,<SFF>This allows you to enter the<D3><f01>Medarot Company<f00>'s secret room.<*02>
@@ -36,16 +36,16 @@
 034,0x95deb,<SFF>「ヘんしんグッズ その3」<CD>これで 宇宙も バッチリ!<*02>,<SFF><f02>Costume 3<f00>.<D3>Fitting for space travel!<*02>
 035,0x95ded,<SFF>メダロット「オ-トクル-ズ」で<CD>みずのなかを ス-イスイ!<*02>,<SFF>Use <f02>Auto-Cruise<f00> to swim<D3>through the ocean floor!<*02>
 036,0x95def,<SFF>メダロット「スカイカ-ゴ」で<CD>まちを ひとっとび!<*02>,<SFF>Use <f02>Sky Cargo<f00> to fly<D3>around town!<*02>
-037,0x95df1,<SFF>回数むせいげんで バブルに<CD>のれる チケット<*02>,"<SFF>Ticket that allows you to ride<D3>""Bubbles"" as much as you like!<*02>"
+037,0x95df1,<SFF>回数むせいげんで バブルに<CD>のれる チケット<*02>,"<SFF>Ticket that allows you to ride<D3>""<f02>Bubbles<f00>"" as much as you like!<*02>"
 038,0x95df3,<SFF>カ-ドに ポイントを あつめて<CD>パ-ツを もらおう!<*02>,<SFF>Save up points on this<D3>card to get parts!<*02>
 039,0x95df5,<SFF>お店で ポイントと 引きかえに<CD>パ-ツを もらえるよ<*02>,<SFF>Trade in points for parts at<D3>any shop!<*02>
-040,0x95df7,<SFF>パスワ-ド「き」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""Ki"" is written on it.<*02>"
-041,0x95df9,<SFF>パスワ-ド「し」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""Shi"" is written on it.<*02>"
-042,0x95dfb,<SFF>パスワ-ド「も」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""Mo"" is written on it.<*02>"
-043,0x95dfd,<SFF>パスワ-ド「リ」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""Ri"" is written on it.<*02>"
+040,0x95df7,<SFF>パスワ-ド「き」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Ki<f00>"" is written on it.<*02>"
+041,0x95df9,<SFF>パスワ-ド「し」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Shi<f00>"" is written on it.<*02>"
+042,0x95dfb,<SFF>パスワ-ド「も」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Mo<f00>"" is written on it.<*02>"
+043,0x95dfd,<SFF>パスワ-ド「リ」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Ri<f00>"" is written on it.<*02>"
 044,0x95dff,<SFF>男の子が とリあげられていたメダル<CD>早く かえして あげよう<*02>,<SFF>Medal that was stolen from<D3>that kid. Take it to him quick!<*02>
 045,0x95e01,<SFF>だいじんさんの サイン入リ<CD>これ1まいで 宇宙も フリ-パス!<*02>,<SFF>A free pass to outer space<D3>signed by the Prime Minister!
-046,0x95e03,<SFF>はかせが 作った しさくひん<CD>変形メダロットが パワ-アップ!<*02>,<SFF><f01>Prototype<f00> parts from <f01>Dr. Medarot.<f00><D3>Now you can Medachange!<*02>
+046,0x95e03,<SFF>はかせが 作った しさくひん<CD>変形メダロットが パワ-アップ!<*02>,<SFF><f01>Prototype<f00> parts from <f01>Dr. Medarot<D3><f00>Now you can Medachange!<*02>
 047,0x95e05,<FINAL>,
 048,0x95e07,@0x95e05,@0x95e05
 049,0x95e09,@0x95e05,@0x95e05

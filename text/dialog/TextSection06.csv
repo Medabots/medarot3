@@ -1,47 +1,47 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x96f2c,<SFF>てき1体の 全パ-ツに ダメ-ジ<CD><*04>,<SFF>Damages all parts of one<D3>enemy.<*04>
 001,0x96f2e,<SFF>てき全体の 1パ-ツに ダメ-ジ<CD><*04>,<SFF>Damages one part of all<D3>enemies.<*04>
-002,0x96f30,<SFF>全ての しゃげきパ-ツの<CD>いリょくを プラスして 攻撃<*04>,"<SFF>Increases firepower of<D3>all ""Shooting"" parts.<*04>"
+002,0x96f30,<SFF>全ての しゃげきパ-ツの<CD>いリょくを プラスして 攻撃<*04>,"<SFF>Attacks enemy using combined<D3>power of all ""Shooting"" parts.<*04>"
 003,0x96f32,<SFF>使うたびに 攻撃力が ふえて<CD>ダメ-ジ アップする!<*04>,<SFF>Buffs attack power after<D3>each use!<*04>
 004,0x96f34,<SFF>使うたびに ぼうぎょ力が ふえて<CD>ダメ-ジ ダウンする!<*04>,<SFF>Buffs Defense after each<D3>use!<*04>
 005,0x96f36,<SFF>かくとうと しゃげきの リょうほうに<CD>こうかのある トラップを セットする<*04>,<SFF>Sets a trap that targets<D3>both Melee and Shooting parts.<*04>
-006,0x96f38,<SFF>てき全体に 「ヘんどう」の<CD>マイナス症状を つける<*04>,"<SFF>Induces ""Flux"" status<D3>on all enemies.<*04>"
-007,0x96f3a,<SFF>てき全体に 「そくばく」の<CD>マイナス症状を つける<*04>,"<SFF>Inflicts ""Bind"" status<D3>on all enemies.<*04>"
-008,0x96f3c,<SFF>てき全体に 「けいぞく」の<CD>マイナス症状を つける<*04>,"<SFF>Inflicts ""Burn"" status<D3>on all enemies.<*04>"
-009,0x96f3e,<SFF>てき全体に 「ていし」の<CD>マイナス症状を つける<*04>,"<SFF>Inflicts ""Stop"" status<D3>on all enemies.<*04>"
+006,0x96f38,<SFF>てき全体に 「ヘんどう」の<CD>マイナス症状を つける<*04>,<SFF>Induces <f02>Flux<f00> status<D3>on all enemies.<*04>
+007,0x96f3a,<SFF>てき全体に 「そくばく」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Bind<f00> status<D3>on all enemies.<*04>
+008,0x96f3c,<SFF>てき全体に 「けいぞく」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Burn<f00> status<D3>on all enemies.<*04>
+009,0x96f3e,<SFF>てき全体に 「ていし」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Stop<f00> status<D3>on all enemies.<*04>
 010,0x96f40,<SFF>てきに ダメ-ジを あたえて<CD>自分の ダメ-ジを かいふくする<*04>,<SFF>Damages an enemy and<D3>replenishes user's health.<*04>
 011,0x96f42,<SFF>ひこうメダロット 全体に<CD>マイナス症状を つける<*04>,<SFF>Inflicts status ailments on<D3>all Flying Medarots.<*04>
 012,0x96f44,<SFF>せんすいメダロット 全体に<CD>マイナス症状を つける<*04>,<SFF>Inflicts status ailments on<D3>all Aquatic Medarots.<*04>
-013,0x96f46,<SFF>みかた全体の<CD>さくてきと いんペいを アップする<*04>,"<SFF>Buffs effects of ""Scan""<D3>and ""Conceal"".<*04>"
+013,0x96f46,<SFF>みかた全体の<CD>さくてきと いんペいを アップする<*04>,<SFF>Buffs effects of <f02>Scan<f00><D3>and <f02>Conceal<f00>.<*04>
 014,0x96f48,<SFF>みかた全体の<CD>頭パ-ツの 回数を アップする<*04>,<SFF>Increases Head part uses<D3>of all allies.<*04>
-015,0x96f4a,<SFF>せんとうフィ-ルドの 地形を<CD>「さばく」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Desert"" field<*04>"
-016,0x96f4c,<SFF>せんとうフィ-ルドの 地形を<CD>「あリじごく」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Antlion Trap"" field<*04>"
-017,0x96f4e,<SFF>せんとうフィ-ルドの 地形を<CD>「さんち」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Mountain"" field<*04>"
-018,0x96f50,<SFF>せんとうフィ-ルドの 地形を<CD>「かざん」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Volcano"" field<*04>"
-019,0x96f52,<SFF>せんとうフィ-ルドの 地形を<CD>「しんリん」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Forest"" field<*04>"
-020,0x96f54,<SFF>せんとうフィ-ルドの 地形を<CD>「ジャングル」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Jungle"" field<*04>"
-021,0x96f56,<SFF>せんとうフィ-ルドの 地形を<CD>「まちなか」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Street"" field<*04>"
-022,0x96f58,<SFF>せんとうフィ-ルドの 地形を<CD>「スタジアム」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Stadium"" field<*04>"
-023,0x96f5a,<SFF>せんとうフィ-ルドの 地形を<CD>「すいちゅう」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Underwater"" field<*04>"
-024,0x96f5c,<SFF>せんとうフィ-ルドの 地形を<CD>「ひょうが」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Glacier"" field<*04>"
-025,0x96f5e,<SFF>せんとうフィ-ルドの 地形を<CD>「うちゅう」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Space"" field<*04>"
-026,0x96f60,<SFF>せんとうフィ-ルドの 地形を<CD>「サイバ-」に ヘんかさせる<*04>,"<SFF>Changes battle terrain<D3>into ""Cyberspace"" field<*04>"
+015,0x96f4a,<SFF>せんとうフィ-ルドの 地形を<CD>「さばく」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Desert<f00> field<*04>
+016,0x96f4c,<SFF>せんとうフィ-ルドの 地形を<CD>「あリじごく」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Antlion Trap<f00> field<*04>
+017,0x96f4e,<SFF>せんとうフィ-ルドの 地形を<CD>「さんち」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Mountain<f00> field<*04>
+018,0x96f50,<SFF>せんとうフィ-ルドの 地形を<CD>「かざん」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Volcano<f00> field<*04>
+019,0x96f52,<SFF>せんとうフィ-ルドの 地形を<CD>「しんリん」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Forest<f00> field<*04>
+020,0x96f54,<SFF>せんとうフィ-ルドの 地形を<CD>「ジャングル」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Jungle<f00> field<*04>
+021,0x96f56,<SFF>せんとうフィ-ルドの 地形を<CD>「まちなか」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Street<f00> field<*04>
+022,0x96f58,<SFF>せんとうフィ-ルドの 地形を<CD>「スタジアム」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Stadium<f00> field<*04>
+023,0x96f5a,<SFF>せんとうフィ-ルドの 地形を<CD>「すいちゅう」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Underwater<f00> field<*04>
+024,0x96f5c,<SFF>せんとうフィ-ルドの 地形を<CD>「ひょうが」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Glacier<f00> field<*04>
+025,0x96f5e,<SFF>せんとうフィ-ルドの 地形を<CD>「うちゅう」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Space<f00> field<*04>
+026,0x96f60,<SFF>せんとうフィ-ルドの 地形を<CD>「サイバ-」に ヘんかさせる<*04>,<SFF>Changes battle terrain<D3>into <f02>Cyberspace<f00> field<*04>
 027,0x96f62,<SFF>全ての メダフォ-スの 中から<CD>ランダムに メダフォ-スを はつどう<*04>,<SFF>Randomly activates any<D3>Medaforce.<*04>
 028,0x96f64,<SFF>30パ-セントいじょうの かくリつで<CD>おなじ ラインの てきを はかいする<*04>,<SFF><f01>Attack: 30% chance of destroying<D3>an enemy directly across from you.<f00><*04>
 029,0x96f66,<SFF>60パ-セントいじょうの かくリつで<CD>おなじ ラインの てきを はかいする<*04>,<SFF><f01>Attack: 60% chance of destroying<D3>an enemy directly across from you.<f00><*04>
 030,0x96f68,<SFF>90パ-セントいじょうの かくリつで<CD>おなじ ラインの てきを はかいする<*04>,<SFF><f01>Attack: 90% chance of destroying<D3>an enemy directly across from you.<f00><*04>
-031,0x96f6a,<SFF>きゃくぶパ-ツの 「すいしん」の<CD>パラメ-タを アップする<*04>,"<SFF>Buffs ""Speed"" of user's<D3>Leg part.<*04>"
-032,0x96f6c,<SFF>きゃくぶパ-ツの 「きどう」の<CD>パラメ-タを アップする<*04>,"<SFF>Buffs ""Mobility"" of user's<D3>Leg part.<*04>"
-033,0x96f6e,<SFF>きゃくぶパ-ツの 「ぼうぎょ」の<CD>パラメ-タを アップする<*04>,"<SFF>Buffs ""Defense"" of user's<D3>Leg part.<*04>"
-034,0x96f70,<SFF>きゃくぶパ-ツの 「きんせつ」の<CD>パラメ-タを アップする<*04>,"<SFF>Buffs ""Melee"" stat of user's<D3>Leg part.<*04>"
-035,0x96f72,<SFF>きゃくぶパ-ツの 「えんかく」の<CD>パラメ-タを アップする<*04>,"<SFF>Buffs ""Ranged"" stat of<D3>user's Leg part.<*04>"
+031,0x96f6a,<SFF>きゃくぶパ-ツの 「すいしん」の<CD>パラメ-タを アップする<*04>,<SFF>Buffs <f02>Speed<f00> of user's<D3>Leg part.<*04>
+032,0x96f6c,<SFF>きゃくぶパ-ツの 「きどう」の<CD>パラメ-タを アップする<*04>,<SFF>Buffs <f02>Mobility<f00> of user's<D3>Leg part.<*04>
+033,0x96f6e,<SFF>きゃくぶパ-ツの 「ぼうぎょ」の<CD>パラメ-タを アップする<*04>,<SFF>Buffs <f02>Defense<f00> of user's<D3>Leg part.<*04>
+034,0x96f70,<SFF>きゃくぶパ-ツの 「きんせつ」の<CD>パラメ-タを アップする<*04>,<SFF>Buffs <f02>Melee<f00> stat of user's<D3>Leg part.<*04>
+035,0x96f72,<SFF>きゃくぶパ-ツの 「えんかく」の<CD>パラメ-タを アップする<*04>,<SFF>Buffs <f02>Ranged<f00> stat of<D3>user's Leg part.<*04>
 036,0x96f74,<SFF>全ての パ-ツによる攻撃は<CD>ダメ-ジが40になる<*04>,<SFF>Battle damage from any<D3>attack is fixed to <f02>40<f00>.<*04>
 037,0x96f76,<SFF>全ての パ-ツによる攻撃は<CD>ダメ-ジが10になる<*04>,<SFF>Battle damage from any<D3>attack is fixed to <f02>10<f00>.<*04>
 038,0x96f78,<SFF>全ての パ-ツによる攻撃は<CD>ダメ-ジが100になる<*04>,<SFF>Battle damage from any<D3>attack is fixed to <f02>100<f00>.<*04>
-039,0x96f7a,<SFF>のこリリミットを ヘらして<CD>はんていじかんを はやくする<*04>,"<SFF>Uses remaining meter<D3>to hasten ""Judgement Time""<*04>"
-040,0x96f7c,<SFF>のこリリミットを ヘらして<CD>はんていじかんを おそくする<*04>,"<SFF>Uses remaining meter<D3>to delay ""Judgement Time""<*04>"
-041,0x96f7e,<SFF>てき全体に<CD>こんらんの 症状を つける<*04>,"<SFF>Inlicts ""Confused"" status<D3>ailment on all enemies.<*04>"
-042,0x96f80,<SFF>てきや みかたに かんけいなく<CD>全メダロットを こんらんさせる<*04>,"<SFF><f01>Inlicts ""Confused"" status<D3>ailment on all enemies and allies.<f00><*04>"
+039,0x96f7a,<SFF>のこリリミットを ヘらして<CD>はんていじかんを はやくする<*04>,<SFF>Uses remaining meter<D3>to hasten <f02>Judgement Time<f00><*04>
+040,0x96f7c,<SFF>のこリリミットを ヘらして<CD>はんていじかんを おそくする<*04>,<SFF>Uses remaining meter<D3>to delay <f02>Judgement Time<f00><*04>
+041,0x96f7e,<SFF>てき全体に<CD>こんらんの 症状を つける<*04>,<SFF>Inlicts <f02>Confused<f00> status<D3>ailment on all enemies.<*04>
+042,0x96f80,<SFF>てきや みかたに かんけいなく<CD>全メダロットを こんらんさせる<*04>,<SFF><f01>Inlicts <f02>Confused<f00> status<D3>ailment on all enemies and allies.<f00><*04>
 043,0x96f82,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 2ばいにする<*04>,
 044,0x96f84,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 3ばいにする<*04>,
 045,0x96f86,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 4ばいにする<*04>,

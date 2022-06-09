@@ -44,10 +44,10 @@
 042,0x11c054,"<@LL,00,00>ずかんや じしょが<CD>たくさん ならんでる","<@LL,00,00>Manuals and dictionaries<D3>are all lined up."
 043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!","<@LL,00,00>It's software for the <D3>school computers.<CF>Japanese education is <D3>kind of strange...<CF>We kids often don't have<D3>enough pencils...<CF>We rely on light from <D3>fireflies to study...<CF><@LL,00,01>Just kidding!"
 044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!","<@LL,00,04>Yeah! <D3>I look sharp as always today."
-045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!",
-046,0x11c05c,"<@LL,00,03>もちろん ひけない...",
-047,0x11c05e,「ドレミから はじめよう」,"""Starting From Do-Re-Mi"""
-048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","""Ending with La-Si-Do""<CF><@LL,00,05>.......?"
+045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,00,04>Yeah!<D3>I look sharp as always today.<CF><@LL,00,06>...Why am I primping myself<D3>in a girls' bathroom?"
+046,0x11c05c,"<@LL,00,03>もちろん ひけない...","<@LL,00,03>No way can I play this..."
+047,0x11c05e,「ドレミから はじめよう」,Starting From Do-Re-Mi
+048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,00,05>.......?"
 049,0x11c062,「セレクト威 本部」,Select Corp<D3>Headquarters
 050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
 051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always<D3>wanted, mwah!"
@@ -55,14 +55,14 @@
 053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>Just as expected at<D3>Medabotters! There are tons<CF>and tons of products!"
 054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medabot<D3>goods lined up."
 055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data<D3>Information Desk.
-056,0x11c070,「ハウ トゥ ゲット おてがら」,
-057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元威長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...",
-058,0x11c074,「おさわリ ぜったい きんし!!」,"""Touching is absolutely<D3>prohibited!!"""
+056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for<D3>Dummies
+057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元威長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...","<f02>The Three Principles<D3>of Justice<f00><CF>Original, Former Captain<D3>Awamori<CF>One: Turn a blind eye.<CF>One: Let sleeping dogs lie.<CF>One: Discretion is the greater<D3>part of valor.<CF><@LL,00,05>Did that guy really write a<D3>book like this..."
+058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely<D3>prohibited!!
 059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medaro Department<D3>Store."
 060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are lots of parts <D3>lined up."
 061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine<D3>that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
 062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes <D3>are lined up here.<CF><@LL,00,04>Almost all of them <D3>are made for girls."
-063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","""Hanazono School""<CF><@LL,00,04>This is the school that Koji <D3>and Karin go to."
+063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji <D3>and Karin go to."
 064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ","<@LL,00,00>This is Hachiro's house."
 065,0x11c082,"<@LL,00,00>ここは コウジの 家だ","<@LL,00,00>This is Koji's house."
 066,0x11c084,"<@LL,00,00>ここは カリンちゃんの 家だ","<@LL,00,00>This is Karin's house."
@@ -71,22 +71,22 @@
 069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch <D3>anything right now."
 070,0x11c08c,"<@LL,00,04>いろんな人の ししゅうが<CD>たくさん ならんでる<CF>カリンちゃんも<CD>しを かくのかな?",
 071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are <D3>lined up here.<CF>Seems just like Karin..."
-072,0x11c090,「レアパ-ツずかん」,"""A Guide to Rare Parts"""
+072,0x11c090,「レアパ-ツずかん」,A Guide to Rare Parts
 073,0x11c092,"<@LL,00,04>心が やすらぐねえ","<@LL,00,04>My mind feels at ease."
 074,0x11c094,"<@LL,00,00>この学園の 園長先生の ぞうかな?","<@LL,00,00>I wonder if this is what this<D3>academy's principal looks like?"
 075,0x11c096,"<@LL,00,00>このぞうだけ<CD>ほかのと ちがう...<CF>しかも どこかで<CD>貝たこと あるぞ.....?",
 076,0x11c098,"ふぃっしゅ!ふぃっしゅ!<CF><@LL,00,07>このぞう くしゃみした!?<CF><@LL,00,00>..........<CF>気のせいか.....",
 077,0x11c09a,"<@LL,00,00>ふつうの げたばこだ","<@LL,00,00>It's an ordinary shoe rack."
 078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness!<CF><@LL,00,05>Geez, it's<D3>not like this is an onsen..."
-079,0x11c09e,「アワノざいばつ ぞうてい」,"""A gift from Awano Financial<D3>Group"""
+079,0x11c09e,「アワノざいばつ ぞうてい」,A gift from Awano<D3>Financial Group
 080,0x11c0a0,"<@LL,00,00>かってに 貝たら<CD>おこられるだろうな.....<CF>やめておこう",
-081,0x11c0a2,「花園学園の れきし」,"""The History of <D3>Hanazono School"""
+081,0x11c0a2,「花園学園の れきし」,The History of <D3>Hanazono School
 082,0x11c0a4,"<@LL,00,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,00,07>A lot of different kinds <D3>of trophies were lined up here!"
 083,0x11c0a6,"<@LL,00,07>ぎっしリと<CD>メダルが ならんでる!<CF><@LL,00,00>どうやって こんなに<CD>あつめたんだろう...",
 084,0x11c0a8,"<@LL,00,03>どれだけ しらベても<CD>もらえっこ ないよね...",
-085,0x11c0aa,"「マンション リゾット」<CF><@LL,00,04>ヒカルさんと キララさんが<CD>すんでる マンションだ","<f02>Risotto Mansion<f00><CF><@LL,00,04>Hikaru and Kirara live in<D3>these apartments."
+085,0x11c0aa,"「マンション リゾット」<CF><@LL,00,04>ヒカルさんと キララさんが<CD>すんでる マンションだ","<f02>Risotto Apartments<f00><CF><@LL,00,04>Hikaru and Kirara live in<D3>these apartments."
 086,0x11c0ac,「レストラン ドン.ペリ」,Restaurant Dom Peri
-087,0x11c0ae,「メダロット社」,"""Medabot Company"""
+087,0x11c0ae,「メダロット社」,Medabot Company
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,
 089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?",

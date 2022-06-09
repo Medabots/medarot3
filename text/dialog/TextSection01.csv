@@ -21,7 +21,7 @@
 019,0x91a30,今は 使えません!<*03>,You can't use this right now!<*03>
 020,0x91a32,ここでは 使えません!,You can't use this here!
 021,0x91a36,今は 使えません!,You can't use this right now!
-022,0x91a38,メダロット「ヴェイパ-レ-ル」が<CD>租まれてないよ!<CF>頭パ-ツ 「スチ-ムボ-ド」!<CD>右院パ-ツ 「スチ-ムド-リン」!<CF>左院パ-ツ 「スチ-ムパイプ」!<CD>脚部パ-ツ 「スチ-ムタ-ビン」!<CF>メダロット「ヴェイパ-レ-ル」が<CD>かんせいだよ!,"The Medarot, 'Vapor Rail'<D3>is not assembled!<CF>Head part, 'Steam Board'!<D3>Right arm part, 'Steam Dolin'!<CF>Left arm part, 'Steam Pipe'!<D3>Leg part, 'Steam Turbine'!<CF>That completes,<D3>the Medarot, 'Vapor Rail'!"
+022,0x91a38,メダロット「ヴェイパ-レ-ル」が<CD>租まれてないよ!<CF>頭パ-ツ 「スチ-ムボ-ド」!<CD>右院パ-ツ 「スチ-ムド-リン」!<CF>左院パ-ツ 「スチ-ムパイプ」!<CD>脚部パ-ツ 「スチ-ムタ-ビン」!<CF>メダロット「ヴェイパ-レ-ル」が<CD>かんせいだよ!,"The Medarot, <f02>Vapor Rail<f00> is not assembled!<CF>Head: <f02>Steam Board<f00>!<D3>Right Arm: <f02>Steam Dolin<f00>!<CF>Left arm part, <f02>Steam Pipe<f00>!<D3>Leg part, <f02>Steam Turbine<f00>!<CF>That completes <f02>Vapor Rail<f00>!"
 023,0x91a3a,メダロット「スカイカ-ゴ」が<CD>租まれてないよ!<CF>頭パ-ツ 「エアフライト」!<CD>右院パ-ツ 「エアウィング」!<CF>左院パ-ツ 「エアフィン」!<CD>脚部パ-ツ 「エアタ-ビン」!<CF>メダロット「スカイカ-ゴ」が<CD>かんせいだよ!,"The Medarot, 'Skycargo'<D3>is not assembled!<CF>Head part, 'Air Flight'!<D3>Right arm part, 'Air Wing'!<CF>Left arm part, 'Air Fin'!<D3>Leg part, 'Air Turbine'!<CF>That completes,<D3>the Medarot, 'Skycargo'!"
 024,0x91a3c,メダロット「オ-トクル-ズ」が<CD>租まれてないよ!<CF>頭パ-ツ 「ウォ-タフリ-ト」!<CD>右院パ-ツ 「ウォ-タホ-ル」!<CF>左院パ-ツ 「ウォ-タポ-ト」!<CD>脚部パ-ツ 「ウォ-タタ-ビン」!<CF>メダロット「オ-トクル-ズ」が<CD>かんせいだよ!,"The Medarot, 'Auto-Cruise'<D3>is not assembled!<CF>Head part, 'Water Fleet'!<D3>Right arm part, 'Water Hole'!<CF>Left arm part, 'Water Port'!<D3>Leg part, 'Water Turbine'!<CF>That completes,<D3>the Medarot, 'Auto-Cruise'!"
 025,0x91a3e,このバ-ジョンでは セ-ブできません,Cannot save with this version.
@@ -45,12 +45,12 @@
 043,0x91a6c,ロボトルに まけました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,"<f01>Robattle lost! Link Robattle<D3><&BUF02> won, <&BUF01> lost.<f00><*03>"
 044,0x91a6e,あいてが 「ロボと-る」中です!<S5A><*04>,The other person is currently<D3>doing the 'Robotoll.'<S5A><*04>
 045,0x91a72,タイミングよく Aボタンを おして<CD>パ-ツを ゲットしよう!<S5A><*04>,Press the A button with good<D3>timing to get the parts!<S5A><*04>
-046,0x91a74,ざんねん! 「ハズレ」です!<CD>何も ゲットできなかった!<*03>,"Too bad! You got a ""Miss""!<D3>You get nothing!<*03>"
-047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,"How lucky! You got a ""Miss""!<D3>You get nothing!<*03>"
+046,0x91a74,ざんねん! 「ハズレ」です!<CD>何も ゲットできなかった!<*03>,Too bad! You got a <f02>Miss<f00>!<D3>You get nothing!<*03>
+047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,How lucky! You got a <f02>Miss<f00>!<D3>You get nothing!<*03>
 048,0x91a78,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*03>,<&BUF03> <&BUF01> Part<D3><&BUF04> obtained!
 049,0x91a7a,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*03>,<&BUF03> <&BUF01> Part<D3><&BUF04> received!
 050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!!<D3>This is your 40th link robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Sun-type Medarot.<CF>Please look over the parts'<D3>data later!<*03>"
-051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!!<D3>This is your 40th link robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Moon-type Medarot.<CF>Please look over the parts'<D3>data later!<*03>"
+051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!<D3>This is your 40th link robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Moon-type Medarot.<CF>Please look over the parts<D3>later!<*03>"
 052,0x91a80,パ-ツ転送!<S5A><*04>,Part transfer!<S5A><*04>
 053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> <&BUF00> part<D3><&BUF01> was acquired!<*03>
 054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal<D3>you currently have equipped!
@@ -60,8 +60,8 @@
 058,0x91a90,メダル転送!<S5A><*04>,Medal transfer!<S5A><*04>
 059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> <&BUF00> medal<D3><&BUF01> was acquired!<*03>
 060,0x91a94,<&BUF03>の<CD><&BUF05>メダルが なくなった!<*03>,<&BUF03>'s <&BUF05> Medal<D3>was lost!<*03>
-061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,"Hey, <&BUF03>!<D3>Equip my Kabuto Medal to<CF>something, will ya?!<D3>I can't move at all like this!!<*03>"
-061#kuwagata,0x91a96,<&BUF03>!<CD>おれの クワガタメダルを<CF>外したままに するな<CD>みうごきが とれなくなる<*03>,<&BUF03>! Do try not to<D3>leave my Kuwagata Medal<CF>out in the open.<D3>I can not move freely like this.<*03>
+061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,"Hey, <&BUF03>!<CF>Equip my <f02>Kabuto <f00>Medal to<D3>something, will ya?!<CF>I can't move at all like this!!<*03>"
+061#kuwagata,0x91a96,<&BUF03>!<CD>おれの クワガタメダルを<CF>外したままに するな<CD>みうごきが とれなくなる<*03>,<&BUF03>!<CF>Don't leave my <f02>Kuwagata<D3><f00>Medal out in the open.<CF>I can not move freely like this.<*03>
 062,0x91a98,何が 知リたいのかな?<*04>,What do you want to know?<*04>
 063,0x91a9a,今は コマンドを ひらけません!,Can't open command now!
 064,0x91a9c,OBJオ-バ- フリ-ズ!!<*04>,Object overfreeze!!<*04>

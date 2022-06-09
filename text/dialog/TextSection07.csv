@@ -27,7 +27,7 @@
 025,0x92346#kabuto|0x92348#kuwagata,とても ベんきょうに なリました<CD>あリがとうございました<*02>,I learned a lot from<D3>our battle. Thank you.<*02>
 026,0x92348#kabuto|0x9234a#kuwagata,ぼくに かてたら パ-ツをやるよ<CD><*02>,"If you beat me, I'll give you<D3>one of my parts.<*02>"
 027,0x9234a#kabuto|0x9234c#kuwagata,おこづかいが ぜんぶ<CD>メダロットに とんでゆく...<*02>,I spent my entire allowance<D3>on these bots...<*02>
-028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,<f01>Fight! Dedicated employee! A<D3>bright tomorrow will surely come!<f00><*02>
+028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,"Fight, o corporate warriors!<D3>A bright tomorrow shall come!<*02>"
 029,0x9234e#kabuto|0x92350#kuwagata,まだまだ ふけいきが つづきそうだな<CD><*02>,It seems business will continue<D3>to be poor for a while...<*02>
 030,0x92350#kabuto|0x92352#kuwagata,どいとくれよ!<CD>しゅふは いそがしいんだからね!<*02>,Move aside!<D3>Can't you see I'm busy?<*02>
 031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,
@@ -46,7 +46,7 @@
 044,0x9236c#kabuto|0x9236e#kuwagata,ロボトルのよわい カレなんて<CD>カッコわるいわよね-<*02>,A boyfriend who can't win any<D3>Robattles is no good!<*02>
 045,0x9236e#kabuto|0x92370#kuwagata,も- しんじらんな-い!<CD>オトコって すぐ あつくなるんだから<*02>,"Oh, jeez!! Guys are just way<D3>too hotheaded! <*02>"
 046,0x92370#kabuto|0x92372#kuwagata,わたしは しごとも ロボトルも<CD>てを ぬかないわよ!<*02>,I can't let up on my job or<D3>Robattling!<*02>
-047,0x92372#kabuto|0x92374#kuwagata,ロボトルばっかリ つよくても<CD>いいかいしゃに はいれないわよ<*02>,"<f01>Even if you're good at Robattles,<D3>it won't get you a well-paying job.<f00> <*02>"
+047,0x92372#kabuto|0x92374#kuwagata,ロボトルばっかリ つよくても<CD>いいかいしゃに はいれないわよ<*02>,Just being good at robattling<D3>won't get you a good job. <*02>
 048,0x92374#kabuto|0x92376#kuwagata,ロボトルは しんけんしょうぶで<CD>ございま-す!<*02>,A truly serious robattle!<*02>
 049,0x92376#kabuto|0x92378#kuwagata,またの おこしを<CD>おまちして おリま-す!<*02>,
 050,0x92378#kabuto|0x9237a#kuwagata,おね-さんが あそんであ.げ.る♥<CD><*02>,
@@ -171,7 +171,7 @@
 169,0x92466#kabuto|0x92468#kuwagata,A「きみたちに かってれば...」<CD>C「まあ がんばったけどね」<*02>,
 170,0x92468#kabuto|0x9246a#kuwagata,<CD><*02>,
 171,0x9246a#kabuto|0x9246c#kuwagata,<CD><*02>,
-172,0x9246c#kabuto|0x9246e#kuwagata,あいてが 何人で あろうと<CD>おなじことだ<*02>,"<f01>No matter how many of you come at<D3>me, it'll all end the same.<f00><*02>"
+172,0x9246c#kabuto|0x9246e#kuwagata,あいてが 何人で あろうと<CD>おなじことだ<*02>,The results won't change no<D3>matter of how many face me.<*02>
 173,0x9246e#kabuto|0x92470#kuwagata,それで 勝った つもリか?<CD><*02>,Is that how you plan on<D3>winning?<*02>
 174,0x92470#kabuto|0x92472#kuwagata,お前たちの じつリょくを 貝せてみろ<CD><*02>,Show me your strength <*02>
 175,0x92472#kabuto|0x92474#kuwagata,...なるほどな<CD><*02>,... I see.<*02>
