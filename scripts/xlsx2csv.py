@@ -61,7 +61,7 @@ for sheet in wb.worksheets:
 	file_path = path.join(csvdir, "{0}.csv".format(sheet.title))
 	text = {}
 	for line in data:
-		if data is None:
+		if line is None or line[0].value is None:
 			continue
 		# 'line' is a tuple of Cells
 		if str(line[0].value).startswith('#'):
