@@ -138,8 +138,9 @@ MainScriptProcessorPutCharLoop::
   ld c, a
   add hl, bc
   ld a, [hl]
+  call VWFAutoNLWrapper
   ld bc, W_VWFCurrentLetter
-  ld a, [hli]
+  inc hl
   ld [bc], a
   inc bc
   ld a, [hli]
