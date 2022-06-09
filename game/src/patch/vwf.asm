@@ -693,10 +693,13 @@ VWFAutoNL::
 .loop
   ld a, c
   cp $89
+  ; The measurements account for 1px spacing, which does not matter at a line's end
+  jr z, .check_next_character
   jr nc, .tooLong
+.check_next_character
   push hl
   call VWFAutoNLFetchChar
-  ld a, [hli]
+  ld a, [hl]
   or a
   jr z, .exitLoop
   cp $20
@@ -752,8 +755,6 @@ VWFAutoNL::
   pop hl
   inc hl
   inc hl
-  inc hl
-  inc hl
   jp .loop
 
 .controlCodeCE
@@ -797,7 +798,8 @@ VWFAutoNL::
   inc hl
   inc hl
   inc hl
-  jp .loop
+  ; It's possible for buffered text to be followed up by punctuation
+  jp .check_next_character
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
