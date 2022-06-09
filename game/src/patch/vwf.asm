@@ -13,7 +13,7 @@ MainScriptProcessorPutCharLoopCrossBank::
   rst $10
   jp MainScriptProcessorPutCharLoop
 
-SECTION "PutString", ROM0[$1C5A]
+SECTION "PutString", ROM0[$1C5D]
 
 VWFDrawStringLeftFullAddress5Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
@@ -197,6 +197,44 @@ VWFDrawStringLoop::
 VWFDrawStringSwitchToStringBank::
   ld a, [W_BankPreservation]
   rst $10
+  ret
+
+VWFAutoNLWrapper::
+  or a
+  jr z, .isSpace
+  cp $20
+  ret nz
+
+.isSpace
+  ld a, BANK(VWFAutoNL)
+  rst $10
+  call VWFAutoNL
+  ld d, a
+  ld a, [W_VWFTextBank]
+  rst $10
+  ld a, d
+  ret
+
+VWFAutoNLFetchChar::
+  push bc
+  ld a, [W_VWFTextBank]
+  rst $10
+  ld bc, W_VWFCurrentLetter
+  ld a, [hli]
+  ld [bc], a
+  inc bc
+  ld a, [hli]
+  ld [bc], a
+  inc bc
+  ld a, [hli]
+  ld [bc], a
+  inc bc
+  ld a, [hl]
+  ld [bc], a
+  ld hl, W_VWFCurrentLetter
+  ld a, BANK(VWFAutoNL)
+  rst $10
+  pop bc
   ret
 
 ; Free space.
@@ -628,6 +666,138 @@ VWFControlCodeD4:: ; Font switching code.
   xor a
   ld [W_MainScriptPauseTimer], a
   jp MainScriptProcessorPutCharLoopCrossBank
+
+VWFAutoNL::
+  push hl
+  ld a, [W_VWFIsSecondLine]
+  ld b, a
+  or a
+  jr z, .isFirstLine
+  ld b, $EF
+
+.isFirstLine
+  ld a, [W_VWFLetterShift]
+  ld c, a
+  ld a, [W_VWFTilesDrawn]
+  add b
+  add a
+  add a
+  add a
+  add c
+  add 3
+  ld c, a
+  ld a, [W_VWFCurrentFont]
+  ld d, a
+  inc hl
+
+.loop
+  ld a, c
+  cp $89
+  jr nc, .tooLong
+  push hl
+  call VWFAutoNLFetchChar
+  ld a, [hli]
+  or a
+  jr z, .exitLoop
+  cp $20
+  jr z, .exitLoop
+  cp $80
+  jr c, .measureChar
+  cp $CC
+  jr z, .exitLoop
+  cp $CD
+  jr z, .exitLoop
+  cp $CE
+  jr z, .controlCodeCE
+  cp $CF
+  jr z, .exitLoop
+  cp $D0
+  jp z, .controlCodeD0
+  cp $D1
+  jr z, .exitLoop
+  cp $D2
+  jr z, .controlCodeD2
+  cp $D3
+  jr z, .exitLoop
+  cp $D4
+  jr z, .controlCodeD4
+  and $7F
+  jr .measureChar
+
+.tooLong
+  ld a, $D3
+  pop hl
+  ret
+
+.exitLoop
+  ld a, $20
+  pop hl
+  pop hl
+  ret
+
+.measureChar
+  ld l, a
+  ld a, VWFDrawLetterTable >> 8
+  add d
+  ld h, a
+  ld a, [hli]
+  pop hl
+  inc hl
+  add c
+  inc a
+  ld c, a
+  jp .loop
+
+.controlCodeD4
+  pop hl
+  inc hl
+  inc hl
+  inc hl
+  inc hl
+  jp .loop
+
+.controlCodeCE
+  pop hl
+  inc hl
+  inc hl
+  jp .loop
+
+.controlCodeD2
+  inc hl
+  ld d, [hl]
+  pop hl
+  inc hl
+  inc hl
+  jp .loop
+  
+.controlCodeD0
+  inc hl
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+
+.subtextLoop
+  ld a, [hli]
+  cp $CB
+  jr z, .exitSubtextLoop
+  push hl
+  ld l, a
+  ld a, VWFDrawLetterTable >> 8
+  add d
+  ld h, a
+  ld a, [hl]
+  pop hl
+  add c
+  inc a
+  ld c, a
+  jr .subtextLoop
+
+.exitSubtextLoop
+  pop hl
+  inc hl
+  inc hl
+  inc hl
+  jp .loop
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
