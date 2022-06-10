@@ -751,8 +751,10 @@ VWFAutoNL::
   ld c, a
   jp .loop
 
-.controlCodeD4
+.controlCodeD2
   pop hl
+  inc hl
+  inc hl
   inc hl
   inc hl
   jp .loop
@@ -763,7 +765,7 @@ VWFAutoNL::
   inc hl
   jp .loop
 
-.controlCodeD2
+.controlCodeD4
   inc hl
   ld d, [hl]
   pop hl
@@ -798,8 +800,7 @@ VWFAutoNL::
   inc hl
   inc hl
   inc hl
-  ; It's possible for buffered text to be followed up by punctuation
-  jp .check_next_character
+  jp .loop
 
 VWFCheckInit::
   ld a, [W_VWFIsInit]
