@@ -180,7 +180,7 @@ LinkMenuStateMachine::
   dw $421A ; 85
   dw LinkMenuPrepareFadeOutToBlackState ; 86
   dw LinkMenuDoFadeState ; 87
-  dw LinkMenuOpenMysteryScreenState ; 88
+  dw LinkMenuOpenTransferringDataScreenState ; 88
   dw LinkMenuPlaceholderState ; 89
   dw LinkMenuPlaceholderState ; 8A
   dw LinkMenuPlaceholderState ; 8B
@@ -813,7 +813,7 @@ LinkMenuIsMedalsStillOpenState::
   ld [W_CoreSubStateIndex], a
   ret
 
-LinkMenuOpenMysteryScreenState::
+LinkMenuOpenTransferringDataScreenState::
   ld a, $3F
   call $27BA
   ld a, $1F
