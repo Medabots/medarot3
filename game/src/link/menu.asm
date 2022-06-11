@@ -58,4 +58,75 @@ LinkMenuHasConnectionTimedOut::
   ld [$C4EE], a
   ret
 
-SECTION "Link Menu Helper Functions 2", ROMX[$5415], BANK[$11]
+SECTION "Link Menu Helper Functions 2", ROMX[$5658], BANK[$11]
+LinkMenuPlaceAndAnimateArrow::
+  call LinkMenuPlaceArrow
+  ld a, $36
+  ld b, 0
+  ld de, $C0C0
+  jp $33B2
+
+LinkMenuPlaceArrow::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 0
+  ld [$C0C1], a
+  ld a, 7
+  ld [$C0C5], a
+  ld a, $F
+  ld [$C0C3], a
+  ld a, [W_LinkMenuItemIndex]
+  sla a
+  sla a
+  sla a
+  sla a
+  add $10
+  ld [$C0C4], a
+  ret
+
+LinkMenuShowDescription::
+  call $3482
+  ld a, [W_LinkMenuItemIndex]
+  ld hl, $35
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld a, 1
+  jp $3487
+
+LinkMenuInputHandler::
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputUp
+  jr z, .upNotPressed
+  ld a, [W_LinkMenuItemIndex]
+  sub 1
+  jr nc, .doNotWrapToBottom
+  ld a, 4
+
+.doNotWrapToBottom
+  ld [W_LinkMenuItemIndex], a
+  call LinkMenuPlaceArrow
+  ld a, 2
+  call ScheduleSoundEffect
+  jp LinkMenuShowDescription
+
+.upNotPressed
+  ld a, [W_JPInput_TypematicBtns]
+  and M_JPInputDown
+  ret z
+  ld a, [W_LinkMenuItemIndex]
+  inc a
+  cp 5
+  jr nz, .doNotWrapToTop
+  xor a
+
+.doNotWrapToTop
+  ld [W_LinkMenuItemIndex], a
+  call LinkMenuPlaceArrow
+  ld a, 2
+  call ScheduleSoundEffect
+  jp LinkMenuShowDescription
