@@ -137,7 +137,7 @@ LinkMenuStateMachine::
   dw $421A ; 60
   dw LinkMenuPrepareFadeOutToBlackState ; 61
   dw LinkMenuDoFadeState ; 62
-  dw $4642 ; 63
+  dw LinkMenuOpenPartTradingState ; 63
   dw LinkMenuPlaceholderState ; 64
   dw LinkMenuPlaceholderState ; 65
   dw LinkMenuPlaceholderState ; 66
@@ -153,13 +153,13 @@ LinkMenuStateMachine::
 
 ; Status/medals.
 
-  dw $465F ; 70
-  dw $4669 ; 71
-  dw $468E ; 72
+  dw LinkMenuCommunicateOpenMedalsIntentState ; 70
+  dw LinkMenuReceiveOpenMedalsIntentState ; 71
+  dw LinkMenuProcessOpenMedalsIntentState ; 72
   dw $421A ; 73
   dw LinkMenuPrepareFadeOutToBlackState ; 74
   dw LinkMenuDoFadeState ; 75
-  dw $469B ; 76
+  dw LinkMenuOpenMedalsState ; 76
   dw LinkMenuPlaceholderState ; 77
   dw LinkMenuPlaceholderState ; 78
   dw LinkMenuPlaceholderState ; 79
@@ -170,15 +170,17 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 7E
   dw LinkMenuPlaceholderState ; 7F
 
-  dw $46B8 ; 80
+; Wait for status/medals to close.
+
+  dw LinkMenuMedalsOpenMessagePrepareState ; 80
   dw LinkMenuDisplayMessageState ; 81
-  dw $46C1 ; 82
+  dw LinkMenuMedalsOpenWaitState ; 82
   dw LinkMenuDoEightFrameTimerState ; 83
-  dw $46DD ; 84
+  dw LinkMenuIsMedalsStillOpenState ; 84
   dw $421A ; 85
   dw LinkMenuPrepareFadeOutToBlackState ; 86
   dw LinkMenuDoFadeState ; 87
-  dw $46F2 ; 88
+  dw LinkMenuOpenMysteryScreenState ; 88
   dw LinkMenuPlaceholderState ; 89
   dw LinkMenuPlaceholderState ; 8A
   dw LinkMenuPlaceholderState ; 8B
@@ -187,20 +189,22 @@ LinkMenuStateMachine::
   dw LinkMenuPlaceholderState ; 8E
   dw LinkMenuPlaceholderState ; 8F
 
-  dw $4702 ; 90
+; Exit to menu.
+
+  dw LinkMenuReturnToMenuInitState ; 90
   dw LinkMenuDrawingState ; 91
   dw LinkMenuMappingState ; 92
   dw LinkMenuPrepareFadeIntoMenuState ; 93
   dw LinkMenuDoFadeState ; 94
-  dw $4712 ; 95
+  dw LinkMenuCommunicateReturnToMenuIntentState ; 95
   dw LinkMenuPlaceholderState ; 96
   dw LinkMenuPlaceholderState ; 97
   dw LinkMenuDoEightFrameTimerState ; 98
   dw LinkMenuAwaitEmptyResponseState ; 99
   dw LinkMenuDoEightFrameTimerState ; 9A
-  dw $471D ; 9B
-  dw $4725 ; 9C
-  dw $4731 ; 9D
+  dw LinkMenuSendReturnToMenuHandshakeState ; 9B
+  dw LinkMenuReceiveReturnToMenuHandshakeState ; 9C
+  dw LinkMenuReturnToMenuState ; 9D
   dw LinkMenuPlaceholderState ; 9E
   dw LinkMenuPlaceholderState ; 9F
   dw LinkMenuPlaceholderState ; A0
@@ -459,9 +463,9 @@ LinkMenuMappingState::
   ld e, $C0
   ld a, 0
   call WrapDecompressAttribmap0
-  call $5658
+  call LinkMenuPlaceAndAnimateArrow
   call WrapInitiateMainScript
-  call $568F
+  call LinkMenuShowDescription
   ld a, [$C612]
   or a
   jp nz, IncSubStateIndex
@@ -481,7 +485,7 @@ LinkMenuPrepareFadeIntoMenuState::
 LinkMenuInputHandlerState::
   ld de, $C0C0
   call $33B7
-  call $56A3
+  call LinkMenuInputHandler
   call LinkMenuReadFromRecvBuffer
   ld a, [hl]
   or a
@@ -556,8 +560,8 @@ LinkMenuFinaliseSelectionState::
   ld a, [W_LinkMenuItemIndex]
   dec a
   ld [W_LinkMenuItemIndex], a
-  call $5658
-  call $568F
+  call LinkMenuPlaceAndAnimateArrow
+  call LinkMenuShowDescription
   ld a, $CC
   ld [$C0C2], a
   jp IncSubStateIndex
@@ -709,13 +713,150 @@ LinkMenuOfficialBattleUneligibileMessageState::
   jp IncSubStateIndex
 
 LinkMenuOfficialBattleReturnToMenuState::
-  call $5658
-  call $568F
+  call LinkMenuPlaceAndAnimateArrow
+  call LinkMenuShowDescription
   ld a, $25
   ld [W_CoreSubStateIndex], a
   ret
 
-SECTION "Link Menu State Machine 4", ROMX[$473D], BANK[$11]
+LinkMenuOpenPartTradingState::
+  ld hl, W_CurrentPartTypeForListView
+  ld bc, $10
+  call memclr
+  ld a, 2
+  ld [W_PartsMenuEntrypoint], a
+  ld a, $3F
+  call $27BA
+  ld a, $D
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuCommunicateOpenMedalsIntentState::
+  ld a, [$CC4A]
+  inc a
+  ld [W_SerIO_ProcessOutByte], a
+  jp IncSubStateIndex
+
+LinkMenuReceiveOpenMedalsIntentState::
+  call LinkMenuReadFromRecvBuffer
+  ld a, [hl]
+  or a
+  ret z
+  dec a
+  ld b, a
+  call LinkMenuAdvanceRecvBufferReadOffset
+  ld a, [$CC4A]
+  cp b
+  jp nz, IncSubStateIndex
+  ld a, 1
+  ld [$CC4A], a
+  ld a, [W_SerIO_SentMysteryPacket]
+  or a
+  jp nz, IncSubStateIndex
+  xor a
+  ld [$CC4A], a
+  jp IncSubStateIndex
+
+LinkMenuProcessOpenMedalsIntentState::
+  ld a, [$CC4A]
+  or a
+  jp nz, IncSubStateIndex
+  ld a, $80
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuOpenMedalsState::
+  ld hl, W_CurrentPageItemSelectionIndex
+  ld bc, 8
+  call memclr
+  ld a, 2
+  ld [W_TransportOptionSubSubSubStateIndex], a
+  ld a, $3F
+  call $27BA
+  ld a, $E
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuMedalsOpenMessagePrepareState::
+  ld bc, $51
+  call LinkMenuInitiateMainScript
+  jp IncSubStateIndex
+
+LinkMenuMedalsOpenWaitState::
+  call LinkMenuReadFromRecvBuffer
+  ld a, [hl]
+  or a
+  ret z
+  dec a
+  ld [$C617], a
+  call LinkMenuAdvanceRecvBufferReadOffset
+  ld a, [$C617]
+  inc a
+  cp $FF
+  jp nz, IncSubStateIndex
+  ld a, $98
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuIsMedalsStillOpenState::
+  ld a, [$C617]
+  call $3549
+  inc a
+  ld [W_SerIO_ProcessOutByte], a
+  cp 1
+  jp nz, IncSubStateIndex
+  ld a, $82
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuOpenMysteryScreenState::
+  ld a, $3F
+  call $27BA
+  ld a, $1F
+  ld [W_CoreStateIndex], a
+  ld a, $20
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuReturnToMenuInitState::
+  call $3413
+  call $343B
+  call $3475
+  xor a
+  ld [$C612], a
+  jp IncSubStateIndex
+
+LinkMenuCommunicateReturnToMenuIntentState::
+  ld a, $FF
+  ld [W_SerIO_ProcessOutByte], a
+  ld a, $98
+  ld [W_CoreSubStateIndex], a
+  ret
+
+LinkMenuSendReturnToMenuHandshakeState::
+  ld a, 1
+  ld [W_SerIO_ProcessOutByte], a
+  jp IncSubStateIndex
+
+LinkMenuReceiveReturnToMenuHandshakeState::
+  call LinkMenuReadFromRecvBuffer
+  ld a, [hl]
+  or a
+  ret z
+  call LinkMenuAdvanceRecvBufferReadOffset
+  jp IncSubStateIndex
+
+LinkMenuReturnToMenuState::
+  call $3482
+  call LinkMenuShowDescription
+  ld a, $26
+  ld [W_CoreSubStateIndex], a
+  ret
+
 LinkMenuResetConnectionState::
   call SerIO_ResetConnection
   ld a, 0
