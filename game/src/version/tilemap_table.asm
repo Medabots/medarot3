@@ -1067,7 +1067,7 @@ Tilemap01_71::
 Tilemap01_72::
   INCBIN "./build/tilemaps/0172.map"
 Tilemap01_73::
-  INCBIN "./build/tilemaps/0173.map"
+  INCBIN "./build/tilemaps/SplashScreenConceptCredit.map"
 Tilemap01_74::
   INCBIN "./build/tilemaps/0174.map"
 Tilemap01_75::
