@@ -367,7 +367,7 @@ TilesetSourceAddressTable::
   dw Tileset3C69 ; 16A (3C69)
   dw Tileset3C6B ; 16B (3C6B)
   dw Tileset3C6D ; 16C (3C6D)
-  dw Tileset3C6F ; 16D (3C6F)
+  dw SplashScreenConceptCredit ; 16D (3C6F)
   dw Tileset3C71 ; 16E (3C71)
   dw Tileset3C73 ; 16F (3C73)
   dw TilesetSourceAddressTableEnd ; 170 (3C75)
@@ -883,7 +883,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset3C69), $8000, $1 ; 16A
   dbwb BANK(Tileset3C6B), $9000, $0 ; 16B
   dbwb BANK(Tileset3C6D), $8800, $0 ; 16C
-  dbwb BANK(Tileset3C6F), $9000, $0 ; 16D
+  dbwb BANK(SplashScreenConceptCredit), $9000, $0 ; 16D
   dbwb BANK(Tileset3C71), $9000, $0 ; 16E
   dbwb BANK(Tileset3C73), $9170, $0 ; 16F
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 170
