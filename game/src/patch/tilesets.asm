@@ -93,6 +93,8 @@ ChapterScreenChapterTitle5::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle5.malias"
 ChapterScreenChapterTitle6::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
+SplashScreenConceptCredit::
+  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"  
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::

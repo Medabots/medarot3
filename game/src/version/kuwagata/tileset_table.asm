@@ -105,9 +105,10 @@ SECTION "Tileset Data Tileset3C6D", ROMX[$71CF], BANK[$74]
 Tileset3C6D::
   INCBIN "./build/tilesets/Tileset3C6D.malias"
 
-SECTION "Tileset Data SplashScreenConceptCredit", ROMX[$7435], BANK[$74]
-SplashScreenConceptCredit::
-  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"
+; SplashScreenConceptCredit is defined with the other patch tilesets
+;SECTION "Tileset Data SplashScreenConceptCredit", ROMX[$7435], BANK[$74]
+;SplashScreenConceptCredit::
+;  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"
 
 SECTION "Tileset Data Tileset3C71", ROMX[$772E], BANK[$74]
 Tileset3C71::

@@ -203,7 +203,8 @@ patch_tilesets_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)\
  $(TILESET_OUT)/ChapterScreenChapterTitle4Kabuto.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/ChapterScreenChapterTitle4Kuwagata.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/ChapterScreenChapterTitle5.$(COMPRESSED_TSET_TYPE)\
- $(TILESET_OUT)/ChapterScreenChapterTitle6.$(COMPRESSED_TSET_TYPE)
+ $(TILESET_OUT)/ChapterScreenChapterTitle6.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/SplashScreenConceptCredit.$(COMPRESSED_TSET_TYPE)
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
