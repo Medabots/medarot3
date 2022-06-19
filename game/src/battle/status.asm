@@ -9,7 +9,7 @@ BufferParticipantDataForBattleStatus::
   ld b, 0
   ld c, a
   ld a, 9
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   pop bc
   ld a, b
   ld [$C4EE], a
@@ -1009,7 +1009,7 @@ DirectionalInputHandlingForBattleStatus::
   ld b, 0
   ld c, a
   ld a, 9
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld a, [de]
   or a
   jr nz, .destinationSlotFound
