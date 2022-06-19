@@ -2,7 +2,7 @@ INCLUDE "game/src/common/constants.asm"
 
 SECTION "Autobattle Config State Machine 1", ROMX[$6DA9], BANK[$10]
 BattleAutoConfigStateMachine::
-  ld a, [$C481]
+  ld a, [W_CoreSubStateIndex]
   ld hl, .table
   rst $30
   jp hl

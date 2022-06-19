@@ -650,7 +650,7 @@ ControlCodeD2:: ; Portrait display code.
   ld b, 0
   ld c, a
   ld a, 8
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld de, $9600
   ld bc, $100
   call $04F9

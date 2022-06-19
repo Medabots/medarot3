@@ -263,7 +263,7 @@ CalculateParticipantAddressForVictoryResultsScreen::
   ld b, 0
   ld c, a
   ld a, 9
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 SECTION "Encounter Helper Functions 5", ROMX[$6675], BANK[$05]
 PopulatedVictoryResultsScreen::
@@ -326,7 +326,7 @@ DisplayMedalIconForVictoryResultsScreen::
   ld c, a
   ld a, 6
   push de
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   pop de
   push hl
   ld hl, 1
@@ -349,7 +349,7 @@ DisplayEmptyMedalIconForVictoryResultsScreen::
   ld c, a
   ld a, 6
   push de
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   pop de
   push hl
   ld a, $1E

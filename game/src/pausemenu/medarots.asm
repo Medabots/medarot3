@@ -233,7 +233,7 @@ GetMedarotSlotAddressForSelectionScreen::
   ld hl, $D000
   ld b, 0
   ld a, 4
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 GetPaletteIndexForSelectedMedarot::
   ld a, [W_MedarotSelectionScreenSelectedOption]
@@ -415,7 +415,7 @@ GetSelectedMedarotMetaspriteAddress::
   ld b, 0
   ld c, a
   ld a, 5
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 MedarotSelectionScreenDirectionalInputHandler::
   ld a, [W_JPInput_TypematicBtns]
@@ -898,7 +898,7 @@ GetMedalAddressForMedarotStatusScreen::
   ld b, 0
   ld c, a
   ld a, 6
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 MapMedalNameForMedarotStatus::
   ld a, [W_MedarotCurrentMedal]

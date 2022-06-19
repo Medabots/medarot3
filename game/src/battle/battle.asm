@@ -468,7 +468,7 @@ CalculateBattleParticipantAddress::
   ld b, 0
   ld c, a
   ld a, 9
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 SECTION "Battle Helper Functions 3", ROMX[$5778], BANK[$0A]
 MapAttackNamesForBattle::

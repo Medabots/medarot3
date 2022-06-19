@@ -93,7 +93,7 @@ DrawMedalIcons::
   ld b, 0
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld a, 6
   ld [$C4EE], a
   ld hl, $8B00
@@ -157,7 +157,7 @@ MapMedalNamesForMenu::
   ld b, 0
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld a, 6
   ld [$C4F8], a
   ld hl, $98A4
@@ -242,7 +242,7 @@ GetMedalAddress::
   ld b, 0
   ld c, a
   ld a, 6
-  jp MultiplyBCByPowerOfTwoAndAddToHL
+  jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
 CheckMedalOwnership::
   ld hl, M_MedalStatus
@@ -338,7 +338,7 @@ DisplayTinpetSpriteAssociatedWithMedal::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
@@ -792,7 +792,7 @@ MedalListSortItemInputHandler::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   push hl
   ld hl, $D120
   ld b, 0
@@ -800,7 +800,7 @@ MedalListSortItemInputHandler::
   and $7F
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   pop hl
   ld bc, $40
   call $1546
@@ -916,7 +916,7 @@ MedalPreOptionBoxInputCheck::
   ld a, [W_SelectedItemInventorySlotIndex]
   ld c, a
   ld a, 6
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld hl, M_MedalStatus
   add hl, de
   ld a, [hl]
@@ -3166,7 +3166,7 @@ PopulateMedaliaList::
   ld a, [W_MedalMenuMedaliaListLineToBuffer]
   ld c, a
   ld a, 5
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   call GetMedaliaIndicatorSpritePositionForMedaliaSubscreen
   ld a, [$C4F2]
   call DisplayMedaliaIndicatorSpriteForMedalSubscreen
@@ -3194,7 +3194,7 @@ PopulateMedaliaList::
   ld a, [W_MedalMenuMedaliaListLineToBuffer]
   ld c, a
   ld a, 5
-  call MultiplyBCByPowerOfTwoAndAddToHL
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld a, 0
   ld [de], a
   call GetMedaliaListItemMappingAddress

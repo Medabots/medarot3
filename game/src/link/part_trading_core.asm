@@ -203,12 +203,12 @@ PartTradingDrawAndMapSendingPartState::
   ld b, a
   ld c, 0
   ld a, [$C615]
-  call $5C87
+  call DrawPartImageForPartTrading
   ld a, [$C613]
   ld b, a
   ld c, 0
   ld a, 0
-  call $5CED
+  call MapPartImageForPartTrading
   jp IncSubStateIndex
 
 PartTradingPrepareSendingPartFadeInState::
@@ -219,7 +219,7 @@ PartTradingPrepareSendingPartFadeInState::
   ld a, 8
   call WrapSetupPalswapAnimation
   ld a, [$C615]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 2
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -229,10 +229,10 @@ PartTradingDisplaySendingPartNameState::
   ld b, a
   ld hl, $DD90
   ld a, [$C615]
-  call $5D12
+  call PartTradingBufferPartName
   ld hl, $DD90
   ld a, 0
-  call $5D30
+  call PartTradingMapPartName
   jp IncSubStateIndex
 
 PartTradingResetVariablesState::
@@ -293,12 +293,12 @@ PartTradingDrawAndMapReceivingPartState::
   ld b, a
   ld c, 1
   ld a, [$C616]
-  call $5C87
+  call DrawPartImageForPartTrading
   ld a, [$C614]
   ld b, a
   ld c, 1
   ld a, 1
-  call $5CED
+  call MapPartImageForPartTrading
   jp IncSubStateIndex
 
 PartTradingPrepareReceivingPartFadeInState::
@@ -309,7 +309,7 @@ PartTradingPrepareReceivingPartFadeInState::
   ld a, 8
   call WrapSetupPalswapAnimation
   ld a, [$C616]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -319,10 +319,10 @@ PartTradingDisplayReceivingPartNameState::
   ld b, a
   ld hl, $DD99
   ld a, [$C616]
-  call $5D12
+  call PartTradingBufferPartName
   ld hl, $DD99
   ld a, 1
-  call $5D30
+  call PartTradingMapPartName
   jp IncSubStateIndex
 
 PartTradingPrepareTradeReadyMessageState::
@@ -361,11 +361,11 @@ PartTradingFlashingAnimationPrepareFadeInState::
   ld a, $10
   call WrapSetupPalswapAnimation
   ld a, [$C615]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 2
   call WrapRestageDestinationBGPalettesForFade
   ld a, [$C616]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -376,7 +376,7 @@ PartTradingFlashingAnimationLooppointState::
   ret
 
 PartTradingAnimateDotPathState::
-  call $5D5A
+  call PartTradingAnimateDotPath
   or a
   ret z
   call $3413
@@ -384,7 +384,7 @@ PartTradingAnimateDotPathState::
   jp IncSubStateIndex
 
 PartTradingPlaceWhooshSpritesState::
-  call $5F49
+  call PartTradingPlaceWhooshSprite
   jp IncSubStateIndex
 
 PartTradingAnimateWhooshSpritesState::
@@ -410,31 +410,31 @@ PartTradingSwapPartImagesState::
   ld b, a
   ld c, 0
   ld a, [$C616]
-  call $5C87
+  call DrawPartImageForPartTrading
   ld a, [$C614]
   ld b, a
   ld c, 0
   ld a, 0
-  call $5CED
+  call MapPartImageForPartTrading
   ld a, [$C613]
   ld b, a
   ld c, 1
   ld a, [$C615]
-  call $5C87
+  call DrawPartImageForPartTrading
   ld a, [$C613]
   ld b, a
   ld c, 1
   ld a, 1
-  call $5CED
+  call MapPartImageForPartTrading
   jp IncSubStateIndex
 
 PartTradingSwapPartNamesState::
   ld hl, $DD99
   ld a, 0
-  call $5D30
+  call PartTradingMapPartName
   ld hl, $DD90
   ld a, 1
-  call $5D30
+  call PartTradingMapPartName
   jp IncSubStateIndex
 
 PartTradingPreparePostTradeFadeInState::
@@ -445,11 +445,11 @@ PartTradingPreparePostTradeFadeInState::
   ld a, $10
   call WrapSetupPalswapAnimation
   ld a, [$C615]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 3
   call WrapRestageDestinationBGPalettesForFade
   ld a, [$C616]
-  call $5CE3
+  call GetPartPaletteIndexForPartTrading
   ld a, 2
   call WrapRestageDestinationBGPalettesForFade
   jp IncSubStateIndex
@@ -469,7 +469,7 @@ PartTradingAdjustInventoryState::
   jp IncSubStateIndex
 
 PartTradingDisplayGetOverlayState::
-  call $5F8A
+  call PartTradingPlaceGetSprite
   ld a, 8
   call ScheduleSoundEffect
   jp IncSubStateIndex
