@@ -139,9 +139,9 @@ MedalsStateMachine::
   
   ; Link-related overlay menu?
   
-  dw $4626 ; 60
-  dw $465E ; 61
-  dw $4695 ; 62
+  dw MedalsLinkBoxMappingState ; 60
+  dw MedalsLinkBoxInputHandlerState ; 61
+  dw MedalsLinkBoxSelectionProcessingState ; 62
   dw $46E0 ; 63
   dw $473B ; 64
   dw MedalsPlaceholderState ; 65
@@ -774,6 +774,96 @@ MedalsExitToMedawatchMenuState::
   ld a, 3
   ld [W_CoreSubStateIndex], a
   ret
+
+MedalsLinkBoxMappingState::
+  ld a, $D
+  ld [$C4EE], a
+  ld a, 7
+  ld [$C4EF], a
+  ld a, 7
+  ld [$C4F0], a
+  ld a, 7
+  ld [$C4F1], a
+  ld a, 2
+  call $1153
+  ld bc, $D07
+  ld e, $73
+  ld a, 2
+  call WrapDecompressTilemap0
+  ld bc, $D07
+  ld e, $68
+  ld a, 2
+  call WrapDecompressAttribmap0
+  xor a
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  xor a
+  call $6348
+  jp IncSubStateIndex
+
+MedalsLinkBoxInputHandlerState::
+  call $6372
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  ld a, 1
+  call $6348
+  ld a, $20
+  ld [W_MedalMenuWaitTimer], a
+  ld a, 3
+  call ScheduleSoundEffect
+  jp IncSubStateIndex
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 2
+  ld [W_MedalMenuSelectedMedaliaCursorPosition], a
+  ld a, 1
+  call $6348
+  ld a, $20
+  ld [W_MedalMenuWaitTimer], a
+  ld a, 4
+  call ScheduleSoundEffect
+  jp IncSubStateIndex
+
+MedalsLinkBoxSelectionProcessingState::
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  ld a, $D
+  ld [$C4EE], a
+  ld a, 7
+  ld [$C4EF], a
+  ld a, 7
+  ld [$C4F0], a
+  ld a, 7
+  ld [$C4F1], a
+  ld a, 2
+  call $123B
+  ld a, [W_MedalMenuSelectedMedaliaCursorPosition]
+  cp 0
+  jr z, .statusPlz
+  cp 1
+  jr z, .nextState
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.statusPlz
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld [$C1E0], a
+  ld [$C200], a
+  ld [$C220], a
+  ld a, 5
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.nextState
+  jp IncSubStateIndex
 
 SECTION "Medals State Machine 2", ROMX[$47DA], BANK[$02]
 MedalsExitToLinkMenuState::
