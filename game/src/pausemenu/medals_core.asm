@@ -142,15 +142,15 @@ MedalsStateMachine::
   dw MedalsLinkBoxMappingState ; 60
   dw MedalsLinkBoxInputHandlerState ; 61
   dw MedalsLinkBoxSelectionProcessingState ; 62
-  dw $46E0 ; 63
-  dw $473B ; 64
+  dw MedalsLinkBoxCheckMedalState ; 63
+  dw MedalsLinkBoxErrorMessageState ; 64
   dw MedalsPlaceholderState ; 65
-  dw $4762 ; 66
-  dw $4786 ; 67
-  dw $4797 ; 68
-  dw $47BE ; 69
+  dw MedalsLinkBoxTransferMedalState ; 66
+  dw MedalsLinkBoxTransferWaitState ; 67
+  dw MedalsLinkBoxReceiveDataState ; 68
+  dw MedalsPostLinkBoxPrepareFadeOutState ; 69
   dw MedalsFadeState ; 6A
-  dw $47D0 ; 6B
+  dw MedalsExitToMedalTransferState ; 6B
   dw MedalsPlaceholderState ; 6C
   dw MedalsPlaceholderState ; 6D
   dw MedalsPlaceholderState ; 6E
@@ -865,7 +865,141 @@ MedalsLinkBoxSelectionProcessingState::
 .nextState
   jp IncSubStateIndex
 
-SECTION "Medals State Machine 2", ROMX[$47DA], BANK[$02]
+MedalsLinkBoxCheckMedalState::
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld c, a
+  ld a, 6
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
+  ld hl, M_MedalStatus
+  add hl, de
+  ld a, [hl]
+  and $40
+  jr z, .noTinpetAssociatedWithMedal
+  ld a, 0
+  ld [W_ItemActionMessageIndex], a
+  ld a, $4E
+  ld [$C496], a
+  call WrapInitiateMainScript
+  jp IncSubStateIndex
+
+.noTinpetAssociatedWithMedal
+  ld hl, M_MedalMedaliaAStatus
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr nz, .medaliaEquipped
+  ld hl, M_MedalMedaliaBStatus
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr nz, .medaliaEquipped
+  ld hl, M_MedalMedaliaCStatus
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  jr z, .medaliaSlotsEmpty
+
+.medaliaEquipped
+  ld a, 0
+  ld [W_ItemActionMessageIndex], a
+  ld a, $4F
+  ld [$C496], a
+  call WrapInitiateMainScript
+  jp IncSubStateIndex
+
+.medaliaSlotsEmpty
+  ld a, $66
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsLinkBoxErrorMessageState::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 0
+  ld [$C0C0], a
+  ld a, [W_ItemActionMessageIndex]
+  ld b, a
+  ld a, [$C496]
+  ld c, a
+  ld a, 1
+  call $3487
+  ld a, [W_MainScriptExitMode]
+  or a
+  ret z
+  ld a, 1
+  ld [$C0C0], a
+  ld a, 4
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsLinkBoxTransferMedalState::
+  ld a, 5
+  rst 8
+  ld hl, $D120
+  ld b, 0
+  ld a, [W_SelectedItemInventorySlotIndex]
+  ld c, a
+  ld a, 6
+  call MultiplyBCByTwoToThePowerOfAAndAddToHL
+  ld hl, M_MedalType
+  add hl, de
+  ld a, [hl]
+  ld [$C617], a
+  inc a
+  ld [W_SerIO_ProcessOutByte], a
+  xor a
+  ld [$C48D], a
+  jp IncSubStateIndex
+
+MedalsLinkBoxTransferWaitState::
+  ld a, [W_MedalMenuWaitTimer]
+  inc a
+  ld [W_MedalMenuWaitTimer], a
+  cp 8
+  ret nz
+  xor a
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+MedalsLinkBoxReceiveDataState::
+  call $63A7
+  ld a, [hl]
+  or a
+  ret z
+  ld [$C4EE], a
+  call $63B2
+  ld a, [$C4EE]
+  cp 1
+  jp nz, IncSubStateIndex
+  ld a, 0
+  ld [W_ItemActionMessageIndex], a
+  ld a, $50
+  ld [$C496], a
+  call WrapInitiateMainScript
+  ld a, $64
+  ld [W_CoreSubStateIndex], a
+  ret
+
+MedalsPostLinkBoxPrepareFadeOutState::
+  ld hl, 1
+  ld bc, 1
+  ld d, $FF
+  ld e, $FF
+  ld a, 8
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+MedalsExitToMedalTransferState::
+  ld a, $1F
+  ld [W_CoreStateIndex], a
+  xor a
+  ld [W_CoreSubStateIndex], a
+  ret
+
 MedalsExitToLinkMenuState::
   ld a, $1B
   ld [W_CoreStateIndex], a
