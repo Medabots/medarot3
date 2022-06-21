@@ -3,12 +3,26 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
+; Common routines
+
 PartTypeTable: MACRO
 .table
   db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
   db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
   db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
   db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
+  ENDM
+
+LoadParticipantNameIntoBUF02: MACRO
+LoadParticipantNameIntoBUF02_\1:
+  ld hl, $40 ; offset to name in participant structure
+  add hl, de
+  push de
+  ld de, cBUF02
+  ld bc, $9
+  call memcpy
+  pop de
+  ret
   ENDM
 
 SECTION "Load text into buffers for battle messages 0B", ROMX[$45DD], BANK[$0B]
@@ -231,15 +245,7 @@ BattleLoadPartDefendedText:
   PartTypeTable
 
 SECTION "Load participant name into cBUF02 0C", ROMX[$59f4], BANK[$0C]
-BattleLoadParticipantNameBuf02::
-  ld hl, $40 ; Offset to name in participant data structure
-  add hl, de
-  push de
-  ld de, cBUF02
-  ld bc, $9
-  call memcpy
-  pop de
-  ret
+  LoadParticipantNameIntoBUF02 0C
 
   padend $5a04
 
@@ -301,15 +307,7 @@ BattleStatusLoadPartType::
   padend $4783
 
 SECTION "Load text into buffers for battle messages 2 0D", ROMX[$48b7], BANK[$0D]
-BattleStatusLoadParticipantName::
-  ld hl, $40 ; offset to name in participant structure
-  add hl, de
-  push de
-  ld de, cBUF02
-  ld bc, $9
-  call memcpy
-  pop de
-  ret
+  LoadParticipantNameIntoBUF02 0D
 
   padend $48c7
 
@@ -341,3 +339,38 @@ EncounterLoadRewardPartTypeText::
   PartTypeTable
 
   padend $5c58
+
+SECTION "Load text into buffers for battle messages 17", ROMX[$4f80], BANK[$17]
+  LoadParticipantNameIntoBUF02 17
+
+SECTION "Load text into buffers for battle messages 2 17", ROMX[$4dc2], BANK[$17]
+BattleStatusLoadSkillIntoBuf00:: ; 5cdc2 (17:4dc2)
+  call $5203
+  ld hl, $da
+  call $5268
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $12
+  ld c, $0e
+  ld a, $00
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF00
+  ld bc, $e
+  jp memcpy
+BattleStatusLoadAttackIntoBuf01:: ; 5cde6 (17:4de6)
+  call $5203
+  ld hl, $db
+  call $5268
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $06
+  ld c, $06
+  ld a, $00
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF01
+  ld bc, $6
+  jp memcpy
+
+  padend $4e0a
