@@ -3,12 +3,65 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
+; Common routines
+
 PartTypeTable: MACRO
   db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   db "right arm",$CB,$00,$00,$00,$00,$00,$00
   db "left arm",$CB,$00,$00,$00,$00,$00,$00,$00
   db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   ENDM
+
+LoadParticipantNameIntoBUF02: MACRO
+LoadParticipantNameIntoBUF02_\1:
+  call LoadParticipantNameIntoBUF02Cont_\1 ; sets hl
+  push de
+  ld de, cBUF02
+  ld bc, $1a ; Take over old cBUF00 and cBUF01, dd90 to dda2
+  call memcpy
+  pop de
+  ret
+  ENDM
+
+LoadParticipantNameIntoBUF02Cont: MACRO
+LoadParticipantNameIntoBUF02Cont_\1::
+  ld a, d
+  cp $d6
+  jr nc, .npc
+  sub $d0 ; d0 is always the player
+  jr z, .player
+  ; check if it's an ally
+  srl a ; 1 or 2
+  ; c648 and c649 indicate if it's an ally
+  ld hl, $c647
+  ld b, $00
+  ld c, a
+  ld a, [hl]
+  and a ; if flag c647 isn't set, it's the player
+  jr z, .player
+  add hl, bc
+  ld a, [hl]
+  jr nz, .npc
+.player
+  ld hl, $40 ; Offset to name in participant data structure for player
+  add hl, de
+  ret
+.npc
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld h, a
+  ld l, $03 ; Use the head part to get the idx for the name
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld bc, $1509
+  push de
+  call WrapBufferTextFromList
+  pop de
+  ld hl, W_NewListItemBufferArea
+  ret
+  ENDM
+
 
 SECTION "Load text into buffers for battle messages 0B", ROMX[$45DD], BANK[$0B]
 BattleAllyStatusLoadPartTypeTextBuf00::
@@ -268,14 +321,7 @@ BattleLoadPartDefendedText:
   padend $5721
 
 SECTION "Load participant name into cBUF02 0C", ROMX[$59f4], BANK[$0C]
-BattleLoadParticipantNameBuf02::
-  call BattleLoadParticipantNameBuf02Cont ; set hl
-  push de
-  ld de, cBUF02
-  ld bc, $1a ; Take over old cBUF00 and cBUF01, dd90 to dda2
-  call memcpy
-  pop de
-  ret
+  LoadParticipantNameIntoBUF02 0C
 
   padend $5a04
 
@@ -283,42 +329,8 @@ BattleLoadParticipantNameBuf02::
 SECTION "Free space Bank 0C", ROMX[$7e24], BANK[$0C]
 BattleLoadPartsTable::
   PartTypeTable
-BattleLoadParticipantNameBuf02Cont::
-  ld a, d
-  cp $d6
-  jr nc, .npc
-  sub $d0 ; d0 is always the player
-  jr z, .player
-  ; check if it's an ally
-  srl a ; 1 or 2
-  ; c648 and c649 indicate if it's an ally
-  ld hl, $c647
-  ld b, $00
-  ld c, a
-  ld a, [hl]
-  and a ; if flag c647 isn't set, it's the player
-  jr z, .player
-  add hl, bc
-  ld a, [hl]
-  jr nz, .npc
-.player
-  ld hl, $40 ; Offset to name in participant data structure for player
-  add hl, de
-  ret
-.npc
-  xor a
-  ld [W_ListItemInitialOffsetForBuffering], a
-  ld h, a
-  ld l, $03 ; Use the head part to get the idx for the name
-  add hl, de
-  ld a, [hl]
-  ld [W_ListItemIndexForBuffering], a
-  ld bc, $1509
-  push de
-  call WrapBufferTextFromList
-  pop de
-  ld hl, W_NewListItemBufferArea
-  ret
+
+  LoadParticipantNameIntoBUF02Cont 0C
 
 
 SECTION "Load text into buffers for battle messages 0D", ROMX[$46f9], BANK[$0D]
@@ -377,13 +389,7 @@ BattleStatusLoadPartType::
 
 SECTION "Load text into buffers for battle messages 2 0D", ROMX[$48b7], BANK[$0D]
 BattleStatusLoadParticipantName::
-  call BattleStatusLoadParticipantNameBuf02Cont
-  push de
-  ld de, cBUF02
-  ld bc, $1a ; Take over old BUF01 and BUF00
-  call memcpy
-  pop de
-  ret
+  LoadParticipantNameIntoBUF02 0D
 
   padend $48c7
 
@@ -391,42 +397,8 @@ BattleStatusLoadParticipantName::
 SECTION "Free space Bank 0D", ROMX[$7930], BANK[$0D]
 BattleStatusLoadPartsTable::
   PartTypeTable
-BattleStatusLoadParticipantNameBuf02Cont::
-  ld a, d
-  cp $d6
-  jr nc, .npc
-  sub $d0 ; d0 is always the player
-  jr z, .player
-  ; check if it's an ally
-  srl a ; 1 or 2
-  ; c648 and c649 indicate if it's an ally
-  ld hl, $c647
-  ld b, $00
-  ld c, a
-  ld a, [hl]
-  and a ; if flag c647 isn't set, it's the player
-  jr z, .player
-  add hl, bc
-  ld a, [hl]
-  jr nz, .npc
-.player
-  ld hl, $40 ; Offset to name in participant data structure for player
-  add hl, de
-  ret
-.npc
-  xor a
-  ld [W_ListItemInitialOffsetForBuffering], a
-  ld h, a
-  ld l, $03 ; Use the head part to get the idx for the name
-  add hl, de
-  ld a, [hl]
-  ld [W_ListItemIndexForBuffering], a
-  ld bc, $1509
-  push de
-  call WrapBufferTextFromList
-  pop de
-  ld hl, W_NewListItemBufferArea
-  ret
+
+  LoadParticipantNameIntoBUF02Cont 0D
 
 SECTION "Load part type for encounter reward", ROMX[$5c17], BANK[$15]
 EncounterLoadRewardPartTypeText::
@@ -457,3 +429,41 @@ EncounterLoadRewardPartTypeText::
 SECTION "Free space Bank 15", ROMX[$6220], BANK[$15]
 EncounterLoadPartsTable::
   PartTypeTable
+
+SECTION "Load text into buffers for battle messages 17", ROMX[$4f80], BANK[$17]
+  LoadParticipantNameIntoBUF02 17
+
+SECTION "Load text into buffers for battle messages 2 17", ROMX[$4dc2], BANK[$17]
+BattleStatusLoadSkillIntoBuf00::
+  call $5203
+  ld hl, $da
+  call $5268
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $12
+  ld c, $0e
+  ld a, $00
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF00
+  ld bc, $e
+  jp memcpy
+BattleStatusLoadAttackIntoBuf01::
+  call $5203
+  ld hl, $db
+  call $5268
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $06
+  ld c, $06
+  ld a, $00
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF01
+  ld bc, $6
+  jp memcpy
+
+  padend $4e0a
+
+SECTION "Free space Bank 17", ROMX[$6000], BANK[$17]
+  LoadParticipantNameIntoBUF02Cont 17
