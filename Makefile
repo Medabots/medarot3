@@ -95,7 +95,8 @@ townmap\
 shop\
 tutorial\
 battle\
-nameentry
+nameentry\
+npc
 
 # Toolchain
 CC := rgbasm
