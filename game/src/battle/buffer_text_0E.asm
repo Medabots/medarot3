@@ -19,7 +19,7 @@ LoadMedaforceTextIntoBUF02::
   ld hl, $1d0
   add hl, de
   ld de, cBUF02
-  ld bc, $9
+  ld bc, $1a
   jp memcpy
 
   padend $5575
