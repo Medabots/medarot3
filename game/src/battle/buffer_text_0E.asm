@@ -12,9 +12,8 @@ SECTION "Load text into buffers for battle messages 0E", ROMX[$4f4a], BANK[$0E]
 
   padend $4fb3
 
-SECTION "Load text into buffers for battle messages 2 0E", ROMX[$5562], BANK[$0E]
+SECTION "Load text into buffers for battle messages 2 0E", ROMX[$5565], BANK[$0E]
 LoadMedaforceTextIntoBUF02::
-  ld bc, $101
   call $593e
   ld hl, $1d0
   add hl, de
