@@ -26,7 +26,7 @@
 024,0x96400,<SFF>みまんぼうぎょ行動<CD>よわい攻撃を ブロックする<*04>,<SFF><f02>Lesser Defense<f00>: <f01>Block weak<D3>attacks aimed at your allies.<f00><*04>
 025,0x96402,<SFF>アンチエア攻撃<CD>ひこうメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Air<f00>: <f01>Does massive damage <D3>to flying Medarots.<f00><*04>
 026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Sea<f00>: <f01>Does massive damage <D3>to aquatic Medarots.<f00><*04>
-027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF><f02>Search<f00>: <f01>Your allies' attacks will<D3>hit more easily.<f00><*04>
+027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF><f02>Scan<f00>: <f01>Your allies' attacks will<D3>hit more easily.<f00><*04>
 028,0x96408,<SFF>いんペい行動<CD>てきの 攻撃を よけやすくなる<*04>,<SFF><f02>Conceal<f00>: <f01>Your enemies' attacks <D3>are easier to avoid.<f00><*04>
 029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,<SFF><f02>Fighting Trap<f00>: <f01>Does damage to<D3>target before they do a melee attack<f00><*04>
 030,0x9640c,<SFF>しゃげきトラップ行動<CD>「うつ.ねらいうち」攻撃にダメ-ジ<*04>,<SFF><f02>Shooting Trap<f00>: <f01>Does damage to<D3>target before they do a shot attack.<f00><*04><*04>
@@ -39,16 +39,16 @@
 037,0x9641a,<SFF>クロス攻撃ファイア行動<CD>「クロスこうげき」で 攻撃する<*04>,"<SFF><f02>Cross Attack Fire<f00>: <f01>Fires<D3>with ""Cross Attack"".<f00><*04>"
 038,0x9641c,<SFF>マイナス症状クリア行動<CD>マイナス症状を かいじょする<*04>,<SFF><f02>Minus Status Clear<f00>:<D3><f01>Removes negative status effects.<f00><*04>
 039,0x9641e,<SFF>トラップクリア行動<CD>「トラップ」を はかいする<*04>,"<SFF><f02>Trap Clear<f00>: <f01>Destroys a ""trap"".<f00><*04>"
-040,0x96420,<SFF>フォ-スせいぎょ行動<CD>「メダフォ-ス」を 使えなくする<*04>,"<SFF><f02>Force Control<f00>: <f01>Makes<D3>""Medaforce"" unusable.<f00><*04>"
+040,0x96420,<SFF>フォ-スせいぎょ行動<CD>「メダフォ-ス」を 使えなくする<*04>,"<SFF><f02>Force Seal<f00>: <f01>Makes<D3>""Medaforce"" unusable.<f00><*04>"
 041,0x96422,<SFF>かいふく行動<CD>ダメ-ジをうけたパ-ツを かいふく<*04>,<SFF><f02>Repair<f00>: <f01>Repairs a damaged part.<f00><*04>
 042,0x96424,<SFF>ふっかつ行動<CD>きのうていしパ-ツを ふっかつさせる<*04>,<SFF><f02>Restore<f00>: <f01>Restores a destroyed<D3>part.<f00><*04>
 043,0x96426,<SFF>そせい行動<CD>たおれた みかたを ふっかつさせる<*04>,<SFF><f02>Resuscitation<f00>: <f01>Revives a fallen<D3>ally.<f00><*04>
 044,0x96428,<SFF>レベルドレイン行動<CD>てきの レベルを うばいとる<*04>,<SFF><f02>Level Drain<f00>: <f01>Drains an<D3>opponent's level.<f00><*04>
-045,0x9642a,<SFF>かんぜんむこう行動<CD>全ての 攻撃を むこうにする<*04>,<SFF><f02>Perfect Disable<f00>: <f01>Disables all<D3>attacks.<f00><*04>
-046,0x9642c,<SFF>たいせいはかい行動<CD>「えんご」「かまえ」を はかいする<*04>,"<SFF><f02>Stance Disable<f00>: <f01>Disables<D3>""Ready"" and ""Defense"" skills.<f00><*04>"
-047,0x9642e,<SFF>こうがく むこう行動   (そうび)<CD>「レ-ザ-」「ビ-ム」を ブロック<*04>,"<SFF><f02>Optics Disable (Equip)<f00>:<D3><f01>Disable ""Laser"" and ""Beam"" attacks.<f00><*04>"
+045,0x9642a,<SFF>かんぜんむこう行動<CD>全ての 攻撃を むこうにする<*04>,<SFF><f02>Perfect Disable<f00>: <f01>Nullify all<D3>attacks.<f00><*04>
+046,0x9642c,<SFF>たいせいはかい行動<CD>「えんご」「かまえ」を はかいする<*04>,"<SFF><f02>Stance Disable<f00>: <f01>Nullify<D3>""Ready"" and ""Defense"" skills.<f00><*04>"
+047,0x9642e,<SFF>こうがく むこう行動   (そうび)<CD>「レ-ザ-」「ビ-ム」を ブロック<*04>,"<SFF><f02>Optics Disable (Equip)<f00>:<D3><f01>Nullify ""Laser"" and ""Beam"" attacks.<f00><*04>"
 048,0x96430,<SFF>かやく むこう行動    (そうび)<CD>「ミサイル」「ナパ-ム」を ブロック<*04>,"<SFF><f02>Explosive Disable (Equip)<f00>:<D3><f01>Nullify ""Missile"" & ""Napalm"" attacks.<f00><*04>"
-049,0x96432,<SFF>じゅうリょく むこう行動 (そうび)<CD>「ブレイク」「プレス」を ブロック<*04>,"<SFF><f02>Gravity Disable (Equip)<f00>:<D3><f01>Disable ""Break"" and ""Press"" attacks.<f00><*04>"
+049,0x96432,<SFF>じゅうリょく むこう行動 (そうび)<CD>「ブレイク」「プレス」を ブロック<*04>,"<SFF><f02>Gravity Disable (Equip)<f00>:<D3><f01>Nullify ""Break"" and ""Press"" attacks.<f00><*04>"
 050,0x96434,<SFF>症状クリア        (そうび)<CD>全ての 症状が つかない<*04>,<SFF><f02>Symptom Clear (Equip)<f00>:<D3><f01>Clears all symptoms.<f00><*04>
 051,0x96436,<SFF>けいぞくリペア行動<CD>じゅんび中も ダメ-ジをかいふく<*04>,<SFF><f02>Continuous Repair<f00>: <f01>Heals<D3>damage during preparation.<f00><*04>
 052,0x96438,<SFF>ダメ-ジげんしょう行動<CD>うけるダメ-ジを ヘらす<*04>,<SFF><f02>Damage Reduction<f00>: <f01>Reduces<D3>damage taken.<f00><*04>

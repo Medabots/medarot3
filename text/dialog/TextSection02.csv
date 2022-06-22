@@ -15,8 +15,8 @@
 013,0x9401a,<&BUF06>0¥ なくなった,<&BUF06>0¥ was lost.
 014,0x9401c,<&BUF06>を てにいれた,Received <&BUF06>.
 015,0x9401e,<&BUF06>が なくなった,<&BUF06> was lost.
-016,0x94020,パシャ!<*04>,
-017,0x94022,パシャ パシャ!<*04>,
+016,0x94020,パシャ!<*04>,<f03>Click!<f00><*04>
+017,0x94022,パシャ パシャ!<*04>,<f03>Click click!<f00><*04>
 018,0x94024,「<&BUF06>」メダルを<CD>てにいれた,Received the <f02><&BUF06><f00><D3>medal.
 019,0x94026,このメダルは すでに もっている,I already have that medal.
 020,0x94028,あたまパ-ツ<CD>「<&BUF06>」を てにいれた,Received the head part<D3><f02><&BUF06><f00>.
@@ -72,12 +72,12 @@
 070,0x940e0,<SFF>大きい...これも メダロット?<*04>,It's huge...<D3>Is this also a Medarot?<*04>
 071,0x940e2,<SFF>あくま...だ<*04>,<SFF>It's... a devil.<*04>
 072,0x940e4,<SFF>さあ! みんな かえろう<CD>ぼくたちの 家ヘ!<*04>,<SFF>Come on! <D3>Let's all go back home!<*04>
-073,0x940e6,<SFF>ビ-ハイブまで きょうそうだ!<*04>,
+073,0x940e6,<SFF>ビ-ハイブまで きょうそうだ!<*04>,<SFF>Race you to Beehive!<*04>
 074,0x940e8,<SFF>あっ! ずるい!<*04>,<SFF>Ah-! That's sneaky!<*04>
-075,0x940ea,<SFF>まてよ おわっ!!<*04>,
-076,0x940ec,<SFF>うふふ そんなに あわてたら<CD>あぶないですわ<*04>,
+075,0x940ea,<SFF>まてよ おわっ!!<*04>,"<SFF>Wait, woah!!<*04>"
+076,0x940ec,<SFF>うふふ そんなに あわてたら<CD>あぶないですわ<*04>,"<SFF>Uhuhu, it's dangerous to rush around.<*04>"
 077,0x940ee,<SFF>あ! きみは!<*04>,<SFF>Ah! It's you!<*04>
-078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from<D3>Sky TV's Medarot satellite,<CF>'Little Terakado' brings you<CF>'Medarot Weekly'!<CF>We welcome today's guest,<D3>Mr. Yuuki Nimousaku!<*03>"
+078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from<D3>Sky TV's Medarot satellite,<CF><f02>Little Terakado<f00> brings you<CF><f02>Medarot Weekly<f00>!<CF>We welcome today's guest,<D3>Mr. Yuuki Nimousaku!<*03>"
 079,0x94102,やあ よい子の メダロッタ-たち<CD>元気かい?<*03>,Yo! How all you <D3>Medarotters doing?<*03>
 080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,"I have a major scoop<D3>for all of you today.<CF>Sponsored by the Medarot<D3>Company, a nationwide<CF>Elementary Robattle Tourney,<D3>the <f02>Medalympics<f00> will be held.<CF>This will decide the strongest<D3>schoolkid medarotter team,<CF>To be crowned National<D3>Elementary Robattle Champion!<CF>The winner gets a trip into<D3>space to boot!<CF>Come and challenge it yourself<D3>if you're watching this!<*03>"
 081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 medarotters<D3>per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be<D3>announced via the schools<*03>
@@ -122,71 +122,71 @@
 120,0x94154,色をもどす メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to<D3>remove paint from<*04>
 121,0x94156,この メダロットの色を<CD>元に もどしても いいですか?<*04>,Are you sure you want this<D3>bot back to its original color?<*04>
 122,0x94158,この店では あなたのメダロットの色を<CD>ヘんこうすることが できます<CF>ふだんなら 頭パ-ツを 変えると<CD>メダロットの色も 変わリますが<CF>この店で ペイントした メダロットは<CD>メダルや パ-ツに かんけいなく<CF>ティンペットだけですら<CD>おきゃくさまの 選んだ色になリます<CF>ペイントには 100¥かかリますが<CD>とっても たのしいですよ!<CF>元の色に もどすのは いつでも<CD>お金は いただきませんから<CF>自分だけの メダロットチ-ムを<CD>ぜひ おたのしみください!,"This shop is used to change<D3>the colors of your Medarots.<CF>Usually the color matches the<D3>Medarot's head. At this shop,<CF>you can decide what color<D3>your bot will stay, no matter<CF>What Medal or parts it has.<D3>Paint costs 100¥, but it's<CF>really fun! Changing a bot<D3>back to its original color<CF>Is free. So feel free to make<D3>your own custom-made team!<CF>Make your Medarots your own,<D3>we look forward to seeing you!"
-123,0x9415a,何だっ!?,
+123,0x9415a,何だっ!?,What the...?
 124,0x9415c,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?,
 125,0x9415e,...あ! まてっ!,...Hey! Wait!
-126,0x94160,お買いあげ パ-ツの<CD>しゅるいを 選んでください<*04>,
-127,0x94164,どのパ-ツを買いますか?<CD>しゅるいを 選んでね♥<*04>,
-128,0x94166,お買いあげ ですね?<CD>パ-ツのしゅるいを 選んでください<*04>,
-129,0x94168,お買いあげ パ-ツの<CD>しゅるいヲ 選んでくだサイ<*04>,
-130,0x9416a,お売リになる パ-ツの<CD>しゅるいを 選んでください<*04>,
-131,0x9416c,どのパ-ツを売リますか?<CD>しゅるいを 選んでね♥<*04>,
-132,0x9416e,お売リになリますか?<CD>パ-ツのしゅるいを 選んでください<*04>,
-133,0x94170,お売リになる パ-ツの<CD>しゅるいヲ 選んでくだサイ<*04>,
-134,0x94172,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,
-135,0x94174,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れま-す♥<*04>,
-136,0x94176,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,
-137,0x94178,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れマス<*04>,
+126,0x94160,お買いあげ パ-ツの<CD>しゅるいを 選んでください<*04>,Please select the type of part you'd like to purchase.<*04>
+127,0x94164,どのパ-ツを買いますか?<CD>しゅるいを 選んでね♥<*04>,"Select the type of part you'd like to purchase, okay? ♥<*04>"
+128,0x94166,お買いあげ ですね?<CD>パ-ツのしゅるいを 選んでください<*04>,Are you buying something? Select the type of part.<*04>
+129,0x94168,お買いあげ パ-ツの<CD>しゅるいヲ 選んでくだサイ<*04>,<f03>Please select the type of part you'd like to purchase.<f00><*04>
+130,0x9416a,お売リになる パ-ツの<CD>しゅるいを 選んでください<*04>,Please select the type of part you'd like to sell.<*04>
+131,0x9416c,どのパ-ツを売リますか?<CD>しゅるいを 選んでね♥<*04>,"Select the type of part you'd like to sell, okay? ♥<*04>"
+132,0x9416e,お売リになリますか?<CD>パ-ツのしゅるいを 選んでください<*04>,Are you selling something? Select the type of part.<*04>
+133,0x94170,お売リになる パ-ツの<CD>しゅるいヲ 選んでくだサイ<*04>,<f03>Please select the type of part you'd like to sell.<f00><*04>
+134,0x94172,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You have redeemed a <f02>Pass Card<f00> for a part.<*04>
+135,0x94174,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れま-す♥<*04>,<SFF>You have redeemed a <f02>Pass Card<f00> for a part ♥<*04>
+136,0x94176,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You have redeemed a <f02>Pass Card<f00> for a part.<*04>
+137,0x94178,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れマス<*04>,<SFF><f03>You have redeemed a <f04>Pass Card<f03> for a part.<f00><*04>
 138,0x9417a,パスワ-ドを 入力してください<*04>,Please input the password.<*04>
 139,UNUSED00,パスワ-ドが まちがっています<*04>,That password is incorrect.<*04>
 140,0x9417c,パスワ-ドを 入力してね♥<*04>,Input the password.♥<*04>
 141,0x9417e,パスワ-ドを ご入力ください<*04>,Kindly input the password.<*04>
 142,0x94180,パスワ-ドを 入力してくだサイ<*04>,Please input the password.<*04>
-143,0x94182,<&BUF04> を<CD>手に入れました!<CF>パスポイントが 1つ なくなった!<*03>,<&BUF04> received!<CF>Lost 1 pass point!<*03>
-144,0x94186,やったね♥ <&BUF04><CD>を 手に入れたわ<CF>パスポイントが 1つ なくなったわ♥<*03>,Yay!♥ <&BUF04> received!<CF>Lost 1 pass point.♥<*03>
-145,0x94188,おめでとうございます<CD><&BUF04> を さしあげます<CF>パスポイントが 1つ なくなリました<*03>,Congratulations.<D3><&BUF04> was received.<CF>1 pass point was lost.<*03>
-146,0x9418a,セイカイ! <&BUF04><CD>を アゲルヨ<CF>パスポイント 1マイナス!<*03>,
-147,0x9418c,お金が 足リません<*04>,I don't have enough money.<*04>
-148,0x9418e,お金が 足リないよ<*04>,
-149,0x94190,お金が 足リないようですね<*04>,
-150,0x94192,お金が 足リまセン<*04>,
-151,0x94194,パスカ-ドが あリません<*04>,
-152,0x94196,パスカ-ドが ないみたい♥<*04>,
-153,0x94198,ごリようには<CD>パスカ-ドが ひつようです<*04>,
-154,0x9419a,パスカ-ドが あリまセン<*04>,
-155,0x9419c,パスワ-ドが まちがっています<*04>,
-156,0x9419e,パスワ-ドが まちがってるわ♥<*04>,
-157,0x941a0,パスワ-ドが ちがうようですね<*04>,
-158,0x941a2,パスワ-ドが まちがっていマス<*04>,
-159,0x941a4,パスワ-ドを 入力してください<*04>,
-160,0x941a6,パスワ-ドを 入力してね♥<*04>,
-161,0x941a8,パスワ-ドを ご入力ください<*04>,
-162,0x941aa,パスワ-ドを 入力してくだサイ<*04>,
-163,0x941ac,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,
-164,0x941ae,<SFF>何に いたしますか?<CD>メニュ-を選んでね♥<*04>,
-165,0x941b0,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,
-166,0x941b2,<SFF>いらっしゃいマセ<CD>何ニ イタシマスカ?<*04>,
-167,0x941b4,あリがとうございました!<*04>,
-168,0x941b6,あリがとうございましたぁ♥<*04>,
-169,0x941b8,あリがとうございました<CD>またのご来店を おまちしておリます<*04>,
-170,0x941ba,アリガトございまシタ!<*04>,
-171,0x941bc,いらっしゃいませ<CD>何に いたしますか?<*04>,
-172,0x941be,いらっしゃいませ!<CD>メダロッタ-ズヘようこそ♥<*04>,
-173,0x941c0,ご来店あリがとうございます<CD>何にいたしますか?<*04>,
-174,0x941c2,いらっしゃいマセ<CD>やすいヨ やすいヨ<*04>,
-175,0x941c4,<SFF>そこには 行けないみたいだ<*04>,
-176,0x941c6,パスポイントが あリません<*04>,
-177,0x941c8,パスポイントが ないみたい♥<*04>,
-178,0x941ca,ごリようには<CD>パスポイントが ひつようです<*04>,
-179,0x941cc,パスポイントが あリまセン<*04>,
+143,0x94182,<&BUF04> を<CD>手に入れました!<CF>パスポイントが 1つ なくなった!<*03>,I'll give you <D3><&BUF04><CF>and I'll take away a <f02>Pass Point<f00>!<*03>
+144,0x94186,やったね♥ <&BUF04><CD>を 手に入れたわ<CF>パスポイントが 1つ なくなったわ♥<*03>,Yay! ♥ I'll give you<D3><&BUF04>!<CF>And I'll take away a Pass Point. ♥<*03>
+145,0x94188,おめでとうございます<CD><&BUF04> を さしあげます<CF>パスポイントが 1つ なくなリました<*03>,Congratulations. I'll give you<D3><&BUF04><CF>and take away a <f02>Pass Point<f00>.<*03>
+146,0x9418a,セイカイ! <&BUF04><CD>を アゲルヨ<CF>パスポイント 1マイナス!<*03>,<f03>Correct! I'll give you <&BUF04><CF>and take away a <f04>Pass Point<f03>!<f00><*03>
+147,0x9418c,お金が 足リません<*04>,You don't have enough money.<*04>
+148,0x9418e,お金が 足リないよ<*04>,You don't have the money.<*04>
+149,0x94190,お金が 足リないようですね<*04>,Seems you don't have enough money.<*04>
+150,0x94192,お金が 足リまセン<*04>,<f03>You don't have enough money.<f00><*04>
+151,0x94194,パスカ-ドが あリません<*04>,You don't have any <f02>Pass Cards<f00>.<*04>
+152,0x94196,パスカ-ドが ないみたい♥<*04>,You don't have any <f02>Pass Cards <f00>♥<*04>
+153,0x94198,ごリようには<CD>パスカ-ドが ひつようです<*04>,<f02>Pass Card<f00> required.<*04>
+154,0x9419a,パスカ-ドが あリまセン<*04>,<f03>You don't have any <f04>Pass Cards<f03>.<f00><*04>
+155,0x9419c,パスワ-ドが まちがっています<*04>,That password was incorrect.<*04>
+156,0x9419e,パスワ-ドが まちがってるわ♥<*04>,That password was incorrect ♥<*04>
+157,0x941a0,パスワ-ドが ちがうようですね<*04>,That password doesn't seem right.<*04>
+158,0x941a2,パスワ-ドが まちがっていマス<*04>,<f03>That password was incorrect.<f00><*04>
+159,0x941a4,パスワ-ドを 入力してください<*04>,Please enter a password.<*04>
+160,0x941a6,パスワ-ドを 入力してね♥<*04>,"Enter a password, okay? ♥<*04>"
+161,0x941a8,パスワ-ドを ご入力ください<*04>,Please input a password.<*04>
+162,0x941aa,パスワ-ドを 入力してくだサイ<*04>,<f03>Please enter a password.<f00><*04>
+163,0x941ac,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer,<D3>how may I help you?<*04>"
+164,0x941ae,<SFF>何に いたしますか?<CD>メニュ-を選んでね♥<*04>,"<SFF>How may I help you?<D3>Select with the menu, okay? ♥<*04>"
+165,0x941b0,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer,<D3>How may I help you?<*04>"
+166,0x941b2,<SFF>いらっしゃいマセ<CD>何ニ イタシマスカ?<*04>,"<SFF><f03>Welcome valued customer,<D3>How may I help you?<f00><*04>"
+167,0x941b4,あリがとうございました!<*04>,Thank you very much!<*04>
+168,0x941b6,あリがとうございましたぁ♥<*04>,Thank you so much ♥<*04>
+169,0x941b8,あリがとうございました<CD>またのご来店を おまちしておリます<*04>,"Thank you very much, I look<D3>forward to your next visit.<*04>"
+170,0x941ba,アリガトございまシタ!<*04>,<f03>Thank you very much!<f00><*04>
+171,0x941bc,いらっしゃいませ<CD>何に いたしますか?<*04>,"Welcome valued customer,<D3>how may I help you?<*04>"
+172,0x941be,いらっしゃいませ!<CD>メダロッタ-ズヘようこそ♥<*04>,"Welcome valued customer,<D3>to Medarotters ♥<*04>"
+173,0x941c0,ご来店あリがとうございます<CD>何にいたしますか?<*04>,"Thank you for visiting,<D3>how may I help you?<*04>"
+174,0x941c2,いらっしゃいマセ<CD>やすいヨ やすいヨ<*04>,"<f03>Welcome valued customer,<D3>how may I help you?<f00><*04>"
+175,0x941c4,<SFF>そこには 行けないみたいだ<*04>,<SFF>It doesn't seem I can go there.<*04>
+176,0x941c6,パスポイントが あリません<*04>,You have no <f02>Pass Points<f00>.<*04>
+177,0x941c8,パスポイントが ないみたい♥<*04>,You have no <f02>Pass Points <f00>♥<*04>
+178,0x941ca,ごリようには<CD>パスポイントが ひつようです<*04>,<f02>Pass Point<f00> required to use.<*04>
+179,0x941cc,パスポイントが あリまセン<*04>,<f03>You have no <f04>Pass Points<f03>.<f00><*04>
 180,0x941ce,よろしいですか?<*04>,Are you sure?<*04>
-181,0x941d0,よろしいかしら?<*04>,Are you sure?<*04>
+181,0x941d0,よろしいかしら?<*04>,Are you positive?<*04>
 182,0x941d2,これで よろしいでしょうか?<*04>,Are you sure about this?<*04>
-183,0x941d4,ヨロシイですか?<*04>,Are you positive?<*04>
-184,0x941d6,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています!<*03>,I already have the parts I <D3>can get with this password!<*03>
-185,0x941d8,このパスワ-ドで 手に入るパ-ツは<CD>すでに持ってるみたい♥<*03>,I already have the parts I <D3>can get with this password. ♥<*03>
-186,0x941da,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています<*03>,I already have the parts I <D3>can get with this password.<*03>
-187,0x941dc,コノパスワ-ドで 手に入るパ-ツは<CD>すでに持っていマス!<*03>,I already have the parts I <D3>can get with this password!<*03>
+183,0x941d4,ヨロシイですか?<*04>,<f03>Are you sure?<f00><*04>
+184,0x941d6,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています!<*03>,You already have the part you<D3>can get with this password!<*03>
+185,0x941d8,このパスワ-ドで 手に入るパ-ツは<CD>すでに持ってるみたい♥<*03>,You already have the part you <D3>can get with this password. ♥<*03>
+186,0x941da,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています<*03>,You already have the part you<D3>can get with this password.<*03>
+187,0x941dc,コノパスワ-ドで 手に入るパ-ツは<CD>すでに持っていマス!<*03>,<f03>You already have the part you<D3>can get with this password!<f00><*03>
 188,0x941de,<FINAL>,
 189,0x94046,@0x94044,@0x94044
 190,0x94048,@0x94044,@0x94044

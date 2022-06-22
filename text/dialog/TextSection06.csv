@@ -42,15 +42,15 @@
 040,0x96f7c,<SFF>のこリリミットを ヘらして<CD>はんていじかんを おそくする<*04>,<SFF>Uses remaining meter<D3>to delay <f02>Judgement Time<f00><*04>
 041,0x96f7e,<SFF>てき全体に<CD>こんらんの 症状を つける<*04>,<SFF>Inlicts <f02>Confused<f00> status<D3>ailment on all enemies.<*04>
 042,0x96f80,<SFF>てきや みかたに かんけいなく<CD>全メダロットを こんらんさせる<*04>,<SFF><f01>Inlicts <f02>Confused<f00> status<D3>ailment on all enemies and allies.<f00><*04>
-043,0x96f82,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 2ばいにする<*04>,
-044,0x96f84,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 3ばいにする<*04>,
-045,0x96f86,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 4ばいにする<*04>,
-046,0x96f88,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,
-047,0x96f8a,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,
-048,0x96f8c,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,
-049,0x96f8e,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 2ばいにする<*04>,
-050,0x96f90,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 3ばいにする<*04>,
-051,0x96f92,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 4ばいにする<*04>,
+043,0x96f82,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 2ばいにする<*04>,<SFF>Change part to <f02>Optic<f00> and deal double damage.'<*04>
+044,0x96f84,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 3ばいにする<*04>,<SFF>Change part to <f02>Optic<f00> and deal triple damage.'<*04>
+045,0x96f86,<SFF>パ-ツを「こうがく」ぞくせいにし<CD>ダメ-ジを 4ばいにする<*04>,<SFF>Change part to <f02>Optic<f00> and deal quadruple damage.'<*04>
+046,0x96f88,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,"<SFF>Change part to <f02>Explosive<f00>,<D3>attacks always hit and pierce.<*04>"
+047,0x96f8a,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,"<SFF>Change part to <f02>Explosive<f00>,<D3>attacks always hit and pierce.<*04>"
+048,0x96f8c,<SFF>パ-ツを「かやく」ぞくせいにし<CD>ぜったいめいちゅうと かんつうする<*04>,"<SFF>Change part to <f02>Explosive<f00>,<D3>attacks always hit and pierce.<*04>"
+049,0x96f8e,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 2ばいにする<*04>,<SFF>Change part to <f02>Gravity<f00> and deal double damage.'<*04>
+050,0x96f90,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 3ばいにする<*04>,<SFF>Change part to <f02>Gravity<f00> and deal triple damage.'<*04>
+051,0x96f92,<SFF>パ-ツを「じゅうリょく」ぞくせいにし<CD>せいこうを 4ばいにする<*04>,<SFF>Change part to <f02>Gravity<f00> and deal quadruple damage.'<*04>
 052,0x96f94,<SFF>みかた全体の<CD>1パ-ツを かいふくする<*04>,<SFF>Repairs one part on all allies.<*04>
 053,0x96f96,<SFF>みかた全体の<CD>2パ-ツを かいふくする<*04>,<SFF>Repairs two parts on all allies.<*04>
 054,0x96f98,<SFF>みかた全体の<CD>3パ-ツを かいふくする<*04>,<SFF>Repairs three parts on all<D3>allies.<*04>

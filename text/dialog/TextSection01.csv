@@ -55,7 +55,7 @@
 053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> <&BUF00> part<D3><&BUF01> was acquired!<*03>
 054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal<D3>you currently have equipped!
 055,0x91a8a,メダリアのついている メダルは<CD>あげることが できません!,You can not give away a Medal<D3>that has Medalia equipped!
-056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The opponent already owns<D3>this Medal!
+056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The other person already<D3>owns this Medal!
 057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,Your opponent is choosing a<D3>Medal. Please wait!<*04>
 058,0x91a90,メダル転送!<S5A><*04>,Medal transfer!<S5A><*04>
 059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> <&BUF00> medal<D3><&BUF01> was acquired!<*03>

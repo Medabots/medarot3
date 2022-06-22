@@ -4,7 +4,7 @@
 002,0x11c004,"<@LL,00,00>ここは カガミヤマの家だ","<@LL,00,00>This is Kagamiyama's house."
 003,0x11c006,"<@LL,00,00>ここは メダロット研究所だ","<@LL,00,00>This is the Medarot Research <D3>Institute."
 004,0x11c008,"<@LL,00,00>ここは はい工場だ",
-005,0x11c00a,「セレクト しぶ」,
+005,0x11c00a,「セレクト しぶ」,Select Branch
 006,0x11c00c,"<@LL,00,00>ここは アリカの家だ","<@LL,00,00>Erika's house is here."
 007,0x11c00e,"<@LL,00,00>ぼくの家だ","<@LL,00,00>My house is here."
 008,0x11c010,"<@LL,00,00>ここは 番長の家だ<CF><@LL,00,05>番長って だれだっけ?",
@@ -20,7 +20,7 @@
 018,0x11c024,「メダロットの ちしき<CD> じゅくれんど」<CF>メダルは それぞれ じゅくれんどを<CD>3つしか 持っていない<CF>使いたい パ-ツの<CD>じゅくれんどを 持っていない時は<CF>メダリアを そうちゃくして<CD>サポ-トする方がよい,"Medarot Knowledge:<D3>Skills'<CF>Each Medal has only 3<D3>skills.<CF>If you want to use a<D3>skill you lack,<CF>It is best to use a<D3>Medalia to support it."
 019,0x11c026,「メダロットの ちしき<CD> メダリア(1)」<CF>メダリアは 全部で 10しゅるいあリ<CD>30個まで 持つことができる<CF>パ-ツに ひつような じゅくれんどが<CD>メダルに ないときでも<CF>メダリアを つければ<CD>じゅくれんどの かわリになる,"Medarot Knowledge:<D3>Medalia (1)'<CF>There are a total of 10 types<D3>of Medalia and 30 can be held.<CF>Even if a medal doesn't have<D3>the required proficiency for<CF>A part, a Medalia can change<D3>the Medal's proficiency.<*03>"
 020,0x11c028,「メダロットの ちしき<CD> メダリア(2)」<CF>メダルと メダリアの じゅくれんどが<CD>同じ ないようの時は<CF>じゅくれんどの すうちが<CD>高い方が 行動に はんえいされる<CF>しかし ひくい方の じゅくれんどにも<CD>けいけんちが 入るので<CF>なるベく メダリアを つけて<CD>ロボトルする方が よい,"Medarot Knowledge:<D3>Medalia (2)'<CF>When the skill values of<D3>a Medal and Medalia differ,<CF>The higher value is the<D3>one that is used.<CF>But, it is better to have<D3>the Medalia be lower during<CF>Robattles because of the<D3>higher experience gains."
-021,0x11c02a,「メダロットの ちしき<CD> あいしょう(1)」<CF>メダルと パ-ツには ぞくせいがあリ<CD>同じ ぞくせいの パ-ツをつけると<CF>あいしょうの すうちが 全ての<CD>行動に ボ-ナスとして プラスされる,"Medabot Knowledge: <D3>Affinities (1)<CF>Medals and parts each have <D3>affinities.<D3>While parts of the same <D3>affinity are attached,<CF>All parts of that affinity will <D3>recieve an action bonus."
+021,0x11c02a,「メダロットの ちしき<CD> あいしょう(1)」<CF>メダルと パ-ツには ぞくせいがあリ<CD>同じ ぞくせいの パ-ツをつけると<CF>あいしょうの すうちが 全ての<CD>行動に ボ-ナスとして プラスされる,"Medabot Knowledge: <D3>Affinities (1)<CF>Medals and parts each have <D3>attributes.<CF>While parts of the same <D3>attribute are attached,<CF>All parts of that attribute<D3>will recieve an affinity bonus."
 022,0x11c02c,「メダロットの ちしき<CD> あいしょう(2)」<CF>パ-ツの ぞくせいと のうリょくは<CD>いつも同じとは かぎらない<CF>あいしょうが わるく<CD>のうリょくの 高いパ-ツよリ<CF>あいしょうを 合わせた<CD>のうリょくの ひくいパ-ツのほうが<CF>つよくなることがあるので<CD>いろいろ ためしてみると よい,"Medarot Knowledge:<D3>Affinities (2)'<CF>A part's attributes and<D3>abilities aren't always equal.<CF>Parts with high affinity, but<D3>low ablities are stronger<CF>Than parts with low affinity<D3>and high abilities.<CF>Try out all kinds of parts and<D3>see how they work together."
 023,0x11c02e,「メダロットの ちしき<CD> メダフォ-ス(1)」<CF>メダルの レベルが上がると<CD>メダフォ-スを おぼえることがある<CF>メダフォ-スは メダフォ-スを<CD>ためることによリ 使用できる<CF>ただし メダフォ-スを 使うばあい<CD>パ-ツよリも 時間が かかるので<CF>タイミングを 計って<CD>使う ひつようがある,"Medabot Knowledge: <D3>Medaforce(1)<CF>While the medal level goes up, <D3>remember Medaforce! <CF>Medaforce skills can be used <D3>by accumulating Medaforce.<CF>However, using Medaforce <D3>skills takes more time <D3>than using parts. <CF>It's necessary to use <D3>careful timing when <D3>using Medaforce!"
 024,0x11c030,「メダロットの ちしき<CD> メダフォ-ス(2)」<CF>メダフォ-スは パ-ツに くらベて<CD>きょうリょくな こうかがある<CF>また チ-ム全体に こうかがあるのも<CD>メダフォ-スの とくちょうである<CF>そのかわリ それぞれの メダルは<CD>おぼえる ものが きまっているので<CF>メダフォ-スを うまく いかすように<CD>メダロットを 租みあげることが<CF>じゅうような ポイントとなる,"Medarot Knowledge<D3> Medaforce (2)'<CF>The Medaforce is more<D3>powerful than parts.<CF>Moreover, Medaforce affects<D3>the entire team.<CF>However, each medal can<D3>only learn certain ones.<CF>The key is to train Medarots<D3>in order to make the best<CF>Use of the Medaforce."
@@ -45,7 +45,7 @@
 043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!","<@LL,00,00>It's software for the <D3>school computers.<CF>Japanese education is <D3>kind of strange...<CF>We kids often don't have<D3>enough pencils...<CF>We rely on light from <D3>fireflies to study...<CF><@LL,00,01>Just kidding!"
 044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!","<@LL,00,04>Yeah! <D3>I look sharp as always today."
 045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,00,04>Yeah!<D3>I look sharp as always today.<CF><@LL,00,06>...Why am I primping myself<D3>in a girls' bathroom?"
-046,0x11c05c,"<@LL,00,03>もちろん ひけない...","<@LL,00,03>No way can I play this..."
+046,0x11c05c,"<@LL,00,03>もちろん ひけない...","<@LL,00,03>No way I can play this..."
 047,0x11c05e,「ドレミから はじめよう」,Starting From Do-Re-Mi
 048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,00,05>.......?"
 049,0x11c062,「セレクト威 本部」,Select Corp<D3>Headquarters
@@ -89,8 +89,8 @@
 087,0x11c0ae,「メダロット社」,Medabot Company
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,
 089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
-090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?",
-091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる",A lot of magazines are lined<D3>up.
+090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?","<@LL,00,07>Ah! Are those parts here...!?<CF><@LL,00,00>...I guess they're just shrimps and crabs...<CF><@LL,00,05>They kind of look alike...<CF><@LL,00,03>Don't they...?"
+091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる","<@LL,00,00>A lot of magazines are lined<D3>up."
 092,0x11c0b8,"<@LL,00,00>ひらかないみたいだ",
 093,0x11c0ba,「きっさ カマド-マ」,
 094,0x11c0bc,"<@LL,00,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ",

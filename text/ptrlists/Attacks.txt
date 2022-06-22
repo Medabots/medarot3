@@ -42,15 +42,15 @@ Index[#version],AttackName
 37,Cross-Attack Fire
 38,Minus Clear
 39,Trap Clear
-40,Force Control
+40,Force Seal
 41,Repair
 42,Revive
 43,Resurrect
 44,Level Drain
 45,Null-All
-46,?
+46,Stance Disable
 47,Null-Optical
-48,Null-Gunpowder
+48,Null-Explosive
 49,Null-Gravity
 50,Status Clear
 51,Auto-Repair

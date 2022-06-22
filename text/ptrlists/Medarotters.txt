@@ -208,12 +208,12 @@ Index[#version],Unknown,Name
 203,\x4b\x39\x00,Merman Boy
 204,\x4b\x39\x00,Merman Boy
 205,\x4b\x39\x00,Merman Boy
-206,\x4c\x3a\x00,Grouse Boy
-207,\x4c\x3a\x00,Grouse Boy
-208,\x4c\x3a\x00,Grouse Boy
-209,\x4d\x3b\x00,Grouse Girl
-210,\x4d\x3b\x00,Grouse Girl
-211,\x4d\x3b\x00,Grouse Girl
+206,\x4c\x3a\x00,Raicho Boy
+207,\x4c\x3a\x00,Raicho Boy
+208,\x4c\x3a\x00,Raicho Boy
+209,\x4d\x3b\x00,Raicho Girl
+210,\x4d\x3b\x00,Raicho Girl
+211,\x4d\x3b\x00,Raicho Girl
 212,\x4e\x3c\x00,Alien
 213,\x4e\x3c\x00,Alien
 214,\x4f\x3d\x00,Rintarou
