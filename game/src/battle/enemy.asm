@@ -216,28 +216,28 @@ BattlePrepareEnemyMedaforce::
   ld [$c4f1], a
   ld a, [$dc10]
   cp $28
-  jp z, .asm_29d80
+  jp z, .no_medaforce_selected
   ld a, b
   cp $ff
-  jr z, .asm_29d1a
+  jr z, .check_table
   ld [$c4f0], a
   ld a, $01
   ld [$c4f1], a
-  jr .asm_29d2d
-.asm_29d1a
+  jr .ignore_table
+.check_table
   call $ab4
   ld a, [$c4a0]
   and $07
-  ld hl, $5d85
+  ld hl, .table
   ld b, $00
   ld c, a
   add hl, bc
   ld a, [hl]
   ld [$c4f0], a
-.asm_29d2d
+.ignore_table
   xor a
   ld [$c4f2], a
-.asm_29d31
+.check_next
   ld hl, $15
   ld b, $00
   ld a, [$c4f0]
@@ -246,7 +246,7 @@ BattlePrepareEnemyMedaforce::
   add hl, de
   ld a, [hl]
   cp $ff
-  jr z, .asm_29d63
+  jr z, .no_medaforce
   ld [W_ListItemIndexForBuffering], a
   ld b, $0a
   ld c, $0f
@@ -261,36 +261,36 @@ BattlePrepareEnemyMedaforce::
   add hl, de
   ld a, [hl]
   cp b
-  jr c, .asm_29d63
+  jr c, .no_medaforce
   call BattlePrepareEnemyMedaforceCopyToStructure
-  jr .asm_29d82
-.asm_29d63
+  jr .medaforce_selected
+.no_medaforce
   ld a, [$c4f1]
   or a
-  jr nz, .asm_29d80
+  jr nz, .no_medaforce_selected
   ld a, [$c4f0]
   sub $01
-  jr nc, .asm_29d72
+  jr nc, .increment
   ld a, $02
-.asm_29d72
+.increment
   ld [$c4f0], a
   ld a, [$c4f2]
   inc a
   ld [$c4f2], a
   cp $03
-  jr nz, .asm_29d31
-.asm_29d80
+  jr nz, .check_next
+.no_medaforce_selected
   xor a
   ret
-.asm_29d82
+.medaforce_selected
   ld a, $01
   ret
-
-  padend $5d85
-
+.table
   db $00, $01, $02
   db $00, $01, $02
   db $00, $01
+
+  padend $5d8d
 
 BattlePrepareEnemyMedaforceCopyToStructure::
   push de
