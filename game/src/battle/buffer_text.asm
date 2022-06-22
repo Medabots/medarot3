@@ -5,8 +5,61 @@ INCLUDE "build/pointer_constants.asm"
 
 ; Common routines
 
+LoadPartTypeTextIntoBUF01: MACRO
+LoadPartTypeTextIntoBUF01_\1::
+  push de
+  ld hl, PartTypeTable_\1
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  ld de, cBUF01
+.copyLoop
+  ld a, [hli]
+  ld [de], a
+  cp $cb
+  jr z, .return
+  inc de
+  jr .copyLoop
+.return
+  pop de
+  ret
+  ENDM
+
+LoadPartTypeTextIntoDE: MACRO
+LoadPartTypeTextIntoDE_\1::
+  push de
+  push hl
+  ld hl, PartTypeTable_\1
+  ld b, $00
+  ld c, a
+  sla c
+  rl b
+  sla c
+  rl b
+  sla c
+  rl b
+  add hl, bc
+  pop de
+.loop
+  ld a, [hli]
+  ld [de], a
+  cp $cb
+  jr z, .return
+  inc de
+  jr .loop
+.return
+  pop de
+  ret
+  ENDM
+
 PartTypeTable: MACRO
-.table
+PartTypeTable_\1:
   db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
   db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
   db $D3,$4F,$D3,$EB,$CB,$00,$00,$00 ; Left Arm
@@ -14,7 +67,7 @@ PartTypeTable: MACRO
   ENDM
 
 LoadParticipantNameIntoBUF02: MACRO
-LoadParticipantNameIntoBUF02_\1:
+LoadParticipantNameIntoBUF02_\1::
   ld hl, $40 ; offset to name in participant structure
   add hl, de
   push de
@@ -98,30 +151,8 @@ BattleAllyStatusLoadTextIntoBuf02::
 
 SECTION "Load text for part damage 0B", ROMX[$509b], BANK[$0B]
 BattleAllyStatusLoadPartType::
-  push de
-  push hl
-  ld hl,.table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  add hl, bc
-  pop de
-.loop
-  ld a, [hli]
-  ld [de], a
-  cp $cb
-  jr z, .return
-  inc de
-  jr .loop
-.return
-  pop de
-  ret
-  PartTypeTable
+  LoadPartTypeTextIntoDE 0B
+  PartTypeTable 0B
 
   padend $50dc
 
@@ -219,30 +250,9 @@ BattleLoadPartDamageNumber:: ;
   ld [de], a
   pop de
   ret
-BattleLoadPartDefendedText:
-  push de
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  add hl, bc
-  ld de, cBUF01
-.copyLoop
-  ld a, [hli]
-  ld [de], a
-  cp $cb
-  jr z, .return
-  inc de
-  jr .copyLoop
-.return
-  pop de
-  ret
-  PartTypeTable
+
+  LoadPartTypeTextIntoBUF01 0C
+  PartTypeTable 0C
 
 SECTION "Load participant name into cBUF02 0C", ROMX[$59f4], BANK[$0C]
   LoadParticipantNameIntoBUF02 0C
@@ -279,30 +289,9 @@ BattleStatusLoadSkillIntoBuf01::
   ld de, cBUF01
   ld bc, $6
   jp memcpy
-BattleStatusLoadPartType::
-  push de
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  add hl, bc
-  ld de, cBUF01
-.loop
-  ld a, [hli]
-  ld [de], a
-  cp $cb
-  jr z, .return
-  inc de
-  jr .loop
-.return
-  pop de
-  ret
-  PartTypeTable
+
+  LoadPartTypeTextIntoBUF01 0D
+  PartTypeTable 0D
 
   padend $4783
 
@@ -313,30 +302,8 @@ SECTION "Load text into buffers for battle messages 2 0D", ROMX[$48b7], BANK[$0D
 
 SECTION "Load part type for encounter reward", ROMX[$5c17], BANK[$15]
 EncounterLoadRewardPartTypeText::
-  push de
-  push hl
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  sla c
-  rl b
-  sla c
-  rl b
-  sla c
-  rl b
-  add hl, bc
-  pop de
-.loop
-  ld a, [hli]
-  ld [de], a
-  cp $cb
-  jr z, .return
-  inc de
-  jr .loop
-.return
-  pop de
-  ret
-  PartTypeTable
+  LoadPartTypeTextIntoDE 15
+  PartTypeTable 15
 
   padend $5c58
 
@@ -344,7 +311,7 @@ SECTION "Load text into buffers for battle messages 17", ROMX[$4f80], BANK[$17]
   LoadParticipantNameIntoBUF02 17
 
 SECTION "Load text into buffers for battle messages 2 17", ROMX[$4dc2], BANK[$17]
-BattleStatusLoadSkillIntoBuf00:: ; 5cdc2 (17:4dc2)
+BattleStatusLoadSkillIntoBuf00::
   call $5203
   ld hl, $da
   call $5268
@@ -358,7 +325,7 @@ BattleStatusLoadSkillIntoBuf00:: ; 5cdc2 (17:4dc2)
   ld de, cBUF00
   ld bc, $e
   jp memcpy
-BattleStatusLoadAttackIntoBuf01:: ; 5cde6 (17:4de6)
+BattleStatusLoadAttackIntoBuf01::
   call $5203
   ld hl, $db
   call $5268
@@ -373,4 +340,5 @@ BattleStatusLoadAttackIntoBuf01:: ; 5cde6 (17:4de6)
   ld bc, $6
   jp memcpy
 
-  padend $4e0a
+  LoadPartTypeTextIntoBUF01 17
+  PartTypeTable 17
