@@ -14,26 +14,28 @@ BattleStatusLoadSkillIntoBuf00::
   ld hl, $da
   call $5268
   ld [W_ListItemIndexForBuffering], a
-  ld bc, $120e
-  xor a
+  ld b, $12
+  ld c, $0e
+  ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld hl, W_NewListItemBufferArea
   ld de, cBUF00
-  ld bc, $e
+  ld bc, $17
   jp memcpy
 BattleStatusLoadAttackIntoBuf01::
   call $5203
   ld hl, $db
   call $5268
   ld [W_ListItemIndexForBuffering], a
-  ld bc, $0606
-  xor a
+  ld b, $06
+  ld c, $06
+  ld a, $00
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld hl, W_NewListItemBufferArea
   ld de, cBUF01
-  ld bc, $6
+  ld bc, $17
   jp memcpy
 
   LoadPartTypeTextIntoBUF01 17
