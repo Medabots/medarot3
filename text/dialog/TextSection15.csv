@@ -134,7 +134,7 @@
 132,0x1f0108,"<@RL,1D,00>しごとが いそがしい時は<CD>メダロットに かじを まかせるの","<@RL,1D,00>When I'm busy with work, I<D3>leave the housework to my<CF><D1>Medabot."
 133,0x1f010a,"<@RL,31,00>ワタシは 子もリ型メダロット<CD>子もリ型は かじが とくいなんです","<@RL,31,00>I'm a sitter-type Medabot.<D3>sitter-types specialize in<CF><D1>housework!"
 134,0x1f010c,"<@LL,00,00>?<CF><D1>このせきぞうだけ<CD>ボナパルトの ぞうになっている!<CF><D1>う-む だれかの いたずら?<CD>それとも これで 正しいの?","<@LL,00,00>...?<CF><D1>This statue is a different<D3>shape. It looks like Bonapart!<CF><D1>Umm, is someone playing a<D3>prank? Or maybe it's supposed<CF><D1>to be that way?"
-135,0x1f010e,"<@RL,13,00>う-ん いそごうとすると<CD>くつが うまく はけない...",
+135,0x1f010e,"<@RL,13,00>う-ん いそごうとすると<CD>くつが うまく はけない...","<@RL,13,00>Hmm, I'm in a hurry, but I can't get my shoes on right..."
 136,0x1f0110,"<@RL,13,00>ここの トイレは すごいよ<CD>まるで おんせんみたいだ","<@RL,13,00>This bathroom is amazing! It's<D3>just like an onsen!"
 137,0x1f0112,"<@RL,13,00>2人で 会っているところを<CD>貝つかったら ぼくたち<CF><D1>引きはなされて しまうのかな...","<@RL,13,00>If they find us meeting here,<D3>we...<CF><D1>We'll be separated..."
 138,0x1f0114,"<@RL,1B,00>そんなの イヤよ!","<@RL,1B,00>No! That's awful!"
@@ -142,8 +142,8 @@
 140,0x1f0118,"<@RL,1B,00>2人で 会っているところを<CD>貝つかったら わたしたち<CF><D1>引きはなされて しまうの...?","<@RL,1B,00>If our meeting place is found,<D3>we...<CF><D1>Will we be separated...?"
 141,0x1f011a,"<@RL,13,00>そんなの イヤだ!","<@RL,13,00>No way! That would be terrible!"
 142,0x1f011c,"<@RL,1B,00>この木の下で ねがいごとをすると<CD>おねがいが かなうのよ<CF><D1>ね-っ♥",
-143,0x1f011e,"<@RL,14,00>それでは これから<CD>じゅぎょうを はじめる","<@RL,14,00>Well then... the lesson starts<D3>now!"
-144,0x1f0120,"<@RL,14,00>それでは これで<CD>じゅぎょうを おわる",
+143,0x1f011e,"<@RL,14,00>それでは これから<CD>じゅぎょうを はじめる","<@RL,14,00>Well then, the lesson starts<D3>now!"
+144,0x1f0120,"<@RL,14,00>それでは これで<CD>じゅぎょうを おわる","<@RL,14,00>And that concludes the lesson."
 145,0x1f0122,"<@RL,1B,00>先生は ホ-ムル-ムの たびに<CD>ロボトルを はじめるの",
 146,0x1f0124,"<@LL,00,00>なんか ここの きょうしつだけ<CD>人が おおくない?<CF><D1><@RL,13,00>ここに いるのは<CD>みんな メダロットずきさ<CF><D1>学園で ロボトルできるようなったから<CD>みんなで あつまってるんだ<CF><D1>きみも 楽しんでいきなよ",
 147,0x1f0126,"<@RL,13,00>う-ん みんな<CD>とても いきいきしているなぁ",
@@ -161,17 +161,17 @@
 159,0x1f013e,"<@RL,13,00>大きな声じゃ 言えないけど...<CF><D1><@LL,00,00>ふむ ふむ<CF><D1><@RL,13,00>........<CD>.........<CF><D1>..........<CD>...........ぐう<CF><D1><@LL,00,05>ねるなよ-","<@RL,13,00>Just between you and me...<CF><D1><@LL,00,00>Yeah?<CF><D1><@RL,13,00>........<D3>.........<CF><D1>..........<D3>...........Zzzz...<CF><D1><@LL,00,05>He fell asleep!"
 160,0x1f0140,"<@RL,13,00>きみも 男の子だったら 男らしく<CF><D1>カリンちゃん ファンクラブに<CD>入るベきだ!<CF><D1><@LL,00,00>そ....そうかな....<CF><D1><@RL,13,00>そうだとも!!<CF><D1><@LL,00,04>で...でも やめとこうかな<CF><D1><@RL,13,00>この なんじゃくものぉっ!!",
 161,0x1f0142,"<@RL,1B,00>前の 学園長先生が いなくなってから<CD>ちっとも いいことが ないわ","<@RL,1B,00>Things have been kinda bad<D3>ever since the old headmaster<CF><D1>disappeared..."
-162,0x1f0144,"<@RL,1B,00>...あ! いけない!<CD>こんなこと しゃベっちゃ!",
+162,0x1f0144,"<@RL,1B,00>...あ! いけない!<CD>こんなこと しゃベっちゃ!","<@RL,1B,00>...Ah! Oh no!<D3>I shouldn't have said that!"
 163,0x1f0146,"<@RL,1B,00>新しい 学園長先生も いいかんじに<CD>なったみたい♥",
 164,0x1f0148,"<@RL,13,00>先生!<CD>しんけんロボトルしましょ-!<CF><D1><@RL,1D,00>こまったわねぇ<CD>はじめたばかリで じしんがないわ",
-165,0x1f014a,"<@RL,1B,00>な 何よ 2人だけで<CD>お話ししてるのに わリこまないでよ",
+165,0x1f014a,"<@RL,1B,00>な 何よ 2人だけで<CD>お話ししてるのに わリこまないでよ","<@RL,1B,00>Wh-what? Can't you see the two of us are talking, don't interrupt!"
 166,0x1f014c,"<@RL,1B,00>何? わたしたちの お話しに<CD>入リたいの?",
 167,0x1f014e,"<@RL,1B,00>...でね...が...<CD>そんな かんじで...<CF><D1><@LL,00,00>声が小さくて よく聞こえないや","<@RL,1B,00>...and so...it's...<D3>I feel like...<CF><D1><@LL,00,00>They're talking so quietly...<D3>I can't hear them very well."
 168,0x1f0150,"<@RL,1B,00>でね- だからぁ-<CD>しんじらんないでしょ--??<CF><D1><@LL,00,00>ふむ ふむ",
 169,0x1f0152,"<@RL,1B,00>あ-! ちょっとぉ!<CD>立ち聞きは やめてよね-!",
 170,0x1f0154,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>あっちヘ 行けよ","<@RL,13,00>W-what are you staring at me<D3>for? Go away!"
-171,0x1f0156,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>...てれるだろ!",
-172,0x1f0158,"<@RL,13,00>何だよ お前!<CD>たこうの せいとのくせに<CF><D1>何 入ってきてんだよ!<CD>み 貝つかっても 知らないぞ!",
+171,0x1f0156,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>...てれるだろ!","<@RL,13,00>Wh-what are you staring at?<D3>...You're freaking me out!"
+172,0x1f0158,"<@RL,13,00>何だよ お前!<CD>たこうの せいとのくせに<CF><D1>何 入ってきてんだよ!<CD>み 貝つかっても 知らないぞ!","<@RL,13,00>What the heck are you doing! Why's a student from another school here?<CF><D1>I-it's not my fault if you get found!"
 173,0x1f015a,"<@RL,13,00>やっぱ メダロットが いないと<CD>話が もリあがんないよな-",
 174,0x1f015c,"<@RL,1D,00>ピ ピ ピアノの<CD>れんしゅう するんだから<CF><D1>あ あ あっちに 行ってよ!","<@RL,1D,00>I'm pra-a-acticing the piano<D3>now, sooo-o-oooo...<CF><D1>Go somewhere e-e-eeeelse!"
 175,0x1f015e,"<@RL,1D,00>わたしの えんそうを お聞き!",
