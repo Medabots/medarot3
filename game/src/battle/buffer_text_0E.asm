@@ -15,8 +15,7 @@ SECTION "Load text into buffers for battle messages 0E", ROMX[$4f4a], BANK[$0E]
 SECTION "Load text into buffers for battle messages 2 0E", ROMX[$5565], BANK[$0E]
 LoadMedaforceTextIntoBUF02::
   call $593e
-  ld hl, $1d0
-  add hl, de
+  call LoadMedaforceNameIntoMedarotData ; sets hl
   ld de, cBUF02
   ld bc, $1a
   jp memcpy
@@ -35,3 +34,16 @@ SECTION "Free space Bank 0E", ROMX[$7200], BANK[$0E]
   PartTypeTable 0E
 
   LoadParticipantNameIntoBUF02Cont 0E
+
+LoadMedaforceNameIntoMedarotData:
+  ld hl, $1d0
+  add hl, de
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $0a
+  ld c, $0f
+  ld a, $06
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_NewListItemBufferArea
+  ret

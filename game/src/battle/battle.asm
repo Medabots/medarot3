@@ -884,15 +884,10 @@ BattlePrepareMedaforce::
   padend $5d8d
 
 BattlePrepareMedaforceCopyToStructure::
-  push de
+  ld a, [W_ListItemIndexForBuffering]
   ld hl, $1d0
-  add hl, de
-  ld d, h
-  ld e, l
-  ld hl, W_ListItemBufferArea + $6 ; Medaforce name
-  ld bc, $9
-  call memcpy
-  pop de
+  add hl, de ; Store the list item index so we can draw the name later
+  ld [hl], a
   ld a, [W_ListItemBufferArea + $3]
   ld hl, $1da
   add hl, de
