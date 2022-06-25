@@ -8,24 +8,24 @@ CreditsStateMachine::
   jp hl
 
 .table
-  dw CreditsDrawingState
-  dw CreditsProcessPlayerNameState
-  dw CreditsMappingState
-  dw CreditsDoNothingState
-  dw CreditsPrepareFadeInState
-  dw CreditsFadeInState
-  dw $42ED
-  dw $4305
-  dw $4313
-  dw $4348
-  dw $436A
-  dw $4375
-  dw $4378
-  dw $438F
-  dw $43A1
-  dw $43B1
-  dw $43CB
-  dw $43E5
+  dw CreditsDrawingState ;00
+  dw CreditsProcessPlayerNameState ;01
+  dw CreditsMappingState ;02
+  dw CreditsDoNothingState ;03
+  dw CreditsPrepareFadeInState ;04
+  dw CreditsFadeInState ;05
+  dw CreditsWaitAndChangeMusicState ;06
+  dw CreditsWaitState ;07
+  dw CreditsPlayState ;08
+  dw CreditsWaitAndPrepareFadeOutState ;09
+  dw CreditsFadeOutState ;0A
+  dw CreditsDoNothingAgainState ;0B
+  dw CreditsMapFinState ;0C
+  dw CreditsPrepareFadeIntoFinState ;0D
+  dw CreditsFadeIntoFinState ;0E
+  dw CreditsWaitAndPrepareFadeOutFromFinState ;0F
+  dw CreditsFadeOutFromFinState ;10
+  dw CreditsExitState ;11
 
 CreditsDrawingState::
   call $342B
@@ -45,7 +45,7 @@ CreditsDrawingState::
   ld hl, $45D3
   ld de, $92F0
   ld bc, $10
-  call $04F9
+  call memcpytovram
   call $4480
   xor a
   ld b, 7
@@ -124,3 +124,143 @@ CreditsFadeInState::
   ld a, $80
   ld [W_MedalMenuWaitTimer], a
   jp IncSubStateIndex
+
+CreditsWaitAndChangeMusicState::
+  call CreditsAnimateSidebarPalette
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  ld a, 5
+  call $27BA
+  ld a, $60
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+CreditsWaitState::
+  call CreditsAnimateSidebarPalette
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  jp IncSubStateIndex
+
+CreditsPlayState::
+  xor a
+  ld b, 7
+
+.loop
+  push bc
+  push af
+  ld b, a
+  push bc
+  push bc
+  call $4AC1
+  pop bc
+  call $47EA
+  pop bc
+  cp 2
+  jr z, .nextState
+  cp 1
+  call z, $45E3
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  pop af
+  inc a
+  pop bc
+  dec b
+  jr nz, .loop
+  call CreditsAnimateSidebarPalette
+  ret
+
+.nextState
+  call CreditsAnimateSidebarPalette
+  pop af
+  pop bc
+  ld a, $C0
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+CreditsWaitAndPrepareFadeOutState::
+  call CreditsAnimateSidebarPalette
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  ld hl, 0
+  ld bc, 0
+  ld d, $FF
+  ld e, $FF
+  ld a, $14
+  call WrapSetupPalswapAnimation
+  ld a, $20
+  ld [$CF96], a
+  jp IncSubStateIndex
+
+CreditsFadeOutState::
+  call $34E6
+  ld a, [W_PaletteAnimRunning]
+  or a
+  ret nz
+  jp IncSubStateIndex
+
+CreditsDoNothingAgainState::
+  jp IncSubStateIndex
+
+CreditsMapFinState::
+  ld bc, 0
+  ld e, $8E
+  ld a, 2
+  call WrapDecompressAttribmap0
+  ld bc, 0
+  ld e, $B8
+  ld a, 1
+  call WrapDecompressTilemap0
+  jp IncSubStateIndex
+
+CreditsPrepareFadeIntoFinState::
+  ld hl, $3C
+  ld bc, $56
+  ld d, $FF
+  ld e, $FF
+  ld a, $10
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+CreditsFadeIntoFinState::
+  call $34E6
+  ld a, [W_PaletteAnimRunning]
+  or a
+  ret nz
+  ld a, $FF
+  ld [W_MedalMenuWaitTimer], a
+  jp IncSubStateIndex
+
+CreditsWaitAndPrepareFadeOutFromFinState::
+  ld a, [W_MedalMenuWaitTimer]
+  dec a
+  ld [W_MedalMenuWaitTimer], a
+  ret nz
+  ld hl, 0
+  ld bc, 0
+  ld d, $FF
+  ld e, $FF
+  ld a, $10
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+CreditsFadeOutFromFinState::
+  call $34E6
+  ld a, [W_PaletteAnimRunning]
+  or a
+  ret nz
+  ld hl, 0
+  ld bc, 0
+  ld d, $FF
+  ld e, $FF
+  ld a, $10
+  call WrapSetupPalswapAnimation
+  jp IncSubStateIndex
+
+CreditsExitState::
+  jp $36A3

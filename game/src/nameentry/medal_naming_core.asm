@@ -113,7 +113,7 @@ MedalNamingScreenMapScreenAndPrepareSpritesState::
   call GetDefaultMedalNameAddress
   pop de
   ld bc, 8
-  call $04F9
+  call memcpytovram
   ld a, 1
   ld [$C1E0], a
   ld a, $11
