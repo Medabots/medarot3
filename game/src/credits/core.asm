@@ -46,7 +46,7 @@ CreditsDrawingState::
   ld de, $92F0
   ld bc, $10
   call memcpytovram
-  call $4480
+  call CreditsClearTextDrawingRegion
   xor a
   ld b, 7
 
@@ -55,11 +55,11 @@ CreditsDrawingState::
   push af
   push af
   ld b, a
-  call $4AC1
+  call CreditsGetConfigAddress
   ld de, 0
-  ld a, [$C4E8]
+  ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
-  ld a, [$C4E9]
+  ld a, [W_CreditsConfigAddressBuffer + 1]
   ld l, a
   add hl, de
   ld a, 1
@@ -72,9 +72,9 @@ CreditsDrawingState::
   ld a, [hl]
   push af
   ld de, 2
-  ld a, [$C4E8]
+  ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
-  ld a, [$C4E9]
+  ld a, [W_CreditsConfigAddressBuffer + 1]
   ld l, a
   add hl, de
   pop af
@@ -155,7 +155,7 @@ CreditsPlayState::
   ld b, a
   push bc
   push bc
-  call $4AC1
+  call CreditsGetConfigAddress
   pop bc
   call $47EA
   pop bc
