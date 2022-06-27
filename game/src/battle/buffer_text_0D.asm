@@ -75,6 +75,7 @@ BattleStatusTransformLoadNewPart::
   ld hl, $a2
   add hl, de
   ld a, [hl]
+  push af ; store the part type
   ld b, a
   ld c, $09
   ld a, $07
@@ -85,10 +86,12 @@ BattleStatusTransformLoadNewPart::
   call $4b9f
   ld d, h
   ld e, l
-  ld hl, W_NewListItemBufferArea
-  ld bc, $1a
-  call memcpy
+  pop af ; pop the part type
+  ; Don't bother copying the name, just store the list type idx and list idx
+  ld [de], a
+  inc de
   ld a, [$dd41]
+  ld [de], a
   ld [W_ListItemIndexForBuffering], a
   call $4b3a
   ld hl, $a2
@@ -132,6 +135,8 @@ BattleStatusTransformLoadNewPart::
   call $429f
   jp $4b35
 
+  padend $5aee
+
 BattleStatusLoadTransformedPartIntoBuf02:: ; 35aee (d:5aee)
   call $4b3a
   ld hl, $a2
@@ -141,7 +146,7 @@ BattleStatusLoadTransformedPartIntoBuf02:: ; 35aee (d:5aee)
   call $4741
   call $4b3a
   ld hl, $d0
-  call $4b9f
+  call BattleStatusLoadTransformedPartIntoBuf02Cont
   ld de, cBUF02
   ld bc, $1a
   call memcpy
@@ -157,3 +162,16 @@ BattleStatusLoadPartsTable::
   PartTypeTable 0D
 
   LoadParticipantNameIntoBUF02Cont 0D
+
+BattleStatusLoadTransformedPartIntoBuf02Cont:
+  call $4b9f
+  ldi a, [hl]
+  ld b, a
+  ld c, $09
+  ld a, $07
+  ld [W_ListItemInitialOffsetForBuffering], a
+  ld a, [hl]
+  ld [W_ListItemIndexForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_NewListItemBufferArea
+  ret
