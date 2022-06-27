@@ -280,7 +280,7 @@ ControlCodeD2_changePortrait::
   call MultiplyBCByTwoToThePowerOfAAndAddToHL
   ld de, $9600
   ld bc, $100
-  call $04F9
+  call memcpytovram
   ld a, [W_MainScriptPortraitPlacement]
   and $F0
   swap a

@@ -96,6 +96,7 @@ shop\
 tutorial\
 battle\
 nameentry\
+credits\
 npc
 
 # Toolchain
