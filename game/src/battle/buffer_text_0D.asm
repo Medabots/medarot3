@@ -85,8 +85,8 @@ BattleStatusTransformLoadNewPart::
   call $4b9f
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
-  ld bc, $9
+  ld hl, W_NewListItemBufferArea
+  ld bc, $1a
   call memcpy
   ld a, [$dd41]
   ld [W_ListItemIndexForBuffering], a
@@ -143,7 +143,7 @@ BattleStatusLoadTransformedPartIntoBuf02:: ; 35aee (d:5aee)
   ld hl, $d0
   call $4b9f
   ld de, cBUF02
-  ld bc, $9
+  ld bc, $1a
   call memcpy
   ld bc, $86
   call $48ae
