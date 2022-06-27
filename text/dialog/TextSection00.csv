@@ -133,8 +133,8 @@
 131,0x90106,マイナス症状クリアによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,Minus Status Cleared!<D3>Defenseless cancelled!<S46><*04>
 132,0x90108,症状むこうパ-ツによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,Defenseless cancelled by<D3>status nullifying parts!<S46><*04>
 133,0x9010a,ぼうぎょふのうの マイナス症状!<CD>攻撃を ぼうぎょできない!<S46><*04>,"Minus Status, Defenseless!<D3>Unable to defend!"
-134,0x9010c,<&BUF01>パ-ツは<CD><&BUF02>に ヘんかした!<S46><*04>,<&BUF01> part changed to <&BUF02>!<S46><*04>
-135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,<&BUF01> part effect disabled!<S46><*04>
+134,0x9010c,<&BUF01>パ-ツは<CD><&BUF02>に ヘんかした!<S46><*04>,The <&BUF01> part transformed into <&BUF02>!<S46><*04>
+135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,The <&BUF01> part's effect is disabled!<S46><*04>
 136,0x90110,変形しているメダロットには<CD>こうかがない!<S46><*04>,Transformed Medarots are<D3>unaffected!<S46><*04>
 137,0x90112,デストロイは まえをむいている<CD>あいてには こうかがない!<S46><*04>,Destroy does not effect<D3>advancing opponents!<S46><*04>
 138,0x90114,サクリファイスのはんどうで<CD><&BUF01>パ-ツが こわれた!<S46><*04>,<f02><&BUF01> part<f00> destroyed by <f02>Sacrifice's <f00>recoil!<S46><*04>

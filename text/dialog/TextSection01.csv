@@ -33,8 +33,8 @@
 031,0x91a54,セ-ブ中!<*04>,Saving!<*04>
 032,0x91a56,<SFF>ともだちと きがるに ロボトル!<*04>,<SFF>A casual Robattle with<D3>a friend!<*04>
 033,0x91a58,<SFF>ともだちと パ-ツをかけた<CD>しんけんロボトル!<*04>,<SFF>A serious Robattle where your<D3>parts are at stake!<*04>
-034,0x91a5a,<SFF>ともだちと パ-ツトレ-ド!<*04>,Trade parts with your friends!<*04>
-035,0x91a5c,<SFF>ともだちに メダルをあげます!<*04>,Give Medals to your friends!<*04>
+034,0x91a5a,<SFF>ともだちと パ-ツトレ-ド!<*04>,<SFF>Trade parts with your friends!<*04>
+035,0x91a5c,<SFF>ともだちに メダルをあげます!<*04>,<SFF>Give Medals to your friends!<*04>
 036,0x91a5e,<SFF>つうしんネットを おわる時は<CD>かならず 選択してください!<*04>,<SFF>Select this when you want<D3>to disconnect the link.<*04>
 037,0x91a60,2体いじょう 租まれた<CD>メダロットがないと できません!<S46><*04>,You need at least two or<D3>more assembled Medarots!<S46><*04>
 038,0x91a62,さあ しょうぶだ!<S5A><*04>,"Ok, fight!<S5A><*04>"
@@ -49,8 +49,8 @@
 047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,How lucky! You got a <f02>Miss<f00>!<D3>You get nothing!<*03>
 048,0x91a78,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*03>,<&BUF03> <&BUF01> Part<D3><&BUF04> obtained!
 049,0x91a7a,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*03>,<&BUF03> <&BUF01> Part<D3><&BUF04> received!
-050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!!<D3>This is your 40th link robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Sun-type Medarot.<CF>Please look over the parts'<D3>data later!<*03>"
-051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!<D3>This is your 40th link robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Moon-type Medarot.<CF>Please look over the parts<D3>later!<*03>"
+050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!! This is your 40th<D3>communication robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Sun-type Medarot.<CF>Please look over the parts'<D3>data later!<*03>"
+051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!! This is your 40th<D3>communication robottle!<CF>To celebrate, the Medarot<D3>Company is gifting you a<CF>complete Moon-type Medarot.<CF>Please look over the parts<D3>later!<*03>"
 052,0x91a80,パ-ツ転送!<S5A><*04>,Part transfer!<S5A><*04>
 053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> <&BUF00> part<D3><&BUF01> was acquired!<*03>
 054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal<D3>you currently have equipped!

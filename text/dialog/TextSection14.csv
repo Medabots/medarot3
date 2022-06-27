@@ -14,7 +14,7 @@
 012,0x1ec018,"<@LL,00,04>もう少し まっててね<CD>かならず とリかえしてくるから","<@LL,00,04>Wait here for just a bit<D3>longer. I'll be back!"
 013,0x1ec01a,"<@LL,00,04>メダル とリかえしてきたよ!<CF><D1><@RL,13,00>あ! ぼ ぼくの メダル!<CD>あリがとう! 本当に あリがとう!","<@LL,00,04>I got your medal back for<D3>you!<CF><D1><@RL,13,00>Ah! M-my medal! Thank you!<D3>Thank you so much!"
 014,0x1ec01c,"<@RL,13,00>そう言えば アワノのやつ<CD>どうしてるかな...","<@RL,13,00>Come to think of it, I wonder<D3>how Awano's doing..."
-015,0x1ec01e,"<@LL,00,07>アワノって ハチロウ!?<CD>ハチロウが どうかしたのか?<CF><D1><@RL,13,00>お 大きな声 出さないでよ!<CF><D1>メダル とリあげられて<CD>ないて 家に かえっちゃったんだ<CF><D1>それから あいつ 学園に<CD>来てないんだ<CF><D1><@LL,00,07>なっ 何で それを もっと早く!<CF><D1><@RL,13,00>だって おれ<CF><D1>お前と アワノが 知リ合いだなんて<CD>知らなかったから...<CF><D1><@LL,00,07>それで そのっ ハチロウのメダルを<CD>とリあげたのは!?<CF><D1><@RL,13,00>しょくいんしつに...<CF><D1><@LL,00,05>ぎゃくもどリかぁ...",
+015,0x1ec01e,"<@LL,00,07>アワノって ハチロウ!?<CD>ハチロウが どうかしたのか?<CF><D1><@RL,13,00>お 大きな声 出さないでよ!<CF><D1>メダル とリあげられて<CD>ないて 家に かえっちゃったんだ<CF><D1>それから あいつ 学園に<CD>来てないんだ<CF><D1><@LL,00,07>なっ 何で それを もっと早く!<CF><D1><@RL,13,00>だって おれ<CF><D1>お前と アワノが 知リ合いだなんて<CD>知らなかったから...<CF><D1><@LL,00,07>それで そのっ ハチロウのメダルを<CD>とリあげたのは!?<CF><D1><@RL,13,00>しょくいんしつに...<CF><D1><@LL,00,05>ぎゃくもどリかぁ...","<@LL,00,07>By Awano, do you mean Hachiro!? What's wrong with him?<CF><D1><@RL,13,00>Don't be so loud!<CF><D1>After his medal was confiscated, he cried and went home. He hasn't been to school since then.<CF><D1><@LL,00,07>Wh-what, why didn't you say that earlier!?<CF><D1><@RL,13,00>Because I...<CF><D1>Didn't know you and Awano knew each other...<CF><D1><@LL,00,07>So, who was it that confiscated Hachiro's medal!?<CF><D1><@RL,13,00>They're in the staff room...<CF><D1><@LL,00,05>Time to head back there..."
 016,0x1ec020,"<@RL,13,00>アワノに よろしくな...","<@RL,13,00>Tell Awano I said hi..."
 017,0x1ec022,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,13,00>ぼ ぼくは 何にも 知らないよ!","<@LR,02,04>Um, I'm looking for a boy with<D3>his hair in a cool ponytail. His<CF><D1>name is <&BUF0A>.<D3>Have you seen him?<CF><D1><@RL,13,00>I-I don't know anything!"
 018#kabuto,0x1ec024,"<@RL,35,00>しらばっくれてんじゃ ね-ぞ!<CD>お前 オレらに メダルを...!<CF><D1><@RL,13,00>や やだなぁ 人ちがいだよ<CD>ぼくは 何にも 知らないっ!<CF><D1><@RL,35,00>この おん知らずが!<CF><D1><@LR,02,05><&BUF07>ちゃん!<CF><D1>そんなことを 言っては<CD>かわいそうですわ!<CF><D1><@RL,35,00>だって こいつ...!<CF><D1><@LR,02,04>行きましょう...ね?<CF><D1><@RL,35,00>...ふん しかたね-な!",
@@ -23,7 +23,7 @@
 020,0x1ec028,"<@RL,13,00>ぼくも カリンちゃん<CD>ファンクラブに 入っちゃった♥",
 021,0x1ec02a,"<@RL,15,00>新しい 学園長は<CD>エリ-トなのかも しれないけど<CF><D1>ごういんな やリ方に<CD>ついていけないって先生も いるのよ","<@RL,15,00>The new headmaster may be<D3>elite, but<CF><D1>Some teachers can't keep up<D3>with his strict way of doing<CF><D1>things."
 022,0x1ec02c,"<@RL,15,00>新しい 学園長<CD>人が変わったみたいに<CF><D1>すっかリ いい人に なっちゃって!",
-023,0x1ec02e,"<@RL,14,00>ようじも ないのに<CD>しょくいんしつに 入るんじゃない!",
+023,0x1ec02e,"<@RL,14,00>ようじも ないのに<CD>しょくいんしつに 入るんじゃない!","<@RL,14,00>Don't come in the staff room for no reason!"
 024,0x1ec030,"<@RL,14,00>何っ!? とリあげられた<CD>ものを かえしてほしい?<CF><D1>ふざけるんじゃないっ!","<@RL,14,00>What!? Return the medal I<D3>confiscated? <CF><D1>You must be joking!"
 025,0x1ec032,"<@RL,14,00>先生の まけだ...","<@RL,14,00>I'm a teacher, and still I<D3>lost..."
 026,0x1ec034,"<@RL,14,00>わたしが 新学園長の きょういく<CD>ほうしんに したがうのは<CF><D1>しんけんロボトルに まけたからだよ<CF><D1><@LL,00,00>大人は ロボトルしても<CD>いいんですか?<CF><D1><@RL,14,00>そういう 話だ<CF><D1><@LL,00,05>大人って ずるい",
@@ -31,15 +31,15 @@
 028,0x1ec038,"<@RL,14,00>新学園長の きょういくほうしんが<CD>変わったので<CF><D1>思うぞんぶん ロボトルできるぞ",
 029,0x1ec03a,"<@RL,14,00>また 先生の まけだ...",
 030,0x1ec03c,"<@RL,1D,00>な 何? 先生は<CD>いそがしいのよっ","<@RL,1D,00>W-what? I'm busy right now.<D3>"
-031,0x1ec03e,"<@RL,1D,00>えっ! とリあげられた<CD>メダルですって?",
+031,0x1ec03e,"<@RL,1D,00>えっ! とリあげられた<CD>メダルですって?","<@RL,1D,00>Eh? A confiscated medal?"
 032,0x1ec040,"<@RL,1D,00>お 大きな 声じゃ 言えないけど<CF><D1>とリあげたものは おくに いる<CD>メダロットが 持ってるわ<CF><D1><@LL,00,05>でも ヘやの 前に 先生がいて<CD>通れそうに ないです<CF><D1><@RL,1D,00>メダロッチ 持ってるなら<CD>そんなときは ロボトルよ!<CF><D1><@LL,00,04>あ なるほど!<CF><D1><@LL,00,00>でも 先生 どうして ぼくに<CD>きょうリょくして くれるんです?<CF><D1><@RL,1D,00>わたしが そうしたいからよ!",
 033,0x1ec042,"<@RL,1D,00>早く 行って!<CD>貝つかるわ!",
 034,0x1ec044,"<@RL,1D,00>いそがしいから また あとでね",
 035,0x1ec046,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?",
 036,0x1ec048,"<@RL,1D,00>ちょ...ちょんまげ!?<CF><D1><@LR,02,00>あら? 先生 何か<CD>ごぞんじなんですか?",
 037,0x1ec04a,"<@RL,1D,00>し 知らないわ<CD>先生は いそがしいのよっ",
-038,0x1ec04c,"<@RL,14,00>ここは 通さん!",
-039,0x1ec04e,"<@RL,14,00>ここは 通さん!<CF><D1><@LL,00,00>先生! ロボトルで<CD>しょうぶですっ!!<CF><D1><@RL,14,00>何をぅ!?<CD>なまいきなっ!",
+038,0x1ec04c,"<@RL,14,00>ここは 通さん!","<@RL,14,00>This place is off limits!"
+039,0x1ec04e,"<@RL,14,00>ここは 通さん!<CF><D1><@LL,00,00>先生! ロボトルで<CD>しょうぶですっ!!<CF><D1><@RL,14,00>何をぅ!?<CD>なまいきなっ!","<@RL,14,00>This place is off limits!<CF><D1><@LL,00,00>Teacher! Let's robattle!!<CF><D1><@RL,14,00>What!?<D3>Don't be so impertinent!"
 040,0x1ec050,"<@RL,14,00>ひ ひどい!<CD>先生を 何だと 思ってるんだ!",
 041,0x1ec052,"<@RL,14,00>どうじょうは いらないっ!","<@RL,14,00>I don't need your pity!"
 042,0x1ec054,"<@RL,30,00>何だ? お前は!<CF><D1><@LL,00,00>何か みょうに えらそうな<CD>メダロットだな<CF><D1><@RL,30,00>えらそうとは 何だ!<CF><D1>お前こそ 子どものくせに<CD>なまいきだぞ!","<@RL,30,00>What's that? You there!<CF><D1><@LL,00,00>What a weirdly pompous<D3>Medabot.<CF><D1><@RL,30,00>What do you mean, pompous??<CF><D1>Although you're a child, you're<D3>so impertinent!"
