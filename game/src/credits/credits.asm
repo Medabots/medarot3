@@ -1,5 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
-
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Credits Variables 1", WRAM0[$C794]
 W_CreditsCurrentLineNumber:: ds 1
@@ -75,7 +75,7 @@ CreditsRenderLineText::
   ld e, a
   pop hl
   add hl, de
-  call $44B5
+  call CreditsFetchAndRenderCharacter
   ld a, 1
   ld [W_OAM_SpritesReady], a
   pop hl
@@ -153,6 +153,178 @@ CreditsGetLetterOrdering::
   add hl, de
   ld a, [hl]
   ret
+
+CreditsFetchAndRenderCharacter::
+  ld a, h
+  ld [$C4E0], a
+  ld a, l
+  ld [$C4E1], a
+  ld a, [$C4EE]
+  call CreditsGetLetterOrdering
+  ld b, 0
+  ld c, a
+  push bc
+  creditconf M_CreditConfigTextIndex
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, 4
+  add hl, de
+  pop bc
+  add hl, bc
+  ld a, [hl]
+  cp $FF
+  ret z
+  ld [$C4EF], a
+  call CreditsCharacterRenderingTimingThing
+  or a
+  ret nz
+  call CreditsGetCharacterAddressOffset
+  or a
+  jr z, .notEmptySpace
+  ld hl, 0
+
+.notEmptySpace
+  push af
+  ld a, [$C4E0]
+  ld b, a
+  ld a, [$C4E1]
+  ld c, a
+  pop af
+  call $3774
+  ret
+
+CreditsCharacterRenderingTimingThing::
+  ld a, [$C4EE]
+  add a
+  ld c, a
+  ld hl, .table
+  ld d, 0
+  ld e, a
+  add hl, de
+  ld b, [hl]
+  push bc
+  push hl
+  creditconf M_CreditConfigTimer
+  ld a, [hl]
+  pop hl
+  pop bc
+  cp b
+  jr nc, .doNotProceed
+  inc hl
+  ld b, [hl]
+  cp b
+  jr c, .doNotProceed
+  sub c
+  jr c, .doNotProceed
+  ld c, a
+  xor a
+  ret
+
+.doNotProceed
+  ld a, 1
+  ret
+
+.table
+  db $0A, $00
+  db $0C, $02
+  db $0E, $04
+  db $10, $06
+  db $12, $08
+  db $14, $0A
+  db $16, $0C
+  db $18, $0E
+  db $1A, $10
+  db $1C, $12
+  db $1E, $14
+  db $20, $16
+  db $22, $18
+  db $24, $1A
+  db $26, $1C
+  db $28, $1E
+
+CreditsGetCharacterAddressOffset::
+  push bc
+  creditconf M_CreditConfigDirection
+  ld a, [hl]
+  pop bc
+  or a
+  jr nz, .reverseDirection
+  ld a, c
+  cp 0
+  jr z, .emptySpace
+  cp 1
+  jr z, .emptySpace
+  ld a, c
+  sub 2
+  ld c, a
+  jr .getAnimationStage
+
+.reverseDirection
+  ld a, c
+  cp 8
+  jr z, .emptySpace
+  cp 9
+  jr z, .emptySpace
+  jr .getAnimationStage
+
+.emptySpace
+  ld a, 1
+  jr .exit
+
+.getAnimationStage
+  push bc
+  creditconf M_CreditConfigDirection
+  ld a, [hl]
+  pop bc
+  ld hl, CreditsAnimationStageTable
+  add a
+  add a
+  add a
+  add c
+  ld b, 0
+  ld c, a
+  add hl, bc
+  ld a, [hl]
+  push af
+  ld a, [$C4EF]
+  ld d, 0
+  ld e, a
+  sla e
+  rl d
+  sla e
+  rl d
+  sla e
+  rl d
+  sla e
+  rl d
+  sla e
+  rl d
+  sla e
+  rl d
+  pop af
+  swap a
+  ld h, 0
+  ld l, a
+  add hl, de
+  xor a
+
+.exit
+  ret
+
+CreditsAnimationStageTable::
+  db 3,3,2,2,1,1,0,0
+  db 0,0,1,1,2,2,3,3
+
+CreditsUnderlineGfx::
+  db $00,$00
+  db $00,$00
+  db $00,$00
+  db $00,$00
+  db $00,$00
+  db $00,$00
+  db $00,$00
+  db $FF,$FF
 
 SECTION "Credits Helper Functions 2", ROMX[$4AC1], BANK[$16]
 CreditsGetConfigAddress::

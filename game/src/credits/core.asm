@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Credits State Machine 1", ROMX[$4205], BANK[$16]
 CreditsStateMachine::
@@ -42,7 +43,7 @@ CreditsDrawingState::
   call WrapLoadMaliasGraphics
   ld bc, $36
   call $33C6
-  ld hl, $45D3
+  ld hl, CreditsUnderlineGfx
   ld de, $92F0
   ld bc, $10
   call memcpytovram
@@ -56,12 +57,7 @@ CreditsDrawingState::
   push af
   ld b, a
   call CreditsGetConfigAddress
-  ld de, 0
-  ld a, [W_CreditsConfigAddressBuffer]
-  ld h, a
-  ld a, [W_CreditsConfigAddressBuffer + 1]
-  ld l, a
-  add hl, de
+  creditconf 0
   ld a, 1
   ld [hl], a
   pop af
@@ -71,12 +67,7 @@ CreditsDrawingState::
   add hl, de
   ld a, [hl]
   push af
-  ld de, 2
-  ld a, [W_CreditsConfigAddressBuffer]
-  ld h, a
-  ld a, [W_CreditsConfigAddressBuffer + 1]
-  ld l, a
-  add hl, de
+  creditconf M_CreditConfigTimer
   pop af
   ld [hl], a
   pop af

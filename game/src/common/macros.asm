@@ -44,3 +44,12 @@ padend: MACRO
       nop
     ENDR
   ENDM
+
+creditconf: MACRO
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ENDM
