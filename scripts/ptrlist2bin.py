@@ -9,20 +9,22 @@ from ast import literal_eval
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
-char_table = utils.reverse_dict(utils.merge_dicts([
+default_char_table = utils.reverse_dict(utils.merge_dicts([
             tilesets.get_tileset("MainDialog1", override_offset=0x0),
             tilesets.get_tileset("MainDialog2", override_offset=0x80),
             tilesets.get_tileset("Special", override_offset=0xE0)
         ]))
 kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
-assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
+assert((set(kanji.keys()) - set(default_char_table.keys())) == set(kanji.keys()))
 
 def chr2bin(c):
-    retval = char_table['?']
+    retval = None
     if c in kanji:
         retval = [0xD3, kanji[c]]
     elif c in char_table:
         retval = char_table[c]
+    else:
+        retval = char_table['?']
     return retval
 
 def convert_text(txt, term, fix_len):
@@ -86,7 +88,13 @@ count = 0
 dummy_ptr = -1
 
 with open(input_file, 'r', encoding='utf-8-sig') as fp:
-    spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
+    spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general, special_tileset = literal_eval(fp.readline().strip())
+
+    if special_tileset:
+        char_table = utils.reverse_dict(tilesets.get_tileset(special_tileset, override_offset=0x00))
+    else:
+        char_table = default_char_table
+
     assert spp > 0, f"{input_file} is marked as having 0 strings per pointer"
     assert len(labels) == 0 or len(labels) == spp, f"{input_file} has a label count that doesn't match strings per pointer"
     # Total count, includes empty entries in the table

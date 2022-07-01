@@ -22,7 +22,7 @@ rom_filename = "baserom_kabuto.gbc"
 # Manually define tilesets to dump
 tileset_information = (
     # Name, Address, Tile Count, (requested width in tiles, requested height in tiles), Ignored
-    ["CreditsFont", (0x18, 0x4a2f), 650, (0xA, None), False],
+    ["CreditsFont", (0x18, 0x4000), 0x32e, (None, None), False],
 )
 
 gfx_src_filename = os.path.join(gfx_src_path, "tilesets_misc_data.asm")

@@ -1,4 +1,4 @@
-﻿(2, ['ItemName', 'Flags'], [203, None], [(9, 0), (1, None)], [False, True], None, None, True)
+﻿(2, ['ItemName', 'Flags'], [203, None], [(9, 0), (1, None)], [False, True], None, None, True, None)
 56
 31067
 Index[#version],ItemName,Flags

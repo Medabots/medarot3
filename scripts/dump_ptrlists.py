@@ -21,35 +21,7 @@ roms = ({
 
 default_version = "kabuto"
 
-list_map = ({
-    # 'Type' : (Start of Pointers, Strings per pointer, Label(s), Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list)
-    'Unknown00' : ((0x27, 0x44FC), 1, [], [None], [(20, 0x00)], [True], None, [0xC9], True),
-    'PartsHead' : ((0x23, 0x4671), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsRArm' : ((0x23, 0x529A), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsLArm' : ((0x23, 0x5EC3), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'PartsLegs' : ((0x23, 0x6AEC), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True),
-    'Attributes' : ((0x22, 0x65C0), 1, ["AttributeName"], [0xCB], [(None, None)], [False], None, None, True),
-    'Skills' : ((0x22, 0x664C), 1, ["SkillName"], [0xCB], [(None, None)], [False], None, None, True),
-    'Movement' : ((0x22, 0x669A), 1, ["Movement"], [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown08' : ((0x22, 0x66DC), 1, [], [None], [(14, 0x00)], [True], None, None, True),
-    'Personalities' : ((0x22, 0x68BC), 1, ["Personality"], [0xCB], [(None, None)], [False], None, None, True),
-    'Medaforce' : ((0x22, 0x6979), 2, ["Unknown", "Medaforce"], [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None, True),
-    'Medals' : ((0x23, 0x795B), 1, ["MedalName"], [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown0C' : ((0x22, 0x6901), 1, [], [None], [(2, 0x00)], [True], None, None, True),
-    'Items' : ((0x23, 0x7715), 2, ["ItemName", "Flags"], [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None, True),
-    'Unknown0E' : ((0x20, 0x4000), 1, [], [None], [(4, 0x00)], [True], None, None, True),
-    'Medarotters' : ((0x20, 0x4328), 2, ["Unknown", "Name"], [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None, True),
-    'Unknown10' : ((0x20, 0x4EA4), 1, [], [None], [(35, 0x00)], [True], None, None, True),
-    'Terrain' : ((0x23, 0x7A23), 1, ["Terrain"], [0xCB], [(None, None)], [False], None, None, True),
-    'Attacks' : ((0x23, 0x7A80), 1, ["AttackName"], [0xCB], [(None, None)], [False], None, None, True),
-    'CharacterNames' : ((0x21, 0x4000), 1, ["CharacterName"], [0xCB], [(None, None)], [False], None, None, True),
-    'Unknown14' : ((0x21, 0x461B), 1, [], [None], [(11, 0x00)], [True], None, None, True),
-    'Medarots' : ((0x23, 0x4000), 1, ["MedarotName"], [0xCB], [(None, None)], [False], None, None, True),
-    'GlossaryTerms' : ((0x7, 0x60d5), 2, ["Unknown", "Term"], [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
-    'Credits' : ((0x16, 0x5505), 2, ["Unknown", "Name"], [None, None], [(4, None), (0x10, 0xFF)], [True, True], None, None, False),
-})
-
-tileset = utils.merge_dicts([
+default_tileset = utils.merge_dicts([
             tilesets.get_tileset("MainDialog1", override_offset=0x0),
             tilesets.get_tileset("MainDialog2", override_offset=0x80),
             tilesets.get_tileset("Special", override_offset=0xE0)
@@ -57,11 +29,46 @@ tileset = utils.merge_dicts([
 
 kanji = tilesets.get_tileset("Kanji", override_offset=0x0)
 
+
+list_map = ({
+    # 'Type' : (Start of Pointers, Strings per pointer, Label(s), Terminator(s), (fixed length, fixed padding), print hex, 'null' indicator, data prefix, in general pointer list, special tileset)
+    'Unknown00' : ((0x27, 0x44FC), 1, [], [None], [(20, 0x00)], [True], None, [0xC9], True, None),
+    'PartsHead' : ((0x23, 0x4671), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True, None),
+    'PartsRArm' : ((0x23, 0x529A), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True, None),
+    'PartsLArm' : ((0x23, 0x5EC3), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True, None),
+    'PartsLegs' : ((0x23, 0x6AEC), 3, ["Model", "Name", "IsFemale"], [0xCB, 0xCB, None], [(7, 0x00), (9, 0x00), (1, 0x00)], [False, False, True], None, None, True, None),
+    'Attributes' : ((0x22, 0x65C0), 1, ["AttributeName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Skills' : ((0x22, 0x664C), 1, ["SkillName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Movement' : ((0x22, 0x669A), 1, ["Movement"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Unknown08' : ((0x22, 0x66DC), 1, [], [None], [(14, 0x00)], [True], None, None, True, None),
+    'Personalities' : ((0x22, 0x68BC), 1, ["Personality"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Medaforce' : ((0x22, 0x6979), 2, ["Unknown", "Medaforce"], [None, 0xCB], [(6, 0x00), (None, None)], [True, False], r'\x00\x00\x00\x00\x00\x00', None, True, None),
+    'Medals' : ((0x23, 0x795B), 1, ["MedalName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Unknown0C' : ((0x22, 0x6901), 1, [], [None], [(2, 0x00)], [True], None, None, True, None),
+    'Items' : ((0x23, 0x7715), 2, ["ItemName", "Flags"], [0xCB, None], [(9, 0x00), (1, None)], [False, True], None, None, True, None),
+    'Unknown0E' : ((0x20, 0x4000), 1, [], [None], [(4, 0x00)], [True], None, None, True, None),
+    'Medarotters' : ((0x20, 0x4328), 2, ["Unknown", "Name"], [None, 0xCB], [(3, 0x00), (None, None)], [True, False], None, None, True, None),
+    'Unknown10' : ((0x20, 0x4EA4), 1, [], [None], [(35, 0x00)], [True], None, None, True, None),
+    'Terrain' : ((0x23, 0x7A23), 1, ["Terrain"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Attacks' : ((0x23, 0x7A80), 1, ["AttackName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'CharacterNames' : ((0x21, 0x4000), 1, ["CharacterName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'Unknown14' : ((0x21, 0x461B), 1, [], [None], [(11, 0x00)], [True], None, None, True, None),
+    'Medarots' : ((0x23, 0x4000), 1, ["MedarotName"], [0xCB], [(None, None)], [False], None, None, True, None),
+    'GlossaryTerms' : ((0x7, 0x60d5), 2, ["Unknown", "Term"], [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False, None),
+    'Credits' : ((0x16, 0x5505), 2, ["Unknown", "Name"], [None, None], [(4, None), (0x10, 0xFF)], [True, False], None, None, False, "Credits"),
+})
+
 with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
     constants_file = os.path.join(text_build_path, f"ptrlist_data_constants_{{GAMEVERSION}}.asm")
     datafile.write(f'INCLUDE "{constants_file}"\n\n')
     for l in list_map:
-        addr, spp, labels, term, fix_len, print_hex, null_indicator, data_prefix, is_general = list_map[l]
+        addr, spp, labels, term, fix_len, print_hex, null_indicator, data_prefix, is_general, special_tileset = list_map[l]
+        
+        if special_tileset:
+            tileset = tilesets.get_tileset(special_tileset, override_offset=0x0)
+        else:
+            tileset = default_tileset
+
         assert len(labels) == 0 or len(labels) == spp, f"Incorrect number of labels for {l}"
         if isinstance(addr, tuple):
             bank = addr[0]
