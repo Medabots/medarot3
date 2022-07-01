@@ -155,6 +155,7 @@ ATTRIBMAP_FILES_VERSIONED := $(foreach FILE,$(ATTRIBMAPS_VERSIONED),$(ATTRIBMAP_
 core_ADDITIONAL :=
 gfx_ADDITIONAL :=
 text_ADDITIONAL :=
+gfx_tilesets_misc_data_ADDITIONAL := $(UNCOMPRESSED_TILESET_FILES)
 version_partial_tilesets_table_ADDITIONAL := $(UNCOMPRESSED_TILESET_FILES)
 version_text_tables_ADDITIONAL := $(DIALOG_OUT)/text_table_constants_PLACEHOLDER_VERSION.asm
 version_tileset_table_ADDITIONAL := $(COMPRESSED_TILESET_FILES_COMMON) $(VERSION_SRC)/tileset_table.asm $(COMPRESSED_TILESET_FILES_GAMEVERSION) $(TILESET_OUT)/PLACEHOLDER_VERSION.stamp
@@ -267,6 +268,7 @@ dump_tilesets: | $(TILESET_GFX) $(TILESET_PREBUILT) $(SCRIPT_RES)
 	rm $(TILESET_GFX)/*.$(RAW_TSET_SRC_TYPE) || echo ""
 	$(PYTHON) $(SCRIPT)/dump_tilesets.py "$(TILESET_GFX)" "$(TILESET_PREBUILT)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(VERSION_SRC)"
 	$(PYTHON) $(SCRIPT)/dump_tileset_scripts.py "$(TILESET_GFX)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(GFX_SRC)" "$(VERSION_SRC)"
+	$(PYTHON) $(SCRIPT)/dump_tilesets_misc.py "$(TILESET_GFX)" "$(TILESET_OUT)" "$(SCRIPT_RES)" "$(GFX_SRC)" "$(VERSION_SRC)"
 
 dump_ptrlists: | $(PTRLISTS_TEXT)
 	rm $(PTRLISTS_TEXT)/*.$(TEXT_TYPE) || echo ""

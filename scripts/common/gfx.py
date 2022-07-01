@@ -338,3 +338,23 @@ def convert_2bpp_to_png(image, **kwargs):
         px_map    = [[pixel for pixel in line] for line in lines]
 
     return width, height, palette, greyscale, bitdepth, px_map
+
+def dump_2bpp_to_png(filename, data, requested_width=None, requested_height=None):
+    with open(filename, "wb") as uncompressed:
+        args = {}
+        if requested_width:
+            args['width'] = requested_width
+        elif requested_height:
+            args['height'] = requested_height
+
+        width, height, palette, greyscale, bitdepth, px_map = convert_2bpp_to_png(data, **args)
+
+        w = png.Writer(
+            width,
+            height,
+            palette=palette,
+            compression=9,
+            greyscale=greyscale,
+            bitdepth=bitdepth
+        )
+        w.write(uncompressed, px_map)
