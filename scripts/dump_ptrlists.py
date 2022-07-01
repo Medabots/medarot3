@@ -46,6 +46,7 @@ list_map = ({
     'Unknown14' : ((0x21, 0x461B), 1, [], [None], [(11, 0x00)], [True], None, None, True),
     'Medarots' : ((0x23, 0x4000), 1, ["MedarotName"], [0xCB], [(None, None)], [False], None, None, True),
     'GlossaryTerms' : ((0x7, 0x60d5), 2, ["Unknown", "Term"], [None, 0xCB], [(1, None), (None, None)], [True, False], None, None, False),
+    'Credits' : ((0x16, 0x5505), 2, ["Unknown", "Name"], [None, None], [(4, None), (0x10, 0xFF)], [True, True], None, None, False),
 })
 
 tileset = utils.merge_dicts([
@@ -67,7 +68,7 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
             addr = utils.rom2realaddr(addr)
         else:
             bank = utils.real2romaddr(addr)[0]
-        
+
         datafile.write(f'SECTION "Pointer List - {l}", ROMX[${utils.real2romaddr(addr)[1]:04x}], BANK[${bank:02x}]\n')
         datafile.write(f'PtrList{l}::\n')
         datafile.write(f'  INCBIN c{l}\n\n')
@@ -76,16 +77,16 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
         with open(os.path.join(text_src_path, f"{l}.txt"), "w", encoding="utf-8-sig") as output:
             output.write(str(list_map[l][1:]) + "\n")
             count_written = False
-            for version_suffix in roms:            
+            for version_suffix in roms:
                 with open(os.path.join(version_src_path, f"{version_suffix}/ptrlist_data.asm"), 'w') as datafile_version:
                     include_file = os.path.join(version_src_path, "ptrlist_data.asm")
                     datafile_version.write(f'INCLUDE "{include_file}"\n')
                 with open(roms[version_suffix], "rb") as rom:
                     rom.seek(addr)
-                    # Make the (probably) safe assumption that the end of the table is the pointer 
+                    # Make the (probably) safe assumption that the end of the table is the pointer
                     # before the first pointer
                     end = utils.rom2realaddr((bank, utils.read_short(rom) - 2))
-                    # Seeing the same pointer twice is an 
+                    # Seeing the same pointer twice is an
                     # indicator that we've hit the last actual value in the table
                     rom.seek(end)
                     dummy_pointer = utils.read_short(rom)
@@ -96,7 +97,7 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
                     rom.seek(addr)
 
                     ptrs = []
-                    
+
                     # This is a bit of a hack, but we do assume that both versions have the same number of items
                     if not count_written:
                         output.write(f"{((end - addr) // 2) + 1}\n")
@@ -110,51 +111,71 @@ with open(os.path.join(version_src_path, "ptrlist_data.asm"), "w") as datafile:
                         if val in ptrs:
                             # Duplicate
                             ptrs.append(f"##={ptrs.index(val)}")
+                        elif val > 0x7fff:
+                            # A reference to RAM (e.g. the player name in credits)
+                            # Annoyingly, if the entry is fixed length, we still need to write something
+                            entry_length = 0
+                            try:
+                                entry_length = sum([x[0] for x in fix_len])
+                            except:
+                                entry_length = None
+                            if entry_length:
+                                ptrs.append(f"##&{val:04X}={ptrs[-1] + entry_length:04X}")
                         else:
                             ptrs.append(val)
 
                     for idx, ptr in enumerate(ptrs):
-                        
+
                         if idx not in entries:
                             entries[idx] = {}
-                        if version_suffix not in entries[idx]:
-                            entries[idx][version_suffix] = []
+
+                        entries[idx][version_suffix] = []
 
                         if isinstance(ptr, str):
-                            entries[idx][version_suffix].append(ptr)
-                        else:
-                            real_addr = utils.rom2realaddr((bank, ptr))
-                            rom.seek(real_addr)
-                            for i in range(0, spp):
-                                t = term[i]
+                            if ptr.startswith('##='):
+                                entries[idx][version_suffix].append(ptr)
+                                continue
+                            elif ptr.startswith('##&'):
+                                info = ptr.split('=')
+                                entries[idx][version_suffix] = info[0] + '='
+                                ptr = int(info[1], 16)
 
-                                fl = fix_len[i][0]
-                                ph = print_hex[i]
+                        real_addr = utils.rom2realaddr((bank, ptr))
 
-                                b = []
+                        rom.seek(real_addr)
+                        for i in range(0, spp):
+                            t = term[i]
 
-                                if fl != None:
-                                    b = [utils.read_byte(rom) for i in range(0, fl)]
-                                else:
-                                    b = list(iter(partial(utils.read_byte, rom), t))
-                                    if len(b) == 0:
-                                        b = [t]            
-                                txt = ""
-                                i = 0
-                                while i < len(b):
-                                    if b[i] == 0xD3 and not ph: # Kanji
-                                        i += 1
-                                        txt += kanji[b[i]]
-                                    else:
-                                        if ph or b[i] not in tileset:
-                                            txt += f'\\x{b[i]:02x}'
-                                        else:
-                                            txt += tileset[b[i]]
+                            fl = fix_len[i][0]
+                            ph = print_hex[i]
+
+                            b = []
+
+                            if fl != None:
+                                b = [utils.read_byte(rom) for i in range(0, fl)]
+                            else:
+                                b = list(iter(partial(utils.read_byte, rom), t))
+                                if len(b) == 0:
+                                    b = [t]
+                            txt = ""
+                            i = 0
+                            while i < len(b):
+                                if b[i] == 0xD3 and not ph: # Kanji
                                     i += 1
+                                    txt += kanji[b[i]]
+                                else:
+                                    if ph or b[i] not in tileset:
+                                        txt += f'\\x{b[i]:02x}'
+                                    else:
+                                        txt += tileset[b[i]]
+                                i += 1
+                            if not isinstance(entries[idx][version_suffix], list):
+                                entries[idx][version_suffix] = [entries[idx][version_suffix] + txt]
+                            else:
                                 entries[idx][version_suffix].append(txt)
-                                if txt == null_indicator:
-                                    break
-            
+                            if txt == null_indicator:
+                                break
+
             # Output as a CSV
             writer = csv.writer(output, lineterminator='\n', delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             if(len(labels) == 0):

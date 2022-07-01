@@ -92,3 +92,7 @@ SECTION "Pointer List - GlossaryTerms", ROMX[$60d5], BANK[$07]
 PtrListGlossaryTerms::
   INCBIN cGlossaryTerms
 
+SECTION "Pointer List - Credits", ROMX[$5505], BANK[$16]
+PtrListCredits::
+  INCBIN cCredits
+

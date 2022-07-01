@@ -124,6 +124,16 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         current_offset = len(bintext)
         idx_offset_map[idx] = current_offset
 
+        # The pointer should be set to something specific (RAM pointer), and it may have 'useless' data where the pointer should be
+        if data[0].startswith('##&'):
+            info = data[0].split('=')
+            alias = int(info[0].lstrip('##&'), 16)
+            idx_offset_map[idx] = alias
+            print(alias)
+            if len(info) < 2:    
+                continue
+            data[0] = info[1]
+
         # Not a duplicate, and valid for this version
         for s, d in enumerate(data):
             d = d.strip('\r\n')

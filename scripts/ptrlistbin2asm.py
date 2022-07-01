@@ -46,7 +46,7 @@ for input_file in input_files:
         empty = bytearray() if total == count else pack("<H", dummy) * (total - count)
 
         offsets = [(utils.read_short(in_f), utils.read_short(in_f)) for i in range(0, count)]
-        init_text_offsets = list(map(lambda x: pack("<H", x[0] + (2 * (len(offsets))) + ptr_table_offset + len(empty)), offsets)) # Don't really need to bother with using the length information in master
+        init_text_offsets = list(map(lambda x: pack("<H", (x[0] + (2 * (len(offsets))) + ptr_table_offset + len(empty)) if x[0] < 0x7fff else x[0]), offsets)) # Don't really need to bother with using the length information in master
         with open(output_path, 'wb') as out_f:
             if len(offsets):
                 init_text_offsets[0] = bytearray(init_text_offsets[0])
