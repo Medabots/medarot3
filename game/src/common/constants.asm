@@ -127,3 +127,8 @@ M_MedalMedaliaCSkill  EQU $2D
 M_MedalMedaliaCUses   EQU $2E
 M_MedalMedaliaCExp    EQU $2F
 M_MedalNickname       EQU $30
+
+M_CreditConfigLength    EQU $0C
+M_CreditConfigDirection EQU $01
+M_CreditConfigTimer     EQU $02
+M_CreditConfigTextIndex EQU $05
