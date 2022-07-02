@@ -66,7 +66,7 @@ with open(output_file, 'w') as output:
                 if not is_general:
                     # If the text isn't meant to be part of the general list, just use 2-byte pointers and handle it 'normally'
                     initial_offset = sections[key][1] + len(offsets) * 2
-                    pointers = [pack("<H", ptrs[0] + initial_offset) for ptrs in offsets]
+                    pointers = [pack("<H", (ptrs[0] + initial_offset) if ptrs[0] < 0x7fff else ptrs[0]) for ptrs in offsets]
                     pointers[0] = bytearray(pointers[0])
                     b = reduce((lambda x, y: x + bytearray(y)), pointers)  
                     out_f.write(b)

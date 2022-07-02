@@ -9,18 +9,20 @@ from ast import literal_eval
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilesets
 
-char_table = utils.reverse_dict(utils.merge_dicts([
+default_char_table = utils.reverse_dict(utils.merge_dicts([
             tilesets.get_tileset("VWF", override_offset=0x0),
         ]))
 kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
-assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
+assert((set(kanji.keys()) - set(default_char_table.keys())) == set(kanji.keys()))
 
 def chr2bin(c):
-    retval = char_table['?']
+    retval = None
     if c in kanji:
         retval = [0xD3, kanji[c]]
     elif c in char_table:
         retval = char_table[c]
+    else:
+        retval = char_table['?']
     return retval
 
 def convert_text(txt, term, fix_len):
@@ -84,7 +86,13 @@ count = 0
 dummy_ptr = -1
 
 with open(input_file, 'r', encoding='utf-8-sig') as fp:
-    spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general = literal_eval(fp.readline().strip())
+    spp, labels, term, fix_len, _, null_indicator, data_prefix, is_general, special_tileset = literal_eval(fp.readline().strip())
+
+    if special_tileset:
+        char_table = utils.reverse_dict(tilesets.get_tileset(special_tileset, override_offset=0x00))
+    else:
+        char_table = default_char_table
+
     assert spp > 0, f"{input_file} is marked as having 0 strings per pointer"
     assert len(labels) == 0 or len(labels) == spp, f"{input_file} has a label count that doesn't match strings per pointer"
     # Total count, includes empty entries in the table
@@ -121,6 +129,16 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
 
         current_offset = len(bintext)
         idx_offset_map[idx] = current_offset
+
+        # The pointer should be set to something specific (RAM pointer), and it may have 'useless' data where the pointer should be
+        if data[0].startswith('##&'):
+            info = data[0].split('=')
+            alias = int(info[0].lstrip('##&'), 16)
+            idx_offset_map[idx] = alias
+            print(alias)
+            if len(info) < 2:    
+                continue
+            data[0] = info[1]
 
         # Not a duplicate, and valid for this version
         for s, d in enumerate(data):

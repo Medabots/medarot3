@@ -68,3 +68,7 @@ PtrList3:
 SECTION "GlossaryTerms", ROMX[$60d5], BANK[$07]
 PtrListGlossaryTerms::
   INCBIN cGlossaryTerms
+
+SECTION "Credits", ROMX[$5505], BANK[$16]
+PtrListCredits::
+  INCBIN cCredits

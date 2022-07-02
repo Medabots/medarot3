@@ -136,19 +136,6 @@ finally:
     if namefile:
         namefile.close()
 
-def dump_2bpp_to_png(filename, data):
-    with open(filename, "wb") as uncompressed:
-        width, height, palette, greyscale, bitdepth, px_map = gfx.convert_2bpp_to_png(data)
-        w = png.Writer(
-            width,
-            height,
-            palette=palette,
-            compression=9,
-            greyscale=greyscale,
-            bitdepth=bitdepth
-        )
-        w.write(uncompressed, px_map)
-
 # Dump tilesets used by the scripts
 output_file = os.path.join(version_src_path, "partial_tilesets_table.asm")
 
@@ -242,14 +229,14 @@ with open(output_file, 'w') as output:
                 output.write(f"{name}::\n")
                 
                 if not isinstance(name_data_map[bank_idx][name], list):
-                    dump_2bpp_to_png(os.path.join(raw_path, f"{name}.png"), data)
+                    gfx.dump_2bpp_to_png(os.path.join(raw_path, f"{name}.png"), data)
                     output.write(f'  INCBIN "{os.path.join(gfx_output_path, name)}.2bpp"\n')
                 else:
                     output.write(f'  INCBIN c{name}_GAMEVERSION\n')
                     for i, f in enumerate(version_files):
                         fname = f"{name}_{roms[i][1]}" 
                         f.write(f'c{name}_GAMEVERSION        EQUS "\\"{os.path.join(gfx_output_path, fname)}.2bpp\\""\n')
-                        dump_2bpp_to_png(os.path.join(raw_path, f"{fname}.png"), data[i])
+                        gfx.dump_2bpp_to_png(os.path.join(raw_path, f"{fname}.png"), data[i])
             
             # Last pointer is always the terminator, so just use that
             output.write(f"{pointer_ids[bank_idx][-1]}::\n\n")
