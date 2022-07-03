@@ -129,6 +129,13 @@ M_MedalMedaliaCExp    EQU $2F
 M_MedalNickname       EQU $30
 
 M_CreditConfigLength    EQU $0C
+M_CreditConfigAniIndex  EQU $00
 M_CreditConfigDirection EQU $01
 M_CreditConfigTimer     EQU $02
+M_CreditConfigActIndex  EQU $03
+M_CreditConfigPageNum   EQU $04
 M_CreditConfigTextIndex EQU $05
+
+M_CreditTextConfigYPos        EQU $00
+M_CreditTextConfigXPos        EQU $01
+M_CreditTextConfigPalette     EQU $03
