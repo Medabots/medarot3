@@ -198,7 +198,7 @@ CreditsCharacterRenderingTimingThing::
   ld a, [$C4EE]
   add a
   ld c, a
-  ld hl, .table
+  ld hl, CreditsCharacterRenderingTimingTable
   ld d, 0
   ld e, a
   add hl, de
@@ -225,7 +225,7 @@ CreditsCharacterRenderingTimingThing::
   ld a, 1
   ret
 
-.table
+CreditsCharacterRenderingTimingTable::
   db $0A, $00
   db $0C, $02
   db $0E, $04
@@ -346,3 +346,81 @@ CreditsConfigAddressTable::
   dw $C75C
   dw $C768
   dw $C774
+
+SECTION "Credits Helper Functions 3", ROMX[$4B79], BANK[$16]
+CreditSpriteConfigAddressTable::
+  dw $C0A0
+  dw $C0C0
+  dw $C0E0
+  dw $C100
+  dw $C120
+  dw $C140
+  dw $C160
+  dw $C180
+  dw $C1A0
+  dw $C1C0
+  dw $C1E0
+  dw $C200
+  dw $C220
+  dw $C240
+
+CreditGetTextXPos::
+  creditconf M_CreditConfigTextIndex
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, M_CreditTextConfigXPos
+  add hl, de
+  ld a, [hl]
+  ret
+
+CreditGetTextVariable2Value::
+  creditconf M_CreditConfigTextIndex
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, 2
+  add hl, de
+  ld a, [hl]
+  ret
+
+CreditConfigureUnderlineSprite::
+  push de
+  push de
+  ld [de], a
+  ld a, $11
+  ld hl, 1
+  add hl, de
+  ld [hl], a
+  ld a, $F4
+  ld hl, 2
+  add hl, de
+  ld [hl], a
+  creditconf M_CreditConfigTextIndex
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, M_CreditTextConfigYPos
+  add hl, de
+  ld a, [hl]
+  add a
+  add a
+  add a
+  pop de
+  ld hl, 4
+  add hl, de
+  ld [hl], a
+  creditconf M_CreditConfigTextIndex
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, 3
+  add hl, de
+  ld a, [hl]
+  ld hl, 5
+  pop de
+  add hl, de
+  ld [hl], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret

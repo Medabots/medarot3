@@ -57,7 +57,7 @@ CreditsDrawingState::
   push af
   ld b, a
   call CreditsGetConfigAddress
-  creditconf 0
+  creditconf M_CreditConfigAniIndex
   ld a, 1
   ld [hl], a
   pop af
@@ -153,7 +153,7 @@ CreditsPlayState::
   cp 2
   jr z, .nextState
   cp 1
-  call z, $45E3
+  call z, CreditLineActionStateMachine
   ld a, 1
   ld [W_OAM_SpritesReady], a
   pop af
