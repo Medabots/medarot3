@@ -5,3 +5,70 @@ on:
     - cron: '0 2 * * *' # run at 2 AM UTC
 
   workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    container: docker://variantxyz/rgbds-20220711:1a126d774613431dd5eb568472493977a3682175
+
+    steps:
+      - name: List versions
+        run: |
+          git --version
+          python3 --version
+          rgbasm --version
+          rgblink --version
+          rgbgfx --version
+
+      - name: Checkout main repository
+        uses: actions/checkout@v2
+        with:
+          path: 'medarot3'
+
+      - name: Checkout baserom repository
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ secrets.BASEROM3_REPOSITORY }}
+          ssh-key: ${{ secrets.BASEROM3_KEY }}
+          path: 'baserom'
+
+      - name: Copy baserom into main repository
+        run: |
+          cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
+
+      - name: Checkout latest tag
+        working-directory: 'medarot3'
+        run: |
+          git fetch --tags --all
+          git checkout `git tag --list --sort=-version:refname "*+EN*" | head -n 1`
+          echo "TAG_NAME=`git tag --list --sort=-version:refname \"*+EN\" | head -n 1`" >> $GITHUB_ENV
+
+      - name: Get latest text from source
+        working-directory: 'medarot3'
+        env:
+          TRANSLATION_SHEET: sheet.xlsx
+        run: |
+          wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
+          make csv_from_xlsx
+          git status --porcelain
+
+      - name: Tag if there are changes
+        working-directory: 'medarot3'
+        run: |
+          [ -z "$(git status --porcelain)" ] && exit 0
+
+          make -j all
+
+          git config user.email "${{ secrets.USER_EMAIL }}"
+          git config user.name "$GITHUB_ACTOR"
+
+          git commit -am "Nightly build - `date +%Y%m%d`"
+          git tag "$TAG_NAME+nightly.`date +%Y%m%d`"
+
+          mkdir patch
+          ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o ./patch/m3kabuto-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
+          ips_util create baserom_kuwagata.gbc medarot3_kuwagata.gbc -o ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
+
+          git push --tags
+
+          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -prerelease -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
