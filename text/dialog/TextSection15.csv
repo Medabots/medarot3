@@ -20,11 +20,11 @@
 018,0x1f0024,"<@RL,14,00>ここは「メダロポリス3」<CD>つまリ メダロポリスの右上ってわけ<CF><D1>お金もちが すむ エリアさ","<@RL,14,00>This is <f02>Medalopolis District<D3>3<f00>. That is to say, the upper<CF><D1>right area of Medalopolis.<D3>All the rich people live here."
 019,0x1f0026,"<@RL,13,00>こ ここが あこがれの<CD>カリンちゃんの家...♥<CF><D1>そして ぼくは カリンちゃんを<CD>とおくから 貝つめるだけの 男...","<@RL,13,00>Th-this is the house of the girl<D3>I admire... Karin...♥ <CF><D1>And me... I'm just the boy who<D3>watches her from afar..."
 020,0x1f0028,"<@RL,15,00>ちかくに コンビニが あるから<CD>いっつも ここで すませちゃうよ","<@RL,15,00>This convenience store is<D3>nearby, so I always end up<CF><D1>coming here."
-021,0x1f002a,"<@LL,00,05>つうしんたんまつ「ミルミル」だ<CD>ここで メダルや パ-ツの<CF><D1>やリとリとか<CD>つうしんロボトルが できるんだ",
-022,0x1f002c,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!",
-023,0x1f002e,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>",
-024,0x1f0030,"<@RL,0A,02>まったね-♥",
-025,0x1f0032,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥",
+021,0x1f002a,"<@LL,00,05>つうしんたんまつ「ミルミル」だ<CD>ここで メダルや パ-ツの<CF><D1>やリとリとか<CD>つうしんロボトルが できるんだ","<@LL,00,05>This is the communication<D3>terminal, <f02>Mille-Mille<f00>, where I<CF><D1>can trade medals, parts and<D3>even robottle."
+022,0x1f002c,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!","<@RL,0A,02>Hello! Is everyone doing okay?<D3>I'm the communication cutie ♥<CF><D1>At this communication<D3>terminal, <f02>Mille-Mille<f00> you can<CF><D1>trade parts, medals, and<D3>robottle your friends!"
+023,0x1f002e,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>","<@RL,0A,02>Do you want to link?<*04>"
+024,0x1f0030,"<@RL,0A,02>まったね-♥","<@RL,0A,02>Ok bye~♥"
+025,0x1f0032,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥","<@RL,0A,00>Hmm, you don't wanna?<CF><@RL,0A,02>Ok, see you next time then ♥"
 026,0x1f0034,"<@RL,13,00>あ-っ 本日は せいてんなリ<CD>せいてんなリ-っ<CF><D1>うむ こんなかんじかな",
 027,0x1f0036,"<@RL,13,00>前は うんどうじょうで あそぶことも<CD>きんしされてたんだぞ<CF><D1>しんじられるか?",
 028,0x1f0038,"<@RL,1B,00>外で あそぶのって 気持ちい-♥",
@@ -267,7 +267,7 @@
 265,0x1f0212,"<@RL,03,02>明日が たのしみだな!",
 266,0x1f0214,"<@RL,30,00><&BUF0A>さん いつも<CD>マスタ-が おせわに なっています",
 267,0x1f0216,"<@RL,14,00>びょうきがちだった カリンも<CD>さいきんは すっかリ 元気になった<CF><D1><&BUF0A>くんが カリンの<CD>元気の みなもとかな?<CF><D1><@LL,00,01>いやぁ そんなぁ-<CD>...そう思います?","<@RL,14,00>Karin was prone to illness, but<D3>she's been feeling better<CF><D1>lately.<CF><D1>Could you be the the reason<D3>she's recovering, <&BUF0A>?<CF><D1><@LL,00,01>Ah no, that's...<D3>do you really think so?"
-268,0x1f0218,"<@RL,15,00>おリょうリの 院は いちリゅうの<CD>シェフにも まけないわよ!",
+268,0x1f0218,"<@RL,15,00>おリょうリの 院は いちリゅうの<CD>シェフにも まけないわよ!","<@RL,15,00>My cooking is a match for that of the best chefs!"
 269,0x1f021a,"<@RL,15,00>ちょっと きゅうけい してるだけよ!","<@RL,15,00>I'm just taking a short break,<D3>that's all!"
 270,0x1f021c,"<@RL,34,00>おリょうリって むずかしいワ","<@RL,34,00>Cooking is difficult..."
 271,0x1f021e,"<@RL,34,00>おそうじ おそうじ!<CD>キレイに ピカピカ!","<@RL,34,00>Cleaning, cleaning!<D3> Sparkling clean!"
