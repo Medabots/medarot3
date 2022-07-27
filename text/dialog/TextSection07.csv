@@ -73,8 +73,8 @@
 071,0x923a2#kabuto|0x923a4#kuwagata,あ-<CD>ぼくは ながされていく-...<*02>,
 072,0x923a4#kabuto|0x923a6#kuwagata,けわしい やまみちだって<CD>あしが たくさんあれば ヘいきさっ<*02>,
 073,0x923a6#kabuto|0x923a8#kuwagata,あっ あしが もつれた-っ<CD><*02>,
-074,0x923a8#kabuto|0x923aa#kuwagata,もリみたいな いリくんだ ばしょでは<CD>きどうせいが ものを いうぞ!!<*02>,"In the forest, manuverability<D3>is the name of the game!!<*02>"
-075,0x923aa#kabuto|0x923ac#kuwagata,しかいが さえぎられて<CD>よく みえないっ<*02>,I couldn't see because<D3>my view was blocked!<*02>
+074,0x923a8#kabuto|0x923aa#kuwagata,もリみたいな いリくんだ ばしょでは<CD>きどうせいが ものを いうぞ!!<*02>,"In the forest, manuverability is the name of the game!!<*02>"
+075,0x923aa#kabuto|0x923ac#kuwagata,しかいが さえぎられて<CD>よく みえないっ<*02>,I couldn't see because my view was blocked!<*02>
 076,0x923ac#kabuto|0x923ae#kuwagata,はしって はしって<CD>はしリまくるぞぉ!<*02>,
 077,0x923ae#kabuto|0x923b0#kuwagata,はしるだけなら はやいんだけどなぁ<CD><*02>,
 078,0x923b0#kabuto|0x923b2#kuwagata,いっぱつの ダメ-ジは<CD>だれにも まけないよ<*02>,
@@ -83,20 +83,20 @@
 081,0x923b6#kabuto|0x923b8#kuwagata,きょうは みずあびしてから<CD>ぐっすリ ねよう<*02>,
 082,0x923b8#kabuto|0x923ba#kuwagata,おんなだと おもって<CD>あまく 貝ないことね<*02>,
 083,0x923ba#kabuto|0x923bc#kuwagata,ほんとうに てかげんも しないのね<CD><*02>,
-084,0x923bc#kabuto|0x923be#kuwagata,グルルルル...ニンゲンヨ<CD>ワガ ソンザイニ キョウフセヨ!<*02>,"GRRRR..... FEAR ME, FECKLESS<D3>HUMAN!<*02>"
-085,0x923be#kabuto|0x923c0#kuwagata,オマエハ アクマヲモ<CD>オソレヌト イウノカ!?<*02>,IMPOSSIBLE! ARE YOU NOT<D3>AFRAID OF DEMONS!?<*02>
+084,0x923bc#kabuto|0x923be#kuwagata,グルルルル...ニンゲンヨ<CD>ワガ ソンザイニ キョウフセヨ!<*02>,"GRRRR..... FEAR ME, FECKLESS HUMAN!<*02>"
+085,0x923be#kabuto|0x923c0#kuwagata,オマエハ アクマヲモ<CD>オソレヌト イウノカ!?<*02>,IMPOSSIBLE! ARE YOU NOT AFRAID OF DEMONS!?<*02>
 086,0x923c0#kabuto|0x923c2#kuwagata,ニンゲンめ! おとなしく<CD>したがっていれば いいものを!<*02>,
 087,0x923c2#kabuto|0x923c4#kuwagata,われに したがわぬならば<CD>ほろびてしまうが いい!<*02>,
 088,0x923c4#kabuto|0x923c6#kuwagata,あ.そ.ぼ!<CD><*02>,
 089,0x923c6#kabuto|0x923c8#kuwagata,もう.おしまい?<CD>つまんな-い!<*02>,
 090,0x923c8#kabuto|0x923ca#kuwagata,ニンゲンは 海を よごす<CD><*02>,Humans pollute the sea!<*02>
-091,0x923ca#kabuto|0x923cc#kuwagata,青い海に ぼくたちの<CD>いばしょが なくなっていく...<*02>,Our great blue sea is being<D3>soiled...<*02>
+091,0x923ca#kabuto|0x923cc#kuwagata,青い海に ぼくたちの<CD>いばしょが なくなっていく...<*02>,Our great blue sea is being soiled...<*02>
 092,0x923cc#kabuto|0x923ce#kuwagata,きみは ロボトルが すきかい?<CD><*02>,
-093,0x923ce#kabuto|0x923d0#kuwagata,ニンゲンの れきしは たたかいから<CD>はじまったんだってね...<*02>,The history of Man was<D3>birthed from war...<*02>
+093,0x923ce#kabuto|0x923d0#kuwagata,ニンゲンの れきしは たたかいから<CD>はじまったんだってね...<*02>,The history of Man was birthed from war...<*02>
 094,0x923d0#kabuto|0x923d2#kuwagata,お前なんか にゃ-の 前から<CD>きえちゃうのにゃ-!<*02>,
 095,0x923d2#kabuto|0x923d4#kuwagata,にゃ-っ!<CD><*02>,Mrr-ow!!<*02>
 096,0x923d4#kabuto|0x923d6#kuwagata,ニンゲン...テキ!<CD><*02>,DESTROY.... HUMANS!<*02>
-097,0x923d6#kabuto|0x923d8#kuwagata,ニンゲン カナラズ タオス!<CD><*02>,HUMANS MUST BE<D3>ERADICATED!<*02>
+097,0x923d6#kabuto|0x923d8#kuwagata,ニンゲン カナラズ タオス!<CD><*02>,HUMANS MUST BE ERADICATED!<*02>
 098,0x923d8#kabuto|0x923da#kuwagata,お手なみ はいけんと いきましょう<CD><*02>,
 099,0x923da#kabuto|0x923dc#kuwagata,あなたとの ロボトルは<CD>わたしの むねを あつくするのです<*02>,
 100,0x923dc#kabuto|0x923de#kuwagata,大人を からかっちゃ いけないよ!<CD><*02>,
