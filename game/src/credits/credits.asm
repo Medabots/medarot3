@@ -164,12 +164,7 @@ CreditsFetchAndRenderCharacter::
   ld b, 0
   ld c, a
   push bc
-  creditconf M_CreditConfigTextIndex
-  ld a, [hl]
-  ld hl, PtrListCredits
-  rst $30
-  ld de, 4
-  add hl, de
+  credittext M_CreditTextConfigText
   pop bc
   add hl, bc
   ld a, [hl]
@@ -347,7 +342,38 @@ CreditsConfigAddressTable::
   dw $C768
   dw $C774
 
-SECTION "Credits Helper Functions 3", ROMX[$4B79], BANK[$16]
+PositionCreditLineSprite::
+  add a
+  ld hl, CreditSpriteConfigAddressTable
+  rst $30
+  ld d, h
+  ld e, l
+  push de
+  push de
+  ld a, 0
+  call CreditConfigureUnderlineSprite
+  credittext M_CreditTextConfigXPos
+  ld a, [hl]
+  ld c, a
+  add a
+  add a
+  add a
+  ld b, $A0
+  add b
+  pop de
+  ld hl, 3
+  add hl, de
+  ld [hl], a
+  pop de
+  ld a, $10
+  ld hl, $13
+  add hl, de
+  ld [hl], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ret
+
+SECTION "Credits Helper Functions 4", ROMX[$4B79], BANK[$16]
 CreditSpriteConfigAddressTable::
   dw $C0A0
   dw $C0C0
@@ -365,22 +391,12 @@ CreditSpriteConfigAddressTable::
   dw $C240
 
 CreditGetTextXPos::
-  creditconf M_CreditConfigTextIndex
-  ld a, [hl]
-  ld hl, PtrListCredits
-  rst $30
-  ld de, M_CreditTextConfigXPos
-  add hl, de
+  credittext M_CreditTextConfigXPos
   ld a, [hl]
   ret
 
 CreditGetTextVariable2Value::
-  creditconf M_CreditConfigTextIndex
-  ld a, [hl]
-  ld hl, PtrListCredits
-  rst $30
-  ld de, 2
-  add hl, de
+  credittext 2
   ld a, [hl]
   ret
 
@@ -396,12 +412,7 @@ CreditConfigureUnderlineSprite::
   ld hl, 2
   add hl, de
   ld [hl], a
-  creditconf M_CreditConfigTextIndex
-  ld a, [hl]
-  ld hl, PtrListCredits
-  rst $30
-  ld de, M_CreditTextConfigYPos
-  add hl, de
+  credittext M_CreditTextConfigYPos
   ld a, [hl]
   add a
   add a
@@ -410,12 +421,7 @@ CreditConfigureUnderlineSprite::
   ld hl, 4
   add hl, de
   ld [hl], a
-  creditconf M_CreditConfigTextIndex
-  ld a, [hl]
-  ld hl, PtrListCredits
-  rst $30
-  ld de, 3
-  add hl, de
+  credittext M_CreditTextConfigPalette
   ld a, [hl]
   ld hl, 5
   pop de

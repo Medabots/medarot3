@@ -57,19 +57,14 @@ CreditsDrawingState::
   push af
   ld b, a
   call CreditsGetConfigAddress
-  creditconf M_CreditConfigAniIndex
-  ld a, 1
-  ld [hl], a
+  creditconfset M_CreditConfigAniIndex, 1
   pop af
   ld hl, .table
   ld d, 0
   ld e, a
   add hl, de
   ld a, [hl]
-  push af
-  creditconf M_CreditConfigTimer
-  pop af
-  ld [hl], a
+  creditconfsetfroma M_CreditConfigTimer
   pop af
   inc a
   pop bc
@@ -148,7 +143,7 @@ CreditsPlayState::
   push bc
   call CreditsGetConfigAddress
   pop bc
-  call $47EA
+  call CreditLineAnimationStateMachine
   pop bc
   cp 2
   jr z, .nextState
