@@ -139,3 +139,4 @@ M_CreditConfigTextIndex EQU $05
 M_CreditTextConfigYPos        EQU $00
 M_CreditTextConfigXPos        EQU $01
 M_CreditTextConfigPalette     EQU $03
+M_CreditTextConfigText        EQU $04
