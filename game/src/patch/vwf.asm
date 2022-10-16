@@ -237,10 +237,31 @@ VWFAutoNLFetchChar::
   pop bc
   ret
 
+VWFDrawStringInitForCredits::
+  rst $10
+  call VWFDrawStringInitContinued
+  ld a, BANK(CreditLineDrawTextInBuffer)
+  rst $10
+  ret
+
+VWFMeasureCharacterForCredits::
+  rst $10
+  ld h, [hl]
+  ld a, BANK(CreditInitPage)
+  rst $10
+  ret
+
+VWFDrawCharForCredits::
+  rst $10
+  call VWFWriteCharLimitedForCredits
+  ld a, BANK(CreditLineDrawTextInBuffer)
+  rst $10
+  ret
+
 ; Free space.
   padend ($1EEA)
 
-SECTION "VWF Drawing Functions", ROMX[$6000], BANK[$FF]
+SECTION "VWF Drawing Functions", ROMX[$5000], BANK[$FF]
 VWFDrawLetterTable::
   ; This determines the width of each character (excluding the 1px between characters).
   ; The address of this table must be a multiple of $100.
@@ -344,6 +365,66 @@ VWFDrawRoboticBoldLetterTable::
   db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
   ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
 
+VWFDrawSquishLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6, 6, 7, 7 ; 1x
+  db 2, 1, 3, 5, 4, 5, 5, 2, 2, 2, 3, 5, 2, 4, 1, 4 ; 2x
+  db 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 4, 4, 5 ; 3x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ; 4x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 4, 2, 3, 4 ; 5x
+  db 2, 5, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 1, 5, 4, 4 ; 6x
+  db 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 3, 1, 3, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
+VWFDrawSmooshLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6, 6, 7, 7 ; 1x
+  db 2, 1, 3, 5, 4, 5, 5, 2, 2, 2, 3, 5, 2, 4, 1, 4 ; 2x
+  db 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 4, 4, 5 ; 3x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ; 4x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 4, 2, 3, 4 ; 5x
+  db 2, 5, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 1, 5, 4, 4 ; 6x
+  db 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 3, 1, 3, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
+VWFDrawSplatLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6, 6, 7, 7 ; 1x
+  db 2, 1, 3, 5, 4, 5, 5, 2, 2, 2, 3, 5, 2, 4, 1, 4 ; 2x
+  db 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 4, 4, 5 ; 3x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ; 4x
+  db 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 4, 2, 3, 4 ; 5x
+  db 2, 5, 4, 4, 4, 4, 4, 4, 4, 1, 2, 4, 1, 5, 4, 4 ; 6x
+  db 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 3, 1, 3, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
 VWFFont::
   INCBIN "build/tilesets/patch/Font.1bpp"
 
@@ -358,6 +439,15 @@ VWFRoboticFont::
 
 VWFRoboticBoldFont::
   INCBIN "build/tilesets/patch/RoboticBoldFont.1bpp"
+
+VWFSquishFont::
+  INCBIN "build/tilesets/patch/SquishFont.1bpp"
+
+VWFSmooshFont::
+  INCBIN "build/tilesets/patch/SmooshFont.1bpp"
+
+VWFSplatFont::
+  INCBIN "build/tilesets/patch/SplatFont.1bpp"
 
 VWFDrawCharLoop::
   call VWFCheckInit
@@ -1160,6 +1250,25 @@ VWFWriteCharLimited::
   ld [W_VWFDiscardSecondTile], a
   jr VWFWriteCharBasic
 
+VWFWriteCharLimitedForCredits::
+  ld a, [W_VWFTileLength]
+  ld b, a
+  ld a, [W_VWFTilesDrawn]
+
+  ; If the number of tiles drawn match (or exceed) the max number of tiles then stop drawing.
+
+  cp b
+  ret nc
+
+  ; If the number of tiles drawn are 1 less than the max number of tiles then stop drawing the second tile from the composite area.
+
+  inc a
+  cp b
+  jr c, VWFWriteCharBasic.skipVRamBankSwitch
+  ld a, 1
+  ld [W_VWFDiscardSecondTile], a
+  jr VWFWriteCharBasic.skipVRamBankSwitch
+
 VWFWriteChar::
   ld b, 1
   call MainScriptProgressXChars
@@ -1185,6 +1294,7 @@ VWFWriteCharBasic::
 
   VRAMSwitchToBank1
 
+.skipVRamBankSwitch
   ld a, [W_VWFTilesDrawn]
   ld b, a
   ld a, [W_VWFTileBaseIdx]

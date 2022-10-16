@@ -1,354 +1,286 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-SECTION "Credit Line State Machines 1", ROMX[$45E3], BANK[$16]
-; CreditLineActionStateMachine and CreditLineAnimationStateMachine are linked. The latter sets the former's state indices and the former sets the latter's state indices.
-; For all intents and purposes CreditLineActionStateMachine and CreditLineAnimationStateMachine together represent two parts of a single state machine. It's weird.
-
-CreditLineActionStateMachine::
-  ld a, b
-  creditconf M_CreditConfigActIndex
-  ld a, [hl]
-  ld hl, .stateIndexReorderingTable
-  ld d, 0
-  ld e, a
-  add hl, de
-  ld a, [hl]
+SECTION "Credit Line State Machines 1", ROMX[$4800], BANK[$16]
+CreditLineNewAnimationStateMachine::
+  ld a, [W_CreditsCurrentLineStateIndex]
   ld hl, .table
   rst $30
   jp hl
 
 .table
-  dw CreditLineActionPlaceholderState
-  dw CreditLineActionPageBeginState
-  dw CreditLineActionTriggerLineInState
-  dw CreditLineActionTriggerLineOutState
-  dw CreditLineActionTriggerTextInState
-  dw CreditLineActionTriggerTextOutState
-  dw CreditLineActionTriggerWaitState
+  dw CreditLineNewAnimationInitState
+  dw CreditLineNewAnimationLineInShowState
+  dw CreditLineNewAnimationTextInState
+  dw CreditLineNewAnimationLineInHideState
+  dw CreditLineNewAnimationWaitForSyncState
+  dw CreditLineNewAnimationWaitState
+  dw CreditLineNewAnimationLineOutShowState
+  dw CreditLineNewAnimationTextOutState
+  dw CreditLineNewAnimationLineOutHideState
+  dw CreditLineNewAnimationWaitForSyncState
 
-; This is incredibly silly.
-.stateIndexReorderingTable
-  db 1,2,4,6,5,3
-
-CreditLineActionPlaceholderState::
-  ret
-
-CreditLineActionPageBeginState::
-  ld c, 0
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4C15
-  creditconf M_CreditConfigPageNum
-  ld a, [hl]
-  cp $1F
-  jr z, .endAnimation
-  creditconfset M_CreditConfigAniIndex, 1
-  ret
-
-.endAnimation
-  creditconfset M_CreditConfigAniIndex, 0
-  ret
-
-CreditLineActionTriggerLineInState::
-  creditconfreset M_CreditConfigTimer
-  creditconfset M_CreditConfigAniIndex, 2
-  creditconftextcheck
-  ret z
-  creditconf 6
-  ld a, [hl]
-  cp 0
-  ret z
-  ld a, [W_CreditsCurrentLineNumber]
-  push af
-  call PositionCreditLineSprite
-  pop af
-  call $4B1E
-  credittext M_CreditTextConfigYPos
-  ld c, [hl]
-  push bc
-  credittext M_CreditTextConfigPalette
-  ld a, [hl]
-  sub 2
-  ld e, $88
-  add e
-  ld e, a
-  pop bc
-  ld b, 3
-  ld a, 2
-  call WrapDecompressAttribmap0
-  ret
-
-CreditLineActionTriggerLineOutState::
-  creditconfreset M_CreditConfigTimer
-  creditconfset M_CreditConfigAniIndex, 3
-  ret
-
-CreditLineActionTriggerTextInState::
-  creditconfreset M_CreditConfigTimer
-  creditconfset M_CreditConfigAniIndex, 4
-  creditconfset M_CreditConfigDirection, 0
-  creditconftextcheck
-  ret z
-  creditconf 6
-  ld a, [hl]
-  cp 0
-  ret z
-  call $4E4E
-  call $4E84
-  credittext M_CreditTextConfigXPos
-  ld a, [hl]
-  add 3
-  ld b, a
-  push bc
-  credittext M_CreditTextConfigYPos
-  pop bc
-  ld c, [hl]
-  call $4DFF
-  ret
-
-CreditLineActionTriggerTextOutState::
-  creditconfreset M_CreditConfigTimer
-  creditconfset M_CreditConfigAniIndex, 5
-  creditconfset M_CreditConfigDirection, 1
-  creditconftextcheck
-  ret z
-  call $4E84
-  ld c, 1
-  ld a, [W_CreditsCurrentLineNumber]
-  add a
-  add 1
-  ld hl, CreditSpriteConfigAddressTable
-  rst $30
-  ld a, c
-  ld [hl], a
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  ret
-
-CreditLineActionTriggerWaitState::
-  call $50CF
-  creditconfsetfroma M_CreditConfigTimer
-  creditconfset M_CreditConfigAniIndex, 6
-  ret
-
-CreditLineAnimationStateMachine::
-  ld a, b
-  ld [W_CreditsCurrentLineNumber], a
-  creditconf M_CreditConfigAniIndex
-  ld a, [hl]
-  ld hl, .table
-  rst $30
-  jp hl
-
-.table
-  dw CreditLineAnimationPlaceholderState
-  dw CreditLineAnimationSetupConfigState
-  dw CreditLineAnimationLineInState
-  dw CreditLineAnimationLineOutState
-  dw CreditLineAnimationTextInState
-  dw CreditLineAnimationTextOutState
-  dw CreditLineAnimationWaitState
-
-CreditLineAnimationPlaceholderState::
-  ret
-
-CreditLineAnimationSetupConfigState::
-  creditconf M_CreditConfigTimer
-  ld a, [hl]
+CreditLineNewAnimationInitState::
+  ld a, [W_CreditsCurrentLineProgress]
   or a
-  jr z, .continue
+  jr z, .immediate
   dec a
-  ld [hl], a
-  jp nz, CreditLineAnimationNoActionExit
+  ld [W_CreditsCurrentLineProgress], a
+  ret nz
 
-.continue
+.immediate
+  ld a, [W_CreditsCurrentLineAnimateInOut]
+  and $F0
+  jr nz, .doAnimateIn
+  ld a, 4
+  ld [W_CreditsCurrentLineStateIndex], a
+  ret
+
+.doAnimateIn
+  ld a, [W_CreditsCurrentLineTextOffset]
+  ld b, a
+  ld a, 8
+  sub b
+  and 7
+  add $2F
+  ld [W_CreditsCurrentLineMidTileDestination], a
+  ld a, b
+  srl a
+  srl a
+  srl a
+  ld b, a
+  
+  ld hl, CreditOffsetLineMappingLowAddressTable
+  ld a, [W_CreditsOffsetMode]
+  or a
+  jr nz, .isOffset
+  ld l, CreditLineMappingLowAddressTable & $FF
+
+.isOffset
   ld a, [W_CreditsCurrentLineNumber]
-  ld hl, PtrCreditsLineInstructions
-  rst $30
-  push hl
-  creditconf M_CreditConfigPageNum
+  add l
+  ld l, a
   ld a, [hl]
-  pop hl
-  ld d, 0
-  ld e, a
-  sla e
-  rl d
-  sla e
-  rl d
-  add hl, de
-  ld a, [hl]
-  push hl
-  creditconfsetfroma M_CreditConfigTextIndex
-  pop hl
-  inc hl
-  ld a, [hl]
-  push hl
-  creditconfsetfroma 6
-  pop hl
-  inc hl
-  ld a, [hl]
-  creditconfsetfroma 7
-  jp CreditLineAnimationIncStateIndex
+  add b
+  ld [W_CreditsCurrentLineDestination], a
+  sub b
+  add $10
+  ld [W_CreditsCurrentLineProgress], a
+  
+  ; Continues into CreditLineNewAnimationIncStateIndex.
 
-CreditLineAnimationLineInState::
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .skipLine
-  creditconf 6
-  ld a, [hl]
-  cp 0
-  jr z, .skipLine
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4C2D
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4C7F
+CreditLineNewAnimationIncStateIndex::
+  ld hl, W_CreditsCurrentLineStateIndex
+  inc [hl]
+  ; Continues into CreditLineNewAnimationWaitForSyncState.
 
-.skipLine
-  creditconfinc M_CreditConfigTimer
-  cp $22
-  jp nz, .continue
-  jp CreditLineAnimationIncStateIndex
+CreditLineNewAnimationWaitForSyncState::
+  ret
 
-.continue
-  jp CreditLineAnimationNoActionExit
+CreditLineNewAnimationLineInShowState::
+  call CreditLineAnimationCommon
+  jr z, .lastTile
+  ld a, b
+  cp $2F
+  jr z, .midTile
+  ld b, $37
+  ld a, l
+  dec a
+  ld [W_CreditsCurrentLineProgress], a
+  jp CreditLineAnimationMapTile
 
-CreditLineAnimationLineOutState::
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .skipLine
-  creditconf 7
-  ld a, [hl]
-  cp 0
-  jr z, .skipLine
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4CF2
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4D62
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
+.midTile
+  ld b, $33
+  
+.mapTile
+  di
 
-.skipLine
-  creditconfinc M_CreditConfigTimer
-  cp $22
-  jp nz, .continue
-  ld c, 0
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4C15
-  creditconfinc M_CreditConfigPageNum
-  creditconfreset M_CreditConfigActIndex
-  creditconfreset M_CreditConfigTimer
-  creditconf M_CreditConfigPageNum
-  ld a, [hl]
-  cp $1F
-  jr nz, .notLastPage
-  ld a, [W_CreditsCurrentLineNumber]
-  cp 6
-  jr nz, .notLastPage
-  jp CreditLineAnimationLastPageExit
+.wfbB
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfbB
 
-.notLastPage
-  jp CreditLineAnimationActionExit
+  ld [hl], b
+  ei
+  ret
 
-.continue
-  jp CreditLineAnimationNoActionExit
+.lastTile
+  cp $34
+  jr nc, .lastBit
+  
+  ld a, b
+  cp $2F
+  jr nz, .lastBit
+  jr .midTile
 
-CreditLineAnimationTextInState::
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .nextFrame
-  creditconf 6
-  ld a, [hl]
-  cp 0
-  jr z, .nextFrame
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  call CreditsRenderLineText
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .nextFrame
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
+.lastBit
+  ld a, [W_CreditsCurrentLineMidTileDestination]
+  ld b, a
+  call CreditLineAnimationMapTile
+  jp CreditLineNewAnimationIncStateIndex
+
+CreditLineNewAnimationLineInHideState::
+  call CreditLineAnimationCommon
+  jr z, .lastTile
+  ld a, b
+  cp $37
+  jr z, .midTile
+  ld b, $2F
+  ld a, l
+  dec a
+  ld [W_CreditsCurrentLineProgress], a
+  jp CreditLineAnimationMapTile
+
+.midTile
+  ld b, $3B
+  jp CreditLineAnimationMapTile
+
+.lastTile
+  ld b, $2F
+  call CreditLineAnimationMapTile
+  jp CreditLineNewAnimationIncStateIndex
+
+CreditLineNewAnimationLineOutShowState::
+  ; We are reusing W_CreditsCurrentLineTextProgress to track the last tile.
+  ld a, [W_CreditsCurrentLineTextProgress]
+  inc a
+  ld c, a
+  call CreditLineAnimationCommon
+  jr z, .firstTile
+
+  ld a, l
+  cp c
+  jr z, .lastTile
+
+  ld a, b
+  ld b, $37
+  cp $2F
+  jr nz, .nextTile
+
+  ld b, $3B
+  jp CreditLineAnimationMapTile
+
+.nextTile
+  ld a, l
+  inc a
+  ld [W_CreditsCurrentLineProgress], a
+  jp CreditLineAnimationMapTile
+
+.firstTile
+  ld a, [W_CreditsCurrentLineMidTileDestination]
+  ld b, a
+  jr .nextTile
+
+.lastTile
+  ld a, [W_CreditsCurrentLineTextLength]
+  add 4
+  add a
+  ld [W_CreditsCurrentLineTextProgress], a
+  jp CreditLineNewAnimationIncStateIndex
+
+CreditLineNewAnimationLineOutHideState::
+  ; We are reusing W_CreditsCurrentLineTextProgress to track the last tile.
+  ld a, [W_CreditsCurrentLineTextProgress]
+  inc a
+  ld c, a
+  call CreditLineAnimationCommon
+  jr z, .clearTile
+
+  ld a, l
+  cp c
+  jr z, .lastTile
+
+  ld a, b
+  cp $37
+  jr nz, .clearTile
+
+  ld b, $33
+  jp CreditLineAnimationMapTile
+
+.clearTile
+  ld b, $2F
+
+.nextTile
+  ld a, l
+  inc a
+  ld [W_CreditsCurrentLineProgress], a
+  jp CreditLineAnimationMapTile
+
+.lastTile
+  jp CreditLineNewAnimationIncStateIndex
+
+CreditLineNewAnimationTextInState::
+  ld a, [W_CreditsCurrentLineTextProgress]
+  and 1
+  ld b, a
   ld a, [W_CreditsCurrentLineNumber]
-  call $4C2D
-  ld a, $01
-  ld [W_OAM_SpritesReady], a
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4C7F
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
+  and 1
+  cp b
+  jr nz, .nextFrame
+
+  call CreditLineDrawTextInBuffer
+  call CreditLineCopyTextFromBuffer
 
 .nextFrame
-  creditconfinc M_CreditConfigTimer
-  creditconf M_CreditConfigTimer
-  ld a, [hl]
-  cp $28
-  jp nz, CreditLineAnimationNoActionExit
-  jp CreditLineAnimationIncStateIndex
+  ld a, [W_CreditsCurrentLineTextLength]
+  add 4
+  add a
+  ld b, a
+  ld a, [W_CreditsCurrentLineTextProgress]
+  cp b
+  jr z, .lastFrame
+  inc a
+  ld [W_CreditsCurrentLineTextProgress], a
+  ret
 
-CreditLineAnimationTextOutState::
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .nextFrame
-  creditconf 7
-  ld a, [hl]
-  cp 0
-  jr z, .nextFrame
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  call CreditsRenderLineText
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  creditconftextcheck
-  jr z, .nextFrame
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
+.lastFrame
+  
+  jp CreditLineNewAnimationInitState.doAnimateIn
+
+CreditLineNewAnimationTextOutState::
+  ld a, [W_CreditsCurrentLineTextProgress]
+  and 1
+  ld b, a
   ld a, [W_CreditsCurrentLineNumber]
-  call $4CF2
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  ld a, [W_CreditsCurrentLineNumber]
-  call $4D62
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
+  and 1
+  cp b
+  jr nz, .nextFrame
+
+  call CreditLineDrawTextInBuffer
+  call CreditLineCopyTextFromBuffer
 
 .nextFrame
-  creditconfinc M_CreditConfigTimer
-  creditconf M_CreditConfigTimer
-  ld a, [hl]
-  cp $28
-  jp nz, CreditLineAnimationNoActionExit
-  creditconfreset M_CreditConfigTimer
-  jp CreditLineAnimationIncStateIndex
-
-CreditLineAnimationWaitState::
-  creditconfdec M_CreditConfigTimer
-  jp nz, CreditLineAnimationNoActionExit
-  jp CreditLineAnimationIncStateIndex
-
-CreditLineAnimationActionExit::
-  ld a, 1
+  ld a, [W_CreditsCurrentLineTextProgress]
+  or a
+  jr z, .lastFrame
+  dec a
+  ld [W_CreditsCurrentLineTextProgress], a
   ret
 
-CreditLineAnimationIncStateIndex::
-  creditconfinc M_CreditConfigActIndex
-  ld a, 1
+.lastFrame
+  jp CreditLineNewAnimationWaitState.doAnimateOut
+
+CreditLineNewAnimationWaitState::
+  ld a, [W_CreditsCurrentLineProgress]
+  or a
+  jr z, .immediate
+  dec a
+  ld [W_CreditsCurrentLineProgress], a
+  ret nz
+
+.immediate
+  ld a, [W_CreditsCurrentLineAnimateInOut]
+  and $F
+  jr nz, .doAnimateOut
+  ld a, 9
+  ld [W_CreditsCurrentLineStateIndex], a
   ret
 
-CreditLineAnimationNoActionExit::
-  ld a, 0
+.doAnimateOut
+  call CreditLineNewAnimationInitState.doAnimateIn
+  ld a, [W_CreditsCurrentLineProgress]
+  ld [W_CreditsCurrentLineTextProgress], a
+  ld a, [W_CreditsCurrentLineDestination]
+  ld [W_CreditsCurrentLineProgress], a
   ret
-
-CreditLineAnimationLastPageExit::
-  ld a, 2
-  ret
+  padend $4A00

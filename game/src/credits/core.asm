@@ -10,7 +10,7 @@ CreditsStateMachine::
 
 .table
   dw CreditsDrawingState ;00
-  dw CreditsProcessPlayerNameState ;01
+  dw CreditsDoNothingState ;01
   dw CreditsMappingState ;02
   dw CreditsDoNothingState ;03
   dw CreditsPrepareFadeInState ;04
@@ -20,7 +20,7 @@ CreditsStateMachine::
   dw CreditsPlayState ;08
   dw CreditsWaitAndPrepareFadeOutState ;09
   dw CreditsFadeOutState ;0A
-  dw CreditsDoNothingAgainState ;0B
+  dw CreditsDoNothingState ;0B
   dw CreditsMapFinState ;0C
   dw CreditsPrepareFadeIntoFinState ;0D
   dw CreditsFadeIntoFinState ;0E
@@ -43,40 +43,6 @@ CreditsDrawingState::
   call WrapLoadMaliasGraphics
   ld bc, $36
   call $33C6
-  ld hl, CreditsUnderlineGfx
-  ld de, $92F0
-  ld bc, $10
-  call memcpytovram
-  call CreditsClearTextDrawingRegion
-  xor a
-  ld b, 7
-
-.loop
-  push bc
-  push af
-  push af
-  ld b, a
-  call CreditsGetConfigAddress
-  creditconfset M_CreditConfigAniIndex, 1
-  pop af
-  ld hl, .table
-  ld d, 0
-  ld e, a
-  add hl, de
-  ld a, [hl]
-  creditconfsetfroma M_CreditConfigTimer
-  pop af
-  inc a
-  pop bc
-  dec b
-  jr nz, .loop
-  jp IncSubStateIndex
-
-.table
-  db $10,$20,$30,$40,$50,$60,$70
-
-CreditsProcessPlayerNameState::
-  call $4ECA
   jp IncSubStateIndex
 
 CreditsMappingState::
@@ -88,6 +54,7 @@ CreditsMappingState::
   ld e, $AE
   ld a, 1
   call WrapDecompressTilemap0
+  call CreditsInit
   jp IncSubStateIndex
 
 CreditsDoNothingState::
@@ -132,30 +99,7 @@ CreditsWaitState::
   jp IncSubStateIndex
 
 CreditsPlayState::
-  xor a
-  ld b, 7
-
-.loop
-  push bc
-  push af
-  ld b, a
-  push bc
-  push bc
-  call CreditsGetConfigAddress
-  pop bc
-  call CreditLineAnimationStateMachine
-  pop bc
-  cp 2
-  jr z, .nextState
-  cp 1
-  call z, CreditLineActionStateMachine
-  ld a, 1
-  ld [W_OAM_SpritesReady], a
-  pop af
-  inc a
-  pop bc
-  dec b
-  jr nz, .loop
+  call CreditPageAnimate
   call CreditsAnimateSidebarPalette
   ret
 
@@ -188,9 +132,6 @@ CreditsFadeOutState::
   ld a, [W_PaletteAnimRunning]
   or a
   ret nz
-  jp IncSubStateIndex
-
-CreditsDoNothingAgainState::
   jp IncSubStateIndex
 
 CreditsMapFinState::
@@ -250,3 +191,4 @@ CreditsFadeOutFromFinState::
 
 CreditsExitState::
   jp $36A3
+  padend $43E8
