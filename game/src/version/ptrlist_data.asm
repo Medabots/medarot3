@@ -1,4 +1,5 @@
 INCLUDE "./build/ptrlists/ptrlist_data_constants_{GAMEVERSION}.asm"
+INCLUDE "game/src/common/macros.asm"
 
 ; End of text pointer section (fixed length)
 SECTION "PtrList Pointers", ROMX[$5E4B], BANK[$F2]
@@ -69,6 +70,7 @@ SECTION "GlossaryTerms", ROMX[$60d5], BANK[$07]
 PtrListGlossaryTerms::
   INCBIN cGlossaryTerms
 
-SECTION "Credits", ROMX[$5505], BANK[$16]
+SECTION "Credits", ROMX[$4A00], BANK[$16]
 PtrListCredits::
   INCBIN cCredits
+  padend $5DDF

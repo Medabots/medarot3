@@ -3,10 +3,11 @@ INCLUDE "game/src/common/macros.asm"
 
 W_NamingScreenCursorPositionIndex EQU $C48D
 
-SECTION "Naming Entry Variables", WRAM0[$C763]
-W_NamingEntryBottomRowSelection:: ds 1
-W_NamingEntryCursorPositionIndexWithinGroup:: ds 1
-W_NamingEntryCursorRowIndex:: ds 1
+W_NamingScreenSubSubSubStateIndex EQU $C760
+
+W_NamingEntryBottomRowSelection EQU $C763
+W_NamingEntryCursorPositionIndexWithinGroup EQU $C764
+W_NamingEntryCursorRowIndex EQU $C765
 
 SECTION "Naming Screen Entry Functions 1", ROMX[$4D49], BANK[$01]
 NamingEntryCursorRepositioningTable::

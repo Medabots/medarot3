@@ -79,3 +79,86 @@ creditconf: MACRO
   ld l, a
   add hl, de
   ENDM
+
+creditconfset: MACRO
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ld a, \2
+  ld [hl], a
+  ENDM
+
+creditconfreset: MACRO
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  xor a
+  ld [hl], a
+  ENDM
+
+creditconfinc: MACRO
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ld a, [hl]
+  inc a
+  ld [hl], a
+  ENDM
+
+creditconfdec: MACRO
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ld a, [hl]
+  dec a
+  ld [hl], a
+  ENDM
+
+creditconfsetfroma: MACRO
+  push af
+  ld de, \1
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  pop af
+  ld [hl], a
+  ENDM
+
+creditconftextcheck: MACRO
+  ld de, M_CreditConfigTextIndex
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ld a, [hl]
+  cp $FF
+  ENDM
+
+credittext: MACRO
+  ld de, M_CreditConfigTextIndex
+  ld a, [W_CreditsConfigAddressBuffer]
+  ld h, a
+  ld a, [W_CreditsConfigAddressBuffer + 1]
+  ld l, a
+  add hl, de
+  ld a, [hl]
+  ld hl, PtrListCredits
+  rst $30
+  ld de, \1
+  add hl, de
+  ENDM
