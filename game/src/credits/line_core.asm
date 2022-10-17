@@ -41,8 +41,9 @@ CreditLineNewAnimationInitState::
   ld b, a
   ld a, 8
   sub b
+  dec a
   and 7
-  add $2F
+  add $30
   ld [W_CreditsCurrentLineMidTileDestination], a
   ld a, b
   srl a

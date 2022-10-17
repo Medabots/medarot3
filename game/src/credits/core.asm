@@ -99,14 +99,9 @@ CreditsWaitState::
   jp IncSubStateIndex
 
 CreditsPlayState::
+  call CreditsAnimateSidebarPalette
   call CreditPageAnimate
-  call CreditsAnimateSidebarPalette
-  ret
-
-.nextState
-  call CreditsAnimateSidebarPalette
-  pop af
-  pop bc
+  ret nz
   ld a, $C0
   ld [W_MedalMenuWaitTimer], a
   jp IncSubStateIndex

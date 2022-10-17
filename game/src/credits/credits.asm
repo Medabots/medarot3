@@ -308,7 +308,11 @@ CreditPageAnimate::
 .isEndOfPage
   ld a, [W_CreditsIsLastPage]
   or a
-  ret nz
+  jr z, .notLastPage
+  xor a
+  ret
+
+.notLastPage
   ld hl, W_CreditsCurrentPagePointerAddress
   ld e, [hl]
   inc hl
@@ -316,9 +320,10 @@ CreditPageAnimate::
   ld hl, $E
   add hl, de
   ld de, W_CreditsCurrentPagePointerAddress
-  ld a, h
-  ld [de], a
   ld a, l
+  ld [de], a
+  inc de
+  ld a, h
   ld [de], a
   ; Continues into CreditInitPage.
 
@@ -326,6 +331,8 @@ CreditInitPage::
   ld hl, W_CreditsLineAAddress
 
 .extEntry
+  xor a
+  ld [W_CreditsOffsetMode], a
   ld bc, $700
   ld a, [W_CreditsCurrentPagePointerAddress + 1]
   ld d, a
