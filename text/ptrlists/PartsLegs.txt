@@ -1,4 +1,4 @@
-(3, ['Model', 'Name', 'IsFemale'], [203, 203, None], [(7, 0), (24, 0), (1, 0)], [False, False, True], None, None, True, None)
+﻿(3, ['Model', 'Name', 'IsFemale'], [203, 203, None], [(7, 0), (24, 0), (1, 0)], [False, False, True], None, None, True, None)
 256
 30485
 Index[#version],Model,Name,IsFemale
@@ -153,5 +153,5 @@ Index[#version],Model,Name,IsFemale
 148,DUC-04\xcb,Elegancy\xcb,\x01
 149,MRC-04\xcb,Hydrofoil\xcb,\x01
 150,TJO-04\xcb,Penalty\xcb,\x01
-151,BAY-03\xcb,?,\x00
-152,BAY-03\xcb,?,\x01
+151,BAY-03\xcb,ーーーーーーーー\xcb,\x00
+152,BAY-03\xcb,ーーーーーーーー\xcb,\x01

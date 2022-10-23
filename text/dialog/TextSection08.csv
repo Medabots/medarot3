@@ -3,7 +3,7 @@
 001,0x11c002,"<@LL,00,00>ここは キクヒメの家だ","<@LL,00,00>This is Kikuhime's house."
 002,0x11c004,"<@LL,00,00>ここは カガミヤマの家だ","<@LL,00,00>This is Kagamiyama's house."
 003,0x11c006,"<@LL,00,00>ここは メダロット研究所だ","<@LL,00,00>This is the Medarot Research <D3>Institute."
-004,0x11c008,"<@LL,00,00>ここは はい工場だ",
+004,0x11c008,"<@LL,00,00>ここは はい工場だ","<@LL,00,00>This is the Abandoned Factory."
 005,0x11c00a,「セレクト しぶ」,Select Branch
 006,0x11c00c,"<@LL,00,00>ここは アリカの家だ","<@LL,00,00>Erika's house is here."
 007,0x11c00e,"<@LL,00,00>ぼくの家だ","<@LL,00,00>My house is here."
@@ -67,7 +67,7 @@
 065,0x11c082,"<@LL,00,00>ここは コウジの 家だ","<@LL,00,00>This is Koji's house."
 066,0x11c084,"<@LL,00,00>ここは カリンちゃんの 家だ","<@LL,00,00>This is Karin's house."
 067,0x11c086,"<@LL,00,04>きれいに うえてある<CF>コウジのやつ<CD>けっこう マメだなあ!<CF><@LL,00,00>...と言っても<CD>うえてあるのは マメじゃ ないよ",
-068,0x11c088,"<@LL,00,00>かってに しらベたら<CD>おこられそうだ",
+068,0x11c088,"<@LL,00,00>かってに しらベたら<CD>おこられそうだ","<@LL,00,00>I think I'd get caught if I investigated by myself."
 069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch <D3>anything right now."
 070,0x11c08c,"<@LL,00,04>いろんな人の ししゅうが<CD>たくさん ならんでる<CF>カリンちゃんも<CD>しを かくのかな?","<@LL,00,04>There are lots of poem collections by different authors.<CF>Does Karin want to be an author?"
 071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are <D3>lined up here.<CF>Seems just like Karin..."
@@ -92,15 +92,15 @@
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?","<@LL,00,07>Ah! Are those parts here...!?<CF><@LL,00,00>...I guess they're just shrimps and crabs...<CF><@LL,00,05>They kind of look alike...<CF><@LL,00,03>Don't they...?"
 091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる","<@LL,00,00>A lot of magazines are lined<D3>up."
 092,0x11c0b8,"<@LL,00,00>ひらかないみたいだ",
-093,0x11c0ba,「きっさ カマド-マ」,
-094,0x11c0bc,"<@LL,00,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ",
-095,0x11c0be,「気しょう かんリ所」,
-096,0x11c0c0,「メダロット はけん センタ-」,
-097,0x11c0c2,「ジオド-ム」,
-098,0x11c0c4,「メダルぞうしょく はつ電所」,
-099,0x11c0c6,「ジオフロント 科学研究所」,
-100,0x11c0c8,「高おん岩体 はつ電所」,
-101,0x11c0ca,「ツチノエ小学校」,
+093,0x11c0ba,「きっさ カマド-マ」,Cafe Kamadoma
+094,0x11c0bc,"<@LL,00,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ","<@LL,00,00>The elevator leads to the Geoport."
+095,0x11c0be,「気しょう かんリ所」,Weather Station
+096,0x11c0c0,「メダロット はけん センタ-」,Medarot Dispatch Center
+097,0x11c0c2,「ジオド-ム」,GeoDome
+098,0x11c0c4,「メダルぞうしょく はつ電所」,Medal Propagation Power Plant
+099,0x11c0c6,「ジオフロント 科学研究所」,GeoFront Scientific Laboratory
+100,0x11c0c8,「高おん岩体 はつ電所」,Geothermal Power Plant
+101,0x11c0ca,「ツチノエ小学校」,Tsuchinoe Elementary School
 102,0x11c0cc,"<@LL,00,00>何かの しょるいが ならんでる",
 103,0x11c0ce,「マリン学底」,
 104,0x11c0d0,"<@LL,00,00>小さな ねったいぎょが<CD>およいでる","<@LL,00,00>A small, tropical fish <D3>is swimming around."
