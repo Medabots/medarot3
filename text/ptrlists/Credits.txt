@@ -54,7 +54,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 50,\x10,\x03,Kodansha Staff
 51,\x00,\x02,\xCD
 52,\x00,\x02,\xCB
-53,\x11,\x05,?
+53,\x11,\x05,Editor-in-Chief
 54,\x11,\x04,Shinpachirou Ikeda
 55,\x00,\x02,\xCB
 56,\x00,\x02,\xCB
@@ -151,60 +151,60 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 147,\x00,\x02,\xCB
 148,\x00,\x03,Natsume Staff
 149,\x00,\x02,\xCB
-150,\x11,\x05,?
-151,\x11,\x04,?
-152,\x11,\x06,?
+150,\x11,\x05,Battle System
+151,\x11,\x04,Terayuki Shirakawa
+152,\x11,\x06,(Shiratama)
 153,\x00,\x02,\xCB
 154,\x00,\x02,\xCB
 155,\x00,\x03,Natsume Staff
 156,\x00,\x02,\xCD
-157,\x11,\x05,?
-158,\x11,\x04,?
-159,\x11,\x04,?
-160,\x11,\x04,?
+157,\x11,\x05,Programmers
+158,\x11,\x04,Wataru Kitamura
+159,\x11,\x04,Mitsugu Takamiya
+160,\x11,\x04,Koji Kadosaka
 161,\x00,\x02,\xCB
 162,\x00,\x03,Natsume Staff
 163,\x00,\x02,\xCD
-164,\x11,\x05,?
-165,\x11,\x04,?
-166,\x11,\x04,?
-167,\x11,\x04,?
+164,\x11,\x05,Graphics
+165,\x11,\x04,Hiroshi Saito
+166,\x11,\x04,Takashi Maeda
+167,\x11,\x04,Shuichi Kajihara
 168,\x00,\x02,\xCB
 169,\x00,\x03,Natsume Staff
 170,\x00,\x02,\xCB
-171,\x11,\x05,?
-172,\x11,\x04,?
-173,\x11,\x04,?
+171,\x11,\x05,Sound Design
+172,\x11,\x04,Iku Mizutani
+173,\x11,\x04,Kinuyo Ueda
 174,\x00,\x02,\xCB
 175,\x00,\x02,\xCB
 176,\x00,\x03,Natsume Staff
 177,\x00,\x02,\xCB
-178,\x11,\x05,?
-179,\x11,\x04,?
-180,\x11,\x04,?
+178,\x11,\x05,Events
+179,\x11,\x04,Naomi Sagara
+180,\x11,\x04,Shuji Momida
 181,\x00,\x02,\xCB
 182,\x00,\x02,\xCB
 183,\x00,\x03,Natsume Staff
-184,\x11,\x05,?
-185,\x11,\x04,?
-186,\x11,\x04,?
-187,\x11,\x04,?
-188,\x11,\x04,?
-189,\x11,\x04,?
+184,\x11,\x05,Special Thanks
+185,\x11,\x04,Tetsuya Oku
+186,\x11,\x04,Hiroyuki Tanaka
+187,\x11,\x04,Yuu Katami
+188,\x11,\x04,Ryuji Shiotani
+189,\x11,\x04,Yuki Funayama
 190,\x00,\x03,Natsume Staff
-191,\x10,\x05,?
-192,\x11,\x04,?
-193,\x11,\x04,?
-194,\x11,\x04,?
-195,\x11,\x04,?
+191,\x10,\x05,Special Thanks
+192,\x11,\x04,Takenori Miyazaki
+193,\x11,\x04,Norihiro Maeda
+194,\x11,\x04,Masahiro Yanagisawa
+195,\x11,\x04,Seiji Hirai
 196,\x00,\x02,\xCB
 197,\x01,\x03,Natsume Staff
-198,\x01,\x05,?
-199,\x11,\x04,?
-200,\x11,\x04,?
-201,\x11,\x04,?
-202,\x11,\x04,?
-203,\x11,\x04,?
+198,\x01,\x05,Special Thanks
+199,\x11,\x04,Moriyuki Kanaya
+200,\x11,\x04,Megumi Toyama
+201,\x11,\x04,Ryo Wasaki
+202,\x11,\x04,Toshiaki Kaname
+203,\x11,\x04,Junichi Yamaguchi
 204,\x00,\x02,\xCB
 205,\x00,\x02,\xCD
 206,\x00,\x02,\xCB

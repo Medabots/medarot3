@@ -18,37 +18,37 @@
 011,0x214016,"<@LL,00,05>のこったのは レイだった メダロット","<@LL,00,05>All that's left is her body<D3>and parts."
 012,0x214018,"<@LL,00,03><&BUF07>...","<@LL,00,03><&BUF07>..."
 013,0x21401a,"<@LL,00,00>そろそろ ぼくたちも<CD>かえる 時間みたいだ<CF><D1>ぼくらが かえる みらいでは<CD>アンダ-シェルも みんなも<CF><D1>ぶじなはず<CF><D1><@LL,00,04>ねえ <&BUF07><CD>ぼくは レイの かわリには<CF><D1>なれないけど でも ぼくらは...","<@LL,00,00>We should start heading back<D3>too.<CF><D1>Everyone should be safe now<D3>in our future.<CF><D1><@LL,00,04>Hey,<&BUF07>, I may not<D3>be able to replace Rei but<CF><D1>you and I will always..."
-014,0x21401c,"<@LL,00,00>さっきまでのことが うそみたいに<CD>しずまリかえってる<CF><D1>...ぼくは「アンダ-シェルが<CD>こわれる」っていう あくむを<CF><D1>貝ていただけかも しれない...<CF><D1>だけど セルリア-ノの メダルと<CD>レイの パ-ツは のこってる...<CF><D1><@LL,00,01>...さあ! みんなの所に<CD>かえろう!",
+014,0x21401c,"<@LL,00,00>さっきまでのことが うそみたいに<CD>しずまリかえってる<CF><D1>...ぼくは「アンダ-シェルが<CD>こわれる」っていう あくむを<CF><D1>貝ていただけかも しれない...<CF><D1>だけど セルリア-ノの メダルと<CD>レイの パ-ツは のこってる...<CF><D1><@LL,00,01>...さあ! みんなの所に<CD>かえろう!","<@LL,00,00>Everything's all quiet now,<D3>like if nothing ever happened.<CF><D1>It's possible it could have all<D3>just been a bad dream but...<CF><D1>Ceruleano's Medal and Rei's<D3>parts are still here...<CF><D1><@LL,00,01>Come on, let's head back<D3>to the others!"
 015,0x21401e,"<@LL,00,01>よかったぁ!<CD>何もかも 元の まんまだ!<CF><D1>早く みんなに 会いたいなぁ!<CF><D1><@LL,00,04>みんなは まだ 学底かな?","<@LL,00,01>Thank goodness!<D3>Everything's back to normal!<CF><D1>I want to go see how<D3>everyone's doing!<CF><D1><@LL,00,04>They should still be at the<D3>school, right?"
 016,0x214020,"<@LL,00,04>そうそう ハマグリ学底長に<CD>「♥のペンダント」も かえさなきゃ","<@LL,00,04>That's right, I should give<D3>Principal Hamaguri<CF><D1>his <f02>♥ pendant<f00> back too."
 017,0x214022,"<@RL,4A,00>あんたは どっちの子と なかよく<CD>するの?<CF><D1>おじょうさまっぽい子? それとも<CD>あの カメラむすめ?<CF><D1><@LL,00,06>う! ううっ! さ さいなら-","<@RL,4A,00>So which girl do you plan to<D3>be with?<CF><D1>The rich-looking one? Or<D3>the one with the camera?<CF><D1><@LL,00,06>Um, Uhhhhhhh...<D3>S-sorry, gotta go! Haha..."
 018,0x214024,"<@LL,00,04>あ! ウオナちゃんと<CD>ラブレタ-男<CF><D1><@RL,4B,00>やめてくれよ その言いかた<CF><D1><@RL,4A,00>その あリがとう<CD><&BUF03><CF><D1><@RL,4B,00>どうも 学底長たちも なかよく<CD>なった みたいだし...<CF><D1>これで ぼくたちも かくれて<CD>会うことは なくなるよ<CF><D1>本当に あリがとう<CF><D1><@LL,00,04>うん! なかよくね!","<@LL,00,04>Ah! It's Uona!<D3>And that love letter guy!<CF><D1><@RL,4B,00>Please stop calling me that.<CF><D1><@RL,4A,00>Thanks for eveything by the<D3>way, <&BUF03>.<CF><D1><@RL,4B,00>It looks like the two principals<D3>finally made up.<CF><D1>Now, Uona and I won't have<D3>to meet each other in secret.<CF><D1>Thank you. Really.<CF><D1><@LL,00,04>No problem!<D3>Get along now, you two!"
 019,0x214026,"<@RL,4B,00>あリがとう","<@RL,4B,00>Thank you."
 020,0x214028,"<@RL,1D,00>え...と...その...<CD>ご ごめんなさい...","<@RL,1D,00>Um... Uh...<D3>Sorry about all that..."
-021,0x21402a,"<@RL,1D,00>この人に はリあって マ-メイド学底<CD>を 作ったの 何だか ばかみたいね",
-022,0x21402c,"<@RL,14,00>あ...え-と...その...<CD>...す すまなかったなぁ",
-023,0x21402e,"<@RL,14,00>これからは マ-マン学底と<CD>マ-メイド学底を いっしょにして<CF><D1>「マリン学底」とでも よぶかな?",
-024,0x214030,"<@RL,01,02>もう <&BUF03>!<CD>とつぜん いなくなっちゃうんだから<CF><D1>どこ 行ってたのよ?<CF><D1><@RL,03,00>まったくだぜ ゆうしょうしたとたん<CD>きゅうに いなく なるんだからよ<CF><D1><@RL,02,04>でも ごぶじで よかったですわ♥<CF><D1><@LL,00,04>みんな...<CD>よかった...ぶじで...<CF><D1><@RL,01,00>ど どうしたの? <&BUF03><CD>何か わるいものでも 食ベた?<CF><D1><@LL,00,04>う ううん! 何でもないんだ<CF><D1>いや- 何ごともなくて<CD>よかったな- なんて<CF><D1><@RL,01,00>? 何言ってんの?<CD>変な ヤツ!<CF><D1>あ そうだ! メダリンピックの<CD>しょうひん もらってないでしょ?",
-025,0x214032,"<@RL,01,04>さあ 早く 行こ!<CD>れっしゃ 出ちゃうよ!",
-026,0x214034,"<@RL,03,02>行こうぜ! <&BUF03><CD>次の ロボトルが まってる!<CF><D1><@RL,02,04>行きましょう!<CF><D1><@LL,00,04>うん!",
+021,0x21402a,"<@RL,1D,00>この人に はリあって マ-メイド学底<CD>を 作ったの 何だか ばかみたいね","<@RL,1D,00>Maybe founding the Mermaid<D3>Academy and competing with<CF><D1>one another was a dumb idea<D3>after all."
+022,0x21402c,"<@RL,14,00>あ...え-と...その...<CD>...す すまなかったなぁ","<@RL,14,00>Ah... Uh... M-my apologies for<D3>all the trouble..."
+023,0x21402e,"<@RL,14,00>これからは マ-マン学底と<CD>マ-メイド学底を いっしょにして<CF><D1>「マリン学底」とでも よぶかな?","<@RL,14,00>From now on, let's merge the<D3>Merman and Mermaid Academy.<CF><D1>And how about we call it <D3>""The Marine Academy""?"
+024,0x214030,"<@RL,01,02>もう <&BUF03>!<CD>とつぜん いなくなっちゃうんだから<CF><D1>どこ 行ってたのよ?<CF><D1><@RL,03,00>まったくだぜ ゆうしょうしたとたん<CD>きゅうに いなく なるんだからよ<CF><D1><@RL,02,04>でも ごぶじで よかったですわ♥<CF><D1><@LL,00,04>みんな...<CD>よかった...ぶじで...<CF><D1><@RL,01,00>ど どうしたの? <&BUF03><CD>何か わるいものでも 食ベた?<CF><D1><@LL,00,04>う ううん! 何でもないんだ<CF><D1>いや- 何ごともなくて<CD>よかったな- なんて<CF><D1><@RL,01,00>? 何言ってんの?<CD>変な ヤツ!<CF><D1>あ そうだ! メダリンピックの<CD>しょうひん もらってないでしょ?","<@RL,01,02>Sheesh,<&BUF03>! <D3>Where'd you run off to?<CF><D1>You were just gone all of<D3>a sudden!<CF><D1><@RL,03,00>Seriously. One minute you win<D3>the tournament, <CF><D1>and the next, you just go and <D3>disappear on us...<CF><D1><@RL,02,04>It's good you're all right<D3>though ♥<CF><D1><@LL,00,04>I'm so glad you're all safe...<CF><D1><@RL,01,00>What's wrong, <&BUF03>?<D3>Do you feel sick or something?<CF><D1><@LL,00,04>O-oh, it's nothing!<CF><D1>I'm just glad nothing crazy<D3>happened, haha.<CF><D1><@RL,01,00>...? You say weird things..,<CF><D1>Oh that's right! We still<D3>haven't claimed our prize from<CF><D1>winning the tournament!"
+025,0x214032,"<@RL,01,04>さあ 早く 行こ!<CD>れっしゃ 出ちゃうよ!","<@RL,01,04>Come on! The train will<D3>leave at any minute!"
+026,0x214034,"<@RL,03,02>行こうぜ! <&BUF03><CD>次の ロボトルが まってる!<CF><D1><@RL,02,04>行きましょう!<CF><D1><@LL,00,04>うん!","<@RL,03,02>Come on, <&BUF03>!<D3>Our next Robattle awaits us!<CF><D1><@RL,02,04>Let's go!<CF><D1><@LL,00,04>Yeah!"
 027,0x214036,"<@RL,14,00>なんど 言ったら 分かるんだ<CD>お前は むかしっから そうだ!<CF><D1>自分が 正しいと思ったら<CD>ぜったいに 考えを 変えない!<CF><D1>だから...<CF><D1><@RL,1D,00>元はと 言えば あんたが わるいのよ<CD>わたしが やリたいことに たいして<CF><D1>それは だめ これは だめ!って<CD>すぐに じゆうを うばって...<CF><D1>何でもかんでも 自分の思い通リに<CD>なると 思ったら おおまちがいよ!<CF><D1><@RL,14,00>何だとぉ!<CF><D1><@RL,1D,00>何よぉ!<CF><D1><@LL,00,05>ケンカ? 学底長に ♥のペンダント<CD>かえさなきゃ いけないのに",
-028,0x214038,"<@LL,00,05>あのぉ...",
-029,0x21403a,"<@RL,14,00>何かっ!?<CF><D1><@RL,1D,00>何ですっ!?<CF><D1><@LL,00,06>ひ-!",
-030,0x21403c,"<@LL,00,06>い いえ 何でも ないです!<CF><D1>(こわい! こわいよ-!<CF><D1><@LL,00,02>...だけど...よっし!)",
-031,0x21403e,"<@LL,00,04>これ かえしそびれてました",
-032,0x214040,"<@RL,1D,00>そ それは「♥ペンダント」!<CF><D1><@RL,14,00>わしのっ!! あ...いや<CF><D1><@LL,00,04>ハマグリ学底長の ヘやで<CD>貝つけたんです<CF><D1>アサリ学底長も たしか 同じ<CD>ペンダントを もってましたよね",
-033,0x214042,"<@RL,14,00>ほっ 本当か!?<CF><D1><@RL,1D,00>......<CF><D1><@LL,00,04>何が あったのか 知リませんけど<CD>いじを はるのは やめましょうよ<CF><D1>これ おかえしします",
+028,0x214038,"<@LL,00,05>あのぉ...","<@LL,00,05>Um..."
+029,0x21403a,"<@RL,14,00>何かっ!?<CF><D1><@RL,1D,00>何ですっ!?<CF><D1><@LL,00,06>ひ-!","<@RL,14,00>What!?<CF><D1><@RL,1D,00>What do you want!?<CF><D1><@LL,00,06>Eek!"
+030,0x21403c,"<@LL,00,06>い いえ 何でも ないです!<CF><D1>(こわい! こわいよ-!<CF><D1><@LL,00,02>...だけど...よっし!)","<@LL,00,06>N-n-nothing!<CF><D1>(Sheesh, scary...!)<CF><D1><@LL,00,02>(...But I gotta do this!)"
+031,0x21403e,"<@LL,00,04>これ かえしそびれてました","<@LL,00,04>I've been meaning to give this<D3>back before."
+032,0x214040,"<@RL,1D,00>そ それは「♥ペンダント」!<CF><D1><@RL,14,00>わしのっ!! あ...いや<CF><D1><@LL,00,04>ハマグリ学底長の ヘやで<CD>貝つけたんです<CF><D1>アサリ学底長も たしか 同じ<CD>ペンダントを もってましたよね","<@RL,1D,00>That's... a ♥ <f02>Pendant<f00>!<CF><D1><@RL,14,00>Hey, that's my- ah, I mean...<CF><D1><@LL,00,04>I found it in Principal<D3>Hamaguri's office.<CF><D1>Principal Asari still has the<D3>same pendant too, right?"
+033,0x214042,"<@RL,14,00>ほっ 本当か!?<CF><D1><@RL,1D,00>......<CF><D1><@LL,00,04>何が あったのか 知リませんけど<CD>いじを はるのは やめましょうよ<CF><D1>これ おかえしします","<@RL,14,00>I-is that true!?<CF><D1><@RL,1D,00>...<CF><D1><@LL,00,04>I don't know what happened<D3>between the two of you but<CF><D1>please stop fighting.<CF><D1>I'll give this back now."
 034,0x214044,"<@RL,14,00>.......<CF><D1><@RL,1D,00>.......<CF><D1><@RL,14,00>あ...え-と...その...<CD>...す すまなかったなぁ<CF><D1><@RL,1D,00>え? あ その...わたしこそ...<CD>ご ごめんなさいね<CF><D1><@LL,00,04>それじゃ いつまでも なかよく<CD>してくださいね",
-035,0x214046,"<@LL,00,04>さあ みんなが まってる<CF><D1>ぼくたちも 早く<CD>マリンステ-ションに もどろう",
-036#kabuto,0x214048,"<@RL,35,00>.......",
-036#kuwagata,0x214048,"<@RL,36,00>.......",
-037,0x21404a,"<@LL,00,00>どうした? <CD><&BUF07><CF><D1><@LL,00,03>もしかして まだ レイのことで<CD>おちこんでる?",
-038#kabuto,0x21404c,"<@RL,35,00>いや ちょっと 気になってな<CD>おまえ かこから こっちのせかいに<CF><D1>もどって 来るとき<CD>何か 言いかけただろ?",
-038#kuwagata,0x21404c,"<@RL,36,00>なぜか 気になる...<CD>かこから ふたたび このせかいに<CF><D1>もどってくる前に<CD>お前が 言いかけた ことばが",
+035,0x214046,"<@LL,00,04>さあ みんなが まってる<CF><D1>ぼくたちも 早く<CD>マリンステ-ションに もどろう","<@LL,00,04>Okay, everyone else is waiting.<CF><D1>Let's head back to Marine<D3>Station."
+036#kabuto,0x214048,"<@RL,35,00>.......","<@RL,35,00>..."
+036#kuwagata,0x214048,"<@RL,36,00>.......","<@RL,36,00>..."
+037,0x21404a,"<@LL,00,00>どうした? <CD><&BUF07><CF><D1><@LL,00,03>もしかして まだ レイのことで<CD>おちこんでる?","<@LL,00,00>What's wrong, <&BUF07>? <CF><D1><@LL,00,03>Are you still sad about Rei?"
+038#kabuto,0x21404c,"<@RL,35,00>いや ちょっと 気になってな<CD>おまえ かこから こっちのせかいに<CF><D1>もどって 来るとき<CD>何か 言いかけただろ?","<@RL,35,00>I was just wondering what it<D3>was you were about to say<CF><D1>when we came back from the<D3>past."
+038#kuwagata,0x21404c,"<@RL,36,00>なぜか 気になる...<CD>かこから ふたたび このせかいに<CF><D1>もどってくる前に<CD>お前が 言いかけた ことばが","<@RL,36,00>You were about to say<D3>something as we were<CF><D1>returning from the past,<D3>were you not? What was it?"
 039,0x21404e,"<@LL,00,00>...?",
 040,0x214050,"<@LL,00,04>ああ あれ?<CD>もう いいじゃないか",
-041#kabuto,0x214052,"<@RL,35,00>何だよ 早く 言えよ-<CF><D1><@LL,00,04>あれはね...",
-041#kuwagata,0x214052,"<@RL,36,00>気になる おしえろ<CF><D1><@LL,00,04>あれはね...",
+041#kabuto,0x214052,"<@RL,35,00>何だよ 早く 言えよ-<CF><D1><@LL,00,04>あれはね...","<@RL,35,00>Come on, spit it out already!<CF><D1><@LL,00,04>Well it's..."
+041#kuwagata,0x214052,"<@RL,36,00>気になる おしえろ<CF><D1><@LL,00,04>あれはね...","<@RL,36,00>It concerns me. I demand<D3>you tell me.<CF><D1><@LL,00,04>Well, it's..."
 042#kabuto,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,35,00>あっ!...てめっ!",
 042#kuwagata,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,36,00>お前っ!",
 043,0x214056,"<@LL,00,01>あはは!<CF><D1>(「ぼくらは ずっと いっしょだよ」<CD>なんて ことば<CF><D1>今さら 言えないよっ!)",
