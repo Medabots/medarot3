@@ -45,26 +45,26 @@
 037,0x21404a,"<@LL,00,00>どうした? <CD><&BUF07><CF><D1><@LL,00,03>もしかして まだ レイのことで<CD>おちこんでる?","<@LL,00,00>What's wrong, <&BUF07>? <CF><D1><@LL,00,03>Are you still sad about Rei?"
 038#kabuto,0x21404c,"<@RL,35,00>いや ちょっと 気になってな<CD>おまえ かこから こっちのせかいに<CF><D1>もどって 来るとき<CD>何か 言いかけただろ?","<@RL,35,00>I was just wondering what it<D3>was you were about to say<CF><D1>when we came back from the<D3>past."
 038#kuwagata,0x21404c,"<@RL,36,00>なぜか 気になる...<CD>かこから ふたたび このせかいに<CF><D1>もどってくる前に<CD>お前が 言いかけた ことばが","<@RL,36,00>You were about to say<D3>something as we were<CF><D1>returning from the past,<D3>were you not? What was it?"
-039,0x21404e,"<@LL,00,00>...?",
-040,0x214050,"<@LL,00,04>ああ あれ?<CD>もう いいじゃないか",
+039,0x21404e,"<@LL,00,00>...?","<@LL,00,00>...?"
+040,0x214050,"<@LL,00,04>ああ あれ?<CD>もう いいじゃないか","<@LL,00,04>Oh, that? Well, it doesn't<D3>really matter now."
 041#kabuto,0x214052,"<@RL,35,00>何だよ 早く 言えよ-<CF><D1><@LL,00,04>あれはね...","<@RL,35,00>Come on, spit it out already!<CF><D1><@LL,00,04>Well it's..."
 041#kuwagata,0x214052,"<@RL,36,00>気になる おしえろ<CF><D1><@LL,00,04>あれはね...","<@RL,36,00>It concerns me. I demand<D3>you tell me.<CF><D1><@LL,00,04>Well, it's..."
-042#kabuto,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,35,00>あっ!...てめっ!",
-042#kuwagata,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,36,00>お前っ!",
-043,0x214056,"<@LL,00,01>あはは!<CF><D1>(「ぼくらは ずっと いっしょだよ」<CD>なんて ことば<CF><D1>今さら 言えないよっ!)",
-044,0x214058,"<@LL,00,06>マリンステ-ションは ひ 左だ!",
-045,0x21405a,右「マ-マン学底」<CD>左「マ-メイド学底」,
-046,0x21405c,"<@RL,4B,00>アンチシ-が ないと ここでの<CD>ロボトルは つらいかも",
+042#kabuto,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,35,00>あっ!...てめっ!","<@LL,00,01>...a secret!<CF><D1><@RL,35,00>Wha-! Hey!!"
+042#kuwagata,0x214054,"<@LL,00,01>...ヒミツ!<CF><D1><@RL,36,00>お前っ!","<@LL,00,01>...a secret!<CF><D1><@RL,36,00>Why you!"
+043,0x214056,"<@LL,00,01>あはは!<CF><D1>(「ぼくらは ずっと いっしょだよ」<CD>なんて ことば<CF><D1>今さら 言えないよっ!)","<@LL,00,01>Ahaha!<CF><D1>(I was going to say ""we'll<D3>always be together"".<CF><D1>But no way I'm telling him<D3>that now!)"
+044,0x214058,"<@LL,00,06>マリンステ-ションは ひ 左だ!","<@LL,00,06>Marine Station is to the left!"
+045,0x21405a,右「マ-マン学底」<CD>左「マ-メイド学底」,Left: <f02>Merman Academy<f00><D3>Right: <f02>Mermaid Academy
+046,0x21405c,"<@RL,4B,00>アンチシ-が ないと ここでの<CD>ロボトルは つらいかも","<@RL,4B,00>If you don't have Anti-Sea<D3>parts, the Robattles here<D3><D1>might be a bit rough."
 047,0x21405e,"<@RL,4B,00>どこに にげたら いいんだ-!?",
-048,0x214060,"<@RL,16,00>この にもつを わしの家まで <CD>はこぶのを 手つだってくれんかのぅ<*04>",
-049,0x214062,"<@RL,16,00>すまんのぅ わしの家は すぐ右じゃ!",
-050,0x214064,"<@RL,16,00>これじゃから さいきんの<CD>わかいもんは...ぶつぶつ...",
-051,0x214066,"<@RL,16,00>わしの 家は そっちじゃ ないぞい",
-052,0x214068,"<@RL,16,00>わしの家は もう少し 下じゃ",
-053,0x21406a,"<@RL,30,00>おじいさんが もどって 来ません",
-054,0x21406c,"<@RL,30,00>おかえリなさいませ おにもつを<CD>お持ちします",
-055,0x21406e,"<@RL,16,00>すまんのぅ 少ないが これを",
-056,0x214070,"<@LL,00,03>本当に 少ない...",
+048,0x214060,"<@RL,16,00>この にもつを わしの家まで <CD>はこぶのを 手つだってくれんかのぅ<*04>","<@RL,16,00>Can you help me carry my<D3>luggage to my house?<*04>"
+049,0x214062,"<@RL,16,00>すまんのぅ わしの家は すぐ右じゃ!","<@RL,16,00>Sorry for the trouble, my<D3>house is to the right!"
+050,0x214064,"<@RL,16,00>これじゃから さいきんの<CD>わかいもんは...ぶつぶつ...","<@RL,16,00>Hmph, I swear kids these<D3>days... *mumble* *mumble*..."
+051,0x214066,"<@RL,16,00>わしの 家は そっちじゃ ないぞい","<@RL,16,00>My house isn't that way!"
+052,0x214068,"<@RL,16,00>わしの家は もう少し 下じゃ","<@RL,16,00>My house is just a bit lower."
+053,0x21406a,"<@RL,30,00>おじいさんが もどって 来ません","<@RL,30,00>My master is not home<D3>currently."
+054,0x21406c,"<@RL,30,00>おかえリなさいませ おにもつを<CD>お持ちします","<@RL,30,00>Welcome home. I will handle<D3>the luggage."
+055,0x21406e,"<@RL,16,00>すまんのぅ 少ないが これを","<@RL,16,00>Thank you. It's not much but<D3>take this."
+056,0x214070,"<@LL,00,03>本当に 少ない...","<@LL,00,03>Wow, it really isn't much..."
 057,0x214072,"<@RL,30,00>さいきん ロボトルを していないので<CD>体が なまってしまいました",
 058,0x214074,"<@RL,14,00>「マ-マン学底」と「マ-メイド学底」<CF><D1>すぐ上に貝える 2つの学底は すごく<CD>なかが わるいんだ 何でだろうね",
 059,0x214076,"<@RL,14,00>こ こしが ぬけて にげられないよ-",
