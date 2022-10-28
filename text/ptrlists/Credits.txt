@@ -90,7 +90,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 86,\x00,\x02,\xCB
 87,\x11,\x05,Director
 88,\x11,\x04,Naoya Kawamura
-89,\x11,\x06,(Kawamura-)
+89,\x11,\x06,(Kawamuraaa)
 90,\x00,\x02,\xCB
 91,\x00,\x02,\xCB
 92,\x00,\x03,Imagineer Staff
@@ -117,7 +117,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 113,\x01,\x03,Imagineer Staff
 114,\x00,\x02,\xCD
 115,\x11,\x05,Game Testing
-116,\x11,\x04,Masami Okabayashi
+116,\x11,\x04,Masazumi Okabayashi
 117,\x11,\x04,Makoto Sato
 118,\x11,\x04,Atsuko Minegishi
 119,\x11,\x04,Azusa Yamaoka
@@ -152,7 +152,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 148,\x00,\x03,Natsume Staff
 149,\x00,\x02,\xCB
 150,\x11,\x05,Battle System
-151,\x11,\x04,Terayuki Shirakawa
+151,\x11,\x04,Teruyuki Shirakawa
 152,\x11,\x06,(Shiratama)
 153,\x00,\x02,\xCB
 154,\x00,\x02,\xCB
@@ -188,7 +188,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 184,\x11,\x05,Special Thanks
 185,\x11,\x04,Tetsuya Oku
 186,\x11,\x04,Hiroyuki Tanaka
-187,\x11,\x04,Yuu Katami
+187,\x11,\x04,Yuu Kasumi
 188,\x11,\x04,Ryuji Shiotani
 189,\x11,\x04,Yuki Funayama
 190,\x00,\x03,Natsume Staff
