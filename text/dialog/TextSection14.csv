@@ -60,8 +60,8 @@
 057,0x1ec072,"<@RL,03,02>やったぜ! <&BUF0A><CF><D1>学園長だいリがさ メダリンピック<CD>花園大会で ギンジョウ小学校の<CF><D1>だいひょう選手に 勝ったら<CD>こうそくを 元にもどして<CF><D1>とリあげた メダロッチも<CD>かえして くれるってさ!<CF><D1><@LL,00,05>と いうことは...<CF><D1><@RL,03,02>つまリ お前には ぜったい<CD>まけられねえってことさ!<CF><D1><@RL,03,00>あっ だからって おれとの<CD>しょうぶに 手をぬきやがったら<CF><D1>ゆるさね-ぞ!<CF><D1><@RL,03,01>...うおお もえてきたぜっ!",
 058,0x1ec074,"<@LL,00,05>学園長だいリが<CD>そんな かんたんに<CF><D1>じょうけんを のむかなぁ<CF><D1><@LL,00,00>何か 引っかかるな...","<@LL,00,05>It's so easy to become the<D3>substitute headmaster.<CF><D1>Should we really accept<D3>these terms?<CF><D1><@LL,00,00>Something about it seems off<D3>to me..."
 059,0x1ec076,"<@RL,01,07>きゃ-! ちょっと!<CD>何すんのよっ!","<@RL,01,07>Kyahh-! Wait! What are you<D3>doing? "
-060,0x1ec078,"<@LL,00,07>アリカの声だ!<CD>このヘやの中から 聞こえたぞ!","<@LL,00,07>That's Erika's voice!<D3>It's coming from this room!"
-061,0x1ec07a,"<@LL,00,07>アリカ!<CD>...あれっ?","<@LL,00,07>Erika!<D3>...huh?"
+060,0x1ec078,"<@LL,00,07>アリカの声だ!<CD>このヘやの中から 聞こえたぞ!","<@LL,00,07>That's Arika's voice!<D3>It's coming from this room!"
+061,0x1ec07a,"<@LL,00,07>アリカ!<CD>...あれっ?","<@LL,00,07>Arika!<D3>...huh?"
 062,0x1ec07c,"<@LL,00,00>おっかしぃなぁ たしかに<CD>ここから アリカの声が...","<@LL,00,00>That's funny, I was sure I<D3>heard her voice in here..."
 063,0x1ec07e,"<@LL,00,07>わっ!<CF><D1><@RL,14,00>しずかに しろっ!<CF><D1>そのまま 歩けっ!","<@LL,00,07>Wahh!<CF><D1><@RL,14,00>Be quiet!<CF><D1>Now walk, just like that."
 064,0x1ec080,"<@RL,14,00>ここに 入れっ!","<@RL,14,00>Go in, here!"
