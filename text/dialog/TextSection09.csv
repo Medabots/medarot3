@@ -131,7 +131,7 @@
 124,0x1d80f8,"<@LL,00,02>お前 ぜんっぜん<CD>かわいくないんだよっ!","<@LL,00,02>You're not even at all cute, <D3>you know!"
 125,0x1d80fa,"<@RL,05,02>とにかく しょうぶは<CD>おあずけよぉっ!","<@RL,05,02>Anyway, let's postpone our<D3>match!"
 126,0x1d80fc,"<@RL,06,02>ちくしょうっ! おれの デ-タがっ!<CF><D1>こんなことしたヤツ<CD>ぜって- ゆるせねぇ!","<@RL,06,02>You brute! My data!<CF><D1>The guy who did this... <D3>I can't forgive you!"
-127,0x1d80fe,"<@LL,00,05>イワノイ...","<@LL,00,05>Spyke..."
+127,0x1d80fe,"<@LL,00,05>イワノイ...","<@LL,00,05>Iwanoi..."
 128,0x1d8100,"<@RL,30,00>おやびん...","<@RL,30,00>Boss..."
 129,0x1d8102,"<@RL,06,04>お前の 兄の<CD>かたきは とってやるからな<CF><D1><@RL,05,00>行くわよぉ イワノイ!","<@RL,06,04>Your big bro will take revenge<D3>for you.<CF><D1><@RL,05,00>Let's go, Iwanoi!"
 130,0x1d8104,"<@RL,01,02>これは 大じけんよっ!<CD>あたし 何としても げんいんを<CF><D1>しらベてみせるわ!<CD>ブラスッ 学校ヘ 行くわよ!","<@RL,01,02>This is a big incident! I'm going<D3>to get to the bottom<CF><D1>Of what's going on!<D3>Let's go to the school, Brass!"
