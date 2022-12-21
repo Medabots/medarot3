@@ -5,7 +5,7 @@
 003,0x11c006,"<@LL,00,00>ここは メダロット研究所だ","<@LL,00,00>This is the Medarot Research <D3>Institute."
 004,0x11c008,"<@LL,00,00>ここは はい工場だ","<@LL,00,00>This is the Abandoned Factory."
 005,0x11c00a,「セレクト しぶ」,Select Branch
-006,0x11c00c,"<@LL,00,00>ここは アリカの家だ","<@LL,00,00>Erika's house is here."
+006,0x11c00c,"<@LL,00,00>ここは アリカの家だ","<@LL,00,00>Arika's house is here."
 007,0x11c00e,"<@LL,00,00>ぼくの家だ","<@LL,00,00>My house is here."
 008,0x11c010,"<@LL,00,00>ここは 番長の家だ<CF><@LL,00,05>番長って だれだっけ?",
 009,0x11c012,"<@LL,00,07>大きな きかいだなあ!","<@LL,00,07>It's a big machine!"
@@ -32,40 +32,40 @@
 030,0x11c03c,「メダロットの ちしき<CD> じゅくれんど(せっち)」<CF>トラップを しかけて<CD>攻撃をふせぐパ-ツを メインとして<CF>行動を せいこうしやすくするパ-ツや<CD>メダフォ-スを ふやすパ-ツ<CF>きょうリょくな れんけい攻撃を出す<CD>パ-ツなどの 行動を サポ-トする,
 031,0x11c03e,「メダロットの ちしき<CD> じゅくれんど(なおす)」<CF>メダロットの 技甲を かいふくする<CD>パ-ツを メインとして<CF>マイナス症状や トラップを<CD>かいじょするパ-ツ<CF>メダフォ-スの 使用を おさえる<CD>パ-ツなどの 行動を サポ-トする,
 032,0x11c040,「メダロットの ちしき<CD> じゅくれんど(とくしゅ)」<CF>てきの 攻撃のダメ-ジを 0にする<CD>パ-ツを メインとして<CF>てきの 攻撃を はねかえす<CD>パ-ツなどの 行動を サポ-トする,
-033,0x11c042,"<@LL,00,05>あまリ さわらないほうが<CD>いいだろうな...",
-034,0x11c044,"<@LL,00,04>パパと ママと ぼくの<CD>しょっきが ならんでるよ",
-035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね",
-036,0x11c048,"<@LL,00,01>ぎゅうにゅうプリン た-ベよっと!<CF><@LL,00,00>......<CF><@LL,00,03>ない.....",
-037,0x11c04a,"<@LL,00,04>来週の 週刊メダロットも<CD>楽しみだなあ",
-038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...",
-039,0x11c04e,"<@LL,00,04>あいかわらず<CD>まんがや ざっしで いっぱいだ",
-040,0x11c050,"<@LL,00,07>こんな 大きな モニタ-<CD>貝たことないよ!",
-041,0x11c052,"<@LL,00,00>けんばいきだ<CD>キップを かうなら ここだね",
-042,0x11c054,"<@LL,00,00>ずかんや じしょが<CD>たくさん ならんでる",
-043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!",
-044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!",
-045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!",
-046,0x11c05c,"<@LL,00,03>もちろん ひけない...",
-047,0x11c05e,「ドレミから はじめよう」,
-048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?",
-049,0x11c062,「セレクト隊 本部」,
-050,0x11c064,「きゅうきゅう センタ-」,
-051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,
-052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!",
-053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!",
-054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる",
-055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,
-056,0x11c070,「ハウ トゥ ゲット おてがら」,
-057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...",
-058,0x11c074,「おさわリ ぜったい きんし!!」,
-059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ",
-060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる",
-061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......",
-062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ",
-063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ",
-064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ",
-065,0x11c082,"<@LL,00,00>ここは コウジの 家だ",
-066,0x11c084,"<@LL,00,00>ここは カリンちゃんの 家だ",
+033,0x11c042,"<@LL,00,05>あまリ さわらないほうが<CD>いいだろうな...","<@LL,00,05>Maybe I shouldn't mess <D3>with this..."
+034,0x11c044,"<@LL,00,04>パパと ママと ぼくの<CD>しょっきが ならんでるよ","<@LL,00,04>The table settings for <D3>Mom, Dad, and me are all <CF>lined up."
+035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね","<@LL,00,04>It's clean and tidy.<CF>In other words, <D3>this is a place mom works."
+036,0x11c048,"<@LL,00,01>ぎゅうにゅうプリン た-ベよっと!<CF><@LL,00,00>......<CF><@LL,00,03>ない.....","<@LL,00,01>I'm gonna eat a milk pudding!<CF><@LL,00,00>......<CF><@LL,00,03>Nah....."
+037,0x11c04a,"<@LL,00,04>来週の 週刊メダロットも<CD>楽しみだなあ","<@LL,00,04>I'm looking forward to <D3>Medabots Weekly next week!"
+038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...","<@LL,00,04>This is my computer.<CF><@LL,00,05>Honestly, I want a laptop <D3>too, but...<CF>I can't really tell Mom that..."
+039,0x11c04e,"<@LL,00,04>あいかわらず<CD>まんがや ざっしで いっぱいだ","<@LL,00,04>As usual, it's crammed <D3>full of magazines and manga."
+040,0x11c050,"<@LL,00,07>こんな 大きな モニタ-<CD>貝たことないよ!","<@LL,00,07>I've never seen such <D3>a big monitor before!"
+041,0x11c052,"<@LL,00,00>けんばいきだ<CD>キップを かうなら ここだね","<@LL,00,00>It's a ticket machine. <D3>If I want to buy a ticket, <CF>I can buy it here."
+042,0x11c054,"<@LL,00,00>ずかんや じしょが<CD>たくさん ならんでる","<@LL,00,00>Manuals and dictionaries<D3>are all lined up."
+043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!","<@LL,00,00>It's software for the <D3>school computers.<CF>Japanese education is <D3>kind of strange...<CF>We kids often don't have<D3>enough pencils...<CF>We rely on light from <D3>fireflies to study...<CF><@LL,00,01>Just kidding!"
+044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!","<@LL,00,04>Yeah! <D3>I look sharp as always today."
+045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,00,04>Yeah!<D3>I look sharp as always today.<CF><@LL,00,06>...Why am I primping myself<D3>in a girls' bathroom?"
+046,0x11c05c,"<@LL,00,03>もちろん ひけない...","<@LL,00,03>No way I can play this..."
+047,0x11c05e,「ドレミから はじめよう」,Starting From Do-Re-Mi
+048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,00,05>.......?"
+049,0x11c062,「セレクト隊 本部」,Select Corp<D3>Headquarters
+050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
+051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always<D3>wanted, mwah!"
+052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!","<@LL,00,04>This is the place of a<D3>Medarotter's dreams:<CF><D1><f02>Medarotters<f00>!"
+053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>Just as expected at<D3>Medabotters! There are tons<CF>and tons of products!"
+054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medabot<D3>goods lined up."
+055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data<D3>Information Desk.
+056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for<D3>Dummies
+057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...","<f02>The Three Principles<D3>of Justice<f00><CF>Original, Former Captain<D3>Awamori<CF>One: Turn a blind eye.<CF>One: Let sleeping dogs lie.<CF>One: Discretion is the greater<D3>part of valor.<CF><@LL,00,05>Did that guy really write a<D3>book like this..."
+058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely<D3>prohibited!!
+059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medaro Department<D3>Store."
+060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are lots of parts <D3>lined up."
+061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine<D3>that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
+062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes <D3>are lined up here.<CF><@LL,00,04>Almost all of them <D3>are made for girls."
+063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji <D3>and Karin go to."
+064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ","<@LL,00,00>This is Hachiro's house."
+065,0x11c082,"<@LL,00,00>ここは コウジの 家だ","<@LL,00,00>This is Koji's house."
+066,0x11c084,"<@LL,00,00>ここは カリンちゃんの 家だ","<@LL,00,00>This is Karin's house."
 067,0x11c086,"<@LL,00,04>きれいに うえてある<CF>コウジのやつ<CD>けっこう マメだなあ!<CF><@LL,00,00>...と言っても<CD>うえてあるのは マメじゃ ないよ",
 068,0x11c088,"<@LL,00,00>かってに しらベたら<CD>おこられそうだ","<@LL,00,00>I think I'd get caught if I investigated by myself."
 069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch <D3>anything right now."

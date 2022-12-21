@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,
-001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,
+000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,Bwaha!<D3><*02>
+001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,Tee-hee♥<D3><*02>
 002,0x92318#kabuto|0x9231a#kuwagata,かよわい 女の子だからって<CD>手を ぬかないでよ!<*02>,Don't go easy on me just<D3>because I'm a girl!<*02>
 003,0x9231a#kabuto|0x9231c#kuwagata,も-ちょっと 手かげんしてくれたって<CD>い-じゃない!<*02>,"Jeez, you could go at least<D3><f02>little<f00> easier on me!<*02>"
 004,0x9231c#kabuto|0x9231e#kuwagata,わたしと ロボトル<CD>おねがいできますか?<*02>,Would you like to Robattle<D3>with me?<*02>
@@ -30,7 +30,7 @@
 028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,"Fight, o corporate warriors!<D3>A bright tomorrow shall come!<*02>"
 029,0x9234e#kabuto|0x92350#kuwagata,まだまだ ふけいきが つづきそうだな<CD><*02>,It seems business will continue<D3>to be poor for a while...<*02>
 030,0x92350#kabuto|0x92352#kuwagata,どいとくれよ!<CD>しゅふは いそがしいんだからね!<*02>,Move aside!<D3>Can't you see I'm busy?<*02>
-031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,
+031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,"If your Medarot has a good personality, it'll be more useful than mine!<*02>"
 032,0x92354#kabuto|0x92356#kuwagata,ボロトルは いくつになっても<CD>やめられんのぉ<*02>,I can't stop robattling no matter how old I get.<*02>
 033,0x92356#kabuto|0x92358#kuwagata,ボトルロは やはリ むずかしいのぉ<CD><*02>,Borattles are still tricky.<*02>
 034,0x92358#kabuto|0x9235a#kuwagata,あたしだって まだ わかいもんには<CD>まけないよ<*02>,I won't lose to a youngster<D3>like you!<*02>
@@ -55,16 +55,16 @@
 053,0x9237e#kabuto|0x92380#kuwagata,おたすけロボ-ッ!!<CD><*02>,"Help, robo!!<D3><*02>"
 054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"Fufufu<D3>In the end, evil will win!<*02>"
 055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,Kuuuuuh!!<D3>Don't think this is the end!<*02>
-056,0x92384#kabuto|0x92386#kuwagata,お-ほほほほほほほ!! わたくしを<CD>おこらせると こうかいしますことよ!<*02>,
-057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,
-058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,
-059,0x9238a#kabuto|0x9238c#kuwagata,子どもは なまいきだから<CD>気に 食わんのじゃ!<*02>,
-060,0x9238c#kabuto|0x9238e#kuwagata,てんさい ようちえんじ サラミが<CD>あいてに なるでしゅ!<*02>,
-061,0x9238e#kabuto|0x92390#kuwagata,あたちの IQは<CD>180も あるんでしゅよ!<*02>,
-062,0x92390#kabuto|0x92392#kuwagata,わしと おぬしの どちらが<CD>メダルを うまく そだてとるかな?<*02>,
-063,0x92392#kabuto|0x92394#kuwagata,やるもんじゃな がはは!<CD><*02>,
-064,0x92394#kabuto|0x92396#kuwagata,よいこのヒ-ロ- セレクトスリ-<CD>ただいま さんじょう!!<*02>,
-065,0x92396#kabuto|0x92398#kuwagata,それでは また らいしゅう<CD>こう ごきたい!!<*02>,
+056,0x92384#kabuto|0x92386#kuwagata,お-ほほほほほほほ!! わたくしを<CD>おこらせると こうかいしますことよ!<*02>,Ohohoho!! Now you can see how I am when I'm angry!<*02>
+057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,Someday I really want to make it public!<*02>
+058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,"Wheeze, wheeze...<CF>You think you can beat me?<*02>"
+059,0x9238a#kabuto|0x9238c#kuwagata,子どもは なまいきだから<CD>気に 食わんのじゃ!<*02>,The kids are bratty so I'm in a bad mood!<*02>
+060,0x9238c#kabuto|0x9238e#kuwagata,てんさい ようちえんじ サラミが<CD>あいてに なるでしゅ!<*02>,The genius preschooler Sarami will be your opponent!<*02>
+061,0x9238e#kabuto|0x92390#kuwagata,あたちの IQは<CD>180も あるんでしゅよ!<*02>,My IQ is 180!<*02>
+062,0x92390#kabuto|0x92392#kuwagata,わしと おぬしの どちらが<CD>メダルを うまく そだてとるかな?<*02>,Which of us do you think has raised our medals well?<*02>
+063,0x92392#kabuto|0x92394#kuwagata,やるもんじゃな がはは!<CD><*02>,I'll try! Gahaha!<*02>
+064,0x92394#kabuto|0x92396#kuwagata,よいこのヒ-ロ- セレクトスリ-<CD>ただいま さんじょう!!<*02>,"It's us, the Great Heroes, Select Three!<*02>"
+065,0x92396#kabuto|0x92398#kuwagata,それでは また らいしゅう<CD>こう ごきたい!!<*02>,See you next time! Stay tuned!<*02>
 066,0x92398#kabuto|0x9239a#kuwagata,入隊きぼう者<CD>ぼしゅう中で あリます!<*02>,
 067,0x9239a#kabuto|0x9239c#kuwagata,いちど 入ったら<CD>さいごで あリます!<*02>,
 068,0x9239c#kabuto|0x9239e#kuwagata,こうせいのうの ぼくに<CD>きみが かてるの?<*02>,
