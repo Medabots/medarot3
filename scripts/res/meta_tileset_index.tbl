@@ -354,13 +354,13 @@
 161=Tileset3C57
 162=Tileset3C59
 163=Tileset3C5B
-164=Tileset3C5D
-165=Tileset3C5F
-166=Tileset3C61
+164=StartScreenText
+165=StartScreenMainLogoRotation
+166=StartScreenMainLogo
 167=Tileset3C63
 168=TilesetSourceAddressTableEnd
 169=Tileset3C67
-16A=Tileset3C69
+16A=StartScreenFireEffect2
 16B=Tileset3C6B
 16C=Tileset3C6D
 16D=SplashScreenConceptCredit

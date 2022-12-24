@@ -358,13 +358,13 @@ TilesetSourceAddressTable::
   dw Tileset3C57 ; 161 (3C57)
   dw Tileset3C59 ; 162 (3C59)
   dw Tileset3C5B ; 163 (3C5B)
-  dw Tileset3C5D ; 164 (3C5D)
-  dw Tileset3C5F ; 165 (3C5F)
-  dw Tileset3C61 ; 166 (3C61)
+  dw StartScreenText ; 164 (3C5D)
+  dw StartScreenMainLogoRotation ; 165 (3C5F)
+  dw StartScreenMainLogo ; 166 (3C61)
   dw Tileset3C63 ; 167 (3C63)
   dw TilesetSourceAddressTableEnd ; 168 (3C65)
   dw Tileset3C67 ; 169 (3C67)
-  dw Tileset3C69 ; 16A (3C69)
+  dw StartScreenFireEffect2 ; 16A (3C69)
   dw Tileset3C6B ; 16B (3C6B)
   dw Tileset3C6D ; 16C (3C6D)
   dw SplashScreenConceptCredit ; 16D (3C6F)
@@ -874,13 +874,13 @@ TilesetInfoTable::
   dbwb BANK(Tileset3C57), $8800, $0 ; 161
   dbwb BANK(Tileset3C59), $9000, $1 ; 162
   dbwb BANK(Tileset3C5B), $9000, $0 ; 163
-  dbwb BANK(Tileset3C5D), $8800, $0 ; 164
-  dbwb BANK(Tileset3C5F), $9000, $1 ; 165
-  dbwb BANK(Tileset3C61), $8800, $1 ; 166
+  dbwb BANK(StartScreenText), $8800, $0 ; 164
+  dbwb BANK(StartScreenMainLogoRotation), $9000, $1 ; 165
+  dbwb BANK(StartScreenMainLogo), $8800, $1 ; 166
   dbwb BANK(Tileset3C63), $8800, $1 ; 167
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 168
   dbwb BANK(Tileset3C67), $8000, $0 ; 169
-  dbwb BANK(Tileset3C69), $8000, $1 ; 16A
+  dbwb BANK(StartScreenFireEffect2), $8000, $1 ; 16A
   dbwb BANK(Tileset3C6B), $9000, $0 ; 16B
   dbwb BANK(Tileset3C6D), $8800, $0 ; 16C
   dbwb BANK(SplashScreenConceptCredit), $9000, $0 ; 16D
@@ -2045,25 +2045,25 @@ SECTION "Tileset Data Tileset3C5B", ROMX[$4000], BANK[$74]
 Tileset3C5B::
   INCBIN "./build/tilesets/Tileset3C5B.malias"
 
-SECTION "Tileset Data Tileset3C5D", ROMX[$455D], BANK[$74]
-Tileset3C5D::
-  INCBIN "./build/tilesets/Tileset3C5D.malias"
+SECTION "Tileset Data StartScreenText", ROMX[$455D], BANK[$74]
+StartScreenText::
+  INCBIN "./build/tilesets/StartScreenText.malias"
 
-SECTION "Tileset Data Tileset3C5F", ROMX[$4989], BANK[$74]
-Tileset3C5F::
-  INCBIN "./build/tilesets/Tileset3C5F.malias"
+SECTION "Tileset Data StartScreenMainLogoRotation", ROMX[$4989], BANK[$74]
+StartScreenMainLogoRotation::
+  INCBIN "./build/tilesets/StartScreenMainLogoRotation.malias"
 
-SECTION "Tileset Data Tileset3C61", ROMX[$4F8C], BANK[$74]
-Tileset3C61::
-  INCBIN "./build/tilesets/Tileset3C61.malias"
+SECTION "Tileset Data StartScreenMainLogo", ROMX[$4F8C], BANK[$74]
+StartScreenMainLogo::
+  INCBIN "./build/tilesets/StartScreenMainLogo.malias"
 
 SECTION "Tileset Data Tileset3C67", ROMX[$53F1], BANK[$74]
 Tileset3C67::
   INCBIN "./build/tilesets/Tileset3C67.malias"
 
-SECTION "Tileset Data Tileset3C69", ROMX[$5929], BANK[$74]
-Tileset3C69::
-  INCBIN "./build/tilesets/Tileset3C69.malias"
+SECTION "Tileset Data StartScreenFireEffect2", ROMX[$5929], BANK[$74]
+StartScreenFireEffect2::
+  INCBIN "./build/tilesets/StartScreenFireEffect2.malias"
 
 SECTION "Tileset Data Tileset3C95", ROMX[$4000], BANK[$A7]
 Tileset3C95::

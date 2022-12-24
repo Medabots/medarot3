@@ -287,12 +287,12 @@
 3C57=Tileset3C57
 3C59=Tileset3C59
 3C5B=Tileset3C5B
-3C5D=Tileset3C5D
-3C5F=Tileset3C5F
-3C61=Tileset3C61
+3C5D=StartScreenText
+3C5F=StartScreenMainLogoRotation
+3C61=StartScreenMainLogo
 3C63=Tileset3C63
 3C67=Tileset3C67
-3C69=Tileset3C69
+3C69=StartScreenFireEffect2
 3C6B=Tileset3C6B
 3C6D=Tileset3C6D
 3C6F=SplashScreenConceptCredit
