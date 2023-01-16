@@ -1,36 +1,36 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x240000,"<@RL,0B,00>行くぞ! レアメダル!<CF><D1><@RL,0D,01>足手まといには ならないわよ!<CF><D1><@RL,0B,00>行くぞ!",
-001,0x240002,"<@RL,0B,01>よし! しめいは はたした!",
-002,0x240004,"<@LL,00,07>あ! レトルトさん!",
-003,0x240006,"<@RL,0B,01>きょうリょく かんしゃする<CD><&BUF03>くん!<CF><D1>また 会おう! ふははははは!",
-004,0x240008,"<@RL,0D,01>またね <&BUF03>くん<CF><D1><@LL,00,06>あの...っ! レトルトレディ!<CF><D1><@RL,0D,01>しんぱいないわよ!<CD>レトルトも わたしも<CF><D1>そろそろ マンションに もどるわ<CD>やくめは とリあえず<CF><D1>おわったんだからね<CD>それじゃ ま.た.ね♥",
-005,0x24000a,"<@LL,00,04>かあっこいいなぁ♥<CF><D1><@LL,00,01>...さてと ぼくも かえろっと!",
-006,0x24000c,"<@LL,00,00>あれ? 何だろ この メダル<CF><D1>レトルトさんたち おとして<CD>いったのかな?<CF><D1>ぼくが 持ってても いいのかな?",
-007,0x24000e,"<@RL,13,00>なかにわ 今 大変なことに なってて<CD>こわくて 入れないよ...",
-008,0x240010,"<@RL,04,00>ワン ワン!",
-009,0x240012,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-010,0x240014,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-011,0x240016,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-012,0x240018,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-013,0x24001a,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-014,0x24001c,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
-015,0x24001e,ただいま こうひょう レンタル...<CD>ナンダッタッケ ナンカイモ<CF><D1>イッテタラ<CD>ワカラナク ナッチャッタ...,
-016,0x240020,ただいま ちょうせい中,
-017,0x240022,"<@LL,00,00>しつれいしま-す!",
+000,0x240000,"<@RL,0B,00>行くぞ! レアメダル!<CF><D1><@RL,0D,01>足手まといには ならないわよ!<CF><D1><@RL,0B,00>行くぞ!","<@RL,0B,00>Let's go! Rare Medals!<CF><D1><@RL,0D,01>I won't be a burden!<CF><D1><@RL,0B,00>Let's go!"
+001,0x240002,"<@RL,0B,01>よし! しめいは はたした!","<@RL,0B,01>Nice, we made it to the end!"
+002,0x240004,"<@LL,00,07>あ! レトルトさん!","<@LL,00,07>Ah! It's Phantom Retort!"
+003,0x240006,"<@RL,0B,01>きょうリょく かんしゃする<CD><&BUF03>くん!<CF><D1>また 会おう! ふははははは!","<@RL,0B,01>Thanks for the help <&BUF03>!<CF><D1>We'll meet again! Fuahahah!"
+004,0x240008,"<@RL,0D,01>またね <&BUF03>くん<CF><D1><@LL,00,06>あの...っ! レトルトレディ!<CF><D1><@RL,0D,01>しんぱいないわよ!<CD>レトルトも わたしも<CF><D1>そろそろ マンションに もどるわ<CD>やくめは とリあえず<CF><D1>おわったんだからね<CD>それじゃ ま.た.ね♥","<@RL,0D,01>See you <&BUF03>~<CF><@LL,00,06>Uhm... ah! Lady Retort!<CF><@RL,0D,01>Don't worry!<CF>Retort and I will go now to the mansion<D3>since our mision is finished already.<CF>See you later~♥"
+005,0x24000a,"<@LL,00,04>かあっこいいなぁ♥<CF><D1><@LL,00,01>...さてと ぼくも かえろっと!","<@LL,00,04>So cool♥<CF><@LL,00,01>...I should get going too!"
+006,0x24000c,"<@LL,00,00>あれ? 何だろ この メダル<CF><D1>レトルトさんたち おとして<CD>いったのかな?<CF><D1>ぼくが 持ってても いいのかな?","<@LL,00,00>Huh? What is this medal?<CF>Did Phantom Retort and the others<D3>leave it here?<CF><D1>I wonder if it's OK for me to take it?"
+007,0x24000e,"<@RL,13,00>なかにわ 今 大変なことに なってて<CD>こわくて 入れないよ...","<@RL,13,00>Something terrible is happening inside.<CF>I'm too afraid to enter..."
+008,0x240010,"<@RL,04,00>ワン ワン!","<@RL,04,00>Woof woof!"
+009,0x240012,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+010,0x240014,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+011,0x240016,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+012,0x240018,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+013,0x24001a,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+014,0x24001c,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
+015,0x24001e,ただいま こうひょう レンタル...<CD>ナンダッタッケ ナンカイモ<CF><D1>イッテタラ<CD>ワカラナク ナッチャッタ...,There is a high rated rental...<D3>Huh?<CF>I can understand no matter how many times you say it...
+016,0x240020,ただいま ちょうせい中,Out of service.
+017,0x240022,"<@LL,00,00>しつれいしま-す!","<@LL,00,00>Excuse me!"
 018,0x240024,"<@LL,00,00>しつれいしました!",
-019,0x240026,"<@LL,00,04>こんにちは 学底長先生!<CF><D1><@RL,1D,00>あら あなたは<CD><&BUF03>くんね<CF><D1>この間は あリがとう<CD>あなたの おかげで 自分の<CF><D1>まちがいに 気づくことが できたわ<CD>これは わたしの 気持ちよ",
-020,0x240028,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,1D,00>それでは これからも<CD>がんばってね",
-021,0x24002a,"<@RL,1D,00>つまらない いじの はリあいで<CD>何年も...ふふ 今 思うと<CF><D1>おかしいわね",
-022,0x24002c,"<@LL,00,00>しつれいしま-す!",
-023,0x24002e,"<@LL,00,00>しつれいしました!",
-024,0x240030,"<@LL,00,04>こんにちは 学底長先生!<CF><D1><@RL,14,00>おお きみか!<CD><&BUF03>くんだね<CF><D1>いやぁ この間は 本当に あリがとう<CD>きみの おかげで 今では<CF><D1>アサリとも むかしのように<CD>なかよく なれたよ<CF><D1>これは わたしの 気持ちだ!<CD>うけとってほしい",
-025,0x240032,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,14,00>いやいや きみが わたしたちに<CD>してくれたことに くらベれば<CF><D1>たいしたことでは ない",
-026,0x240034,"<@RL,14,00>大人になるとな すなおに なることが<CD>むつかしく なるもんだよ",
-027,0x240036,"<@LL,00,07>!!!!<CD>パ-ツが おちてる!!",
-028,0x240038,"<@LL,00,07>!!!!<CD>こんな所に パ-ツがっ!!",
-029,0x24003a,"<@LL,00,07>こっこっ これはっ!!<CD>パッ...パ-ツだっ!!!",
-030,0x24003c,"<@RL,14,00>な-んにも ない かベってさ...<CD>話しかけられることもなくて<CF><D1>何だかさ...かわいそうだよね<CF><D1>そういう 気持ち ばくには<CD>分かるような 気がするんだ...",
-031,0x24003e,"<@LL,00,07>パ-ツ 貝っけ!",
-032,0x240040,"<@LL,00,07>パ-ツだ!",
-033,0x240042,"<@LL,00,07>これって パ-ツ!?",
-034,0x240044,"<@RL,18,00>ここに 新しく パ-ツの<CD>自動はんばいきを おいたんだ",
+019,0x240026,"<@LL,00,04>こんにちは 学底長先生!<CF><D1><@RL,1D,00>あら あなたは<CD><&BUF03>くんね<CF><D1>この間は あリがとう<CD>あなたの おかげで 自分の<CF><D1>まちがいに 気づくことが できたわ<CD>これは わたしの 気持ちよ","<@LL,00,04>Hello Principal!<CF><@RL,1D,00>Ah, is that <&BUF03>?<CF>Thank to your help, I don't need to worry anymore.<CF>Have this as thanks!"
+020,0x240028,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,1D,00>それでは これからも<CD>がんばってね","<@LL,00,01>Wow! Thank you so much!<CF><@RL,1D,00>Keep up the good work!"
+021,0x24002a,"<@RL,1D,00>つまらない いじの はリあいで<CD>何年も...ふふ 今 思うと<CF><D1>おかしいわね","<@RL,1D,00>A silly rivalry for years...<CF>Ho ho, now that I think about it, it is a bit odd."
+022,0x24002c,"<@LL,00,00>しつれいしま-す!","<@LL,00,00>Excuse me!"
+023,0x24002e,"<@LL,00,00>しつれいしました!","<@LL,00,00>I'm off!"
+024,0x240030,"<@LL,00,04>こんにちは 学底長先生!<CF><D1><@RL,14,00>おお きみか!<CD><&BUF03>くんだね<CF><D1>いやぁ この間は 本当に あリがとう<CD>きみの おかげで 今では<CF><D1>アサリとも むかしのように<CD>なかよく なれたよ<CF><D1>これは わたしの 気持ちだ!<CD>うけとってほしい","<@LL,00,04>Hello Principal!<CF><@RL,1D,00>Oh, it's <&BUF03>!<CF>Thanks to you, I've rekindled an old relationship.<CF>I want you to take this as a thanks!"
+025,0x240032,"<@LL,00,01>わあ! あリがとうございます!<CF><D1><@RL,14,00>いやいや きみが わたしたちに<CD>してくれたことに くらベれば<CF><D1>たいしたことでは ない","<@LL,00,01>Wow! Thank you so much!<CF><@RL,14,00>No, no, it's nothing compared to what you did for us."
+026,0x240034,"<@RL,14,00>大人になるとな すなおに なることが<CD>むつかしく なるもんだよ","<@RL,14,00>You know...<CF>Once you become an adult, it's a lot harder to stay honest."
+027,0x240036,"<@LL,00,07>!!!!<CD>パ-ツが おちてる!!","<@LL,00,07>!!!!<D3>It's raining parts!!"
+028,0x240038,"<@LL,00,07>!!!!<CD>こんな所に パ-ツがっ!!","<@LL,00,07>!!!!<D3>Parts in this place...!!"
+029,0x24003a,"<@LL,00,07>こっこっ これはっ!!<CD>パッ...パ-ツだっ!!!","<@LL,00,07>Th-this are...!!<D3>Pa-Parts!!!"
+030,0x24003c,"<@RL,14,00>な-んにも ない かベってさ...<CD>話しかけられることもなくて<CF><D1>何だかさ...かわいそうだよね<CF><D1>そういう 気持ち ばくには<CD>分かるような 気がするんだ...","<@RL,14,00>There's nothing in this walls...<D3>And nobody to talk either.<CF>Somehow... Looks pitiful, right?<CF>I feel like I am going to have<D3>that sentiment..."
+031,0x24003e,"<@LL,00,07>パ-ツ 貝っけ!","<@LL,00,07>I found a part!"
+032,0x240040,"<@LL,00,07>パ-ツだ!","<@LL,00,07>It's a part!"
+033,0x240042,"<@LL,00,07>これって パ-ツ!?","<@LL,00,07>Is this... a part?!"
+034,0x240044,"<@RL,18,00>ここに 新しく パ-ツの<CD>自動はんばいきを おいたんだ","<@RL,18,00>Oh, there's an automatic part-vending machine here."
