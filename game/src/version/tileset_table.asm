@@ -2055,18 +2055,6 @@ SECTION "Tileset Data Tileset3C5B", ROMX[$4000], BANK[$74]
 Tileset3C5B::
   INCBIN "./build/tilesets/Tileset3C5B.malias"
 
-SECTION "Tileset Data StartScreenText", ROMX[$455D], BANK[$74]
-StartScreenText::
-  INCBIN "./build/tilesets/StartScreenText.malias"
-
-SECTION "Tileset Data StartScreenMainLogoRotation", ROMX[$4989], BANK[$74]
-StartScreenMainLogoRotation::
-  INCBIN "./build/tilesets/StartScreenMainLogoRotation.malias"
-
-SECTION "Tileset Data StartScreenMainLogo", ROMX[$4F8C], BANK[$74]
-StartScreenMainLogo::
-  INCBIN "./build/tilesets/StartScreenMainLogo.malias"
-
 SECTION "Tileset Data Tileset3C67", ROMX[$53F1], BANK[$74]
 Tileset3C67::
   INCBIN "./build/tilesets/Tileset3C67.malias"
