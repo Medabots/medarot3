@@ -94,7 +94,15 @@ ChapterScreenChapterTitle5::
 ChapterScreenChapterTitle6::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
 SplashScreenConceptCredit::
-  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"  
+  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"
+
+SECTION "Patch 2bpp Tilesets 3", ROMX[$4000], BANK[$FB]
+StartScreenText::
+  INCBIN "./build/tilesets/StartScreenText.malias"
+StartScreenMainLogoRotation::
+  INCBIN "./build/tilesets/StartScreenMainLogoRotation.malias"
+StartScreenMainLogo::
+  INCBIN "./build/tilesets/StartScreenMainLogo.malias"
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::
