@@ -19,7 +19,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    container: docker://variantxyz/rgbds-20220711:1a126d774613431dd5eb568472493977a3682175
+    container: docker://variantxyz/rgbds-20230123:e27da737c6aca9659458d95c32d606ebbea7380c
 
     steps:
       - name: List versions
