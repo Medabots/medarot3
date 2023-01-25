@@ -11,7 +11,7 @@ The majority of text to be translated is in the text/ directory.
 * Medarot 3 KABUTO ROM (md5: cbc55f3bb98f8c0443917ae477e56e51) and/or Medarot 3 KUWAGATA ROM (md5: dabfbdc9aba5f2edc21f884c52881e0d)
 * Make 4 or greater
 * Python 3.6 or greater, aliased to 'python3'
-* [rgbds toolchain](https://github.com/rednex/rgbds) v0.4.x to v0.5.x (macro syntax changes in 0.6)
+* [rgbds toolchain](https://github.com/rednex/rgbds) v0.5.0 or greater
 
 ## Make
 

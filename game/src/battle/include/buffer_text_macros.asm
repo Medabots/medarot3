@@ -1,6 +1,6 @@
 ; Common routines
 
-LoadPartTypeTextIntoBUF01: MACRO
+MACRO LoadPartTypeTextIntoBUF01
 LoadPartTypeTextIntoBUF01_\1::
   push de
   ld bc, PartTypeTable_\1
@@ -24,7 +24,7 @@ LoadPartTypeTextIntoBUF01_\1::
   ret
   ENDM
 
-LoadPartTypeTextIntoDE: MACRO
+MACRO LoadPartTypeTextIntoDE
 LoadPartTypeTextIntoDE_\1::
   push de
   push hl
@@ -49,7 +49,7 @@ LoadPartTypeTextIntoDE_\1::
   ret
   ENDM
 
-PartTypeTable: MACRO
+MACRO PartTypeTable
 PartTypeTable_\1:
   db "head",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   db "right arm",$CB,$00,$00,$00,$00,$00,$00
@@ -96,7 +96,7 @@ LoadParticipantNameIntoBUF02Cont_\1::
   ret
   ENDM
 
-LoadParticipantNameIntoBUF02: MACRO
+MACRO LoadParticipantNameIntoBUF02
 LoadParticipantNameIntoBUF02_\1::
   call LoadParticipantNameIntoBUF02Cont_\1 ; sets hl
   push de
@@ -107,7 +107,7 @@ LoadParticipantNameIntoBUF02_\1::
   ret
   ENDM
 
-LoadDamageNumberIntoBUF01: MACRO
+MACRO LoadDamageNumberIntoBUF01
 LoadDamageNumberIntoBUF01_\1::
   push de
   xor a

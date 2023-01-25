@@ -239,7 +239,7 @@ ParseTilesetScript::
 .dontUseSecondScriptBank
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [H_RegVBK], a
+  ldh [H_RegVBK], a
   ld a, b
   ld [W_TilesetScript_PointerIndex], a
   ld a, c
@@ -420,17 +420,17 @@ ParseTilesetScript::
   jr nz, .vramBankOnePlz
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [H_RegVBK], a
+  ldh [H_RegVBK], a
   jp .tilesetScriptProcessingLoop
 
 .vramBankOnePlz
   ld a, 1
   ld [W_CurrentVRAMBank], a
-  ld [H_RegVBK], a
+  ldh [H_RegVBK], a
   jp .tilesetScriptProcessingLoop
 
 .endScriptParsing
   ld a, 0
   ld [W_CurrentVRAMBank], a
-  ld [H_RegVBK], a
+  ldh [H_RegVBK], a
   ret
