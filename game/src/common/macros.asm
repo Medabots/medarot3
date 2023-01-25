@@ -22,27 +22,27 @@ MACRO dbwb
   db \3
   ENDM
 
-Load1BPPTilesetLocal: MACRO
+MACRO Load1BPPTilesetLocal
   ld hl, \1
   ld de, \2
   ld b, (\3 - \2) / $8
   call Load1BPPTiles
   ENDM
 
-Load1BPPTileset: MACRO
+MACRO Load1BPPTileset
   ld hl, \1
   ld de, \2
   ld b, (\3 - \2) / $8
   call Load1BPPTilesFromFE
   ENDM
 
-VRAMSwitchToBank1: MACRO
+MACRO VRAMSwitchToBank1
   ld a, 1
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
   ENDM
 
-VRAMSwitchToBank0: MACRO
+MACRO VRAMSwitchToBank0
   xor a
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a

@@ -57,7 +57,7 @@ PartTypeTable_\1:
   db "legs",$CB,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
   ENDM
 
-LoadParticipantNameIntoBUF02Cont: MACRO
+MACRO LoadParticipantNameIntoBUF02Cont
 LoadParticipantNameIntoBUF02Cont_\1::
   ld a, d
   cp $d6

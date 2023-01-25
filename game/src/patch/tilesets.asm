@@ -34,7 +34,7 @@ Load1BPPTiles::
   ret
 
 ; PatchTilesetEntry FontName
-PatchTilesetEntry: MACRO
+MACRO PatchTilesetEntry
 PatchTilesetStart\1::
   INCBIN "./build/tilesets/patch/\1.1bpp"
 PatchTilesetEnd\1::
