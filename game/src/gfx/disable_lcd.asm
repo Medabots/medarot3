@@ -19,7 +19,7 @@ DisableLCD::
   ret
 
 EnableLCD::
-  ld a, [H_RegLCDC]
+  ldh a, [H_RegLCDC]
   or $80
-  ld [H_RegLCDC], a
+  ldh [H_RegLCDC], a
   ret
