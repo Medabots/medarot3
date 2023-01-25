@@ -60,7 +60,7 @@ SerIO_SwitchToInternalClock::
   and a
   ret nz
   ld a, $81
-  ld [H_RegSC], a
+  ldh [H_RegSC], a
   ret
 
 SECTION "SerIO Driver 2", ROM0[$32B1]
@@ -69,19 +69,19 @@ SerIO_ResetConnection::
   ld bc, $300
   call memclr
   ld a, $AA
-  ld [H_RegSB], a
+  ldh [H_RegSB], a
   ld [W_ShadowREG_SB], a
   ld a, $80
-  ld [H_RegSC], a
+  ldh [H_RegSC], a
   ret
 
 SerIO_SendMysteryPacket::
   ld a, 1
   ld [W_SerIO_SentMysteryPacket], a
   ld a, $FC
-  ld [H_RegSB], a
+  ldh [H_RegSB], a
   ld a, $81
-  ld [H_RegSC], a
+  ldh [H_RegSC], a
   ret
 
 SerIO_SendConnectPacket::
@@ -89,10 +89,10 @@ SerIO_SendConnectPacket::
   and a
   ret nz
   ld a, $AA
-  ld [H_RegSB], a
+  ldh [H_RegSB], a
   ld [W_ShadowREG_SB], a
   ld a, $80
-  ld [H_RegSC], a
+  ldh [H_RegSC], a
   ret
 
 SerIO_Wait:: ; 32E5

@@ -1,6 +1,6 @@
 ; Common routines
 
-LoadPartTypeTextIntoBUF01: MACRO
+MACRO LoadPartTypeTextIntoBUF01
 LoadPartTypeTextIntoBUF01_\1::
   push de
   ld hl, PartTypeTable_\1
@@ -26,7 +26,7 @@ LoadPartTypeTextIntoBUF01_\1::
   ret
   ENDM
 
-LoadPartTypeTextIntoDE: MACRO
+MACRO LoadPartTypeTextIntoDE
 LoadPartTypeTextIntoDE_\1::
   push de
   push hl
@@ -53,7 +53,7 @@ LoadPartTypeTextIntoDE_\1::
   ret
   ENDM
 
-PartTypeTable: MACRO
+MACRO PartTypeTable
 PartTypeTable_\1:
   db $D3,$B8,$CB,$00,$00,$00,$00,$00 ; Head
   db $D3,$03,$D3,$EB,$CB,$00,$00,$00 ; Right Arm
@@ -61,7 +61,7 @@ PartTypeTable_\1:
   db $D3,$26,$D3,$C8,$CB,$00,$00,$00 ; Legs
   ENDM
 
-LoadParticipantNameIntoBUF02: MACRO
+MACRO LoadParticipantNameIntoBUF02
 LoadParticipantNameIntoBUF02_\1::
   ld hl, $40 ; offset to name in participant structure
   add hl, de
@@ -73,7 +73,7 @@ LoadParticipantNameIntoBUF02_\1::
   ret
   ENDM
 
-LoadDamageNumberIntoBUF01: MACRO
+MACRO LoadDamageNumberIntoBUF01
 LoadDamageNumberIntoBUF01_\1::
   push de
   xor a
