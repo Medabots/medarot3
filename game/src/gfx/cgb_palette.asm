@@ -27,7 +27,7 @@ CGBCommitPalettesBGP::
   ld hl, W_CGBPaletteIndexesStagedBGP
   ld c, 8
   ld a, $80
-  ld [H_RegBGPI], a
+  ldh [H_RegBGPI], a
 
 .indexLoop
   ld a, [hli]
@@ -50,7 +50,7 @@ CGBCommitPalettesBGP::
   push af
   rst $20
   pop af
-  ld [H_RegBGPD], a
+  ldh [H_RegBGPD], a
   dec b
   jr nz, .loop
 
@@ -124,7 +124,7 @@ CGBCommitPalettesOBP::
   ld hl, W_CGBPaletteIndexesStagedOBP
   ld c, 8
   ld a, $80
-  ld [H_RegOBPI], a
+  ldh [H_RegOBPI], a
 
 .indexLoop
   ld a, [hli]
@@ -147,7 +147,7 @@ CGBCommitPalettesOBP::
   push af
   rst $20
   pop af
-  ld [H_RegOBPD], a
+  ldh [H_RegOBPD], a
   dec b
   jr nz, .loop
 

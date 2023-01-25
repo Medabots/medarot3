@@ -24,7 +24,7 @@ HackPredefTable:
   dw TilemapLoadTileset ; 0
 
 
-TilemapTilesetTableEntry: MACRO
+MACRO TilemapTilesetTableEntry
   ; Number of Tiles, Tileset, Load Offset
   dbww (PatchTilesetEnd\1 - PatchTilesetStart\1)/$8, PatchTilesetStart\1, \2
 ENDM

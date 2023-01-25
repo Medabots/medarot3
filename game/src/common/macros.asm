@@ -1,59 +1,59 @@
 ; macro for putting a byte then a word
-dbw: MACRO
+MACRO dbw
   db \1
   dw \2
   ENDM
 
 ; macro for putting a word then a byte
-dwb: MACRO
+MACRO dwb
   dw \1
   db \2
   ENDM
 
-dbww: MACRO
+MACRO dbww
   db \1
   dw \2
   dw \3
   ENDM
 
-dbwb: MACRO
+MACRO dbwb
   db \1
   dw \2
   db \3
   ENDM
 
-Load1BPPTilesetLocal: MACRO
+MACRO Load1BPPTilesetLocal
   ld hl, \1
   ld de, \2
   ld b, (\3 - \2) / $8
   call Load1BPPTiles
   ENDM
 
-Load1BPPTileset: MACRO
+MACRO Load1BPPTileset
   ld hl, \1
   ld de, \2
   ld b, (\3 - \2) / $8
   call Load1BPPTilesFromFE
   ENDM
 
-VRAMSwitchToBank1: MACRO
+MACRO VRAMSwitchToBank1
   ld a, 1
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
   ENDM
 
-VRAMSwitchToBank0: MACRO
+MACRO VRAMSwitchToBank0
   xor a
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
   ENDM
 
-dcolor: MACRO
+MACRO dcolor
   dw ((\3) << 10) + ((\2) << 5) + (\1)
   ENDM
     
 ;CGB palette color indexes are stored as big-endian words for some reason
-dpalette: MACRO
+MACRO dpalette
   dw (\1 >> 8) | ((\1 & $FF) << 8)
   dw (\2 >> 8) | ((\2 & $FF) << 8)
   dw (\3 >> 8) | ((\3 & $FF) << 8)
@@ -64,14 +64,14 @@ dpalette: MACRO
   dw (\8 >> 8) | ((\8 & $FF) << 8)
   ENDM
 
-padend: MACRO
+MACRO padend
   .end\@
     REPT \1 - .end\@
       nop
     ENDR
   ENDM
 
-creditconf: MACRO
+MACRO creditconf
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -80,7 +80,7 @@ creditconf: MACRO
   add hl, de
   ENDM
 
-creditconfset: MACRO
+MACRO creditconfset
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -91,7 +91,7 @@ creditconfset: MACRO
   ld [hl], a
   ENDM
 
-creditconfreset: MACRO
+MACRO creditconfreset
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -102,7 +102,7 @@ creditconfreset: MACRO
   ld [hl], a
   ENDM
 
-creditconfinc: MACRO
+MACRO creditconfinc
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -114,7 +114,7 @@ creditconfinc: MACRO
   ld [hl], a
   ENDM
 
-creditconfdec: MACRO
+MACRO creditconfdec
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -126,7 +126,7 @@ creditconfdec: MACRO
   ld [hl], a
   ENDM
 
-creditconfsetfroma: MACRO
+MACRO creditconfsetfroma
   push af
   ld de, \1
   ld a, [W_CreditsConfigAddressBuffer]
@@ -138,7 +138,7 @@ creditconfsetfroma: MACRO
   ld [hl], a
   ENDM
 
-creditconftextcheck: MACRO
+MACRO creditconftextcheck
   ld de, M_CreditConfigTextIndex
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
@@ -149,7 +149,7 @@ creditconftextcheck: MACRO
   cp $FF
   ENDM
 
-credittext: MACRO
+MACRO credittext
   ld de, M_CreditConfigTextIndex
   ld a, [W_CreditsConfigAddressBuffer]
   ld h, a
