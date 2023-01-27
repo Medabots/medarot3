@@ -89,9 +89,9 @@ SECTION "Tileset Data Tileset3C3F", ROMX[$6128], BANK[$72]
 Tileset3C3F::
   INCBIN "./build/tilesets/Tileset3C3F.malias"
 
-SECTION "Tileset Data Tileset3C4D", ROMX[$5841], BANK[$72]
-Tileset3C4D::
-  INCBIN "./build/tilesets/Tileset3C4D.malias"
+SECTION "Tileset Data OpeningAnimationCharacterNames", ROMX[$5841], BANK[$72]
+OpeningAnimationCharacterNames::
+  INCBIN "./build/tilesets/OpeningAnimationCharacterNames.malias"
 
 SECTION "Tileset Data Tileset3C53", ROMX[$70B0], BANK[$72]
 Tileset3C53::
@@ -114,9 +114,9 @@ Tileset3C6D::
 ;SplashScreenConceptCredit::
 ;  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"
 
-SECTION "Tileset Data Tileset3C71", ROMX[$7600], BANK[$74]
-Tileset3C71::
-  INCBIN "./build/tilesets/Tileset3C71.malias"
+SECTION "Tileset Data BorderTextMedarot3", ROMX[$7600], BANK[$74]
+BorderTextMedarot3::
+  INCBIN "./build/tilesets/BorderTextMedarot3.malias"
 
 SECTION "Tileset Data Tileset3C73", ROMX[$768F], BANK[$74]
 Tileset3C73::
@@ -130,21 +130,21 @@ SECTION "Tileset Data Tileset3C3B", ROMX[$5296], BANK[$72]
 Tileset3C3B::
   INCBIN "./build/tilesets/Tileset3C3B_kabuto.malias"
 
-SECTION "Tileset Data Tileset3C4F", ROMX[$6584], BANK[$72]
-Tileset3C4F::
-  INCBIN "./build/tilesets/Tileset3C4F_kabuto.malias"
+SECTION "Tileset Data OpeningAnimationMedapartsStatus", ROMX[$6584], BANK[$72]
+OpeningAnimationMedapartsStatus::
+  INCBIN "./build/tilesets/OpeningAnimationMedapartsStatus_kabuto.malias"
 
 SECTION "Tileset Data Tileset3C51", ROMX[$6A6F], BANK[$72]
 Tileset3C51::
   INCBIN "./build/tilesets/Tileset3C51_kabuto.malias"
 
-SECTION "Tileset Data Tileset3C57", ROMX[$617E], BANK[$74]
-Tileset3C57::
-  INCBIN "./build/tilesets/Tileset3C57_kabuto.malias"
+SECTION "Tileset Data OpeningAnimationTransformImages1", ROMX[$617E], BANK[$74]
+OpeningAnimationTransformImages1::
+  INCBIN "./build/tilesets/OpeningAnimationTransformImages1_kabuto.malias"
 
-SECTION "Tileset Data Tileset3C59", ROMX[$66A2], BANK[$74]
-Tileset3C59::
-  INCBIN "./build/tilesets/Tileset3C59_kabuto.malias"
+SECTION "Tileset Data OpeningAnimationTransformImages2", ROMX[$66A2], BANK[$74]
+OpeningAnimationTransformImages2::
+  INCBIN "./build/tilesets/OpeningAnimationTransformImages2_kabuto.malias"
 
 SECTION "Tileset Data Tileset3A5F", ROMX[$628F], BANK[$3E]
 Tileset3A5F::

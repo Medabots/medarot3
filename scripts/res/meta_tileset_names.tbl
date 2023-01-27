@@ -279,13 +279,13 @@
 3C47=Tileset3C47
 3C49=Tileset3C49
 3C4B=Tileset3C4B
-3C4D=Tileset3C4D
-3C4F=Tileset3C4F
+3C4D=OpeningAnimationCharacterNames
+3C4F=OpeningAnimationMedapartsStatus
 3C51=Tileset3C51
 3C53=Tileset3C53
-3C55=Tileset3C55
-3C57=Tileset3C57
-3C59=Tileset3C59
+3C55=OpeningAnimationTransformStatus
+3C57=OpeningAnimationTransformImages1
+3C59=OpeningAnimationTransformImages2
 3C5B=Tileset3C5B
 3C5D=StartScreenText
 3C5F=StartScreenMainLogoRotation
@@ -296,7 +296,7 @@
 3C6B=Tileset3C6B
 3C6D=Tileset3C6D
 3C6F=SplashScreenConceptCredit
-3C71=Tileset3C71
+3C71=BorderTextMedarot3
 3C73=Tileset3C73
 3C95=Tileset3C95
 3C97=Tileset3C97

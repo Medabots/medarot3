@@ -350,13 +350,13 @@ TilesetSourceAddressTable::
   dw Tileset3C47 ; 159 (3C47)
   dw Tileset3C49 ; 15A (3C49)
   dw Tileset3C4B ; 15B (3C4B)
-  dw Tileset3C4D ; 15C (3C4D)
-  dw Tileset3C4F ; 15D (3C4F)
+  dw OpeningAnimationCharacterNames ; 15C (3C4D)
+  dw OpeningAnimationMedapartsStatus ; 15D (3C4F)
   dw Tileset3C51 ; 15E (3C51)
   dw Tileset3C53 ; 15F (3C53)
-  dw Tileset3C55 ; 160 (3C55)
-  dw Tileset3C57 ; 161 (3C57)
-  dw Tileset3C59 ; 162 (3C59)
+  dw OpeningAnimationTransformStatus ; 160 (3C55)
+  dw OpeningAnimationTransformImages1 ; 161 (3C57)
+  dw OpeningAnimationTransformImages2 ; 162 (3C59)
   dw Tileset3C5B ; 163 (3C5B)
   dw StartScreenText ; 164 (3C5D)
   dw StartScreenMainLogoRotation ; 165 (3C5F)
@@ -368,7 +368,7 @@ TilesetSourceAddressTable::
   dw Tileset3C6B ; 16B (3C6B)
   dw Tileset3C6D ; 16C (3C6D)
   dw SplashScreenConceptCredit ; 16D (3C6F)
-  dw Tileset3C71 ; 16E (3C71)
+  dw BorderTextMedarot3 ; 16E (3C71)
   dw Tileset3C73 ; 16F (3C73)
   dw TilesetSourceAddressTableEnd ; 170 (3C75)
   dw TilesetSourceAddressTableEnd ; 171 (3C77)
@@ -866,13 +866,13 @@ TilesetInfoTable::
   dbwb BANK(Tileset3C47), $8800, $0 ; 159
   dbwb BANK(Tileset3C49), $9000, $1 ; 15A
   dbwb BANK(Tileset3C4B), $8800, $1 ; 15B
-  dbwb BANK(Tileset3C4D), $8000, $0 ; 15C
-  dbwb BANK(Tileset3C4F), $9000, $0 ; 15D
+  dbwb BANK(OpeningAnimationCharacterNames), $8000, $0 ; 15C
+  dbwb BANK(OpeningAnimationMedapartsStatus), $9000, $0 ; 15D
   dbwb BANK(Tileset3C51), $8800, $0 ; 15E
   dbwb BANK(Tileset3C53), $9000, $1 ; 15F
-  dbwb BANK(Tileset3C55), $9000, $0 ; 160
-  dbwb BANK(Tileset3C57), $8800, $0 ; 161
-  dbwb BANK(Tileset3C59), $9000, $1 ; 162
+  dbwb BANK(OpeningAnimationTransformStatus), $9000, $0 ; 160
+  dbwb BANK(OpeningAnimationTransformImages1), $8800, $0 ; 161
+  dbwb BANK(OpeningAnimationTransformImages2), $9000, $1 ; 162
   dbwb BANK(Tileset3C5B), $9000, $0 ; 163
   dbwb BANK(StartScreenText), $8800, $0 ; 164
   dbwb BANK(StartScreenMainLogoRotation), $9000, $1 ; 165
@@ -884,7 +884,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset3C6B), $9000, $0 ; 16B
   dbwb BANK(Tileset3C6D), $8800, $0 ; 16C
   dbwb BANK(SplashScreenConceptCredit), $9000, $0 ; 16D
-  dbwb BANK(Tileset3C71), $9000, $0 ; 16E
+  dbwb BANK(BorderTextMedarot3), $9000, $0 ; 16E
   dbwb BANK(Tileset3C73), $9170, $0 ; 16F
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 170
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 171
@@ -2192,7 +2192,7 @@ SECTION "Tileset Data Tileset3C39", ROMX[$4C87], BANK[$72]
 Tileset3C39::
   INCBIN "./build/tilesets/Tileset3C39_{GAMEVERSION}.malias"
 
-SECTION "Tileset Data Tileset3C55", ROMX[$5D33], BANK[$74]
-Tileset3C55::
-  INCBIN "./build/tilesets/Tileset3C55_{GAMEVERSION}.malias"
+SECTION "Tileset Data OpeningAnimationTransformStatus", ROMX[$5D33], BANK[$74]
+OpeningAnimationTransformStatus::
+  INCBIN "./build/tilesets/OpeningAnimationTransformStatus_{GAMEVERSION}.malias"
 
