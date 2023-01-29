@@ -4,6 +4,32 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
+W_OpeningSkipButtonPressed EQU $C737
+
+IF !STRCMP("{GAMEVERSION}", "kabuto")
+SECTION "Opening Input Handler", ROMX[$6236], BANK[$03]
+ENDC
+IF !STRCMP("{GAMEVERSION}", "kuwagata")
+SECTION "Opening Input Handler", ROMX[$623C], BANK[$03]
+ENDC
+OpeningInputHandler::
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA | M_JPInputB | M_JPInputStart | M_JPInputSelect
+  jp nz, .buttonPressed
+  xor a
+  ret
+
+.buttonPressed
+  ld a, 2
+  ld [$CF96], a
+  ld hl, W_ScrollInstructions
+  ld bc, $10
+  call memclr
+  ld a, 1
+  ld [W_OpeningSkipButtonPressed], a
+  ld a, 1
+  ret
+
 IF !STRCMP("{GAMEVERSION}", "kabuto")
 SECTION "Load numbers into buffer for text", ROMX[$5698], BANK[$09]
 ENDC
