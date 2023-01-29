@@ -97,6 +97,7 @@ tutorial\
 battle\
 nameentry\
 credits\
+opening\
 npc
 
 # Toolchain
