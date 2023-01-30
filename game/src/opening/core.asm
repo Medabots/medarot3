@@ -60,7 +60,7 @@ OpeningStateMachine::
   dw $4A43
   dw $4BA0
   dw $4BE8
-  dw OpeningIkkiArkiaDrawingState
+  dw OpeningIkkiArikaDrawingState
   dw $4AF5
   dw $4B48
   dw $4B6B
@@ -222,7 +222,7 @@ OpeningDoFadeState::
   jp IncSubStateIndex
 
 SECTION "Opening Animation State Machine 2", ROMX[$4AC8], BANK[$03]
-OpeningIkkiArkiaDrawingState::
+OpeningIkkiArikaDrawingState::
   call $3413
   call $343B
   call $3475
