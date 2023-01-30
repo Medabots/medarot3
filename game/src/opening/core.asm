@@ -120,9 +120,9 @@ OpeningMedalAnimationDrawingState::
   ld hl, W_HasSaveData
   ld bc, $80
   call memclr
-  ld bc, $150
+  ld bc, TilesetIDX_Tileset3C35
   call WrapLoadMaliasGraphics
-  ld bc, $151
+  ld bc, TilesetIDX_Tileset3C37
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
 
@@ -226,9 +226,9 @@ OpeningIkkiArkiaDrawingState::
   call $3413
   call $343B
   call $3475
-  ld bc, $154
+  ld bc, TilesetIDX_Tileset3C3D
   call WrapLoadMaliasGraphics
-  ld bc, $15C
+  ld bc, TilesetIDX_OpeningAnimationCharacterNames
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
 
@@ -237,7 +237,7 @@ OpeningKojiKarinDrawingState::
   call $3413
   call $343B
   call $3475
-  ld bc, $155
+  ld bc, TilesetIDX_Tileset3C3F
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
 
@@ -246,7 +246,7 @@ OpeningScrewsDrawingState::
   call $3413
   call $343B
   call $3475
-  ld bc, $156
+  ld bc, TilesetIDX_Tileset3C41
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
 
@@ -257,6 +257,6 @@ OpeningRoborobodanDrawingState::
   call $3475
   ld a, $70
   ld [W_ShadowREG_SCY], a
-  ld bc, $157
+  ld bc, TilesetIDX_Tileset3C43
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
