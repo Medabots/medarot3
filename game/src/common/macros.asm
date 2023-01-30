@@ -22,6 +22,29 @@ MACRO dbwb
   db \3
   ENDM
 
+MACRO TableStart
+  RSRESET
+  ENDM
+
+; TableAddressEntry TableName,ID
+MACRO TableAddressEntry
+  IF DEF(\1IDX_\2)
+    PURGE \1IDX_\2
+  ENDC
+  DEF \1IDX_\2 RB
+  dw \2
+  EXPORT \1IDX_\2
+  ENDM
+
+MACRO TableAddressBankEntry
+  IF DEF(\1IDX_\2)
+    PURGE \1IDX_\2
+  ENDC
+  DEF \1IDX_\2 RB
+  dwb \2, BANK(\2)
+  EXPORT \1IDX_\2
+  ENDM
+
 MACRO dcolor
   dw ((\3) << 10) + ((\2) << 5) + (\1)
   ENDM

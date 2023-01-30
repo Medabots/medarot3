@@ -146,16 +146,23 @@ if namefile:
 
 with open(os.path.join(version_src_path, "tileset_table.asm"), "w") as output:
     #Hardcoded path for common source
-    output.write('INCLUDE "game/src/common/macros.asm"\n\n')
+    output.write('INCLUDE "game/src/common/macros.asm"\n')
+
+    output.write('''
+MACRO TilesetTableEntry
+  TableAddressEntry Tileset,\\1
+  ENDM\n
+''')
 
     output.write(f'SECTION "Tileset Source Address Table", ROM0[${tiletable:04X}]\n')
     output.write(f'TilesetSourceAddressTable::\n')
+    output.write(f'  TableStart\n')
     for i, key in enumerate(tileset_metadata[default_version]):
         bank = tileset_metadata[default_version][key][0]
         ptr = tileset_metadata[default_version][key][1]
         realptr = utils.rom2realaddr((bank, ptr))
         name = nametable[key] if key in nametable else nametable[realptr_key_map[default_version][realptr]]
-        output.write(f"  dw {name} ; {i:02X} ({(tiletable + i * 2):04X})\n")
+        output.write(f"  TilesetTableEntry {name} ; {i:02X} ({(tiletable + i * 2):04X})\n")
     output.write(f"{nametable[terminator]}::\n\n")
 
     output.write(f'SECTION "Tileset Info Table", ROMX[${infotable[1]:04X}], BANK[${infotable[0]:X}]\n')
