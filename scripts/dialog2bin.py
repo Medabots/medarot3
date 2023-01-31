@@ -164,6 +164,10 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                         bintext.append(int(s, 16)) # f[00, FF], 0 is normal
                     else:
                         raise Exception(f"Unknown special_type {special_type} in {txt}")
+            except Exception as e:
+                print(f"Error processing [{pointer}]")
+                print(f"\t{txt}")
+                raise e
             finally:
                 i += 1
 
