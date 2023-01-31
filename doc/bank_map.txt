@@ -249,7 +249,7 @@ F7: (empty)
 F8: (empty)
 F9: (empty)
 FA: (empty)
-FB: (empty)
+FB: Patched 2bpp gfx
 FC: Patched 2bpp gfx
 FD: Patched 2bpp gfx
 FE: Patch-specific 1bpp gfx

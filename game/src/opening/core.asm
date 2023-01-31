@@ -259,4 +259,11 @@ OpeningRoborobodanDrawingState::
   ld [W_ShadowREG_SCY], a
   ld bc, TilesetIDX_Tileset3C43
   call WrapLoadMaliasGraphics
+  jp OpeningRoborobodanDrawingStateCont
+
+SECTION "(Hack) Bank 3 extra space", ROMX[$7FF7], BANK[$03]
+OpeningRoborobodanDrawingStateCont:
+  ld bc, TilesetIDX_OpeningAnimationRoboRoboGang
+  call WrapLoadMaliasGraphics
   jp IncSubStateIndex
+

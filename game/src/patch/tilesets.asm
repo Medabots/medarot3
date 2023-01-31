@@ -40,7 +40,21 @@ PatchTilesetStart\1::
 PatchTilesetEnd\1::
 ENDM
 
-SECTION "Patch 2bpp Tilesets 1", ROMX[$4000], BANK[$FC]
+MACRO PatchTilesetEntry2
+PatchTilesetStart\1::
+  INCBIN "./build/tilesets/patch/\1.2bpp"
+PatchTilesetEnd\1::
+ENDM
+
+SECTION "Patch 2bpp Tilesets 1", ROMX[$4000], BANK[$FB]
+StartScreenText::
+  INCBIN "./build/tilesets/StartScreenText.malias"
+StartScreenMainLogoRotation::
+  INCBIN "./build/tilesets/StartScreenMainLogoRotation.malias"
+StartScreenMainLogo::
+  INCBIN "./build/tilesets/StartScreenMainLogo.malias"
+
+SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FC]
 ; Include certain 2bpp 'malias' uncompressed graphics here
 MainDialog1::
   INCBIN "./build/tilesets/MainDialog1.malias"
@@ -77,7 +91,7 @@ ChapterScreenChapterNumber5::
 ChapterScreenChapterNumber6::
   INCBIN "./build/tilesets/ChapterScreenChapterNumber6.malias"
 
-SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FD]
+SECTION "Patch 2bpp Tilesets 3", ROMX[$4000], BANK[$FD]
 ; Include certain 2bpp 'malias' uncompressed graphics here
 ChapterScreenChapterTitle1::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle1.malias"
@@ -94,15 +108,9 @@ ChapterScreenChapterTitle5::
 ChapterScreenChapterTitle6::
   INCBIN "./build/tilesets/ChapterScreenChapterTitle6.malias"
 SplashScreenConceptCredit::
-  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias" 
-
-SECTION "Patch 2bpp Tilesets 3", ROMX[$4000], BANK[$FB]
-StartScreenText::
-  INCBIN "./build/tilesets/StartScreenText.malias"
-StartScreenMainLogoRotation::
-  INCBIN "./build/tilesets/StartScreenMainLogoRotation.malias"
-StartScreenMainLogo::
-  INCBIN "./build/tilesets/StartScreenMainLogo.malias" 
+  INCBIN "./build/tilesets/SplashScreenConceptCredit.malias"
+OpeningAnimationRoboRoboGang::
+  INCBIN "./build/tilesets/patch/OpeningAnimationRoboRoboGang.malias"
 
 SECTION "Patch GFX", ROMX[$4000], BANK[$FE]
 PatchTilesets::
