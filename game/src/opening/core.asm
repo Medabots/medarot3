@@ -87,8 +87,8 @@ OpeningStateMachine::
   dw OpeningRoborobodanDrawingState
   dw $4DA0
   dw $4DC9
-  dw $4DDC
-  dw $4E01
+  dw OpeningRoborobodanScrollInState
+  dw OpeningRoborobodanSetupScrollOutState
   dw $4E11
   dw $4E31
   dw OpeningDoFadeState
@@ -261,9 +261,35 @@ OpeningRoborobodanDrawingState::
   call WrapLoadMaliasGraphics
   jp OpeningRoborobodanDrawingStateCont
 
+SECTION "Opening Animation State Machine 6", ROMX[$4DDC], BANK[$03]
+OpeningRoborobodanScrollInState::
+  ld a, [W_ShadowREG_SCY]
+  add a, $04
+  ld [W_ShadowREG_SCY], a
+  ld a, [$C124]
+  add a, $04
+  ld [$C124], a
+  ld a, $01
+  ld [W_OAM_SpritesReady], a
+  ld a, [W_HasSaveData]
+  dec a
+  ld [W_HasSaveData], a
+  ret nz
+  ld a, $31 ; Wait for 31 iterations
+  ld [W_HasSaveData], a
+  jp IncSubStateIndex
+OpeningRoborobodanSetupScrollOutState::
+  ld a, [W_HasSaveData]
+  dec a
+  ld [W_HasSaveData], a
+  ret nz
+  ld a, $24 ; Scroll for 24/4 iterations (SCY)
+  ld [W_HasSaveData], a
+  jp IncSubStateIndex
+
 SECTION "(Hack) Bank 3 extra space", ROMX[$7FF7], BANK[$03]
 OpeningRoborobodanDrawingStateCont:
   ld bc, TilesetIDX_OpeningAnimationRoboRoboGang
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
-
+  
