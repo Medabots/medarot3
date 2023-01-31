@@ -275,7 +275,7 @@ OpeningRoborobodanScrollInState::
   dec a
   ld [W_HasSaveData], a
   ret nz
-  ld a, $31 ; Wait for 31 iterations
+  ld a, $35 ; Wait for 35 iterations
   ld [W_HasSaveData], a
   jp IncSubStateIndex
 OpeningRoborobodanSetupScrollOutState::
@@ -283,7 +283,7 @@ OpeningRoborobodanSetupScrollOutState::
   dec a
   ld [W_HasSaveData], a
   ret nz
-  ld a, $24 ; Scroll for 24/4 iterations (SCY)
+  ld a, $20 ; Scroll for 20 iterations
   ld [W_HasSaveData], a
   jp IncSubStateIndex
 
@@ -292,4 +292,3 @@ OpeningRoborobodanDrawingStateCont:
   ld bc, TilesetIDX_OpeningAnimationRoboRoboGang
   call WrapLoadMaliasGraphics
   jp IncSubStateIndex
-  
