@@ -240,10 +240,3 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 236,\x11,\x04,for playing!
 237,\x00,\x02,\xCB
 238,\x00,\x02,\xCC
-239,\x00,\x02,\xCB
-240,\x00,\x02,\xCD
-241,\x00,\x02,\xCB
-242,\x11,\x04,Thank you
-243,\x11,\x04,for playing!
-244,\x00,\x02,\xCB
-245,\x00,\x02,\xCC
