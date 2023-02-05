@@ -1,9 +1,9 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x240000,"<@RL,0B,00>行くぞ! レアメダル!<CF><D1><@RL,0D,01>足手まといには ならないわよ!<CF><D1><@RL,0B,00>行くぞ!","<@RL,0B,00>Let's go! Rare Medals!<CF><D1><@RL,0D,01>I won't be a burden!<CF><D1><@RL,0B,00>Let's go!"
+000,0x240000,"<@RL,0B,00>行くぞ! レアメダル!<CF><D1><@RL,0D,01>足手まといには ならないわよ!<CF><D1><@RL,0B,00>行くぞ!","<@RL,0B,00>Rare Medals!<CF><D1><@RL,0D,01>I won't be a burden!<CF><D1><@RL,0B,00>Let's go!"
 001,0x240002,"<@RL,0B,01>よし! しめいは はたした!","<@RL,0B,01>Nice, we made it to the end!"
 002,0x240004,"<@LL,00,07>あ! レトルトさん!","<@LL,00,07>Ah! It's Phantom Retort!"
 003,0x240006,"<@RL,0B,01>きょうリょく かんしゃする<CD><&BUF03>くん!<CF><D1>また 会おう! ふははははは!","<@RL,0B,01>Thanks for the help <&BUF03>!<CF><D1>We'll meet again! Fuahahah!"
-004,0x240008,"<@RL,0D,01>またね <&BUF03>くん<CF><D1><@LL,00,06>あの...っ! レトルトレディ!<CF><D1><@RL,0D,01>しんぱいないわよ!<CD>レトルトも わたしも<CF><D1>そろそろ マンションに もどるわ<CD>やくめは とリあえず<CF><D1>おわったんだからね<CD>それじゃ ま.た.ね♥","<@RL,0D,01>See you <&BUF03>~<CF><@LL,00,06>Uhm... ah! Lady Retort!<CF><@RL,0D,01>Don't worry!<CF>Retort and I will go now to the mansion<D3>since our mision is finished already.<CF>See you later~♥"
+004,0x240008,"<@RL,0D,01>またね <&BUF03>くん<CF><D1><@LL,00,06>あの...っ! レトルトレディ!<CF><D1><@RL,0D,01>しんぱいないわよ!<CD>レトルトも わたしも<CF><D1>そろそろ マンションに もどるわ<CD>やくめは とリあえず<CF><D1>おわったんだからね<CD>それじゃ ま.た.ね♥","<@RL,0D,01>See you <&BUF03>~<CF><@LL,00,06>Uhm... ah! Lady Retort!<CF><@RL,0D,01>Don't worry!<CF>Phantom and I will go now to the mansion<D3>since our mision is finished.<CF>See you later~♥"
 005,0x24000a,"<@LL,00,04>かあっこいいなぁ♥<CF><D1><@LL,00,01>...さてと ぼくも かえろっと!","<@LL,00,04>So cool♥<CF><@LL,00,01>...I should get going too!"
 006,0x24000c,"<@LL,00,00>あれ? 何だろ この メダル<CF><D1>レトルトさんたち おとして<CD>いったのかな?<CF><D1>ぼくが 持ってても いいのかな?","<@LL,00,00>Huh? What is this medal?<CF>Did Phantom Retort and the others<D3>leave it here?<CF><D1>I wonder if it's OK for me to take it?"
 007,0x24000e,"<@RL,13,00>なかにわ 今 大変なことに なってて<CD>こわくて 入れないよ...","<@RL,13,00>Something terrible is happening inside.<CF>I'm too afraid to enter..."
