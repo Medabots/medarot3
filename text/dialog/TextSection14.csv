@@ -26,21 +26,21 @@
 023,0x1ec02e,"<@RL,14,00>ようじも ないのに<CD>しょくいんしつに 入るんじゃない!","<@RL,14,00>Don't come in the staff room for no reason!"
 024,0x1ec030,"<@RL,14,00>何っ!? とリあげられた<CD>ものを かえしてほしい?<CF><D1>ふざけるんじゃないっ!","<@RL,14,00>What!? Return the medal I<D3>confiscated? <CF><D1>You must be joking!"
 025,0x1ec032,"<@RL,14,00>先生の まけだ...","<@RL,14,00>I'm a teacher, and still I<D3>lost..."
-026,0x1ec034,"<@RL,14,00>わたしが 新学園長の きょういく<CD>ほうしんに したがうのは<CF><D1>しんけんロボトルに まけたからだよ<CF><D1><@LL,00,00>大人は ロボトルしても<CD>いいんですか?<CF><D1><@RL,14,00>そういう 話だ<CF><D1><@LL,00,05>大人って ずるい",
+026,0x1ec034,"<@RL,14,00>わたしが 新学園長の きょういく<CD>ほうしんに したがうのは<CF><D1>しんけんロボトルに まけたからだよ<CF><D1><@LL,00,00>大人は ロボトルしても<CD>いいんですか?<CF><D1><@RL,14,00>そういう 話だ<CF><D1><@LL,00,05>大人って ずるい","<@RL,14,00>I'm only following the new headmaster's educational policy because I lost an earnest robattle.<CF><D1><@LL,00,00>Adults robattle too?<CF><D1><@RL,14,00>I said as much.<CF><D1><@LL,00,05>Adults don't play fair."
 027,0x1ec036,"<@RL,14,00>わたしが 新学園長の きょういく<CD>ほうしんに したがうのは<CF><D1>しんけんロボトルに まけたからだよ<CF><D1><@LR,02,00>大人のかたは ロボトルしても<CD>よろしいんですか?<CF><D1><@RL,14,00>そういう 話だ<CF><D1><@LR,02,05>大人のかたって ずるいですわ<CF><D1><@RL,14,00>......",
 028,0x1ec038,"<@RL,14,00>新学園長の きょういくほうしんが<CD>変わったので<CF><D1>思うぞんぶん ロボトルできるぞ",
 029,0x1ec03a,"<@RL,14,00>また 先生の まけだ...",
 030,0x1ec03c,"<@RL,1D,00>な 何? 先生は<CD>いそがしいのよっ","<@RL,1D,00>W-what? I'm busy right now.<D3>"
 031,0x1ec03e,"<@RL,1D,00>えっ! とリあげられた<CD>メダルですって?","<@RL,1D,00>Eh? A confiscated medal?"
 032,0x1ec040,"<@RL,1D,00>お 大きな 声じゃ 言えないけど<CF><D1>とリあげたものは おくに いる<CD>メダロットが 持ってるわ<CF><D1><@LL,00,05>でも ヘやの 前に 先生がいて<CD>通れそうに ないです<CF><D1><@RL,1D,00>メダロッチ 持ってるなら<CD>そんなときは ロボトルよ!<CF><D1><@LL,00,04>あ なるほど!<CF><D1><@LL,00,00>でも 先生 どうして ぼくに<CD>きょうリょくして くれるんです?<CF><D1><@RL,1D,00>わたしが そうしたいからよ!","<@RL,1D,00>I can't be too loud saying it, but...<CF><D1>The Medarot in the back has what was confiscated.<CF><D1><@LL,00,05>There's a teacher in front of the room, I don't think I'll be able to get through though.<CF><D1><@RL,1D,00>If you have a Medarotch, decide things by robattling!<CF><D1><@LL,00,04>Ah, I see!<CF><D1><@LL,00,00>But why are you helping me?<CF><D1><@RL,1D,00>I just want to!"
-033,0x1ec042,"<@RL,1D,00>早く 行って!<CD>貝つかるわ!",
-034,0x1ec044,"<@RL,1D,00>いそがしいから また あとでね",
+033,0x1ec042,"<@RL,1D,00>早く 行って!<CD>貝つかるわ!","<@RL,1D,00>Hurry and go! You'll find it."
+034,0x1ec044,"<@RL,1D,00>いそがしいから また あとでね","<@RL,1D,00>I'm busy, see you later."
 035,0x1ec046,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?",
 036,0x1ec048,"<@RL,1D,00>ちょ...ちょんまげ!?<CF><D1><@LR,02,00>あら? 先生 何か<CD>ごぞんじなんですか?",
 037,0x1ec04a,"<@RL,1D,00>し 知らないわ<CD>先生は いそがしいのよっ",
 038,0x1ec04c,"<@RL,14,00>ここは 通さん!","<@RL,14,00>This place is off limits!"
 039,0x1ec04e,"<@RL,14,00>ここは 通さん!<CF><D1><@LL,00,00>先生! ロボトルで<CD>しょうぶですっ!!<CF><D1><@RL,14,00>何をぅ!?<CD>なまいきなっ!","<@RL,14,00>This place is off limits!<CF><D1><@LL,00,00>Teacher! Let's robattle!!<CF><D1><@RL,14,00>What!?<D3>Don't be so impertinent!"
-040,0x1ec050,"<@RL,14,00>ひ ひどい!<CD>先生を 何だと 思ってるんだ!",
+040,0x1ec050,"<@RL,14,00>ひ ひどい!<CD>先生を 何だと 思ってるんだ!","<@RL,14,00>H-how brash! What do you think you're doing to a teacher?"
 041,0x1ec052,"<@RL,14,00>どうじょうは いらないっ!","<@RL,14,00>I don't need your pity!"
 042,0x1ec054,"<@RL,30,00>何だ? お前は!<CF><D1><@LL,00,00>何か みょうに えらそうな<CD>メダロットだな<CF><D1><@RL,30,00>えらそうとは 何だ!<CF><D1>お前こそ 子どものくせに<CD>なまいきだぞ!","<@RL,30,00>What's that? You there!<CF><D1><@LL,00,00>What a weirdly pompous<D3>Medabot.<CF><D1><@RL,30,00>What do you mean, pompous??<CF><D1>Although you're a child, you're<D3>so impertinent!"
 043,0x1ec056,"<@LL,00,02>とリあげた メダル<CD>もってるんだろ? かえせよ!<CF><D1><@RL,30,00>ふん! 持ってけっ!","<@LL,00,02>You have the stolen medal,<D3>right? Give it back!<CF><D1><@RL,30,00>Hmmph! Take it!"
