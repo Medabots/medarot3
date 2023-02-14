@@ -124,7 +124,7 @@
 122,0x900f4,使用ふのうの マイナス症状!<CD><&BUF01>パ-ツが 使えなくなった!<S46><*04>,Disable is effected! <D3>Unable to use <&BUF01> part!<S46><*04>
 123,0x900f6,マイナス症状クリアによって<CD>こんらんが ぼうがいされた!<S46><*04>,Confuse was jammed by<D3>Minus Status Clear!<S46><*04>
 124,0x900f8,症状むこうパ-ツによって<CD>こんらんが ぼうがいされた!<S46><*04>,Confuse was jammed by<D3>Negate Status part!<S46><*04>
-125,0x900fa,<&BUF02>は こんらんした!<CD>攻撃のあいてが さだまらない!<S46><*04>,<&BUF02> is confused!<CF>Actions and targets will be randomized!<S46><*04>
+125,0x900fa,<&BUF02>は こんらんした!<CD>攻撃のあいてが さだまらない!<S46><*04>,<&BUF02> is confused!<D3>Actions and targets will be randomized!<S46><*04>
 126,0x900fc,うばいとる のこリ回数がない!<S46><*04>,No uses to take!<S46><*04>
 127,0x900fe,頭パ-ツの回数を <&BUF00>うばいとった!<S46><*04>,Taken <&BUF00> from head part!<S46><*04>
 128,0x90100,マイナス症状クリアによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,Minus Status Cleared!<D3>Unavoidable cancelled!<S46><*04>

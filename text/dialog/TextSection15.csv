@@ -274,9 +274,9 @@
 272,0x1f0220,"<@RL,34,00>おそうじ おそうじ!<CD>さっさ さっさ","<@RL,34,00>Cleaning, cleaning!<D3>Humm-dee-dumm!"
 273,0x1f0222,"<@LL,00,00>金ピカの メダルだ<CF><D1>金で 作ってあるだけで<CD>ほんものじゃないみたいだ","<@LL,00,00>It's a shiny gold medal.<CF><D1>It's made of gold, but it's not<D3>the real thing."
 274,0x1f0224,"<@LL,00,04>ステゴザウルス型メダロットだ<CD>かたそうな そうこうだ","<@LL,00,04>It's a stegasaurus type<D3>medabot. Its armor looks<CF><D1>tough."
-275,0x1f0226,"<@LL,00,04>トリケラトプス型メダロットだ<CD>どっしリしてて がんじょうそう",
+275,0x1f0226,"<@LL,00,04>トリケラトプス型メダロットだ<CD>どっしリしてて がんじょうそう","<@LL,00,04>It's a triceratops-type medarot. Its bulk and weight seem solid."
 276,0x1f0228,"<@RL,2F,00>おそうじ してると<CD>心が あらわれる ようです","<@RL,2F,00>Cleaning seems to soothe the<D3>soul."
-277,0x1f022a,"<@RL,2F,00>おそうじ とっても<CD>気もちE-♥",
+277,0x1f022a,"<@RL,2F,00>おそうじ とっても<CD>気もちE-♥","<@RL,2F,00>Cleaning is so nice ♥"
 278,0x1f022c,"<@RL,15,00>ぐが- ぐご-<CF><D1><@LL,00,05>すごい いびき","<@RL,15,00>Guuugaa...Guuugoo...<CF><D1><@LL,00,05>What terrible snoring."
 279,0x1f022e,"<@RL,15,00>メダロットたちが よく<CD>はたらいてくれるから たすかるわ","<@RL,15,00>Medabots often do our work<D3>for us. That makes them quite<CF><D1>helpful!"
 280,0x1f0230,"<@RL,33,00>ここは この町1番の<CD>お金もちの 家なんだよ!","<@RL,33,00>This is the richest household<D3>in town, you know!"
