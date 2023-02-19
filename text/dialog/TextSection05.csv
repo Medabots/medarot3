@@ -10,16 +10,16 @@
 008,0x963e0,<SFF>ブレイク攻撃<CD>せいこうが 2ばいになる<*04>,<SFF><f02>Break<f00>: <f01>Has double the usual<D3>success rate.<f00><*04>
 009,0x963e2,<SFF>プレス攻撃<CD>せいこうが 2ばいになる<*04>,<SFF><f02>Press<f00>: <f01>Has double the usual<D3>success rate.<f00><*04>
 010,0x963e4,<SFF>デストロイ攻撃    (ダイレクト)<CD>せなかを むけた てきを はかいする<*04>,<SFF><f02>Destroy (Direct)<f00>:<f01>Target loses<D3>a part if target is cooling down.<f00><*04>
-011,0x963e6,<SFF>サクリファイス攻撃  (ダイレクト)<CD>パ-ツを ぎせいにして 大ダメ-ジ<*04>,<SFF><f02>Sacrifice (Direct)<f00>: <f01>Sacrifice<D3>this part for massive damage.<f00><*04><D3>
+011,0x963e6,<SFF>サクリファイス攻撃  (ダイレクト)<CD>パ-ツを ぎせいにして 大ダメ-ジ<*04>,<SFF><f02>Sacrifice (Direct)<f00>: <f01>Sacrifice<D3>this part for massive damage.<f00><*04>
 012,0x963e8,<SFF>バグ攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Bug<f00>: <f01>Decreases target's success<D3>rate. <f00><*04>
 013,0x963ea,<SFF>ウィルス攻撃<CD>行動の せいこうリつを 下げる<*04>,<SFF><f02>Virus<f00>: <f01>Decreases target's success<D3>rate. <f00><*04>
 014,0x963ec,<SFF>ウェ-ブ攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Wave<f00>: <f01>Slows opponent's<D3>preparation time.<f00><*04>
 015,0x963ee,<SFF>ホ-ルド攻撃<CD>じゅんび時間を ながくする<*04>,<SFF><f02>Hold<f00>: <f01>Slows opponent's preparation<D3>time.<f00><*04>
-016,0x963f0,<SFF>ファイヤ-攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Fire<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
-017,0x963f2,<SFF>メルト攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Melt<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04><D3>
-018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Thunder<f00>: <f01>Stops your opponent<D3>from moving.<f00><*04><D3>
+016,0x963f0,<SFF>ファイヤ-攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Fire<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04>
+017,0x963f2,<SFF>メルト攻撃<CD>じゅんび中も ダメ-ジをあたえる<*04>,<SFF><f02>Melt<f00>: <f01>Deals passive damage as<D3>time passes.<f00><*04>
+018,0x963f4,<SFF>サンダ-攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Thunder<f00>: <f01>Stops your opponent<D3>from moving.<f00><*04>
 019,0x963f6,<SFF>フリ-ズ攻撃<CD>あいての 動きを ストップさせる<*04>,<SFF><f02>Freeze<f00>: <f01>Stops your opponent<D3>from moving.<f00><*04>
-020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,<SFF><f02>Counter<f00>:<f01> Target will shutdown<f00><D3><f01>when countdown reaches 0.<f00><*04>
+020,0x963f8,<SFF>カウントダウン攻撃  (ダイレクト)<CD>カウントが 0になると きのうていし<*04>,<SFF><f02>Countdown<f00>:<f01> Target will shut-<f00><D3><f01>down when countdown reaches 0.<f00><*04>
 021,0x963fa,<SFF>ホ-ムシック攻撃   (ダイレクト)<CD>時々 行動せずに 引きかえす<*04>,<SFF><f02>Homesick (Direct)<f00>:<f01> Target<D3>sometimes retreats mid-action.<f00><*04>
 022,0x963fc,<SFF>ぼうぎょ行動<CD>みかたの メダロットを えんごする<*04>,<SFF><f02>Defend<f00>: <f01>Protect your allies.<f00><*04>
 023,0x963fe,<SFF>かんぜんぼうぎょ行動<CD>みかたヘの 攻撃を ブロックする<*04>,<SFF><f02>Complete Defense<f00>: <f01>Block<D3>attacks aimed at your allies.<f00><*04>

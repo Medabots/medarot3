@@ -58,7 +58,7 @@
 056,0x90070,そくばくの マイナス症状!<CD>じゅんび時間が 長くなる!<S46><*04>,Bind!<D3>Preparation time has been slowed!<S46><*04>
 057,0x90072,けいぞくの マイナス症状!<CD>じゅんび時間にも ダメ-ジ!<S46><*04>,Burn!<D3>Damage will be dealt over time!<S46><*04>
 058,0x90074,ていしの マイナス症状!<CD>何も 行動ができない!<S46><*04>,Paralyzed!<D3>Movement is halted!<S46><*04>
-059,0x90076,カウントダウンの マイナス症状!<CD>「0」になると きのうていし!<S46><*04>,Counter status! Shutdown will occur once count reaches <f02>0<f00>.<S46><*04>
+059,0x90076,カウントダウンの マイナス症状!<CD>「0」になると きのうていし!<S46><*04>,Countdown status! Shutdown will occur once count reaches <f02>0<f00>.<S46><*04>
 060,0x90078,ホ-ムシックの マイナス症状!<CD>時々 家にかえリたくなる!<S46><*04>,Homesick!<D3>Sometimes will turn back mid-prep!<S46><*04>
 061,0x9007a,カウントダウンが かんリょう!<CD>メダロットが きのうていしした!<S46><*04>,Countdown finished!<D3>The Medarot has shutdown!<S46><*04>
 062,0x9007c,カン!カン!カン! ロボトルエンド!<CD>さあ これで 時間切れです!<CF>はんていのけっかを 貝てみましょう!<CD>はんていのけっか!<CF><&BUF02>の 勝利です!<S46><*04>,Ding! Ding! Ding! Time is up!<D3>The Robattle is over! <CF>Let's see who won the<D3>Robottle! The result is...!<CF><&BUF02> is the winner!<S46><*04>
