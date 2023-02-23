@@ -13,7 +13,7 @@
 011,0x11c016,"<@LL,00,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,00,04>It's a vending machine <D3>that has juice. <CF>I'm not thirsty right now."
 012,0x11c018,"<@LL,00,00>おこられそうだから やめておこう","<@LL,00,00>I'll get in trouble if do that,<D3>so I'd better not."
 013,0x11c01a,"<@LL,00,00>むずかしそうな 本が ならんでる","<@LL,00,00>There are Books lined up here. <D3>They seem to be difficult."
-014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,00,03>よむんじゃ なかった...","History of Medarot'<CF>1:Black and white<CF>2:B&W with color support<CF>3:Color enhanced<CF>That's all.<CF><@LL,00,03>Why did I read that..."
+014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,00,03>よむんじゃ なかった...","<f02>History of Medarot<f00><CF>1:Black and white<CF>2:B&W with color support<CF>3:Color enhanced<CF>That's all.<CF><@LL,00,03>Why did I read that..."
 015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,"<f02>Medarot News (Transformation Special)<f00><CF>With the creation of transforming Medarots, the Medarot Company has<D3>announced additional features to be added to the Medarotch.<CF>The features will be delivered via an automatic update."
 016,0x11c020,「メダロットの ちしき<CD> ティンペット(1)」<CF>ティンペットは 男型と 女型の<CD>2しゅるいに わかれておリ<CF>それぞれに たいおうした パ-ツしか<CD>そうちゃく できない,<f02>Medabot Knowledge: Tinpets (1)<f00><CF>Tinpets are divided into two types: <f02>Male <f00>and <f02>Female<f00>.<CF>Each type can't equip parts made for the other type.
 017,0x11c022,「メダロットの ちしき<CD> ティンペット(2)」<CF>ティンペットは 全部で<CD>9体まで 持つことができる<CF>いちど 手に入れた ティンペットは<CD>すてることが できないので<CF>男型と 女型を バランスよく<CD>ゲットしていく ひつようがある,"<f02>Medarot Knowledge: Tinpets (2)<CF><f00>Nine tinpets can be held in all.<CF>Once received, a tinpet can't be thrown away.<CF>Therefore, it is necessary to strike a balance between male and female tinpets."
@@ -37,7 +37,7 @@
 035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね","<@LL,00,04>It's very clean and tidy.<CF>In other words, it's a place <D3>where mom works."
 036,0x11c048,"<@LL,00,01>ぎゅうにゅうプリン た-ベよっと!<CF><@LL,00,00>......<CF><@LL,00,03>ない.....","<@LL,00,01>I'm gonna eat a milk pudding!<CF><@LL,00,00>......<CF><@LL,00,03>Nah....."
 037,0x11c04a,"<@LL,00,04>来週の 週刊メダロットも<CD>楽しみだなあ","<@LL,00,04>I'm looking forward to <D3>next weeks Medabots Weekly!"
-038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...","<@LL,00,04>This is my computer.<CF><@LL,00,05>To be honest, I want a laptop<D3> as well, but...<CF>I can't really tell Mom that..."
+038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...","<@LL,00,04>This is my computer.<CF><@LL,00,05>To be honest, I want a laptop as well, but...<CF>I can't really tell Mom that..."
 039,0x11c04e,"<@LL,00,04>あいかわらず<CD>まんがや ざっしで いっぱいだ","<@LL,00,04>As usual, it's crammed full of magazines and manga."
 040,0x11c050,"<@LL,00,07>こんな 大きな モニタ-<CD>貝たことないよ!","<@LL,00,07>I've never seen such a big monitor before!"
 041,0x11c052,"<@LL,00,00>けんばいきだ<CD>キップを かうなら ここだね","<@LL,00,00>It's a ticket machine.<CF>If I want a ticket,<D3> I can buy one here."
@@ -50,38 +50,38 @@
 048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,00,05>.......?"
 049,0x11c062,「セレクト隊 本部」,Select Corp<D3>Headquarters
 050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
-051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always<D3>wanted, mwah!"
-052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!","<@LL,00,04>This is the place of dreams!<D3><f02>Medarotter's!"
-053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>As expected of Medarotter's! <D3>There's loads of products!"
+051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always wanted, mwah!"
+052,0x11c068,"<@LL,00,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!","<@LL,00,04>This is the place of dreams!<D3>Medarotters!"
+053,0x11c06a,"<@LL,00,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,00,04>As expected of Medarotters! <D3>There's loads of products!"
 054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medarot goods lined up."
-055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data<D3>Information Desk.
-056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for<D3>Dummies
+055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data Information Desk.
+056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for Dummies
 057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...","<f02>The Three Principles of Justice<f00><CF>Original, Former Captain<D3>Awamori<CF>One: Turn a blind eye.<CF>One: Let sleeping dogs lie.<CF>One: Discretion is the greater<D3>part of valor.<CF><@LL,00,05>Did that guy really write a<D3>book like this..."
 058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely prohibited!
 059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medaro Department Store."
 060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are a bunch of parts <D3>that are lined up."
 061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine<D3>that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
-062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes <D3>are laid out here.<CF><@LL,00,04>Most of them <D3>are made for girls."
-063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji <D3>and Karin attend."
+062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes are laid out here.<CF><@LL,00,04>Most of them are made for girls."
+063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji and Karin attend."
 064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ","<@LL,00,00>This is Hachiro's house."
 065,0x11c082,"<@LL,00,00>ここは コウジの 家だ","<@LL,00,00>This is Koji's house."
 066,0x11c084,"<@LL,00,00>ここは カリンちゃんの 家だ","<@LL,00,00>This is Karin's house."
 067,0x11c086,"<@LL,00,04>きれいに うえてある<CF>コウジのやつ<CD>けっこう マメだなあ!<CF><@LL,00,00>...と言っても<CD>うえてあるのは マメじゃ ないよ","<@LL,00,04>He must be absolutely famished!<CF>That guy Koji is such a hard worker!<CF><@LL,00,00>...that said, there's nothing diligent about going hungry."
 068,0x11c088,"<@LL,00,00>かってに しらベたら<CD>おこられそうだ","<@LL,00,00>I think I'd get caught if I investigated by myself."
-069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch <D3>anything right now."
+069,0x11c08a,"<@LL,00,04>今は 何も 貝たくないよ","<@LL,00,04>I don't want to watch anything right now."
 070,0x11c08c,"<@LL,00,04>いろんな人の ししゅうが<CD>たくさん ならんでる<CF>カリンちゃんも<CD>しを かくのかな?","<@LL,00,04>There are lots of poem collections by different authors.<CF>Does Karin want to be an author?"
-071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are <D3>lined up here.<CF>Seems just like Karin..."
+071,0x11c08e,"<@LL,00,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,00,04>Lots of novels are lined up here.<CF>Seems just like Karin..."
 072,0x11c090,「レアパ-ツずかん」,A Guide to Rare Parts
 073,0x11c092,"<@LL,00,04>心が やすらぐねえ","<@LL,00,04>My mind feels at ease."
-074,0x11c094,"<@LL,00,00>この学園の 園長先生の ぞうかな?","<@LL,00,00>I wonder if this is what this<D3>academy's principal looks like?"
+074,0x11c094,"<@LL,00,00>この学園の 園長先生の ぞうかな?","<@LL,00,00>I wonder if this is what this academy's principal looks like?"
 075,0x11c096,"<@LL,00,00>このぞうだけ<CD>ほかのと ちがう...<CF>しかも どこかで<CD>貝たこと あるぞ.....?","<@LL,00,00>This statue is different from the rest...<CF>Where have I seen this before...?"
 076,0x11c098,"ふぃっしゅ!ふぃっしゅ!<CF><@LL,00,07>このぞう くしゃみした!?<CF><@LL,00,00>..........<CF>気のせいか.....","Pssh! Pssh!<CF><@LL,00,07>Did this statue just sneeze?!<CF><@LL,00,00> ... You're imagining things."
 077,0x11c09a,"<@LL,00,00>ふつうの げたばこだ","<@LL,00,00>It's an ordinary shoe rack."
-078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness!<CF><@LL,00,05>Geez, it's<D3>not like this is an onsen..."
-079,0x11c09e,「アワノざいばつ ぞうてい」,A gift from Awano<D3>Financial Group
+078,0x11c09c,"<@LL,00,07>マッ...マ-ライオンだ!<CF><@LL,00,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,00,07>It's... it's a lioness!<CF><@LL,00,05>Geez, it's not like this is a hot spring..."
+079,0x11c09e,「アワノざいばつ ぞうてい」,A Gift from Awano Financial Group
 080,0x11c0a0,"<@LL,00,00>かってに 貝たら<CD>おこられるだろうな.....<CF>やめておこう","<@LL,00,00>I'll probably get in trouble if I watch this now."
-081,0x11c0a2,「花園学園の れきし」,The History of <D3>Hanazono School
-082,0x11c0a4,"<@LL,00,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,00,07>A lot of different kinds <D3>of trophies were lined up here!"
+081,0x11c0a2,「花園学園の れきし」,The History of Hanazono Private School
+082,0x11c0a4,"<@LL,00,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,00,07>A lot of different kinds of trophies were lined up here!"
 083,0x11c0a6,"<@LL,00,07>ぎっしリと<CD>メダルが ならんでる!<CF><@LL,00,00>どうやって こんなに<CD>あつめたんだろう...","<@LL,00,07>Those medals are really packed in!<CF><@LL,00,00>How'd they collect so many..."
 084,0x11c0a8,"<@LL,00,03>どれだけ しらベても<CD>もらえっこ ないよね...","<@LL,00,03>No matter how hard I search, I got nothing..."
 085,0x11c0aa,"「マンション リゾット」<CF><@LL,00,04>ヒカルさんと キララさんが<CD>すんでる マンションだ","<f02>Risotto Apartments<f00><CF><@LL,00,04>Hikaru and Kirara live in<D3>these apartments."
@@ -90,7 +90,7 @@
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,"<f02>Medarot Company Precepts<f00><CF>If you think you will lose, you will lose.<CF>If you think it will turn out badly, it will turn out badly for you.<CF>If you think you will fail, you will fail.<CF>If you think you will win, you will win.<CF>Those who think ""I can do it!"" will ultimately win.<CF>Hang in there today!"
 089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?","<@LL,00,07>Ah! Are those parts here...!?<CF><@LL,00,00>...I guess they're just shrimps and crabs...<CF><@LL,00,05>They kind of look alike...<CF><@LL,00,03>Don't they...?"
-091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる","<@LL,00,00>A lot of magazines are lined<D3>up."
+091,0x11c0b6,"<@LL,00,00>ざっしが たくさん ならんでる","<@LL,00,00>A lot of magazines are lined up."
 092,0x11c0b8,"<@LL,00,00>ひらかないみたいだ","<@LL,00,00>Seems like it won't open."
 093,0x11c0ba,「きっさ カマド-マ」,Cafe Kamadoma
 094,0x11c0bc,"<@LL,00,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ","<@LL,00,00>The elevator leads to the Geoport."
