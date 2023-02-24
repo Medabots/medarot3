@@ -10,11 +10,11 @@
 008,0x11c010,"<@LL,00,00>ここは 番長の家だ<CF><@LL,00,05>番長って だれだっけ?","<@LL,00,00>This is the boss's house.<CF><@LL,00,05>But who's the boss, again?"
 009,0x11c012,"<@LL,00,07>大きな きかいだなあ!","<@LL,00,07>It's a big machine!"
 010,0x11c014,"<@LL,00,07>こっ...これは...!?<CF><@LL,00,05>はいせんが ゴチャゴチャしてて<CD>わからない...","<@LL,00,07>Th-this is...!?<CF><@LL,00,05>A real mess of wires..."
-011,0x11c016,"<@LL,00,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,00,04>It's a vending machine <D3>that has juice. <CF>I'm not thirsty right now."
-012,0x11c018,"<@LL,00,00>おこられそうだから やめておこう","<@LL,00,00>I'll get in trouble if do that,<D3>so I'd better not."
-013,0x11c01a,"<@LL,00,00>むずかしそうな 本が ならんでる","<@LL,00,00>There are Books lined up here. <D3>They seem to be difficult."
+011,0x11c016,"<@LL,00,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,00,04>It's a vending machine that has juice.<CF>I'm not thirsty right now."
+012,0x11c018,"<@LL,00,00>おこられそうだから やめておこう","<@LL,00,00>I'll get in trouble if do that, so I'd better not."
+013,0x11c01a,"<@LL,00,00>むずかしそうな 本が ならんでる","<@LL,00,00>There are Books lined up here.<CF>They seem to be difficult."
 014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,00,03>よむんじゃ なかった...","<f02>History of Medarot<f00><CF>1:Black and white<CF>2:B&W with color support<CF>3:Color enhanced<CF>That's all.<CF><@LL,00,03>Why did I read that..."
-015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,"<f02>Medarot News (Transformation Special)<f00><CF>With the creation of transforming Medarots, the Medarot Company has<D3>announced additional features to be added to the Medarotch.<CF>The features will be delivered via an automatic update."
+015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,"<f02>Medarot News (Transformation Special)<f00><CF>With the creation of transforming Medarots, the Medarot Company has announced additional features to be added to the Medarotch.<CF>The features will be delivered via an automatic update."
 016,0x11c020,「メダロットの ちしき<CD> ティンペット(1)」<CF>ティンペットは 男型と 女型の<CD>2しゅるいに わかれておリ<CF>それぞれに たいおうした パ-ツしか<CD>そうちゃく できない,<f02>Medabot Knowledge: Tinpets (1)<f00><CF>Tinpets are divided into two types: <f02>Male <f00>and <f02>Female<f00>.<CF>Each type can't equip parts made for the other type.
 017,0x11c022,「メダロットの ちしき<CD> ティンペット(2)」<CF>ティンペットは 全部で<CD>9体まで 持つことができる<CF>いちど 手に入れた ティンペットは<CD>すてることが できないので<CF>男型と 女型を バランスよく<CD>ゲットしていく ひつようがある,"<f02>Medarot Knowledge: Tinpets (2)<CF><f00>Nine tinpets can be held in all.<CF>Once received, a tinpet can't be thrown away.<CF>Therefore, it is necessary to strike a balance between male and female tinpets."
 018,0x11c024,「メダロットの ちしき<CD> じゅくれんど」<CF>メダルは それぞれ じゅくれんどを<CD>3つしか 持っていない<CF>使いたい パ-ツの<CD>じゅくれんどを 持っていない時は<CF>メダリアを そうちゃくして<CD>サポ-トする方がよい,"<f02>Medarot Knowledge: Skills<f00><CF>Each Medal has only 3 skills.<CF>If you want to use a skill you lack, it is best to use a Medalia to support it."
@@ -44,7 +44,7 @@
 042,0x11c054,"<@LL,00,00>ずかんや じしょが<CD>たくさん ならんでる","<@LL,00,00>Manuals and dictionaries are all lined up."
 043,0x11c056,"<@LL,00,00>学校用パソコンソフトだ<CF>日本の きょういくも<CD>変わったなあ...<CF>われわれが こどものころは<CD>えんぴつも ろくに 手に はいらず<CF>ほたるの 光を たよリに<CD>ベんきょう したもんだ...<CF><@LL,00,01>なんちゃって!","<@LL,00,00>It's software for the school computers.<CF>Japanese education is kind of strange...<CF>We kids often don't have enough pencils...<CF>We rely on light from fireflies to study...<CF><@LL,00,01>Just kidding!"
 044,0x11c058,"<@LL,00,04>う-ん 今日も キマッてる!","<@LL,00,04>Yeah! <D3>I look sharp as always today."
-045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,00,04>Yeah!<D3>I look sharp as always today.<CF><@LL,00,06>...Why am I primping myself<D3>in a girls' bathroom?"
+045,0x11c05a,"<@LL,00,04>う-ん 今日も キマッてる!<CF><@LL,00,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,00,04>Yeah!<D3>I look sharp as always today.<CF><@LL,00,06>...Why am I primping myself in a girls' bathroom?"
 046,0x11c05c,"<@LL,00,03>もちろん ひけない...","<@LL,00,03>No way I can play this..."
 047,0x11c05e,「ドレミから はじめよう」,Starting From Do-Re-Mi
 048,0x11c060,"「ラシドで おわろう」<CF><@LL,00,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,00,05>.......?"
@@ -56,11 +56,11 @@
 054,0x11c06c,"<@LL,00,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,00,04>There are a lot of Medarot goods lined up."
 055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data Information Desk.
 056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for Dummies
-057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...","<f02>The Three Principles of Justice<f00><CF>Original, Former Captain<D3>Awamori<CF>One: Turn a blind eye.<CF>One: Let sleeping dogs lie.<CF>One: Discretion is the greater<D3>part of valor.<CF><@LL,00,05>Did that guy really write a<D3>book like this..."
+057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,00,05>あの人 こんな本<CD>出してたのか...","<f02>The Three Principles of Justice<f00><CF>Original by (former) Captain Awamori<CF>One: Turn a blind eye.<CF>One: Let sleeping dogs lie.<CF>One: Discretion is the greater part of valor.<CF><@LL,00,05>Did that guy really write a book like this..."
 058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely prohibited!
-059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medaro Department Store."
-060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are a bunch of parts <D3>that are lined up."
-061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine<D3>that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
+059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medalo Department Store."
+060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are a bunch of parts that are lined up."
+061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
 062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes are laid out here.<CF><@LL,00,04>Most of them are made for girls."
 063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji and Karin attend."
 064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ","<@LL,00,00>This is Hachiro's house."
@@ -126,4 +126,4 @@
 124,0x11c0f8,"<@LL,00,04>宇宙船や 宇宙ステ-ションの<CD>もけいが かざられている","<@LL,00,04>Models of spaceships and space stations are on display here."
 125,0x11c0fa,"<@LL,00,00>UFOの うんてんって<CD>めんきょしょう いるのかな?","<@LL,00,00>Hey, I wonder if you need a license to pilot a UFO?"
 126,0x11c0fc,"<@LL,00,04>アイスクリ-ムが<CD>たくさん はいっている","<@LL,00,04>There's a lot of ice cream in<D3>here."
-127,0x11c0fe,"<@LL,00,04>のみものが ならんでる<CD>おさけも たくさん あるよ!","<@LL,00,04>Drinks are lined up here. <D3>There's a lot of alcohol too!"
+127,0x11c0fe,"<@LL,00,04>のみものが ならんでる<CD>おさけも たくさん あるよ!","<@LL,00,04>Drinks are lined up here.<D3>There's a lot of alcohol too!"
