@@ -14,7 +14,7 @@
 012,0x240018,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
 013,0x24001a,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
 014,0x24001c,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
-015,0x24001e,ただいま こうひょう レンタル...<CD>ナンダッタッケ ナンカイモ<CF><D1>イッテタラ<CD>ワカラナク ナッチャッタ...,There is a highly rated rental...<D3>Huh?<CF>I can understand no matter how many times you say it...
+015,0x24001e,ただいま こうひょう レンタル...<CD>ナンダッタッケ ナンカイモ<CF><D1>イッテタラ<CD>ワカラナク ナッチャッタ...,There is a highly rated rental...<D3>What was the rest?<CF><D1>I couldn't understand because you kept going...
 016,0x240020,ただいま ちょうせい中,Out of service.
 017,0x240022,"<@LL,00,00>しつれいしま-す!","<@LL,00,00>Excuse me!"
 018,0x240024,"<@LL,00,00>しつれいしました!","<@LL,00,00>Thank you!"
@@ -29,8 +29,8 @@
 027,0x240036,"<@LL,00,07>!!!!<CD>パ-ツが おちてる!!","<@LL,00,07>!!!!<D3>It's raining parts!!"
 028,0x240038,"<@LL,00,07>!!!!<CD>こんな所に パ-ツがっ!!","<@LL,00,07>!!!!<D3>Parts in this place...!!"
 029,0x24003a,"<@LL,00,07>こっこっ これはっ!!<CD>パッ...パ-ツだっ!!!","<@LL,00,07>Th-this are...!!<D3>Pa-Parts!!!"
-030,0x24003c,"<@RL,14,00>な-んにも ない かベってさ...<CD>話しかけられることもなくて<CF><D1>何だかさ...かわいそうだよね<CF><D1>そういう 気持ち ばくには<CD>分かるような 気がするんだ...","<@RL,14,00>There's nothing in this walls...<D3>And nobody to talk either.<CF>Somehow... Looks pitiful, right?<CF>I feel like I am going to have<D3>that sentiment..."
+030,0x24003c,"<@RL,14,00>な-んにも ない かベってさ...<CD>話しかけられることもなくて<CF><D1>何だかさ...かわいそうだよね<CF><D1>そういう 気持ち ばくには<CD>分かるような 気がするんだ...","<@RL,14,00>There's nothing in this wall...<D3>And nobody to talk either.<CF><D1>It's... a bit pitiful, isn't it?<CF><D1>That's the sort of feeling I get from it..."
 031,0x24003e,"<@LL,00,07>パ-ツ 貝っけ!","<@LL,00,07>I found a part!"
 032,0x240040,"<@LL,00,07>パ-ツだ!","<@LL,00,07>It's a part!"
 033,0x240042,"<@LL,00,07>これって パ-ツ!?","<@LL,00,07>Is this... a part?!"
-034,0x240044,"<@RL,18,00>ここに 新しく パ-ツの<CD>自動はんばいきを おいたんだ","<@RL,18,00>Oh, there's an automatic part-vending machine here."
+034,0x240044,"<@RL,18,00>ここに 新しく パ-ツの<CD>自動はんばいきを おいたんだ","<@RL,18,00>Oh, they put a new automated part-vending machine here."
