@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000#kabuto,0x1e4000,"<@RL,35,00>メダロットを どうぐとしか 貝ね-<CD>やつらが こんなこと するんだ<CF><D1><&BUF0A>も いつかは<CD>そんなやつに なっちまうのか?","<@RL,35,00>This is the result of humans<D3>treating Medarots like tools.<CF><D1>Will you be like that one day,<D3><&BUF0A>?"
-000#kuwagata,0x1e4000,"<@RL,36,00>しょせん おれたちは 人間にとって<CD>ベんリな どうぐと 言うわけか...<CF><D1>こわれるまで使い こわれたら すてる<CD>おれも いつかは こうなるのか?","<@RL,36,00>In the end, we're but<D3>convenient tools for humans.<CF><D1>If I'm used until I break, will<D3>this be my fate?"
-001,0x1e4002,"<@LL,00,02>そんなことない! ぼくは そんなこと<CD>しないよ!","<@LL,00,02>No way! I'd never do a thing<D3>like that!"
-002#kabuto,0x1e4004,"<@RL,35,00>本当だな!? わすれね-ぞ!<CD>その ことば!","<@RL,35,00>Really!? You'd better not<D3>forget you said that!"
-002#kuwagata,0x1e4004,"<@RL,36,00>...どうだかな?<CD>口では 何とでも 言える","<@RL,36,00>...Is that so? Well, talk is<D3>cheap."
+000#kabuto,0x1e4000,"<@RL,35,00>メダロットを どうぐとしか 貝ね-<CD>やつらが こんなこと するんだ<CF><D1><&BUF0A>も いつかは<CD>そんなやつに なっちまうのか?","<@RL,35,00>This is the result of humans treating Medarots like tools.<CF><D1>Are you going to treat me like that one day, <&BUF0A>?"
+000#kuwagata,0x1e4000,"<@RL,36,00>しょせん おれたちは 人間にとって<CD>ベんリな どうぐと 言うわけか...<CF><D1>こわれるまで使い こわれたら すてる<CD>おれも いつかは こうなるのか?","<@RL,36,00>In the end, we're nothing but tools of convenience for humans.<CF><D1>If I'm used until I break, will this be my fate?"
+001,0x1e4002,"<@LL,00,02>そんなことない! ぼくは そんなこと<CD>しないよ!","<@LL,00,02>No way! I'd never do anything thing like that!"
+002#kabuto,0x1e4004,"<@RL,35,00>本当だな!? わすれね-ぞ!<CD>その ことば!","<@RL,35,00>Really!? You'd better not forget you said that!"
+002#kuwagata,0x1e4004,"<@RL,36,00>...どうだかな?<CD>口では 何とでも 言える","<@RL,36,00>...Is that so? Well, talk is cheap."

@@ -34,7 +34,7 @@
 032,0x11c040,「メダロットの ちしき<CD> じゅくれんど(とくしゅ)」<CF>てきの 攻撃のダメ-ジを 0にする<CD>パ-ツを メインとして<CF>てきの 攻撃を はねかえす<CD>パ-ツなどの 行動を サポ-トする,<f02>Medarot Knowledge:Skills (Special)<f00><CF>You mainly use parts that make an enemy's attack do 0 damage.<CF>Support your action with parts that let you counterattack.
 033,0x11c042,"<@LL,00,05>あまリ さわらないほうが<CD>いいだろうな...","<@LL,00,05>Maybe I shouldn't mess with this..."
 034,0x11c044,"<@LL,00,04>パパと ママと ぼくの<CD>しょっきが ならんでるよ","<@LL,00,04>The table settings for Mom, Dad, and me are all lined up."
-035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね","<@LL,00,04>It's very clean and tidy.<CF>In other words, it's a place <D3>where mom works."
+035,0x11c046,"<@LL,00,04>きれいに かたづいてる<CF>言ってみれば ここが<CD>ママの しごとば だね","<@LL,00,04>It's very clean and tidy.<CF>As expected of a place that mom works."
 036,0x11c048,"<@LL,00,01>ぎゅうにゅうプリン た-ベよっと!<CF><@LL,00,00>......<CF><@LL,00,03>ない.....","<@LL,00,01>I'm gonna eat a milk pudding!<CF><@LL,00,00>......<CF><@LL,00,03>Nah....."
 037,0x11c04a,"<@LL,00,04>来週の 週刊メダロットも<CD>楽しみだなあ","<@LL,00,04>I'm looking forward to <D3>next weeks Medabots Weekly!"
 038,0x11c04c,"<@LL,00,04>これは ぼくの パソコンだ<CF><@LL,00,05>じつは ノ-ト型パソコンも<CD>ほしいんだけど...<CF>ちょっと ママには<CD>言えないなあ...","<@LL,00,04>This is my computer.<CF><@LL,00,05>To be honest, I want a laptop as well, but...<CF>I can't really tell Mom that..."
@@ -60,7 +60,7 @@
 058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely prohibited!
 059,0x11c076,"<@LL,00,00>ここは メダロデパ-トだ","<@LL,00,00>This is the Medalo Department Store."
 060,0x11c078,"<@LL,00,04>パ-ツが たくさん ならんでる","<@LL,00,04>There are a bunch of parts that are lined up."
-061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>Nah..."
+061,0x11c07a,"<@LL,00,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,00,01>プリンアイスは......!<CF><@LL,00,03>ない......","<@LL,00,04>It's a vending machine that sells ice cream.<CF><@LL,00,01>Pudding ice cream...!<CF><@LL,00,03>I shouldn't..."
 062,0x11c07c,"<@LL,00,00>きれいな ようふくが<CD>たっくさん ならベてある<CF><@LL,00,04>ほとんどが 女の人用だ","<@LL,00,00>Lots of pretty clothes are laid out here.<CF><@LL,00,04>Most of them are made for girls."
 063,0x11c07e,"「花園学園」<CF><@LL,00,04>コウジや カリンちゃんの<CD>通う 学校だ","<f02>Hanazono Private School<CF><f00><@LL,00,04>This is the school that Koji and Karin attend."
 064,0x11c080,"<@LL,00,00>ここは ハチロウの 家だ","<@LL,00,00>This is Hachiro's house."
@@ -86,7 +86,7 @@
 084,0x11c0a8,"<@LL,00,03>どれだけ しらベても<CD>もらえっこ ないよね...","<@LL,00,03>No matter how hard I search, I got nothing..."
 085,0x11c0aa,"「マンション リゾット」<CF><@LL,00,04>ヒカルさんと キララさんが<CD>すんでる マンションだ","<f02>Risotto Apartments<f00><CF><@LL,00,04>Hikaru and Kirara live in<D3>these apartments."
 086,0x11c0ac,「レストラン ドン.ペリ」,Restaurant Dom Peri
-087,0x11c0ae,「メダロット社」,Medabot Company
+087,0x11c0ae,「メダロット社」,Medarot Company
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,"<f02>Medarot Company Precepts<f00><CF>If you think you will lose, you will lose.<CF>If you think it will turn out badly, it will turn out badly for you.<CF>If you think you will fail, you will fail.<CF>If you think you will win, you will win.<CF>Those who think ""I can do it!"" will ultimately win.<CF>Hang in there today!"
 089,0x11c0b2,"<@LL,00,04>ん- いいにおい!","<@LL,00,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,00,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,00,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,00,05>何とな-く にてるよね?<CF><@LL,00,03>にてない...?","<@LL,00,07>Ah! Are those parts here...!?<CF><@LL,00,00>...I guess they're just shrimps and crabs...<CF><@LL,00,05>They kind of look alike...<CF><@LL,00,03>Don't they...?"
@@ -102,7 +102,7 @@
 100,0x11c0c8,「高おん岩体 はつ電所」,Geothermal Power Plant
 101,0x11c0ca,「ツチノエ小学校」,Tsuchinoe Elementary School
 102,0x11c0cc,"<@LL,00,00>何かの しょるいが ならんでる","<@LL,00,00>There are some kind of documents stacked up here."
-103,0x11c0ce,「マリン学底」,
+103,0x11c0ce,「マリン学底」,Marine Academy
 104,0x11c0d0,"<@LL,00,00>小さな ねったいぎょが<CD>およいでる","<@LL,00,00>A small, tropical fish is swimming around."
 105,0x11c0d2,"<@LL,00,04>女の子の 学校らしく<CD>パソコンも 全部 ピンク色だ","<@LL,00,04>Seems like all the computers in the girls' school are pink."
 106,0x11c0d4,"<@LL,00,04>あざやかな ブル-の<CD>パソコンだ","<@LL,00,04>It's a vibrant blue computer."
