@@ -277,7 +277,7 @@
 267,0x1d8214,"<@RL,1B,00>むし するんだったら<CD>おしえてあげない!<CF><D1><@LL,00,07>えっ?<CD>今のって 話が つづくんじゃないの?","<@RL,1B,00>I won't tell you if you ignore me!<CF><D1><@LL,00,07>Huh?<D3>Are you still talking?"
 268,0x1d8216,"<@RL,13,00>トイレの中で いきなリ<CD>話しかけるなよ!","<@RL,13,00>Don't talk to me so suddenly while I'm in the bathroom!"
 269,0x1d8218,"<@RL,14,00>こら! テストの さいてんを<CD>貝るんじゃない!","<@RL,14,00>Hey! Don't look at the test scores!"
-270,0x1d821a,"<@RL,1D,00>おかしいわぁ いくら 計さんしても<CD>数字が 合わないなんて","<@RL,1D,00>It's funny, the calculations just don't match...<D3>"
+270,0x1d821a,"<@RL,1D,00>おかしいわぁ いくら 計さんしても<CD>数字が 合わないなんて","<@RL,1D,00>It's funny, the calculations just don't match..."
 271,0x1d821c,"<@RL,1D,00>おかしいわぁ いくら 計さんしても<CD>数字が 合わないなんて<CF><D1><@LL,00,00>どうしたんですか?","<@RL,1D,00>It's funny, the calculations just don't match...<CF><D1><@LL,00,00>What's wrong?"
 272,0x1d821e,"<@RL,1D,00>コンピュ-タが 計さんした<CD>テストの 点数が おかしいのよ<CF><D1>コンピュ-タ.ウイルスでも<CD>入ったのかしら?","<@RL,1D,00>The computer calculated the test scores strangely...<CF><D1>Could it have gotten a virus, I wonder?"
 273,0x1d8220,"<@LL,00,07>あっ! 先生 画面が!","<@LL,00,07>Ah! The teacher's screen!"
