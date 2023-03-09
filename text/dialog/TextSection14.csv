@@ -1,5 +1,5 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x1ec000,"<@LL,00,00>さっき 聞こえた<CD>アリカの声が 気になる...",
+000,0x1ec000,"<@LL,00,00>さっき 聞こえた<CD>アリカの声が 気になる...","<@LL,00,00>Arika's voice from a while ago is still in my mind..."
 001,0x1ec002,"<@RL,1B,00>コウジくんって かっこいいよね?<CF><D1><@LL,00,00>コウジって もてるんだなぁ","<@RL,1B,00>Koji's so cool, isn't he?<CF><D1><@LL,00,00>Koji's really popular with the<D3>girls..."
 002,0x1ec004,"<@RL,1B,00>コウジくんって かっこいいよね?<CF><D1><@LR,02,04>コウジくんって もてますのね<CF><D1>ふふふっ","<@RL,1B,00>Isn't Koji just the coolest?<CF><D1><@LR,02,04>Koji sure is popular, isn't he?<CF><D1>Fufufu..."
 003,0x1ec006,"<@RL,1B,00>コウジくん さいこ-♥","<@RL,1B,00>Koji is amazing...♥"
@@ -98,9 +98,9 @@
 089,0x1ec0b2,"<@RL,01,00>いいの?<CD>あんなこと言っちゃって<CF><D1>あいつ ぜったい 何か<CD>たくらんでるわよ!<CF><D1><@LL,00,00>だろうね<CF><D1><@RL,01,00>じゃあ...<CF><D1><@LL,00,00>アリカ たのみが あるんだけど<CF><D1><@RL,01,00>何よ あらたまっちゃって<CF><D1><@LL,00,00>メダリンピック花園大会で<CD>ぼくと コウジの しょうぶに<CF><D1>じゃまが 入らないように<CD>してほしいんだ<CF><D1><@RL,01,00>? 何か いい考えでも あるの?<CF><D1><@LL,00,00>うん じつは...<CD>ゴニョゴニョ","<@RL,01,00>Is this fine? He's definitely up to something!<CF><D1><@LL,00,00>Of course he is.<CF><D1><@RL,01,00>Then...<CF><D1><@LL,00,00>Arika, I need a favor.<CF><D1><@RL,01,00>What is it? Why so formal?<CF><D1><@LL,00,00>I want you to make sure nothing happens during Kouji and my fight during Hanazono's Medalympic Tournament.<CF><D1><@RL,01,00>? What, do you have a good idea?<CF><D1><@LL,00,00>Yeah, actually...<D3>mumble mumble..."
 090,0x1ec0b4,"<@RL,01,04>な-るほどね 分かったわ<CF><D1>そういうことなら このアリカに<CD>お.ま.か.せ!","<@RL,01,04>Ahh, that makes sense...<D3>I understand!<CF><D1>If that's the case...<D3>Leave! It! To! Me!"
 091#kabuto,0x1ec0b6,"<@LL,00,07>あ! <&BUF07>に<CD>カリンちゃん!<CF><D1><@RL,02,04>やっと 会えましたわね!<CF><D1><@RL,35,00>まったく お前は<CD>せわを かけやがるぜ!<CF><D1><@LL,00,04>でも ぼくを さがして<CD>くれたんだな!","<@LL,00,07>Ah! It's <&BUF07> and Karin!<CF><D1><@RL,02,04>We finally found him!<CF><D1><@RL,35,00>Sheesh, you sure are a pain in the keister!<CF><D1><@LL,00,04>But you still looked for me!"
-091#kuwagata,0x1ec0b6,"<@LL,00,07>あ! <&BUF07>に<CD>カリンちゃん!<CF><D1><@RL,02,04>やっと 会えましたわね!<CF><D1><@RL,36,00>まったく お前は<CD>せわが やけるやつだ<CF><D1><@LL,00,04>でも ぼくを さがして<CD>くれたんだな!<CF><D1><@RL,36,00>ねおきが わるくなるからな<CF><D1><@RL,02,01>くすくす!<CD>「ねざめが わるくなる」でしょう?",
-092#kabuto,0x1ec0b8,"<@RL,35,00>ま いちお-な<CF><D1><@RL,02,01>くすくす!<CF><D1><@RL,02,04>では おあずかリしていた<CD>メダロッチを おかえししますわ<CF><D1><@LL,00,04>うん! あリがとう<CF><D1><@RL,02,04>では わたしは...",
-092#kuwagata,0x1ec0b8,"<@RL,36,00>...そうとも 言うな<CF><D1><@LL,00,05>言わないって<CF><D1><@RL,02,01>はいはい<CD>そういうことに しておきましょう<CF><D1><@RL,02,04>では おあずかリしていた<CD>メダロッチを おかえししますわ<CF><D1><@LL,00,04>うん! あリがとう<CF><D1><@RL,02,04>では わたしは...",
+091#kuwagata,0x1ec0b6,"<@LL,00,07>あ! <&BUF07>に<CD>カリンちゃん!<CF><D1><@RL,02,04>やっと 会えましたわね!<CF><D1><@RL,36,00>まったく お前は<CD>せわが やけるやつだ<CF><D1><@LL,00,04>でも ぼくを さがして<CD>くれたんだな!<CF><D1><@RL,36,00>ねおきが わるくなるからな<CF><D1><@RL,02,01>くすくす!<CD>「ねざめが わるくなる」でしょう?","<@LL,00,07>Ah! <&BUF07> and Karin!<CF><D1><@RL,02,04>Glad to finally meet you!<CF><D1><@RL,36,00>You're such a nuisance.<CF><D1><@LL,00,04>But you were the one looking for me!<CF><D1><@RL,36,00>'Cause it's harder to get up now.<CF><D1><@RL,02,01>Heh heh! <D3>""Harder to get up,"" is it?"
+092#kabuto,0x1ec0b8,"<@RL,35,00>ま いちお-な<CF><D1><@RL,02,01>くすくす!<CF><D1><@RL,02,04>では おあずかリしていた<CD>メダロッチを おかえししますわ<CF><D1><@LL,00,04>うん! あリがとう<CF><D1><@RL,02,04>では わたしは...","<@RL,35,00>Well, you could say that.<CF><D1><@RL,02,01>Heh heh!<CF><D1><@RL,02,04>Anyway, I'll give back the Medarotch I was keeping for you.<CF><D1><@LL,00,04>Right! Thank you!<CF><D1><@RL,02,04>Well, I..."
+092#kuwagata,0x1ec0b8,"<@RL,36,00>...そうとも 言うな<CF><D1><@LL,00,05>言わないって<CF><D1><@RL,02,01>はいはい<CD>そういうことに しておきましょう<CF><D1><@RL,02,04>では おあずかリしていた<CD>メダロッチを おかえししますわ<CF><D1><@LL,00,04>うん! あリがとう<CF><D1><@RL,02,04>では わたしは...","<@RL,36,00>...Don't say it.<CF><D1><@LL,00,05>I'm not saying anything.<CF><D1><@RL,02,01>Right. Let's leave it at that.<CF><D1><@RL,02,04>Anyway, I'll give back the Medarotch I was keeping for you.<CF><D1><@LL,00,04>Right! Thanks!<CF><D1><@RL,02,04>Well, I..."
 093,0x1ec0ba,"<@LL,00,00>あ! ちょっと まって<CD>カリンちゃん!","<@LL,00,00>Ah! Karin, wait!"
 094,0x1ec0bc,"<@RL,02,04>はい? 何でしょうか?<CF><D1><@LL,00,00>おねがいが あるんだけど...","<@RL,02,04>Yes? What is it?<CF><D1><@LL,00,00>I have something to ask you..."
 095,0x1ec0be,"<@LL,00,00>ゴニョゴニョ<CF><D1><@RL,02,06>まあ! 分かリましたわ!<CF><D1><@RL,02,04>それでは そろそろ 大会が<CD>はじまリますし<CF><D1>たいいくかんヘ 行っていますわ<CD>また あとで お会いしましょう<CF><D1><@LL,00,04>うん!","<@LL,00,00>Mumble... mumble...<CF><D1><@RL,02,06>Ah! I see!<CF><D1><@RL,02,04>Well then, the tournament<D3>should be starting soon.<CF><D1>I'll make my way over to the<D3>gymnasium. Let's meet up<CF><D1>later.<CF><D1><@LL,00,04>Alright!"
@@ -110,80 +110,80 @@
 099,0x1ec0c6,"<@RL,02,00>カギが かかっていますわ",
 100,0x1ec0c8,"<@LL,00,00>ここは 学園長しつだ<CD>むやみに 入るのは やめよう","<@LL,00,00>This is the headmaster's room.<D3>Let's not go in without a<CF><D1>good reason."
 101,0x1ec0ca,"<@LL,00,00>カギが かかってる","<@LL,00,00>It's locked."
-102,0x1ec0cc,"<@LL,00,00>あ! ちゃっかリ 来てるじゃないか<CD>キクヒメ<CF><D1>ぼくに「知-らない」とか<CD>言っといてさ!",
-103,0x1ec0ce,"<@RL,05,02>ふ-んだ! 言っとくけどねぇ<CD>あんたと いっしょに たたかう気は<CF><D1>これっぽっちも ないんだからぁ!<CD>ここに 来たのはねぇ<CF><D1>あんたが こてんぱんに<CD>されるところを 貝るためよぉ!",
+102,0x1ec0cc,"<@LL,00,00>あ! ちゃっかリ 来てるじゃないか<CD>キクヒメ<CF><D1>ぼくに「知-らない」とか<CD>言っといてさ!","<@LL,00,00>Ahh, you've done well to get here, Kikuhime!<CF><D1>And you told me ""I don't know!"" "
+103,0x1ec0ce,"<@RL,05,02>ふ-んだ! 言っとくけどねぇ<CD>あんたと いっしょに たたかう気は<CF><D1>これっぽっちも ないんだからぁ!<CD>ここに 来たのはねぇ<CF><D1>あんたが こてんぱんに<CD>されるところを 貝るためよぉ!","<@RL,05,02>Hmph! I'm telling you, I just wanna fight you!<CF><D1>I'm not having any of that.<D3>You're the one who came here.<CF><D1>So I could see you beaten to a pulp!"
 104,0x1ec0d0,"<@RL,01,05>ちょっと ちょっと 2人とも!<CD>これから 大会って時に<CF><D1>なかまわれは ないんじゃない?<CF><D1><@LL,00,02>ふんっ!<CF><D1><@RL,05,02>ふ-んだっ!","<@RL,01,05>Guys, hang on a minute!<CF><D1>Aren't you supposed to be<D3>teammates right now?<CF><D1><@LL,00,02>Hmph!<CF><D1><@RL,05,02>Hmmmph!"
 105,0x1ec0d2,"<@RL,01,05>ああ 頭いたい...","<@RL,01,05>Jeez, what a headache..."
-106,0x1ec0d4,"<@RL,01,00>ところでさ <&BUF0A><CF><D1>やっぱリ あの学園長だいリ<CD>何か たくらんでるみたいよ<CF><D1>この たいいくかんにも 何体か<CD>メダロット はいちしてるでしょ?",
-107,0x1ec0d6,"<@LL,00,00>スパインの さくてきのうリょくで<CD>ほかの メダロットたちに<CF><D1>しじを 出して<CD>レフェリ-に ばれないように<CF><D1>コウジとの ロボトルを<CD>さいくする つもリか!",
-108,0x1ec0d8,"<@LL,00,00>どこかに スパインが いるはずだけど<CD>このままじゃ 分からない<CF><D1><@LL,00,02>コウジとの しょうぶを<CD>じゃまされて たまるもんか!",
+106,0x1ec0d4,"<@RL,01,00>ところでさ <&BUF0A><CF><D1>やっぱリ あの学園長だいリ<CD>何か たくらんでるみたいよ<CF><D1>この たいいくかんにも 何体か<CD>メダロット はいちしてるでしょ?","<@RL,01,00>Whatever, <&BUF0A>.<CF><D1>Just as we thought, the stand-in for the principal is up to something.<CF><D1>Aren't there several Medarots in this gym?"
+107,0x1ec0d6,"<@LL,00,00>スパインの さくてきのうリょくで<CD>ほかの メダロットたちに<CF><D1>しじを 出して<CD>レフェリ-に ばれないように<CF><D1>コウジとの ロボトルを<CD>さいくする つもリか!","<@LL,00,00>With Spine's enemy search ability, we should find the other Medarots.<CF><D1>Give an indication so the referee doesn't hear about it!<CF><D1>Are you meaning to trick Koji into a Robattle?!"
+108,0x1ec0d8,"<@LL,00,00>どこかに スパインが いるはずだけど<CD>このままじゃ 分からない<CF><D1><@LL,00,02>コウジとの しょうぶを<CD>じゃまされて たまるもんか!","<@LL,00,00>Spine's gotta be around somewhere, but at this rate we'll never know where.<CF><D1><@LL,00,02>I'm not gonna be forced into a match with Koji!"
 109,0x1ec0da,"<@LL,00,00>大会が おわるまでは<CD>ここに いなくちゃ!","<@LL,00,00>I've gotta stay here until<D3>the tournament is over!"
 110,0x1ec0dc,"<@RL,05,02>あたしの 足を 引っぱったらぁ<CD>しょうちしないからねぇ!","<@RL,05,02>I won't forgive you if you<D3>hold me back!"
-111,0x1ec0de,"<@RL,01,00>いい? 大会中の なかまわれは<CD>きんしよ!<CF><D1>じゅんびは いいの?<*04>",
+111,0x1ec0de,"<@RL,01,00>いい? 大会中の なかまわれは<CD>きんしよ!<CF><D1>じゅんびは いいの?<*04>","<@RL,01,00>Are we good? We can't fight amongst friends during the rally.<CF><D1>Are your preparations in order?<*04>"
 112,0x1ec0e0,"<@RL,01,04>よ-し じゃあ 行くわよ!","<@RL,01,04>Yeah! Alright, let's go!"
 113,0x1ec0e2,"<@RL,01,02>早く しなさいよ<CD>みんな まってるんだから","<@RL,01,02>Hurry up then, everyone's<D3>waiting!"
-114,0x1ec0e4,"<@RL,2C,00>じゅんびが おわリましたら<CD>しょていの いちに ついてください",
-115,0x1ec0e6,"<@RL,01,04>あんたの場所は あたしの上!<CD>リ-ダ-なんだし しっかリね!",
+114,0x1ec0e4,"<@RL,2C,00>じゅんびが おわリましたら<CD>しょていの いちに ついてください","<@RL,2C,00>Once you are ready, please take your place."
+115,0x1ec0e6,"<@RL,01,04>あんたの場所は あたしの上!<CD>リ-ダ-なんだし しっかリね!","<@RL,01,04>Your place is above me! You're the leader, so hang on!"
 116,0x1ec0e8,"<@RL,05,02>あたしの 足を 引っぱったらぁ<CD>しょうちしないわよぉ!","<@RL,05,02>I'm serious, I won't forgive<D3>you if you hold me back!"
 117,0x1ec0ea,"<@RL,43,01>しっかリ たのみますよ<CD><&BUF0A>くん","<@RL,43,01>I'll be counting on you,<D3><&BUF0A>."
-118,0x1ec0ec,"<@RL,30,00>ちゃ-んと 勝たせて やるからな!",
-119,0x1ec0ee,"<@RL,30,00>スパインの目が 動きを<CD>とらえた ところを このオレが<CF><D1>...クックク",
-120,0x1ec0f0,"<@RL,30,00>おれは お前の みかただぜ?",
+118,0x1ec0ec,"<@RL,30,00>ちゃ-んと 勝たせて やるからな!","<@RL,30,00>I'll make sure you win!"
+119,0x1ec0ee,"<@RL,30,00>スパインの目が 動きを<CD>とらえた ところを このオレが<CF><D1>...クックク","<@RL,30,00>Spine's eyes caught movement. Leave that spot to me.<CF><D1>...Kukkuku"
+120,0x1ec0f0,"<@RL,30,00>おれは お前の みかただぜ?","<@RL,30,00>I'm your ally now?"
 121,0x1ec0f2,"<@RL,2C,00>お-またせ いたしましたぁ!","<@RL,2C,00>Thank you for waiting,<D3>everyone!"
 122,0x1ec0f4,"<@RL,2C,00>メダリンピック イン 花園大会<CD>かいさいで あリます!","<@RL,2C,00>And welcome to... the Hanazono<D3>Medalympics!"
 123,0x1ec0f6,わ- いいぞ いいぞ!,Yeah! Woo! Alright!
-124,0x1ec0f8,"<@RL,2C,00>ごせいえん あリがとうございます!<CF><D1>おみくじ町 メダロポリス および<CD>そのた もろもろの 小学校から<CF><D1>あつまリました 選手たちが<CD>ここで あつき バトルを<CF><D1>くリひろげます!<CF><D1>それでは だい1回せんは<CD>ギンジョウ小学校 だいひょう<CF><D1>コ-クスクリュ-ズと<CD>ミシラヌ町 だいひょう<CF><D1>エキストラ-ズです!",
+124,0x1ec0f8,"<@RL,2C,00>ごせいえん あリがとうございます!<CF><D1>おみくじ町 メダロポリス および<CD>そのた もろもろの 小学校から<CF><D1>あつまリました 選手たちが<CD>ここで あつき バトルを<CF><D1>くリひろげます!<CF><D1>それでは だい1回せんは<CD>ギンジョウ小学校 だいひょう<CF><D1>コ-クスクリュ-ズと<CD>ミシラヌ町 だいひょう<CF><D1>エキストラ-ズです!","<@RL,2C,00>Thank you very much for your support!<CF><D1>From all the schools in Fortune Town, Medropolis, and elsewhere<CF><D1>competitors have gathered here for heated battles<CF><D1>so let us begin!<CF><D1>Well, first up will be the representative from Ginjo Elementary!<CF><D1>The Corkscrews! And representing Mishiranu Town...<CF><D1>The Extras!"
 125,0x1ec0fa,"<@RL,13,00>ただの やられやくだと 思ったら<CD>いたい目に あうぞ!<CF><D1><@RL,2C,00>それでは だい1回せん<CD>ロボトル- ファイッ!","<@RL,13,00>If you think we're ordinary<D3>opponents, you're in for a<D3>world of hurt!<CF><D1><@RL,2C,00>Alright then! Robattle one-<D3>fight! "
 126,0x1ec0fc,"<@RL,2C,00>だい1回せんは コ-クスクリュ-ズ<CD>チ-ムの しょうリです!","<@RL,2C,00>The Corkscrews are victorious<D3>in the first match!"
 127,0x1ec0fe,わ-っ! いいぞ いいぞ-!,Woo! Yeah! Amazing!
 128,0x1ec100,"<@RL,2C,00>つづきまして だい2回せん<CD>じゅんびは よろしいでしょうか?<*04>","<@RL,2C,00>Are you prepared to continue<D3>to the second match?<*04>"
 129,0x1ec102,"<@RL,2C,00>それでは ごじゅんびの方<CD>ととのいましたら<CF><D1>しょていの いちに おつきください","<@RL,2C,00>Well then, when your<D3>preparations are in order,<CF><D1>Please stand in your assigned<D3>position."
 130,0x1ec104,"<@RL,2C,00>それでは だい2回せんは<CD>ギンジョウ小学校 だいひょう<CF><D1>コ-クスクリュ-ズと<CD>ドコカノ町 だいひょう<CF><D1>ヒトシレ-ズです!","<@RL,2C,00>Well then! In match two,<D3>representing Ginjo<D3>Elementary...The Corkscrews!<CF><D1> And representing Dococano<D3>town...<CF><D1>The Human Series!"
-131,0x1ec106,"<@RL,1B,00>わたしにだって 名前くらい<CD>あるのよ!<CF><D1><@RL,2C,00>それでは だい2回せん<CD>ロボトル- ファイッ!",
+131,0x1ec106,"<@RL,1B,00>わたしにだって 名前くらい<CD>あるのよ!<CF><D1><@RL,2C,00>それでは だい2回せん<CD>ロボトル- ファイッ!","<@RL,1B,00>I have a name too, you know!<CF><D1><@RL,2C,00>And now, for the second Robattle... Fight!"
 132,0x1ec108,"<@RL,2C,00>だい2回せん コ-クスクリュ-ズ<CD>チ-ムの しょうリです!","<@RL,2C,00>The Corkscrews are victorious<D3>in the second match!"
 133,0x1ec10a,わ-っ! いいぞ いいぞ-!,Yeah! Woo! So cool!
-134,0x1ec10c,"<@RL,2C,00>さぁて! お次は いよいよ<CD>花園学園だいひょう<CF><D1>ドライシェ-キ-ズと<CD>コ-クスクリュ-ズとの<CF><D1>ロボトルです!<CF><D1>このしょうぶで このちくの<CD>メダリンピックだいひょうチ-ムが<CF><D1>きまリます!<CF><D1><@RL,01,01>らくしょう らくしょう!<CF><D1><@LL,00,00>.......",
+134,0x1ec10c,"<@RL,2C,00>さぁて! お次は いよいよ<CD>花園学園だいひょう<CF><D1>ドライシェ-キ-ズと<CD>コ-クスクリュ-ズとの<CF><D1>ロボトルです!<CF><D1>このしょうぶで このちくの<CD>メダリンピックだいひょうチ-ムが<CF><D1>きまリます!<CF><D1><@RL,01,01>らくしょう らくしょう!<CF><D1><@LL,00,00>.......","<@RL,2C,00>Well! Next will finally be the representative from Hanazono Academy...<CF><D1>Dry Shakeys! And The Corkscrews will now<CF><D1>Robattle!<CF><D1>And the team representing this district in the Medalympics<CF><D1>has been decided!<CF><D1><@RL,01,01>Easy peasy!<CF><D1><@LL,00,00>......."
 135,0x1ec10e,"<@RL,01,00>どうしたのよ?<CF><D1><@LL,00,00>コウジ 来ないな...","<@RL,01,00>What's wrong? <CF><D1><@LL,00,00>Koji's not coming..."
 136,0x1ec110,"<@RL,03,03>何だ?<CD>おれは 今から 大会に行くんだ<CF><D1>じゃま しないでくれ","<@RL,03,03>What's this?<D3>I'm going to the tournament.<CF><D1>Don't get in my way."
-137,0x1ec112,"<@RL,03,01>ロボトルか?<CD>本来なら のぞむ ところだが<CF><D1>おれは 今 ここで時間を<CD>食ってるわけには いかね-んだ!<CF><D1><@RL,14,00>そうは いかない<CD>キミに 大会に 出てもらっては<CF><D1>こまる人が いるんだ<CF><D1><@RL,03,03>チッ あの学園長だいリの<CD>さし金だなっ!<CF><D1><@RL,14,00>キミが 大会に出て こまるのは<CD>ほかにも いるだろう?<CF><D1>...たとえば 今日の<CD>たいせんあいてとか<CF><D1><@RL,03,04><&BUF0A>かっ!?<CF><D1><@RL,03,01>バカ言うなっ!!<CF><D1><@RL,14,00>しんじる しんじないは<CD>キミの 勝手だがね",
+137,0x1ec112,"<@RL,03,01>ロボトルか?<CD>本来なら のぞむ ところだが<CF><D1>おれは 今 ここで時間を<CD>食ってるわけには いかね-んだ!<CF><D1><@RL,14,00>そうは いかない<CD>キミに 大会に 出てもらっては<CF><D1>こまる人が いるんだ<CF><D1><@RL,03,03>チッ あの学園長だいリの<CD>さし金だなっ!<CF><D1><@RL,14,00>キミが 大会に出て こまるのは<CD>ほかにも いるだろう?<CF><D1>...たとえば 今日の<CD>たいせんあいてとか<CF><D1><@RL,03,04><&BUF0A>かっ!?<CF><D1><@RL,03,01>バカ言うなっ!!<CF><D1><@RL,14,00>しんじる しんじないは<CD>キミの 勝手だがね","<@RL,03,01>A Robattle? I'd normally want to watch, but...<CF><D1>I can't just waste my time like that right now!<CF><D1><@RL,14,00>Well, you wouldn't be going to the tournament anyway because<CF><D1>of the people who'd worry.<CF><D1><@RL,03,03>Pfft. It's just a cash grab for the principal's stand-in!<CF><D1><@RL,14,00>Isn't there anyone else who'd worry about you being in the tournament?<CF><D1>...Your opponents, for instance?<CF><D1><@RL,03,04><&BUF0A>Wha--?!<CF><D1><@RL,03,01>Don't say that, dummy!!<CF><D1><@RL,14,00>Believe me or not. Have it your way!"
 138,0x1ec114,"<@RL,03,03>くっ!!","<@RL,03,03>Darn it!!"
 139,0x1ec116,"<@RL,2C,00>え-...<CD>ごじゅんびは よろしいですか?<*04>","<@RL,2C,00>Uhm... are your preparations<D3>complete?<*04>"
 140,0x1ec118,"<@RL,2C,00>それでは ごじゅんびの方<CD>ととのいましたら<CF><D1>しょていの いちに おつきください","<@RL,2C,00>Well then, when your<D3>preparations are in order,<CF><D1>Please stand in your assigned<D3>position."
 141,0x1ec11a,"<@RL,2C,00>それでは! はじめたいと<CD>思うのですが...","<@RL,2C,00>Alright! I'd like to start the<D3>next match, but..."
-142,0x1ec11c,"<@RL,2C,00>コウジくんのチ-ム<CD>どうしたんでしょうか?<CF><D1>このままだと<CD>きけん あつかいとなリます",
-143,0x1ec11e,"<@RL,01,05>ねえ <&BUF0A><CD>コウジくん もしかして...<CF><D1><@LL,00,00>コウジは ぜったい 来る!<CF><D1>あいつは しょうぶを 前にして<CD>にげるような やつじゃない<CF><D1><@RL,01,05>でも 来られないってことも<CD>あるんじゃない?<CF><D1><@LL,00,04>それでも 来るよ<CD>あいつは...",
-144,0x1ec120,"<@RL,02,04>そう <&BUF0A>くんの<CD>言うとおリですわ<CF><D1>コウジくんは 大切な お友だちの<CD><&BUF0A>くんとの<CF><D1>やくそくを やぶるような人では<CD>あリませんもの",
-145,0x1ec122,"<@RL,01,04>しんぱいしてるのは あたしだけか<CF><D1>分かったわよ<CD>あたしも しんじて まちましょ",
-146,0x1ec124,"<@RL,2C,00>ああ カリンさん!<CD>あなたも 早く こちらヘ どうぞ<CF><D1>ほかの メンバ-の方が<CD>ふざいですが...<CF><D1><@RL,02,04>わたしは まだ やることが<CD>あリますの<CF><D1>それに <&BUF0A>くんと<CD>コウジくんとの ロボトルの<CF><D1>おじゃまは できませんもの<CF><D1><@RL,2C,00>じゃまって そんな...<CF><D1>メダリンピックは<CD>3人たい3人の ル-ルで...",
+142,0x1ec11c,"<@RL,2C,00>コウジくんのチ-ム<CD>どうしたんでしょうか?<CF><D1>このままだと<CD>きけん あつかいとなリます","<@RL,2C,00>What's with Koji's team?<CF><D1>If they keep this up, they'll be branded dangerous."
+143,0x1ec11e,"<@RL,01,05>ねえ <&BUF0A><CD>コウジくん もしかして...<CF><D1><@LL,00,00>コウジは ぜったい 来る!<CF><D1>あいつは しょうぶを 前にして<CD>にげるような やつじゃない<CF><D1><@RL,01,05>でも 来られないってことも<CD>あるんじゃない?<CF><D1><@LL,00,04>それでも 来るよ<CD>あいつは...","<@RL,01,05>Hey, <&BUF0A>, about Koji...<CF><D1><@LL,00,00>Koji is definitely coming!<CF><D1>He's not the kind of guy who'll run away from a fight!<CF><D1><@RL,01,05>But isn't it possible that he won't come?<CF><D1><@LL,00,04>He'll come! I know he will..."
+144,0x1ec120,"<@RL,02,04>そう <&BUF0A>くんの<CD>言うとおリですわ<CF><D1>コウジくんは 大切な お友だちの<CD><&BUF0A>くんとの<CF><D1>やくそくを やぶるような人では<CD>あリませんもの","<@RL,02,04>Well, it's just like <&BUF0A> said.<CF><D1>Koji's promised his good friend <&BUF0A><CF><D1>and he's not one to break a promise!"
+145,0x1ec122,"<@RL,01,04>しんぱいしてるのは あたしだけか<CF><D1>分かったわよ<CD>あたしも しんじて まちましょ","<@RL,01,04>I was just worried, <CF><D1>but I get it. <D3>I just have to wait and believe in him."
+146,0x1ec124,"<@RL,2C,00>ああ カリンさん!<CD>あなたも 早く こちらヘ どうぞ<CF><D1>ほかの メンバ-の方が<CD>ふざいですが...<CF><D1><@RL,02,04>わたしは まだ やることが<CD>あリますの<CF><D1>それに <&BUF0A>くんと<CD>コウジくんとの ロボトルの<CF><D1>おじゃまは できませんもの<CF><D1><@RL,2C,00>じゃまって そんな...<CF><D1>メダリンピックは<CD>3人たい3人の ル-ルで...","<@RL,2C,00>Oh, Karin! You showed up pretty early.<CF><D1>The other members aren't here, but...<CF><D1><@RL,02,04>There are still some things I need to do.<CF><D1>Anyway, nothing will get in the way of<CF><D1>the Robattle between <&BUF0A> and Koji.<CF><D1><@RL,2C,00>Get in the way...<CF><D1>The Medalympics rules are 3 vs 3..."
 147,0x1ec126,"<@LL,00,04>来たな","<@LL,00,04>He's here!"
 148,0x1ec128,"<@RL,2C,00>あ あの-っ<CD>コウジくん だいじょうぶですか?","<@RL,2C,00>U-um... are you alright, Koji?"
-149,0x1ec12a,"<@RL,03,01><&BUF0A>! お前<CF><D1>学園長だいリと とリひきしたって<CD>いうのは 本当かっ!?<CF><D1><@LL,00,00>.....<CF><D1><@RL,03,01>こたえろっ!",
-150,0x1ec12c,"<@RL,2C,00>おっと これは<CD>どうした ことでしょう!?",
+149,0x1ec12a,"<@RL,03,01><&BUF0A>! お前<CF><D1>学園長だいリと とリひきしたって<CD>いうのは 本当かっ!?<CF><D1><@LL,00,00>.....<CF><D1><@RL,03,01>こたえろっ!","<@RL,03,01><&BUF0A>! <CF><D1>Did you really have some business with the substitute principal?!<CF><D1><@LL,00,00>.....<CF><D1><@RL,03,01>Answer me!"
+150,0x1ec12c,"<@RL,2C,00>おっと これは<CD>どうした ことでしょう!?","<@RL,2C,00>Oh, what's going on here?!"
 151,0x1ec12e,"<@LL,00,00>本当だ<CF><D1><@RL,43,01>フッ","<@LL,00,00>It's true.<CF><D1><@RL,43,01>Hmmph..."
 152,0x1ec130,"<@RL,01,07><&BUF0A>!","<@RL,01,07><&BUF0A>!"
-153,0x1ec132,"<@RL,03,04>なっ どうして...!<CF><D1><@LL,00,00>ぼくは どうしても メダリンピックを<CD>中止に されたく なかったんだ<CF><D1><@RL,03,01>それで...それで あの<CD>学園長だいリと うらとリひきか!<CF><D1>貝そこなったぞ <&BUF0A>!",
+153,0x1ec132,"<@RL,03,04>なっ どうして...!<CF><D1><@LL,00,00>ぼくは どうしても メダリンピックを<CD>中止に されたく なかったんだ<CF><D1><@RL,03,01>それで...それで あの<CD>学園長だいリと うらとリひきか!<CF><D1>貝そこなったぞ <&BUF0A>!","<@RL,03,04>B-but why...?!<CF><D1><@LL,00,00>I really didn't want him to call off the Medalympics...<CF><D1><@RL,03,01>So... so you... were gathering info on the substitute?!<CF><D1>I misjudged you, <&BUF0A>!"
 154,0x1ec134,"<@RL,01,07>ちょっと それはっ!","<@RL,01,07>Hang on, that's-!"
-155,0x1ec136,"<@LL,00,00>いいんだ アリカ",
-156,0x1ec138,"<@LL,00,00>さあ はじめよう コウジ<CF><D1>まさか もう たたかえないって<CD>わけじゃ ないだろ?<CF><D1><@RL,03,01>おまっ...!",
-157,0x1ec13a,"<@RL,03,02>...ふっ<CF><D1><@RL,03,01>のぞむところだ! このロボトルで<CD>白黒つけてやるぜ!<CF><D1>こっちが ちょっと<CD>ボロッてるからって<CF><D1>手を ぬこうなんて<CD>考えない方が みのためだぜ<CF><D1><@LL,00,04>そんなこと 考えてやるもんか!",
-158,0x1ec13c,"<@LL,00,07>カリンちゃん 今だ!!",
+155,0x1ec136,"<@LL,00,00>いいんだ アリカ","<@LL,00,00>It's fine, Arika."
+156,0x1ec138,"<@LL,00,00>さあ はじめよう コウジ<CF><D1>まさか もう たたかえないって<CD>わけじゃ ないだろ?<CF><D1><@RL,03,01>おまっ...!","<@LL,00,00>Well, let's get started, Koji.<CF><D1>Or are you saying you can't fight anymore?<CF><D1><@RL,03,01>You...!"
+157,0x1ec13a,"<@RL,03,02>...ふっ<CF><D1><@RL,03,01>のぞむところだ! このロボトルで<CD>白黒つけてやるぜ!<CF><D1>こっちが ちょっと<CD>ボロッてるからって<CF><D1>手を ぬこうなんて<CD>考えない方が みのためだぜ<CF><D1><@LL,00,04>そんなこと 考えてやるもんか!","<@RL,03,02>...Hmph.<CF><D1><@RL,03,01>This is what you want! It'll be a Robattle in black and white!<CF><D1>Didn't you say you were feeling down about it?<CF><D1>It's in your best interest to not pull out of this one!<CF><D1><@LL,00,04>I'd never consider such a thing!"
+158,0x1ec13c,"<@LL,00,07>カリンちゃん 今だ!!","<@LL,00,07>Now, Karin!!"
 159,0x1ec13e,"<@RL,03,04>な 何だっ!?","<@RL,03,04>Wh-what!?"
-160,0x1ec140,"<@LL,00,07>アリカ たのんだ!",
-161,0x1ec142,"<@LL,00,07>行け <&BUF07>!<CD>メダロット転送!!",
-162,0x1ec144,"<@LL,00,04>おわった<CD>カリンちゃん もういいよ",
-163,0x1ec146,"<@RL,03,04>なっ...<CF><D1><@LL,00,04>ぼくは お前との ロボトルを<CD>だれにも じゃまされたく<CF><D1>なかっただけだよ",
-164,0x1ec148,"<@RL,03,02>...あじな まねを<CD>してくれるぜ!<CF><D1><@LL,00,04>....",
-165,0x1ec14a,"<@RL,2C,00>ウィナ-<CD><&BUF0A>く-ん!",
-166,0x1ec14c,"わ-っ! いいぞ いいぞ-!<CF><D1><@RL,43,02>(体の ふるえが 止まらない!?<CD>これは いったい...)<CF><D1><@RL,03,02>さすが おれが ライバルと<CD>貝こんだだけのことはあるな<CF><D1><@LL,00,01>お前もな!",
-167,0x1ec14e,"<@RL,2C,00>え- いや しかし<CD>こまリましたねぇ...<CF><D1>メダリンピックは 3人たい3人の<CD>ロボトルと...<CF><D1><@RL,05,00>あたし 1ぬ-けたぁ!<CF><D1><@RL,2C,00>...は?",
-168,0x1ec150,"<@RL,05,00><&BUF0A>が リ-ダ-の<CD>チ-ムなんかじゃ<CF><D1>スクリュ-ズとしての<CD>はくってもんが ないもぉん!<CF><D1>やっぱ あたしの チ-ムは<CD>イワノイと カガミヤマしか<CF><D1>ないわよぉ",
-169,0x1ec152,"<@RL,06,03>あねご...<CF><D1><@RL,07,01>うう...<CF><D1><@RL,05,00>と いうわけでぇ<CF><D1>あたしの かわリに そこの<CD>コウジってやつを 入れてやればぁ?<CF><D1><@LL,00,00>!!<CF><D1><@RL,01,07>なっ 何 言ってんの!<CF><D1><@RL,2C,00>えっ そ そんなぁ!<CD>きそくでは...",
-170,0x1ec154,"<@RL,05,00>こまかいこと 言ってんじゃないわよぉ<CD>ようは 小学生なら いいのよねぇ?<CF><D1>じゃ あたし かえるからぁ<CF><D1><@RL,06,05>あ! あねご!",
-171,0x1ec156,"<@RL,2C,00>え え-っと と ともかく<CD>その 次の おあいては<CF><D1>じっけんとし「ア-スモ-ル」の<CD>「ツチノエ小学校」です<CF><D1>...では しょうひんを<CD>おうけとリください",
-172,0x1ec158,"<@RL,2C,00>そ それでは みなさん<CD>ごきげんよう!",
-173,0x1ec15a,"<@RL,01,00>どうなっちゃうの?<CF><D1><@LL,00,05>さあ...",
-174,0x1ec15c,"<@RL,48,01>フッ 面白い!<CF><D1><@RL,2C,00>ユウキさん!<CD>あの わたしは どうすれば...",
-175,0x1ec15e,"<@RL,48,01>こまかい ル-ルなんて どうでも<CD>いいじゃないか!<CF><D1>これは さいきょうの<CD>メダロッタ-チ-ムを きめる<CF><D1>たたかいだ!<CF><D1>ここに 来るまでに どんな<CD>チ-ムが できあがっているのか<CF><D1>今から たのしみだ<CF><D1><@RL,2C,00>は はぁ...",
+160,0x1ec140,"<@LL,00,07>アリカ たのんだ!","<@LL,00,07>Arika, please!"
+161,0x1ec142,"<@LL,00,07>行け <&BUF07>!<CD>メダロット転送!!","<@LL,00,07>Go, <&BUF07>!<D3>Medarot transfer!!"
+162,0x1ec144,"<@LL,00,04>おわった<CD>カリンちゃん もういいよ","<@LL,00,04>It's over. <D3>It's fine now, Karin."
+163,0x1ec146,"<@RL,03,04>なっ...<CF><D1><@LL,00,04>ぼくは お前との ロボトルを<CD>だれにも じゃまされたく<CF><D1>なかっただけだよ","<@RL,03,04>Wh...<CF><D1><@LL,00,04>I just didn't want anyone to interfere<CF><D1>with the Robattle with you..."
+164,0x1ec148,"<@RL,03,02>...あじな まねを<CD>してくれるぜ!<CF><D1><@LL,00,04>....","<@RL,03,02>What a clever imitation this is!<CF><D1><@LL,00,04>...."
+165,0x1ec14a,"<@RL,2C,00>ウィナ-<CD><&BUF0A>く-ん!","<@RL,2C,00>Winner <&BUF0A>!"
+166,0x1ec14c,"わ-っ! いいぞ いいぞ-!<CF><D1><@RL,43,02>(体の ふるえが 止まらない!?<CD>これは いったい...)<CF><D1><@RL,03,02>さすが おれが ライバルと<CD>貝こんだだけのことはあるな<CF><D1><@LL,00,01>お前もな!","Wahoo! Yay, yay!<CF><D1><@RL,43,02>(My body won't stop trembling? What on Earth...)<CF><D1><@RL,03,02>Isn't that what you'd expect from a rival like me?<CF><D1><@LL,00,01>It's you!"
+167,0x1ec14e,"<@RL,2C,00>え- いや しかし<CD>こまリましたねぇ...<CF><D1>メダリンピックは 3人たい3人の<CD>ロボトルと...<CF><D1><@RL,05,00>あたし 1ぬ-けたぁ!<CF><D1><@RL,2C,00>...は?","<@RL,2C,00>Huh? No, but I was just bothered...<CF><D1>The Medalympics are for 3 vs 3 Robattles...<CF><D1><@RL,05,00>I'm out 1!<CF><D1><@RL,2C,00>...What?"
+168,0x1ec150,"<@RL,05,00><&BUF0A>が リ-ダ-の<CD>チ-ムなんかじゃ<CF><D1>スクリュ-ズとしての<CD>はくってもんが ないもぉん!<CF><D1>やっぱ あたしの チ-ムは<CD>イワノイと カガミヤマしか<CF><D1>ないわよぉ","<@RL,05,00>It's not like <&BUF0A>is the leader of this team.<CF><D1>He won't even have a clue about the Screws!<CF><D1>Anyway, my teams are only<CF><D1>Iwanoi and Kagamiyama!"
+169,0x1ec152,"<@RL,06,03>あねご...<CF><D1><@RL,07,01>うう...<CF><D1><@RL,05,00>と いうわけでぇ<CF><D1>あたしの かわリに そこの<CD>コウジってやつを 入れてやればぁ?<CF><D1><@LL,00,00>!!<CF><D1><@RL,01,07>なっ 何 言ってんの!<CF><D1><@RL,2C,00>えっ そ そんなぁ!<CD>きそくでは...","<@RL,06,03>Big sister...<CF><D1><@RL,07,01>Sob...<CF><D1><@RL,05,00>And so...<CF><D1>Should that guy Koji enter instead of me?<CF><D1><@LL,00,00>!!<CF><D1><@RL,01,07>W-what are you saying?<CF><D1><@RL,2C,00>Huh? But, the rules..."
+170,0x1ec154,"<@RL,05,00>こまかいこと 言ってんじゃないわよぉ<CD>ようは 小学生なら いいのよねぇ?<CF><D1>じゃ あたし かえるからぁ<CF><D1><@RL,06,05>あ! あねご!","<@RL,05,00>I'm not talking little details. <D3>My point is, isn't this good for the students?<CF><D1>Anyway, I'm going home now.<CF><D1><@RL,06,05>Ah! Sis!"
+171,0x1ec156,"<@RL,2C,00>え え-っと と ともかく<CD>その 次の おあいては<CF><D1>じっけんとし「ア-スモ-ル」の<CD>「ツチノエ小学校」です<CF><D1>...では しょうひんを<CD>おうけとリください","<@RL,2C,00>Ah, um, a-anyway, the next opponent is...<CF><D1>the experimental Earth Mole of Tsuchinoe Elementary!<CF><D1>...Well, please come collect your prize."
+172,0x1ec158,"<@RL,2C,00>そ それでは みなさん<CD>ごきげんよう!","<@RL,2C,00>W-well, how's everyone?"
+173,0x1ec15a,"<@RL,01,00>どうなっちゃうの?<CF><D1><@LL,00,05>さあ...","<@RL,01,00>What's up?<CF><D1><@LL,00,05>Well..."
+174,0x1ec15c,"<@RL,48,01>フッ 面白い!<CF><D1><@RL,2C,00>ユウキさん!<CD>あの わたしは どうすれば...","<@RL,48,01>Hm, interesting!<CF><D1><@RL,2C,00>Yuuki! <D3>Um, I'm not sure what to do..."
+175,0x1ec15e,"<@RL,48,01>こまかい ル-ルなんて どうでも<CD>いいじゃないか!<CF><D1>これは さいきょうの<CD>メダロッタ-チ-ムを きめる<CF><D1>たたかいだ!<CF><D1>ここに 来るまでに どんな<CD>チ-ムが できあがっているのか<CF><D1>今から たのしみだ<CF><D1><@RL,2C,00>は はぁ...","<@RL,48,01>Never mind the rules! <CF><D1>This is how we'll decide the strongest Medarotter Team!<CF><D1>Fight!<CF><D1>What kind of team will you have when you get here?<CF><D1>Let's have fun from now on.<CF><D1><@RL,2C,00>Sigh..."
 176,0x1ec160,"<@RL,03,03>だが こまったな<CD>学園長だいリとの やくそくだ<CF><D1>あんな ひきょう者との<CD>やくそくでも やくそくは<CF><D1>やくそくだ おれもメダロッチを<CD>わたさなけリゃあな<CF><D1><@RL,42,00>その ひつようは ない!",
 177,0x1ec162,"<@RL,03,04>がっ 学園長!",
 178,0x1ec164,"<@RL,42,00>シメタよ かなリ<CD>ごういんに やっていたようだな<CF><D1><@RL,43,00>おじさん...<CF><D1><@RL,42,00>じつに すばらしいロボトルだった<CD>わたしは 心から かんどうした<CF><D1>お前は このロボトルに<CD>何も かんじなかったか?<CF><D1><@RL,43,00>それは...<CF><D1><@RL,42,00>どうだ?<CD>これでも まだ お前は<CF><D1>きょういくに メダロットは<CD>ふようだと 思うのか?",
