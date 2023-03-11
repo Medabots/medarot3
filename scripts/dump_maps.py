@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'common'))
 from common import utils, tilemaps
 
+DUMP_PREBUILTS = False
+
 def dump(output_root, prebuilt_root, name, data, character_map = {}):
     character_map[0xfe] = '\n'
     output_path = os.path.join(output_root, f"{name}.txt")
@@ -20,9 +22,10 @@ def dump(output_root, prebuilt_root, name, data, character_map = {}):
         output.write(f"[{compression:X}]\n")
         # Compressed
         if compression & 0x03:
-            with open(prebuilt_path, "wb") as binary:
-                binary.write(data) # Write and include the compression byte
-                binary.write(bytearray([0xFF]))
+            if DUMP_PREBUILTS:
+                with open(prebuilt_path, "wb") as binary:
+                    binary.write(data) # Write and include the compression byte
+                    binary.write(bytearray([0xFF]))
             # Add 0xFF to the end when decompressing
             map_bytes.append(0xFF)
             # The 0xFF at the end is implied though

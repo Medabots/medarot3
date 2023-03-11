@@ -72,7 +72,7 @@ def compress_mode_increment(idx, tmap):
     i = -1
     curbyte = tmap[idx]
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
-        if byte != (curbyte + 1 + i) & 0xFF:
+        if (curbyte + 1 + i) > 0xFF or byte != (curbyte + 1 + i) & 0xFF:
             break
     else:
         i += 1 # if it's the last element in the tmap, i will be off by one
@@ -82,7 +82,7 @@ def compress_mode_decrement(idx, tmap):
     i = -1
     curbyte = tmap[idx]
     for i, byte in zip(range(MAX_COUNT+1), tmap[idx + 1:]):
-        if byte != (curbyte - 1 - i) & 0xFF:
+        if (curbyte - 1 - i) < 0x00 or byte != (curbyte - 1 - i) & 0xFF:
             break
     else:
         i += 1 # if it's the last element in the tmap, i will be off by one
