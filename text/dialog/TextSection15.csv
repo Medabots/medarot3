@@ -190,8 +190,8 @@
 188,0x1f0178,"<@RL,13,00>ロボトル ばんざい!",
 189,0x1f017a,"<@RL,14,00>わたしに 何か 用かね?","<@RL,14,00>What do you want from me?"
 190,0x1f017c,"<@RL,14,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,14,00>Hmm? Isn't that a<D3>medawatch? I'll need to<CF><D1>confiscate that!"
-191,0x1f017e,"<@RL,14,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,02,05>いやですわ わたし そんなこと<CD>しませんわ",
-192,0x1f0180,"<@RL,14,00>どうじょうは いらないっ!",
+191,0x1f017e,"<@RL,14,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,02,05>いやですわ わたし そんなこと<CD>しませんわ","<@RL,14,00>I lost... You're gonna take my medarotch.<CF><D1><@LR,02,05>No, I wouldn't do that."
+192,0x1f0180,"<@RL,14,00>どうじょうは いらないっ!","<@RL,14,00>I don't need your pity!"
 193,0x1f0182,"<@RL,13,00>ここの こうしきを こうやって<CD>それで...","<@RL,13,00>So I use the formula this<D3>way..."
 194,0x1f0184,"<@LR,02,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,13,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,02,04>Um, I'm looking for a boy<D3>called <&BUF0A>. His hair is in<CF><D1>a cool ponytail.<CF><D1> Have you seen him?<CF><D1><@RL,13,00>I-I'm busy right now.<D3>Please talk to me later."
 195,0x1f0186,"<@RL,1B,00>きゃ-っ!!","<@RL,1B,00>Kiyahhh!!"
