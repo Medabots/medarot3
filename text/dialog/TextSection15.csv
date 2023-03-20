@@ -1,20 +1,20 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x1f0000,"<@RL,0F,00>そうじゃ!<CD>しかしの そのメダルは 今は<CF><D1>しんでおるようなんじゃ<CF><D1><@LL,00,00>えっ?<CF><D1><@RL,0F,02>そのメダルからは<CD>フォ-スが かんちできんのじゃ<CF><D1>それが メダルに なるには<CD>フォ-スとよばれる「何か」が<CF><D1>足リんのじゃ<CF><D1><@LL,00,00>フォ-ス...<CF><D1><@RL,0F,00>そこでじゃ お前さんに<CD>たのみが ある<CF><D1>この6負かヘい石を あずかって<CD>くれんか?<CF><D1><@LL,00,07>ええっ!?<CF><D1><@RL,0F,00>研究所の中だけでは 分からんことも<CD>あるからの<CF><D1>お前さんなら あるいは...<CD>ほれ うけとれ",
-001,0x1f0002,"<@LL,00,07>こ こんなに たくさん?<CF><D1><@RL,0F,01>研究には 1まいあれば こと足リる<CD>いいから 持っていけ<CF><D1><@RL,0F,00>話は 変わるがの...お前さん<CF><D1>メダロットには げんかいが あると<CD>思うかの?<CF><D1><@LL,00,00>げんかい? つよさの げんかいかな?<CF><D1><@RL,0F,00>わしは ないと 思っておる たとえば<CD>「2だんかい目の 変形」とかの<CF><D1><@LL,00,07>2番目の 変形が あるんですか!?<CF><D1><@RL,0F,00>いや まだ研究だんかい じゃからのぉ<CD>本当に できるかどうか わからん<CF><D1>そもそも 1だんかい目の変形<CD>「レクリスモ-ド」...<CF><D1>いわゆる メダチェンジが 今 できる<CD>パワ-アップの げんかいじゃ<CF><D1>しかし かいはつ中の<CD>オプションパ-ツで<CF><D1>さらなる パワ-アップが<CD>かのうと なるやもしれん<CF><D1>それが 今 わしが 研究しておる<CD>「クラフティモ-ド」じゃ<CF><D1>じゃが その パワ-を<CD>人間は どう あつかうのか...<CF><D1><@LL,00,05>わるいことに 使うかもってことですか<CF><D1><@RL,0F,01>使い方を まちがえなければ 「力」は<CD>とても すばらしいものじゃ<CF><D1>だから この研究も やる かちは<CD>あるはずじゃて...じゃからの<CF><D1>メダロットの 使い方を まちがえない<CD>ように ヒカルや お前さんに<CF><D1>がんばってもらいたいのじゃよ<CF><D1><@LL,00,04>ぼくじゃ 力ぶそくかも しれないけど<CD>がんばリます<CF><D1><@RL,0F,01>よし! その いきじゃ!<CD>では さっそく これを...<CF><D1><@LL,00,07>これは!? かいはつ中の パ-ツ?<CF><D1><@RL,0F,01>そうじゃ 3つしかないからの<CD>ここぞという時に 使うんじゃぞ!<CF><D1><@LL,00,05>あ- はかせ それ ぼくに<CD>モニタ-になれってことですよね",
-002,0x1f0004,"<@RL,0F,03>そそ そんなこと ないぞい!<CF><D1>まだまだ デ-タが足リないからって<CD>お前さんに 使ってもらって<CF><D1>デ-タをとろうなんて 少しも<CD>考えておらん!<CF><D1><@RL,0F,02>...とは 言いきれないんじゃ<CD>使ってもらえんかのぅ?<CF><D1><@LL,00,04>ははは いいですよ はかせ<CD>ぼくの変形パ-ツの おんがえしです<CF><D1>モニタ-でも 何でもやリますよ<CF><D1><@RL,0F,01>うむ では たのんだぞい!",
+000,0x1f0000,"<@RL,0F,00>そうじゃ!<CD>しかしの そのメダルは 今は<CF><D1>しんでおるようなんじゃ<CF><D1><@LL,00,00>えっ?<CF><D1><@RL,0F,02>そのメダルからは<CD>フォ-スが かんちできんのじゃ<CF><D1>それが メダルに なるには<CD>フォ-スとよばれる「何か」が<CF><D1>足リんのじゃ<CF><D1><@LL,00,00>フォ-ス...<CF><D1><@RL,0F,00>そこでじゃ お前さんに<CD>たのみが ある<CF><D1>この6負かヘい石を あずかって<CD>くれんか?<CF><D1><@LL,00,07>ええっ!?<CF><D1><@RL,0F,00>研究所の中だけでは 分からんことも<CD>あるからの<CF><D1>お前さんなら あるいは...<CD>ほれ うけとれ","<@RL,0F,00>That's right! But the medal currently seems to be inert.<CF><D1><@LL,00,00>Eh?<CF><D1><@RL,0F,02>No force can be sensed from that medal, but in order to be a medal it must have that ""something,"" or force.<CF><D1><@RL,0F,00>That's where you come in. Could you hold on to the 6-Sided Nummelite for me?<CF><D1><@LL,00,07>Eeh!?<CF><D1><@RL,0F,00>There are some things that can't be understood within a lab. Perhaps you'll be able to figure it out... Here take it."
+001,0x1f0002,"<@LL,00,07>こ こんなに たくさん?<CF><D1><@RL,0F,01>研究には 1まいあれば こと足リる<CD>いいから 持っていけ<CF><D1><@RL,0F,00>話は 変わるがの...お前さん<CF><D1>メダロットには げんかいが あると<CD>思うかの?<CF><D1><@LL,00,00>げんかい? つよさの げんかいかな?<CF><D1><@RL,0F,00>わしは ないと 思っておる たとえば<CD>「2だんかい目の 変形」とかの<CF><D1><@LL,00,07>2番目の 変形が あるんですか!?<CF><D1><@RL,0F,00>いや まだ研究だんかい じゃからのぉ<CD>本当に できるかどうか わからん<CF><D1>そもそも 1だんかい目の変形<CD>「レクリスモ-ド」...<CF><D1>いわゆる メダチェンジが 今 できる<CD>パワ-アップの げんかいじゃ<CF><D1>しかし かいはつ中の<CD>オプションパ-ツで<CF><D1>さらなる パワ-アップが<CD>かのうと なるやもしれん<CF><D1>それが 今 わしが 研究しておる<CD>「クラフティモ-ド」じゃ<CF><D1>じゃが その パワ-を<CD>人間は どう あつかうのか...<CF><D1><@LL,00,05>わるいことに 使うかもってことですか<CF><D1><@RL,0F,01>使い方を まちがえなければ 「力」は<CD>とても すばらしいものじゃ<CF><D1>だから この研究も やる かちは<CD>あるはずじゃて...じゃからの<CF><D1>メダロットの 使い方を まちがえない<CD>ように ヒカルや お前さんに<CF><D1>がんばってもらいたいのじゃよ<CF><D1><@LL,00,04>ぼくじゃ 力ぶそくかも しれないけど<CD>がんばリます<CF><D1><@RL,0F,01>よし! その いきじゃ!<CD>では さっそく これを...<CF><D1><@LL,00,07>これは!? かいはつ中の パ-ツ?<CF><D1><@RL,0F,01>そうじゃ 3つしかないからの<CD>ここぞという時に 使うんじゃぞ!<CF><D1><@LL,00,05>あ- はかせ それ ぼくに<CD>モニタ-になれってことですよね","<@LL,00,07>Th-there are this many?<CF><D1><@RL,0F,01>We only need one for research, so take it.<CF><D1><@RL,0F,00>Changing topics... Do you think your medarot has a limit?<CF><D1><@LL,00,00>A limit? Like a limit to its strength?<CF><D1><@RL,0F,00>I don't believe there is one. Take the ""second transformation"" for example.<CF><D1><@LL,00,07>There's a second transformation?<CF><D1><@RL,0F,00>Well, it's still in the R&D phase, so I'm not sure of its feasability. The first transformation ""Reckless Mode""... what we call Medachange, is a limitted power-up, but with the development of optional parts, a further power-up may be possible. That is what I'm researching now, the ""Crafty Mode."" But the issue is, how people will handle such power.<CF><D1><@LL,00,05>Are you saying it could be used for evil?<CF><D1><@RL,0F,01>When used correctly, ""power"" is wonderous. With research, there should be a way to do it, but I want Hikaru and you to take care to use your medarots correctly.<CF><D1><@LL,00,04>I may not have much power, but I'll do my best.<CF><D1><@RL,0F,01>Good! That's the spirit! Well, let's do this...<CF><D1><@LL,00,07>This is!? A developmental part?<CF><D1><@RL,0F,01>That's right. There are only three of them, so we have to use them well!<CF><D1><@LL,00,05>Ah, do you want me to be a tester, Professor?"
+002,0x1f0004,"<@RL,0F,03>そそ そんなこと ないぞい!<CF><D1>まだまだ デ-タが足リないからって<CD>お前さんに 使ってもらって<CF><D1>デ-タをとろうなんて 少しも<CD>考えておらん!<CF><D1><@RL,0F,02>...とは 言いきれないんじゃ<CD>使ってもらえんかのぅ?<CF><D1><@LL,00,04>ははは いいですよ はかせ<CD>ぼくの変形パ-ツの おんがえしです<CF><D1>モニタ-でも 何でもやリますよ<CF><D1><@RL,0F,01>うむ では たのんだぞい!","<@RL,0F,03>Th-th-that isn't the case!<CF><D1>It isn't that we lack data and need you to gather some!<CF><D1><@RL,0F,02>...But I can't really say that I don't want you to use it, you know?<CF><D1><@LL,00,04>Hahaha, it's okay Professor. I owe you one for fixing my tranformation parts. I'll test whatever you need me to.<CF><D1><@RL,0F,01>Well then, I'll leave it to you!"
 003,0x1f0006,"<@LL,00,00>なぞに つつまれた<CD>「6負かヘい石」だ<CF><D1>全ての メダルは<CD>はじめは こんなのだっかのかも",
-004,0x1f0008,"<@LL,00,04>さてと 次の大会に そなえて<CD>家で 休んで おくかな",
-005,0x1f000a,"<@LL,00,01>ただいま-!<CF><D1><@RL,12,02><&BUF0A> ごはんは?<CF><D1><@LL,00,01>食ベる 食ベる!<CF><D1><@RL,11,01>どうだった? <&BUF0A><CD>こんどの しょうぶは<CF><D1><@LL,00,04>うん! こんどはね...",
-006,0x1f000c,"<@LL,00,01>あ- おなか いっぱい!<CD>ごちそうさま-!<CF><D1><@RL,12,01><&BUF0A><CD>夜ふかし しないで 早く<CF><D1><@RL,12,02>ねなきゃ ダ.メ.よ!<CF><D1><@LL,00,04>はぁ-い!<CD>じゃ パパ ママ おやすみなさい<CF><D1><@RL,11,01>お-! おやすみ<CF><D1><@RL,12,02>おやすみ",
-007,0x1f000e,"<@LL,00,04>夜ふかし するなと 言われると<CD>したくなっちゃうな えヘヘ",
+004,0x1f0008,"<@LL,00,04>さてと 次の大会に そなえて<CD>家で 休んで おくかな","<@LL,00,04>Now then, I should rest at home and get ready for the next tournament."
+005,0x1f000a,"<@LL,00,01>ただいま-!<CF><D1><@RL,12,02><&BUF0A> ごはんは?<CF><D1><@LL,00,01>食ベる 食ベる!<CF><D1><@RL,11,01>どうだった? <&BUF0A><CD>こんどの しょうぶは<CF><D1><@LL,00,04>うん! こんどはね...","<@LL,00,01>I'm home!<CF><D1><@RL,12,02>Do you want dinner, <&BUF0A>?<CF><D1><@LL,00,01>Let's eat, let's eat!<CF><D1><@RL,11,01>The battle this time, how was it, <&BUF0A>?<CF><D1><@LL,00,04>Yeah! This time..."
+006,0x1f000c,"<@LL,00,01>あ- おなか いっぱい!<CD>ごちそうさま-!<CF><D1><@RL,12,01><&BUF0A><CD>夜ふかし しないで 早く<CF><D1><@RL,12,02>ねなきゃ ダ.メ.よ!<CF><D1><@LL,00,04>はぁ-い!<CD>じゃ パパ ママ おやすみなさい<CF><D1><@RL,11,01>お-! おやすみ<CF><D1><@RL,12,02>おやすみ","<@LL,00,01>Aah, I'm stuffed! Thanks for the food!<CF><D1><@RL,12,01><&BUF0A>, get some sleep. Don't stay up too late.<CF><D1><@RL,12,02>It's not good for you!<CF><D1><@LL,00,04>Yeees!<D3>Well, mom and dad, good night.<CF><D1><@RL,11,01>Ooh! Good night.<CF><D1><@RL,12,02>Good night."
+007,0x1f000e,"<@LL,00,04>夜ふかし するなと 言われると<CD>したくなっちゃうな えヘヘ","<@LL,00,04>Whenever I get told not to stay up, I always want to. Ehehe"
 008,0x1f0010,"<@LL,00,05>下に おリたら<CD>ママに おこられちゃうや",
-009,0x1f0012,"<@LL,00,04>パソコンを 立ち上げてっと",
-010,0x1f0014,"<@LL,00,07>わっ!",
-011,0x1f0016,"<@RL,41,03>目ざわリな レアメダル<CD>どこだっ!",
-012,0x1f0018,"<@RL,41,03>お前! いつか かならず<CD>タオス!!",
-013,0x1f001a,"<@LL,00,07>びっ...びっくリしたぁ...<CD>何だったんだ...?",
-014,0x1f001c,"<@LL,00,06>は 早く ねよう うん<CD>やっぱリ 夜ふかしは よくないっ<CF><D1><@LL,00,05>でも...レアメダルって<CD>何だろう?<CF><D1><@LL,00,05>う--む..............<CD>..................",
-015,0x1f001e,"<@LL,00,05>.........もう ねよう うん",
+009,0x1f0012,"<@LL,00,04>パソコンを 立ち上げてっと","<@LL,00,04>Let's turn on the computer."
+010,0x1f0014,"<@LL,00,07>わっ!","<@LL,00,07>Woah!"
+011,0x1f0016,"<@RL,41,03>目ざわリな レアメダル<CD>どこだっ!","<@RL,41,03>Where's that eyesore of a rare medal!?"
+012,0x1f0018,"<@RL,41,03>お前! いつか かならず<CD>タオス!!","<@RL,41,03>You! I'll definitely get you someday!!"
+013,0x1f001a,"<@LL,00,07>びっ...びっくリしたぁ...<CD>何だったんだ...?","<@LL,00,07>Wh-what a surprise... What was that...?"
+014,0x1f001c,"<@LL,00,06>は 早く ねよう うん<CD>やっぱリ 夜ふかしは よくないっ<CF><D1><@LL,00,05>でも...レアメダルって<CD>何だろう?<CF><D1><@LL,00,05>う--む..............<CD>..................","<@LL,00,06>I-I should go to bed early. Staying up late isn't good.<CF><D1><@LL,00,05>But... What was that about a rare medal?<CF><D1><@LL,00,05>Hmmm................................"
+015,0x1f001e,"<@LL,00,05>.........もう ねよう うん","<@LL,00,05>.........Yeah, let's go to bed."
 016,0x1f0020,"<@RL,17,00>ぼうや<CD>こっちは 行き止まリだよ","<@RL,17,00>This way's a dead end, sonny."
 017,0x1f0022,"<@RL,1D,00>このあたリって じゅうたくがいだから<CD>昼間も しずかなのよね","<@RL,1D,00>This is the residential area, so<D3>it's quiet even during the day."
 018,0x1f0024,"<@RL,14,00>ここは「メダロポリス3」<CD>つまリ メダロポリスの右上ってわけ<CF><D1>お金もちが すむ エリアさ","<@RL,14,00>This is <f02>Medalopolis District<D3>3<f00>. That is to say, the upper<CF><D1>right area of Medalopolis.<D3>All the rich people live here."
@@ -25,9 +25,9 @@
 023,0x1f002e,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>","<@RL,0A,02>Do you want to link?<*04>"
 024,0x1f0030,"<@RL,0A,02>まったね-♥","<@RL,0A,02>Ok bye~♥"
 025,0x1f0032,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥","<@RL,0A,00>Hmm, you don't wanna?<CF><@RL,0A,02>Ok, see you next time then ♥"
-026,0x1f0034,"<@RL,13,00>あ-っ 本日は せいてんなリ<CD>せいてんなリ-っ<CF><D1>うむ こんなかんじかな",
-027,0x1f0036,"<@RL,13,00>前は うんどうじょうで あそぶことも<CD>きんしされてたんだぞ<CF><D1>しんじられるか?",
-028,0x1f0038,"<@RL,1B,00>外で あそぶのって 気持ちい-♥",
+026,0x1f0034,"<@RL,13,00>あ-っ 本日は せいてんなリ<CD>せいてんなリ-っ<CF><D1>うむ こんなかんじかな","<@RL,13,00>Ah, fine day today. Fine indeed.<CF><D1>Yeah, this is the life."
+027,0x1f0036,"<@RL,13,00>前は うんどうじょうで あそぶことも<CD>きんしされてたんだぞ<CF><D1>しんじられるか?","<@RL,13,00>We didn't used to be allowed to play on the grounds.<CF><D1>Can you believe that?"
+028,0x1f0038,"<@RL,1B,00>外で あそぶのって 気持ちい-♥","<@RL,1B,00>Playing outside is so nice ♥"
 029,0x1f003a,"<@RL,1D,00>メダロット社ヘ ようこそ!","<@RL,1D,00>Welcome to the Medabots<D3>Corporation!"
 030,0x1f003c,"<@RL,14,00>ここが メダロットの はんばいを<CD>とリしきってる 会社だよ","<@RL,14,00>This is the company that<D3>handles Medarot sales."
 031,0x1f003e,"<@RL,14,00>ああっ いそがしい いそがしい!<CD>話しかけるんじゃなぁい!","<@RL,14,00>Aah, I've got so much to do!<D3>There's no time to talk!"
@@ -141,10 +141,10 @@
 139,0x1f0116,"<@RL,13,00>この木の下で ねがいごとをすると<CD>おねがいが かなうんだって<CF><D1>ね-っ♥",
 140,0x1f0118,"<@RL,1B,00>2人で 会っているところを<CD>貝つかったら わたしたち<CF><D1>引きはなされて しまうの...?","<@RL,1B,00>If our meeting place is found,<D3>we...<CF><D1>Will we be separated...?"
 141,0x1f011a,"<@RL,13,00>そんなの イヤだ!","<@RL,13,00>No way! That would be terrible!"
-142,0x1f011c,"<@RL,1B,00>この木の下で ねがいごとをすると<CD>おねがいが かなうのよ<CF><D1>ね-っ♥",
+142,0x1f011c,"<@RL,1B,00>この木の下で ねがいごとをすると<CD>おねがいが かなうのよ<CF><D1>ね-っ♥","<@RL,1B,00>If we make a wish under this try, it'll come true.<CF><D1>Right? ♥"
 143,0x1f011e,"<@RL,14,00>それでは これから<CD>じゅぎょうを はじめる","<@RL,14,00>Well then, the lesson starts<D3>now!"
 144,0x1f0120,"<@RL,14,00>それでは これで<CD>じゅぎょうを おわる","<@RL,14,00>And that concludes the lesson."
-145,0x1f0122,"<@RL,1B,00>先生は ホ-ムル-ムの たびに<CD>ロボトルを はじめるの",
+145,0x1f0122,"<@RL,1B,00>先生は ホ-ムル-ムの たびに<CD>ロボトルを はじめるの","<@RL,1B,00>Our teacher always starts robattling during homeroom."
 146,0x1f0124,"<@LL,00,00>なんか ここの きょうしつだけ<CD>人が おおくない?<CF><D1><@RL,13,00>ここに いるのは<CD>みんな メダロットずきさ<CF><D1>学園で ロボトルできるようなったから<CD>みんなで あつまってるんだ<CF><D1>きみも 楽しんでいきなよ",
 147,0x1f0126,"<@RL,13,00>う-ん みんな<CD>とても いきいきしているなぁ",
 148,0x1f0128,どうだい?<CD>きみも いっせん まじえるってのは,
@@ -152,27 +152,27 @@
 150,0x1f012c,"<@RL,13,00>メダロットは やっぱリ<CD>「スピ-ド型」さ!<CF><D1>すばやい 動きで あいてを<CD>つきくずす!<CF><D1><@RL,1B,00>あまいわね<CF><D1>わたしの メダロットの<CD>「パワ-型」の まえでは<CF><D1>「スピ-ド型」なんて<CD>むリょくよ!!<CF><D1><@RL,1D,00>まだまだ こどもね<CF><D1>先生の メダロットの<CD>「テクニック型」の 前では<CF><D1>いくら 「パワ-型」でも<CD>当たらないから かんけいないわ<CF><D1><@RL,13,00>でも 「スピ-ド型」で<CD>ガンガンせめたら<CF><D1>「テクニック」が あったって<CD>使うひまを あたえないよ<CF><D1><@LL,00,00>は...はくねつした たたかいだ",
 151,0x1f012e,"<@RL,13,00>この コンビネ-ションだったら<CD>あいては 手も 足も 出せないさ",
 152,0x1f0130,"<@RL,13,00>こ こらぁ!!<CD>よこから のぞきこむなぁ!!",
-153,0x1f0132,"<@RL,13,00>ぼくと ロボトルしたいのかい?<CD>あいてに なろう!",
-154,0x1f0134,なかなかやるな しかし<CD>きみは きほんが なっていない!<CF><D1>はじめのうちに きほんを<CD>マスタ-しなければ<CF><D1>いずれ こてんぱんにされるだろう!,
+153,0x1f0132,"<@RL,13,00>ぼくと ロボトルしたいのかい?<CD>あいてに なろう!","<@RL,13,00>Do you wanna robattle? Let's fight!"
+154,0x1f0134,なかなかやるな しかし<CD>きみは きほんが なっていない!<CF><D1>はじめのうちに きほんを<CD>マスタ-しなければ<CF><D1>いずれ こてんぱんにされるだろう!,"You did well, but you haven't mastered the basics. If you don't master all of the basics, then you'll eventually get beaten!"
 155,0x1f0136,"<@RL,13,00>いくぞ メダチェィンジ!!<CF><D1><@RL,1B,00>まけないわよ!<CD>メダフォゥゥス!!",
-156,0x1f0138,"<@RL,13,00>ていしの 症状を<CD>マイナス症状クリア!<CF><D1><@RL,1B,00>そのマイナス症状クリアを<CD>マイナス症状クリアで かいじょ!<CF><D1><@LL,00,00>?<CF><D1><@RL,13,00>そしたら あいてに<CD>プラス症状クリア!<CF><D1><@RL,1B,00>それなら そのプラス症状クリアを<CD>プラス症状クリアで かいじょ!<CF><D1><@LL,00,04>???<CF><D1><@RL,1B,00>つづけて ていしの 症状を<CD>つけてあげるわっ!!<CF><D1><@RL,13,00>まけるか!<CD>ここで フィ-ルドこんらん!!<CF><D1><@RL,1B,00>ええっ!?<CD>なっ なんてことすんのよ!!<CF><D1><@LL,00,05>...????????????...",
+156,0x1f0138,"<@RL,13,00>ていしの 症状を<CD>マイナス症状クリア!<CF><D1><@RL,1B,00>そのマイナス症状クリアを<CD>マイナス症状クリアで かいじょ!<CF><D1><@LL,00,00>?<CF><D1><@RL,13,00>そしたら あいてに<CD>プラス症状クリア!<CF><D1><@RL,1B,00>それなら そのプラス症状クリアを<CD>プラス症状クリアで かいじょ!<CF><D1><@LL,00,04>???<CF><D1><@RL,1B,00>つづけて ていしの 症状を<CD>つけてあげるわっ!!<CF><D1><@RL,13,00>まけるか!<CD>ここで フィ-ルドこんらん!!<CF><D1><@RL,1B,00>ええっ!?<CD>なっ なんてことすんのよ!!<CF><D1><@LL,00,05>...????????????...","<@RL,13,00>Clear the stop status with Minus Status Clear!<CF><D1><@RL,1B,00>The Minus Status Clear will get rid of negative statuses!<CF><D1><@LL,00,00>?<CF><D1><@RL,13,00>And then use Plus Status Clear on the opponent!<CF><D1><@RL,1B,00>If you do that, the positive symptoms will be cleared by Plus Status Clear!<CF><D1><@LL,00,04>???<CF><D1><@RL,1B,00>I'll keep hitting you with Stop!!<CF><D1><@RL,13,00>I'm gonna lose! Confuse the field, now!!<CF><D1><@RL,1B,00>Eeh!? Oh my!!<CF><D1><@LL,00,05>...????????????..."
 157,0x1f013a,"<@RL,13,00>大きな声じゃ 言えないけど...<CF><D1><@LL,00,00>ふむ ふむ<CF><D1><@RL,13,00>........<CD>.........<CF><D1>..........<CD>カリンちゃんって かわいいよな♥<CF><D1><@LL,00,05>...そんな 声をひそめて<CD>言うことかぁ?<CF><D1><@RL,13,00>し-っ し-っ!<CD>声が 大きいっ!","<@RL,13,00>Keep this quiet, but...<CF><D1><@LL,00,00>Yeah?<CF><D1><@RL,13,00>........<D3>.........<CF><D1>..........<D3>Karin is so cute...♥<CF><D1><@LL,00,05>...That's the thing I need to<D3>keep quiet?<CF><D1><@RL,13,00>Shh! Shh! Don't talk so loud!"
-158,0x1f013c,"<@RL,13,00>きみも カリンちゃん<CD>ファンクラブに 入らないか?",
+158,0x1f013c,"<@RL,13,00>きみも カリンちゃん<CD>ファンクラブに 入らないか?","<@RL,13,00>Do you want to join Karin's fan club too?"
 159,0x1f013e,"<@RL,13,00>大きな声じゃ 言えないけど...<CF><D1><@LL,00,00>ふむ ふむ<CF><D1><@RL,13,00>........<CD>.........<CF><D1>..........<CD>...........ぐう<CF><D1><@LL,00,05>ねるなよ-","<@RL,13,00>Just between you and me...<CF><D1><@LL,00,00>Yeah?<CF><D1><@RL,13,00>........<D3>.........<CF><D1>..........<D3>...........Zzzz...<CF><D1><@LL,00,05>He fell asleep!"
-160,0x1f0140,"<@RL,13,00>きみも 男の子だったら 男らしく<CF><D1>カリンちゃん ファンクラブに<CD>入るベきだ!<CF><D1><@LL,00,00>そ....そうかな....<CF><D1><@RL,13,00>そうだとも!!<CF><D1><@LL,00,04>で...でも やめとこうかな<CF><D1><@RL,13,00>この なんじゃくものぉっ!!",
+160,0x1f0140,"<@RL,13,00>きみも 男の子だったら 男らしく<CF><D1>カリンちゃん ファンクラブに<CD>入るベきだ!<CF><D1><@LL,00,00>そ....そうかな....<CF><D1><@RL,13,00>そうだとも!!<CF><D1><@LL,00,04>で...でも やめとこうかな<CF><D1><@RL,13,00>この なんじゃくものぉっ!!","<@RL,13,00>If you're a boy, you should be manly and join Karin's fan club!<CF><D1><@LL,00,00>I-is that so...?<CF><D1><@RL,13,00>That's right!<CF><D1><@LL,00,04>W-well I don't think I will.<CF><D1><@RL,13,00>What a coward!!"
 161,0x1f0142,"<@RL,1B,00>前の 学園長先生が いなくなってから<CD>ちっとも いいことが ないわ","<@RL,1B,00>Things have been kinda bad<D3>ever since the old headmaster<CF><D1>disappeared..."
 162,0x1f0144,"<@RL,1B,00>...あ! いけない!<CD>こんなこと しゃベっちゃ!","<@RL,1B,00>...Ah! Oh no!<D3>I shouldn't have said that!"
-163,0x1f0146,"<@RL,1B,00>新しい 学園長先生も いいかんじに<CD>なったみたい♥",
-164,0x1f0148,"<@RL,13,00>先生!<CD>しんけんロボトルしましょ-!<CF><D1><@RL,1D,00>こまったわねぇ<CD>はじめたばかリで じしんがないわ",
+163,0x1f0146,"<@RL,1B,00>新しい 学園長先生も いいかんじに<CD>なったみたい♥","<@RL,1B,00>The new headmaster seems to be settling in nicely ♥"
+164,0x1f0148,"<@RL,13,00>先生!<CD>しんけんロボトルしましょ-!<CF><D1><@RL,1D,00>こまったわねぇ<CD>はじめたばかリで じしんがないわ","<@RL,13,00>Teacher! Let's earnestly robattle!<CF><D1><@RL,1D,00>What a dilemma, I'm not confident since I just started."
 165,0x1f014a,"<@RL,1B,00>な 何よ 2人だけで<CD>お話ししてるのに わリこまないでよ","<@RL,1B,00>Wh-what? Can't you see the two of us are talking, don't interrupt!"
-166,0x1f014c,"<@RL,1B,00>何? わたしたちの お話しに<CD>入リたいの?",
+166,0x1f014c,"<@RL,1B,00>何? わたしたちの お話しに<CD>入リたいの?","<@RL,1B,00>What? You want in on our conversation?"
 167,0x1f014e,"<@RL,1B,00>...でね...が...<CD>そんな かんじで...<CF><D1><@LL,00,00>声が小さくて よく聞こえないや","<@RL,1B,00>...and so...it's...<D3>I feel like...<CF><D1><@LL,00,00>They're talking so quietly...<D3>I can't hear them very well."
-168,0x1f0150,"<@RL,1B,00>でね- だからぁ-<CD>しんじらんないでしょ--??<CF><D1><@LL,00,00>ふむ ふむ",
-169,0x1f0152,"<@RL,1B,00>あ-! ちょっとぉ!<CD>立ち聞きは やめてよね-!",
+168,0x1f0150,"<@RL,1B,00>でね- だからぁ-<CD>しんじらんないでしょ--??<CF><D1><@LL,00,00>ふむ ふむ","<@RL,1B,00>And that's it. You don't believe me, do you?<CF><D1><@LL,00,00>Hmm, hmm."
+169,0x1f0152,"<@RL,1B,00>あ-! ちょっとぉ!<CD>立ち聞きは やめてよね-!","<@RL,1B,00>Ah! Hey! You shouldn't eavesdrop!"
 170,0x1f0154,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>あっちヘ 行けよ","<@RL,13,00>W-what are you staring at me<D3>for? Go away!"
 171,0x1f0156,"<@RL,13,00>な 何 じろじろ 貝てんだよ<CD>...てれるだろ!","<@RL,13,00>Wh-what are you staring at?<D3>...You're freaking me out!"
 172,0x1f0158,"<@RL,13,00>何だよ お前!<CD>たこうの せいとのくせに<CF><D1>何 入ってきてんだよ!<CD>み 貝つかっても 知らないぞ!","<@RL,13,00>What the heck are you doing! Why's a student from another school here?<CF><D1>I-it's not my fault if you get found!"
-173,0x1f015a,"<@RL,13,00>やっぱ メダロットが いないと<CD>話が もリあがんないよな-",
+173,0x1f015a,"<@RL,13,00>やっぱ メダロットが いないと<CD>話が もリあがんないよな-","<@RL,13,00>You know, talking isn't as interesting without medarots, right?"
 174,0x1f015c,"<@RL,1D,00>ピ ピ ピアノの<CD>れんしゅう するんだから<CF><D1>あ あ あっちに 行ってよ!","<@RL,1D,00>I'm pra-a-acticing the piano<D3>now, sooo-o-oooo...<CF><D1>Go somewhere e-e-eeeelse!"
 175,0x1f015e,"<@RL,1D,00>わたしの えんそうを お聞き!",
 176,0x1f0160,"<@LL,00,05>こわいから 女子トイレに<CD>入るのは やめておこう","<@LL,00,05>Let's not go in the girl's<D3>bathroom again. It's scary<CF><D1>in there..."
