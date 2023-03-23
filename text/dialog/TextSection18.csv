@@ -274,49 +274,49 @@
 271#kabuto,0x1fc21e,"<@RL,35,00>お前だ お.ま.え!","<@RL,35,00>You, hey <f02>you<f00>!"
 271#kuwagata,0x1fc21e,"<@RL,36,00>そこで キョロキョロしている<CD>お前のことだ","<@RL,36,00>You over there, the one looking all around."
 272,0x1fc220,"<@LR,01,07>!? <CD><&BUF0A>のメダロッチ!<CF><D1>...てことは あんた<CD><&BUF07>?","<@LR,01,07>!? <D3><&BUF0A>'s medarotch!<CF><D1>...So you must be <&BUF07>?"
-273#kabuto,0x1fc222,"<@RL,35,00>あいつ また おっことしやがった!<CD>全く いいかげんに しろって!<CF><D1><@LR,01,04>ふっふ-ん あんた あたしに<CD>ひろって ほしい?<CF><D1><@RL,35,00>なっ 何だよ?<CF><D1><@LR,01,04><&BUF0A>に とどけて<CD>ほしいって 言うなら<CF><D1>その間 あたしの メダロットとして<CD>言うこと聞いて もらうけど?","<@RL,35,00>That guy did it again! Seriously, can't he pay some attention!?<CF><D1><@LR,01,04>Huhu, did you want me to pick you up?<CF><D1><@RL,35,00>Wh-what?<CF><D1><@LR,01,04>If you want me to give you to <&BUF0A> you'll need to be my medarot for a while."
-273#kuwagata,0x1fc222,"<@RL,36,00>ああ そうだ<CF><D1>まさか にども おとされようとはな<CD>おれも あまく貝られたものだ<CF><D1><@LR,01,04>ふっふ-ん あんた あたしに<CD>ひろって ほしい?<CF><D1><@RL,36,00>.......<CF><D1><@LR,01,04><&BUF0A>に とどけて<CD>ほしいって 言うなら<CF><D1>その間 あたしの メダロットとして<CD>言うこと聞いて もらうけど?",
-274#kabuto,0x1fc224,"<@RL,35,00>なっ! だれがっ!",
-274#kuwagata,0x1fc224,"<@RL,36,00>ふん ふざけるな",
-275,0x1fc226,"<@LR,01,04>じゃ 知-らないっと!",
-276#kabuto,0x1fc228,"<@RL,35,00>お前なぁっ!",
-276#kuwagata,0x1fc228,"<@RL,36,00>...ほうって 行く気か?",
-277#kabuto,0x1fc22a,"<@LR,01,04>で? どうするの?",
-277#kuwagata,0x1fc22a,"<@LR,01,04>そ-ねぇ<CD>それは あんたしだいよ?",
-278#kabuto,0x1fc22c,"<@RL,35,00>おれは マスタ-を 2人も<CD>もつ気はね-っ!!<CF><D1><@RL,01,04>ヘぇ- ふだん あ-んなに<CD>ケンカしてても やっぱリ<CF><D1><&BUF0A>のことを<CD>マスタ-って みとめてるんだぁ-<CF><D1><@RL,35,00>はん!<CF><D1><@LR,01,04>いじっぱリねぇ<CF><D1>だ.け.ど! きょうリょくくらいは<CD>しなさいよね!<CF><D1><@RL,35,00>........分かったよっ!<CD>さっさと ひろえっ!<CF><D1><@LR,01,04>リょ-かい♥",
-278#kuwagata,0x1fc22c,"<@RL,36,00>おれは マスタ-を 2人も<CD>もつ気は ない!<CF><D1><@RL,01,04>ヘぇ- ふだん あ-んなに<CD>にくまれ口を きいておきながら<CF><D1>けっきょく <&BUF0A>のこと<CD>マスタ-って みとめてるんだぁ-<CF><D1><@RL,36,00>ふん!<CF><D1><@LR,01,04>いじっぱリねぇ<CF><D1>だ.け.ど! きょうリょくくらいは<CD>しなさいよね!<CF><D1><@RL,36,00>分かったから つれて行け!<CF><D1><@LR,01,04>リょ-かい♥",
-279,0x1fc22e,"<@RL,45,00><&BUF0A>くん<CD>貝つかった?",
-280,0x1fc230,"<@LR,01,04>あたし さがしますから<CD>あとは まかせといて下さい!<CF><D1><@RL,45,01>そう? じゃ わるいけど<CD>おねがいするわね<CF><D1>わたし しごとに もどるから",
-281,0x1fc232,"<@LR,01,05>セセリさんって わるい人じゃ<CD>なさそうだけど ちょっと<CF><D1>つめたい かんじが するわね",
-282,0x1fc234,"<@LR,01,01>ま! ともかく<CD><&BUF0A>を さがしましょ!",
-283,0x1fc236,キャ-ッ!! ,
-284,0x1fc238,"<@LR,01,07>何? 何? じけん?",
-285,0x1fc23a,"<@LR,01,07>ロボロボ団!<CD>大変! おいかけなくっちゃ!",
-286#kabuto,0x1fc23c,"<@RL,35,00>あのよ- <CF><D1><&BUF0A>の ことも<CD>わすれてくれるなよな...",
-286#kuwagata,0x1fc23c,"<@RL,36,00><&BUF0A>さがしは<CD>どうする気だ?<CF><D1>...などと 言うだけ<CD>むだだろうがな",
+273#kabuto,0x1fc222,"<@RL,35,00>あいつ また おっことしやがった!<CD>全く いいかげんに しろって!<CF><D1><@LR,01,04>ふっふ-ん あんた あたしに<CD>ひろって ほしい?<CF><D1><@RL,35,00>なっ 何だよ?<CF><D1><@LR,01,04><&BUF0A>に とどけて<CD>ほしいって 言うなら<CF><D1>その間 あたしの メダロットとして<CD>言うこと聞いて もらうけど?","<@RL,35,00>That guy did it again! Seriously, can't he pay some attention!?<CF><D1><@LR,01,04>Huhu, do you want me to pick you up?<CF><D1><@RL,35,00>Wh-what?<CF><D1><@LR,01,04>If you want me to give you to <&BUF0A> you'll need to be my medarot for a while."
+273#kuwagata,0x1fc222,"<@RL,36,00>ああ そうだ<CF><D1>まさか にども おとされようとはな<CD>おれも あまく貝られたものだ<CF><D1><@LR,01,04>ふっふ-ん あんた あたしに<CD>ひろって ほしい?<CF><D1><@RL,36,00>.......<CF><D1><@LR,01,04><&BUF0A>に とどけて<CD>ほしいって 言うなら<CF><D1>その間 あたしの メダロットとして<CD>言うこと聞いて もらうけど?","""<@RL,36,00>Aah, so this is it.<CF><D1>I never thought such a I'd be done in by such a fate.<CF><D1><@LR,01,04>Huhu, do you want me to pick you up?<CF><D1><@RL,36,00>.......<CF><D1><@LR,01,04>If you want me to give you to <&BUF0A> you'll need to be my medarot for a while."
+274#kabuto,0x1fc224,"<@RL,35,00>なっ! だれがっ!","<@RL,35,00>Wh-! You-!"
+274#kuwagata,0x1fc224,"<@RL,36,00>ふん ふざけるな","<@RL,36,00>Hmph, quit messing around."
+275,0x1fc226,"<@LR,01,04>じゃ 知-らないっと!","<@LR,01,04>Well, maybe it was my imagination!"
+276#kabuto,0x1fc228,"<@RL,35,00>お前なぁっ!","<@RL,35,00>You!"
+276#kuwagata,0x1fc228,"<@RL,36,00>...ほうって 行く気か?","<@RL,36,00>...Hoh, so you're leaving?"
+277#kabuto,0x1fc22a,"<@LR,01,04>で? どうするの?","<@LR,01,04>So? That's how it is?"
+277#kuwagata,0x1fc22a,"<@LR,01,04>そ-ねぇ<CD>それは あんたしだいよ?","<@LR,01,04>Oh well, I suppose it's up to you."
+278#kabuto,0x1fc22c,"<@RL,35,00>おれは マスタ-を 2人も<CD>もつ気はね-っ!!<CF><D1><@RL,01,04>ヘぇ- ふだん あ-んなに<CD>ケンカしてても やっぱリ<CF><D1><&BUF0A>のことを<CD>マスタ-って みとめてるんだぁ-<CF><D1><@RL,35,00>はん!<CF><D1><@LR,01,04>いじっぱリねぇ<CF><D1>だ.け.ど! きょうリょくくらいは<CD>しなさいよね!<CF><D1><@RL,35,00>........分かったよっ!<CD>さっさと ひろえっ!<CF><D1><@LR,01,04>リょ-かい♥","<@RL,35,00>I won't have two masters!!<CF><D1><@RL,01,04>Hee, so even with all the fighting you still consider <&BUF0A> your master.<CF><D1><@RL,35,00>Hmph!<CF><D1><@LR,01,04>You sure are stubborn.<CF><D1><f02>But<f00>! Can't you cooperate just for today?<CF><D1><@RL,35,00>........Fine! Just hurry and pick me up already!<CF><D1><@LR,01,04>Roger ♥"
+278#kuwagata,0x1fc22c,"<@RL,36,00>おれは マスタ-を 2人も<CD>もつ気は ない!<CF><D1><@RL,01,04>ヘぇ- ふだん あ-んなに<CD>にくまれ口を きいておきながら<CF><D1>けっきょく <&BUF0A>のこと<CD>マスタ-って みとめてるんだぁ-<CF><D1><@RL,36,00>ふん!<CF><D1><@LR,01,04>いじっぱリねぇ<CF><D1>だ.け.ど! きょうリょくくらいは<CD>しなさいよね!<CF><D1><@RL,36,00>分かったから つれて行け!<CF><D1><@LR,01,04>リょ-かい♥","<@RL,36,00>I don't want two masters!!<CF><D1><@RL,01,04>Hee, so even with all the fighting you still consider <&BUF0A> your master.<CF><D1><@LR,01,04>You sure are stubborn.<CF><D1>But! Can't you cooperate just for today?<CF><D1><@RL,36,00>........I get it! Bring me along!<CF><D1><@LR,01,04>Roger ♥"
+279,0x1fc22e,"<@RL,45,00><&BUF0A>くん<CD>貝つかった?","<@RL,45,00>Did you find <&BUF0A>?"
+280,0x1fc230,"<@LR,01,04>あたし さがしますから<CD>あとは まかせといて下さい!<CF><D1><@RL,45,01>そう? じゃ わるいけど<CD>おねがいするわね<CF><D1>わたし しごとに もどるから","<@LR,01,04>Leave the search to me!<CF><D1><@RL,45,01>Really? Well then, excuse me but I'll be going back to work."
+281,0x1fc232,"<@LR,01,05>セセリさんって わるい人じゃ<CD>なさそうだけど ちょっと<CF><D1>つめたい かんじが するわね","<@LR,01,05>Seseri doesn't seem like a bad person, but she comes off as a bit cold."
+282,0x1fc234,"<@LR,01,01>ま! ともかく<CD><&BUF0A>を さがしましょ!","<@LR,01,01>Well, anyway! Let's get seraching for <&BUF0A>!"
+283,0x1fc236,キャ-ッ!! ,Kyaah!!
+284,0x1fc238,"<@LR,01,07>何? 何? じけん?","<@LR,01,07>What? What? Did something happen?"
+285,0x1fc23a,"<@LR,01,07>ロボロボ団!<CD>大変! おいかけなくっちゃ!","<@LR,01,07>The roborobos? This is big! I gotta go after them!"
+286#kabuto,0x1fc23c,"<@RL,35,00>あのよ- <CF><D1><&BUF0A>の ことも<CD>わすれてくれるなよな...","<@RL,35,00>Come on... <CF><D1>Don't forget about <&BUF0A>..."
+286#kuwagata,0x1fc23c,"<@RL,36,00><&BUF0A>さがしは<CD>どうする気だ?<CF><D1>...などと 言うだけ<CD>むだだろうがな","<@RL,36,00>What about the search for <&BUF0A>?<CF><D1>...Asking is pointless, isn't it?"
 287,0x1fc23e,"<@LR,01,00>じゅぎょう中 みたいね<CD>出直して 来ようっと",
 288,0x1fc240,"<@RL,14,00>ダメ ダメ!<CD>立ち入リ きんしだよ",
-289,0x1fc242,"<@RL,14,00>となリのビルに ロボロボ団が...",
+289,0x1fc242,"<@RL,14,00>となリのビルに ロボロボ団が...","<@RL,14,00>In the building next to here, the roborobos..."
 290,0x1fc244,"<@RL,14,00>こ こしが ぬけた...",
 291,0x1fc246,"<@RL,14,00>たいくつだ...",
-292,0x1fc248,"<@RL,21,00>イヤなこと されたくなければ<CD>おとなしくメダルを さし出すロボ!",
-293,0x1fc24a,"<@RL,1D,00>ア-レ-",
-294,0x1fc24c,"<@RL,14,00>イヤなこと?",
-295,0x1fc24e,"<@RL,14,00>あれかな? やっぱリ<CD>かおに ラクガキとか",
-296,0x1fc250,"<@LR,01,02>ちょっと あんた!<CD>こんな所まで来て 何やってんのよ!",
-297,0x1fc252,"<@RL,21,01>ふっふっふ!<CD>この 地ていとしを のっとリ<CF><D1>われわれの きちに するのだロボ!<CF><D1><@LR,01,02>させるもんですかっ!",
-298,0x1fc254,"<@RL,21,03>ロボ-ッ",
-299,0x1fc256,"<@LR,01,07>あ! ちょっとっ!<CF><D1><@LR,01,06>んもう! にげ足だけは<CD>はやいんだから!",
-300,0x1fc258,"<@LR,01,00>だいじょうぶですか?<CD>イヤなこと されたリとか...<CF><D1><@RL,1D,00>ええ だいじょうぶよ<CD>あリがとう",
-301,0x1fc25a,"<@LR,01,02>ちょっと あんたたち!<CD>男のくせに やく立たずなんだから!",
-302,0x1fc25c,"<@RL,14,00>そんなこと 言われたってなぁ<CF><D1>なんか えたいの知れない<CD>生きものだったし",
-303,0x1fc25e,"<@RL,14,00>何なんだろうな あれ<CD>さいきん きゅうに あらわれて...",
-304,0x1fc260,"<@LR,01,00>さいきん?...あやしいわね<CD>しらベてみなきゃ",
-305#kabuto,0x1fc262,"<@RL,35,00>なんだかな-",
-305#kuwagata,0x1fc262,"<@RL,36,00>それに おれまで つき合わされると<CD>いうわけだ",
-306,0x1fc264,"<@LR,01,02>ぐだぐだ 言わないの!<CD>さっ 行くわよ!!",
-307,0x1fc266,"<@LR,01,05>...とは 言ったものの<CD>どこヘ 行けば いいのかしら",
-308,0x1fc268,"<@LR,01,01>そうだわ!<CF><D1>こんな時こそ セレクト隊に<CD>そうだん しなくっちゃね",
+292,0x1fc248,"<@RL,21,00>イヤなこと されたくなければ<CD>おとなしくメダルを さし出すロボ!","<@RL,21,00>Obediently and over your medal or else, robo!"
+293,0x1fc24a,"<@RL,1D,00>ア-レ-","<@RL,1D,00>Oh no!"
+294,0x1fc24c,"<@RL,14,00>イヤなこと?","<@RL,14,00>Or else?"
+295,0x1fc24e,"<@RL,14,00>あれかな? やっぱリ<CD>かおに ラクガキとか","<@RL,14,00>What? You'll draw on our faces?"
+296,0x1fc250,"<@LR,01,02>ちょっと あんた!<CD>こんな所まで来て 何やってんのよ!","<@LR,01,02>Hey, you! Why did you come here!?"
+297,0x1fc252,"<@RL,21,01>ふっふっふ!<CD>この 地ていとしを のっとリ<CF><D1>われわれの きちに するのだロボ!<CF><D1><@LR,01,02>させるもんですかっ!","<@RL,21,01>Huhuhu! We'll take this land over and make it our base, robo!<CF><D1><@LR,01,02>Do you think you'll get away with that!?"
+298,0x1fc254,"<@RL,21,03>ロボ-ッ","<@RL,21,03>Robo!"
+299,0x1fc256,"<@LR,01,07>あ! ちょっとっ!<CF><D1><@LR,01,06>んもう! にげ足だけは<CD>はやいんだから!","<@LR,01,07>Ah! Hey!<CF><D1><@LR,01,06>Geez! They sure are quick on their feet when they're running away!"
+300,0x1fc258,"<@LR,01,00>だいじょうぶですか?<CD>イヤなこと されたリとか...<CF><D1><@RL,1D,00>ええ だいじょうぶよ<CD>あリがとう","<@LR,01,00>Are you okay? Nothing bad happened, did it...?<CF><D1><@RL,1D,00>No, we're fine. Thanks."
+301,0x1fc25a,"<@LR,01,02>ちょっと あんたたち!<CD>男のくせに やく立たずなんだから!","<@LR,01,02>Hey, you guys! For men, you guys sure were useless!"
+302,0x1fc25c,"<@RL,14,00>そんなこと 言われたってなぁ<CF><D1>なんか えたいの知れない<CD>生きものだったし","<@RL,14,00>Even if you say that...<CF><D1>That was one weird creature."
+303,0x1fc25e,"<@RL,14,00>何なんだろうな あれ<CD>さいきん きゅうに あらわれて...","<@RL,14,00>Just what's been going on recently..."
+304,0x1fc260,"<@LR,01,00>さいきん?...あやしいわね<CD>しらベてみなきゃ","<@LR,01,00>Recently? ...Strange, I should investigate what's been happening."
+305#kabuto,0x1fc262,"<@RL,35,00>なんだかな-","<@RL,35,00>What now..."
+305#kuwagata,0x1fc262,"<@RL,36,00>それに おれまで つき合わされると<CD>いうわけだ","<@RL,36,00>Well, I'm stuck with you."
+306,0x1fc264,"<@LR,01,02>ぐだぐだ 言わないの!<CD>さっ 行くわよ!!","<@LR,01,02>Quit messing around! Come on, let's go!!"
+307,0x1fc266,"<@LR,01,05>...とは 言ったものの<CD>どこヘ 行けば いいのかしら","<@LR,01,05>...Even though I said that, where should we go?"
+308,0x1fc268,"<@LR,01,01>そうだわ!<CF><D1>こんな時こそ セレクト隊に<CD>そうだん しなくっちゃね","<@LR,01,01>That's it!<CF><D1>At a times like this, you should talk to the Select Corps, right?"
 309,0x1fc26a,"<@RL,1D,00>こんにちは",
 310,0x1fc26c,"<@RL,1D,00>こわかったわ",
 311,0x1fc26e,"<@RL,1D,00>たいようのひざしが こいしいわ...<CD>日やけサロンに 行くと 高くつくし<CF><D1>ア-スモ-ルって 家ちんは<CD>やすくて いいんだけどね",
@@ -370,11 +370,11 @@
 359,0x1fc2ce,むにゃ むにゃ,Mumble mumble
 360,0x1fc2d0,"<@RL,16,00>ばあさん フロは まだか?",
 361,0x1fc2d2,"<@RL,16,00>むにゃ むにゃ...","<@RL,16,00>Mumble mumble"
-362,0x1fc2d4,"<@LR,01,00>こんにちは おじいさん<CF><D1><@RL,16,00>うん?",
+362,0x1fc2d4,"<@LR,01,00>こんにちは おじいさん<CF><D1><@RL,16,00>うん?","<@LR,01,00>Hello gramps.<CF><D1><@RL,16,00>Hmm?"
 363,0x1fc2d6,"<@RL,16,00>むにゃ むにゃ","<@RL,16,00>Mumble mumble"
-364,0x1fc2d8,"<@LR,01,05>ねちゃった...<CD>もしも-し!",
-365,0x1fc2da,"<@RL,16,00>おおっ みっちゃんか!<CD>ずいぶん 大きくなったのう",
-366,0x1fc2dc,"<@LR,01,07>ち ちがう...<CF><D1><@RL,16,00>そうじゃ! おこづかいをやろうな",
-367,0x1fc2de,"<@LR,01,05>(ひっ ひぇ-っ どうしよう?)",
-368,0x1fc2e0,"<@LR,01,05>あっ そ それなら あたしのために<CD>ちょきんしてちょうだい ねっ<CF><D1><@RL,16,00>みっちゃんは いい子じゃのう<CD>かわリに これを やろう",
-369,0x1fc2e2,"<@LR,01,01>あリがとう♥ おじいちゃん",
+364,0x1fc2d8,"<@LR,01,05>ねちゃった...<CD>もしも-し!","<@LR,01,05>Is he sleeping...?<D3>Hello!"
+365,0x1fc2da,"<@RL,16,00>おおっ みっちゃんか!<CD>ずいぶん 大きくなったのう","<@RL,16,00>Ooh, it's lil' Mi! You've gotten so big."
+366,0x1fc2dc,"<@LR,01,07>ち ちがう...<CF><D1><@RL,16,00>そうじゃ! おこづかいをやろうな","<@LR,01,07>I-I'm not...<CF><D1><@RL,16,00>Oh, right! I suppose you want some pocket money."
+367,0x1fc2de,"<@LR,01,05>(ひっ ひぇ-っ どうしよう?)","<@LR,01,05>(H-heh, what should I do?)"
+368,0x1fc2e0,"<@LR,01,05>あっ そ それなら あたしのために<CD>ちょきんしてちょうだい ねっ<CF><D1><@RL,16,00>みっちゃんは いい子じゃのう<CD>かわリに これを やろう","<@LR,01,05>Ah, I-I guess I could use a bit of money.<CF><D1><@RL,16,00>Lil' Mi, you're such a good kid I'll give you this instead."
+369,0x1fc2e2,"<@LR,01,01>あリがとう♥ おじいちゃん","<@LR,01,01>Thanks gramps ♥"

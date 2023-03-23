@@ -13,7 +13,7 @@ Index[#version],ItemName,Flags
 8,Six-sided Fossil\xcb,\x00
 9,Name Tag\xcb,\x00
 10,Lesson Materials\xcb,\x00
-11,Kogane's Flower\xcb,\x00
+11,Kogane's Flowers\xcb,\x00
 12,Ship Ticket\xcb,\x00
 13,Kogane's Medal\xcb,\x00
 14,T Medal\xcb,\x00
