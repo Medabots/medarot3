@@ -255,15 +255,15 @@
 244,0x2001e8,"<@RL,18,00>イタズラしちゃ ダメ",
 245,0x2001ea,"<@RL,44,01>やあ いらっしゃい<CD>こっちだよ","<@RL,44,01>Hey, welcome. This way."
 246,0x2001ec,"<@LL,00,00>ここは...?","<@LL,00,00>This place...?"
-247,0x2001ee,"<@RL,44,01>まだ みかんせいなんだ<CD>地きゅうの 中心にある<CF><D1>マグマの ねつを 利用して<CD>電力を作リ出す システムなんだよ<CF><D1>キミは オガサワラさんに<CD>「メダルはつ電所」を 貝せられて<CF><D1>思ったんだろう?<CD>「メダロットが かわいそうだ」って<CF><D1><@LL,00,03>かんペきな システムなのかも<CD>しれないけど<CF><D1>メダロットたちを<CD>どうぐみたいに 使って...<CF><D1>ここが メダロットの いのちを<CD>けずって 動いてるんだと 思うと<CF><D1>何だか すきに なれないです<CF><D1><@RL,44,00>かのじょは いっしょうけんめいに<CD>なリすぎて ほかのことが<CF><D1>貝えなくなってるんだよ",
-248,0x2001f0,"<@RL,44,01>でもね! ここが かんせいすれば<CD>もう ぼくたちは メダロットの<CF><D1>いのちを けずるひつようは<CD>なくなるんだ!<CF><D1><@LL,00,04>早く かんせいすると いいですね",
-249,0x2001f2,"<@RL,44,02>オガサワラさんも むかしは あんなに<CD>ギスギス してなかったんだけど<CF><D1><@LL,00,00>先生は セセリさんと どういう<CD>知リ合いなんですか?",
-250,0x2001f4,"<@RL,44,01>おさななじみだよ",
-251,0x2001f6,"<@RL,18,00>すみません ちょっと 通リます",
-252,0x2001f8,"<@RL,44,03>おっとっと...",
-253,0x2001fa,"<@RL,44,00>ここじゃ 話しづらいな<CD>きっさ店にでも 行こうか<CF><D1><@LL,00,00>きっさ店?",
-254,0x2001fc,"<@RL,44,01>ア-スモ-ルの 上のはしにある<CD>きっさ店のことだよ<CF><D1>ちょっと 遠いけど<CD>そこで 話そう それじゃ あとで!",
-255,0x2001fe,"<@LL,00,05>ぼくの ヘんじも またずに<CD>行っちゃった<CF><D1><@LL,00,04>でも せっかくだし<CD>行ってみよう",
+247,0x2001ee,"<@RL,44,01>まだ みかんせいなんだ<CD>地きゅうの 中心にある<CF><D1>マグマの ねつを 利用して<CD>電力を作リ出す システムなんだよ<CF><D1>キミは オガサワラさんに<CD>「メダルはつ電所」を 貝せられて<CF><D1>思ったんだろう?<CD>「メダロットが かわいそうだ」って<CF><D1><@LL,00,03>かんペきな システムなのかも<CD>しれないけど<CF><D1>メダロットたちを<CD>どうぐみたいに 使って...<CF><D1>ここが メダロットの いのちを<CD>けずって 動いてるんだと 思うと<CF><D1>何だか すきに なれないです<CF><D1><@RL,44,00>かのじょは いっしょうけんめいに<CD>なリすぎて ほかのことが<CF><D1>貝えなくなってるんだよ","<@RL,44,01>It's still unfinished, but it's a system that produces electricity by utilizing the heat of the magma at the center of the Earth. When you saw Ms. Ogasawara's <f02>Medal Power Plant<f00> you had a thought go through your head, right? ""That poor medarot.""<CF><D1><@LL,00,03>It may be a perfect system, but using medarots like tools...<CF><D1>But it's hard to accept this place running at the expense of the lives.<CF><D1><@RL,44,00>That girl is working so hard, that she's lost sight of anything else.<D3>"
+248,0x2001f0,"<@RL,44,01>でもね! ここが かんせいすれば<CD>もう ぼくたちは メダロットの<CF><D1>いのちを けずるひつようは<CD>なくなるんだ!<CF><D1><@LL,00,04>早く かんせいすると いいですね","<@RL,44,01>But! If this place is completed, we won't have to use the lives of medarots anymore!<CF><D1><@LL,00,04>I hope it's completed soon."
+249,0x2001f2,"<@RL,44,02>オガサワラさんも むかしは あんなに<CD>ギスギス してなかったんだけど<CF><D1><@LL,00,00>先生は セセリさんと どういう<CD>知リ合いなんですか?","<@RL,44,02>Ms. Ogasawara wasn't always worn so thin.<CF><D1><@LL,00,00>Sir, how do you know Seseri?"
+250,0x2001f4,"<@RL,44,01>おさななじみだよ","<@RL,44,01>We're childhood friends."
+251,0x2001f6,"<@RL,18,00>すみません ちょっと 通リます","<@RL,18,00>Excuse me, I'm coming through."
+252,0x2001f8,"<@RL,44,03>おっとっと...","<@RL,44,03>Whoops..."
+253,0x2001fa,"<@RL,44,00>ここじゃ 話しづらいな<CD>きっさ店にでも 行こうか<CF><D1><@LL,00,00>きっさ店?","<@RL,44,00>This is a bad place to talk. Let's go to a cafe, okay?<CF><D1><@LL,00,00>A cafe?"
+254,0x2001fc,"<@RL,44,01>ア-スモ-ルの 上のはしにある<CD>きっさ店のことだよ<CF><D1>ちょっと 遠いけど<CD>そこで 話そう それじゃ あとで!","<@RL,44,01>The cafe at the far upper edge of the Earth Mall. It's a bit far, but let's talk there!"
+255,0x2001fe,"<@LL,00,05>ぼくの ヘんじも またずに<CD>行っちゃった<CF><D1><@LL,00,04>でも せっかくだし<CD>行ってみよう","<@LL,00,05>He didn't even wait for me to answer.<CF><D1><@LL,00,04>But I guess I'll go."
 256,0x200200,"Aランチ...カレ-ライス<CD>Bランチ...ライスカレ-<CF><D1>びみょうな サジかげん<CD>ほんかくは インスタントコ-ヒ-<CF><D1><@LL,00,03>なんだかなぁ...",
 257,0x200202,"<@RL,16,00>いろいろあって なやむのう",
 258,0x200204,"<@RL,1E,00>いらっしゃいませ♥",
@@ -285,34 +285,34 @@
 274,0x200224,"<@RL,16,00>まだじゃ! ちぃ-と まちんしゃい",
 275,0x200226,"<@RL,34,00>このおじいさん ず-っと<CD>メニュ-を 貝ているんです",
 276,0x200228,"<@RL,34,00>うちは 3しゅるいしか<CD>メニュ-がないのに...",
-277,0x20022a,"<@RL,44,01>やあ <&BUF0A>くん<CD>ほら すわって すわって!",
-278,0x20022c,"<@RL,34,00>ごちゅうもんを どうぞ",
-279,0x20022e,"<@RL,44,01>ぼくは「Aランチ」を",
-280,0x200230,"<&BUF0A>くんは?<CF><D1><@LL,00,07>いいんですか?",
-281,0x200232,"<@LL,00,04>じゃあ ぼくは「Bランチ」...",
-282,0x200234,"<@LL,00,05>...って ここ ランチメニュ-は<CD>この 2つだけ?",
-283,0x200236,"<@RL,34,00>と-ってもまずい コ-シ-があリます<CD>おつけしますか?",
-284,0x200238,"<@RL,34,00>ごちゅうもんは いじょうですか?<CF><D1><@LL,00,00>うん <CF><D1><@RL,34,00>かしこまリました",
-285,0x20023a,"<@RL,44,01>さて...あれ?<CD>何を 話すんだっけ?<CF><D1><@LL,00,05>ガクッ<CD>セセリさんの 話ですよ<CF><D1><@RL,44,01>ああ そうそう<CD>かのじょは ごリょうしんも<CF><D1>研究いんで ここの かいはつに<CD>かかわっていたんだ<CF><D1>いそがしい ごリょうしんに<CD>かわって 子もリ用の メダロットが<CF><D1>かのじょの めんどうを<CD>貝ていたんだよ<CF><D1>かのじょは メダロットに<CD>そだてられたと 言っても<CF><D1>いいかも しれないね",
-286,0x20023c,"<@LL,00,07>えっ! それじゃ どうして!?<CF><D1>セセリさんは メダロットを<CD>あんな どうぐみたいに!<CF><D1><@RL,44,02>そのメダロットが ある日 とつぜん<CD>すがたを けしてしまったんだ<CF><D1>それで メダロットに<CD>うらぎられたと 思ったんだろうね<CF><D1>かのじょが メダロットに<CD>つめたいのは そのせいだと思う<CF><D1><@LL,00,07>そんなっ ごかいですよ!<CF><D1>きっと そのメダロットには<CD>何か じじょうが あったんだ!<CF><D1><@RL,44,02>だろうね...<CD>今となっては 分からないけど<CF><D1>いつか オガサワラさんも それに<CD>気づいてくれれば いいんだけど",
-287,0x20023e,"<@RL,44,01>お! ランチが 来たようだよ",
-288,0x200240,"<@LL,00,01>いただきま-す!<CF><D1><@RL,44,01>はい! いただきます<CF><D1><@LL,00,06>もぐもぐ むしゃむしゃ<CD>(...うっ)",
-289,0x200242,"<@RL,44,00>どうしたの?<CF><D1><@LL,00,05>あ いえ 何でも ないです<CF><D1><@RL,44,00>そうかい?",
-290,0x200244,"<@LL,00,05>(何だろう? やさいが まずい!<CD>けど メダロットたちが あんなに<CF><D1>いっしょうけんめい 作ってるんだ<CD>なっ 何としても のこすもんか!)",
-291,0x200246,"<@RL,44,01>ごちそうさまでした!<CF><D1><@LL,00,04>ごっ ごちそうさまでした",
-292,0x200248,"<@RL,34,00>おさら おさげしま-す",
-293,0x20024a,"<@RL,44,01>じゃ 出ようか",
-294,0x20024c,"<@LL,00,00>先生!",
-295,0x20024e,"<@RL,44,01>ん?<CF><D1><@LL,00,00>先生は セセリさんのこと<CD>すきなんですか?",
-296,0x200250,"<@RL,44,03>なっ! す すきだなんて!<CD>そ そんなことっ!<CF><D1><@LL,00,00>え? すきって 言っても<CF><D1>きらいじゃ ないのかって<CD>いみなんですけど?<CF><D1><@RL,44,01>あ そう そうだよねっ<CF><D1>何 言ってるんだろうね ぼくは<CD>あは あはははははっ!",
-297,0x200252,"<@LL,00,07>(あっ! もしかしたら...)",
-298,0x200254,"<@LL,00,04>...セセリさんも 先生のことが<CD>すきだったら いいですね♥",
-299,0x200256,"<@RL,44,03>なっ! だっ だからっ!<CF><D1><@LL,00,01>あははっ!<CD>先生 かおが まっ赤だ!<CF><D1><@LL,00,04>(やっぱリそうなんだ アサマ先生は<CD>セセリさんのことが すきなんだな)",
-300,0x200258,"<@RL,44,03>そっ それじゃあ ぼくは<CD>学校に もどるよ",
-301,0x20025a,"<@RL,1E,00>ちょうど 1000¥ になリます",
-302,0x20025c,"<@LL,00,01>ごちそうさまでした!",
-303,0x20025e,"<@RL,44,00>どういたしまして",
-304,0x200260,"<@LL,00,00>う-ん 何とか 先生が言ってた<CD>セセリさんの おやがわリだったって<CF><D1>メダロット さがせないかな?<CF><D1>ア-スモ-ルの しせつを<CD>まわって しらベてみよう",
+277,0x20022a,"<@RL,44,01>やあ <&BUF0A>くん<CD>ほら すわって すわって!","<@RL,44,01>Hey, <&BUF0A>. Come on, sit down, sit!"
+278,0x20022c,"<@RL,34,00>ごちゅうもんを どうぞ","<@RL,34,00>Please place your order."
+279,0x20022e,"<@RL,44,01>ぼくは「Aランチ」を","<@RL,44,01>I'll take <f02>Lunch A<f00>."
+280,0x200230,"<&BUF0A>くんは?<CF><D1><@LL,00,07>いいんですか?","You, <&BUF0A>?<CF><D1><@LL,00,07>Really?"
+281,0x200232,"<@LL,00,04>じゃあ ぼくは「Bランチ」...","<@LL,00,04>Then I'll have <f02>Lunch B<f00>..."
+282,0x200234,"<@LL,00,05>...って ここ ランチメニュ-は<CD>この 2つだけ?","<@LL,00,05>...So, this place only has two lunches on the menu?"
+283,0x200236,"<@RL,34,00>と-ってもまずい コ-シ-があリます<CD>おつけしますか?","<@RL,34,00>I must sincerely aplogize, young man. Is that all for your order?"
+284,0x200238,"<@RL,34,00>ごちゅうもんは いじょうですか?<CF><D1><@LL,00,00>うん <CF><D1><@RL,34,00>かしこまリました","<@RL,34,00>Will you add anything to your order?<CF><D1><@LL,00,00>No. <CF><D1><@RL,34,00>It shall be done."
+285,0x20023a,"<@RL,44,01>さて...あれ?<CD>何を 話すんだっけ?<CF><D1><@LL,00,05>ガクッ<CD>セセリさんの 話ですよ<CF><D1><@RL,44,01>ああ そうそう<CD>かのじょは ごリょうしんも<CF><D1>研究いんで ここの かいはつに<CD>かかわっていたんだ<CF><D1>いそがしい ごリょうしんに<CD>かわって 子もリ用の メダロットが<CF><D1>かのじょの めんどうを<CD>貝ていたんだよ<CF><D1>かのじょは メダロットに<CD>そだてられたと 言っても<CF><D1>いいかも しれないね","<@RL,44,01>Now... Huh? What were we talking about?<CF><D1><@LL,00,05>Gah,<D3>we were talking about Seseri.<CF><D1><@RL,44,01>Yeah, right, right. Her parents were both researchers and involved in this place's development. So, because they were busy, she was taken care of by a childcare-type. You could even say she was raised by a medarot."
+286,0x20023c,"<@LL,00,07>えっ! それじゃ どうして!?<CF><D1>セセリさんは メダロットを<CD>あんな どうぐみたいに!<CF><D1><@RL,44,02>そのメダロットが ある日 とつぜん<CD>すがたを けしてしまったんだ<CF><D1>それで メダロットに<CD>うらぎられたと 思ったんだろうね<CF><D1>かのじょが メダロットに<CD>つめたいのは そのせいだと思う<CF><D1><@LL,00,07>そんなっ ごかいですよ!<CF><D1>きっと そのメダロットには<CD>何か じじょうが あったんだ!<CF><D1><@RL,44,02>だろうね...<CD>今となっては 分からないけど<CF><D1>いつか オガサワラさんも それに<CD>気づいてくれれば いいんだけど","<@LL,00,07>Eh!? Then why!?<CF><D1>Seseri is treating medarots like tools!<CF><D1><@RL,44,02>One dar, that medarot was suddenly gone. She had to have felt betrayed by the medarot and that's why she's so cold to them, I believe.<CF><D1><@LL,00,07>That has to be a misunderstanding!<CF><D1>I'm sure the medarot had a reason for doing that!<CF><D1><@RL,44,02>I agree...<D3>With how things are... I hope Ms. Ogasawara realizes that too some day."
+287,0x20023e,"<@RL,44,01>お! ランチが 来たようだよ","<@RL,44,01>Oh, looks like our lunch is coming."
+288,0x200240,"<@LL,00,01>いただきま-す!<CF><D1><@RL,44,01>はい! いただきます<CF><D1><@LL,00,06>もぐもぐ むしゃむしゃ<CD>(...うっ)","<@LL,00,01>Thanks for the fooood!<CF><D1><@RL,44,01>Yes! Let's eat.<CF><D1><@LL,00,06>*chew chew*  *munch munch*<D3>(...Uuw)"
+289,0x200242,"<@RL,44,00>どうしたの?<CF><D1><@LL,00,05>あ いえ 何でも ないです<CF><D1><@RL,44,00>そうかい?","<@RL,44,00>What's wrong?<CF><D1><@LL,00,05>Ah, no. It's nothing.<CF><D1><@RL,44,00>Really?"
+290,0x200244,"<@LL,00,05>(何だろう? やさいが まずい!<CD>けど メダロットたちが あんなに<CF><D1>いっしょうけんめい 作ってるんだ<CD>なっ 何としても のこすもんか!)","<@LL,00,05>(What is this? The vegetables are so bad! But the medarots worked so hard on this, there's not a chance I'll leave any behind!)"
+291,0x200246,"<@RL,44,01>ごちそうさまでした!<CF><D1><@LL,00,04>ごっ ごちそうさまでした","<@RL,44,01>Thanks for the meal.<CF><D1><@LL,00,04>Th-thank you for the meal."
+292,0x200248,"<@RL,34,00>おさら おさげしま-す","<@RL,34,00>I will take your plates."
+293,0x20024a,"<@RL,44,01>じゃ 出ようか","<@RL,44,01>Well, let's go."
+294,0x20024c,"<@LL,00,00>先生!","<@LL,00,00>Sir!"
+295,0x20024e,"<@RL,44,01>ん?<CF><D1><@LL,00,00>先生は セセリさんのこと<CD>すきなんですか?","<@RL,44,01>Mm?<CF><D1><@LL,00,00>Do you like Seseri?"
+296,0x200250,"<@RL,44,03>なっ! す すきだなんて!<CD>そ そんなことっ!<CF><D1><@LL,00,00>え? すきって 言っても<CF><D1>きらいじゃ ないのかって<CD>いみなんですけど?<CF><D1><@RL,44,01>あ そう そうだよねっ<CF><D1>何 言ってるんだろうね ぼくは<CD>あは あはははははっ!","<@RL,44,03>Wh-!? Like her? Th-that isn't the case!<CF><D1><@LL,00,00>Eh? Even though I asked if you like her, I only meant to make sure you don't dislike her, okay?<CF><D1><@RL,44,01>Ah, right. Of course.<CF><D1>What am I even saying?<D3>Aha ahahahah!"
+297,0x200252,"<@LL,00,07>(あっ! もしかしたら...)","<@LL,00,07>(Ah! Could it be...?)"
+298,0x200254,"<@LL,00,04>...セセリさんも 先生のことが<CD>すきだったら いいですね♥","<@LL,00,04>...It sure would be nice if Seseri likes you too ♥"
+299,0x200256,"<@RL,44,03>なっ! だっ だからっ!<CF><D1><@LL,00,01>あははっ!<CD>先生 かおが まっ赤だ!<CF><D1><@LL,00,04>(やっぱリそうなんだ アサマ先生は<CD>セセリさんのことが すきなんだな)","<@RL,44,03>Wh-!? Wh-why you!<CF><D1><@LL,00,01>Ahaha!<D3>Your face is all red!<CF><D1><@LL,00,04>(I was right, Mr. Asama really does like Seseri.)"
+300,0x200258,"<@RL,44,03>そっ それじゃあ ぼくは<CD>学校に もどるよ","<@RL,44,03>W-well then, I'm going back to school."
+301,0x20025a,"<@RL,1E,00>ちょうど 1000¥ になリます","<@RL,1E,00>That comes out to exactly 1,000¥."
+302,0x20025c,"<@LL,00,01>ごちそうさまでした!","<@LL,00,01>Thanks for the meal!"
+303,0x20025e,"<@RL,44,00>どういたしまして","<@RL,44,00>You're welcome."
+304,0x200260,"<@LL,00,00>う-ん 何とか 先生が言ってた<CD>セセリさんの おやがわリだったって<CF><D1>メダロット さがせないかな?<CF><D1>ア-スモ-ルの しせつを<CD>まわって しらベてみよう","<@LL,00,00>Hmm, would it be possible to find the medarot Mr. Asama mentioned that used to be like a parent to Seseri?<CF><D1>Let's go around the buildings in the Earth Mall and check it out."
 305,0x200262,"<@RL,14,00>う-ん まようなぁ",
 306,0x200264,"<@RL,15,00>かていきょうしの できる<CD>メダロットって いるのかしら?",
 307,0x200266,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
@@ -321,24 +321,24 @@
 310,0x20026c,"<@RL,01,07>メダロットのレンタルマシ-ン...<CD>すごい!! これはニュ-スだわ!<CF><D1><@RL,01,00>つぎのごうの2面目は <CD>このネタで きまリね!",
 311,0x20026e,"<@RL,01,00>ふ-ん いろんなメダロットが<CD>かリられるんだ",
 312,0x200270,"<@RL,03,00>レンタルマシ-ン? メダロットの?<CD>面白いもんが おいてあるんだな",
-313,0x200272,"<@RL,15,00>こんどは 何型のメダロットを<CD>かリようかしら?",
+313,0x200272,"<@RL,15,00>こんどは 何型のメダロットを<CD>かリようかしら?","<@RL,15,00>What type of medarot should I rent this time?"
 314,0x200274,"<@RL,15,00>せん水型 メダロットなんかが <CD>いいと思わない?<CF><D1>でも やってもらうことが<CD>ないわねぇ",
 315,0x200276,"<@RL,15,00>しゅふ型 メダロットって<CD>ないのかしら?",
 316,0x200278,"<@RL,15,00>はぁ...<CD>ほんと いろいろあって なやむわぁ",
 317,0x20027a,"<@RL,15,00>おもい にもつを はこばせるのに<CD>車リょう型メダロットを かリるの",
 318,0x20027c,ただいま ちょうせい中,
-319,0x20027e,"<@LL,00,00>レンタルマシ-ンか...<CD>この きかいに デ-タを入力したら<CF><D1>メダロットが かリられるのかな?<CD><@LL,00,00>よし ためしに 入力してみよう<CF><D1>きぼうする メダロットタイプと<CD>レンタルきかんを 入力して...",
-320,0x200280,"<@LL,00,00>タイプとメダロットの名 それから<CD>ねだんが 出るのか なるほどね",
-321,0x200282,"<@LL,00,07>もしかしたら セセリさんの<CD>おやがわリだったっていう<CF><D1>メダロットも ここから<CD>はけんされてたのかも!<CF><D1><@LL,00,00>ぼくが 知リたいのは<CD>かこに とうろくされてた<CF><D1>メダロットの デ-タだから...",
-322,0x200284,"<@LL,00,00>タイプは やっぱリ 子もリ型?<CF><D1>はけん先は「オガサワラ」で<CD>いけるかな?<CF><D1>それから セセリさんが 子どもの<CD>ころの 話だから<CF><D1>20年から 15年くらい前として<CD>...けんさく スタ-ト!<CF><D1><@CC,FF,FF>........!",
-323,0x200286,"<@LL,00,04>出た!<CF><D1><@CC,FF,FF>タイプ 子もリ型<CD>はけん先 オガサワラ シジミさま<CF><D1>2005年4月1日から<CD>2010年3月31日まで<CF><D1>名前 コガネ<CF><D1><@LL,00,07>えっ!? コガネ!?<CD>まさか あの コガネ?",
-324,0x200288,"<@LL,00,01>...な-んてね!<CD>パ-ツも ずいぶんちがうし...<CF><D1><@LL,00,05>でも パ-ツは つけかえできるよな",
-325,0x20028a,"<@LL,00,06>けっ けんさくしてみよう!<CF><D1><@CC,FF,FF>........!",
-326,0x20028c,"<@RL,30,00>2010年 しっそう<CF><D1>そのご ふめい...<CF><D1><@LL,00,00>行方知れずの ままって ことか<CD>そういえば コガネ<CF><D1>自分の名前のことを<CD>ひみつの 名前だって 言ってたな<CF><D1><@LL,00,07>コガネに たしかめてみよう!",
+319,0x20027e,"<@LL,00,00>レンタルマシ-ンか...<CD>この きかいに デ-タを入力したら<CF><D1>メダロットが かリられるのかな?<CD><@LL,00,00>よし ためしに 入力してみよう<CF><D1>きぼうする メダロットタイプと<CD>レンタルきかんを 入力して...","<@LL,00,00>This rental machine...<D3>Can I rent a medarot by entering the information into this?<CF><@LL,00,00>Okay, let's try entering something.<CF><D1>Enter the medarot type and rental agency..."
+320,0x200280,"<@LL,00,00>タイプとメダロットの名 それから<CD>ねだんが 出るのか なるほどね","<@LL,00,00>It gives the medarot type, name, and the price. I see."
+321,0x200282,"<@LL,00,07>もしかしたら セセリさんの<CD>おやがわリだったっていう<CF><D1>メダロットも ここから<CD>はけんされてたのかも!<CF><D1><@LL,00,00>ぼくが 知リたいのは<CD>かこに とうろくされてた<CF><D1>メダロットの デ-タだから...","<@LL,00,07>Maybe this is where the medarot that raised Seseri like a parent came from!<CF><D1><@LL,00,00>What I want is data on medarots that was recorded in the past..."
+322,0x200284,"<@LL,00,00>タイプは やっぱリ 子もリ型?<CF><D1>はけん先は「オガサワラ」で<CD>いけるかな?<CF><D1>それから セセリさんが 子どもの<CD>ころの 話だから<CF><D1>20年から 15年くらい前として<CD>...けんさく スタ-ト!<CF><D1><@CC,FF,FF>........!","<@LL,00,00>The type should be a childcare.<CF><D1>And the previous dispatch should have been to ""Ogasawara.""<CF><D1>If we're talking about when Seseri was a kid, it should be 15 to 20 years ago.<CF><D1>...Start the search!<CF><D1><@CC,FF,FF>........!"
+323,0x200286,"<@LL,00,04>出た!<CF><D1><@CC,FF,FF>タイプ 子もリ型<CD>はけん先 オガサワラ シジミさま<CF><D1>2005年4月1日から<CD>2010年3月31日まで<CF><D1>名前 コガネ<CF><D1><@LL,00,07>えっ!? コガネ!?<CD>まさか あの コガネ?","<@LL,00,04>It's done!<CF><D1><@CC,FF,FF>Type: Childcare, Previous dispatch: Mrs. Shijimi Ogasawara.<CF><D1>From April 1, 2005 until March 31, 2010.<CF><D1>Name: Kogane<CF><D1><@LL,00,07>Eh!? Kogane!? Could it be that Kogane?"
+324,0x200288,"<@LL,00,01>...な-んてね!<CD>パ-ツも ずいぶんちがうし...<CF><D1><@LL,00,05>でも パ-ツは つけかえできるよな","<@LL,00,01>...No way! The parts are completely different...<CF><D1><@LL,00,05>But parts can be replaced, can't they?"
+325,0x20028a,"<@LL,00,06>けっ けんさくしてみよう!<CF><D1><@CC,FF,FF>........!","<@LL,00,06>L-let's look it up!<CF><D1><@CC,FF,FF>........!"
+326,0x20028c,"<@RL,30,00>2010年 しっそう<CF><D1>そのご ふめい...<CF><D1><@LL,00,00>行方知れずの ままって ことか<CD>そういえば コガネ<CF><D1>自分の名前のことを<CD>ひみつの 名前だって 言ってたな<CF><D1><@LL,00,07>コガネに たしかめてみよう!","<@RL,30,00>Vanished in 2010.<CF><D1>Unclear after that...<CF><D1><@LL,00,00>It vanished? Come to think of it, Kogane said its name was a secret when it told me."
 327,0x20028e,"<@LL,00,00>もっと ほかにコガネにかんする<CD>デ-タが 入ってないかな",
 328,0x200290,"ブブ-----ッ!!<CF><D1><@LL,00,05>あれれ?",
 329,0x200292,"しばらく おまちください<CF><D1><@LL,00,05>ど どうしちゃったんだろ?",
 330,0x200294,"<@LL,00,07>がめんが まっくろに なっちゃった!",
 331,0x200296,"<@LL,00,06>あは あは... あははっ",
-332,0x200298,"<@LL,00,00>あれ? 何だろう<CD>歌声が 聞こえる",
+332,0x200298,"<@LL,00,00>あれ? 何だろう<CD>歌声が 聞こえる","<@LL,00,00>Huh? I think I can hear singing."
 333,0x20029a,"<@LL,00,04>ちっちゃくて かわいい花だ",
