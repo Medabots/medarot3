@@ -1,15 +1,15 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x204000,"<@LL,00,00>...先に コガネと話をしよう<CD>ボクの 思いちがいかもしれないし",
 001,0x204002,"<@LL,00,00>あっ そうだ! ぼく<CD>コガネに 会いに来たんだっけ?",
-002,0x204004,"<@LL,00,04>コガネが 歌っていたの?<CD>その歌は 何?<CF><D1><@RL,30,00>聞かれて しまいましたか<CD>オハズカシイ<CF><D1>むかし ある人に歌って<CD>聞かせていた 子もリ歌です<CF><D1>その人が ないて ねむれなかった<CD>夜には これを歌って<CF><D1>ねかしつけて いたんです<CF><D1><@LL,00,04>その人は セセリさん?",
-003,0x204006,"<@RL,30,00>どっ どうしてそれを!<CF><D1><@LL,00,00>ねえ コガネ<CD>セセリさんの 前から とつぜん<CF><D1>いなくなったのには<CD>何か リゆうが あったんだろ?",
-004,0x204008,"<@RL,30,00>分かリました お話しします...",
-005,0x20400a,"<@RL,30,00>ワタシは 元々 子もリ用の<CD>メダロットでした<CF><D1>15年前 わたしは オガサワラ家で<CD>はたらいていたんです",
-006,0x20400c,"<@RL,30,00>子どもが 大すきな ワタシは<CD>それはもう 小さなセセリを<CF><D1>かわいがリました<CF><D1>だけど ある日<CD>セセリの ごリょうしんが<CF><D1>このままでは メダロットいがいとは<CD>つきあえない かたよった子に<CF><D1>なるんじゃないかと しんぱい<CD>してるのを 知って...",
-007,0x20400e,"<@LL,00,00>それで すがたを けしたんだね",
-008,0x204010,"<@RL,30,00>はい でも すがたを けしたあとも<CD>やっぱリ気になって...<CF><D1><@LL,00,04>だから 自分の パ-ツを とリかえて<CD>セセリさんの 近くで ずっと<CF><D1>貝まもって いたんだ",
-009,0x204012,"<@RL,30,00>ワタシの やったことは<CD>まちがって いたんでしょうかネェ<CF><D1><@LL,00,07>そんなことないよ コガネ!<CF><D1>セセリさんだって きっと コガネの<CD>気持ちを 分かってくれるよ!<CF><D1>セセリさんに おしえてあげよう!",
-010,0x204014,"<@RL,30,00>あっ <&BUF0A>さん!",
+002,0x204004,"<@LL,00,04>コガネが 歌っていたの?<CD>その歌は 何?<CF><D1><@RL,30,00>聞かれて しまいましたか<CD>オハズカシイ<CF><D1>むかし ある人に歌って<CD>聞かせていた 子もリ歌です<CF><D1>その人が ないて ねむれなかった<CD>夜には これを歌って<CF><D1>ねかしつけて いたんです<CF><D1><@LL,00,04>その人は セセリさん?","<@LL,00,04>Are you singing Kogane? What is that song?<CF><D1><@RL,30,00>You heard me. I am so embarassed.<CF><D1>It is a lullaby I used to sing to someone. When that person could not fall asleep at night, I would sing this.<CF><D1><@LL,00,04>Was that person Seseri?"
+003,0x204006,"<@RL,30,00>どっ どうしてそれを!<CF><D1><@LL,00,00>ねえ コガネ<CD>セセリさんの 前から とつぜん<CF><D1>いなくなったのには<CD>何か リゆうが あったんだろ?","<@RL,30,00>H-how did you know!?<CF><D1><@LL,00,00>Hey, Kogane. There's a reason you suddenly vanished from being around Seseri, right?"
+004,0x204008,"<@RL,30,00>分かリました お話しします...","<@RL,30,00>Very well, I will tell you..."
+005,0x20400a,"<@RL,30,00>ワタシは 元々 子もリ用の<CD>メダロットでした<CF><D1>15年前 わたしは オガサワラ家で<CD>はたらいていたんです","<@RL,30,00>I was originally a childcare-type medarot and 15 years ago I worked for the Ogasawara household."
+006,0x20400c,"<@RL,30,00>子どもが 大すきな ワタシは<CD>それはもう 小さなセセリを<CF><D1>かわいがリました<CF><D1>だけど ある日<CD>セセリの ごリょうしんが<CF><D1>このままでは メダロットいがいとは<CD>つきあえない かたよった子に<CF><D1>なるんじゃないかと しんぱい<CD>してるのを 知って...","<@RL,30,00>I adore children and loved little Seseri too. But one day, I learned that her parents were worried that she would become a child who preferred interacting with medarots to other humans..."
+007,0x20400e,"<@LL,00,00>それで すがたを けしたんだね","<@LL,00,00>So that's why you disappeared."
+008,0x204010,"<@RL,30,00>はい でも すがたを けしたあとも<CD>やっぱリ気になって...<CF><D1><@LL,00,04>だから 自分の パ-ツを とリかえて<CD>セセリさんの 近くで ずっと<CF><D1>貝まもって いたんだ","<@RL,30,00>Yes, but even after I disappeared, I was still curious...<CF><D1><@LL,00,04>And that's why you changed your parts. So you could stay by Seseri and watch over her."
+009,0x204012,"<@RL,30,00>ワタシの やったことは<CD>まちがって いたんでしょうかネェ<CF><D1><@LL,00,07>そんなことないよ コガネ!<CF><D1>セセリさんだって きっと コガネの<CD>気持ちを 分かってくれるよ!<CF><D1>セセリさんに おしえてあげよう!","<@RL,30,00>Was what I did a mistake?<CF><D1><@LL,00,07>No way, Kogane!<CF><D1>Seseri will definitely understand how you felt!<CF><D1>Let's tell her!"
+010,0x204014,"<@RL,30,00>あっ <&BUF0A>さん!","<@RL,30,00>Ah, <&BUF0A>!"
 011,0x204016,"<@LL,00,00>セセリさんのオフィスは<CD>このかいの 左のヘやだっけ?",
 012,0x204018,"<@LL,00,00>セセリさんを おいかけなくっちゃ!",
 013,0x20401a,"<@LL,00,00>セセリさんに コガネのことを<CD>おしえてあげなくっちゃ!",
@@ -18,26 +18,26 @@
 016,0x204020,"<@RL,45,00>あらダメよ 勝手に入って来ては! ",
 017,0x204022,"<@RL,45,00>あら<CF><D1><&BUF0A>くん<CD>しんぱいしてたのよ<CF><D1><@LL,00,03>ごめんなさい<CF><D1><@RL,45,01>わたしに あやまらなくても いいのよ<CD>じゃ わたしは しごとがあるから",
 018,0x204024,"<@RL,45,01>どう? <&BUF0A>くん<CD>ア-スモ-ルは 気に入ってくれた?<CF><D1>楽しんで ちょうだいね",
-019,0x204026,"<@LL,00,07>セセリさんっ!",
-020,0x204028,"<@RL,45,00>どうしたの? <&BUF0A>くん<CD>そんなに あわてて<CF><D1><@LL,00,06>セセリさん コガネ! コガネが!<CF><D1><@RL,45,00>コガネ? ああ あの<CD>人工のうじょうに いる<CF><D1>ふリょうメダロットのこと?<CF><D1><@LL,00,07>えっ? セセリさん コガネの名前<CD>知ってるんですか?<CF><D1><@RL,45,00>当たリ前じゃない<CD>はけんセンタ-から おくられてくる<CF><D1>メダロットたちの しょるいしんさは<CD>わたしが やってるのよ<CF><D1><@LL,00,05>う--...<CF><D1><@LL,00,06>とっ ともかく その<CD>コガネなんですけど それが<CF><D1>セセリさんの 子もリ用メダロット<CD>だったんです!",
-021,0x20402a,"<@RL,45,00>だれから そんな話を 聞いたの?",
-022,0x20402c,"<@RL,45,02>...って 貝当は つくわ<CF><D1>アサマくんね?",
-023,0x20402e,"<@RL,45,02>かれに あったんでしょ!<CF><D1><@LL,00,05>え ええ...<CF><D1><@RL,45,02>まったく おせっかいな人ね!",
-024,0x204030,"<@RL,45,00>それで? ようけんは<CD>それだけかしら?",
-025,0x204032,"<@LL,00,05>それだけって...",
-026,0x204034,"<@LL,00,06>そっ そうだ! そのコガネは<CD>今でも セセリさんの ことを<CF><D1>思ってて セセリさんとの<CD>思い出の 花を...!",
-027,0x204036,"<@RL,45,02>花? まあ 何てこと!<CF><D1>やさいを そだてる やくめの<CD>メダロットが 花なんて!<CF><D1>全部 ぼっしゅうよ!",
-028,0x204038,"<@LL,00,07>あっ ちょっ...!",
-029,0x20403a,"<@LL,00,06>ど どうしよう! ぼくのせいで...<CD>セセリさんを おいかけなくっちゃ!",
-030,0x20403c,"<@LL,00,03>...ごめんよ<CF><D1>ぼくが いけなかったんだ<CD>ひみつを しゃベったリ したから",
-031,0x20403e,"<@RL,30,00>そんな! <&BUF0A>さんは<CD>わるくないです!<CF><D1>ワタシの ために やってくれた<CD>ことなんですから<CF><D1><@LL,00,03>ううん はんせい してるよ<CF><D1><@LL,00,00>だけど...ほら!",
-032,0x204040,"<@RL,30,00>これは...<CF><D1><@LL,00,04>これ ねっこが のこってるから<CF><D1>また うえてやれば<CD>だいじょうぶだと 思うよ",
-033,0x204042,"<@RL,30,00><&BUF0A>さん...",
-034,0x204044,"<@LL,00,00>さてと...<CF><D1>そろそろ メダリンピックが<CD>はじまるころだな<CF><D1><@LL,00,04>ジオド-ムヘ 行こう!",
+019,0x204026,"<@LL,00,07>セセリさんっ!","<@LL,00,07>Seseri!"
+020,0x204028,"<@RL,45,00>どうしたの? <&BUF0A>くん<CD>そんなに あわてて<CF><D1><@LL,00,06>セセリさん コガネ! コガネが!<CF><D1><@RL,45,00>コガネ? ああ あの<CD>人工のうじょうに いる<CF><D1>ふリょうメダロットのこと?<CF><D1><@LL,00,07>えっ? セセリさん コガネの名前<CD>知ってるんですか?<CF><D1><@RL,45,00>当たリ前じゃない<CD>はけんセンタ-から おくられてくる<CF><D1>メダロットたちの しょるいしんさは<CD>わたしが やってるのよ<CF><D1><@LL,00,05>う--...<CF><D1><@LL,00,06>とっ ともかく その<CD>コガネなんですけど それが<CF><D1>セセリさんの 子もリ用メダロット<CD>だったんです!","<@RL,45,00>What is it? Why are you in such a rush, <&BUF0A>?<CF><D1><@LL,00,06>Seseri, Kogane! It's Kogane!<CF><D1><@RL,45,00>Kogane? Aah, that  ill-behaved medarot from the artificial farm?<CF><D1><@LL,00,07>Eh? You know Kogane's name?<CF><D1><@RL,45,00>No need to be surprised, I'm the one who screens the medarots coming from the dispatch center.<CF><D1><@LL,00,05>Uuw...<CF><D1><@LL,00,06>A-anyway, that Kogane is the medarot that used to be in charge of your childcare!"
+021,0x20402a,"<@RL,45,00>だれから そんな話を 聞いたの?","<@RL,45,00>Who did you hear that from?"
+022,0x20402c,"<@RL,45,02>...って 貝当は つくわ<CF><D1>アサマくんね?","<@RL,45,02>...I think I can hazard a guess.<CF><D1>It was Asama, wasn't it?"
+023,0x20402e,"<@RL,45,02>かれに あったんでしょ!<CF><D1><@LL,00,05>え ええ...<CF><D1><@RL,45,02>まったく おせっかいな人ね!","<@RL,45,02>It had to be him!<CF><D1><@LL,00,05>Y-yes...<CF><D1><@RL,45,02>Really, he's such a meddler!"
+024,0x204030,"<@RL,45,00>それで? ようけんは<CD>それだけかしら?","<@RL,45,00>And? Was that all you wanted?"
+025,0x204032,"<@LL,00,05>それだけって...","<@LL,00,05>That's all..."
+026,0x204034,"<@LL,00,06>そっ そうだ! そのコガネは<CD>今でも セセリさんの ことを<CF><D1>思ってて セセリさんとの<CD>思い出の 花を...!","<@LL,00,06>W-wait! That Kogane, even now it is still thinking of you and the memories of the flowers...!"
+027,0x204036,"<@RL,45,02>花? まあ 何てこと!<CF><D1>やさいを そだてる やくめの<CD>メダロットが 花なんて!<CF><D1>全部 ぼっしゅうよ!","<@RL,45,02>Flowers? Well, my goodness!<CF><D1>The medarots are supposed to be raising vegetables, not flowers!<CF><D1>We must confiscate them all!"
+028,0x204038,"<@LL,00,07>あっ ちょっ...!","<@LL,00,07>Ah, wai-...!"
+029,0x20403a,"<@LL,00,06>ど どうしよう! ぼくのせいで...<CD>セセリさんを おいかけなくっちゃ!","<@LL,00,06>What should I do!? This is my fault... I have to go after Seseri!"
+030,0x20403c,"<@LL,00,03>...ごめんよ<CF><D1>ぼくが いけなかったんだ<CD>ひみつを しゃベったリ したから","<@LL,00,03>...Sorry.<CF><D1>I shouldn't have told your secret."
+031,0x20403e,"<@RL,30,00>そんな! <&BUF0A>さんは<CD>わるくないです!<CF><D1>ワタシの ために やってくれた<CD>ことなんですから<CF><D1><@LL,00,03>ううん はんせい してるよ<CF><D1><@LL,00,00>だけど...ほら!","<@RL,30,00>No way! It isn't your fault, <&BUF0A>. You did it for my sake!<CF><D1><@LL,00,03>Well, I still regret it.<CF><D1><@LL,00,00>But... Here!"
+032,0x204040,"<@RL,30,00>これは...<CF><D1><@LL,00,04>これ ねっこが のこってるから<CF><D1>また うえてやれば<CD>だいじょうぶだと 思うよ","<@RL,30,00>This is...<CF><D1><@LL,00,04>This one still has some roots left. If you replant it, I'm sure it'll be okay."
+033,0x204042,"<@RL,30,00><&BUF0A>さん...","<@RL,30,00><&BUF0A>..."
+034,0x204044,"<@LL,00,00>さてと...<CF><D1>そろそろ メダリンピックが<CD>はじまるころだな<CF><D1><@LL,00,04>ジオド-ムヘ 行こう!","<@LL,00,00>Well then...<CF><D1>It's about time for the Medalympics to begin.<CF><D1><@LL,00,04>I should go to the GeoDome!"
 035,0x204046,メダリンピックが はじまるぞ!,
 036,0x204048,"<@LL,00,00>ド-ムに いかなくっちゃ<CD>アリカたちが まってる",
-037,0x20404a,<&BUF0A>---!!,
-038,0x20404c,"<@RL,01,02>もう! どこに 行ってたのよ<CD><&BUF0A>!<CF><D1><@LL,00,00>ごめん ごめん",
+037,0x20404a,<&BUF0A>---!!,<&BUF0A>---!!
+038,0x20404c,"<@RL,01,02>もう! どこに 行ってたのよ<CD><&BUF0A>!<CF><D1><@LL,00,00>ごめん ごめん","<@RL,01,02>Geez! Where have you been, <&BUF0A>?<CF><D1><@LL,00,00>Sorry, sorry."
 039,0x20404e,"<@RL,2C,00>さぁて! やってまいリました!<CD>メダリンピック ア-スモ-ル大会の<CF><D1>まくあけですっ!!<CD>おなじみ わたくし<CF><D1>ミスタ-.うるちです!",
 040,0x204050,"<@RL,2C,00>それでは ツチノエ小学校<CD>だいひょうチ-ムと<CF><D1>コ-クスクリュ-ズの<CD>ロボトルです!",
 041,0x204052,"<@LL,00,05>もしかして 大会おわるまで<CD>その名前で よばれるのぉ?",
