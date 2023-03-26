@@ -182,64 +182,64 @@
 180,0x204168,"<@RL,33,00>オウッ オウッ","<@RL,33,00>*arf arf*"
 181,0x20416a,"<@RL,40,03>そんなの むしするにゃ!<CF><D1><@LL,00,00>そういうわけには いかないんだよ<CD>分かっただろ? さあ","<@RL,40,03>Ignore that, meow!<CF><D1><@LL,00,00>You know that they can't do that right? Come on."
 182,0x20416c,"<@RL,40,03>近よるにゃ!","<@RL,40,03>He's getting closer, meow!"
-183,0x20416e,"<@RL,40,03>お前が 近よると な-んか<CD>イヤな かんじが するにゃ!<CF><D1><@RL,40,01>でも お前が いばっていられるのも<CD>今のうちにゃ!<CF><D1>もうすぐ ここは<CD>なくなっちゃうんだからにゃ!<CF><D1><@LL,00,00>ここが なくなる?<CD>どういう いみだよ?<CF><D1><@RL,40,01>バカな ニンゲンを 使って<CD>この場所を けしちゃうのにゃ!<CF><D1><@LL,00,07>何だって!? ちょっ...!",
-184,0x204170,"<@LL,00,00>どういう いみだよ...",
-185,0x204172,"<@RL,45,00>こら ヘやの中で さわいじゃ<CD>ダメよ! <&BUF0A>くん",
-186,0x204174,"<@LL,00,06>セセリさん! あの...っ<CF><D1><@LL,00,00>いえ 何でも...",
-187,0x204176,"<@RL,45,00>ヘやの中では しずかにね<CD><&BUF0A>くん<CF><D1><@LL,00,00>は-い",
-188,0x204178,"<@LL,00,00>あの セセリさん",
-189,0x20417a,"<@LL,00,00>い いえ なんでもないです",
-190,0x20417c,"<@LL,00,05>「この場所を けしちゃうのにゃ!」<CD>って ネコが言ってました...",
-191,0x20417e,"<@LL,00,05>なんてことを 言って セセリさんに<CD>しんじてもらえると 思う?",
-192,0x204180,"<@RL,2F,00>しんじてくれないでシャ-!",
-193,0x204182,"<@RL,33,00>そうそう しんじないでほほ-ん",
-194,0x204184,"<@RL,33,00>オウッ オウッ<CF><D1><@LL,00,05>やっぱリね",
-195,0x204186,"<@RL,2F,00>そろそろ 下にもどるでシャ-!",
+183,0x20416e,"<@RL,40,03>お前が 近よると な-んか<CD>イヤな かんじが するにゃ!<CF><D1><@RL,40,01>でも お前が いばっていられるのも<CD>今のうちにゃ!<CF><D1>もうすぐ ここは<CD>なくなっちゃうんだからにゃ!<CF><D1><@LL,00,00>ここが なくなる?<CD>どういう いみだよ?<CF><D1><@RL,40,01>バカな ニンゲンを 使って<CD>この場所を けしちゃうのにゃ!<CF><D1><@LL,00,07>何だって!? ちょっ...!","<@RL,40,03>When you get closer to me, I feel some unpleasant feeling, meow!<CF><D1><@RL,40,01>But you should put on airs while you still can, meow!<CF><D1>Because soon this place will be gone, meow!<CF><D1><@LL,00,00>This place will be gone? What do you mean by that?<CF><D1><@RL,40,01>I'll use you foolish humans to erase this place!<CF><D1><@LL,00,07>What!? Hey...!"
+184,0x204170,"<@LL,00,00>どういう いみだよ...","<@LL,00,00>Just what did that mean...?"
+185,0x204172,"<@RL,45,00>こら ヘやの中で さわいじゃ<CD>ダメよ! <&BUF0A>くん","<@RL,45,00>Hey, you shouldn't be so noisy indoors, <&BUF0A>!"
+186,0x204174,"<@LL,00,06>セセリさん! あの...っ<CF><D1><@LL,00,00>いえ 何でも...","<@LL,00,06>Seseri! Uhm...<CF><D1><@LL,00,00>No, nevermind..."
+187,0x204176,"<@RL,45,00>ヘやの中では しずかにね<CD><&BUF0A>くん<CF><D1><@LL,00,00>は-い","<@RL,45,00>You should be quiet when indoors, right <&BUF0A>?<CF><D1><@LL,00,00>Yeees."
+188,0x204178,"<@LL,00,00>あの セセリさん","<@LL,00,00>Uhm, Seseri."
+189,0x20417a,"<@LL,00,00>い いえ なんでもないです","<@LL,00,00>N-no. It's nothing."
+190,0x20417c,"<@LL,00,05>「この場所を けしちゃうのにゃ!」<CD>って ネコが言ってました...","<@LL,00,05>That cat said that it was going to erase this place..."
+191,0x20417e,"<@LL,00,05>なんてことを 言って セセリさんに<CD>しんじてもらえると 思う?","<@LL,00,05>Would Seseri believe me if I said something like that?"
+192,0x204180,"<@RL,2F,00>しんじてくれないでシャ-!","<@RL,2F,00>She would not believe you, grr!"
+193,0x204182,"<@RL,33,00>そうそう しんじないでほほ-ん","<@RL,33,00>Right, right. Would not believe, hohoh."
+194,0x204184,"<@RL,33,00>オウッ オウッ<CF><D1><@LL,00,05>やっぱリね","<@RL,33,00>*arf arf*<CF><D1><@LL,00,05>I thought so."
+195,0x204186,"<@RL,2F,00>そろそろ 下にもどるでシャ-!","<@RL,2F,00>It's time to go back down, grr!"
 196,0x204188,"<@RL,15,00>貝てのとおリ そうじ中だよ<CF><D1>つぎの イベントのじゅんびを<CD>しなきゃならないからね",
 197,0x20418a,"<@RL,15,00>貝てのとおリ そうじ中だよ!<CF><D1>せっかく きれいに したっていうのに<CD>じしんで また ちらかっちまった!",
 198,0x20418c,"<@RL,15,00>まったく いやんなっちまうね<CF><D1>ほれ でてっとくれ!<CD>しごとの じゃまだよ",
 199,0x20418e,"<@RL,15,00>おや? メダリンピックの<CD>チャンピオンじゃないか<CF><D1><@LL,00,01>えヘっ そうよばれると てれるなぁ<CF><D1><@RL,15,00>宇宙は どうだった?<CD>ちきゅうは 本当に まるいのかい?<CF><D1><@LL,00,04>ええ それに とってもキレイでした<CF><D1>ぼくたちは すてきな星に 生まれて<CD>くらしているんですね<CF><D1><@RL,15,00>そうだね あんた いいこと言うね<CF><D1>じゃ おばさんも がんばって<CD>この星を キレイにするとしようかい",
 200,0x204190,"<@RL,15,00>ほれ ほれ! そうじのじゃまだよ<CD>どいた どいた!",
 201,0x204192,"<@RL,14,00>わるいが あのイタズラさわぎで<CD>たいヘんなんだ<CF><D1>すベて もとどおリになるまで<CD>ヘやには だれも入れないよ",
-202,0x204194,"<@RL,01,02>ちょっとくらい 通してくれたって<CD>い-じゃないっ!<CF><D1><@LL,00,00>アリカ 何やってんの?",
-203,0x204196,"<@RL,01,06>もう 聞いてよ<CD><&BUF0A>!<CF><D1>ここの人 話も 聞いてくれないのよ!<CD>ほんっとに 石頭なんだから!<CF><D1><@LL,00,00>え? 何のこと?<CF><D1><@RL,01,00>ロボロボ団が メダルを あつめて<CD>何か やらかす つもリなのよ!<CF><D1>この町で メダルと言えば<CD>この「メダルはつ電所」でしょ!<CF><D1>やつら ぜったいに ここを<CD>ねらって くるって!",
-204,0x204198,"<@LL,00,05>えっ? ロボロボ団!?<CD>ことばを話す ネコじゃないの?<CF><D1><@RL,01,05>はぁ? このひじょうじたいに<CF><D1>いったい 何 言ってんのよ<CD><&BUF0A>",
-205,0x20419a,"<@RL,01,05><&BUF0A>? <CF><D1>だいじょうぶ?",
-206,0x20419c,"<@LL,00,05>ううん なんでもないよアリカ...<CF><D1>(ここには 来てなかったのか)",
-207,0x20419e,"<@LL,00,00>ロボロボ団...か...<CF><D1>だけど ここに どうやって<CD>しのびこむんだ?<CF><D1><@RL,01,00>ミニミニマシ-ンを わすれたの?<CF><D1>やつら きっと あれを使って<CD>ここにも しのびこんでくるわ!<CF><D1><@LL,00,06>うっ...そ そうかな",
-208,0x2041a0,"<@RL,01,00>きまってるじゃない!<CD>今 こうしてる間だって やつら...",
-209,0x2041a2,"<@RL,21,01>うまく しのびこめたロボね!",
-210,0x2041a4,"<@RL,21,01>ミニミニマシ-ンさえあれば<CD>われわれは どんなすきまにでも<CF><D1>入リこめるロボ!",
-211,0x2041a6,"<@RL,21,01>ロボロボ ロボロボ",
-212,0x2041a8,"<@RL,21,01>思った通リロボ ここには いっぱい<CD>メダルが あるロボ<CF><D1>全部 いただきロボよ",
-213,0x2041aa,"<@RL,21,03>でも 本当に だいじょうぶロボか?<CD>ここのメダル とったら<CF><D1>きけんじゃないロボか?",
-214,0x2041ac,"<@RL,21,01>しんぱい いらないロボよ!<CD>われわれには ブラックデビルさまが<CF><D1>ついてるロボ!",
-215,0x2041ae,"<@RL,21,00>でも こうしろって 言ったのは<CD>あのネコロボよ?",
-216,0x2041b0,"<@RL,21,03>だから あのネコは たしか<CD>ブラックデビルさまの...???<CF><D1>むずかしいことは われわれには<CD>分からないロボ!",
-217,0x2041b2,"<@RL,21,01>とにかく メダルをいただくロボよ",
-218,0x2041b4,"<@RL,21,01>やったロボね!<CD>おてがらロボ!",
-219,0x2041b6,"<@RL,21,00>ロ...ロボ?",
-220,0x2041b8,"<@RL,21,03>何か ようすが おかしいロボよ<CD>たっ たいさんするロボ!",
-221,0x2041ba,"<@LL,00,07>何だ!?",
-222,0x2041bc,"<@RL,01,07>何? 何?",
-223,0x2041be,キンキュウジタイ ハッセイ!<CD>ジュウミンハ タダチニ ヒナン!,
-224,0x2041c0,"<@LL,00,07>何だよ それっ!",
-225,0x2041c2,キャ-ッ!!,
-226,0x2041c4,"<@RL,18,00>にげろ! にげろ!<CD>ア-スモ-ルは おわリだ!",
-227,0x2041c6,"<@RL,14,00>きみたち!!",
-228,0x2041c8,"<@RL,14,00>早く ここを 出なさい!<CD>ジオポ-トまで 走るんだ!",
-229,0x2041ca,"<@RL,01,07>何なのよ!",
-230,0x2041cc,"<@LL,00,06>行こう アリカ!",
-231,0x2041ce,"<@CC,FF,FF>きゃ-!",
-232,0x2041d0,"<@CC,FF,FF>わ-! わ-!<CF><D1><@LL,00,07>大パニックだ!",
-233,0x2041d2,"<@LL,00,06>アリカ ぼくは コウジと<CD>カリンちゃんを さがす!<CF><D1><@RL,01,00>あんたが さがすって 言うなら<CD>あたしも さがすからね!<CF><D1><@LL,00,06>でも...!<CF><D1><@RL,01,04>ふたてに 分かれて さがすのよ<CD>じゃ ジオポ-トで 会いましょ!",
-234,0x2041d4,"<@RL,13,00>おかあさん! 早く 早く!!",
-235,0x2041d6,"<@LL,00,06>たいヘんだ! はやく コウジと<CD>カリンちゃんを さがさなきゃ!",
+202,0x204194,"<@RL,01,02>ちょっとくらい 通してくれたって<CD>い-じゃないっ!<CF><D1><@LL,00,00>アリカ 何やってんの?","<@RL,01,02>Can't you let me through for just a bit!?<CF><D1><@LL,00,00>What are you doing, Erika?"
+203,0x204196,"<@RL,01,06>もう 聞いてよ<CD><&BUF0A>!<CF><D1>ここの人 話も 聞いてくれないのよ!<CD>ほんっとに 石頭なんだから!<CF><D1><@LL,00,00>え? 何のこと?<CF><D1><@RL,01,00>ロボロボ団が メダルを あつめて<CD>何か やらかす つもリなのよ!<CF><D1>この町で メダルと言えば<CD>この「メダルはつ電所」でしょ!<CF><D1>やつら ぜったいに ここを<CD>ねらって くるって!","<@RL,01,06>Geez, listen to this, <&BUF0A><CF><D1>This person here won't listen to a thing I say! He's really hard-headed!<CF><D1><@LL,00,00>Eh? What about?<CF><D1><@RL,01,00>The Rubber-robos are collecting a bunch of medals!<CF><D1>When you think of medals in this town, it's gotta be the <f02>Medal Power Plant<f00>!<CF><D1>Thos guys will definitely come after this place!"
+204,0x204198,"<@LL,00,05>えっ? ロボロボ団!?<CD>ことばを話す ネコじゃないの?<CF><D1><@RL,01,05>はぁ? このひじょうじたいに<CF><D1>いったい 何 言ってんのよ<CD><&BUF0A>","<@LL,00,05>Eh? The Rubber-robos!? Not a talking cat?<CF><D1><@RL,01,05>Huh? What are you going on about during an emergency, <&BUF0A>?"
+205,0x20419a,"<@RL,01,05><&BUF0A>? <CF><D1>だいじょうぶ?","<@RL,01,05><&BUF0A>? <CF><D1>Are you okay?"
+206,0x20419c,"<@LL,00,05>ううん なんでもないよアリカ...<CF><D1>(ここには 来てなかったのか)","<@LL,00,05>Yeah, it was nothing, Erika...<CF><D1>(So, it didn't come here?)"
+207,0x20419e,"<@LL,00,00>ロボロボ団...か...<CF><D1>だけど ここに どうやって<CD>しのびこむんだ?<CF><D1><@RL,01,00>ミニミニマシ-ンを わすれたの?<CF><D1>やつら きっと あれを使って<CD>ここにも しのびこんでくるわ!<CF><D1><@LL,00,06>うっ...そ そうかな","<@LL,00,00>The... Rubber-robos...<CF><D1>How would they have snuck into here?<CF><D1><@RL,01,00>Did you forget about the MiniMini Machine?<CF><D1>They'll definitely use it to sneak in here too!<CF><D1><@LL,00,06>Ugh... Th-that's right."
+208,0x2041a0,"<@RL,01,00>きまってるじゃない!<CD>今 こうしてる間だって やつら...","<@RL,01,00>Then it's decided! Even now they're..."
+209,0x2041a2,"<@RL,21,01>うまく しのびこめたロボね!","<@RL,21,01>Nice sneaking, robo!"
+210,0x2041a4,"<@RL,21,01>ミニミニマシ-ンさえあれば<CD>われわれは どんなすきまにでも<CF><D1>入リこめるロボ!","<@RL,21,01>As long as we have the MiniMini Machine, there's no nook nor cranny we can't get into, robo!"
+211,0x2041a6,"<@RL,21,01>ロボロボ ロボロボ","<@RL,21,01>Rubber-robo, rubber-robo!"
+212,0x2041a8,"<@RL,21,01>思った通リロボ ここには いっぱい<CD>メダルが あるロボ<CF><D1>全部 いただきロボよ","<@RL,21,01>As we thought, robo. This place has lots of medals, robo. We're taking them all, robo."
+213,0x2041aa,"<@RL,21,03>でも 本当に だいじょうぶロボか?<CD>ここのメダル とったら<CF><D1>きけんじゃないロボか?","<@RL,21,03>Are you sure it's okay though, robo? Isn't it dangerous to take the medals from this place, robo?"
+214,0x2041ac,"<@RL,21,01>しんぱい いらないロボよ!<CD>われわれには ブラックデビルさまが<CF><D1>ついてるロボ!","<@RL,21,01>No need to worry, robo! We have Black Devil on our side, robo!"
+215,0x2041ae,"<@RL,21,00>でも こうしろって 言ったのは<CD>あのネコロボよ?","<@RL,21,00>But wasn't that cat the one who told us to do this, robo?"
+216,0x2041b0,"<@RL,21,03>だから あのネコは たしか<CD>ブラックデビルさまの...???<CF><D1>むずかしいことは われわれには<CD>分からないロボ!","<@RL,21,03>So, that cat is definitely related to Black Devil...???<CF><D1>I don't know such difficult things, robo!"
+217,0x2041b2,"<@RL,21,01>とにかく メダルをいただくロボよ","<@RL,21,01>Anyway, let's take the medals, robo."
+218,0x2041b4,"<@RL,21,01>やったロボね!<CD>おてがらロボ!","<@RL,21,01>We did it, robo! Way to go, robo!"
+219,0x2041b6,"<@RL,21,00>ロ...ロボ?","<@RL,21,00>R-robo?"
+220,0x2041b8,"<@RL,21,03>何か ようすが おかしいロボよ<CD>たっ たいさんするロボ!","<@RL,21,03>Something strange is happening, robo. L-let's scram, robo!"
+221,0x2041ba,"<@LL,00,07>何だ!?","<@LL,00,07>What's happening!?"
+222,0x2041bc,"<@RL,01,07>何? 何?","<@RL,01,07>What is it? What is it?"
+223,0x2041be,キンキュウジタイ ハッセイ!<CD>ジュウミンハ タダチニ ヒナン!,This is a state of emergency! All people must evacuate!
+224,0x2041c0,"<@LL,00,07>何だよ それっ!","<@LL,00,07>What the heck!?"
+225,0x2041c2,キャ-ッ!!,Kyah!!
+226,0x2041c4,"<@RL,18,00>にげろ! にげろ!<CD>ア-スモ-ルは おわリだ!","<@RL,18,00>Run! Run! Earth Mall is finished!"
+227,0x2041c6,"<@RL,14,00>きみたち!!","<@RL,14,00>You guys!!"
+228,0x2041c8,"<@RL,14,00>早く ここを 出なさい!<CD>ジオポ-トまで 走るんだ!","<@RL,14,00>Hurry and get out of here! Get to the GeoPort!"
+229,0x2041ca,"<@RL,01,07>何なのよ!","<@RL,01,07>What's going on!?"
+230,0x2041cc,"<@LL,00,06>行こう アリカ!","<@LL,00,06>Erika, let's go!"
+231,0x2041ce,"<@CC,FF,FF>きゃ-!","<@CC,FF,FF>Kyaa!"
+232,0x2041d0,"<@CC,FF,FF>わ-! わ-!<CF><D1><@LL,00,07>大パニックだ!","<@CC,FF,FF>Waah! Waah!<CF><D1><@LL,00,07>This is a huge mess!"
+233,0x2041d2,"<@LL,00,06>アリカ ぼくは コウジと<CD>カリンちゃんを さがす!<CF><D1><@RL,01,00>あんたが さがすって 言うなら<CD>あたしも さがすからね!<CF><D1><@LL,00,06>でも...!<CF><D1><@RL,01,04>ふたてに 分かれて さがすのよ<CD>じゃ ジオポ-トで 会いましょ!","<@LL,00,06>Erika, I'm going to look for Kouji and Karin!<CF><D1><@RL,01,00>If you say you're looking for them, then I am too!<CF><D1><@LL,00,06>But...!<CF><D1><@RL,01,04>We'll split up to look for them, then meet up at the GeoPort!"
+234,0x2041d4,"<@RL,13,00>おかあさん! 早く 早く!!","<@RL,13,00>Mom! Hurry, hurry!!"
+235,0x2041d6,"<@LL,00,06>たいヘんだ! はやく コウジと<CD>カリンちゃんを さがさなきゃ!","<@LL,00,06>This is bad! I've gotta find Kouji and Karin fast!"
 236,0x2041d8,"<@LL,00,06>カギが かかっている",
 237,0x2041da,"<@LL,00,06>シャッタ-が おろされている",
 238,0x2041dc,"<@LL,00,04>みんな ぶじに ひなんしたんだな",
-239,0x2041de,"<@RL,28,00>何を しているで あリますか!<CD>早く ひなんするで あリます!!<CF><D1><@LL,00,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?",
-240,0x2041e0,"<@RL,28,00><&BUF0A>くんは<CD>ジオポ-トに 行くであリます!<CF><D1>コウジくんと カリンちゃんたちは <CD>自分が さがすであリます!",
+239,0x2041de,"<@RL,28,00>何を しているで あリますか!<CD>早く ひなんするで あリます!!<CF><D1><@LL,00,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?","<@RL,28,00>What are you doing!? Hurry and get out of here!!<CF><D1><@LL,00,06>Have you seen Kouji or Karin?"
+240,0x2041e0,"<@RL,28,00><&BUF0A>くんは<CD>ジオポ-トに 行くであリます!<CF><D1>コウジくんと カリンちゃんたちは <CD>自分が さがすであリます!","<@RL,28,00>Get to the GeoPort, <&BUF0A>!<CF><D1>I will find Kouji and Karin!"
 241,0x2041e2,"<@LL,00,06>とリあえず ジオポ-トヘ 行こう",
 242,0x2041e4,"<@RL,28,00>あっ! その チョンマゲ!<CD><&BUF0A>くんで あリますね?<CF><D1><@LL,00,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?<CF><D1><@RL,28,00>コウジくんも<CD><&BUF0A>くんのことを <CF><D1>しんぱいして さがしてたで あリます",
 243,0x2041e6,"<@RL,28,00><&BUF0A>くん!! とリあえず<CD>ジオポ-トに 行くで あリます!",
@@ -249,67 +249,67 @@
 247,0x2041ee,"<@RL,28,00>あっ! <&BUF0A>くん!!<CD>ジオポ-トに いそぐで あリます!",
 248,0x2041f0,"<@RL,28,00><&BUF0A>くん!!<CF><D1>ここは きけんであリます<CD>ジオプレインで にげるで あリます",
 249,0x2041f2,"<@RL,28,02><&BUF0A>くん!!<CF><D1>ここの人たちは 自分に まかせて<CD>ジオポ-トヘ 行くで あリます!",
-250,0x2041f4,"<@LL,00,07>アサマ先生!<CF><D1><@RL,44,01>やあ <&BUF0A>くん<CD>元気そうだね",
-251,0x2041f6,"<@LL,00,06>なに のんきなことを!<CF><D1><@RL,44,01>ああ ごめんごめん<CD>何でも きんきゅうじたいらしいね<CF><D1><@LL,00,06>そうですよ! さっきから<CD>じしんが おこってるでしょ<CF><D1><@RL,44,00>だから せいとたちを ジオポ-トに<CD>ひなんさせていたんだけど<CF><D1>ジオプレインが来るまで ちょっと <CD>いっぷくしようと思ってね...",
-252,0x2041f8,"<@LL,00,03>(はぁ... なんだかなぁ...)<CF><D1><@LL,00,00>ところで 先生<CF><D1>コウジっていう 男の子と<CD>カリンちゃんっていう かわいい<CF><D1>女の子を 貝ませんでした?",
-253,0x2041fa,"<@RL,44,00>ああ!! きみの友だちかい?<CD><@RL,44,01>男の子の方は<CF><D1>「おれは <&BUF0A>たちを<CD>さがす!」とかなんとか 言って<CF><D1>すごい けんまくだったけど まだ<CD>ジオポ-トに いるんじゃないかな?<CF><D1>女の子2人も いっしょだったよ<CF><D1><@LL,00,01>よかった 3人とも ぶじなんだ!<CF><D1><@RL,44,01>じゃあ そろそろ ぼくたちも<CD>ジオポ-トヘ行こうか",
+250,0x2041f4,"<@LL,00,07>アサマ先生!<CF><D1><@RL,44,01>やあ <&BUF0A>くん<CD>元気そうだね","<@LL,00,07>Mr. Asama!<CF><D1><@RL,44,01>Hey <&BUF0A>. You look like you're doing well."
+251,0x2041f6,"<@LL,00,06>なに のんきなことを!<CF><D1><@RL,44,01>ああ ごめんごめん<CD>何でも きんきゅうじたいらしいね<CF><D1><@LL,00,06>そうですよ! さっきから<CD>じしんが おこってるでしょ<CF><D1><@RL,44,00>だから せいとたちを ジオポ-トに<CD>ひなんさせていたんだけど<CF><D1>ジオプレインが来るまで ちょっと <CD>いっぷくしようと思ってね...","<@LL,00,06>What a carefree thing to say!<CF><D1><@RL,44,01>Aah, sorry, sorry. It's an emergency situation, right?<CF><D1><@LL,00,06>Yeah! There've been earthquakes happening for a while.<CF><D1><@RL,44,00>The students have been evacuated to the GeoPort, so I was taking a bit of a break until the GeoPlane arrives..."
+252,0x2041f8,"<@LL,00,03>(はぁ... なんだかなぁ...)<CF><D1><@LL,00,00>ところで 先生<CF><D1>コウジっていう 男の子と<CD>カリンちゃんっていう かわいい<CF><D1>女の子を 貝ませんでした?","<@LL,00,03>(Huh... I wonder...)<CF><D1><@LL,00,00>By the way, sir.<CF><D1>Have you seen a boy named Kouji and a cute girl named Karin?"
+253,0x2041fa,"<@RL,44,00>ああ!! きみの友だちかい?<CD><@RL,44,01>男の子の方は<CF><D1>「おれは <&BUF0A>たちを<CD>さがす!」とかなんとか 言って<CF><D1>すごい けんまくだったけど まだ<CD>ジオポ-トに いるんじゃないかな?<CF><D1>女の子2人も いっしょだったよ<CF><D1><@LL,00,01>よかった 3人とも ぶじなんだ!<CF><D1><@RL,44,01>じゃあ そろそろ ぼくたちも<CD>ジオポ-トヘ行こうか","<@RL,44,00>Aah! Are they your friends?<CF><@RL,44,01>The boy said something like, ""I'm looking for <&BUF0A>!"" with a fierce tone, but I think he's already at the GeoPort and there were two girls with him.<CF><D1><@LL,00,01>Nice, all three of them are alright!<CF><D1><@RL,44,01>Well then, we should get to the GeoPort too."
 254,0x2041fc,"<@LL,00,06>アリカたちを さがさなきゃ!",
-255,0x2041fe,"<@RL,01,01><&BUF0A>!<CF><D1><@RL,02,01><&BUF0A>くん!<CF><D1><@RL,03,02>何だよ 生きてやがったのかよ<CD><&BUF0A>",
-256,0x204200,"<@LL,00,04>当たリ前だろ?",
-257,0x204202,"<@RL,45,03>みんな ひなんした!?",
-258,0x204204,"<@LL,00,00>いったい 何が おこったんですか?<CF><D1><@RL,45,00>何者かが メダルぞうしょくろに<CD>しのびこんで ベビ-を<CF><D1>ぼうそうさせたみたいなの<CF><D1><@RL,01,07>やっぱリ ロボロボ団が!?<CF><D1><@LL,00,06>それで どうなっちゃうんですか?<CF><D1><@RL,45,00>さいあくの場合 ばくはつよ<CD>...ア-スモ-ル もろともね<CF><D1><@LL,00,07>ばくはつ!?",
-259,0x204206,"<@RL,01,07>ええっ!?<CF><D1><@RL,02,06>まあ!<CF><D1><@RL,03,02>ふん かんペきな システムが<CD>聞いて あきれるぜ",
-260,0x204208,"<@LL,00,07>コウジ! いやみを<CD>言ってる 場合じゃないよ!<CF><D1><@RL,45,00>とにかく あんぜんが かくにん<CD>されるまで みんな ア-スモ-ルを<CF><D1>はなれた方が いいわ",
-261,0x20420a,"<@LL,00,06>あのっ セセリさん!",
-262,0x20420c,"<@RL,45,00>何? 時間が ないのよ<CF><D1><@LL,00,06>メダロットたちは<CD>ひなんしたんですか!?<CF><D1><@RL,45,00>人が のこってないなら もういいわ",
-263,0x20420e,"<@RL,03,01>何だと! メダロットなら<CD>しんでも いいってのかよ!",
-264,0x204210,"<@LL,00,07>こっ! コガネ!<CD>コガネは!?",
-265,0x204212,"<@LL,00,06>まさか コガネのやつ<CD>花を まもろうとして...!",
-266,0x204214,"<@RL,45,03>ちょっとっ! メダロット1体の<CD>ために いのちを すてる気っ!?",
-267,0x204216,"<@LL,00,02>メダロットだって みんな<CD>生きてるんだ!",
-268,0x204218,"<@RL,03,01>おれも 行く!<CF><D1><@RL,01,07>あたしも!",
-269,0x20421a,"<@RL,02,02>わたしも まいリますわ!",
-270,0x20421c,"<@RL,45,03>まちなさい!<CD>何考えてんのよっ あんたたち!",
-271,0x20421e,"<@RL,02,02>メダロットたちが 中でたすけを<CD>まっているんです!",
-272,0x204220,"<@RL,45,00>どうして? どうしてそこまで?",
-273,0x204222,"<@RL,44,03>子どもたちを おいかけなくては!<CD>あなたは ここで まっててください!",
-274,0x204224,"<@RL,45,02>アサマくん!",
-275,0x204226,"<@RL,45,02>わたしも いっしょに行く!",
-276,0x204228,"<@RL,45,00>...いっしょに行っちゃ だめ?",
-277,0x20422a,"<@RL,44,01>...よし いっしょに行こう!",
-278,0x20422c,"<@LL,00,07>うっ うわぁぁ!<CD>は 早く コガネの所ヘ...",
+255,0x2041fe,"<@RL,01,01><&BUF0A>!<CF><D1><@RL,02,01><&BUF0A>くん!<CF><D1><@RL,03,02>何だよ 生きてやがったのかよ<CD><&BUF0A>","<@RL,01,01><&BUF0A>!<CF><D1><@RL,02,01><&BUF0A>!<CF><D1><@RL,03,02>So you're still alive, <&BUF0A>."
+256,0x204200,"<@LL,00,04>当たリ前だろ?","<@LL,00,04>Obviously?"
+257,0x204202,"<@RL,45,03>みんな ひなんした!?","<@RL,45,03>Has everyone evacuated!?"
+258,0x204204,"<@LL,00,00>いったい 何が おこったんですか?<CF><D1><@RL,45,00>何者かが メダルぞうしょくろに<CD>しのびこんで ベビ-を<CF><D1>ぼうそうさせたみたいなの<CF><D1><@RL,01,07>やっぱリ ロボロボ団が!?<CF><D1><@LL,00,06>それで どうなっちゃうんですか?<CF><D1><@RL,45,00>さいあくの場合 ばくはつよ<CD>...ア-スモ-ル もろともね<CF><D1><@LL,00,07>ばくはつ!?","<@LL,00,00>What in the world is going on?<CF><D1><@RL,45,00>It seems that someone snuck into the Medal Breeder Reactor and caused Baby to go out of control.<CF><D1><@RL,01,07>It had to be the Rubber-robos!<CF><D1><@LL,00,06>What will happen now?<CF><D1><@RL,45,00>In the worst case scenario ...Earth Mall will be completely blown up.<CF><D1><@LL,00,07>Blown up!?"
+259,0x204206,"<@RL,01,07>ええっ!?<CF><D1><@RL,02,06>まあ!<CF><D1><@RL,03,02>ふん かんペきな システムが<CD>聞いて あきれるぜ","<@RL,01,07>Eeh!?<CF><D1><@RL,02,06>Oh my!<CF><D1><@RL,03,02>Hmph, so much for a perfect system."
+260,0x204208,"<@LL,00,07>コウジ! いやみを<CD>言ってる 場合じゃないよ!<CF><D1><@RL,45,00>とにかく あんぜんが かくにん<CD>されるまで みんな ア-スモ-ルを<CF><D1>はなれた方が いいわ","<@LL,00,07>Kouji! This is no time for your snark!<CF><D1><@RL,45,00>Anyway, we should all leave Earth Mall until we get word that it's safe."
+261,0x20420a,"<@LL,00,06>あのっ セセリさん!","<@LL,00,06>Uhm, Seseri!"
+262,0x20420c,"<@RL,45,00>何? 時間が ないのよ<CF><D1><@LL,00,06>メダロットたちは<CD>ひなんしたんですか!?<CF><D1><@RL,45,00>人が のこってないなら もういいわ","<@RL,45,00>What is it? There's not much time.<CF><D1><@LL,00,06>Have the medarots been evacuated!?<CF><D1><@RL,45,00>If all the people get out, that's good enough."
+263,0x20420e,"<@RL,03,01>何だと! メダロットなら<CD>しんでも いいってのかよ!","<@RL,03,01>What!? Are you saying you don't care if medarots die!?"
+264,0x204210,"<@LL,00,07>こっ! コガネ!<CD>コガネは!?","<@LL,00,07>Ko-! Kogane! What about Kogane!?"
+265,0x204212,"<@LL,00,06>まさか コガネのやつ<CD>花を まもろうとして...!","<@LL,00,06>No way, could Kogane still be protecting the flowers...!?"
+266,0x204214,"<@RL,45,03>ちょっとっ! メダロット1体の<CD>ために いのちを すてる気っ!?","<@RL,45,03>Hey! Are you going to throw your life away for just one medarot!?"
+267,0x204216,"<@LL,00,02>メダロットだって みんな<CD>生きてるんだ!","<@LL,00,02>Even medarots are alive!"
+268,0x204218,"<@RL,03,01>おれも 行く!<CF><D1><@RL,01,07>あたしも!","<@RL,03,01>I'm going too!<CF><D1><@RL,01,07>Me too!"
+269,0x20421a,"<@RL,02,02>わたしも まいリますわ!","<@RL,02,02>I'm going as well!"
+270,0x20421c,"<@RL,45,03>まちなさい!<CD>何考えてんのよっ あんたたち!","<@RL,45,03>Wait! What do you guys think you're doing!?"
+271,0x20421e,"<@RL,02,02>メダロットたちが 中でたすけを<CD>まっているんです!","<@RL,02,02>There are medarots in there waiting for help!"
+272,0x204220,"<@RL,45,00>どうして? どうしてそこまで?","<@RL,45,00>Why? Why are they going that far?"
+273,0x204222,"<@RL,44,03>子どもたちを おいかけなくては!<CD>あなたは ここで まっててください!","<@RL,44,03>I'm going after the kids! Please wait here!"
+274,0x204224,"<@RL,45,02>アサマくん!","<@RL,45,02>Mr. Asama!"
+275,0x204226,"<@RL,45,02>わたしも いっしょに行く!","<@RL,45,02>I'm going with you!"
+276,0x204228,"<@RL,45,00>...いっしょに行っちゃ だめ?","<@RL,45,00>...Can I not go with you?"
+277,0x20422a,"<@RL,44,01>...よし いっしょに行こう!","<@RL,44,01>...Okay, let's go together!"
+278,0x20422c,"<@LL,00,07>うっ うわぁぁ!<CD>は 早く コガネの所ヘ...","<@LL,00,07>W-woooah! I-I need to hurry and get to Kogane..."
 279,0x20422e,"<@LL,00,06>か 科学研究所に...<CD>コガネの所ヘ 行かなくっちゃ!",
-280,0x204230,"<@RL,03,01><&BUF0A>!",
-281,0x204232,"<@RL,03,01>ほかの メダロットたちは まかせろ<CD>おまえは コガネとかいう<CF><D1>メダロットの所ヘ いそぐんだ!",
-282,0x204234,"<@LL,00,07>コガネ!!",
+280,0x204230,"<@RL,03,01><&BUF0A>!","<@RL,03,01><&BUF0A>!"
+281,0x204232,"<@RL,03,01>ほかの メダロットたちは まかせろ<CD>おまえは コガネとかいう<CF><D1>メダロットの所ヘ いそぐんだ!","<@RL,03,01>Leave the other medarots to me, you go hurry on to that Kogane!"
+282,0x204234,"<@LL,00,07>コガネ!!","<@LL,00,07>Kogane!!"
 283,0x204236,"<@LL,00,06>ち ちがう! にげてる場合じゃない<CD>早く コガネを たすけなきゃ",
 284,0x204238,ちっちゃくて かわいい花だ,
-285,0x20423a,"<@LL,00,07>コガネ! 早く にげるんだ!",
-286,0x20423c,"<@RL,30,00>いっ いやです! ワタシは<CD>ここで 花を まもるんです!<CF><D1><@LL,00,07>何言ってるんだ! 花なら また<CD>そだてれば...",
-287,0x20423e,"<@LL,00,03>(ちがう! この花は コガネの<CD>「いのち」なんだ! だけど...)",
-288,0x204240,"<@LL,00,02>ぼくは お前を つれて行く!!",
-289,0x204242,"<@LL,00,03>ごめんね コガネ...<CD>でも 時間がないんだ",
-290,0x204244,"<@LL,00,07>うわぁぁぁぁぁぁ---っ!!",
-291,0x204246,"<@LL,00,05>お おさまった?",
-292,0x204248,"<@LL,00,00>みんな だいじょうぶかな?",
-293,0x20424a,"<@LL,00,07>あっ そうだ!<CD>コガネの花も 持って行こう",
-294,0x20424c,にゃ-っ!!,
-295,0x20424e,"<@LL,00,07>あの声は!!",
-296,0x204250,"<@LL,00,06>どこだ!?",
-297,0x204252,"<@LL,00,06>どいてよ 今 お前の あいてを<CD>している場合じゃ ないんだ<CF><D1><@RL,40,01>いやにゃ! ここがなくなれば<CD>ニセモノの やさいも なくなるにゃ<CF><D1><@LL,00,06>そんな! みんな しんじゃうよ!<CF><D1><@RL,40,00>ニンゲンなんて<CD>いなくなれば いいのにゃ!",
-298,0x204254,"<@RL,40,03>にゃ-っ!!",
-299,0x204256,"<@RL,40,03>土を よごす ニンゲン<CD>大キライにゃ!<CF><D1><@LL,00,00>土?",
-300,0x204258,"<@LL,00,00>何だ? ポケットが あったかいぞ<CF><D1><@LL,00,07>...あ!<CD>6負かヘい石が 光ってる!",
-301,0x20425a,"<@RL,40,02>い いやにゃ!<CD>にゃ-は ぜったい そんなのに<CF><D1>なリたく ないにゃ!",
-302,0x20425c,"<@LL,00,00>どうしたんだよ?",
-303,0x20425e,"<@RL,40,02>よ よるんじゃ ないにゃ!",
-304,0x204260,"<@RL,40,03>いやにゃ--っ!!",
-305,0x204262,"<@LL,00,07>きえた!",
-306,0x204264,"<@LL,00,07>あっ! 6負かヘい石が!",
-307,0x204266,"<@LL,00,00>まっさらだった 6負かヘい石に<CD>絵が 入ってる<CF><D1>あのネコは きえちゃうし",
-308,0x204268,"<@LL,00,06>...って 今は そんなこと<CD>考えてる 場合じゃないぞ!",
-309,0x20426a,"<@RL,03,04>何やってる! いそげ <CD><&BUF0A>!<CF><D1><@LL,00,00>うん!",
-310,0x20426c,"<@RL,03,00>ここに のこってた<CD>メダロットたちは みんなにがした<CF><D1><@LL,00,01>そっか!<CF><D1><@RL,03,00>カリンと アリカちゃんが<CD>メダルはつ電所の方ヘ むかって<CF><D1>まだ もどってこない!<CD>まったく むちゃするぜ<CF><D1><@LL,00,00>分かった! じゃあ<CD>ぼくたちも 早く 行こう!<CF><D1><@RL,03,01>おう!",
+285,0x20423a,"<@LL,00,07>コガネ! 早く にげるんだ!","<@LL,00,07>Kogane! Hurry and get out of here!"
+286,0x20423c,"<@RL,30,00>いっ いやです! ワタシは<CD>ここで 花を まもるんです!<CF><D1><@LL,00,07>何言ってるんだ! 花なら また<CD>そだてれば...","<@RL,30,00>N-no! I am here to protect the flowers!<CF><D1><@LL,00,07>What are you saying!? If they're flowers, you can grow them again..."
+287,0x20423e,"<@LL,00,03>(ちがう! この花は コガネの<CD>「いのち」なんだ! だけど...)","<@LL,00,03>(No! These flowers are Kogane's most precious things! But...)"
+288,0x204240,"<@LL,00,02>ぼくは お前を つれて行く!!","<@LL,00,02>I'm taking you with me!!"
+289,0x204242,"<@LL,00,03>ごめんね コガネ...<CD>でも 時間がないんだ","<@LL,00,03>Sorry Kogane... But there's no time."
+290,0x204244,"<@LL,00,07>うわぁぁぁぁぁぁ---っ!!","<@LL,00,07>Woooooah!!"
+291,0x204246,"<@LL,00,05>お おさまった?","<@LL,00,05>I-is it over?"
+292,0x204248,"<@LL,00,00>みんな だいじょうぶかな?","<@LL,00,00>Is everyone else okay?"
+293,0x20424a,"<@LL,00,07>あっ そうだ!<CD>コガネの花も 持って行こう","<@LL,00,07>Ah, right! I need to grab some of Kogane's flowers too."
+294,0x20424c,にゃ-っ!!,Meow!!
+295,0x20424e,"<@LL,00,07>あの声は!!","<@LL,00,07>That voice!!"
+296,0x204250,"<@LL,00,06>どこだ!?","<@LL,00,06>Where is it!?"
+297,0x204252,"<@LL,00,06>どいてよ 今 お前の あいてを<CD>している場合じゃ ないんだ<CF><D1><@RL,40,01>いやにゃ! ここがなくなれば<CD>ニセモノの やさいも なくなるにゃ<CF><D1><@LL,00,06>そんな! みんな しんじゃうよ!<CF><D1><@RL,40,00>ニンゲンなんて<CD>いなくなれば いいのにゃ!","<@LL,00,06>Out of the way, I don't have time for you right now!<CF><D1><@RL,40,01>Nyow! Once this place is gone, the fake vegetables will be gone too, meow.<CF><D1><@LL,00,06>No way! Everyone will die!<CF><D1><@RL,40,00>I don't care as long as the humans are gone, meow!"
+298,0x204254,"<@RL,40,03>にゃ-っ!!","<@RL,40,03>Meow!!"
+299,0x204256,"<@RL,40,03>土を よごす ニンゲン<CD>大キライにゃ!<CF><D1><@LL,00,00>土?","<@RL,40,03>I hate you humans who pollute the earth, meow!<CF><D1><@LL,00,00>The earth?"
+300,0x204258,"<@LL,00,00>何だ? ポケットが あったかいぞ<CF><D1><@LL,00,07>...あ!<CD>6負かヘい石が 光ってる!","<@LL,00,00>What the? My pocket is getting warm.<CF><D1><@LL,00,07>...Ah! The six-sided nummelite is glowing!"
+301,0x20425a,"<@RL,40,02>い いやにゃ!<CD>にゃ-は ぜったい そんなのに<CF><D1>なリたく ないにゃ!","<@RL,40,02>N-nyow! This can't be heow things go, meow!"
+302,0x20425c,"<@LL,00,00>どうしたんだよ?","<@LL,00,00>What's happening?"
+303,0x20425e,"<@RL,40,02>よ よるんじゃ ないにゃ!","<@RL,40,02>D-don't get near me, meow!"
+304,0x204260,"<@RL,40,03>いやにゃ--っ!!","<@RL,40,03>Nyooow!"
+305,0x204262,"<@LL,00,07>きえた!","<@LL,00,07>It vanished!"
+306,0x204264,"<@LL,00,07>あっ! 6負かヘい石が!","<@LL,00,07>Ah! The six-sided nummelite!"
+307,0x204266,"<@LL,00,00>まっさらだった 6負かヘい石に<CD>絵が 入ってる<CF><D1>あのネコは きえちゃうし","<@LL,00,00>The six-sided nummelite was blank, but it has a picture now.<CF><D1>And that cat vanished."
+308,0x204268,"<@LL,00,06>...って 今は そんなこと<CD>考えてる 場合じゃないぞ!","<@LL,00,06>...But now isn't the time to be worrying about that!"
+309,0x20426a,"<@RL,03,04>何やってる! いそげ <CD><&BUF0A>!<CF><D1><@LL,00,00>うん!","<@RL,03,04>What are you doing!? We've gotta hurry, <&BUF0A>!<CF><D1><@LL,00,00>Yes!"
+310,0x20426c,"<@RL,03,00>ここに のこってた<CD>メダロットたちは みんなにがした<CF><D1><@LL,00,01>そっか!<CF><D1><@RL,03,00>カリンと アリカちゃんが<CD>メダルはつ電所の方ヘ むかって<CF><D1>まだ もどってこない!<CD>まったく むちゃするぜ<CF><D1><@LL,00,00>分かった! じゃあ<CD>ぼくたちも 早く 行こう!<CF><D1><@RL,03,01>おう!","<@RL,03,00>I got all of the medarots that were here out.<CF><D1><@LL,00,01>Right!<CF><D1><@RL,03,00>Karin and Erika went to the Medal Power Plant, but they still aren't back! This is a complete mess.<CF><D1><@LL,00,00>Got it! Let's hurry and get out of here then!<CF><D1><@RL,03,01>Let's go!"
 311,0x20426e,"<@RL,03,01>どこヘ 行こうってんだ!<CD><&BUF0A>!<CF><D1>そこには もう だれもいない!<CD>メダルはつ電所ヘ いそぐぞ!!",
 312,0x204270,"<@LL,00,06>アリカ---!",
 313,0x204272,"<@RL,03,01>カリ--ン! <CD>どこだ! 2人ともヘんじをしろ!",
@@ -323,45 +323,45 @@
 321,0x204282,"<@RL,03,01>そのヘやは もう しらベた!<CD>ほかの場所を さがそう!!",
 322,0x204284,"<@LL,00,06>...カギが かかってる","<@LL,00,06>...It's locked."
 323,0x204286,"<@LL,00,07>エレベ-タ-のドアが ひらかない!<CF><D1><@LL,00,06>じしんのせいで エレベ-タ-が<CD>止まっちゃったんだ!!<CF><D1>何とか しなきゃ!",
-324,0x204288,"<@LL,00,07>アリカ!!",
-325,0x20428a,"<@LL,00,07>何やってんだよ!<CD>早く メダロットたち つれて<CF><D1>だっしゅつしないと!<CF><D1><@RL,01,07>大変なのよ! <CD>ここに いる メダロットたち<CF><D1>すっごく がんこで 自分の持ち場を<CD>はなれようと しないの!",
-326,0x20428c,"<@RL,03,00>カリンは どこだ?",
-327,0x20428e,"<@RL,01,07>...それが カリンちゃんも<CD>「メダロットたちが はなれるまで<CF><D1>わたしも 動かない」って <CD>きかなくって!",
-328,0x204290,"<@RL,03,03>まったく あいつは!!<CD>カリンは どこだ?<CF><D1><@RL,01,07>ついてきて!",
-329,0x204292,"<@RL,30,00>わたしたちが ここを はなれれば<CD>ばくはつして あなた方 人間が<CF><D1>きずつくかも しれないのです<CF><D1>ですから わたしたち ここを<CD>はなれることは できません!",
-330,0x204294,"<@RL,30,00>わたしたちのことは 気にせずに<CD>早く にげて下さい!!",
+324,0x204288,"<@LL,00,07>アリカ!!","<@LL,00,07>Erika!!"
+325,0x20428a,"<@LL,00,07>何やってんだよ!<CD>早く メダロットたち つれて<CF><D1>だっしゅつしないと!<CF><D1><@RL,01,07>大変なのよ! <CD>ここに いる メダロットたち<CF><D1>すっごく がんこで 自分の持ち場を<CD>はなれようと しないの!","<@LL,00,07>What's going on!? We have to get the medarots out of here quick!<CF><D1><@RL,01,07>There's a problem! The medarots here are really stubborn and won't leave their posts!"
+326,0x20428c,"<@RL,03,00>カリンは どこだ?","<@RL,03,00>Where is Karin?"
+327,0x20428e,"<@RL,01,07>...それが カリンちゃんも<CD>「メダロットたちが はなれるまで<CF><D1>わたしも 動かない」って <CD>きかなくって!","<@RL,01,07>...Karin won't listen, she's saying ""If the medarots aren't leaving, I won't leave either."""
+328,0x204290,"<@RL,03,03>まったく あいつは!!<CD>カリンは どこだ?<CF><D1><@RL,01,07>ついてきて!","<@RL,03,03>Really, that girl!! Where is she?<CF><D1><@RL,01,07>Follow me!"
+329,0x204292,"<@RL,30,00>わたしたちが ここを はなれれば<CD>ばくはつして あなた方 人間が<CF><D1>きずつくかも しれないのです<CF><D1>ですから わたしたち ここを<CD>はなれることは できません!","<@RL,30,00>If we leave, then there could be an explosions that harms humans.<CF><D1>That is why we cannot leave!"
+330,0x204294,"<@RL,30,00>わたしたちのことは 気にせずに<CD>早く にげて下さい!!","<@RL,30,00>Do not worry about us and get out of here, quickly!!"
 331,0x204296,"<@LL,00,02>この 分からずや!!<CF><D1>もう ア-スモ-ルにいた人間は<CD>みんな ひなんしているんだってば!",
 332,0x204298,"<@RL,30,00>なにをしているんです!<CD>早く にげて下さい!!<CF><D1><@LL,00,05>ああ こまったなぁ<CD>どう言ったら 分かってくれるんだろ",
 333,0x20429a,"<@LL,00,07>あっ! プリミティベビ-のこと<CD>すっかリ わすれてた!!",
 334,0x20429c,"<@RL,30,00>......<CF><D1><@LL,00,05>ここは アリカたちにまかせて<CD>ぼくは ベビ-のところヘ行こう",
 335,0x20429e,"<@RL,01,05>ここの メダロットたちに<CD>何を 言っても むだよ!",
-336,0x2042a0,"<@RL,03,01>こういうやつらは 力ずくで<CD>つれて行くしかねえんだ!",
-337,0x2042a2,"<@RL,01,05>ここの メダロットたちに<CD>何を 言っても むだよ!<CF><D1><@RL,03,01>こういうやつらは 力ずくで<CD>つれて行くしかねえんだ!",
-338,0x2042a4,"<@RL,02,05>この子たちも 話せば 分かると<CD>思うんです!",
-339,0x2042a6,"<@RL,03,01><&BUF0A><CD>カリンは 何とかする!<CF><D1>お前は ほかの メダロットたちを<CD>むリやリにでも つれ出せ!<CF><D1><@LL,00,00>わ 分かった!",
-340,0x2042a8,「ナカナイデ ナカナイデ」,
-341,0x2042aa,「ナカナイデ...」,
-342,0x2042ac,"<@LL,00,00>あれ? だれも いない<CF><D1><@LL,00,00><&BUF07><CD>お前 今 何か 言ったか?",
-343#kabuto,0x2042ae,"<@RL,35,00>オレじゃね- だれかが ないてるんだ<CF><D1><@LL,00,00>だれかって だれ?<CF><D1><@RL,35,00>さぁな 下の かいから<CD>聞こえてくるぜ<CF><D1><@LL,00,00>下...?",
-343#kuwagata,0x2042ae,"<@RL,36,00>だれかが ないているようだ<CF><D1><@LL,00,00>だれかって だれ?<CF><D1><@RL,36,00>分からん 下の かいから<CD>聞こえてくる<CF><D1><@LL,00,00>下...?",
-344,0x2042b0,"<@LL,00,06>やっぱリ エレベ-タ-は<CD>動いていないか<CF><D1>何とか しなきゃ!",
-345#kabuto,0x2042b2,"<@RL,35,00><&BUF0A>!<CD>オレを 出せ!<CF><D1><@LL,00,07>ええ? 何をする つもリだよ<CD>言っとくけどな このエレベ-タ-は<CF><D1>ちょっとや そっとじゃ...<CF><D1><@RL,35,00>いいから! ぐだぐだ言ってる<CD>時間は ね-ぞ?<CF><D1><@LL,00,06>わ 分かった!",
-345#kuwagata,0x2042b2,"<@RL,36,00><&BUF0A>!<CD>オレを 出せ!<CF><D1><@LL,00,07>ええ? 何をする つもリだよ<CD>言っとくけどな このエレベ-タ-は<CF><D1>ちょっとや そっとじゃ...<CF><D1><@RL,36,00>早くしろ! 時間がない!<CF><D1><@LL,00,06>わ 分かった!",
-346#kabuto,0x2042b4,"<@RL,35,00>よし! <&BUF0A>!<CD>れいのやつを 出せ!<CF><D1><@LL,00,05>れいのやつ?",
-346#kuwagata,0x2042b4,"<@RL,36,00>よし! <&BUF0A>!<CD>れいのやつを 出せ!<CF><D1><@LL,00,05>ヘっ? れいのやつ?",
-347#kabuto,0x2042b6,"<@RL,35,00>だぁ-っ!!<CF><D1>メダロット社で はかせから<CD>もらった オプションパ-ツだよ!!",
-347#kuwagata,0x2042b6,"<@RL,36,00>お前という やつは...<CF><D1>メダロット社で はかせから<CD>オプションパ-ツを もらっただろう",
-348#kabuto,0x2042b8,"<@LL,00,07>あれか!? あれを 使うのか!",
-348#kuwagata,0x2042b8,"<@LL,00,07>そうか あのパ-ツを つかうのか!",
-349#kabuto,0x2042ba,"<@LL,00,02>行け! <&BUF07> <CD>メダスプレイヤ----!!",
-349#kuwagata,0x2042ba,"<@LL,00,02>いくぞ! <&BUF07> <CD>メダシェア-----ズ!!",
-350#kabuto,0x2042bc,"<@RL,35,00>うおぉぉぉぉぉ-っっっ!!",
-350#kuwagata,0x2042bc,"<@RL,36,00>うおぉぉぉぉぉ--っっ!!",
-351#kabuto,0x2042be,"<@RL,35,00>ヘっ どうやら 動いたようだな<CD>エレベ-タ-<CF><D1><@LL,00,05>す すごい...<CF><D1><@RL,35,00>行くぞ! <CD><&BUF0A>!",
-351#kuwagata,0x2042be,"<@RL,36,00>ふっ どうやら 動いたようだな<CF><D1><@LL,00,05>す すごい...<CF><D1><@RL,36,00>行くぞ! <CD><&BUF0A>!",
-352,0x2042c0,"<@LL,00,06>あっ おい!<CD>ちょっと まてよ!",
-353,0x2042c2,"<@LL,00,06>早く にげるんだ!!",
-354,0x2042c4,"<@RL,30,00>わたしたちは ここで がんばって<CD>ひがいを くいとめます",
-355,0x2042c6,"<@LL,00,06>時間がない! かれらのことは<CD>あとまわしにして おくのヘやの<CF><D1>プリミティベビ-を たすけよう",
-356,0x2042c8,"<@RL,30,00>ここから先ヘ 行かせませんよ!<CF><D1><@LL,00,06>しかたがない はんたいがわから<CD>まわリこもう",
-357,0x2042ca,"<@LL,00,06>なっ なんだ なんだ",
+336,0x2042a0,"<@RL,03,01>こういうやつらは 力ずくで<CD>つれて行くしかねえんだ!","<@RL,03,01>Seems like we'll have to take them by force!"
+337,0x2042a2,"<@RL,01,05>ここの メダロットたちに<CD>何を 言っても むだよ!<CF><D1><@RL,03,01>こういうやつらは 力ずくで<CD>つれて行くしかねえんだ!","<@RL,01,05>We can't get through to these medarots at all!<CF><D1><@RL,03,01>We'll have to take them by force!"
+338,0x2042a4,"<@RL,02,05>この子たちも 話せば 分かると<CD>思うんです!","<@RL,02,05>These guys will understand if we talk it out!"
+339,0x2042a6,"<@RL,03,01><&BUF0A><CD>カリンは 何とかする!<CF><D1>お前は ほかの メダロットたちを<CD>むリやリにでも つれ出せ!<CF><D1><@LL,00,00>わ 分かった!","<@RL,03,01><&BUF0A>, I'll take care of Karin! Do whatever you need to to get the other medarots out!<CF><D1><@LL,00,00>G-got it!"
+340,0x2042a8,「ナカナイデ ナカナイデ」,"""Don't cry, don't cry."""
+341,0x2042aa,「ナカナイデ...」,"""Don't cry..."""
+342,0x2042ac,"<@LL,00,00>あれ? だれも いない<CF><D1><@LL,00,00><&BUF07><CD>お前 今 何か 言ったか?","<@LL,00,00>Huh? No one is here.<CF><D1><@LL,00,00><&BUF07>, did you say something?"
+343#kabuto,0x2042ae,"<@RL,35,00>オレじゃね- だれかが ないてるんだ<CF><D1><@LL,00,00>だれかって だれ?<CF><D1><@RL,35,00>さぁな 下の かいから<CD>聞こえてくるぜ<CF><D1><@LL,00,00>下...?","<@RL,35,00>Wasn't me. I think someone is crying.<CF><D1><@LL,00,00>Who is it?<CF><D1><@RL,35,00>Who knows, it's coming from down below.<CF><D1><@LL,00,00>Down...?"
+343#kuwagata,0x2042ae,"<@RL,36,00>だれかが ないているようだ<CF><D1><@LL,00,00>だれかって だれ?<CF><D1><@RL,36,00>分からん 下の かいから<CD>聞こえてくる<CF><D1><@LL,00,00>下...?","<@RL,36,00>It seems thtat someone is crying.<CF><D1><@LL,00,00>Who is it?<CF><D1><@RL,36,00>I do not know. It sounds like it's coming from down below.<CF><D1><@LL,00,00>Down...?"
+344,0x2042b0,"<@LL,00,06>やっぱリ エレベ-タ-は<CD>動いていないか<CF><D1>何とか しなきゃ!","<@LL,00,06>I didn't think the elevator would be working.<CF><D1>I've gotta do something!"
+345#kabuto,0x2042b2,"<@RL,35,00><&BUF0A>!<CD>オレを 出せ!<CF><D1><@LL,00,07>ええ? 何をする つもリだよ<CD>言っとくけどな このエレベ-タ-は<CF><D1>ちょっとや そっとじゃ...<CF><D1><@RL,35,00>いいから! ぐだぐだ言ってる<CD>時間は ね-ぞ?<CF><D1><@LL,00,06>わ 分かった!","<@RL,35,00><&BUF0A>!<D3>Let me out!<CF><D1><@LL,00,07>Eeh? What do you want to do? This elevator isn't something easy to...<CF><D1><@RL,35,00>Just do it! There's no time to mess around, right?<CF><D1><@LL,00,06>F-fine!"
+345#kuwagata,0x2042b2,"<@RL,36,00><&BUF0A>!<CD>オレを 出せ!<CF><D1><@LL,00,07>ええ? 何をする つもリだよ<CD>言っとくけどな このエレベ-タ-は<CF><D1>ちょっとや そっとじゃ...<CF><D1><@RL,36,00>早くしろ! 時間がない!<CF><D1><@LL,00,06>わ 分かった!","<@RL,36,00><&BUF0A>!<D3>Let me out!<CF><D1><@LL,00,07>Eeh? What do you want to do? This elevator isn't something easy to...<CF><D1><@RL,36,00>Quickly! There is not time!<CF><D1><@LL,00,06>F-fine!"
+346#kabuto,0x2042b4,"<@RL,35,00>よし! <&BUF0A>!<CD>れいのやつを 出せ!<CF><D1><@LL,00,05>れいのやつ?","<@RL,35,00>Alright! <&BUF0A>!<D3>Bring out <f02>that<f00>!<CF><D1><@LL,00,05>That?"
+346#kuwagata,0x2042b4,"<@RL,36,00>よし! <&BUF0A>!<CD>れいのやつを 出せ!<CF><D1><@LL,00,05>ヘっ? れいのやつ?","<@RL,36,00>Alright! <&BUF0A>!<D3>Bring out <f02>that<f00>!<CF><D1><@LL,00,05>Heh? That?"
+347#kabuto,0x2042b6,"<@RL,35,00>だぁ-っ!!<CF><D1>メダロット社で はかせから<CD>もらった オプションパ-ツだよ!!","<@RL,35,00>Gaah!!<CF><D1>The optional parts you got from the professor at the Medarot Company!!"
+347#kuwagata,0x2042b6,"<@RL,36,00>お前という やつは...<CF><D1>メダロット社で はかせから<CD>オプションパ-ツを もらっただろう","<@RL,36,00>You know what I mean...<CF><D1>Those optional parts you got from the professor at the Medarot Company!!"
+348#kabuto,0x2042b8,"<@LL,00,07>あれか!? あれを 使うのか!","<@LL,00,07>Those!? You're using those!?"
+348#kuwagata,0x2042b8,"<@LL,00,07>そうか あのパ-ツを つかうのか!","<@LL,00,07>Right, you can use those parts!"
+349#kabuto,0x2042ba,"<@LL,00,02>行け! <&BUF07> <CD>メダスプレイヤ----!!","<@LL,00,02>Go! <&BUF07> <D3>MedaSprayeeeer!!"
+349#kuwagata,0x2042ba,"<@LL,00,02>いくぞ! <&BUF07> <CD>メダシェア-----ズ!!","<@LL,00,02>Go! <&BUF07> <D3>MedaChaaaarge!!"
+350#kabuto,0x2042bc,"<@RL,35,00>うおぉぉぉぉぉ-っっっ!!","<@RL,35,00>Uoooooh!!"
+350#kuwagata,0x2042bc,"<@RL,36,00>うおぉぉぉぉぉ--っっ!!","<@RL,36,00>Uoooooh!!"
+351#kabuto,0x2042be,"<@RL,35,00>ヘっ どうやら 動いたようだな<CD>エレベ-タ-<CF><D1><@LL,00,05>す すごい...<CF><D1><@RL,35,00>行くぞ! <CD><&BUF0A>!","<@RL,35,00>Heh, looks like the elevator is moving.<CF><D1><@LL,00,05>A-amazing...<CF><D1><@RL,35,00>Go! <D3><&BUF0A>!"
+351#kuwagata,0x2042be,"<@RL,36,00>ふっ どうやら 動いたようだな<CF><D1><@LL,00,05>す すごい...<CF><D1><@RL,36,00>行くぞ! <CD><&BUF0A>!","<@RL,36,00>Phew, seems like the elevator is moving.<CF><D1><@LL,00,05>A-amaing...<CF><D1><@RL,36,00>Go! <D3><&BUF0A>!"
+352,0x2042c0,"<@LL,00,06>あっ おい!<CD>ちょっと まてよ!","<@LL,00,06>Ah, hey!! Wait up!"
+353,0x2042c2,"<@LL,00,06>早く にげるんだ!!","<@LL,00,06>Hurry and get out of here!!"
+354,0x2042c4,"<@RL,30,00>わたしたちは ここで がんばって<CD>ひがいを くいとめます","<@RL,30,00>We are doing our best to prevent further damage."
+355,0x2042c6,"<@LL,00,06>時間がない! かれらのことは<CD>あとまわしにして おくのヘやの<CF><D1>プリミティベビ-を たすけよう","<@LL,00,06>There's no time! We'll get them later, let's get Primity Baby in the other room!"
+356,0x2042c8,"<@RL,30,00>ここから先ヘ 行かせませんよ!<CF><D1><@LL,00,06>しかたがない はんたいがわから<CD>まわリこもう","<@RL,30,00>You may not go further!<CF><D1><@LL,00,06>There's no helping it, we'll gro around to the other side."
+357,0x2042ca,"<@LL,00,06>なっ なんだ なんだ","<@LL,00,06>Wh-what is it? What?"

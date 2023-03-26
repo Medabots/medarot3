@@ -1,61 +1,61 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000#kabuto,0x244000,"<@RL,35,00>何だ? お前ら<CD>あそんでる 場合じゃね-ぞ?<CF><D1><@LL,00,00>通してよ ぼくたち このおくに<CD>用が あるんだ",
-000#kuwagata,0x244000,"<@RL,36,00>何だ? お前たち<CD>じゃまを する気か?<CF><D1><@LL,00,00>通してよ ぼくたち このおくに<CD>用が あるんだ",
-001#kabuto,0x244002,"<@RL,30,00>そういうわけには いきません<CD>この先は きけんです<CF><D1><@RL,35,00>オレらが ちょっと 行って<CD>スパッと かいけつしてきて やるよ<CF><D1><@RL,30,00>メダロット3げんそく だい2じょう<CD>「メダロットは 人間に<CF><D1>きけんが ふリかかるのを<CD>貝すごしては ならない」<CF><D1>...あなたも メダロットなら<CD>分かるはずです<CF><D1><@RL,35,00>ここで 引きかえした方が<CD>人間たちに もっと すげえ<CF><D1>きけんが ふリかかるってことくらい<CD>考えリゃあ 分かるだろ-が!",
-001#kuwagata,0x244002,"<@RL,30,00>そういうわけには いきません<CD>この先は きけんです<CF><D1><@RL,36,00>ならば だまって まっていろ<CD>すぐに おわる<CF><D1><@RL,30,00>メダロット3げんそく だい2じょう<CD>「メダロットは 人間に<CF><D1>きけんが ふリかかるのを<CD>貝すごしては ならない」<CF><D1>...あなたも メダロットなら<CD>分かるはずです<CF><D1><@RL,36,00>ここで 引きかえした方が<CD>人間たちに さらに 大きな<CF><D1>きけんが ふリかかるということが<CD>お前たちには 分からんのか?",
-002,0x244004,"<@RL,30,00>そうですか...しかたあリません",
-003#kabuto,0x244006,"<@RL,35,00>しばらく ねむっといて<CD>もらうぜ!<CF><D1><@LL,00,06>いそごう<CD><&BUF07>!<CF><D1><@RL,35,00>おう!",
-003#kuwagata,0x244006,"<@RL,36,00>しばらく ねむっておいて<CD>もらおう<CF><D1><@LL,00,06>いそごう<CD><&BUF07>!<CF><D1><@RL,36,00>ああ",
-004#kabuto,0x244008,"<@RL,35,00>なきごえが 大きくなった<CD>あの中に ないてるやつが いる",
-004#kuwagata,0x244008,"<@RL,36,00>近いな<CD>ないてるやつは あの中だ",
-005,0x24400a,"<@LL,00,00>メダルぞうしょくろ?<CD>あの中に いるのって...<CF><D1><@CC,FF,FF>「ナカナイデ ナカナイデ」<CF><D1><@LL,00,00>あ また あの声!",
-006,0x24400c,"<@LL,00,07>あっ きみは また...!<CF><D1><@RL,41,03>ニンゲン いなくなれ!",
-007,0x24400e,"<@LL,00,07>わっ!",
-008#kabuto,0x244010,"<@RL,35,00>何しやがる!<CF><D1><@LL,00,07>やめろ <&BUF07>!",
-008#kuwagata,0x244010,"<@RL,36,00>何をする!<CF><D1><@LL,00,07>やめろ <&BUF07>!",
-009#kabuto,0x244012,"<@RL,35,00>でもよ あいつは人間じゃないから<CD>攻撃できるぜ?",
-009#kuwagata,0x244012,"<@RL,36,00>あいつは人間ではない<CD>攻撃 かのうだぞ?",
-010#kabuto,0x244014,"<@LL,00,02>攻撃しちゃ ダメったら ダメだ!<CF><D1><@RL,35,00>何でだよ?<CF><D1><@RL,41,01>フン どっちみち ここはおわリだよ<CF><D1>ニンゲンにみかたする レアメダルも<CD>そこの ニンゲンも<CF><D1>ここにいる みぃ-んな おわリだよ!<CD>アッハハハハ!",
-010#kuwagata,0x244014,"<@LL,00,02>攻撃しちゃ ダメったら ダメだ!<CF><D1><@RL,36,00>...ふん<CF><D1><@RL,41,01>フン どっちみち ここはおわリだよ<CF><D1>ニンゲンにみかたする レアメダルも<CD>そこの ニンゲンも<CF><D1>ここにいる みぃ-んな おわリだよ!<CD>アッハハハハ!",
-011#kabuto,0x244016,"<@RL,35,00>何 わらってやがるっ!",
-011#kuwagata,0x244016,"<@RL,36,00>何が おかしい!",
-012,0x244018,"<@RL,41,01>アッハハハハ!<CF><D1>ベビ-の ぼうそう 止められる<CD>もんなら 止めてみな!",
-013#kabuto,0x24401a,"<@RL,35,00>何なんだ? あいつ いったい<CF><D1><@LL,00,00>メダルぞうしょくろに いそごう!<CF><D1>中で 何が おこってるのか<CD>たしかめなくっちゃ!",
-013#kuwagata,0x24401a,"<@RL,36,00>あいつ...<CF><D1><@LL,00,00>メダルぞうしょくろに いそごう!<CF><D1>中で 何が おこってるのか<CD>たしかめなくっちゃ!",
-014#kabuto,0x24401c,"<@RL,35,00>カギが かかってるぜ<CD>よし まかせろ <CF><D1><&BUF0A>!<CD>オレが ここの ドアを!",
-014#kuwagata,0x24401c,"<@RL,36,00>カギが かかっているな<CD>つかれるが しかたがない<CF><D1>さがっていろ<CD><&BUF0A>",
-015,0x24401e,"<@LL,00,00>まって! ぼくにも 聞こえる<CD>このなき声...ベビ-?",
-016#kabuto,0x244020,"<@LL,00,00>...あ カギが あいた<CF><D1><@RL,35,00>「入れ」って ことか?",
-016#kuwagata,0x244020,"<@LL,00,00>...あ カギが あいた<CF><D1><@RL,36,00>「入れ」という ことか?",
-017#kabuto,0x244022,"<@RL,35,00>こいつだ ないてるやつ<CF><D1><@LL,00,00>やっぱリ ないてたのって<CD>プリミティベビ-だったんだ",
-017#kuwagata,0x244022,"<@RL,36,00>こいつだ なきつづけているのは<CF><D1><@LL,00,00>やっぱリ ないてたのって<CD>プリミティベビ-だったんだ",
-018#kabuto,0x244024,"<@CC,FF,FF>ウウウ アウウウ<CF><D1><@LL,00,04>そっか ひとリぽっちで<CD>こわかったんだね<CF><D1>だけど もう だいじょうぶ",
-018#kuwagata,0x244024,"<@CC,FF,FF>ウウウ アウウウ<CF><D1><@LL,00,04>そうか ひとリぽっちで<CD>こわかったんだね<CF><D1>だけど もう だいじょうぶ",
-019#kabuto,0x244026,"<@RL,35,00>おい <&BUF0A>!",
-019#kuwagata,0x244026,"<@RL,36,00>おい まて!",
-020#kabuto,0x244028,"<@LL,00,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,35,00>つたえるって 何を?",
-020#kuwagata,0x244028,"<@LL,00,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,36,00>つたえる? 何をだ?",
-021,0x24402a,"<@LL,00,00>ごめんね 今まで ぼくたち人間の<CD>せいで ずっと こわい目に<CF><D1>あってきたんだよね<CD>でも このままじゃ きみの 力で<CF><D1>みんな しんじゃう<CD>おねがいだよ なきやんで",
-022,0x24402c,"<@RL,01,07><&BUF0A>!<CF><D1><@RL,03,01>ぶじか! <&BUF0A>!<CF><D1><@RL,02,06><&BUF0A>くん!",
-023,0x24402e,"<@LL,00,04>みんな!<CF><D1><@RL,03,01>お前 1人で こんな所まで<CD>来て...!",
-024,0x244030,"<@CC,FF,FF>フギャアアアア!!<CD>オギャアアアア!!",
-025,0x244032,"<@LL,00,07>わああっ!!",
-026#kabuto,0x244034,"<@RL,35,00>うわあああっ!!",
-026#kuwagata,0x244034,"<@RL,36,00>くああっ!!",
-027,0x244036,"<@RL,01,07>きゃああ!!<CF><D1><@RL,02,06>きゃっ!",
-028,0x244038,"<@RL,03,03>なん...だ...この 声!!<CF><D1><@CC,FF,FF>ナカナイデ ナカナイデ<CF><D1><@LL,00,06>(何だ...? 歌が...<CD>聞こえる...)",
-029,0x24403a,"<@LL,00,06>(この声...それから この歌は)",
-030,0x24403c,"<@LL,00,07>(そうか! コガネの子もリ歌!)",
-031,0x24403e,"<@LL,00,06>カリン...ちゃん...<CD>この メダルを...<CF><D1><@RL,02,05>この メダル...は?",
-032,0x244040,"<@LL,00,06>コガネの...メダル<CD>歌が 入ってる...<CF><D1>カリンちゃんの スィ-カマ-に<CD>歌わせて...<CF><D1><@RL,03,03>おまっ...そんな...こと<CD>してる...場合じゃ...っ!<CF><D1><@CC,FF,FF>フギャアアアア!!<CD>オギャアアアア!!",
-033,0x244042,"<@LL,00,06>たの..む...よ カリンちゃん<CD>歌うパ-ツ.を そ.う...て..<CF><D1>そうび しているのは...<CD>スィ-カマ- だけなんだ!",
-034,0x244044,"<@RL,02,05>分かリ...ましたわ",
-035,0x244046,"<@LL,00,04>あリがとう カリンちゃん<CD>たすかったよ",
-036,0x244048,"<@RL,02,04>メダロットの 歌う 子もリ歌...<CD>とっても すてきでしたわ<CF><D1><@RL,01,04>うん! はじめて 聞いたけど<CD>ちょっぴリ なけちゃった<CF><D1><@RL,03,02>この はつ電所は<CD>もう 使えそうにないな",
-037,0x24404a,"<@RL,02,04>でも ここには やさしい<CD>光が にあいますわ",
-038,0x24404c,"<@RL,44,03>みんな ぶじかっ!?",
-039,0x24404e,"<@RL,45,00>あなたたち...",
-040,0x244050,"<@LL,00,04>コガネが みんなを<CD>すくったんです<CF><D1><@RL,45,00>コガネ...が?<CF><D1>そんな こと...<CF><D1><@LL,00,04>知らなかったんですか?<CD>コガネの 子もリ歌は<CF><D1>ないている 子どもでも<CD>ねむらせることが できるんですよ",
+000#kabuto,0x244000,"<@RL,35,00>何だ? お前ら<CD>あそんでる 場合じゃね-ぞ?<CF><D1><@LL,00,00>通してよ ぼくたち このおくに<CD>用が あるんだ","<@RL,35,00>What? We don't have time to play with you guys?<CF><D1><@LL,00,00>Let us through, we need to get further in."
+000#kuwagata,0x244000,"<@RL,36,00>何だ? お前たち<CD>じゃまを する気か?<CF><D1><@LL,00,00>通してよ ぼくたち このおくに<CD>用が あるんだ","<@RL,36,00>What? Are you guys getting in our way?<CF><D1><@LL,00,00>Let us through, we need to get further in."
+001#kabuto,0x244002,"<@RL,30,00>そういうわけには いきません<CD>この先は きけんです<CF><D1><@RL,35,00>オレらが ちょっと 行って<CD>スパッと かいけつしてきて やるよ<CF><D1><@RL,30,00>メダロット3げんそく だい2じょう<CD>「メダロットは 人間に<CF><D1>きけんが ふリかかるのを<CD>貝すごしては ならない」<CF><D1>...あなたも メダロットなら<CD>分かるはずです<CF><D1><@RL,35,00>ここで 引きかえした方が<CD>人間たちに もっと すげえ<CF><D1>きけんが ふリかかるってことくらい<CD>考えリゃあ 分かるだろ-が!","<@RL,30,00>We can not let you do that.<CF><D1><@RL,35,00>We're just going in to deal with things quick.<CF><D1><@RL,30,00>The second of the Three Laws of Medarobotics, ""Medarots shall not ignore danger posed to humans.""<CF><D1>...As a medarot, you should understand.<CF><D1><@RL,35,00>If we back off now, it will be even more dangerous for humans, don't you get that?"
+001#kuwagata,0x244002,"<@RL,30,00>そういうわけには いきません<CD>この先は きけんです<CF><D1><@RL,36,00>ならば だまって まっていろ<CD>すぐに おわる<CF><D1><@RL,30,00>メダロット3げんそく だい2じょう<CD>「メダロットは 人間に<CF><D1>きけんが ふリかかるのを<CD>貝すごしては ならない」<CF><D1>...あなたも メダロットなら<CD>分かるはずです<CF><D1><@RL,36,00>ここで 引きかえした方が<CD>人間たちに さらに 大きな<CF><D1>きけんが ふリかかるということが<CD>お前たちには 分からんのか?","<@RL,30,00>We can not let you do that.<CF><D1><@RL,36,00>Just stand aside and it'll be over soon.<CF>The second of the Three Laws of Medarobotics, ""Medarots shall not ignore danger posed to humans.""<CF><D1>...As a medarot, you should understand.<CF><D1><@RL,36,00>Can you not see that turning back now would put humans in even more danger?"
+002,0x244004,"<@RL,30,00>そうですか...しかたあリません","<@RL,30,00>I see... It can not be helped."
+003#kabuto,0x244006,"<@RL,35,00>しばらく ねむっといて<CD>もらうぜ!<CF><D1><@LL,00,06>いそごう<CD><&BUF07>!<CF><D1><@RL,35,00>おう!","<@RL,35,00>Take a nap for now!<CF><D1><@LL,00,06>Hurry, <&BUF07>!<CF><D1><@RL,35,00>Right!"
+003#kuwagata,0x244006,"<@RL,36,00>しばらく ねむっておいて<CD>もらおう<CF><D1><@LL,00,06>いそごう<CD><&BUF07>!<CF><D1><@RL,36,00>ああ","<@RL,36,00>Take a break for now.<CF><D1><@LL,00,06>Hurry, <&BUF07>!<CF><D1><@RL,36,00>Yes."
+004#kabuto,0x244008,"<@RL,35,00>なきごえが 大きくなった<CD>あの中に ないてるやつが いる","<@RL,35,00>The crying got louder, the one crying must be inside."
+004#kuwagata,0x244008,"<@RL,36,00>近いな<CD>ないてるやつは あの中だ","<@RL,36,00>We're close, the one crying is within."
+005,0x24400a,"<@LL,00,00>メダルぞうしょくろ?<CD>あの中に いるのって...<CF><D1><@CC,FF,FF>「ナカナイデ ナカナイデ」<CF><D1><@LL,00,00>あ また あの声!","<@LL,00,00>The medal breed reactor? In there is...<CF><D1><@CC,FF,FF><f03>""Don't cry, don't cry.""<f00><CF><D1><@LL,00,00>Ah, that voice again!"
+006,0x24400c,"<@LL,00,07>あっ きみは また...!<CF><D1><@RL,41,03>ニンゲン いなくなれ!","<@LL,00,07>Ah, you again...!<CF><D1><@RL,41,03>Begone, human!"
+007,0x24400e,"<@LL,00,07>わっ!","<@LL,00,07>Woah!"
+008#kabuto,0x244010,"<@RL,35,00>何しやがる!<CF><D1><@LL,00,07>やめろ <&BUF07>!","<@RL,35,00>What the heck!?<CF><D1><@LL,00,07>Stop, <&BUF07>!"
+008#kuwagata,0x244010,"<@RL,36,00>何をする!<CF><D1><@LL,00,07>やめろ <&BUF07>!","<@RL,36,00>What are you doing!?<CF><D1><@LL,00,07>Stop, <&BUF07>!"
+009#kabuto,0x244012,"<@RL,35,00>でもよ あいつは人間じゃないから<CD>攻撃できるぜ?","<@RL,35,00>But this guy isn't human, why can't I attack him?"
+009#kuwagata,0x244012,"<@RL,36,00>あいつは人間ではない<CD>攻撃 かのうだぞ?","<@RL,36,00>This guy is not human, so is attacking him not okay?"
+010#kabuto,0x244014,"<@LL,00,02>攻撃しちゃ ダメったら ダメだ!<CF><D1><@RL,35,00>何でだよ?<CF><D1><@RL,41,01>フン どっちみち ここはおわリだよ<CF><D1>ニンゲンにみかたする レアメダルも<CD>そこの ニンゲンも<CF><D1>ここにいる みぃ-んな おわリだよ!<CD>アッハハハハ!","<@LL,00,02>Don't attack, don't do it!<CF><D1><@RL,35,00>Why not?<CF><D1><@RL,41,01>Hmph, this is all pointless. This place, the rare medals aiding the humans, the humans, they're aaaaall finished! Ahahahaha!"
+010#kuwagata,0x244014,"<@LL,00,02>攻撃しちゃ ダメったら ダメだ!<CF><D1><@RL,36,00>...ふん<CF><D1><@RL,41,01>フン どっちみち ここはおわリだよ<CF><D1>ニンゲンにみかたする レアメダルも<CD>そこの ニンゲンも<CF><D1>ここにいる みぃ-んな おわリだよ!<CD>アッハハハハ!","<@LL,00,02>Don't attack, don't do it!<CF><D1><@RL,35,00>...Hmph.<CF><D1><@RL,41,01>Hmph, this is all pointless. This place, the rare medals aiding the humans, the humans, they're aaaaall finished! Ahahahaha!"
+011#kabuto,0x244016,"<@RL,35,00>何 わらってやがるっ!","<@RL,35,00>Why are you lauging!?"
+011#kuwagata,0x244016,"<@RL,36,00>何が おかしい!","<@RL,36,00>What is so amusing!?"
+012,0x244018,"<@RL,41,01>アッハハハハ!<CF><D1>ベビ-の ぼうそう 止められる<CD>もんなら 止めてみな!","<@RL,41,01>Ahahaha!<CF><D1>If you can stop Baby, let me see you try!"
+013#kabuto,0x24401a,"<@RL,35,00>何なんだ? あいつ いったい<CF><D1><@LL,00,00>メダルぞうしょくろに いそごう!<CF><D1>中で 何が おこってるのか<CD>たしかめなくっちゃ!","<@RL,35,00>What the? What's with that guy?<CF><D1><@LL,00,00>We need to hurry to the medal breeder reactor!<CF><D1>We have to find out what's happening inside!"
+013#kuwagata,0x24401a,"<@RL,36,00>あいつ...<CF><D1><@LL,00,00>メダルぞうしょくろに いそごう!<CF><D1>中で 何が おこってるのか<CD>たしかめなくっちゃ!","<@RL,36,00>That fellow...<CF><D1><@LL,00,00>We need to hurry to the medal breeder reactor!<CF><D1>We have to find out what's happening inside!"
+014#kabuto,0x24401c,"<@RL,35,00>カギが かかってるぜ<CD>よし まかせろ <CF><D1><&BUF0A>!<CD>オレが ここの ドアを!","<@RL,35,00>It's locked. Okay, leave it to me.<CF><D1><&BUF0A>! I'll get this door!"
+014#kuwagata,0x24401c,"<@RL,36,00>カギが かかっているな<CD>つかれるが しかたがない<CF><D1>さがっていろ<CD><&BUF0A>","<@RL,36,00>It is locked. It will be tiring, but there is no choice.<CF><D1>Stand back, <&BUF0A>."
+015,0x24401e,"<@LL,00,00>まって! ぼくにも 聞こえる<CD>このなき声...ベビ-?","<@LL,00,00>Wait! I hear someone crying... Is that Baby?"
+016#kabuto,0x244020,"<@LL,00,00>...あ カギが あいた<CF><D1><@RL,35,00>「入れ」って ことか?","<@LL,00,00>...Ah, there's the key.<CF><D1><@RL,35,00>""Come in,"" is it?"
+016#kuwagata,0x244020,"<@LL,00,00>...あ カギが あいた<CF><D1><@RL,36,00>「入れ」という ことか?","<@LL,00,00>...Ah, there's the key.<CF><D1><@RL,36,00>Is he saying, ""Come in""?"
+017#kabuto,0x244022,"<@RL,35,00>こいつだ ないてるやつ<CF><D1><@LL,00,00>やっぱリ ないてたのって<CD>プリミティベビ-だったんだ","<@RL,35,00>This guy's the one that was crying.<CF><D1><@LL,00,00>Of course, Primity Baby was the one crying."
+017#kuwagata,0x244022,"<@RL,36,00>こいつだ なきつづけているのは<CF><D1><@LL,00,00>やっぱリ ないてたのって<CD>プリミティベビ-だったんだ","<@RL,35,00>This guy's the one that has been crying.<CF><D1><@LL,00,00>Of course, Primity Baby was the one crying."
+018#kabuto,0x244024,"<@CC,FF,FF>ウウウ アウウウ<CF><D1><@LL,00,04>そっか ひとリぽっちで<CD>こわかったんだね<CF><D1>だけど もう だいじょうぶ","<@CC,FF,FF>Waah uwaaaah<CF><D1><@LL,00,04>I see, you must have been frightened to be all alone.<CF><D1>But it's alright now."
+018#kuwagata,0x244024,"<@CC,FF,FF>ウウウ アウウウ<CF><D1><@LL,00,04>そうか ひとリぽっちで<CD>こわかったんだね<CF><D1>だけど もう だいじょうぶ","<@CC,FF,FF>Waah uwaaaah<CF><D1><@LL,00,04>I see, you must have been frightened to be all alone.<CF><D1>But it's alright now."
+019#kabuto,0x244026,"<@RL,35,00>おい <&BUF0A>!","<@RL,35,00>Hey, <&BUF0A>!"
+019#kuwagata,0x244026,"<@RL,36,00>おい まて!","<@RL,36,00>Hey, wait!"
+020#kabuto,0x244028,"<@LL,00,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,35,00>つたえるって 何を?","<@LL,00,00>Hey, <&BUF07><CF><D1>Is there anyway we can communicate with this little guy?<CF><D1><@RL,35,00>Communicate, about what?"
+020#kuwagata,0x244028,"<@LL,00,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,36,00>つたえる? 何をだ?","<@LL,00,00>Hey, <&BUF07><CF><D1>Is there anyway we can communicate with this little guy?<CF><D1><@RL,35,00>Communicate? What is it?"
+021,0x24402a,"<@LL,00,00>ごめんね 今まで ぼくたち人間の<CD>せいで ずっと こわい目に<CF><D1>あってきたんだよね<CD>でも このままじゃ きみの 力で<CF><D1>みんな しんじゃう<CD>おねがいだよ なきやんで","<@LL,00,00>I'm sorry that we humans have made you suffer and be scared all this time, but if you keep going like this, everyone will die from your power. Please, stop crying."
+022,0x24402c,"<@RL,01,07><&BUF0A>!<CF><D1><@RL,03,01>ぶじか! <&BUF0A>!<CF><D1><@RL,02,06><&BUF0A>くん!","<@RL,01,07><&BUF0A>!<CF><D1><@RL,03,01>So you're okay, <&BUF0A>!<CF><D1><@RL,02,06><&BUF0A>!"
+023,0x24402e,"<@LL,00,04>みんな!<CF><D1><@RL,03,01>お前 1人で こんな所まで<CD>来て...!","<@LL,00,04>You guys!<CF><D1><@RL,03,01>You came all this way by yourself...!"
+024,0x244030,"<@CC,FF,FF>フギャアアアア!!<CD>オギャアアアア!!","<@CC,FF,FF>Hwaaaah!!<D3>Ogyaaaaa!!"
+025,0x244032,"<@LL,00,07>わああっ!!","<@LL,00,07>Woooah!!"
+026#kabuto,0x244034,"<@RL,35,00>うわあああっ!!","<@RL,35,00>Wooooah!!"
+026#kuwagata,0x244034,"<@RL,36,00>くああっ!!","<@RL,36,00>Khh!!"
+027,0x244036,"<@RL,01,07>きゃああ!!<CF><D1><@RL,02,06>きゃっ!","<@RL,01,07>Kyaaah!<CF><D1><@RL,02,06>Kyah!"
+028,0x244038,"<@RL,03,03>なん...だ...この 声!!<CF><D1><@CC,FF,FF>ナカナイデ ナカナイデ<CF><D1><@LL,00,06>(何だ...? 歌が...<CD>聞こえる...)","<@RL,03,03>What... is... this voice!?<CF><D1><@CC,FF,FF><f03>Don't cry, don't cry.<f00><CF><D1><@LL,00,06>(What...? I hear... a song...)"
+029,0x24403a,"<@LL,00,06>(この声...それから この歌は)","<@LL,00,06>(This voice... and this song.)"
+030,0x24403c,"<@LL,00,07>(そうか! コガネの子もリ歌!)","<@LL,00,07>(That's it! It's Kogane's lullaby!)"
+031,0x24403e,"<@LL,00,06>カリン...ちゃん...<CD>この メダルを...<CF><D1><@RL,02,05>この メダル...は?","<@LL,00,06>Karin... this medal...<CF><D1><@RL,02,05>This... medal?"
+032,0x244040,"<@LL,00,06>コガネの...メダル<CD>歌が 入ってる...<CF><D1>カリンちゃんの スィ-カマ-に<CD>歌わせて...<CF><D1><@RL,03,03>おまっ...そんな...こと<CD>してる...場合じゃ...っ!<CF><D1><@CC,FF,FF>フギャアアアア!!<CD>オギャアアアア!!","<@LL,00,06>The song... is coming from Kogane's medal.<CF><D1>Karin, if your Seekamar sang it...<CF><D1><@RL,03,03>You... this isn't... the time... for that...!<CF><D1><@CC,FF,FF>Hugwaaaah!!<D3>Ogwaaah!!"
+033,0x244042,"<@LL,00,06>たの..む...よ カリンちゃん<CD>歌うパ-ツ.を そ.う...て..<CF><D1>そうび しているのは...<CD>スィ-カマ- だけなんだ!","<@LL,00,06>Plea...se... Karin, your Seekamar... is... the... only... one equipped... to sing!"
+034,0x244044,"<@RL,02,05>分かリ...ましたわ","<@RL,02,05>I... understand."
+035,0x244046,"<@LL,00,04>あリがとう カリンちゃん<CD>たすかったよ","<@LL,00,04>Thanks Karin, you saved us."
+036,0x244048,"<@RL,02,04>メダロットの 歌う 子もリ歌...<CD>とっても すてきでしたわ<CF><D1><@RL,01,04>うん! はじめて 聞いたけど<CD>ちょっぴリ なけちゃった<CF><D1><@RL,03,02>この はつ電所は<CD>もう 使えそうにないな","<@RL,02,04>The medarot's lullaby was so lovely.<CF><D1><@RL,01,04>Yeah! I'd never heard it before, but it moved me to tears.<CF><D1><@RL,03,02>I don't think this power plant can be used anymore."
+037,0x24404a,"<@RL,02,04>でも ここには やさしい<CD>光が にあいますわ","<@RL,02,04>Still, this soft lift suits this place."
+038,0x24404c,"<@RL,44,03>みんな ぶじかっ!?","<@RL,44,03>Are you all okay!?"
+039,0x24404e,"<@RL,45,00>あなたたち...","<@RL,45,00>You guys..."
+040,0x244050,"<@LL,00,04>コガネが みんなを<CD>すくったんです<CF><D1><@RL,45,00>コガネ...が?<CF><D1>そんな こと...<CF><D1><@LL,00,04>知らなかったんですか?<CD>コガネの 子もリ歌は<CF><D1>ないている 子どもでも<CD>ねむらせることが できるんですよ","<@LL,00,04>Kogane saved all of us.<CF><D1><@RL,45,00>Kogane... did?<CF><D1>No way...<CF><D1><@LL,00,04>Don't you know? Kogane's lullaby can help even a crying child get to sleep."
 041,0x244052,"<@LL,00,04>はい メダルだけに<CD>なっちゃいましたけど<CF><D1><@RL,45,00>コガネの メダル...?",
 042,0x244054,"<@RL,02,04>ベビ-ちゃんは ひとリぽっちで<CD>さびしいって ないてたんですわ<CF><D1><@RL,03,02>そいつ あの でかい メダロットの<CD>ぼうそうを 止めちまったんだぜ<CF><D1><@RL,45,00>コガネが...ベビ-を 止めた?<CF><D1><@LL,00,04>それから これ",
 043,0x244056,"<@RL,45,00>あ...これ<CF><D1><@LL,00,04>コガネが まもった「思い出の花」です<CD>...セセリさんとの ね!<CF><D1><@RL,45,00>わたし...わたしは...",
