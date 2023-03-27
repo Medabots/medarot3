@@ -85,7 +85,7 @@
 083,0x2040a6,"<@LL,00,00>海ていとし「アンダ-シェル」か...<CF><D1>その前に この町のロボロボ団を<CD>何とか しなくっちゃ!<CF><D1>それに コガネ... <CD>まだ おちこんでるのかなぁ","<@LL,00,00>The city under the sea, <f02>Undershell<f00>...<CF><D1>First we need to do something about the Rubber-robos in this town!<CF><D1>And Kogane... I wonder if he's still feeling down."
 084,0x2040a8,"<@RL,41,02>...カワイソウに<CD>ここから 出してあげる","<@RL,41,02>...Poor thing, I'll get you out of here."
 085,0x2040aa,"<@RL,41,00>そして...","<@RL,41,00>And then..."
-086,0x2040ac,"<@RL,41,03>あなたを こんな目に あわせた<CD>ニンゲンたちに<CF><D1>フクシュウしましょうね","""<@RL,41,03>You can get revenge on the humans who did this."
+086,0x2040ac,"<@RL,41,03>あなたを こんな目に あわせた<CD>ニンゲンたちに<CF><D1>フクシュウしましょうね","<@RL,41,03>You can get revenge on the humans who did this."
 087,0x2040ae,"<@RL,30,00>あ-ん ひどいよ-<CD>やさいが メチャクチャだよ-",
 088,0x2040b0,"<@RL,30,00>あ <&BUF0A>さん!<CF><D1><@LL,00,00>どうかしたの? コガネ<CF><D1><@RL,30,00>のうじょうの やさいを<CD>あらすネコが 出たんです!<CF><D1><@LL,00,00>やさいを?","<@RL,30,00>Ah, <&BUF0A>!<CF><D1><@LL,00,00>What's wrong, Kogane?<CF><D1><@RL,30,00>A cat has been coming to damage the vegetable on the farm!<CF><D1><@LL,00,00>The vegetables?"
 089,0x2040b2,"<@LL,00,06>それで コガネ 花はっ?<CF><D1><@RL,30,00>だいじょうぶです<CD>花はワタシが まもっていますから<CF><D1><@LL,00,04>そう よかった!<CF><D1><@LL,00,00>だけど メダロットたちが<CD>いっしょうけんめい そだてた<CF><D1>やさいを あらすなんて<CD>ゆるせないな!<CF><D1>そのネコを 貝つけなきゃ!","<@LL,00,06>And what about the flowers?<CF><D1><@RL,30,00>They are okay. I protected them.<CF><D1><@LL,00,04>Really? That's great!<CF><D1><@LL,00,00>But I can't stand someone destroying the vegetables the medarots have worked so hard to raise!<CF><D1>I've gotta find that cat!"

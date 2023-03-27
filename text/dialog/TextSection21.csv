@@ -6,7 +6,7 @@
 004,0x208008,"<@RL,11,01>ア-スモ-ルは 楽しかったかい?","<@RL,11,01>Did you have fun at Earth<D3>Mall?"
 005,0x20800a,"<@RL,12,00>あそんでばかリ いないで たまには<CD>家の お手つだいも してちょうだい","<@RL,12,00>You shouldn't just always go<D3>play all day. <CF><D1>Help out with house work<D3>once in a while too."
 006,0x20800c,"<@LL,00,04>研究所の はかせに<CD>会いに行こう!","<@LL,00,04>On to the professor's lab!"
-007,0x20800e,"<@LL,00,00>あれ? はかせが いない<CD>そうだ ナエさんに きいてみよう","<@LL,00,00>Huh? The professor's not<D3>here. Maybe I should ask Nae."
+007,0x20800e,"<@LL,00,00>あれ? はかせが いない<CD>そうだ ナエさんに きいてみよう","<@LL,00,00>Huh? The professor's not<D3>here. Maybe I should ask Miss Nae."
 008,0x208010,"<@LL,00,04>こんにちは! ナエさん","<@LL,00,04>Hello, Miss Nae!"
 009,0x208012,"<@RL,10,01>こんにちは <&BUF03>くん<CD>また メダリンピック大会<CF><D1>勝ったんですってね<CD>おめでとうございます<CF><D1><@LL,00,01>いやぁ 知ってたんですか<CD>ナエさん<CF><D1><@RL,10,01>ええ ア-スモ-ルという<CD>地下じっけんとしのことも<CF><D1><@LL,00,04>さすがは ナエさん!<CF><D1><@LL,00,00>あの ところで<CD>メダロットはかせは...<CF><D1><@RL,10,00>おじいさまは 今 メダロット社ですわ<CD>ごめんなさいね<CF><D1><@LL,00,04>あ いえ いいんです",
 010,0x208014,"<@LL,00,00>...あのっ ナエさん!<CD>レアメダルって 知ってますか?<CF><D1><@RL,10,00>...<&BUF03>くんが<CD>どこで その話を 耳にしたのか<CF><D1>知リませんが...<CD>それは いせきなどから<CF><D1>ごく まれに はっけんされる<CD>メダルのことです<CF><D1>レアメダルには<CF><D1>「せかいを せいふくする 力をもつ」<CF><D1>という でんせつが あリます<CF><D1><@LL,00,00>何だか すごいんですね",
@@ -34,8 +34,8 @@
 032,0x208040,"<@RL,01,01>1番のリぃ!<CF><D1><@RL,1E,00>アンダ-シェルヘ ようこそ♥","<@RL,01,01>Aaand, I'm out first!<CF><D1><@RL,1E,00>Welcome to the Under-Shell ♥"
 033,0x208042,"<@RL,02,04>海のそこでは どんな お魚が<CD>いるのでしょうね<CF><D1><@RL,1E,00>いってらっしゃい","<@RL,02,04>I wonder what kind of fish<D3>there are in the deep ocean.<CF><@RL,1E,00>Have a safe trip!"
 034,0x208044,"<@RL,03,01>海のそこには どんな メダロッタ-が<CD>おれを まっているのか!<CF><D1><@RL,1E,00>いってらっしゃい","<@RL,03,01>I wonder what Medarotters<D3>await here in the deep ocean!<CF><D1><@RL,1E,00>Have a safe trip!<D3>"
-035,0x208046,"<@LL,00,00>あの...<CF><D1><@RL,1E,00>何でしょうか?<CF><D1><@LL,00,00>ここは 外に出た とたん<CD>雨が ざ-----っと<CF><D1>ふリはじめたリ しませんよね?<CF><D1><@RL,1E,00>さいがい時に<CD>スプリンクラ-が 作動しないかぎリ<CF><D1>そういうことは あリませんわ<CF><D1><@LL,00,04>よかった!<CD>あリがとうございました!<CF><D1><@RL,1E,00>いってらっしゃい♥","<@LL,00,00>Hey um..<CF><D1><@RL,1E,00>What is it?<CF><D1><@LL,00,00>There isn't gonna be any<D3>sudden heavy rain as soon<CF>as I step outside, right?<CF><D1><@RL,1E,00>The sprinklers do not operate<D3>during emergencies.<CF><D1>So rest assured, that should<D3>not happen.<CF><D1><@LL,00,04>That's a relief! Thanks!<CF><D1><@RL,1E,00>Have a safe trip ♥"
-036,0x208048,ただ今 スプリンクラ-の ご作動が<CD>あリまして 大変ごめいわくを...,The sprinklers will now turn on.<D3>We apologize for any and all<CF><D1>inconveniences...
+035,0x208046,"<@LL,00,00>あの...<CF><D1><@RL,1E,00>何でしょうか?<CF><D1><@LL,00,00>ここは 外に出た とたん<CD>雨が ざ-----っと<CF><D1>ふリはじめたリ しませんよね?<CF><D1><@RL,1E,00>さいがい時に<CD>スプリンクラ-が 作動しないかぎリ<CF><D1>そういうことは あリませんわ<CF><D1><@LL,00,04>よかった!<CD>あリがとうございました!<CF><D1><@RL,1E,00>いってらっしゃい♥","<@LL,00,00>Hey um..<CF><D1><@RL,1E,00>What is it?<CF><D1><@LL,00,00>There isn't gonna be any<D3>sudden heavy rain as soon<CF>as I step outside, right?<CF><D1><@RL,1E,00>The sprinklers only operate<D3>during emergencies.<CF><D1>So rest assured, that should<D3>not happen.<CF><D1><@LL,00,04>That's a relief! Thanks!<CF><D1><@RL,1E,00>Have a safe trip ♥"
+036,0x208048,ただ今 スプリンクラ-の ご作動が<CD>あリまして 大変ごめいわくを...,We apologize for any inconvenience caused by the sprinklers currently being on...
 037,0x20804a,"<@LL,00,03>.....","<@LL,00,03>....."
 038,0x20804c,"<@LL,00,04>泉の 中心に ある ぞうは<CD>「金魚のぞう」って いうのか<CF><D1><@LL,00,05>...んっ? 金魚ぉ?<CD>ふつう 人魚じゃ ないの?",
 039,0x20804e,"<@LL,00,04>レイは 元気かな?","<@LL,00,04>I wonder how Rei is doing."
