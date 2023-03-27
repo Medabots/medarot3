@@ -52,7 +52,7 @@ TransformationCutsceneDrawText:
 .text3_line1
   db "Let's go!", $CB ; メダフォース　ぜんかいだ！
 .text3_line2
-  db "Medaforce is fully recovered!", $CB ; メダフォース　ぜんかいだ！
+  db "Medaforce fully charged!", $CB ; メダフォース　ぜんかいだ！
 .text4_line1 ; Empty entry
   db $CB
 .text4_line2
