@@ -164,8 +164,8 @@ Index[#version],Unknown,Name
 159,\x34\x29\x00,Female Medarot
 160,\x34\x29\x00,Female Medarot
 161,\x34\x29\x00,Female Medarot
-162,\x3b\x2a\x00,Black Beetle
-163,\x3b\x2a\x00,Black Beetle
+162,\x3b\x2a\x00,Black Devil
+163,\x3b\x2a\x00,Black Devil
 164,\x3c\x2b\x00,Marbler
 165,\x3d\x2c\x00,Topazia
 166,\x3d\x2c\x00,Topazia
