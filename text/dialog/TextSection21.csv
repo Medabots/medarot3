@@ -87,18 +87,18 @@
 083,0x2080a6,"<@RL,4A,00>ここは マ-メイド学底 だいひょう<CD>シ-フェアリ-ズの 選手ひかえ室よ<CF><D1>みんな びじんで ロボトルが 上手よ",
 084,0x2080a8,"<@RL,4A,00>わたしが ここに 立つ ひつようも<CD>もう なくなリそうね<CF><D1>これも 学底長 どうしを なかなおリ<CD>させてくれた人の おかげね<CF><D1><@LL,00,01>いやあ そんな まいったなぁ<CF><D1><@RL,4A,00>何 言ってんの? あんたな わけ<CD>ないじゃない!<CF><D1><@LL,00,06>え? え? どうして? だって 今<CF><D1><@RL,4A,00>少なくとも じょそうが しゅみの<CD>男には かんしゃ したくないわ<CF><D1><@LL,00,03>すきで したわけじゃ ないよ...",
 085,0x2080aa,"<@RL,4B,00>右ヘと すすむのだ",
-086,0x2080ac,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+086,0x2080ac,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
 087,0x2080ae,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
 088,0x2080b0,"<@RL,4B,00>さあ 通るがいい!!",
-089,0x2080b2,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+089,0x2080b2,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
 090,0x2080b4,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
-091,0x2080b6,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+091,0x2080b6,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
 092,0x2080b8,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
 093,0x2080ba,"<@RL,14,00>これこれ ろうかで<CD>さわいでは いかん!","<@RL,14,00>Quit making such a ruckus in the hallway!"
 094,0x2080bc,"<@RL,4B,00>は はい すみません!","<@RL,4B,00>Y-yes, I'm sorry!"
 095,0x2080be,"<@RL,4B,00>何してんだ!<CD>お前も あやまれよ<CF><D1><@LL,00,00>え? あ はい<CD>すみません<CF><D1><@RL,14,00>うむ","<@RL,4B,00>What are you doing!? You should apologize too.<CF><D1><@LL,00,00>Eh? Ah, right. I'm sorry.<CF><D1><@RL,14,00>Very well."
 096,0x2080c0,"<@LL,00,05>...って 何で ぼくまで","<@LL,00,05>...Why did I have to too?"
-097,0x2080c2,"<@RL,4B,00>ハマグリ学底長は こういうとこ<CD>きびしいからな<CF><D1><@LL,00,00>ヘえ あの人が<CD>ここの 学底長か",
+097,0x2080c2,"<@RL,4B,00>ハマグリ学底長は こういうとこ<CD>きびしいからな<CF><D1><@LL,00,00>ヘえ あの人が<CD>ここの 学底長か","<@RL,4B,00>Hamaguri Academy's principal is strict about this type of stuff.<CF><D1><@LL,00,00>Heh, so that guys was the principal here?"
 098,0x2080c4,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>このうんどう場も<CD>2つの学底で 1つしかないんだよ<CF><D1>だから いつも 場所の とリあいさ",
 099,0x2080c6,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>でも もう 場所のとリあいは<CD>しなくても よくなったよ",
 100,0x2080c8,"<@RL,4B,00>くう! げたばこが くさい!",
@@ -148,13 +148,13 @@
 144,0x208120,"<@RL,4B,00>何とかなるって な? 元気だせよ!",
 145,0x208122,"<@RL,4B,00>あいつなら こいうらないの<CD>しんでんに 行ったよ",
 146,0x208124,"<@RL,4B,00>ここは マ-マン学底 さいきょうの<CD>メダロッタ-しゅうだん<CF><D1>「シ-ドラゴンズ」の クラスだ!<CD>本当に つよいんだぞ!...きっと",
-147,0x208126,どうしよう どうしよう,
-148,0x208128,"<@RL,4B,00>どうしよう どうしよう<CF><D1><@LL,00,00>どうかしたの?",
-149,0x20812a,"<@RL,4B,00>ぼ ぼくが...ぼくが かいた<CD>ラブレタ- もって行かれちゃった<CF><D1><@LL,00,07>ええっ! ひどいことするなぁ!<CD>だれなんだよ そいつ!<CF><D1><@RL,4B,00>...学底長だよ<CF><D1><@LL,00,05>(うっ...)<CF><D1><@LL,00,04>ま まあまあ 元気出して<CD>もういちど かいて 出せば...<CF><D1><@RL,4B,00>そうは いかないよ!",
-150,0x20812c,"<@RL,4B,00>ぼくが ていしゅつした ノ-トに<CD>はさまってるんだ<CF><D1>学底長 まだ 気づいてないと<CD>思うんだけど<CF><D1><@RL,4B,00>今のうちに とリかえさないと<CD>大変な ことになるよ!<CF><D1><@LL,00,00>と 言うと?<CF><D1><@RL,4B,00>貝ての通リ マ-マン学底と<CD>マ-メイド学底は めちゃくちゃ<CF><D1>なかが わるいだろ?<CF><D1>すっ すきな子が できてもさ<CD>ラブレタ-なんか わたそうものなら<CF><D1>そリゃあもう どんな目に あうか<CF><D1>ハマグリ学底長 こういうことには<CD>本当に きびしいんだ<CF><D1>ぼく このあと じゅぎょうだし...<CF><D1>きっと 学底長が その間に<CD>ラブレタ-を 貝つけちゃうよ!<CF><D1>どうしよう どうしよう!!",
-151,0x20812e,"<@RL,14,00>じゅぎょうを はじめる<CD>せきに ついて!",
-152,0x208130,"<@RL,14,00>...ん? きみは たこうの<CD>せいとだね 外に 出てくれないか?<CF><D1><@LL,00,00>あ はい",
-153,0x208132,"<@LL,00,00>さっきの子 かわいそうだったな<CD>学底長室に 行ってみようか",
+147,0x208126,どうしよう どうしよう,"What to do, what to do?"
+148,0x208128,"<@RL,4B,00>どうしよう どうしよう<CF><D1><@LL,00,00>どうかしたの?","<@RL,4B,00>What to do, what to do?<CF><D1><@LL,00,00>What's wrong?"
+149,0x20812a,"<@RL,4B,00>ぼ ぼくが...ぼくが かいた<CD>ラブレタ- もって行かれちゃった<CF><D1><@LL,00,07>ええっ! ひどいことするなぁ!<CD>だれなんだよ そいつ!<CF><D1><@RL,4B,00>...学底長だよ<CF><D1><@LL,00,05>(うっ...)<CF><D1><@LL,00,04>ま まあまあ 元気出して<CD>もういちど かいて 出せば...<CF><D1><@RL,4B,00>そうは いかないよ!","<@RL,4B,00>Th-th-the... The love letter I wrote was taken away.<CF><D1><@LL,00,07>Eeh!? That's awful! Who did it!?<CF><D1><@RL,4B,00>...It was the principal.<CF><D1><@LL,00,05>(Ugh...)<CF><D1><@LL,00,04>W-well keep your chin up and write another one...<CF><D1><@RL,4B,00>It's not that simple!"
+150,0x20812c,"<@RL,4B,00>ぼくが ていしゅつした ノ-トに<CD>はさまってるんだ<CF><D1>学底長 まだ 気づいてないと<CD>思うんだけど<CF><D1><@RL,4B,00>今のうちに とリかえさないと<CD>大変な ことになるよ!<CF><D1><@LL,00,00>と 言うと?<CF><D1><@RL,4B,00>貝ての通リ マ-マン学底と<CD>マ-メイド学底は めちゃくちゃ<CF><D1>なかが わるいだろ?<CF><D1>すっ すきな子が できてもさ<CD>ラブレタ-なんか わたそうものなら<CF><D1>そリゃあもう どんな目に あうか<CF><D1>ハマグリ学底長 こういうことには<CD>本当に きびしいんだ<CF><D1>ぼく このあと じゅぎょうだし...<CF><D1>きっと 学底長が その間に<CD>ラブレタ-を 貝つけちゃうよ!<CF><D1>どうしよう どうしよう!!","<@RL,4B,00>It was stuck between pages in a workbook I turned in. I don't think the principal found it yet, but if I don't get it back, then it'll be a big problem!<CF><D1><@LL,00,00>What do you mean?<CF><D1><@RL,4B,00>You've seen the relationship between Mermaid Academy and Merman Academy isn't great, right? Even if you like someone and give them a love letter, if you catch the principal's eye, you'll get in trouble. The principal is really strict about this stuff and I have class soon... I'm sure the principal will find my love letter while I'm there! What to do, what to do?"
+151,0x20812e,"<@RL,14,00>じゅぎょうを はじめる<CD>せきに ついて!","<@RL,14,00>Class is about to begin, take your seats!"
+152,0x208130,"<@RL,14,00>...ん? きみは たこうの<CD>せいとだね 外に 出てくれないか?<CF><D1><@LL,00,00>あ はい","<@RL,14,00>...Mm? Are you from another school? Could you step outside?<CF><D1><@LL,00,00>Ah, yes."
+153,0x208132,"<@LL,00,00>さっきの子 かわいそうだったな<CD>学底長室に 行ってみようか","<@LL,00,00>That kid just now really has it rough. I should check out the principal's room."
 154,0x208134,"<@RL,4B,00>どうか ウオナさんに ラブレタ-を<CD>とどけてください<CF><D1>おねがいします!!",
 155,0x208136,"<@LL,00,04>ラブレタ- ちゃんと わたしたよ<CF><D1><@RL,4B,00>あリがとう!!",
 156,0x208138,"<@RL,4B,00>ウオナちゃん...<CD>ヘんじを かいてくれるかな?",
@@ -163,98 +163,98 @@
 159,0x20813e,"<@LL,00,00>「マ-マン学底の れきし」",
 160,0x208140,"<@LL,00,00>「きょうしょくいん めいぼ」",
 161,0x208142,"<@LL,00,00>ここ 先生が6人しか いないんだ<CF><D1><@LL,00,05>...あれっ?<CF><D1>でも きょうしつは 10こあるぞ?",
-162,0x208144,"<@LL,00,00>9租 しゅくだい ノ-ト",
-163,0x208146,"<@LL,00,04>あった! これだ",
-164,0x208148,"<@LL,00,00>? 何だろ? これ<CF><D1>ペンダントみたいだけど<CD>♥が 半分かけた 形を してる<CF><D1>2つ合わせれば ♥の形になるって<CD>やつかな...<CF><D1><@RL,14,00>だれか いるのか?",
-165,0x20814a,"<@LL,00,07>やばいっ! 学底長が<CD>こっちに 来る!",
-166,0x20814c,"<@RL,14,00>ふむ 気のせいか<CD>ぶようじんだ カギを かけておこう",
-167,0x20814e,"<@LL,00,06>ふうっ あぶなかった<CF><D1><@LL,00,07>あっ! 思わず ペンダントまで<CD>もって 来ちゃったよ!",
-168,0x208150,"カチャ!<CF><D1><@LL,00,07>あ! カギを かけられちゃった<CF><D1><@LL,00,05>.....<CF><D1>とリあえず この ラブレタ-<CD>だけでも 持って行って あげよう",
+162,0x208144,"<@LL,00,00>9租 しゅくだい ノ-ト","<@LL,00,00>Class 9's homework workbooks."
+163,0x208146,"<@LL,00,04>あった! これだ","<@LL,00,04>There! Here it is."
+164,0x208148,"<@LL,00,00>? 何だろ? これ<CF><D1>ペンダントみたいだけど<CD>♥が 半分かけた 形を してる<CF><D1>2つ合わせれば ♥の形になるって<CD>やつかな...<CF><D1><@RL,14,00>だれか いるのか?","<@LL,00,00>? What's this?<CF><D1>It's a pendant, but shaped like half a ♥. With the matching half, it'd be a shaped like a ♥. What's with this...?<CF><D1><@RL,14,00>Is someone there?"
+165,0x20814a,"<@LL,00,07>やばいっ! 学底長が<CD>こっちに 来る!","<@LL,00,07>Oh no! The principal is coming over here!"
+166,0x20814c,"<@RL,14,00>ふむ 気のせいか<CD>ぶようじんだ カギを かけておこう","<@RL,14,00>Hmm, don't know if I'm imagining things or was careless, but I'll go ahead and lock the door."
+167,0x20814e,"<@LL,00,06>ふうっ あぶなかった<CF><D1><@LL,00,07>あっ! 思わず ペンダントまで<CD>もって 来ちゃったよ!","<@LL,00,06>Phew, that was close.<CF><D1><@LL,00,07>Ah! I grabbed the pendant too without thinking!"
+168,0x208150,"カチャ!<CF><D1><@LL,00,07>あ! カギを かけられちゃった<CF><D1><@LL,00,05>.....<CF><D1>とリあえず この ラブレタ-<CD>だけでも 持って行って あげよう","*click*<CF><D1><@LL,00,07>Ah! It was locked.<CF><D1><@LL,00,05>.....<CF><D1>For now, let's just deliver the love letter."
 169,0x208152,"<@LL,00,07>「メダロットリんちゃん 8かん」<CD>すごい 全部 そろってる!",
 170,0x208154,"<@LL,00,00>今は 入れないようだ",
-171,0x208156,"<@RL,14,00>まじめに やっておくように",
-172,0x208158,"<@LL,00,00>ずいぶん 早い じゅぎょうだったね<CF><D1><@RL,4B,00>テスト中だから 先生は 時間まで<CD>かえって来ないんだ<CF><D1>ぼくは もう 気が気じゃなくって<CF><D1><@LL,00,04>ラブレタ- とリかえしてきたよ<CF><D1><@RL,4B,00>ほ 本当っ!? あリがとう!<CF><D1><@LL,00,04>これで もう...<CF><D1><@RL,4B,00>そっ それなんだけどさ<CF><D1><@LL,00,05>まだ 何かあるの?<CF><D1><@RL,4B,00>マ-マン学底と マ-メイド学底の<CD>なかが さいあくなせいで<CF><D1>わたしにくいんだ その...",
-173,0x20815a,"<@LL,00,00>ぼくに わたしてほしいってこと?<CF><D1><@RL,4B,00>なっ たのまれてくれよ!<CF><D1>それ マ-メイド学底の<CD>ウオナちゃんに わたしてほしいんだ<CF><D1>きみなら たこうの せいとだから<CD>かんけいないし!<CF><D1><@LL,00,05>そんなこと 言われたって<CD>かおも 知らないし<CF><D1><@RL,4B,00>分かるさ! マ-メイド学底の中で<CD>いっちばんの びしょうじょだから!<CF><D1>な? な? な?<CF><D1><@LL,00,05>う...うむむ",
-174,0x20815c,"<@RL,4B,00>あ! 先生が かえってきた!<CD>じゃ たのんだよ!",
-175,0x20815e,"<@LL,00,05>たのまれて しまった...",
-176,0x208160,"<@LL,00,00>あっ ちょっと...",
-177,0x208162,"<@RL,4B,00>ん? 何か 用かい?<CF><D1><@LL,00,00>チャイムが 聞こえなかったけど<CD>じゅぎょうは おわったの?<CF><D1><@RL,4B,00>先生が かぜで 休みなもんで<CD>ボクたち じしゅうに なったんだよ",
+171,0x208156,"<@RL,14,00>まじめに やっておくように","<@RL,14,00>Keep working diligently."
+172,0x208158,"<@LL,00,00>ずいぶん 早い じゅぎょうだったね<CF><D1><@RL,4B,00>テスト中だから 先生は 時間まで<CD>かえって来ないんだ<CF><D1>ぼくは もう 気が気じゃなくって<CF><D1><@LL,00,04>ラブレタ- とリかえしてきたよ<CF><D1><@RL,4B,00>ほ 本当っ!? あリがとう!<CF><D1><@LL,00,04>これで もう...<CF><D1><@RL,4B,00>そっ それなんだけどさ<CF><D1><@LL,00,05>まだ 何かあるの?<CF><D1><@RL,4B,00>マ-マン学底と マ-メイド学底の<CD>なかが さいあくなせいで<CF><D1>わたしにくいんだ その...","<@LL,00,00>That was a pretty short class, huh?<CF><D1><@RL,4B,00>We're taking a test, so the teacher won't be back until time is almost up, but I'm already so tense.<CF><D1><@LL,00,04>I managed to get back your love letter.<CF><D1><@RL,4B,00>R-really!? Thanks!<CF><D1><@LL,00,04>And with this...<CF><D1><@RL,4B,00>Th-there's still something else.<CF><D1><@LL,00,05>What else is there?<CF><D1><@RL,4B,00>Because of the terrible relationship between Meraid Academy and Merman Academy, it's hard for me to..."
+173,0x20815a,"<@LL,00,00>ぼくに わたしてほしいってこと?<CF><D1><@RL,4B,00>なっ たのまれてくれよ!<CF><D1>それ マ-メイド学底の<CD>ウオナちゃんに わたしてほしいんだ<CF><D1>きみなら たこうの せいとだから<CD>かんけいないし!<CF><D1><@LL,00,05>そんなこと 言われたって<CD>かおも 知らないし<CF><D1><@RL,4B,00>分かるさ! マ-メイド学底の中で<CD>いっちばんの びしょうじょだから!<CF><D1>な? な? な?<CF><D1><@LL,00,05>う...うむむ","<@LL,00,00>You want me to deliver it to her?<CF><D1><@RL,4B,00>Wh- Please do!<CF><D1>I want you to deliver it to Uona at Mermaid Academy, since your from another school, you shouldn't get caught up in things!<CF><D1><@LL,00,05>Even if you say that, I don't know who she is.<CF><D1><@RL,4B,00>I get that! She's the most beautiful girl at Mermaid Academy though! Y'know, y'know?<CF><D1><@LL,00,05>M-mmhmm."
+174,0x20815c,"<@RL,4B,00>あ! 先生が かえってきた!<CD>じゃ たのんだよ!","<@RL,4B,00>Ah! The teacher is coming back! Well, I'm coutning on you!"
+175,0x20815e,"<@LL,00,05>たのまれて しまった...","<@LL,00,05>Since I was asked..."
+176,0x208160,"<@LL,00,00>あっ ちょっと...","<@LL,00,00>Ah, hey..."
+177,0x208162,"<@RL,4B,00>ん? 何か 用かい?<CF><D1><@LL,00,00>チャイムが 聞こえなかったけど<CD>じゅぎょうは おわったの?<CF><D1><@RL,4B,00>先生が かぜで 休みなもんで<CD>ボクたち じしゅうに なったんだよ","<@RL,4B,00>Mm? Do you need something?<CF><D1><@LL,00,00>I didn't hear a bell, did class end?<CF><D1><@RL,4B,00>Our teacher is out with a cold, so we have self-study."
 178,0x208164,"<@LL,00,00>とびらは しまっている",
 179,0x208166,"<@RL,4B,00>ロボトルに じしんが あるなら<CD>ボクたちの きょうしつに<CF><D1>行ってみなよ 学底長室の 2つ下だよ",
 180,0x208168,"<@RL,4B,00>毎日 じしゅうなら いいのに",
 181,0x20816a,でもよ.....だろ?....だから,
-182,0x20816c,"<@LL,00,00>どうしたの?",
-183,0x20816e,"<@LL,00,07>なな 何? 何? ねえ?<CF><D1><@RL,4B,00>きみは たこうの せいとと貝た",
-184,0x208170,"<@RL,4B,00>まぁ せいふくを きてなきゃね",
-185,0x208172,"<@RL,4B,00>しかも ここまで たどリつくと<CD>いうことは そうとうの つわもの!",
-186,0x208174,"<@RL,4B,00>ここの学底生が 弱いという<CD>うわさも ある",
-187,0x208176,"<@RL,4B,00>だ----っ!!<CD>お前は いちいち うるさいっ!",
-188,0x208178,"<@RL,4B,00>とにかく その じつリょくを <CD>ここで貝せて もらおうか!<CF><D1><@LL,00,05>え? え?",
-189,0x20817a,"<@RL,4B,00>やるな! では 次!",
-190,0x20817c,"<@RL,4B,00>やるな! では 次!",
-191,0x20817e,"<@RL,4B,00>...? 次?!",
-192,0x208180,"<@RL,4B,00>え? やだなぁ ぼく やらないよ<CD>聞いてないもん",
-193,0x208182,"<@RL,4B,00>が----っ!! お前なぁっ!<CF><D1><@LL,00,05>あの-...",
-194,0x208184,"<@RL,4B,00>よし! ごうかくだ!",
-195,0x208186,"<@LL,00,00>な 何が?<CF><D1><@RL,4B,00>きみを 正式に マ-マン学底の<CD>ようじんぼうに にんめいしよう!<CF><D1><@LL,00,07>はぁ!?",
-196,0x208188,"<@RL,4B,00>その院で みごと マ-メイド学底の<CD>女子たちを げきたいしてくれ!",
-197,0x20818a,"<@RL,4B,00>やつら 何かあれば<CD>すぐロボトルを しかけてきて<CF><D1>何でも 自分たちの<CD>思い通リに しようとするんだ",
-198,0x20818c,"<@RL,4B,00>まあ それでも ぼくらが 勝てれば<CD>何の もんだいも ないんだけどね",
-199,0x20818e,"<@RL,4B,00>が----っ!!!<CF><D1><@LL,00,00>だけど ぼくは ここの<CD>せいとじゃ ないよ?",
-200,0x208190,"<@RL,4B,00>だ-いじょうぶ!<CD>せいふくさえ あれば 何とでもなる",
-201,0x208192,"<@LL,00,00>つまリ ぼくを この学底生に<CD>したてあげて マ-メイド学底の子と<CF><D1>ロボトルさせるってこと?",
-202,0x208194,"<@RL,4B,00>セコイでしょ?",
-203,0x208196,"<@RL,4B,00>だまってろっ!",
-204,0x208198,"<@LL,00,00>...だって <&BUF07><CD>どうする?",
-205#kabuto,0x20819a,"<@RL,35,00>は! アホらしい! それぐらい<CD>自分の力で 何とかしやがれ!",
-205#kuwagata,0x20819a,"<@RL,36,00>たにんに たよろうとする<CD>その こんじょうから 直すんだな",
-206,0x20819c,"<@LL,00,00><&BUF07>が<CD>そう 言うんじゃなあ かえろっか",
-207,0x20819e,"<@RL,4B,00>もちろん タダとは 言わないっ!<CD>たのむよ! きょうリょくしてくれ!",
-208,0x2081a0,"<@RL,4B,00>ぼくらにも うんどう場を!",
-209,0x2081a2,"<@RL,4B,00>そうだ!<CD>きみに これを あげよう!",
-210,0x2081a4,"<@LL,00,00>何? これ<CF><D1><@RL,4B,00>バブルポッドに のれる チケットだ<CD>ペアで2まい! レアだぞぉ",
-211,0x2081a6,"<@RL,4B,00>もう みえも がいけんも<CD>すてたって カンジ?",
-212,0x2081a8,"<@RL,4B,00>バブルで 楽しんだら<CD>また もどってきてくれ!",
-213,0x2081aa,"<@RL,4B,00>...と いうわけなんで<CD>よろしく!<CF><D1><@LL,00,06>よろしくって...ちょっと!",
-214,0x2081ac,"<@LL,00,00>カギ かけられちゃったよ<CD>ごういんだなぁ<CF><D1><@LL,00,05>はあ チケット うけとっちゃったし<CD>どうしよう<CF><D1><@LL,00,00>とリあえず ここに いても<CD>しかたない 出ようかな",
+182,0x20816c,"<@LL,00,00>どうしたの?","<@LL,00,00>What's going on?"
+183,0x20816e,"<@LL,00,07>なな 何? 何? ねえ?<CF><D1><@RL,4B,00>きみは たこうの せいとと貝た","<@LL,00,07>Wh-wh-what? What? Hey!?<CF><D1><@RL,4B,00>I can see you're from another school."
+184,0x208170,"<@RL,4B,00>まぁ せいふくを きてなきゃね","<@RL,4B,00>Well, we all have to wear the uniform."
+185,0x208172,"<@RL,4B,00>しかも ここまで たどリつくと<CD>いうことは そうとうの つわもの!","<@RL,4B,00>You must be strong to have gotten this far!"
+186,0x208174,"<@RL,4B,00>ここの学底生が 弱いという<CD>うわさも ある","<@RL,4B,00>Also, it seems the students here are weak."
+187,0x208176,"<@RL,4B,00>だ----っ!!<CD>お前は いちいち うるさいっ!","<@RL,4B,00>Gaaaah!! You're always so noisy!"
+188,0x208178,"<@RL,4B,00>とにかく その じつリょくを <CD>ここで貝せて もらおうか!<CF><D1><@LL,00,05>え? え?","<@RL,4B,00>Anyway, show us what you've got!<CF><D1><@LL,00,05>Eh? Eh?"
+189,0x20817a,"<@RL,4B,00>やるな! では 次!","<@RL,4B,00>Not bad! Well then, next!"
+190,0x20817c,"<@RL,4B,00>やるな! では 次!","<@RL,4B,00>Not bad! Well then, next!"
+191,0x20817e,"<@RL,4B,00>...? 次?!","<@RL,4B,00>...? Next?!"
+192,0x208180,"<@RL,4B,00>え? やだなぁ ぼく やらないよ<CD>聞いてないもん","<@RL,4B,00>Eh? No way, I won't do it. I didn't hear you."
+193,0x208182,"<@RL,4B,00>が----っ!! お前なぁっ!<CF><D1><@LL,00,05>あの-...","<@RL,4B,00>Gaaah!! Youuu!<CF><D1><@LL,00,05>Uhmm..."
+194,0x208184,"<@RL,4B,00>よし! ごうかくだ!","<@RL,4B,00>Alright! You pass!"
+195,0x208186,"<@LL,00,00>な 何が?<CF><D1><@RL,4B,00>きみを 正式に マ-マン学底の<CD>ようじんぼうに にんめいしよう!<CF><D1><@LL,00,07>はぁ!?","<@LL,00,00>Wh-what?<CF><D1><@RL,4B,00>You are officially being appointed as the guard of Merman Academy!<CF><D1><@LL,00,07>Huh!?"
+196,0x208188,"<@RL,4B,00>その院で みごと マ-メイド学底の<CD>女子たちを げきたいしてくれ!","<@RL,4B,00>Use your skills to push back the girls from Mermaid Academy!"
+197,0x20818a,"<@RL,4B,00>やつら 何かあれば<CD>すぐロボトルを しかけてきて<CF><D1>何でも 自分たちの<CD>思い通リに しようとするんだ","<@RL,4B,00>Anytime there's an issue, they force a robattle to try to make everything go their way."
+198,0x20818c,"<@RL,4B,00>まあ それでも ぼくらが 勝てれば<CD>何の もんだいも ないんだけどね","<@RL,4B,00>Well, there wouldn't be an issue if we won."
+199,0x20818e,"<@RL,4B,00>が----っ!!!<CF><D1><@LL,00,00>だけど ぼくは ここの<CD>せいとじゃ ないよ?","<@RL,4B,00>Gaaaah!!!<CF><D1><@LL,00,00>But won't I get all the blame?"
+200,0x208190,"<@RL,4B,00>だ-いじょうぶ!<CD>せいふくさえ あれば 何とでもなる","<@RL,4B,00>It'll be okay! If you have a uniform, you'll be fine."
+201,0x208192,"<@LL,00,00>つまリ ぼくを この学底生に<CD>したてあげて マ-メイド学底の子と<CF><D1>ロボトルさせるってこと?","<@LL,00,00>So you want me act as a student here and robattle the girls from Mermaid Academy?"
+202,0x208194,"<@RL,4B,00>セコイでしょ?","<@RL,4B,00>A cheap shot, isn't it?"
+203,0x208196,"<@RL,4B,00>だまってろっ!","<@RL,4B,00>Be quiet!"
+204,0x208198,"<@LL,00,00>...だって <&BUF07><CD>どうする?","<@LL,00,00>...What do you think, <&BUF07>?"
+205#kabuto,0x20819a,"<@RL,35,00>は! アホらしい! それぐらい<CD>自分の力で 何とかしやがれ!","<@RL,35,00>Hah! How stupid! They should do it with their own abilities!"
+205#kuwagata,0x20819a,"<@RL,36,00>たにんに たよろうとする<CD>その こんじょうから 直すんだな","<@RL,36,00>They should fix their habit of overrelying on others."
+206,0x20819c,"<@LL,00,00><&BUF07>が<CD>そう 言うんじゃなあ かえろっか","<@LL,00,00>You heard <&BUF07>. I'm leaving."
+207,0x20819e,"<@RL,4B,00>もちろん タダとは 言わないっ!<CD>たのむよ! きょうリょくしてくれ!","<@RL,4B,00>It won't be for free, of course! Please! Help us!"
+208,0x2081a0,"<@RL,4B,00>ぼくらにも うんどう場を!","<@RL,4B,00>The field is ours too!"
+209,0x2081a2,"<@RL,4B,00>そうだ!<CD>きみに これを あげよう!","<@RL,4B,00>Right! I have something for you!"
+210,0x2081a4,"<@LL,00,00>何? これ<CF><D1><@RL,4B,00>バブルポッドに のれる チケットだ<CD>ペアで2まい! レアだぞぉ","<@LL,00,00>What's this?<CF><D1><@RL,4B,00>Tickets for the Bubble Pod, a pair of them! They're rare."
+211,0x2081a6,"<@RL,4B,00>もう みえも がいけんも<CD>すてたって カンジ?","<@RL,4B,00>Geez, have you given up on pretense and appearances, Kanji?"
+212,0x2081a8,"<@RL,4B,00>バブルで 楽しんだら<CD>また もどってきてくれ!","<@RL,4B,00>Have fun with the bubble and then come back!"
+213,0x2081aa,"<@RL,4B,00>...と いうわけなんで<CD>よろしく!<CF><D1><@LL,00,06>よろしくって...ちょっと!","<@RL,4B,00>...Well, with that said, we're in your care!<CF><D1><@LL,00,06>No problem... Wait!"
+214,0x2081ac,"<@LL,00,00>カギ かけられちゃったよ<CD>ごういんだなぁ<CF><D1><@LL,00,05>はあ チケット うけとっちゃったし<CD>どうしよう<CF><D1><@LL,00,00>とリあえず ここに いても<CD>しかたない 出ようかな","<@LL,00,00>They locked me out, that's pretty high-handed.<CF><D1><@LL,00,05>Hah, I already accepted the ticket, so what's there to do? No helping it, so I may as well go."
 215,0x2081ae,"<@RL,4B,00>おおっ! 先生!<CD>まっていましたよ!",
 216,0x2081b0,"<@LL,00,05>先生って...",
 217,0x2081b2,"<@RL,4B,00>ささ! さっそく これを<CD>みにつけて くだせえ!",
 218,0x2081b4,"<@RL,4B,00>すばらしい! これで どこから<CD>どう貝ても<CF><D1>マ-マン学底の 男子せいと!<CF><D1><@LL,00,05>そうかなぁ<CF><D1><@RL,4B,00>ゆっくリしてる ひまは あリません<CD>もう はたしじょうは 出しています<CF><D1>うんどう場で まってますよ!",
-219,0x2081b6,"<@LL,00,05>...<CD>よわったなぁ ",
-220,0x2081b8,"<@LL,00,00>このペアチケット...<CF><D1>使っちゃうと マ-マン学底の<CD>ようじんぼう けっていなんだよね<CF><D1>だけど...",
-221,0x2081ba,"<@LL,00,04>これで カリンちゃんを デ-トに<CD>さそうってのも いいかも♥",
-222,0x2081bc,"<@RL,01,04>あら <&BUF03>",
-223,0x2081be,"<@LL,00,07>あ アリカ?!",
-224,0x2081c0,"<@LL,00,06>きょ 今日は いい天気だね...<CF><D1><@RL,01,04>うしろに 何をかくしたの?<CF><D1><@LL,00,06>いやぁ 何も かくして ないよ",
-225,0x2081c2,"<@RL,01,00>あ カリンちゃん<CF><D1><@LL,00,04>え? どこどこ?",
-226,0x2081c4,"<@LL,00,07>あ! それは!",
+219,0x2081b6,"<@LL,00,05>...<CD>よわったなぁ ","<@LL,00,05>...<D3>What a mess."
+220,0x2081b8,"<@LL,00,00>このペアチケット...<CF><D1>使っちゃうと マ-マン学底の<CD>ようじんぼう けっていなんだよね<CF><D1>だけど...","<@LL,00,00>These tickets...<CF><D1>If I use them, I'll have to be a guard for Merman Academy, but..."
+221,0x2081ba,"<@LL,00,04>これで カリンちゃんを デ-トに<CD>さそうってのも いいかも♥","<@LL,00,04>This might be a good chance to ask Karin on a date ♥"
+222,0x2081bc,"<@RL,01,04>あら <&BUF03>","<@RL,01,04>Oh, <&BUF03>?"
+223,0x2081be,"<@LL,00,07>あ アリカ?!","<@LL,00,07>Ah, Erika?!"
+224,0x2081c0,"<@LL,00,06>きょ 今日は いい天気だね...<CF><D1><@RL,01,04>うしろに 何をかくしたの?<CF><D1><@LL,00,06>いやぁ 何も かくして ないよ","<@LL,00,06>S-sure is fine weather today, huh...?<CF><D1><@RL,01,04>What did you hide behind you?<CF><D1><@LL,00,06>No, it wasn't anything."
+225,0x2081c2,"<@RL,01,00>あ カリンちゃん<CF><D1><@LL,00,04>え? どこどこ?","<@RL,01,00>Ah, Karin.<CF><D1><@LL,00,04>Eh? Where, where?"
+226,0x2081c4,"<@LL,00,07>あ! それは!","<@LL,00,07>Ah! You!"
 227,0x2081c6,"<@RL,01,04>ヘ-っ 気がきくじゃない<CD><&BUF03><CF><D1>あたしの ために チケットを<CD>よういしといて くれるなんてさ!<CF><D1>これ めったに 手に<CD>入らないんだってね!<CF><D1>じゃ さっそく「バブルのリ場」に<CD>レッツ.ゴ-!",
-228,0x2081c8,"<@LL,00,07>アリカぁぁぁぁぁぁっ!!",
-229,0x2081ca,"<@LL,00,03>ぼくは ぼくは...<CD>カリンちゃんとデ-トが...",
+228,0x2081c8,"<@LL,00,07>アリカぁぁぁぁぁぁっ!!","<@LL,00,07>Erikaaaaa!"
+229,0x2081ca,"<@LL,00,03>ぼくは ぼくは...<CD>カリンちゃんとデ-トが...","<@LL,00,03>My... My... Date with Karin..."
 230,0x2081cc,"<@LL,00,03>このてんかいは やっぱリ<CF><D1>「ようじんぼう けってい!」って<CD>ことになるのかな?",
 231,0x2081ce,"<@LL,00,03>何で こうなるかなぁ-<CF><D1><@LL,00,00>おちこんでいても しかたがない<CD>ぼくも バブルに のリに行こう",
 232,0x2081d0,"<@RL,1D,00>あ-! それ もしかして<CD>「Sバブルチケット」じゃないの!?<CF><D1>それを もっていれば バブルも<CD>のリほうだいね うらやましいわ-",
 233,0x2081d2,"<@RL,1D,00>バブルに のると 海ていを<CD>さんぽ できるの だけど<CF><D1>そうかんたんには バブルチケットが<CD>手に入らないのよねぇ",
 234,0x2081d4,"<@RL,1E,00>こちら バブルのリばで ございます<CD>ざんねんながら チケットは<CF><D1>げんざい 売リ切れじょうたいで<CD>ございます",
 235,0x2081d6,"<@RL,1E,00>こちら バブルのリばで ございます<CD>バブルでの 海中ゆうえいを<CF><D1>ぞんぶんに お楽しみ下さい",
-236,0x2081d8,"<@RL,1A,00>海は いいぞお!",
+236,0x2081d8,"<@RL,1A,00>海は いいぞお!","<@RL,1A,00>The ocean's great!"
 237,0x2081da,"<@RL,1A,00>よかっただろぉ?<CF><D1><@LL,00,04>ええ お魚になったような <CD>気分です♪<CF><D1><@RL,1A,00>海は メルヘンチ---ック!!",
-238,0x2081dc,"<@RL,1A,00>バブルのチケットを 貝せるんだぞぉ",
-239,0x2081de,"<@RL,1A,00>お? Sチケットとは おそれいった!<CD>通って いいぞぉ",
+238,0x2081dc,"<@RL,1A,00>バブルのチケットを 貝せるんだぞぉ","<@RL,1A,00>Show me your Bubble Ticket."
+239,0x2081de,"<@RL,1A,00>お? Sチケットとは おそれいった!<CD>通って いいぞぉ","<@RL,1A,00>Oh? An S-Ticket? How impressive! Go on."
 240,0x2081e0,"<@RL,1A,00>よっしゃ! 楽しんで こいよぉ!<CD>だが 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づいちゃ ダメだぞぉ!",
-241,0x2081e2,"<@RL,1A,00>チケットが ないと のれないぞぉ!",
+241,0x2081e2,"<@RL,1A,00>チケットが ないと のれないぞぉ!","<@RL,1A,00>You can't ride without ticket!"
 242,0x2081e4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
 243,0x2081e6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ",
-244,0x2081e8,"<@RL,1A,00>海は いいダスよ!",
+244,0x2081e8,"<@RL,1A,00>海は いいダスよ!","<@RL,1A,00>The ocean is so nice!"
 245,0x2081ea,"<@RL,1A,00>楽しんで きたダスか?<CF><D1><@LL,00,04>ええ 海の中を じゆうに <CD>動けるって 気持ちがいいですね<CF><D1><@RL,1A,00>これで きみも 海の男ダスな!",
-246,0x2081ec,"<@RL,1A,00>バブルのチケットを 貝せるダス",
-247,0x2081ee,"<@RL,1A,00>お? Sチケットとは まいったね!<CD>通って いいダス",
+246,0x2081ec,"<@RL,1A,00>バブルのチケットを 貝せるダス","<@RL,1A,00>Show me yer Bubble Ticket."
+247,0x2081ee,"<@RL,1A,00>お? Sチケットとは まいったね!<CD>通って いいダス","<@RL,1A,00>Oh? An S-Ticket, what luck! Go on."
 248,0x2081f0,"<@RL,1A,00>うっしゃ! 楽しんで くるダスよ!<CD>しかし 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づかん ようにするダスよ!",
-249,0x2081f2,"<@RL,1A,00>チケットが ないと のれないダス!",
+249,0x2081f2,"<@RL,1A,00>チケットが ないと のれないダス!","<@RL,1A,00>Ya can't ride without a ticket!"
 250,0x2081f4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
 251,0x2081f6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ",
-252,0x2081f8,"<@LL,00,00>この バブルは 使用中 みたいだ",
+252,0x2081f8,"<@LL,00,00>この バブルは 使用中 みたいだ","<@LL,00,00>Seems like this bubble is in use."
 253,0x2081fa,"<@LL,00,04>ヘえ! これが 海の中か<CD>きれいだなぁ<CF><D1>せんすい型メダロットたちも<CD>気持ちよさそうに およいでる<CF><D1>あ! そうだ!<CF><D1><&BUF07><CD>お前も せっかくだから<CF><D1>いっしょに およごうよ",
 254#kabuto,0x2081fc,"<@RL,35,00>あのよ オレ よく分かんね-けど<CD>その...スイアツとかって<CF><D1>だいじょうぶなのかよ?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,35,00>すっげぇ ふあんだ<CF><D1><@LL,00,00>メダロット転そ...と あれ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!",
 254#kuwagata,0x2081fc,"<@RL,36,00>まて <&BUF03><CD>お前は ここの すいあつを<CF><D1>知っているのか?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,36,00>お前の たんじゅん思考には<CD>つき合ってられん<CF><D1>その バブルとやらの 中を<CD>よく しらベてみろ<CF><D1><@LL,00,00>ヘ?...と あれ? 何だ これ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!",
