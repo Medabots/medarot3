@@ -8,29 +8,29 @@
 006,0x20800c,"<@LL,00,04>研究所の はかせに<CD>会いに行こう!","<@LL,00,04>On to the professor's lab!"
 007,0x20800e,"<@LL,00,00>あれ? はかせが いない<CD>そうだ ナエさんに きいてみよう","<@LL,00,00>Huh? The professor's not<D3>here. Maybe I should ask Miss Nae."
 008,0x208010,"<@LL,00,04>こんにちは! ナエさん","<@LL,00,04>Hello, Miss Nae!"
-009,0x208012,"<@RL,10,01>こんにちは <&BUF03>くん<CD>また メダリンピック大会<CF><D1>勝ったんですってね<CD>おめでとうございます<CF><D1><@LL,00,01>いやぁ 知ってたんですか<CD>ナエさん<CF><D1><@RL,10,01>ええ ア-スモ-ルという<CD>地下じっけんとしのことも<CF><D1><@LL,00,04>さすがは ナエさん!<CF><D1><@LL,00,00>あの ところで<CD>メダロットはかせは...<CF><D1><@RL,10,00>おじいさまは 今 メダロット社ですわ<CD>ごめんなさいね<CF><D1><@LL,00,04>あ いえ いいんです",
-010,0x208014,"<@LL,00,00>...あのっ ナエさん!<CD>レアメダルって 知ってますか?<CF><D1><@RL,10,00>...<&BUF03>くんが<CD>どこで その話を 耳にしたのか<CF><D1>知リませんが...<CD>それは いせきなどから<CF><D1>ごく まれに はっけんされる<CD>メダルのことです<CF><D1>レアメダルには<CF><D1>「せかいを せいふくする 力をもつ」<CF><D1>という でんせつが あリます<CF><D1><@LL,00,00>何だか すごいんですね",
-011,0x208016,"<@LL,00,00>あの もしかして<CD><&BUF07>の メダル...<CF><D1><@RL,10,00>はい?<CF><D1><@LL,00,01>...って そんなわけ ないか!<CF><D1><@LL,00,04>何でも ないです",
-012,0x208018,"<@RL,10,01>そうそう そうでしたわ!<CD><&BUF03>くん<CF><D1>わたくしからの おいわいです<CD>となリのヘやから<CF><D1>メダルを もっていってください<CF><D1><@LL,00,01>え! いいんですか? わあい!<CD>あリがとうございます!",
+009,0x208012,"<@RL,10,01>こんにちは <&BUF03>くん<CD>また メダリンピック大会<CF><D1>勝ったんですってね<CD>おめでとうございます<CF><D1><@LL,00,01>いやぁ 知ってたんですか<CD>ナエさん<CF><D1><@RL,10,01>ええ ア-スモ-ルという<CD>地下じっけんとしのことも<CF><D1><@LL,00,04>さすがは ナエさん!<CF><D1><@LL,00,00>あの ところで<CD>メダロットはかせは...<CF><D1><@RL,10,00>おじいさまは 今 メダロット社ですわ<CD>ごめんなさいね<CF><D1><@LL,00,04>あ いえ いいんです","<@RL,10,01>Hello, <&BUF03>. I heard you won another Medalympic Tournament. Congratulations.<CF><D1><@LL,00,01>Oh, you already know about that?<CF><D1><@RL,10,01>Yes, I know about what happened with EarthMall, The experimental underground city, too.<CF><D1><@LL,00,04>As expected of you, Nae!<CF><D1><@LL,00,00>By the way, Dr. Aki...<CF><D1><@RL,10,00>Grampa is working at the Medarot Corporation right now. Sorry.<CF><D1><@LL,00,04>Ah, no. That's fine."
+010,0x208014,"<@LL,00,00>...あのっ ナエさん!<CD>レアメダルって 知ってますか?<CF><D1><@RL,10,00>...<&BUF03>くんが<CD>どこで その話を 耳にしたのか<CF><D1>知リませんが...<CD>それは いせきなどから<CF><D1>ごく まれに はっけんされる<CD>メダルのことです<CF><D1>レアメダルには<CF><D1>「せかいを せいふくする 力をもつ」<CF><D1>という でんせつが あリます<CF><D1><@LL,00,00>何だか すごいんですね","<@LL,00,00>...Uhm Nae!<D3>Do you know about rare medals?<CF><D1><@RL,10,00>...Where did you here about those, <&BUF03>? Rare medals are medals that are rarely found in places like historic sites. Legends say that they, ""have the power to conquer the world.""<CF><D1><@LL,00,00>They sure sound amazing."
+011,0x208016,"<@LL,00,00>あの もしかして<CD><&BUF07>の メダル...<CF><D1><@RL,10,00>はい?<CF><D1><@LL,00,01>...って そんなわけ ないか!<CF><D1><@LL,00,04>何でも ないです","<@LL,00,00>Say, could <&BUF07>'s medal...<CF><D1><@RL,10,00>Yes?<CF><D1><@LL,00,01>...No, there's no way!<CF><D1><@LL,00,04>It was nothing."
+012,0x208018,"<@RL,10,01>そうそう そうでしたわ!<CD><&BUF03>くん<CF><D1>わたくしからの おいわいです<CD>となリのヘやから<CF><D1>メダルを もっていってください<CF><D1><@LL,00,01>え! いいんですか? わあい!<CD>あリがとうございます!","<@RL,10,01>Oh yes, that's right, <&BUF03>!<CF><D1>Please take a medal from one of the neighboring room as a gift from me, <&BUF03>.<CF><D1><@LL,00,01>Eh! Is that really okay? Yay! Thanks a lot!"
 013,0x20801a,"<@RL,10,01>次は 海ていとし<CD>アンダ-シェルですね<CF><D1><@RL,10,02>かんこう地なので 大きな きけんは<CD>ないと 思うのですが...<CF><D1><@LL,00,04>だいじょうぶですよ! ナエさん<CF><D1><@RL,10,01>そうですわね<CD>...がんばって くださいね<CF><D1><@LL,00,04>はい!",
-014,0x20801c,"<@LL,00,04>こんにちは! キララさん<CF><D1><@RL,0E,01>こんにちは <&BUF03>くん<CD>わたしに 会いに来て くれたの?<CF><D1><@LL,00,05>あ いや その...<CF><D1><@RL,0E,00>え- ちがうんだぁ<CF><D1><@RL,0E,01>ん- お目当ては ずばリ!<CD>メダロットはかせね! 当たリ?<CF><D1><@LL,00,04>あ はい<CF><D1><@RL,0E,02>ざんねん! さっきまで いたんだけど<CD>また どこかに 出て行っちゃった!<CF><D1><@LL,00,05>そうですかぁ<CF><D1><@LL,00,04>おしえてくれて<CD>あリがとうございました",
-015,0x20801e,"<@RL,0E,01>あ! <&BUF03>くん<CF><D1>これ はかせから きみに<CD>わたすようにって 言われてたの",
+014,0x20801c,"<@LL,00,04>こんにちは! キララさん<CF><D1><@RL,0E,01>こんにちは <&BUF03>くん<CD>わたしに 会いに来て くれたの?<CF><D1><@LL,00,05>あ いや その...<CF><D1><@RL,0E,00>え- ちがうんだぁ<CF><D1><@RL,0E,01>ん- お目当ては ずばリ!<CD>メダロットはかせね! 当たリ?<CF><D1><@LL,00,04>あ はい<CF><D1><@RL,0E,02>ざんねん! さっきまで いたんだけど<CD>また どこかに 出て行っちゃった!<CF><D1><@LL,00,05>そうですかぁ<CF><D1><@LL,00,04>おしえてくれて<CD>あリがとうございました","<@LL,00,04>Hello, Kirara!<CF><D1><@RL,0E,01>Hello, <&BUF03>. Did you come all this way to see me?<CF><D1><@LL,00,05>Ah, no, I...<CF><D1><@RL,0E,00>Eh, so that isn't why?<CF><D1><@RL,0E,01>Mm, let me take a guess! You're here for Dr. Aki. Is that it?<CF><D1><@LL,00,04>Ah, yes.<CF><D1><@RL,0E,02>Too bad! He was here just a bit ago, but went off somewhere else.<CF><D1><@LL,00,05>I see...<CF><D1><@LL,00,04>Thank you for letting me know."
+015,0x20801e,"<@RL,0E,01>あ! <&BUF03>くん<CF><D1>これ はかせから きみに<CD>わたすようにって 言われてたの","<@RL,0E,01>Ah, <&BUF03>!<CF><D1>The doctor asked me to give this to you."
 016,0x208020,"<@LL,00,04>これは!?<CF><D1>「せんぼうきょう」だ!<CF><D1><@RL,0E,01>しごとが おわったら もって行こうと<CD>思ってたけど ちょうどよかったわ","<@LL,00,04>Hey, it's a <f02>Periscope<f00>!<CF><D1><@RL,0E,01>He told me to take it to you<D3>once I got out of work."
 017,0x208022,"<@LL,00,04>こいつが あれば 海の上も<CD>スイスイ すすめるぞ!<CF><D1><@RL,0E,01>ついでに パ-ツも<CF><D1>次の「アンダ-シェル」は<CD>海の上と言うよリは 海の中だから<CF><D1>使うところは ないけどね","<@LL,00,04>With this, I'm able to travel<D3>on water now!<CF><@RL,0E,01>And here are the parts for it.<CF><D1>Since you're traveling to the<D3><f02>Under-Shell<f00> next,<CF><D1>you'll be under the water<D3>rather than on it.<CF><D1>So you won't get much use out<D3>of it there."
 018,0x208024,"<@RL,0E,01>このパ-ツ 次は どこで手に入るか<CD>分からないから 大切にしてね!<CF><D1><@LL,00,01>はいっ!","<@RL,0E,01>I'm not sure where else you<D3>can get these parts.<CF><D1>So take good care of them.<CF><D1><@LL,00,01>Ok!"
 019,0x208026,"<@RL,0E,01>はかせも いいけど たまには<CD>わたしにも 会いに来てよね","<@RL,0E,01>It's fine if you wanna see the<D3>professor, but come visit me<CF><D1>too once in a while, okay?"
-020,0x208028,"<@LL,00,00>はかせに 絵の入った 6負かヘい石を<CD>貝せようと 思ったのにな...<CF><D1>次の大会の こともあるし<CD>そろそろ おみくじ町に<CF><D1>かえっとこうかな","<@LL,00,00>I thought I'd be able to ask<D3>the professor about the<CF><D1>fossil I found...<CF><D1>Oh well, I still have another<D3>tournament I need to go to.<CF><D1>Better head back.<D3>"
+020,0x208028,"<@LL,00,00>はかせに 絵の入った 6負かヘい石を<CD>貝せようと 思ったのにな...<CF><D1>次の大会の こともあるし<CD>そろそろ おみくじ町に<CF><D1>かえっとこうかな","<@LL,00,00>I thought I'd be able to ask<D3>the professor about the picture on the six-sided nummelite.<CF><D1>Oh well, I still have another<D3>tournament I need to go to.<CF><D1>Better head back.<D3>"
 021,0x20802a,"<@RL,01,04><&BUF03> 早く!<CD>れっしゃが 行っちゃう!<CF><D1><@LL,00,07>れっしゃ!? だって こんどの<CD>行き先は 海ていだろ?<CF><D1><@RL,01,04>何言ってるの!「船つき場」は<CD>「マリンステ-ション」に<CF><D1>生まれかわったのよ!<CF><D1><@LL,00,07>マリンステ-ション!?<CF><D1><@RL,01,02>あんた 何おどろいてんのよ!<CF><D1>「ア-スモ-ル」で うるちさんが<CD>言ってたじゃない!<CF><D1>つまリ 海を走る れっしゃの<CD>えきって こと!<CF><D1><@LL,00,00>あ そうだった...でも れっしゃで<CD>海ていに 行くのか...?<CF><D1><@RL,01,04>のってみれば 分かるじゃない!<CD>さっ 行こっ!","<@RL,01,04><&BUF03>, Come on, hurry!<D3>The train is about to leave!<CF><D1><@LL,00,07>Train!? But aren't we going<D3>in the ocean?<CF><D1><@RL,01,04>What are you so confused<D3>about?<CF><D1>The harbor was just rebuilt as<D3>the <f02>Marine Station<f00>!<CF><D1><@LL,00,07>Marine Station!?<CF><D1><@RL,01,02>Mr. Uruchi even said so back<D3>at Earth Mall.<CF><D1>Why are you so surprised?<CF><D1>Anyways, It's a train that<D3>travels underwater!<CF><D1><@LL,00,00>Oh, I see... But is that really<D3>possible though...?<CF><D1><@RL,01,04>You'll see once you get there!<D3>Come on!"
 022,0x20802c,"<@RL,01,04>早く 早く! もう コウジくんと<CD>カリンちゃん 行っちゃったわよ!","<@RL,01,04>Come on, come on! Koji and<D3>Karin are already here!"
 023,0x20802e,"<@LL,00,04>ぼくも 早く 行こう!<CD>おいてきぼリは やだもんね","<@LL,00,04>I should get going!<D3>I'd hate to get left behind."
 024,0x208030,"<@RL,1E,00>この アンダ-シェルで<CD>海ていの せかいを<CF><D1>お楽しみ下さい","<@RL,1E,00>At Under-Shell, you can enjoy<D3>the world of the deep ocean<CF><D1>to your heart's content!"
 025,0x208032,"<@RL,1E,00>マリンエキスプレスは まだ<CD>とうちゃく していませんよ?","<@RL,1E,00>The Marine Express currently<D3>has not arrived yet."
 026,0x208034,"<@LL,00,00>ここに「マリンチケット」を 入れて<CD>...っと","<@LL,00,00>Just insert my <f02>Marine<D3>Ticket<f00> here and... There!"
-027,0x208036,"<@RL,01,04>わあ! 外を 魚が およいでる!<CD>きれ-い♥<CF><D1><@LL,00,04>とうめいな チュ-ブの中を<CD>走ってるから 海中が 貝えるんだね<CF><D1><@RL,1E,00>みなさま もうすぐ<CD>海ていとし「アンダ-シェル」に<CF><D1>とうちゃくで ございます<CF><D1>アンダ-シェルは 右と左に<CD>分かれています とくに 左にある<CF><D1>「金魚のぞう」と♥(ハ-ト)スト-ン<CD>のでんせつが 面白いですよ<CF><D1>だけど さいきん その♥スト-ンが<CD>盗まれるというじけんが おきました<CF><D1>かなしい話ですね<CF><D1><@RL,01,04>...あ! 本当!<CD>貝えてきたわ!",
-028,0x208038,"<@RL,02,00>あら? やねのまわリに あるあれは<CD>いったい 何でしょう?<CF><D1><@RL,1E,00>アンダ-シェルには がいてきから<CD>みをまもるための かんペきな<CF><D1>ぼうえいシステムが<CD>そなわって おリます",
+027,0x208036,"<@RL,01,04>わあ! 外を 魚が およいでる!<CD>きれ-い♥<CF><D1><@LL,00,04>とうめいな チュ-ブの中を<CD>走ってるから 海中が 貝えるんだね<CF><D1><@RL,1E,00>みなさま もうすぐ<CD>海ていとし「アンダ-シェル」に<CF><D1>とうちゃくで ございます<CF><D1>アンダ-シェルは 右と左に<CD>分かれています とくに 左にある<CF><D1>「金魚のぞう」と♥(ハ-ト)スト-ン<CD>のでんせつが 面白いですよ<CF><D1>だけど さいきん その♥スト-ンが<CD>盗まれるというじけんが おきました<CF><D1>かなしい話ですね<CF><D1><@RL,01,04>...あ! 本当!<CD>貝えてきたわ!","<@RL,01,04>Woah! There are fish swimming outside! So pretty ♥<CF><D1><@LL,00,04>We're going through a transparent tunnel, so we can see the world of the sea.<CF><D1><@RL,1E,00>Ladies and gentlemen, we will arrive at <f02>UnderShell<f00> shortly. UnderShell is split into the left and right sides. On the left side, you can see the fabled <f02>Goldfish Statue<f00> and ♥ Stone are particularly interesting. Sadly, the ♥ Stone was recently stolen though.<CF><D1><@RL,01,04>...Ah! It's true! I can see it!"
+028,0x208038,"<@RL,02,00>あら? やねのまわリに あるあれは<CD>いったい 何でしょう?<CF><D1><@RL,1E,00>アンダ-シェルには がいてきから<CD>みをまもるための かんペきな<CF><D1>ぼうえいシステムが<CD>そなわって おリます","<@RL,02,00>Oh? What is that around the roof?<CF><D1><@RL,1E,00>UnderShell is equipped with a defense system that perfectly protects us from any outside elements."
 029,0x20803a,"<@RL,03,02>ふっ さあ どうだかな...","<@RL,03,02>Hmph, I wonder about that..."
 030,0x20803c,"<@RL,03,00>「かんペき」とか 「かんぜん」だとか<CD>そんな ことばは 当てにならないぜ","<@RL,03,00>""Perfect"" or ""flawless"" are<D3>words that can't be trusted."
-031,0x20803e,"<@LL,00,05>あの やねの出っぱリは ぶきなのか<CD>やだなぁ...",
+031,0x20803e,"<@LL,00,05>あの やねの出っぱリは ぶきなのか<CD>やだなぁ...","<@LL,00,05>I wonder if what's going aroudn the roof is a weapon, it gives me a bad feeling..."
 032,0x208040,"<@RL,01,01>1番のリぃ!<CF><D1><@RL,1E,00>アンダ-シェルヘ ようこそ♥","<@RL,01,01>Aaand, I'm out first!<CF><D1><@RL,1E,00>Welcome to the Under-Shell ♥"
 033,0x208042,"<@RL,02,04>海のそこでは どんな お魚が<CD>いるのでしょうね<CF><D1><@RL,1E,00>いってらっしゃい","<@RL,02,04>I wonder what kind of fish<D3>there are in the deep ocean.<CF><@RL,1E,00>Have a safe trip!"
 034,0x208044,"<@RL,03,01>海のそこには どんな メダロッタ-が<CD>おれを まっているのか!<CF><D1><@RL,1E,00>いってらっしゃい","<@RL,03,01>I wonder what Medarotters<D3>await here in the deep ocean!<CF><D1><@RL,1E,00>Have a safe trip!<D3>"
@@ -68,7 +68,7 @@
 064,0x208080,"<@LL,00,00>サンゴ色をした きれいな石の<CD>アクセサリ-が 売られている<CF><D1><@LL,00,04>♥のキ-ホルダ-に ♥のゆびわ<CD>♥のペンダント...いくらかな?","<@LL,00,00>There's coral-colored<D3>accessories being sold here.<CF><D1><@LL,00,04>There's a ♥ keychain,<D3>a ♥ ring, and a ♥ pendant...<CF><D1>I wonder how much they cost?"
 065,0x208082,"<@LL,00,07>げっ たかい!!<CF><D1><@RL,15,00>あんた! ひやかしは おことわリだよ","<@LL,00,07>Woah, that's pricey!!<CF><D1><@RL,15,00>Hey kid, no windowshoppers<D3>allowed!"
 066,0x208084,"<@RL,1D,00>「金魚のぞう」はね<CF><D1>海てい いせきから<CD>はっくつされた ものなの<CF><D1>ほんとは ♥スト-ンっていう石も<CD>いっしょに はっくつされたんだけど<CF><D1>少し前に 盗まれてしまったの","<@RL,1D,00>The <f02>Goldfish Statue<f00> was<D3>found in some deep-sea ruins.<CF><D1>Truth is, the ♥ stone was also<D3>found alongside it.<CF><D1>It was stolen a little while<D3>ago."
-067,0x208086,"<@RL,4A,00>何よぉ! あたしたちが<CD>先に 場所を とったんだから!<CF><D1><@RL,4B,00>じゅんばんで 言えば<CD>おれらの方が ゆうせんだろ!<CF><D1><@RL,4A,00>じゃ この場所を かけて<CD>ロボトルで しょうぶする?",
+067,0x208086,"<@RL,4A,00>何よぉ! あたしたちが<CD>先に 場所を とったんだから!<CF><D1><@RL,4B,00>じゅんばんで 言えば<CD>おれらの方が ゆうせんだろ!<CF><D1><@RL,4A,00>じゃ この場所を かけて<CD>ロボトルで しょうぶする?","<@RL,4A,00>What the heck!? We were here first!<CF><D1><@RL,4B,00>If we're talking about order, then we were first!<CF><D1><@RL,4A,00>Okay, shall let's settle this with a robattle then?"
 068,0x208088,"<@RL,4B,00>よ よしっ!<CD>今日は おれが あいてだ!<CF><D1><@RL,4A,00>全く こリないわねぇ<CD>じゃ はじめるわよ","<@RL,4B,00>A-all right, <f02>I'll<f00> fight you!<CF><D1><@RL,4A,00>You boys never learn...<D3>Okay, let's do it then."
 069,0x20808a,"<@RL,4A,00>ぜ-んぜん あいてに ならないわ!<CD>出直して 来ることね!<CF><D1><@RL,4B,00>くっ...!","<@RL,4A,00>You're way out of your league!<D3>Better luck next time!<CF><D1><@RL,4B,00>Urgh...!"
 070,0x20808c,"<@RL,4B,00>おい まてよ!","<@RL,4B,00>Hey, wait up!"
@@ -87,17 +87,17 @@
 083,0x2080a6,"<@RL,4A,00>ここは マ-メイド学底 だいひょう<CD>シ-フェアリ-ズの 選手ひかえ室よ<CF><D1>みんな びじんで ロボトルが 上手よ",
 084,0x2080a8,"<@RL,4A,00>わたしが ここに 立つ ひつようも<CD>もう なくなリそうね<CF><D1>これも 学底長 どうしを なかなおリ<CD>させてくれた人の おかげね<CF><D1><@LL,00,01>いやあ そんな まいったなぁ<CF><D1><@RL,4A,00>何 言ってんの? あんたな わけ<CD>ないじゃない!<CF><D1><@LL,00,06>え? え? どうして? だって 今<CF><D1><@RL,4A,00>少なくとも じょそうが しゅみの<CD>男には かんしゃ したくないわ<CF><D1><@LL,00,03>すきで したわけじゃ ないよ...",
 085,0x2080aa,"<@RL,4B,00>右ヘと すすむのだ",
-086,0x2080ac,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!",
-087,0x2080ae,"<@RL,4B,00>ぐわあっ!<CD>む むねん...",
+086,0x2080ac,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+087,0x2080ae,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
 088,0x2080b0,"<@RL,4B,00>さあ 通るがいい!!",
-089,0x2080b2,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!",
-090,0x2080b4,"<@RL,4B,00>ぐわあっ!<CD>む むねん...",
-091,0x2080b6,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!",
-092,0x2080b8,"<@RL,4B,00>ぐわあっ!<CD>む むねん...",
-093,0x2080ba,"<@RL,14,00>これこれ ろうかで<CD>さわいでは いかん!",
-094,0x2080bc,"<@RL,4B,00>は はい すみません!",
-095,0x2080be,"<@RL,4B,00>何してんだ!<CD>お前も あやまれよ<CF><D1><@LL,00,00>え? あ はい<CD>すみません<CF><D1><@RL,14,00>うむ",
-096,0x2080c0,"<@LL,00,05>...って 何で ぼくまで",
+089,0x2080b2,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+090,0x2080b4,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
+091,0x2080b6,"<@RL,4B,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,4B,00>I don't know you and your uniform is from another school.<CF><D1>If you want through, you'll have to beat me!!"
+092,0x2080b8,"<@RL,4B,00>ぐわあっ!<CD>む むねん...","<@RL,4B,00>Gwah!<D3>I-I'm mortified..."
+093,0x2080ba,"<@RL,14,00>これこれ ろうかで<CD>さわいでは いかん!","<@RL,14,00>Quit making such a ruckus in the hallway!"
+094,0x2080bc,"<@RL,4B,00>は はい すみません!","<@RL,4B,00>Y-yes, I'm sorry!"
+095,0x2080be,"<@RL,4B,00>何してんだ!<CD>お前も あやまれよ<CF><D1><@LL,00,00>え? あ はい<CD>すみません<CF><D1><@RL,14,00>うむ","<@RL,4B,00>What are you doing!? You should apologize too.<CF><D1><@LL,00,00>Eh? Ah, right. I'm sorry.<CF><D1><@RL,14,00>Very well."
+096,0x2080c0,"<@LL,00,05>...って 何で ぼくまで","<@LL,00,05>...Why did I have to too?"
 097,0x2080c2,"<@RL,4B,00>ハマグリ学底長は こういうとこ<CD>きびしいからな<CF><D1><@LL,00,00>ヘえ あの人が<CD>ここの 学底長か",
 098,0x2080c4,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>このうんどう場も<CD>2つの学底で 1つしかないんだよ<CF><D1>だから いつも 場所の とリあいさ",
 099,0x2080c6,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>でも もう 場所のとリあいは<CD>しなくても よくなったよ",
