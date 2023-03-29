@@ -158,7 +158,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 154,\x00,\x02,\xCB
 155,\x00,\x03,Natsume Staff
 156,\x00,\x02,\xCD
-157,\x11,\x05,Programmers
+157,\x11,\x05,Programming
 158,\x11,\x04,Wataru Kitamura
 159,\x11,\x04,Mitsugu Takamiya
 160,\x11,\x04,Koji Kadosaka
@@ -213,30 +213,37 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 209,\x11,\x04,\xCB
 210,\x11,\x04,\xCB
 211,\x00,\x03,Localization
-212,\x10,\x05,Translators
+212,\x10,\x05,Translations
 213,\x11,\x04,kabuto
 214,\x11,\x04,Kimbles
 215,\x11,\x04,Meylin
 216,\x11,\x04,nejimakipiyo
 217,\x11,\x04,Tiaruth
-218,\x01,\x03,Localization
-219,\x01,\x05,Translators
+218,\x00,\x03,Localization
+219,\x01,\x05,Translations
 220,\x11,\x04,Tobias_Levi
 221,\x11,\x04,yukinz
 222,\x11,\x04,Aoitenshi
 223,\x11,\x04,\xCB
 224,\x11,\x04,\xCB
-225,\x00,\x02,\xCB
-226,\x00,\x02,\xCD
-227,\x00,\x02,\xCB
-228,\x11,\x02,"And you,"
-229,##&C794=\x11,\x02,\x20
-230,\x00,\x02,\xCB
-231,\x00,\x02,\xCB
+225,\x01,\x03,Localization
+226,\x11,\x05,Editing
+227,\x11,\x04,Gilor
+228,\x11,\x04,Zichz
+229,\x11,\x04,\xCB
+230,\x11,\x04,\xCB
+231,\x11,\x04,\xCB
 232,\x00,\x02,\xCB
 233,\x00,\x02,\xCD
 234,\x00,\x02,\xCB
-235,\x11,\x04,Thank you
-236,\x11,\x04,for playing!
+235,\x11,\x02,"And you,"
+236,##&C794=\x11,\x02,\x20
 237,\x00,\x02,\xCB
-238,\x00,\x02,\xCC
+238,\x00,\x02,\xCB
+239,\x00,\x02,\xCB
+240,\x00,\x02,\xCD
+241,\x00,\x02,\xCB
+242,\x11,\x04,Thank you
+243,\x11,\x04,for playing!
+244,\x00,\x02,\xCB
+245,\x00,\x02,\xCC
