@@ -188,11 +188,11 @@
 186,0x90174,チ-ム全体の 「えんかく」の<CD>のうリょくちが <&BUF00>アップした!<S46><*04>,Team's <f02>Ranged Affinity <f00>increased by <&BUF00>!<S46><*04>
 187,0x90176,ロボトルの はんてい時間を<CD>みじかくした!<S46><*04>,Judgement Time shortened!<S46><*04>
 188,0x90178,ロボトルの はんてい時間を長くした!<S46><*04>,Judgement Time extended!<S46><*04>
-189,0x9017a,全体に こんらんの マイナス症状!<CD>攻撃のあいてが さだまらない!<S46><*04>,Minus Status Confusion on all!<S46><CF>Actions and targets will be randomized!<S46><*04>
+189,0x9017a,全体に こんらんの マイナス症状!<CD>攻撃のあいてが さだまらない!<S46><*04>,Minus Status Confusion on all!<CF>Actions and targets will be randomized!<S46><*04>
 190,0x9017c,全メダロットに<CD>こんらんの マイナス症状!<S46><*04>,All Medarots inflicted with Minus Status Confusion!<S46><*04>
-191,0x9017e,こうがくの とくせいを えた!<CD>攻撃ダメ-ジが <&BUF00>ばいになる!<S46><*04>,Optics trait gained!<S46><CF>Attack damage increased <&BUF00> times!<S46><*04>
-192,0x90180,かやくの とくせいを えた!<CD>攻撃ぜったいめいちゅうと かんつう!<S46><*04>,Explosive trait gained!<S46><CF>Attacks always hit and pierce!<S46><*04>
-193,0x90182,じゅうリょくの とくせいを えた!<CD>攻撃せいこうちが <&BUF00>ばいになる!<S46><*04>,Gravity trait gained!<S46><CF>Attack success increased by <&BUF00> times!<S46><*04>
+191,0x9017e,こうがくの とくせいを えた!<CD>攻撃ダメ-ジが <&BUF00>ばいになる!<S46><*04>,Optics trait gained!<CF>Attack damage increased by <&BUF00> times!<S46><*04>
+192,0x90180,かやくの とくせいを えた!<CD>攻撃ぜったいめいちゅうと かんつう!<S46><*04>,Explosive trait gained!<CF>Attacks always hit and pierce!<S46><*04>
+193,0x90182,じゅうリょくの とくせいを えた!<CD>攻撃せいこうちが <&BUF00>ばいになる!<S46><*04>,Gravity trait gained!<CF>Attack success increased by <&BUF00> times!<S46><*04>
 194,0x90184,チ-ム全体の <&BUF00>パ-ツを かいふく!<S46><*04>,Repair all team parts!<S46><*04>
 195,0x90186,チ-ム全体の <&BUF00>パ-ツを ふっかつ!<S46><*04>,Recover all team parts!<S46><*04>
 196,0x90188,パ-ツの 攻撃ダメ-ジが<CD>全て <&BUF00>になる!<S46><*04>,All part damage will become <&BUF00>!<S46><*04>
