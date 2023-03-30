@@ -39,7 +39,7 @@ BattleLoadTextBuf01::
 
 SECTION "Load text for part damage 0C", ROMX[$5676], BANK[$0C]
 BattleLoadPartDamageNumber:: ;
-  LoadDamageNumberIntoBUF01 0C
+  LoadDamageNumberIntoBUF00 0C
 
   padend $56df
 
