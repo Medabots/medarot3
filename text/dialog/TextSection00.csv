@@ -66,25 +66,25 @@
 064,0x90080,行動にしっぱいした!<S46><*04>,Action failed!<S46><*04>
 065,0x90082,あいての攻撃から<CD>みかたを えんごします!<S46><*04>,Shielding allies from being attacked!<S46><*04>
 066,0x90084,トラップクリアによって<CD>トラップを セットできなかった!<S46><*04>,You can not set a trap due to Trap Clear!<S46><*04>
-067,0x90086,かくとうトラップを セットした!<CD>「なぐる」「がむしゃら」にダメ-ジ!<S46><*04>,<f02>Melee trap<f00> was set! <D3>Will trigger on melee attacks!<S46><*04>
-068,0x90088,しゃげきトラップを セットした!<CD>「うつ」「ねらいうち」にダメ-ジ!<S46><*04>,<f02>Shooting trap<f00> was set!<D3>Will trigger on shooting attacks!<S46><*04>
-069,0x9008a,メダフォ-スプラントを セットした!<CD>行動するたび メダフォ-スアップ!<S46><*04>,<f02>Medaforce Plant<f00> was set!<S46><D3>Actions will charge Medaforce!<S46><*04>
+067,0x90086,かくとうトラップを セットした!<CD>「なぐる」「がむしゃら」にダメ-ジ!<S46><*04>,<f02>Melee trap<f00> set!<D3>Triggers on melee attacks!<S46><*04>
+068,0x90088,しゃげきトラップを セットした!<CD>「うつ」「ねらいうち」にダメ-ジ!<S46><*04>,<f02>Shooting trap<f00> set!<D3>Triggers on ranged attacks!<S46><*04>
+069,0x9008a,メダフォ-スプラントを セットした!<CD>行動するたび メダフォ-スアップ!<S46><*04>,<f02>Medaforce Plant<f00> was set!<D3>Actions will charge Medaforce!<S46><*04>
 070,0x9008c,あいての さくてきを 下げた!<S46><*04>,<f02>Scan<f00> parameter was reduced!<S46><*04>
-071,0x9008e,さくてきクリアを セットした!<CD>あいての さくてきを ぼうがいする!<S46><*04>,<f02>Scan Clear<f00> has been set!<D3>Scan effect jammed!<S46><*04>
+071,0x9008e,さくてきクリアを セットした!<CD>あいての さくてきを ぼうがいする!<S46><*04>,<f02>Scan Clear<f00> activated!<D3>Scans have been jammed!<S46><*04>
 072,0x90090,あいての いんペいを 下げた!<S46><*04>,<f02>Conceal<f00> parameter was reduced!<S46><*04>
-073,0x90092,いんペいクリアを セットした!<CD>あいての いんペいを ぼうがいする!<S46><*04>,<f02>Conceal Clea<f00>r has been set!<D3>Conceal effects jammed!<S46><*04>
-074,0x90094,攻撃クリアを セットした!<CD>1回だけ 攻撃を むこうにする!<S46><*04>,<f02>Attack Clear<f00> has been set!<D3>One attack will be nullified!<S46><*04>
-075,0x90096,ファ-ストエイドを セットした!<CD>こわれた パ-ツを ふっかつさせる!<S46><*04>,<f02>First Aid<f00> was set!<D3>Broken parts will be restored!<S46><*04>
-076,0x90098,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,Cross Attack was set! Cross<D3>Attack Fire is ready for use!<S46><*04>
-077,0x9009a,かいじょする トラップが なかった!<S46><*04>,No traps for clearing!<S46><*04>
-078,0x9009c,トラップに ダメ-ジをあたえた!<S46><*04>,Did damage to the trap!<S46><*04>
-079,0x9009e,トラップをクリアした!<S46><*04>,Trap was cleared!<S46><*04>
-080,0x900a0,トラップクリアを セットした!<CD>あいては トラップをせっちできない!<S46><*04>,<f02>Trap Clear<f00> was set!<D3>Traps can not be set!<S46><*04>
-081,0x900a2,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,Cross Attack was set! Cross<D3>Attack Fire is ready for use!<S46><*04>
-082,0x900a4,さくてきクリアに ぼうがいされて<CD>さくてきに しっぱいした!<S46><*04>,Scan Clear is jamming. <D3>Scan effect failed!<S46><*04>
-083,0x900a6,チ-ム全体の さくてきアップ!<CD>攻撃が 当リやすくなった!<S46><*04>,Team's scan parameter up!<D3>Success rate is improved!<S46><*04>
-084,0x900a8,いんペいクリアに ぼうがいされて<CD>いんペいに しっぱいした!<S46><*04>,Conceal Clear is jamming. <D3>Conceal effect failed!<S46><*04>
-085,0x900aa,<&BUF02>の いんペいアップ!<CD>攻撃を よけやすくなった!<S46><*04>,<&BUF02>'s Conceal up!<D3>More likely to dodge!<S46><*04>
+073,0x90092,いんペいクリアを セットした!<CD>あいての いんペいを ぼうがいする!<S46><*04>,<f02>Conceal Clea<f00>r activated!<D3>Conceal effects are jammed!<S46><*04>
+074,0x90094,攻撃クリアを セットした!<CD>1回だけ 攻撃を むこうにする!<S46><*04>,<f02>Attack Clear<f00> activated!<D3>One attack will be nullified!<S46><*04>
+075,0x90096,ファ-ストエイドを セットした!<CD>こわれた パ-ツを ふっかつさせる!<S46><*04>,<f02>First Aid<f00> activated!<D3>Broken parts will be restored!<S46><*04>
+076,0x90098,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,<f02>Cross Attack<f00> activated!<D3><f02>Cross Attack Fire<f00> is ready!<S46><*04>
+077,0x9009a,かいじょする トラップが なかった!<S46><*04>,No traps to clear!<S46><*04>
+078,0x9009c,トラップに ダメ-ジをあたえた!<S46><*04>,Damaged the trap!<S46><*04>
+079,0x9009e,トラップをクリアした!<S46><*04>,Trap cleared!<S46><*04>
+080,0x900a0,トラップクリアを セットした!<CD>あいては トラップをせっちできない!<S46><*04>,<f02>Trap Clear<f00> activated!<D3>Traps can not be set!<S46><*04>
+081,0x900a2,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,<f02>Cross Attack<f00> activated!<D3><f02>Cross Attack Fire<f00> is ready!<S46><*04>
+082,0x900a4,さくてきクリアに ぼうがいされて<CD>さくてきに しっぱいした!<S46><*04>,<f02>Scan Clear <f00>is active! <D3>Scan effect failed!<S46><*04>
+083,0x900a6,チ-ム全体の さくてきアップ!<CD>攻撃が 当リやすくなった!<S46><*04>,Team's scan parameter up!<D3>Success rate is increased!<S46><*04>
+084,0x900a8,いんペいクリアに ぼうがいされて<CD>いんペいに しっぱいした!<S46><*04>,<f02>Conceal Clear<f00> is jamming. <D3>Conceal effect failed!<S46><*04>
+085,0x900aa,<&BUF02>の いんペいアップ!<CD>攻撃を よけやすくなった!<S46><*04>,<&BUF02>'s Conceal up!<D3>Dodge chance improved!<S46><*04>
 086,0x900ac,マイナス症状に ダメ-ジ!<S46><*04>,Does damage to Minus Status!<S46><*04>
 087,0x900ae,マイナス症状を クリアした!<S46><*04>,Minus Status effect was removed!<S46><*04>
 088,0x900b0,マイナス症状クリアを かけた!<CD>マイナス症状に かからない!<S46><*04>,Minus Status Clear is set!<D3>Prevent Minus Status from being affected!<S46><*04>
@@ -92,13 +92,13 @@
 090,0x900b4,マイナス症状クリアを クリアした!<S46><*04>,Minus Status Clear was removed!<S46><*04>
 091,0x900b6,プラス症状に ダメ-ジ!<S46><*04>,Does damage to Plus Status!<S46><*04>
 092,0x900b8,プラス症状を クリアした!<S46><*04>,Plus Status effect was removed!<S46><*04>
-093,0x900ba,プラス症状クリアを かけた!<CD>プラス症状に かからない!<S46><*04>,Plus Status Clear is set!<D3>Prevent Plus Status from being affected!<S46><*04>
+093,0x900ba,プラス症状クリアを かけた!<CD>プラス症状に かからない!<S46><*04>,<f02>Plus Status Clear<f00> activated!<D3>Prevents the <f02>Plus<f00> status!<S46><*04>
 094,0x900bc,プラス症状クリアに ダメ-ジ!<S46><*04>,Does damage to Plus Status Clear!<S46><*04>
 095,0x900be,プラス症状クリアを クリアした!<S46><*04>,Plus Status Clear was removed!<S46><*04>
 096,0x900c0,症状むこうによって ぼうがいされた!<S46><*04>,Jammed by Negate Status!<S46><*04>
 097,0x900c2,フィ-ルドを せいぎょした!<CD>メダフォ-スが 使えなくなった!<S46><*04>,Force Control!<D3>Unable to use Medaforce going forward!<S46><*04>
 098,0x900c4,フィ-ルドの せいぎょを 弱めた!<S46><*04>,Force Control is weakened!<S46><*04>
-099,0x900c6,フィ-ルドの せいぎょを かいじょ!<CD>メダフォ-スを 使うことができる!<S46><*04>,Removed Force Control!<D3>Now able to use Medaforce!<S46><*04>
+099,0x900c6,フィ-ルドの せいぎょを かいじょ!<CD>メダフォ-スを 使うことができる!<S46><*04>,<f02>Force Control<f00> removed!<D3>Medaforce is now available!<S46><*04>
 100,0x900c8,<&BUF02>の メダフォ-スが<CD><&BUF00>ポイント アップした!<S46><*04>,<&BUF02>'s Medaforce gauge is increased by <&BUF00>!<S46><*04>
 101,0x900ca,うばいとる メダフォ-スがない!<S46><*04>,No Medaforce gauge to absorb!<S46><*04>
 102,0x900cc,<&BUF02>の メダフォ-スを<CD><&BUF00>ポイント きゅうしゅうした!<S46><*04>,<&BUF02>'s Medaforce gauge was absorbed by <&BUF00>!<S46><*04>
