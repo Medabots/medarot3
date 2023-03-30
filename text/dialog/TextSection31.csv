@@ -170,7 +170,7 @@ UNUSED00#kuwagata,UNUSED00,"<@LL,00,05>うるさいな- い-じゃないか<CD>�
 153,0x230132,"<@LL,00,00>あ- 行っちゃった...でも<CD>ポッドなしで どうやって...?",
 154,0x230134,"<@LL,00,00>あ? ポッドの まどわくに 何か<CD>ひっかかってる こ これは!?",
 155,0x230136,"<@LL,00,00>空っぽだ ざんねん",
-156,0x230138,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは まじょのミルキ-で-す!<CF><D1>今では まじめに はたらいて<CD>つうしんギャル やってま-っす!<CF><D1>つうしんで パ-ツや メダルの<CD>やリとリとか お友だちとの<CF><D1>つうしんロボトルとかが<CD>できちゃいま-っす!","<@RL,0A,02>Hello! Is everyone doing okay?<D3>I'm the communication cutie ♥<CF><D1>At this communication<D3>terminal, <f02>Mille-Mille<f00> you can<CF><D1>trade parts, medals, and<D3>robottle your friends!"
+156,0x230138,"<@RL,0A,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは まじょのミルキ-で-す!<CF><D1>今では まじめに はたらいて<CD>つうしんギャル やってま-っす!<CF><D1>つうしんで パ-ツや メダルの<CD>やリとリとか お友だちとの<CF><D1>つうしんロボトルとかが<CD>できちゃいま-っす!","<@RL,0A,02>Hello! Is everyone doing okay?<D3>I'm the communication cutie ♥<CF><D1>At this communication<D3>terminal, <f02>Mille-Mille<f00> you can<CF><D1>trade parts, medals, and<D3>robattle your friends!"
 157,0x23013a,"<@RL,0A,02>それじゃ つうしん いってみる-?<*04>","<@RL,0A,02>Do you want to link?<*04>"
 158,0x23013c,"<@RL,0A,02>まったね-♥","<@RL,0A,02>Ok bye~♥"
 159,0x23013e,"<@RL,0A,00>ふ-ん やらないんだ-<CF><D1><@RL,0A,02>それじゃ まったね-♥","<@RL,0A,00>Hmm, you don't wanna?<CF><@RL,0A,02>Ok, see you next time then ♥"

@@ -1,38 +1,38 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x94000,男型ティンペットを手に入れた!,Received a male tinpet!
 001,0x94002,女型ティンペットを手に入れた!,Received a female tinpet!
-002,0x94004,あっ!<CD>これいじょう 持てないや!<CF>ティンペットをあきらめた!,Oops! You can't carry<D3>any more Tinpets!<CF>You gave up the Tinpet.
-003,0x94006,メダロットが<CD>1体も 租まれていません!<CF>メダロットを 租んでください,You need at least one fully<D3>assembled Medarot!<CF>Please assemble one of your<D3>Medarots.
-004,0x94008,あっ!<CD>このメダルは すでに持っているぞ!<CF>メダルをあきらめた!,Oops! You already have this<D3>Medal! You don't need it!<CF>You gave up the Medal.
+002,0x94004,あっ!<CD>これいじょう 持てないや!<CF>ティンペットをあきらめた!,Oops! You can't carry any more Tinpets!<CF>You gave up the Tinpet.
+003,0x94006,メダロットが<CD>1体も 租まれていません!<CF>メダロットを 租んでください,You need at least one fully assembled Medarot!<CF>Please assemble one of your Medarots.
+004,0x94008,あっ!<CD>このメダルは すでに持っているぞ!<CF>メダルをあきらめた!,Oops!<D3>You already have this Medal!<CF>You gave up the Medal!
 005,0x9400a,デ-タをセ-ブしました!<S1E><*04>,Game data saved!<S1E><*04>
-006,0x9400c,ロボロボメダルを使いますか?<*04>,Use a Roborobo medal?<*04>
+006,0x9400c,ロボロボメダルを使いますか?<*04>,Use a RoboRobo medal?<*04>
 007,0x9400e,せんとうから にげられた!!<*02>,Escaped from the battle!<*02>
 008,0x94010,「<&BUF06>」を てにいれた,<f02><&BUF06><f00> obtained.
 009,0x94012,「<&BUF06>」が なくなった,<f02><&BUF06><f00> was lost.
 010,0x94014,これいじょう もてない!,Can't hold any more!
-011,0x94016,<&BUF03>は<CD>「<&BUF06>」を もってない,"<&BUF03> does not have<D3>""<f02><&BUF06><f00>""."
-012,0x94018,<&BUF03>は<CD><&BUF06>0¥を てにいれた,<&BUF03> got<D3><&BUF06>0¥.
+011,0x94016,<&BUF03>は<CD>「<&BUF06>」を もってない,<&BUF03> does not have <f02><&BUF06><f00>.
+012,0x94018,<&BUF03>は<CD><&BUF06>0¥を てにいれた,<&BUF03> got <&BUF06>0¥.
 013,0x9401a,<&BUF06>0¥ なくなった,<&BUF06>0¥ was lost.
 014,0x9401c,<&BUF06>を てにいれた,Received <&BUF06>.
 015,0x9401e,<&BUF06>が なくなった,<&BUF06> was lost.
 016,0x94020,パシャ!<*04>,<f03>Click!<f00><*04>
 017,0x94022,パシャ パシャ!<*04>,<f03>Click click!<f00><*04>
-018,0x94024,「<&BUF06>」メダルを<CD>てにいれた,Received the <f02><&BUF06><f00><D3>medal.
+018,0x94024,「<&BUF06>」メダルを<CD>てにいれた,Received the <f02><&BUF06><f00> medal.
 019,0x94026,このメダルは すでに もっている,I already have that medal.
-020,0x94028,あたまパ-ツ<CD>「<&BUF06>」を てにいれた,Received the head part<D3><f02><&BUF06><f00>.
-021,0x9402a,みぎうでパ-ツ<CD>「<&BUF06>」を てにいれた,Received the right arm part<D3><f02><&BUF06><f00>.
-022,0x9402c,ひだリうでパ-ツ<CD>「<&BUF06>」を てにいれた,Received the left arm part<D3><f02><&BUF06><f00>.
-023,0x9402e,きゃくぶパ-ツ<CD>「<&BUF06>」を てにいれた,Received leg part<D3><f02><&BUF06><f00>.
-024,0x94030,このパ-ツは<CD>これいじょう もてません,I don't have this part<D3>anymore.
-025,0x94032,あたまパ-ツ<CD>「<&BUF06>」が なくなった,Head part <f02><&BUF06><f00><D3>was lost.
-026,0x94034,みぎうでパ-ツ<CD>「<&BUF06>」が なくなった,Right arm part <f02><&BUF06><D3><f00>was lost.
-027,0x94036,ひだリうでパ-ツ<CD>「<&BUF06>」が なくなった,Left arm part <f02><&BUF06><D3><f00>was lost.
-028,0x94038,きゃくぶパ-ツ<CD>「<&BUF06>」が なくなった,Leg part <f02><&BUF06><D3><f00>was lost.
-029,0x9403a,<&BUF03>は あたまパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the <D3>head part <f02><&BUF06><f00>.
-030,0x9403c,<&BUF03>は みぎうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the<D3>right arm part <f02><&BUF06><f00>.
-031,0x9403e,<&BUF03>は ひだリうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the <D3>left arm part <f02><&BUF06><f00>.
-032,0x94040,<&BUF03>は きゃくぶパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the<D3>leg part <f02><&BUF06><f00>.
-033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,Obtained the <f02><&BUF06><f00><D3>Medalia!
+020,0x94028,あたまパ-ツ<CD>「<&BUF06>」を てにいれた,Received the head part <f02><&BUF06><f00>.
+021,0x9402a,みぎうでパ-ツ<CD>「<&BUF06>」を てにいれた,Received the right arm part <f02><&BUF06><f00>.
+022,0x9402c,ひだリうでパ-ツ<CD>「<&BUF06>」を てにいれた,Received the left arm part <f02><&BUF06><f00>.
+023,0x9402e,きゃくぶパ-ツ<CD>「<&BUF06>」を てにいれた,Received leg part <f02><&BUF06><f00>.
+024,0x94030,このパ-ツは<CD>これいじょう もてません,I don't have this part anymore.
+025,0x94032,あたまパ-ツ<CD>「<&BUF06>」が なくなった,Head part <f02><&BUF06><f00> was lost.
+026,0x94034,みぎうでパ-ツ<CD>「<&BUF06>」が なくなった,Right arm part <f02><&BUF06> <f00>was lost.
+027,0x94036,ひだリうでパ-ツ<CD>「<&BUF06>」が なくなった,Left arm part <f02><&BUF06> <f00>was lost.
+028,0x94038,きゃくぶパ-ツ<CD>「<&BUF06>」が なくなった,Leg part <f02><&BUF06> <f00>was lost.
+029,0x9403a,<&BUF03>は あたまパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the head part <f02><&BUF06><f00>.
+030,0x9403c,<&BUF03>は みぎうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the right arm part <f02><&BUF06><f00>.
+031,0x9403e,<&BUF03>は ひだリうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the left arm part <f02><&BUF06><f00>.
+032,0x94040,<&BUF03>は きゃくぶパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the leg part <f02><&BUF06><f00>.
+033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,Obtained the <f02><&BUF06><f00> Medalia!
 034,0x94044,何だっ!?<*02>,What was...!?<*02>
 035,0x94062,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?<*02>,"Sorry, foolish humans-<D3>But I took your data!<CF>Wh... who is that!?<CF>My name is Electra!<D3>Humans are my enemy!<CF>What did you say!?<*02>"
 036,0x94064,...あ! まてっ!<*02>,...Hey! Wait!<*02>
@@ -51,18 +51,18 @@
 049,0x9407e,<SFF>「ランデブ-」<CD>宇宙ステ-ションだよ<*02>,<SFF><f02>Rendezvous<f00><f01> - A space station.<f00><*02>
 050,0x94080,<SFF>「ちきゅう」<CD>ぼくたちの すむ 小さな 青い星<*02>,<SFF><f02>Earth<f00><f01> - Our small blue planet.<f00><*02>
 051,0x94082,ゲ-ムの デ-タを 全て けします<CD>よろしいですか?<*04>,This will delete all your data.<D3>Are you sure?<*04>
-052,0x94092,もういちど はじめから<CD>ゲ-ムを プレイしてください<*02>,Play the game from the start<D3>once more.<*02>
-053,0x94094,まちがって けさないように<CD>ちゅういしてください<*02>,Be careful not to accidentally<D3>delete your save data.<*02>
-054,0x94096,<SFF>全国の ロボトルファンのみなさん<CD>おまたせ いたしました!<*04>,"<SFF>Fans from around the<D3>country, sorry for the wait!<*04>"
-055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from<D3>the Robattle Association.<*04>
+052,0x94092,もういちど はじめから<CD>ゲ-ムを プレイしてください<*02>,Play the game from the start once more.<*02>
+053,0x94094,まちがって けさないように<CD>ちゅういしてください<*02>,Be careful not to accidentally delete your save data.<*02>
+054,0x94096,<SFF>全国の ロボトルファンのみなさん<CD>おまたせ いたしました!<*04>,"<SFF>Fans from around the country, sorry for the wait!<*04>"
+055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from the Robattle Association.<*04>
 056,0x940c4,<SFF>ミスタ-.うるちです!<*04>,<SFF>Mr. Uruchi!<*04>
-057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, Robattle Fight<D3>your way up to space, kids!<*04>"
-058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-to-one<D3>Robattle Fight!<*04>
+057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, Robattle Fight your way up to space, kids!<*04>"
+058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-on-one Robattle Fight!<*04>
 059,0x940ca,<SFF>おおっ!!<CD>のぞむところだっ!<*04>,<SFF>Yeah!! Bring it on!!<*04>
-060,0x940cc,<SFF>え!? ちょっと ちょっと!<CD>そんな 勝手にっ...!<*04>,"<SFF>Huh? Wait wait, I'm the one<D3>that's supposed to- uh.....<*04>"
+060,0x940cc,<SFF>え!? ちょっと ちょっと!<CD>そんな 勝手にっ...!<*04>,"<SFF>Huh? Wait wait, I'm the one that's supposed to- uh.....<*04>"
 061,0x940ce,<SFF>ロボトル- ファイト-!!<*04>,<SFF>Robattle fight!!<*04>
 062,0x940d0,<SFF>何? この歌?<*04>,<SFF>What? This song...<*04>
-063,0x940d2,<SFF>聞いたことのない メロディ-だ<*04>,<SFF>I've never heard a<D3>melody like this before.<*04>
+063,0x940d2,<SFF>聞いたことのない メロディ-だ<*04>,<SFF>I've never heard a melody like this before.<*04>
 064,0x940d4,<SFF>だけど...とっても<CD>やさしい 歌<*04>,<SFF>But... it's so lovely.<*04>
 065,0x940d6,<SFF>おもしれ-じゃね-か!<CD>うけて 立ってやる! 行くぞ!<*04>,"<SFF>Heh, this could be fun!<D3>I'll take you on! Let's go!<*04>"
 066,0x940d8,<SFF>面白い では お前の力<CD>貝せてみるがいい!<*04>,<SFF>Interesting... All right then.<D3>Show me your power!<*04>
@@ -77,14 +77,14 @@
 075,0x940ea,<SFF>まてよ おわっ!!<*04>,"<SFF>Wait, woah!!<*04>"
 076,0x940ec,<SFF>うふふ そんなに あわてたら<CD>あぶないですわ<*04>,"<SFF>Uhuhu, it's dangerous to rush around.<*04>"
 077,0x940ee,<SFF>あ! きみは!<*04>,<SFF>Ah! It's you!<*04>
-078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from<D3>Sky TV's Medarot satellite,<CF><f02>Little Terakado<f00> brings you<CF><f02>Medarot Weekly<f00>!<CF>We welcome today's guest,<D3>Mr. Yuuki Nimousaku!<*03>"
-079,0x94102,やあ よい子の メダロッタ-たち<CD>元気かい?<*03>,Yo! How all you <D3>Medarotters doing?<*03>
-080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,"I have a major scoop<D3>for all of you today.<CF>Sponsored by the Medarot<D3>Company, a nationwide<CF>Elementary Robattle Tourney,<D3>the <f02>Medalympics<f00> will be held.<CF>This will decide the strongest<D3>schoolkid medarotter team,<CF>To be crowned National<D3>Elementary Robattle Champion!<CF>The winner gets a trip into<D3>space to boot!<CF>Come and challenge it yourself<D3>if you're watching this!<*03>"
-081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 medarotters<D3>per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be<D3>announced via the schools<*03>
-082,0x94108,ティンペットは メダロットの<CD>「ほね」に あたるものである<CF>男型と 女型の2しゅるいあリ<CF>それぞれ せんようの パ-ツしか<CD>そうびできない<*02>,"The tinpet is the ""<f02>skeleton<f00>"" <D3>of the Medarot.<CF>There are two types. <D3>Male and female tinpets.<CF>Only parts of the same type <D3>fit the tinpet.<*02>"
-083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right<D3>arm, a left arm, and legs.<CF>Four different types <D3>of parts to install.<*02>"
-084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,Medarots gain intellect that<D3>depends on the inserted medal.<*04>
-085,0x9410e,さまざまな こせいを もった<CD>メダロットたちが かんせいする!<*02>,There are all kinds of<D3>Medarots with all sorts<CF>of personalities!<*02>
+078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from Sky TV's Medarot satellite...<CF><f02>Little Terakado<f00> brings you...<CF><f02>Medarot Weekly<f00>!<CF>We welcome today's guest, Mr. Yuuki Nimousaku!<*03>"
+079,0x94102,やあ よい子の メダロッタ-たち<CD>元気かい?<*03>,Yo! How're all you Medarotters doing?<*03>
+080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,"I have a major scoop for all of you today.<CF>Courtesy of the Medarot Company: A nationwide Elementary Robattle Tournament, the <f02>Medalympics<f00> will be held!<CF>This will decide the strongest schoolkid medarotter team,<CF>To be crowned National Elementary Robattle Champion!<CF>The winner gets a trip into space to boot!<CF>Come and challenge it yourself if you're watching this!<*03>"
+081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 medarotters per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be announced via the schools<*03>
+082,0x94108,ティンペットは メダロットの<CD>「ほね」に あたるものである<CF>男型と 女型の2しゅるいあリ<CF>それぞれ せんようの パ-ツしか<CD>そうびできない<*02>,The tinpet is the <f02>skeleton <f00>of the Medarot.<CF>There are two types: Male and female tinpets.<CF>Only parts of the same type fit the tinpet.<*02>
+083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right arm, a left arm, and legs.<CF>Four different types of parts to install.<*02>"
+084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,A Medarot's personality depends on the inserted Medal.<*04>
+085,0x9410e,さまざまな こせいを もった<CD>メダロットたちが かんせいする!<*02>,There are all kinds of Medarots with all sorts of personalities!<*02>
 086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF><f02>B1F<f00><D3><f01>Go to <f00><f02>Heaven's Tower?<f00><*04>
 087,0x94112,<SFF>1F<CD>エントランスに 行く?<*04>,<SFF><f02>1F<f00><D3><f01>Go to the <f00><f02>entrance<f00>?<*04>
 088,0x94114,<SFF>2F<CD>オフィス1に 行く?<*04>,<SFF><f02>2F<f00><D3><f01>Go to <f00><f02>office 1<f00>?<*04>
@@ -101,27 +101,27 @@
 099,0x9412a,<SFF>13F<CD>エアロポ-トに 行く?<*04>,<SFF><f02>13F<f00><D3><f01>Go to the <f00><f02>Aero Port<f00>?<*04>
 100,0x9412c,<SFF>14F<CD>スタ-ゲ-トに 行く?<*04>,<SFF><f02>14F<f00><D3><f01>Go to <f00><f02>Star Gate<f00>?<*04>
 101,0x9412e,む-...分かリました!<CD>メダリンピックの<CF>ル-ルとは ちがいますが<CD>わたくし ミスタ- うるち!<CF>少年たちの あつき たましいに<CD>こたえまして<CF>あらためて レフェリ-を<CD>つとめさせて いただきます!<CF>それでは...<*03>,"Hmm... I got it! <CF>The rules of the Medalympics may say otherwise, but in answer to the passionate souls of these young boys, I, Mr. Uruchi, will be the referee once more!<CF>Now... <*03>"
-102,0x94130,フギャッ フギャッ<CD>ウウ...アヴ...<CF>なき声が 止まったわ<CD>どうして?<CF>なく子を おちつかせるのは<CD>やっぱリ 子もリ歌が 1番なんだね!<*02>,"Wah! Wah!<D3>Urgh... urg....<CF>Oh, it stopped crying.<D3>But why?<CF>I guess a lullaby really is the<D3>best way to calm a crying kid!<*02>"
-103,0x94132,これはっ!<CF>そう ブラックカブトさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックビ-トルだ<CF>どうだい つよそうだろう?<CF>ふざけんじゃね-よ!<CF>オレが ニセモノなんかに<CD>まけるかよっ!<CF>勝った方が ほんものよね<CF>つまリ アタシが 勝てば<CD>アタシが ほんものってわけ<*02>,"Hey that's-!<CF>That's right, a Black Kabuto.<CF>The Black Beetle model is the<D3>antithesis of your <&BUF07>.<CF>So,what do you think?<D3>Sounds pretty strong, no?<CF>Get real!<CF>There's no way I'm losing to<D3>a fake like her!<CF>All right, whoever wins<D3>is the real thing then.<CF>In other words, if I win,<D3>I'll be the real deal!<*02>"
+102,0x94130,フギャッ フギャッ<CD>ウウ...アヴ...<CF>なき声が 止まったわ<CD>どうして?<CF>なく子を おちつかせるのは<CD>やっぱリ 子もリ歌が 1番なんだね!<*02>,"Wah! Wah!<D3>Urgh... urg....<CF>Oh, it stopped crying.<D3>But why?<CF>I guess a lullaby really is the best way to calm a crying kid!<*02>"
+103,0x94132,これはっ!<CF>そう ブラックカブトさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックビ-トルだ<CF>どうだい つよそうだろう?<CF>ふざけんじゃね-よ!<CF>オレが ニセモノなんかに<CD>まけるかよっ!<CF>勝った方が ほんものよね<CF>つまリ アタシが 勝てば<CD>アタシが ほんものってわけ<*02>,"Hey that's-!<CF>That's right, a Black Kabuto.<CF>The Black Beetle model is the antithesis of your <&BUF07>.<CF>So,what do you think?<D3>Sounds pretty strong, no?<CF>Get real!<CF>There's no way I'm losing to a fake like her!<CF>All right, whoever wins is the real thing then.<CF>In other words, if I win, I'll be the real deal!<*02>"
 104,0x94134,これはっ!<CF>そう ブラッククワガタさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックスタッグだ<CF>どうだい つよそうだろう?<CF>にせものが このおれに<CD>勝てると 思っているのか?<CF>勝った方が ほんものよ<CF>わたしが勝てば<CD>ほんものは わたし<*02>,"That's--! <CF>Yes, a Black Kuwagata.<CF>The Black Stag Medarot is the antithesis of your <&BUF07>. <CF>Doesn't that sound strong?<CF>You, a fake, think you can win against me? <CF>The real one will be the winner! <CF>So when I beat you, the real one will be me!<*02>"
 105,0x94136,レア.メダル.貝-っけ♥<CF>な 何だ? こいつ!<CD>とつぜん あらわれやがって!<CF>はねの ある 人間?<CF>キレイ...♥<CF>レア.メダル<CD>また.元のニンゲンに.もどってる<CF>うわき者.ね!<CF>だれがだっ!<CF>わたしが.きょうみ.あるのは<CD>レア.メダルの.お前だけ!<CF>お前が.勝てば.あとは<CD>貝のがし.たげる<CF>ほんとだな!<CF>イワノイ! カガミヤマ!<CD>お前らは 先に行け!<*02>,"Search - rare - medals♥<CF>W-what?! Where'd this one come from all of a sudden?!<CF>A human with wings?<CF>Pretty...♥<CF>Rare - medal - turning back - to human.<CF>You're fickle, aren't you?<CF>Who are you?!<CF>I only - like you - with rare medals!<CF>If you win - I'll look away.<CF>That's the truth!<CF>Iwanoi! Kagamiyama! You guys go ahead!<*02>"
 106,0x94138,はははははっ お前は わざわざ<CD>わたしの 元まで<CF>わたしの 子どもたちを<CD>はこんできたと いうわけだ!<CF>目ざめよ わが しもベたち!<CF>ブラックデビルと おそれられた<CD>わたしの力を 貝せてやろう<*02>,"Hahahahaha! You made it all the way here, to me! <CF>That must be how my children were brought here!<CF>Awake, my servant!<CF>I'll show you my power with the fearful Black Devil!<*02>"
-107,0x9413a,しんわの本とかに のってる<CD>あくまと そっくリだ!<CF>むかしの 人は<CD>きょだいな 力を もった<CF>マザ-メダロットの すがたを貝て<CF>「あくま」って名前を つけて<CD>おそれたんだな<*02>,"It's just like the ""<f02>demon<f00>""<D3>from the legends!<CF>Long ago, mankind wielded a<D3>great power.<CF>When they saw the Mother<D3>Medarot, they feared her and<CF>called her a ""<f02>demon.<f00>""<*02>"
+107,0x9413a,しんわの本とかに のってる<CD>あくまと そっくリだ!<CF>むかしの 人は<CD>きょだいな 力を もった<CF>マザ-メダロットの すがたを貝て<CF>「あくま」って名前を つけて<CD>おそれたんだな<*02>,"It's just like the <f02>demon<f00> from the legends!<CF>Long ago, mankind wielded a great power.<CF>When they saw the Mother Medarot, they feared her and called her a <f02>demon<f00>.<*02>"
 108,0x9413c,...考えてみれば<CD><&BUF07>が<CF>ぼくの 言うこと 聞かなかったのも<CD>けんかばかリ してたのも<CF>あいつが レアメダルだったから<CD>なんだよな<CF>だけど その おかげで ぼくは<CD>大切な...本当に 大切なものを<CF>手に入れることが できたんだ<CF>お前に 会えて よかった<CD>かけがえのない ぼくの パ-トナ-<CF>...口に出しては<CD>言えないけどね!<*02>,"...When I really think about it, <&BUF07> never listens to the things I say, and does nothing but quarrel.<CF>I suppose it's 'cause of his rare medal, but because of that I was able to get something important... really important.<CF>I met you, my irreplaceable partner.<CF>I just can't put it into words!<*02>"
-109,0x9413e,わあ...ちきゅうだ きれいだなぁ<CD>青くて 小さくて ほうせきみたいだ<CF>あそこに ぼくらが すんでるなんて<CD>何だか しんじられないよ<CF>本当に きれいだ...<*02>,"Woah... it's Earth!<D3>It looks so pretty!<CF>It looks like a small blue jewel.<D3>It's almost hard to believe we<CF>Live down there.<D3>Wow, it really is pretty...<*02><D3>"
+109,0x9413e,わあ...ちきゅうだ きれいだなぁ<CD>青くて 小さくて ほうせきみたいだ<CF>あそこに ぼくらが すんでるなんて<CD>何だか しんじられないよ<CF>本当に きれいだ...<*02>,Woah... it's Earth!<D3>It looks so pretty!<CF>It looks like a small blue jewel.<D3>It's almost hard to believe we live down there.<CF>It's so pretty...<*02>
 110,0x94140,いらっしゃいませ!<CD>こちらは ペイントショップです<*04>,Welcome to the Paint Shop!<*04>
 111,0x94142,メニュ-を 選択してください<*04>,Please select a menu.<*04>
-112,0x94144,メダロットを ペイントするには<CD>100¥かかリます<CF>お金が 足リません!,Paiting a Medarot costs ¥100.<CF>You do not have enough money!
-113,0x94146,ペイントされたメダロットが<CD>あリません!,You do not have a painted<D3>Medarot!
-114,0x94148,色を かえたい メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to<D3>paint over<*04>
-115,0x9414a,<NOTERM:ペイントしますか?<CD>エ>,Would you like to paint<D3>this one? <*04>
-116,0x9414c,左右キ-で 色を 選択してください<*04>,Please select the right <D3>and left color.<*04>
-117,0x9414e,この色で よろしいですか?<*04>,Are you sure you want<D3>this color?<*04>
-118,0x94150,ペイントは 100¥かかリます<CD>この色で よろしいですか?<*04>,Paint costs 100¥. <D3>Is this the color you want?<*04>
+112,0x94144,メダロットを ペイントするには<CD>100¥かかリます<CF>お金が 足リません!,Painting a Medarot costs ¥100.<CF>You do not have enough money!
+113,0x94146,ペイントされたメダロットが<CD>あリません!,You do not have a painted Medarot!
+114,0x94148,色を かえたい メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to paint over.<*04>
+115,0x9414a,<NOTERM:ペイントしますか?<CD>エ>,Would you like to paint this one? <*04>
+116,0x9414c,左右キ-で 色を 選択してください<*04>,Please select the right and left color.<*04>
+117,0x9414e,この色で よろしいですか?<*04>,Are you sure you want this color?<*04>
+118,0x94150,ペイントは 100¥かかリます<CD>この色で よろしいですか?<*04>,Painting costs 100¥. <D3>Are you sure this is the color you want?<*04>
 119,0x94152,気に入ってもらえました?,"Well, do you like it?"
-120,0x94154,色をもどす メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to<D3>remove paint from<*04>
-121,0x94156,この メダロットの色を<CD>元に もどしても いいですか?<*04>,Are you sure you want this<D3>bot back to its original color?<*04>
-122,0x94158,この店では あなたのメダロットの色を<CD>ヘんこうすることが できます<CF>ふだんなら 頭パ-ツを 変えると<CD>メダロットの色も 変わリますが<CF>この店で ペイントした メダロットは<CD>メダルや パ-ツに かんけいなく<CF>ティンペットだけですら<CD>おきゃくさまの 選んだ色になリます<CF>ペイントには 100¥かかリますが<CD>とっても たのしいですよ!<CF>元の色に もどすのは いつでも<CD>お金は いただきませんから<CF>自分だけの メダロットチ-ムを<CD>ぜひ おたのしみください!,"This shop is used to change<D3>the colors of your Medarots.<CF>Usually the color matches the<D3>Medarot's head. At this shop,<CF>you can decide what color<D3>your bot will stay, no matter<CF>What Medal or parts it has.<D3>Paint costs 100¥, but it's<CF>really fun! Changing a bot<D3>back to its original color<CF>Is free. So feel free to make<D3>your own custom-made team!<CF>Make your Medarots your own,<D3>we look forward to seeing you!"
+120,0x94154,色をもどす メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to remove paint from<*04>
+121,0x94156,この メダロットの色を<CD>元に もどしても いいですか?<*04>,Are you sure you want this Medarot back to its original color?<*04>
+122,0x94158,この店では あなたのメダロットの色を<CD>ヘんこうすることが できます<CF>ふだんなら 頭パ-ツを 変えると<CD>メダロットの色も 変わリますが<CF>この店で ペイントした メダロットは<CD>メダルや パ-ツに かんけいなく<CF>ティンペットだけですら<CD>おきゃくさまの 選んだ色になリます<CF>ペイントには 100¥かかリますが<CD>とっても たのしいですよ!<CF>元の色に もどすのは いつでも<CD>お金は いただきませんから<CF>自分だけの メダロットチ-ムを<CD>ぜひ おたのしみください!,"This shop is used to change the colors of your Medarots.<CF>Usually the color matches the Medarot's head, but at this shop, you can decide what color your bot will stay, no matter what Medal or parts it has!<CF>Painting costs 100¥, but it's really fun!<CF>Changing a Medarot back to its original color is free.<CF>So feel free to make your own unique team!<CF>We look forward to serving you!"
 123,0x9415a,何だっ!?,What the...?
 124,0x9415c,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?,The data has been received. How unfortunate for you humans!<CF>Wha... who?!<CF>My name is Electra! You humans are my <f02>enemies<f00>!<CF>What?!
 125,0x9415e,...あ! まてっ!,...Hey! Wait!
@@ -142,10 +142,10 @@
 140,0x9417c,パスワ-ドを 入力してね♥<*04>,Input the password.♥<*04>
 141,0x9417e,パスワ-ドを ご入力ください<*04>,Kindly input the password.<*04>
 142,0x94180,パスワ-ドを 入力してくだサイ<*04>,Please input the password.<*04>
-143,0x94182,<&BUF04> を<CD>手に入れました!<CF>パスポイントが 1つ なくなった!<*03>,I'll give you <D3><&BUF04><CF>and I'll take away a <f02>Pass Point<f00>!<*03>
-144,0x94186,やったね♥ <&BUF04><CD>を 手に入れたわ<CF>パスポイントが 1つ なくなったわ♥<*03>,Yay! ♥ I'll give you<D3><&BUF04>!<CF>And I'll take away a Pass Point. ♥<*03>
-145,0x94188,おめでとうございます<CD><&BUF04> を さしあげます<CF>パスポイントが 1つ なくなリました<*03>,Congratulations. I'll give you<D3><&BUF04><CF>and take away a <f02>Pass Point<f00>.<*03>
-146,0x9418a,セイカイ! <&BUF04><CD>を アゲルヨ<CF>パスポイント 1マイナス!<*03>,<f03>Correct! I'll give you <&BUF04><CF>and take away a <f04>Pass Point<f03>!<f00><*03>
+143,0x94182,<&BUF04> を<CD>手に入れました!<CF>パスポイントが 1つ なくなった!<*03>,I'll give you <&BUF04> and I'll take away a <f02>Pass Point<f00>!<*03>
+144,0x94186,やったね♥ <&BUF04><CD>を 手に入れたわ<CF>パスポイントが 1つ なくなったわ♥<*03>,Yay! ♥ I'll give you <&BUF04>!<CF>I'll take away a Pass Point in exchange. ♥<*03>
+145,0x94188,おめでとうございます<CD><&BUF04> を さしあげます<CF>パスポイントが 1つ なくなリました<*03>,Congratulations. I'll give you <&BUF04> and take away a <f02>Pass Point<f00>.<*03>
+146,0x9418a,セイカイ! <&BUF04><CD>を アゲルヨ<CF>パスポイント 1マイナス!<*03>,<f03>Correct! I'll give you <&BUF04> and take away a <f04>Pass Point<f03>!<f00><*03>
 147,0x9418c,お金が 足リません<*04>,You don't have enough money.<*04>
 148,0x9418e,お金が 足リないよ<*04>,You don't have the money.<*04>
 149,0x94190,お金が 足リないようですね<*04>,Seems you don't have enough money.<*04>
@@ -162,18 +162,18 @@
 160,0x941a6,パスワ-ドを 入力してね♥<*04>,"Enter a password, okay? ♥<*04>"
 161,0x941a8,パスワ-ドを ご入力ください<*04>,Please input a password.<*04>
 162,0x941aa,パスワ-ドを 入力してくだサイ<*04>,<f03>Please enter a password.<f00><*04>
-163,0x941ac,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer,<D3>how may I help you?<*04>"
+163,0x941ac,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer, how may I help you?<*04>"
 164,0x941ae,<SFF>何に いたしますか?<CD>メニュ-を選んでね♥<*04>,"<SFF>How may I help you?<D3>Select with the menu, okay? ♥<*04>"
-165,0x941b0,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer,<D3>How may I help you?<*04>"
-166,0x941b2,<SFF>いらっしゃいマセ<CD>何ニ イタシマスカ?<*04>,"<SFF><f03>Welcome valued customer,<D3>How may I help you?<f00><*04>"
+165,0x941b0,<SFF>いらっしゃいませ<CD>何に いたしますか?<*04>,"<SFF>Welcome valued customer, how may I help you?<*04>"
+166,0x941b2,<SFF>いらっしゃいマセ<CD>何ニ イタシマスカ?<*04>,"<SFF><f03>Welcome valued customer, how may I help you?<f00><*04>"
 167,0x941b4,あリがとうございました!<*04>,Thank you very much!<*04>
 168,0x941b6,あリがとうございましたぁ♥<*04>,Thank you so much ♥<*04>
-169,0x941b8,あリがとうございました<CD>またのご来店を おまちしておリます<*04>,"Thank you very much, I look<D3>forward to your next visit.<*04>"
+169,0x941b8,あリがとうございました<CD>またのご来店を おまちしておリます<*04>,"Thank you very much, I look forward to your next visit.<*04>"
 170,0x941ba,アリガトございまシタ!<*04>,<f03>Thank you very much!<f00><*04>
-171,0x941bc,いらっしゃいませ<CD>何に いたしますか?<*04>,"Welcome valued customer,<D3>how may I help you?<*04>"
-172,0x941be,いらっしゃいませ!<CD>メダロッタ-ズヘようこそ♥<*04>,"Welcome valued customer,<D3>to Medarotters ♥<*04>"
-173,0x941c0,ご来店あリがとうございます<CD>何にいたしますか?<*04>,"Thank you for visiting,<D3>how may I help you?<*04>"
-174,0x941c2,いらっしゃいマセ<CD>やすいヨ やすいヨ<*04>,"<f03>Welcome valued customer,<D3>how may I help you?<f00><*04>"
+171,0x941bc,いらっしゃいませ<CD>何に いたしますか?<*04>,"Welcome valued customer, how may I help you?<*04>"
+172,0x941be,いらっしゃいませ!<CD>メダロッタ-ズヘようこそ♥<*04>,"Welcome to Medarotters, valued customer. ♥<*04>"
+173,0x941c0,ご来店あリがとうございます<CD>何にいたしますか?<*04>,"Thank you for visiting, how may I help you?<*04>"
+174,0x941c2,いらっしゃいマセ<CD>やすいヨ やすいヨ<*04>,"<f03>Welcome valued customer, how may I help you?<f00><*04>"
 175,0x941c4,<SFF>そこには 行けないみたいだ<*04>,<SFF>It doesn't seem I can go there.<*04>
 176,0x941c6,パスポイントが あリません<*04>,You have no <f02>Pass Points<f00>.<*04>
 177,0x941c8,パスポイントが ないみたい♥<*04>,You have no <f02>Pass Points <f00>♥<*04>
@@ -183,10 +183,10 @@
 181,0x941d0,よろしいかしら?<*04>,Are you positive?<*04>
 182,0x941d2,これで よろしいでしょうか?<*04>,Are you sure about this?<*04>
 183,0x941d4,ヨロシイですか?<*04>,<f03>Are you sure?<f00><*04>
-184,0x941d6,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています!<*03>,You already have the part you<D3>can get with this password!<*03>
-185,0x941d8,このパスワ-ドで 手に入るパ-ツは<CD>すでに持ってるみたい♥<*03>,You already have the part you <D3>can get with this password. ♥<*03>
-186,0x941da,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています<*03>,You already have the part you<D3>can get with this password.<*03>
-187,0x941dc,コノパスワ-ドで 手に入るパ-ツは<CD>すでに持っていマス!<*03>,<f03>You already have the part you<D3>can get with this password!<f00><*03>
+184,0x941d6,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています!<*03>,You already have the part you can get with this password!<*03>
+185,0x941d8,このパスワ-ドで 手に入るパ-ツは<CD>すでに持ってるみたい♥<*03>,You already have the part you can get with this password. ♥<*03>
+186,0x941da,このパスワ-ドで 手に入るパ-ツは<CD>すでに持っています<*03>,You already have the part you can get with this password.<*03>
+187,0x941dc,コノパスワ-ドで 手に入るパ-ツは<CD>すでに持っていマス!<*03>,<f03>You already have the part you can get with this password!<f00><*03>
 188,0x941de,<FINAL>,
 189,0x94046,@0x94044,@0x94044
 190,0x94048,@0x94044,@0x94044
