@@ -8,7 +8,7 @@ INCLUDE "build/pointer_constants.asm"
 ; 0E is probably Medaforce-specific
 
 SECTION "Load text into buffers for battle messages 0E", ROMX[$4f4a], BANK[$0E]
-  LoadDamageNumberIntoBUF01 0E
+  LoadDamageNumberIntoBUF00 0E
 
   padend $4fb3
 

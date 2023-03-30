@@ -73,8 +73,8 @@ LoadParticipantNameIntoBUF02_\1::
   ret
   ENDM
 
-MACRO LoadDamageNumberIntoBUF01
-LoadDamageNumberIntoBUF01_\1::
+MACRO LoadDamageNumberIntoBUF00
+LoadDamageNumberIntoBUF00_\1::
   push de
   xor a
   ld [$c4fc], a
