@@ -13,3 +13,8 @@ LoadMedaforceNameIntoBUF02::
   ld de, cBUF02
   ld bc, $9
   jp memcpy
+
+SECTION "Load text into buffers for battle messages 0F 2", ROMX[$4727], BANK[$0F]
+  LoadDamageNumberIntoBUF00 0F
+
+  padend $4790
