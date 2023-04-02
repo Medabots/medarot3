@@ -3,7 +3,7 @@
 001,0x94002,女型ティンペットを手に入れた!,Received a female tinpet!
 002,0x94004,あっ!<CD>これいじょう 持てないや!<CF>ティンペットをあきらめた!,Oops! You can't carry any more Tinpets!<CF>You gave up the Tinpet.
 003,0x94006,メダロットが<CD>1体も 租まれていません!<CF>メダロットを 租んでください,You need at least one fully assembled Medarot!<CF>Please assemble one of your Medarots.
-004,0x94008,あっ!<CD>このメダルは すでに持っているぞ!<CF>メダルをあきらめた!,Oops!<D3>You already have this Medal!<CF>You gave up the Medal!
+004,0x94008,あっ!<CD>このメダルは すでに持っているぞ!<CF>メダルをあきらめた!,Oops!<D3>You already have this medal!<CF>You gave up the medal!
 005,0x9400a,デ-タをセ-ブしました!<S1E><*04>,Game data saved!<S1E><*04>
 006,0x9400c,ロボロボメダルを使いますか?<*04>,Use a RoboRobo medal?<*04>
 007,0x9400e,せんとうから にげられた!!<*02>,Escaped from the battle!<*02>
@@ -32,7 +32,7 @@
 030,0x9403c,<&BUF03>は みぎうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the right arm part <f02><&BUF06><f00>.
 031,0x9403e,<&BUF03>は ひだリうでパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the left arm part <f02><&BUF06><f00>.
 032,0x94040,<&BUF03>は きゃくぶパ-ツ<CD>「<&BUF06>」を もってない,<&BUF03> doesn't have the leg part <f02><&BUF06><f00>.
-033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,Obtained the <f02><&BUF06><f00> Medalia!
+033,0x94042,「<&BUF06>」のメダリアを<CD>てにいれた,Obtained the <f02><&BUF06><f00> medalia!
 034,0x94044,何だっ!?<*02>,What was...!?<*02>
 035,0x94062,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?<*02>,"Sorry, foolish humans-<D3>But I took your data!<CF>Wh... who is that!?<CF>My name is Electra!<D3>Humans are my enemy!<CF>What did you say!?<*02>"
 036,0x94064,...あ! まてっ!<*02>,...Hey! Wait!<*02>
@@ -83,7 +83,7 @@
 081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 medarotters per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be announced via the schools<*03>
 082,0x94108,ティンペットは メダロットの<CD>「ほね」に あたるものである<CF>男型と 女型の2しゅるいあリ<CF>それぞれ せんようの パ-ツしか<CD>そうびできない<*02>,The tinpet is the <f02>skeleton <f00>of the Medarot.<CF>There are two types: Male and female tinpets.<CF>Only parts of the same type fit the tinpet.<*02>
 083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right arm, a left arm, and legs.<CF>Four different types of parts to install.<*02>"
-084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,A Medarot's personality depends on the inserted Medal.<*04>
+084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,A Medarot's personality depends on the inserted medal.<*04>
 085,0x9410e,さまざまな こせいを もった<CD>メダロットたちが かんせいする!<*02>,There are all kinds of Medarots with all sorts of personalities!<*02>
 086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF><f02>B1F<f00><D3><f01>Go to <f00><f02>Heaven's Tower?<f00><*04>
 087,0x94112,<SFF>1F<CD>エントランスに 行く?<*04>,<SFF><f02>1F<f00><D3><f01>Go to the <f00><f02>entrance<f00>?<*04>

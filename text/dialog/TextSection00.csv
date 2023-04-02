@@ -36,13 +36,13 @@
 034,0x90044,<&BUF01>パ-ツは こわれた!<S46><*04>,The attack destroyed the <&BUF01>!<S46><*04>
 035,0x90046,本体の きのうが ていしした!<S46><*04>,The Medarot has been shutdown!<S46><*04>
 036,0x90048,たんぱつクリア トラップで<CD>攻撃が うちけされた!<S46><*04>,Attack will be nullified by Single-Engine Clear!<S46><*04>
-037,0x9004a,<&BUF02>に <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02> took <&BUF00><D3>damage!<S46><*04>
+037,0x9004a,<&BUF02>に <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02> took <&BUF00> damage!<S46><*04>
 038,0x9004c,<&BUF02>は<CD>たんぱつクリアトラップに かかった!<S46><*04>,<&BUF02> was caught in a<D3>Single-Engine Clear!<S46><*04>
 039,0x9004e,<&BUF02>が えんごに入った!<S46><*04>,<&BUF02> came in to shield!<S46><*04>
 040,0x90050,<&BUF02>の<CD><&BUF01>攻撃 <&BUF00>!<*04>,<&BUF02> used <f02><&BUF01><f00>!<D3><f02><&BUF00><f00>!<*04>
 041,0x90052,<&BUF02>の<CD><&BUF01>行動 <&BUF00>!<*04>,<&BUF02>'s <f02><&BUF01><f00>!<D3><f02><&BUF00><f00>!<*04>
 042,0x90054,かんぜんむこうに しっぱいした!<*04>,Nullification failed! <*04>
-043,0x90056,ダメ-ジげんしょうに しっぱいした!<*04>,Damage Reduction failed!<*04>
+043,0x90056,ダメ-ジげんしょうに しっぱいした!<*04>,Damage reduction failed!<*04>
 044,0x90058,はんしゃに しっぱいした!<*04>,Reflect failed!<*04>
 045,0x9005a,はんげきに しっぱいした!<*04>,Counterattack failed!<*04>
 046,0x9005c,<&BUF02>は<CD>あいての 攻撃を むこうにした!<S46><*04>,All attacks will be nullified!<S46><*04>
@@ -81,7 +81,7 @@
 079,0x9009e,トラップをクリアした!<S46><*04>,Trap cleared!<S46><*04>
 080,0x900a0,トラップクリアを セットした!<CD>あいては トラップをせっちできない!<S46><*04>,<f02>Trap Clear<f00> activated!<D3>Traps can not be set!<S46><*04>
 081,0x900a2,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,<f02>Cross Attack<f00> activated!<D3><f02>Cross Attack Fire<f00> is ready!<S46><*04>
-082,0x900a4,さくてきクリアに ぼうがいされて<CD>さくてきに しっぱいした!<S46><*04>,<f02>Scan Clear <f00>is active! <D3>Scan effect failed!<S46><*04>
+082,0x900a4,さくてきクリアに ぼうがいされて<CD>さくてきに しっぱいした!<S46><*04>,<f02>Scan Clear <f00>is active! <D3>Scanning failed!<S46><*04>
 083,0x900a6,チ-ム全体の さくてきアップ!<CD>攻撃が 当リやすくなった!<S46><*04>,Team's scan parameter up!<D3>Success rate is increased!<S46><*04>
 084,0x900a8,いんペいクリアに ぼうがいされて<CD>いんペいに しっぱいした!<S46><*04>,<f02>Conceal Clear<f00> is jamming. <D3>Conceal effect failed!<S46><*04>
 085,0x900aa,<&BUF02>の いんペいアップ!<CD>攻撃を よけやすくなった!<S46><*04>,<&BUF02>'s Conceal up!<D3>Dodge chance improved!<S46><*04>
@@ -137,7 +137,7 @@
 135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,The <&BUF01> part's effect is disabled!<S46><*04>
 136,0x90110,変形しているメダロットには<CD>こうかがない!<S46><*04>,Transformed Medarots are unaffected!<S46><*04>
 137,0x90112,デストロイは まえをむいている<CD>あいてには こうかがない!<S46><*04>,Destroy does not effect advancing opponents!<S46><*04>
-138,0x90114,サクリファイスのはんどうで<CD><&BUF01>パ-ツが こわれた!<S46><*04>,<f02><&BUF01> part<f00> destroyed by <f02>Sacrifice's <f00>recoil!<S46><*04>
+138,0x90114,サクリファイスのはんどうで<CD><&BUF01>パ-ツが こわれた!<S46><*04>,<f02><&BUF01><f00> part destroyed by <f02>Sacrifice's <f00>recoil!<S46><*04>
 139,0x90116,ねらったパ-ツは<CD>ダメ-ジを うけていない!<S46><*04>,Targeted part is not damaged!<S46><*04>
 140,0x90118,<&BUF01>パ-ツが <&BUF00>かいふくした!<S46><*04>,<&BUF01> part healed by <&BUF00>!<S46><*04>
 141,0x9011a,ねらった パ-ツは こわれていない!<S46><*04>,Targeted part is not destroyed!<S46><*04>
@@ -155,7 +155,7 @@
 153,0x90132,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*02>,<f02><&BUF03><f00>'s <f02><&BUF01><f00> part <f02><&BUF04><f00> was taken!<*02>
 154,0x90134,ロボロボメダルを 手に入れた!<*02>,<f02>RoboRobo Medal<f00> acquired!<*02>
 155,0x90136,<&BUF03>の メダルは<CD><&BUF00>の けいけんちを手に入れた!<*02>,<&BUF03>'s medals received <&BUF00> experience!<*02>
-156,0x90138,あっ......!<CD>「<&BUF05>」メダルが...!<*03>,Ah...!<D3>The <f02><&BUF05><f00> Medal...! <*03>
+156,0x90138,あっ......!<CD>「<&BUF05>」メダルが...!<*03>,Something's happening to the <f02><&BUF05><f00> medal...! <*03>
 157,0x9013a,新たな すがたに ヘんかした!<*03>,It transformed!<*03>
 158,0x9013c,<&BUF03>は<CD>ロボトルにまけてしまった!<*02>,<&BUF03> has lost the robattle!<*02>
 159,0x9013e,あっ.........!<CD>1体も 租まれたメダロットがない!<*02>,Ah...!<D3>I have no Medarots assembled!<*02>
@@ -166,9 +166,9 @@
 164,0x90148,メダフォ-スの はつどうに<CD>しっぱいした!<S46><*04>,Medaforce operation failed! <S46><*04>
 165,0x9014a,全パ-ツに <&BUF00>ダメ-ジ!<S46><*04>,All parts take <&BUF00> damage!<S46><*04>
 166,0x9014c,全メダロットに <&BUF00>ダメ-ジ!<S46><*04>,All medarots take <&BUF00> damage!<S46><*04>
-167,0x9014e,攻撃力アップ!<CD>あたえるダメ-ジを ふやす!<S46><*04>,Attack power up!<D3>Damage dealt increased!<S46><*04>
-168,0x90150,ぼうぎょリょくアップ!<CD>うけるダメ-ジを ヘらす!<S46><*04>,Defense power up!<D3>Damage taken decreased!<S46><*04>
-169,0x90152,攻撃トラップをセットした!<CD>全ての攻撃に ダメ-ジ!<S46><*04>,Attack Trap set!<D3>Damage to all <f02>Attacks<f00>!<S46><*04>
+167,0x9014e,攻撃力アップ!<CD>あたえるダメ-ジを ふやす!<S46><*04>,Attack up!<D3>Damage dealt increased!<S46><*04>
+168,0x90150,ぼうぎょリょくアップ!<CD>うけるダメ-ジを ヘらす!<S46><*04>,Defense up!<D3>Damage taken reduced!<S46><*04>
+169,0x90152,攻撃トラップをセットした!<CD>全ての攻撃に ダメ-ジ!<S46><*04>,Attack Trap set!<D3>It will trigger on Attacks!<S46><*04>
 170,0x90154,トラップクリアによって<CD>攻撃トラップが ぼうがいされた!<S46><*04>,Trap Clear has jammed Attack Trap!<S46><*04>
 171,0x90156,マイナス症状クリアによって<CD>こうかが なかった!<S46><*04>,Minus Status Clear had no effect!<S46><*04>
 172,0x90158,かいふくする パ-ツが なかった!<S46><*04>,No part to repair!<S46><*04>
@@ -197,8 +197,8 @@
 195,0x90186,チ-ム全体の <&BUF00>パ-ツを ふっかつ!<S46><*04>,Recover all team parts!<S46><*04>
 196,0x90188,パ-ツの 攻撃ダメ-ジが<CD>全て <&BUF00>になる!<S46><*04>,All part damage will become <&BUF00>!<S46><*04>
 197,0x9018a,メダフォ-ス「<&BUF02>」に<CD>チェンジした!<S46><*04>,Medaforce changed!<S46><*04>
-198,0x9018c,うばいとる メダルレベルがない!<S46><*04>,No Medal levels were lost!<S46><*04>
-199,0x9018e,メダルのレベルを <&BUF00>うばいとった!<S46><*04>,<&BUF00> Medal lost levels!<S46><*04>
+198,0x9018c,うばいとる メダルレベルがない!<S46><*04>,No medal levels were lost!<S46><*04>
+199,0x9018e,メダルのレベルを <&BUF00>うばいとった!<S46><*04>,<&BUF00> medal lost levels!<S46><*04>
 200,0x90190,メダフォ-スリょうが なかった!<CD>パワ-ヘんけい できない!<S46><*04>,No Medaforce gauge!<D3>Power Transform failed!<S46><*04>
 201,0x90192,メダフォ-スリょうが なくなった!<CD>パワ-ヘんけいが とけた!<S46><*04>,Medaforce gauge depleted!<D3>Returned to original form!<S46><*04>
 202,0x90194,<FINAL>,<FINAL>

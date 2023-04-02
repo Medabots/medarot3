@@ -43,7 +43,7 @@
 041,0x95df9,<SFF>パスワ-ド「し」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Shi<f00>"" is written on it.<*02>"
 042,0x95dfb,<SFF>パスワ-ド「も」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Mo<f00>"" is written on it.<*02>"
 043,0x95dfd,<SFF>パスワ-ド「リ」が<CD>かかれている<*02>,"<SFF>Cointains part of a password.<D3>""<f02>Ri<f00>"" is written on it.<*02>"
-044,0x95dff,<SFF>男の子が とリあげられていたメダル<CD>早く かえして あげよう<*02>,<SFF>Medal that was stolen from<D3>that kid. Take it to him quick!<*02>
+044,0x95dff,<SFF>男の子が とリあげられていたメダル<CD>早く かえして あげよう<*02>,<SFF>Medal that was stolen from<D3>a kid. Hurry and return it!<*02>
 045,0x95e01,<SFF>だいじんさんの サイン入リ<CD>これ1まいで 宇宙も フリ-パス!<*02>,<SFF>A free pass to outer space<D3>signed by the Prime Minister!
 046,0x95e03,<SFF>はかせが 作った しさくひん<CD>変形メダロットが パワ-アップ!<*02>,<SFF><f01>Prototype<f00> parts from <f01>Dr. Medarot<D3><f00>Now you can Medachange!<*02>
 047,0x95e05,<FINAL>,
