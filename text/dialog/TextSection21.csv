@@ -217,10 +217,10 @@
 212,0x2081a8,"<@RL,4B,00>バブルで 楽しんだら<CD>また もどってきてくれ!","<@RL,4B,00>Have fun with the bubble and then come back!"
 213,0x2081aa,"<@RL,4B,00>...と いうわけなんで<CD>よろしく!<CF><D1><@LL,00,06>よろしくって...ちょっと!","<@RL,4B,00>...Well, with that said, we're in your care!<CF><D1><@LL,00,06>No problem... Wait!"
 214,0x2081ac,"<@LL,00,00>カギ かけられちゃったよ<CD>ごういんだなぁ<CF><D1><@LL,00,05>はあ チケット うけとっちゃったし<CD>どうしよう<CF><D1><@LL,00,00>とリあえず ここに いても<CD>しかたない 出ようかな","<@LL,00,00>They locked me out, that's pretty high-handed.<CF><D1><@LL,00,05>Hah, I already accepted the ticket, so what's there to do? No helping it, so I may as well go."
-215,0x2081ae,"<@RL,4B,00>おおっ! 先生!<CD>まっていましたよ!",
-216,0x2081b0,"<@LL,00,05>先生って...",
-217,0x2081b2,"<@RL,4B,00>ささ! さっそく これを<CD>みにつけて くだせえ!",
-218,0x2081b4,"<@RL,4B,00>すばらしい! これで どこから<CD>どう貝ても<CF><D1>マ-マン学底の 男子せいと!<CF><D1><@LL,00,05>そうかなぁ<CF><D1><@RL,4B,00>ゆっくリしてる ひまは あリません<CD>もう はたしじょうは 出しています<CF><D1>うんどう場で まってますよ!",
+215,0x2081ae,"<@RL,4B,00>おおっ! 先生!<CD>まっていましたよ!","<@RL,4B,00>Ooh! Mister!<D3>We've been waiting for you!"
+216,0x2081b0,"<@LL,00,05>先生って...","<@LL,00,05>Mister, huh...?"
+217,0x2081b2,"<@RL,4B,00>ささ! さっそく これを<CD>みにつけて くだせえ!","<@RL,4B,00>Now come on! Put this on right away!"
+218,0x2081b4,"<@RL,4B,00>すばらしい! これで どこから<CD>どう貝ても<CF><D1>マ-マン学底の 男子せいと!<CF><D1><@LL,00,05>そうかなぁ<CF><D1><@RL,4B,00>ゆっくリしてる ひまは あリません<CD>もう はたしじょうは 出しています<CF><D1>うんどう場で まってますよ!","<@RL,4B,00>Fantastic!! Now you're looking like a boy from Merman Academy!<CF><D1><@LL,00,05>I guess so.<CF><D1><@RL,4B,00>There's no time to dilly-dally. We've already sent a letter of challenge. We'll be waiting at the school's field!"
 219,0x2081b6,"<@LL,00,05>...<CD>よわったなぁ ","<@LL,00,05>...<D3>What a mess."
 220,0x2081b8,"<@LL,00,00>このペアチケット...<CF><D1>使っちゃうと マ-マン学底の<CD>ようじんぼう けっていなんだよね<CF><D1>だけど...","<@LL,00,00>These tickets...<CF><D1>If I use them, I'll have to be a guard for Merman Academy, but..."
 221,0x2081ba,"<@LL,00,04>これで カリンちゃんを デ-トに<CD>さそうってのも いいかも♥","<@LL,00,04>This might be a good chance to ask Karin on a date ♥"
@@ -256,10 +256,10 @@
 251,0x2081f6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ",
 252,0x2081f8,"<@LL,00,00>この バブルは 使用中 みたいだ","<@LL,00,00>Seems like this bubble is in use."
 253,0x2081fa,"<@LL,00,04>ヘえ! これが 海の中か<CD>きれいだなぁ<CF><D1>せんすい型メダロットたちも<CD>気持ちよさそうに およいでる<CF><D1>あ! そうだ!<CF><D1><&BUF07><CD>お前も せっかくだから<CF><D1>いっしょに およごうよ","<@LL,00,04>Heh! So this is what it's like under the sea. It's beautiful.<CF><D1>The underwater-type medarots are all swimming around having fun.<CF><D1>Ah! Right!<CF><D1><&BUF07>, why not come out and swim too?"
-254#kabuto,0x2081fc,"<@RL,35,00>あのよ オレ よく分かんね-けど<CD>その...スイアツとかって<CF><D1>だいじょうぶなのかよ?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,35,00>すっげぇ ふあんだ<CF><D1><@LL,00,00>メダロット転そ...と あれ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!",
-254#kuwagata,0x2081fc,"<@RL,36,00>まて <&BUF03><CD>お前は ここの すいあつを<CF><D1>知っているのか?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,36,00>お前の たんじゅん思考には<CD>つき合ってられん<CF><D1>その バブルとやらの 中を<CD>よく しらベてみろ<CF><D1><@LL,00,00>ヘ?...と あれ? 何だ これ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!",
-255#kabuto,0x2081fe,"<@RL,35,00>はあ あやうく ころされる<CD>とこだったぜ",
-255#kuwagata,0x2081fe,"<@RL,36,00>こんなことで ころされては<CD>たまらん",
+254#kabuto,0x2081fc,"<@RL,35,00>あのよ オレ よく分かんね-けど<CD>その...スイアツとかって<CF><D1>だいじょうぶなのかよ?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,35,00>すっげぇ ふあんだ<CF><D1><@LL,00,00>メダロット転そ...と あれ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!","<@RL,35,00>Uhm, I'm not really sure, but... Will it be alright with the water pressure and stuff?<CF><D1><@LL,00,01>It's fine!<CF><D1>See, look at those diving medarots swimming around without a care.<CF><D1><@RL,35,00>It's really nerve-wracking.<CF><D1><@LL,00,00>Medarot, trans- huh?<D3>What's this in the bubble?<CF><D1>""Water-proof pressure suit""...? I see. So you tranfer medarots into this.<CF><D1>Well then, medarot, transfer!"
+254#kuwagata,0x2081fc,"<@RL,36,00>まて <&BUF03><CD>お前は ここの すいあつを<CF><D1>知っているのか?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,36,00>お前の たんじゅん思考には<CD>つき合ってられん<CF><D1>その バブルとやらの 中を<CD>よく しらベてみろ<CF><D1><@LL,00,00>ヘ?...と あれ? 何だ これ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!","<@RL,36,00>Hold on, <&BUF03>.<D3>Have you considered the water pressure?<CF><D1><@LL,00,01>It's fine!<CF><D1>See, look at those diving medarots swimming around without a care.<CF><D1><@RL,36,00>I don't get your simple-minded thinking. Look inside that Bubble you're in.<CF><D1><@LL,00,00>Heh? ...Huh?<D3>What's this in the bubble?<CF><D1>""Water-proof pressure suit""...? I see. So you tranfer medarots into this.<CF><D1>Well then, medarot, transfer!"
+255#kabuto,0x2081fe,"<@RL,35,00>はあ あやうく ころされる<CD>とこだったぜ","<@RL,35,00>Haa, you almost killed me."
+255#kuwagata,0x2081fe,"<@RL,36,00>こんなことで ころされては<CD>たまらん","<@RL,36,00>Dying like that would have been a same."
 256#kabuto,0x208200,"<@RL,35,00>お-い 出してくれ-<CF><D1>「たいすいあつス-ツ」も<CD>わすれんなよ!<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!",
 256#kuwagata,0x208200,"<@RL,36,00>早く 出せ<CF><D1>「たいすいあつス-ツ」も<CD>わすれるな<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!",
 257#kabuto,0x208202,"<@RL,35,00>レイさん♥<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,35,00>レイさんっ...♥<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,35,00>すっ ステキな場所...♥",
@@ -269,10 +269,10 @@
 260,0x208208,"<@RL,02,04>ふふ <&BUF07>ちゃんの<CD>ガ-ルフレンドですか?<CF><D1><@LL,00,00>メダロットにも こいって<CD>あるのかな-?<CF><D1><@RL,02,04>聞いたことは ないですけど<CD>あったら ステキですね♥<CF><D1><@LL,00,05>う-む<CF><D1><@RL,02,04>さあ わたしたちも<CD>おさんぽしましょ!<CF><D1><@LL,00,01>うん!",
 261,0x20820a,"<@LL,00,00>どうやら 入って来た所からじゃないと<CD>もどれないようだ",
 262,0x20820c,"<@LL,00,04>せっかく来たんだし もうすこし<CD>あそんでいこう",
-263,0x20820e,"<@LL,00,00>ここから アンダ-シェルに<CD>もどろうかな?<*04>",
-264,0x208210,"<@LL,00,00>ええっと...スイッチをおして",
-265,0x208212,"<@LL,00,00>ハッチをあけてっと",
-266,0x208214,"<@LL,00,04>もうすこし あそんでいこう",
+263,0x20820e,"<@LL,00,00>ここから アンダ-シェルに<CD>もどろうかな?<*04>","<@LL,00,00>Shall we leave and go back to UnderShell?<*04>"
+264,0x208210,"<@LL,00,00>ええっと...スイッチをおして","<@LL,00,00>Errm... Push the switch."
+265,0x208212,"<@LL,00,00>ハッチをあけてっと","<@LL,00,00>And the hatch opens."
+266,0x208214,"<@LL,00,04>もうすこし あそんでいこう","<@LL,00,04>Let's play a bit more."
 267,0x208216,"<@RL,33,00>す-い す-い すいぎょうざ♪<CF><D1><@LL,00,05>はぁ?",
 268,0x208218,"<@RL,33,00>かくれてない♪ かくれてないったらぁ<CD>近くに かくれていない ない-♪",
 269,0x20821a,"<@RL,33,00>海中林は 立ち入リ きんしだ!",
@@ -283,25 +283,25 @@
 274,0x208224,"<@RL,33,00>この ぎょしょうに あつまってきた<CD>魚のむれを かんさつしているんです",
 275,0x208226,"<@RL,33,00>バブルにのった女の子?<CF><D1>さあ 魚いがいは 貝ませんでしたよ",
 276,0x208228,"<@RL,33,00>下のぎょしょうの ヨコにはえている<CF><D1>海そう...何かヘンだなぁ",
-277,0x20822a,"<@LL,00,05>それにしても すごい ぶきだ<CF><D1>いったい アンダ-シェルを<CD>何からまもるために 作ったんだろう<CF><D1>コンパニオンの おねえさんは<CD>「かんペきな ぼうえいシステム」<CF><D1>って 言ってたけど...",
+277,0x20822a,"<@LL,00,05>それにしても すごい ぶきだ<CF><D1>いったい アンダ-シェルを<CD>何からまもるために 作ったんだろう<CF><D1>コンパニオンの おねえさんは<CD>「かんペきな ぼうえいシステム」<CF><D1>って 言ってたけど...","<@LL,00,05>This is some amazing weaponry.<CF><D1>What in the world are they protecting UnderShell from? The guide lady called it a ""perfect defense system""..."
 278,0x20822c,"<@RL,14,00>ぼくたちの じゃまはしないで",
 279,0x20822e,"<@RL,14,00>ああっ ぼくのビ-ナスちゃん♥ <CF><D1><@RL,01,04>海中の こいびとたち...<CD>ロマンチックね 絵になるわ♥",
 280,0x208230,"<@RL,14,00>いったい なんなんだ あの子は?!<CF><D1>いきなリ しゃしんを とるとは<CD>しつれいじゃないか!<CF><D1><@LL,00,05>す すみません<CF><D1>(どうして ぼくが あやまるの?)",
 281,0x208232,"<@RL,14,00>もう じゃましないでくれる?",
 282,0x208234,"<@RL,1D,00>ふたリの 受は えいえんよ♥<CF><D1><@LL,00,04>ラブラブだぁ<CD>貝てる方が テレちゃうよ",
 283,0x208236,"<@RL,1D,00>水の中だからって 水をささないで!<CF><D1><@LL,00,05>ごめんなさい...",
-284#kabuto,0x208238,"<@RL,35,00>う うつくしいっ!<CF><D1><@LL,00,05>...はぁ!?",
-284#kuwagata,0x208238,"<@RL,36,00>だれだ?",
-285#kabuto,0x20823a,"<@RL,33,00>いっしょに およぎませんか?<CF><D1><@RL,35,00>はいっ!",
-285#kuwagata,0x20823a,"<@RL,33,00>いっしょに およぎませんか?<CF><D1><@RL,36,00>いいだろう 水中で すいしん力を<CD>きそうというのも 面白い",
-286,0x20823c,"<@LL,00,07>おい ちょっと<CD><&BUF07>!!",
-287,0x20823e,"<@LL,00,05>ああ もう",
-288,0x208240,"<@RL,01,04>いた いた!<CD><&BUF03><CF><D1><@LL,00,07>うわっ!",
-289,0x208242,"<@LL,00,00>あ アリカ...びっくリしたなぁ<CF><D1><@RL,01,00>おおげさね<CF><D1><@RL,01,04>ねえ ちょっと<CD>いっしょに たんけん してみない?<*04>",
-290,0x208244,"<@RL,01,04>どこを たんけんするのかは<CD><&BUF03>に まかせるから<CF><D1>じゃ しゅっぱ-つ!!",
-291,0x208246,"<@RL,01,02>なによ<&BUF03><CD>あたしと いっしょじゃ いやなの?<CF><D1><@LL,00,05>まいったなぁ...<CF><D1><@RL,01,06>行くの? 行かないの? どっち?<CD>はっきリ ヘんじ してよね<CF><D1><@LL,00,05>い 行くよ...<CF><D1>(なにも すねなくったって...)",
-292,0x208248,"<@RL,01,00><&BUF03>!<CD><&BUF07>じゃないの?<CF><D1><@LL,00,00>ん?",
-293#kabuto,0x20824a,"<@RL,35,00>レイさんっ!<CF><D1><@RL,33,00>ダメですわ<CD><&BUF07>さん<CF><D1>あなたと わたしは<CD>けっして むすばれぬ うんめい",
-293#kuwagata,0x20824a,"<@RL,33,00>うふふふ!<CD><&BUF07>さん 早く 早く!<CF><D1><@RL,36,00>ふっ やはリ 水中では お前の方が<CD>およぎなれているようだな",
-294,0x20824c,"<@RL,01,00>何か もリ上がってるわねぇ<CF><D1><@LL,00,05>全く 何やってんだか<CF><D1><@RL,01,04>ねえねえ <&BUF03><CD>かくれんぼ しない?",
-295,0x20824e,"<@LL,00,00>かくれんぼぉ?<CF><D1><@RL,01,04>うん! じゃ <CD><&BUF03>が オニね!<CF><D1><@LL,00,00>え ちょっ...",
+284#kabuto,0x208238,"<@RL,35,00>う うつくしいっ!<CF><D1><@LL,00,05>...はぁ!?","<@RL,35,00>B-beautiful!<CF><D1><@LL,00,05>...Haa!?"
+284#kuwagata,0x208238,"<@RL,36,00>だれだ?","<@RL,36,00>Who are you?"
+285#kabuto,0x20823a,"<@RL,33,00>いっしょに およぎませんか?<CF><D1><@RL,35,00>はいっ!","<@RL,33,00>Would you like to swim together?<CF><D1><@RL,35,00>Yes!"
+285#kuwagata,0x20823a,"<@RL,33,00>いっしょに およぎませんか?<CF><D1><@RL,36,00>いいだろう 水中で すいしん力を<CD>きそうというのも 面白い","<@RL,33,00>Would you like to swim together?<CF><D1><@RL,36,00>Very well. I'm interested to see how the water-propulsion works."
+286,0x20823c,"<@LL,00,07>おい ちょっと<CD><&BUF07>!!","<@LL,00,07>Hey, wait, <&BUF07>!!"
+287,0x20823e,"<@LL,00,05>ああ もう","<@LL,00,05>Aah, geez."
+288,0x208240,"<@RL,01,04>いた いた!<CD><&BUF03><CF><D1><@LL,00,07>うわっ!","<@RL,01,04>There you are, <&BUF03>!<CF><D1><@LL,00,07>Woah!"
+289,0x208242,"<@LL,00,00>あ アリカ...びっくリしたなぁ<CF><D1><@RL,01,00>おおげさね<CF><D1><@RL,01,04>ねえ ちょっと<CD>いっしょに たんけん してみない?<*04>","<@LL,00,00>Ah, Erika... You scared me.<CF><D1><@RL,01,00>Quit overreacting.<CF><D1><@RL,01,04>Hey, do you want to explore with me for a bit?<*04>"
+290,0x208244,"<@RL,01,04>どこを たんけんするのかは<CD><&BUF03>に まかせるから<CF><D1>じゃ しゅっぱ-つ!!","<@RL,01,04>I'll leave where we explore up to you, <&BUF03>.<CF><D1>Well then, off we go!!"
+291,0x208246,"<@RL,01,02>なによ<&BUF03><CD>あたしと いっしょじゃ いやなの?<CF><D1><@LL,00,05>まいったなぁ...<CF><D1><@RL,01,06>行くの? 行かないの? どっち?<CD>はっきリ ヘんじ してよね<CF><D1><@LL,00,05>い 行くよ...<CF><D1>(なにも すねなくったって...)","<@RL,01,02>What's wrong <&BUF03>, don't you want to spend time with me?<CF><D1><@LL,00,05>I give up...<CF><D1><@RL,01,06>Are you going? Are you not going? Which is it? Just come out and say it.<CF><D1><@LL,00,05>I-I'm going...<CF><D1>(You don't need to sulk...)"
+292,0x208248,"<@RL,01,00><&BUF03>!<CD><&BUF07>じゃないの?<CF><D1><@LL,00,00>ん?","<@RL,01,00><&BUF03>!<D3>Isn't that <&BUF07>?<CF><D1><@LL,00,00>Mm?"
+293#kabuto,0x20824a,"<@RL,35,00>レイさんっ!<CF><D1><@RL,33,00>ダメですわ<CD><&BUF07>さん<CF><D1>あなたと わたしは<CD>けっして むすばれぬ うんめい","<@RL,35,00>Rei!<CF><D1><@RL,33,00>You can't, <&BUF07>.<CF><D1>We are not destined to be together."
+293#kuwagata,0x20824a,"<@RL,33,00>うふふふ!<CD><&BUF07>さん 早く 早く!<CF><D1><@RL,36,00>ふっ やはリ 水中では お前の方が<CD>およぎなれているようだな","<@RL,33,00>Uhuhuhu!<D3>Come on, <&BUF07>, hurry!<CF><D1><@RL,36,00>Phew, as expected you are better at swiming around in the water than I am."
+294,0x20824c,"<@RL,01,00>何か もリ上がってるわねぇ<CF><D1><@LL,00,05>全く 何やってんだか<CF><D1><@RL,01,04>ねえねえ <&BUF03><CD>かくれんぼ しない?","<@RL,01,00>What's going on, huh?<CF><D1><@LL,00,05>I have no clue.<CF><D1><@RL,01,04>Hey, hey, <&BUF03>, do you wanna play hide and seek?"
+295,0x20824e,"<@LL,00,00>かくれんぼぉ?<CF><D1><@RL,01,04>うん! じゃ <CD><&BUF03>が オニね!<CF><D1><@LL,00,00>え ちょっ...","<@LL,00,00>Hide and seek?<CF><D1><@RL,01,04>Yeah! Well then, you're it, <&BUF03>!<CF><D1><@LL,00,00>Eh, hey..."
