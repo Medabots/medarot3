@@ -1,71 +1,71 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x20c000,"<@RL,01,04>ま-だだよ-!<CF><D1><@LL,00,00>(さがしに行かなきゃ<CD>おこるだろうなぁ...)",
-001,0x20c002,"<@LL,00,00>今のは 何だろう?",
-002,0x20c004,"<@LL,00,04>アリカ 貝っけ!<CF><D1><@RL,01,04>じゃ ロボトルかいし!<CF><D1><@LL,00,05>はあ!?",
-003,0x20c006,"<@RL,01,01>あははは!",
-004,0x20c008,"<@LL,00,07>あ! ちょっと<CF><D1><@RL,01,04>ま-だだよ-!<CF><D1><@LL,00,05>アリカ...はぁ","<@LL,00,07>Ah! Hang on a minute!<CF><D1><@RL,01,04>Not yet-!<CF><D1><@LL,00,05>Arika... sigh..."
-005#kabuto,0x20c00a,"<@RL,35,00>おい! 何 とつぜん<CD>転送してくれてるんだよ!<CF><D1>人が デ-ト中だってのに!",
-005#kuwagata,0x20c00a,"<@RL,36,00>とつぜん よび出すな<CD>目が回る",
-006,0x20c00c,"<@LL,00,05>しょうがないだろ? とつぜん<CD>ロボトル しかけられたんだから",
+000,0x20c000,"<@RL,01,04>ま-だだよ-!<CF><D1><@LL,00,00>(さがしに行かなきゃ<CD>おこるだろうなぁ...)","<@RL,01,04>Come find me!<CF><D1><@LL,00,00>(I guess I'll have to look for her...)"
+001,0x20c002,"<@LL,00,00>今のは 何だろう?","<@LL,00,00>What was that just now?"
+002,0x20c004,"<@LL,00,04>アリカ 貝っけ!<CF><D1><@RL,01,04>じゃ ロボトルかいし!<CF><D1><@LL,00,05>はあ!?","<@LL,00,04>I found you, Erika!<CF><D1><@RL,01,04>Then it's time to robattle!<CF><D1><@LL,00,05>Huh!?"
+003,0x20c006,"<@RL,01,01>あははは!","<@RL,01,01>Ahahaha!"
+004,0x20c008,"<@LL,00,07>あ! ちょっと<CF><D1><@RL,01,04>ま-だだよ-!<CF><D1><@LL,00,05>アリカ...はぁ","<@LL,00,07>Ah! Hang on a minute!<CF><D1><@RL,01,04>Come find me!<CF><D1><@LL,00,05>Arika... sigh..."
+005#kabuto,0x20c00a,"<@RL,35,00>おい! 何 とつぜん<CD>転送してくれてるんだよ!<CF><D1>人が デ-ト中だってのに!","<@RL,35,00>Hey! What's with the sudden transfer? People are on dates here!"
+005#kuwagata,0x20c00a,"<@RL,36,00>とつぜん よび出すな<CD>目が回る","<@RL,36,00>Suddenly getting called out like that puts me off-kilter."
+006,0x20c00c,"<@LL,00,05>しょうがないだろ? とつぜん<CD>ロボトル しかけられたんだから","<@LL,00,05>What choice was there? I was suddenly challenged to a robattle."
 007,0x20c00e,"<@RL,33,00><&BUF07>さん<CD>貝つけましたわ♥","<@RL,33,00><&BUF07>!<D3>I found you!♥"
-008#kabuto,0x20c010,"<@RL,35,00>レイさん♥",
-008#kuwagata,0x20c010,"<@RL,36,00>まだ しょうぶは ついていなかったな",
-009#kabuto,0x20c012,"<@RL,35,00>いいかぁ! こんどは<CD>じゃますんなよな!",
-009#kuwagata,0x20c012,"<@RL,36,00>おれの方で けっちゃくを<CD>つけるまで よび出すなよ",
-010,0x20c014,"<@LL,00,05>むリだと 思うよ","<@LL,00,05>I think it's impossible."
-011,0x20c016,"<@LL,00,00>あ これ アリカのポッドだ",
-012,0x20c018,"<@RL,14,00>むだんで しゃしんを とるとは<CD>けしからん!<CF><D1><@RL,01,03>ごめんなさい<CF><D1><@LL,00,00>アリカ 貝っけ!",
-013,0x20c01a,"<@RL,01,04>ロボトル ロボトル!",
-014,0x20c01c,"<@RL,01,04>あっははは!",
-015,0x20c01e,"<@LL,00,05>また ぼくが オニ?<CF><D1><@RL,01,04>ま-だだよ-",
-016#kabuto,0x20c020,"<@RL,35,00>お前なあ! こんどという<CD>こんどは...!",
-016#kuwagata,0x20c020,"<@RL,36,00>1勝2敗と いうところか",
-017#kabuto,0x20c022,"<@LL,00,01>ま 気にするなって",
-017#kuwagata,0x20c022,"<@LL,00,00>何が?",
-018,0x20c024,"<@RL,33,00><&BUF07>さん<CD>貝つけましたわ♥",
-019#kabuto,0x20c026,"<@RL,35,00>レイさん♥",
-019#kuwagata,0x20c026,"<@RL,36,00>次は おれが勝つ",
-020,0x20c028,"<@LL,00,05>けっこ- 楽しそ-じゃん<CD>ははは...はぁ",
-021,0x20c02a,"<@LL,00,00>頭かくして しリかくさず!<CD>アリカ 貝っけ!!<CF><D1><@RL,01,04>リベンジ!",
-022,0x20c02c,"<@RL,01,01>あはははははは!",
-023,0x20c02e,"<@LL,00,05>あっ! またにげられた?!",
-024#kabuto,0x20c030,"<@RL,35,00><&BUF03>!!!!!!!<CF><D1><@LL,00,05>もんくなら アリカに<CD>言ってくれよ-",
-024#kuwagata,0x20c030,"<@RL,36,00>このおれが 2ども まけるとはな<CF><D1><@LL,00,05>まだ メダロ-ドレ-スみたいなこと<CD>やってんの?",
-025,0x20c032,"<@RL,4A,00>目の前で<CD>いちゃついて くれるじゃな-い?",
-026,0x20c034,"<@LL,00,05>どうやったら いちゃついて<CD>貝えるんだよ-<CF><D1><@RL,4A,00>あたしたち シ-フェアリ-ズに<CD>なめた口きくと こうかいするわよ-<CF><D1><@LL,00,00>ヘ? シ-モンキ-?",
-027,0x20c036,"<@RL,4A,00>あんた何聞いてんのよ フェアリ-よ!<CD>シ-フェ.ア.リ.-.ズ!!!<CF><D1>やっぱリ男は女の てきだわ!<CD>やっつけちゃいましょ-!",
-028,0x20c038,"<@RL,4A,00>お-!",
-029,0x20c03a,"<@RL,4A,00>ウオナさまに 言いつけてやる!<CD>おぼえてなさ-い!<CF><D1><@LL,00,00>ウオナさま? あれ? どこかで...",
-030,0x20c03c,"<@LL,00,05>女って...",
-031#kabuto,0x20c03e,"<@RL,35,00>レイさん! レイさんはっ!?",
-031#kuwagata,0x20c03e,"<@RL,36,00>貝あたらんな おれが もう1勝<CD>するまではと 思っていたのだが",
-032#kabuto,0x20c040,"<@RL,35,00>あああ レイさん...",
-032#kuwagata,0x20c040,"<@RL,36,00>しかたがない さがしに行くか",
-033,0x20c042,"<@LL,00,05>あのさ- <&BUF07><CF><D1>ぼくさ- アリカを さがさなきゃ<CD>いけないんだよね-",
-034#kabuto,0x20c044,"<@RL,35,00>...勝手に すれば?<CF><D1><@LL,00,05>またさ- よぶことに なるような<CD>気も するけど よろしくね-<CF><D1><@RL,35,00>...すきに すれば?",
-034#kuwagata,0x20c044,"<@RL,36,00>さがせばいい<CF><D1><@LL,00,05>またさ- よぶことに なるような<CD>気も するけど よろしくね-<CF><D1><@RL,36,00>勝手にしろ",
-035,0x20c046,"<@LL,00,02>アリカ 貝っけ...<CF><D1><@RL,01,01>あはは! あ- 楽しかった!<CF><D1><@RL,01,04>10分いないに<CD>貝つけきらなかったから<CF><D1><&BUF03>の まけね!<CF><D1><@LL,00,07>いつから そんなル-ルに...<CF><D1><@RL,01,04>たっくさん あそんだから<CD>か-えろ!<CF><D1><@LL,00,05>ち ちょっと アリカ!",
-036,0x20c048,"<@LL,00,05>...メダロット転送",
-037,0x20c04a,"<@LL,00,05>かえるってさ-<CD><&BUF07>",
-038#kabuto,0x20c04c,"<@RL,35,00>レイさ-ん どこ-?",
-038#kuwagata,0x20c04c,"<@RL,36,00>もう1せん できなかったのが<CD>心のこリだがな",
-039,0x20c04e,"<@LL,00,00>さてさて チケットも<CD>使っちゃったし<CF><D1>マ-マン学底の ようじんぼうを<CD>引きうけに 行くかな<CF><D1>さっきの 4人租の所に 行ってみよう",
+008#kabuto,0x20c010,"<@RL,35,00>レイさん♥","<@RL,35,00>Rei ♥"
+008#kuwagata,0x20c010,"<@RL,36,00>まだ しょうぶは ついていなかったな","<@RL,36,00>Well, the match isn't over yet."
+009#kabuto,0x20c012,"<@RL,35,00>いいかぁ! こんどは<CD>じゃますんなよな!","<@RL,35,00>Listen here! Don't get in the way again!"
+009#kuwagata,0x20c012,"<@RL,36,00>おれの方で けっちゃくを<CD>つけるまで よび出すなよ","<@RL,36,00>Don't call on me until I settle this."
+010,0x20c014,"<@LL,00,05>むリだと 思うよ","<@LL,00,05>I think that's impossible."
+011,0x20c016,"<@LL,00,00>あ これ アリカのポッドだ","<@LL,00,00>Ah, this is Erika's pod."
+012,0x20c018,"<@RL,14,00>むだんで しゃしんを とるとは<CD>けしからん!<CF><D1><@RL,01,03>ごめんなさい<CF><D1><@LL,00,00>アリカ 貝っけ!","<@RL,14,00>Taking photos without permission is inexcusable!<CF><D1><@RL,01,03>Sorry.<CF><D1><@LL,00,00>Erika, found you!"
+013,0x20c01a,"<@RL,01,04>ロボトル ロボトル!","<@RL,01,04>Robattle, robattle!"
+014,0x20c01c,"<@RL,01,04>あっははは!","<@RL,01,04>Ah-hahaha!"
+015,0x20c01e,"<@LL,00,05>また ぼくが オニ?<CF><D1><@RL,01,04>ま-だだよ-","<@LL,00,05>I'm it again?<CF><D1><@RL,01,04>Come find me."
+016#kabuto,0x20c020,"<@RL,35,00>お前なあ! こんどという<CD>こんどは...!","<@RL,35,00>You! This time I'll, this time...!"
+016#kuwagata,0x20c020,"<@RL,36,00>1勝2敗と いうところか","<@RL,36,00>1 win, 2 losses I'd say."
+017#kabuto,0x20c022,"<@LL,00,01>ま 気にするなって","<@LL,00,01>Now now, don't worry about it."
+017#kuwagata,0x20c022,"<@LL,00,00>何が?","<@LL,00,00>What?"
+018,0x20c024,"<@RL,33,00><&BUF07>さん<CD>貝つけましたわ♥","<@RL,33,00>Found you, <&BUF07> ♥"
+019#kabuto,0x20c026,"<@RL,35,00>レイさん♥","<@RL,35,00>Rei ♥"
+019#kuwagata,0x20c026,"<@RL,36,00>次は おれが勝つ","<@RL,36,00>I'll win the next one."
+020,0x20c028,"<@LL,00,05>けっこ- 楽しそ-じゃん<CD>ははは...はぁ","<@LL,00,05>Seems like they're having fun.<D3>Hahaha... Haa."
+021,0x20c02a,"<@LL,00,00>頭かくして しリかくさず!<CD>アリカ 貝っけ!!<CF><D1><@RL,01,04>リベンジ!","<@LL,00,00>Hide your head and hide your rear! I found you, Erika!!<CF><D1><@RL,01,04>Time for revenge!"
+022,0x20c02c,"<@RL,01,01>あはははははは!","<@RL,01,01>Ahahahahahaha!"
+023,0x20c02e,"<@LL,00,05>あっ! またにげられた?!","<@LL,00,05>Ah! She's running away again!?"
+024#kabuto,0x20c030,"<@RL,35,00><&BUF03>!!!!!!!<CF><D1><@LL,00,05>もんくなら アリカに<CD>言ってくれよ-","<@RL,35,00><&BUF03>!!!!!!!<CF><D1><@LL,00,05>If you wanna complain, talk to Erika."
+024#kuwagata,0x20c030,"<@RL,36,00>このおれが 2ども まけるとはな<CF><D1><@LL,00,05>まだ メダロ-ドレ-スみたいなこと<CD>やってんの?","<@RL,36,00>This makes the second time I lost.<CF><D1><@LL,00,05>You're still doing that medarot race?"
+025,0x20c032,"<@RL,4A,00>目の前で<CD>いちゃついて くれるじゃな-い?","<@RL,4A,00>Are you guys flirting right in front of me?"
+026,0x20c034,"<@LL,00,05>どうやったら いちゃついて<CD>貝えるんだよ-<CF><D1><@RL,4A,00>あたしたち シ-フェアリ-ズに<CD>なめた口きくと こうかいするわよ-<CF><D1><@LL,00,00>ヘ? シ-モンキ-?","<@LL,00,05>Just how did that look like flirting?<CF><D1><@RL,4A,00>If you look down on us Sea Fairies, you'll regret it!<CF><D1><@LL,00,00>Heh? Sea Monkeys?"
+027,0x20c036,"<@RL,4A,00>あんた何聞いてんのよ フェアリ-よ!<CD>シ-フェ.ア.リ.-.ズ!!!<CF><D1>やっぱリ男は女の てきだわ!<CD>やっつけちゃいましょ-!","<@RL,4A,00>Weren't you listening? Fairies!<D3>We're the Sea <f02>Fairies<f00>!!<CF><D1>I knew men were the enemies of women! Let's get him!"
+028,0x20c038,"<@RL,4A,00>お-!","<@RL,4A,00>Aye!"
+029,0x20c03a,"<@RL,4A,00>ウオナさまに 言いつけてやる!<CD>おぼえてなさ-い!<CF><D1><@LL,00,00>ウオナさま? あれ? どこかで...","<@RL,4A,00>We're telling Miss Uona!<D3>You better remember this!<CF><D1><@LL,00,00>Miss Uona? Huh? I've heard that somewhere..."
+030,0x20c03c,"<@LL,00,05>女って...","<@LL,00,05>Women..."
+031#kabuto,0x20c03e,"<@RL,35,00>レイさん! レイさんはっ!?","<@RL,35,00>Rei! Where's Rei!?"
+031#kuwagata,0x20c03e,"<@RL,36,00>貝あたらんな おれが もう1勝<CD>するまではと 思っていたのだが","<@RL,36,00>I thought I would win. I'll go until I win again."
+032#kabuto,0x20c040,"<@RL,35,00>あああ レイさん...","<@RL,35,00>Aaah, Rei..."
+032#kuwagata,0x20c040,"<@RL,36,00>しかたがない さがしに行くか","<@RL,36,00>There's no helping it, I'll go find her."
+033,0x20c042,"<@LL,00,05>あのさ- <&BUF07><CF><D1>ぼくさ- アリカを さがさなきゃ<CD>いけないんだよね-","<@LL,00,05>Uhm say, <&BUF07>.<CF><D1>You know, I've gotta find Erika, right?"
+034#kabuto,0x20c044,"<@RL,35,00>...勝手に すれば?<CF><D1><@LL,00,05>またさ- よぶことに なるような<CD>気も するけど よろしくね-<CF><D1><@RL,35,00>...すきに すれば?","<@RL,35,00>...Go on and do it.<CF><D1><@LL,00,05>But you know, I feel like I'll need to call on you again.<CF><D1><@RL,35,00>...Whatever you want."
+034#kuwagata,0x20c044,"<@RL,36,00>さがせばいい<CF><D1><@LL,00,05>またさ- よぶことに なるような<CD>気も するけど よろしくね-<CF><D1><@RL,36,00>勝手にしろ","<@RL,36,00>...Then search for her.<CF><D1><@LL,00,05>But you know, I feel like I'll need to call on you again.<CF><D1><@RL,36,00>...Have it your way."
+035,0x20c046,"<@LL,00,02>アリカ 貝っけ...<CF><D1><@RL,01,01>あはは! あ- 楽しかった!<CF><D1><@RL,01,04>10分いないに<CD>貝つけきらなかったから<CF><D1><&BUF03>の まけね!<CF><D1><@LL,00,07>いつから そんなル-ルに...<CF><D1><@RL,01,04>たっくさん あそんだから<CD>か-えろ!<CF><D1><@LL,00,05>ち ちょっと アリカ!","<@LL,00,02>Found you, Erika...<CF><D1><@RL,01,01>Ahaha! Aah, that was fun!<CF><D1><@RL,01,04>You didn't find me in less than 10 minutes.<CF><D1>It's your loss, <&BUF03>!<CF><D1><@LL,00,07>Since when was there a rule like that...?<CF><D1><@RL,01,04>We've played a lot, time to head back!<CF><D1><@LL,00,05>H-hey, Erika!"
+036,0x20c048,"<@LL,00,05>...メダロット転送","<@LL,00,05>...Medarot, transfer."
+037,0x20c04a,"<@LL,00,05>かえるってさ-<CD><&BUF07>","<@LL,00,05>Come on, let's head back, <&BUF07>."
+038#kabuto,0x20c04c,"<@RL,35,00>レイさ-ん どこ-?","<@RL,35,00>Reiii, where are youuu?"
+038#kuwagata,0x20c04c,"<@RL,36,00>もう1せん できなかったのが<CD>心のこリだがな","<@RL,36,00>I regret that I could not obtain another victory."
+039,0x20c04e,"<@LL,00,00>さてさて チケットも<CD>使っちゃったし<CF><D1>マ-マン学底の ようじんぼうを<CD>引きうけに 行くかな<CF><D1>さっきの 4人租の所に 行ってみよう","<@LL,00,00>Well now that I've used the tickets, I suppose I should go and be a guard for the Merman Academy. Let's go back to those four boys from earlier."
 040,0x20c050,"<@RL,4A,00>あっち 行きなさいよ!",
 041,0x20c052,"<@RL,4A,00>このうんどう場は わたしたち<CD>マ-メイド学底のものよ!",
 042,0x20c054,"<@RL,4A,00>うんどう場で あそびたかったら<CD>ロボトルに 勝つことね",
 043,0x20c056,"<@RL,4A,00>女の子の メダロッタ-を<CD>なめるんじゃ ないわよっ!",
 044,0x20c058,"<@RL,4A,00>ロボトルに 弱い男は きらいよ!",
-045,0x20c05a,"<@RL,4A,00>ほんと こリないわね!<CF><D1><@RL,4B,00>ふっふっふ<CD>わらっていられるのも 今日までだ",
-046,0x20c05c,"<@RL,4B,00>さっ 先生 どうぞ!",
-047,0x20c05e,"<@LL,00,05>先生は やめてよ",
-048,0x20c060,"<@RL,4A,00>今日のこと ぜったい ぜっったいに<CD>こうかいさせて やるんだから!",
-049,0x20c062,"<@RL,4B,00>やったぜ!!",
-050,0x20c064,"<@RL,4B,00>みんなに ほうこくだ!!",
-051,0x20c066,"<@LL,00,04>ふう やれやれ 何とか おわったな",
-052,0x20c068,"<@LL,00,04>な? <&BUF07>",
-053#kabuto,0x20c06a,"<@RL,35,00>レイさん...<CF><D1><@LL,00,05>...おい",
-053#kuwagata,0x20c06a,"<@RL,36,00>やはリ おれとしては 水中での<CD>けっちゃくを つけてしまいたい<CF><D1><@LL,00,05>...聞いてないな?",
-054,0x20c06c,"<@LL,00,00>とリあえず きがえよう...",
+045,0x20c05a,"<@RL,4A,00>ほんと こリないわね!<CF><D1><@RL,4B,00>ふっふっふ<CD>わらっていられるのも 今日までだ","<@RL,4A,00>You guys never learn!<CF><D1><@RL,4B,00>Huhuhu, let's see you keep laughing after today."
+046,0x20c05c,"<@RL,4B,00>さっ 先生 どうぞ!","<@RL,4B,00>M-Mister, you're up!"
+047,0x20c05e,"<@LL,00,05>先生は やめてよ","<@LL,00,05>Stop with the ""Mister."""
+048,0x20c060,"<@RL,4A,00>今日のこと ぜったい ぜっったいに<CD>こうかいさせて やるんだから!","<@RL,4A,00>I will absolutely, <f02>absolutely<f00> make you regret this!"
+049,0x20c062,"<@RL,4B,00>やったぜ!!","<@RL,4B,00>Hooray!!"
+050,0x20c064,"<@RL,4B,00>みんなに ほうこくだ!!","<@RL,4B,00>We need to tell everyone!!"
+051,0x20c066,"<@LL,00,04>ふう やれやれ 何とか おわったな","<@LL,00,04>Phew, well it seems to be over."
+052,0x20c068,"<@LL,00,04>な? <&BUF07>","<@LL,00,04>Huh, <&BUF07>?"
+053#kabuto,0x20c06a,"<@RL,35,00>レイさん...<CF><D1><@LL,00,05>...おい","<@RL,35,00>Rei...<CF><D1><@LL,00,05>...Hey."
+053#kuwagata,0x20c06a,"<@RL,36,00>やはリ おれとしては 水中での<CD>けっちゃくを つけてしまいたい<CF><D1><@LL,00,05>...聞いてないな?","<@RL,36,00>In the end, I still want a obtain victory underwater.<CF><D1><@LL,00,05>...You aren't listening, are you?"
+054,0x20c06c,"<@LL,00,00>とリあえず きがえよう...","<@LL,00,00>Anyway, let's get changed..."
 055#kabuto,0x20c06e,"<@RL,35,00>おい!<CF><D1><&BUF03><CD>こんなところで きがえる気か?<CF><D1><@LL,00,06>あっ?! あははは...<CD>マ-マン学底の中で きがえよう<CF><D1><@RL,35,00>やれやれ おちおちレイさんのことも<CD>考えていられねぇぜ まったく!",
 055#kuwagata,0x20c06e,"<@RL,36,00>うんどう場の まんなかで<CD>きがえるとは だいたんなヤツだな<CF><D1><@LL,00,06>あっ?! しまった つい...<CF><D1><@RL,36,00>なにが「つい」だ<CD>マ-マン学底の中で きがえるんだな",
 056,0x20c070,"<@LL,00,05>ちぇっ! さっきまで 人の話を<CD>聞いてなかったくせに...",
