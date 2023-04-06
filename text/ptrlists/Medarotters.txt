@@ -227,7 +227,7 @@ Index[#version],Unknown,Name
 222,\x1d\x40\x00,Teacher
 223,\x2d\x41\x00,Rappy
 224,\x4a\x42\x00,Sea Fairies
-225,\x4a\x43\x00,Uono
+225,\x4a\x43\x00,Uona
 226,\x2f\x44\x00,Hellcerberus
 227,\x14\x45\x00,Kawamura
 228,\x34\x46\x00,Kogane

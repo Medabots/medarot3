@@ -119,12 +119,12 @@
 108,0x2140d8,"<@RL,1D,00>あ! ごめんなさい ぼ-っと<CD>してたから えっと 何が貝たいの?","<@RL,1D,00>Ah! Sorry, I was completely zoned out. Uhm, what would you like to see?"
 109,0x2140da,"<@LL,00,00>どうしたんです? ためいき ついて<CF><D1><@RL,1D,00>え? ああ ちょっとね...<CF><D1>この前 用があって 海の上に 出た時<CD>おとしもの しちゃってね<CF><D1>バブルなら ひろいに行けるんだけど<CD>あのチケット 手に入リにくいのよね","<@LL,00,00>What's wrong? Why are you sighing?<CF><D1><@RL,1D,00>Ah? Well, that's...<CF><D1>I dropped something when I went into the ocean on an errand the other day. If I had a Bubble, I could go get it, but getting a ticket for those is pretty hard."
 110,0x2140dc,"<@RL,1D,00>はふ-","<@RL,1D,00>Siiigh"
-111,0x2140de,"<@LL,00,04>おとしものって これですか?<CF><D1><@RL,1D,00>あ!!! そ それ どうしたの!?<CF><D1><@LL,00,04>海で ひろったんです どうぞ<CF><D1><@RL,1D,00>あリがと-!",
-112,0x2140e0,"<@LL,00,04>それ 何ですか? 気になるなぁ<CF><D1><@RL,1D,00>これ? これはねぇ...",
-113,0x2140e2,"<@LL,00,06>い 今の...何!?<CF><D1><@RL,1D,00>ま 大変!",
-114,0x2140e4,"<@RL,1D,00>そ そうだ これ あげるわ!",
-115,0x2140e6,"<@LL,00,04>え? いいの? あリがとうございます<CF><D1><@RL,1D,00>こんな おれいしかできなくて<CD>ごめんね! じゃ!",
-116,0x2140e8,"<@LL,00,06>!!!",
+111,0x2140de,"<@LL,00,04>おとしものって これですか?<CF><D1><@RL,1D,00>あ!!! そ それ どうしたの!?<CF><D1><@LL,00,04>海で ひろったんです どうぞ<CF><D1><@RL,1D,00>あリがと-!","<@LL,00,04>Is this what you lost?<CF><D1><@RL,1D,00>Ah!!! Th-this is... Where did you find it!?<CF><D1><@LL,00,04>I picked it up in the sea, here.<CF><D1><@RL,1D,00>Thanks!"
+112,0x2140e0,"<@LL,00,04>それ 何ですか? 気になるなぁ<CF><D1><@RL,1D,00>これ? これはねぇ...","<@LL,00,04>What is that? I'm so curious.<CF><D1><@RL,1D,00>This? This is..."
+113,0x2140e2,"<@LL,00,06>い 今の...何!?<CF><D1><@RL,1D,00>ま 大変!","<@LL,00,06>J-just now... what?<CF><D1><@RL,1D,00>My, what a shock!"
+114,0x2140e4,"<@RL,1D,00>そ そうだ これ あげるわ!","<@RL,1D,00>R-right, I'll give you this!"
+115,0x2140e6,"<@LL,00,04>え? いいの? あリがとうございます<CF><D1><@RL,1D,00>こんな おれいしかできなくて<CD>ごめんね! じゃ!","<@LL,00,04>Eh? Really? Thanks a bunch.<CF><D1><@RL,1D,00>I'm sorry that this is all I can do to show my thanks! See ya!"
+116,0x2140e8,"<@LL,00,06>!!!","<@LL,00,06>!!!"
 117,0x2140ea,"<@LL,00,00>何だろう これ? アンダ-シェルの<CD>おねえさんの おとしものかも...<CF><D1>もってかえって 聞いてみよう","<@LL,00,00>What is this? Could it be what that lady from UnderShell lost...?<CF><D1>I'll hold on to it for now and ask her."
 118,0x2140ec,"<@RL,1E,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",
 119,0x2140ee,"<@RL,1E,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",

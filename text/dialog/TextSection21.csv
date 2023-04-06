@@ -51,13 +51,13 @@
 048,0x208060,"<@LL,00,00>じゃ いらないや ごめんなさい","<@LL,00,00>N-Never mind, I don't<D3>want it. Sorry."
 049,0x208062,"<@LL,00,00>いや いらないよ<CF><D1><@RL,4B,00>なんで 売れないのかなぁ?<CD>ハンドメイドの ルア-なのに...","<@LL,00,00>No thanks.<CF><D1><@RL,4B,00>Man, why won't these sell?<D3>They're handmade too..."
 050,0x208064,"<@RL,4B,00>ハンドメイドの ルア-が ちょっと<CD>人気が なかったから<CF><D1>この パ-ツを 売ることにするよ","<@RL,4B,00>Since the handmade lures<D3>haven't been selling,<CF><D1>I'll sell these Medarot parts<D3>instead."
-051#kabuto,0x208066,"<@LL,00,04>あ! これは ツル型メダロット<CD>「ビ-トブレス」だ!",
-051#kuwagata,0x208066,"<@LL,00,04>あ! これは クジャク型メダロット<CD>「ゴ-ジャイン」だ!",
-052,0x208068,"<@LL,00,05>でも 何で 左院だけなんだろ...<CF><D1><@RL,4B,00>何言ってるんですか! 遠くの頭よリ<CD>近くの左院って 言うじゃないですか<CF><D1>1つ 5000¥で どうです?<*04>",
-053,0x20806a,"<@LL,00,05>高いけど がまん がまん","<@LL,00,05>It's pricey but I have to<D3>resist..."
-054,0x20806c,"<@LL,00,06>うわ! 高いよ! 何とかならない?<CF><D1><@RL,4B,00>わっかリました! それなら<CD>1つ 4000¥で どうです?<*04>",
+051#kabuto,0x208066,"<@LL,00,04>あ! これは ツル型メダロット<CD>「ビ-トブレス」だ!","<@LL,00,04>Ah! This is the Crane-Type medarot, <f02>BeatBreath<f00>!"
+051#kuwagata,0x208066,"<@LL,00,04>あ! これは クジャク型メダロット<CD>「ゴ-ジャイン」だ!","<@LL,00,04>Ah! This is the Peacock-Type medarot, <f02>Gorgine<f00>!"
+052,0x208068,"<@LL,00,05>でも 何で 左院だけなんだろ...<CF><D1><@RL,4B,00>何言ってるんですか! 遠くの頭よリ<CD>近くの左院って 言うじゃないですか<CF><D1>1つ 5000¥で どうです?<*04>","<@LL,00,05>But it's only the left arm...<CF><D1><@RL,4B,00>What are you talking about? As they say, the left arm in the hand is better than the head in the bush.<CF><D1>How does 5000¥ for one sound?<*04>"
+053,0x20806a,"<@LL,00,05>高いけど がまん がまん","<@LL,00,05>It's pricey but I can't resist..."
+054,0x20806c,"<@LL,00,06>うわ! 高いよ! 何とかならない?<CF><D1><@RL,4B,00>わっかリました! それなら<CD>1つ 4000¥で どうです?<*04>","<@LL,00,06>Woah! That's pricey! Can't you do better?<CF><D1><@RL,4B,00>Very well! In that case,<D3>how does 4000¥ for one sound?<*04>"
 055,0x20806e,"<@LL,00,06>パ-ツって こんなに 高いの?","<@LL,00,06>Are parts usually this<D3>expensive?"
-056,0x208070,"<@LL,00,00>え-! もうちょっと 何とか...<CF><D1><@RL,4B,00>くう! しょうばい人なかせ ですね<CD>それなら 3000¥で どうです?<*04>","<@LL,00,00>Huh!? How about a lil lower?<CF><D1><@RL,4B,00>Ugh, you're a persistent one.<D3>How about 3000¥?<*04>"
+056,0x208070,"<@LL,00,00>え-! もうちょっと 何とか...<CF><D1><@RL,4B,00>くう! しょうばい人なかせ ですね<CD>それなら 3000¥で どうです?<*04>","<@LL,00,00>Huh!? How about a lil' lower?<CF><D1><@RL,4B,00>Ugh, you're a persistent one.<D3>How about 3000¥?<*04>"
 057,0x208072,"<@LL,00,00>ま しかたないよね","<@LL,00,04>Well, okay then."
 058,0x208074,"<@LL,00,04>もう ひと声!<CF><D1><@RL,4B,00>オ-! オキャクサン ワタシヲ<CD>ビンボウ人ニ スルツモリデスカ-!<CF><D1>え-い! もう ほんとに...<CD>それなら 2000¥で どうです?<*04>","<@LL,00,04>Lower!<CF><D1><@RL,4B,00>Hey! Are you trying to make<D3>me poor here!?<CF><D1>Okay, fine then...<D3>How about 2000¥?<*04>"
 059,0x208076,"<@LL,00,04>ま しかたないよね","<@LL,00,04>Well, okay then."
@@ -98,7 +98,7 @@
 094,0x2080bc,"<@RL,4B,00>は はい すみません!","<@RL,4B,00>Y-yes, I'm sorry!"
 095,0x2080be,"<@RL,4B,00>何してんだ!<CD>お前も あやまれよ<CF><D1><@LL,00,00>え? あ はい<CD>すみません<CF><D1><@RL,14,00>うむ","<@RL,4B,00>What are you doing!? You should apologize too.<CF><D1><@LL,00,00>Eh? Ah, right. I'm sorry.<CF><D1><@RL,14,00>Very well."
 096,0x2080c0,"<@LL,00,05>...って 何で ぼくまで","<@LL,00,05>...Why did I have to too?"
-097,0x2080c2,"<@RL,4B,00>ハマグリ学底長は こういうとこ<CD>きびしいからな<CF><D1><@LL,00,00>ヘえ あの人が<CD>ここの 学底長か","<@RL,4B,00>Hamaguri Academy's principal is strict about this type of stuff.<CF><D1><@LL,00,00>Heh, so that guys was the principal here?"
+097,0x2080c2,"<@RL,4B,00>ハマグリ学底長は こういうとこ<CD>きびしいからな<CF><D1><@LL,00,00>ヘえ あの人が<CD>ここの 学底長か","<@RL,4B,00>Principal Hamaguri is strict about this type of stuff.<CF><D1><@LL,00,00>Heh, so that guys was the principal here?"
 098,0x2080c4,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>このうんどう場も<CD>2つの学底で 1つしかないんだよ<CF><D1>だから いつも 場所の とリあいさ",
 099,0x2080c6,"<@RL,4B,00>アンダ-シェルは せますぎるんだ<CF><D1>でも もう 場所のとリあいは<CD>しなくても よくなったよ",
 100,0x2080c8,"<@RL,4B,00>くう! げたばこが くさい!",
@@ -151,7 +151,7 @@
 147,0x208126,どうしよう どうしよう,"What to do, what to do?"
 148,0x208128,"<@RL,4B,00>どうしよう どうしよう<CF><D1><@LL,00,00>どうかしたの?","<@RL,4B,00>What to do, what to do?<CF><D1><@LL,00,00>What's wrong?"
 149,0x20812a,"<@RL,4B,00>ぼ ぼくが...ぼくが かいた<CD>ラブレタ- もって行かれちゃった<CF><D1><@LL,00,07>ええっ! ひどいことするなぁ!<CD>だれなんだよ そいつ!<CF><D1><@RL,4B,00>...学底長だよ<CF><D1><@LL,00,05>(うっ...)<CF><D1><@LL,00,04>ま まあまあ 元気出して<CD>もういちど かいて 出せば...<CF><D1><@RL,4B,00>そうは いかないよ!","<@RL,4B,00>Th-th-the... The love letter I wrote was taken away.<CF><D1><@LL,00,07>Eeh!? That's awful! Who did it!?<CF><D1><@RL,4B,00>...It was the principal.<CF><D1><@LL,00,05>(Ugh...)<CF><D1><@LL,00,04>W-well keep your chin up and write another one...<CF><D1><@RL,4B,00>It's not that simple!"
-150,0x20812c,"<@RL,4B,00>ぼくが ていしゅつした ノ-トに<CD>はさまってるんだ<CF><D1>学底長 まだ 気づいてないと<CD>思うんだけど<CF><D1><@RL,4B,00>今のうちに とリかえさないと<CD>大変な ことになるよ!<CF><D1><@LL,00,00>と 言うと?<CF><D1><@RL,4B,00>貝ての通リ マ-マン学底と<CD>マ-メイド学底は めちゃくちゃ<CF><D1>なかが わるいだろ?<CF><D1>すっ すきな子が できてもさ<CD>ラブレタ-なんか わたそうものなら<CF><D1>そリゃあもう どんな目に あうか<CF><D1>ハマグリ学底長 こういうことには<CD>本当に きびしいんだ<CF><D1>ぼく このあと じゅぎょうだし...<CF><D1>きっと 学底長が その間に<CD>ラブレタ-を 貝つけちゃうよ!<CF><D1>どうしよう どうしよう!!","<@RL,4B,00>It was stuck between pages in a workbook I turned in. I don't think the principal found it yet, but if I don't get it back, then it'll be a big problem!<CF><D1><@LL,00,00>What do you mean?<CF><D1><@RL,4B,00>You've seen the relationship between Mermaid Academy and Merman Academy isn't great, right? Even if you like someone and give them a love letter, if you catch the principal's eye, you'll get in trouble. The principal is really strict about this stuff and I have class soon... I'm sure the principal will find my love letter while I'm there! What to do, what to do?"
+150,0x20812c,"<@RL,4B,00>ぼくが ていしゅつした ノ-トに<CD>はさまってるんだ<CF><D1>学底長 まだ 気づいてないと<CD>思うんだけど<CF><D1><@RL,4B,00>今のうちに とリかえさないと<CD>大変な ことになるよ!<CF><D1><@LL,00,00>と 言うと?<CF><D1><@RL,4B,00>貝ての通リ マ-マン学底と<CD>マ-メイド学底は めちゃくちゃ<CF><D1>なかが わるいだろ?<CF><D1>すっ すきな子が できてもさ<CD>ラブレタ-なんか わたそうものなら<CF><D1>そリゃあもう どんな目に あうか<CF><D1>ハマグリ学底長 こういうことには<CD>本当に きびしいんだ<CF><D1>ぼく このあと じゅぎょうだし...<CF><D1>きっと 学底長が その間に<CD>ラブレタ-を 貝つけちゃうよ!<CF><D1>どうしよう どうしよう!!","<@RL,4B,00>It was stuck between pages in a workbook I turned in. I don't think the principal found it yet, but if I don't get it back, then it'll be a big problem!<CF><D1><@LL,00,00>What do you mean?<CF><D1><@RL,4B,00>You've seen the relationship between Mermaid Academy and Merman Academy isn't great, right? Even if you like someone and give them a love letter, if you catch the principal's eye, you'll get in trouble. Principal Hamaguri is really strict about this stuff and I have class soon... I'm sure the principal will find my love letter while I'm there! What to do, what to do?"
 151,0x20812e,"<@RL,14,00>じゅぎょうを はじめる<CD>せきに ついて!","<@RL,14,00>Class is about to begin, take your seats!"
 152,0x208130,"<@RL,14,00>...ん? きみは たこうの<CD>せいとだね 外に 出てくれないか?<CF><D1><@LL,00,00>あ はい","<@RL,14,00>...Mm? Are you from another school? Could you step outside?<CF><D1><@LL,00,00>Ah, yes."
 153,0x208132,"<@LL,00,00>さっきの子 かわいそうだったな<CD>学底長室に 行ってみようか","<@LL,00,00>That kid just now really has it rough. I should check out the principal's room."
