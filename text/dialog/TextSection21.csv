@@ -156,9 +156,9 @@
 152,0x208130,"<@RL,14,00>...ん? きみは たこうの<CD>せいとだね 外に 出てくれないか?<CF><D1><@LL,00,00>あ はい","<@RL,14,00>...Mm? Are you from another school? Could you step outside?<CF><D1><@LL,00,00>Ah, yes."
 153,0x208132,"<@LL,00,00>さっきの子 かわいそうだったな<CD>学底長室に 行ってみようか","<@LL,00,00>That kid just now really has it rough. I should check out the principal's room."
 154,0x208134,"<@RL,4B,00>どうか ウオナさんに ラブレタ-を<CD>とどけてください<CF><D1>おねがいします!!",
-155,0x208136,"<@LL,00,04>ラブレタ- ちゃんと わたしたよ<CF><D1><@RL,4B,00>あリがとう!!",
-156,0x208138,"<@RL,4B,00>ウオナちゃん...<CD>ヘんじを かいてくれるかな?",
-157,0x20813a,"<@LL,00,06>(やばい! こんどは ヘんじを<CD>もらって来て♥って たのまれそう)",
+155,0x208136,"<@LL,00,04>ラブレタ- ちゃんと わたしたよ<CF><D1><@RL,4B,00>あリがとう!!","<@LL,00,04>I delivered your love letter.<CF><D1><@RL,4B,00>Thanks!!"
+156,0x208138,"<@RL,4B,00>ウオナちゃん...<CD>ヘんじを かいてくれるかな?","<@RL,4B,00>Uona...<D3>I wonder if she'll write me a reply?"
+157,0x20813a,"<@LL,00,06>(やばい! こんどは ヘんじを<CD>もらって来て♥って たのまれそう)","<@LL,00,06>(Close one! I thought he'd say something like ""Can you get her reply? ♥"")"
 158,0x20813c,カギが かかってる,It's locked.
 159,0x20813e,"<@LL,00,00>「マ-マン学底の れきし」",
 160,0x208140,"<@LL,00,00>「きょうしょくいん めいぼ」",
@@ -173,7 +173,7 @@
 169,0x208152,"<@LL,00,07>「メダロットリんちゃん 8かん」<CD>すごい 全部 そろってる!",
 170,0x208154,"<@LL,00,00>今は 入れないようだ",
 171,0x208156,"<@RL,14,00>まじめに やっておくように","<@RL,14,00>Keep working diligently."
-172,0x208158,"<@LL,00,00>ずいぶん 早い じゅぎょうだったね<CF><D1><@RL,4B,00>テスト中だから 先生は 時間まで<CD>かえって来ないんだ<CF><D1>ぼくは もう 気が気じゃなくって<CF><D1><@LL,00,04>ラブレタ- とリかえしてきたよ<CF><D1><@RL,4B,00>ほ 本当っ!? あリがとう!<CF><D1><@LL,00,04>これで もう...<CF><D1><@RL,4B,00>そっ それなんだけどさ<CF><D1><@LL,00,05>まだ 何かあるの?<CF><D1><@RL,4B,00>マ-マン学底と マ-メイド学底の<CD>なかが さいあくなせいで<CF><D1>わたしにくいんだ その...","<@LL,00,00>That was a pretty short class, huh?<CF><D1><@RL,4B,00>We're taking a test, so the teacher won't be back until time is almost up, but I'm already so tense.<CF><D1><@LL,00,04>I managed to get back your love letter.<CF><D1><@RL,4B,00>R-really!? Thanks!<CF><D1><@LL,00,04>And with this...<CF><D1><@RL,4B,00>Th-there's still something else.<CF><D1><@LL,00,05>What else is there?<CF><D1><@RL,4B,00>Because of the terrible relationship between Meraid Academy and Merman Academy, it's hard for me to..."
+172,0x208158,"<@LL,00,00>ずいぶん 早い じゅぎょうだったね<CF><D1><@RL,4B,00>テスト中だから 先生は 時間まで<CD>かえって来ないんだ<CF><D1>ぼくは もう 気が気じゃなくって<CF><D1><@LL,00,04>ラブレタ- とリかえしてきたよ<CF><D1><@RL,4B,00>ほ 本当っ!? あリがとう!<CF><D1><@LL,00,04>これで もう...<CF><D1><@RL,4B,00>そっ それなんだけどさ<CF><D1><@LL,00,05>まだ 何かあるの?<CF><D1><@RL,4B,00>マ-マン学底と マ-メイド学底の<CD>なかが さいあくなせいで<CF><D1>わたしにくいんだ その...","<@LL,00,00>That was a pretty short class, huh?<CF><D1><@RL,4B,00>We're taking a test, so the teacher won't be back until time is almost up, but I'm already so tense.<CF><D1><@LL,00,04>I managed to get back your love letter.<CF><D1><@RL,4B,00>R-really!? Thanks!<CF><D1><@LL,00,04>And with this...<CF><D1><@RL,4B,00>Th-there's still something else.<CF><D1><@LL,00,05>What else is there?<CF><D1><@RL,4B,00>Because of the terrible relationship between Mermaid Academy and Merman Academy, it's hard for me to..."
 173,0x20815a,"<@LL,00,00>ぼくに わたしてほしいってこと?<CF><D1><@RL,4B,00>なっ たのまれてくれよ!<CF><D1>それ マ-メイド学底の<CD>ウオナちゃんに わたしてほしいんだ<CF><D1>きみなら たこうの せいとだから<CD>かんけいないし!<CF><D1><@LL,00,05>そんなこと 言われたって<CD>かおも 知らないし<CF><D1><@RL,4B,00>分かるさ! マ-メイド学底の中で<CD>いっちばんの びしょうじょだから!<CF><D1>な? な? な?<CF><D1><@LL,00,05>う...うむむ","<@LL,00,00>You want me to deliver it to her?<CF><D1><@RL,4B,00>Wh- Please do!<CF><D1>I want you to deliver it to Uona at Mermaid Academy, since your from another school, you shouldn't get caught up in things!<CF><D1><@LL,00,05>Even if you say that, I don't know who she is.<CF><D1><@RL,4B,00>I get that! She's the most beautiful girl at Mermaid Academy though! Y'know, y'know?<CF><D1><@LL,00,05>M-mmhmm."
 174,0x20815c,"<@RL,4B,00>あ! 先生が かえってきた!<CD>じゃ たのんだよ!","<@RL,4B,00>Ah! The teacher is coming back! Well, I'm coutning on you!"
 175,0x20815e,"<@LL,00,05>たのまれて しまった...","<@LL,00,05>Since I was asked..."
@@ -245,7 +245,7 @@
 240,0x2081e0,"<@RL,1A,00>よっしゃ! 楽しんで こいよぉ!<CD>だが 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づいちゃ ダメだぞぉ!","<@RL,1A,00>Alrighty then! Go and have some fun, but don't enter the restricted area's underwater forest!"
 241,0x2081e2,"<@RL,1A,00>チケットが ないと のれないぞぉ!","<@RL,1A,00>You can't ride without ticket!"
 242,0x2081e4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
-243,0x2081e6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ",
+243,0x2081e6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ","<@LL,00,00>I shouldn't use my ticket yet."
 244,0x2081e8,"<@RL,1A,00>海は いいダスよ!","<@RL,1A,00>The ocean is so nice!"
 245,0x2081ea,"<@RL,1A,00>楽しんで きたダスか?<CF><D1><@LL,00,04>ええ 海の中を じゆうに <CD>動けるって 気持ちがいいですね<CF><D1><@RL,1A,00>これで きみも 海の男ダスな!",
 246,0x2081ec,"<@RL,1A,00>バブルのチケットを 貝せるダス","<@RL,1A,00>Show me yer Bubble Ticket."
@@ -253,18 +253,18 @@
 248,0x2081f0,"<@RL,1A,00>うっしゃ! 楽しんで くるダスよ!<CD>しかし 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づかん ようにするダスよ!","<@RL,1A,00>Alrighty then! Go and have some fun, but make sure ya don't enter the restricted area's underwater forest!"
 249,0x2081f2,"<@RL,1A,00>チケットが ないと のれないダス!","<@RL,1A,00>Ya can't ride without a ticket!"
 250,0x2081f4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
-251,0x2081f6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ",
+251,0x2081f6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ","<@LL,00,00>I shouldn't use my ticket yet."
 252,0x2081f8,"<@LL,00,00>この バブルは 使用中 みたいだ","<@LL,00,00>Seems like this bubble is in use."
 253,0x2081fa,"<@LL,00,04>ヘえ! これが 海の中か<CD>きれいだなぁ<CF><D1>せんすい型メダロットたちも<CD>気持ちよさそうに およいでる<CF><D1>あ! そうだ!<CF><D1><&BUF07><CD>お前も せっかくだから<CF><D1>いっしょに およごうよ","<@LL,00,04>Heh! So this is what it's like under the sea. It's beautiful.<CF><D1>The underwater-type medarots are all swimming around having fun.<CF><D1>Ah! Right!<CF><D1><&BUF07>, why not come out and swim too?"
 254#kabuto,0x2081fc,"<@RL,35,00>あのよ オレ よく分かんね-けど<CD>その...スイアツとかって<CF><D1>だいじょうぶなのかよ?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,35,00>すっげぇ ふあんだ<CF><D1><@LL,00,00>メダロット転そ...と あれ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!","<@RL,35,00>Uhm, I'm not really sure, but... Will it be alright with the water pressure and stuff?<CF><D1><@LL,00,01>It's fine!<CF><D1>See, look at those diving medarots swimming around without a care.<CF><D1><@RL,35,00>It's really nerve-wracking.<CF><D1><@LL,00,00>Medarot, trans- huh?<D3>What's this in the bubble?<CF><D1>""Water-proof pressure suit""...? I see. So you tranfer medarots into this.<CF><D1>Well then, medarot, transfer!"
 254#kuwagata,0x2081fc,"<@RL,36,00>まて <&BUF03><CD>お前は ここの すいあつを<CF><D1>知っているのか?<CF><D1><@LL,00,01>だ-いじょうぶだって!<CF><D1>ほら せんすいメダロットたちが<CD>ヘいきで およいでるし<CF><D1><@RL,36,00>お前の たんじゅん思考には<CD>つき合ってられん<CF><D1>その バブルとやらの 中を<CD>よく しらベてみろ<CF><D1><@LL,00,00>ヘ?...と あれ? 何だ これ?<CD>バブルの中に 何か あるぞ?<CF><D1>「たいすいあつス-ツ」...?<CD>そっか メダロットは この中に<CF><D1>転送するのか<CD>じゃ あらためて メダロット転送!","<@RL,36,00>Hold on, <&BUF03>.<D3>Have you considered the water pressure?<CF><D1><@LL,00,01>It's fine!<CF><D1>See, look at those diving medarots swimming around without a care.<CF><D1><@RL,36,00>I don't get your simple-minded thinking. Look inside that Bubble you're in.<CF><D1><@LL,00,00>Heh? ...Huh?<D3>What's this in the bubble?<CF><D1>""Water-proof pressure suit""...? I see. So you tranfer medarots into this.<CF><D1>Well then, medarot, transfer!"
 255#kabuto,0x2081fe,"<@RL,35,00>はあ あやうく ころされる<CD>とこだったぜ","<@RL,35,00>Haa, you almost killed me."
 255#kuwagata,0x2081fe,"<@RL,36,00>こんなことで ころされては<CD>たまらん","<@RL,36,00>Dying like that would have been a same."
-256#kabuto,0x208200,"<@RL,35,00>お-い 出してくれ-<CF><D1>「たいすいあつス-ツ」も<CD>わすれんなよ!<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!",
-256#kuwagata,0x208200,"<@RL,36,00>早く 出せ<CF><D1>「たいすいあつス-ツ」も<CD>わすれるな<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!",
-257#kabuto,0x208202,"<@RL,35,00>レイさん♥<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,35,00>レイさんっ...♥<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,35,00>すっ ステキな場所...♥",
-257#kuwagata,0x208202,"<@RL,36,00>レイ<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,36,00>しょうぶが おあずけの ままでは<CD>気持ち わるいからな<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,36,00>場所を 変えるのか?",
-258,0x208204,"<@RL,33,00>行きましょ!",
+256#kabuto,0x208200,"<@RL,35,00>お-い 出してくれ-<CF><D1>「たいすいあつス-ツ」も<CD>わすれんなよ!<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!","<@RL,35,00>Heeey, lemme out!<CF><D1>And don't forget the ""Water-proof Pressure Suit"" too!<CF><D1><@LL,00,00>Yeah, yeah.<D3>Medarot, transfer!"
+256#kuwagata,0x208200,"<@RL,36,00>早く 出せ<CF><D1>「たいすいあつス-ツ」も<CD>わすれるな<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!","<@RL,36,00>Hurry and let me out!<CF><D1>And don't forget the ""Water-proof Pressure Suit"" too!<CF><D1><@LL,00,00>Yeah, yeah.<D3>Medarot, transfer!"
+257#kabuto,0x208202,"<@RL,35,00>レイさん♥<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,35,00>レイさんっ...♥<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,35,00>すっ ステキな場所...♥","<@RL,35,00>Rei ♥<CF><D1><@RL,33,00>I was hoping that you would come.<CF><D1><@RL,35,00>Rei... ♥<CF><D1><@RL,33,00>Come on, let's go! I have a lovely place that I'd like to show you!<CF><D1><@RL,35,00>A-a lovely place... ♥"
+257#kuwagata,0x208202,"<@RL,36,00>レイ<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,36,00>しょうぶが おあずけの ままでは<CD>気持ち わるいからな<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,36,00>場所を 変えるのか?","<@RL,36,00>Rei.<CF><D1><@RL,33,00>I was hoping that you would come.<CF><D1><@RL,36,00>Leaving our match on hold left a bad taste in my mouth.<CF><D1><@RL,33,00>Come on, let's go! I have a lovely place that I'd like to show you!<CF><D1><@RL,36,00>We're changing locations?"
+258,0x208204,"<@RL,33,00>行きましょ!","<@RL,33,00>Let's go!"
 259,0x208206,"<@LL,00,00>あ! <&BUF07>!<CD>あんまリ 遠くに 行くなよ!",
 260,0x208208,"<@RL,02,04>ふふ <&BUF07>ちゃんの<CD>ガ-ルフレンドですか?<CF><D1><@LL,00,00>メダロットにも こいって<CD>あるのかな-?<CF><D1><@RL,02,04>聞いたことは ないですけど<CD>あったら ステキですね♥<CF><D1><@LL,00,05>う-む<CF><D1><@RL,02,04>さあ わたしたちも<CD>おさんぽしましょ!<CF><D1><@LL,00,01>うん!",
 261,0x20820a,"<@LL,00,00>どうやら 入って来た所からじゃないと<CD>もどれないようだ",
