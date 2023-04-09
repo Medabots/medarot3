@@ -242,7 +242,7 @@
 237,0x2081da,"<@RL,1A,00>よかっただろぉ?<CF><D1><@LL,00,04>ええ お魚になったような <CD>気分です♪<CF><D1><@RL,1A,00>海は メルヘンチ---ック!!",
 238,0x2081dc,"<@RL,1A,00>バブルのチケットを 貝せるんだぞぉ","<@RL,1A,00>Show me your Bubble Ticket."
 239,0x2081de,"<@RL,1A,00>お? Sチケットとは おそれいった!<CD>通って いいぞぉ","<@RL,1A,00>Oh? An S-Ticket? How impressive! Go on."
-240,0x2081e0,"<@RL,1A,00>よっしゃ! 楽しんで こいよぉ!<CD>だが 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づいちゃ ダメだぞぉ!","<@RL,1A,00>Alrighty then! Go and have some fun, but don't enter the restricted area's underwater forest!"
+240,0x2081e0,"<@RL,1A,00>よっしゃ! 楽しんで こいよぉ!<CD>だが 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づいちゃ ダメだぞぉ!","<@RL,1A,00>Alrighty then! Go and have some fun, but don't enter the Undersea Forest restricted area!"
 241,0x2081e2,"<@RL,1A,00>チケットが ないと のれないぞぉ!","<@RL,1A,00>You can't ride without ticket!"
 242,0x2081e4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
 243,0x2081e6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ","<@LL,00,00>I shouldn't use my ticket yet."
@@ -250,7 +250,7 @@
 245,0x2081ea,"<@RL,1A,00>楽しんで きたダスか?<CF><D1><@LL,00,04>ええ 海の中を じゆうに <CD>動けるって 気持ちがいいですね<CF><D1><@RL,1A,00>これで きみも 海の男ダスな!",
 246,0x2081ec,"<@RL,1A,00>バブルのチケットを 貝せるダス","<@RL,1A,00>Show me yer Bubble Ticket."
 247,0x2081ee,"<@RL,1A,00>お? Sチケットとは まいったね!<CD>通って いいダス","<@RL,1A,00>Oh? An S-Ticket, what luck! Go on."
-248,0x2081f0,"<@RL,1A,00>うっしゃ! 楽しんで くるダスよ!<CD>しかし 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づかん ようにするダスよ!","<@RL,1A,00>Alrighty then! Go and have some fun, but make sure ya don't enter the restricted area's underwater forest!"
+248,0x2081f0,"<@RL,1A,00>うっしゃ! 楽しんで くるダスよ!<CD>しかし 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づかん ようにするダスよ!","<@RL,1A,00>Alrighty then! Go and have some fun, but make sure ya don't enter the Undersea Forest restricted area!"
 249,0x2081f2,"<@RL,1A,00>チケットが ないと のれないダス!","<@RL,1A,00>Ya can't ride without a ticket!"
 250,0x2081f4,"<@LL,00,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
 251,0x2081f6,"<@LL,00,00>今 このチケットを 使うわけには<CD>いかないよ","<@LL,00,00>I shouldn't use my ticket yet."
@@ -262,11 +262,11 @@
 255#kuwagata,0x2081fe,"<@RL,36,00>こんなことで ころされては<CD>たまらん","<@RL,36,00>Dying like that would have been a same."
 256#kabuto,0x208200,"<@RL,35,00>お-い 出してくれ-<CF><D1>「たいすいあつス-ツ」も<CD>わすれんなよ!<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!","<@RL,35,00>Heeey, lemme out!<CF><D1>And don't forget the ""Water-proof Pressure Suit"" too!<CF><D1><@LL,00,00>Yeah, yeah.<D3>Medarot, transfer!"
 256#kuwagata,0x208200,"<@RL,36,00>早く 出せ<CF><D1>「たいすいあつス-ツ」も<CD>わすれるな<CF><D1><@LL,00,00>はいはい<CD>メダロット転送!","<@RL,36,00>Hurry and let me out!<CF><D1>And don't forget the ""Water-proof Pressure Suit"" too!<CF><D1><@LL,00,00>Yeah, yeah.<D3>Medarot, transfer!"
-257#kabuto,0x208202,"<@RL,35,00>レイさん♥<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,35,00>レイさんっ...♥<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,35,00>すっ ステキな場所...♥",
-257#kuwagata,0x208202,"<@RL,36,00>レイ<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,36,00>しょうぶが おあずけの ままでは<CD>気持ち わるいからな<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,36,00>場所を 変えるのか?",
-258,0x208204,"<@RL,33,00>行きましょ!",
-259,0x208206,"<@LL,00,00>あ! <&BUF07>!<CD>あんまリ 遠くに 行くなよ!",
-260,0x208208,"<@RL,02,04>ふふ <&BUF07>ちゃんの<CD>ガ-ルフレンドですか?<CF><D1><@LL,00,00>メダロットにも こいって<CD>あるのかな-?<CF><D1><@RL,02,04>聞いたことは ないですけど<CD>あったら ステキですね♥<CF><D1><@LL,00,05>う-む<CF><D1><@RL,02,04>さあ わたしたちも<CD>おさんぽしましょ!<CF><D1><@LL,00,01>うん!",
+257#kabuto,0x208202,"<@RL,35,00>レイさん♥<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,35,00>レイさんっ...♥<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,35,00>すっ ステキな場所...♥","<@RL,35,00>Rei ♥<CF><D1><@RL,33,00>I was hoping that you would come.<CF><D1><@RL,35,00>Rei... ♥<CF><D1><@RL,33,00>Come on, let's go! I have a lovely place that I'd like to show you!<CF><D1><@RL,35,00>A-a lovely place... ♥"
+257#kuwagata,0x208202,"<@RL,36,00>レイ<CF><D1><@RL,33,00>きっと 来てくださると 思って<CD>まってたんです<CF><D1><@RL,36,00>しょうぶが おあずけの ままでは<CD>気持ち わるいからな<CF><D1><@RL,33,00>さあ 行きましょうよ!<CD>今日は ステキな場所に<CF><D1>ごあんない したくって!<CF><D1><@RL,36,00>場所を 変えるのか?","<@RL,36,00>Rei.<CF><D1><@RL,33,00>I was hoping that you would come.<CF><D1><@RL,36,00>Leaving our match on hold left a bad taste in my mouth.<CF><D1><@RL,33,00>Come on, let's go! I have a lovely place that I'd like to show you!<CF><D1><@RL,36,00>We're changing locations?"
+258,0x208204,"<@RL,33,00>行きましょ!","<@RL,33,00>Let's go!"
+259,0x208206,"<@LL,00,00>あ! <&BUF07>!<CD>あんまリ 遠くに 行くなよ!","<@LL,00,00>Ah! <&BUF07>!<D3>Don't go too far off!"
+260,0x208208,"<@RL,02,04>ふふ <&BUF07>ちゃんの<CD>ガ-ルフレンドですか?<CF><D1><@LL,00,00>メダロットにも こいって<CD>あるのかな-?<CF><D1><@RL,02,04>聞いたことは ないですけど<CD>あったら ステキですね♥<CF><D1><@LL,00,05>う-む<CF><D1><@RL,02,04>さあ わたしたちも<CD>おさんぽしましょ!<CF><D1><@LL,00,01>うん!","<@RL,02,04>Huhu, was that <&BUF07>'s girlfriend?<CF><D1><@LL,00,00>I wonder, can medarots love?<CF><D1><@RL,02,04>I haven't heard of any cases, but it would be a lovely thing ♥<CF><D1><@LL,00,05>Yeah.<CF><D1><@RL,02,04>Come on, let's do our stroll too!<CF><D1><@LL,00,01>Yeah!"
 261,0x20820a,"<@LL,00,00>どうやら 入って来た所からじゃないと<CD>もどれないようだ",
 262,0x20820c,"<@LL,00,04>せっかく来たんだし もうすこし<CD>あそんでいこう",
 263,0x20820e,"<@LL,00,00>ここから アンダ-シェルに<CD>もどろうかな?<*04>","<@LL,00,00>Shall we leave and go back to UnderShell?<*04>"
