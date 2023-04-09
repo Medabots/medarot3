@@ -281,22 +281,22 @@
 259,0x20c206,"<@LL,00,05>あの男の子に おれいを<CD>言いに 行かなくちゃ!",
 260,0x20c208,"<@LL,00,05>ラブレタ-を かいたやつに<CD>わたしたって おしえて あげよう",
 261,0x20c20a,"<@LL,00,04>さて これでやっと 心おきなく<CD>カリンちゃんと デ-トできるぞ♥<CF><D1><@LL,00,01>バブルのリばヘ GO!","<@LL,00,04>Now I can finally relax on a date with Karin ♥<CF><D1><@LL,00,01>To the Bubble Jetty, Go!"
-262,0x20c20c,"<@RL,33,00>どいた どいたぁ!",
-263#kabuto,0x20c20e,"<@RL,03,01>がんばれ! スミロドナッド<CD>ほかの せんすいたちに まけるな!",
-263#kuwagata,0x20c20e,"<@RL,03,01>がんばれ! ウォ-バニット<CD>ほかの せんすいたちに まけるな!",
-264,0x20c210,"<@RL,30,00>は はい! マスタ-<CD>でも 少し 休みながら...<CF><D1><@RL,03,01>まだまだ いけるっ!!",
-265#kabuto,0x20c212,"<@LL,00,04>スミロドナッドも 大変だなぁ<CF><D1><@RL,02,04>うふふ",
-265#kuwagata,0x20c212,"<@LL,00,04>ウォ-バニットも 大変だなぁ<CF><D1><@RL,02,04>うふふ",
-266#kabuto,0x20c214,"<@RL,35,00>すっ ステキな場所って?<CF><D1><@RL,33,00>こっちですわ!<CD>早く 早く!",
-266#kuwagata,0x20c214,"<@RL,36,00>どこヘ 行く気だ?<CF><D1><@RL,33,00>こっちですわ!<CF><D1><@RL,36,00>おい まて!<CD>そっちは 立ち入リきんしだぞ!",
-267#kabuto,0x20c216,"<@RL,35,00>はぁ-い♥",
-267#kuwagata,0x20c216,"<@RL,33,00>しんぱい いリませんわ<CD>むこうがわに つづく道は<CF><D1>ちゃんと あるんです!<CD>ほら 早く!",
-268,0x20c218,"<@RL,01,04>ブラス! 魚と たわむれる<CD>あんたを バッチリ きれいに<CF><D1>とって あげるわよ!<CD>さあ ゆうがに およいで!<CF><D1><@RL,34,00>アリカちゃん...<CF><D1><@RL,01,04>ほらほら! はずかしがらずに!<CF><D1><@LL,00,04>ブラスも 大変だな<CF><D1><@RL,02,04>でも いっしょうけんめいの<CD>ブラスちゃん とっても<CF><D1>かわいいですわ♥",
-269#kabuto,0x20c21a,"<@RL,33,00>じゃあ むこうの 海のさけめまで<CD>きょうそうですわ!<CF><D1><@RL,35,00>海のさけめ!?<CD>レっ レイさん! あぶないよ!!",
-269#kuwagata,0x20c21a,"<@RL,33,00>じゃあ むこうの 海のさけめまで<CD>きょうそうですわ!<CF><D1><@RL,36,00>おいっ! あぶないぞ!",
-270#kabuto,0x20c21c,"<@RL,35,00>レイさ---んっ!!",
-270#kuwagata,0x20c21c,"<@RL,36,00>まったく このおれが<CD>何を ふリ回されて いるんだ<CF><D1>...ふっ まあいい<CD>もう少し つき合ってみるか",
-271,0x20c21e,"<@RL,01,04>ここは もういいわ<CD>ブラス 場所を 変えましょ<CF><D1><@RL,34,00>アリカちゃん...<CF><D1><@RL,01,04>ほらほら! 行くわよ!",
-272,0x20c220,"<@RL,02,04>わたしたちも 行きましょう",
+262,0x20c20c,"<@RL,33,00>どいた どいたぁ!","<@RL,33,00>Move it, move it!"
+263#kabuto,0x20c20e,"<@RL,03,01>がんばれ! スミロドナッド<CD>ほかの せんすいたちに まけるな!","<@RL,03,01>You can do it, Smilodonad! Don't let the diving ones get the better of you!"
+263#kuwagata,0x20c20e,"<@RL,03,01>がんばれ! ウォ-バニット<CD>ほかの せんすいたちに まけるな!","<@RL,03,01>You can do it, Warbonnet! Don't let the diving ones get the better of you!"
+264,0x20c210,"<@RL,30,00>は はい! マスタ-<CD>でも 少し 休みながら...<CF><D1><@RL,03,01>まだまだ いけるっ!!","<@RL,30,00>Y-yes, Master!<D3>But just a small break...<CF><D1><@RL,03,01>You can still go on!!"
+265#kabuto,0x20c212,"<@LL,00,04>スミロドナッドも 大変だなぁ<CF><D1><@RL,02,04>うふふ","<@LL,00,04>Smilodonad sure has his work cut out.<CF><D1><@RL,02,04>Uhuhu."
+265#kuwagata,0x20c212,"<@LL,00,04>ウォ-バニットも 大変だなぁ<CF><D1><@RL,02,04>うふふ","<@LL,00,04>Warbonnet sure has his work cut out.<CF><D1><@RL,02,04>Uhuhu."
+266#kabuto,0x20c214,"<@RL,35,00>すっ ステキな場所って?<CF><D1><@RL,33,00>こっちですわ!<CD>早く 早く!","<@RL,35,00>A-a lovely place, you said?<CF><D1><@RL,33,00>This way! Hurry, hurry!"
+266#kuwagata,0x20c214,"<@RL,36,00>どこヘ 行く気だ?<CF><D1><@RL,33,00>こっちですわ!<CF><D1><@RL,36,00>おい まて!<CD>そっちは 立ち入リきんしだぞ!","<@RL,36,00>Where are we going?<CF><D1><@RL,33,00>This way!<CF><D1><@RL,36,00>Hey, wait! We aren't allowed in there!"
+267#kabuto,0x20c216,"<@RL,35,00>はぁ-い♥","<@RL,35,00>Yeeees ♥"
+267#kuwagata,0x20c216,"<@RL,33,00>しんぱい いリませんわ<CD>むこうがわに つづく道は<CF><D1>ちゃんと あるんです!<CD>ほら 早く!","<@RL,33,00>No point in worrying about it. There seems to be a path that way! Let's go!"
+268,0x20c218,"<@RL,01,04>ブラス! 魚と たわむれる<CD>あんたを バッチリ きれいに<CF><D1>とって あげるわよ!<CD>さあ ゆうがに およいで!<CF><D1><@RL,34,00>アリカちゃん...<CF><D1><@RL,01,04>ほらほら! はずかしがらずに!<CF><D1><@LL,00,04>ブラスも 大変だな<CF><D1><@RL,02,04>でも いっしょうけんめいの<CD>ブラスちゃん とっても<CF><D1>かわいいですわ♥","<@RL,01,04>Brass! I'll perfectly capture your beautiful swimming with the playing fish!<CF><D1>Come on, show your elegant swimming!<CF><D1><@RL,34,00>Erika...<CF><D1><@RL,01,04>Hey, come on! Don't be shy!<CF><D1><@LL,00,04>Brass has her work cut out too.<CF><D1><@RL,02,04>Still, Brass trying her best is so cute ♥"
+269#kabuto,0x20c21a,"<@RL,33,00>じゃあ むこうの 海のさけめまで<CD>きょうそうですわ!<CF><D1><@RL,35,00>海のさけめ!?<CD>レっ レイさん! あぶないよ!!","<@RL,33,00>Then it's a race to the other side of the ocean chasm!<CF><D1><@RL,35,00>The ocean chasm!?<D3>R-Rei! That's dangerous!!"
+269#kuwagata,0x20c21a,"<@RL,33,00>じゃあ むこうの 海のさけめまで<CD>きょうそうですわ!<CF><D1><@RL,36,00>おいっ! あぶないぞ!","<@RL,33,00>Then it's a race to the other side of the ocean chasm!<CF><D1><@RL,36,00>Hey! That's dangerous!"
+270#kabuto,0x20c21c,"<@RL,35,00>レイさ---んっ!!","<@RL,35,00>Reiiiiii!!"
+270#kuwagata,0x20c21c,"<@RL,36,00>まったく このおれが<CD>何を ふリ回されて いるんだ<CF><D1>...ふっ まあいい<CD>もう少し つき合ってみるか","<@RL,36,00>Why the heck do I have to get dragged around for?<CF><D1>...Sigh, I guess I'll keep them company a while longer."
+271,0x20c21e,"<@RL,01,04>ここは もういいわ<CD>ブラス 場所を 変えましょ<CF><D1><@RL,34,00>アリカちゃん...<CF><D1><@RL,01,04>ほらほら! 行くわよ!","<@RL,01,04>We're done with this place, let's change locations, Brass.<CF><D1><@RL,34,00>Erika...<CF><D1><@RL,01,04>Come on, come on! Let's go!"
+272,0x20c220,"<@RL,02,04>わたしたちも 行きましょう","<@RL,02,04>Let's go as well."
 273,0x20c222,"<@RL,34,00>海って すてきですね",
-274,0x20c224,"<@LL,00,00>あれ? あれって カリンちゃんの<CD>ナ-スちゃんじゃ?<CF><D1><@RL,02,04>ナ-スちゃんは あそこに じっとして<CD>心を おちつけているんですわ<CF><D1>海って やっぱリ 心が<CD>おちつく ものなんですね<CF><D1><@LL,00,04>うん そうかも",
+274,0x20c224,"<@LL,00,00>あれ? あれって カリンちゃんの<CD>ナ-スちゃんじゃ?<CF><D1><@RL,02,04>ナ-スちゃんは あそこに じっとして<CD>心を おちつけているんですわ<CF><D1>海って やっぱリ 心が<CD>おちつく ものなんですね<CF><D1><@LL,00,04>うん そうかも","<@LL,00,00>Huh? Isn't that your lil' Nurse, Karin?<CF><D1><@RL,02,04>My lil' Nurse is quietly standing over here to calm her heart.<CF><D1>As expected, the ocean is really relaxing.<CF><D1><@LL,00,04>Yeah, I guess so."
