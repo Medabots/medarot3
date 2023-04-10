@@ -217,25 +217,25 @@
 182,0x21016c,"<@LL,00,05>先生たち そんな!<CD>どうして そんなに...","<@LL,00,05>What are you teachers doing?! How can you be so..."
 183,0x21016e,"<@RL,1D,00>おだまリっ!<CF><D1><@RL,14,00>部外者は 引っこんでおれ!","<@RL,1D,00>Silence!<CF><D1><@RL,14,00>Outsiders should stay out of this!"
 184,0x210170,"<@RL,3F,01>ははは! おかしいね","<@RL,3F,01>Hahaha! How amusing."
-185,0x210172,"<@LL,00,07>カイ!<CF><D1><@RL,3F,01>人間なんて こんなものさ<CF><D1>すぐに にくしみあったリ<CD>きずつけあったリ<CF><D1>それが かつては 受し合った者<CD>どうしでもね<CF><D1><@LL,00,03>カイ...<CF><D1><@RL,3F,01>さて では そろそろ きみとの<CD>ロボトルを はじめようか",
-186,0x210174,"<@RL,1D,00>きゃあっ!<CF><D1><@RL,14,00>うわあっ!!",
-187,0x210176,"<@LL,00,07>何だっ!?<CF><D1><@RL,3F,01>ああ もう はじまってしまったのか<CD>しかたがない 場所を うつそう<CF><D1>きみとの ロボトルは だれにも<CD>じゃまされたく ないからね",
-188,0x210178,"<@LL,00,07>カイ!!<CF><D1><@RL,3F,01>ぼくは海中林で きみが来るのを<CD>まっているよ!!",
-189,0x21017a,"<@RL,03,01>おいかけるぞ!<&BUF03>!!",
-190,0x21017c,"<@RL,01,07>あ! あたしも!",
-191,0x21017e,"<@RL,02,06>わたしは 学底の中に 人が<CD>のこっていないか 貝てきます!",
-192,0x210180,"<@RL,14,00>わ わたしたちは どうすれば!?<CF><D1><@LL,00,02>何 言ってるんだ! 早く みんなを<CD>たすけないと!<CF><D1><@RL,14,00>そうだ! わたしと したことが!!",
-193,0x210182,"<@RL,1D,00>行きますわよ!<CF><D1><@RL,14,00>うむ!",
-194,0x210184,"<@LL,00,06>また 町ごと ほうかいの<CD>ききってやつ?<CF><D1>と とにかく カイを<CD>おいかけなきゃ!",
+185,0x210172,"<@LL,00,07>カイ!<CF><D1><@RL,3F,01>人間なんて こんなものさ<CF><D1>すぐに にくしみあったリ<CD>きずつけあったリ<CF><D1>それが かつては 受し合った者<CD>どうしでもね<CF><D1><@LL,00,03>カイ...<CF><D1><@RL,3F,01>さて では そろそろ きみとの<CD>ロボトルを はじめようか","<@LL,00,07>Kai!<CF><D1><@RL,3F,01>This is just how humans are.<CF><D1>It doesn't take long before they hate and hurt one another.<CF><D1>Even those who once loved one another.<CF><D1><@LL,00,03>Kai...<CF><D1><@RL,3F,01>Now then, I suppose it's time for me to robattle you."
+186,0x210174,"<@RL,1D,00>きゃあっ!<CF><D1><@RL,14,00>うわあっ!!","<@RL,1D,00>Kyah!<CF><D1><@RL,14,00>Woah!!"
+187,0x210176,"<@LL,00,07>何だっ!?<CF><D1><@RL,3F,01>ああ もう はじまってしまったのか<CD>しかたがない 場所を うつそう<CF><D1>きみとの ロボトルは だれにも<CD>じゃまされたく ないからね","<@LL,00,07>What was that!?<CF><D1><@RL,3F,01>Aah, oh well, so it already started. It can't be helped, I don't want anyone to interfere with our robattle, so let's change locations."
+188,0x210178,"<@LL,00,07>カイ!!<CF><D1><@RL,3F,01>ぼくは海中林で きみが来るのを<CD>まっているよ!!","<@LL,00,07>Kai!!<CF><D1><@RL,3F,01>I'll be waiting for you at the Undersea Forest."
+189,0x21017a,"<@RL,03,01>おいかけるぞ!<&BUF03>!!","<@RL,03,01>After him! <&BUF03>!!"
+190,0x21017c,"<@RL,01,07>あ! あたしも!","<@RL,01,07>Ah! I'm going too!"
+191,0x21017e,"<@RL,02,06>わたしは 学底の中に 人が<CD>のこっていないか 貝てきます!","<@RL,02,06>I'm going to check if there is anyone left in the academies!"
+192,0x210180,"<@RL,14,00>わ わたしたちは どうすれば!?<CF><D1><@LL,00,02>何 言ってるんだ! 早く みんなを<CD>たすけないと!<CF><D1><@RL,14,00>そうだ! わたしと したことが!!","<@RL,14,00>Wh-what should we do!?<CF><D1><@LL,00,02>What are you saying!? We have to hurry and help everyone!<CF><D1><@RL,14,00>Right! I should've known!"
+193,0x210182,"<@RL,1D,00>行きますわよ!<CF><D1><@RL,14,00>うむ!","<@RL,1D,00>Let's go!<CF><D1><@RL,14,00>Yes!"
+194,0x210184,"<@LL,00,06>また 町ごと ほうかいの<CD>ききってやつ?<CF><D1>と とにかく カイを<CD>おいかけなきゃ!","<@LL,00,06>Is this another ""town destruction""?<CF><D1>A-anyway I need to go after Kai!"
 195,0x210186,"<@LL,00,00>ちょっと まって","<@LL,00,00>Hold on a bit."
 196,0x210188,"<@LL,00,06>ここは 学底長たちに まかせて<CD>海中林ヘ いそごう",
 197,0x21018a,"<@LL,00,00>シャッタ-が おリている",
-198,0x21018c,ドド-ンッ!!,
-199,0x21018e,"<@RL,1D,00>キャア-ッ!!<CF><D1><@RL,14,00>わ-!",
-200,0x210190,"<@LL,00,07>何だ!?",
-201,0x210192,"<@LL,00,07>ど どうしたんです?<CD>何が おこってるんですか?<CF><D1><@RL,14,00>たたた大変なんだ! アンダ-シェルの<CD>ぼうえいシステムが ご作動して<CF><D1>自分で 自分を 攻撃してるんだ!",
-202,0x210194,"<@LL,00,07>ええっ!?<CF><D1><@RL,14,00>にげるって 言っても<CD>マリンエキスプレスまで おかしく<CF><D1>なっていて もう ぜつぼうてきだよ",
-203,0x210196,"<@LL,00,07>た 大変だ!",
+198,0x21018c,ドド-ンッ!!,*kaboom!!*
+199,0x21018e,"<@RL,1D,00>キャア-ッ!!<CF><D1><@RL,14,00>わ-!","<@RL,1D,00>Kyaah!!<CF><D1><@RL,14,00>Woah!"
+200,0x210190,"<@LL,00,07>何だ!?","<@LL,00,07>What's happening!?"
+201,0x210192,"<@LL,00,07>ど どうしたんです?<CD>何が おこってるんですか?<CF><D1><@RL,14,00>たたた大変なんだ! アンダ-シェルの<CD>ぼうえいシステムが ご作動して<CF><D1>自分で 自分を 攻撃してるんだ!","<@LL,00,07>Wh-what's the matter?<D3>What's happening?<CF><D1><@RL,14,00>I-i-i-it's an emergency! UnderShell's defense system has been activated and is targeting itself!"
+202,0x210194,"<@LL,00,07>ええっ!?<CF><D1><@RL,14,00>にげるって 言っても<CD>マリンエキスプレスまで おかしく<CF><D1>なっていて もう ぜつぼうてきだよ","<@LL,00,07>Eeh!?<CF><D1><@RL,14,00>We can't even get away because the Marine Express is acting up, it's hopeless!"
+203,0x210196,"<@LL,00,07>た 大変だ!","<@LL,00,07>Wh-what a pickle!"
 204,0x210198,"<@LL,00,02>早くしないと! いそごう!",
 205,0x21019a,"<@RL,14,00>うわ-!",
 206,0x21019c,"<@RL,14,00>ど どいてくれっ!",
@@ -246,97 +246,97 @@
 211,0x2101a6,"<@RL,4B,00>もう だめかも...",
 212,0x2101a8,"<@RL,03,01>あの カイとか いうやつは<CD>どこだ!",
 213,0x2101aa,"<@RL,30,00>気を つけて",
-214,0x2101ac,"<@LL,00,06>どうしたんだ?<CF><D1><@RL,01,07>大変なの <CD><&BUF03>!<CF><D1>とびらが ひらかないの!<CD>今 コウジくんが 何とかしようと<CF><D1>してるんだけど<CD>びくとも しなくて!",
-215,0x2101ae,"<@RL,03,03>くぅっ! ダメだ!",
-216#kabuto,0x2101b0,"<@RL,35,00>オレに まかせろ<CD><&BUF03>!",
-216#kuwagata,0x2101b0,"<@RL,36,00>おれに まかせろ<CD><&BUF03>!",
-217,0x2101b2,"<@LL,00,00>分かった たのむ <CD>メダロット転送!",
-218#kabuto,0x2101b4,"<@RL,35,00>なるベく はなれてろ!<CF><D1><@LL,00,02>行け-! 「メダスプレイヤ-」だ!<CF><D1><@RL,35,00>うおおおおっ!!",
-218#kuwagata,0x2101b4,"<@RL,36,00>うしろに さがっていろ!<CF><D1><@LL,00,02>行け-! 「メダシェア-ズ」だ!<CF><D1><@RL,36,00>うおおおおっ!!",
-219,0x2101b6,"<@RL,01,01>やったぁ! 道がひらけた!!<CF><D1><@LL,00,02>ア-スモ-ルでは ロボロボ団が町を<CD>ほうかいさせるところだったけど<CF><D1>こんどのは ちがう!<CD>ロボロボ団じゃないよ! こんなの!",
-220,0x2101b8,"<@RL,03,01><&BUF03>! お前 何か<CD>知ってるのか?<CF><D1>今 おれたちが おいかけてる やつが<CD>はんにんなのか?",
-221,0x2101ba,"<@LL,00,02>友だちに なったんだ あいつと<CD>だから ぼくが あいつを止める!!",
-222,0x2101bc,"<@RL,01,05>あ あたし アンダ-シェルの<CD>左がわに いってみるわ!",
-223,0x2101be,"<@RL,41,01>アッハハハハ!<CF><D1>自分たちが 作ったもので<CD>ほろびれば いいんだ!",
-224,0x2101c0,"<@LL,00,02>きみが 電気を あやつって<CD>町を 攻撃させているんだな!<CF><D1><@RL,41,01>アタシは ただ レアメダルの 力を<CD>少し 利用してやっただけ<CF><D1><@LL,00,00>レアメダルの?<CF><D1><@RL,41,01>そう めざめたばかリの レアメダル!<CD>オマエのと ぶつけたら<CF><D1>どっちが きえるか じっけんだ<CF><D1><@LL,00,02>レアメダルとか スピリットとかって<CD>よく 分かんないけど<CF><D1>なんで こんなこと するんだよっ!<CF><D1>どうして 人間と なかよく<CD>できないんだっ!<CF><D1><@RL,41,03>ニンゲンなんか 大キライ!<CD>アタシたち メダルに ならない!<CF><D1><@LL,00,07>(メダルに!? じゃあ あの<CD>海のいせきで 貝た ゆめは!)<CF><D1><@RL,41,03>ニンゲン たおす!",
-225,0x2101c2,"<@RL,41,03>くっ! おぼえてろっ!",
-226,0x2101c4,"<@RL,01,05>とびらが こわれてて むこうに<CD>行けないわ!",
-227,0x2101c6,"<@LL,00,05>バブルが こわされている...",
-228,0x2101c8,"<@LL,00,00>よかった このバブルは ぶじだ",
-229,0x2101ca,"<@LL,00,02>海中林に 行くぞ!<CD><&BUF07>!",
-230#kabuto,0x2101cc,"<@RL,35,00>ああ 行こうぜ!",
-230#kuwagata,0x2101cc,"<@RL,36,00>いそがねば なるまい!",
+214,0x2101ac,"<@LL,00,06>どうしたんだ?<CF><D1><@RL,01,07>大変なの <CD><&BUF03>!<CF><D1>とびらが ひらかないの!<CD>今 コウジくんが 何とかしようと<CF><D1>してるんだけど<CD>びくとも しなくて!","<@LL,00,06>What's wrong?<CF><D1><@RL,01,07>Big problem, <&BUF03>!<CF><D1>The door won't one!<D3>Koji is trying to do something about it now, but it won't budge!"
+215,0x2101ae,"<@RL,03,03>くぅっ! ダメだ!","<@RL,03,03>Kuh! No good!"
+216#kabuto,0x2101b0,"<@RL,35,00>オレに まかせろ<CD><&BUF03>!","<@RL,35,00>Leave it to me, <&BUF03>!"
+216#kuwagata,0x2101b0,"<@RL,36,00>おれに まかせろ<CD><&BUF03>!","<@RL,36,00>Leave it to me, <&BUF03>!"
+217,0x2101b2,"<@LL,00,00>分かった たのむ <CD>メダロット転送!","<@LL,00,00>Got it, I'm counting on you.<D3>Medarot, transfer!"
+218#kabuto,0x2101b4,"<@RL,35,00>なるベく はなれてろ!<CF><D1><@LL,00,02>行け-! 「メダスプレイヤ-」だ!<CF><D1><@RL,35,00>うおおおおっ!!","<@RL,35,00>Keep clear!<CF><D1><@LL,00,02>Gooo! <f02>MedaSprayer<f00>!<CF><D1><@RL,35,00>Uoooh!!"
+218#kuwagata,0x2101b4,"<@RL,36,00>うしろに さがっていろ!<CF><D1><@LL,00,02>行け-! 「メダシェア-ズ」だ!<CF><D1><@RL,36,00>うおおおおっ!!","<@RL,36,00>Keep back!<CF><D1><@LL,00,02>Gooo! <f02>MedaSheers<f00>!<CF><D1><@RL,36,00>Uoooh!!"
+219,0x2101b6,"<@RL,01,01>やったぁ! 道がひらけた!!<CF><D1><@LL,00,02>ア-スモ-ルでは ロボロボ団が町を<CD>ほうかいさせるところだったけど<CF><D1>こんどのは ちがう!<CD>ロボロボ団じゃないよ! こんなの!","<@RL,01,01>You did it! The path is clear!!<CF><D1><@LL,00,02>At EarthMall, the Rubberobo Gang almost destroyed the town. but not like this!<D3>This isn't the Rubberobos! This is something else!"
+220,0x2101b8,"<@RL,03,01><&BUF03>! お前 何か<CD>知ってるのか?<CF><D1>今 おれたちが おいかけてる やつが<CD>はんにんなのか?","<@RL,03,01><&BUF03>! Do you know something?<CF><D1>Is the person we're chasing the culprit?"
+221,0x2101ba,"<@LL,00,02>友だちに なったんだ あいつと<CD>だから ぼくが あいつを止める!!","<@LL,00,02>We're friends, so I have got to stop him!!"
+222,0x2101bc,"<@RL,01,05>あ あたし アンダ-シェルの<CD>左がわに いってみるわ!","<@RL,01,05>I-I'm going to check out Left UnderShell!"
+223,0x2101be,"<@RL,41,01>アッハハハハ!<CF><D1>自分たちが 作ったもので<CD>ほろびれば いいんだ!","<@RL,41,01>Ahahahaha!<CF><D1>Be destroyed by your own creation, that's fine with me!"
+224,0x2101c0,"<@LL,00,02>きみが 電気を あやつって<CD>町を 攻撃させているんだな!<CF><D1><@RL,41,01>アタシは ただ レアメダルの 力を<CD>少し 利用してやっただけ<CF><D1><@LL,00,00>レアメダルの?<CF><D1><@RL,41,01>そう めざめたばかリの レアメダル!<CD>オマエのと ぶつけたら<CF><D1>どっちが きえるか じっけんだ<CF><D1><@LL,00,02>レアメダルとか スピリットとかって<CD>よく 分かんないけど<CF><D1>なんで こんなこと するんだよっ!<CF><D1>どうして 人間と なかよく<CD>できないんだっ!<CF><D1><@RL,41,03>ニンゲンなんか 大キライ!<CD>アタシたち メダルに ならない!<CF><D1><@LL,00,07>(メダルに!? じゃあ あの<CD>海のいせきで 貝た ゆめは!)<CF><D1><@RL,41,03>ニンゲン たおす!","<@LL,00,02>You're the one using electricity to attack the town!<CF><D1><@RL,41,01>I just used a bit of the power of a rare medal.<CF><D1><@LL,00,00>A rare medal?<CF><D1><@RL,41,01>Yes, a newly awakened rare medal! I'll make you disappear with my true power.<CF><D1><@LL,00,02>I don't know about rare medals or spirits, but why are you doing this?<CF><D1>Why can't you coexist with humans!?<CF><D1><@RL,41,03>I hate humans! We won't become medals!<CF><D1><@LL,00,07>(Become medals!? Then the dream I saw at the ruins!)<CF><D1><@RL,41,03>Destroy the humans!"
+225,0x2101c2,"<@RL,41,03>くっ! おぼえてろっ!","<@RL,41,03>Kuh! I'll remember this!"
+226,0x2101c4,"<@RL,01,05>とびらが こわれてて むこうに<CD>行けないわ!","<@RL,01,05>The door is broken, I can't go out there!"
+227,0x2101c6,"<@LL,00,05>バブルが こわされている...","<@LL,00,05>The Bubble is destroyed..."
+228,0x2101c8,"<@LL,00,00>よかった このバブルは ぶじだ","<@LL,00,00>What a relief, this Bubble is alright."
+229,0x2101ca,"<@LL,00,02>海中林に 行くぞ!<CD><&BUF07>!","<@LL,00,02>Let's go to the UnderSea Forest! <&BUF07>!"
+230#kabuto,0x2101cc,"<@RL,35,00>ああ 行こうぜ!","<@RL,35,00>Yes, let's go!"
+230#kuwagata,0x2101cc,"<@RL,36,00>いそがねば なるまい!","<@RL,36,00>We must hurry!"
 231,0x2101ce,"<@LL,00,07>わわっ!!",
 232,0x2101d0,"<@LL,00,06>早く カイを とめないと<CD>アンダ-シェルが こわれちゃう!",
 233,0x2101d2,"<@LL,00,07>わわっ!!",
 234,0x2101d4,"<@LL,00,06>早く カイを とめないと<CD>アンダ-シェルが こわれちゃう!",
-235,0x2101d6,"<@RL,3E,01>はははっ こっちだよ<CF><D1><@LL,00,02>カイ!!<CF><D1>本当に...本当に<CD>カイなんだな!<CF><D1><@RL,3E,01>カイ? そんな名前は 知らないな<CD>ぼくは セルリア-ノ<CF><D1>海にやどる スピリットだ!",
-236,0x2101d8,"<@RL,3E,01>フフッ",
-237,0x2101da,"<@RL,3E,01>どっちを 貝ているんだい?",
-238,0x2101dc,"<@LL,00,02>カイ...いや セルリア-ノ!!<CD>どうして こんなことをするんだ!<CF><D1><@RL,3E,01>ふふっ きみには 分からないだろうね<CD>えいえんに...",
-239#kabuto,0x2101de,"<@RL,35,00>レイさん!!<CF><D1><@RL,3E,01>何を おどろいているんだい?<CD><&BUF07><CF><D1>きみは 分かっていたはずだよ<CF><D1><@RL,35,00>レ レイさん...うそだろ?!",
-239#kuwagata,0x2101de,"<@RL,36,00>レイ!!<CF><D1><@RL,3E,01>何を おどろいているんだい?<CD><&BUF07><CF><D1>きみは 分かっていたはずだよ<CF><D1><@RL,36,00>これは どういうことだ レイ!",
-240,0x2101e0,"<@RL,3E,01>さあ レイ<CD>じゃま者を けせ!!<CF><D1>お前の レアメダルの 力を<CD>貝せてやれ!",
-241,0x2101e2,"<@RL,33,00>.........",
-242,0x2101e4,"<@LL,00,06>何をする気だ!?",
-243#kabuto,0x2101e6,"<@RL,35,00>や やめるんだ レイさん!<CF><D1><@RL,33,00>ピイイイイイイィィィ-----!!",
-243#kuwagata,0x2101e6,"<@RL,36,00>やめろ レイ!<CF><D1><@RL,33,00>ピイイイイイイィィィ-----!!",
-244#kabuto,0x2101e8,"<@RL,35,00>うっ うわっ!<CD>何だ この音!!",
-244#kuwagata,0x2101e8,"<@RL,36,00>くうっ...!<CD>何だ この音は!!",
-245,0x2101ea,"<@LL,00,07>頭が...われる!!",
-246,0x2101ec,"わ-! きゃ-!<CF><D1><@LL,00,07>バブルの むせんから 人の声が!<CF><D1>アンダ-シェルは もう<CD>もたないのかっ!?<CF><D1><@RL,3E,01>あははははは! いいぞ レイ!<CD>目の前の者たちを けしてしまえ!",
-247#kabuto,0x2101ee,"<@RL,35,00>や やめるんだ...レイさん<CF><D1><@RL,3E,01>ははは ムダだ!<CD>レイに お前の声は とどかない<CF><D1><@RL,35,00>そんなヤツに あやつられるな...<CD>レイさん! オレの声を 聞いてくれ<CF><D1>...「レイっ!!」",
-247#kuwagata,0x2101ee,"<@RL,36,00>やめろ...レイっ!<CF><D1><@RL,3E,01>ははは ムダだ!<CD>レイに お前の声は とどかない<CF><D1><@RL,36,00>そんなヤツに あやつられるな...<CD>レイ! おれの声を 聞け!<CF><D1>...「レイっ!!」",
-248,0x2101f0,"<@LL,00,00>と 止まった...",
-249,0x2101f2,"<@RL,33,00>わたしには...",
-250,0x2101f4,"<@RL,3E,03>何をしているんだ レイ!!<CF><D1><@RL,33,00>わ わたしには できない<CF><D1><&BUF07>さんを<CD>きずつけるなんて...",
-251#kabuto,0x2101f6,"<@RL,35,00>まって! レイさん!!",
-251#kuwagata,0x2101f6,"<@RL,36,00>まつんだ レイ!!",
-252,0x2101f8,"<@RL,3E,00>わがマザ-の マインドコントロ-ルを<CD>はねのけるとはな<CF><D1>さすがは レアメダルと いうところか<CF><D1>...あるいは おなじマザ-を<CD>もつ者どうし ひかれあったか...<CF><D1><@LL,00,00>何を...言ってる?",
-253,0x2101fa,"<@RL,3E,00>こうなっては しかたがない",
-254#kabuto,0x2101fc,"<@LL,00,02>ぼくの <&BUF07>は<CD>にせものになんか まけるもんか!<CF><D1><@RL,3E,01>そうだね<CD>カブトは 2体も いらない",
-254#kuwagata,0x2101fc,"<@LL,00,02>ぼくの <&BUF07>は<CD>にせものになんか まけるもんか!<CF><D1><@RL,3E,01>そうだね<CD>クワガタは 2体も いらない",
-255,0x2101fe,"<@LL,00,07>セルリア-ノ やめてよ!<CD>どうしてなんだよ!<CF><D1><@RL,3E,02>ニンゲンは 海を よごす<CF><D1><@LL,00,00>えっ...",
-256,0x210200,"<@LL,00,06>セルリア-ノ...どうして...<CF><D1><@RL,3E,01>...前に 言ったよね<CF><D1>きみは もう ここから<CD>出られない...えいきゅうにね!",
-257,0x210202,"<@LL,00,07>す すごい 地しんだ!<CD>どうなってるんだ?<CF><D1><@RL,3E,01>ふふ...ざんねんだったね<CD>さっきの レイの力の ぼうそうが<CF><D1>きみとの ロボトルの間に<CD>アンダ-シェルを<CF><D1>こわしてしまったようだよ",
-258,0x210204,"<@LL,00,07>何だって!?<CD>そんな! みんなが いるのに!<CF><D1><@RL,3E,01>はははっ 今さら 間に合わないよ<CF><D1>だいいち きみに 何が できるのさ?",
-259,0x210206,"<@LL,00,03>もしも...もしも みんなに<CD>何かあったら ぼくは...<CF><D1>きみを ゆるせなくなるよ!<CF><D1><@RL,3E,00>......",
-260,0x210208,"<@RL,3E,00>ゆるせない...か...",
-261,0x21020a,"<@LL,00,07>ああ! アンダ-シェルが!!!",
-262,0x21020c,"<@LL,00,07>わあああ---",
-263,0x21020e,"<@LL,00,05>まっくらだ...もう 何も 貝えない<CD>アンダ-シェルは...<CF><D1>アンダ-シェルに いる みんなは<CD>どうなっちゃったの...?<CF><D1>そして ぼくも...",
-264,0x210210,"<@RL,2A,00>...くん おきてよ<CF><D1><&BUF03>くん...<CF><D1><@LL,00,00>また あの声...<CD>スバル...?",
-265,0x210212,"<@LL,00,00>きみは...<CF><D1><@RL,3A,01><&BUF03>くん<CF><D1><@LL,00,00>ぼくの 名前を 知ってる<CD>スバル...きみは いったい?<CF><D1><@RL,3A,01>ぼくは とっても 遠くにいるから<CD>あまリ 話して いられないんだ<CF><D1>でも ぼくのメダルを 持つ きみに<CD>少しだけ 力を かして あげられる<CF><D1><@LL,00,00>きみのメダルって?",
-266,0x210214,"<@LL,00,07>あ! そうだっ!!<CD>みんなは どうなっちゃったの?<CF><D1><@RL,3A,01>ぼくが あやつる「時」を<CD>ほんの 少し しゅうせいして<CF><D1>きみの 友だちを たすけるんだ<CF><D1><@LL,00,06>ねえ どういうこと?<CD>何を 言ってるの?<CF><D1><@RL,3A,00>レイは このじだいの<CD>メダロットじゃないんだ<CF><D1>レイが いなければ<CD>アンダ-シェルは こわれなかった<CF><D1>きみを 少し かこに もどして<CD>時を しゅうせいする...<CF><D1><@LL,00,00>かこに? ぼくが?<CD>ぼくは 何を すれば いいの?<CF><D1><@RL,3A,00>「金魚のぞう」が 本当の レイの体<CF><D1><&BUF03>くん <CD>レイに ハ-トを もどして...",
-267,0x210216,"<@LL,00,00>...? あれ? ここは?",
-268,0x210218,"<@LL,00,00>しずまリかえってる<CD>今は 夜か...<CF><D1>スバルは たしか ぼくを<CD>「かこに もどす」って<CF><D1>言ってた...て ことは?",
-269#kabuto,0x21021a,"<@RL,35,00>どうやら アンダ-シェルの<CD>中みたいだな",
-269#kuwagata,0x21021a,"<@RL,36,00>また アンダ-シェルの 中に<CD>もどったのか?",
-270,0x21021c,"<@LL,00,07>...あれ? <&BUF07>?",
-271#kabuto,0x21021e,"<@RL,35,00>何が どうなってるのか<CD>オレには さっぱリだぜ",
-271#kuwagata,0x21021e,"<@RL,36,00>何が おこっている?",
+235,0x2101d6,"<@RL,3E,01>はははっ こっちだよ<CF><D1><@LL,00,02>カイ!!<CF><D1>本当に...本当に<CD>カイなんだな!<CF><D1><@RL,3E,01>カイ? そんな名前は 知らないな<CD>ぼくは セルリア-ノ<CF><D1>海にやどる スピリットだ!","<@RL,3E,01>Hahaha, over here.<CF><D1><@LL,00,02>Kai!!<CF><D1>You really... Really are Kai!<CF><D1><@RL,3E,01>Kai? I know of no such name. I am Ceruleano, spirit of the sea!"
+236,0x2101d8,"<@RL,3E,01>フフッ","<@RL,3E,01>Huhu."
+237,0x2101da,"<@RL,3E,01>どっちを 貝ているんだい?","<@RL,3E,01>Where are you looking?"
+238,0x2101dc,"<@LL,00,02>カイ...いや セルリア-ノ!!<CD>どうして こんなことをするんだ!<CF><D1><@RL,3E,01>ふふっ きみには 分からないだろうね<CD>えいえんに...","<@LL,00,02>Kai, no Ceruleano!!<D3>Why are you doing this!?<CF><D1><@RL,3E,01>Huhu, you wouldn't understand. Not ever..."
+239#kabuto,0x2101de,"<@RL,35,00>レイさん!!<CF><D1><@RL,3E,01>何を おどろいているんだい?<CD><&BUF07><CF><D1>きみは 分かっていたはずだよ<CF><D1><@RL,35,00>レ レイさん...うそだろ?!","<@RL,35,00>Rei!!<CF><D1><@RL,3E,01>Why are you acting surprised, <&BUF07>?<CF><D1>You should have already known.<CF><D1><@RL,35,00>R-Rei... Is this a joke?!"
+239#kuwagata,0x2101de,"<@RL,36,00>レイ!!<CF><D1><@RL,3E,01>何を おどろいているんだい?<CD><&BUF07><CF><D1>きみは 分かっていたはずだよ<CF><D1><@RL,36,00>これは どういうことだ レイ!","<@RL,36,00>Rei!!<CF><D1><@RL,3E,01>Why are you acting surprised, <&BUF07>?<CF><D1>You should have already known.<CF><D1><@RL,36,00>What's the meaning of this, Rei!?"
+240,0x2101e0,"<@RL,3E,01>さあ レイ<CD>じゃま者を けせ!!<CF><D1>お前の レアメダルの 力を<CD>貝せてやれ!","<@RL,3E,01>Come on Rei, let's eliminate the hinderances.<CF><D1>I'll show you the power of a rare medal!"
+241,0x2101e2,"<@RL,33,00>.........","<@RL,33,00>........."
+242,0x2101e4,"<@LL,00,06>何をする気だ!?","<@LL,00,06>What are you planning!?"
+243#kabuto,0x2101e6,"<@RL,35,00>や やめるんだ レイさん!<CF><D1><@RL,33,00>ピイイイイイイィィィ-----!!","<@RL,35,00>C-cut it out, Rei!<CF><D1><@RL,33,00>Piiiii!!"
+243#kuwagata,0x2101e6,"<@RL,36,00>やめろ レイ!<CF><D1><@RL,33,00>ピイイイイイイィィィ-----!!","<@RL,36,00>Stop this, Rei!<CF><D1><@RL,33,00>Piiiii!!"
+244#kabuto,0x2101e8,"<@RL,35,00>うっ うわっ!<CD>何だ この音!!","<@RL,35,00>Uh, woah!<D3>What's this sound!?"
+244#kuwagata,0x2101e8,"<@RL,36,00>くうっ...!<CD>何だ この音は!!","<@RL,36,00>Kuh...!<D3>What's this sound!?"
+245,0x2101ea,"<@LL,00,07>頭が...われる!!","<@LL,00,07>My head... is splitting!!"
+246,0x2101ec,"わ-! きゃ-!<CF><D1><@LL,00,07>バブルの むせんから 人の声が!<CF><D1>アンダ-シェルは もう<CD>もたないのかっ!?<CF><D1><@RL,3E,01>あははははは! いいぞ レイ!<CD>目の前の者たちを けしてしまえ!","Waah! Kya!<CF><D1><@LL,00,07>A voice from the Bubble's radio!<CF><D1>UnderShell can't hold up much longer!?<CF><D1><@RL,3E,01>Ahahahahaha! That's it, Rei! Eliminate those before us!"
+247#kabuto,0x2101ee,"<@RL,35,00>や やめるんだ...レイさん<CF><D1><@RL,3E,01>ははは ムダだ!<CD>レイに お前の声は とどかない<CF><D1><@RL,35,00>そんなヤツに あやつられるな...<CD>レイさん! オレの声を 聞いてくれ<CF><D1>...「レイっ!!」","<@RL,35,00>St-stop this... Rei.<CF><D1><@RL,3E,01>Hahaha, it's useless!<D3>Your voice won't reach Rei.<CF><D1><@RL,35,00>Letting a guy like this control you...<D3>Rei! Listen to my voice!<CF><D1>...<f02>Rei<f00>!!"
+247#kuwagata,0x2101ee,"<@RL,36,00>やめろ...レイっ!<CF><D1><@RL,3E,01>ははは ムダだ!<CD>レイに お前の声は とどかない<CF><D1><@RL,36,00>そんなヤツに あやつられるな...<CD>レイ! おれの声を 聞け!<CF><D1>...「レイっ!!」","<@RL,36,00>St-stop... Rei.<CF><D1><@RL,3E,01>Hahaha, it's useless!<D3>Your voice won't reach Rei.<CF><D1><@RL,36,00>Letting a guy like this control you...<D3>Rei! Listen to my voice!<CF><D1>...<f02>Rei<f00>!!"
+248,0x2101f0,"<@LL,00,00>と 止まった...","<@LL,00,00>I-it stopped..."
+249,0x2101f2,"<@RL,33,00>わたしには...","<@RL,33,00>I..."
+250,0x2101f4,"<@RL,3E,03>何をしているんだ レイ!!<CF><D1><@RL,33,00>わ わたしには できない<CF><D1><&BUF07>さんを<CD>きずつけるなんて...","<@RL,3E,03>What are you doing, Rei!?<CF><D1><@RL,33,00>I-I can't do it.<CF><D1>I can't hurt <&BUF07>..."
+251#kabuto,0x2101f6,"<@RL,35,00>まって! レイさん!!","<@RL,35,00>Wait! Rei!!"
+251#kuwagata,0x2101f6,"<@RL,36,00>まつんだ レイ!!","<@RL,36,00>Hold on, Rei!!"
+252,0x2101f8,"<@RL,3E,00>わがマザ-の マインドコントロ-ルを<CD>はねのけるとはな<CF><D1>さすがは レアメダルと いうところか<CF><D1>...あるいは おなじマザ-を<CD>もつ者どうし ひかれあったか...<CF><D1><@LL,00,00>何を...言ってる?","<@RL,3E,00>Repeling our mother's mind control, as expected of a rare medal.<CF><D1>...Or perhaps it was sharing a mother that drew them together...<CF><D1><@LL,00,00>What... are you saying?"
+253,0x2101fa,"<@RL,3E,00>こうなっては しかたがない","<@RL,3E,00>It can't be helped if it has come to this."
+254#kabuto,0x2101fc,"<@LL,00,02>ぼくの <&BUF07>は<CD>にせものになんか まけるもんか!<CF><D1><@RL,3E,01>そうだね<CD>カブトは 2体も いらない","<@LL,00,02>My <&BUF07> isn't gonna lose to a fake!<CF><D1><@RL,3E,01>True, there's no need to two Kabuto models."
+254#kuwagata,0x2101fc,"<@LL,00,02>ぼくの <&BUF07>は<CD>にせものになんか まけるもんか!<CF><D1><@RL,3E,01>そうだね<CD>クワガタは 2体も いらない","<@LL,00,02>My <&BUF07> isn't gonna lose to a fake!<CF><D1><@RL,3E,01>True, there's no need to two Kuwagata models."
+255,0x2101fe,"<@LL,00,07>セルリア-ノ やめてよ!<CD>どうしてなんだよ!<CF><D1><@RL,3E,02>ニンゲンは 海を よごす<CF><D1><@LL,00,00>えっ...","<@LL,00,07>Stop this, Ceruleano!<D3>Why are you doing this!?<CF><D1><@RL,3E,02>Humans pollute the ocean.<CF><D1><@LL,00,00>Eh...?"
+256,0x210200,"<@LL,00,06>セルリア-ノ...どうして...<CF><D1><@RL,3E,01>...前に 言ったよね<CF><D1>きみは もう ここから<CD>出られない...えいきゅうにね!","<@LL,00,06>Ceruleano... Why...<CF><D1><@RL,3E,01>...Like I said before.<CF><D1>You'll never leave here... Not ever!"
+257,0x210202,"<@LL,00,07>す すごい 地しんだ!<CD>どうなってるんだ?<CF><D1><@RL,3E,01>ふふ...ざんねんだったね<CD>さっきの レイの力の ぼうそうが<CF><D1>きみとの ロボトルの間に<CD>アンダ-シェルを<CF><D1>こわしてしまったようだよ","<@LL,00,07>Wh-what an amazing quake!<D3>What's going on?<CF><D1><@RL,3E,01>Huhu... Too bad.<D3>Because of Rei's outburst earlier, it appears that UnderShell was destroyed during our robattle."
+258,0x210204,"<@LL,00,07>何だって!?<CD>そんな! みんなが いるのに!<CF><D1><@RL,3E,01>はははっ 今さら 間に合わないよ<CF><D1>だいいち きみに 何が できるのさ?","<@LL,00,07>What!?<D3>No way! Everyone is there!<CF><D1><@RL,3E,01>Hahaha,  it's too late now.<CF><D1>In the first place, what could you even do?"
+259,0x210206,"<@LL,00,03>もしも...もしも みんなに<CD>何かあったら ぼくは...<CF><D1>きみを ゆるせなくなるよ!<CF><D1><@RL,3E,00>......","<@LL,00,03>If... If anything happened to the other I...<CF><D1>Won't be able to forgive you!<CF><D1><@RL,3E,00>......"
+260,0x210208,"<@RL,3E,00>ゆるせない...か...","<@RL,3E,00>Won't forgive... huh...?"
+261,0x21020a,"<@LL,00,07>ああ! アンダ-シェルが!!!","<@LL,00,07>Aah! UnderShell!!"
+262,0x21020c,"<@LL,00,07>わあああ---","<@LL,00,07>Waaah!"
+263,0x21020e,"<@LL,00,05>まっくらだ...もう 何も 貝えない<CD>アンダ-シェルは...<CF><D1>アンダ-シェルに いる みんなは<CD>どうなっちゃったの...?<CF><D1>そして ぼくも...","<@LL,00,05>It's pitch black... Geez, I can't see a thing. <D3>UnderShell...<CF><D1>What happened to everyone in UnderShell...?<CF><D1>And me too..."
+264,0x210210,"<@RL,2A,00>...くん おきてよ<CF><D1><&BUF03>くん...<CF><D1><@LL,00,00>また あの声...<CD>スバル...?","<@RL,2A,00>...-ke up.<CF><D1><&BUF03>...<CF><D1><@LL,00,00>That voice again...<D3>Subaru...?"
+265,0x210212,"<@LL,00,00>きみは...<CF><D1><@RL,3A,01><&BUF03>くん<CF><D1><@LL,00,00>ぼくの 名前を 知ってる<CD>スバル...きみは いったい?<CF><D1><@RL,3A,01>ぼくは とっても 遠くにいるから<CD>あまリ 話して いられないんだ<CF><D1>でも ぼくのメダルを 持つ きみに<CD>少しだけ 力を かして あげられる<CF><D1><@LL,00,00>きみのメダルって?","<@LL,00,00>You...<CF><D1><@RL,3A,01><&BUF03>.<CF><D1><@LL,00,00>You know my name... Who are you, Subaru?<CF><D1><@RL,3A,01>Because I'm very distant, we can't talk for long. But because you hold my medal, I can give you a bit of power.<CF><D1><@LL,00,00>Your medal?"
+266,0x210214,"<@LL,00,07>あ! そうだっ!!<CD>みんなは どうなっちゃったの?<CF><D1><@RL,3A,01>ぼくが あやつる「時」を<CD>ほんの 少し しゅうせいして<CF><D1>きみの 友だちを たすけるんだ<CF><D1><@LL,00,06>ねえ どういうこと?<CD>何を 言ってるの?<CF><D1><@RL,3A,00>レイは このじだいの<CD>メダロットじゃないんだ<CF><D1>レイが いなければ<CD>アンダ-シェルは こわれなかった<CF><D1>きみを 少し かこに もどして<CD>時を しゅうせいする...<CF><D1><@LL,00,00>かこに? ぼくが?<CD>ぼくは 何を すれば いいの?<CF><D1><@RL,3A,00>「金魚のぞう」が 本当の レイの体<CF><D1><&BUF03>くん <CD>レイに ハ-トを もどして...","<@LL,00,07>Ah! Right!!<D3>What happened to everyone?<CF><D1><@RL,3A,01>I'll manipulate time a bit help your friends.<CF><D1><@LL,00,06>Hey, what does that mean?<D3>What are you talking about?<CF><D1><@RL,3A,00>Rei is not a medarot from this era and without them, UnderShell would not have been destroyed. So I'll place you back a bit in the past to fix things...<CF><D1><@LL,00,00>The past? Me?<D3>What am I supposed to do?<CF><D1><@RL,3A,00>The <f02>Goldfish Statue<f00> is Rei's true body.<CF><D1><&BUF03>, return Rei's heart..."
+267,0x210216,"<@LL,00,00>...? あれ? ここは?","<@LL,00,00>...? Huh? Where?"
+268,0x210218,"<@LL,00,00>しずまリかえってる<CD>今は 夜か...<CF><D1>スバルは たしか ぼくを<CD>「かこに もどす」って<CF><D1>言ってた...て ことは?","<@LL,00,00>It's so quiet and it's night now...<CF><D1>Subaru said that he'd ""place me back in the past""... Is this what he meant?"
+269#kabuto,0x21021a,"<@RL,35,00>どうやら アンダ-シェルの<CD>中みたいだな","<@RL,35,00>This place looks like UnderShell."
+269#kuwagata,0x21021a,"<@RL,36,00>また アンダ-シェルの 中に<CD>もどったのか?","<@RL,36,00>Are we back in UnderShell?"
+270,0x21021c,"<@LL,00,07>...あれ? <&BUF07>?","<@LL,00,07>...Huh? <&BUF07>?"
+271#kabuto,0x21021e,"<@RL,35,00>何が どうなってるのか<CD>オレには さっぱリだぜ","<@RL,35,00>I've got no clue what's going on."
+271#kuwagata,0x21021e,"<@RL,36,00>何が おこっている?","<@RL,36,00>What's going on?"
 272,0x210220,"<@LL,00,00>夜は 通れなくなっているみたいだ",
-273,0x210222,"<@LL,00,00>これが「金魚のぞう」 つまリ...",
-274#kabuto,0x210224,"<@RL,35,00>レイさん!? レイさんなのか!?",
-274#kuwagata,0x210224,"<@RL,36,00>レイ? レイなのか?",
-275,0x210226,"<@LL,00,00>あれが...♥スト-ン",
-276,0x210228,"<@LL,00,07>セルリア-ノ!!",
-277#kabuto,0x21022a,"<@RL,35,00>お お前っ! 今 レイさんから<CD>♥スト-ンを うばっただろう!",
-277#kuwagata,0x21022a,"<@RL,36,00>きさま 今 レイから<CD>♥スト-ンを 盗んだな?",
-278,0x21022c,"<@RL,3E,03>!? ニンゲンが なぜ ぼくの<CD>名前を 知っている!?<CF><D1>それに そこにいるのは...<CD>レアメダル!?",
-279,0x21022e,"<@RL,3E,00>どういうことだ?<CD>レアメダルの メダロットが<CF><D1>2体...",
-280#kabuto,0x210230,"<@RL,35,00>お前っ! レイさんを<CD>どうするつもリだ!!",
-280#kuwagata,0x210230,"<@RL,36,00>レイを どうするつもリだ?",
-281,0x210232,"<@RL,3E,00>すでに このレアメダルのことも<CD>知っているとはな<CF><D1>そうか...もう1つの マザ-は<CD>時を あやつると 聞いた...<CF><D1>お前たち もう1つの マザ-が<CD>みらいから よこした 手先だな!<CF><D1><@RL,3E,03>...じゃまは させん!",
-282,0x210234,"<@RL,3E,03>ぐあ! じゃ...じゃまだ!",
-283,0x210236,"<@LL,00,07>あ! ♥スト-ンが!!",
-284,0x210238,"<@RL,3E,03>くっ...<CF><D1><@LL,00,07>セルリア-ノ!",
-285,0x21023a,"<@RL,3E,03>海を よごす ニンゲン...<CD>このぞうに ねむる レアメダルを<CF><D1>使って この場所を けして やろうと<CD>思って...いたのにっ!<CF><D1><@LL,00,03>セルリア-ノ...きみは",
-286,0x21023c,"<@LL,00,00>...? あれ? ポケットが<CD>あたたかい...",
-287,0x21023e,"<@RL,3E,03>はなれろ! ニンゲン!",
-288,0x210240,"<@RL,3E,02>ううぁ!<CF><D1><@LL,00,07>セルリア-ノ!?",
-289,0x210242,"<@LL,00,07>また まっさらな 6負かヘい石に<CD>絵が 入ってる!<CF><D1>これは...セルリア-ノ?<CF><D1><@LL,00,03>......",
-290,0x210244,"<@LL,00,03>セルリア-ノ...もう1つの<CD>みらいでは きみと ぼくは<CF><D1>ぼくと ウラシマ カイは<CD>友だちに なったんだよ...",
-291#kabuto,0x210246,"<@RL,35,00>レイさんの ハ-トが...",
-291#kuwagata,0x210246,"<@RL,36,00>レイの ハ-トが...",
-292,0x210248,"<@LL,00,03>♥スト-ン...かけらに<CD>なっちゃった<CF><D1>スバルは 「レイに ハ-トを<CD>もどして」って 言ってたのに...",
+273,0x210222,"<@LL,00,00>これが「金魚のぞう」 つまリ...","<@LL,00,00>This is the <f02>Goldfish Statue<f00>..."
+274#kabuto,0x210224,"<@RL,35,00>レイさん!? レイさんなのか!?","<@RL,35,00>Rei!? Is that you, Rei!?"
+274#kuwagata,0x210224,"<@RL,36,00>レイ? レイなのか?","<@RL,36,00>Rei!? Is that you, Rei!?"
+275,0x210226,"<@LL,00,00>あれが...♥スト-ン","<@LL,00,00>That's... the ♥ Stone."
+276,0x210228,"<@LL,00,07>セルリア-ノ!!","<@LL,00,07>Ceruleano!!"
+277#kabuto,0x21022a,"<@RL,35,00>お お前っ! 今 レイさんから<CD>♥スト-ンを うばっただろう!","<@RL,35,00>Y-you! Just now you took Rei's ♥ Stone!"
+277#kuwagata,0x21022a,"<@RL,36,00>きさま 今 レイから<CD>♥スト-ンを 盗んだな?","<@RL,36,00>Just now, did you steal Rei's ♥ Stone?"
+278,0x21022c,"<@RL,3E,03>!? ニンゲンが なぜ ぼくの<CD>名前を 知っている!?<CF><D1>それに そこにいるのは...<CD>レアメダル!?","<@RL,3E,03>!? How does a human know my name!?<CF><D1>Moreover, there's...<D3>A rare medal!?"
+279,0x21022e,"<@RL,3E,00>どういうことだ?<CD>レアメダルの メダロットが<CF><D1>2体...","<@RL,3E,00>What's going on?<D3>There are two medarots with rare medals..."
+280#kabuto,0x210230,"<@RL,35,00>お前っ! レイさんを<CD>どうするつもリだ!!","<@RL,35,00>You! What do you plan to do to Rei!?"
+280#kuwagata,0x210230,"<@RL,36,00>レイを どうするつもリだ?","<@RL,36,00>What do you intend to do with Rei?"
+281,0x210232,"<@RL,3E,00>すでに このレアメダルのことも<CD>知っているとはな<CF><D1>そうか...もう1つの マザ-は<CD>時を あやつると 聞いた...<CF><D1>お前たち もう1つの マザ-が<CD>みらいから よこした 手先だな!<CF><D1><@RL,3E,03>...じゃまは させん!","<@RL,3E,00>I was unaware that anyone knew of this rare medal.<CF><D1>I see... I've heard there is another mother who manipulates time...<CF><D1>You must be pawns of the other mother sent from the future!<CF><D1><@RL,3E,03>...I will not be hindered!"
+282,0x210234,"<@RL,3E,03>ぐあ! じゃ...じゃまだ!","<@RL,3E,03>Guah! N-not yet!"
+283,0x210236,"<@LL,00,07>あ! ♥スト-ンが!!","<@LL,00,07>Ah! The ♥ Stone!!"
+284,0x210238,"<@RL,3E,03>くっ...<CF><D1><@LL,00,07>セルリア-ノ!","<@RL,3E,03>Kuh...<CF><D1><@LL,00,07>Ceruleano!"
+285,0x21023a,"<@RL,3E,03>海を よごす ニンゲン...<CD>このぞうに ねむる レアメダルを<CF><D1>使って この場所を けして やろうと<CD>思って...いたのにっ!<CF><D1><@LL,00,03>セルリア-ノ...きみは","<@RL,3E,03>Humans pollute the sea...<D3>I was going to use the rare medal slumbering in that statue to wipe away... this place!<CF><D1><@LL,00,03>Ceruleano... You..."
+286,0x21023c,"<@LL,00,00>...? あれ? ポケットが<CD>あたたかい...","<@LL,00,00>...? Huh? My pocket feels warm..."
+287,0x21023e,"<@RL,3E,03>はなれろ! ニンゲン!","<@RL,3E,03>Begone! Human!"
+288,0x210240,"<@RL,3E,02>ううぁ!<CF><D1><@LL,00,07>セルリア-ノ!?","<@RL,3E,02>Uuuah!<CF><D1><@LL,00,07>Ceruleano!?"
+289,0x210242,"<@LL,00,07>また まっさらな 6負かヘい石に<CD>絵が 入ってる!<CF><D1>これは...セルリア-ノ?<CF><D1><@LL,00,03>......","<@LL,00,07>A picture appeared on a six-sided nummulite again!<CF><D1>Is this... Ceruleano?<CF><D1><@LL,00,03>......"
+290,0x210244,"<@LL,00,03>セルリア-ノ...もう1つの<CD>みらいでは きみと ぼくは<CF><D1>ぼくと ウラシマ カイは<CD>友だちに なったんだよ...","<@LL,00,03>Ceruleano... In another future, you and I- Kai Urashima and I became friends..."
+291#kabuto,0x210246,"<@RL,35,00>レイさんの ハ-トが...","<@RL,35,00>Rei's heart..."
+291#kuwagata,0x210246,"<@RL,36,00>レイの ハ-トが...","<@RL,36,00>Rei's heart..."
+292,0x210248,"<@LL,00,03>♥スト-ン...かけらに<CD>なっちゃった<CF><D1>スバルは 「レイに ハ-トを<CD>もどして」って 言ってたのに...","<@LL,00,03>The ♥ Stone... It's broken to pieces.<CF><D1>Even though Subaru told me to ""return Rei's heart""..."
