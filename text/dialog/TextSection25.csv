@@ -5,12 +5,12 @@
 003,0x218006,"<@RL,04,00>わん わん!","<@RL,04,00>Woof woof!"
 004,0x218008,"<@LL,00,01>あはは やめろよ<CD>くすぐったいよ!","<@LL,00,01>Ahaha, stop. That tickles!"
 005,0x21800a,"<@LL,00,00>あれ? もしかして お前らも<CD>むかえに来てくれたの?<CF><D1><@RL,06,00>んなわけ ね-だろ?","<@LL,00,00>Huh? Could you guys have come to greet me too?<CF><D1><@RL,06,00>How can you even think that?"
-006,0x21800c,"<@RL,05,00>「週刊メダロット」でさぁ<CF><D1>あんたらが また勝ったって<CD>聞いたからさぁ<CF><D1><@LL,00,01>え? いやぁ もしかして ぼく<CD>ゆうめい人?<CF><D1><@RL,06,04>ふざけんじゃね-って!<CF><D1><@RL,05,00>次は お空の上の「ヘブンスゲ-ト」<CD>だってねぇ <&BUF0A><CF><D1><@LL,00,00>うん そうだけど?<CF><D1><@RL,05,03>いっしょに たたかった<CD>なかでしょお?<CF><D1>あたしたちも つれてってよぉ-<CF><D1><@LL,00,00>何だよ とつぜん<CD>自分から チ-ムぬけておいて<CF><D1><@RL,05,04>何よぉ いいじゃなぁい<CD>あたしたちだってぇ<CF><D1>1回くらい 空の上に<CD>行ってみたいしぃ<CF><D1><@RL,06,00>そ-だ そ-だ!<CF><D1><@LL,00,05>そんなこと 言われてもなぁ<CF><D1><@RL,05,02>あ- そんなこと言って いいわけぇ?<CD>あんたが そういうつもリならぁ<CF><D1>こっちにだって 考えが<CD>あるんだからぁ おぼえてなさぁい!",
-007,0x21800e,"<@LL,00,05>何だったんだ...",
-008#kabuto,0x218010,"<@LL,00,04>ま いいや<CD>今は 家で 休む前に<CF><D1>このブラックカブトメダルを<CD>はかせの 所に もって行こう",
-008#kuwagata,0x218010,"<@LL,00,04>ま いいや<CD>今は 家で 休む前に<CF><D1>このブラッククワガタメダルを<CD>はかせの 所に もって行こう",
-009,0x218012,"<@RL,04,00>くぅん...<CF><D1><@LL,00,04>そんな かお するなって!<CD>あとで さんぽに つれてってやるよ<CF><D1>だから 先に かえっていてくれ",
-010,0x218014,"<@RL,04,00>わん!",
+006,0x21800c,"<@RL,05,00>「週刊メダロット」でさぁ<CF><D1>あんたらが また勝ったって<CD>聞いたからさぁ<CF><D1><@LL,00,01>え? いやぁ もしかして ぼく<CD>ゆうめい人?<CF><D1><@RL,06,04>ふざけんじゃね-って!<CF><D1><@RL,05,00>次は お空の上の「ヘブンスゲ-ト」<CD>だってねぇ <&BUF0A><CF><D1><@LL,00,00>うん そうだけど?<CF><D1><@RL,05,03>いっしょに たたかった<CD>なかでしょお?<CF><D1>あたしたちも つれてってよぉ-<CF><D1><@LL,00,00>何だよ とつぜん<CD>自分から チ-ムぬけておいて<CF><D1><@RL,05,04>何よぉ いいじゃなぁい<CD>あたしたちだってぇ<CF><D1>1回くらい 空の上に<CD>行ってみたいしぃ<CF><D1><@RL,06,00>そ-だ そ-だ!<CF><D1><@LL,00,05>そんなこと 言われてもなぁ<CF><D1><@RL,05,02>あ- そんなこと言って いいわけぇ?<CD>あんたが そういうつもリならぁ<CF><D1>こっちにだって 考えが<CD>あるんだからぁ おぼえてなさぁい!","<@RL,05,00>We saw <f02>Medarot Weekyl<f00>, you guys won again!<CF><D1><@LL,00,01>Eh? Am I becoming famous?<CF><D1><@RL,06,04>Quit messing around!<CF><D1><@RL,05,00>Next you'll be going to <f02>Heavens Gate<f00> up in the sky, right, <&BUF0A>?<CF><D1><@LL,00,00>Yeah, what about it?<CF><D1><@RL,05,03>We've fought alongside one another, haven't we?<CF><D1>Take us with you!<CF><D1><@LL,00,00>What's with this suddenly? You left the team on your own.<CF><D1><@RL,05,04>Don't focus on that.<D3>Even we want to go to sky once in our lives!<CF><D1><@RL,06,00>Right, right!<CF><D1><@LL,00,05>Even if you say that...<CF><D1><@RL,05,02>Ah, so that's how you're gonna be?<CF><D1>You'd best remember that we have our own plans!"
+007,0x21800e,"<@LL,00,05>何だったんだ...","<@LL,00,05>What was that about...?"
+008#kabuto,0x218010,"<@LL,00,04>ま いいや<CD>今は 家で 休む前に<CF><D1>このブラックカブトメダルを<CD>はかせの 所に もって行こう","<@LL,00,04>Well, no worries.<D3>Before I go home to rest, I should take the Black Beetle medal to Doctor Aki."
+008#kuwagata,0x218010,"<@LL,00,04>ま いいや<CD>今は 家で 休む前に<CF><D1>このブラッククワガタメダルを<CD>はかせの 所に もって行こう","<@LL,00,04>Well, no worries.<D3>Before I go home to rest, I should take the Black Stag medal to Doctor Aki."
+009,0x218012,"<@RL,04,00>くぅん...<CF><D1><@LL,00,04>そんな かお するなって!<CD>あとで さんぽに つれてってやるよ<CF><D1>だから 先に かえっていてくれ","<@RL,04,00>Awoo...<CF><D1><@LL,00,04>Don't make that face!<D3>I'll take you for a walk later, so go home for now, alright?"
+010,0x218014,"<@RL,04,00>わん!","<@RL,04,00>Woof!"
 011,0x218016,"<@LL,00,00>チケットが ないや",
 012,0x218018,"<@LL,00,04>こんにちは はかせ!<CD>貝てもらいたいものが あるんです",
 013,0x21801a,"<@RL,0F,00>6負かヘい石か?<CD>これが どうか したかの?<CF><D1><@LL,00,00>6負かヘい石に 絵が...<CF><D1><@LL,00,07>あれっ? 絵が きえてる!<CF><D1><@LL,00,05>おっかしいなぁ<CD>さっきまでは たしかに...<CF><D1><@RL,0F,01>おかしな やつじゃな<CF><D1><@LL,00,06>あ ほかにも あるんです!<CD>はかせ これを 貝てください",
