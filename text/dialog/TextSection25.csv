@@ -12,18 +12,18 @@
 009,0x218012,"<@RL,04,00>くぅん...<CF><D1><@LL,00,04>そんな かお するなって!<CD>あとで さんぽに つれてってやるよ<CF><D1>だから 先に かえっていてくれ","<@RL,04,00>Awoo...<CF><D1><@LL,00,04>Don't make that face!<D3>I'll take you for a walk later, so go home for now, alright?"
 010,0x218014,"<@RL,04,00>わん!","<@RL,04,00>Woof!"
 011,0x218016,"<@LL,00,00>チケットが ないや",
-012,0x218018,"<@LL,00,04>こんにちは はかせ!<CD>貝てもらいたいものが あるんです",
-013,0x21801a,"<@RL,0F,00>6負かヘい石か?<CD>これが どうか したかの?<CF><D1><@LL,00,00>6負かヘい石に 絵が...<CF><D1><@LL,00,07>あれっ? 絵が きえてる!<CF><D1><@LL,00,05>おっかしいなぁ<CD>さっきまでは たしかに...<CF><D1><@RL,0F,01>おかしな やつじゃな<CF><D1><@LL,00,06>あ ほかにも あるんです!<CD>はかせ これを 貝てください",
-014#kabuto,0x21801c,"<@RL,0F,00>こ これは...<CF><D1><@LL,00,00>「ブラックカブト」って<CD>知ってますか?<CF><D1><@RL,0F,03>ブラックカブトじゃと?<CD>何じゃ それは!<CF><D1><@LL,00,00>これ 黒い カブトメダロットが<CD>つけていた メダルなんです",
-014#kuwagata,0x21801c,"<@RL,0F,00>こ これは...<CF><D1><@LL,00,00>「ブラッククワガタ」って<CD>知ってますか?<CF><D1><@RL,0F,03>ブラッククワガタじゃと?<CD>何じゃ それは!<CF><D1><@LL,00,00>これ 黒い クワガタメダロットが<CD>つけていた メダルなんです",
-015,0x21801e,"<@LL,00,03>このメダル「メダロット3げんそく」が<CD>ないんです<CF><D1><@RL,0F,03>何と!? お前さん こいつを どこで<CD>手に入れたんじゃ?<CF><D1><@LL,00,05>それは その...",
-016,0x218020,"<@RL,04,00>わん わん!",
-017,0x218022,"<@LL,00,07>あ! お前 こんな所にまでっ!<CD>家で まってろって 言ったろ?<CF><D1><@RL,04,00>くぅ...<CF><D1><@LL,00,00>ともかく はかせ! メダルのこと<CD>よろしく おねがいします!<CF><D1><@RL,0F,00><&BUF0A>!",
-018,0x218024,"<@RL,0F,00>やれやれ",
+012,0x218018,"<@LL,00,04>こんにちは はかせ!<CD>貝てもらいたいものが あるんです","<@LL,00,04>Hello, Doctor Aki.<D3>I've got something to show you."
+013,0x21801a,"<@RL,0F,00>6負かヘい石か?<CD>これが どうか したかの?<CF><D1><@LL,00,00>6負かヘい石に 絵が...<CF><D1><@LL,00,07>あれっ? 絵が きえてる!<CF><D1><@LL,00,05>おっかしいなぁ<CD>さっきまでは たしかに...<CF><D1><@RL,0F,01>おかしな やつじゃな<CF><D1><@LL,00,06>あ ほかにも あるんです!<CD>はかせ これを 貝てください","<@RL,0F,00>A six-sided nummulite? What about it?<CF><D1><@LL,00,00>There's a picture on the...<CF><D1><@LL,00,07>Huh? The picture is gone!<CF><D1><@LL,00,05>How strange...<D3>I'm sure it was just there...<CF><D1><@RL,0F,01>You sure are a strange one.<CF><D1><@LL,00,06>Ah, I have something else too! Doctor, take a look at this."
+014#kabuto,0x21801c,"<@RL,0F,00>こ これは...<CF><D1><@LL,00,00>「ブラックカブト」って<CD>知ってますか?<CF><D1><@RL,0F,03>ブラックカブトじゃと?<CD>何じゃ それは!<CF><D1><@LL,00,00>これ 黒い カブトメダロットが<CD>つけていた メダルなんです","<@RL,0F,00>Th-this is...?<CF><D1><@LL,00,00>Do you know anything about a <f02>Black Kabuto<f00>?<CF><D1><@RL,0F,03>Black Kabuto, you say? What's that?<CF><D1><@LL,00,00>This is the medal from a black beetle-type medarot."
+014#kuwagata,0x21801c,"<@RL,0F,00>こ これは...<CF><D1><@LL,00,00>「ブラッククワガタ」って<CD>知ってますか?<CF><D1><@RL,0F,03>ブラッククワガタじゃと?<CD>何じゃ それは!<CF><D1><@LL,00,00>これ 黒い クワガタメダロットが<CD>つけていた メダルなんです","<@RL,0F,00>Th-this is...?<CF><D1><@LL,00,00>Do you know anything about a <f02>Black Kuwagata<f00>?<CF><D1><@RL,0F,03>Black Kuwagata, you say? What's that?<CF><D1><@LL,00,00>This is the medal from a black stag-type medarot."
+015,0x21801e,"<@LL,00,03>このメダル「メダロット3げんそく」が<CD>ないんです<CF><D1><@RL,0F,03>何と!? お前さん こいつを どこで<CD>手に入れたんじゃ?<CF><D1><@LL,00,05>それは その...","<@LL,00,03>This medal doesn't have the ""Three Laws of Medarobotics.""<CF><D1><@RL,0F,03>What? Where did you get your hands on this?<CF><D1><@LL,00,05>That's..."
+016,0x218020,"<@RL,04,00>わん わん!","<@RL,04,00>Woof woof!"
+017,0x218022,"<@LL,00,07>あ! お前 こんな所にまでっ!<CD>家で まってろって 言ったろ?<CF><D1><@RL,04,00>くぅ...<CF><D1><@LL,00,00>ともかく はかせ! メダルのこと<CD>よろしく おねがいします!<CF><D1><@RL,0F,00><&BUF0A>!","<@LL,00,07>Ah! You came all the way here? Didn't I tell you to wait at home?<CF><D1><@RL,04,00>Whine...<CF><D1><@LL,00,00>Anyway, Doctor! I'll leave the medal in your care!<CF><D1><@RL,0F,00><&BUF0A>!"
+018,0x218024,"<@RL,0F,00>やれやれ","<@RL,0F,00>My, oh my."
 019,0x218026,"<@RL,0F,00>ん? まだ 何か あるのかの?",
-020,0x218028,"<@LL,00,07>...あれ? また6負かヘい石に<CD>絵が もどってる<CF><D1><@LL,00,00>変なの- だけど また<CD>きえちゃうと いやだから<CF><D1>まだ はかせには 言わないでおこう",
-021#kabuto,0x21802a,"<@LL,00,04>まっ ブラックカブトの メダルは<CD>わたせたから いっか",
-021#kuwagata,0x21802a,"<@LL,00,04>まっ ブラッククワガタの メダルは<CD>わたせたから いっか",
+020,0x218028,"<@LL,00,07>...あれ? また6負かヘい石に<CD>絵が もどってる<CF><D1><@LL,00,00>変なの- だけど また<CD>きえちゃうと いやだから<CF><D1>まだ はかせには 言わないでおこう","<@LL,00,07>...Huh? The picture on the six-sided nummulite is back.<CF><D1><@LL,00,00>Weird, but I don't want it disappearing again, so I won't tell Doctor Aki about it just yet."
+021#kabuto,0x21802a,"<@LL,00,04>まっ ブラックカブトの メダルは<CD>わたせたから いっか","<@LL,00,04>Well, I gave him the Black Kabuto medal, so it's fine."
+021#kuwagata,0x21802a,"<@LL,00,04>まっ ブラッククワガタの メダルは<CD>わたせたから いっか","<@LL,00,04>Well, I gave him the Black Kuwagata medal, so it's fine."
 022,0x21802c,"<@LL,00,00>まずは 研究所の はかせに<CD>会いに行こう",
 023,0x21802e,"<@LL,00,05>おなか ペっこペこだぁ-<CD>家に かえリたいよ-",
 024,0x218030,"<@LL,00,05>ソルティ どこに 行ったんだろ?",
@@ -35,28 +35,28 @@
 030,0x21803c,"<@RL,1D,00>手くびの かえしが あまいわ!",
 031,0x21803e,"<@RL,1D,00><&BUF03>くん<CD>アリカを よろしくね",
 032,0x218040,"<@RL,0C,02>ああ <&BUF0A>くん<CD>ベつに けがなんて してないよね?<CF><D1><@LL,00,00>え? けがなんて してませんけど?<CF><D1><@RL,0C,02>ふう よかった...あ-いやな<CD>ゆめを 貝ちゃったよ<CF><D1>きみが アンダ-シェルの中から<CD>出られなくなって...<CF><D1><@RL,0C,01>まあ ぶじで よかった よかった!",
-033,0x218042,"<@LL,00,01>ただいま! パパ ママ<CF><D1><@RL,11,01>おお おかえリ<CD><&BUF0A><CF><D1><@RL,12,02>おかえリ <&BUF0A><CD>ごはん できてるわよ<CF><D1><@LL,00,01>わ-い!<CF><D1><@RL,11,01>大かつやくだったな!<CF><D1>TVに出るなんて<CD><&BUF0A>も ゆうめい人だな<CF><D1><@LL,00,01>いやぁ そうかな-<CF><D1><@RL,12,02>ほらほら 早く すわって!<CD>まずは ごはんを 食ベること!<CF><D1><@LL,00,04>はぁい!",
-034,0x218044,"<@LL,00,01>いっただっきま-す!<CD>ぱくぱく もぐもぐ",
-035,0x218046,"<@LL,00,01>ごっちそ-さま-!",
-036,0x218048,"<@RL,04,00>わん わん!<CF><D1><@RL,12,02>ソルティは ずっと<CD><&BUF0A>の かえリを<CF><D1>まってたのよ<CD>ちょっとは かまって やったら?<CF><D1><@LL,00,04>じゃ さんぽに行くか?<CD>ソルティ",
-037,0x21804a,"<@RL,04,00>わん わん!",
-038,0x21804c,"<@LL,00,07>あ! まてよ!<CD>気の早いやつだなぁ",
-039,0x21804e,"<@RL,0C,00>はい 分かリました<CD>すぐ 行きます!",
-040,0x218050,"<@RL,0C,00>また あのかめんが ひつように<CD>なる時が 来たか!",
-041,0x218052,"<@RL,1D,00>店長-! ヒカルくん また しごと<CD>さぼって どこかに 行きましたよ-<CF><D1><@RL,14,00>なにぃ!",
-042,0x218054,"<@RL,04,00>わん わん!",
-043,0x218056,"<@RL,04,00>わん わん!",
-044,0x218058,"<@LL,00,07>あ! ダメだよ ソルティ<CD>コンビニに 入っちゃ!",
-045,0x21805a,"<@LL,00,00>あれ?<CD>どうした ソルティ?",
-046,0x21805c,"<@RL,04,00>わん わん!<CF><D1><@LL,00,00>え? 中に ヒカルさん いないって?<CD>どこに 行っちゃったんだろう",
-047,0x21805e,"<@RL,0B,00>およびですか? はかせ<CF><D1><@RL,0D,01>ようやく 出番って わけね!",
-048,0x218060,"<@RL,0F,02>どうも わるい よかんがするんじゃ<CF><D1><@RL,0B,00>...と 言いますと?<CF><D1><@RL,0F,00>ミニミニマシ-ンは どう考えても<CD>ちきゅうで 作られたものではない<CF><D1><@RL,0B,00>やはリ エイリアンの?<CF><D1><@RL,0F,00>まちがいないじゃろうな<CF><D1>もんだいは これを ロボロボの<CD>やつらが もっていたということじゃ<CF><D1><@RL,0D,00>宇宙人と ロボロボ団には<CD>何か かんけいが...?<CF><D1><@RL,0F,00>あるかもしれん<CF><D1>ほかにも 気がかリなことがある<CD>ついて 来るんじゃ",
-049,0x218062,"<@RL,0B,00>これは?",
-050#kabuto,0x218064,"<@RL,0F,00><&BUF0A>が 持ってかえった<CD>ブラックカブトの メダルじゃ<CF><D1><&BUF0A>の 話では<CD>それには「メダロット3げんそく」が<CF><D1>ないと いうことじゃ",
-050#kuwagata,0x218064,"<@RL,0F,00><&BUF0A>が 持ってかえった<CD>ブラッククワガタの メダルじゃ<CF><D1><&BUF0A>の 話では<CD>それには「メダロット3げんそく」が<CF><D1>ないと いうことじゃ",
-051,0x218066,"<@RL,0B,00>そんなことが...!<CF><D1><@RL,0F,00>レトルト そしてレディよ<CD>わしらと ともに<CF><D1>ヘブンスゲ-トに とんでくれんか?<CF><D1><@RL,0B,00>分かリました<CF><D1><@RL,0D,01>まかせといて ください!",
-052,0x218068,"<@RL,18,00>わたしも ナエさんと いっしょに<CD>行きたかったのにっ! くやちいっ!!",
-053,0x21806a,"<@RL,18,00>あれ? 白玉 お前 いつの間に<CD>かえってきたんだ?",
+033,0x218042,"<@LL,00,01>ただいま! パパ ママ<CF><D1><@RL,11,01>おお おかえリ<CD><&BUF0A><CF><D1><@RL,12,02>おかえリ <&BUF0A><CD>ごはん できてるわよ<CF><D1><@LL,00,01>わ-い!<CF><D1><@RL,11,01>大かつやくだったな!<CF><D1>TVに出るなんて<CD><&BUF0A>も ゆうめい人だな<CF><D1><@LL,00,01>いやぁ そうかな-<CF><D1><@RL,12,02>ほらほら 早く すわって!<CD>まずは ごはんを 食ベること!<CF><D1><@LL,00,04>はぁい!","<@LL,00,01>Mom, Dad, I'm back!<CF><D1><@RL,11,01>Ooh, welcome home, <&BUF0A>.<CF><D1><@RL,12,02>Welcome home, <&BUF0A>. Food is ready.<CF><D1><@LL,00,01>Yaaay!<CF><D1><@RL,11,01>You're becoming a big deal!<CF><D1>Being on TV, it's like you're a celebrity, <&BUF0A>.<CF><D1><@LL,00,01>Oh, I wouldn't say that...<CF><D1><@RL,12,02>Come on, come on, sit down already! It's time to eat!<CF><D1><@LL,00,04>Yeees!"
+034,0x218044,"<@LL,00,01>いっただっきま-す!<CD>ぱくぱく もぐもぐ","<@LL,00,01>Let's eat!<D3>*chomp chomp* *munch munch*"
+035,0x218046,"<@LL,00,01>ごっちそ-さま-!","<@LL,00,01>Thanks for the food!"
+036,0x218048,"<@RL,04,00>わん わん!<CF><D1><@RL,12,02>ソルティは ずっと<CD><&BUF0A>の かえリを<CF><D1>まってたのよ<CD>ちょっとは かまって やったら?<CF><D1><@LL,00,04>じゃ さんぽに行くか?<CD>ソルティ","<@RL,04,00>Woof, woof!<CF><D1><@RL,12,02>Salty's been waiting all this time for you to get back, <&BUF0A>. Why not spend some time with them?<CF><D1><@LL,00,04>Well, do you want to take a walk, Salty?"
+037,0x21804a,"<@RL,04,00>わん わん!","<@RL,04,00>Woof, woof!"
+038,0x21804c,"<@LL,00,07>あ! まてよ!<CD>気の早いやつだなぁ","<@LL,00,07>Ah! Wait!<D3>He sure is impatient..."
+039,0x21804e,"<@RL,0C,00>はい 分かリました<CD>すぐ 行きます!","<@RL,0C,00>Yes, understood. I'll be right there!"
+040,0x218050,"<@RL,0C,00>また あのかめんが ひつように<CD>なる時が 来たか!","<@RL,0C,00>The time to don that mask has come again!"
+041,0x218052,"<@RL,1D,00>店長-! ヒカルくん また しごと<CD>さぼって どこかに 行きましたよ-<CF><D1><@RL,14,00>なにぃ!","<@RL,1D,00>Manager! Henry skipped work and went off somewhere again!<CF><D1><@RL,14,00>What!?"
+042,0x218054,"<@RL,04,00>わん わん!","<@RL,04,00>Woof, woof!"
+043,0x218056,"<@RL,04,00>わん わん!","<@RL,04,00>Woof, woof!"
+044,0x218058,"<@LL,00,07>あ! ダメだよ ソルティ<CD>コンビニに 入っちゃ!","<@LL,00,07>Ah! You can't go in the store, Salty!"
+045,0x21805a,"<@LL,00,00>あれ?<CD>どうした ソルティ?","<@LL,00,00>Huh?<D3>What is it, Salty?"
+046,0x21805c,"<@RL,04,00>わん わん!<CF><D1><@LL,00,00>え? 中に ヒカルさん いないって?<CD>どこに 行っちゃったんだろう","<@RL,04,00>Woof, woof!<CF><D1><@LL,00,00>Eh? Henry isn't in there? Where could he have gone?"
+047,0x21805e,"<@RL,0B,00>およびですか? はかせ<CF><D1><@RL,0D,01>ようやく 出番って わけね!","<@RL,0B,00>You called, Doctor?<CF><D1><@RL,0D,01>Finally, I'm up!"
+048,0x218060,"<@RL,0F,02>どうも わるい よかんがするんじゃ<CF><D1><@RL,0B,00>...と 言いますと?<CF><D1><@RL,0F,00>ミニミニマシ-ンは どう考えても<CD>ちきゅうで 作られたものではない<CF><D1><@RL,0B,00>やはリ エイリアンの?<CF><D1><@RL,0F,00>まちがいないじゃろうな<CF><D1>もんだいは これを ロボロボの<CD>やつらが もっていたということじゃ<CF><D1><@RL,0D,00>宇宙人と ロボロボ団には<CD>何か かんけいが...?<CF><D1><@RL,0F,00>あるかもしれん<CF><D1>ほかにも 気がかリなことがある<CD>ついて 来るんじゃ","<@RL,0F,02>I'm getting a bad feeling about all this.<CF><D1><@RL,0B,00>...What do you mean?<CF><D1><@RL,0F,00>The MiniMini Machine isn't something that could have been made on Earth.<CF><D1><@RL,0B,00>So it was made by aliens?<CF><D1><@RL,0F,00>I'm sure of it.<CF><D1>The issue is that the Rubberobos had it in their possesion.<CF><D1><@RL,0D,00>Is there some connection between the aliens and the Rubberobos?<CF><D1><@RL,0F,00>There may be.<CF><D1>But for now there is something concerning me more. Follow me."
+049,0x218062,"<@RL,0B,00>これは?","<@RL,0B,00>This is?"
+050#kabuto,0x218064,"<@RL,0F,00><&BUF0A>が 持ってかえった<CD>ブラックカブトの メダルじゃ<CF><D1><&BUF0A>の 話では<CD>それには「メダロット3げんそく」が<CF><D1>ないと いうことじゃ","<@RL,0F,00><&BUF0A> brought me this Black Kabuto medal.<CF><D1>According to <&BUF0A> it doesn't follow the ""Three Laws of Medarobotics."""
+050#kuwagata,0x218064,"<@RL,0F,00><&BUF0A>が 持ってかえった<CD>ブラッククワガタの メダルじゃ<CF><D1><&BUF0A>の 話では<CD>それには「メダロット3げんそく」が<CF><D1>ないと いうことじゃ","<@RL,0F,00><&BUF0A> brought me this Black Kuwagata medal.<CF><D1>According to <&BUF0A> it doesn't follow the ""Three Laws of Medarobotics."""
+051,0x218066,"<@RL,0B,00>そんなことが...!<CF><D1><@RL,0F,00>レトルト そしてレディよ<CD>わしらと ともに<CF><D1>ヘブンスゲ-トに とんでくれんか?<CF><D1><@RL,0B,00>分かリました<CF><D1><@RL,0D,01>まかせといて ください!","<@RL,0B,00>That can't be...!<CF><D1><@RL,0F,00>Renegade, Lady, will the two of you come along to Heaven's Gate wit us?<CF><D1><@RL,0B,00>Yes, sir!<CF><D1><@RL,0D,01>You can count on us!"
+052,0x218068,"<@RL,18,00>わたしも ナエさんと いっしょに<CD>行きたかったのにっ! くやちいっ!!","<@RL,18,00>I wanted to go with Nae too! Darn it!!"
+053,0x21806a,"<@RL,18,00>あれ? 白玉 お前 いつの間に<CD>かえってきたんだ?","<@RL,18,00>Huh? When did you get back, Shiratama?"
 054,0x21806c,"<@LL,00,01>ふわぁ- よくねた!<CF><D1>さてと! アリカさそって<CD>次の 町に しゅっぱつだ!<CF><D1>たしか コンビニの 前で <CD>まってるって 言ってたよな",
 055,0x21806e,"<@LL,00,04>それじゃ パパ ママ 行ってきます!<CF><D1><@RL,12,02>行ってらっしゃい<CF><D1><@RL,11,01>体には 気を つけるんだぞ<CF><D1><@LL,00,04>うん!",
 056,0x218070,"<@RL,11,01>大きく なったな<CD><&BUF0A>は<CF><D1><@RL,12,02>そうね...",
