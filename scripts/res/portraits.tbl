@@ -15,14 +15,14 @@
 0E=Kirara
 0F=DrAki
 10=Nae
-11=ScientistMale
-12=ScientistFemale
+11=IkkiDad
+12=IkkiMom
 13=Boy
 14=Man
 15=Lady
 16=OldMan
 17=OldLady
-18=ScientistMale2
+18=ScientistMale
 19=Man2
 1A=Sailor
 1B=Girl
@@ -65,7 +65,7 @@
 40=Viridiana
 41=Electra
 42=OldSmiley
-43=ScientistMale3
+43=OfficeWorker
 44=Asama
 45=Seseri
 46=Crow
