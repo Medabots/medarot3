@@ -28,6 +28,8 @@ table = utils.merge_dicts([
 
 kanji = tilesets.get_tileset("Kanji", override_offset=0x0)
 
+portrait_name_table = utils.read_table(os.path.join(scripts_res_path, "portraits.tbl"))
+
 default_suffix = rom_info[0][1]
 ptrs.seek(0)
 name_table = {}
@@ -77,7 +79,7 @@ for info in rom_info:
         table[0xd0] = SpecialCharacter("&", bts=2, names=name_table) # Pull text from RAM
         table[0xd1] = SpecialCharacter("D1", bts=0, always_print=True) # New page (keeps portrait)
         # Portrait, [Orientation:{00, 01, 10, 11, FF}][Character:1][Expression:1]
-        table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{:02X},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], utils.read_byte(x), utils.read_byte(x)) )
+        table[0xd2] = SpecialCharacter('@', bts=3, parser=lambda x: "{},{},{:02X}".format({0x00: 'LL', 0x01: 'LR', 0x10: 'RL', 0x11: 'RR', 0xFF: 'CC' }[utils.read_byte(x)], portrait_name_table[utils.read_byte(x)], utils.read_byte(x)) )
         table[0xd3] = SpecialCharacter('K', print_control_code=False, parser=lambda x: kanji[utils.read_byte(x)]) # Kanji
 
         terminator_pointers = []
