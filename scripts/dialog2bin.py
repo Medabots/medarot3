@@ -14,8 +14,9 @@ from common import utils, tilesets
 output_file = sys.argv[1]
 input_file = sys.argv[2]
 ptrs_table = sys.argv[3]
-column_name = sys.argv[4]
-version_suffix = sys.argv[5]
+portraits_table = sys.argv[4]
+column_name = sys.argv[5]
+version_suffix = sys.argv[6]
 
 base_name = os.path.splitext(os.path.basename(input_file))[0]
 char_table = utils.reverse_dict(utils.merge_dicts([
@@ -25,7 +26,9 @@ char_table = utils.reverse_dict(utils.merge_dicts([
         ]))
 kanji = utils.reverse_dict(tilesets.get_tileset("Kanji", override_offset=0x0))
 assert((set(kanji.keys()) - set(char_table.keys())) == set(kanji.keys()))
+
 ptr_names = utils.read_table(ptrs_table, keystring=True)
+portrait_name_table = utils.read_table(portraits_table, reverse=True, keystring=True)
 
 with open(input_file, 'r', encoding='utf-8-sig') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')
@@ -140,7 +143,8 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                     elif special_type == '@': # Portraits
                         s = (''.join(special_data)).split(',')
                         orientation = s[0]
-                        portrait_id = int(s[1], 16)
+                        portrait_name = s[1]
+                        portrait_id = int(portrait_name_table[portrait_name], 16)
                         expression = int(s[2], 16)
                         bintext.append(0xD2)
                         bintext.append(
