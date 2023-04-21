@@ -390,6 +390,7 @@ CreditInitPage::
   call VWFMeasureCharacterForCredits
   ld a, h
   add b
+  inc a
   ld b, a
   pop hl
   inc c
