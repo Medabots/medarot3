@@ -35,7 +35,7 @@
 019#kuwagata,0x244026,"<@RL,Rokusho,00>おい まて!","<@RL,Rokusho,00>Hey, wait!"
 020#kabuto,0x244028,"<@LL,Ikki,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,Metabee,00>つたえるって 何を?","<@LL,Ikki,00>Hey, <&BUF07><CF><D1>Is there anyway we can communicate with this little guy?<CF><D1><@RL,Metabee,00>Communicate, about what?"
 020#kuwagata,0x244028,"<@LL,Ikki,00>ねえ <&BUF07><CF><D1>何とか この子に つたえることって<CD>できないかな?<CF><D1><@RL,Rokusho,00>つたえる? 何をだ?","<@LL,Ikki,00>Hey, <&BUF07><CF><D1>Is there anyway we can communicate with this little guy?<CF><D1><@RL,Rokusho,00>Communicate? What is it?"
-021,0x24402a,"<@LL,Ikki,00>ごめんね 今まで ぼくたち人間の<CD>せいで ずっと こわい目に<CF><D1>あってきたんだよね<CD>でも このままじゃ きみの 力で<CF><D1>みんな しんじゃう<CD>おねがいだよ なきやんで","<@LL,Ikki,00>I'm sorry that we humans have made you suffer and be scared all this time, but if you keep going like this, everyone will die from your power. Please, stop crying."
+021,0x24402a,"<@LL,Ikki,00>ごめんね 今まで ぼくたち人間の<CD>せいで ずっと こわい目に<CF><D1>あってきたんだよね<CD>でも このままじゃ きみの 力で<CF><D1>みんな しんじゃう<CD>おねがいだよ なきやんで","<@LL,Ikki,00>I'm sorry that we humans have made you suffer and be scared all this time...<CF><D1>But if you keep going like this, everyone will die from your power. <CF><D1>Please, stop crying."
 022,0x24402c,"<@RL,Erika,07><&BUF0A>!<CF><D1><@RL,Koji,01>ぶじか! <&BUF0A>!<CF><D1><@RL,Karin,06><&BUF0A>くん!","<@RL,Erika,07><&BUF0A>!<CF><D1><@RL,Koji,01>So you're okay, <&BUF0A>!<CF><D1><@RL,Karin,06><&BUF0A>!"
 023,0x24402e,"<@LL,Ikki,04>みんな!<CF><D1><@RL,Koji,01>お前 1人で こんな所まで<CD>来て...!","<@LL,Ikki,04>You guys!<CF><D1><@RL,Koji,01>You came all this way by yourself...!"
 024,0x244030,"<@CC,CLEAR,FF>フギャアアアア!!<CD>オギャアアアア!!","<@CC,CLEAR,FF>Hwaaaah!!<D3>Ogyaaaaa!!"
