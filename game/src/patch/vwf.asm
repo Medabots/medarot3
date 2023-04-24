@@ -237,13 +237,6 @@ VWFAutoNLFetchChar::
   pop bc
   ret
 
-VWFDrawStringInitForCredits::
-  rst $10
-  call VWFDrawStringInitContinued
-  ld a, BANK(CreditLineDrawTextInBuffer)
-  rst $10
-  ret
-
 VWFMeasureCharacterForCredits::
   rst $10
   ld h, [hl]
