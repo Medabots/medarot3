@@ -714,9 +714,32 @@ CreditLineDrawTextInBuffer::
   ld [W_VWFInitialPaddingOffset], a
   ld a, $10
   ld [W_VWFTileLength], a
-  ld h, $F0
-  ld a, BANK(VWFDrawStringInitContinued)
-  call VWFDrawStringInitForCredits
+  ld a, $F0
+  ld [W_VWFTileBaseIdx], a
+  xor a
+  ld c, a
+  ld [W_VWFOldTileMode], a
+  ld [W_VWFTextLength], a
+  ld [W_VWFDiscardSecondTile], a
+  ld a, [W_VWFTileLength]
+  add a
+  add a
+  add a
+  ld [W_VWFDrawingAreaLengthInPixels], a
+  ld a, [W_VWFInitialPaddingOffset]
+  ld [W_VWFDrawnAreaLength], a
+
+  ; Clear the first tile in the composite area to avoid visual bugs with centred text.
+
+  ld hl, W_VWFCompositeArea
+  ld b, $10
+  xor a
+
+.clearCompositeAreaLoop
+  ld [hli], a
+  dec b
+  jr nz, .clearCompositeAreaLoop
+
   ld a, [W_VWFDrawnAreaLength]
   ld e, 0
 
