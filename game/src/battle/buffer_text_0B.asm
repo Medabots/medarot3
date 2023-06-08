@@ -79,14 +79,14 @@ BattleAllyStatusLoadTextIntoBuf02::
 
 SECTION "Load text for Robattle Winner (on player loss)", ROMX[$4980], BANK[$0B]
 BattleRobattleLoadWinnerTextIntoBuf02::
-  ld hl, W_EncounterOpponentBufferArea + 3
-  ld de, cBUF02
-  ld bc, $0009
-  call memcpy
-  ld bc, $0097
-  call $5126
-  call WrapInitiateMainScript
-  jp IncSubStateIndex
+  ld bc, $0F0C
+  ld a, [W_EncounterOpponentListItemIndex]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_NewListItemBufferArea + 3
+  jp BattleRobattleLoadWinnerTextIntoBuf02Cont
 
   padend $4998
 
@@ -134,3 +134,12 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
   pop de
   ld hl, W_NewListItemBufferArea
   ret
+
+BattleRobattleLoadWinnerTextIntoBuf02Cont::
+  ld de, cBUF02
+  ld bc, $001A
+  call memcpy
+  ld bc, $0097
+  call $5126
+  call WrapInitiateMainScript
+  jp IncSubStateIndex

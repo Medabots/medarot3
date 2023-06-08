@@ -121,16 +121,15 @@ SlideOverlayDownForEncounterScreen::
 
 SECTION "Encounter Helper Functions 2", ROMX[$5972], BANK[$05]
 BufferOpponentForEncounterScreen::
-  ld b, $F
-  ld c, $C
+  ld bc, $0F0C
   ld a, [W_EncounterOpponentListItemIndex]
   ld [W_ListItemIndexForBuffering], a
-  ld a, 0
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
   ld hl, W_NewListItemBufferArea
   ld de, W_EncounterOpponentBufferArea
-  ld b, $C
+  ld b, $3
 
 .loop
   ld a, [hli]
