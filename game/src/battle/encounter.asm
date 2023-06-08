@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Encounter Opponent Buffering", WRAM0[$C5A0]
 W_EncounterTerrainListItemIndex:: ds 1
@@ -138,6 +139,8 @@ BufferOpponentForEncounterScreen::
   dec b
   jr nz, .loop
   ret
+
+  padend $5993
 
 SECTION "Encounter Helper Functions 3", ROMX[$5B32], BANK[$05]
 LoadTerrainForEncounterScreen::
