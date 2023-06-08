@@ -128,10 +128,10 @@ Index[#version],Unknown,Name
 123,\x26\x1f\x01,Dr. Hebereke
 124,\x27\x20\x01,Select Three
 125,\x27\x20\x01,Select Three
-126,\x28\x21\x01,Select Corp Member
-127,\x28\x21\x01,Select Corp Member
-128,\x28\x21\x01,Select Corp Member
-129,\x28\x21\x01,Select Corp Member
+126,\x28\x21\x01,Select Member
+127,\x28\x21\x01,Select Member
+128,\x28\x21\x01,Select Member
+129,\x28\x21\x01,Select Member
 130,\x2d\x22\x00,Flying Medarot
 131,\x2d\x22\x00,Flying Medarot
 132,\x2d\x22\x00,Flying Medarot
@@ -140,10 +140,10 @@ Index[#version],Unknown,Name
 135,\x2e\x23\x00,Hover Medarot
 136,\x2e\x23\x00,Hover Medarot
 137,\x2e\x23\x00,Hover Medarot
-138,\x2f\x24\x00,Multi-legged Medarot
-139,\x2f\x24\x00,Multi-legged Medarot
-140,\x2f\x24\x00,Multi-legged Medarot
-141,\x2f\x24\x00,Multi-legged Medarot
+138,\x2f\x24\x00,Polyped Medarot
+139,\x2f\x24\x00,Polyped Medarot
+140,\x2f\x24\x00,Polyped Medarot
+141,\x2f\x24\x00,Polyped Medarot
 142,\x30\x25\x00,Bipedal Medarot
 143,\x30\x25\x00,Bipedal Medarot
 144,\x30\x25\x00,Bipedal Medarot
@@ -252,7 +252,7 @@ Index[#version],Unknown,Name
 247,\x46\x56\x00,Crow
 248,\x46\x57\x00,Dragonflier
 249,\x00\x58\x00,Nashi
-250,\x4f\x59\x00,Rintarou and Karin
+250,\x4f\x59\x00,Rintarou & Karin
 251,\x4a\x5a\x00,Sea Fairies
 252,\x4b\x5b\x00,Sea Dragons
 253,\x05\x5c\x00,The Screws
