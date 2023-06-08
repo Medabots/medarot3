@@ -839,7 +839,6 @@ DisplayMedarotNamesForBattleStatus::
   jr z, .checkParticipantD
   ld hl, $9A00
   ld a, $36
-  ld a, $2e
   call HelperDrawPlayerNameString
 
 ; Enemy bot names are loaded from a list, based on head part idx
