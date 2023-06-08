@@ -815,7 +815,7 @@ DisplayMedarotNamesForBattleStatus::
   jr z, .checkParticipantB
   ld hl, $9980
   ld a, $26
-  call HelperDrawPlayerNameString
+  call HelperDrawPlayerOrAllyNameString
 
 .checkParticipantB
   ld a, 1
@@ -827,7 +827,7 @@ DisplayMedarotNamesForBattleStatus::
   jr z, .checkParticipantC
   ld hl, $99c0
   ld a, $2e
-  call HelperDrawPlayerNameString
+  call HelperDrawPlayerOrAllyNameString
 
 .checkParticipantC
   ld a, 2
@@ -839,7 +839,7 @@ DisplayMedarotNamesForBattleStatus::
   jr z, .checkParticipantD
   ld hl, $9A00
   ld a, $36
-  call HelperDrawPlayerNameString
+  call HelperDrawPlayerOrAllyNameString
 
 ; Enemy bot names are loaded from a list, based on head part idx
 .checkParticipantD
@@ -886,21 +886,6 @@ DisplayMedarotNamesForBattleStatus::
   ld h, $4e
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
-  ret
-
-HelperDrawPlayerNameString:
-  ; hl -> de, address to draw to
-  ; a -> h, index to draw
-  push de
-  push hl
-  ld hl, $40
-  add hl, de
-  pop de ; hl -> de, address to draw to
-  ld b, h
-  ld c, l ; bc = string address
-  ld h, a ; h = tile drawing index
-  call VWFDrawStringRightFullAddress8Tiles
-  pop de ; restore de to original
   ret
 
 HelperGetMedarotNameFromHead:
@@ -1062,3 +1047,32 @@ DirectionalInputHandlingForBattleStatus::
   db 0,4,1,5,2,3,0,0
   db 1,5,2,3,0,4,0,0
   db 2,3,0,4,1,5,0,0
+
+SECTION "Free space Bank 10", ROMX[$7F60], BANK[$10]
+
+HelperDrawPlayerOrAllyNameString:
+  ; a is tile index
+  ; hl is address to draw to
+  push de
+  push hl
+  ld hl, $40
+  add hl, de ; hl is string to draw
+  ld b, a
+  ld a, [hl]
+  inc a ; if a is FF it loops to 00
+  ld a, b
+  jr nz, .is_player
+  ld h, a ; h is tile index
+  push hl
+  call HelperGetMedarotNameFromHead ; sets bc
+  pop hl
+  jr .draw
+.is_player
+  ld b, h
+  ld c, l ; bc = string address
+  ld h, a ; h = tile drawing index
+.draw
+  pop de ; earlier hl -> de, address to draw to
+  call VWFDrawStringRightFullAddress8Tiles
+  pop de ; restore de to original
+  ret
