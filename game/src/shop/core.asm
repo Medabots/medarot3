@@ -242,7 +242,7 @@ ShopDrawingStateContinued::
   dw .shopkeeper3
 
 .shopkeeper0
-  ld a, 0
+  xor a
   ld [W_ShopShopkeeper], a
   ld bc, $32
   call WrapLoadMaliasGraphics
@@ -487,13 +487,18 @@ ShopMainMenuInputHandlerState::
   ldh a, [H_JPInputChanged]
   and M_JPInputSelect
   jr z, .selectNotPressed
-  ld a, 0
+  ld hl, W_ShopIndex
+  inc [hl]
+  ld a, $0b
+  xor [hl]
+  jr nz, .reset_shop_state
+  ld [hl], a ; a is 0 in this case
+.reset_shop_state
+  xor a
   ld [W_CoreSubStateIndex], a
-  ld a, [W_ShopIndex]
-  inc a
-  ld [W_ShopIndex], a
   jp ShopDrawingStateContinued
-  ret
+
+  padend $435d
 
 .selectNotPressed
   ldh a, [H_JPInputChanged]
