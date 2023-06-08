@@ -4,7 +4,7 @@
 Index[#version],Movement
 0,Flying
 1,Hover
-2,Multi-legged
+2,Multi-leg
 3,Bipedal
 4,Wheeled
 5,Tank

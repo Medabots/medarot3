@@ -39,7 +39,7 @@ Index[#version],Unknown,Term
 34,\x00,Leg Type
 35,\x06,•Flying
 36,\x07,•Hover
-37,\x08,•Multi-legged
+37,\x08,•Multi-leg
 38,\x09,•Bipedal
 39,\x0a,•Wheeled
 40,\x0b,•Tank
