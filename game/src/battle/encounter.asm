@@ -140,6 +140,8 @@ BufferOpponentForEncounterScreen::
   jr nz, .loop
   ret
 
+  padend $5993
+
 SECTION "Encounter Helper Functions 3", ROMX[$5B32], BANK[$05]
 LoadTerrainForEncounterScreen::
   ld hl, $310
