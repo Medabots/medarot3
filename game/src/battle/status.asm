@@ -1059,7 +1059,7 @@ HelperDrawPlayerOrAllyNameString:
   add hl, de ; hl is string to draw
   ld b, a
   ld a, [hl]
-  inc a ; if a is FF it loops to 00
+  cp $CB ; if a is CB, it's an ally we should use the head part for
   ld a, b
   jr nz, .is_player
   ld h, a ; h is tile index

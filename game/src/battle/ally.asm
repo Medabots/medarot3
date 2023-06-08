@@ -6,7 +6,7 @@ BattleAllyInitializeParticipantName::
   ld a, [$C647]
   or a
   ret z
-  ld a, $ff
+  ld a, $CB
   ; Set the name to $FF as a way to inform that name should be loaded based on head part
   ld hl, $D240
   ld [hl], a
