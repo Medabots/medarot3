@@ -78,7 +78,7 @@ BattleAllyStatusLoadTextIntoBuf02::
 
 SECTION "Load text for Robattle Winner (on player loss)", ROMX[$4980], BANK[$0B]
 BattleRobattleLoadWinnerTextIntoBuf02::
-  ld hl, $c5a5
+  ld hl, W_EncounterOpponentBufferArea + 3
   ld de, cBUF02
   ld bc, $0009
   call memcpy
