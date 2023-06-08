@@ -87,6 +87,8 @@ BattleRobattleLoadWinnerTextIntoBuf02::
   call WrapInitiateMainScript
   jp IncSubStateIndex
 
+  padend $4998
+
 SECTION "Load text for part damage 0B", ROMX[$509b], BANK[$0B]
 BattleAllyStatusLoadPartType::
   LoadPartTypeTextIntoDE 0B
