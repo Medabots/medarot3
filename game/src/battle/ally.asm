@@ -2,7 +2,7 @@ INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
 SECTION "Load Ally Medabot Information", ROMX[$4CF8], BANK[$0A]
-BattleAllyInitializeParticipantData::
+BattleAllyInitializeParticipantName::
   ld a, [$C647]
   or a
   ret z
@@ -40,3 +40,5 @@ BattleAllyInitializeParticipantData::
   cp $02
   jr nz, .loop
   ret
+
+  padend $4d3d
