@@ -76,6 +76,17 @@ BattleAllyStatusLoadTextIntoBuf02::
   ld [$c481], a
   ret
 
+SECTION "Load text for Robattle Winner (on player loss)", ROMX[$4980], BANK[$0B]
+BattleRobattleLoadWinnerTextIntoBuf02::
+  ld hl, $c5a5
+  ld de, cBUF02
+  ld bc, $0009
+  call memcpy
+  ld bc, $0097
+  call $5126
+  call WrapInitiateMainScript
+  jp IncSubStateIndex
+
 SECTION "Load text for part damage 0B", ROMX[$509b], BANK[$0B]
 BattleAllyStatusLoadPartType::
   LoadPartTypeTextIntoDE 0B
