@@ -45,7 +45,7 @@ Index[#version],Model,Name,IsFemale
 40,KBS-04\xcb,Title Door\xcb,\x00
 41,DHN-04\xcb,Skull Horse\xcb,\x00
 42,TIC-04\xcb,Tricky Again\xcb,\x00
-43,LOS-04\xcb,Crawling In Again\xcb,\x00
+43,LOS-04\xcb,Crawling In 2\xcb,\x00
 44,FLA-04\xcb,Offbeat Again\xcb,\x00
 45,FAW-04\xcb,Kicker\xcb,\x00
 46,TMN-04\xcb,Segmenter\xcb,\x01
@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-24\xcb,Ochitsuka\xcb,\x00
 52,DDO-04\xcb,Sharp Edge\xcb,\x00
 53,KLN-04\xcb,Abductor\xcb,\x00
-54,KBT-34\xcb,Improved Ochitsuka\xcb,\x00
+54,KBT-34\xcb,Imp. Ochitsuka\xcb,\x00
 55,KBT-44\xcb,Fireworks\xcb,\x00
 56,LHB-14\xcb,Incoherent\xcb,\x00
 57,MWB-14\xcb,Cool Down\xcb,\x00

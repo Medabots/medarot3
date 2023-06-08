@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-22\xcb,Revolver\xcb,\x00
 52,DDO-02\xcb,Flexor Sword\xcb,\x00
 53,KLN-02\xcb,Shoot Barrel\xcb,\x00
-54,KBT-32\xcb,Improved Revolver\xcb,\x00
+54,KBT-32\xcb,Imp. Revolver\xcb,\x00
 55,KBT-42\xcb,Ignition\xcb,\x00
 56,LHB-12\xcb,Absorber\xcb,\x00
 57,MWB-12\xcb,Scotch\xcb,\x00
@@ -107,7 +107,7 @@ Index[#version],Model,Name,IsFemale
 102,BYC-02\xcb,White Onyx\xcb,\x01
 103,IDL-02\xcb,Surprise Yoyo\xcb,\x01
 104,MTC-02\xcb,Fumuffler\xcb,\x00
-105,CVL-02\xcb,Bottomless Shovel\xcb,\x00
+105,CVL-02\xcb,BottomlessShovel\xcb,\x00
 106,KAB-02\xcb,Decider\xcb,\x00
 107,BST-02\xcb,Den Den\xcb,\x00
 108,GRF-02\xcb,Investor\xcb,\x00

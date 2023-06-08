@@ -13,7 +13,7 @@ Index[#version],Model,Name,IsFemale
 8,GRH-01\xcb,Topknotton\xcb,\x00
 9,CHC-01\xcb,Out Plumber\xcb,\x00
 10,TJK-01\xcb,Core Head\xcb,\x00
-11,PCK-01\xcb,Interior Decorator\xcb,\x00
+11,PCK-01\xcb,Int. Decorator\xcb,\x00
 12,SLN-11\xcb,Compline\xcb,\x01
 13,CNR-01\xcb,Optic Nerve\xcb,\x01
 14,PIC-01\xcb,Dispose\xcb,\x01
@@ -21,7 +21,7 @@ Index[#version],Model,Name,IsFemale
 16,PTM-01\xcb,Fore Mount\xcb,\x01
 17,JPT-01\xcb,Jovian\xcb,\x01
 18,CRN-01\xcb,Kind\xcb,\x01
-19,DFL-11\xcb,Blanker Expression\xcb,\x00
+19,DFL-11\xcb,Blank Expression\xcb,\x00
 20,FLS-01\xcb,Melon\xcb,\x00
 21,ISE-01\xcb,Shrimpress\xcb,\x00
 22,MAN-01\xcb,Without That\xcb,\x00
@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-21\xcb,Missile\xcb,\x00
 52,DDO-01\xcb,Hunter\xcb,\x00
 53,KLN-01\xcb,Tension Up\xcb,\x00
-54,KBT-31\xcb,Improved Missile\xcb,\x00
+54,KBT-31\xcb,Imp. Missile\xcb,\x00
 55,KBT-41\xcb,Prominence\xcb,\x00
 56,LHB-11\xcb,Darling\xcb,\x00
 57,MWB-11\xcb,Folly\xcb,\x00
