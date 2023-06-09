@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-23\xcb,Submachinegun\xcb,\x00
 52,DDO-03\xcb,Straw Hammer\xcb,\x00
 53,KLN-03\xcb,Range Shooter\xcb,\x00
-54,KBT-33\xcb,Imp. Machinegun\xcb,\x00
+54,KBT-33\xcb,Impr. Machinegun\xcb,\x00
 55,KBT-43\xcb,Explode\xcb,\x00
 56,LHB-13\xcb,Blowpipe\xcb,\x00
 57,MWB-13\xcb,Links\xcb,\x00
