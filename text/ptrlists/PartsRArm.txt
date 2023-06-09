@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-22\xcb,Revolver\xcb,\x00
 52,DDO-02\xcb,Flexor Sword\xcb,\x00
 53,KLN-02\xcb,Shoot Barrel\xcb,\x00
-54,KBT-32\xcb,Imp. Revolver\xcb,\x00
+54,KBT-32\xcb,Impr. Revolver\xcb,\x00
 55,KBT-42\xcb,Ignition\xcb,\x00
 56,LHB-12\xcb,Absorber\xcb,\x00
 57,MWB-12\xcb,Scotch\xcb,\x00

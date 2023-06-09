@@ -56,7 +56,7 @@ Index[#version],Model,Name,IsFemale
 51,KBT-24\xcb,Ochitsuka\xcb,\x00
 52,DDO-04\xcb,Sharp Edge\xcb,\x00
 53,KLN-04\xcb,Abductor\xcb,\x00
-54,KBT-34\xcb,Imp. Ochitsuka\xcb,\x00
+54,KBT-34\xcb,Impr. Ochitsuka\xcb,\x00
 55,KBT-44\xcb,Fireworks\xcb,\x00
 56,LHB-14\xcb,Incoherent\xcb,\x00
 57,MWB-14\xcb,Cool Down\xcb,\x00
