@@ -943,7 +943,7 @@ Tilemap01_28::
 Tilemap01_2B::
   INCBIN "./build/tilemaps/012B.map"
 Tilemap01_2C::
-  INCBIN "./build/tilemaps/012C.map"
+  INCBIN "./build/tilemaps/GameOverScreen.map"
 Tilemap01_2F::
   INCBIN "./build/tilemaps/012F.map"
 Tilemap01_30::

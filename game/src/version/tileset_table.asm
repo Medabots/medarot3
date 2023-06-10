@@ -118,7 +118,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 6C (3A6D)
   TilesetTableEntry Tileset3A6F ; 6D (3A6F)
   TilesetTableEntry Tileset3A71 ; 6E (3A71)
-  TilesetTableEntry Tileset3A73 ; 6F (3A73)
+  TilesetTableEntry GameOverScreenCharacters ; 6F (3A73)
   TilesetTableEntry Tileset3A75 ; 70 (3A75)
   TilesetTableEntry Tileset3A77 ; 71 (3A77)
   TilesetTableEntry Tileset3A79 ; 72 (3A79)
@@ -634,7 +634,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 06C
   dbwb BANK(Tileset3A6F), $9000, $0 ; 06D
   dbwb BANK(Tileset3A71), $8800, $0 ; 06E
-  dbwb BANK(Tileset3A73), $9000, $0 ; 06F
+  dbwb BANK(GameOverScreenCharacters), $9000, $0 ; 06F
   dbwb BANK(Tileset3A75), $8100, $0 ; 070
   dbwb BANK(Tileset3A77), $8800, $0 ; 071
   dbwb BANK(Tileset3A79), $8910, $0 ; 072
