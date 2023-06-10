@@ -95,3 +95,21 @@ BattleAllyStatusLoadPartType::
   PartTypeTable 0B
 
   padend $50dc
+
+SECTION "Load text for Robattle Winner (on player loss based on time)", ROMX[$55cf], BANK[$0B]
+BattleRobattleLoadTimeWinnerTextIntoBuf02::
+  ld a, [W_EncounterWinner]
+  cp a, $01
+  jr nz, .opponent_win
+  ld hl, W_PlayerName
+  ld de, cBUF02
+  ld bc, $0009
+  jp memcpy
+.opponent_win
+  ld hl, W_EncounterOpponentBufferArea + 3
+  ld de, cBUF02
+  ld bc, $0009
+  jp memcpy
+  ret
+
+  padend $55ef

@@ -1,6 +1,9 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
+SECTION "Encounter State", WRAM0[$C594]
+W_EncounterWinner:: ds 1
+
 SECTION "Encounter Opponent Buffering", WRAM0[$C5A0]
 W_EncounterTerrainListItemIndex:: ds 1
 W_EncounterOpponentListItemIndex:: ds 1
