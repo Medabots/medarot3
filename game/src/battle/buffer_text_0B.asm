@@ -79,14 +79,14 @@ BattleAllyStatusLoadTextIntoBuf02::
 
 SECTION "Load text for Robattle Winner (on player loss)", ROMX[$4980], BANK[$0B]
 BattleRobattleLoadWinnerTextIntoBuf02::
-  ld bc, $0F0C
-  ld a, [W_EncounterOpponentListItemIndex]
-  ld [W_ListItemIndexForBuffering], a
-  xor a
-  ld [W_ListItemInitialOffsetForBuffering], a
-  call WrapBufferTextFromList
-  ld hl, W_NewListItemBufferArea + 3
-  jp BattleRobattleLoadWinnerTextIntoBuf02Cont
+  call HelperLoadOpponentNameIntoListArea
+  ld de, cBUF02
+  ld bc, $001A
+  call memcpy
+  ld bc, $0097
+  call $5126
+  call WrapInitiateMainScript
+  jp IncSubStateIndex
 
   padend $4998
 
@@ -98,17 +98,14 @@ BattleAllyStatusLoadPartType::
 
 SECTION "Load text for Robattle Winner (on player loss based on time)", ROMX[$55cf], BANK[$0B]
 BattleRobattleLoadTimeWinnerTextIntoBuf02::
+  ld hl, W_PlayerName
   ld a, [W_EncounterWinner]
   cp a, $01
-  jr nz, .opponent_win
-  ld hl, W_PlayerName
+  jr z, .not_opponent
+  call HelperLoadOpponentNameIntoListArea ; set hl
+.not_opponent
   ld de, cBUF02
-  ld bc, $0009
-  jp memcpy
-.opponent_win
-  ld hl, W_EncounterOpponentBufferArea + 3
-  ld de, cBUF02
-  ld bc, $0009
+  ld bc, $001A
   jp memcpy
   ret
 
@@ -153,11 +150,12 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
   ld hl, W_NewListItemBufferArea
   ret
 
-BattleRobattleLoadWinnerTextIntoBuf02Cont::
-  ld de, cBUF02
-  ld bc, $001A
-  call memcpy
-  ld bc, $0097
-  call $5126
-  call WrapInitiateMainScript
-  jp IncSubStateIndex
+HelperLoadOpponentNameIntoListArea:
+  ld bc, $0F0C
+  ld a, [W_EncounterOpponentListItemIndex]
+  ld [W_ListItemIndexForBuffering], a
+  xor a
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_NewListItemBufferArea + 3
+  ret
