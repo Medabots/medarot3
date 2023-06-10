@@ -915,7 +915,7 @@ Tilemap01_1A::
 Tilemap01_1B::
   INCBIN "./build/tilemaps/MenuStartScreen.map"
 Tilemap01_1C::
-  INCBIN "./build/tilemaps/011C.map"
+  INCBIN "./build/tilemaps/MenuTestScreen.map"
 Tilemap01_1D::
   INCBIN "./build/tilemaps/OptionYesNo.map"
 Tilemap01_1E::
