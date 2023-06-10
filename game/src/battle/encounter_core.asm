@@ -330,7 +330,7 @@ BattleEncounterVictoryDrawingAndMappingState::
   call MapTextForEncounterScreen
   call $5E38
   call WrapInitiateMainScript
-  ld a, [$C594]
+  ld a, [W_EncounterWinner]
   cp 1
   jr nz, .jpA
   call $5E02
@@ -346,7 +346,7 @@ BattleEncounterVictoryDrawingAndMappingState::
   jp BattleEncounterIncSubsubstateIndex
 
 BattleEncounterVictoryOrIsItState::
-  ld a, [$C594]
+  ld a, [W_EncounterWinner]
   cp 1
   jp z, BattleEncounterIncSubsubstateIndex
 
