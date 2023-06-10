@@ -76,9 +76,9 @@ SECTION "Tileset Data Tileset3A53", ROMX[$79B2], BANK[$3E]
 Tileset3A53::
   INCBIN "./build/tilesets/Tileset3A53.malias"
 
-SECTION "Tileset Data Tileset3A73", ROMX[$7448], BANK[$3B]
-Tileset3A73::
-  INCBIN "./build/tilesets/Tileset3A73.malias"
+SECTION "Tileset Data GameOverScreenCharacters", ROMX[$7448], BANK[$3B]
+GameOverScreenCharacters::
+  INCBIN "./build/tilesets/GameOverScreenCharacters.malias"
 
 SECTION "Tileset Data Tileset3C3D", ROMX[$5CBD], BANK[$72]
 Tileset3C3D::
