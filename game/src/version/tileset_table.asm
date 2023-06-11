@@ -1046,28 +1046,13 @@ SECTION "Tileset Data Tileset3997", ROMX[$4943], BANK[$3A]
 Tileset3997::
   INCBIN "./build/tilesets/Tileset3997.malias"
 
-; Main Dialog is defined with the other Patch Tilesets
-;SECTION "Tileset Data MainDialog1", ROMX[$4000], BANK[$3A]
-;MainDialog1::
-;  INCBIN "./build/tilesets/MainDialog1.malias"
-
 SECTION "Tileset Data MainDialog2", ROMX[$44E7], BANK[$3A]
 MainDialog2::
   INCBIN "./build/tilesets/MainDialog2.malias"
 
-; Special is defined with the other Patch Tilesets
-;SECTION "Tileset Data Special", ROMX[$4780], BANK[$3A]
-;Special::
-;  INCBIN "./build/tilesets/Special.malias"
-
 SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
 Tileset399F::
   INCBIN "./build/tilesets/Tileset399F.malias"
-
-; MenuMedawatchGraphics is defined with the other patch tilesets
-;SECTION "Tileset Data MenuMedawatchGraphics", ROMX[$4000], BANK[$3C]
-;MenuMedawatchGraphics::
-;  INCBIN "./build/tilesets/MenuMedawatchGraphics.malias"
 
 SECTION "Tileset Data Tileset39A3", ROMX[$43A0], BANK[$3C]
 Tileset39A3::
@@ -1089,19 +1074,9 @@ SECTION "Tileset Data Tileset39AB", ROMX[$48E0], BANK[$3C]
 Tileset39AB::
   INCBIN "./build/tilesets/Tileset39AB.malias"
 
-; MenuMedawatchTextSprites is defined with the other patch tilesets
-;SECTION "Tileset Data MenuMedawatchTextSprites", ROMX[$4A5B], BANK[$3C]
-;MenuMedawatchTextSprites::
-;  INCBIN "./build/tilesets/MenuMedawatchTextSprites.malias"
-
 SECTION "Tileset Data Tileset39AF", ROMX[$4F4D], BANK[$3C]
 Tileset39AF::
   INCBIN "./build/tilesets/Tileset39AF.malias"
-
-; PartsScreen is defined with the other patch tilesets
-;SECTION "Tileset Data PartsScreen", ROMX[$4FD5], BANK[$3C]
-;PartsScreen::
-;  INCBIN "./build/tilesets/PartsScreen.malias"
 
 SECTION "Tileset Data Tileset39B3", ROMX[$524E], BANK[$3C]
 Tileset39B3::
@@ -1122,11 +1097,6 @@ Tileset39B9::
 SECTION "Tileset Data Tileset39BB", ROMX[$55A3], BANK[$3C]
 Tileset39BB::
   INCBIN "./build/tilesets/Tileset39BB.malias"
-
-; MedalInfoText is defined with the other patch tilesets
-;SECTION "Tileset Data MedalInfoText", ROMX[$560E], BANK[$3C]
-;MedalInfoText::
-;  INCBIN "./build/tilesets/MedalInfoText.malias"
 
 SECTION "Tileset Data Tileset39BF", ROMX[$59BC], BANK[$3C]
 Tileset39BF::
@@ -1192,16 +1162,6 @@ SECTION "Tileset Data Tileset39E3", ROMX[$5BD9], BANK[$3A]
 Tileset39E3::
   INCBIN "./build/tilesets/Tileset39E3.malias"
 
-; ShopBuySellText is defined with the other patch tilesets
-;SECTION "Tileset Data ShopBuySellText", ROMX[$4000], BANK[$3B]
-;ShopBuySellText::
-;  INCBIN "./build/tilesets/ShopBuySellText.malias"
-
-; ShopBubbleText is defined with the other patch tilesets
-;SECTION "Tileset Data ShopBubbleText", ROMX[$430C], BANK[$3B]
-;ShopBubbleText::
-;  INCBIN "./build/tilesets/ShopBubbleText.malias"
-
 SECTION "Tileset Data Tileset39F9", ROMX[$4404], BANK[$3B]
 Tileset39F9::
   INCBIN "./build/tilesets/Tileset39F9.malias"
@@ -1217,11 +1177,6 @@ Tileset39FD::
 SECTION "Tileset Data Tileset39FF", ROMX[$4A64], BANK[$3B]
 Tileset39FF::
   INCBIN "./build/tilesets/Tileset39FF.malias"
-
-; ShopBuySellKanji is defined with the other Patch Tilesets
-;SECTION "Tileset Data ShopBuySellKanji", ROMX[$4C8E], BANK[$3B]
-;ShopBuySellKanji::
-;  INCBIN "./build/tilesets/ShopBuySellKanji.malias"
 
 SECTION "Tileset Data Tileset3A03", ROMX[$4D08], BANK[$3B]
 Tileset3A03::
@@ -1350,11 +1305,6 @@ Tileset3A7B::
 SECTION "Tileset Data Tileset3A7D", ROMX[$71AD], BANK[$3C]
 Tileset3A7D::
   INCBIN "./build/tilesets/Tileset3A7D.malias"
-
-; Moved to patch tilesets
-;SECTION "Tileset Data AutoBattleSymbols", ROMX[$7200], BANK[$3C]
-;AutoBattleSymbols::
-;  INCBIN "./build/tilesets/AutoBattleSymbols.malias"
 
 SECTION "Tileset Data Tileset3A81", ROMX[$737F], BANK[$3C]
 Tileset3A81::
