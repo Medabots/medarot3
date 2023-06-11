@@ -62,7 +62,7 @@ jobs:
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
-          git commit -am "Nightly build - `date +%Y%m%d`"
+          git commit -am "Nightly build - `date +%Y%m%d`" --allow-empty
           git tag "$TAG_NAME+nightly.`date +%Y%m%d`"
 
           mkdir patch
