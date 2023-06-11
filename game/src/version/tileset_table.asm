@@ -35,7 +35,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry Tileset39C7 ; 19 (39C7)
   TilesetTableEntry Tileset39C9 ; 1A (39C9)
   TilesetTableEntry Tileset39CB ; 1B (39CB)
-  TilesetTableEntry Tileset39CD ; 1C (39CD)
+  TilesetTableEntry GBCOnlyErrorScreenTextGraphics ; 1C (39CD)
   TilesetTableEntry Tileset39CF ; 1D (39CF)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1E (39D1)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1F (39D3)
@@ -551,7 +551,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset39C7), $9000, $1 ; 019
   dbwb BANK(Tileset39C9), $8800, $1 ; 01A
   dbwb BANK(Tileset39CB), $9000, $0 ; 01B
-  dbwb BANK(Tileset39CD), $9000, $0 ; 01C
+  dbwb BANK(GBCOnlyErrorScreenTextGraphics), $9000, $0 ; 01C
   dbwb BANK(Tileset39CF), $9000, $0 ; 01D
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 01E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 01F
@@ -1150,9 +1150,9 @@ SECTION "Tileset Data Tileset39CB", ROMX[$69F2], BANK[$3C]
 Tileset39CB::
   INCBIN "./build/tilesets/Tileset39CB.malias"
 
-SECTION "Tileset Data Tileset39CD", ROMX[$4969], BANK[$3A]
-Tileset39CD::
-  INCBIN "./build/tilesets/Tileset39CD.malias"
+SECTION "Tileset Data GBCOnlyErrorScreenTextGraphics", ROMX[$4969], BANK[$3A]
+GBCOnlyErrorScreenTextGraphics::
+  INCBIN "./build/tilesets/GBCOnlyErrorScreenTextGraphics.malias"
 
 SECTION "Tileset Data Tileset39CF", ROMX[$4B37], BANK[$3A]
 Tileset39CF::
