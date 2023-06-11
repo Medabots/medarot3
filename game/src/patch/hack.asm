@@ -99,3 +99,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry RobattleAutoBattlePlan, $9010 ; 1D
   TilemapTilesetTableEntry ShopScreen, $9010 ; 1E
   TilemapTilesetTableEntry ShopPasswordScreen, $8A20 ; 1F
+  TilemapTilesetTableEntry MenuTestScreen, $9010 ; 20

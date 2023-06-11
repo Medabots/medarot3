@@ -150,3 +150,4 @@ PatchTilesets::
   PatchTilesetEntry RobattleAutoBattlePlan
   PatchTilesetEntry ShopScreen
   PatchTilesetEntry ShopPasswordScreen
+  PatchTilesetEntry MenuTestScreen
