@@ -931,7 +931,7 @@ Tilemap01_22::
 Tilemap01_23::
   INCBIN "./build/tilemaps/InputNameUnderscores.map"
 Tilemap01_24::
-  INCBIN "./build/tilemaps/0124.map"
+  INCBIN "./build/tilemaps/CorruptedSaveScreen.map"
 Tilemap01_25::
   INCBIN "./build/tilemaps/0125.map"
 Tilemap01_26::
