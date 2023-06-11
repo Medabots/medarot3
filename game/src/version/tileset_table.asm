@@ -1126,10 +1126,6 @@ SECTION "Tileset Data Tileset39CB", ROMX[$69F2], BANK[$3C]
 Tileset39CB::
   INCBIN "./build/tilesets/Tileset39CB.malias"
 
-SECTION "Tileset Data GBCOnlyErrorScreenTextGraphics", ROMX[$4969], BANK[$3A]
-GBCOnlyErrorScreenTextGraphics::
-  INCBIN "./build/tilesets/GBCOnlyErrorScreenTextGraphics.malias"
-
 SECTION "Tileset Data Tileset39CF", ROMX[$4B37], BANK[$3A]
 Tileset39CF::
   INCBIN "./build/tilesets/Tileset39CF.malias"
