@@ -100,3 +100,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry ShopScreen, $9010 ; 1E
   TilemapTilesetTableEntry ShopPasswordScreen, $8A20 ; 1F
   TilemapTilesetTableEntry MenuTestScreen, $9010 ; 20
+  TilemapTilesetTableEntry CorruptedSaveScreen, $9010 ; 21
