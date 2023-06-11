@@ -279,7 +279,7 @@ Tilemap00_08::
 Tilemap00_09::
   INCBIN "./build/tilemaps/0009.map"
 Tilemap00_0A::
-  INCBIN "./build/tilemaps/000A.map"
+  INCBIN "./build/tilemaps/GBCOnlyErrorScreen.map"
 Tilemap00_0B::
   INCBIN "./build/tilemaps/OptionYesNo.map"
 Tilemap00_0C::
