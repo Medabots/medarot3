@@ -55,7 +55,7 @@ jobs:
       - name: Tag if there are changes
         working-directory: 'medarot3'
         run: |
-          [ -z "$(git status --porcelain)" ] && git name-rev --name-only HEAD | grep -q '*nightly*' && exit 0
+          [ -z "$(git status --porcelain)" ] && git name-rev --name-only HEAD | grep -q -F 'nightly' && exit 0
 
           make -j all
 
