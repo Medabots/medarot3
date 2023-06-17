@@ -115,7 +115,7 @@
 113,0x94146,ペイントされたメダロットが<CD>あリません!,You do not have a painted Medarot!
 114,0x94148,色を かえたい メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to paint over.<*04>
 115,0x9414a,<NOTERM:ペイントしますか?<CD>エ>,Would you like to paint this one? <*04>
-116,0x9414c,左右キ-で 色を 選択してください<*04>,Please select the right and left color.<*04>
+116,0x9414c,左右キ-で 色を 選択してください<*04>,Use the left and right buttons to select a color.<*04>
 117,0x9414e,この色で よろしいですか?<*04>,Are you sure you want this color?<*04>
 118,0x94150,ペイントは 100¥かかリます<CD>この色で よろしいですか?<*04>,Painting costs 100¥. <D3>Are you sure this is the color you want?<*04>
 119,0x94152,気に入ってもらえました?,"Well, do you like it?"
