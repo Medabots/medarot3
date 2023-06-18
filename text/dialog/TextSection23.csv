@@ -179,7 +179,7 @@
 144,0x210120,"<@RL,MrReferee,00>メダリンピック アンダ-シェル大会の<CD>会場は ここ マ-マンうんどう場","<@RL,MrReferee,00>The venue for the Medalympic UnderShell tournament is here, at Merman Field."
 145,0x210122,"<@RL,Lady2,00>ちがうわ! マ-メイドうんどう場よ!","<@RL,Lady2,00>Wrong! It's Mermaid Field!"
 146,0x210124,"<@RL,MrReferee,00>え-...マ-メイドうんどう場で","<@RL,MrReferee,00>Eh-hem... Mermaid Field!"
-147,0x210126,"<@RL,Man,00>ちがう! マ-マンうんどう場だ!","<@RL,Lady2,00>Wrong! It's Merman Field!"
+147,0x210126,"<@RL,Man,00>ちがう! マ-マンうんどう場だ!","<@RL,Man,00>Wrong! It's Merman Field!"
 148,0x210128,"<@RL,MrReferee,00>...それは ともかく!<CF><D1>わたくし レフェリ- うるちが<CD>またまた もえる ロボトルを<CF><D1>じっきょう いたします!<CF><D1><@RL,MrReferee,00>では リ-ダ-の<CD><&BUF03>くん<CF><D1>メンバ-を 選出してください!","<@RL,MrReferee,00>...In any case!<CF><D1>I am Mr. Referee, the referee and we are here with another live robattle!<CF><D1><@RL,MrReferee,00>Well then, Leader <&BUF03>.<CF><D1>Please decide your members!"
 149,0x21012a,"<@RL,Koji,02>何 まよってんだよ <&BUF03><CD>おれしか いね-だろ?<CF><D1><@RL,Erika,04>あたしに きまってるじゃない<CD>ねぇ <&BUF03><CF><D1><@RL,Karin,04><&BUF03>くんと<CD>いっしょに ロボトルしたいですわ♥<CF><D1><@LL,Ikki,00>う う-ん...まよっちゃうな<CF><D1>2人目に コウジを 選ぶ?<*04>","<@RL,Koji,02>What's the hold up, <&BUF03>? It has to be, right?<CF><D1><@RL,Erika,04>You'll obviously be picking me, right, <&BUF03>?<CF><D1><@RL,Karin,04>I would love to robattle alongside you, <&BUF03> ♥<CF><D1><@LL,Ikki,00>W-well... I'm not sure.<CF><D1>Should I chose Koji second?<*04>"
 150,0x21012c,"<@LL,Ikki,00>3人目は アリカにしようか?<*04>","<@LL,Ikki,00>Should the third person be Erika?<*04>"
@@ -188,7 +188,7 @@
 153,0x210132,"<@LL,Ikki,00>すると 3人目は カリンちゃん?<*04>","<@LL,Ikki,00>In that case, would Karin would be the third?<*04>"
 154,0x210134,"<@LL,Ikki,04>アリカと カリンちゃんで きまリ!","<@LL,Ikki,04>Erika and Karin it is!"
 155,0x210136,"<@LL,Ikki,04>3人目は カリンちゃんにしよう<CD>コウジとカリンちゃんに けってい!","<@LL,Ikki,04>Let's go with Karin third. That makes Koji and Karin!"
-156,0x210138,"<@LL,Ikki,00>じゃあ 2人目は カリンちゃん!<CD>3人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Then the second person is Karin! Should Kouji be the third?<*04>"
+156,0x210138,"<@LL,Ikki,00>じゃあ 2人目は カリンちゃん!<CD>3人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Then the second person is Karin! Should Koji be the third?<*04>"
 157,0x21013a,"<@LL,Ikki,04>カリンちゃんと コウジで きまリ!","<@LL,Ikki,04>Karin and Koji it is!"
 158,0x21013c,"<@LL,Ikki,04>じゃあ アリカと コウジで きまリ!","<@LL,Ikki,04>Then Erika and Koji it is!"
 159,0x21013e,"<@LL,Ikki,04>カリンちゃんと アリカで きまリ!","<@LL,Ikki,04>Karin and Erika it is!"
@@ -246,7 +246,7 @@
 211,0x2101a6,"<@RL,Boy3,00>もう だめかも...",
 212,0x2101a8,"<@RL,Koji,01>あの カイとか いうやつは<CD>どこだ!",
 213,0x2101aa,"<@RL,BipedMedabot,00>気を つけて",
-214,0x2101ac,"<@LL,Ikki,06>どうしたんだ?<CF><D1><@RL,Erika,07>大変なの <CD><&BUF03>!<CF><D1>とびらが ひらかないの!<CD>今 コウジくんが 何とかしようと<CF><D1>してるんだけど<CD>びくとも しなくて!","<@LL,Ikki,06>What's wrong?<CF><D1><@RL,Erika,07>Big problem, <&BUF03>!<CF><D1>The door won't one!<D3>Koji is trying to do something about it now, but it won't budge!"
+214,0x2101ac,"<@LL,Ikki,06>どうしたんだ?<CF><D1><@RL,Erika,07>大変なの <CD><&BUF03>!<CF><D1>とびらが ひらかないの!<CD>今 コウジくんが 何とかしようと<CF><D1>してるんだけど<CD>びくとも しなくて!","<@LL,Ikki,06>What's wrong?<CF><D1><@RL,Erika,07>Big problem, <&BUF03>!<CF><D1>The door won't open!<D3>Koji is trying to do something about it, but it's not budging!"
 215,0x2101ae,"<@RL,Koji,03>くぅっ! ダメだ!","<@RL,Koji,03>Kuh! No good!"
 216#kabuto,0x2101b0,"<@RL,Metabee,00>オレに まかせろ<CD><&BUF03>!","<@RL,Metabee,00>Leave it to me, <&BUF03>!"
 216#kuwagata,0x2101b0,"<@RL,Rokusho,00>おれに まかせろ<CD><&BUF03>!","<@RL,Rokusho,00>Leave it to me, <&BUF03>!"

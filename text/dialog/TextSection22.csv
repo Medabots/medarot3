@@ -105,7 +105,7 @@
 090,0x20c0b4,"<@LL,Ikki,05>たのまれた ラブレタ-を<CD>わたす いいチャンスって やつ?<CF><D1>それにしても バブルチケットを<CD>あげたことは「おかえし」には<CF><D1>ならなかったんだな","<@LL,Ikki,05>Isn't this a good chance to deliver the love letter?<CF><D1>But still, didn't giving her the Bubble Ticket count as a paying her back?"
 091#kabuto,0x20c0b6,"<@RL,Metabee,00>ふ-ん..<CD>チケットを「あげた」ってか?<CF><D1><@LL,Ikki,00>まあ あげたというか <CD>とリあげられたというか...","<@RL,Metabee,00>Hmph...<D3>You call that ""giving"" her the ticket?<CF><D1><@LL,Ikki,00>Well, whether you want to call it giving or having it taken away..."
 091#kuwagata,0x20c0b6,"<@RL,Rokusho,00>あのばあい チケットを「あげた」とは<CD>言わないだろう<CF><D1><@LL,Ikki,06>そ そうかな?<CF><D1><@RL,Rokusho,00>正しくは チケットをとリあげられた<CD>と言うベきだな","<@RL,Rokusho,00>I wouldn't call that ""giving.""<CF><D1><@LL,Ikki,06>I-is that so?<CF><D1><@RL,Rokusho,00>Mor specifically, the ticket was taken from you."
-092,0x20c0b8,"<@LL,Ikki,06>さっさと行って かたづけてしまおう<CD>スカ-トなんか はいてるのを<CF><D1>コウジに貝られたら わらわれちゃうよ","<@LL,Ikki,06>If Kouji see me in a skirt, he'll definitely start laughing."
+092,0x20c0b8,"<@LL,Ikki,06>さっさと行って かたづけてしまおう<CD>スカ-トなんか はいてるのを<CF><D1>コウジに貝られたら わらわれちゃうよ","<@LL,Ikki,06>If Koji see me in a skirt, he'll definitely start laughing."
 093,0x20c0ba,"<@LL,Ikki,00>あっ そうだ きがえなきゃ...","<@LL,Ikki,00>Ah right, gotta change..."
 094,0x20c0bc,"<@LL,Ikki,05>このさい しかたがない","<@LL,Ikki,05>There's no helping it."
 095,0x20c0be,"<@LL,Ikki,00>ふうっ だれも 貝てなかったよな?<CD>それにしても アリカは どこだ?<CF><D1>とリあえず メダロッタ-ズか<CD>コンビニの中でも さがしてみるか?","<@LL,Ikki,00>Phew, doesn't seem like anyone say.<D3>Where is Erika, anyway?<CF><D1>Should I start looking at Medafighters or the convenience store?"
@@ -212,7 +212,7 @@
 193,0x20c182,"<@RL,Karin,00>あ <&BUF03>くん<CF><D1><@LL,Ikki,00>ごめん カリンちゃん<CD>ちょっと まっててくれる?<CF><D1><@RL,Karin,04>ええ いいですわ<CD>ここで おまちしておリます",
 194,0x20c184,"<@LL,Ikki,01>おまたせ! カリンちゃん","<@LL,Ikki,01>Did I keep you waiting, Karin?"
 195,0x20c186,"<@RL,Koji,02>よお <&BUF03>","<@RL,Koji,02>Yo, <&BUF03>."
-196,0x20c188,"<@LL,Ikki,07>え? コ コウジ?<CD>どうして ここに?<CF><D1><@RL,Koji,02>カリンが 何か だいじそうに<CD>持ってたからな 聞いてみたのさ<CF><D1><@LL,Ikki,06>(ギクッ!!)<CF><D1><@RL,Koji,02>そしたら お前に チケットを<CD>もらったって 言うじゃね-か<CF><D1>おかげで おれが ロボトルで<CD>パ-ツのかわリに 手に入れた<CF><D1>チケットが あまっちまったわけだ<CF><D1><@LL,Ikki,05>つまリ それって...","<@LL,Ikki,07>Eh? K-Kouji?<D3>Why are you here?<CF><D1><@RL,Koji,02>Karin seemed to be holding onto something important, so I asked her about it.<CF><D1><@LL,Ikki,06>(gulp!!)<CF><D1><@RL,Koji,02>And she told me that you gave her a ticket.<CF><D1>I ended up getting an extra ticket instead of parts from a robattle.<CF><D1><@LL,Ikki,05>So, you mean..."
+196,0x20c188,"<@LL,Ikki,07>え? コ コウジ?<CD>どうして ここに?<CF><D1><@RL,Koji,02>カリンが 何か だいじそうに<CD>持ってたからな 聞いてみたのさ<CF><D1><@LL,Ikki,06>(ギクッ!!)<CF><D1><@RL,Koji,02>そしたら お前に チケットを<CD>もらったって 言うじゃね-か<CF><D1>おかげで おれが ロボトルで<CD>パ-ツのかわリに 手に入れた<CF><D1>チケットが あまっちまったわけだ<CF><D1><@LL,Ikki,05>つまリ それって...","<@LL,Ikki,07>Eh? K-Koji?<D3>Why are you here?<CF><D1><@RL,Koji,02>Karin seemed to be holding onto something important, so I asked her about it.<CF><D1><@LL,Ikki,06>(gulp!!)<CF><D1><@RL,Koji,02>And she told me that you gave her a ticket.<CF><D1>I ended up getting an extra ticket instead of parts from a robattle.<CF><D1><@LL,Ikki,05>So, you mean..."
 197,0x20c18a,"<@RL,Erika,04>また のれるなんて ラッキ-♥<CF><D1><@RL,Koji,02>わるいことは できないなぁ<CF><D1><@LL,Ikki,05>ど-せ!","<@RL,Erika,04>I get to ride again, lucky me ♥<CF><D1><@RL,Koji,02>It won't be that bad.<CF><D1><@LL,Ikki,05>Whatever!"
 198,0x20c18c,"<@RL,Koji,02>さ! 行こ-ぜ!","<@RL,Koji,02>Come! Let's go!"
 199,0x20c18e,"<@RL,Erika,01>行こ 行こ!","<@RL,Erika,01>Let's go, let's go!"

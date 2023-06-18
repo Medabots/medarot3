@@ -48,16 +48,16 @@
 046,0x20405c,"<@RL,Erika,04>と-ぜん あたしを 選ぶわよねぇ<CD><&BUF0A>","<@RL,Erika,04>You're obviously choosing me, right <&BUF0A>?"
 047,0x20405e,"<@RL,Karin,04><&BUF0A>くんと<CD>いっしょに ロボトルしたいですわ♥","<@RL,Karin,04>I'd love to robattle alongside you, <&BUF0A> ♥"
 048,0x204060,"<@LL,Ikki,00>う う-ん...まよっちゃうな","<@LL,Ikki,00>W-well... This is tricky."
-049,0x204062,"<@LL,Ikki,00>2人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Should I choose Kouji as the second member?<*04>"
+049,0x204062,"<@LL,Ikki,00>2人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Should I choose Koji as the second member?<*04>"
 050,0x204064,"<@LL,Ikki,00>3人目は アリカにしようか?<*04>","<@LL,Ikki,00>Should I choose Arika as the third member?<*04>"
-051,0x204066,"<@LL,Ikki,04>コウジと アリカで きまリ!","<@LL,Ikki,04>Kouji and Arika it is!"
+051,0x204066,"<@LL,Ikki,04>コウジと アリカで きまリ!","<@LL,Ikki,04>Koji and Arika it is!"
 052,0x204068,"<@LL,Ikki,00>2人目は アリカかな?<*04>","<@LL,Ikki,00>Will Arika be the second member?<*04>"
 053,0x20406a,"<@LL,Ikki,00>すると 3人目は カリンちゃん?<*04>","<@LL,Ikki,00>And then Karin as the third member?<*04>"
 054,0x20406c,"<@LL,Ikki,04>アリカと カリンちゃんにきまリ!","<@LL,Ikki,04>Arika and Karin it is!"
-055,0x20406e,"<@LL,Ikki,04>じゃあ 3人目はカリンちゃんだ!<CD>コウジと カリンちゃんで きまリ!","<@LL,Ikki,04>Then the third member is Karin! Kouji and Karin it is!"
-056,0x204070,"<@LL,Ikki,00>じゃあ 2人目は カリンちゃん!<CD>3人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Then the second member is Karin! Should I choose Kouji as the third member?<*04>"
-057,0x204072,"<@LL,Ikki,04>カリンちゃんと コウジで きまリ!","<@LL,Ikki,04>Karin and Kouji it is!"
-058,0x204074,"<@LL,Ikki,04>じゃあ アリカとコウジで きまリ!","<@LL,Ikki,04>Then Arika and Kouji it is!"
+055,0x20406e,"<@LL,Ikki,04>じゃあ 3人目はカリンちゃんだ!<CD>コウジと カリンちゃんで きまリ!","<@LL,Ikki,04>Then the third member is Karin! Koji and Karin it is!"
+056,0x204070,"<@LL,Ikki,00>じゃあ 2人目は カリンちゃん!<CD>3人目に コウジを 選ぶ?<*04>","<@LL,Ikki,00>Then the second member is Karin! Should I choose Koji as the third member?<*04>"
+057,0x204072,"<@LL,Ikki,04>カリンちゃんと コウジで きまリ!","<@LL,Ikki,04>Karin and Koji it is!"
+058,0x204074,"<@LL,Ikki,04>じゃあ アリカとコウジで きまリ!","<@LL,Ikki,04>Then Arika and Koji it is!"
 059,0x204076,"<@LL,Ikki,04>カリンちゃんと アリカで きまリ!","<@LL,Ikki,04>Karin and Arika it is!"
 060,0x204078,"<@RL,MrReferee,00>では まいリます!<CD>メダリンピック だいひょうチ-ム<CF><D1>コ-クスクリュ-ズに たいするは<CD>...ロボロボ-ズ!!<CF><D1><@LL,Ikki,07>はぁ!?","<@RL,MrReferee,00>Here we go! The team representing the Medalympics, the Corkscrews, are up against the Rubber-robos!!<CF><D1><@LL,Ikki,07>Huh!?"
 061,0x20407a,"<@LL,Ikki,07>お お前は ロボロボ団ようち園<CD>かんぶ サラミ!<CF><D1>何で お前が いるんだ!<CD>だいいち お前 ようちえんだろう!<CF><D1><@RL,Shrimplips,01>あたちにだって 宇宙ヘ 行く<CD>けんリくらい あるでしゅ!<CF><D1><@LL,Ikki,05>そういう もんだいか?<CF><D1><@RL,MrReferee,00>それでは ロボトル-ファイッ!!","<@LL,Ikki,07>Y-you're the Rubber-robo's kindergartener executive, Shirmplips! Why are you here!? In the first place, you're only in kindergarten!<CF><D1><@RL,Shrimplips,01>Even kids have a wight to go to space!<CF><D1><@LL,Ikki,05>Is that what you're after?<CF><D1><@RL,MrReferee,00>Now then, robattle, fight!!"
@@ -232,14 +232,14 @@
 230,0x2041cc,"<@LL,Ikki,06>行こう アリカ!","<@LL,Ikki,06>Erika, let's go!"
 231,0x2041ce,"<@CC,CLEAR,FF>きゃ-!","<@CC,CLEAR,FF>Kyaa!"
 232,0x2041d0,"<@CC,CLEAR,FF>わ-! わ-!<CF><D1><@LL,Ikki,07>大パニックだ!","<@CC,CLEAR,FF>Waah! Waah!<CF><D1><@LL,Ikki,07>This is a huge mess!"
-233,0x2041d2,"<@LL,Ikki,06>アリカ ぼくは コウジと<CD>カリンちゃんを さがす!<CF><D1><@RL,Erika,00>あんたが さがすって 言うなら<CD>あたしも さがすからね!<CF><D1><@LL,Ikki,06>でも...!<CF><D1><@RL,Erika,04>ふたてに 分かれて さがすのよ<CD>じゃ ジオポ-トで 会いましょ!","<@LL,Ikki,06>Erika, I'm going to look for Kouji and Karin!<CF><D1><@RL,Erika,00>If you say you're looking for them, then I am too!<CF><D1><@LL,Ikki,06>But...!<CF><D1><@RL,Erika,04>We'll split up to look for them, then meet up at the GeoPort!"
+233,0x2041d2,"<@LL,Ikki,06>アリカ ぼくは コウジと<CD>カリンちゃんを さがす!<CF><D1><@RL,Erika,00>あんたが さがすって 言うなら<CD>あたしも さがすからね!<CF><D1><@LL,Ikki,06>でも...!<CF><D1><@RL,Erika,04>ふたてに 分かれて さがすのよ<CD>じゃ ジオポ-トで 会いましょ!","<@LL,Ikki,06>Erika, I'm going to look for Koji and Karin!<CF><D1><@RL,Erika,00>If you say you're looking for them, then I am too!<CF><D1><@LL,Ikki,06>But...!<CF><D1><@RL,Erika,04>We'll split up to look for them, then meet up at the GeoPort!"
 234,0x2041d4,"<@RL,Boy,00>おかあさん! 早く 早く!!","<@RL,Boy,00>Mom! Hurry, hurry!!"
-235,0x2041d6,"<@LL,Ikki,06>たいヘんだ! はやく コウジと<CD>カリンちゃんを さがさなきゃ!","<@LL,Ikki,06>This is bad! I've gotta find Kouji and Karin fast!"
+235,0x2041d6,"<@LL,Ikki,06>たいヘんだ! はやく コウジと<CD>カリンちゃんを さがさなきゃ!","<@LL,Ikki,06>This is bad! I've gotta find Koji and Karin fast!"
 236,0x2041d8,"<@LL,Ikki,06>カギが かかっている",
 237,0x2041da,"<@LL,Ikki,06>シャッタ-が おろされている",
 238,0x2041dc,"<@LL,Ikki,04>みんな ぶじに ひなんしたんだな",
-239,0x2041de,"<@RL,SelectCorpsGrunt,00>何を しているで あリますか!<CD>早く ひなんするで あリます!!<CF><D1><@LL,Ikki,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?","<@RL,SelectCorpsGrunt,00>What are you doing!? Hurry and get out of here!!<CF><D1><@LL,Ikki,06>Have you seen Kouji or Karin?"
-240,0x2041e0,"<@RL,SelectCorpsGrunt,00><&BUF0A>くんは<CD>ジオポ-トに 行くであリます!<CF><D1>コウジくんと カリンちゃんたちは <CD>自分が さがすであリます!","<@RL,SelectCorpsGrunt,00>Get to the GeoPort, <&BUF0A>!<CF><D1>I will find Kouji and Karin!"
+239,0x2041de,"<@RL,SelectCorpsGrunt,00>何を しているで あリますか!<CD>早く ひなんするで あリます!!<CF><D1><@LL,Ikki,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?","<@RL,SelectCorpsGrunt,00>What are you doing!? Hurry and get out of here!!<CF><D1><@LL,Ikki,06>Have you seen Koji or Karin?"
+240,0x2041e0,"<@RL,SelectCorpsGrunt,00><&BUF0A>くんは<CD>ジオポ-トに 行くであリます!<CF><D1>コウジくんと カリンちゃんたちは <CD>自分が さがすであリます!","<@RL,SelectCorpsGrunt,00>Get to the GeoPort, <&BUF0A>!<CF><D1>I will find Koji and Karin!"
 241,0x2041e2,"<@LL,Ikki,06>とリあえず ジオポ-トヘ 行こう",
 242,0x2041e4,"<@RL,SelectCorpsGrunt,00>あっ! その チョンマゲ!<CD><&BUF0A>くんで あリますね?<CF><D1><@LL,Ikki,06>コウジと カリンちゃんを <CD>貝かけませんでしたか?<CF><D1><@RL,SelectCorpsGrunt,00>コウジくんも<CD><&BUF0A>くんのことを <CF><D1>しんぱいして さがしてたで あリます",
 243,0x2041e6,"<@RL,SelectCorpsGrunt,00><&BUF0A>くん!! とリあえず<CD>ジオポ-トに 行くで あリます!",
@@ -251,7 +251,7 @@
 249,0x2041f2,"<@RL,SelectCorpsGrunt,02><&BUF0A>くん!!<CF><D1>ここの人たちは 自分に まかせて<CD>ジオポ-トヘ 行くで あリます!",
 250,0x2041f4,"<@LL,Ikki,07>アサマ先生!<CF><D1><@RL,Asama,01>やあ <&BUF0A>くん<CD>元気そうだね","<@LL,Ikki,07>Mr. Asama!<CF><D1><@RL,Asama,01>Hey <&BUF0A>. You look like you're doing well."
 251,0x2041f6,"<@LL,Ikki,06>なに のんきなことを!<CF><D1><@RL,Asama,01>ああ ごめんごめん<CD>何でも きんきゅうじたいらしいね<CF><D1><@LL,Ikki,06>そうですよ! さっきから<CD>じしんが おこってるでしょ<CF><D1><@RL,Asama,00>だから せいとたちを ジオポ-トに<CD>ひなんさせていたんだけど<CF><D1>ジオプレインが来るまで ちょっと <CD>いっぷくしようと思ってね...","<@LL,Ikki,06>What a carefree thing to say!<CF><D1><@RL,Asama,01>Aah, sorry, sorry. It's an emergency situation, right?<CF><D1><@LL,Ikki,06>Yeah! There've been earthquakes happening for a while.<CF><D1><@RL,Asama,00>The students have been evacuated to the GeoPort, so I was taking a bit of a break until the GeoPlane arrives..."
-252,0x2041f8,"<@LL,Ikki,03>(はぁ... なんだかなぁ...)<CF><D1><@LL,Ikki,00>ところで 先生<CF><D1>コウジっていう 男の子と<CD>カリンちゃんっていう かわいい<CF><D1>女の子を 貝ませんでした?","<@LL,Ikki,03>(Huh... I wonder...)<CF><D1><@LL,Ikki,00>By the way, sir.<CF><D1>Have you seen a boy named Kouji and a cute girl named Karin?"
+252,0x2041f8,"<@LL,Ikki,03>(はぁ... なんだかなぁ...)<CF><D1><@LL,Ikki,00>ところで 先生<CF><D1>コウジっていう 男の子と<CD>カリンちゃんっていう かわいい<CF><D1>女の子を 貝ませんでした?","<@LL,Ikki,03>(Huh... I wonder...)<CF><D1><@LL,Ikki,00>By the way, sir.<CF><D1>Have you seen a boy named Koji and a cute girl named Karin?"
 253,0x2041fa,"<@RL,Asama,00>ああ!! きみの友だちかい?<CD><@RL,Asama,01>男の子の方は<CF><D1>「おれは <&BUF0A>たちを<CD>さがす!」とかなんとか 言って<CF><D1>すごい けんまくだったけど まだ<CD>ジオポ-トに いるんじゃないかな?<CF><D1>女の子2人も いっしょだったよ<CF><D1><@LL,Ikki,01>よかった 3人とも ぶじなんだ!<CF><D1><@RL,Asama,01>じゃあ そろそろ ぼくたちも<CD>ジオポ-トヘ行こうか","<@RL,Asama,00>Aah! Are they your friends?<CF><@RL,Asama,01>The boy said something like, ""I'm looking for <&BUF0A>!"" with a fierce tone, but I think he's already at the GeoPort and there were two girls with him.<CF><D1><@LL,Ikki,01>Nice, all three of them are alright!<CF><D1><@RL,Asama,01>Well then, we should get to the GeoPort too."
 254,0x2041fc,"<@LL,Ikki,06>アリカたちを さがさなきゃ!",
 255,0x2041fe,"<@RL,Erika,01><&BUF0A>!<CF><D1><@RL,Karin,01><&BUF0A>くん!<CF><D1><@RL,Koji,02>何だよ 生きてやがったのかよ<CD><&BUF0A>","<@RL,Erika,01><&BUF0A>!<CF><D1><@RL,Karin,01><&BUF0A>!<CF><D1><@RL,Koji,02>So you're still alive, <&BUF0A>."
@@ -259,7 +259,7 @@
 257,0x204202,"<@RL,Seseri,03>みんな ひなんした!?","<@RL,Seseri,03>Has everyone evacuated!?"
 258,0x204204,"<@LL,Ikki,00>いったい 何が おこったんですか?<CF><D1><@RL,Seseri,00>何者かが メダルぞうしょくろに<CD>しのびこんで ベビ-を<CF><D1>ぼうそうさせたみたいなの<CF><D1><@RL,Erika,07>やっぱリ ロボロボ団が!?<CF><D1><@LL,Ikki,06>それで どうなっちゃうんですか?<CF><D1><@RL,Seseri,00>さいあくの場合 ばくはつよ<CD>...ア-スモ-ル もろともね<CF><D1><@LL,Ikki,07>ばくはつ!?","<@LL,Ikki,00>What in the world is going on?<CF><D1><@RL,Seseri,00>It seems that someone snuck into the Medal Breeder Reactor and caused Baby to go out of control.<CF><D1><@RL,Erika,07>It had to be the Rubber-robos!<CF><D1><@LL,Ikki,06>What will happen now?<CF><D1><@RL,Seseri,00>In the worst case scenario ...Earth Mall will be completely blown up.<CF><D1><@LL,Ikki,07>Blown up!?"
 259,0x204206,"<@RL,Erika,07>ええっ!?<CF><D1><@RL,Karin,06>まあ!<CF><D1><@RL,Koji,02>ふん かんペきな システムが<CD>聞いて あきれるぜ","<@RL,Erika,07>Eeh!?<CF><D1><@RL,Karin,06>Oh my!<CF><D1><@RL,Koji,02>Hmph, so much for a perfect system."
-260,0x204208,"<@LL,Ikki,07>コウジ! いやみを<CD>言ってる 場合じゃないよ!<CF><D1><@RL,Seseri,00>とにかく あんぜんが かくにん<CD>されるまで みんな ア-スモ-ルを<CF><D1>はなれた方が いいわ","<@LL,Ikki,07>Kouji! This is no time for your snark!<CF><D1><@RL,Seseri,00>Anyway, we should all leave Earth Mall until we get word that it's safe."
+260,0x204208,"<@LL,Ikki,07>コウジ! いやみを<CD>言ってる 場合じゃないよ!<CF><D1><@RL,Seseri,00>とにかく あんぜんが かくにん<CD>されるまで みんな ア-スモ-ルを<CF><D1>はなれた方が いいわ","<@LL,Ikki,07>Koji! This is no time for your snark!<CF><D1><@RL,Seseri,00>Anyway, we should all leave Earth Mall until we get word that it's safe."
 261,0x20420a,"<@LL,Ikki,06>あのっ セセリさん!","<@LL,Ikki,06>Uhm, Seseri!"
 262,0x20420c,"<@RL,Seseri,00>何? 時間が ないのよ<CF><D1><@LL,Ikki,06>メダロットたちは<CD>ひなんしたんですか!?<CF><D1><@RL,Seseri,00>人が のこってないなら もういいわ","<@RL,Seseri,00>What is it? There's not much time.<CF><D1><@LL,Ikki,06>Have the medarots been evacuated!?<CF><D1><@RL,Seseri,00>If all the people get out, that's good enough."
 263,0x20420e,"<@RL,Koji,01>何だと! メダロットなら<CD>しんでも いいってのかよ!","<@RL,Koji,01>What!? Are you saying you don't care if medarots die!?"
