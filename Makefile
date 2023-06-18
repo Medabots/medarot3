@@ -89,6 +89,7 @@ battle\
 nameentry\
 credits\
 opening\
+sound\
 npc
 
 # Toolchain
