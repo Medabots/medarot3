@@ -185,3 +185,8 @@ MACRO credittext
   ld de, \1
   add hl, de
   ENDM
+
+MACRO dsample
+  db BANK(\1) ;Fragment bank
+  dw \2 ;Sample count?
+ENDM

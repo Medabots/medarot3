@@ -9,10 +9,11 @@ INCLUDE "game/src/common/joypad.inc"
 ; H = FF00 to FFFF (HRAM and I/O, basically any address ldh works with)
 ; M = for symbolising values
 
-H_PushOAM           EQU $ff80
+H_PushOAM             EQU $ff80
 
-H_VBlankCompleted   EQU $ff92
-H_SoundEffect       EQU $ffa1
+H_VBlankCompleted     EQU $ff92
+H_SoundEffect         EQU $ffa1
+H_SoundSampleSelect   EQU $ffa8
 
 M_MedarotSlotLength   EQU $10
 
