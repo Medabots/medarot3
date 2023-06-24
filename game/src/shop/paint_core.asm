@@ -8,52 +8,52 @@ PaintShopStateMachine::
   jp hl
 
 .table
-  dw PaintShopDrawingState
-  dw PaintShopMappingState
-  dw PaintShopDisplayMoneyAndSpritesState
-  dw $69C6
-  dw $69AD
-  dw PaintShopPrintOpeningMessageState
-  dw PaintShopInputHandlerState
-  dw PaintShopDoNothingState
-  dw $69D8
-  dw $69AD
-  dw PaintShopMedarotSelectionForPaintingDrawingState
-  dw $6029
-  dw $605C
-  dw $69AD
-  dw $6884
-  dw $60AF
-  dw PaintShopDoNothingState
-  dw PaintShopDoNothingState
-  dw PaintShopDoNothingState
-  dw $69AD
-  dw PaintShopDoNothingState
-  dw $69D8
-  dw $69AD
-  dw $62BE
-  dw $6076
-  dw $69AD
-  dw $68AB
-  dw $63B2
-  dw $69B8
-  dw PaintShopDoNothingState
-  dw $64A7
-  dw $64E8
-  dw $69D8
-  dw $69AD
-  dw $69EA
-  dw $69D8
-  dw $69AD
-  dw $676A
-  dw $69C6
-  dw $69AD
-  dw $6855
-  dw $6868
-  dw $68D5
-  dw $68FC
-  dw $696D
-  dw $6989
+  dw PaintShopDrawingState ; 00
+  dw PaintShopMappingState ; 01
+  dw PaintShopDisplayMoneyAndSpritesState ; 02
+  dw $69C6 ; 03
+  dw $69AD ; 04
+  dw PaintShopPrintOpeningMessageState ; 05
+  dw PaintShopInputHandlerState ; 06
+  dw PaintShopDoNothingState ; 07
+  dw $69D8 ; 08
+  dw $69AD ; 09
+  dw PaintShopMedarotSelectionForPaintingDrawingState ; 0A
+  dw PaintShopMedarotsSelectionScreenMappingState ; 0B
+  dw PaintShopMedarotsSelectionScreenPrepareFadeInState ; 0C
+  dw $69AD ; 0D
+  dw $6884 ; 0E
+  dw PaintShopMedarotsSelectionScreenInputHandlerState ; 0F
+  dw PaintShopDoNothingState ; 10
+  dw PaintShopDoNothingState ; 11
+  dw PaintShopDoNothingState ; 12
+  dw $69AD ; 13
+  dw PaintShopDoNothingState ; 14
+  dw $69D8 ; 15
+  dw $69AD ; 16
+  dw $62BE ; 17
+  dw PaintShopPaintSelectorPrepareFadeInState ; 18
+  dw $69AD ; 19
+  dw $68AB ; 1A
+  dw $63B2 ; 1B
+  dw $69B8 ; 1C
+  dw PaintShopDoNothingState ; 1D
+  dw $64A7 ; 1E
+  dw $64E8 ; 1F
+  dw $69D8 ; 20
+  dw $69AD ; 21
+  dw $69EA ; 22
+  dw $69D8 ; 23
+  dw $69AD ; 24
+  dw $676A ; 25
+  dw $69C6 ; 26
+  dw $69AD ; 27
+  dw $6855 ; 28
+  dw $6868 ; 29
+  dw $68D5 ; 2A
+  dw $68FC ; 2B
+  dw $696D ; 2C
+  dw $6989 ; 2D
 
 PaintShopIncSubStateIndex::
   ld a, [W_CoreSubStateIndex]
@@ -288,3 +288,90 @@ PaintShopMedarotSelectionForPaintingDrawingState::
   call $33C6
   call WrapInitiateMainScript
   jp IncSubStateIndex
+
+PaintShopMedarotsSelectionScreenMappingState::
+  ld a, 0
+  ld [$C0E0], a
+  ld bc, 0
+  ld e, $44
+  ld a, 0
+  call WrapDecompressTilemap0
+  ld bc, 0
+  ld e, $44
+  ld a, 0
+  call WrapDecompressAttribmap0
+  call $6658
+  ld bc, $A01
+  call PaintShopDrawCurrentMedarot
+  ld bc, $B0B
+  call MapCurrentMedarotNameForPaintShopSelectionScreen
+  call PaintShopDisplayMedarotSelectorArrow
+  ld a, $80
+  ld [W_MedarotSelectionDirectionalInputWaitTimer], a
+  jp IncSubStateIndex
+
+PaintShopMedarotsSelectionScreenPrepareFadeInState::
+  ld hl, $29
+  ld bc, $16
+  ld d, $FF
+  ld e, $FF
+  ld a, $E
+  call WrapSetupPalswapAnimation
+  call PaintShopGetPaletteIndexForSelectedMedarot
+  ld a, 3
+  call WrapRestageDestinationBGPalettesForFade
+  jp IncSubStateIndex
+
+PaintShopPaintSelectorPrepareFadeInState::
+  ld hl, $35
+  ld bc, $25
+  ld d, $FF
+  ld e, $FF
+  ld a, $E
+  call WrapSetupPalswapAnimation
+  call PaintShopGetPaletteIndexForSelectedMedarot
+  ld a, 3
+  call WrapRestageDestinationBGPalettesForFade
+  jp IncSubStateIndex
+
+SECTION "Paint Shop State Machine 2", ROMX[$60AF], BANK[$16]
+PaintShopMedarotsSelectionScreenInputHandlerState::
+  ld de, $C0C0
+  call $33B7
+  call PaintShopPlaceMedarotSelectorArrow
+  call MedarotPaintShopSelectionScreenDirectionalInputHandler
+  call AnimatedSelectedMedarotSpriteForPaintShopSelectionScreen
+  ld a, [W_MedarotSelectionDirectionalInputWaitTimer]
+  cp $80
+  ret nz
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  jr z, .aNotPressed
+  call MedarotPaintShopSelectionScreenEmptySlotCheck
+  or a
+  ret z
+  call PaintShopMedarotActionViabilityCheck
+  cp 1
+  ret z
+  ld a, $CD
+  ld [$C0E2], a
+  ld a, 5
+  ld [$C0E5], a
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  call GetCurrentMedalAndTypeForPaintShopMedarotStatusScreen
+  ld a, $15
+  ld [W_CoreSubStateIndex], a
+  ret
+
+.aNotPressed
+  ldh a, [H_JPInputChanged]
+  and M_JPInputB
+  ret z
+  ld a, 4
+  call ScheduleSoundEffect
+  xor a
+  ld [W_MedarotSelectionScreenSelectedOption], a
+  ld a, $23
+  ld [W_CoreSubStateIndex], a
+  ret
