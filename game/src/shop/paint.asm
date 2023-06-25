@@ -310,7 +310,16 @@ OffsetToMappingAddressForPaintShopMedarotScreens::
   add hl, bc
   ret
 
-SECTION "Paint Shop Helper Functions 3", ROMX[$64F6], BANK[$16]
+SECTION "Paint Shop Helper Functions 3", ROMX[$649A], BANK[$16]
+PrintCurrentPaintNumber::
+  ld a, [W_ShopPasswordSelectionYAxis]
+  inc a
+  ld hl, $9966
+  ld b, 0
+  call $3504
+  ret
+
+SECTION "Paint Shop Helper Functions 4", ROMX[$64F6], BANK[$16]
 PaintShopDisplayMedarotSelectorArrow::
   call PaintShopPlaceMedarotSelectorArrow
   ld a, $36
@@ -489,7 +498,198 @@ PaintShopGetSelectedMedarotMetaspriteAddress::
   ld a, 5
   jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
-SECTION "Paint Shop Helper Functions 4", ROMX[$69FE], BANK[$16]
+PaintShopMedarotsSelectionScreenDisplayMedarotSprites::
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  ld a, 5
+  rst 8
+  ld de, $D000
+  xor a
+  ld [$C4F4], a
+
+.loop
+  ld a, [de]
+  or a
+  jr nz, .slotNotEmpty
+  call $66A0 ; .displayEmptySlot
+  jr .nextMedarotSlot
+
+.slotNotEmpty
+  cp 3
+  jr z, .slotMedarotFullyEquipped
+  call $66E0 ; .displayUnequippedTinpetSlot
+  jr .nextMedarotSlot
+
+.slotMedarotFullyEquipped
+  call $6721 ; .displayEquippedMedarotSlot
+
+.nextMedarotSlot
+  ld hl, M_MedarotSlotLength
+  add hl, de
+  ld d, h
+  ld e, l
+  ld a, [$C4F4]
+  inc a
+  ld [$C4F4], a
+  cp 9
+  jr nz, .loop
+  ret
+
+.spritePositionTable
+  db $0A, $24
+  db $09, $3A
+  db $08, $50
+  db $20, $24
+  db $20, $3A
+  db $20, $50
+  db $36, $24
+  db $37, $3A
+  db $38, $50
+
+.displayEmptySlot
+  push de
+  ld de, $C1E0
+  ld b, 9
+  call $3423
+  ld a, $11
+  ld [de], a
+  ld hl, 1
+  add hl, de
+  ld [hl], $44
+  call .getMedarotSpritePosition
+  ld hl, 3
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  ld a, 0
+  ld b, 0
+  call $33B2
+  ld hl, 5
+  add hl, de
+  ld a, 4
+  ld [hl], a
+  pop de
+  ret
+
+.getMedarotSpritePosition
+  ld a, [$C4F4]
+  ld hl, .spritePositionTable
+  ld b, 0
+  ld c, a
+  sla c
+  rl b
+  add hl, bc
+  ld a, [hli]
+  ld b, a
+  ld a, [hl]
+  ld c, a
+  ret
+
+.displayUnequippedTinpetSlot
+  ld hl, 1
+  add hl, de
+  ld a, [hl]
+  ld [$C4EE], a
+  push de
+  ld de, $C1E0
+  ld b, 9
+  call $3423
+  ld a, $11
+  ld [de], a
+  ld hl, 1
+  add hl, de
+  ld [hl], $44
+  call .getMedarotSpritePosition
+  ld hl, 3
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  ld hl, 5
+  add hl, de
+  ld a, 1
+  ld [hl], a
+  ld a, [$C4EE]
+  or a
+  jr z, .useBluePalette
+  ld a, 5
+  ld [hl], a
+
+.useBluePalette
+  ld a, [$C4EE]
+  add 1
+  ld b, 0
+  call $33B2
+  pop de
+  ret
+
+.displayEquippedMedarotSlot
+  ld hl, 6
+  add hl, de
+  ld a, [hl]
+  push de
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 3
+  call $34FF
+  ld de, $C1E0
+  ld b, 9
+  call $3423
+  ld a, $11
+  ld [de], a
+  ld hl, 1
+  add hl, de
+  ld [hl], $44
+  call .getMedarotSpritePosition
+  ld hl, 3
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  ld a, [$C553]
+  sub $50
+  sla a
+  add 3
+  ld b, 0
+  call $33B2
+  ld a, [$C553]
+  sub $50
+  add $2D
+  call $34B7
+  ld hl, 5
+  add hl, de
+  ld [hl], a
+  pop de
+  ret
+
+SECTION "Paint Shop Helper Functions 5", ROMX[$6838], BANK[$16]
+PaintShopPlayerHasPaintedMedarots::
+  ld a, 5
+  rst 8
+  ld hl, $D000
+  ld de, M_MedarotPalette
+  add hl, de
+  ld d, 0
+  ld b, 9
+
+.mathLoop
+  push bc
+  ld a, [hl]
+  add d
+  ld d, a
+  ld bc, $10
+  add hl, bc
+  pop bc
+  dec b
+  jp nz, .mathLoop
+
+  ld a, d
+  ret
+
+SECTION "Paint Shop Helper Functions 6", ROMX[$69FE], BANK[$16]
 PaintShopMapMoney::
   push hl
   push bc
