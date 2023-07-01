@@ -84,6 +84,7 @@ titlemenu\
 pausemenu\
 townmap\
 shop\
+minigames\
 tutorial\
 battle\
 nameentry\
