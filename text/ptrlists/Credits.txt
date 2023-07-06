@@ -227,10 +227,10 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 223,\x11,\x04,Aoitenshi
 224,\x11,\x04,\xCB
 225,\x01,\x03,Localization
-226,\x11,\x05,Editing
-227,\x11,\x04,Gilor
-228,\x11,\x04,Zichz
-229,\x11,\x04,\xCB
+226,\x11,\x05,Special Thanks
+227,\x11,\x04,Blaziken257
+228,\x11,\x04,Gilor
+229,\x11,\x04,Zichz
 230,\x11,\x04,\xCB
 231,\x11,\x04,\xCB
 232,\x00,\x02,\xCB
