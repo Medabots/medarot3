@@ -1095,7 +1095,7 @@ Tilemap01_8A::
 Tilemap01_8B::
   INCBIN "./build/tilemaps/PaintShopMainScreen.map"
 Tilemap01_8C::
-  INCBIN "./build/tilemaps/018C.map"
+  INCBIN "./build/tilemaps/PaintShopPaintSelectScreen.map"
 Tilemap01_8D::
   INCBIN "./build/tilemaps/018D.map"
 Tilemap01_8E::
