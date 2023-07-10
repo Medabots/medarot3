@@ -103,7 +103,7 @@ PaintShopMappingState::
   ld e, $89
   ld a, 1
   call WrapDecompressAttribmap0
-  ld bc, $C06
+  ld bc, $B06
   ld e, $9B
   ld a, 1
   call WrapDecompressAttribmap0
@@ -134,7 +134,7 @@ PaintShopDisplayMoneyAndSpritesState::
   ld [$C102], a
   ld a, 0
   ld [$C105], a
-  ld a, $60
+  ld a, $5A
   ld [$C103], a
   ld a, $18
   ld [$C104], a

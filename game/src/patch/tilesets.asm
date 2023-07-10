@@ -154,3 +154,4 @@ PatchTilesets::
   PatchTilesetEntry ShopPasswordScreen
   PatchTilesetEntry MenuTestScreen
   PatchTilesetEntry CorruptedSaveScreen
+  PatchTilesetEntry PaintShopMainScreen
