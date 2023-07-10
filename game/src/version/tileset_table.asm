@@ -66,8 +66,8 @@ TilesetSourceAddressTable::
   TilesetTableEntry Tileset3A05 ; 38 (3A05)
   TilesetTableEntry Tileset3A07 ; 39 (3A07)
   TilesetTableEntry Tileset3A09 ; 3A (3A09)
-  TilesetTableEntry Tileset3A0B ; 3B (3A0B)
-  TilesetTableEntry Tileset3A0D ; 3C (3A0D)
+  TilesetTableEntry PaintShopShopkeeperAvatar ; 3B (3A0B)
+  TilesetTableEntry PaintShopBubbleText ; 3C (3A0D)
   TilesetTableEntry Tileset3A0F ; 3D (3A0F)
   TilesetTableEntry Tileset3A11 ; 3E (3A11)
   TilesetTableEntry Tileset3A13 ; 3F (3A13)
@@ -582,8 +582,8 @@ TilesetInfoTable::
   dbwb BANK(Tileset3A05), $8300, $0 ; 038
   dbwb BANK(Tileset3A07), $8000, $1 ; 039
   dbwb BANK(Tileset3A09), $9000, $0 ; 03A
-  dbwb BANK(Tileset3A0B), $9560, $0 ; 03B
-  dbwb BANK(Tileset3A0D), $8400, $0 ; 03C
+  dbwb BANK(PaintShopShopkeeperAvatar), $9560, $0 ; 03B
+  dbwb BANK(PaintShopBubbleText), $8400, $0 ; 03C
   dbwb BANK(Tileset3A0F), $8300, $0 ; 03D
   dbwb BANK(Tileset3A11), $8000, $0 ; 03E
   dbwb BANK(Tileset3A13), $8B60, $0 ; 03F
@@ -1230,13 +1230,13 @@ SECTION "Tileset Data Tileset3A09", ROMX[$4E96], BANK[$3B]
 Tileset3A09::
   INCBIN "./build/tilesets/Tileset3A09.malias"
 
-SECTION "Tileset Data Tileset3A0B", ROMX[$4F4D], BANK[$3B]
-Tileset3A0B::
-  INCBIN "./build/tilesets/Tileset3A0B.malias"
+SECTION "Tileset Data PaintShopShopkeeperAvatar", ROMX[$4F4D], BANK[$3B]
+PaintShopShopkeeperAvatar::
+  INCBIN "./build/tilesets/PaintShopShopkeeperAvatar.malias"
 
-SECTION "Tileset Data Tileset3A0D", ROMX[$51BB], BANK[$3B]
-Tileset3A0D::
-  INCBIN "./build/tilesets/Tileset3A0D.malias"
+SECTION "Tileset Data PaintShopBubbleText", ROMX[$51BB], BANK[$3B]
+PaintShopBubbleText::
+  INCBIN "./build/tilesets/PaintShopBubbleText.malias"
 
 SECTION "Tileset Data Tileset3A0F", ROMX[$52B5], BANK[$3B]
 Tileset3A0F::
