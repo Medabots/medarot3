@@ -456,7 +456,7 @@ PaintShopPaintingScreenInitState::
   ld a, $9F
   ld de, $C120
   call $33B2
-  ld bc, $D01
+  ld bc, $E01
   ld hl, W_PlayerMoolah
   call PaintShopMapMoney
   call WrapInitiateMainScript
@@ -666,7 +666,7 @@ PaintShopRestoreMainMenuState::
   ld e, $89
   ld a, 1
   call WrapDecompressAttribmap0
-  ld bc, $C06
+  ld bc, $B06
   ld e, $9B
   ld a, 1
   call WrapDecompressAttribmap0
@@ -692,7 +692,7 @@ PaintShopRestoreMainMenuState::
   ld [$C102], a
   ld a, 0
   ld [$C105], a
-  ld a, $60
+  ld a, $59
   ld [$C103], a
   ld a, $18
   ld [$C104], a
@@ -871,7 +871,7 @@ PaintShopPaintingYNState::
   ld [W_PlayerMoolah], a
   ld a, l
   ld [W_PlayerMoolah + 1], a
-  ld bc, $D01
+  ld bc, $E01
   ld hl, W_PlayerMoolah
 
 ; Refresh player money.

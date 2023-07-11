@@ -155,3 +155,4 @@ PatchTilesets::
   PatchTilesetEntry MenuTestScreen
   PatchTilesetEntry CorruptedSaveScreen
   PatchTilesetEntry PaintShopMainScreen
+  PatchTilesetEntry PaintShopPaintSelectScreen
