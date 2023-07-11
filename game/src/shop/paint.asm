@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Paint Shop Helper Functions 1", ROMX[$6090], BANK[$16]
 GetCurrentMedalAndTypeForPaintShopMedarotStatusScreen::
@@ -232,19 +233,10 @@ MapCurrentMedarotNameForPaintShopSelectionScreen::
   add hl, de
   ld b, h
   ld c, l
-  ld a, 8
-  call GetTileBasedCentringOffset
-  pop hl
-  ld b, 0
-  ld c, a
-  add hl, bc
-  push hl
-  ld hl, M_MedalNickname
-  add hl, de
-  ld b, h
-  ld c, l
-  pop hl
-  jp PutStringVariableLength
+  ; bc = Medarot name
+  pop de ; de = address to draw to
+  ld h, $29 ; h = tile index 
+  jp VWFDrawStringCentredFullAddress8Tiles
 
 PaintShopGetMedalAddressForCurrentMedarot::
   ld c, a
@@ -309,6 +301,8 @@ OffsetToMappingAddressForPaintShopMedarotScreens::
   ld bc, $9800
   add hl, bc
   ret
+
+  padend $62be
 
 SECTION "Paint Shop Helper Functions 3", ROMX[$649A], BANK[$16]
 PrintCurrentPaintNumber::
