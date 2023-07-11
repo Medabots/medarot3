@@ -134,7 +134,7 @@ PaintShopDisplayMoneyAndSpritesState::
   ld [$C102], a
   ld a, 0
   ld [$C105], a
-  ld a, $5A
+  ld a, $59
   ld [$C103], a
   ld a, $18
   ld [$C104], a
