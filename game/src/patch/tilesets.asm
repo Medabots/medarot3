@@ -94,6 +94,8 @@ ChapterScreenChapterNumber6::
   INCBIN "./build/tilesets/ChapterScreenChapterNumber6.malias"
 GBCOnlyErrorScreenTextGraphics::
   INCBIN "./build/tilesets/GBCOnlyErrorScreenTextGraphics.malias"
+PaintShopBubbleText::
+  INCBIN "./build/tilesets/PaintShopBubbleText.malias"
 
 SECTION "Patch 2bpp Tilesets 3", ROMX[$4000], BANK[$FD]
 ; Include certain 2bpp 'malias' uncompressed graphics here
