@@ -1194,10 +1194,6 @@ SECTION "Tileset Data PaintShopShopkeeperAvatar", ROMX[$4F4D], BANK[$3B]
 PaintShopShopkeeperAvatar::
   INCBIN "./build/tilesets/PaintShopShopkeeperAvatar.malias"
 
-SECTION "Tileset Data PaintShopBubbleText", ROMX[$51BB], BANK[$3B]
-PaintShopBubbleText::
-  INCBIN "./build/tilesets/PaintShopBubbleText.malias"
-
 SECTION "Tileset Data Tileset3A0F", ROMX[$52B5], BANK[$3B]
 Tileset3A0F::
   INCBIN "./build/tilesets/Tileset3A0F.malias"
