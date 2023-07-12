@@ -875,13 +875,13 @@ TilemapTable01::
   dw TilemapTable01Terminator ; FE
   dw TilemapTable01Terminator ; FF
 Tilemap01_00::
-  INCBIN "./build/tilemaps/0100.map"
+  INCBIN "./build/tilemaps/MinigameAOverlay.map"
 Tilemap01_01::
-  INCBIN "./build/tilemaps/0101.map"
+  INCBIN "./build/tilemaps/MinigameAEnvironment.map"
 Tilemap01_02::
-  INCBIN "./build/tilemaps/0102.map"
+  INCBIN "./build/tilemaps/MinigameBOverlay.map"
 Tilemap01_04::
-  INCBIN "./build/tilemaps/0104.map"
+  INCBIN "./build/tilemaps/MinigameBEnvironment.map"
 Tilemap01_05::
   INCBIN "./build/tilemaps/0105.map"
 Tilemap01_06::
