@@ -158,3 +158,4 @@ PatchTilesets::
   PatchTilesetEntry CorruptedSaveScreen
   PatchTilesetEntry PaintShopMainScreen
   PatchTilesetEntry PaintShopPaintSelectScreen
+  PatchTilesetEntry MinigameAOverlay
