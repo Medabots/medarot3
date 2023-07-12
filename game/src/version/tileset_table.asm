@@ -1134,10 +1134,6 @@ SECTION "Tileset Data Tileset39D5", ROMX[$4B5E], BANK[$3A]
 Tileset39D5::
   INCBIN "./build/tilesets/Tileset39D5.malias"
 
-SECTION "Tileset Data Digits", ROMX[$5052], BANK[$3A]
-Digits::
-  INCBIN "./build/tilesets/Digits.malias"
-
 SECTION "Tileset Data Tileset39D9", ROMX[$50C9], BANK[$3A]
 Tileset39D9::
   INCBIN "./build/tilesets/Tileset39D9.malias"
