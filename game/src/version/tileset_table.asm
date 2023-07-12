@@ -40,7 +40,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1E (39D1)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1F (39D3)
   TilesetTableEntry Tileset39D5 ; 20 (39D5)
-  TilesetTableEntry Tileset39D7 ; 21 (39D7)
+  TilesetTableEntry Digits ; 21 (39D7)
   TilesetTableEntry Tileset39D9 ; 22 (39D9)
   TilesetTableEntry Tileset39DB ; 23 (39DB)
   TilesetTableEntry Tileset39DD ; 24 (39DD)
@@ -556,7 +556,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 01E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 01F
   dbwb BANK(Tileset39D5), $8800, $0 ; 020
-  dbwb BANK(Tileset39D7), $8F00, $0 ; 021
+  dbwb BANK(Digits), $8F00, $0 ; 021
   dbwb BANK(Tileset39D9), $9000, $0 ; 022
   dbwb BANK(Tileset39DB), $9400, $0 ; 023
   dbwb BANK(Tileset39DD), $8000, $0 ; 024
@@ -1162,9 +1162,9 @@ SECTION "Tileset Data Tileset39D5", ROMX[$4B5E], BANK[$3A]
 Tileset39D5::
   INCBIN "./build/tilesets/Tileset39D5.malias"
 
-SECTION "Tileset Data Tileset39D7", ROMX[$5052], BANK[$3A]
-Tileset39D7::
-  INCBIN "./build/tilesets/Tileset39D7.malias"
+SECTION "Tileset Data Digits", ROMX[$5052], BANK[$3A]
+Digits::
+  INCBIN "./build/tilesets/Digits.malias"
 
 SECTION "Tileset Data Tileset39D9", ROMX[$50C9], BANK[$3A]
 Tileset39D9::
