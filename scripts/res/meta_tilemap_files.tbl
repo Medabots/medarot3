@@ -166,10 +166,10 @@
 00_FC=RobattleTextDisabled
 00_FD=RobattleTextShiftChange
 00_FE=RobattleTextPowerChange
-01_00=0100
-01_01=0101
-01_02=0102
-01_04=0104
+01_00=MinigameAOverlay
+01_01=MinigameAEnvironment
+01_02=MinigameBOverlay
+01_04=MinigameBEnvironment
 01_05=0105
 01_06=0106
 01_07=0107
