@@ -95,7 +95,7 @@ MinigameAMappingState::
   call WrapDecompressAttribmap1
   ld b, 0
   ld c, 0
-  ld hl, $9824
+  ld hl, $9826 ; Previously 9824
   call MinigameADrawScore
   call $43A1
   ld a, 1
@@ -156,7 +156,7 @@ MinigameASetupScoreBoard::
   ld b, a
   ld a, [$C826]
   ld c, a
-  ld hl, $9824
+  ld hl, $9826 ; previously 9824
   call MinigameADrawScore
   ld a, [$C824]
   and $03
@@ -252,7 +252,7 @@ MinigameADrawScore::
   ld b, a
   rst $20
   ld a, b
-  ld [hli], a
+  ld [hl], a
   ei
   ld a, c
   swap a

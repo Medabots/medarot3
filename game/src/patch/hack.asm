@@ -103,3 +103,5 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry CorruptedSaveScreen, $9010 ; 21
   TilemapTilesetTableEntry PaintShopMainScreen, $9010 ; 22
   TilemapTilesetTableEntry PaintShopPaintSelectScreen, $9010 ; 23
+  TilemapTilesetTableEntry MinigameAOverlay, $9010 ; 24
+  TilemapTilesetTableEntry MinigameBOverlay, $9010 ; 25
