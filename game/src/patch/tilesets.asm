@@ -159,3 +159,4 @@ PatchTilesets::
   PatchTilesetEntry PaintShopMainScreen
   PatchTilesetEntry PaintShopPaintSelectScreen
   PatchTilesetEntry MinigameAOverlay
+  PatchTilesetEntry MinigameBOverlay
