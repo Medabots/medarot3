@@ -21,7 +21,7 @@
 019,0x1f0026,"<@RL,Boy,00>こ ここが あこがれの<CD>カリンちゃんの家...♥<CF><D1>そして ぼくは カリンちゃんを<CD>とおくから 貝つめるだけの 男...","<@RL,Boy,00>Th-this is the house of the girl<D3>I admire... Karin...♥ <CF><D1>And me... I'm just the boy who<D3>watches her from afar..."
 020,0x1f0028,"<@RL,Lady,00>ちかくに コンビニが あるから<CD>いっつも ここで すませちゃうよ","<@RL,Lady,00>This convenience store is<D3>nearby, so I always end up<CF><D1>coming here."
 021,0x1f002a,"<@LL,Ikki,05>つうしんたんまつ「ミルミル」だ<CD>ここで メダルや パ-ツの<CF><D1>やリとリとか<CD>つうしんロボトルが できるんだ","<@LL,Ikki,05>This is the communication terminal, Mille-Mille, where I can trade medals, parts and even robattle."
-022,0x1f002c,"<@RL,Milky,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!","<@RL,Milky,02>Hello! Is everyone doing okay?<D3>I'm the communication cutie ♥<CF><D1>At this communication terminal, Mille-Mille you can trade parts, medals, and robattle your friends!"
+022,0x1f002c,"<@RL,Milky,02>はぁ-い! みんな 元気かなぁ?<CD>わたしは かわいい つうしんギャル♥<CF><D1>この つうしんたんまつ「ミルミル」で<CD>パ-ツや メダルの やリとリとか<CF><D1>お友だちとの つうしんロボトルとかが<CD>できちゃいま-っす!","<@RL,Milky,02>Hello! Is everyone doing okay?<D3>I'm the communication cutie ♥<CF><D1>At this communication terminal, Mille-Mille, you can trade parts, medals, and robattle your friends!"
 023,0x1f002e,"<@RL,Milky,02>それじゃ つうしん いってみる-?<*04>","<@RL,Milky,02>Do you want to link?<*04>"
 024,0x1f0030,"<@RL,Milky,02>まったね-♥","<@RL,Milky,02>Ok bye~♥"
 025,0x1f0032,"<@RL,Milky,00>ふ-ん やらないんだ-<CF><D1><@RL,Milky,02>それじゃ まったね-♥","<@RL,Milky,00>Hmm, you don't wanna?<CF><@RL,Milky,02>Ok, see you next time then ♥"
