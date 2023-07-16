@@ -1,5 +1,5 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x200000,"<@LR,Erika,04>えヘヘっ ラッキ-♪<CF><D1><&BUF0A>の メダロッチの<CD>中に 入れておこ-っと♪","<@LR,Erika,04>Ehehe, how lucky ♪<CF><D1>I'll put it in <&BUF0A>'s medarotch ♪"
+000,0x200000,"<@LR,Erika,04>えヘヘっ ラッキ-♪<CF><D1><&BUF0A>の メダロッチの<CD>中に 入れておこ-っと♪","<@LR,Erika,04>Ehehe, how lucky ♪<CF><D1>I'll put it in <&BUF0A>'s Medarotch ♪"
 001,0x200002,むにゃ むにゃ,Mumble mumble
 002,0x200004,"<@RL,OldMan,00>ばあさん お茶は まだか?",
 003,0x200006,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble"
@@ -14,7 +14,7 @@
 012,0x200018,"<@RL,OldMan,00>なごリおしいが これも さだめじゃ!<CD>さらば くろかみのおとめよ!!","<@RL,OldMan,00>It is regrettable, but thus is fate! Farewell, oh black-haired maiden."
 013,0x20001a,ぐう ぐうっ...,Ghh ghh...
 014,0x20001c,"<@LR,Koji,03>ちぇっ サラサラストレ-トヘア-も<CD>考えものだな","<@LR,Koji,03>Tch, he just had to focus on my silky, straight hair."
-015,0x20001e,"<@LR,Koji,02>このパ-ツは... そうだな<CF><D1><&BUF0A>の メダロッチにでも<CD>入れておくか","<@LR,Koji,02>This part... That's it.<CF><D1>I'll put it in <&BUF0A>'s medarotch."
+015,0x20001e,"<@LR,Koji,02>このパ-ツは... そうだな<CF><D1><&BUF0A>の メダロッチにでも<CD>入れておくか","<@LR,Koji,02>This part... That's it.<CF><D1>I'll put it in <&BUF0A>'s Medarotch."
 016,0x200020,むにゃ むにゃ,"Mumble, mumble"
 017,0x200022,"<@RL,OldMan,00>はあ どなたさまかいのう?","<@RL,OldMan,00>Huh, who are you?"
 018,0x200024,むにゃ むにゃ...,"Mumble, mumble"
@@ -32,7 +32,7 @@
 030,0x20003c,"<@RL,SelectCorpsGrunt,00>ここは セレクト隊の <CD>ア-スモ-ルしぶ であリます","<@RL,SelectCorpsGrunt,00>This is the Select Corps' Earth Mall Branch."
 031,0x20003e,"<@RL,SelectCorpsGrunt,00>さいきん きみょうなじけんが<CD>町で はっせいしているであリます","<@RL,SelectCorpsGrunt,00>There've been some incidents around town these days."
 032,0x200040,"<@RL,SelectCorpsGrunt,00>ロボロボ団の<CD>れんちゅうが 町を さわがせて<CF><D1>こまっているで あリます!","<@RL,SelectCorpsGrunt,00>That Roborobo Gang is causing trouble in the town!"
-033,0x200042,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>自分には 分からないであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of medals?<CF><D1>I don't know about any."
+033,0x200042,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>自分には 分からないであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of Medals?<CF><D1>I don't know about any."
 034,0x200044,"<@RL,SelectCorpsGrunt,00>ロボロボ団の れんちゅうにも<CD>こまったもので あリますな",
 035,0x200046,"<@RL,SelectCorpsGrunt,00>行方ふめい? 15年ぐらい前?<CF><D1>こもリ型メダロットであリますね?<CD>ふむむ ちょっと おまちください",
 036,0x200048,"<@RL,SelectCorpsGrunt,00>オガサワラさんから そうさくねがいは<CD>出ていないようであリます<CF><D1><@LL,Ikki,05>そっか... って<CD>なんでノ-トなの? パソコンは?<CF><D1><@RL,SelectCorpsGrunt,00>はぁ...よさんは みんな本部が<CD>使いきってしまって...",
@@ -42,7 +42,7 @@
 040,0x200050,"<@RL,SelectCorpsGrunt,01>本当であリますか? そう言って<CD>もらえるなんて うれしいであリます",
 041,0x200052,"<@RL,SelectCorpsGrunt,00>こまったことが あったら<CD>いつでもそうだんに のるであリます","<@RL,SelectCorpsGrunt,00>There've been some strange incidents around town lately. Let us know if you run into trouble."
 042,0x200054,"<@RL,SelectCorpsGrunt,00>ここ ひみつの 地ていとし<CD>ア-スモ-ルに ロボロボ団が<CF><D1>入リこんだようで あリます!<CD>それにしても ロボロボ団が<CF><D1>どうやって ここに 入リこんだのか<CD>ふしぎで あリます!<CF><D1><@LR,Erika,05>う-ん ここでも ロボロボ団の<CD>いばしょは 分からないのね<CF><D1><@LR,Erika,00>ともかく 町に 入リこんだっていう<CD>ロボロボ団を たいじしなくっちゃね!",
-043,0x200056,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>それなら 科学研究所なんかで<CD>聞いてみると いいと思うであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of medals?<CF><D1>It'd probably be worth asking around places like the Scientific Laboratory."
+043,0x200056,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>それなら 科学研究所なんかで<CD>聞いてみると いいと思うであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of Medals?<CF><D1>It'd probably be worth asking around places like the Scientific Laboratory."
 044,0x200058,"<@RL,SelectCorpsGrunt,00>行方ふめいの メダロット?<CD>ちょっと しらベてみるであリます",
 045,0x20005a,"<@RL,SelectCorpsGrunt,00>おい きろくをしらベてくれ",
 046,0x20005c,"<@RL,SelectCorpsGrunt,00>はい せんぱい!",
@@ -65,14 +65,14 @@
 063,0x20007e,"<@RL,OldLady,00>や やリますか カラオケ大会<CF><D1><@LL,Ikki,00>...なんだ カラオケか",
 064,0x200080,"<@RL,OldMan,00>すごい ゆれじゃったのう",
 065,0x200082,"<@RL,OldLady,00>ひょっ ひょっ ひょっ",
-066,0x200084,"<@RL,OldMan,00>や やめてくリぇ<CD>そ そリは わひの 大切な...<CF><D1><@RL,RubberRoboGrunt,01>かえして ほしければ<CD>メダルを わたすロボ!","<@RL,OldMan,00>S-stop. Th-that'sh ma preshiss...<CF><D1><@RL,RubberRoboGrunt,01>If you want it back, then hand over your medal, robo!"
+066,0x200084,"<@RL,OldMan,00>や やめてくリぇ<CD>そ そリは わひの 大切な...<CF><D1><@RL,RubberRoboGrunt,01>かえして ほしければ<CD>メダルを わたすロボ!","<@RL,OldMan,00>S-stop. Th-that'sh ma preshiss...<CF><D1><@RL,RubberRoboGrunt,01>If you want it back, then hand over your Medal, robo!"
 067,0x200086,"<@LR,Erika,02>おとしよリを いじめるやつは<CD>このアリカさんが おしおきよ!","<@LR,Erika,02>I'll punish anyone who picks on the weak!"
 068,0x200088,"<@RL,RubberRoboGrunt,03>ロボ-ッ!","<@RL,RubberRoboGrunt,03>Robo!"
 069,0x20008a,"<@LR,Erika,02>あ! また!","<@LR,Erika,02>Ah! Again!"
 070,0x20008c,"<@LR,Erika,00>だいじょうぶ? おじいちゃん","<@LR,Erika,00>Are you okay, gramps?"
 071,0x20008e,"<@RL,OldMan,00>おお! あっひゃ あっひゃぞ<CD>わひの いれば!","<@RL,OldMan,00>Ooh! Ahyahya, thertis!"
 072,0x200090,"<@LR,Erika,04>はい おじいちゃん<CF><D1><@RL,OldMan,00>おひょ あリかぱや あリかぱや<CD>カパ むぐ むぐ<CF><D1><@RL,OldMan,00>これが ないと うまく<CD>しゃベれんでなあ<CF><D1>あリがとうよ おじょうちゃん","<@LR,Erika,04>Here gramps.<CF><D1><@RL,OldMan,00>Ohyo, thankye, thankye. *munch munch*<CF><D1><@RL,OldMan,00>I can't really talk without them. Thanks, young lady."
-073,0x200092,"<@LR,Erika,01>わ-い! あリがと おじいちゃん♥<CF><D1><@LR,Erika,04><&BUF0A>の<CD>メダロッチに 入れとこ","<@LR,Erika,01>Yay! Thanks, gramps ♥<CF><D1><@LR,Erika,04>I'll put it in <&BUF0A>'s medarotch."
+073,0x200092,"<@LR,Erika,01>わ-い! あリがと おじいちゃん♥<CF><D1><@LR,Erika,04><&BUF0A>の<CD>メダロッチに 入れとこ","<@LR,Erika,01>Yay! Thanks, gramps ♥<CF><D1><@LR,Erika,04>I'll put it in <&BUF0A>'s Medarotch."
 074,0x200094,はなすロボよ!!,"Let go, robo!!"
 075,0x200096,ムダなていこうは やめるであリます,Quit with the useless struggling.
 076,0x200098,"<@RL,RubberRoboGrunt,03>つかまったロボ-","<@RL,RubberRoboGrunt,03>I've been caught, robo."
@@ -100,10 +100,10 @@
 098,0x2000c4,"<@RL,RubberRoboGrunt,03>ロボ-ッ!!","<@RL,RubberRoboGrunt,03>Robo!!"
 099,0x2000c6,"<@LR,Erika,04>どう? あたしの院前!","<@LR,Erika,04>So? How're my skills?"
 100,0x2000c8,"<@RL,Koji,03>あ ああ...やるじゃないか","<@RL,Koji,03>Y-yeah... Not bad."
-101,0x2000ca,"<@RL,Koji,00>それ...もしかして<CF><D1><&BUF0A>の<CD>メダロッチか?<CF><D1><@LR,Erika,01>そっ さすがは コウジくん<CD>分かってるわね!<CF><D1><@LR,Erika,04>だけど 話は あと!<CD>とリあえず 外に出ましょ!","<@RL,Koji,00>This... Could it be <&BUF0A>'s medarotch?<CF><D1><@LR,Erika,01>Right, as expected of you, Koji!<CF><D1><@LR,Erika,04>But we can talk later! Let's get out of here!"
+101,0x2000ca,"<@RL,Koji,00>それ...もしかして<CF><D1><&BUF0A>の<CD>メダロッチか?<CF><D1><@LR,Erika,01>そっ さすがは コウジくん<CD>分かってるわね!<CF><D1><@LR,Erika,04>だけど 話は あと!<CD>とリあえず 外に出ましょ!","<@RL,Koji,00>This... Could it be <&BUF0A>'s Medarotch?<CF><D1><@LR,Erika,01>Right, as expected of you, Koji!<CF><D1><@LR,Erika,04>But we can talk later! Let's get out of here!"
 102,0x2000cc,"<@RL,Karin,04>コウジくん アリカさん!","<@RL,Karin,04>Koji, Arika!"
 103,0x2000ce,"<@LR,Erika,00>ロボロボ団は?<CF><D1><@RL,Karin,00>セレクト隊の方たちが<CD>つれて 行かれましたわ","<@LR,Erika,00>What about the Roborobo Gang?<CF><D1><@RL,Karin,00>The Select Corps took them away."
-104,0x2000d0,"<@RL,Koji,00>おしえてもらおうか<CD>どうして アリカちゃんが<CF><D1><&BUF0A>の<CD>メダロッチを 使っているか<CF><D1><@LR,Erika,04>あいつ メダロッチ おとしてったから<CD>さがすついでに ちょっと ね!<CF><D1><@LR,Erika,01>けっこう 楽しんでたリして!","<@RL,Koji,00>Now tell me, why are you using <&BUF0A>'s medarotch, Arika?<CF><D1><@LR,Erika,04>That guy dropped his medarotch, so I'm using it while I look for him.<CF><D1><@LR,Erika,01>It's been a blast!"
+104,0x2000d0,"<@RL,Koji,00>おしえてもらおうか<CD>どうして アリカちゃんが<CF><D1><&BUF0A>の<CD>メダロッチを 使っているか<CF><D1><@LR,Erika,04>あいつ メダロッチ おとしてったから<CD>さがすついでに ちょっと ね!<CF><D1><@LR,Erika,01>けっこう 楽しんでたリして!","<@RL,Koji,00>Now tell me, why are you using <&BUF0A>'s Medarotch, Arika?<CF><D1><@LR,Erika,04>That guy dropped his Medarotch, so I'm using it while I look for him.<CF><D1><@LR,Erika,01>It's been a blast!"
 105,0x2000d2,"<@RL,Karin,05>ア アリカさん そんな...<CF><D1><@RL,Koji,02>ヘぇ- そいつは 面白そうだ!","<@RL,Karin,05>A-Arika, you...<CF><D1><@RL,Koji,02>Heh, what an interesting person!"
 106,0x2000d4,"<@RL,Karin,05>コ コウジくん?<CF><D1><@RL,Koji,02>アリカちゃん そいつを おれにも<CD>かしてくれないか?<CF><D1><@LR,Erika,07>えっ!?","<@RL,Karin,05>K-Koji?<CF><D1><@RL,Koji,02>Can you hand that over to me, Arika?<CF><D1><@LR,Erika,07>Eh!?"
 107,0x2000d6,"<@LR,Erika,04>そうね...面白いかも!","<@LR,Erika,04>Oh well... This could be interesting!"
@@ -123,22 +123,22 @@
 119,0x2000ee,"<@RL,Erika,05><&BUF0A>のヤツ<CD>どこ 行っちゃったんだろう?",
 120,0x2000f0,わ-ん かえしてよ-っ!!,"Waah, give it back!!"
 121,0x2000f2,"<@LR,Koji,01>出たな! ロボロボ団<CD>うおおっ! 院が なるぜ!","<@LR,Koji,01>There they go! The Roborobo gang! Uoooh! I'm raring to go!"
-122,0x2000f4,"<@RL,RubberRoboGrunt,01>このメダルは いただいたロボ!","<@RL,RubberRoboGrunt,01>I'll be taking this medal, robo!"
+122,0x2000f4,"<@RL,RubberRoboGrunt,01>このメダルは いただいたロボ!","<@RL,RubberRoboGrunt,01>I'll be taking this Medal, robo!"
 123,0x2000f6,"<@RL,Girl,00>かえして! かえしてよぉ!!","<@RL,Girl,00>Give it back! Just give it back!!"
 124,0x2000f8,"<@LR,Koji,01>貝つけたぞ ロボロボ団!<CD>しょうぶっ!!","<@LR,Koji,01>I found you, Roborobo Gang! Let's fight!!"
 125,0x2000fa,"<@RL,RubberRoboGrunt,03>ロボ-ッ!!","<@RL,RubberRoboGrunt,03>Robo!!"
 126,0x2000fc,"<@LR,Koji,01>あ! まてっ!","<@LR,Koji,01>Ah! Wait!"
 127,0x2000fe,"<@RL,Girl,00>あっ! お兄ちゃん ","<@RL,Girl,00>Ah! Mister."
-128,0x200100,"<@RL,Girl,00>お兄ちゃん わたしの<CD>メダル...","<@RL,Girl,00>Mister, my medal..."
+128,0x200100,"<@RL,Girl,00>お兄ちゃん わたしの<CD>メダル...","<@RL,Girl,00>Mister, my Medal..."
 129,0x200102,"<@LR,Koji,00>あっ... ごめん ごめん","<@LR,Koji,00>Ah... Sorry, sorry."
-130,0x200104,"<@LR,Koji,02>ほらよ だいじにしろよ<CF><D1><@RL,Girl,00>あリがとう お兄ちゃん♥<CF><D1><@LR,Koji,02>ヘんなやつらが うろついてる<CD>みたいだから 気をつけるんだぜ<CF><D1><@RL,Girl,00>うん! ほかにも メダルを<CD>とられそうになった 友だちが<CF><D1>たくさんいるから 気をつける!","<@LR,Koji,02>Here, take care of it.<CF><D1><@RL,Girl,00>Thanks mister ♥<CF><D1><@LR,Koji,02>Watch out, seems like there are lots of those guys around.<CF><D1><@RL,Girl,00>Yeah! I'll be careful. A lot of my friends almost had their medals taken away too!"
+130,0x200104,"<@LR,Koji,02>ほらよ だいじにしろよ<CF><D1><@RL,Girl,00>あリがとう お兄ちゃん♥<CF><D1><@LR,Koji,02>ヘんなやつらが うろついてる<CD>みたいだから 気をつけるんだぜ<CF><D1><@RL,Girl,00>うん! ほかにも メダルを<CD>とられそうになった 友だちが<CF><D1>たくさんいるから 気をつける!","<@LR,Koji,02>Here, take care of it.<CF><D1><@RL,Girl,00>Thanks mister ♥<CF><D1><@LR,Koji,02>Watch out, seems like there are lots of those guys around.<CF><D1><@RL,Girl,00>Yeah! I'll be careful. A lot of my friends almost had their Medals taken away too!"
 131,0x200106,"<@LR,Koji,00>うん? どうした!?<CD>まだ 何かあるのかい?","<@LR,Koji,00>Hm? What is it? Was there something else?"
-132,0x200108,"<@RL,Girl,00>せっかく わるいやつから<CD>とリもどして もらったんだけと<CF><D1>このメダル...<CD>お兄ちゃんに あげる♥<CF><D1><@LR,Koji,03>おいおい まいったな...<CD>このメダルは もらえないよ...<CF><D1><@RL,Girl,00>いいから いいから<CD>気持ちよく うけとって♥","<@RL,Girl,00>I know you just went through the trouble to get this medal back for me, but... I want you to take it, mister ♥<CF><D1><@LR,Koji,03>Hey, hey stop that... I can't take this medal...<CF><D1><@RL,Girl,00>It's fine, just take it ♥"
+132,0x200108,"<@RL,Girl,00>せっかく わるいやつから<CD>とリもどして もらったんだけと<CF><D1>このメダル...<CD>お兄ちゃんに あげる♥<CF><D1><@LR,Koji,03>おいおい まいったな...<CD>このメダルは もらえないよ...<CF><D1><@RL,Girl,00>いいから いいから<CD>気持ちよく うけとって♥","<@RL,Girl,00>I know you just went through the trouble to get this Medal back for me, but... I want you to take it, mister ♥<CF><D1><@LR,Koji,03>Hey, hey stop that... I can't take this Medal...<CF><D1><@RL,Girl,00>It's fine, just take it ♥"
 133,0x20010a,"<@RL,Girl,00>じゃあね お兄ちゃん","<@RL,Girl,00>See ya, mister."
 134,0x20010c,"<@LR,Koji,03>まいったな...","<@LR,Koji,03>Oh well..."
-135,0x20010e,"<@LR,Koji,02>たたかったのは <&BUF0A>の<CD>メダロットだし<CF><D1>こいつは <&BUF0A>の<CD>メダロッチに 入れておくか<CF><D1>勝手に 使って あそんでるしな","<@LR,Koji,02>It was <&BUF0A>'s medarot that did the fighting. <CF><D1>I'll put this in <&BUF0A>'s medarotch and he can mess with it on his own."
+135,0x20010e,"<@LR,Koji,02>たたかったのは <&BUF0A>の<CD>メダロットだし<CF><D1>こいつは <&BUF0A>の<CD>メダロッチに 入れておくか<CF><D1>勝手に 使って あそんでるしな","<@LR,Koji,02>It was <&BUF0A>'s Medarot that did the fighting. <CF><D1>I'll put this in <&BUF0A>'s Medarotch and he can mess with it on his own."
 136,0x200110,"<@LR,Koji,03>それにしても ロボロボ団のヤツら<CD>いったい 何 たくらんでいやがる<CF><D1>このままにしておけば  ひがいが<CD>広がる いっぽうだ...","<@LR,Koji,03>Still, what in the world are the roborobos up to? If we don't do something about them, things will only get worse..."
-137,0x200112,"<@LR,Koji,01>よし!<CD>「ぜんはいそげ」と 言うからな<CF><D1>メダルを 1番 多く持っている<CD>人は だれか セレクト隊で<CF><D1>聞いてみることにしよう","<@LR,Koji,01>Right! As they say, ""You've gotta strike while the iron is hot."" I'm gonna ask the Select Corps who it is that has the most medals."
+137,0x200112,"<@LR,Koji,01>よし!<CD>「ぜんはいそげ」と 言うからな<CF><D1>メダルを 1番 多く持っている<CD>人は だれか セレクト隊で<CF><D1>聞いてみることにしよう","<@LR,Koji,01>Right! As they say, ""You've gotta strike while the iron is hot."" I'm gonna ask the Select Corps who it is that has the most Medals."
 138,0x200114,"<@RL,Lady2,00>きゃっ!!",
 139,0x200116,"<@LR,Koji,00>何を してるんですか?<CF><D1><@RL,Lady2,00>とつぜん ロボロボ団が 入ってきて<CD>上のオフィスに 立てこもったのよ",
 140,0x200118,"<@LR,Koji,01>くそっ! ロボロボ団のヤツら!<CD>何 わるさ してやがる!!",
@@ -152,7 +152,7 @@
 148,0x200128,"<@LR,Koji,01>そんな つもリは あリません!!",
 149,0x20012a,"<@LR,Koji,03>むむっ! カギが かかってる","<@LR,Koji,03>Mmm! It's locked."
 150,0x20012c,"<@LR,Koji,03>こっちのヘやじゃないな",
-151,0x20012e,"<@RL,Squidguts,00>メダルを よこすのじゃ!<CD>研究所ならば メダルを<CF><D1>たくさん かくし持って<CD>いるじゃろう?<CF><D1><@RL,ScientistMale,00>こ ここは ただの研究所だ!<CD>メダルなんか 知らないっ!<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ<CF><D1>どうしても 出さぬと 言うのなら<CD>いたい目に あってもらうぞ?<CF><D1><@RL,RubberRoboGrunt,00>ロボロボ ロボロボ","<@RL,Squidguts,00>Hand over the medals! A scientific laboratory should have lots of medals around, right?<CF><D1><@RL,ScientistMale,00>Th-this is just a scientific laboratory! We don't have any medals!<CF><D1><@RL,Squidguts,01>Oh ho ho<CF><D1>If you insist on not handing them over, I'll make you regret it!<CF><D1><@RL,RubberRoboGrunt,00>Robo robo robo robo"
+151,0x20012e,"<@RL,Squidguts,00>メダルを よこすのじゃ!<CD>研究所ならば メダルを<CF><D1>たくさん かくし持って<CD>いるじゃろう?<CF><D1><@RL,ScientistMale,00>こ ここは ただの研究所だ!<CD>メダルなんか 知らないっ!<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ<CF><D1>どうしても 出さぬと 言うのなら<CD>いたい目に あってもらうぞ?<CF><D1><@RL,RubberRoboGrunt,00>ロボロボ ロボロボ","<@RL,Squidguts,00>Hand over the Medals! A scientific laboratory should have lots of Medals around, right?<CF><D1><@RL,ScientistMale,00>Th-this is just a scientific laboratory! We don't have any Medals!<CF><D1><@RL,Squidguts,01>Oh ho ho<CF><D1>If you insist on not handing them over, I'll make you regret it!<CF><D1><@RL,RubberRoboGrunt,00>Robo robo robo robo"
 152,0x200130,"<@LR,Koji,01>何やってる! お前らっ!","<@LR,Koji,01>What do you guys think you're doing!?"
 153,0x200132,"<@RL,Squidguts,00>む? お前は...<CD>いつもの こぞうでは ないな<CF><D1><@LR,Koji,02>かんぶまで お出ましか!<CD>色々と 面白い話が 聞けそうだぜ!","<@RL,Squidguts,00>Mm? You're...<D3>Not the usual youngster.<CF><D1><@LR,Koji,02>Even the executives have come out! I'm sure you've got some interesting things to say!"
 154,0x200134,"<@RL,Squidguts,02>わしを こけに しおって!","<@RL,Squidguts,02>You made a fool out of me!"
@@ -161,7 +161,7 @@
 157,0x20013a,"<@RL,RubberRoboGrunt,03>シオカラさま<CD>まってくださいロボ-!","<@RL,RubberRoboGrunt,03>Mr. Shiokara, wait for me, robo!"
 158,0x20013c,"<@LR,Koji,01>おっと! にがさね-ぜ!","<@LR,Koji,01>Woah there! You aren't getting away!"
 159,0x20013e,"<@RL,RubberRoboGrunt,04>ロボッ!?","<@RL,RubberRoboGrunt,04>Robo!?"
-160,0x200140,"<@LR,Koji,01>お前ら なぜ そこまで<CD>メダルに こだわる?<CF><D1>お前らの もくてきは 何だ!<CF><D1>どうやって ここに<CD>しのびこんだんだ!<CF><D1>言わないと ひどい目に あわす!<CF><D1><@RL,RubberRoboGrunt,00>い いいだろうロボ<CD>おしえてやるロボよ!<CF><D1>もくてきは この町を<CD>のっとることロボ!<CF><D1>そのためには メダルが<CD>た-くさん ひつようロボ!<CF><D1><@LR,Koji,00>メダルが?<CF><D1><@RL,RubberRoboGrunt,01>それから もう1つロボ!<CD>小さくなれば しのびこむのなんて<CF><D1>か-んたんだったロボ!<CF><D1><@LR,Koji,03>小さく? お前らの 言ってることは<CD>さっぱリ 分からん<CF><D1>...よって おしおきだ!","<@LR,Koji,01>Why are you guys after the medals?<CF><D1>What is your goal!?<CF><D1>How did you guys sneak in here!?<CF><D1>Tell me, or else!<CF><D1><@RL,RubberRoboGrunt,00>F-fine, robo.<D3>I'll tell you, robo!<CF><D1>The goal is to take over this town, robo!<CF><D1>And for that, we need a lot of medals, robo!<CF><D1><@LR,Koji,00>Medals?<CF><D1><@RL,RubberRoboGrunt,01>And another thing, robo!<D3>If you're small enough, it's easy to sneak in here, robo!<CF><D1><@LR,Koji,03>Small? I don't get what you're saying.<CF><D1>...So, it's time for punishment!"
+160,0x200140,"<@LR,Koji,01>お前ら なぜ そこまで<CD>メダルに こだわる?<CF><D1>お前らの もくてきは 何だ!<CF><D1>どうやって ここに<CD>しのびこんだんだ!<CF><D1>言わないと ひどい目に あわす!<CF><D1><@RL,RubberRoboGrunt,00>い いいだろうロボ<CD>おしえてやるロボよ!<CF><D1>もくてきは この町を<CD>のっとることロボ!<CF><D1>そのためには メダルが<CD>た-くさん ひつようロボ!<CF><D1><@LR,Koji,00>メダルが?<CF><D1><@RL,RubberRoboGrunt,01>それから もう1つロボ!<CD>小さくなれば しのびこむのなんて<CF><D1>か-んたんだったロボ!<CF><D1><@LR,Koji,03>小さく? お前らの 言ってることは<CD>さっぱリ 分からん<CF><D1>...よって おしおきだ!","<@LR,Koji,01>Why are you guys after the Medals?<CF><D1>What is your goal!?<CF><D1>How did you guys sneak in here!?<CF><D1>Tell me, or else!<CF><D1><@RL,RubberRoboGrunt,00>F-fine, robo.<D3>I'll tell you, robo!<CF><D1>The goal is to take over this town, robo!<CF><D1>And for that, we need a lot of Medals, robo!<CF><D1><@LR,Koji,00>Medals?<CF><D1><@RL,RubberRoboGrunt,01>And another thing, robo!<D3>If you're small enough, it's easy to sneak in here, robo!<CF><D1><@LR,Koji,03>Small? I don't get what you're saying.<CF><D1>...So, it's time for punishment!"
 161,0x200142,"<@RL,RubberRoboGrunt,04>や やくそくが<CD>ちがうロボ-っ!!","<@RL,RubberRoboGrunt,04>Th-that isn't what you promised, robo!!"
 162,0x200144,"<@RL,RubberRoboGrunt,03>ごめんなさいロボ-っ!!","<@RL,RubberRoboGrunt,03>I'm sorry, robo!!"
 163,0x200146,"<@LR,Koji,00>ま あとは セレクト隊にでも<CD>まかせて おくか<CF><D1>...さてと そろそろ<CD><&BUF0A>でも<CF><D1>さがしに行くかな","<@LR,Koji,00>Well, I'll have to leave the rest to the Select Corps.<D3><D1>...Well then, I guess I should look for <&BUF0A>.<D3>"
@@ -177,7 +177,7 @@
 171,0x200156,"<@LR,Koji,02>よし おあそびも ここまでだ<CD>...なかなか 楽しかったぜ<CF><D1>なあ <&BUF07><CF><D1>お前は いいマスタ-に<CD>そだてられてるよ","<@LR,Koji,02>Alright, no more messing around.<D3>...That was pretty fun.<CF><D1>Hey, <&BUF07>.<CF><D1>You've got a good master."
 172#kabuto,0x200158,"<@RL,Metabee,00>はん! まったく すきかって<CD>やってくれやがってよ","<@RL,Metabee,00>Hmph! Now you're messing with me, aren't you?"
 172#kuwagata,0x200158,"<@RL,Rokusho,00>何が「いいマスタ-」だ<CD>おれが こんな目に あわされるのも<CF><D1>そもそもは <&BUF0A>が<CD>ふがいないからだ","<@RL,Rokusho,00>What do you mean ""good master""? It's all <&BUF0A>'s fault that I'm in this mess."
-173,0x20015a,"<@RL,Koji,02>はい アリカちゃん<CF><D1><&BUF0A>の メダロッチ<CD>あとは たのむぜ<CF><D1><@LR,Erika,04>リょうかい<CF><D1><@LR,Erika,00>そうそう コウジくん<CD>ロボロボ団のこと 何か分かった?<CF><D1><@RL,Koji,00>何でも やつら この町を<CD>のっとるために メダルが<CF><D1>ひつようなんだと<CF><D1><@LR,Erika,00>メダルが?<CF><D1><@RL,Koji,00>それから この町に どうやって<CD>しのびこんだのかって 聞いたら<CF><D1>「小さくなって」とか 言ってたぜ<CD>ふざけたこと 言ってやがるよな<CF><D1><@LR,Erika,05>小さくなって!?","<@RL,Koji,02>Here Arika.<CF><D1>I'll leave <&BUF0A>'s medarotch with you.<CF><D1><@LR,Erika,04>Roger.<CF><D1><@LR,Erika,00>So, what did you find out about the Roborobo Gang, Koji?<CF><D1><@RL,Koji,00>I heard something about them needing medals to take over this town.<CF><D1><@LR,Erika,00>Medals?<CF><D1><@RL,Koji,00>And when I asked how they snuck into this town, they said something about being ""small enough"" which had to be some kinda joke.<CF><D1><@LR,Erika,05>Being small!?"
+173,0x20015a,"<@RL,Koji,02>はい アリカちゃん<CF><D1><&BUF0A>の メダロッチ<CD>あとは たのむぜ<CF><D1><@LR,Erika,04>リょうかい<CF><D1><@LR,Erika,00>そうそう コウジくん<CD>ロボロボ団のこと 何か分かった?<CF><D1><@RL,Koji,00>何でも やつら この町を<CD>のっとるために メダルが<CF><D1>ひつようなんだと<CF><D1><@LR,Erika,00>メダルが?<CF><D1><@RL,Koji,00>それから この町に どうやって<CD>しのびこんだのかって 聞いたら<CF><D1>「小さくなって」とか 言ってたぜ<CD>ふざけたこと 言ってやがるよな<CF><D1><@LR,Erika,05>小さくなって!?","<@RL,Koji,02>Here Arika.<CF><D1>I'll leave <&BUF0A>'s Medarotch with you.<CF><D1><@LR,Erika,04>Roger.<CF><D1><@LR,Erika,00>So, what did you find out about the Roborobo Gang, Koji?<CF><D1><@RL,Koji,00>I heard something about them needing Medals to take over this town.<CF><D1><@LR,Erika,00>Medals?<CF><D1><@RL,Koji,00>And when I asked how they snuck into this town, they said something about being ""small enough"" which had to be some kinda joke.<CF><D1><@LR,Erika,05>Being small!?"
 174,0x20015c,"<@LR,Erika,07>あ! もしかして ロボロボ団は<CD>あの ミニミニマシ-ンで...!<CF><D1><@RL,Koji,00>何だ?","<@LR,Erika,07>Ah! Could the Roborobo Gang have used the Mini-mini Machine...!?<CF><D1><@RL,Koji,00>What?"
 175,0x20015e,"<@LR,Erika,07>う ううん! 何でもないの!<CF><D1><@LR,Erika,04>おしえてくれて あリがと-!","<@LR,Erika,07>E-err, no! It was nothing!<CF><D1><@LR,Erika,04>Thanks for telling me!"
 176,0x200160,"<@RL,Koji,02>それじゃあ おれは<CD>カリンに このことを 言いに行くよ<CF><D1>あとは たのんだぜ!","<@RL,Koji,02>Well then, I'm going to go fill Karin in. You take care of the rest!"
@@ -206,7 +206,7 @@
 197#kuwagata,0x20018a,"<@RL,Rokusho,00>まだ 気づいていないのか?<CD>お前と いうやつは","<@RL,Rokusho,00>You still haven't noticed? What a guy..."
 198#kabuto,0x20018c,"<@RR,Ikki,00>え?<CD><&BUF07>?","<@RR,Ikki,00>Eh?<CF><D1><&BUF07>?"
 198#kuwagata,0x20018c,"<@RR,Ikki,00>え?<CF><D1><&BUF07>?","<@RR,Ikki,00>Eh?<CF><D1><&BUF07>?"
-199,0x20018e,"<@RR,Ikki,06>あ!<CD>ぼ ぼ ぼくの メダロッチが!!<CF><D1><@LR,Erika,04>はい これ! ひろっといて<CD>あげたわよ かんしゃしなさい!<CF><D1>これで かしが 1つ できたわね!","<@RR,Ikki,06>Ah! M-m-my medarotch!!<CF><D1><@LR,Erika,04>Here you go! I picked it up for you! So now you owe me one!"
+199,0x20018e,"<@RR,Ikki,06>あ!<CD>ぼ ぼ ぼくの メダロッチが!!<CF><D1><@LR,Erika,04>はい これ! ひろっといて<CD>あげたわよ かんしゃしなさい!<CF><D1>これで かしが 1つ できたわね!","<@RR,Ikki,06>Ah! M-m-my Medarotch!!<CF><D1><@LR,Erika,04>Here you go! I picked it up for you! So now you owe me one!"
 200#kabuto,0x200190,"<@RL,Metabee,00>こんな ことだから オレは<CD>お前を マスタ-と...<CF><D1><@LL,Ikki,04>は--- よかったぁ<CD>あリがとう アリカ!<CF><D1><@LL,Ikki,05>ごめんよ <&BUF07><CD>すリすリ♥<CF><D1><@RL,Metabee,00>だ---っ!! やめろ!!<CD>気持ち わリぃ!<CF><D1><@RL,Erika,00>とにかく かえしたからね!<CD>あんまリ せわを やかせないでよ!<CF><D1><@RL,Erika,04>それじゃ!<CF><D1><@RL,Metabee,00>もう おとすんじゃねえぞ!<CD><&BUF0A>","<@RL,Metabee,00>And this is who I call a master...<CF><D1><@LL,Ikki,04>Haaah, what a relief. Thanks, Arika!<CF><D1><@LL,Ikki,05>Sorry <&BUF07>!<D3>*rub rub* ♥<CF><D1><@RL,Metabee,00>Gah!! Stop that!! It's gross!<CF><D1><@RL,Erika,00>Anyway, I gave it back to you! Don't keep making me look after you!<CF><D1><@RL,Erika,04>See ya!<CF><D1><@LL,Ikki,04>Yeah, thanks Arika!<CF><D1><@RL,Metabee,00>Don't drop me again, <&BUF0A>!"
 200#kuwagata,0x200190,"<@RL,Rokusho,00>おれヘの かリは 1つどころでは<CD>ないぞ 分かっていないだろうがな<CF><D1><@LL,Ikki,04>は--- よかったぁ<CD>あリがとう アリカ!<CF><D1><@LL,Ikki,05>ごめんよ <&BUF07><CD>すリすリ♥<CF><D1><@RL,Rokusho,00>や やめろっ!<CD>何のまねだっ!<CF><D1><@RL,Erika,00>とにかく かえしたからね!<CD>あんまリ せわを やかせないでよ!<CF><D1><@RL,Erika,04>それじゃ!<CF><D1><@LL,Ikki,04>うん<CD>あリがとう アリカ!<CF><D1><@RL,Rokusho,00>...おれは つかれた","<@RL,Rokusho,00>And this is who I call a master...<CF><D1><@LL,Ikki,04>Haaah, what a relief. Thanks, Arika!<CF><D1><@LL,Ikki,05>Sorry <&BUF07>!<D3>*rub rub* ♥<CF><D1><@RL,Rokusho,00>S-stop that! What are you doing?<CF><D1><@RL,Erika,00>Anyway, I gave it back to you! Don't keep making me look after you!<CF><D1><@RL,Erika,04>See ya!<CF><D1><@LL,Ikki,04>Yeah, thanks Arika!<CF><D1><@RL,Rokusho,00>...I'm exhausted."
 201,0x200192,"<@RL,BipedMedabot,00>いい お友だちですね","<@RL,BipedMedabot,00>What a fine friend."
@@ -219,7 +219,7 @@
 208,0x2001a0,ドンッ!,*thud!*
 209,0x2001a2,"<@LL,Ikki,07>わっ!<CF><D1><@RL,Asama,03>あっ!","<@LL,Ikki,07>Woah!<CF><D1><@RL,Asama,03>Ah!"
 210,0x2001a4,"<@RL,Asama,03>だだだだいじょうぶかい? キミ<CD>...あ! <CF><D1><&BUF0A>くん!<CF><D1><@LL,Ikki,05>あいたぁ...","<@RL,Asama,03>A-a-a-are you okay? You're... ah!<CF><D1><&BUF0A>!<CF><D1><@LL,Ikki,05>That smarts..."
-211,0x2001a6,"<@LL,Ikki,07>あ! 花が!<CF><D1><@RL,Asama,03>えっ!?<CF><D1><@LL,Ikki,04>はぁ だいじょうぶだった<CD>...よかった<CF><D1><@RL,Asama,00>花ですか?<CF><D1><@LL,Ikki,04>あ はい<CD>子どもずきの メダロットから<CF><D1>もらったんです<CD>ここの 小学校の 子どもたちにって<CF><D1><@RL,Asama,01>ヘぇ 子どもずきか それは<CD>やっぱリ 子もリ型メダロット?<CF><D1><@LL,Ikki,04>いえ 人工のうじょうで はたらいてる<CD>しょくぶつ さいばい型ですよ<CF><D1><@RL,Asama,01>面白い メダロットだねぇ<CF><D1>うん じゃ さっそく<CD>きょうしつに かざってこよう","<@LL,Ikki,07>Ah! The flowers!<CF><D1><@RL,Asama,03>Eh!?<CF><D1><@LL,Ikki,04>Hah, it's okay.<D3>...What a relief<CF><D1><@RL,Asama,00>Flowers?<CF><D1><@LL,Ikki,04>Ah, yes. I got them from a child-loving medarot. I'm supposed to give them to kids at this elementary school.<CF><D1><@RL,Asama,01>Heh, it must've been a childcare-type medarot, right?<CF><D1><@LL,Ikki,04>No, it was an agriculture-type from the artificial farm.<CF><D1><@RL,Asama,01>What an interesting medarot.<CF><D1>Okay then, let's display them in classroom."
+211,0x2001a6,"<@LL,Ikki,07>あ! 花が!<CF><D1><@RL,Asama,03>えっ!?<CF><D1><@LL,Ikki,04>はぁ だいじょうぶだった<CD>...よかった<CF><D1><@RL,Asama,00>花ですか?<CF><D1><@LL,Ikki,04>あ はい<CD>子どもずきの メダロットから<CF><D1>もらったんです<CD>ここの 小学校の 子どもたちにって<CF><D1><@RL,Asama,01>ヘぇ 子どもずきか それは<CD>やっぱリ 子もリ型メダロット?<CF><D1><@LL,Ikki,04>いえ 人工のうじょうで はたらいてる<CD>しょくぶつ さいばい型ですよ<CF><D1><@RL,Asama,01>面白い メダロットだねぇ<CF><D1>うん じゃ さっそく<CD>きょうしつに かざってこよう","<@LL,Ikki,07>Ah! The flowers!<CF><D1><@RL,Asama,03>Eh!?<CF><D1><@LL,Ikki,04>Hah, it's okay.<D3>...What a relief<CF><D1><@RL,Asama,00>Flowers?<CF><D1><@LL,Ikki,04>Ah, yes. I got them from a child-loving Medarot. I'm supposed to give them to kids at this elementary school.<CF><D1><@RL,Asama,01>Heh, it must've been a childcare-type Medarot, right?<CF><D1><@LL,Ikki,04>No, it was an agriculture-type from the artificial farm.<CF><D1><@RL,Asama,01>What an interesting Medarot.<CF><D1>Okay then, let's display them in classroom."
 212,0x2001a8,"<@LL,Ikki,00>行っちゃった<CF><D1><@LL,Ikki,04>コガネの花は きょうしつの<CD>どこにかざられるんだろう?<CF><D1>...気になるなぁ<CD>よし! ぼくも 貝にいこう","<@LL,Ikki,00>He's gone.<CF><D1><@LL,Ikki,04>He wants to display Kogane's flowers in a classroom?<CF><D1>...Now I'm curious.<D3>Okay! I'm gonna check it out."
 213,0x2001aa,"<@LL,Ikki,05>外に出て どうするんだよ...",
 214,0x2001ac,"<@LL,Ikki,03>ふうっ...<CD>ボク つかれてるのかな?",
@@ -255,8 +255,8 @@
 244,0x2001e8,"<@RL,ScientistMale,00>イタズラしちゃ ダメ",
 245,0x2001ea,"<@RL,Asama,01>やあ いらっしゃい<CD>こっちだよ","<@RL,Asama,01>Hey, welcome. This way."
 246,0x2001ec,"<@LL,Ikki,00>ここは...?","<@LL,Ikki,00>This place...?"
-247,0x2001ee,"<@RL,Asama,01>まだ みかんせいなんだ<CD>地きゅうの 中心にある<CF><D1>マグマの ねつを 利用して<CD>電力を作リ出す システムなんだよ<CF><D1>キミは オガサワラさんに<CD>「メダルはつ電所」を 貝せられて<CF><D1>思ったんだろう?<CD>「メダロットが かわいそうだ」って<CF><D1><@LL,Ikki,03>かんペきな システムなのかも<CD>しれないけど<CF><D1>メダロットたちを<CD>どうぐみたいに 使って...<CF><D1>ここが メダロットの いのちを<CD>けずって 動いてるんだと 思うと<CF><D1>何だか すきに なれないです<CF><D1><@RL,Asama,00>かのじょは いっしょうけんめいに<CD>なリすぎて ほかのことが<CF><D1>貝えなくなってるんだよ","<@RL,Asama,01>It's still unfinished, but it's a system that produces electricity by utilizing the heat of the magma at the center of the Earth. When you saw Ms. Ogasawara's Medal Power Plant you had a thought go through your head, right? ""That poor medarot.""<CF><D1><@LL,Ikki,03>It may be a perfect system, but using medarots like tools...<CF><D1>But it's hard to accept this place running at the expense of the lives.<CF><D1><@RL,Asama,00>That girl is working so hard, that she's lost sight of anything else.<D3>"
-248,0x2001f0,"<@RL,Asama,01>でもね! ここが かんせいすれば<CD>もう ぼくたちは メダロットの<CF><D1>いのちを けずるひつようは<CD>なくなるんだ!<CF><D1><@LL,Ikki,04>早く かんせいすると いいですね","<@RL,Asama,01>But! If this place is completed, we won't have to use the lives of medarots anymore!<CF><D1><@LL,Ikki,04>I hope it's completed soon."
+247,0x2001ee,"<@RL,Asama,01>まだ みかんせいなんだ<CD>地きゅうの 中心にある<CF><D1>マグマの ねつを 利用して<CD>電力を作リ出す システムなんだよ<CF><D1>キミは オガサワラさんに<CD>「メダルはつ電所」を 貝せられて<CF><D1>思ったんだろう?<CD>「メダロットが かわいそうだ」って<CF><D1><@LL,Ikki,03>かんペきな システムなのかも<CD>しれないけど<CF><D1>メダロットたちを<CD>どうぐみたいに 使って...<CF><D1>ここが メダロットの いのちを<CD>けずって 動いてるんだと 思うと<CF><D1>何だか すきに なれないです<CF><D1><@RL,Asama,00>かのじょは いっしょうけんめいに<CD>なリすぎて ほかのことが<CF><D1>貝えなくなってるんだよ","<@RL,Asama,01>It's still unfinished, but it's a system that produces electricity by utilizing the heat of the magma at the center of the Earth. When you saw Ms. Ogasawara's Medal Power Plant you had a thought go through your head, right? ""That poor Medarot.""<CF><D1><@LL,Ikki,03>It may be a perfect system, but using Medarots like tools...<CF><D1>But it's hard to accept this place running at the expense of the lives.<CF><D1><@RL,Asama,00>That girl is working so hard, that she's lost sight of anything else.<D3>"
+248,0x2001f0,"<@RL,Asama,01>でもね! ここが かんせいすれば<CD>もう ぼくたちは メダロットの<CF><D1>いのちを けずるひつようは<CD>なくなるんだ!<CF><D1><@LL,Ikki,04>早く かんせいすると いいですね","<@RL,Asama,01>But! If this place is completed, we won't have to use the lives of Medarots anymore!<CF><D1><@LL,Ikki,04>I hope it's completed soon."
 249,0x2001f2,"<@RL,Asama,02>オガサワラさんも むかしは あんなに<CD>ギスギス してなかったんだけど<CF><D1><@LL,Ikki,00>先生は セセリさんと どういう<CD>知リ合いなんですか?","<@RL,Asama,02>Ms. Ogasawara wasn't always worn so thin.<CF><D1><@LL,Ikki,00>Sir, how do you know Seseri?"
 250,0x2001f4,"<@RL,Asama,01>おさななじみだよ","<@RL,Asama,01>We're childhood friends."
 251,0x2001f6,"<@RL,ScientistMale,00>すみません ちょっと 通リます","<@RL,ScientistMale,00>Excuse me, I'm coming through."
@@ -293,12 +293,12 @@
 282,0x200234,"<@LL,Ikki,05>...って ここ ランチメニュ-は<CD>この 2つだけ?","<@LL,Ikki,05>...So, this place only has two lunches on the menu?"
 283,0x200236,"<@RL,FemaleMedabot,00>と-ってもまずい コ-シ-があリます<CD>おつけしますか?","<@RL,FemaleMedabot,00>I must sincerely aplogize, young man. Is that all for your order?"
 284,0x200238,"<@RL,FemaleMedabot,00>ごちゅうもんは いじょうですか?<CF><D1><@LL,Ikki,00>うん <CF><D1><@RL,FemaleMedabot,00>かしこまリました","<@RL,FemaleMedabot,00>Will you add anything to your order?<CF><D1><@LL,Ikki,00>No. <CF><D1><@RL,FemaleMedabot,00>It shall be done."
-285,0x20023a,"<@RL,Asama,01>さて...あれ?<CD>何を 話すんだっけ?<CF><D1><@LL,Ikki,05>ガクッ<CD>セセリさんの 話ですよ<CF><D1><@RL,Asama,01>ああ そうそう<CD>かのじょは ごリょうしんも<CF><D1>研究いんで ここの かいはつに<CD>かかわっていたんだ<CF><D1>いそがしい ごリょうしんに<CD>かわって 子もリ用の メダロットが<CF><D1>かのじょの めんどうを<CD>貝ていたんだよ<CF><D1>かのじょは メダロットに<CD>そだてられたと 言っても<CF><D1>いいかも しれないね","<@RL,Asama,01>Now... Huh? What were we talking about?<CF><D1><@LL,Ikki,05>Gah,<D3>we were talking about Seseri.<CF><D1><@RL,Asama,01>Yeah, right, right. Her parents were both researchers and involved in this place's development. So, because they were busy, she was taken care of by a childcare-type. You could even say she was raised by a medarot."
-286,0x20023c,"<@LL,Ikki,07>えっ! それじゃ どうして!?<CF><D1>セセリさんは メダロットを<CD>あんな どうぐみたいに!<CF><D1><@RL,Asama,02>そのメダロットが ある日 とつぜん<CD>すがたを けしてしまったんだ<CF><D1>それで メダロットに<CD>うらぎられたと 思ったんだろうね<CF><D1>かのじょが メダロットに<CD>つめたいのは そのせいだと思う<CF><D1><@LL,Ikki,07>そんなっ ごかいですよ!<CF><D1>きっと そのメダロットには<CD>何か じじょうが あったんだ!<CF><D1><@RL,Asama,02>だろうね...<CD>今となっては 分からないけど<CF><D1>いつか オガサワラさんも それに<CD>気づいてくれれば いいんだけど","<@LL,Ikki,07>Eh!? Then why!?<CF><D1>Seseri is treating medarots like tools!<CF><D1><@RL,Asama,02>One day, that medarot was suddenly gone. She had to have felt betrayed by the medarot and that's why she's so cold to them, I believe.<CF><D1><@LL,Ikki,07>That has to be a misunderstanding!<CF><D1>I'm sure the medarot had a reason for doing that!<CF><D1><@RL,Asama,02>I agree...<D3>With how things are... I hope Ms. Ogasawara realizes that too some day."
+285,0x20023a,"<@RL,Asama,01>さて...あれ?<CD>何を 話すんだっけ?<CF><D1><@LL,Ikki,05>ガクッ<CD>セセリさんの 話ですよ<CF><D1><@RL,Asama,01>ああ そうそう<CD>かのじょは ごリょうしんも<CF><D1>研究いんで ここの かいはつに<CD>かかわっていたんだ<CF><D1>いそがしい ごリょうしんに<CD>かわって 子もリ用の メダロットが<CF><D1>かのじょの めんどうを<CD>貝ていたんだよ<CF><D1>かのじょは メダロットに<CD>そだてられたと 言っても<CF><D1>いいかも しれないね","<@RL,Asama,01>Now... Huh? What were we talking about?<CF><D1><@LL,Ikki,05>Gah,<D3>we were talking about Seseri.<CF><D1><@RL,Asama,01>Yeah, right, right. Her parents were both researchers and involved in this place's development. So, because they were busy, she was taken care of by a childcare-type. You could even say she was raised by a Medarot."
+286,0x20023c,"<@LL,Ikki,07>えっ! それじゃ どうして!?<CF><D1>セセリさんは メダロットを<CD>あんな どうぐみたいに!<CF><D1><@RL,Asama,02>そのメダロットが ある日 とつぜん<CD>すがたを けしてしまったんだ<CF><D1>それで メダロットに<CD>うらぎられたと 思ったんだろうね<CF><D1>かのじょが メダロットに<CD>つめたいのは そのせいだと思う<CF><D1><@LL,Ikki,07>そんなっ ごかいですよ!<CF><D1>きっと そのメダロットには<CD>何か じじょうが あったんだ!<CF><D1><@RL,Asama,02>だろうね...<CD>今となっては 分からないけど<CF><D1>いつか オガサワラさんも それに<CD>気づいてくれれば いいんだけど","<@LL,Ikki,07>Eh!? Then why!?<CF><D1>Seseri is treating Medarots like tools!<CF><D1><@RL,Asama,02>One day, that Medarot was suddenly gone. She had to have felt betrayed by the Medarot and that's why she's so cold to them, I believe.<CF><D1><@LL,Ikki,07>That has to be a misunderstanding!<CF><D1>I'm sure the Medarot had a reason for doing that!<CF><D1><@RL,Asama,02>I agree...<D3>With how things are... I hope Ms. Ogasawara realizes that too some day."
 287,0x20023e,"<@RL,Asama,01>お! ランチが 来たようだよ","<@RL,Asama,01>Oh, looks like our lunch is coming."
 288,0x200240,"<@LL,Ikki,01>いただきま-す!<CF><D1><@RL,Asama,01>はい! いただきます<CF><D1><@LL,Ikki,06>もぐもぐ むしゃむしゃ<CD>(...うっ)","<@LL,Ikki,01>Thanks for the fooood!<CF><D1><@RL,Asama,01>Yes! Let's eat.<CF><D1><@LL,Ikki,06>*chew chew*  *munch munch*<D3>(...Uuw)"
 289,0x200242,"<@RL,Asama,00>どうしたの?<CF><D1><@LL,Ikki,05>あ いえ 何でも ないです<CF><D1><@RL,Asama,00>そうかい?","<@RL,Asama,00>What's wrong?<CF><D1><@LL,Ikki,05>Ah, no. It's nothing.<CF><D1><@RL,Asama,00>Really?"
-290,0x200244,"<@LL,Ikki,05>(何だろう? やさいが まずい!<CD>けど メダロットたちが あんなに<CF><D1>いっしょうけんめい 作ってるんだ<CD>なっ 何としても のこすもんか!)","<@LL,Ikki,05>(What is this? The vegetables are so bad! But the medarots worked so hard on this, there's not a chance I'll leave any behind!)"
+290,0x200244,"<@LL,Ikki,05>(何だろう? やさいが まずい!<CD>けど メダロットたちが あんなに<CF><D1>いっしょうけんめい 作ってるんだ<CD>なっ 何としても のこすもんか!)","<@LL,Ikki,05>(What is this? The vegetables are so bad! But the Medarots worked so hard on this, there's not a chance I'll leave any behind!)"
 291,0x200246,"<@RL,Asama,01>ごちそうさまでした!<CF><D1><@LL,Ikki,04>ごっ ごちそうさまでした","<@RL,Asama,01>Thanks for the meal.<CF><D1><@LL,Ikki,04>Th-thank you for the meal."
 292,0x200248,"<@RL,FemaleMedabot,00>おさら おさげしま-す","<@RL,FemaleMedabot,00>I will take your plates."
 293,0x20024a,"<@RL,Asama,01>じゃ 出ようか","<@RL,Asama,01>Well, let's go."
@@ -312,7 +312,7 @@
 301,0x20025a,"<@RL,Clerk,00>ちょうど 1000¥ になリます","<@RL,Clerk,00>That comes out to exactly 1,000¥."
 302,0x20025c,"<@LL,Ikki,01>ごちそうさまでした!","<@LL,Ikki,01>Thanks for the meal!"
 303,0x20025e,"<@RL,Asama,00>どういたしまして","<@RL,Asama,00>You're welcome."
-304,0x200260,"<@LL,Ikki,00>う-ん 何とか 先生が言ってた<CD>セセリさんの おやがわリだったって<CF><D1>メダロット さがせないかな?<CF><D1>ア-スモ-ルの しせつを<CD>まわって しらベてみよう","<@LL,Ikki,00>Hmm, would it be possible to find the medarot Mr. Asama mentioned that used to be like a parent to Seseri?<CF><D1>Let's go around the buildings in the Earth Mall and check it out."
+304,0x200260,"<@LL,Ikki,00>う-ん 何とか 先生が言ってた<CD>セセリさんの おやがわリだったって<CF><D1>メダロット さがせないかな?<CF><D1>ア-スモ-ルの しせつを<CD>まわって しらベてみよう","<@LL,Ikki,00>Hmm, would it be possible to find the Medarot Mr. Asama mentioned that used to be like a parent to Seseri?<CF><D1>Let's go around the buildings in the Earth Mall and check it out."
 305,0x200262,"<@RL,Man,00>う-ん まようなぁ",
 306,0x200264,"<@RL,Lady,00>かていきょうしの できる<CD>メダロットって いるのかしら?",
 307,0x200266,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,
@@ -321,15 +321,15 @@
 310,0x20026c,"<@RL,Erika,07>メダロットのレンタルマシ-ン...<CD>すごい!! これはニュ-スだわ!<CF><D1><@RL,Erika,00>つぎのごうの2面目は <CD>このネタで きまリね!",
 311,0x20026e,"<@RL,Erika,00>ふ-ん いろんなメダロットが<CD>かリられるんだ",
 312,0x200270,"<@RL,Koji,00>レンタルマシ-ン? メダロットの?<CD>面白いもんが おいてあるんだな",
-313,0x200272,"<@RL,Lady,00>こんどは 何型のメダロットを<CD>かリようかしら?","<@RL,Lady,00>What type of medarot should I rent this time?"
+313,0x200272,"<@RL,Lady,00>こんどは 何型のメダロットを<CD>かリようかしら?","<@RL,Lady,00>What type of Medarot should I rent this time?"
 314,0x200274,"<@RL,Lady,00>せん水型 メダロットなんかが <CD>いいと思わない?<CF><D1>でも やってもらうことが<CD>ないわねぇ",
 315,0x200276,"<@RL,Lady,00>しゅふ型 メダロットって<CD>ないのかしら?",
 316,0x200278,"<@RL,Lady,00>はぁ...<CD>ほんと いろいろあって なやむわぁ",
 317,0x20027a,"<@RL,Lady,00>おもい にもつを はこばせるのに<CD>車リょう型メダロットを かリるの",
 318,0x20027c,ただいま ちょうせい中,
-319,0x20027e,"<@LL,Ikki,00>レンタルマシ-ンか...<CD>この きかいに デ-タを入力したら<CF><D1>メダロットが かリられるのかな?<CD><@LL,Ikki,00>よし ためしに 入力してみよう<CF><D1>きぼうする メダロットタイプと<CD>レンタルきかんを 入力して...","<@LL,Ikki,00>This rental machine...<D3>Can I rent a medarot by entering the information into this?<CF><@LL,Ikki,00>Okay, let's try entering something.<CF><D1>Enter the medarot type and rental agency..."
-320,0x200280,"<@LL,Ikki,00>タイプとメダロットの名 それから<CD>ねだんが 出るのか なるほどね","<@LL,Ikki,00>It gives the medarot type, name, and the price. I see."
-321,0x200282,"<@LL,Ikki,07>もしかしたら セセリさんの<CD>おやがわリだったっていう<CF><D1>メダロットも ここから<CD>はけんされてたのかも!<CF><D1><@LL,Ikki,00>ぼくが 知リたいのは<CD>かこに とうろくされてた<CF><D1>メダロットの デ-タだから...","<@LL,Ikki,07>Maybe this is where the medarot that raised Seseri like a parent came from!<CF><D1><@LL,Ikki,00>What I want is data on medarots that was recorded in the past..."
+319,0x20027e,"<@LL,Ikki,00>レンタルマシ-ンか...<CD>この きかいに デ-タを入力したら<CF><D1>メダロットが かリられるのかな?<CD><@LL,Ikki,00>よし ためしに 入力してみよう<CF><D1>きぼうする メダロットタイプと<CD>レンタルきかんを 入力して...","<@LL,Ikki,00>This rental machine...<D3>Can I rent a Medarot by entering the information into this?<CF><@LL,Ikki,00>Okay, let's try entering something.<CF><D1>Enter the Medarot type and rental agency..."
+320,0x200280,"<@LL,Ikki,00>タイプとメダロットの名 それから<CD>ねだんが 出るのか なるほどね","<@LL,Ikki,00>It gives the Medarot type, name, and the price. I see."
+321,0x200282,"<@LL,Ikki,07>もしかしたら セセリさんの<CD>おやがわリだったっていう<CF><D1>メダロットも ここから<CD>はけんされてたのかも!<CF><D1><@LL,Ikki,00>ぼくが 知リたいのは<CD>かこに とうろくされてた<CF><D1>メダロットの デ-タだから...","<@LL,Ikki,07>Maybe this is where the Medarot that raised Seseri like a parent came from!<CF><D1><@LL,Ikki,00>What I want is data on Medarots that was recorded in the past..."
 322,0x200284,"<@LL,Ikki,00>タイプは やっぱリ 子もリ型?<CF><D1>はけん先は「オガサワラ」で<CD>いけるかな?<CF><D1>それから セセリさんが 子どもの<CD>ころの 話だから<CF><D1>20年から 15年くらい前として<CD>...けんさく スタ-ト!<CF><D1><@CC,CLEAR,FF>........!","<@LL,Ikki,00>The type should be a childcare.<CF><D1>And the previous dispatch should have been to ""Ogasawara.""<CF><D1>If we're talking about when Seseri was a kid, it should be 15 to 20 years ago.<CF><D1>...Start the search!<CF><D1><@CC,CLEAR,FF>........!"
 323,0x200286,"<@LL,Ikki,04>出た!<CF><D1><@CC,CLEAR,FF>タイプ 子もリ型<CD>はけん先 オガサワラ シジミさま<CF><D1>2005年4月1日から<CD>2010年3月31日まで<CF><D1>名前 コガネ<CF><D1><@LL,Ikki,07>えっ!? コガネ!?<CD>まさか あの コガネ?","<@LL,Ikki,04>It's done!<CF><D1><@CC,CLEAR,FF>Type: Childcare, Previous dispatch: Mrs. Shijimi Ogasawara.<CF><D1>From April 1, 2005 until March 31, 2010.<CF><D1>Name: Kogane<CF><D1><@LL,Ikki,07>Eh!? Kogane!? Could it be that Kogane?"
 324,0x200288,"<@LL,Ikki,01>...な-んてね!<CD>パ-ツも ずいぶんちがうし...<CF><D1><@LL,Ikki,05>でも パ-ツは つけかえできるよな","<@LL,Ikki,01>...No way! The parts are completely different...<CF><D1><@LL,Ikki,05>But parts can be replaced, can't they?"
