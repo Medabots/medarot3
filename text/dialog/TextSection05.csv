@@ -63,13 +63,13 @@
 061,0x9644a,<SFF>てんとう行動<CD>ころばせて めいれいを わすれさせる<*04>,<SFF>Fall: <f01>The opponent falls and forgets<D3>their command.<f00><*04>
 062,0x9644c,<SFF>フォ-スアップ行動<CD>メダフォ-スを ふやす<*04>,<SFF>Force Up: <f01>Increases Medaforce.<f00><*04>
 063,0x9644e,<SFF>ヘんか行動<CD>ベつのパ-ツに ヘんかする<*04>,<SFF>Change: <f01>Change to a different<D3>part.<f00><*04>
-064,0x96450,<SFF>ヘんか(そくど)行動<CD>「スピ-ド」のパ-ツに ヘんかする<*04>,"<SFF>Change (Speed): <f01>Change to<D3>a ""speed"" part.<f00><*04>"
-065,0x96452,<SFF>ヘんか(いリょく)行動<CD>「いリょく」のパ-ツに ヘんかする<*04>,"<SFF>Change (Power): <f01>Change to<D3>a ""power"" part.<f00><*04>"
-066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,"<SFF>Change (Symptom): <f01>Change to<D3>a ""symptom"" part.<f00><*04>"
-067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,"<SFF>Change (Defense): <f01>Change to<D3>a ""defense"" part.<f00><*04>"
-068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,"<SFF>Change (Recovery): <f01>Change<D3>to a ""recovery"" part.<f00><*04>"
-069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,"<SFF>Change (Support): <f01>Change to<D3>a ""disrupt"" part.<f00><*04>"
-070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF>Positive Symptom Clear:<D3><f01>Clear positive symptoms.<f00><*04>
+064,0x96450,<SFF>ヘんか(そくど)行動<CD>「スピ-ド」のパ-ツに ヘんかする<*04>,<SFF>Change (Speed): <f01>Change to<D3>a <f02>Speed<f00> part.<f00><*04>
+065,0x96452,<SFF>ヘんか(いリょく)行動<CD>「いリょく」のパ-ツに ヘんかする<*04>,<SFF>Change (Power): <f01>Change to<D3>a <f02>Power<f00> part.<f00><*04>
+066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,<SFF>Change (Ailment): <f01>Change to<D3>an <f02>Ailment-Afflicting<f00> part.<f00><*04>
+067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,<SFF>Change (Defense): <f01>Change to<D3>a <f02>Defense<f00> part.<f00><*04>
+068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,<SFF>Change (Recovery): <f01>Change<D3>to a <f02>Recovery<f00> part.<f00><*04>
+069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,<SFF>Change (Support): <f01>Change to<D3>a <f02>Disrupt <f00>part.<f00><*04>
+070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF>Buff Clear:<D3><f01>Clears Buffs.<f00><*04>
 071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF>Unusable: <f01>Parts are made<D3>unusable.<f00><*04>
 072,0x96460,<SFF>こんらん行動<CD>攻撃の あいてを きめられない<*04>,<SFF>Confusion: <f01>Your opponent<D3>randomly chooses a target.<f00><*04>
 073,0x96462,<SFF>回数ドレイン行動<CD>頭パ-ツの 回数を うばいとる<*04>,<SFF>Number Drain: <f01>Drains head part<D3>ammo.<f00><*04>
