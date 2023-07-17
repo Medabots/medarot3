@@ -118,9 +118,11 @@ Though there will be some additional layers of quality checking with editing and
 #### Style Guide
 
 * Use bold instead of quotes unless the text is actually quoting text (i.e. use bold for emphasis)
-* For game-specific terminology and names, reference the Glossary tab of the sheet (specifically the 'EN' column), in general you'll want the Japanese transliteration with the assumption that the EN-US patch will have the English localized name, if available
+* For game-specific terminology and names, reference the Glossary tab of the sheet (specifically the 'EN' column); in general, you'll want the Japanese transliteration with the assumption that the EN-US patch will have the English localized name, if available
 * Match idioms and puns where possible, but don't insert ones where there aren't any
 * Capitalize most Medabot-related in-universe terms (Medarot, Medal, Medalia, etc...), since they're technically product names
+
+#### Note on Kanji
 
 The game uses the same kanji to represent multiple, known representations are:
 * 院 -> 院, 腕
