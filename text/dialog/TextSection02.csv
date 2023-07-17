@@ -133,10 +133,10 @@
 131,0x9416c,どのパ-ツを売リますか?<CD>しゅるいを 選んでね♥<*04>,"Select the type of part you'd like to sell, okay? ♥<*04>"
 132,0x9416e,お売リになリますか?<CD>パ-ツのしゅるいを 選んでください<*04>,Are you selling something? Select the type of part.<*04>
 133,0x94170,お売リになる パ-ツの<CD>しゅるいヲ 選んでくだサイ<*04>,Please select the type of part you'd like to sell.<*04>
-134,0x94172,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You have redeemed a Pass Card for a part.<*04>
-135,0x94174,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れま-す♥<*04>,<SFF>You have redeemed a Pass Card for a part ♥<*04>
-136,0x94176,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You have redeemed a Pass Card for a part.<*04>
-137,0x94178,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れマス<*04>,<SFF>You have redeemed a Pass Card for a part.<*04>
+134,0x94172,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You can redeem a Pass Card for a part.<*04>
+135,0x94174,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れま-す♥<*04>,<SFF>You can redeem a Pass Card for a part ♥.<*04>
+136,0x94176,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れます<*04>,<SFF>You can redeem a Pass Card for a part.<*04>
+137,0x94178,<SFF>パスカ-ドを 使って<CD>パ-ツを 手に入れマス<*04>,<SFF>You can redeem a Pass Card for a part.<*04>
 138,0x9417a,パスワ-ドを 入力してください<*04>,Please input the password.<*04>
 139,UNUSED00,パスワ-ドが まちがっています<*04>,That password is incorrect.<*04>
 140,0x9417c,パスワ-ドを 入力してね♥<*04>,Input the password.♥<*04>

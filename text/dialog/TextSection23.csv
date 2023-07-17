@@ -252,7 +252,7 @@
 216#kuwagata,0x2101b0,"<@RL,Rokusho,00>おれに まかせろ<CD><&BUF03>!","<@RL,Rokusho,00>Leave it to me, <&BUF03>!"
 217,0x2101b2,"<@LL,Ikki,00>分かった たのむ <CD>メダロット転送!","<@LL,Ikki,00>Got it, I'm counting on you.<D3>Medarot, transfer!"
 218#kabuto,0x2101b4,"<@RL,Metabee,00>なるベく はなれてろ!<CF><D1><@LL,Ikki,02>行け-! 「メダスプレイヤ-」だ!<CF><D1><@RL,Metabee,00>うおおおおっ!!","<@RL,Metabee,00>Keep clear!<CF><D1><@LL,Ikki,02>Gooo! MedaSprayer!<CF><D1><@RL,Metabee,00>Uoooh!!"
-218#kuwagata,0x2101b4,"<@RL,Rokusho,00>うしろに さがっていろ!<CF><D1><@LL,Ikki,02>行け-! 「メダシェア-ズ」だ!<CF><D1><@RL,Rokusho,00>うおおおおっ!!","<@RL,Rokusho,00>Keep back!<CF><D1><@LL,Ikki,02>Gooo! MedaSheers!<CF><D1><@RL,Rokusho,00>Uoooh!!"
+218#kuwagata,0x2101b4,"<@RL,Rokusho,00>うしろに さがっていろ!<CF><D1><@LL,Ikki,02>行け-! 「メダシェア-ズ」だ!<CF><D1><@RL,Rokusho,00>うおおおおっ!!","<@RL,Rokusho,00>Keep back!<CF><D1><@LL,Ikki,02>Gooo! MedaShears!<CF><D1><@RL,Rokusho,00>Uoooh!!"
 219,0x2101b6,"<@RL,Erika,01>やったぁ! 道がひらけた!!<CF><D1><@LL,Ikki,02>ア-スモ-ルでは ロボロボ団が町を<CD>ほうかいさせるところだったけど<CF><D1>こんどのは ちがう!<CD>ロボロボ団じゃないよ! こんなの!","<@RL,Erika,01>You did it! The path is clear!!<CF><D1><@LL,Ikki,02>At EarthMall, the Rubberobo Gang almost destroyed the town. but not like this!<D3>This isn't the Rubberobos! This is something else!"
 220,0x2101b8,"<@RL,Koji,01><&BUF03>! お前 何か<CD>知ってるのか?<CF><D1>今 おれたちが おいかけてる やつが<CD>はんにんなのか?","<@RL,Koji,01><&BUF03>! Do you know something?<CF><D1>Is the person we're chasing the culprit?"
 221,0x2101ba,"<@LL,Ikki,02>友だちに なったんだ あいつと<CD>だから ぼくが あいつを止める!!","<@LL,Ikki,02>We're friends, so I have got to stop him!!"

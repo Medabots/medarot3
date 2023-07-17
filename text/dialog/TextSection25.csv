@@ -24,7 +24,7 @@
 020,0x218028,"<@LL,Ikki,07>...あれ? また6負かヘい石に<CD>絵が もどってる<CF><D1><@LL,Ikki,00>変なの- だけど また<CD>きえちゃうと いやだから<CF><D1>まだ はかせには 言わないでおこう","<@LL,Ikki,07>...Huh? The picture on the six-sided nummulite is back.<CF><D1><@LL,Ikki,00>Weird, but I don't want it disappearing again, so I won't tell Doctor Aki about it just yet."
 021#kabuto,0x21802a,"<@LL,Ikki,04>まっ ブラックカブトの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kabuto Medal, so it's fine."
 021#kuwagata,0x21802a,"<@LL,Ikki,04>まっ ブラッククワガタの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kuwagata Medal, so it's fine."
-022,0x21802c,"<@LL,Ikki,00>まずは 研究所の はかせに<CD>会いに行こう",
+022,0x21802c,"<@LL,Ikki,00>まずは 研究所の はかせに<CD>会いに行こう","<@LL,Ikki,00>Let's go see the professor at the lab first."
 023,0x21802e,"<@LL,Ikki,05>おなか ペっこペこだぁ-<CD>家に かえリたいよ-",
 024,0x218030,"<@LL,Ikki,05>ソルティ どこに 行ったんだろ?",
 025,0x218032,"<@LL,Ikki,05>アリカが コンビニで まってる<CD>おいて行くと あとが こわいぞ",
