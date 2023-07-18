@@ -538,7 +538,7 @@ PauseMenuPlaceholderState::
 
 SECTION "Pause Menu State Machine 9", ROMX[$47f5], BANK[$06]
 PauseMenuDrawMoney::
-  ld bc, $0D0B
+  ld bc, $0E0B
   call $14ec
   ld a, [W_PlayerMoolah]
   ld b, a
@@ -550,7 +550,7 @@ PauseMenuDrawMoney::
   ld a, [W_PlayerMoolah+1]
   or b
   jr z, .draw_00
-  ld bc, $110B
+  ld bc, $120B
   call $14ec
   ld a, $e0
   di
@@ -561,7 +561,7 @@ PauseMenuDrawMoney::
   ei
   ret
 .draw_00
-  ld bc, $110B
+  ld bc, $120B
   call $14ec
   ld a, $e0
   di
@@ -570,7 +570,7 @@ PauseMenuDrawMoney::
   pop af
   ld [hli], a
   ei
-  ld bc, $100B
+  ld bc, $110B
   call $14ec
   ld a, $00
   di
@@ -609,7 +609,7 @@ PauseMenuMaintainCursorAnimation2::
   ld a, $00
   jp WrapDecompressTilemap1
 PauseMenuMapMoneyDuringTransition::
-  ld hl, $9D61
+  ld hl, $9D62
   ld a, [W_PlayerMoolah]
   ld b, a
   ld a, [$C671]
@@ -620,7 +620,7 @@ PauseMenuMapMoneyDuringTransition::
   ld a, [$C671]
   or b
   jr z, .draw_00
-  ld hl, $9D65
+  ld hl, $9D66
   ld a, $e0
   di
   push af
@@ -630,7 +630,7 @@ PauseMenuMapMoneyDuringTransition::
   ei
   ret
 .draw_00
-  ld hl, $9D65
+  ld hl, $9D66
   ld a, $e0
   di
   push af
@@ -638,7 +638,7 @@ PauseMenuMapMoneyDuringTransition::
   pop af
   ld [hli], a
   ei
-  ld hl, $9D64
+  ld hl, $9D65
   ld a, $00
   di
   push af
