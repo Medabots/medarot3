@@ -165,7 +165,7 @@ PauseMenuInputHandlerState::
   ld [W_OAM_SpritesReady], a
   call $483C
   xor a
-  call PauseMenuMaintainScroll
+  call PauseMenuMaintainCursorAnimation1
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   jp nz, IncSubStateIndex
@@ -175,7 +175,7 @@ PauseMenuInputHandlerState::
   ld a, 3
   call ScheduleSoundEffect
   ld a, 1
-  call PauseMenuMaintainScroll
+  call PauseMenuMaintainCursorAnimation1
   ld a, [$C562]
   ld hl, .table
   ld b, 0
@@ -241,8 +241,8 @@ PauseMenuOverlayMappingState::
   ld bc, $805
   call $25FF
   ld a, 1
-  call $4895
-  call $48AA
+  call PauseMenuMaintainCursorAnimation2
+  call PauseMenuMapMoneyDuringTransition
   jp IncSubStateIndex
 
 PauseMenuPositionOverlayState::
@@ -582,7 +582,7 @@ PauseMenuDrawMoney::
   ret
 
 SECTION "Pause Menu State Machine 10", ROMX[$4880], BANK[$06]
-PauseMenuMaintainScroll::
+PauseMenuMaintainCursorAnimation1::
   push af
   ld a, [W_PauseMenuSelectedOption]
   sla a
@@ -595,3 +595,55 @@ PauseMenuMaintainScroll::
   ld e, a
   ld a, $00
   jp WrapDecompressTilemap0ScrollAdjusted
+PauseMenuMaintainCursorAnimation2::
+  push af
+  ld a, [W_PauseMenuSelectedOption]
+  sla a
+  ld c, $02
+  add c
+  ld c, a
+  ld b, $01
+  pop af
+  add $04
+  ld e, a
+  ld a, $00
+  jp WrapDecompressTilemap1
+PauseMenuMapMoneyDuringTransition::
+  ld hl, $9D61
+  ld a, [W_PlayerMoolah]
+  ld b, a
+  ld a, [$C671]
+  ld c, a
+  call $48e5
+  ld a, [W_PlayerMoolah]
+  ld b, a
+  ld a, [$C671]
+  or b
+  jr z, .draw_00
+  ld hl, $9D65
+  ld a, $e0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+.draw_00
+  ld hl, $9D65
+  ld a, $e0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld hl, $9D64
+  ld a, $00
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
