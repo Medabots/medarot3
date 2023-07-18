@@ -155,7 +155,7 @@ PauseMenuMappingState::
   call CGBLoadSingleBGPPaletteIndex
   ld a, 1
   ld [W_CGBPaletteStagedBGP], a
-  call $47F5
+  call PauseMenuDrawMoney
   jp IncSubStateIndex
 
 PauseMenuInputHandlerState::
@@ -165,7 +165,7 @@ PauseMenuInputHandlerState::
   ld [W_OAM_SpritesReady], a
   call $483C
   xor a
-  call $4880
+  call PauseMenuMaintainScroll
   ldh a, [H_JPInputChanged]
   and M_JPInputB
   jp nz, IncSubStateIndex
@@ -175,7 +175,7 @@ PauseMenuInputHandlerState::
   ld a, 3
   call ScheduleSoundEffect
   ld a, 1
-  call $4880
+  call PauseMenuMaintainScroll
   ld a, [$C562]
   ld hl, .table
   ld b, 0
@@ -535,3 +535,63 @@ PauseMenuDisplayMessageState::
 
 PauseMenuPlaceholderState::
   ret
+
+SECTION "Pause Menu State Machine 9", ROMX[$47f5], BANK[$06]
+PauseMenuDrawMoney::
+  ld bc, $0D0B
+  call $14ec
+  ld a, [W_PlayerMoolah]
+  ld b, a
+  ld a, [W_PlayerMoolah+1]
+  ld c, a
+  call MapFourDigitNumber
+  ld a, [W_PlayerMoolah]
+  ld b, a
+  ld a, [W_PlayerMoolah+1]
+  or b
+  jr z, .draw_00
+  ld bc, $110B
+  call $14ec
+  ld a, $e0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+.draw_00
+  ld bc, $110B
+  call $14ec
+  ld a, $e0
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ld bc, $100B
+  call $14ec
+  ld a, $00
+  di
+  push af
+  rst $20
+  pop af
+  ld [hli], a
+  ei
+  ret
+
+SECTION "Pause Menu State Machine 10", ROMX[$4880], BANK[$06]
+PauseMenuMaintainScroll::
+  push af
+  ld a, [W_PauseMenuSelectedOption]
+  sla a
+  ld c, $02
+  add c
+  ld c, a
+  ld b, $0d
+  pop af
+  add $04
+  ld e, a
+  ld a, $00
+  jp WrapDecompressTilemap0ScrollAdjusted
