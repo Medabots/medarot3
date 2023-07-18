@@ -228,11 +228,11 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 224,\x11,\x04,\xCB
 225,\x00,\x03,Localization
 226,\x10,\x05,Special Thanks
-227,\x11,\x04,Blaziken257
-228,\x11,\x04,Gilor
-229,\x11,\x04,Zichz
-230,\x11,\x04,\xCB
-231,\x11,\x04,\xCB
+227,\x11,\x04,AzMiLion
+228,\x11,\x04,Blaziken257
+229,\x11,\x04,Gilor
+230,\x11,\x04,WobblyPython
+231,\x11,\x04,Zichz
 232,\x01,\x03,Localization
 233,\x01,\x05,Special Thanks
 234,\x11,\x04,The many members 

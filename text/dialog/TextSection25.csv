@@ -57,25 +57,25 @@
 051,0x218066,"<@RL,PhantomRenegade,00>そんなことが...!<CF><D1><@RL,DrAki,00>レトルト そしてレディよ<CD>わしらと ともに<CF><D1>ヘブンスゲ-トに とんでくれんか?<CF><D1><@RL,PhantomRenegade,00>分かリました<CF><D1><@RL,LadyRenegade,01>まかせといて ください!","<@RL,PhantomRenegade,00>That can't be...!<CF><D1><@RL,DrAki,00>Renegade, Lady, will the two of you come along to Heaven's Gate wit us?<CF><D1><@RL,PhantomRenegade,00>Yes, sir!<CF><D1><@RL,LadyRenegade,01>You can count on us!"
 052,0x218068,"<@RL,ScientistMale,00>わたしも ナエさんと いっしょに<CD>行きたかったのにっ! くやちいっ!!","<@RL,ScientistMale,00>I wanted to go with Nae too! Darn it!!"
 053,0x21806a,"<@RL,ScientistMale,00>あれ? 白玉 お前 いつの間に<CD>かえってきたんだ?","<@RL,ScientistMale,00>Huh? When did you get back, Shiratama?"
-054,0x21806c,"<@LL,Ikki,01>ふわぁ- よくねた!<CF><D1>さてと! アリカさそって<CD>次の 町に しゅっぱつだ!<CF><D1>たしか コンビニの 前で <CD>まってるって 言ってたよな",
-055,0x21806e,"<@LL,Ikki,04>それじゃ パパ ママ 行ってきます!<CF><D1><@RL,IkkiMom,02>行ってらっしゃい<CF><D1><@RL,IkkiDad,01>体には 気を つけるんだぞ<CF><D1><@LL,Ikki,04>うん!",
-056,0x218070,"<@RL,IkkiDad,01>大きく なったな<CD><&BUF0A>は<CF><D1><@RL,IkkiMom,02>そうね...",
-057,0x218072,"<@LL,Ikki,04>早いね アリカ<CF><D1><@RL,Erika,04>も- 何やってんの!<CD>まちくたびれちゃうわ<CF><D1>さっさと 行くわよ<CD><&BUF0A>",
-058,0x218074,"<@RL,Samantha,03>ここで まちぶせしていれば<CD>やつらが 来るはずよぉ<CF><D1>そしたら むリやリ のリこむのよぉ<CF><D1><@RL,Spyke,04>えぇ? うまく 行くんですかい?<CF><D1><@RL,Samantha,02>何よぉ もんく あるぅ?<CF><D1><@RL,Spyke,04>あ あリませんです はい",
-059,0x218076,"<@RL,Sloan,00>だれか 来た!",
-060,0x218078,"<@RL,Seaslug,00>やつらは えきから リニアにのって<CD>ひこう場に 行くはずだ<CF><D1>だから ここで<CD>まちぶせしていれば...<CF><D1><@RL,Gillgirl,01>さすがは サケカ-スさま<CD>かんペきな 計画ですわね<CF><D1><@RL,Seaslug,00>しっ やつらが 来たぞ",
-061,0x21807a,"<@RL,Seaslug,00>今だ!",
-062,0x21807c,"<@RL,Spyke,05>何だ? 何だ?<CF><D1><@RL,Samantha,02>何だか 分からないけど<CD>あたしらも 行くわよぉ!",
-063,0x21807e,"<@RL,Spyke,05>わっ! 体が ちぢんじまった!<CF><D1><@RL,Samantha,03>こうつごうじゃなぁい<CD>やつらに つづいて 行くわよぉ!",
-064,0x218080,"<@RL,Erika,02>もう! 何 もたもた してんのよ<CD>おいて行くわよっ!",
-065,0x218082,"<@LL,Ikki,03>できるなら のリたくないけど...",
+054,0x21806c,"<@LL,Ikki,01>ふわぁ- よくねた!<CF><D1>さてと! アリカさそって<CD>次の 町に しゅっぱつだ!<CF><D1>たしか コンビニの 前で <CD>まってるって 言ってたよな","<@LL,Ikki,01>Yaaaaawn, I slept well.<CF><D1>Alright! Let's hit up Arika and go to the next town! She's probably waiting by the convenience store."
+055,0x21806e,"<@LL,Ikki,04>それじゃ パパ ママ 行ってきます!<CF><D1><@RL,IkkiMom,02>行ってらっしゃい<CF><D1><@RL,IkkiDad,01>体には 気を つけるんだぞ<CF><D1><@LL,Ikki,04>うん!","<@LL,Ikki,04>Well, Dad, Mom, I'm off!<CF><D1><@RL,IkkiMom,02>Take care.<CF><D1><@RL,IkkiDad,01>Don't push yourself too much.<CF><D1><@LL,Ikki,04>Right!"
+056,0x218070,"<@RL,IkkiDad,01>大きく なったな<CD><&BUF0A>は<CF><D1><@RL,IkkiMom,02>そうね...","<@RL,IkkiDad,01><&BUF0A> sure has grown up.<CF><D1><@RL,IkkiMom,02>I know..."
+057,0x218072,"<@LL,Ikki,04>早いね アリカ<CF><D1><@RL,Erika,04>も- 何やってんの!<CD>まちくたびれちゃうわ<CF><D1>さっさと 行くわよ<CD><&BUF0A>","<@LL,Ikki,04>You sure are early, Arika.<CF><D1><@RL,Erika,04>Geez, what are you doing!? I was getting tired of waiting.<CF><D1>Let's get going, <&BUF0A>."
+058,0x218074,"<@RL,Samantha,03>ここで まちぶせしていれば<CD>やつらが 来るはずよぉ<CF><D1>そしたら むリやリ のリこむのよぉ<CF><D1><@RL,Spyke,04>えぇ? うまく 行くんですかい?<CF><D1><@RL,Samantha,02>何よぉ もんく あるぅ?<CF><D1><@RL,Spyke,04>あ あリませんです はい","<@RL,Samantha,03>If we wait here, they should show up. Then we just force ourselves on board.<CF><D1><@RL,Spyke,04>Eeh? Is it gonna go that smoothly?<CF><D1><@RL,Samantha,02>What's that? Any complaints?<CF><D1><@RL,Spyke,04>N-no, there are not."
+059,0x218076,"<@RL,Sloan,00>だれか 来た!","<@RL,Sloan,00>Someone's coming!"
+060,0x218078,"<@RL,Seaslug,00>やつらは えきから リニアにのって<CD>ひこう場に 行くはずだ<CF><D1>だから ここで<CD>まちぶせしていれば...<CF><D1><@RL,Gillgirl,01>さすがは サケカ-スさま<CD>かんペきな 計画ですわね<CF><D1><@RL,Seaslug,00>しっ やつらが 来たぞ","<@RL,Seaslug,00>They'll be taking the MagLev from this station to the airport, so if we lay in ambush here...<CF><D1><@RL,Gillgirl,01>As expected of you, Mr. Seaslug, isn't that just a perfect plan?<CF><D1><@RL,Seaslug,00>Shh, they're coming."
+061,0x21807a,"<@RL,Seaslug,00>今だ!","<@RL,Seaslug,00>Now!"
+062,0x21807c,"<@RL,Spyke,05>何だ? 何だ?<CF><D1><@RL,Samantha,02>何だか 分からないけど<CD>あたしらも 行くわよぉ!","<@RL,Spyke,05>What's is it? What's going on?<CF><D1><@RL,Samantha,02>No clue, but we're going too!"
+063,0x21807e,"<@RL,Spyke,05>わっ! 体が ちぢんじまった!<CF><D1><@RL,Samantha,03>こうつごうじゃなぁい<CD>やつらに つづいて 行くわよぉ!","<@RL,Spyke,05>Woah! My body shrank!<CF><D1><@RL,Samantha,03>Now isn't the time, after them!"
+064,0x218080,"<@RL,Erika,02>もう! 何 もたもた してんのよ<CD>おいて行くわよっ!","<@RL,Erika,02>Geez! What's taking you so long? We'll leave you behind!"
+065,0x218082,"<@LL,Ikki,03>できるなら のリたくないけど...","<@LL,Ikki,03>If possible, I don't want to ride this..."
 066,0x218084,"<@RL,Koji,02>早く せきに つけよ!",
 067,0x218086,"<@RL,Karin,04>わくわくしますわ",
 068,0x218088,"<@RL,Erika,00>つっ立ってないで 早く せきに<CD>つきなさいよ",
 069,0x21808a,"<@RL,Man,00>さいきん しゅっちょう ばっかリだ",
 070,0x21808c,"<@RL,Girl,00>あたし ヘブンスゲ-トに 行くの<CD>はじめてなのよ",
 071,0x21808e,"<@RL,Lady2,00>この子を いろんな ところに<CD>つれていって あげるの",
-072,0x218090,"<@LL,Ikki,03>せきに つこう...<*04>",
+072,0x218090,"<@LL,Ikki,03>せきに つこう...<*04>","<@LL,Ikki,03>Take a seat...?<*04>"
 073,0x218092,"<@RL,Erika,00>何だまってんのよ? ジオプレインの<CD>時は あんなに はしゃいでたのに<CF><D1><@LL,Ikki,03>こわいんだ ひこうきに のると<CD>おっこちないかなって 考えちゃって<CF><D1><@RL,Erika,07>今時そんなこと 考えてるなんて<CD>あんた 天ねんきねんぶつものね!<CF><D1>でも 「風のつばさ」に のった時は<CD>そんなこと 言ってなかったじゃない",
 074,0x218094,アテンション プリ-ズ<CD>アテンション プリ-ズ<CF><D1>とうきは まもなく...,
 075,0x218096,"<@RL,Erika,04>貝て 貝て <&BUF0A>!<CD>おみくじ町が あんなに 小さく",
