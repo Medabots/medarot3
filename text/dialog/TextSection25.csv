@@ -76,42 +76,42 @@
 070,0x21808c,"<@RL,Girl,00>あたし ヘブンスゲ-トに 行くの<CD>はじめてなのよ",
 071,0x21808e,"<@RL,Lady2,00>この子を いろんな ところに<CD>つれていって あげるの",
 072,0x218090,"<@LL,Ikki,03>せきに つこう...<*04>","<@LL,Ikki,03>Take a seat...?<*04>"
-073,0x218092,"<@RL,Erika,00>何だまってんのよ? ジオプレインの<CD>時は あんなに はしゃいでたのに<CF><D1><@LL,Ikki,03>こわいんだ ひこうきに のると<CD>おっこちないかなって 考えちゃって<CF><D1><@RL,Erika,07>今時そんなこと 考えてるなんて<CD>あんた 天ねんきねんぶつものね!<CF><D1>でも 「風のつばさ」に のった時は<CD>そんなこと 言ってなかったじゃない",
-074,0x218094,アテンション プリ-ズ<CD>アテンション プリ-ズ<CF><D1>とうきは まもなく...,
-075,0x218096,"<@RL,Erika,04>貝て 貝て <&BUF0A>!<CD>おみくじ町が あんなに 小さく",
-076,0x218098,"<@RL,Erika,02>って ちゃんと 聞いてるの!<CD><&BUF0A>!<CF><D1><@LL,Ikki,06>...",
-077,0x21809a,とうきは まもなく らんきリゅうに<CD>とつにゅう します,
-078,0x21809c,"<@RL,Karin,03>........<CF><D1><@RL,Koji,03>気分が すぐれないのか?<CD>早く ホテルで 休め カリン<CF><D1><@RL,Erika,04>あたしたちは このあたリを<CD>たんさくよ <&BUF0A>",
-079,0x21809e,"<@RL,Karin,04>では お先に しつれいしますわ<CF><D1><@LL,Ikki,05>だいじょうぶ? カリンちゃん<CD>あとで お貝まいに 行くよ<CF><D1><@RL,Karin,04><&BUF0A>くんは 本当に<CD>おやさしいですわね<CF><D1><@LL,Ikki,04>カリンちゃん♥<CF><D1><@RL,Erika,06>早く! 行くわよっ!!<CF><D1><@LL,Ikki,06>いっ いででででっ!!",
-080,0x2180a0,"<@RL,Koji,00>行くぞ カリン!<CF><D1><@RL,Karin,04>くすくす",
-081,0x2180a2,"<@RL,Erika,01>さあ 次に 行くわよっ!",
-082,0x2180a4,"<@RL,Crow,02>はなせ!",
-083,0x2180a6,"<@LL,Ikki,07>何だ?<CF><D1><@RL,Erika,07>じけんっ!?",
-084,0x2180a8,"<@RL,Man,00>こらっ!<CD>勝手に しゃしんを とるな!",
-085,0x2180aa,"<@RL,Erika,02>ちょっと! 何すんのよ!<CD>かえしてよ あたしの カメラっ!<CF><D1><@LL,Ikki,07>アリカっ!",
-086,0x2180ac,"<@LL,Ikki,07><&BUF07>!<CF><D1>足下を ねらって おどかしちゃえ!",
-087#kabuto,0x2180ae,"<@RL,Metabee,00>おう! まかせとけ!",
-087#kuwagata,0x2180ae,"<@RL,Rokusho,00>まかせろ",
-088,0x2180b0,"<@RL,Man,00>おわっ!",
-089,0x2180b2,"<@RL,Erika,01>ナイスっ!",
-090,0x2180b4,"<@RL,Man,00>このガキども!",
-091,0x2180b6,"<@RL,Man,00>あっ!!",
-092,0x2180b8,"<@RL,Man,00>こら-っ!!",
-093,0x2180ba,"<@RL,Man,00>おっと むせんが 入った<CF><D1>こちら ほかくはん ど-ぞ!<CF><D1><@RL,Mystery,00>おわなくて いいよ<CF><D1><@RL,Man,00>しかし おじょうさま<CF><D1><@RL,Mystery,00>おじょうさまと よぶのは やめろと<CD>なんども 言ってるだろう?<CF><D1>もう お前たちは かえっていい<CD>ぼくは 1人で さがす",
-094,0x2180bc,"<@LL,Ikki,06>ぜいっぜいっぜいっ<CF><D1><@RL,Erika,07>はあっはあっはあっ",
-095#kabuto,0x2180be,"<@RL,Metabee,00>なっさけね-なぁ お前ら<CD>そのていどで いき切れか?",
-095#kuwagata,0x2180be,"<@RL,Rokusho,00>そのていどで いきが あがるとは<CD>なさけない 話だ",
-096,0x2180c0,"<@LL,Ikki,06>そリゃ お前は<CD>走リなれてる だろうけど",
-097,0x2180c2,"<@LL,Ikki,00>でも 何だったんだ? あれ<CF><D1><@RL,Erika,00>きっと お金もちの 子どもを<CD>ねらった はんこうよ!",
-098,0x2180c4,"<@LL,Ikki,07>あっ! きみは さっきの",
-099,0x2180c6,"<@RL,Crow,00>おれを たすけたなんて 思うな<CD>たのんだ おぼえはない<CF><D1><@RL,Erika,02>何よ こいつ!",
-100,0x2180c8,"<@LL,Ikki,00>きみはだれ?<CD>どうして おわれてたの?<CF><D1><@RL,Crow,00>お前たち 地上人に<CD>名のる 名はない",
-101#kabuto,0x2180ca,"<@RL,Metabee,00>むかつくヤロ-だ",
-101#kuwagata,0x2180ca,"<@RL,Rokusho,00>ふざけた やつだ",
-102,0x2180cc,"<@LL,Ikki,05>何か むかしの ハチロウに<CD>わを かけて わるくしたみたいだ<CF><D1><@RL,Erika,00>ハチロウくんも 前は かなリ<CD>やなやつだったのよね<CF><D1>お金持ってると ゆがみやすいのね-<CF><D1>さっきのやつも きっと お金持ちの<CD>ボンボンよ<CF><D1><@LL,Ikki,04>ははは...",
-103,0x2180ce,"<@RL,Crow,00>地上から 来た だいひょう選手たちか<CD>たいくつしのぎに なればいいが",
-104,0x2180d0,"<@RL,Erika,04>さあ しゅざい しゅざいっ!",
-105,0x2180d2,"<@LL,Ikki,00>ぼくたちも 行こう",
+073,0x218092,"<@RL,Erika,00>何だまってんのよ? ジオプレインの<CD>時は あんなに はしゃいでたのに<CF><D1><@LL,Ikki,03>こわいんだ ひこうきに のると<CD>おっこちないかなって 考えちゃって<CF><D1><@RL,Erika,07>今時そんなこと 考えてるなんて<CD>あんた 天ねんきねんぶつものね!<CF><D1>でも 「風のつばさ」に のった時は<CD>そんなこと 言ってなかったじゃない","<@RL,Erika,00>What took you so long? Even though you were so excited with the Geo Plane.<CF><D1><@LL,Ikki,03>It's scary, I keep thinking of what will happen if it falls.<CF><D1><@RL,Erika,07>You've sure become a coward to think like that! Back when you were riding around on the 'Wings of Wind' you didn't say anything like that."
+074,0x218094,アテンション プリ-ズ<CD>アテンション プリ-ズ<CF><D1>とうきは まもなく...,"Your attention please,<D3>your attention please.<CF><D1>This plane will soon..."
+075,0x218096,"<@RL,Erika,04>貝て 貝て <&BUF0A>!<CD>おみくじ町が あんなに 小さく","<@RL,Erika,04>Look, look, <&BUF0A>!<D3>Omikuji Town is starting to look so small."
+076,0x218098,"<@RL,Erika,02>って ちゃんと 聞いてるの!<CD><&BUF0A>!<CF><D1><@LL,Ikki,06>...","<@RL,Erika,02>Are you listening to me?<D3><&BUF0A>!<CF><D1><@LL,Ikki,06>..."
+077,0x21809a,とうきは まもなく らんきリゅうに<CD>とつにゅう します,This plane will soon be entering turbulence.
+078,0x21809c,"<@RL,Karin,03>........<CF><D1><@RL,Koji,03>気分が すぐれないのか?<CD>早く ホテルで 休め カリン<CF><D1><@RL,Erika,04>あたしたちは このあたリを<CD>たんさくよ <&BUF0A>","<@RL,Karin,03>........<CF><D1><@RL,Koji,03>Aren't you feeling well? Go get some rewst at the hotel, Karin.<CF><D1><@RL,Erika,04>Let's look around here, <&BUF0A>."
+079,0x21809e,"<@RL,Karin,04>では お先に しつれいしますわ<CF><D1><@LL,Ikki,05>だいじょうぶ? カリンちゃん<CD>あとで お貝まいに 行くよ<CF><D1><@RL,Karin,04><&BUF0A>くんは 本当に<CD>おやさしいですわね<CF><D1><@LL,Ikki,04>カリンちゃん♥<CF><D1><@RL,Erika,06>早く! 行くわよっ!!<CF><D1><@LL,Ikki,06>いっ いででででっ!!","<@RL,Karin,04>Well then, I'll be going on ahead.<CF><D1><@LL,Ikki,05>Are you alright? I'll come check on you later, Karin.<CF><D1><@RL,Karin,04><&BUF0A>, you're so kind.<CF><D1><@LL,Ikki,04>Karin ♥<CF><D1><@RL,Erika,06>Hurry! Let's go!!<CF><D1><@LL,Ikki,06>O-Ow owowow!!"
+080,0x2180a0,"<@RL,Koji,00>行くぞ カリン!<CF><D1><@RL,Karin,04>くすくす","<@RL,Koji,00>Let's go, Karin!<CF><D1><@RL,Karin,04>*giggle*"
+081,0x2180a2,"<@RL,Erika,01>さあ 次に 行くわよっ!","<@RL,Erika,01>Come on, to the next place!"
+082,0x2180a4,"<@RL,Crow,02>はなせ!","<@RL,Crow,02>Let go!"
+083,0x2180a6,"<@LL,Ikki,07>何だ?<CF><D1><@RL,Erika,07>じけんっ!?","<@LL,Ikki,07>What was that?<CF><D1><@RL,Erika,07>Is there a case!?"
+084,0x2180a8,"<@RL,Man,00>こらっ!<CD>勝手に しゃしんを とるな!","<@RL,Man,00>Hey! Don't just go taking people's pictures!"
+085,0x2180aa,"<@RL,Erika,02>ちょっと! 何すんのよ!<CD>かえしてよ あたしの カメラっ!<CF><D1><@LL,Ikki,07>アリカっ!","<@RL,Erika,02>Hey! What are you doing!? Give back my camera!<CF><D1><@LL,Ikki,07>Arika!"
+086,0x2180ac,"<@LL,Ikki,07><&BUF07>!<CF><D1>足下を ねらって おどかしちゃえ!","<@LL,Ikki,07><&BUF07>!<CF><D1>Aim at their feet and give them a scare!"
+087#kabuto,0x2180ae,"<@RL,Metabee,00>おう! まかせとけ!","<@RL,Metabee,00>Okay! Leave it to me!"
+087#kuwagata,0x2180ae,"<@RL,Rokusho,00>まかせろ","<@RL,Rokusho,00>I will take care of it."
+088,0x2180b0,"<@RL,Man,00>おわっ!","<@RL,Man,00>Woah!"
+089,0x2180b2,"<@RL,Erika,01>ナイスっ!","<@RL,Erika,01>Nice!"
+090,0x2180b4,"<@RL,Man,00>このガキども!","<@RL,Man,00>These brats!"
+091,0x2180b6,"<@RL,Man,00>あっ!!","<@RL,Man,00>Ah!!"
+092,0x2180b8,"<@RL,Man,00>こら-っ!!","<@RL,Man,00>Heeey!!"
+093,0x2180ba,"<@RL,Man,00>おっと むせんが 入った<CF><D1>こちら ほかくはん ど-ぞ!<CF><D1><@RL,Mystery,00>おわなくて いいよ<CF><D1><@RL,Man,00>しかし おじょうさま<CF><D1><@RL,Mystery,00>おじょうさまと よぶのは やめろと<CD>なんども 言ってるだろう?<CF><D1>もう お前たちは かえっていい<CD>ぼくは 1人で さがす","<@RL,Man,00>Oops, the communicator is going off.<CF><D1>This is the capture team, go ahead!<CF><D1><@RL,Mystery,00>There is no need to pursue.<CF><D1><@RL,Man,00>But Mistress!<CF><D1><@RL,Mystery,00>How many times must I tell you to cut it out with the ""Mistress"" business?<CF><D1>You guys can go back now. I'll search on my own."
+094,0x2180bc,"<@LL,Ikki,06>ぜいっぜいっぜいっ<CF><D1><@RL,Erika,07>はあっはあっはあっ","<@LL,Ikki,06>*huff huff huff*<CF><D1><@RL,Erika,07>*haa haa haa*"
+095#kabuto,0x2180be,"<@RL,Metabee,00>なっさけね-なぁ お前ら<CD>そのていどで いき切れか?","<@RL,Metabee,00>How pathetic, getting exhausted frome just that."
+095#kuwagata,0x2180be,"<@RL,Rokusho,00>そのていどで いきが あがるとは<CD>なさけない 話だ","<@RL,Rokusho,00>Getting so worked up from that, pathetic."
+096,0x2180c0,"<@LL,Ikki,06>そリゃ お前は<CD>走リなれてる だろうけど","<@LL,Ikki,06>Well, you are used to running..."
+097,0x2180c2,"<@LL,Ikki,00>でも 何だったんだ? あれ<CF><D1><@RL,Erika,00>きっと お金もちの 子どもを<CD>ねらった はんこうよ!","<@LL,Ikki,00>But what was with that?<CF><D1><@RL,Erika,00>It was probably a crime targetting the kids of rich people!"
+098,0x2180c4,"<@LL,Ikki,07>あっ! きみは さっきの","<@LL,Ikki,07>Ah! You're the one..."
+099,0x2180c6,"<@RL,Crow,00>おれを たすけたなんて 思うな<CD>たのんだ おぼえはない<CF><D1><@RL,Erika,02>何よ こいつ!","<@RL,Crow,00>Don't go thinking that you saved me, I don't remember asking for your help.<CF><D1><@RL,Erika,02>What's with this guy!?"
+100,0x2180c8,"<@LL,Ikki,00>きみはだれ?<CD>どうして おわれてたの?<CF><D1><@RL,Crow,00>お前たち 地上人に<CD>名のる 名はない","<@LL,Ikki,00>Who are you?<D3>Why were you getting chased?<CF><D1><@RL,Crow,00>I have no name to give to you land walkers."
+101#kabuto,0x2180ca,"<@RL,Metabee,00>むかつくヤロ-だ","<@RL,Metabee,00>What an annoying guy."
+101#kuwagata,0x2180ca,"<@RL,Rokusho,00>ふざけた やつだ","<@RL,Rokusho,00>What a fool."
+102,0x2180cc,"<@LL,Ikki,05>何か むかしの ハチロウに<CD>わを かけて わるくしたみたいだ<CF><D1><@RL,Erika,00>ハチロウくんも 前は かなリ<CD>やなやつだったのよね<CF><D1>お金持ってると ゆがみやすいのね-<CF><D1>さっきのやつも きっと お金持ちの<CD>ボンボンよ<CF><D1><@LL,Ikki,04>ははは...","<@LL,Ikki,05>He's like if the old Hachirou had gotten even worse.<CF><D1><@RL,Erika,00>Hachirou did used to be pretty nasty.<CF><D1>It's easy to end up twisted when you have money...<CF><D1>That guy was probably born with a silver spoon.<CF><D1><@LL,Ikki,04>Hahaha..."
+103,0x2180ce,"<@RL,Crow,00>地上から 来た だいひょう選手たちか<CD>たいくつしのぎに なればいいが","<@RL,Crow,00>I hope the representatives of the land walkers will be good for killing boredom."
+104,0x2180d0,"<@RL,Erika,04>さあ しゅざい しゅざいっ!","<@RL,Erika,04>Now, let's go find some news, let's go!"
+105,0x2180d2,"<@LL,Ikki,00>ぼくたちも 行こう","<@LL,Ikki,00>Let's go too."
 106,0x2180d4,"<@LL,Ikki,00>メダロポリス行きの ひこうきは<CD>当分 出ないようだ",
 107,0x2180d6,"<@RL,Boy,00>ぼくも 大空を じゆうに<CD>とびまわリたいなあ",
 108,0x2180d8,"<@RL,MultiLeggedMedabot,00>どこかに ゴミは おちてませんか?",
@@ -134,8 +134,8 @@
 125,0x2180fa,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,00>はあ はあ...この店<CD>新はつばいの ジュ-ス おいてたか?<CF><D1><@LL,Ikki,00>それって まさか 店のおくの...<CF><D1><@RL,Koji,00>ナマコジュ-ス...<CD>男なら ちょうせんするベきだ!<CF><D1><@LL,Ikki,05>うげげ! あんなの のむのかよ!?",
 126,0x2180fc,"<@RL,Koji,01>これ 下さいっ!!!<CF><D1><@CC,CLEAR,FF>10本だと 1200¥に なリます<CF><D1><@LL,Ikki,06>じゅっ 10本!?",
 127,0x2180fe,"<@RL,Koji,02>お前も 男なら いっきに のみほせ!<CF><D1><@LL,Ikki,06>い いらないよ そんなの!<CF><D1><@RL,Koji,01>それでも 男か!?<CD>おれは いくぜ!<CF><D1><@CC,CLEAR,FF>ごきゅっ コリッ...<CF><D1><@LL,Ikki,07>コウジ...っ!<CF><D1><@RL,Koji,02>ま...まろやかで<CD>ほ...ほうじゅんな のどごし<CF><D1><&BUF0A><CD>お前も 男なら...<CF><D1><@LL,Ikki,05>...むリすんなよ コウジ...",
-128,0x218100,"<@LL,Ikki,00>まずは ホテルに チェックインしよう<CD>ホテルは えっと- 3Fと4Fだな<CF><D1>3Fに 行く?<*04>",
-129,0x218102,"<@LL,Ikki,00>じゃあ 4Fに 行こう",
+128,0x218100,"<@LL,Ikki,00>まずは ホテルに チェックインしよう<CD>ホテルは えっと- 3Fと4Fだな<CF><D1>3Fに 行く?<*04>","<@LL,Ikki,00>Let's check out the hotel first. Uhm, it should be on the third and fourth floor.<CF><D1>Go to the third floor?<*04>"
+129,0x218102,"<@LL,Ikki,00>じゃあ 4Fに 行こう","<@LL,Ikki,00>Let's go to the fourth floor then."
 130,0x218104,"<@LL,Ikki,06>キクヒメは ホテルの3Fだ!",
 131,0x218106,"<@RL,Clerk,00>おきゃくさまの おヘやは<CD>左の おくになリます",
 132,0x218108,"<@RL,Clerk,00>エアロホテルヘ ようこそ!",
@@ -146,8 +146,8 @@
 137,0x218112,"<@RL,Man,00>ひょっとして 今の 貝てた?",
 138,0x218114,"<@RL,Man,00>きみも レンタルビデオの店で<CD>かいいんカ-ドとまちがえて<CF><D1>電車のていきけんとか<CD>出しちゃったこと あるだろ?",
 139,0x218116,"<@RL,Erika,00>ちょっと きゅうけい",
-140,0x218118,"<@LL,Ikki,00>ふ- つかれた-<CD>イスに すわって ひと休みしよう",
-141,0x21811a,"<@LL,Ikki,00>う-ん じっとしてても つまんない<CF><D1>何か 面白い テレビでも<CD>やってないかな?",
+140,0x218118,"<@LL,Ikki,00>ふ- つかれた-<CD>イスに すわって ひと休みしよう","<@LL,Ikki,00>Phew, I'm beat. Let's take a seat and rest a bit."
+141,0x21811a,"<@LL,Ikki,00>う-ん じっとしてても つまんない<CF><D1>何か 面白い テレビでも<CD>やってないかな?","<@LL,Ikki,00>Hmmm, just sitting around is boring.<CF><D1>Is there anything interesting on TV?"
 142,0x21811c,"<@LL,Ikki,00>ここは アリカの ヘやだな",
 143,0x21811e,"<@LL,Ikki,00>ここは コウジの ヘやだ",
 144,0x218120,"<@LL,Ikki,04>ここは カリンちゃんの ヘやだ",
@@ -163,11 +163,11 @@
 154,0x218134,"<@LL,Ikki,00>ぼくは ヘやに いないようだ<CF><D1><@LL,Ikki,01>...なんちゃって",
 155,0x218136,"<@LL,Ikki,00>コウジは いないようだ",
 156,0x218138,"<@LL,Ikki,00>今は やめておこう",
-157,0x21813a,"<@RL,Karin,00>はい<CF><D1><@LL,Ikki,04>あ カリンちゃん<CD>今 入っていいかな?<CF><D1><@RL,Karin,04>どうぞ <CD><&BUF0A>くん",
+157,0x21813a,"<@RL,Karin,00>はい<CF><D1><@LL,Ikki,04>あ カリンちゃん<CD>今 入っていいかな?<CF><D1><@RL,Karin,04>どうぞ <CD><&BUF0A>くん","<@RL,Karin,00>Yes?<CF><D1><@LL,Ikki,04>Ah, Karin. Is it okay if I come in?<CF><D1><@RL,Karin,04>Go ahead, <&BUF0A>."
 158,0x21813c,"<@RL,Karin,04>楽しみですわね",
 159,0x21813e,"<@RL,Karin,04><&BUF0A>くんとの ロボトル<CD>とても 楽しかったですわ",
 160,0x218140,"<@RL,Koji,00>アリカちゃんに でんごん<CD>よろしくな!",
-161,0x218142,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,02>何だ? <&BUF0A><CD>カリンの ようす貝か?<CF><D1><@LL,Ikki,04>うん まあ<CF><D1><@RL,Koji,02>ふふん 1人で ヘやにいるの<CD>さみしかったんだろ<CF><D1><@LL,Ikki,05>ど-せ",
+161,0x218142,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,02>何だ? <&BUF0A><CD>カリンの ようす貝か?<CF><D1><@LL,Ikki,04>うん まあ<CF><D1><@RL,Koji,02>ふふん 1人で ヘやにいるの<CD>さみしかったんだろ<CF><D1><@LL,Ikki,05>ど-せ","<@LL,Ikki,00>Ah, Koji.<CF><D1><@RL,Koji,02>What is it, <&BUF0A>?<D3>Come to check on Karin?<CF><D1><@LL,Ikki,04>Yeah, I guess.<CF><D1><@RL,Koji,02>Hm-hmm, you got lonely being alone in your room, huh?<CF><D1><@LL,Ikki,05>Anyway..."
 162,0x218144,"<@RL,Koji,00>そうそう <&BUF0A><CD>おれたち 今日は<CF><D1>しょうたい選手として<CD>ワタリドリ家に 行くことになってる<CF><D1><@LL,Ikki,00>何? ワタリドリ家って<CF><D1><@RL,Koji,03>お前な- ヘブンスゲ-トと 言えば<CD>今や せいじの 中心の 場所だぜ?<CF><D1>せいじの 中心じんぶつと言えば?<CF><D1><@LL,Ikki,01>そうリだいじん?<CD>...何ちゃって!<CF><D1><@RL,Koji,03>そうリだいじんの<CD>名前ぐらい 知っとけよな",
 163,0x218146,"<@LL,Ikki,07>え--っ! そそそそんなっ!!<CF><D1><@RL,Koji,03>気づくのが おそいぜ<CF><D1><@LL,Ikki,05>何で そんな えらい人が<CD>ぼくたちなんかを?<CF><D1><@RL,Koji,00>そうリは すっげぇ ロボトルファンで<CD>ロボトルを はやらせた 1人だとさ<CF><D1>...で そうリは「わが国を<CD>だいひょうする メダロッタ-に<CF><D1>ぜひ会いたい」んだとよ<CF><D1><@LL,Ikki,05>うそみたい<CF><D1><@RL,Koji,02>あいては ただのロボトルマニアの<CD>おっさんさ...まっ そんなわけで<CF><D1>夕方 ホテルのヘやの前に おむかえが<CD>来るそうだ よろしくな<CF><D1><@LL,Ikki,06>よよよろしくって<CD>こっ 心の じゅんびが...<CF><D1><@RL,Koji,02>アリカちゃんにも<CD>つたえといてくれよ",
 164,0x218148,"<@LL,Ikki,00>今は いないみたいだ",
