@@ -31,23 +31,23 @@
 029,0x21c03a,"<@RL,Man3,00>あの先生 いつも 自分のすきな<CD>じゅぎょうを するんだよ",
 030,0x21c03c,"<@RL,Man3,00>先生の じゅぎょうは 大変<CD>きょうみぶかい ふむふむ",
 031,0x21c03e,"<@RL,Man3,00>ぼくはしょうらい いしゃに なるのだ<CF><D1>だから 今のうちに<CD>ベんきょう ベんきょう!",
-032,0x21c040,"<@RL,Lady3,00>そこの あなた! いいものあげるわ!<CD>地上人って びんぼうなんでしょ?",
-033,0x21c042,"<@LL,Ikki,00>女の子が パ-ツを足下に おとした<CD>プライドをすてて ひろっちゃえ!?<*04>",
-034,0x21c044,"<@LL,Ikki,01>ラッキ-!<CF><D1><@RL,Lady3,00>地上人は お金もプライドもないのね",
-035,0x21c046,"<@LL,Ikki,02>バカにするなっ!<CD>それに その 地上人って言い方も<CF><D1>きみの たいども 気にいらないねっ!<CF><D1><@RL,Lady3,00>ふんっ!",
-036,0x21c048,"<@RL,Lady3,00>何? パ-ツがほしいの?<CD>やっぱリあなたは 地上人ね",
+032,0x21c040,"<@RL,Lady3,00>そこの あなた! いいものあげるわ!<CD>地上人って びんぼうなんでしょ?","<@RL,Lady3,00>You there! I have something for you!<D3>You surface dwellers are poor, right?"
+033,0x21c042,"<@LL,Ikki,00>女の子が パ-ツを足下に おとした<CD>プライドをすてて ひろっちゃえ!?<*04>","<@LL,Ikki,00>The girl dropped a part at my feet. Should I put aside my pride to pick it up!?<*04>"
+034,0x21c044,"<@LL,Ikki,01>ラッキ-!<CF><D1><@RL,Lady3,00>地上人は お金もプライドもないのね","<@LL,Ikki,01>Lucky!<CF><D1><@RL,Lady3,00>You surface dwellers have no money nor pride, huh?"
+035,0x21c046,"<@LL,Ikki,02>バカにするなっ!<CD>それに その 地上人って言い方も<CF><D1>きみの たいども 気にいらないねっ!<CF><D1><@RL,Lady3,00>ふんっ!","<@LL,Ikki,02>Don't look down on me!<D3>And I don't like how you said surface dwellers either!<CF><D1><@RL,Lady3,00>Hmph!"
+036,0x21c048,"<@RL,Lady3,00>何? パ-ツがほしいの?<CD>やっぱリあなたは 地上人ね","<@RL,Lady3,00>What? You want parts?<D3>You're a surface dweller after all, huh?"
 037,0x21c04a,"<@RL,Lady3,00>ふん! あなたのかお わすれないわよ",
 038,0x21c04c,"<@RL,Lady3,00>前のせきの子 むかしから せいかく<CD>わるかったけど<CF><D1>そうリだいじんの むすめが来てから<CD>さらに わるくなったわ!",
-039,0x21c04e,きみ!,
-040,0x21c050,"<@LL,Ikki,00>何 やってんの?",
-041,0x21c052,"<@RL,Erika,05>あの先生が もんだいを 出して<CF><D1><@RL,Koji,03>答えられなかったから ここで<CD>ベんきょう させられてるんだ",
-042,0x21c054,"<@RL,Man,00>きみ ちゃんと ベんきょうしてるか?<CD>してるなら このもんだいに<CF><D1>答えてみなさい 答えられなかったら<CD>きみも ここで ベんきょうしなさい<CF><D1><@LL,Ikki,06>え? 何で?",
-043,0x21c056,"<@RL,Man,00>「はい」か「いいえ」で 答えなさい<CD>だい1もん!!!<CF><D1>メダロットの 頭パ-ツは<CD>院にも つけられる?<*04>",
-044,0x21c058,"<@RL,Man,00>ふむ では だい2もん!<CF><D1>ひこう型メダロットに よくきく<CD>こうげきは アンチシ-である?<*04>",
-045,0x21c05a,"<@RL,Man,00>それでは さいごの もんだい!<CF><D1>わたしの父さんのきょうだいの母さんの<CD>いとこの親せきの友だちの知リ合いの<CF><D1>おじいさんの兄さんのよく行く公園の<CD>そばの家の近くは きみの家に近い?<*04>",
-046,0x21c05c,"<@RL,Man,00>む! ぜんもんせいかいだ!<CD>よくベんきょう してるね",
-047,0x21c05e,"<@RL,Koji,03>さいごの もんだい よく分かったな!<CF><D1><@RL,Erika,06>あんなの はんそくよ!",
-048,0x21c060,"<@RL,Man,00>ん きみ 今のは じょうだんだよね?<CF><D1><@LL,Ikki,06>あ あたリまえじゃ ないですか!<CF><D1><@RL,Man,00>それでは もう1回 行くよ?",
+039,0x21c04e,きみ!,You!
+040,0x21c050,"<@LL,Ikki,00>何 やってんの?","<@LL,Ikki,00>What's going on?"
+041,0x21c052,"<@RL,Erika,05>あの先生が もんだいを 出して<CF><D1><@RL,Koji,03>答えられなかったから ここで<CD>ベんきょう させられてるんだ","<@RL,Erika,05>That teacher gave me a question I couldn't answer.<CF><D1><@RL,Koji,03>We couldn't answer, so we're being forced to stay here and study."
+042,0x21c054,"<@RL,Man,00>きみ ちゃんと ベんきょうしてるか?<CD>してるなら このもんだいに<CF><D1>答えてみなさい 答えられなかったら<CD>きみも ここで ベんきょうしなさい<CF><D1><@LL,Ikki,06>え? 何で?","<@RL,Man,00>Have you been diligently studying? Prove it by answering this question. If you can't, then stay here and study too.<CF><D1><@LL,Ikki,06>Eh? Why?"
+043,0x21c056,"<@RL,Man,00>「はい」か「いいえ」で 答えなさい<CD>だい1もん!!!<CF><D1>メダロットの 頭パ-ツは<CD>院にも つけられる?<*04>","<@RL,Man,00>Answer with ""Yes"" or ""No"", first question!!<CF><D1>Can you attach a Medarot's head part to its arms?<*04>"
+044,0x21c058,"<@RL,Man,00>ふむ では だい2もん!<CF><D1>ひこう型メダロットに よくきく<CD>こうげきは アンチシ-である?<*04>","<@RL,Man,00>Hmph, well then, question 2!<CF><D1>Are anti-sea attacks effective against flying-type medarots?<*04>"
+045,0x21c05a,"<@RL,Man,00>それでは さいごの もんだい!<CF><D1>わたしの父さんのきょうだいの母さんの<CD>いとこの親せきの友だちの知リ合いの<CF><D1>おじいさんの兄さんのよく行く公園の<CD>そばの家の近くは きみの家に近い?<*04>","<@RL,Man,00>And now for the last question!<CF><D1>Is my father's sibling's mother's male cousin's relative's friend's acquaintance's grandfather's big brother's oft visted park's nearby house close to your house?<*04>"
+046,0x21c05c,"<@RL,Man,00>む! ぜんもんせいかいだ!<CD>よくベんきょう してるね","<@RL,Man,00>Mm! You got them all correct! You've been studying well, I see."
+047,0x21c05e,"<@RL,Koji,03>さいごの もんだい よく分かったな!<CF><D1><@RL,Erika,06>あんなの はんそくよ!","<@RL,Koji,03>You figured out that last question!<CF><D1><@RL,Erika,06>You cheated!"
+048,0x21c060,"<@RL,Man,00>ん きみ 今のは じょうだんだよね?<CF><D1><@LL,Ikki,06>あ あたリまえじゃ ないですか!<CF><D1><@RL,Man,00>それでは もう1回 行くよ?","<@RL,Man,00>Mm, that just now was a joke, right?<CF><D1><@LL,Ikki,06>N-naturally!<CF><D1><@RL,Man,00>Okay then, let's try again."
 049,0x21c062,"<@RL,Man,00>ごほうびを あげよう",
 050,0x21c064,"<@RL,Man,00>せっかく 来たんだ<CD>きみも じゅぎょうを うけなさい",
 051,0x21c066,"<@RL,Man3,00>え きみ 地上に すんでるの?<CD>あ そうか びんぼうなんだね",
