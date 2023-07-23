@@ -397,10 +397,10 @@ ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
   ld [$C103], a
   ld a, $18
   ld [$C104], a
-  ld a, 1
-  ld [$C0A0], a
-  ld a, 0
+  xor a
   ld [$C0A1], a
+  inc a ; ld a, 1
+  ld [$C0A0], a
   ld a, $B4
   ld [$C0A2], a
   ld a, 7
@@ -411,12 +411,12 @@ ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
   ld [$C0A4], a
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 0
+  xor a
   ld b, a
   ld a, $36
   ld de, $C0A0
   call $33B2
-  ld a, 0
+  xor a
   ld b, a
   ld a, $84
   ld de, $C100
@@ -432,7 +432,9 @@ ShopShopkeeperWelcomeMessageState::
   add $DE
   ld c, a
   ld b, 0
-  ld a, 2
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  inc a ; ld a, 2
   call WrapMainScriptProcessor
   ld a, [W_MainScriptExitMode]
   or a
