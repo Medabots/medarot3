@@ -188,13 +188,13 @@
 179,0x218166,"<@LL,Ikki,00>はかせ! また あの ミニ...<CF><D1><@RL,DrAki,01>おお <&BUF0A>か<CD>ちょうどよかった<CF><D1>これを 持って行くがいい",
 180,0x218168,"<@LL,Ikki,07>えっ どうして これを!?<CF><D1><@RL,DrAki,01>何 ロボロボ団の 考えることなど<CD>お貝通しじゃ!<CF><D1>わしらが ここに 来たのは<CD>こういう じたいも 貝こしての<CF><D1>ことじゃ!<CF><D1>ミニミニマシ-ンの こうぞうを<CD>かいせきし このドリ-ムマシ-ンで<CF><D1>作リ上げた だい1ごうじゃ!<CD>きゃつらを これいじょう<CF><D1>のさばらせる わけには いかん!<CD>がんばって くれるかの?<CF><D1><@LL,Ikki,01>はい!",
 181,0x21816a,"<@RL,DrAki,00>ん? 何じゃ?<CF><D1><@LL,Ikki,05>はかせ「風のつばさ」<CD>持ってませんか?<CF><D1><@RL,DrAki,02>今は 持ってないぞい<CD>それにの ここで「風のつばさ」を<CF><D1>持っておっても あまリ いみは<CD>ないんじゃ<CF><D1>「風のつばさ」では 地上と<CD>このヘブンスゲ-トとを<CF><D1>行き来するのは ふかのうじゃからな<CF><D1>使い勝手が よくないというので<CD>今では「風のつばさ」は<CF><D1>メダロッタ-の 間でも あまリ<CD>使われんように なっとるんじゃ<CF><D1>「風のつばさ」も さすがに<CD>ほんものの ひこうきには<CF><D1>勝てんからの<CF><D1><@LL,Ikki,03>そうなんですか...はぁ",
-182,0x21816c,"<@RL,DrAki,01>お前さんには いつも めいわくを<CD>かけっぱなしじゃな",
+182,0x21816c,"<@RL,DrAki,01>お前さんには いつも めいわくを<CD>かけっぱなしじゃな","<@RL,DrAki,01>You're always getting caught up in trouble, don't you?"
 183,0x21816e,"<@LL,Ikki,07>あれ!? はかせ! ナエさん!","<@LL,Ikki,07>Huh!? Professor! Ms. Nae!"
 184,0x218170,"<@RL,DrAki,01>おお <&BUF0A>!<CF><D1><@RL,Nae,01>こんにちは <&BUF0A>くん<CF><D1><@LL,Ikki,04>はかせたちも 来てたんですね!<CF><D1><@RL,Nae,01>おじいさまったら<CD><&BUF0A>くんの ことが<CF><D1>しんぱいで たまらない<CD>みたいなんです","<@RL,DrAki,01>Ooh, <&BUF0A>!<CF><D1><@RL,Nae,01>Hello, <&BUF0A>.<CF><D1><@LL,Ikki,04>Professor, you guys came here too!<CF><D1><@RL,Nae,01>Grandpa is so worried about you that it seems he couldn't stand it."
 185,0x218172,"<@RL,DrAki,03>こ これ ナエ!<CD>よけいなことを 言うでないっ!","<@RL,DrAki,03>H-hey, Nae! Don't say unnecessary things!!"
 186,0x218174,"<@RL,DrAki,00>コホン! と ともかくじゃ<CD>この ヘブンスゲ-トの<CF><D1>メダロット社も かなリの<CD>ぎじゅつリょくを ほこっておる<CF><D1>貝学していくが よい","<@RL,DrAki,00>Ahem! A-anyway, the Medarot Company here at Heaven's Gate boasts a considerable amout of technological prowess. Take a look around."
 187,0x218176,"<@RL,Nae,01>メダリンピック<CD>がんばって くださいね!",
-188,0x218178,"<@RL,Nae,01><&BUF0A>くん<CF><D1>たすけてくださって<CD>あリがとうございます",
+188,0x218178,"<@RL,Nae,01><&BUF0A>くん<CF><D1>たすけてくださって<CD>あリがとうございます","<@RL,Nae,01><&BUF0A>,<CF><D1>Thank you for helping us."
 189,0x21817a,"<@RL,ScientistMale,00>ここに あるのは ゆめの きかい<CD>ドリ-ム.マッシ-ン!<CF><D1>何と! ざいリょうを 中に入れると<CD>かんせいひんが 出てくるんだ<CF><D1>中に パ-ツの ざいリょうが<CD>入っていて",
 190#kabuto,0x21817c,"<@RL,ScientistMale,00>たとえば「カブト」と 入力すると",
 190#kuwagata,0x21817c,"<@RL,ScientistMale,00>たとえば「クワガタ」と 入力すると",
@@ -204,7 +204,7 @@
 194,0x218184,"<@RL,ScientistMale,00>この メダロット社は ユウキ<CD>ぼっちゃんが まかされて いるんだ<CF><D1>あの人 なかなかの やリ手だよ<CD>わるい くせさえ なけリゃな",
 195,0x218186,"<@RL,ScientistMale,01>ヘブンスタワ- メダロット社に<CD>ようこそ",
 196,0x218188,"<@RL,SelectCorpsGrunt,00>あ- そこの 少年!",
-197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます",
+197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます","<@RL,SelectCorpsGrunt,00>We have received a report of a thief entering Heaven's Tower, we ask that everyone remain vigilant!<CF><D1><@LL,Ikki,00>A thief?<CF><D1><@RL,SelectCorpsGrunt,00>The Heavens Gate branch of fthe Select Corps is located in Office 1, we request any information."
 198,0x21818c,"<@RL,MultiLeggedMedabot,00>もう いやだ<CD>なんで 多脚パ-ツのオレが<CF><D1>2本足で 立たなきゃならんのだ?",
 199,0x21818e,"<@RL,MultiLeggedMedabot,00>なんだか 上が さわがしいな",
 200,0x218190,"<@RL,ScientistMale,01>次は ふゆうに ちょうせんだ!",
@@ -263,74 +263,74 @@
 253,0x2181fa,"<@LL,Ikki,07>ロボロボ団!?","<@LL,Ikki,07>The Roborobo Gang?"
 254,0x2181fc,"<@RL,Mystery,00>ふはははははは!!","<@RL,Mystery,00>Hwahahaha!!"
 255,0x2181fe,"<@RL,Mystery,00>とうっ!","<@RL,Mystery,00>Woah!"
-256,0x218200,"<@LL,Ikki,07>レトルトさん!?<CF><D1><@RL,PhantomRenegade,01>いろどリましょう しょくたくを<CD>みんなで ふせごう つまみぐい<CF><D1>じょうおんほぞんで 受をつつみこむ<CD>カレ-なる メダロッタ-<CF><D1>快盗レトルト ただ今 さんじょう!",
-257,0x218202,"<@LL,Ikki,07>どうして レトルトさんと<CD>ロボロボ団が ここに!?",
-258,0x218204,"<@RL,PhantomRenegade,00>このわたしが 来たからには<CD>もはや あくじは のがさない!<CF><D1><@LL,Ikki,05>いえ そうじゃなくて...",
-259,0x218206,"<@RL,PhantomRenegade,03>まてっ!",
-260,0x218208,"<@RL,SelectCorpsGrunt,02>くせ者 ご用で あリます!",
-261,0x21820a,"<@RL,SelectCorpsGrunt,02>そのかっこう まさしく ドロボウ!<CD>おとなしく つかまるで あリます!<CF><D1><@RL,PhantomRenegade,03>なっ ちがう! ドロボウは<CD>わたしではなく...っ!",
-262,0x21820c,"<@RL,SelectCorpsGrunt,02>来るで あリます!<CF><D1><@LL,Ikki,07>あっ! レトルトさん!",
-263,0x21820e,"<@LL,Ikki,00>...行っちゃった",
-264,0x218210,"<@LL,Ikki,06>レトルトさんは ともかく<CD>ロボロボ団の やつら<CF><D1>やっぱリ ミニミニマシ-ンを<CD>使って ここに?...大変だ!",
-265,0x218212,"<@RL,Koji,01><&BUF0A>!<CD>ロボロボ団が 出たぞ!<CF><D1><@LL,Ikki,06>そうなんだ なにも おこらなきゃ<CD>いいけど<CF><D1><@RL,Koji,01>何もさせや しないさ!<CD>おれは 7かいから 上で<CF><D1>ロボロボ団を さがすから お前に<CD>6かいから 下を まかせるぜ!",
-266,0x218214,"<@LL,Ikki,00>早く ロボロボ団を さがさないと<CF><D1>で コウジ-! そっちは 7かいから<CD>上じゃ ないぞ-",
+256,0x218200,"<@LL,Ikki,07>レトルトさん!?<CF><D1><@RL,PhantomRenegade,01>いろどリましょう しょくたくを<CD>みんなで ふせごう つまみぐい<CF><D1>じょうおんほぞんで 受をつつみこむ<CD>カレ-なる メダロッタ-<CF><D1>快盗レトルト ただ今 さんじょう!","<@LL,Ikki,07>Phantom Renegade!?<CF><D1><@RL,PhantomRenegade,01>Coloring the dinner table and preventing filching, lovingly kept at room temperature and clad in curry, the medarotter, Phantom Renegade has arrived!"
+257,0x218202,"<@LL,Ikki,07>どうして レトルトさんと<CD>ロボロボ団が ここに!?","<@LL,Ikki,07>Why are Phantom Renegade and the Roborobos here!?"
+258,0x218204,"<@RL,PhantomRenegade,00>このわたしが 来たからには<CD>もはや あくじは のがさない!<CF><D1><@LL,Ikki,05>いえ そうじゃなくて...","<@RL,PhantomRenegade,00>No that I've arrived, evil will not escape!<CF><D1><@LL,Ikki,05>No, I didn't mean..."
+259,0x218206,"<@RL,PhantomRenegade,03>まてっ!","<@RL,PhantomRenegade,03>Hold it!"
+260,0x218208,"<@RL,SelectCorpsGrunt,02>くせ者 ご用で あリます!","<@RL,SelectCorpsGrunt,02>We have found a suspicious person!"
+261,0x21820a,"<@RL,SelectCorpsGrunt,02>そのかっこう まさしく ドロボウ!<CD>おとなしく つかまるで あリます!<CF><D1><@RL,PhantomRenegade,03>なっ ちがう! ドロボウは<CD>わたしではなく...っ!","<@RL,SelectCorpsGrunt,02>With a look like this, there is no doubt that he's the thief! Come along peacefully!<CF><D1><@RL,PhantomRenegade,03>Wh- You're wrong! I'm not a thief...!"
+262,0x21820c,"<@RL,SelectCorpsGrunt,02>来るで あリます!<CF><D1><@LL,Ikki,07>あっ! レトルトさん!","<@RL,SelectCorpsGrunt,02>Come along!<CF><D1><@LL,Ikki,07>Ah! Phantom Renegade!"
+263,0x21820e,"<@LL,Ikki,00>...行っちゃった","<@LL,Ikki,00>...He left."
+264,0x218210,"<@LL,Ikki,06>レトルトさんは ともかく<CD>ロボロボ団の やつら<CF><D1>やっぱリ ミニミニマシ-ンを<CD>使って ここに?...大変だ!","<@LL,Ikki,06>Other than Phantom Renegade, there was also the Roborobo Gang, did they end up using the MiniMini Machine to get here? ...This is an emergency!"
+265,0x218212,"<@RL,Koji,01><&BUF0A>!<CD>ロボロボ団が 出たぞ!<CF><D1><@LL,Ikki,06>そうなんだ なにも おこらなきゃ<CD>いいけど<CF><D1><@RL,Koji,01>何もさせや しないさ!<CD>おれは 7かいから 上で<CF><D1>ロボロボ団を さがすから お前に<CD>6かいから 下を まかせるぜ!","<@RL,Koji,01><&BUF0A>!<D3>The Roborobo Gang is here!<CF><D1><@LL,Ikki,06>Yeah, I'll be glad if nothing happens, but...<CF><D1><@RL,Koji,01>We won't let anything happen!<D3>I'll check the seventh floor and up for the Roborobo Gang, you take the sixth and below."
+266,0x218214,"<@LL,Ikki,00>早く ロボロボ団を さがさないと<CF><D1>で コウジ-! そっちは 7かいから<CD>上じゃ ないぞ-","<@LL,Ikki,00>I've gotta hurry and find the Roborobo Gang.<CF><D1>And Koji! This isn't the seventh floor!"
 267,0x218216,"<@LL,Ikki,00>まずは タワ-を たんさくだ!",
-268,0x218218,...こまったわね...じゃない?<CD>こうなったら...が...だけど,
-269,0x21821a,"<@LL,Ikki,00>んん? 何だか 上の方が<CD>さわがしいぞ",
+268,0x218218,...こまったわね...じゃない?<CD>こうなったら...が...だけど,...no good...it?<D3>I'm sorry....but...
+269,0x21821a,"<@LL,Ikki,00>んん? 何だか 上の方が<CD>さわがしいぞ","<@LL,Ikki,00>Mm? It's a bit noisy up from here."
 270,0x21821c,"<@RL,Man,00>いや- こまったねぇ-",
 271,0x21821e,"<@RL,Lady2,00>いやだわぁ どうしましょ",
-272,0x218220,"<@LL,Ikki,00>どうしたんですか?<CF><D1><@RL,Lady2,00>中に 変な人が 立てこもって<CD>中から カギを かけちゃったのよ<CF><D1><@LL,Ikki,00>そいつら 金魚ばちみたいな<CD>ヘルメット かぶってませんでした?<CF><D1><@RL,Lady2,00>ええ それから かめんと マントを<CD>つけた 女の人も 入っていったわ<CF><D1><@LL,Ikki,00>かめんと マント?<CF><D1><@RL,RubberRoboGrunt,03>ロボ-っ!",
-273,0x218222,"<@RL,Mystery,00>まちなさいっ!",
-274,0x218224,"<@LL,Ikki,07>レトルトレディ!<CF><D1><@RL,LadyRenegade,01>あら たくさん おあつまリのようね!<CD>では ここで 1つ",
-275,0x218226,"<@RL,LadyRenegade,00>さかせましょう おこめの花",
-276,0x218228,"<@RL,LadyRenegade,00>ちらしましょう あくの花",
-277,0x21822a,"<@RL,LadyRenegade,00>天から まいおリた<CD>びじょメダロッタ-<CF><D1>快盗レトルトレディ<CD>ただ今 さんじょう!",
-278,0x21822c,"<@LL,Ikki,01>ぱちぱちぱち!<CF><D1><@LL,Ikki,00>...と はくしゅしてる<CD>場合じゃない<CF><D1>レトルトレディ! あの...!<CF><D1><@RL,LadyRenegade,00>話は あとよ<CD><&BUF0A>くん!<CF><D1>とにかく 今は ここに 入リこんだ<CD>ロボロボ団を たいじすること!<CF><D1>セレクト隊や レトルトのやつじゃ<CD>たよリに なんないから",
-279,0x21822e,"<@LL,Ikki,06>...あっ! 行っちゃった<CF><D1><@RL,Man,00>何だか よく分からないが<CD>変なやつらは 行ってしまったし<CF><D1>しごとに もどるか<CF><D1><@RL,Lady2,00>そうね",
-280,0x218230,"<@LL,Ikki,00>ぼくも こうしちゃ いられない!<CD>ロボロボ団を さがしださなきゃ<CF><D1>やつら こんな所まで 来て<CD>何を たくらんでるんだ?",
-281,0x218232,"<@LL,Ikki,05>メダロット社とか はかせたちとか<CD>あぶないかも...",
-282,0x218234,...で あリます!,
-283,0x218236,"<@LL,Ikki,06>セレクト隊が 来てる!?",
-284,0x218238,"<@RL,SelectCorpsGrunt,02>え- ロボロボ団に つぐ!<CF><D1>すみやかに ひとじちを かいほうし<CD>とうこうするで あリます<CF><D1><@LL,Ikki,07>メダロットはかせと<CD>ロボロボかんぶたち!<CF><D1><@RL,DrAki,02>やれやれ わしとしたことが<CD>つかまってしもうたわい",
-285,0x21823a,"<@RL,Squidguts,00>動くでない!<CD>おとなしく するのじゃ!",
-286,0x21823c,"<@RL,Shrimplips,01>この ドリ-ムマシンで<CD>何だって 作れちゃうんでしゅね!<CF><D1>こ こうふん してきたでしゅ!",
-287,0x21823e,"<@RL,DrAki,03>や やめるんじゃ お前たち!<CD>それは まだ しさくだんかいで!<CF><D1><@RL,Squidguts,01>メダロットを<CD>たいリょう せいさんじゃ!<CF><D1><@RL,Gillgirl,01>ブランドの バッグや<CD>ようふくも ほしいですわ!<CF><D1><@RL,Shrimplips,01>あたちは あたらしい おしゃぶリが<CD>ほしいでしゅ!",
-288,0x218240,ガガガガガ,
-289,0x218242,"........<CF><D1><@RL,Shrimplips,00>おかしいでしゅね<CF><D1><@RL,Gillgirl,00>こわれたですかしら?",
-290,0x218244,"<@CC,CLEAR,FF>ドド-ン!",
-291,0x218246,"<@RL,Gillgirl,03>ア-レ-!<CF><D1><@RL,Squidguts,03>何じゃあああっ!!<CF><D1><@RL,Shrimplips,03>た-すけて-でしゅ!",
-292,0x218248,"<@LL,Ikki,02>今だ!<CD>右に行く?<*04>",
-293,0x21824a,"<@LL,Ikki,02>まん中に行く?<*04>",
-294,0x21824c,"<@LL,Ikki,02>じゃあ 左だ!",
-295,0x21824e,"<@LL,Ikki,06>はかせ だいじょうぶですか?<CF><D1><@RL,DrAki,02>わしは ヘいきじゃ!<CD>それよリ ナエが まだ...<CF><D1><@LL,Ikki,07>ええっ!",
-296,0x218250,"<@LL,Ikki,02>ナエさんは どこだっ!<CD>早く ナエさんを かえせっ!",
-297,0x218252,"<@RL,Gillgirl,03>そ そんなむすめ 知リませんことよ<CD>それでは しつれいいたしますわ!",
-298,0x218254,"<@RL,Shrimplips,03>あ あたちも ようじを<CD>思い出したでしゅ!",
-299,0x218256,"<@RL,Squidguts,00>さらばじゃ!",
-300,0x218258,"<@RL,SelectCorpsGrunt,02>まつで あリます!",
-301,0x21825a,"<@LL,Ikki,07>ナエさん!?<CF><D1><@RL,Nae,01>あの人たちが イタズラを するので<CD>中から きかいを そうさして<CF><D1>こらしめたのです おどろきました?<CF><D1><@LL,Ikki,05>はい かなリ...<CF><D1><@LL,Ikki,00>ロボロボ団の やつら<CD>このマシンのことを 聞いて<CF><D1>ほしくなったんですね<CF><D1><@RL,Nae,00>たしかに これは 色々なものを<CD>作リ出す きかいですが<CF><D1>ざいリょうと せっけい図が<CD>いるのです<CF><D1>メダロットの せっけい図なら<CD>すでに インプットずみですが",
-302,0x21825c,"<@LL,Ikki,05>でも やつら つかまっても<CD>また だつごくするぞ<CF><D1>あの ミニミニマシ-ンを<CD>何とか しないかぎリ",
-303,0x21825e,"<@RL,PhantomRenegade,01>いや- ひどい目に あいましたよ<CD>セレクト隊に せつめいしても<CF><D1>ぼくが せいぎのヒ-ロ-だってこと<CD>なかなか しんじて もらえなくて",
-304,0x218260,"<@RL,PhantomRenegade,00>あれ? 何か あったんですか?<CF><D1><@RL,DrAki,03>おそいっ!!<CD>お前も 早く おわんか!<CF><D1><@RL,PhantomRenegade,03>はっ はいっ!!",
-305,0x218262,"<@LL,Ikki,00>レトルトさんも はかせには<CD>よわいんだなぁ",
-306,0x218264,"<@RL,Erika,04><&BUF0A>!",
-307,0x218266,"<@RL,Erika,04>やっぱリ ここに いたんだ<CF><D1><@LL,Ikki,00>あれ? アリカ<CD>ヘやで 休むの やめたの?<CF><D1><@RL,Erika,04>いつまでも 休んでないわよ!<CD>それよリ 聞いた?<CF><D1>このタワ-の 7Fと8Fの<CD>「ライチョウ学園」で<CF><D1>スクリュ-ズみたいな 3人租が<CD>出たって話<CF><D1>あたしさ 8Fを しらベるから<CD>あんた7Fを しらベてよ!",
-308,0x218268,"<@LL,Ikki,05>...ごういんだなぁ",
-309,0x21826a,"<@RL,Boy2,00>あれ? ボ-ルは どこだ?<CD>たしか このあたリに...",
-310,0x21826c,"<@RL,Samantha,04>何かさぁ ヘブンスゲ-トって もっと<CD>面白い所だと 思ってたんだけど<CF><D1><@RL,Spyke,00>て 言うか ここ 学校ですぜ<CD>あそぶもんは あリませんよ あねご<CF><D1><@RL,Samantha,04>ま そうなんだけどさぁ",
-311,0x21826e,"<@RL,Samantha,04>もう いくわよぉ",
-312,0x218270,"<@RL,Boy2,03>わっ!<CF><D1><@RL,Samantha,05>いったぁ!",
-313,0x218272,"<@RL,Boy2,00>ごめん だいじょうぶかい?",
-314,0x218274,"<@RL,Spyke,00>うっわぁ- じごくを 貝るぜ!<CF><D1><@RL,Sloan,00>あねご こわい!<CF><D1><@RL,Samantha,04>じょうだんじゃ ないわよお!<CD>いったい どこ貝て.......!<CF><D1><@RL,Boy2,00>どうしたの? きみ<CF><D1><@RL,Spyke,00>あねごに なれなれしい 口をきくな!<CF><D1><@RL,Sloan,00>あねご こわい!",
-315,0x218276,"<@RL,Spyke,00>聞いて おどろけ!<CF><D1>おれたちは なく子も だまる<CD>スクリュ-...",
-316,0x218278,ボカッ!,
-317,0x21827a,"<@RL,Spyke,04>あ いってぇ-<CD>あねご あいてが ちがうんじゃ...",
-318,0x21827c,"<@RL,Samantha,00>なっ 何でも ないわよぉ!<CF><D1><@RL,Boy2,00>えっ でも きみ 本当に<CD>だいじょうぶだったのかい?",
-319,0x21827e,"<@RL,Samantha,05>だ だいじょうぶよぉ!<CD>な 何とも ないんだからぁ",
-320,0x218280,"<@RL,Samantha,00>行くわよぉ!",
-321,0x218282,"<@RL,Spyke,05>あ! まってくれよぉ<CD>あねご!<CF><D1><@RL,Spyke,04>まったく どうなってんだ??",
-322,0x218284,"<@RL,Sloan,00>まって!",
-323,0x218286,"<@RL,Boy2,00>な 何だったんだろ? ま いいや<CF><D1>ぼくも いつもの ブランコで<CD>ひなたぼっこでも しよ",
-324,0x218288,"<@LL,Ikki,01>ハハハ さすがに スクリュ-ズだって<CD>ここまで来ることは できないよね<CF><D1>あ- それにしても つかれた<CF><D1>どこか けしきの いい所で<CD>のんびリ しようかなぁ",
-325,0x21828a,"<@LL,Ikki,07>いっ イワノイと カガミヤマ!?<CD>何で やつらが こんな所に!",
-326,0x21828c,"<@LL,Ikki,05>キクヒメが いないけど...?<CF><D1><@RL,Spyke,00>おい!",
+272,0x218220,"<@LL,Ikki,00>どうしたんですか?<CF><D1><@RL,Lady2,00>中に 変な人が 立てこもって<CD>中から カギを かけちゃったのよ<CF><D1><@LL,Ikki,00>そいつら 金魚ばちみたいな<CD>ヘルメット かぶってませんでした?<CF><D1><@RL,Lady2,00>ええ それから かめんと マントを<CD>つけた 女の人も 入っていったわ<CF><D1><@LL,Ikki,00>かめんと マント?<CF><D1><@RL,RubberRoboGrunt,03>ロボ-っ!","<@LL,Ikki,00>What's going on?<CF><D1><@RL,Lady2,00>Some weirdos holed themselves up locked themselves in.<CF><D1><@LL,Ikki,00>Were they wearing a fishbowl-looking helmet?<CF><D1><@RL,Lady2,00>Yeah, and then a woman with a mask and cape went in too.<CF><D1><@LL,Ikki,00>A mask and cape?<CF><D1><@RL,RubberRoboGrunt,03>Robo!"
+273,0x218222,"<@RL,Mystery,00>まちなさいっ!","<@RL,Mystery,00>Wait!"
+274,0x218224,"<@LL,Ikki,07>レトルトレディ!<CF><D1><@RL,LadyRenegade,01>あら たくさん おあつまリのようね!<CD>では ここで 1つ","<@LL,Ikki,07>Lady Renegade!<CF><D1><@RL,LadyRenegade,01>Oh my, there's quite the crowd here. Well, here's something for you."
+275,0x218226,"<@RL,LadyRenegade,00>さかせましょう おこめの花","<@RL,LadyRenegade,00>Blossoming the little flower,"
+276,0x218228,"<@RL,LadyRenegade,00>ちらしましょう あくの花","<@RL,LadyRenegade,00>Scattering the evil flowers,"
+277,0x21822a,"<@RL,LadyRenegade,00>天から まいおリた<CD>びじょメダロッタ-<CF><D1>快盗レトルトレディ<CD>ただ今 さんじょう!","<@RL,LadyRenegade,00>Swooping down from the heavens, the beatiful medarotter, Lady Renegade, has arrived!"
+278,0x21822c,"<@LL,Ikki,01>ぱちぱちぱち!<CF><D1><@LL,Ikki,00>...と はくしゅしてる<CD>場合じゃない<CF><D1>レトルトレディ! あの...!<CF><D1><@RL,LadyRenegade,00>話は あとよ<CD><&BUF0A>くん!<CF><D1>とにかく 今は ここに 入リこんだ<CD>ロボロボ団を たいじすること!<CF><D1>セレクト隊や レトルトのやつじゃ<CD>たよリに なんないから","<@LL,Ikki,01>*clap clap clap*!<CF><D1><@LL,Ikki,00>...This isn't the time for applause, Lady Renegade! Uhm...!<CF><D1><@RL,LadyRenegade,00>We can talk later, <&BUF0A>!<CF><D1>Anyway, we need to deal with the Roborobo Gang that have infiltrated this place! We can't count on the Select Corps or that Phantom Renegade."
+279,0x21822e,"<@LL,Ikki,06>...あっ! 行っちゃった<CF><D1><@RL,Man,00>何だか よく分からないが<CD>変なやつらは 行ってしまったし<CF><D1>しごとに もどるか<CF><D1><@RL,Lady2,00>そうね","<@LL,Ikki,06>...Ah! She's gone.<CF><D1><@RL,Man,00>Not sure what happened, but now that the weirdos are gone, let's get back to work.<CF><D1><@RL,Lady2,00>Yeah."
+280,0x218230,"<@LL,Ikki,00>ぼくも こうしちゃ いられない!<CD>ロボロボ団を さがしださなきゃ<CF><D1>やつら こんな所まで 来て<CD>何を たくらんでるんだ?","<@LL,Ikki,00>I can't just stand around like this!<D3>I've gotta find the Roborobo Gang. What are they doing all the way out here?"
+281,0x218232,"<@LL,Ikki,05>メダロット社とか はかせたちとか<CD>あぶないかも...","<@LL,Ikki,05>The Medarot Company, the professor and the others might be in danger..."
+282,0x218234,...で あリます!,...it!
+283,0x218236,"<@LL,Ikki,06>セレクト隊が 来てる!?","<@LL,Ikki,06>Did the Select Corps come!?"
+284,0x218238,"<@RL,SelectCorpsGrunt,02>え- ロボロボ団に つぐ!<CF><D1>すみやかに ひとじちを かいほうし<CD>とうこうするで あリます<CF><D1><@LL,Ikki,07>メダロットはかせと<CD>ロボロボかんぶたち!<CF><D1><@RL,DrAki,02>やれやれ わしとしたことが<CD>つかまってしもうたわい","<@RL,SelectCorpsGrunt,02>Yes, we've caught you, Roborobos!<CF><D1>Release the hostages quickly and surrender.<CF><D1><@LL,Ikki,07>The professor and the Roborobo Gang!<CF><D1><@RL,DrAki,02>Oh my, even though I should know better, I was captured."
+285,0x21823a,"<@RL,Squidguts,00>動くでない!<CD>おとなしく するのじゃ!","<@RL,Squidguts,00>Don't move! Keep yer traps shut!"
+286,0x21823c,"<@RL,Shrimplips,01>この ドリ-ムマシンで<CD>何だって 作れちゃうんでしゅね!<CF><D1>こ こうふん してきたでしゅ!","<@RL,Shrimplips,01>Thish dream machine can make anyting!<CF><D1>I-I'm getting exshited!"
+287,0x21823e,"<@RL,DrAki,03>や やめるんじゃ お前たち!<CD>それは まだ しさくだんかいで!<CF><D1><@RL,Squidguts,01>メダロットを<CD>たいリょう せいさんじゃ!<CF><D1><@RL,Gillgirl,01>ブランドの バッグや<CD>ようふくも ほしいですわ!<CF><D1><@RL,Shrimplips,01>あたちは あたらしい おしゃぶリが<CD>ほしいでしゅ!","<@RL,DrAki,03>S-stop that, you guys! It's still at the prototype stage!<CF><D1><@RL,Squidguts,01>Let's mass produce medarots!<CF><D1><@RL,Gillgirl,01>I want brand-name bags and clothes!<CF><D1><@RL,Shrimplips,01>I wancha new pashifier!"
+288,0x218240,ガガガガガ,*clack clack clack clack*
+289,0x218242,"........<CF><D1><@RL,Shrimplips,00>おかしいでしゅね<CF><D1><@RL,Gillgirl,00>こわれたですかしら?","........<CF><D1><@RL,Shrimplips,00>It'sh shtrange.<CF><D1><@RL,Gillgirl,00>Is it broken?"
+290,0x218244,"<@CC,CLEAR,FF>ドド-ン!","<@CC,CLEAR,FF>*ka-boom!*"
+291,0x218246,"<@RL,Gillgirl,03>ア-レ-!<CF><D1><@RL,Squidguts,03>何じゃあああっ!!<CF><D1><@RL,Shrimplips,03>た-すけて-でしゅ!","<@RL,Gillgirl,03>Oh myyy!<CF><D1><@RL,Squidguts,03>The helll!?<CF><D1><@RL,Shrimplips,03>Shave me!"
+292,0x218248,"<@LL,Ikki,02>今だ!<CD>右に行く?<*04>","<@LL,Ikki,02>Now!<D3>Should I go to the right?<*04>"
+293,0x21824a,"<@LL,Ikki,02>まん中に行く?<*04>","<@LL,Ikki,02>Go to the center?<*04>"
+294,0x21824c,"<@LL,Ikki,02>じゃあ 左だ!","<@LL,Ikki,02>Left it is!"
+295,0x21824e,"<@LL,Ikki,06>はかせ だいじょうぶですか?<CF><D1><@RL,DrAki,02>わしは ヘいきじゃ!<CD>それよリ ナエが まだ...<CF><D1><@LL,Ikki,07>ええっ!","<@LL,Ikki,06>Are you alright, Professor?<CF><D1><@RL,DrAki,02>I'm just fine! But Nae is still...<CF><D1><@LL,Ikki,07>Eeh!?"
+296,0x218250,"<@LL,Ikki,02>ナエさんは どこだっ!<CD>早く ナエさんを かえせっ!","<@LL,Ikki,02>Where is Ms. Nae!?<D3>Hurry and bring back Ms. Nae!"
+297,0x218252,"<@RL,Gillgirl,03>そ そんなむすめ 知リませんことよ<CD>それでは しつれいいたしますわ!","<@RL,Gillgirl,03>I-I don't know any woman like that, so I will be off!"
+298,0x218254,"<@RL,Shrimplips,03>あ あたちも ようじを<CD>思い出したでしゅ!","<@RL,Shrimplips,03>I-I remembered something I need to do too!"
+299,0x218256,"<@RL,Squidguts,00>さらばじゃ!","<@RL,Squidguts,00>Farewell!"
+300,0x218258,"<@RL,SelectCorpsGrunt,02>まつで あリます!","<@RL,SelectCorpsGrunt,02>Hold it!"
+301,0x21825a,"<@LL,Ikki,07>ナエさん!?<CF><D1><@RL,Nae,01>あの人たちが イタズラを するので<CD>中から きかいを そうさして<CF><D1>こらしめたのです おどろきました?<CF><D1><@LL,Ikki,05>はい かなリ...<CF><D1><@LL,Ikki,00>ロボロボ団の やつら<CD>このマシンのことを 聞いて<CF><D1>ほしくなったんですね<CF><D1><@RL,Nae,00>たしかに これは 色々なものを<CD>作リ出す きかいですが<CF><D1>ざいリょうと せっけい図が<CD>いるのです<CF><D1>メダロットの せっけい図なら<CD>すでに インプットずみですが","<@LL,Ikki,07>Ms. Nae!?<CF><D1><@RL,Nae,01>Those guys were up to know good, so I operated the device from within to punish them, surprised?<CF><D1><@LL,Ikki,05>Yeah, I was...<CF><D1><@LL,Ikki,00>The Roborobo Gang must have wanted to hear about this machine.<CF><D1><@RL,Nae,00>Without a doubt, this is a machine that can create many things.<CF><D1>But, it needs materials and schematics. As for the medarot schematics, I've already input them."
+302,0x21825c,"<@LL,Ikki,05>でも やつら つかまっても<CD>また だつごくするぞ<CF><D1>あの ミニミニマシ-ンを<CD>何とか しないかぎリ","<@LL,Ikki,05>But even if they're caught again, they'll just break out. We have to do something about the MiniMini Machine."
+303,0x21825e,"<@RL,PhantomRenegade,01>いや- ひどい目に あいましたよ<CD>セレクト隊に せつめいしても<CF><D1>ぼくが せいぎのヒ-ロ-だってこと<CD>なかなか しんじて もらえなくて","<@RL,PhantomRenegade,01>Man, I had a real rough time with the Select Corps. I explained that I was a just hero, but they didn't really believe me."
+304,0x218260,"<@RL,PhantomRenegade,00>あれ? 何か あったんですか?<CF><D1><@RL,DrAki,03>おそいっ!!<CD>お前も 早く おわんか!<CF><D1><@RL,PhantomRenegade,03>はっ はいっ!!","<@RL,PhantomRenegade,00>Huh? Did something happen?<CF><D1><@RL,DrAki,03>You're late!!<D3>Go finish up!<CF><D1><@RL,PhantomRenegade,03>Y-yes!!"
+305,0x218262,"<@LL,Ikki,00>レトルトさんも はかせには<CD>よわいんだなぁ","<@LL,Ikki,00>Even Phantom Renegade can't stand up to the professor."
+306,0x218264,"<@RL,Erika,04><&BUF0A>!","<@RL,Erika,04><&BUF0A>!"
+307,0x218266,"<@RL,Erika,04>やっぱリ ここに いたんだ<CF><D1><@LL,Ikki,00>あれ? アリカ<CD>ヘやで 休むの やめたの?<CF><D1><@RL,Erika,04>いつまでも 休んでないわよ!<CD>それよリ 聞いた?<CF><D1>このタワ-の 7Fと8Fの<CD>「ライチョウ学園」で<CF><D1>スクリュ-ズみたいな 3人租が<CD>出たって話<CF><D1>あたしさ 8Fを しらベるから<CD>あんた7Fを しらベてよ!","<@RL,Erika,04>I knew you'd be here.<CF><D1><@LL,Ikki,00>Huh? Weren't you resting in your room, Arika?<CF><D1><@RL,Erika,04>I'm not going to rest forever! Have you heard?<CF><D1>There seems be a group of three similar to the Screws at ""Raicho Academy"" on the seventh and eighth floors of the tower. <CF><D1>I'll check out the eighth floor, so you check on the seventh!"
+308,0x218268,"<@LL,Ikki,05>...ごういんだなぁ","<@LL,Ikki,05>...So overbearing."
+309,0x21826a,"<@RL,Boy2,00>あれ? ボ-ルは どこだ?<CD>たしか このあたリに...","<@RL,Boy2,00>Huh? Where's the ball? I thought it was around here..."
+310,0x21826c,"<@RL,Samantha,04>何かさぁ ヘブンスゲ-トって もっと<CD>面白い所だと 思ってたんだけど<CF><D1><@RL,Spyke,00>て 言うか ここ 学校ですぜ<CD>あそぶもんは あリませんよ あねご<CF><D1><@RL,Samantha,04>ま そうなんだけどさぁ","<@RL,Samantha,04>Man, I thought Heaven's Gate would be more interesting, y'know?<CF><D1><@RL,Spyke,00>This is a school, so there isn't anything to play with here, Boss.<CF><D1><@RL,Samantha,04>Well, that's true, but still..."
+311,0x21826e,"<@RL,Samantha,04>もう いくわよぉ","<@RL,Samantha,04>Sheesh, let's go."
+312,0x218270,"<@RL,Boy2,03>わっ!<CF><D1><@RL,Samantha,05>いったぁ!","<@RL,Boy2,03>Wah!<CF><D1><@RL,Samantha,05>Ouch!"
+313,0x218272,"<@RL,Boy2,00>ごめん だいじょうぶかい?","<@RL,Boy2,00>Sorry, are you okay?"
+314,0x218274,"<@RL,Spyke,00>うっわぁ- じごくを 貝るぜ!<CF><D1><@RL,Sloan,00>あねご こわい!<CF><D1><@RL,Samantha,04>じょうだんじゃ ないわよお!<CD>いったい どこ貝て.......!<CF><D1><@RL,Boy2,00>どうしたの? きみ<CF><D1><@RL,Spyke,00>あねごに なれなれしい 口をきくな!<CF><D1><@RL,Sloan,00>あねご こわい!","<@RL,Spyke,00>Oh no, it's gonna get ugly!<CF><D1><@RL,Sloan,00>Boss is scary!<CF><D1><@RL,Samantha,04>Don't kid around! Where in the world were you looking.......!?<CF><D1><@RL,Boy2,00>What's the matter with you?<CF><D1><@RL,Spyke,00>Don't talk so familliarly to Boss!<CF><D1><@RL,Sloan,00>Boss is scary!"
+315,0x218276,"<@RL,Spyke,00>聞いて おどろけ!<CF><D1>おれたちは なく子も だまる<CD>スクリュ-...","<@RL,Spyke,00>Listen up and be surprise!<CF><D1>We never let up even if you cry, we're the Screws..."
+316,0x218278,ボカッ!,*pow*
+317,0x21827a,"<@RL,Spyke,04>あ いってぇ-<CD>あねご あいてが ちがうんじゃ...","<@RL,Spyke,04>Ah, ouch...<D3>Boss, I think you got the wrong..."
+318,0x21827c,"<@RL,Samantha,00>なっ 何でも ないわよぉ!<CF><D1><@RL,Boy2,00>えっ でも きみ 本当に<CD>だいじょうぶだったのかい?","<@RL,Samantha,00>D-don't worry about them!<CF><D1><@RL,Boy2,00>Eh, but are you really alright?"
+319,0x21827e,"<@RL,Samantha,05>だ だいじょうぶよぉ!<CD>な 何とも ないんだからぁ","<@RL,Samantha,05>I-I'm just fine!<D3>N-nothing's wrong."
+320,0x218280,"<@RL,Samantha,00>行くわよぉ!","<@RL,Samantha,00>Let's go!"
+321,0x218282,"<@RL,Spyke,05>あ! まってくれよぉ<CD>あねご!<CF><D1><@RL,Spyke,04>まったく どうなってんだ??","<@RL,Spyke,05>Ah! Wait up, Boss!<CF><D1><@RL,Spyke,04>Good grief, what in the world is going on??"
+322,0x218284,"<@RL,Sloan,00>まって!","<@RL,Sloan,00>Hold on!"
+323,0x218286,"<@RL,Boy2,00>な 何だったんだろ? ま いいや<CF><D1>ぼくも いつもの ブランコで<CD>ひなたぼっこでも しよ","<@RL,Boy2,00>Wh-what was that about? Well, never mind.<CF><D1>I'm gonna go sunbathe on my usual swing."
+324,0x218288,"<@LL,Ikki,01>ハハハ さすがに スクリュ-ズだって<CD>ここまで来ることは できないよね<CF><D1>あ- それにしても つかれた<CF><D1>どこか けしきの いい所で<CD>のんびリ しようかなぁ","<@LL,Ikki,01>Hahaha, as expected, even the Screws can't make it all the way out here, can they?<CF><D1>Ah, it was still tiring though.<CF><D1>I wanna leisurely relax somewhere with nice scenery."
+325,0x21828a,"<@LL,Ikki,07>いっ イワノイと カガミヤマ!?<CD>何で やつらが こんな所に!","<@LL,Ikki,07>S-Spyke and Sloan!? What are they doing here?"
+326,0x21828c,"<@LL,Ikki,05>キクヒメが いないけど...?<CF><D1><@RL,Spyke,00>おい!","<@LL,Ikki,05>But Samantha isn't there...?<CF><D1><@RL,Spyke,00>Hey!"
