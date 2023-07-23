@@ -1002,13 +1002,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $98B2 ; Previously 98B1
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $98AB
   call ShopMapHeartMaybe
@@ -1040,13 +1038,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $98F2 ; Previously 98F1
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $98EB
   call ShopMapHeartMaybe
@@ -1078,13 +1074,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $9932 ; Previously 9931
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $992B
   call ShopMapHeartMaybe
@@ -1116,13 +1110,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $9972 ; Previously 9971
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $996B
   call ShopMapHeartMaybe

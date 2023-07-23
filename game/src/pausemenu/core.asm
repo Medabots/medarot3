@@ -552,14 +552,12 @@ PauseMenuDrawMoney::
   jr z, .draw_00
   ld bc, $120B
   call $14ec
-  ld a, $e0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld a, $e0
+  ld [hl], a
   ei
-  ret
+  jp PlaceYenSymbolShop
 .draw_00
   ld bc, $120B
   call $14ec
@@ -572,7 +570,7 @@ PauseMenuDrawMoney::
   ei
   ld bc, $110B
   call $14ec
-  ld a, $00
+  ld a, $EC
   di
   push af
   rst $20
