@@ -324,9 +324,6 @@ ControlCodeD2_changePortrait::
 .table
   db 0,$C,$26,$44
 
-; Free space.
-  padend $2060
-
 SECTION "Main Script Helper Functions 1", ROM0[$2112]
 MainScriptProgressXChars::
   ld a, [W_MainScriptPointerLocationOffset + 1]

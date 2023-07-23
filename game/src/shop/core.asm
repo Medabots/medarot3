@@ -397,10 +397,10 @@ ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
   ld [$C103], a
   ld a, $18
   ld [$C104], a
-  ld a, 1
-  ld [$C0A0], a
-  ld a, 0
+  xor a
   ld [$C0A1], a
+  inc a ; ld a, 1
+  ld [$C0A0], a
   ld a, $B4
   ld [$C0A2], a
   ld a, 7
@@ -411,12 +411,12 @@ ShopPrepareFadeInPlusDisplayMoneyAndSpritesState::
   ld [$C0A4], a
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 0
+  xor a
   ld b, a
   ld a, $36
   ld de, $C0A0
   call $33B2
-  ld a, 0
+  xor a
   ld b, a
   ld a, $84
   ld de, $C100
@@ -432,7 +432,9 @@ ShopShopkeeperWelcomeMessageState::
   add $DE
   ld c, a
   ld b, 0
-  ld a, 2
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  inc a ; ld a, 2
   call WrapMainScriptProcessor
   ld a, [W_MainScriptExitMode]
   or a
@@ -1000,13 +1002,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $98B2 ; Previously 98B1
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $98AB
   call ShopMapHeartMaybe
@@ -1038,13 +1038,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $98F2 ; Previously 98F1
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $98EB
   call ShopMapHeartMaybe
@@ -1076,13 +1074,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $9932 ; Previously 9931
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $992B
   call ShopMapHeartMaybe
@@ -1114,13 +1110,11 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld [hli], a
   ei
   ld hl, $9972 ; Previously 9971
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld [hl], $E0
   ei
+  call PlaceYenSymbolShop
   ld a, [$C54B]
   ld hl, $996B
   call ShopMapHeartMaybe

@@ -705,21 +705,19 @@ PaintShopMapMoney::
   add b
   ld b, a
   call $14EC
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld a, $E0
+  ld [hl], a
   ei
-  ret
+  jp PlaceYenSymbolShop
 
 .noMoney
   ld a, 3
   add b
   ld b, a
   call $14EC
-  ld a, 0
+  ld a, $EC
   di
   push af
   rst $20

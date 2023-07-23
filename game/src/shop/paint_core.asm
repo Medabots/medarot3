@@ -116,7 +116,7 @@ PaintShopMappingState::
 PaintShopDisplayMoneyAndSpritesState::
   ld a, 1
   ld [$C0E0], a
-  ld a, 0
+  xor a
   ld [$C0E1], a
   ld a, $B4
   ld [$C0E2], a
@@ -132,7 +132,7 @@ PaintShopDisplayMoneyAndSpritesState::
   ld [$C101], a
   ld a, $A3
   ld [$C102], a
-  ld a, 0
+  xor a
   ld [$C105], a
   ld a, $58 ; Previously $59
   ld [$C103], a
@@ -140,12 +140,12 @@ PaintShopDisplayMoneyAndSpritesState::
   ld [$C104], a
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 0
+  xor a
   ld b, a
   ld a, $36
   ld de, $C0E0
   call $33B2
-  ld a, 0
+  xor a
   ld b, a
   ld a, $9E
   ld de, $C100
@@ -158,7 +158,9 @@ PaintShopDisplayMoneyAndSpritesState::
 
 PaintShopPrintOpeningMessageState::
   ld bc, $A0
-  ld a, 2
+  ld a, 1
+  ld [W_OAM_SpritesReady], a
+  inc a ; ld a, 2
   call WrapMainScriptProcessor
   ld a, [W_MainScriptExitMode]
   or a

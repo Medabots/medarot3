@@ -125,21 +125,19 @@ ShopMapMoney::
   add b
   ld b, a
   call $14EC
-  ld a, $E0
   di
-  push af
   rst $20
-  pop af
-  ld [hli], a
+  ld a, $E0
+  ld [hl], a
   ei
-  ret
+  jp PlaceYenSymbolShop
 
 .noMoney
   ld a, 3
   add b
   ld b, a
   call $14EC
-  ld a, 0
+  ld a, $EC
   di
   push af
   rst $20
@@ -229,28 +227,31 @@ ShopBuyMapSelectionPrice::
   pop af
   ld [hli], a
   ei
-  ld hl, $99CA ; Previously 99c9
-  ld a, $E0
+  push hl
   di
-  push af
   rst $20
-  pop af
+  ld a, $E0
   ld [hli], a
   ei
   ld hl, $99C6 ; Previously 99c5
-  ld a, 0
+  xor a
   di
   push af
   rst $20
   pop af
-  ld [hli], a
+  ld [hld], a
   ei
-  ld hl, $99C5 ; Previously 99c4
   call ShopMapThreeDigitNumber
-  ret
+  pop hl
+  jp PlaceYenSymbolShop
 
 ShopMapSelectionPriceDashes::
-  ld hl, $99C7 ; previously 99c6
+  ld hl, $99C5
+  di
+  rst $20
+  xor a
+  ld [hli], a
+  ei
   ld a, 5
   ld b, a
   call ShopMapDashes
@@ -693,11 +694,9 @@ ShopMapPartPrice::
   push hl
   push hl
   inc hl
-  xor a
   di
-  push af
   rst $20
-  pop af
+  xor a
   ld [hli], a
   ei
   di
@@ -731,7 +730,7 @@ ShopMapPartPrice::
   pop bc
   pop hl
   call ShopMapThreeDigitNumber
-  ret
+  jp PlaceYenSymbolShopAlt
 
 ShopGetPartPriceAndStatus::
   ld a, [W_ShopPartTypeSelectionIndex]
