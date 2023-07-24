@@ -121,6 +121,7 @@ Though there will be some additional layers of quality checking with editing and
 * For game-specific terminology and names, reference the Glossary tab of the sheet (specifically the 'EN' column); in general, you'll want the Japanese transliteration with the assumption that the EN-US patch will have the English localized name, if available
 * Match idioms and puns where possible, but don't insert ones where there aren't any
 * Capitalize most Medabot-related in-universe terms (Medarot, Medal, Medalia, etc...), since they're technically product names
+* Money should have the yen sign first and commas ever 3 digits, e.g. ¥100 and ¥1,000 and ¥1,000,000
 
 #### Note on Kanji
 
