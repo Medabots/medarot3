@@ -11,8 +11,8 @@
 009,0x94012,「<&BUF06>」が なくなった,<&BUF06> was lost.
 010,0x94014,これいじょう もてない!,Can't hold any more!
 011,0x94016,<&BUF03>は<CD>「<&BUF06>」を もってない,<&BUF03> does not have <&BUF06>.
-012,0x94018,<&BUF03>は<CD><&BUF06>0¥を てにいれた,<&BUF03> got <&BUF06>0¥.
-013,0x9401a,<&BUF06>0¥ なくなった,<&BUF06>0¥ was lost.
+012,0x94018,<&BUF03>は<CD><&BUF06>0¥を てにいれた,<&BUF03> got ¥<&BUF06>0.
+013,0x9401a,<&BUF06>0¥ なくなった,¥<&BUF06>0 was lost.
 014,0x9401c,<&BUF06>を てにいれた,Received <&BUF06>.
 015,0x9401e,<&BUF06>が なくなった,<&BUF06> was lost.
 016,0x94020,パシャ!<*04>,Click!<*04>
@@ -117,11 +117,11 @@
 115,0x9414a,<NOTERM:ペイントしますか?<CD>エ>,Would you like to paint this one? <*04>
 116,0x9414c,左右キ-で 色を 選択してください<*04>,Use the left and right buttons to select a color.<*04>
 117,0x9414e,この色で よろしいですか?<*04>,Are you sure you want this color?<*04>
-118,0x94150,ペイントは 100¥かかリます<CD>この色で よろしいですか?<*04>,Painting costs 100¥. <D3>Are you sure this is the color you want?<*04>
+118,0x94150,ペイントは 100¥かかリます<CD>この色で よろしいですか?<*04>,Painting costs ¥100. <D3>Are you sure this is the color you want?<*04>
 119,0x94152,気に入ってもらえました?,"Well, do you like it?"
 120,0x94154,色をもどす メダロットを<CD>選択してください<*04>,Choose a Medarot you wish to remove paint from<*04>
 121,0x94156,この メダロットの色を<CD>元に もどしても いいですか?<*04>,Are you sure you want this Medarot back to its original color?<*04>
-122,0x94158,この店では あなたのメダロットの色を<CD>ヘんこうすることが できます<CF>ふだんなら 頭パ-ツを 変えると<CD>メダロットの色も 変わリますが<CF>この店で ペイントした メダロットは<CD>メダルや パ-ツに かんけいなく<CF>ティンペットだけですら<CD>おきゃくさまの 選んだ色になリます<CF>ペイントには 100¥かかリますが<CD>とっても たのしいですよ!<CF>元の色に もどすのは いつでも<CD>お金は いただきませんから<CF>自分だけの メダロットチ-ムを<CD>ぜひ おたのしみください!,"This shop is used to change the colors of your Medarots.<CF>Usually the color matches the Medarot's head, but at this shop, you can decide what color your bot will stay, no matter what Medal or parts it has!<CF>Painting costs 100¥, but it's really fun!<CF>Changing a Medarot back to its original color is free.<CF>So feel free to make your own unique team!<CF>We look forward to serving you!"
+122,0x94158,この店では あなたのメダロットの色を<CD>ヘんこうすることが できます<CF>ふだんなら 頭パ-ツを 変えると<CD>メダロットの色も 変わリますが<CF>この店で ペイントした メダロットは<CD>メダルや パ-ツに かんけいなく<CF>ティンペットだけですら<CD>おきゃくさまの 選んだ色になリます<CF>ペイントには 100¥かかリますが<CD>とっても たのしいですよ!<CF>元の色に もどすのは いつでも<CD>お金は いただきませんから<CF>自分だけの メダロットチ-ムを<CD>ぜひ おたのしみください!,"This shop is used to change the colors of your Medarots.<CF>Usually the color matches the Medarot's head, but at this shop, you can decide what color your bot will stay, no matter what Medal or parts it has!<CF>Painting costs ¥100, but it's really fun!<CF>Changing a Medarot back to its original color is free.<CF>So feel free to make your own unique team!<CF>We look forward to serving you!"
 123,0x9415a,何だっ!?,What the...?
 124,0x9415c,デ-タはいただいた<CD>ザンネンだったな ニンゲンども!<CF>なっ...だれだ!?<CF>わが名は エレクトラ!<CD>お前たち ニンゲン テキ!<CF>何だって!?,The data has been received. How unfortunate for you humans!<CF>Wha... who?!<CF>My name is Electra! You humans are my enemies!<CF>What?!
 125,0x9415e,...あ! まてっ!,...Hey! Wait!
