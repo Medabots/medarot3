@@ -309,7 +309,7 @@
 298,0x200254,"<@LL,Ikki,04>...セセリさんも 先生のことが<CD>すきだったら いいですね♥","<@LL,Ikki,04>...It sure would be nice if Seseri likes you too ♥"
 299,0x200256,"<@RL,Asama,03>なっ! だっ だからっ!<CF><D1><@LL,Ikki,01>あははっ!<CD>先生 かおが まっ赤だ!<CF><D1><@LL,Ikki,04>(やっぱリそうなんだ アサマ先生は<CD>セセリさんのことが すきなんだな)","<@RL,Asama,03>Wh-!? Wh-why you!<CF><D1><@LL,Ikki,01>Ahaha!<D3>Your face is all red!<CF><D1><@LL,Ikki,04>(I was right, Mr. Asama really does like Seseri.)"
 300,0x200258,"<@RL,Asama,03>そっ それじゃあ ぼくは<CD>学校に もどるよ","<@RL,Asama,03>W-well then, I'm going back to school."
-301,0x20025a,"<@RL,Clerk,00>ちょうど 1000¥ になリます","<@RL,Clerk,00>That comes out to exactly 1,000¥."
+301,0x20025a,"<@RL,Clerk,00>ちょうど 1000¥ になリます","<@RL,Clerk,00>That comes out to exactly ¥1,000."
 302,0x20025c,"<@LL,Ikki,01>ごちそうさまでした!","<@LL,Ikki,01>Thanks for the meal!"
 303,0x20025e,"<@RL,Asama,00>どういたしまして","<@RL,Asama,00>You're welcome."
 304,0x200260,"<@LL,Ikki,00>う-ん 何とか 先生が言ってた<CD>セセリさんの おやがわリだったって<CF><D1>メダロット さがせないかな?<CF><D1>ア-スモ-ルの しせつを<CD>まわって しらベてみよう","<@LL,Ikki,00>Hmm, would it be possible to find the Medarot Mr. Asama mentioned that used to be like a parent to Seseri?<CF><D1>Let's go around the buildings in the Earth Mall and check it out."

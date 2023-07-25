@@ -91,7 +91,7 @@
 089,0x1e80b2,"<@RL,Spyke,04>...ガックシ","<@RL,Spyke,04>...How disappointing."
 090,0x1e80b4,"<@LL,Ikki,05>とリあえず ここを 出るか...","<@LL,Ikki,05>Alright, first I'll leave this restaurant..."
 091,0x1e80b6,"<@RL,FemaleMedabot,00>おきゃくさま お会計を<CD>おねがいします","<@RL,FemaleMedabot,00>Valued customer, please pay your bill first!"
-092,0x1e80b8,"<@RL,FemaleMedabot,00>おふたリで 合計<CD>1000¥に なリます<CF><D1><@LL,Ikki,05>はぁ...","<@RL,FemaleMedabot,00>For the two meals, the total comes to 1000¥.<CF><D1><@LL,Ikki,05>Ugh..."
+092,0x1e80b8,"<@RL,FemaleMedabot,00>おふたリで 合計<CD>1000¥に なリます<CF><D1><@LL,Ikki,05>はぁ...","<@RL,FemaleMedabot,00>For the two meals, the total comes to ¥1,000.<CF><D1><@LL,Ikki,05>Ugh..."
 093,0x1e80ba,"<@RL,FemaleMedabot,00>またの おこしを<CD>おまちしておリます","<@RL,FemaleMedabot,00>We look forward to seeing you again!"
 094,0x1e80bc,"<@RL,Boy,00>お前 新型の 変形メダロット<CD>手に入れたか?","<@RL,Boy,00>Did you get the new type of transforming Medarot model?"
 095,0x1e80be,"<@RL,Boy,00>あったリ前よぉ!<CD>サイコ-! カッコイイよなぁ","<@RL,Boy,00>Of course!<D3>It's the best! So cool!"
