@@ -57,9 +57,10 @@ There are a handful of control codes in text:
 * `<*##>`: Different end code, not including it implies '00' (normal ending). This is usually only different when dealing with user option boxes or some special events (i.e. voice clips).
 * `<&BUF##>`: Pulls string from memory buffer, i.e. player's name or numbers
 * `<@??,##,##>`: Displays face (R/L side of box, R/L flip, [character index or name](./scripts/res/portraits.tbl), expression index)
+	* `<@CC,CLEAR,FF>` can be used to clear a portrait
 * `<CD>`: Go to 2nd line of text box
 * `<CF>`: New text box
-* `<D1>`: New page without input (keeps portrait)
+* `<D1>`: New page without input (keeps portrait), in general this is implied
 
 There is also an additional code specifically for the patch `<f##>` which is described more in the [Fonts](#fonts) section.
 
@@ -71,11 +72,25 @@ The patch adds some features for translation convenience and necessity, they're 
 
 The patch adds a few new fonts due to necessity and translation flair. These fonts can be manually enabled with the font control code `<f##>`, but may also have a more intuitive way to enable them.
 
-* `<f00>` is the default font
-* `<f01>` is a more narrow font, mainly used when text box space is an issue (i.e. for part descriptions)
-* `<f02>` is a **bold** font (also possible to activate just by making font bold within the sheet), meant to act as a better way to emphasize things in text and is usually a drop-in replacement for the square bracket quotes (「」)
-* `<f03>` is a "robotic" font (possible to activate by making font *italic* within the sheet), meant to better encapsulate robotic/formal speech from Medabots that would otherwise just be in "ALL CAPS" to get the effect across
-* `<f04>` is a combined bold robotic font, activatable by making font ***both italic and bold*** in the sheet
+`<f00>` is the default font
+
+![<f00>The quick brown fox jumps over the lazy dog.](.contributing/f00.png)
+
+`<f01>` is a more narrow font, mainly used when text box space is an issue (i.e. for part descriptions)
+
+![<f01>The quick brown fox jumps over the lazy dog.](.contributing/f01.png)
+
+`<f02>` is a **bold** font (also possible to activate just by making font bold within the sheet), meant to act as a better way to emphasize things in text and is usually a drop-in replacement for the square bracket quotes (「」)
+
+![<f02>The quick brown fox jumps over the lazy dog.](.contributing/f02.png)
+
+`<f03>` is a "robotic" font (possible to activate by making font *italic* within the sheet), meant to better encapsulate robotic/formal speech from Medabots that would otherwise just be in "ALL CAPS" to get the effect across
+
+![<f03>The quick brown fox jumps over the lazy dog.](.contributing/f03.png)
+
+`<f04>` is a combined bold robotic font, activatable by making font ***both italic and bold*** in the sheet
+
+![<f04>The quick brown fox jumps over the lazy dog.](.contributing/f04.png)
 
 #### Automatic Linebreaks
 The patch recently incorporated a feature to automatically linebreak for long lines, so in general translation should not require using the manual linebreak to fit text within a box. 
@@ -85,29 +100,33 @@ Some examples:
 These two examples will end up looking the same (output as two lines in a single text box).
 
 ```
-This text will appear
-in the same box
+<@LL,00,04>This text will appear in the
+same box
 ```
 ```
-This text will appear in the same box
+<@LL,00,04>This text will appear in the same box
 ```
 
-These three examples will all end up looking the same (output as three lines over two text boxes).
+![<@LL,00,04>This text will appear in the same box](.contributing/linebreak_001.png)
+
+These three examples will all end up looking the same (output as three lines over two text boxes). Note that on the explicit new line option, the portrait is tacked on again
 
 ```
-This is much longer text that will definitely not fit in one box comma question mark
+<@LL,01,04>This is much longer text that will definitely not fit in one box comma question mark
 ```
 ```
-This is much longer text that will definitely not fit in one box 
+<@LL,01,04>This is much longer text that will definitely not fit in one box 
 
 comma question mark
 ```
 ```
-This is much longer text that
+<@LL,01,04>This is much longer text that
 will definitely not fit in one box 
 
 comma question mark
 ```
+
+![<@LL,01,04>This is much longer text that will definitely not fit in one box comma question mark](.contributing/linebreak_002.png)
 
 ### Translation
 
