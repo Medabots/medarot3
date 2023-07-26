@@ -243,7 +243,7 @@
 235,0x21c1d6,おい!...おい!<CF><D1>おきろってばっ!<CF><D1>ん- あと5分...<CF><D1>ばかっ! ここは お前の家じゃね-!<CD>さっさと おきろっ!,"Hey! ...Hey!<CF><D1>Wake up!<CF><D1>Nngh... Five more minutes...<CF><D1>This is not your home, stupid! Get up already!"
 236,0x21c1d8,"<@RL,Koji,00>おきね-やつだな!<CD>メシだ 先に下におリてるぞ","<@RL,Koji,00>You're such a sleepyhead! It's time for breakfast, I'm heading down first."
 237,0x21c1da,"<@LL,Ikki,05>ふぁ-あ ねぶそくかも","<@LL,Ikki,05><f02>Yawn<f00>... I think I didn't sleep enough."
-238,0x21c1dc,"<@LL,Ikki,01>いただきま-す!<CD>もぐもぐ う-ん おいし-!","<@LL,Ikki,01>Let's eat!<CF><f02>Munch munch<f00>... <D3>Mm~ Delish!"
+238,0x21c1dc,"<@LL,Ikki,01>いただきま-す!<CD>もぐもぐ う-ん おいし-!","<@LL,Ikki,01>Let's eat!<CF>Mm~<D3>Delicious!"
 239,0x21c1de,"<@RL,Man,00>どうぞ 中ヘ お入リ下さい","<@RL,Man,00>Please head inside."
 240,0x21c1e0,"<@LL,Ikki,06>「風のつばさ」を 手に入れてからだ","<@LL,Ikki,06>Once we obtain the <f02>Wings of Wind<f00>."
 241,0x21c1e2,"<@RL,Man,00>行ってらっしゃいませ","<@RL,Man,00>Have a safe trip."
