@@ -47,7 +47,7 @@ Index[#version],CharacterName
 42,Crow
 43,Gull
 44,Gull
-45,Yuki
+45,Yuuki
 46,Paddy
 47,Alien
 48,Arika

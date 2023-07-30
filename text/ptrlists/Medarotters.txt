@@ -199,7 +199,7 @@ Index[#version],Unknown,Name
 194,\x47\x35\x00,Gull
 195,\x47\x35\x00,Gull
 196,\x47\x35\x00,Gull
-197,\x48\x36\x00,Yuki
+197,\x48\x36\x00,Yuuki
 198,\x49\x37\x00,Paddy
 199,\x49\x37\x00,Paddy
 200,\x4a\x38\x00,Mermaid Girl
