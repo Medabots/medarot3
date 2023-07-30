@@ -76,7 +76,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 72,\x00,\x02,\xCD
 73,\x00,\x02,\xCB
 74,\x11,\x05,Executive Producer
-75,\x11,\x04,Takayuki Kamikura
+75,\x11,\x04,TakaYuuki Kamikura
 76,\x00,\x02,\xCB
 77,\x00,\x02,\xCB
 78,\x00,\x03,Imagineer Staff
@@ -112,7 +112,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 108,\x11,\x05,Marketing
 109,\x11,\x04,Takashi Yamauchi
 110,\x11,\x04,Masumi Kishimoto
-111,\x11,\x04,Tomoyuki Uno
+111,\x11,\x04,TomoYuuki Uno
 112,\x00,\x02,\xCB
 113,\x01,\x03,Imagineer Staff
 114,\x00,\x02,\xCD
@@ -152,7 +152,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 148,\x00,\x03,Natsume Staff
 149,\x00,\x02,\xCB
 150,\x11,\x05,Battle System
-151,\x11,\x04,Teruyuki Shirakawa
+151,\x11,\x04,TeruYuuki Shirakawa
 152,\x11,\x06,(Shiratama)
 153,\x00,\x02,\xCB
 154,\x00,\x02,\xCB
@@ -187,10 +187,10 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 183,\x00,\x03,Natsume Staff
 184,\x11,\x05,Special Thanks
 185,\x11,\x04,Tetsuya Oku
-186,\x11,\x04,Hiroyuki Tanaka
+186,\x11,\x04,HiroYuuki Tanaka
 187,\x11,\x04,Yuu Kasumi
 188,\x11,\x04,Ryuji Shiotani
-189,\x11,\x04,Yuki Funayama
+189,\x11,\x04,Yuuki Funayama
 190,\x00,\x03,Natsume Staff
 191,\x10,\x05,Special Thanks
 192,\x11,\x04,Takenori Miyazaki
@@ -200,7 +200,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 196,\x00,\x02,\xCB
 197,\x01,\x03,Natsume Staff
 198,\x01,\x05,Special Thanks
-199,\x11,\x04,Moriyuki Kanaya
+199,\x11,\x04,MoriYuuki Kanaya
 200,\x11,\x04,Megumi Toyama
 201,\x11,\x04,Ryo Wasaki
 202,\x11,\x04,Toshiaki Kaname
@@ -223,7 +223,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 219,\x01,\x05,Translations
 220,\x11,\x04,Tiaruth
 221,\x11,\x04,Tobias_Levi
-222,\x11,\x04,yukinz
+222,\x11,\x04,Yuukinz
 223,\x11,\x04,Aoitenshi
 224,\x11,\x04,\xCB
 225,\x00,\x03,Localization
