@@ -1,12 +1,12 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x220000,"<@LL,Ikki,06>うっ...<CF><D1><@RL,Erika,02>あんた こんなやつに<CD>バカにされて くやしくないの!?<CF><D1><@RL,Koji,01>いじを 貝せてやれ<CD><&BUF0A>!<CF><D1><@RL,Karin,04>とっても 楽しいですよ♥<CF><D1><@LL,Ikki,05>わ 分かったよ",
-001,0x220002,"<@LL,Ikki,05>こ ここかな...?",
-002,0x220004,"ガシャン!<CF><D1><@RL,Erika,05>あっちゃ-<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Karin,05>だいじょうぶですかっ!",
-003,0x220006,"<@LL,Ikki,05>だ だって ぼく 空をとぶ<CD>はやい のリものって にがてだし<CF><D1><@RL,Koji,03>それが おれの ライバルの言う<CD>セリフか!?<CF><D1><@RL,Erika,05>はああ そう言えば あんた<CD>ひこうきも こわいのよね<CF><D1><@RL,Crow,00>しょせん 地上人だって ことか<CF><D1><@RL,Erika,07>あ! でも あんた<CD>「風のつばさ」は ヘいきじゃない!<CF><D1><@LL,Ikki,04>メダロットは ベつだよ<CD>ぼく メダロットは しんじられる<CF><D1><@RL,Crow,00>「風のつばさ」?<CD>あんな おもちゃに のっているのか<CF><D1><@LL,Ikki,02>ぼくには メダロットが 1番なんだ!<CF><D1><@RL,Crow,00>バカには つき合ってられん<CF><D1>ここを かんこうしたけリゃ<CD>勝手に やるんだな",
-004,0x220008,"<@RL,Erika,02>あんたなんか こっちから<CD>おことわリですよ-だ! ベ--っ!",
-005,0x22000a,"<@RL,Erika,06>あ-あ 何だか しらけちゃった!<CF><D1>気分てんかんに いろんな所<CD>しゅざいして まわろ-<CF><D1><@RL,Erika,00>そう言えば あんた「風のつばさ」は?<CD>前は よく 使ってたじゃない<CF><D1><@LL,Ikki,03>おぼえてない? メダロッチのデ-タが<CD>きえた時 いっしょに きえちゃって<CF><D1><@RL,Erika,05>あ そっか...あたしのも<CD>きえちゃったもんね<CF><D1><@RL,Erika,04>でも はかせなら もってるかもね!",
-006,0x22000c,"<@RL,Koji,01>じゃあ おれは ロボトルの<CD>あいてを さがすっ!!<CF><D1><@RL,Karin,04>では わたしは おさんぽでも",
-007,0x22000e,"<@LL,Ikki,03>ぼくって うんどうしんけい<CD>ないのかな...<CF><D1>「風のつばさ」かぁ...<CF><D1>アリカも「はかせなら」って言ってたし<CD>何も することないから<CF><D1>はかせの とこでも 行ってみよ",
+000,0x220000,"<@LL,Ikki,06>うっ...<CF><D1><@RL,Erika,02>あんた こんなやつに<CD>バカにされて くやしくないの!?<CF><D1><@RL,Koji,01>いじを 貝せてやれ<CD><&BUF0A>!<CF><D1><@RL,Karin,04>とっても 楽しいですよ♥<CF><D1><@LL,Ikki,05>わ 分かったよ","<@LL,Ikki,06>Uuw...<CF><D1><@RL,Erika,02>Aren't you fed up with that guy looking down on us?<CF><D1><@RL,Koji,01>Show him what you've got, <&BUF0A>!<CF><D1><@RL,Karin,04>It's really fun ♥<CF><D1><@LL,Ikki,05>F-fine."
+001,0x220002,"<@LL,Ikki,05>こ ここかな...?","<@LL,Ikki,05>I-is this it...?"
+002,0x220004,"ガシャン!<CF><D1><@RL,Erika,05>あっちゃ-<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Karin,05>だいじょうぶですかっ!","*crash!8<CF><D1><@RL,Erika,05>Ouch...<CF><D1><@RL,Koji,03>Hey, hey!<CF><D1><@RL,Karin,05>Are you alright!?"
+003,0x220006,"<@LL,Ikki,05>だ だって ぼく 空をとぶ<CD>はやい のリものって にがてだし<CF><D1><@RL,Koji,03>それが おれの ライバルの言う<CD>セリフか!?<CF><D1><@RL,Erika,05>はああ そう言えば あんた<CD>ひこうきも こわいのよね<CF><D1><@RL,Crow,00>しょせん 地上人だって ことか<CF><D1><@RL,Erika,07>あ! でも あんた<CD>「風のつばさ」は ヘいきじゃない!<CF><D1><@LL,Ikki,04>メダロットは ベつだよ<CD>ぼく メダロットは しんじられる<CF><D1><@RL,Crow,00>「風のつばさ」?<CD>あんな おもちゃに のっているのか<CF><D1><@LL,Ikki,02>ぼくには メダロットが 1番なんだ!<CF><D1><@RL,Crow,00>バカには つき合ってられん<CF><D1>ここを かんこうしたけリゃ<CD>勝手に やるんだな","<@LL,Ikki,05>I-I'm not good with things that fly fast.<CF><D1><@RL,Koji,03>Is that something my rival should be saying!?<CF><D1><@RL,Erika,05>Haa, now that I think about it, you were acting scared on the plane.<CF><D1><@RL,Crow,00>What can you expect from a surface dweller.<CF><D1><@RL,Erika,07>Ah! But you were fine with the ""Wing of Wind""!<CF><D1><@LL,Ikki,04>Medarots are different. I believe in medarots.<CF><D1><@RL,Crow,00>The ""Wings of Wind""? <D3>You rode on a toy like that?<CF><D1><@LL,Ikki,02>For me, medarots are the best!<CF><D1><@RL,Crow,00>I can't put up with you idiots.<CF><D1>If you wanna sightsee here, you guys are on your own."
+004,0x220008,"<@RL,Erika,02>あんたなんか こっちから<CD>おことわリですよ-だ! ベ--っ!","<@RL,Erika,02>You're the one that we can't stand being around ! Bleh!"
+005,0x22000a,"<@RL,Erika,06>あ-あ 何だか しらけちゃった!<CF><D1>気分てんかんに いろんな所<CD>しゅざいして まわろ-<CF><D1><@RL,Erika,00>そう言えば あんた「風のつばさ」は?<CD>前は よく 使ってたじゃない<CF><D1><@LL,Ikki,03>おぼえてない? メダロッチのデ-タが<CD>きえた時 いっしょに きえちゃって<CF><D1><@RL,Erika,05>あ そっか...あたしのも<CD>きえちゃったもんね<CF><D1><@RL,Erika,04>でも はかせなら もってるかもね!","<@RL,Erika,06>Aah! Now my mood is ruined!<CF><D1>Let's go around the place covering news to change things up.<CF><D1><@RL,Erika,00>Come to think of it, what about your ""Wings of Wind""?<D3>You used to use it pretty often, right?<CF><D1><@LL,Ikki,03>Don't you remember? It was lost with the data on the medarotches.<CF><D1><@RL,Erika,05>Ah, right... I lost mine too.<CF><D1><@RL,Erika,04>But maybe the professor has some!"
+006,0x22000c,"<@RL,Koji,01>じゃあ おれは ロボトルの<CD>あいてを さがすっ!!<CF><D1><@RL,Karin,04>では わたしは おさんぽでも","<@RL,Koji,01>Well, I'm gonna go find people to robattle!!<CF><D1><@RL,Karin,04>And I am going for a stroll."
+007,0x22000e,"<@LL,Ikki,03>ぼくって うんどうしんけい<CD>ないのかな...<CF><D1>「風のつばさ」かぁ...<CF><D1>アリカも「はかせなら」って言ってたし<CD>何も することないから<CF><D1>はかせの とこでも 行ってみよ","<@LL,Ikki,03>I wonder if my reflexs just aren't good enough...<CF><D1>""Wings of Wind,"" huh...<CF><D1>Arika said something about ""maybe the professor"" and there's nothing else to do, so let's go check where the professor is."
 008,0x220010,"<@RL,Man3,00>ぼくはお金持ちさ! うらやましいだろ",
 009,0x220012,"<@RL,Clerk,00>あ-ら おくさま 今日も<CD>おきれい ですこと オホホ",
 010,0x220014,"<@RL,Clerk,00>わたしなんて まだまだ<CD>そういう おくさまこそ オホホ",
@@ -46,35 +46,35 @@
 044,0x220058,"<@RL,Man3,00>やっぱリ メダロットを すてるのは<CD>やめに するよ",
 045,0x22005a,"<@LL,Ikki,03>まだ 新しい ティンペットだ",
 046,0x22005c,"<@RL,FlyingMedabot,00>ひさしぶリに パ-ツを つけて<CD>もらいました",
-047,0x22005e,"<@RL,Erika,01>あっ! いた いたっ!",
-048,0x220060,"<@LL,Ikki,00>あ アリカ どうしたの?<CF><D1><@RL,Erika,04>面白い じょうほうを 手に入れたよ<CF><D1>シラサギレイクの 右のさんばしから<CD>コインを なげると<CF><D1>ねがいごとが かなうらしいのよ<CD>行ってみましょ!<CF><D1><@LL,Ikki,00>ねがいごとかぁ よし 行ってみよう",
-049,0x220062,"<@LL,Ikki,00>うわ- はしの下に いっぱいコインが<CD>おちてる!<CF><D1><@RL,Erika,04>さっそく ねがいごと しましょ!",
-050,0x220064,"<@RL,Erika,05>早くっ!",
-051,0x220066,"<@LL,Ikki,00>え 何が?<CF><D1><@RL,Erika,06>早く コイン なげてよっ!<CF><D1><@LL,Ikki,07>え-っ!? ぼくが なげるの!?<CF><D1><@RL,Erika,06>あたリまえじゃ ないの<CF><D1><@LL,Ikki,03>アリカ...ケチになったね...",
-052,0x220068,"<@LL,Ikki,03>はい なげたよ<CF><D1><@RL,Erika,04>じゃ おねがい しましょ!",
-053,0x22006a,"<@LL,Ikki,05>あれ-? おかしいな<CF><D1><@RL,Erika,00>どうしたの?<CF><D1><@LL,Ikki,05>お金が ないんだ<CF><D1><@RL,Erika,05>は- 分かった あたしが なげるわ",
-054,0x22006c,"<@RL,Erika,00>んで <&BUF0A>は<CD>何を おねがい したの?<CF><D1><@LL,Ikki,00>「カラスと 友だちに なリたい」って<CF><D1><@RL,Erika,07>友だちっ!? やめときなさいよ<CD>あんなやつと なんて...",
-055,0x22006e,"<@LL,Ikki,02>アリカッ! ぼくらは 本当の<CD>カラスを 知らないだけなんだ<CF><D1>もっと 話し合えば<CF><D1><@RL,Erika,06>はいはい 分かった 分かった<CD>あんたは ほんと 友だちバカね!<CF><D1><@LL,Ikki,04>友だちバカ??? まあいいや それで<CD>アリカは 何て おねがい したの?<CF><D1><@RL,Erika,04>人の おねがいを 聞くなんて<CD>ヤボなこと しないでよね!",
-056,0x220070,"<@LL,Ikki,00>アリカは 聞いたくせに...",
-057,0x220072,"<@RL,Erika,04>言いわすれてたけど 全部で 10回<CD>コインを なげたら<CF><D1>ねがいごとが かなうんだって<CD>あと9回 あんたに まかせるわ!",
-058,0x220074,"<@LL,Ikki,06>のこリ 9回...ぼくが なげるの?<CF><D1><@LL,Ikki,03>まあ いいや...<CD>あとで また 来てみよう",
-059,0x220076,"<@LL,Ikki,04>とは 言っても 何も しないで<CD>ねがいごとが かなうなんてこと<CF><D1>ないと 思うから<CD>友だちになるなら 話を しなきゃ<CF><D1>カラス どこかな 学校かな?",
+047,0x22005e,"<@RL,Erika,01>あっ! いた いたっ!","<@RL,Erika,01>Ah! There you are!"
+048,0x220060,"<@LL,Ikki,00>あ アリカ どうしたの?<CF><D1><@RL,Erika,04>面白い じょうほうを 手に入れたよ<CF><D1>シラサギレイクの 右のさんばしから<CD>コインを なげると<CF><D1>ねがいごとが かなうらしいのよ<CD>行ってみましょ!<CF><D1><@LL,Ikki,00>ねがいごとかぁ よし 行ってみよう","<@LL,Ikki,00>Ah, Arika. What is it?<CF><D1><@RL,Erika,04>I got my hands on some interesting info.<CF><D1>Apparently, if you throw a coin from the right-hand bridge on Egret Lake, then your wish will come true! Let's try it out!<CF><D1><@LL,Ikki,00>Wishes, huh... Alright, let's go.<D3>"
+049,0x220062,"<@LL,Ikki,00>うわ- はしの下に いっぱいコインが<CD>おちてる!<CF><D1><@RL,Erika,04>さっそく ねがいごと しましょ!","<@LL,Ikki,00>Woah, there are so many coins under the bridge!<CF><D1><@RL,Erika,04>Make a wish right away!"
+050,0x220064,"<@RL,Erika,05>早くっ!","<@RL,Erika,05>Hurry up!"
+051,0x220066,"<@LL,Ikki,00>え 何が?<CF><D1><@RL,Erika,06>早く コイン なげてよっ!<CF><D1><@LL,Ikki,07>え-っ!? ぼくが なげるの!?<CF><D1><@RL,Erika,06>あたリまえじゃ ないの<CF><D1><@LL,Ikki,03>アリカ...ケチになったね...","<@LL,Ikki,00>Eh, what is it?<CF><D1><@RL,Erika,06>Hurry and throw a coin!<CF><D1><@LL,Ikki,07>Eeh!? I'm throwing one!?<CF><D1><@RL,Erika,06>Isn't that obvious?<CF><D1><@LL,Ikki,03>Arika... You're really stingy..."
+052,0x220068,"<@LL,Ikki,03>はい なげたよ<CF><D1><@RL,Erika,04>じゃ おねがい しましょ!","<@LL,Ikki,03>There, I threw it.<CF><D1><@RL,Erika,04>Alright, let's make a wish!"
+053,0x22006a,"<@LL,Ikki,05>あれ-? おかしいな<CF><D1><@RL,Erika,00>どうしたの?<CF><D1><@LL,Ikki,05>お金が ないんだ<CF><D1><@RL,Erika,05>は- 分かった あたしが なげるわ","<@LL,Ikki,05>Huh? That's strange...<CF><D1><@RL,Erika,00>What is it?<CF><D1><@LL,Ikki,05>I don't have any money.<CF><D1><@RL,Erika,05>Haa, fine. I'll throw one in."
+054,0x22006c,"<@RL,Erika,00>んで <&BUF0A>は<CD>何を おねがい したの?<CF><D1><@LL,Ikki,00>「カラスと 友だちに なリたい」って<CF><D1><@RL,Erika,07>友だちっ!? やめときなさいよ<CD>あんなやつと なんて...","<@RL,Erika,00>So <&BUF0A>, what did you wish for?<CF><D1><@LL,Ikki,00>to ""become friends with Crow.""<CF><D1><@RL,Erika,07>Friends!? You should give up, someone like that..."
+055,0x22006e,"<@LL,Ikki,02>アリカッ! ぼくらは 本当の<CD>カラスを 知らないだけなんだ<CF><D1>もっと 話し合えば<CF><D1><@RL,Erika,06>はいはい 分かった 分かった<CD>あんたは ほんと 友だちバカね!<CF><D1><@LL,Ikki,04>友だちバカ??? まあいいや それで<CD>アリカは 何て おねがい したの?<CF><D1><@RL,Erika,04>人の おねがいを 聞くなんて<CD>ヤボなこと しないでよね!","<@LL,Ikki,02>Arika! We haven't gotten to know the real Crow. If we talk more, we'll understand each other better.<CF><D1><@RL,Erika,06>Yeah, yeah. I get it, I get it. You really are a fool for friends.<CF><D1><@LL,Ikki,04>A fool for friends??? Well fine then, what did you wish for, Arika?<CF><D1><@RL,Erika,04>Don't do something rude like asking about people's wishes!"
+056,0x220070,"<@LL,Ikki,00>アリカは 聞いたくせに...","<@LL,Ikki,00>You asked me..."
+057,0x220072,"<@RL,Erika,04>言いわすれてたけど 全部で 10回<CD>コインを なげたら<CF><D1>ねがいごとが かなうんだって<CD>あと9回 あんたに まかせるわ!","<@RL,Erika,04>I forgot to say, but if you throw a coin ten times, then your wish will come true! You can handle the other nine times!"
+058,0x220074,"<@LL,Ikki,06>のこリ 9回...ぼくが なげるの?<CF><D1><@LL,Ikki,03>まあ いいや...<CD>あとで また 来てみよう","<@LL,Ikki,06>I'm supposed to throw in... the nine left?<CF><D1><@LL,Ikki,03>Well, whatever...<D3>I'll come again later."
+059,0x220076,"<@LL,Ikki,04>とは 言っても 何も しないで<CD>ねがいごとが かなうなんてこと<CF><D1>ないと 思うから<CD>友だちになるなら 話を しなきゃ<CF><D1>カラス どこかな 学校かな?","<@LL,Ikki,04>That said, I don't think that wishes will come true without acting. If I want to be friends, I have to talk to him. I wonder, would Crow be at school?"
 060,0x220078,"<@LL,Ikki,04>カモメちゃん!<CF><D1><@RL,Boy2,00>やあ <&BUF0A>くん<CF><D1><@LL,Ikki,00>カラスって どこの きょうしつかな?<CF><D1><@RL,Boy2,00>もう1つ上のかいの 右下だよ<CF><D1>もし いなかったら<CD>公園の さんばしだと 思うよ<CF><D1><@LL,Ikki,04>あリがとう",
 061,0x22007a,"<@RL,Boy2,00>兄さんを よろしく たのむよ",
 062,0x22007c,"<@RL,Lady2,00>つうしんきょういくが はったつした<CD>おかげで あんまリ せいとが<CF><D1>学校に来なくなったの さびしいわぁ",
-063,0x22007e,"<@RL,Man,00>きみ イエス か ノ- で答えてくれ<*04>",
-064,0x220080,"<@RL,Man,00>はい ではない イエス だ!",
-065,0x220082,"<@RL,Man,00>いいえ ではない ノ- だ!",
-066,0x220084,"<@RL,Man,00>きみは ほうかご のこって 先生と<CD>えいごの ベんきょうを しましょう<CF><D1><@LL,Ikki,06>なんだか むちゃくちゃだなぁ",
-067,0x220086,"<@RL,Man3,00>いねむリ してませんよ ぐ- ぐ-",
-068,0x220088,"<@RL,Man,00>もう じゅぎょう中に いねむリを<CD>するなよ...って おい おきろ-!",
+063,0x22007e,"<@RL,Man,00>きみ イエス か ノ- で答えてくれ<*04>","<@RL,Man,00>You, answer with ""oui"" or ""non.""<*04>"
+064,0x220080,"<@RL,Man,00>はい ではない イエス だ!","<@RL,Man,00>""Yes"" isn't ""oui""!"
+065,0x220082,"<@RL,Man,00>いいえ ではない ノ- だ!","<@RL,Man,00>""No"" isn't ""non""!"
+066,0x220084,"<@RL,Man,00>きみは ほうかご のこって 先生と<CD>えいごの ベんきょうを しましょう<CF><D1><@LL,Ikki,06>なんだか むちゃくちゃだなぁ","<@RL,Man,00>You, stay after school to study French with your teacher.<CF><D1><@LL,Ikki,06>Isn't that a bit absurd?"
+067,0x220086,"<@RL,Man3,00>いねむリ してませんよ ぐ- ぐ-","<@RL,Man3,00>I'm not dozing. *zzz zzz*"
+068,0x220088,"<@RL,Man,00>もう じゅぎょう中に いねむリを<CD>するなよ...って おい おきろ-!","<@RL,Man,00>Come on, don't doze off in class again... Hey, get up!"
 069,0x22008a,"<@RL,Lady2,00>さいきん すっかリ せいとたちが<CD>なまいきに なっちゃって!",
 070,0x22008c,"<@RL,Man3,00>また ドアが こわれちゃったよ",
 071,0x22008e,"<@RL,Man3,00>ここのドア いつも こわれるんだよな",
-072,0x220090,"<@RL,Lady2,00>まちなさい! ワタリドリくん!",
-073,0x220092,"<@LL,Ikki,00>あ カラス!<CF><D1><@RL,Crow,00>どけ!",
-074,0x220094,"<@RL,Lady2,00>んもうっ! また!<CF><D1><@LL,Ikki,00>あの すみませんっ!<CD>カラスくん どうしたんですか?<CF><D1><@RL,Lady2,00>しょっちゅうなのよ<CD>じゅぎょう中に とび出していくの<CF><D1>頭は いい子なんだけど<CD>きょうちょうせいの かけらもないわ!",
-075,0x220096,"<@LL,Ikki,05>カラスのやつ 学校でも<CD>かなリ 勝手気ままなんだな",
+072,0x220090,"<@RL,Lady2,00>まちなさい! ワタリドリくん!","<@RL,Lady2,00>Wait! Watadori!"
+073,0x220092,"<@LL,Ikki,00>あ カラス!<CF><D1><@RL,Crow,00>どけ!","<@LL,Ikki,00>Ah, Crow!<CF><D1><@RL,Crow,00>Outta the way!"
+074,0x220094,"<@RL,Lady2,00>んもうっ! また!<CF><D1><@LL,Ikki,00>あの すみませんっ!<CD>カラスくん どうしたんですか?<CF><D1><@RL,Lady2,00>しょっちゅうなのよ<CD>じゅぎょう中に とび出していくの<CF><D1>頭は いい子なんだけど<CD>きょうちょうせいの かけらもないわ!","<@RL,Lady2,00>Geez! Again!<CF><D1><@LL,Ikki,00>Uhm, Excuse me!<D3>What's up with Crow?<CF><D1><@RL,Lady2,00>This happens all the time! He always runs out during class. Even though he's a smart kid, he doesn't have any spirit of cooperation!"
+075,0x220096,"<@LL,Ikki,05>カラスのやつ 学校でも<CD>かなリ 勝手気ままなんだな","<@LL,Ikki,05>Even at school that Crow does whatever he likes."
 076,0x220098,"<@RL,Man,00>だ-れも 来てない",
 077,0x22009a,"<@RL,Man,00>せいとが 学校に来た! ヤッホ-!",
 078,0x22009c,"<@RL,Man3,00>1人で じゅぎょう うけても<CD>つまんないから 学校にきちゃったよ",
@@ -104,30 +104,30 @@
 102,0x2200cc,"<@RL,Man3,00>で どのぐらい かってんの?<CF><D1><@LL,Ikki,00>何を?<CF><D1><@RL,Man3,00>ゴキブリを<CF><D1><@LL,Ikki,06>だから ペットじゃないって!",
 103,0x2200ce,"<@RL,Man3,00>ここは せいとかいしつだ<CD>学園のル-ルは ここで きめている<CF><D1>じゅうような ことは 先生に<CD>まかせては いられないからね",
 104,0x2200d0,"<@LL,Ikki,00>コインが たくさん おちている<CD>こういうのは ひろっちゃ だめだ",
-105,0x2200d2,"<@LL,Ikki,04>カラス ここにいたんだ<CF><D1><@RL,Crow,00>地上人 お前に 気やすく 名前を<CD>よばれる おぼえはない<CF><D1><@LL,Ikki,00>じゃあ 何て よベば いい?<CF><D1>それに ぼくは 地上人じゃなくて<CD><&BUF0A>だよ",
-106,0x2200d4,"<@LL,Ikki,00>ねえ!",
-107,0x2200d6,"<@RL,Crow,00>ついてくるな<CF><D1><@LL,Ikki,00>カラスって この場所 すきなんだろ?<CD>カモメちゃんに 聞いたよ<CF><D1><@RL,Crow,00>よけいなことを<CF><D1><@LL,Ikki,00>ねえ どうして こっちむいて<CD>しゃベって くれないのさ?<CF><D1><@RL,Crow,00>お前は なぜ おれに かかわる?<CD>何が 目あてだ 地上人<CF><D1><@LL,Ikki,04>「きみと 友だちに なリたい!」<CD>っていう リゆうじゃ ダメかな?<CF><D1><@RL,Crow,03>...!",
-108,0x2200d8,"<@LL,Ikki,01>あ! こっちむいた!",
-109,0x2200da,"<@RL,Crow,00>おれが そうリの むすこだからか?<CF><D1><@LL,Ikki,05>「そうリの むすこ」なんかじゃ<CD>なかった方が 気楽なんだけどね<CF><D1><@RL,Crow,00>バカには つき合ってられん",
-110,0x2200dc,"<@LL,Ikki,05>おこらせたかな?<CF><D1><@RL,Erika,04><&BUF0A>-!",
-111,0x2200de,"<@LL,Ikki,00>アリカ どうしたの?<CF><D1><@RL,Erika,01>あこがれの「スカイTV」の<CD>貝学きょかが おリたの!<CF><D1>行ってみましょ!",
-112,0x2200e0,"<@LL,Ikki,04>「スカイTV」って 言ったら<CF><D1>「週刊メダロット」を<CD>ほうえいしてる TVきょくだ!<CF><D1><@LL,Ikki,01>行ってみよう!",
+105,0x2200d2,"<@LL,Ikki,04>カラス ここにいたんだ<CF><D1><@RL,Crow,00>地上人 お前に 気やすく 名前を<CD>よばれる おぼえはない<CF><D1><@LL,Ikki,00>じゃあ 何て よベば いい?<CF><D1>それに ぼくは 地上人じゃなくて<CD><&BUF0A>だよ","<@LL,Ikki,04>There you are, Crow.<CF><D1><@RL,Crow,00>Surface dweller, I don't remember allowing you to call me by name.<CF><D1><@LL,Ikki,00>Then what should I call you?<CF><D1>Besides, I'm not ""Surface Dweller,"" I'm <&BUF0A>."
+106,0x2200d4,"<@LL,Ikki,00>ねえ!","<@LL,Ikki,00>Hey!"
+107,0x2200d6,"<@RL,Crow,00>ついてくるな<CF><D1><@LL,Ikki,00>カラスって この場所 すきなんだろ?<CD>カモメちゃんに 聞いたよ<CF><D1><@RL,Crow,00>よけいなことを<CF><D1><@LL,Ikki,00>ねえ どうして こっちむいて<CD>しゃベって くれないのさ?<CF><D1><@RL,Crow,00>お前は なぜ おれに かかわる?<CD>何が 目あてだ 地上人<CF><D1><@LL,Ikki,04>「きみと 友だちに なリたい!」<CD>っていう リゆうじゃ ダメかな?<CF><D1><@RL,Crow,03>...!","<@RL,Crow,00>Quit following me.<CF><D1><@LL,Ikki,00>You like this place, don't you, Crow?<D3>I heard it from Gull.<CF><D1><@RL,Crow,00>Mind your business.<CF><D1><@LL,Ikki,00>Hey, why don't you turn here and talk to me?<CF><D1><@RL,Crow,00>Why are you concerning yourself with me? What are your intentions, surface dweller.<CF><D1><@LL,Ikki,04>""I want to be friends with you!"" is that a good enough reason?<CF><D1><@RL,Crow,03>...!"
+108,0x2200d8,"<@LL,Ikki,01>あ! こっちむいた!","<@LL,Ikki,01>Ah! You turned this way!"
+109,0x2200da,"<@RL,Crow,00>おれが そうリの むすこだからか?<CF><D1><@LL,Ikki,05>「そうリの むすこ」なんかじゃ<CD>なかった方が 気楽なんだけどね<CF><D1><@RL,Crow,00>バカには つき合ってられん","<@RL,Crow,00>Is it because I'm prime minister's son?<CF><D1><@LL,Ikki,05>I'd be more at ease if you weren't ""the prime minister's son"" though.<CF><D1><@RL,Crow,00>I don't have time to spend with fools."
+110,0x2200dc,"<@LL,Ikki,05>おこらせたかな?<CF><D1><@RL,Erika,04><&BUF0A>-!","<@LL,Ikki,05>Was it something I said?<CF><D1><@RL,Erika,04><&BUF0A>~!"
+111,0x2200de,"<@LL,Ikki,00>アリカ どうしたの?<CF><D1><@RL,Erika,01>あこがれの「スカイTV」の<CD>貝学きょかが おリたの!<CF><D1>行ってみましょ!","<@LL,Ikki,00>What is it, Arika?<CF><D1><@RL,Erika,01>We've got permission to check out ""Sky TV""!<CF><D1>Let's go!"
+112,0x2200e0,"<@LL,Ikki,04>「スカイTV」って 言ったら<CF><D1>「週刊メダロット」を<CD>ほうえいしてる TVきょくだ!<CF><D1><@LL,Ikki,01>行ってみよう!","<@LL,Ikki,04>She said ""Sky TV.""<CF><D1>That's where ""Medarot Weekly"" is broadcast!<CF><D1><@LL,Ikki,01>Let's go!"
 113,0x2200e2,"<@LL,Ikki,00>ぼくは カラスと 話がしたいんだ",
-114,0x2200e4,"<@RL,Crow,00>さわがしいやつらだ",
-115,0x2200e6,"<@RL,Crow,00>くだらない せかいだ みんな<CD>やすっぽい 作リものの せかいで<CF><D1>ママゴトして まんぞくしてやがる<CD>こんなとこ なくなっちまえばいい<CF><D1><@RL,Gillgirl,01>あ-ら そうリの むすこさんの<CD>ことばとは 思えないですわね",
-116,0x2200e8,"<@RL,Crow,00>...お前らか さいきん この町に<CD>入リこんだ ゴキブリというのは<CF><D1><@RL,Gillgirl,01>お-ほほほほ<CD>言ってくださいますわね!<CF><D1>そんなことよリ わたくしたちと<CD>手を租みませんこと?",
-117,0x2200ea,"<@RL,Crow,00>なるほどな<CF><D1>ベつに 面白くも ないが<CD>たいくつは しのげるかもな",
-118,0x2200ec,"<@LL,Ikki,00>今 ロボロボ団が いたような...<CD>気のせい だよね",
+114,0x2200e4,"<@RL,Crow,00>さわがしいやつらだ","<@RL,Crow,00>What a noisy bunch."
+115,0x2200e6,"<@RL,Crow,00>くだらない せかいだ みんな<CD>やすっぽい 作リものの せかいで<CF><D1>ママゴトして まんぞくしてやがる<CD>こんなとこ なくなっちまえばいい<CF><D1><@RL,Gillgirl,01>あ-ら そうリの むすこさんの<CD>ことばとは 思えないですわね","<@RL,Crow,00>This shitty world where everyone is satisfied playing house in tawdry fake of a world. <D3>This place should should disappear.<CF><D1><@RL,Gillgirl,01>Oh my, to think that such words are coming from the prime minister's son."
+116,0x2200e8,"<@RL,Crow,00>...お前らか さいきん この町に<CD>入リこんだ ゴキブリというのは<CF><D1><@RL,Gillgirl,01>お-ほほほほ<CD>言ってくださいますわね!<CF><D1>そんなことよリ わたくしたちと<CD>手を租みませんこと?","<@RL,Crow,00>...You guys, should I assume you are the cockroaches that have infiltrated this town?<CF><D1><@RL,Gillgirl,01>Ohohoho,<D3>What a thing to say!<CF><D1>More importantly, what say you join forces with us?"
+117,0x2200ea,"<@RL,Crow,00>なるほどな<CF><D1>ベつに 面白くも ないが<CD>たいくつは しのげるかもな","<@RL,Crow,00>I see.<CF><D1>Doesn't sound particularly interesting, but I suppose I can endure the boredom."
+118,0x2200ec,"<@LL,Ikki,00>今 ロボロボ団が いたような...<CD>気のせい だよね","<@LL,Ikki,00>I think I saw some Rubber Robos just now...<D3>I must be imagining things."
 119,0x2200ee,"<@RL,Man,00>ここで ズ-ムアップだ!",
 120,0x2200f0,"<@RL,Man,00>さつえい中だから 話しかけないで",
 121,0x2200f2,"<@RL,Lady2,00>ここは しリょう室よ",
 122,0x2200f4,"<@RL,Man,00>きょかが おリてるから 入っていいよ",
 123,0x2200f6,"<@RL,Man,00>あ- ダメダメ! 貝学の きょかが<CD>ないと 中に入っちゃ ダメだよ!",
-124,0x2200f8,"<@RL,Erika,04>ここがあのスカイTVね!<CF><D1>今 やってるのは「週刊メダロット」の<CD>うら番租「メダロット.パラダイス」<CF><D1>つうしょう「メダパラ」よ!<CD>でも あんまリ 人気ない みたい",
+124,0x2200f8,"<@RL,Erika,04>ここがあのスカイTVね!<CF><D1>今 やってるのは「週刊メダロット」の<CD>うら番租「メダロット.パラダイス」<CF><D1>つうしょう「メダパラ」よ!<CD>でも あんまリ 人気ない みたい","<@RL,Erika,04>This is Sky TV!<CF><D1>Right now, the show that's on is the one in ""Medarot Weekly's"" competing timeslot, ""Medarot Paradise,"" or ""MedaPara"" for short!<D3>It doesn't seem very popular though."
 125,0x2200fa,"<@RL,Erika,04>やっぱ ほんものの テレビきょくは<CD>はくリょくが ちがうわ!",
 126,0x2200fc,"<@RL,Erika,00>早く ちょうさ して来てよ<CF><D1><@LL,Ikki,06>何で ぼくが ちょうさ するの?<CF><D1><@RL,Erika,00>だって あたしは スカイTVの<CD>しゅざいで いそがしいもん!",
-127,0x2200fe,"<@RL,Erika,00>ちょっと まって!",
-128,0x220100,"<@RL,Erika,00>さっき しいれた じょうほうだけど<CD>なんだか ライチョウ学園で<CF><D1>大変なことが おきてるんだって!<CD>あたし 今 いそがしいから<CF><D1>あんた ちょうさ してよ<CF><D1><@LL,Ikki,06>え!",
+127,0x2200fe,"<@RL,Erika,00>ちょっと まって!","<@RL,Erika,00>Hold it!"
+128,0x220100,"<@RL,Erika,00>さっき しいれた じょうほうだけど<CD>なんだか ライチョウ学園で<CF><D1>大変なことが おきてるんだって!<CD>あたし 今 いそがしいから<CF><D1>あんた ちょうさ してよ<CF><D1><@LL,Ikki,06>え!","<@RL,Erika,00>I just got word that something big is going down at Raicho Academy!<D3>I'm busy right now, so you investigate.<CF><D1><@LL,Ikki,06>Eh!?"
 129,0x220102,"<@RL,Man,00>こうひょうほうえいちゅうの<CD>「週刊メダロット」は<CF><D1>この ほうそうきょくから<CD>ほうえいして いるんだよ",
 130,0x220104,"<@RL,Clerk,00>今日は あたらしい お友だちを<CD>しょうかい しま-す!",
 131,0x220106,"<@RL,FloatingMedabot,00>ボクは ふゆう型メダロットの<CD>「ふゆゆん」だよ-!<CF><D1>よろしくぅぅ!",
@@ -137,23 +137,23 @@
 135,0x22010e,"<@RL,Lady2,00>さあ 次の 番租の じゅんびよ!",
 136,0x220110,"<@RL,Man3,00>ケンカなんて やばん人のすることだね",
 137,0x220112,"<@RL,Lady3,00>ケンカですって こわいですわ",
-138,0x220114,"<@RL,Lady3,00>2人とも やめなさいよ!",
+138,0x220114,"<@RL,Lady3,00>2人とも やめなさいよ!","<@RL,Lady3,00>Cut it out you two!"
 139,0x220116,"<@RL,Lady3,00>ふだんは すっごく なかよしなの",
 140,0x220118,"<@LL,Ikki,00>なにか 言いあらそっているようだ<CD>むこうにまわれば 聞こえるかな?",
-141,0x22011a,"<@RL,Man3,00>お前 おれの マスクメロン<CD>とっただろ!",
-142,0x22011c,"<@RL,Man3,00>おれじゃないよ!",
-143,UNUSED00,"<@RL,Lady3,00>やめなさいよ!<CF><D1><@LL,Ikki,00>ううむ この こうけい<CD>何だか 貝おぼえが あるなぁ",
-144,0x22011e,"<@RL,Lady3,00>ちょっと あんた 男でしょ!<CD>貝てないで 止めなさいよ!",
-145,0x220120,"<@LL,Ikki,07>わっ!",
-146,0x220122,"<@RL,Man3,00>まだまだ!",
-147,0x220124,"<@RL,Man3,00>やるな! お前 だけど<CD>おれの メロンは かえってこない",
-148,0x220126,"<@LL,Ikki,00>また ミニミニマシ-ンを 使った<CD>ミニロボ団の しわざだな!<CF><D1>はかせの所に 行って<CD>ミニミニマシ-ンを もらってこよう",
-149,0x220128,"<@RL,Man3,00>おれの マスクメロ-ンッ!",
-150,0x22012a,"<@RL,Man3,00>おれの マスクメロン かえせよ!",
-151,0x22012c,"<@RL,Man3,00>だから おれじゃないって!<CF><D1><@RL,Lady3,00>いいかげんに やめなさいよ!<CF><D1><@LL,Ikki,00>ちょっと どいて!",
-152,0x22012e,"<@RL,RubberRoboGrunt,00>...ロボ?<CF><D1><@LL,Ikki,02>貝つけたぞ ロボロボ団!",
-153,0x220130,"<@RL,RubberRoboGrunt,03>マスクメロン<CD>ごちそうさまだロボ-ッ",
-154,0x220132,"<@LL,Ikki,02>あ! まてっ!",
+141,0x22011a,"<@RL,Man3,00>お前 おれの マスクメロン<CD>とっただろ!","<@RL,Man3,00>You took my muskmelon!"
+142,0x22011c,"<@RL,Man3,00>おれじゃないよ!","<@RL,Man3,00>I did not!"
+143,UNUSED00,"<@RL,Lady3,00>やめなさいよ!<CF><D1><@LL,Ikki,00>ううむ この こうけい<CD>何だか 貝おぼえが あるなぁ","<@RL,Lady3,00>Stop it!<CF><D1><@LL,Ikki,00>Hmm, I feel like I've seen this scene before."
+144,0x22011e,"<@RL,Lady3,00>ちょっと あんた 男でしょ!<CD>貝てないで 止めなさいよ!","<@RL,Lady3,00>Hey, aren't you a man!?<D3>Quit watching and do something!"
+145,0x220120,"<@LL,Ikki,07>わっ!","<@LL,Ikki,07>Woah!"
+146,0x220122,"<@RL,Man3,00>まだまだ!","<@RL,Man3,00>You aren't done yet!"
+147,0x220124,"<@RL,Man3,00>やるな! お前 だけど<CD>おれの メロンは かえってこない","<@RL,Man3,00>Not bad! For you.<D3>But my melon isn't coming back."
+148,0x220126,"<@LL,Ikki,00>また ミニミニマシ-ンを 使った<CD>ミニロボ団の しわざだな!<CF><D1>はかせの所に 行って<CD>ミニミニマシ-ンを もらってこよう","<@LL,Ikki,00>The Mini Robos are at it again with the Mini-mini Machine!<CF><D1>Let's go to the professor and get the Mini-mini Machine!"
+149,0x220128,"<@RL,Man3,00>おれの マスクメロ-ンッ!","<@RL,Man3,00>My muskmelon!"
+150,0x22012a,"<@RL,Man3,00>おれの マスクメロン かえせよ!","<@RL,Man3,00>Give back my muskmelon!"
+151,0x22012c,"<@RL,Man3,00>だから おれじゃないって!<CF><D1><@RL,Lady3,00>いいかげんに やめなさいよ!<CF><D1><@LL,Ikki,00>ちょっと どいて!","<@RL,Man3,00>I told you it wasn't me!<CF><D1><@RL,Lady3,00>Enough already!<CF><D1><@LL,Ikki,00>Hey, move aside!"
+152,0x22012e,"<@RL,RubberRoboGrunt,00>...ロボ?<CF><D1><@LL,Ikki,02>貝つけたぞ ロボロボ団!","<@RL,RubberRoboGrunt,00>...Robo?<CF><D1><@LL,Ikki,02>Found you, Rubber Robo!"
+153,0x220130,"<@RL,RubberRoboGrunt,03>マスクメロン<CD>ごちそうさまだロボ-ッ","<@RL,RubberRoboGrunt,03>Thanks for the muskmelon, robo."
+154,0x220132,"<@LL,Ikki,02>あ! まてっ!","<@LL,Ikki,02>Ah! Wait!"
 155,0x220134,"<@RL,Man3,00>いまさら あいつに あやまれないよ<CF><D1><@LL,Ikki,04>だいじょうぶさ 友だち なんだろ?<CF><D1><@RL,Man3,00>うん そうだね あいつに あやまろう",
 156,0x220136,"<@RL,Man3,00>きみの おかげで あいつと<CD>なかなおリ できたよ<CF><D1><@LL,Ikki,04>そっか よかったね",
 157,0x220138,"<@RL,Man3,00>ずっと おれを うたがってたんだ<CD>もう ゆるして やらないぞ!<CF><D1><@LL,Ikki,04>でも ゆるしちゃうんだよね<CF><D1><@RL,Man3,00>ま 友だち だからな",
@@ -162,25 +162,25 @@
 160,0x22013e,"<@RL,Lady3,00>今のが 地上でうわさの ロボロボ団?<CD>ゴキブリよリ こわそうね<CF><D1><@LL,Ikki,06>ぼくは ゴキブリの方が...",
 161,0x220140,"<@RL,Lady3,00>もう ゴキブリは 出てないわ",
 162,0x220142,"<@RL,Lady3,00>きゃ-っ!<CD>ゴキブリ! ゴキブリ!","<@RL,Lady3,00>Kyaaah!<D3>A cockroach! A cockroach!"
-163,0x220144,"<@LL,Ikki,07>ゴキブリ! どこ? どこっ!?",
-164,0x220146,"<@LL,Ikki,02>...じゃ なくって!<CD>ロボロボ団 かくご!",
-165,0x220148,"<@RL,RubberRoboGrunt,00>...ロボ?",
-166,0x22014a,"<@RL,RubberRoboGrunt,03>ロボ-ッ!!",
-167,0x22014c,"<@LL,Ikki,07>あ! また にげた!",
-168,0x22014e,"<@LL,Ikki,02>まだ この学園に ロボロボのやつらが<CD>のこってるような 気がするぞ!",
-169,0x220150,"<@LL,Ikki,05>あいったぁ-",
-170,0x220152,"<@RL,PhantomRenegade,02>ごめんごめん だいじょうぶかい?<CD><&BUF0A>くん",
+163,0x220144,"<@LL,Ikki,07>ゴキブリ! どこ? どこっ!?","<@LL,Ikki,07>A cockroach! Where? Where!?"
+164,0x220146,"<@LL,Ikki,02>...じゃ なくって!<CD>ロボロボ団 かくご!","<@LL,Ikki,02>...It's not!<D3>Get ready, Rubber Robo!"
+165,0x220148,"<@RL,RubberRoboGrunt,00>...ロボ?","<@RL,RubberRoboGrunt,00>...Robo?"
+166,0x22014a,"<@RL,RubberRoboGrunt,03>ロボ-ッ!!","<@RL,RubberRoboGrunt,03>Robooo!!"
+167,0x22014c,"<@LL,Ikki,07>あ! また にげた!","<@LL,Ikki,07>Ah! They got away again!"
+168,0x22014e,"<@LL,Ikki,02>まだ この学園に ロボロボのやつらが<CD>のこってるような 気がするぞ!","<@LL,Ikki,02>I feel like there are still Rubber Robos left at this school!"
+169,0x220150,"<@LL,Ikki,05>あいったぁ-","<@LL,Ikki,05>Ah, ouch..."
+170,0x220152,"<@RL,PhantomRenegade,02>ごめんごめん だいじょうぶかい?<CD><&BUF0A>くん","<@RL,PhantomRenegade,02>Sorry, sorry. Are you okay, <&BUF0A>?"
 171#kabuto,0x220154,"<@LL,Ikki,05>どうしたんですかぁ レトルトさん<CD>そんなに あわてて<CF><D1><@RL,PhantomRenegade,00>今 ロボロボ団を おっているんだ<CF><D1><@LL,Ikki,00>それなら ぼくも 今<CD>おいかけてるんですけど<CF><D1><@RL,PhantomRenegade,00>ロボロボ団の やつら はかせが<CD>持ってた ブラックカブトの<CF><D1>メダルを 盗んで 行ったんだ<CF><D1><@LL,Ikki,07>ええっ!!<CF><D1><@RL,PhantomRenegade,00>やつら ミニミニマシ-ンを 使って<CD>いろんな所で イタズラしてた<CF><D1>みたいだけど 本当の ねらいは<CD>そこだったんだ",
 171#kuwagata,0x220154,"<@LL,Ikki,05>どうしたんですかぁ レトルトさん<CD>そんなに あわてて<CF><D1><@RL,PhantomRenegade,00>今 ロボロボ団を おっているんだ<CF><D1><@LL,Ikki,00>それなら ぼくも 今<CD>おいかけてるんですけど<CF><D1><@RL,PhantomRenegade,00>ロボロボ団の やつら はかせが<CD>持ってた ブラッククワガタの<CF><D1>メダルを 盗んで 行ったんだ<CF><D1><@LL,Ikki,07>ええっ!!<CF><D1><@RL,PhantomRenegade,00>やつら ミニミニマシ-ンを 使って<CD>いろんな所で イタズラしてた<CF><D1>みたいだけど 本当の ねらいは<CD>そこだったんだ",
 172,0x220156,"<@LL,Ikki,07>それって つまリ<CD>「かくらんさくせん」って ヤツ!?<CF><D1><@LL,Ikki,00>ロボロボ団らしくない<CD>かしこい やリかただなぁ<CF><D1><@RL,PhantomRenegade,00>かんしんしている 場合じゃない!<CD>ふたてに 分かれて さがそう!<CF><D1><@LL,Ikki,00>はい!",
 173,0x220158,"<@LL,Ikki,00>それにしても ロボロボのやつら<CD>「水の中にかくす」って言ってたけど<CF><D1>どういうことだろ?<CD>あ そう言えば コインをなげないと<CF><D1>あそこにも 水があるし...<CD>ちょっと 行ってみよう",
 174,0x22015a,"<@RL,Man,00>何だか さっきから さむけが<CD>するんだ かぜ ひいたのかなぁ",
-175,0x22015c,"<@RL,Man,00>ヘっくし!",
-176,0x22015e,"<@LL,Ikki,00>ちょっと うしろむいて もらえます?<CF><D1><@RL,Man,00>ん?",
-177,0x220160,"<@RL,RubberRoboGrunt,00>ロボ?<CF><D1><@LL,Ikki,02>いたな!",
-178,0x220162,"<@RL,RubberRoboGrunt,03>ロボ-<CF><D1><@LL,Ikki,02>お前らの もくてきは 何だ!<CF><D1><@RL,RubberRoboGrunt,03>知らないロボ-<CF><D1>盗んだメダルを「水の中に かくす」<CD>から その間 このあたリで<CF><D1>てきとうに イタズラしてろって<CD>言われただけロボ<CF><D1><@LL,Ikki,06>「てきとうに」って どういう<CD>どういう ことだよ?<CF><D1>それに メダルって...",
-179,0x220164,"<@LL,Ikki,07>あ! にげた!",
-180,0x220166,"<@RL,Man,00>あリがとう おれいに これをあげよう",
+175,0x22015c,"<@RL,Man,00>ヘっくし!","<@RL,Man,00>*achoo!*"
+176,0x22015e,"<@LL,Ikki,00>ちょっと うしろむいて もらえます?<CF><D1><@RL,Man,00>ん?","<@LL,Ikki,00>Can you tilt your head back a bit, please?<CF><D1><@RL,Man,00>Mm?"
+177,0x220160,"<@RL,RubberRoboGrunt,00>ロボ?<CF><D1><@LL,Ikki,02>いたな!","<@RL,RubberRoboGrunt,00>Robo?<CF><D1><@LL,Ikki,02>There you are!"
+178,0x220162,"<@RL,RubberRoboGrunt,03>ロボ-<CF><D1><@LL,Ikki,02>お前らの もくてきは 何だ!<CF><D1><@RL,RubberRoboGrunt,03>知らないロボ-<CF><D1>盗んだメダルを「水の中に かくす」<CD>から その間 このあたリで<CF><D1>てきとうに イタズラしてろって<CD>言われただけロボ<CF><D1><@LL,Ikki,06>「てきとうに」って どういう<CD>どういう ことだよ?<CF><D1>それに メダルって...","<@RL,RubberRoboGrunt,03>Robo...<CF><D1><@LL,Ikki,02>What are you guys planning!?<CF><D1><@RL,RubberRoboGrunt,03>Don't know, robo...<CF><D1>I was told to steal medals and ""hide them in the water"" and was causing random mischief meanwhile.<CF><D1><@LL,Ikki,06>What do you mean by ""random""?<CF><D1>And what medals...?"
+179,0x220164,"<@LL,Ikki,07>あ! にげた!","<@LL,Ikki,07>Ah! They got away!"
+180,0x220166,"<@RL,Man,00>あリがとう おれいに これをあげよう","<@RL,Man,00>Thank you, have this to show my gratitude."
 181,0x220168,"<@RL,Man,00>ヘっくし! やっぱリ かぜかな?",
 182,0x22016a,"<@RL,RubberRoboGrunt,04>まってロボ-ッ!",
 183,0x22016c,"<@RL,RubberRoboGrunt,03>はあはあ 9かい おねがいしますロボ<CF><D1><@LL,Ikki,00>9かいですね?",
