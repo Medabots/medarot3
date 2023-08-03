@@ -55,6 +55,8 @@ StartScreenMainLogo::
   INCBIN "./build/tilesets/StartScreenMainLogo.malias"
 GameOverScreenCharacters::
   INCBIN "./build/tilesets/GameOverScreenCharacters.malias"
+Tileset39E1::
+  INCBIN "./build/tilesets/Tileset39E1.malias"
 
 SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FC]
 ; Include certain 2bpp 'malias' uncompressed graphics here
