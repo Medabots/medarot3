@@ -156,6 +156,7 @@ The game uses the same kanji to represent multiple, known representations are:
 
 For this project, editing tasks primarily consist of:
 * Catching grammatical issues
+* Fix anything that doesn't follow the [Localization Rules](#localization-rules)
 * Making sure lines are consistent and read well in the target language
 * Make sure tenses are consistent
 * If things sound odd, mark the lines as a focus for proofreading
@@ -164,6 +165,17 @@ For this project, editing tasks primarily consist of:
 ### Proofreading
 
 Ideally, a proofreader would have knowledge of the source material (having played it in Japanese with understanding of the language). The primary objective is to make sure the translation makes sense, and possibly even things like noting if something is lost in translation (i.e. a pun that we might be able to salvage).
+
+### Localization Rules
+
+For consistency, there are some general things about this specific project we try to adhere to:
+* Reference the Glossary for terms and their translations (they should match the 'EN' column, with the goal of find-and-replacing to other columns)
+* The protagonist, Ikki, refers to adults with '-san' in Japanese, always speaking politely, so the translation should have him always referring to adults with a Mr/Ms/Mrs
+* Capitalize most Medabots-related in-universe terms (Medarot, Medal, Medalia, etc...) as they're technically product names
+* Match idioms and puns where possible, but avoid inserting them where there aren't any
+* Part descriptions must fit within one box
+* Use bold for emphasis instead of quotes (use quotes only if something is actually being directly quoted)
+* For speech from aliens, use italics in the sheet (or font f03 and f04), as it is a font meant to represent their more 'rigid' way of speaking
 
 ## Contributing to Development
 
