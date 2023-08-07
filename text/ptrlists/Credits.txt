@@ -90,7 +90,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 86,\x00,\x02,\xCB
 87,\x11,\x05,Director
 88,\x11,\x04,Naoya Kawamura
-89,\x11,\x06,(Kawamuraaa)
+89,\x11,\x06,(Kawamuller)
 90,\x00,\x02,\xCB
 91,\x00,\x02,\xCB
 92,\x00,\x03,Imagineer Staff
