@@ -1,4 +1,4 @@
-name: Nightly Tag (EN)
+name: Nightly Release (EN)
 
 on:
   schedule:
@@ -36,12 +36,10 @@ jobs:
         run: |
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
 
-      - name: Checkout latest tag
+      - name: Set Tag Name
         working-directory: 'medarot3'
         run: |
-          git fetch --tags --all
-          git checkout `git tag --list --sort=-version:refname "*+EN*" | head -n 1`
-          echo "TAG_NAME=`git tag --list --sort=-version:refname \"*+EN\" | head -n 1`" >> $GITHUB_ENV
+          echo "TAG_NAME=`git rev-parse --abbrev-ref HEAD`" >> $GITHUB_ENV
 
       - name: Get latest text from source
         working-directory: 'medarot3'
@@ -52,7 +50,7 @@ jobs:
           make csv_from_xlsx
           git status --porcelain
 
-      - name: Tag if there are changes
+      - name: Create Nightly Release
         working-directory: 'medarot3'
         run: |
           [ -z "$(git status --porcelain)" ] && git name-rev --name-only HEAD | grep -q -F 'nightly' && exit 0
@@ -62,13 +60,8 @@ jobs:
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
-          git commit -am "Nightly build - `date +%Y%m%d`" --allow-empty
-          git tag "$TAG_NAME+nightly.`date +%Y%m%d`"
-
           mkdir patch
           ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o ./patch/m3kabuto-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
           ips_util create baserom_kuwagata.gbc medarot3_kuwagata.gbc -o ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
-
-          git push --tags
 
           ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -prerelease -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
