@@ -183,13 +183,13 @@
 181,0x1f016a,"<@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@RL,Girl,00>I-I'm sorry, but I don't want<D3>to talk right now."
 182,0x1f016c,"<@RL,Girl,00>コンピュ-タも メダロットみたいに<CD>ことばで うごくと いいのにね",
 183,0x1f016e,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,Karin,04>Um, I'm looking for a boy with<D3>his hair in a cool ponytail.<CF><D1>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,Girl,00>S-sorry, but I don't want to<D3>talk right now."
-184,0x1f0170,"<@RL,Boy,00>メダロッチ もってたら<CD>ぼっしゅう されるんだぞ!","<@RL,Boy,00>If you have a medawatch,<D3>they'll confiscate it!"
-185,0x1f0172,"<@RL,Boy,00>メダロッチ 学園に もってきたら<CD>ダメなんだぞ!","<@RL,Boy,00>It's not good to bring a<D3>medawatch to this school!"
+184,0x1f0170,"<@RL,Boy,00>メダロッチ もってたら<CD>ぼっしゅう されるんだぞ!","<@RL,Boy,00>If you have a Medarotch,<D3>they'll confiscate it!"
+185,0x1f0172,"<@RL,Boy,00>メダロッチ 学園に もってきたら<CD>ダメなんだぞ!","<@RL,Boy,00>It's not good to bring a<D3>Medarotch to this school!"
 186,0x1f0174,"<@RL,Boy,00>今の ロボトル<CD>バレなかったかな...?","<@RL,Boy,00>I wonder if anyone will find out<D3>about this battle..."
 187,0x1f0176,"<@RL,Boy,00>メダロッチ もってたら<CD>ロボトルなんだぞ!",
 188,0x1f0178,"<@RL,Boy,00>ロボトル ばんざい!",
 189,0x1f017a,"<@RL,Man,00>わたしに 何か 用かね?","<@RL,Man,00>What do you want from me?"
-190,0x1f017c,"<@RL,Man,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,Man,00>Hmm? Isn't that a<D3>medawatch? I'll need to<CF><D1>confiscate that!"
+190,0x1f017c,"<@RL,Man,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,Man,00>Hmm? Isn't that a<D3>Medarotch? I'll need to<CF><D1>confiscate that!"
 191,0x1f017e,"<@RL,Man,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,Karin,05>いやですわ わたし そんなこと<CD>しませんわ","<@RL,Man,00>I lost... You're gonna take my Medarotch.<CF><D1><@LR,Karin,05>No, I wouldn't do that."
 192,0x1f0180,"<@RL,Man,00>どうじょうは いらないっ!","<@RL,Man,00>I don't need your pity!"
 193,0x1f0182,"<@RL,Boy,00>ここの こうしきを こうやって<CD>それで...","<@RL,Boy,00>So I use the formula this<D3>way..."
