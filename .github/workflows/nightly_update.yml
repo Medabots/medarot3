@@ -70,4 +70,4 @@ jobs:
 
           git push
 
-          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -prerelease -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
+          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
