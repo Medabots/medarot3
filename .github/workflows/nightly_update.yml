@@ -36,10 +36,12 @@ jobs:
         run: |
           cp $GITHUB_WORKSPACE/baserom/*.gbc $GITHUB_WORKSPACE/medarot3
 
-      - name: Set Tag Name
+      - name: Get Tag Info
         working-directory: 'medarot3'
         run: |
+          git fetch --tags --all
           echo "TAG_NAME=`git rev-parse --abbrev-ref HEAD`" >> $GITHUB_ENV
+          echo "LATEST_TAG_NAME=`git tag --list --sort=version:refname \"\`git name-rev --name-only HEAD\`+nightly.*\"`" >> $GITHUB_ENV
 
       - name: Get latest text from source
         working-directory: 'medarot3'
@@ -53,7 +55,7 @@ jobs:
       - name: Push and release if there are changes
         working-directory: 'medarot3'
         run: |
-          [ -z "$(git status --porcelain)" ] && exit 0
+          [ -z "$(git status --porcelain)" ] && git diff --exit-code $LATEST_TAG_NAME && exit 0
 
           make -j all
 
