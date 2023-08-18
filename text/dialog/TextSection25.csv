@@ -204,7 +204,7 @@
 194,0x218184,"<@RL,ScientistMale,00>この メダロット社は ユウキ<CD>ぼっちゃんが まかされて いるんだ<CF><D1>あの人 なかなかの やリ手だよ<CD>わるい くせさえ なけリゃな",
 195,0x218186,"<@RL,ScientistMale,01>ヘブンスタワ- メダロット社に<CD>ようこそ",
 196,0x218188,"<@RL,SelectCorpsGrunt,00>あ- そこの 少年!",
-197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます","<@RL,SelectCorpsGrunt,00>We have received a report of a thief entering Heaven's Tower, we ask that everyone remain vigilant!<CF><D1><@LL,Ikki,00>A thief?<CF><D1><@RL,SelectCorpsGrunt,00>The Heavens Gate branch of fthe Select Corps is located in Office 1, we request any information."
+197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます","<@RL,SelectCorpsGrunt,00>We have received a report of a thief entering Heaven's Tower, we ask that everyone remain vigilant!<CF><D1><@LL,Ikki,00>A thief?<CF><D1><@RL,SelectCorpsGrunt,00>The Heavens Gate branch of the Select Corps is located in Office 1, we request any information."
 198,0x21818c,"<@RL,MultiLeggedMedabot,00>もう いやだ<CD>なんで 多脚パ-ツのオレが<CF><D1>2本足で 立たなきゃならんのだ?",
 199,0x21818e,"<@RL,MultiLeggedMedabot,00>なんだか 上が さわがしいな",
 200,0x218190,"<@RL,ScientistMale,01>次は ふゆうに ちょうせんだ!",
