@@ -2,18 +2,29 @@ INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
 SECTION "Place Yen Symbol", ROM0[$2016]
+YenMath::
+  add c
+  and $1F
+  ld d, a
+  ld a, c
+  and $E0
+  add d
+  ld c, a
+  ret
+
 PlaceYenSymbolShop::
 ; hl is the money tile mapping address for the least significant digit.
   push bc
   ld b, h
-  ld a, l
-  sub 5
-  ld c, a
-  xor a
-  ld [bc], a
-  inc c
+  ld c, l
+  ld a, -5
+  call YenMath
 
 .ext
+  xor a
+  ld [bc], a
+  ld a, 1
+  call YenMath
   call PlaceYenSymbol
   ld h, b
   ld l, c
@@ -25,9 +36,6 @@ PlaceYenSymbolShopAlt::
   push bc
   ld b, h
   ld c, l
-  xor a
-  ld [bc], a
-  inc c
   jr PlaceYenSymbolShop.ext
 
 PlaceYenSymbol::
@@ -35,11 +43,10 @@ PlaceYenSymbol::
 ; Warning: This will cause an infinite loop if it can't find an empty tile to map to.
   push bc
   push de
-  ld a, c
-  add 3
-  jr .decccommon
+  ld a, 3
 
 .loop
+  call YenMath
   di
   rst $20
   ld a, [bc]
@@ -48,16 +55,7 @@ PlaceYenSymbol::
   jr z, .exit
 
 .decc
-  ld a, c
-  dec a
-
-.decccommon
-  and $1F
-  ld d, a
-  ld a, c
-  and $E0
-  add d
-  ld c, a
+  ld a, -1
   jr .loop
 
 .exit

@@ -619,14 +619,12 @@ PauseMenuMapMoneyDuringTransition::
   or b
   jr z, .draw_00
   ld hl, $9D66
-  ld a, $e0
   di
-  push af
   rst $20
-  pop af
+  ld a, $e0
   ld [hli], a
   ei
-  ret
+  jp PlaceYenSymbolShop
 .draw_00
   ld hl, $9D66
   ld a, $e0
@@ -642,6 +640,6 @@ PauseMenuMapMoneyDuringTransition::
   push af
   rst $20
   pop af
-  ld [hli], a
+  ld [hl], a
   ei
   ret
