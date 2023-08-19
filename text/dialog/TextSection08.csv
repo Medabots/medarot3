@@ -12,7 +12,7 @@
 010,0x11c014,"<@LL,Ikki,07>こっ...これは...!?<CF><@LL,Ikki,05>はいせんが ゴチャゴチャしてて<CD>わからない...","<@LL,Ikki,07>Th-this is...!?<CF><@LL,Ikki,05>A real mess of wires..."
 011,0x11c016,"<@LL,Ikki,04>ジュ-スの 自動はんばいきだ<CF>今は のどは かわいてないや","<@LL,Ikki,04>It's a vending machine that has juice.<CF>I'm not thirsty right now."
 012,0x11c018,"<@LL,Ikki,00>おこられそうだから やめておこう","<@LL,Ikki,00>I'll get in trouble if do that, so I'd better not."
-013,0x11c01a,"<@LL,Ikki,00>むずかしそうな 本が ならんでる","<@LL,Ikki,00>There are Books lined up here.<CF>They seem to be difficult."
+013,0x11c01a,"<@LL,Ikki,00>むずかしそうな 本が ならんでる","<@LL,Ikki,00>There are books lined up here.<CF>They seem to be difficult."
 014,0x11c01c,"「メダロットのれきし」<CF>1:白黒よう<CF>2:白黒.カラ-たいおう<CF>3:カラ-せんよう<CF>おしまい<CF><@LL,Ikki,03>よむんじゃ なかった...","History of Medarot<CF>1:Black and white<CF>2:B&W with color support<CF>3:Color enhanced<CF>That's all.<CF><@LL,Ikki,03>Why did I read that..."
 015,0x11c01e,「メダ新聞(変形とくしゅう)」<CF>変形メダロットの<CD>かいはつに ともない<CF>メダロッチも<CD>きのうをついか させると<CF>メダロット社が はっぴょう<CF>なお デ-タはいしん方式による<CD>バ-ジョンアップのため<CF>自動てきに きのうがついか<CD>されるとも つけくわえている,"Medarot News (Transformation Special)<CF>With the creation of transforming Medarots, the Medarot Company has announced additional features to be added to the Medarotch.<CF>The features will be delivered via an automatic update."
 016,0x11c020,「メダロットの ちしき<CD> ティンペット(1)」<CF>ティンペットは 男型と 女型の<CD>2しゅるいに わかれておリ<CF>それぞれに たいおうした パ-ツしか<CD>そうちゃく できない,Medarot Knowledge: Tinpets (1)<CF>Tinpets are divided into two types: Male and Female.<CF>Each type can't equip parts made for the other type.
