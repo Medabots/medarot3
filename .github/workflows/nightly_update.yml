@@ -41,7 +41,7 @@ jobs:
         run: |
           git fetch --tags --all
           echo "TAG_NAME=`git rev-parse --abbrev-ref HEAD`" >> $GITHUB_ENV
-          echo "LATEST_TAG_NAME=`git tag --list --sort=version:refname \"\`git name-rev --name-only HEAD\`+nightly.*\"`" >> $GITHUB_ENV
+          echo "LATEST_TAG_NAME=`git tag --list --sort=-authordate \"\`git name-rev --name-only HEAD\`+nightly.*\" | head -n 1`" >> $GITHUB_ENV
 
       - name: Get latest text from source
         working-directory: 'medarot3'
