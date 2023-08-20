@@ -82,7 +82,7 @@
 080,0x1f00a0,"<@RL,BunnyGirl,00>ぼうやぁ おねえさん<CD>パ-ツが だ-いすきなの <CF><D1>あたしに くれなぁい?",
 081,0x1f00a2,"<@RL,Boy,00>ここは どこ?","<@RL,Boy,00>Where am I?"
 082,0x1f00a4,"<@RL,Boy,00>ここは「メダロポリス2」!<CD>つまリ メダロポリスの左下!<CF><D1>メダロえきからは ひこう場とかにも<CD>行けるんだぜ!","<@RL,Boy,00>This is Medaropolis 2, we're<D3>the bottom left section of<CF><D1>Medaropolis. From Medaro<D3>Station, you can reach the<CF><D1>airport and other places too!"
-083,0x1f00a6,"<@RL,Boy,00>でっかいデパ-トだよなぁ<CD>こんなに でっかいと...<CF><D1>入リ口まで 歩くのが 大変だ!","<@RL,Boy,00>The department store is huge,<D3>isn't it? A store as big as<CF><D1>This one... Just walking to<D3>the entrance is hard!"
+083,0x1f00a6,"<@RL,Boy,00>でっかいデパ-トだよなぁ<CD>こんなに でっかいと...<CF><D1>入リ口まで 歩くのが 大変だ!","<@RL,Boy,00>The department store is huge,<D3>isn't it? A store as big as<CF><D1>this one... Just walking to<D3>the entrance is hard!"
 084,0x1f00a8,"<@RL,Lady2,00>メダロデパ-トヘ ようこそ<CF><D1>...もうしわけございませんが<CD>先日の でんぱいじょうによリ<CF><D1>いちじ パ-ツはんばいを<CD>貝合わせて おリます<CF><D1><@LL,Ikki,05>でんぱいじょうの じけんの<CD>えいきょうが ここにも...","<@RL,Lady2,00>Welcome to Medalo<D3>Department Store!<CF><D1>...My apologies, but because of<D3>the strange radio wave the<CF><D1>other day,<CF><D1>We have decided to postpone<D3>part sales for the time being.<CF><D1><@LL,Ikki,05>The strange radio wave<D3>affected this place, too..."
 085,0x1f00aa,"<@RL,Lady2,00>メダロデパ-トヘ ようこそ!<CF><D1>こちらでは メダロットの パ-ツを<CD>とリあつかっておリます","<@RL,Lady2,00>Welcome to the Medalo<D3>Department Store!<CF><D1>We deal in Medarot parts here."
 086,0x1f00ac,"<@RL,Lady2,00>あリがとうございました","<@RL,Lady2,00>Thank you very much."

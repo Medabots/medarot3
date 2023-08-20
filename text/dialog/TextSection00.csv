@@ -133,15 +133,15 @@
 131,0x90106,マイナス症状クリアによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,<f02>Defenseless<f00> ailment jammed by Ailment Clear!<S46><*04>
 132,0x90108,症状むこうパ-ツによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,<f02>Defenseless<f00> ailment jammed by Negate Status part!<S46><*04>
 133,0x9010a,ぼうぎょふのうの マイナス症状!<CD>攻撃を ぼうぎょできない!<S46><*04>,"Status ailment, <f02>Defenseless<f00>!<D3>Unable to defend!"
-134,0x9010c,<&BUF01>パ-ツは<CD><&BUF02>に ヘんかした!<S46><*04>,<&BUF01> part transformed into <&BUF02>!<S46><*04>
-135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,<&BUF01> part destroyed!<S46><*04>
+134,0x9010c,<&BUF01>パ-ツは<CD><&BUF02>に ヘんかした!<S46><*04>,The <&BUF01> transformed into <&BUF02>!<S46><*04>
+135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,The <&BUF01> was destroyed!<S46><*04>
 136,0x90110,変形しているメダロットには<CD>こうかがない!<S46><*04>,Transformed Medarots are unaffected!<S46><*04>
 137,0x90112,デストロイは まえをむいている<CD>あいてには こうかがない!<S46><*04>,Destroy does not effect advancing opponents!<S46><*04>
-138,0x90114,サクリファイスのはんどうで<CD><&BUF01>パ-ツが こわれた!<S46><*04>,<&BUF01> part destroyed by Sacrifice's recoil!<S46><*04>
+138,0x90114,サクリファイスのはんどうで<CD><&BUF01>パ-ツが こわれた!<S46><*04>,The <&BUF01> was destroyed by Sacrifice's recoil!<S46><*04>
 139,0x90116,ねらったパ-ツは<CD>ダメ-ジを うけていない!<S46><*04>,Targeted part is not damaged!<S46><*04>
-140,0x90118,<&BUF01>パ-ツが <&BUF00>かいふくした!<S46><*04>,<&BUF01> part healed by <&BUF00>!<S46><*04>
-141,0x9011a,ねらった パ-ツは こわれていない!<S46><*04>,Targeted part is not destroyed!<S46><*04>
-142,0x9011c,<&BUF01>パ-ツは ふっかつした!<S46><*04>,Repaired <&BUF01>!<S46><*04>
+140,0x90118,<&BUF01>パ-ツが <&BUF00>かいふくした!<S46><*04>,The <&BUF01> was healed by <&BUF00>!<S46><*04>
+141,0x9011a,ねらった パ-ツは こわれていない!<S46><*04>,Targeted part was not destroyed!<S46><*04>
+142,0x9011c,<&BUF01>パ-ツは ふっかつした!<S46><*04>,Repaired the <&BUF01>!<S46><*04>
 143,0x9011e,<&BUF02>は そせいした!<S46><*04>,<&BUF02> revived!<S46><*04>
 144,0x90120,ねらったメダロットは<CD>ダメ-ジを うけていない!<S46><*04>,Targeted Medarot was not damaged!<S46><*04>
 145,0x90122,<&BUF02>の そうこうが<CD><&BUF00>かいふくした!<S46><*04>,<&BUF02> armor was restored by <&BUF00>!<S46><*04>
