@@ -244,10 +244,10 @@ F2: Text Pointers 2 / Pointer List Pointers / PtrList 0 / Special pointer list h
 F3: PtrList 1
 F4: PtrList 2
 F5: PtrList 3
-F6: (empty)
-F7: (empty)
-F8: (empty)
-F9: (empty)
+F6: Text 28
+F7: Text 29
+F8: Text 30
+F9: Text 31
 FA: (empty)
 FB: Patched 2bpp gfx
 FC: Patched 2bpp gfx
