@@ -62,7 +62,7 @@ jobs:
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
-          git commit -am "Nightly text update - `date +%Y%m%d`"
+          git commit -am "Nightly text update - `date +%Y%m%d`" || echo "No text changes"
 
           mkdir patch
           ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.ips
