@@ -182,7 +182,7 @@
 180,0x1f0168,"<@RL,Boy,00>勝っても まけても<CD>うらみっこ なし!",
 181,0x1f016a,"<@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@RL,Girl,00>I-I'm sorry, but I don't want<D3>to talk right now."
 182,0x1f016c,"<@RL,Girl,00>コンピュ-タも メダロットみたいに<CD>ことばで うごくと いいのにね",
-183,0x1f016e,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,Karin,04>Um, I'm looking for a boy with<D3>his hair in a cool ponytail.<CF><D1>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,Girl,00>S-sorry, but I don't want to<D3>talk right now."
+183,0x1f016e,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,Karin,04>Um, I'm looking for a boy with his hair in a cool ponytail.<CF><D1>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,Girl,00>S-sorry, but I don't want to talk right now."
 184,0x1f0170,"<@RL,Boy,00>メダロッチ もってたら<CD>ぼっしゅう されるんだぞ!","<@RL,Boy,00>If you have a Medarotch,<D3>they'll confiscate it!"
 185,0x1f0172,"<@RL,Boy,00>メダロッチ 学園に もってきたら<CD>ダメなんだぞ!","<@RL,Boy,00>It's not good to bring a<D3>Medarotch to this school!"
 186,0x1f0174,"<@RL,Boy,00>今の ロボトル<CD>バレなかったかな...?","<@RL,Boy,00>I wonder if anyone will find out<D3>about this battle..."
@@ -193,7 +193,7 @@
 191,0x1f017e,"<@RL,Man,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,Karin,05>いやですわ わたし そんなこと<CD>しませんわ","<@RL,Man,00>I lost... You're gonna take my Medarotch.<CF><D1><@LR,Karin,05>No, I wouldn't do that."
 192,0x1f0180,"<@RL,Man,00>どうじょうは いらないっ!","<@RL,Man,00>I don't need your pity!"
 193,0x1f0182,"<@RL,Boy,00>ここの こうしきを こうやって<CD>それで...","<@RL,Boy,00>So I use the formula this<D3>way..."
-194,0x1f0184,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Boy,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,Karin,04>Um, I'm looking for a boy<D3>called <&BUF0A>. His hair is in<CF><D1>a cool ponytail.<CF><D1> Have you seen him?<CF><D1><@RL,Boy,00>I-I'm busy right now.<D3>Please talk to me later."
+194,0x1f0184,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Boy,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,Karin,04>Um, I'm looking for a boy called <&BUF0A>.<CF><D1>His hair is in a cool ponytail.<CF><D1>Have you seen him?<CF><D1><@RL,Boy,00>I-I'm busy right now.<D3>Please talk to me later."
 195,0x1f0186,"<@RL,Girl,00>きゃ-っ!!","<@RL,Girl,00>Kiyahhh!!"
 196,0x1f0188,"<@RL,Girl,00>いやぁ-っ!!","<@RL,Girl,00>Get out!!"
 197,0x1f018a,"<@RL,Lady2,00>ヘんた-い!!","<@RL,Lady2,00>Pervert!!"
