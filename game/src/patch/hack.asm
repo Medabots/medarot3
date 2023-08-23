@@ -105,3 +105,4 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry PaintShopPaintSelectScreen, $9010 ; 23
   TilemapTilesetTableEntry MinigameAOverlay, $9010 ; 24
   TilemapTilesetTableEntry MinigameBOverlay, $9010 ; 25
+  TilemapTilesetTableEntry HeavensGateElevator, $9010 ; 26

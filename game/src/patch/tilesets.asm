@@ -164,3 +164,4 @@ PatchTilesets::
   PatchTilesetEntry PaintShopPaintSelectScreen
   PatchTilesetEntry MinigameAOverlay
   PatchTilesetEntry MinigameBOverlay
+  PatchTilesetEntry HeavensGateElevator
