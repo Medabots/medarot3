@@ -1119,37 +1119,37 @@ Tilemap01_96::
 Tilemap01_97::
   INCBIN "./build/tilemaps/0197.map"
 Tilemap01_98::
-  INCBIN "./build/tilemaps/0198.map"
+  INCBIN "./build/tilemaps/HeavensGateElevatorMainTilemap.map"
 Tilemap01_99::
-  INCBIN "./build/tilemaps/0199.map"
+  INCBIN "./build/tilemaps/HeavensGateElevatorB1F.map"
 Tilemap01_9A::
-  INCBIN "./build/tilemaps/019A.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator01F.map"
 Tilemap01_9B::
-  INCBIN "./build/tilemaps/019B.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator02F.map"
 Tilemap01_9C::
-  INCBIN "./build/tilemaps/019C.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator03F.map"
 Tilemap01_9D::
-  INCBIN "./build/tilemaps/019D.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator04F.map"
 Tilemap01_9E::
-  INCBIN "./build/tilemaps/019E.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator05F.map"
 Tilemap01_9F::
-  INCBIN "./build/tilemaps/019F.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator06F.map"
 Tilemap01_A0::
-  INCBIN "./build/tilemaps/01A0.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator07F.map"
 Tilemap01_A1::
-  INCBIN "./build/tilemaps/01A1.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator08F.map"
 Tilemap01_A2::
-  INCBIN "./build/tilemaps/01A2.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator09F.map"
 Tilemap01_A3::
-  INCBIN "./build/tilemaps/01A3.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator10F.map"
 Tilemap01_A4::
-  INCBIN "./build/tilemaps/01A4.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator11F.map"
 Tilemap01_A5::
-  INCBIN "./build/tilemaps/01A5.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator12F.map"
 Tilemap01_A6::
-  INCBIN "./build/tilemaps/01A6.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator13F.map"
 Tilemap01_A7::
-  INCBIN "./build/tilemaps/01A7.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator14F.map"
 Tilemap01_A8::
   INCBIN "./build/tilemaps/01A8.map"
 Tilemap01_AB::
