@@ -206,7 +206,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 202,\x11,\x04,Toshiaki Kaname
 203,\x11,\x04,Junichi Yamaguchi
 204,\x10,\x03,Localization
-205,\x11,\x05,Hacking
+205,\x11,\x05,Development
 206,\x11,\x04,andwhyisit
 207,\x11,\x04,Variant
 208,\x11,\x04,\xCB
