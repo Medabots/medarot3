@@ -8,7 +8,7 @@
 006,0x9000c,<SFF>メダフォ-スをためます<*04>,<SFF>Charges Medaforce gauge<*04>
 007,0x9000e,<SFF>メダフォ-スを使います<*04>,<SFF>Activates Medaforce<*04>
 008,0x90010,<SFF>変形します<*04>,<SFF>Medachange<*04>
-009,0x90012,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,Use Left and Right on the D-Pad to select rotation.<S46><*04>
+009,0x90012,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,Use Left and Right on the D-Pad to select repeat point.<S46><*04>
 010,0x90014,<SFF>ロボトル ファイト!<*04>,<SFF>Robattle fight!<*04>
 011,0x90016,ゆうこうパワ-アップ!<CD>行動せいこうちが 上がった!<S46><*04>,Ally Power Up!<D3>Success Rate increased!<S46><*04>
 012,0x90018,メダフォ-スプラントはつどう!<CD>メダフォ-スが上がった!<S46><*04>,Medaforce Plant Activate!<D3>Medaforce gauge was charged!<S46><*04>

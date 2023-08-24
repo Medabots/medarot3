@@ -85,7 +85,7 @@
 083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right arm, a left arm, and legs.<CF>Four different types of parts to install.<*02>"
 084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,A Medarot's personality depends on the inserted Medal.<*04>
 085,0x9410e,さまざまな こせいを もった<CD>メダロットたちが かんせいする!<*02>,There are all kinds of Medarots with all sorts of personalities!<*02>
-086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF>B1F<D3><f01>Go to <f00>Heaven's Tower?<*04>
+086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF>B1F<D3><f01>Go to <f00>Heaven's Tower B1F?<*04>
 087,0x94112,<SFF>1F<CD>エントランスに 行く?<*04>,<SFF>1F<D3><f01>Go to the <f00>entrance?<*04>
 088,0x94114,<SFF>2F<CD>オフィス1に 行く?<*04>,<SFF>2F<D3><f01>Go to <f00>office 1?<*04>
 089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Air Hotel 1?<*04>

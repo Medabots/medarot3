@@ -32,7 +32,7 @@
 030,0x22003c,"<@RL,Lady2,00>何回 言えば 分かるのかしらっ!<CF><D1><@RL,FemaleMedabot,00>もうしわけございません おくさま<CF><D1><@RL,Lady2,00>あ- もう やだやだ!<CD>こんなメダロット 早くすてて<CF><D1>新はつばいの お手つだい<CD>メダロットでも 買いましょっ!",
 031,0x22003e,"<@RL,Lady2,00>何回 言えば 分かるのかしらっ!<CF><D1><@RL,FemaleMedabot,00>もうしわけございません おくさま<CF><D1><@RL,Lady2,00>あ- もう!<CF><D1>...まぁ いいわ<CD>メダロットも かぞくの<CF><D1>いちいんなんだし<CF><D1>気長に そだてて<CD>いくしか ないわねぇ",
 032,0x220040,"<@RL,Lady2,00>何なの? あなた そこどきなさい!",
-033,0x220042,"<@LL,Ikki,06>ロボロボ団 1分の1スケ-ル!<CD>何なんだ これ?",
+033,0x220042,"<@LL,Ikki,06>ロボロボ団 1分の1スケ-ル!<CD>何なんだ これ?","<@LL,Ikki,06A> RoboRobo at 1/1 scale!<D3>What is this?"
 034,0x220044,"<@RL,Man3,00>知ってる? 地上で 大人気の<CD>「ロボロボさん」人形 ほしいよな-",
 035,0x220046,"<@RL,Man3,00>ついに 手に入れたぞ!<CF><D1>今 地上で1番 人気のヒ-ロ-!<CD>「セレクト団」人形!<CF><D1><@LL,Ikki,06>何か ちがうんだよなぁ",
 036,0x220048,"<@RL,Lady3,00>ここに 「ボロボロ団」っていう<CD>人気の 人形を かざるんだって",
@@ -265,10 +265,10 @@
 253,0x2201f8,"<@RL,Crow,00>ばかな メダロットめ<CD>おれに 友だちなんか いるものか<CF><D1><@RL,FloatingMedabot,00>キミの 目...スゴク<CD>さびしソウ...","<@RL,Crow,00>You foolish medarot, I don't have any friends!<CF><D1><@RL,FloatingMedabot,00>Your eyes are... so lonely..."
 254,0x2201fa,"<@RL,Crow,00>ふん このおれが<CD>すてられた メダロットなんぞに<CF><D1>どうじょうされるとはな<CF><D1><@RL,Mystery,00>くすくす くすくす","<@RL,Crow,00>Hmph, treating me like a discarded medarot.<CF><D1><@RL,Mystery,00>*giggle giggle* *giggle giggle*"
 255,0x2201fc,"<@RL,Crow,03>(ばかな...こんな所に<CD>人が いるはずがない)","<@RL,Crow,03>(Ridiculous... There's no way someone would be here.)"
-256,0x2201fe,"<@RL,Topazia,01>どう?.生きたまま.すてられるって<CD>どんな気分?<CF><D1>ニンゲンは.生きてる.メダロット<CD>すてる.ケド<CF><D1><@RL,Crow,03>天使だと? そんなばかな<CD>何者だ? お前...<CF><D1><@RL,Topazia,01>わたし?.わたしは.トパ-ジア<CF><D1>ちきゅうの.フォ-ス<CD>スピリット!","<@RL,Topazia,01>Well? How does it feel to be discarded <f02>while still alive<f00>?<CF><D1><f02>After all<f00>, humans discard <f02>living<f00> medarots.<CF><D1><@RL,Crow,03>An angel? Ridiculous. Who are you...?<CF><D1><@RL,Topazia,01>Me?<f02> I am<f00> Topazia.<CF><D1>The force spirit of the <f02>earth<f00>!"
+256,0x2201fe,"<@RL,Topazia,01>どう?.生きたまま.すてられるって<CD>どんな気分?<CF><D1>ニンゲンは.生きてる.メダロット<CD>すてる.ケド<CF><D1><@RL,Crow,03>天使だと? そんなばかな<CD>何者だ? お前...<CF><D1><@RL,Topazia,01>わたし?.わたしは.トパ-ジア<CF><D1>ちきゅうの.フォ-ス<CD>スピリット!","<@RL,Topazia,01>Well? How does it feel - discarded while still alive?<CF><D1>After all - humans discard - live medarots.<CF><D1><@RL,Crow,03>An angel? Ridiculous. Who are you...?<CF><D1><@RL,Topazia,01>Me? Topazia.<CF><D1>Force spirit - earth!"
 257,0x220200,ヲ おおぉオ...,<f03>Oo<f00>oooh...
-258,0x220202,"<@RL,Crow,03>何だ?<CF><D1><@RL,Topazia,01>メダロットの.心を.じゆうにして<CD>あげてるの<CF><D1>「メダロット3げんそく」なんか.に<CD>しばられない.メダロットたち!<CF><D1>思いのまま.ニンゲンを.にくみ<CD>ニンゲンを.攻撃する<CF><D1>メダロットに.生まれ.かわるの<CF><D1><@RL,Crow,00>......","<@RL,Crow,03>What are you doing?<CF><D1><@RL,Topazia,01>I'm freeing the <f02>spirit<f00> of the <f02>medarots<f00> from the <f02>bindings<f00> of the ""Three Laws of Medarobotics""<CF><D1>They will be <f02>reborn<f00> as medarots who attack the hated <f02>humans<f00>.<CF><D1><@RL,Crow,00>......"
-259,0x220204,"<@RL,Topazia,02>テキ.が.来る<CD>あなたたち.おいで!","<@RL,Topazia,02><f02>Enemies<f00> are <f02>coming<f00>, come with me <f02>all of you<f00>!"
+258,0x220202,"<@RL,Crow,03>何だ?<CF><D1><@RL,Topazia,01>メダロットの.心を.じゆうにして<CD>あげてるの<CF><D1>「メダロット3げんそく」なんか.に<CD>しばられない.メダロットたち!<CF><D1>思いのまま.ニンゲンを.にくみ<CD>ニンゲンを.攻撃する<CF><D1>メダロットに.生まれ.かわるの<CF><D1><@RL,Crow,00>......","<@RL,Crow,03>What are you doing?<CF><D1><@RL,Topazia,01>I freeing - spirits of medarots from - bindings of - ""Three Laws of Medarobotics""<CF><D1>They be - reborn as medarots who - attack the hated humans.<CF><D1><@RL,Crow,00>......"
+259,0x220204,"<@RL,Topazia,02>テキ.が.来る<CD>あなたたち.おいで!","<@RL,Topazia,02>Enemies - coming - come with me - all of you!"
 260,0x220206,"<@LL,Ikki,06>カラスを たすけに 行こう!",
 261,0x220208,"<@LL,Ikki,00>ベつの 場所に 行こう",
 262,0x22020a,"<@LL,Ikki,00>さてと カラスか カモメちゃん<CD>どっちかがいれば いいんだけどな","<@LL,Ikki,00>Now, if I can just find Crow or Gull, I'll be fine."
