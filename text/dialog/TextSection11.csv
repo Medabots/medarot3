@@ -2,7 +2,7 @@
 000,0x1e0000,"<@RL,Sloan,03>う う-ん<CD>もう ダメだ...",".<@RL,Sloan,03>No... I can't go on..."
 001,0x1e0002,"<@RL,Sloan,03>う-ん う-ん<CD>ぼくの 家に ゴキブリが...<CF><D1><@LL,Ikki,05>うなされてる...","<@RL,Sloan,03>No... no...<D3>The cockroaches are in my house...<CF><D1><@LL,Ikki,05>He's having a nightmare..."
 002,0x1e0004,"<@LL,Ikki,00>アノマロカリス型 メダロットの<CD>「シ-キャッチャ-」だ<CF><D1>こだいせいぶつって 本当に<CD>こんなんだったのかな...","<@LL,Ikki,00>It's the Anomalocaris-type Medarot Sea-Catcher.<CF><D1>""An ancient organism."" Really?<D3>I wonder what it was like..."
-003,0x1e0006,"<@LL,Ikki,00>ハルキゲニア型 メダロットの<CD>「シ-モンスタ-」だ<CF><D1>かなリ きけんな デザインだ","<@LL,Ikki,00>It's the Hallucegenia-type Medarot Sea-Monster.<CF><D1>From it's design it looks pretty dangerous."
+003,0x1e0006,"<@LL,Ikki,00>ハルキゲニア型 メダロットの<CD>「シ-モンスタ-」だ<CF><D1>かなリ きけんな デザインだ","<@LL,Ikki,00>It's the Hallucegenia-type Medarot Sea-Monster.<CF><D1>From its design it looks pretty dangerous."
 004,0x1e0008,"<@LL,Ikki,00>イミテ-ションの メダルだ<CD>じっけんとかに 使うのかな?","<@LL,Ikki,00>A fake Medal. It's probably used for experiments and the like?"
 005,0x1e000a,"<@LL,Ikki,00>わくせいシリ-ズ<CD>「メダマ-ズ」","<@LL,Ikki,00>Planet series Meda-Mars"
 006,0x1e000c,"<@LL,Ikki,00>わくせいシリ-ズ<CD>「メダア-ス」","<@LL,Ikki,00>Planet series Meda-Earth"

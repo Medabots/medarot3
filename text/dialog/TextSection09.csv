@@ -197,7 +197,7 @@
 188,0x1d8178,"<@RL,Nae,01>となリの ヘやから メダルを<CD>1つ さしあげますわ<CF><D1>ティンペットが ないので<CD>ほんの 気休め でしょうけど<CF><D1><@LL,Ikki,01>そんな! うれしいです!<CD>あリがとうございます!","<@RL,Nae,01>I'm giving you a Medal from the room next door too.<CF>Though, without a Tinpet it isn't much use.<CF><@LL,Ikki,01>Woah! I'm really happy!<D3>Thank you so much!"
 189,0x1d817a,"<@LL,Ikki,00>カギが かかってる","<@LL,Ikki,00>It's locked."
 190,0x1d817c,"<@LL,Ikki,04>となリのヘやに 行って<CD>メダルを もらってこよう!","<@LL,Ikki,04>I should go to the room next door and get a Medal!"
-191,0x1d817e,"<@LL,Ikki,00>カギが かかってる","<@LL,Ikki,00>It's locked,"
+191,0x1d817e,"<@LL,Ikki,00>カギが かかってる","<@LL,Ikki,00>It's locked."
 192,0x1d8180,"<@LL,Ikki,04>「ヒ-ル」の メダルだ<CD>「せっち」が とくいなんだよな<CF><D1>「まもる」「せっち」のパ-ツを<CD>ゆうせんてきに ねらって 行動するぞ<CF><D1>このメダルに しようかな?<*04>","<@LL,Ikki,04>It's the <f02>Heel <f00>Medal.<D3>It specializes in <f02>Set-up<f00>.<CF>It prefers parts with <f02>Protect <f00>or <f02>Set-up<f00>.<CF>Should I choose this Medal?<*04>"
 193,0x1d8182,"<@LL,Ikki,04>よし これにしよう!","<@LL,Ikki,04>Alright, let's do this!"
 194,0x1d8184,"<@LL,Ikki,00>ほかのメダルも 貝てから きめよう","<@LL,Ikki,00>Let's look at other Medals before deciding."
