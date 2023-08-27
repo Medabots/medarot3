@@ -145,16 +145,16 @@
 143,0x1f011e,"<@RL,Man,00>それでは これから<CD>じゅぎょうを はじめる","<@RL,Man,00>Well then, the lesson starts<D3>now!"
 144,0x1f0120,"<@RL,Man,00>それでは これで<CD>じゅぎょうを おわる","<@RL,Man,00>And that concludes the lesson."
 145,0x1f0122,"<@RL,Girl,00>先生は ホ-ムル-ムの たびに<CD>ロボトルを はじめるの","<@RL,Girl,00>Our teacher always starts robattling during homeroom."
-146,0x1f0124,"<@LL,Ikki,00>なんか ここの きょうしつだけ<CD>人が おおくない?<CF><D1><@RL,Boy,00>ここに いるのは<CD>みんな メダロットずきさ<CF><D1>学園で ロボトルできるようなったから<CD>みんなで あつまってるんだ<CF><D1>きみも 楽しんでいきなよ",
-147,0x1f0126,"<@RL,Boy,00>う-ん みんな<CD>とても いきいきしているなぁ",
-148,0x1f0128,どうだい?<CD>きみも いっせん まじえるってのは,
-149,0x1f012a,きみも いきいきしているなぁ<CD>また ロボトルしような,
-150,0x1f012c,"<@RL,Boy,00>メダロットは やっぱリ<CD>「スピ-ド型」さ!<CF><D1>すばやい 動きで あいてを<CD>つきくずす!<CF><D1><@RL,Girl,00>あまいわね<CF><D1>わたしの メダロットの<CD>「パワ-型」の まえでは<CF><D1>「スピ-ド型」なんて<CD>むリょくよ!!<CF><D1><@RL,Lady2,00>まだまだ こどもね<CF><D1>先生の メダロットの<CD>「テクニック型」の 前では<CF><D1>いくら 「パワ-型」でも<CD>当たらないから かんけいないわ<CF><D1><@RL,Boy,00>でも 「スピ-ド型」で<CD>ガンガンせめたら<CF><D1>「テクニック」が あったって<CD>使うひまを あたえないよ<CF><D1><@LL,Ikki,00>は...はくねつした たたかいだ",
-151,0x1f012e,"<@RL,Boy,00>この コンビネ-ションだったら<CD>あいては 手も 足も 出せないさ",
-152,0x1f0130,"<@RL,Boy,00>こ こらぁ!!<CD>よこから のぞきこむなぁ!!",
+146,0x1f0124,"<@LL,Ikki,00>なんか ここの きょうしつだけ<CD>人が おおくない?<CF><D1><@RL,Boy,00>ここに いるのは<CD>みんな メダロットずきさ<CF><D1>学園で ロボトルできるようなったから<CD>みんなで あつまってるんだ<CF><D1>きみも 楽しんでいきなよ","<@LL,Ikki,00>Doesn't it seem like just this classroom has a bunch of people in it?<CF><D1><@RL,Boy,00>Everyone here is a medarot-lover. We've gathered together since we can robattle at school now. You should have some fun with us."
+147,0x1f0126,"<@RL,Boy,00>う-ん みんな<CD>とても いきいきしているなぁ","<@RL,Boy,00>Mmm, aren't you all lively."
+148,0x1f0128,どうだい?<CD>きみも いっせん まじえるってのは,How about it? Wanna face me in battle?
+149,0x1f012a,きみも いきいきしているなぁ<CD>また ロボトルしような,"You're lively too, let's robattle again."
+150,0x1f012c,"<@RL,Boy,00>メダロットは やっぱリ<CD>「スピ-ド型」さ!<CF><D1>すばやい 動きで あいてを<CD>つきくずす!<CF><D1><@RL,Girl,00>あまいわね<CF><D1>わたしの メダロットの<CD>「パワ-型」の まえでは<CF><D1>「スピ-ド型」なんて<CD>むリょくよ!!<CF><D1><@RL,Lady2,00>まだまだ こどもね<CF><D1>先生の メダロットの<CD>「テクニック型」の 前では<CF><D1>いくら 「パワ-型」でも<CD>当たらないから かんけいないわ<CF><D1><@RL,Boy,00>でも 「スピ-ド型」で<CD>ガンガンせめたら<CF><D1>「テクニック」が あったって<CD>使うひまを あたえないよ<CF><D1><@LL,Ikki,00>は...はくねつした たたかいだ","<@RL,Boy,00>Don't you know, my medarot is a ""speed-type""!<CF><D1>It will crush its' opponents with its agility!<CF><D1><@RL,Girl,00>How cute.<CF><D1>My medarot is a ""power-type,"" you're speed type will be powerless in the face of it!!<CF><D1><@RL,Lady2,00>You're still just a kid.<CF><D1>Against my ""technique-type,"" no matter how much of a ""power-type"" you have, it won't be able to hit a thing!<CF><D1><@RL,Boy,00>But with a ""speed-type,"" you can attack in a flash before they can use their ""techniques.""<CF><D1><@LL,Ikki,00>I-it's a fierce struggle."
+151,0x1f012e,"<@RL,Boy,00>この コンビネ-ションだったら<CD>あいては 手も 足も 出せないさ","<@RL,Boy,00>With this combination, the opponent won't be able to move a finger."
+152,0x1f0130,"<@RL,Boy,00>こ こらぁ!!<CD>よこから のぞきこむなぁ!!","<@RL,Boy,00>H-hey!!<D3>Don't peek in from the sides!!"
 153,0x1f0132,"<@RL,Boy,00>ぼくと ロボトルしたいのかい?<CD>あいてに なろう!","<@RL,Boy,00>Do you wanna robattle? Let's fight!"
 154,0x1f0134,なかなかやるな しかし<CD>きみは きほんが なっていない!<CF><D1>はじめのうちに きほんを<CD>マスタ-しなければ<CF><D1>いずれ こてんぱんにされるだろう!,"You did well, but you haven't mastered the basics.<CF><D1>If you don't master all of the basics, then you'll eventually get beaten!"
-155,0x1f0136,"<@RL,Boy,00>いくぞ メダチェィンジ!!<CF><D1><@RL,Girl,00>まけないわよ!<CD>メダフォゥゥス!!",
+155,0x1f0136,"<@RL,Boy,00>いくぞ メダチェィンジ!!<CF><D1><@RL,Girl,00>まけないわよ!<CD>メダフォゥゥス!!","<@RL,Boy,00>Let's go, MedaChange!!<CF><D1><@RL,Girl,00>I won't be defeated!<D3>MedaFoooorce!!"
 156,0x1f0138,"<@RL,Boy,00>ていしの 症状を<CD>マイナス症状クリア!<CF><D1><@RL,Girl,00>そのマイナス症状クリアを<CD>マイナス症状クリアで かいじょ!<CF><D1><@LL,Ikki,00>?<CF><D1><@RL,Boy,00>そしたら あいてに<CD>プラス症状クリア!<CF><D1><@RL,Girl,00>それなら そのプラス症状クリアを<CD>プラス症状クリアで かいじょ!<CF><D1><@LL,Ikki,04>???<CF><D1><@RL,Girl,00>つづけて ていしの 症状を<CD>つけてあげるわっ!!<CF><D1><@RL,Boy,00>まけるか!<CD>ここで フィ-ルドこんらん!!<CF><D1><@RL,Girl,00>ええっ!?<CD>なっ なんてことすんのよ!!<CF><D1><@LL,Ikki,05>...????????????...","<@RL,Boy,00>Clear the stop status with Minus Status Clear!<CF><D1><@RL,Girl,00>The Minus Status Clear will get rid of negative statuses!<CF><D1><@LL,Ikki,00>?<CF><D1><@RL,Boy,00>And then use Plus Status Clear on the opponent!<CF><D1><@RL,Girl,00>If you do that, the positive symptoms will be cleared by Plus Status Clear!<CF><D1><@LL,Ikki,04>???<CF><D1><@RL,Girl,00>I'll keep hitting you with Stop!!<CF><D1><@RL,Boy,00>I'm gonna lose! Confuse the field, now!!<CF><D1><@RL,Girl,00>Eeh!? Oh my!!<CF><D1><@LL,Ikki,05>...????????????..."
 157,0x1f013a,"<@RL,Boy,00>大きな声じゃ 言えないけど...<CF><D1><@LL,Ikki,00>ふむ ふむ<CF><D1><@RL,Boy,00>........<CD>.........<CF><D1>..........<CD>カリンちゃんって かわいいよな♥<CF><D1><@LL,Ikki,05>...そんな 声をひそめて<CD>言うことかぁ?<CF><D1><@RL,Boy,00>し-っ し-っ!<CD>声が 大きいっ!","<@RL,Boy,00>Keep this quiet, but...<CF><D1><@LL,Ikki,00>Yeah?<CF><D1><@RL,Boy,00>........<D3>.........<CF><D1>..........<D3>Karin is so cute...♥<CF><D1><@LL,Ikki,05>...That's the thing I need to<D3>keep quiet?<CF><D1><@RL,Boy,00>Shh! Shh! Don't talk so loud!"
 158,0x1f013c,"<@RL,Boy,00>きみも カリンちゃん<CD>ファンクラブに 入らないか?","<@RL,Boy,00>Do you want to join Karin's fan club too?"
@@ -174,20 +174,20 @@
 172,0x1f0158,"<@RL,Boy,00>何だよ お前!<CD>たこうの せいとのくせに<CF><D1>何 入ってきてんだよ!<CD>み 貝つかっても 知らないぞ!","<@RL,Boy,00>What the heck are you doing! Why's a student from another school here?<CF><D1>I-it's not my fault if you get found!"
 173,0x1f015a,"<@RL,Boy,00>やっぱ メダロットが いないと<CD>話が もリあがんないよな-","<@RL,Boy,00>You know, talking isn't as interesting without Medarots, right?"
 174,0x1f015c,"<@RL,Lady2,00>ピ ピ ピアノの<CD>れんしゅう するんだから<CF><D1>あ あ あっちに 行ってよ!","<@RL,Lady2,00>I'm pra-a-acticing the piano<D3>now, sooo-o-oooo...<CF><D1>Go somewhere e-e-eeeelse!"
-175,0x1f015e,"<@RL,Lady2,00>わたしの えんそうを お聞き!",
+175,0x1f015e,"<@RL,Lady2,00>わたしの えんそうを お聞き!","<@RL,Lady2,00>Listen to my performance!"
 176,0x1f0160,"<@LL,Ikki,05>こわいから 女子トイレに<CD>入るのは やめておこう","<@LL,Ikki,05>Let's not go in the girl's<D3>bathroom again. It's scary<CF><D1>in there..."
 177,0x1f0162,"<@LR,Karin,00><&BUF0A>くんは<CD>もしかしたら この中に...?<CF><D1><@LR,Karin,06>いやですわ わたしったら...","<@LR,Karin,00>Could <&BUF0A> be in here,<D3>by any chance...?<CF><D1><@LR,Karin,06>It's no good, we can't go in..."
 178,0x1f0164,"<@RL,Boy,00>あ-あ...<CD>たまには ゆっくリ ロボトルしたいよ","<@RL,Boy,00>Ah... Sometimes, I just want<D3>to have a leisurely robattle."
-179,0x1f0166,"<@RL,Boy,00>ロボトルしよ-ぜ!",
-180,0x1f0168,"<@RL,Boy,00>勝っても まけても<CD>うらみっこ なし!",
+179,0x1f0166,"<@RL,Boy,00>ロボトルしよ-ぜ!","<@RL,Boy,00>Let's robattle!"
+180,0x1f0168,"<@RL,Boy,00>勝っても まけても<CD>うらみっこ なし!","<@RL,Boy,00>Win or lose, no hard feelings!"
 181,0x1f016a,"<@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@RL,Girl,00>I-I'm sorry, but I don't want<D3>to talk right now."
-182,0x1f016c,"<@RL,Girl,00>コンピュ-タも メダロットみたいに<CD>ことばで うごくと いいのにね",
+182,0x1f016c,"<@RL,Girl,00>コンピュ-タも メダロットみたいに<CD>ことばで うごくと いいのにね","<@RL,Girl,00>Don't you wish computers could operate based on words like medarots?"
 183,0x1f016e,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Girl,00>わ わるいけど 今 わたし<CD>お話したくないの","<@LR,Karin,04>Um, I'm looking for a boy with his hair in a cool ponytail.<CF><D1>His name is <&BUF0A>.<CF><D1>Have you seen him?<CF><D1><@RL,Girl,00>S-sorry, but I don't want to talk right now."
 184,0x1f0170,"<@RL,Boy,00>メダロッチ もってたら<CD>ぼっしゅう されるんだぞ!","<@RL,Boy,00>If you have a Medarotch,<D3>they'll confiscate it!"
 185,0x1f0172,"<@RL,Boy,00>メダロッチ 学園に もってきたら<CD>ダメなんだぞ!","<@RL,Boy,00>It's not good to bring a<D3>Medarotch to this school!"
 186,0x1f0174,"<@RL,Boy,00>今の ロボトル<CD>バレなかったかな...?","<@RL,Boy,00>I wonder if anyone will find out<D3>about this battle..."
-187,0x1f0176,"<@RL,Boy,00>メダロッチ もってたら<CD>ロボトルなんだぞ!",
-188,0x1f0178,"<@RL,Boy,00>ロボトル ばんざい!",
+187,0x1f0176,"<@RL,Boy,00>メダロッチ もってたら<CD>ロボトルなんだぞ!","<@RL,Boy,00>If you have a medarotch, then let's robattle!"
+188,0x1f0178,"<@RL,Boy,00>ロボトル ばんざい!","<@RL,Boy,00>Hurray for robattles!"
 189,0x1f017a,"<@RL,Man,00>わたしに 何か 用かね?","<@RL,Man,00>What do you want from me?"
 190,0x1f017c,"<@RL,Man,00>む? それは メダロッチだな?<CD>ぼっしゅうだ!","<@RL,Man,00>Hmm? Isn't that a<D3>Medarotch? I'll need to<CF><D1>confiscate that!"
 191,0x1f017e,"<@RL,Man,00>まけた...先生の メダロッチが<CD>とリあげられてしまう<CF><D1><@LR,Karin,05>いやですわ わたし そんなこと<CD>しませんわ","<@RL,Man,00>I lost... You're gonna take my Medarotch.<CF><D1><@LR,Karin,05>No, I wouldn't do that."
@@ -201,14 +201,14 @@
 199,0x1f018e,"<@RL,Ninja,00>なにやつっ!?","<@RL,Ninja,00>Who's that guy!?"
 200,0x1f0190,"<@RL,OldLady,00>や やめておくれじゃ-っ!!<CF><D1><@LL,Ikki,07>ごっ ごめんなさいっ!!","<@RL,OldLady,00>G-get out already!!<CF><D1><@LL,Ikki,07>S-sorry!!"
 201,0x1f0192,"<@LL,Ikki,00>こっ ここにも<CD>ボナパルトの ぞうが!!<CF><D1>ほんとうに れきだいの<CD>学園長が ならんでいるのか...","<@LL,Ikki,00>Th-this looks like Bonaparte too!!<CF><D1>Hard to believe these are really the past headmasters..."
-202,0x1f0194,"<@LL,Ikki,05>...これって<CD>ロボロボメダルじゃないか",
-203,0x1f0196,"<@LL,Ikki,07>まさか このメダルは...!<CD>ロボロボメダル!",
-204,0x1f0198,"<@LL,Ikki,01>あははは ほんものかと 思ったら<CD>ロボロボメダルだぁ-",
-205,0x1f019a,"<@LL,Ikki,00>まさしく これは<CD>ロボロボメダルの かがやき!",
-206,0x1f019c,"<@LL,Ikki,06>こ これは どこから<CD>どう貝ても ロボロボメダル...",
-207,0x1f019e,"<@LL,Ikki,00>「サムライ」の<CD>メダルが かざられている",
-208,0x1f01a0,"<@LL,Ikki,00>このメダルに しようかな?<*04>",
-209,0x1f01a2,"<@LL,Ikki,00>...何か 選ぶまでも<CD>なかったような 気がする...",
+202,0x1f0194,"<@LL,Ikki,05>...これって<CD>ロボロボメダルじゃないか","<@LL,Ikki,05>...This...<D3>Isn't it a RoboRobo medal?"
+203,0x1f0196,"<@LL,Ikki,07>まさか このメダルは...!<CD>ロボロボメダル!","<@LL,Ikki,07>No way, this medal...!<D3>It's a RoboRobo medal!"
+204,0x1f0198,"<@LL,Ikki,01>あははは ほんものかと 思ったら<CD>ロボロボメダルだぁ-","<@LL,Ikki,01>Ahahaha, I thought it was real, but it's a RoboRobo medal."
+205,0x1f019a,"<@LL,Ikki,00>まさしく これは<CD>ロボロボメダルの かがやき!","<@LL,Ikki,00>Without a doubt, this gleam is a RoboRobo medal!"
+206,0x1f019c,"<@LL,Ikki,06>こ これは どこから<CD>どう貝ても ロボロボメダル...","<@LL,Ikki,06>N-no matter how you look at it, this is definitely a RoboRobo medal..."
+207,0x1f019e,"<@LL,Ikki,00>「サムライ」の<CD>メダルが かざられている","<@LL,Ikki,00>A <f02>Samurai<f00> medal is on display."
+208,0x1f01a0,"<@LL,Ikki,00>このメダルに しようかな?<*04>","<@LL,Ikki,00>Should I use this medal?<*04>"
+209,0x1f01a2,"<@LL,Ikki,00>...何か 選ぶまでも<CD>なかったような 気がする...","<@LL,Ikki,00>...That felt like a pointless choice..."
 210,0x1f01a4,"<@LL,Ikki,00>もう少し 考えよう","<@LL,Ikki,00>Let's think a little more."
 211,0x1f01a6,"<@LL,Ikki,00>その先は 学園ちょうしつだ<CD>むやみに 入るのは やめておこう","<@LL,Ikki,00>Beyond here is the Headmaster's office, let's not go in there willy-nilly."
 212,0x1f01a8,"<@RL,Boy,00>花園学園では コウジが<CD>さいきょうの メダロッタ-さ","<@RL,Boy,00>Koji is the best robattler at<D3>this school!"
