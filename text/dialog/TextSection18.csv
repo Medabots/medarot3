@@ -10,30 +10,30 @@
 008,0x1fc010,"<@RL,Asama,00>じゃ ぼくは もう行くよ","<@RL,Asama,00>Well, I'll be going."
 009,0x1fc012,"<@RL,Erika,04>ねえねえ! <CD>ここって 面白い町ね!<CF><D1>こんどは ハチロウくんが 言ってた<CD>「ジオフロント科学研究所」に<CF><D1>行ってみようよ!<CD>あんたも 来るでしょ?<CF><D1>でも あたしの しゅざいの<CD>じゃまは しないでよね!<CF><D1><@LL,Ikki,05>はいはい","<@RL,Erika,04>Hey, hey!<D3>This town is so interesting!<CF><D1>Let's go to the GeoFront Scientific Laboratory that Hachirou mentioned! You're coming too, right? Don't get in the way of my reporting, though!<CF><D1><@LL,Ikki,05>Yeah, yeah."
 010,0x1fc014,"<@LL,Ikki,05>あ また おいてかれちゃった...","<@LL,Ikki,05>Ah, left behind again..."
-011,0x1fc016,"<@RL,Lady2,00>「ジオフロント科学研究所」ヘ<CD>ようこそ",
-012,0x1fc018,"<@RL,Lady2,00>ロボロボ団を やっつけるだなんて<CD>すごいわ ゆうきがあるのね<CF><D1><@LR,Koji,02>たいしたこと あリませんよ<CF><D1><@RL,Lady2,00>わかいのに けんきょなのね<CF><D1>ともかく みんなをだいひょうして<CD>おれいを言うわね あリがとう♥",
-013,0x1fc01a,"<@RL,Lady2,00>何 なんなの?<CD>何がおこったっていうの?",
-014,0x1fc01c,"<@RL,Lady2,00>ロボロボ団の次は <CD>ことばを 話すネコですって!?",
-015,0x1fc01e,"<@RL,Lady2,00>ったく... なんて日なのかしら<CD>今日は 早くかえって休みたいわ",
-016,0x1fc020,"<@RL,Lady2,00>「ネコ」もどきなら 出て行ったわよ",
-017,0x1fc022,"<@RL,Man,00>今日中に リポ-トを まとめないと",
-018,0x1fc024,"<@RL,Man,00>1日中 イスに すわっていると<CD>こしが いたくなってくるよ",
-019,0x1fc026,"<@RL,Lady2,00>今日は 6時に 家ヘかえリたいわ",
-020,0x1fc028,"<@RL,Lady2,00>ヘんね? ここに入れておいた<CD>しょるいが 貝当たらないわ",
-021,0x1fc02a,"<@RL,Lady2,00>さいきん よく ものがなくなるのよ",
-022,0x1fc02c,"<@RL,Lady2,00>しょるい せいリも 楽じゃないわ",
-023,0x1fc02e,"<@RL,Man,00>モニタ-ばかリ貝ていると<CD>目が いたくなってくるよ",
-024,0x1fc030,"<@RL,Man,00>きっさ店に 行っているあいだに<CD>何か じけんがあったらしい<CF><D1>なんだろ すごく気になるなぁ",
-025,0x1fc032,"<@RL,Man,00>デ デ-タが...<CD>全部 きえちゃってるよ!",
-026,0x1fc034,"<@RL,Man,00>サラリ-マンも 楽じゃない",
-027,0x1fc036,"<@RL,Man,00>ロボロボ団って じつざいしてたんだな<CD>テレビの中の 話だと思ってたよ",
-028,0x1fc038,"<@RL,Man,00>な なぞの文字が 画面に...<CD>画面スクロ-ルが とまらない!!",
-029,0x1fc03a,"<@RL,Lady2,00>となリにすわっていた人...<CF><D1>セセリさんに しかられてから <CD>研究所に 来なくなっちゃったの",
+011,0x1fc016,"<@RL,Lady2,00>「ジオフロント科学研究所」ヘ<CD>ようこそ","<@RL,Lady2,00>Welcome to the <f02>GeoFront Scientific Laboratory<f00>."
+012,0x1fc018,"<@RL,Lady2,00>ロボロボ団を やっつけるだなんて<CD>すごいわ ゆうきがあるのね<CF><D1><@LR,Koji,02>たいしたこと あリませんよ<CF><D1><@RL,Lady2,00>わかいのに けんきょなのね<CF><D1>ともかく みんなをだいひょうして<CD>おれいを言うわね あリがとう♥","<@RL,Lady2,00>Beating the RoboRobo Gang was quite brave of you.<CF><D1><@LR,Koji,02>It was no big deal.<CF><D1><@RL,Lady2,00>My, so young and modest.<CF><D1>Anyway, I'd like to thank you on everyone's behalf ♥"
+013,0x1fc01a,"<@RL,Lady2,00>何 なんなの?<CD>何がおこったっていうの?","<@RL,Lady2,00>What in the world? What's going on?"
+014,0x1fc01c,"<@RL,Lady2,00>ロボロボ団の次は <CD>ことばを 話すネコですって!?","<@RL,Lady2,00>After the RoboRobos, a talking cat!?"
+015,0x1fc01e,"<@RL,Lady2,00>ったく... なんて日なのかしら<CD>今日は 早くかえって休みたいわ","<@RL,Lady2,00>Geez... What a day, I just want to head home and hit the hay."
+016,0x1fc020,"<@RL,Lady2,00>「ネコ」もどきなら 出て行ったわよ","<@RL,Lady2,00>That ""cat""-like thing already left."
+017,0x1fc022,"<@RL,Man,00>今日中に リポ-トを まとめないと","<@RL,Man,00>I need to put together a report today still."
+018,0x1fc024,"<@RL,Man,00>1日中 イスに すわっていると<CD>こしが いたくなってくるよ","<@RL,Man,00>Your back will get sore if you sit on a chair all day."
+019,0x1fc026,"<@RL,Lady2,00>今日は 6時に 家ヘかえリたいわ","<@RL,Lady2,00>I want to be home by 6:00 today."
+020,0x1fc028,"<@RL,Lady2,00>ヘんね? ここに入れておいた<CD>しょるいが 貝当たらないわ","<@RL,Lady2,00>Isn't that strange? I can't find the paperwork that I put here."
+021,0x1fc02a,"<@RL,Lady2,00>さいきん よく ものがなくなるのよ","<@RL,Lady2,00>I've been losing thing often lately."
+022,0x1fc02c,"<@RL,Lady2,00>しょるい せいリも 楽じゃないわ","<@RL,Lady2,00>Filing paperwork isn't so easy."
+023,0x1fc02e,"<@RL,Man,00>モニタ-ばかリ貝ていると<CD>目が いたくなってくるよ","<@RL,Man,00>Staring at nothing but a monitor will make your eyes hurt."
+024,0x1fc030,"<@RL,Man,00>きっさ店に 行っているあいだに<CD>何か じけんがあったらしい<CF><D1>なんだろ すごく気になるなぁ","<@RL,Man,00>I'm really curious about what happened at the cafe."
+025,0x1fc032,"<@RL,Man,00>デ デ-タが...<CD>全部 きえちゃってるよ!","<@RL,Man,00>Th-the data... It's all gone!"
+026,0x1fc034,"<@RL,Man,00>サラリ-マンも 楽じゃない","<@RL,Man,00>Being a businessman isn't easy either."
+027,0x1fc036,"<@RL,Man,00>ロボロボ団って じつざいしてたんだな<CD>テレビの中の 話だと思ってたよ","<@RL,Man,00>I didn't think the RoboRobo gang was real, I thought it was all just for TV."
+028,0x1fc038,"<@RL,Man,00>な なぞの文字が 画面に...<CD>画面スクロ-ルが とまらない!!","<@RL,Man,00>Th-there're strange characters on the screen... They won't stop scrolling by!!"
+029,0x1fc03a,"<@RL,Lady2,00>となリにすわっていた人...<CF><D1>セセリさんに しかられてから <CD>研究所に 来なくなっちゃったの","<@RL,Lady2,00>The person sitting next to me...<CF><D1>He stopped going to the lab after he was scolded by Ms. Seseri."
 030,0x1fc03c,"<@RL,Lady2,00>わたしの じょうしなんだけど<CD>コンビニちかくで すわリこんでるの<CF><D1>しごとが たまっちゃって こまるわ",
-031,0x1fc03e,"<@RL,Lady2,00>いそがしいわ",
-032,0x1fc040,"<@RL,Lady2,00>ロボロボ団の人たちに<CD>サインを もらっておけばよかった",
-033,0x1fc042,"<@RL,Lady2,00>ひ ひどすぎるわ!<CD>つくえの上の ラクガキを貝てよ!",
-034,0x1fc044,"<@RL,Lady2,00>あたしの ブランドものの<CD>くちベには クレヨンじゃないのよ!",
+031,0x1fc03e,"<@RL,Lady2,00>いそがしいわ","<@RL,Lady2,00>I'm busy."
+032,0x1fc040,"<@RL,Lady2,00>ロボロボ団の人たちに<CD>サインを もらっておけばよかった","<@RL,Lady2,00>I should've gotten an autograph from the RoboRobos."
+033,0x1fc042,"<@RL,Lady2,00>ひ ひどすぎるわ!<CD>つくえの上の ラクガキを貝てよ!","<@RL,Lady2,00>Th-this is too much! Someone scribbled on my desk!"
+034,0x1fc044,"<@RL,Lady2,00>あたしの ブランドものの<CD>くちベには クレヨンじゃないのよ!","<@RL,Lady2,00>My name-brand lipstick isn't a crayon!"
 035,0x1fc046,"<@LL,Ikki,00>ここかな? アリカが言っていた<CD>「ジオフロント科学研究所」って","<@LL,Ikki,00>Is this the place? The GeoFront Scientifc Laboratory that Arika was talking about?"
 036,0x1fc048,"<@RL,Erika,04>あ! 来た 来た!","<@RL,Erika,04>Ah! You came, you came!"
 037,0x1fc04a,"<@LL,Ikki,00>アリカ その人は?<CF><D1><@RL,Seseri,01>ア-スモ-ルに ようこそ!<CF><D1>はじめまして わたしは 研究いんの<CD>オガサワラ セセリ よろしくね","<@LL,Ikki,00>Who is this, Arika?<CF><D1><@RL,Seseri,01>Welcome to the Earth Mall!<CF><D1>I'm a researcher here, my name is Ogasawara Seseri. Nice to meet you."
