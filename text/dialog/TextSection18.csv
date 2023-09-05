@@ -29,7 +29,7 @@
 027,0x1fc036,"<@RL,Man,00>ロボロボ団って じつざいしてたんだな<CD>テレビの中の 話だと思ってたよ","<@RL,Man,00>I didn't think the RoboRobo gang was real, I thought it was all just for TV."
 028,0x1fc038,"<@RL,Man,00>な なぞの文字が 画面に...<CD>画面スクロ-ルが とまらない!!","<@RL,Man,00>Th-there're strange characters on the screen... They won't stop scrolling by!!"
 029,0x1fc03a,"<@RL,Lady2,00>となリにすわっていた人...<CF><D1>セセリさんに しかられてから <CD>研究所に 来なくなっちゃったの","<@RL,Lady2,00>The person sitting next to me...<CF><D1>He stopped going to the lab after he was scolded by Ms. Seseri."
-030,0x1fc03c,"<@RL,Lady2,00>わたしの じょうしなんだけど<CD>コンビニちかくで すわリこんでるの<CF><D1>しごとが たまっちゃって こまるわ",
+030,0x1fc03c,"<@RL,Lady2,00>わたしの じょうしなんだけど<CD>コンビニちかくで すわリこんでるの<CF><D1>しごとが たまっちゃって こまるわ","<@RL,Lady2,00>Even though he's my boss, he's been holed up at the nearby convenience store and work is piling up."
 031,0x1fc03e,"<@RL,Lady2,00>いそがしいわ","<@RL,Lady2,00>I'm busy."
 032,0x1fc040,"<@RL,Lady2,00>ロボロボ団の人たちに<CD>サインを もらっておけばよかった","<@RL,Lady2,00>I should've gotten an autograph from the RoboRobos."
 033,0x1fc042,"<@RL,Lady2,00>ひ ひどすぎるわ!<CD>つくえの上の ラクガキを貝てよ!","<@RL,Lady2,00>Th-this is too much! Someone scribbled on my desk!"
@@ -41,11 +41,11 @@
 039,0x1fc04e,"<@RL,Erika,04>オガサワラさんは ハチロウくんから<CD>ガイドを たのまれてるんですって!<CF><D1><@LL,Ikki,04>ヘぇ そうなんだ","<@RL,Erika,04>Hachirou asked Mrs. Ogasawara to show us around.<CF><D1><@LL,Ikki,04>Hee, is that so?"
 040,0x1fc050,"<@RL,Seseri,01>わたしのことは セセリで いいわよ<CF><D1>では あんないするわね","<@RL,Seseri,01>You can just call me Seseri. I'll be your guide."
 041,0x1fc052,"<@RL,Seseri,01>こちらヘ どうぞ","<@RL,Seseri,01>Come along, this way."
-042,0x1fc054,"<@RL,ScientistMale,00>なんだい キミは?<CF><D1><@LL,Ikki,00>セセリさんに 人工のうじょうに<CD>来るように いわれたんです<CF><D1><@RL,ScientistMale,00>人工のうじょうは むかいのヘやだよ<CF><D1><@LL,Ikki,04>あリがとうございます",
-043,0x1fc056,"<@LL,Ikki,00>アリカたちの ところヘ 行かなきゃ",
-044,0x1fc058,"<@RL,ScientistMale,00>ん? 貝学に 来たのかい?<*04>",
-045,0x1fc05a,"<@LR,Koji,00>すみません 貝学じゃないんです<CF><D1>オレ...いえ ボクぐらいの としの<CD>男の子が ここに来ていませんか?<CF><D1><@RL,ScientistMale,00>ん-? あの ちょんまげあたま?",
-046,0x1fc05c,"<@LR,Koji,04>それ それ! そいつです!!<CF><D1><@RL,ScientistMale,01>ざんねん ひとあしちがいだよ",
+042,0x1fc054,"<@RL,ScientistMale,00>なんだい キミは?<CF><D1><@LL,Ikki,00>セセリさんに 人工のうじょうに<CD>来るように いわれたんです<CF><D1><@RL,ScientistMale,00>人工のうじょうは むかいのヘやだよ<CF><D1><@LL,Ikki,04>あリがとうございます","<@RL,ScientistMale,00>What do you want?<CF><D1><@LL,Ikki,00>Ms. Seseri told me to come to the artificial farm.<CF><D1><@RL,ScientistMale,00>The artificial farm is in the other room.<CF><D1><@LL,Ikki,04>Thank you very much."
+043,0x1fc056,"<@LL,Ikki,00>アリカたちの ところヘ 行かなきゃ","<@LL,Ikki,00>I have to go to Arika and the rest."
+044,0x1fc058,"<@RL,ScientistMale,00>ん? 貝学に 来たのかい?<*04>","<@RL,ScientistMale,00>Mm? Are you on a field trip?"
+045,0x1fc05a,"<@LR,Koji,00>すみません 貝学じゃないんです<CF><D1>オレ...いえ ボクぐらいの としの<CD>男の子が ここに来ていませんか?<CF><D1><@RL,ScientistMale,00>ん-? あの ちょんまげあたま?","<@LR,Koji,00>No, I'm not here on a field trip.<CF><D1>I... No, have you seen a boy around my age?<CF><D1><@RL,ScientistMale,00>Mm? The one with a ponytail?"
+046,0x1fc05c,"<@LR,Koji,04>それ それ! そいつです!!<CF><D1><@RL,ScientistMale,01>ざんねん ひとあしちがいだよ","<@LR,Koji,04>That's it! That's him!!<CF><D1><@RL,ScientistMale,01>Bad luck, you just missed him."
 047,0x1fc05e,"<@LR,Koji,00>あっ はい!<CF><D1><@RL,ScientistMale,00>ざんねん ちょっと おそかったね<CF><D1>1時間ほど 人工のうじょうを<CD>しめておきたいんだよ",
 048,0x1fc060,"<@LR,Koji,04>ええっ! そんなぁ...<CF><D1><@RL,ScientistMale,00>わるいね メダロットたちを<CD>すこしは 休ませて やリたいんだ<CF><D1>セセリさんには ないしょだよ",
 049,0x1fc062,"<@RL,ScientistMale,01>それでは しっけいするよ<CD>しごとが ボクを まっているからね",
