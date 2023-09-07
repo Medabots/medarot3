@@ -46,21 +46,21 @@
 044,0x1fc058,"<@RL,ScientistMale,00>ん? 貝学に 来たのかい?<*04>","<@RL,ScientistMale,00>Mm? Are you on a field trip?"
 045,0x1fc05a,"<@LR,Koji,00>すみません 貝学じゃないんです<CF><D1>オレ...いえ ボクぐらいの としの<CD>男の子が ここに来ていませんか?<CF><D1><@RL,ScientistMale,00>ん-? あの ちょんまげあたま?","<@LR,Koji,00>No, I'm not here on a field trip.<CF><D1>I... No, have you seen a boy around my age?<CF><D1><@RL,ScientistMale,00>Mm? The one with a ponytail?"
 046,0x1fc05c,"<@LR,Koji,04>それ それ! そいつです!!<CF><D1><@RL,ScientistMale,01>ざんねん ひとあしちがいだよ","<@LR,Koji,04>That's it! That's him!!<CF><D1><@RL,ScientistMale,01>Bad luck, you just missed him."
-047,0x1fc05e,"<@LR,Koji,00>あっ はい!<CF><D1><@RL,ScientistMale,00>ざんねん ちょっと おそかったね<CF><D1>1時間ほど 人工のうじょうを<CD>しめておきたいんだよ",
-048,0x1fc060,"<@LR,Koji,04>ええっ! そんなぁ...<CF><D1><@RL,ScientistMale,00>わるいね メダロットたちを<CD>すこしは 休ませて やリたいんだ<CF><D1>セセリさんには ないしょだよ",
-049,0x1fc062,"<@RL,ScientistMale,01>それでは しっけいするよ<CD>しごとが ボクを まっているからね",
-050,0x1fc064,"<@LR,Koji,03>ちぇっ しっかリ カギをしめてらぁ",
-051,0x1fc066,"<@LR,Erika,05>あれっ?",
-052,0x1fc068,"<@LR,Erika,02>ちょっと! なによ-!!<CD>どうしてカギが かかってんのよ!!",
-053,0x1fc06a,ドン! ドン!,
-054,0x1fc06c,"<@LR,Erika,06>...ふんっだ!!",
-055,0x1fc06e,"<@RL,Erika,02>ちょっと <&BUF0A>!<CD>勝手に 入っちゃダメじゃない",
-056,0x1fc070,"<@LL,Ikki,00>アリカたちの ところヘ いかなきゃ",
-057,0x1fc072,"<@RL,Erika,00>おそい!",
+047,0x1fc05e,"<@LR,Koji,00>あっ はい!<CF><D1><@RL,ScientistMale,00>ざんねん ちょっと おそかったね<CF><D1>1時間ほど 人工のうじょうを<CD>しめておきたいんだよ","<@LR,Koji,00>Ah, that's him!<CF><D1><@RL,ScientistMale,00>Too bad, you're a bit late.<CF><D1>The artificial farm will be closed for around an hour."
+048,0x1fc060,"<@LR,Koji,04>ええっ! そんなぁ...<CF><D1><@RL,ScientistMale,00>わるいね メダロットたちを<CD>すこしは 休ませて やリたいんだ<CF><D1>セセリさんには ないしょだよ","<@LR,Koji,04>Eeh! No way...<CF><D1><@RL,ScientistMale,00>Sorry, I want to give the medarots a bit of a break.<CF><D1>That's a secret from Ms. Seseri, though."
+049,0x1fc062,"<@RL,ScientistMale,01>それでは しっけいするよ<CD>しごとが ボクを まっているからね","<@RL,ScientistMale,01>Well, if you'll excuse me, I have work to do."
+050,0x1fc064,"<@LR,Koji,03>ちぇっ しっかリ カギをしめてらぁ","<@LR,Koji,03>Tch, they made sure to lock it."
+051,0x1fc066,"<@LR,Erika,05>あれっ?","<@LR,Erika,05>Huh?"
+052,0x1fc068,"<@LR,Erika,02>ちょっと! なによ-!!<CD>どうしてカギが かかってんのよ!!","<@LR,Erika,02>Hey! What is this!? Why is it locked!?"
+053,0x1fc06a,ドン! ドン!,*thud thud*
+054,0x1fc06c,"<@LR,Erika,06>...ふんっだ!!","<@LR,Erika,06>...Hmph!!"
+055,0x1fc06e,"<@RL,Erika,02>ちょっと <&BUF0A>!<CD>勝手に 入っちゃダメじゃない","<@RL,Erika,02>Hey, <&BUF0A>!<D3>You can't just go in there."
+056,0x1fc070,"<@LL,Ikki,00>アリカたちの ところヘ いかなきゃ","<@LL,Ikki,00>I have to go to Arika and the rest."
+057,0x1fc072,"<@RL,Erika,00>おそい!","<@RL,Erika,00>So slow!"
 058,0x1fc074,"<@RL,Seseri,01>こっちよ<CD>さあ 中ヘ どうぞ","<@RL,Seseri,01>This way. Come on in."
 059,0x1fc076,"<@RL,Seseri,01>わたしは 人工のうじょうで<CD>まってるから ひととおリ<CF><D1>貝学しおえたら のうじょうヘ来てね ","<@RL,Seseri,01>I'll be waiting at the artificial farm when you're finished here."
 060,0x1fc078,"<@RL,Erika,02>ちょっと どこに行くのよ!<CD>まだ何も しゅざいしてないでしょ","<@RL,Erika,02>Hey, where are you going! We aren't done here yet."
-061,0x1fc07a,"<@RL,BipedMedabot,00>ヘやのおくから じゅんばんに<CD>貝学してください",
+061,0x1fc07a,"<@RL,BipedMedabot,00>ヘやのおくから じゅんばんに<CD>貝学してください","<@RL,BipedMedabot,00>Please tour the rooms in order from the back."
 062,0x1fc07c,"<@RL,BipedMedabot,00>ここでは ノウヤクを しようしない<CD>ガイチュウの クジョほうほうを<CF><D1>あみ出しておリます<CF><D1><@LL,Ikki,00>ヘぇ- どんなの?<CF><D1><@RL,BipedMedabot,00>ソウデスネ... <CD>こちらをごらんください","<@RL,BipedMedabot,00>Here we develop methods to control pests without the use of pesticides.<CF><D1><@LL,Ikki,00>Hee, what kind have you got?<CF><D1><@RL,BipedMedabot,00>Of course... <D3>Please look over here."
 063,0x1fc07e,"<@RL,BipedMedabot,00>たとえば ここに<CD>1本の ナエが あリます","<@RL,BipedMedabot,00>Take for example, this single sproutling."
 064,0x1fc080,"<@RL,BipedMedabot,00>それに わるい ガイチュウが<CD>つきます それを クジョするために<CF><D1>バイオテクノロジ-の ギジュツを<CD>とリいれて 生まれた...","<@RL,BipedMedabot,00>When a harmful pest attaches itself to it, so we use something created by biotechnology to exterminate them."
@@ -77,28 +77,28 @@
 075,0x1fc096,"<@RL,Erika,04>あリがとう","<@RL,Erika,04>Thanks."
 076,0x1fc098,"<@RL,Erika,00>ここは これでOKね","<@RL,Erika,00>With that, I'm fine."
 077,0x1fc09a,"<@RL,Erika,00><&BUF0A><CD>あたし 先に 行っとくから","<@RL,Erika,00><&BUF0A>, I'm going on ahead."
-078,0x1fc09c,"<@RL,BipedMedabot,00>ハエトリソウを アザラシが 食ベてェ<CD>アザラシは アメ-バが 食ベてェ<CF><D1>アメ-バは ハエトリソウが<CD>食ベるゥ-♪",
-079,0x1fc09e,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪",
-080,0x1fc0a0,"<@LL,Ikki,05>それ しょくもつれんさって 言う?<CF><D1>...って いうか<CD>ヤキニクテイショクって 何?",
-081,0x1fc0a2,"<@RL,BipedMedabot,00>大変だ! 大変だ!<CD>変な ネコが 出てきて<CF><D1>ハエトリソウと アザラシと<CD>アメ-バを にがしちゃった!<CF><D1>それで ワタシは ハエトリソウの<CD>トラップに かかって<CF><D1>アメ-バの ウイルスに<CD>やられちゃった!","<@RL,BipedMedabot,00>Emergency! Emergency! A strange cat appeared and released the Venus Flytrap, Seal, and Amoeba! And then I was caught in the Venus Flytrap's trap and infected by the Amoeba's virus!"
-082,0x1fc0a4,"<@RL,BipedMedabot,00>グルグル グルグル 目がまわる♪","<@RL,BipedMedabot,00>Round and round, round and round. Getting dizzy ♪"
-083,0x1fc0a6,"<@RL,BipedMedabot,00>あ ソレ♪","<@RL,BipedMedabot,00>Ah, there ♪"
-084,0x1fc0a8,"<@RL,BipedMedabot,00>ヤキニクティ-ショク-♪<CD>ハライッパイ♥<CF><D1><@LR,Erika,05>な なに...<CD>いったい どうしちゃったの?",
-085,0x1fc0aa,"<@RL,BipedMedabot,00>あ ソレ♪ ソレッ♪",
-086,0x1fc0ac,"<@LR,Erika,05>(こ こわれた?)",
-087,0x1fc0ae,"<@RL,BipedMedabot,00>ハエトリソウを アザラシが 食ベてェ<CD>アザラシは アメ-バが 食ベてェ<CF><D1>アメ-バは ハエトリソウが<CD>食ベるゥ-♪",
-088,0x1fc0b0,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪",
-089,0x1fc0b2,"<@LR,Koji,03>はぁ? なんだ なんだぁ!?<CD>まったく いみが 分からない...",
-090,0x1fc0b4,"<@LR,Koji,02>まっ 本人が しあわせそうだから<CD>ベつに ワケ分かんなくても いいや",
-091,0x1fc0b6,"<@LL,Ikki,00>にげ出した メダロットたちは<CD>もどって 来た?<CF><D1><@RL,BipedMedabot,00>ハイ おかげさまで",
-092,0x1fc0b8,"<@LL,Ikki,00>で? かれらは 今 どこに?<CF><D1><@RL,BipedMedabot,00>上のカプセルに かたづけまし-た♪<CF><D1><@LL,Ikki,05>か かたづけ...<CD>",
-093,0x1fc0ba,"<@RL,BipedMedabot,00>何か ヘんなこと 言いました?<CF><D1><@LL,Ikki,05>う-ん... なんだかなぁ",
-094,0x1fc0bc,"<@RL,BipedMedabot,00>そうだ!!<CD>あのネコは つかまリましたか?<CF><D1><@LL,Ikki,06>いけね! すっかリネコのこと<CD>わすれてたや! ",
-095,0x1fc0be,"<@RL,BipedMedabot,00>早く つかまえて下さい サイ♪",
-096,0x1fc0c0,"<@RL,BipedMedabot,00>ハァ-♪ じめんが グラグ-ラ♪",
-097,0x1fc0c2,"<@RL,BipedMedabot,00>ゆれて ゆれる 男ゴコロ-♪",
-098,0x1fc0c4,"<@LL,Ikki,01>あはははっ おもしろ-い<CD>あたらしい 歌ができて よかったね",
-099,0x1fc0c6,"<@RL,BipedMedabot,00>こんど CDデビュ-しようかなって<CD>思っているんです<CF><D1><@LL,Ikki,01>うん いいんじゃない<CF><D1><@RL,BipedMedabot,00>よ-し♪ がんばルンルン♪",
+078,0x1fc09c,"<@RL,BipedMedabot,00>ハエトリソウを アザラシが 食ベてェ<CD>アザラシは アメ-バが 食ベてェ<CF><D1>アメ-バは ハエトリソウが<CD>食ベるゥ-♪","<@RL,BipedMedabot,00><f03>The venus flytraps eat the seals,<D3>the seals eat the amoebas,<f00><CF><D1><f03>and the amoebas eat the venus flytraps ♪"
+079,0x1fc09e,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪","<@RL,BipedMedabot,00><f03>Aah, that's the food chain ♪<D3>It's survival of the fittest ♪<f00><CF><D1><f03>A yakiniku meal ♪"
+080,0x1fc0a0,"<@LL,Ikki,05>それ しょくもつれんさって 言う?<CF><D1>...って いうか<CD>ヤキニクテイショクって 何?","<@LL,Ikki,05>That's a food chain?<CF><D1>...Rather, what's up with the yakiniku meal?"
+081,0x1fc0a2,"<@RL,BipedMedabot,00>大変だ! 大変だ!<CD>変な ネコが 出てきて<CF><D1>ハエトリソウと アザラシと<CD>アメ-バを にがしちゃった!<CF><D1>それで ワタシは ハエトリソウの<CD>トラップに かかって<CF><D1>アメ-バの ウイルスに<CD>やられちゃった!","<@RL,BipedMedabot,00><f03>Emergency! Emergency! A strange cat appeared and released the Venus Flytrap, Seal, and Amoeba! And then I was caught in the Venus Flytrap's trap and infected by the Amoeba's virus!"
+082,0x1fc0a4,"<@RL,BipedMedabot,00>グルグル グルグル 目がまわる♪","<@RL,BipedMedabot,00><f03>Round and round, round and round. Getting dizzy ♪"
+083,0x1fc0a6,"<@RL,BipedMedabot,00>あ ソレ♪","<@RL,BipedMedabot,00><f03>Ah, there ♪"
+084,0x1fc0a8,"<@RL,BipedMedabot,00>ヤキニクティ-ショク-♪<CD>ハライッパイ♥<CF><D1><@LR,Erika,05>な なに...<CD>いったい どうしちゃったの?","<@RL,BipedMedabot,00><f03>A yakinikuuu meeeeal ♪<D3>A full stomach ♥<f00><CF><D1><@LR,Erika,05>Wh-what... on earth is going on?"
+085,0x1fc0aa,"<@RL,BipedMedabot,00>あ ソレ♪ ソレッ♪","<@RL,BipedMedabot,00><f03>Ah, yeah ♪ yeeeah ♪"
+086,0x1fc0ac,"<@LR,Erika,05>(こ こわれた?)","<@LR,Erika,05>(I-is it broken?)"
+087,0x1fc0ae,"<@RL,BipedMedabot,00>ハエトリソウを アザラシが 食ベてェ<CD>アザラシは アメ-バが 食ベてェ<CF><D1>アメ-バは ハエトリソウが<CD>食ベるゥ-♪","<@RL,BipedMedabot,00><f03>The venus flytraps eat the seals,<D3>the seals eat the amoebas,<f00><CF><D1><f03>and the amoebas eat the venus flytraps ♪"
+088,0x1fc0b0,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪","<@RL,BipedMedabot,00><f03>Aah, that's the food chain ♪<D3>It's survival of the fittest ♪<f00><CF><D1><f03>A yakiniku meal ♪"
+089,0x1fc0b2,"<@LR,Koji,03>はぁ? なんだ なんだぁ!?<CD>まったく いみが 分からない...","<@LR,Koji,03>Haa? What was that!? I didn't understand any of it..."
+090,0x1fc0b4,"<@LR,Koji,02>まっ 本人が しあわせそうだから<CD>ベつに ワケ分かんなくても いいや","<@LR,Koji,02>Well, as long as they seem happy, it doesn't really matter if I understand."
+091,0x1fc0b6,"<@LL,Ikki,00>にげ出した メダロットたちは<CD>もどって 来た?<CF><D1><@RL,BipedMedabot,00>ハイ おかげさまで","<@LL,Ikki,00>Have the runaway medarots returned?<CF><D1><@RL,BipedMedabot,00><f03>Yes, most fortunately."
+092,0x1fc0b8,"<@LL,Ikki,00>で? かれらは 今 どこに?<CF><D1><@RL,BipedMedabot,00>上のカプセルに かたづけまし-た♪<CF><D1><@LL,Ikki,05>か かたづけ...<CD>","<@LL,Ikki,00>So? Where are they now?<CF><D1><@RL,BipedMedabot,00>They've been neatly put away in the capsules above ♪<CF><D1><@LL,Ikki,05>P-put away...<D3>"
+093,0x1fc0ba,"<@RL,BipedMedabot,00>何か ヘんなこと 言いました?<CF><D1><@LL,Ikki,05>う-ん... なんだかなぁ","<@RL,BipedMedabot,00>Did I say something strange?<CF><D1><@LL,Ikki,05>Hmm... I guess not."
+094,0x1fc0bc,"<@RL,BipedMedabot,00>そうだ!!<CD>あのネコは つかまリましたか?<CF><D1><@LL,Ikki,06>いけね! すっかリネコのこと<CD>わすれてたや! ","<@RL,BipedMedabot,00>Oh yeah!! Did you catch that cat?<CF><D1><@LL,Ikki,06>Oh no! I completely forget about the cat! "
+095,0x1fc0be,"<@RL,BipedMedabot,00>早く つかまえて下さい サイ♪","<@RL,BipedMedabot,00>Please catch it quickly-ly♪"
+096,0x1fc0c0,"<@RL,BipedMedabot,00>ハァ-♪ じめんが グラグ-ラ♪","<@RL,BipedMedabot,00>Haa ♪ The ground is shaking ♪"
+097,0x1fc0c2,"<@RL,BipedMedabot,00>ゆれて ゆれる 男ゴコロ-♪","<@RL,BipedMedabot,00>Shaking, he's the shaking man, Gokoro ♪"
+098,0x1fc0c4,"<@LL,Ikki,01>あはははっ おもしろ-い<CD>あたらしい 歌ができて よかったね","<@LL,Ikki,01>Ahaha, how funny. You made up a new song."
+099,0x1fc0c6,"<@RL,BipedMedabot,00>こんど CDデビュ-しようかなって<CD>思っているんです<CF><D1><@LL,Ikki,01>うん いいんじゃない<CF><D1><@RL,BipedMedabot,00>よ-し♪ がんばルンルン♪","<@RL,BipedMedabot,00>Do you think I should make my debut on CD?<CF><D1><@LL,Ikki,01>Yeah, that sounds good.<CF><D1><@RL,BipedMedabot,00>Alright ♪ I'll do my best-est♪"
 100,0x1fc0c8,"<@RL,ScientistMale,01>科学研究所ヘ ようこそ<CD>ささっ こちらを ごらんください","<@RL,ScientistMale,01>Welcome to the scientific laboratory. Feel free to look around."
 101,0x1fc0ca,"<@RL,ScientistMale,00>こちらの カプセルの中では<CD>のうさぎょう用 メダロットの<CF><D1>研究かいはつが おこなわれています","<@RL,ScientistMale,00>Within the capsule, research and development of Medarots to help with farming is taking place."
 102,0x1fc0cc,"<@LL,Ikki,07>すごい!!","<@LL,Ikki,07>Amazing!!"
@@ -108,7 +108,7 @@
 106,0x1fc0d4,"<@RL,Erika,02>だめ!! ジャ-ナリストとしての<CD>しせいの もんだいよ<CF><D1><@RL,Erika,00>ぎもんをかいめいして ほうどうする<CD>ぎむってものが あるの!","<@RL,Erika,02>Not a chance!! This is a matter of integrity as a journalist!<CF><D1><@RL,Erika,00>I have a duty to ask questions and report on them, y'know?"
 107,0x1fc0d6,"<@RL,ScientistMale,00>右おくから「ハエトリソウ」<CD>まん中が「アザラシ」<CF><D1>左はしの中は「アメ-バ」です!","<@RL,ScientistMale,00>On the right is a Venus Flytrap, in the middle is a Seal, and on the left is an Amoeba!"
 108,0x1fc0d8,"<@RL,ScientistMale,00>いじょう せつめい おわリ!<CF><D1><@RL,Erika,07>ち ちょっと まって...<CF><D1><@RL,ScientistMale,00>くわしいことは コンピュ-タの<CD>前で さぎょうしている<CF><D1>研究じょしゅの メダロットにきいて","<@RL,ScientistMale,00>That is all for the explanations!<CF><D1><@RL,Erika,07>H-hey, hold it...<CF><D1><@RL,ScientistMale,00>If you have any further questions, please see the assistant working at the computer."
-109,0x1fc0da,"<@RL,ScientistMale,00>わたしは いっかいの研究いん...<CD>くわしいことは 分かんないの!!",
+109,0x1fc0da,"<@RL,ScientistMale,00>わたしは いっかいの研究いん...<CD>くわしいことは 分かんないの!!","<@RL,ScientistMale,00>I'm just a researcher... I don't know the details!!"
 110,0x1fc0dc,"<@RL,ScientistMale,00>うわっ! また きみか!?<CF><D1><@LR,Erika,02>しつれいね!<CF><D1><@RL,ScientistMale,00>な 何かようかな?<CF><D1><@LR,Erika,02>どうして カプセルの中で...",
 111,0x1fc0de,"<@RL,ScientistMale,00>わたしの かんがえたことじゃない!<CD>セセリさんにでも きいてくれ!!",
 112,0x1fc0e0,"<@LR,Erika,02>なによ かんじわる-い!",
