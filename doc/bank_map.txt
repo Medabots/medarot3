@@ -144,7 +144,7 @@
 8F: Text Section 25 (JP Text Bank 34)
 90: Text Section 26 (JP Text Bank 35)
 91: Text Section 27 (JP Text Bank 36)
-92: 
+92: Text 33 (from 63D0 onward)
 93: 
 94: 
 95: 
