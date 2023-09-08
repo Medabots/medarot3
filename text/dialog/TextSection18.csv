@@ -109,73 +109,73 @@
 107,0x1fc0d6,"<@RL,ScientistMale,00>右おくから「ハエトリソウ」<CD>まん中が「アザラシ」<CF><D1>左はしの中は「アメ-バ」です!","<@RL,ScientistMale,00>On the right is a Venus Flytrap, in the middle is a Seal, and on the left is an Amoeba!"
 108,0x1fc0d8,"<@RL,ScientistMale,00>いじょう せつめい おわリ!<CF><D1><@RL,Erika,07>ち ちょっと まって...<CF><D1><@RL,ScientistMale,00>くわしいことは コンピュ-タの<CD>前で さぎょうしている<CF><D1>研究じょしゅの メダロットにきいて","<@RL,ScientistMale,00>That is all for the explanations!<CF><D1><@RL,Erika,07>H-hey, hold it...<CF><D1><@RL,ScientistMale,00>If you have any further questions, please see the assistant working at the computer."
 109,0x1fc0da,"<@RL,ScientistMale,00>わたしは いっかいの研究いん...<CD>くわしいことは 分かんないの!!","<@RL,ScientistMale,00>I'm just a researcher... I don't know the details!!"
-110,0x1fc0dc,"<@RL,ScientistMale,00>うわっ! また きみか!?<CF><D1><@LR,Erika,02>しつれいね!<CF><D1><@RL,ScientistMale,00>な 何かようかな?<CF><D1><@LR,Erika,02>どうして カプセルの中で...",
-111,0x1fc0de,"<@RL,ScientistMale,00>わたしの かんがえたことじゃない!<CD>セセリさんにでも きいてくれ!!",
-112,0x1fc0e0,"<@LR,Erika,02>なによ かんじわる-い!",
-113,0x1fc0e2,"<@RL,ScientistMale,00>うん? 貝学かい?<CF><D1><@LR,Koji,00>え ええ<CD>せつめいして いただけますか?<CF><D1><@RL,ScientistMale,01>いいとも",
-114,0x1fc0e4,"<@RL,ScientistMale,01>こちらの カプセルの中では<CD>のうさぎょうに よリ てきおうした<CF><D1>メダロットの 研究かいはつが<CD>行われています<CF><D1><@LR,Koji,00>ヘぇ- すごいな",
-115,0x1fc0e6,"<@LR,Koji,02>人間がやるよリ こうリつてきなんだ<CF><D1><@RL,ScientistMale,00>はぁ... いまのところは<CD>人間がやるほうが こうリつてきです<CF><D1><@LR,Koji,03>なんだ そリゃ...",
-116,0x1fc0e8,"<@RL,ScientistMale,00>おや? キミ 1人かい?<CF><D1><@LL,Ikki,00>はい<CF><D1><@RL,ScientistMale,00>ここだけの話...<CD>キミの かのじょ 気がつよいね ",
-117,0x1fc0ea,"<@LL,Ikki,07>ア アリカは かのじょじゃ...<CF><D1><@RL,ScientistMale,01>むふふふっ<CD>てれなくても いいじゃん♥<CF><D1><@LL,Ikki,03>はぁ...<CD>(なんだかなぁ...)",
+110,0x1fc0dc,"<@RL,ScientistMale,00>うわっ! また きみか!?<CF><D1><@LR,Erika,02>しつれいね!<CF><D1><@RL,ScientistMale,00>な 何かようかな?<CF><D1><@LR,Erika,02>どうして カプセルの中で...","<@RL,ScientistMale,00>Woah! It's you again!?<CF><D1><@LR,Erika,02>How rude!<CF><D1><@RL,ScientistMale,00>How can I help you?<CF><D1><@LR,Erika,02>Why are you in a capsule...?"
+111,0x1fc0de,"<@RL,ScientistMale,00>わたしの かんがえたことじゃない!<CD>セセリさんにでも きいてくれ!!","<@RL,ScientistMale,00>This wasn't my idea!<D3>I had to listen to Seseri!!"
+112,0x1fc0e0,"<@LR,Erika,02>なによ かんじわる-い!","<@LR,Erika,02>It's a bit creepy!"
+113,0x1fc0e2,"<@RL,ScientistMale,00>うん? 貝学かい?<CF><D1><@LR,Koji,00>え ええ<CD>せつめいして いただけますか?<CF><D1><@RL,ScientistMale,01>いいとも","<@RL,ScientistMale,00>Hmm? You want a tour?<CF><D1><@LR,Koji,00>Y-yes, can you tell me some things?<CF><D1><@RL,ScientistMale,01>No problem."
+114,0x1fc0e4,"<@RL,ScientistMale,01>こちらの カプセルの中では<CD>のうさぎょうに よリ てきおうした<CF><D1>メダロットの 研究かいはつが<CD>行われています<CF><D1><@LR,Koji,00>ヘぇ- すごいな","<@RL,ScientistMale,01>Within the capsules, medarots are being studied to improve their farming efficacy!<CF><D1><@LR,Koji,00>Hee, amazing."
+115,0x1fc0e6,"<@LR,Koji,02>人間がやるよリ こうリつてきなんだ<CF><D1><@RL,ScientistMale,00>はぁ... いまのところは<CD>人間がやるほうが こうリつてきです<CF><D1><@LR,Koji,03>なんだ そリゃ...","<@LR,Koji,02>They must be more efficient than humans.<CF><D1><@RL,ScientistMale,00>Haa... Currently, it's still more efficient for humans to do it.<CF><D1><@LR,Koji,03>What's with that...?"
+116,0x1fc0e8,"<@RL,ScientistMale,00>おや? キミ 1人かい?<CF><D1><@LL,Ikki,00>はい<CF><D1><@RL,ScientistMale,00>ここだけの話...<CD>キミの かのじょ 気がつよいね ","<@RL,ScientistMale,00>Oh? You're alone?<CF><D1><@LL,Ikki,00>Yes.<CF><D1><@RL,ScientistMale,00>This is just between us... Your girlfriend really has some spunk."
+117,0x1fc0ea,"<@LL,Ikki,07>ア アリカは かのじょじゃ...<CF><D1><@RL,ScientistMale,01>むふふふっ<CD>てれなくても いいじゃん♥<CF><D1><@LL,Ikki,03>はぁ...<CD>(なんだかなぁ...)","<@LL,Ikki,07>A-Arika isn't my girl-...<CF><D1><@RL,ScientistMale,01>Muhuhuhu<D3>Don't be shy ♥<CF><D1><@LL,Ikki,03>Haa...<D3>(I wonder what happened...)"
 118,0x1fc0ec,"<@LL,Ikki,00>だいじょうぶですか?<CF><D1><@RL,ScientistMale,00>ヘんなネコが カプセルの中の<CD>メダロットたちを...","<@LL,Ikki,00>Are you okay?<CF><D1><@RL,ScientistMale,00>A strange cat let out the Medarots in the capsules..."
 119,0x1fc0ee,"<@LL,Ikki,07>ほんとうだ","<@LL,Ikki,07>It's true!"
 120,0x1fc0f0,"<@RL,ScientistMale,00>ああっ にげだしたメダロットたちが<CD>イタズラしてなきゃいいけど","<@RL,ScientistMale,00>Aah, I hope those escaped Medarots aren't causing any trouble."
-121,0x1fc0f2,"<@RL,ScientistMale,00>おおっ キミか!<CF><D1>キミのおかげで にげだした<CD>メダロットたちが もどってきたよ",
-122,0x1fc0f4,"<@LL,Ikki,01>本当だ よかった",
-123,0x1fc0f6,"<@RL,ScientistMale,00>すごい じしんだったね",
-124,0x1fc0f8,"<@LL,Ikki,00>うわっ でっかい にんじん...",
-125,0x1fc0fa,"<@LR,Erika,00>このきょだいニンジン... ウサギ<CD>何びき分の エサになるのかなぁ",
-126,0x1fc0fc,"<@LR,Erika,00>ん? 何かせつめいが かいてある<CF><D1>ええっと 「バイオ キャロット」<CD>「あいしょう ぼしゅう中」ねぇ<CF><D1><@LR,Erika,04>このしゃしんは キャプションをつけて<CD>3面目の上に 入れよ-っと",
-127,0x1fc0fe,"<@LR,Koji,04>な なんだ これ!?<CD>にんじん...か? でかいなぁ",
-128,0x1fc100,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ",
-129,0x1fc102,「バイオ キャロット」<CD>あいしょう ぼしゅう中,
-130,0x1fc104,"<@LL,Ikki,00>あれ? 何も 入ってないや",
-131,0x1fc106,"<@LR,Erika,00>ほんとうに 何にも入ってない...",
-132,0x1fc108,"<@LR,Koji,00>カラか...<CF><D1>ばいようえきの せい分ひょうぐらい<CD>はっときゃ いいのに",
-133,0x1fc10a,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ",
-134,0x1fc10c,「バイオ さいばい カプセル」,
-135,0x1fc10e,"<@LL,Ikki,00>貝たことのない 花だなぁ",
-136,0x1fc110,"<@LR,Erika,04>水中花ね 下から <CD>ライトアップされて すごくきれい♥",
-137,0x1fc112,"<@LR,Erika,00>何か 下の方に かいてあるわ<CD>ええっと...",
-138,0x1fc114,"<@LR,Erika,02>「さつえい きんし」ですって!?",
-139,0x1fc116,"<@LR,Erika,05>ワンショット ほしかったな...",
-140,0x1fc118,"<@LR,Koji,02>きれいだ... カリンも<CD>つれてくリゃよかったな...",
-141,0x1fc11a,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ",
-142,0x1fc11c,「バイオ フラワ-」<CD>さつえい きんし,
-143,0x1fc11e,"<@LL,Ikki,05>何だろう?<CD>このミドリ色の ドロドロしたのは?",
-144,0x1fc120,"<@LR,Erika,06>うヘっ...<CD>なんだか きもちわる-い",
-145,0x1fc122,"<@LR,Koji,00>クロレラか...<CF><D1><@LR,Koji,02>「ス-パ-」と つくからには <CD>もっと 体にいいんだろうな",
-146,0x1fc124,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ",
-147,0x1fc126,「ス-パ- クロレラ」<CD>ばいよう じっけん中,
-148,0x1fc128,「アメ-バ」 メダロット,
-149,0x1fc12a,"<@LL,Ikki,07>あっ! アメ-バがいない!!",
-150,0x1fc12c,カプセルの中は からっぽだ,
-151,0x1fc12e,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ",
-152,0x1fc130,「アザラシ」 メダロット,
-153,0x1fc132,"<@LL,Ikki,07>あっ! アザラシがいない!!",
-154,0x1fc134,カプセルの中は からっぽだ,
-155,0x1fc136,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ",
-156,0x1fc138,「ハエトリソウ」 メダロット,
-157,0x1fc13a,"<@LL,Ikki,07>あっ! ハエトリソウがいない!!",
-158,0x1fc13c,カプセルの中は からっぽだ,
-159,0x1fc13e,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ",
+121,0x1fc0f2,"<@RL,ScientistMale,00>おおっ キミか!<CF><D1>キミのおかげで にげだした<CD>メダロットたちが もどってきたよ","<@RL,ScientistMale,00>Ooh, it's you!<CF><D1>Thanks to you, the run away medarots came back."
+122,0x1fc0f4,"<@LL,Ikki,01>本当だ よかった","<@LL,Ikki,01>Really? What a relief."
+123,0x1fc0f6,"<@RL,ScientistMale,00>すごい じしんだったね","<@RL,ScientistMale,00>That was quite an earthquake."
+124,0x1fc0f8,"<@LL,Ikki,00>うわっ でっかい にんじん...","<@LL,Ikki,00>Woah, that carrot is huge..."
+125,0x1fc0fa,"<@LR,Erika,00>このきょだいニンジン... ウサギ<CD>何びき分の エサになるのかなぁ","<@LR,Erika,00>This giant carrot... How many rabbits could it feed?"
+126,0x1fc0fc,"<@LR,Erika,00>ん? 何かせつめいが かいてある<CF><D1>ええっと 「バイオ キャロット」<CD>「あいしょう ぼしゅう中」ねぇ<CF><D1><@LR,Erika,04>このしゃしんは キャプションをつけて<CD>3面目の上に 入れよ-っと","<@LR,Erika,00>Mm? There's something written here.<CF><D1>Uhm, ""Bio-Carrot,"" ""Accepting nicknames,"" I'll use these as the caption and put it a picture on page three."
+127,0x1fc0fe,"<@LR,Koji,04>な なんだ これ!?<CD>にんじん...か? でかいなぁ","<@LR,Koji,04>W-what is this!?<D3>Is it... a carrot? It's huge."
+128,0x1fc100,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
+129,0x1fc102,「バイオ キャロット」<CD>あいしょう ぼしゅう中,"""Bio-Carrot""<D3>Accepting nicknames"
+130,0x1fc104,"<@LL,Ikki,00>あれ? 何も 入ってないや","<@LL,Ikki,00>Huh? Nothing's there."
+131,0x1fc106,"<@LR,Erika,00>ほんとうに 何にも入ってない...","<@LR,Erika,00>There really is nothing there..."
+132,0x1fc108,"<@LR,Koji,00>カラか...<CF><D1>ばいようえきの せい分ひょうぐらい<CD>はっときゃ いいのに","<@LR,Koji,00>It's empty...<CF><D1>They could at least list the contents of the cultivation solution they used."
+133,0x1fc10a,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
+134,0x1fc10c,「バイオ さいばい カプセル」,"""Bio-Cultivation Capsule"""
+135,0x1fc10e,"<@LL,Ikki,00>貝たことのない 花だなぁ","<@LL,Ikki,00>I've never seen this flower before."
+136,0x1fc110,"<@LR,Erika,04>水中花ね 下から <CD>ライトアップされて すごくきれい♥","<@LR,Erika,04>Flowers blooming in water, huh? They're so pretty when lit from below ♥"
+137,0x1fc112,"<@LR,Erika,00>何か 下の方に かいてあるわ<CD>ええっと...","<@LR,Erika,00>There's something written underneath, uhm..."
+138,0x1fc114,"<@LR,Erika,02>「さつえい きんし」ですって!?","<@LR,Erika,02>It says, ""Photography prohibited""!?"
+139,0x1fc116,"<@LR,Erika,05>ワンショット ほしかったな...","<@LR,Erika,05>I wish I could get a single shot..."
+140,0x1fc118,"<@LR,Koji,02>きれいだ... カリンも<CD>つれてくリゃよかったな...","<@LR,Koji,02>Beautiful... I wish Karin was here too..."
+141,0x1fc11a,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
+142,0x1fc11c,「バイオ フラワ-」<CD>さつえい きんし,"""Bio-Flower""<D3>Photography prohibited"
+143,0x1fc11e,"<@LL,Ikki,05>何だろう?<CD>このミドリ色の ドロドロしたのは?","<@LL,Ikki,05>What is this? What is this green goop?"
+144,0x1fc120,"<@LR,Erika,06>うヘっ...<CD>なんだか きもちわる-い","<@LR,Erika,06>Ugh... It's kinda gross."
+145,0x1fc122,"<@LR,Koji,00>クロレラか...<CF><D1><@LR,Koji,02>「ス-パ-」と つくからには <CD>もっと 体にいいんだろうな","<@LR,Koji,00>Is it chlorella...?<CF><D1><@LR,Koji,02>It has ""super"" in front of it, so it must be even better for you."
+146,0x1fc124,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
+147,0x1fc126,「ス-パ- クロレラ」<CD>ばいよう じっけん中,"""Super-Chlorella""<D3>Cultivation experiment in progress"
+148,0x1fc128,「アメ-バ」 メダロット,"""Amoeba"" medarot"
+149,0x1fc12a,"<@LL,Ikki,07>あっ! アメ-バがいない!!","<@LL,Ikki,07>Ah! The Amoeba is gone!!"
+150,0x1fc12c,カプセルの中は からっぽだ,The capsule is empty.
+151,0x1fc12e,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ","<@LL,Ikki,00>Not here... Seems they have taken shelter."
+152,0x1fc130,「アザラシ」 メダロット,"""Seal"" medarot"
+153,0x1fc132,"<@LL,Ikki,07>あっ! アザラシがいない!!","<@LL,Ikki,07>Ah! The Seal is gone!!"
+154,0x1fc134,カプセルの中は からっぽだ,The capsule is empty.
+155,0x1fc136,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ","<@LL,Ikki,00>Not here... Seems they have taken shelter."
+156,0x1fc138,「ハエトリソウ」 メダロット,"""Venus Flytrap"" medarot"
+157,0x1fc13a,"<@LL,Ikki,07>あっ! ハエトリソウがいない!!","<@LL,Ikki,07>Ah! The Venus Flytrap is gone!"
+158,0x1fc13c,カプセルの中は からっぽだ,The capsule is empty.
+159,0x1fc13e,"<@LL,Ikki,00>いない...<CD>ちゃんと ひなんしたみたいだ","<@LL,Ikki,00>Not here... Seems they have taken shelter."
 160,0x1fc140,"<@RL,Seseri,01>ここは 人工のうじょうよ<CF><D1>ここで メダロットが<CD>やさいを 作っているの<CF><D1><@RL,Erika,04>ヘぇ- メダロットが 作った<CD>やさい 食ベてみたいな♥<CF><D1><@RL,Seseri,01>ここに いれば いつでも<CD>食ベられるわ<CF><D1><@RL,Seseri,00>ア-スモ-ルは<CD>自きゅう自足よ<CF><D1>外の人の 力を かリなくても<CD>食ベて いけるの<CF><D1><@RL,Erika,01>すっご-い!<CF><D1>はたらく メダロットの すがたを<CD>げきしゃしよっ!","<@RL,Seseri,01>This is an artifical farm. The Medarots here are growing vegetables.<CF><D1><@RL,Erika,04>Hee, I'd love to try some Medarot-grown veggies ♥<CF><D1><@RL,Seseri,01>You can eat them anytime when you're here.<CF><D1><@RL,Seseri,00>The Earth Mall is self-sufficient and doesn't need help from outside to continue operating.<CF><D1><@RL,Erika,01>Amaziiing!<CF><D1>I wanna get a perfect shot of a Medarot farming!"
-161,0x1fc142,"<@RL,Seseri,01>しっかリ 貝学していってね",
-162,0x1fc144,"<@RL,Seseri,00>あら どこに 行くの?",
-163,0x1fc146,"<@RL,Seseri,01>アリカちゃんを おいてくと<CD>あとが コワイんじゃない?<CF><D1><@LL,Ikki,03>はぁ...<CF><D1><@RL,Seseri,01>うふふっ",
-164,0x1fc148,"<@RL,Erika,04>はい! わらって わらって-!",
-165,0x1fc14a,"<@RL,Erika,06>もうっ! ブアイソ-なんだから!",
-166,0x1fc14c,"<@RL,MultiLeggedMedabot,00>...しごと中 おしゃベリダメ",
-167,0x1fc14e,"<@RL,MultiLeggedMedabot,00>おしごと おしごと 楽しいな♪",
+161,0x1fc142,"<@RL,Seseri,01>しっかリ 貝学していってね","<@RL,Seseri,01>Make sure to take a good luck around!"
+162,0x1fc144,"<@RL,Seseri,00>あら どこに 行くの?","<@RL,Seseri,00>Oh my, where are you going?"
+163,0x1fc146,"<@RL,Seseri,01>アリカちゃんを おいてくと<CD>あとが コワイんじゃない?<CF><D1><@LL,Ikki,03>はぁ...<CF><D1><@RL,Seseri,01>うふふっ","<@RL,Seseri,01>You're worried about what will happen if Arika comes after you, aren't you?<CF><D1><@LL,Ikki,03>Haa...<CF><D1><@RL,Seseri,01>Uhuhuhu."
+164,0x1fc148,"<@RL,Erika,04>はい! わらって わらって-!","<@RL,Erika,04>Yeah! Laugh, keep laughing!"
+165,0x1fc14a,"<@RL,Erika,06>もうっ! ブアイソ-なんだから!","<@RL,Erika,06>Geez! You're so unsociable!"
+166,0x1fc14c,"<@RL,MultiLeggedMedabot,00>...しごと中 おしゃベリダメ","<@RL,MultiLeggedMedabot,00>...No talking during work."
+167,0x1fc14e,"<@RL,MultiLeggedMedabot,00>おしごと おしごと 楽しいな♪","<@RL,MultiLeggedMedabot,00>Oh, work. Oh, work. Oh so much fun ♪"
 168,0x1fc150,"<@LL,Ikki,07>ヘえ- みんな がんばって<CD>はたらいてるんだなぁ<CF><D1><@LL,Ikki,05>ぼくの <&BUF07>とは<CD>大ちがいだ","<@LL,Ikki,07>Hee, everyone is working so hard.<CF><D1><@LL,Ikki,05>Unlike my <&BUF07>."
 169,0x1fc152,"<@LL,Ikki,00>でも ここの メダロットたちって<CD>1日中 はたらいてるのかなぁ?","<@LL,Ikki,00>Are the Medarots working here all day, though?"
 170,0x1fc154,"<@LL,Ikki,00>あれ? あのメダロット<CD>何か 変だぞ?","<@LL,Ikki,00>Huh? Something is going on with that Medarot."
-171,0x1fc156,"<@RL,Erika,02><&BUF0A>!<CD>どこ 行くのよ",
-172,0x1fc158,"<@RL,Erika,06>ちゃんと 貝学していきなさいよね",
-173,0x1fc15a,"<@RL,MultiLeggedMedabot,00>さいきん せっかく そだてた<CD>やさいが よく あらされています<CF><D1>こまった ものです...",
-174,0x1fc15c,"<@RL,MultiLeggedMedabot,00>シ----ッ<CD>しゃベっていると しかられます",
-175,0x1fc15e,"<@RL,MultiLeggedMedabot,00>こんなふうに おしゃベリしていても<CD>おこられることが なくなリました",
-176,0x1fc160,"<@RL,MultiLeggedMedabot,00>セセリさんも やさしくしてくれるし<CD>今は とっても しあわせな気分で<CF><D1>しごとに とリくんでいます",
+171,0x1fc156,"<@RL,Erika,02><&BUF0A>!<CD>どこ 行くのよ","<@RL,Erika,02><&BUF0A>! Where are you going?"
+172,0x1fc158,"<@RL,Erika,06>ちゃんと 貝学していきなさいよね","<@RL,Erika,06>You're taking a good look around, right?"
+173,0x1fc15a,"<@RL,MultiLeggedMedabot,00>さいきん せっかく そだてた<CD>やさいが よく あらされています<CF><D1>こまった ものです...","<@RL,MultiLeggedMedabot,00>Lately the vegetables I've toiled away raising have been getting wrecked. It's really troubling..."
+174,0x1fc15c,"<@RL,MultiLeggedMedabot,00>シ----ッ<CD>しゃベっていると しかられます","<@RL,MultiLeggedMedabot,00>Shhhh, you'll get scolded for talking."
+175,0x1fc15e,"<@RL,MultiLeggedMedabot,00>こんなふうに おしゃベリしていても<CD>おこられることが なくなリました","<@RL,MultiLeggedMedabot,00>Even if I keep talking like this, I no longer get scolded."
+176,0x1fc160,"<@RL,MultiLeggedMedabot,00>セセリさんも やさしくしてくれるし<CD>今は とっても しあわせな気分で<CF><D1>しごとに とリくんでいます","<@RL,MultiLeggedMedabot,00>Ms. Seseri has been kind too.<D3>I'm truly happy with work now."
 177,0x1fc162,"<@LL,Ikki,01>あはは!<CD>このメダロット おどってる!","<@LL,Ikki,01>Ahaha!<D3>This Medarot is dancing!"
 178,0x1fc164,"<@LL,Ikki,01>あはは!","<@LL,Ikki,01>Ahaha!"
 179,0x1fc166,"<@RL,Seseri,02>もうっ! ふリょうひん なんだから<CF><D1>しっかリ かんリ人に<CD>言っておかないと!<CF><D1>しごと中に おどるなんて<CD>ゆるされないわ!","<@RL,Seseri,02>Sheesh! If there's a defect, you should tell someone who's in charge! Dancing at work isn't allowed!"
@@ -294,11 +294,11 @@
 285,0x1fc23a,"<@LR,Erika,07>ロボロボ団!<CD>大変! おいかけなくっちゃ!","<@LR,Erika,07>The roborobos? This is big! I gotta go after them!"
 286#kabuto,0x1fc23c,"<@RL,Metabee,00>あのよ- <CF><D1><&BUF0A>の ことも<CD>わすれてくれるなよな...","<@RL,Metabee,00>Come on... <CF><D1>Don't forget about <&BUF0A>..."
 286#kuwagata,0x1fc23c,"<@RL,Rokusho,00><&BUF0A>さがしは<CD>どうする気だ?<CF><D1>...などと 言うだけ<CD>むだだろうがな","<@RL,Rokusho,00>What about the search for <&BUF0A>?<CF><D1>...Asking is pointless, isn't it?"
-287,0x1fc23e,"<@LR,Erika,00>じゅぎょう中 みたいね<CD>出直して 来ようっと",
-288,0x1fc240,"<@RL,Man,00>ダメ ダメ!<CD>立ち入リ きんしだよ",
-289,0x1fc242,"<@RL,Man,00>となリのビルに ロボロボ団が...","<@RL,Man,00>In the building next to here, the roborobos..."
-290,0x1fc244,"<@RL,Man,00>こ こしが ぬけた...",
-291,0x1fc246,"<@RL,Man,00>たいくつだ...",
+287,0x1fc23e,"<@LR,Erika,00>じゅぎょう中 みたいね<CD>出直して 来ようっと","<@LR,Erika,00>It seems like class is going on, I'll come back later."
+288,0x1fc240,"<@RL,Man,00>ダメ ダメ!<CD>立ち入リ きんしだよ","<@RL,Man,00>No way, there's no way! Entry is forbidden."
+289,0x1fc242,"<@RL,Man,00>となリのビルに ロボロボ団が...","<@RL,Man,00>In the building next to here, the Roborobos..."
+290,0x1fc244,"<@RL,Man,00>こ こしが ぬけた...","<@RL,Man,00>M-my back is out..."
+291,0x1fc246,"<@RL,Man,00>たいくつだ...","<@RL,Man,00>How boring..."
 292,0x1fc248,"<@RL,RubberRoboGrunt,00>イヤなこと されたくなければ<CD>おとなしくメダルを さし出すロボ!","<@RL,RubberRoboGrunt,00>Obediently hand over your Medal or else, robo!"
 293,0x1fc24a,"<@RL,Lady2,00>ア-レ-","<@RL,Lady2,00>Oh no!"
 294,0x1fc24c,"<@RL,Man,00>イヤなこと?","<@RL,Man,00>Or else?"
@@ -355,7 +355,7 @@
 344,0x1fc2b0,"<@RL,Man,00>...たからくじってのは ユメを<CD>貝るために 買うもんなんだよな",
 345,0x1fc2b2,"<@RL,Man,00>やっぱ まじめに はたらくか...",
 346,0x1fc2b4,むにゃ むにゃ,"Mumble, mumble"
-347,0x1fc2b6,"<@RL,OldMan,00>ばあさん めしは まだか?",
+347,0x1fc2b6,"<@RL,OldMan,00>ばあさん めしは まだか?","<@RL,OldMan,00>Is it time to eat, Gram?"
 348,0x1fc2b8,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble..."
 349,0x1fc2ba,"<@LL,Ikki,00>こんにちは<CF><D1><@RL,OldMan,00>うん?","<@LL,Ikki,00>Hello.<CF><D1><@RL,OldMan,00>Hm?"
 350,0x1fc2bc,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble mumble"
@@ -368,7 +368,7 @@
 357,0x1fc2ca,"<@RL,OldMan,00>おおっ そうじゃった!<CF><D1>いや すまん すまん<CD>おれいに これをやろう","<@RL,OldMan,00>Ooh, good point!<CF><D1>Well, sorry. You can have this as thanks."
 358,0x1fc2cc,"<@LL,Ikki,01>わ-い あリがとう!!","<@LL,Ikki,01>Yaay, thanks!!"
 359,0x1fc2ce,むにゃ むにゃ,Mumble mumble
-360,0x1fc2d0,"<@RL,OldMan,00>ばあさん フロは まだか?",
+360,0x1fc2d0,"<@RL,OldMan,00>ばあさん フロは まだか?","<@RL,OldMan,00>Is the bath ready yet, Gram?"
 361,0x1fc2d2,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble"
 362,0x1fc2d4,"<@LR,Erika,00>こんにちは おじいさん<CF><D1><@RL,OldMan,00>うん?","<@LR,Erika,00>Hello gramps.<CF><D1><@RL,OldMan,00>Hmm?"
 363,0x1fc2d6,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble mumble"
