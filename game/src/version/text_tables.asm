@@ -209,6 +209,10 @@ SECTION "Text31", ROMX[$4000], BANK[$f9]
 Text31:
   INCBIN cText31
 
+SECTION "Text32", ROMX[$4000], BANK[$fa]
+Text32:
+  INCBIN cText32
+
 SECTION "Dialog Text Tables", ROM0[$20a0]
 TextTableBanks:: ; 0x20a0
   db BANK(TextSection00)

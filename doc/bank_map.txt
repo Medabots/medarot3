@@ -248,7 +248,7 @@ F6: Text 28
 F7: Text 29
 F8: Text 30
 F9: Text 31
-FA: (empty)
+FA: Text 32
 FB: Patched 2bpp gfx
 FC: Patched 2bpp gfx
 FD: Patched 2bpp gfx
