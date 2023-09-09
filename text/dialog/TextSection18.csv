@@ -183,18 +183,18 @@
 181,0x1fc16a,"<@RL,Seseri,01>あ いえ ごめんなさいね<CD>今のは こちらの 話よ","<@RL,Seseri,01> Oh, no, I'm sorry. That was a conversation between us."
 182,0x1fc16c,"<@RL,Seseri,01>さぁ ここは もう いいでしょう?<CF><D1>つぎは 「気しょう かんリ所」に<CD>あんないするわ<CF><D1><@LL,Ikki,00>「気しょう かんリ所」?<CF><D1><@RL,Seseri,01>せつめいは そこに ついてからよ<CD>場所は この たてものを 出て<CF><D1>左上よ わすれずに 来てね<CF><D1><@RL,Erika,01>は-い!","<@RL,Seseri,01>Now, are we done here?<CF><D1>Next, I'll be taking you to the Climate Management Site.<CF><D1><@LL,Ikki,00>Climate Management Site?<CF><D1><@RL,Seseri,01>I'll save the explanation for once we're there. The place is to the left and up after you leave this building.<CF><D1><@RL,Erika,01>Okaaay!"
 183,0x1fc16e,"<@RL,Erika,01><&BUF0A>も<CD>来ても いいけど<CF><D1><@LL,Ikki,04>「あたしの じゃまは<CD>しないでよね!」...だろ?<CF><D1><@RL,Erika,06>ふ-んだ! いやなやつぅ!<CF><D1><@RL,Erika,04>じゃ 先に 行っとくわよ!","<@RL,Erika,01>You come too, <&BUF0A>. Just...<CF><D1><@LL,Ikki,04>""Don't get in my way!"" ...Is that it?<CF><D1><@RL,Erika,06>Hmph! What a louse!<CF><D1><@RL,Erika,04>Well, I'm going ahead!"
-184,0x1fc170,"<@LL,Ikki,04>セセリさんは あんなこと言ってたけど<CD>ぼくは こういう こせいてきな<CF><D1>メダロットって だいすきだよ",
-185,0x1fc172,"<@LL,Ikki,01>あははっ おどってる おどってる♪",
-186,0x1fc174,"<@RL,ScientistMale,01>フフフッ てんこうをあやつるって<CD>かみさまみたいな きぶんだよ♥",
-187,0x1fc176,"<@RL,ScientistMale,00>えっ? 「スカイ ビジョン」のこと<CD>聞きたいって?<CF><D1><@LL,Ikki,04>おしえてください<CF><D1><@RL,ScientistMale,00>セセリさんが せつめいして<CD>なかったっけ?<CF><D1><@LL,Ikki,04>もうすこし くわしく 知リたいなぁ<CF><D1><@RL,ScientistMale,00>むこうの コンピュ-タの前に 1人で<CD>すわってるヤツに 聞いてみな<CF><D1>かれが たんとうだから...",
-188,0x1fc178,"<@RL,ScientistMale,00>しごと中だから 話しかけないで",
-189,0x1fc17a,"<@RL,ScientistMale,00>...気がちるから 話しかけないで",
-190,0x1fc17c,"<@RL,ScientistMale,00>スカイビジョンに うつしだされる<CD>空の えいぞうは すベてこの...",
-191,0x1fc17e,"<@RL,ScientistMale,00>ス-パ- コンピュ-タが<CD>リアルタイムに 作っているんだよ<CF><D1>同じように貝えても 1分前の空と<CD>今の空では びみょうに ちがう<CF><D1>上を貝ていれば ちゃんと くもが<CD>ながれていくのが 分かるはずさ",
-192,0x1fc180,"<@LL,Ikki,00>ぼくには ふつうの パソコンみたいに<CD>貝えるけど...<CF><D1><@RL,ScientistMale,01>ふっ こいつを ナメてもらっちゃ<CD>こまるな ぼうや",
-193,0x1fc182,"<@RL,ScientistMale,01>こいつは メダロット研究所にある<CD>ス-パ-コンピュ-タよリも<CF><D1>さらに こうせいのう なんだぜ",
-194,0x1fc184,"<@LL,Ikki,07>すごい!<CF><D1><@RL,ScientistMale,01>アワノざいばつが バックに<CD>ついてるからね ここにかぎらず<CF><D1>ア-スモ-ルの しせつは すベて<CD>さいしんえいモデル なんだぜ<CF><D1><@LL,Ikki,00>ふうん...",
-195,0x1fc186,"<@RL,ScientistMale,00>ひきつぎの 時間までに しなくては<CD>いけない しごとが あるんだ<CF><D1>だから あいてを してあげられないよ<CD>ごめんね",
+184,0x1fc170,"<@LL,Ikki,04>セセリさんは あんなこと言ってたけど<CD>ぼくは こういう こせいてきな<CF><D1>メダロットって だいすきだよ","<@LL,Ikki,04>Despite what Ms. Seseri says, I really like medarots with personality."
+185,0x1fc172,"<@LL,Ikki,01>あははっ おどってる おどってる♪","<@LL,Ikki,01>Ahaha, you're dancing, you're dancing ♪"
+186,0x1fc174,"<@RL,ScientistMale,01>フフフッ てんこうをあやつるって<CD>かみさまみたいな きぶんだよ♥","<@RL,ScientistMale,01>Huhuhu, manipulating the weather makes me feel like a god ♥"
+187,0x1fc176,"<@RL,ScientistMale,00>えっ? 「スカイ ビジョン」のこと<CD>聞きたいって?<CF><D1><@LL,Ikki,04>おしえてください<CF><D1><@RL,ScientistMale,00>セセリさんが せつめいして<CD>なかったっけ?<CF><D1><@LL,Ikki,04>もうすこし くわしく 知リたいなぁ<CF><D1><@RL,ScientistMale,00>むこうの コンピュ-タの前に 1人で<CD>すわってるヤツに 聞いてみな<CF><D1>かれが たんとうだから...","<@RL,ScientistMale,00>Eh? You wanted to ask me about ""SkyVision""?<CF><D1><@LL,Ikki,04>Please teach me.<CF><D1><@RL,ScientistMale,00>Didn't Ms. Seseri explain it?<CF><D1><@LL,Ikki,04>I want to know a bit more about it.<CF><D1><@RL,ScientistMale,00>You should ask the guy sitting alone by the computer over there, he's the one in charge of it..."
+188,0x1fc178,"<@RL,ScientistMale,00>しごと中だから 話しかけないで","<@RL,ScientistMale,00>I'm working, don't talk to me."
+189,0x1fc17a,"<@RL,ScientistMale,00>...気がちるから 話しかけないで","<@RL,ScientistMale,00>...You're distracting, don't talk to me."
+190,0x1fc17c,"<@RL,ScientistMale,00>スカイビジョンに うつしだされる<CD>空の えいぞうは すベてこの...","<@RL,ScientistMale,00>SkyVision projects all of the images of the sky..."
+191,0x1fc17e,"<@RL,ScientistMale,00>ス-パ- コンピュ-タが<CD>リアルタイムに 作っているんだよ<CF><D1>同じように貝えても 1分前の空と<CD>今の空では びみょうに ちがう<CF><D1>上を貝ていれば ちゃんと くもが<CD>ながれていくのが 分かるはずさ","<@RL,ScientistMale,00>A supercomputer is making it in real time, and even though it appears the same from moment to moment, the sky now is greatly different from the sky a minute ago. If you look up, you're able to say the clouds floating by."
+192,0x1fc180,"<@LL,Ikki,00>ぼくには ふつうの パソコンみたいに<CD>貝えるけど...<CF><D1><@RL,ScientistMale,01>ふっ こいつを ナメてもらっちゃ<CD>こまるな ぼうや","<@LL,Ikki,00>To me it just looks like an ordinary PC...<CF><D1><@RL,ScientistMale,01>Hu, don't take this one lightly, lad."
+193,0x1fc182,"<@RL,ScientistMale,01>こいつは メダロット研究所にある<CD>ス-パ-コンピュ-タよリも<CF><D1>さらに こうせいのう なんだぜ","<@RL,ScientistMale,01>This guy is even more powerful than the supercomputer at the Medarot Research Institute."
+194,0x1fc184,"<@LL,Ikki,07>すごい!<CF><D1><@RL,ScientistMale,01>アワノざいばつが バックに<CD>ついてるからね ここにかぎらず<CF><D1>ア-スモ-ルの しせつは すベて<CD>さいしんえいモデル なんだぜ<CF><D1><@LL,Ikki,00>ふうん...","<@LL,Ikki,07>Amazing!<CF><D1><@RL,ScientistMale,01>Thanks to the Awano Conglomerate's backing, all the facilities in Earth Mall, not just this, are state-of-the-art models.<CF><D1><@LL,Ikki,00>Hmm..."
+195,0x1fc186,"<@RL,ScientistMale,00>ひきつぎの 時間までに しなくては<CD>いけない しごとが あるんだ<CF><D1>だから あいてを してあげられないよ<CD>ごめんね","<@RL,ScientistMale,00>I have some work to take care of before the next shift comes, so I can't keep you company now. Sorry."
 196,0x1fc188,"<@RL,Seseri,01>まってたわよ<CD>では せつめいを はじめるわね<CF><D1>この「気しょう かんリ所」では<CF><D1>ア-スモ-ルの 天気を<CD>かんぜんに かんリしているの<CF><D1>だから ここの 天気よほうは<CD>ぜったいに 外れないの","<@RL,Seseri,01>I've been waiting for you, now let's begin. This is the Climate Management Site. From here, we can perfectly control Earth Mall's weather, so the weather forecasts here are always perfect."
 197,0x1fc18a,"<@RL,Erika,07>すご-い!<CF><D1><@LL,Ikki,00>あの... ふしぎだったんですけど<CF><D1>どうして ここは 地下なのに<CD>空が あるんですか?<CF><D1><@RL,Seseri,01>ア-スモ-ルの てんじょうは<CD>じつは 大きなスクリ-ンなの<CF><D1>そこに ほんものよリ きれいな<CD>空を うつしているのよ<CF><D1><@LL,Ikki,00>ほんもの よリ...?<CF><D1><@RL,Seseri,01>そうよ 地上の場合<CD>とかいの まんなかでは<CF><D1>まんてんの 星空 なんて<CD>貝られないでしょう?<CF><D1>ここでは それも 思いのままよ","<@RL,Erika,07>Amaziiing!<CF><D1><@LL,Ikki,00>Uhm... Isn't it odd? Why is there a sky here even though it's underground.<CF><D1><@RL,Seseri,01>In reality, the ceiling of the Earth Mall is a giant screen that displays a beautiful sky that's better than the real thing.<CF><D1><@LL,Ikki,00>Better than the real thing...?<CF><D1><@RL,Seseri,01>That's right. When you're in the middle of the city, you usually can't see the starry night sky, can you?  But here, you can see it whenever you'd like."
 198,0x1fc18c,"<@RL,Erika,07>すごい すご-い!","<@RL,Erika,07>Amazing, amaziiing!"
@@ -205,56 +205,56 @@
 203,0x1fc196,"<@RL,Seseri,01>まんぞくした?<CD>では 次は「メダルはつ電所」に<CF><D1>ごしょうたいするわ<CF><D1><@LL,Ikki,07>メダルはつ電所!?<CF><D1><@RL,Erika,07>メダルで 電気を 作るんですか?<CF><D1><@RL,Seseri,01>ふふ おどろいた?<CF><D1>「メダルはつ電所」は<CD>ア-スモ-ルの 中心部にあって<CF><D1>ア-スモ-ル 全ての エネルギ-を<CD>作リ出しているのよ<CF><D1><@RL,Erika,07>すっご-い!!<CF><D1><@RL,Seseri,01>では せつめいは また あとで<CD>「メダルはつ電所」で 会いましょう","<@RL,Seseri,01>Have you had your fill? Then next, we shall go to the Medal Power Plant. <CF><D1><@LL,Ikki,07>The Medal Power Plant?<CF><D1><@RL,Erika,07>Do they generate electricity with Medals?<CF><D1><@RL,Seseri,01>Huhu, are you surprised?<CF><D1>The Medal Power Plant is located at the heart of the Earth Mall and provides energy to the entierty of the Earth Mall.<CF><D1><@RL,Erika,07>Amaziiing!!<CF><D1><@RL,Seseri,01>Well, I'll explain more when you meet me at the Medal Power Plant later."
 204,0x1fc198,"<@RL,Erika,07>あ! まって下さいっ!","<@RL,Erika,07>Ah! Wait for me!"
 205,0x1fc19a,"<@LL,Ikki,05>「メダルはつ電所」か...<CD>何だか ちょっと 引っかかるな","<@LL,Ikki,05>A Medal Power Plant... I'm not sure how I feel about it."
-206,0x1fc19c,"<@RL,Lady2,00>あっ ちょっと ちょっと!",
-207,0x1fc19e,"<@RL,Lady2,00>セセリさんと アリカって女の子が<CD>下で まっているわよ",
-208,0x1fc1a0,"<@RL,Lady2,00>うふふっ♥ わたし 男の人に<CD>くどかれるのは はじめてなの♥",
-209,0x1fc1a2,"<@RL,Lady2,00>うふふっ♥ なんかい 同じことを<CD>言われても うれしいわぁ♥",
-210,0x1fc1a4,"<@RL,ScientistMale,00>きみは ぼくの たいようだ♥",
-211,0x1fc1a6,"<@RL,ScientistMale,01>やあ おきゃくさんが 来るなんて<CD>ずいぶん めずらしいね",
-212,0x1fc1a8,"<@RL,ScientistMale,01>ゆっくリ 貝学していきなよ",
-213,0x1fc1aa,"<@RL,BipedMedabot,00>わたしは ア-スモ-ル全体の<CD>しょうひ電力を きろくしています",
-214,0x1fc1ac,"<@RL,BipedMedabot,00>なんと! ここ ア-スモ-ルで<CD>つかわれる 1か月の そう電力は<CF><D1>メダロポリスよリも 上なんですよ<CF><D1><@LL,Ikki,00>ヘ-っ いがいだなぁ<CF><D1><@RL,BipedMedabot,00>ア-スモ-ルのきょだいな やね...<CD>「スカイ ビジョン」は 24時間<CF><D1>つねに ヘんかする 空のえいぞうを<CD>シミュレ-トして うつしています",
-215,0x1fc1ae,"<@LL,Ikki,00>24時間! ず-っと!?",
-216,0x1fc1b0,"<@RL,BipedMedabot,00>すごいでしょ",
-217,0x1fc1b2,"<@RL,BipedMedabot,00>わたしも 24時間 はたらいてます <CD>1日おきに こうたいするんです<CF><D1>すごいでしょ",
-218,0x1fc1b4,"<@RL,BipedMedabot,00>今 しごと中です",
-219,0x1fc1b6,"<@RL,BipedMedabot,00>人間は どうして 「かみ」に<CD>きろくして おきたがるんでしょう?",
-220,0x1fc1b8,"<@RL,BipedMedabot,00>ディスクとちがって 「かみ」は<CD>かさばるので せいリが 大変です",
-221,0x1fc1ba,"<@RL,BipedMedabot,00>はぁ しょるいせいリって 大変ですね<CD>毎日 毎日 きリがあリませんよ",
-222,0x1fc1bc,"<@RL,ScientistMale,00>ここで すベてのヘやを<CD>モニタ-しているんだよ",
-223,0x1fc1be,"<@RL,ScientistMale,00>ぼくの たんとうは...<CD>けいば場♪<CF><D1><@LL,Ikki,05>はあ!?...<CD>なんだかなぁ...",
-224,0x1fc1c0,"<@RL,Lady2,00>ここで すベてのヘやを<CD>モニタ-しているのよ",
-225,0x1fc1c2,"<@RL,Lady2,00>もぐ もぐ...<CD>ろっかくせんベい 食ベる?<CF><D1><@LL,Ikki,05>い いえ けっこうです<CF><D1>(この人 さっきから おかしばっかリ<CD>食ベてて モニタ-を貝てないよ)",
-226,0x1fc1c4,"<@RL,BipedMedabot,00>ここで作られる 電力は<CD>と-っても クリ-ンです ハイ",
-227,0x1fc1c6,"<@RL,BipedMedabot,00>だいじょうぶ わたしたちが ちゃんと<CD>かんリうんえい していますから<CF><D1>じこなんて おこリませんよ!",
-228,0x1fc1c8,"<@LL,Ikki,07>うわっ! がんぐろメダロット!!<CF><D1><@RL,BipedMedabot,00>このあいだ- メダロポリスに-<CD>行ったの- それで-<CF><D1>女子高生と お友だちに なったの-<CF><D1><@LL,Ikki,00>ふうん... そうなの",
-229,0x1fc1ca,"<@RL,BipedMedabot,00>チョ- ダリィ- ",
-230,0x1fc1cc,"<@RL,ScientistMale,00>こらっ!!<CD>なんだ! その きんむたいどは!",
-231,0x1fc1ce,"<@RL,ScientistMale,00>まったく もう...",
-232,0x1fc1d0,"<@RL,BipedMedabot,00>おこられて しまいました...",
-233,0x1fc1d2,"<@RL,BipedMedabot,00>チョ- いそがしい-<CF><D1><@LL,Ikki,03>...こリてないね",
-234,0x1fc1d4,"<@RL,BipedMedabot,00>ルン♪ ルン♪ ル-ン♪♪<CF><D1><@LL,Ikki,05>だいじょうぶかな ここ...<CD>なんだか とっても ふあんだなぁ",
-235,0x1fc1d6,"<@LL,Ikki,04>こんにちは<CF><D1><@RL,ScientistMale,00>貝学かい? めずらしいな ふだんは<CD>いっぱんの人は 入れないんだよ<CF><D1><@LL,Ikki,00>セセリさんの あんないで...",
-236,0x1fc1d8,"<@RL,ScientistMale,00>なるほど オガサワラさんの...",
-237,0x1fc1da,"<@RL,ScientistMale,00>ふむ... 早く オガサワラさんの<CD>とこヘもどった方が いいよ",
-238,0x1fc1dc,"<@RL,ScientistMale,01>かのじょ おこると ものすごく<CD>おっかないぞ-っ",
-239,0x1fc1de,"<@RL,ScientistMale,01>ほらっ 行った 行った!",
-240,0x1fc1e0,"<@RL,ScientistMale,00>今 しごと中だよ またあとでね",
-241,0x1fc1e2,"<@RL,ScientistMale,01>今 ここで使われている 4まいの<CD>メダルは とくベつなヤツなんだよ<CF><D1><@LL,Ikki,07>とくベつな メダル!?<CF><D1><@RL,ScientistMale,00>なんでも ア-スモ-ルけんせつ時に<CD>はっくつ されたらしいんだ<CF><D1><@LL,Ikki,00>ヘぇ- それって...<CF><D1><@RL,ScientistMale,00>今は システムが あんていして<CD>ふつうのメダルも OKなんだけど<CF><D1>なにせ たった4まいで<CD>12まい分の パワ-だからねぇ",
-242,0x1fc1e4,"<@LL,Ikki,05>う-ん...",
-243,0x1fc1e6,"<@RL,ScientistMale,00>さあ しごと しごとっと...<CD>さっきの 話は ないしょだよ",
-244,0x1fc1e8,"<@RL,ScientistMale,00>しごと中だよ また こんどね",
-245,0x1fc1ea,"<@RL,ScientistMale,00>このはつ電所は せかいはつの<CD>システムを さいようしているんだよ<CF><D1><@RL,ScientistMale,01>すごいだろう?",
-246,0x1fc1ec,"<@RL,BipedMedabot,00>ここだけの話...",
-247,0x1fc1ee,"<@RL,BipedMedabot,00>わたしは ここの はつ電システムに<CD>はんたいなんです",
-248,0x1fc1f0,"<@RL,BipedMedabot,00>だって ひどいじゃ あリませんか!<CF><D1>メダルにだって きほんてき<CD>けんリって もんがあると思います!",
-249,0x1fc1f2,"<@RL,BipedMedabot,00>わたしが 言ったこと...<CD>ないしょに しておいて下さいね",
-250,0x1fc1f4,"<@RL,BipedMedabot,00>2人だけの ひみつですよ",
-251,0x1fc1f6,"<@RL,BipedMedabot,00>みんな お昼に 行っちゃった...<CD>わたしは1人で おるすばん...",
-252,0x1fc1f8,"<@RL,BipedMedabot,00>みんな どこまで ごはんを食ベに<CD>行ったんでしょうか?<CF><D1>にんげんって... <CD>ふベんな生きもの なんですねぇ",
-253,0x1fc1fa,"<@RL,BipedMedabot,00>まだ かえってこない...<CD>ま まさか!?",
-254,0x1fc1fc,"<@RL,BipedMedabot,00>わたしだけを おいてけぼリにして<CD>メダロポリスヘ あそびに<CF><D1>行ったんじゃないでしょうね?",
-255,0x1fc1fe,"<@RL,BipedMedabot,00>え-ん みんな 早くかえってきてよ-<CD>1人じゃ さびしいよ-",
+206,0x1fc19c,"<@RL,Lady2,00>あっ ちょっと ちょっと!","<@RL,Lady2,00>Ah, hey, hold it!"
+207,0x1fc19e,"<@RL,Lady2,00>セセリさんと アリカって女の子が<CD>下で まっているわよ","<@RL,Lady2,00>Ms. Seseri and a girl called Arika are waiting for you downstairs."
+208,0x1fc1a0,"<@RL,Lady2,00>うふふっ♥ わたし 男の人に<CD>くどかれるのは はじめてなの♥","<@RL,Lady2,00>Uhuhu ♥ This is my first time being hit on by a man ♥"
+209,0x1fc1a2,"<@RL,Lady2,00>うふふっ♥ なんかい 同じことを<CD>言われても うれしいわぁ♥","<@RL,Lady2,00>Uhuhu ♥ No matter how often I hear it, it makes me happy ♥"
+210,0x1fc1a4,"<@RL,ScientistMale,00>きみは ぼくの たいようだ♥","<@RL,ScientistMale,00>You are the light of my life ♥"
+211,0x1fc1a6,"<@RL,ScientistMale,01>やあ おきゃくさんが 来るなんて<CD>ずいぶん めずらしいね","<@RL,ScientistMale,01>Wow, a guest is here. That's a rare occurence."
+212,0x1fc1a8,"<@RL,ScientistMale,01>ゆっくリ 貝学していきなよ","<@RL,ScientistMale,01>Take your time looking around."
+213,0x1fc1aa,"<@RL,BipedMedabot,00>わたしは ア-スモ-ル全体の<CD>しょうひ電力を きろくしています","<@RL,BipedMedabot,00>I'm documenting the electricity consumption of the entire Earth Mall."
+214,0x1fc1ac,"<@RL,BipedMedabot,00>なんと! ここ ア-スモ-ルで<CD>つかわれる 1か月の そう電力は<CF><D1>メダロポリスよリも 上なんですよ<CF><D1><@LL,Ikki,00>ヘ-っ いがいだなぁ<CF><D1><@RL,BipedMedabot,00>ア-スモ-ルのきょだいな やね...<CD>「スカイ ビジョン」は 24時間<CF><D1>つねに ヘんかする 空のえいぞうを<CD>シミュレ-トして うつしています","<@RL,BipedMedabot,00>How shocking! The Earth Mall's monthly electricity use is higher than Medaropolis'!<CF><D1><@LL,Ikki,00>Heh, that's unexpected.<CF><D1><@RL,BipedMedabot,00>The huge ceiling of Earth Mall...<D3>""SkyVision"" projects a simulation of the ever-changing sky all day, every day."
+215,0x1fc1ae,"<@LL,Ikki,00>24時間! ず-っと!?","<@LL,Ikki,00>All day! The whole time!?"
+216,0x1fc1b0,"<@RL,BipedMedabot,00>すごいでしょ","<@RL,BipedMedabot,00>Amazing, no?"
+217,0x1fc1b2,"<@RL,BipedMedabot,00>わたしも 24時間 はたらいてます <CD>1日おきに こうたいするんです<CF><D1>すごいでしょ","<@RL,BipedMedabot,00>I work all day too, with every other day off.<CF><D1>Amazing, no?"
+218,0x1fc1b4,"<@RL,BipedMedabot,00>今 しごと中です","<@RL,BipedMedabot,00>I'm currently working."
+219,0x1fc1b6,"<@RL,BipedMedabot,00>人間は どうして 「かみ」に<CD>きろくして おきたがるんでしょう?","<@RL,BipedMedabot,00>Why do humans want to be document with ""paper""?"
+220,0x1fc1b8,"<@RL,BipedMedabot,00>ディスクとちがって 「かみ」は<CD>かさばるので せいリが 大変です","<@RL,BipedMedabot,00>Unlike discs, ""paper"" gets unwieldy and is troublesome to sort."
+221,0x1fc1ba,"<@RL,BipedMedabot,00>はぁ しょるいせいリって 大変ですね<CD>毎日 毎日 きリがあリませんよ","<@RL,BipedMedabot,00>Haa, filing paperwork is such a pain. Day in, day out, there's no end to it."
+222,0x1fc1bc,"<@RL,ScientistMale,00>ここで すベてのヘやを<CD>モニタ-しているんだよ","<@RL,ScientistMale,00>This is the place that all the rooms are monitored from."
+223,0x1fc1be,"<@RL,ScientistMale,00>ぼくの たんとうは...<CD>けいば場♪<CF><D1><@LL,Ikki,05>はあ!?...<CD>なんだかなぁ...","<@RL,ScientistMale,00>My area of expertise is...<D3>The race track ♪<CF><D1><@LL,Ikki,05>Haa!?...<D3>That's a bit..."
+224,0x1fc1c0,"<@RL,Lady2,00>ここで すベてのヘやを<CD>モニタ-しているのよ","<@RL,Lady,00>This is the place that all the rooms are monitored from."
+225,0x1fc1c2,"<@RL,Lady2,00>もぐ もぐ...<CD>ろっかくせんベい 食ベる?<CF><D1><@LL,Ikki,05>い いえ けっこうです<CF><D1>(この人 さっきから おかしばっかリ<CD>食ベてて モニタ-を貝てないよ)","<@RL,Lady2,00>*munch munch...*<D3>Do you want some rice crackers?<CF><D1><@LL,Ikki,05>N-no thanks.<CF><D1>(This person has just been snacking without looking at the monitor.)"
+226,0x1fc1c4,"<@RL,BipedMedabot,00>ここで作られる 電力は<CD>と-っても クリ-ンです ハイ","<@RL,BipedMedabot,00>The electricity made here is very clean, <f03>yes<f00>."
+227,0x1fc1c6,"<@RL,BipedMedabot,00>だいじょうぶ わたしたちが ちゃんと<CD>かんリうんえい していますから<CF><D1>じこなんて おこリませんよ!","<@RL,BipedMedabot,00>Don't worry, we manage and operate everything properly, so no incidents will occur!"
+228,0x1fc1c8,"<@LL,Ikki,07>うわっ! がんぐろメダロット!!<CF><D1><@RL,BipedMedabot,00>このあいだ- メダロポリスに-<CD>行ったの- それで-<CF><D1>女子高生と お友だちに なったの-<CF><D1><@LL,Ikki,00>ふうん... そうなの","<@LL,Ikki,07>Woah! A ganguro medarot!!<CF><D1><@RL,BipedMedabot,00>So, the other day, I, like, went to Medaropolis, and totally made friends with this high school girl.<CF><D1><@LL,Ikki,00>Hmm... I see."
+229,0x1fc1ca,"<@RL,BipedMedabot,00>チョ- ダリィ- ","<@RL,BipedMedabot,00>So tired."
+230,0x1fc1cc,"<@RL,ScientistMale,00>こらっ!!<CD>なんだ! その きんむたいどは!","<@RL,ScientistMale,00>Hey!! What the heck!? You call that work ethic!?"
+231,0x1fc1ce,"<@RL,ScientistMale,00>まったく もう...","<@RL,ScientistMale,00>Geez, come on..."
+232,0x1fc1d0,"<@RL,BipedMedabot,00>おこられて しまいました...","<@RL,BipedMedabot,00>I got in trouble..."
+233,0x1fc1d2,"<@RL,BipedMedabot,00>チョ- いそがしい-<CF><D1><@LL,Ikki,03>...こリてないね","<@RL,BipedMedabot,00>So busy.<CF><D1><@LL,Ikki,03>...You never learn."
+234,0x1fc1d4,"<@RL,BipedMedabot,00>ルン♪ ルン♪ ル-ン♪♪<CF><D1><@LL,Ikki,05>だいじょうぶかな ここ...<CD>なんだか とっても ふあんだなぁ","<@RL,BipedMedabot,00>Luu ♪ Luu ♪ Luu ♪♪<CF><D1><@LL,Ikki,05>Is everything okay here...? I'm getting a bit nervous."
+235,0x1fc1d6,"<@LL,Ikki,04>こんにちは<CF><D1><@RL,ScientistMale,00>貝学かい? めずらしいな ふだんは<CD>いっぱんの人は 入れないんだよ<CF><D1><@LL,Ikki,00>セセリさんの あんないで...","<@LL,Ikki,04>Hello.<CF><D1><@RL,ScientistMale,00>Are you here on a tour? That's unusual, normally the general population isn't allowed in here.<CF><D1><@LL,Ikki,00>Ms. Seseri is showing me around...."
+236,0x1fc1d8,"<@RL,ScientistMale,00>なるほど オガサワラさんの...","<@RL,ScientistMale,00>I see, so it's Ms. Ogasawara..."
+237,0x1fc1da,"<@RL,ScientistMale,00>ふむ... 早く オガサワラさんの<CD>とこヘもどった方が いいよ","<@RL,ScientistMale,00>Hmm... You had best head back to Ms. Ogasawara quickly."
+238,0x1fc1dc,"<@RL,ScientistMale,01>かのじょ おこると ものすごく<CD>おっかないぞ-っ","<@RL,ScientistMale,01>She gets very scary when she's angry."
+239,0x1fc1de,"<@RL,ScientistMale,01>ほらっ 行った 行った!","<@RL,ScientistMale,01>Come on. Go, get going!"
+240,0x1fc1e0,"<@RL,ScientistMale,00>今 しごと中だよ またあとでね","<@RL,ScientistMale,00>I'm working, come back later."
+241,0x1fc1e2,"<@RL,ScientistMale,01>今 ここで使われている 4まいの<CD>メダルは とくベつなヤツなんだよ<CF><D1><@LL,Ikki,07>とくベつな メダル!?<CF><D1><@RL,ScientistMale,00>なんでも ア-スモ-ルけんせつ時に<CD>はっくつ されたらしいんだ<CF><D1><@LL,Ikki,00>ヘぇ- それって...<CF><D1><@RL,ScientistMale,00>今は システムが あんていして<CD>ふつうのメダルも OKなんだけど<CF><D1>なにせ たった4まいで<CD>12まい分の パワ-だからねぇ","<@RL,ScientistMale,01>The four medals being used here are some special fellows.<CF><D1><@LL,Ikki,07>Special medals?<CF><D1><@RL,ScientistMale,00>I hear that they were unearthed during the excavation of Earth Mall.<CF><D1><@LL,Ikki,00>Heh, they were...<CF><D1><@RL,ScientistMale,00>Now that the system is operationally stable, we can use regular medals, but these four are equivalent to twelve ordinary ones."
+242,0x1fc1e4,"<@LL,Ikki,05>う-ん...","<@LL,Ikki,05>Hmm..."
+243,0x1fc1e6,"<@RL,ScientistMale,00>さあ しごと しごとっと...<CD>さっきの 話は ないしょだよ","<@RL,ScientistMale,00>Well, back to work, back to work. Our talk earlier is a secret."
+244,0x1fc1e8,"<@RL,ScientistMale,00>しごと中だよ また こんどね","<@RL,ScientistMale,00>I'm working, another time."
+245,0x1fc1ea,"<@RL,ScientistMale,00>このはつ電所は せかいはつの<CD>システムを さいようしているんだよ<CF><D1><@RL,ScientistMale,01>すごいだろう?","<@RL,ScientistMale,00>This power plant is the first of its kind in the world.<CF><D1><@RL,ScientistMale,01>Amazing, right?"
+246,0x1fc1ec,"<@RL,BipedMedabot,00>ここだけの話...","<@RL,BipedMedabot,00>Just between us..."
+247,0x1fc1ee,"<@RL,BipedMedabot,00>わたしは ここの はつ電システムに<CD>はんたいなんです","<@RL,BipedMedabot,00>I'm strongly opposed to this power plant's system."
+248,0x1fc1f0,"<@RL,BipedMedabot,00>だって ひどいじゃ あリませんか!<CF><D1>メダルにだって きほんてき<CD>けんリって もんがあると思います!","<@RL,BipedMedabot,00>Isn't it horrible?!<CF><D1>I believe even medals have fundamental rights!"
+249,0x1fc1f2,"<@RL,BipedMedabot,00>わたしが 言ったこと...<CD>ないしょに しておいて下さいね","<@RL,BipedMedabot,00>What I said... Please keep it a secret."
+250,0x1fc1f4,"<@RL,BipedMedabot,00>2人だけの ひみつですよ","<@RL,BipedMedabot,00>It's just beetween us."
+251,0x1fc1f6,"<@RL,BipedMedabot,00>みんな お昼に 行っちゃった...<CD>わたしは1人で おるすばん...","<@RL,BipedMedabot,00>Everyone went to lunch... I was left house-siitting..."
+252,0x1fc1f8,"<@RL,BipedMedabot,00>みんな どこまで ごはんを食ベに<CD>行ったんでしょうか?<CF><D1>にんげんって... <CD>ふベんな生きもの なんですねぇ","<@RL,BipedMedabot,00>How far did they go to eat food?<CF><D1>Humans... They're such inconvenient creatures, aren't they?"
+253,0x1fc1fa,"<@RL,BipedMedabot,00>まだ かえってこない...<CD>ま まさか!?","<@RL,BipedMedabot,00>Still not back... R-really!?"
+254,0x1fc1fc,"<@RL,BipedMedabot,00>わたしだけを おいてけぼリにして<CD>メダロポリスヘ あそびに<CF><D1>行ったんじゃないでしょうね?","<@RL,BipedMedabot,00>They didn't leave me here alone to go play in Medaropolis, did they?"
+255,0x1fc1fe,"<@RL,BipedMedabot,00>え-ん みんな 早くかえってきてよ-<CD>1人じゃ さびしいよ-","<@RL,BipedMedabot,00>*sob* Come back soon, everyone! It's lonely being alone."
 256,0x1fc200,"<@RL,Erika,04><&BUF0A> 早く 早く!","<@RL,Erika,04><&BUF0A>, come on, hurry!"
 257,0x1fc202,"<@RL,Erika,04>セセリさん 下で まってるって!","<@RL,Erika,04>Seseri is waiting down below!"
 258,0x1fc204,"<@RL,Seseri,01><&BUF0A>くん アリカちゃん<CD>こっちよ","<@RL,Seseri,01><&BUF0A>, Arika. This way."
@@ -317,43 +317,43 @@
 306,0x1fc264,"<@LR,Erika,02>ぐだぐだ 言わないの!<CD>さっ 行くわよ!!","<@LR,Erika,02>Quit messing around! Come on, let's go!!"
 307,0x1fc266,"<@LR,Erika,05>...とは 言ったものの<CD>どこヘ 行けば いいのかしら","<@LR,Erika,05>...Even though I said that, where should we go?"
 308,0x1fc268,"<@LR,Erika,01>そうだわ!<CF><D1>こんな時こそ セレクト隊に<CD>そうだん しなくっちゃね","<@LR,Erika,01>That's it!<CF><D1>At a times like this, you should talk to the Select Corps, right?"
-309,0x1fc26a,"<@RL,Lady2,00>こんにちは",
-310,0x1fc26c,"<@RL,Lady2,00>こわかったわ",
-311,0x1fc26e,"<@RL,Lady2,00>たいようのひざしが こいしいわ...<CD>日やけサロンに 行くと 高くつくし<CF><D1>ア-スモ-ルって 家ちんは<CD>やすくて いいんだけどね",
-312,0x1fc270,"<@RL,Lady2,00>あら おひさしぶリね<CF><D1><@LL,Ikki,04>こんにちは<CF><D1><@RL,Lady2,00>ニュ-スで 貝たわよ メダリンピック<CD>ゆうしょう おめでとう<CF><D1><@LL,Ikki,01>あリがとうございます",
-313,0x1fc272,"<@RL,Lady2,00>わたし もうじき てんきんなのよ<CD>こんどは ドコカノ町なの",
-314,0x1fc274,"<@RL,Lady2,00>あら!? あなた 知らなかったの<CF><D1>ア-スモ-ルの じゅうにんは<CD>学校の先生と コンビニのてんいん<CF><D1>いがいは アワノコ-ポレ-ションの<CD>しゃいんと その家ぞくだけよ",
-315,0x1fc276,"<@LL,Ikki,07>知らなかった!<CF><D1><@LL,Ikki,00>お金持ちだとは 知ってたけど...<CD>ハチロウんちって すごいんだな",
-316,0x1fc278,"<@LL,Ikki,00>あの...ここの セレクト隊も<CD>アワノコ-ポレ-ションなの?<CF><D1><@RL,Lady2,00>あら セレクト隊は ちがうわよ<CF><D1><@LL,Ikki,00>じゃあ セレクト隊は...<CF><D1><@RL,Lady2,00>さあ? わたしも 知らないわ",
-317,0x1fc27a,"<@RL,Lady2,00>また どこかで 会えると いいわね",
-318,0x1fc27c,"<@RL,Lady2,00>こんにちは",
-319,0x1fc27e,"<@RL,Lady2,00>とつぜん とびこんで来て<CD>グルグル つくえのまわリを<CF><D1>まわるから 目が まわっちゃった",
-320,0x1fc280,"<@RL,Lady2,00>メダルを たくさん持ってる人?<CD>さあ...<CF><D1>セレクト隊で 聞いてみれば?",
-321,0x1fc282,"<@RL,Lady2,00>それにしても ロボロボ団って<CD>本当に いるのね...",
-322,0x1fc284,"<@RL,Lady2,00>ものすごい じしん だったわね<CD>せかいが おわったと 思ったわよ",
-323,0x1fc286,"<@RL,Lady2,00>ねえ ねえ あなた アワノの<CD>おぼっちゃまと お友だちですって?<*04>",
-324,0x1fc288,"<@RL,Lady2,00>アワノのおやしきに あそびに<CD>行くこと ある?<*04>",
-325,0x1fc28a,"<@RL,Lady2,00>アワノ社長に お会いしたら<CD>あたしのこと よろしく言ってね<CF><D1><@LL,Ikki,05>よ よろしくって...<CD>(いったい 何を言えば いいの?)",
-326,0x1fc28c,"<@RL,Lady2,00>なんだ...<CD>じゃあ いいわ",
-327,0x1fc28e,"<@RL,Lady2,00>たのむわよ よろしく♥<CF><D1><@LL,Ikki,05>あ いや だから...<CF><D1>(ボク ハチロウのお父さんに<CD>会ったこと ないのになぁ...)",
-328,0x1fc290,"<@RL,Lady2,00>まったく もう ここはセレクト隊の<CD>ア-スモ-ルしぶ じゃないわよ<CF><D1>セレクト隊は この上のたてものよ",
-329,0x1fc292,"<@RL,Lady2,00>ここを セレクト隊のしぶと<CD>まちがえて 入って来る人が<CF><D1>多くて こまっちゃうわ",
-330,0x1fc294,"<@RL,Lady2,00>セレクト隊と たてもののデザインが<CD>同じことが もんだいなのよね",
-331,0x1fc296,"<@RL,Man,00>セレクト隊は ここじゃないのか?",
-332,0x1fc298,"<@RL,Lady2,00>ほら ね<CD>まい日 こんなちょうしよ",
-333,0x1fc29a,"<@RL,Lady2,00>ちょっと貝じゃ 分からないけど<CD>あっち こっち ひびが入っちゃって<CF><D1>アワノざいばつに たて直しを<CD>しんせい しようかしら...",
-334,0x1fc29c,"<@RL,Lady2,00>何に しようかしら",
-335,0x1fc29e,"<@RL,Lady2,00>ものすごく ゆれたわね<CD>本当に こわかったわ",
-336,0x1fc2a0,アップルジュ-ス 売リ切れ中,
-337,0x1fc2a2,"<@RL,Man,00>たからくじ 当たっていればいいなぁ",
-338,0x1fc2a4,"<@RL,Man,00>ええっと 498854番は...",
-339,0x1fc2a6,"<@RL,Man,00>...ふっ まっ 次があるさ",
-340,0x1fc2a8,"<@RL,Man,00>ええっと 271520番は...",
-341,0x1fc2aa,"<@RL,Man,00>ひゃ 100えん あたってるよ!",
-342,0x1fc2ac,"<@RL,Man,00>100えんでも 当たればうれしいな",
-343,0x1fc2ae,"<@RL,Man,00>もしも 3おくえんが 当たったら♪",
-344,0x1fc2b0,"<@RL,Man,00>...たからくじってのは ユメを<CD>貝るために 買うもんなんだよな",
-345,0x1fc2b2,"<@RL,Man,00>やっぱ まじめに はたらくか...",
+309,0x1fc26a,"<@RL,Lady2,00>こんにちは","<@RL,Lady2,00>Hello."
+310,0x1fc26c,"<@RL,Lady2,00>こわかったわ","<@RL,Lady2,00>That was scary."
+311,0x1fc26e,"<@RL,Lady2,00>たいようのひざしが こいしいわ...<CD>日やけサロンに 行くと 高くつくし<CF><D1>ア-スモ-ルって 家ちんは<CD>やすくて いいんだけどね","<@RL,Lady2,00>How I miss the sun's light...<D3>Even though Earth Mall has cheap housing, but going to a tanning salon gets expensive."
+312,0x1fc270,"<@RL,Lady2,00>あら おひさしぶリね<CF><D1><@LL,Ikki,04>こんにちは<CF><D1><@RL,Lady2,00>ニュ-スで 貝たわよ メダリンピック<CD>ゆうしょう おめでとう<CF><D1><@LL,Ikki,01>あリがとうございます","<@RL,Lady2,00>Oh my, long time, no see.<CF><D1><@LL,Ikki,04>Hello.<CF><D1><@RL,Lady2,00>I heard about you on the news. Congratulations on becoming the champion of the Medalympics.<CF><D1><@LL,Ikki,01>Thank you very much."
+313,0x1fc272,"<@RL,Lady2,00>わたし もうじき てんきんなのよ<CD>こんどは ドコカノ町なの","<@RL,Lady2,00>I'm getting transferred soon, this time it's to Dokokano Town."
+314,0x1fc274,"<@RL,Lady2,00>あら!? あなた 知らなかったの<CF><D1>ア-スモ-ルの じゅうにんは<CD>学校の先生と コンビニのてんいん<CF><D1>いがいは アワノコ-ポレ-ションの<CD>しゃいんと その家ぞくだけよ","<@RL,Lady2,00>Oh my!? You weren't aware?<CF><D1>Except for the teachers and convenience store clerks, all the citizens of Earth Mall are employees of the Awano Corporation and their families."
+315,0x1fc276,"<@LL,Ikki,07>知らなかった!<CF><D1><@LL,Ikki,00>お金持ちだとは 知ってたけど...<CD>ハチロウんちって すごいんだな","<@LL,Ikki,07>I didn't know that!<CF><D1><@LL,Ikki,00>I knew they were rich, but... Hachiro's household must be amazing."
+316,0x1fc278,"<@LL,Ikki,00>あの...ここの セレクト隊も<CD>アワノコ-ポレ-ションなの?<CF><D1><@RL,Lady2,00>あら セレクト隊は ちがうわよ<CF><D1><@LL,Ikki,00>じゃあ セレクト隊は...<CF><D1><@RL,Lady2,00>さあ? わたしも 知らないわ","<@LL,Ikki,00>Uhm... Is the Select Corp here also part of the Awano Corporation?<CF><D1><@RL,Lady2,00>Oh my, the Select Corp isn't.<CF><D1><@LL,Ikki,00>Then the Select Corp...<CF><D1><@RL,Lady2,00>Who knows? I don't know either."
+317,0x1fc27a,"<@RL,Lady2,00>また どこかで 会えると いいわね","<@RL,Lady2,00>I hope to see you again somewhere."
+318,0x1fc27c,"<@RL,Lady2,00>こんにちは","<@RL,Lady2,00>Hello."
+319,0x1fc27e,"<@RL,Lady2,00>とつぜん とびこんで来て<CD>グルグル つくえのまわリを<CF><D1>まわるから 目が まわっちゃった","<@RL,Lady2,00>It came in and went around and around the desk until I got dizzy."
+320,0x1fc280,"<@RL,Lady2,00>メダルを たくさん持ってる人?<CD>さあ...<CF><D1>セレクト隊で 聞いてみれば?","<@RL,Lady2,00>Someone with a lot of medals? Well... Why not try asking the Select Corp?"
+321,0x1fc282,"<@RL,Lady2,00>それにしても ロボロボ団って<CD>本当に いるのね...","<@RL,Lady2,00>To think that the Roborobo Gang is real..."
+322,0x1fc284,"<@RL,Lady2,00>ものすごい じしん だったわね<CD>せかいが おわったと 思ったわよ","<@RL,Lady2,00>That was a heck of an earthquake. I thought the world was ending."
+323,0x1fc286,"<@RL,Lady2,00>ねえ ねえ あなた アワノの<CD>おぼっちゃまと お友だちですって?<*04>","<@RL,Lady2,00>Hey, hey, you're friends with that Awano boy, aren't you?<*04>"
+324,0x1fc288,"<@RL,Lady2,00>アワノのおやしきに あそびに<CD>行くこと ある?<*04>","<@RL,Lady2,00>Have you ever been to the Awano residence?<*04>"
+325,0x1fc28a,"<@RL,Lady2,00>アワノ社長に お会いしたら<CD>あたしのこと よろしく言ってね<CF><D1><@LL,Ikki,05>よ よろしくって...<CD>(いったい 何を言えば いいの?)","<@RL,Lady2,00>When you meet the Awano president, give him my regards, okay?<CF><D1><@LL,Ikki,05>L-leave it to me...<D3>(But what in the world should I say?)"
+326,0x1fc28c,"<@RL,Lady2,00>なんだ...<CD>じゃあ いいわ","<@RL,Lady2,00>Oh... Well, nevermind."
+327,0x1fc28e,"<@RL,Lady2,00>たのむわよ よろしく♥<CF><D1><@LL,Ikki,05>あ いや だから...<CF><D1>(ボク ハチロウのお父さんに<CD>会ったこと ないのになぁ...)","<@RL,Lady2,00>I'm counting on you ♥<CF><D1><@LL,Ikki,05>Ah, no, I...<CF><D1>(I've never met Hachiro's father...)"
+328,0x1fc290,"<@RL,Lady2,00>まったく もう ここはセレクト隊の<CD>ア-スモ-ルしぶ じゃないわよ<CF><D1>セレクト隊は この上のたてものよ","<@RL,Lady2,00>Good grief, this isn't the Earth Mall branch of the Select Corp.<CF><D1>The Select Corp's building is just above."
+329,0x1fc292,"<@RL,Lady2,00>ここを セレクト隊のしぶと<CD>まちがえて 入って来る人が<CF><D1>多くて こまっちゃうわ","<@RL,Lady2,00>It's troubling that so many come in here thinking that it's the Select Corp branch."
+330,0x1fc294,"<@RL,Lady2,00>セレクト隊と たてもののデザインが<CD>同じことが もんだいなのよね","<@RL,Lady2,00>The issue is that the Select Corp's and this building have the same design."
+331,0x1fc296,"<@RL,Man,00>セレクト隊は ここじゃないのか?","<@RL,Man,00>The Select Corp isn't here?"
+332,0x1fc298,"<@RL,Lady2,00>ほら ね<CD>まい日 こんなちょうしよ","<@RL,Lady2,00>See here, it's the same everyday."
+333,0x1fc29a,"<@RL,Lady2,00>ちょっと貝じゃ 分からないけど<CD>あっち こっち ひびが入っちゃって<CF><D1>アワノざいばつに たて直しを<CD>しんせい しようかしら...","<@RL,Lady2,00>At a glance, it isn't clear, but crack are starting here and there. I wonder if I should propose a reconstruction project to the Awano Conglomerate..."
+334,0x1fc29c,"<@RL,Lady2,00>何に しようかしら","<@RL,Lady2,00>What shall I do?"
+335,0x1fc29e,"<@RL,Lady2,00>ものすごく ゆれたわね<CD>本当に こわかったわ","<@RL,Lady2,00>Things were shaking like crazy, it was scary."
+336,0x1fc2a0,アップルジュ-ス 売リ切れ中,Apple juice: sold out
+337,0x1fc2a2,"<@RL,Man,00>たからくじ 当たっていればいいなぁ","<@RL,Man,00>Sure would be nice to win the lottery."
+338,0x1fc2a4,"<@RL,Man,00>ええっと 498854番は...","<@RL,Man,00>Uhm, 498854 is..."
+339,0x1fc2a6,"<@RL,Man,00>...ふっ まっ 次があるさ","<@RL,Man,00>...Hah, well there's always next time."
+340,0x1fc2a8,"<@RL,Man,00>ええっと 271520番は...","<@RL,Man,00>Uhm, 271520 is..."
+341,0x1fc2aa,"<@RL,Man,00>ひゃ 100えん あたってるよ!","<@RL,Man,00>Yeah, 100 yen!"
+342,0x1fc2ac,"<@RL,Man,00>100えんでも 当たればうれしいな","<@RL,Man,00>Even 100 yen would make me happy."
+343,0x1fc2ae,"<@RL,Man,00>もしも 3おくえんが 当たったら♪","<@RL,Man,00>If I'd only win 300,000,000 yen ♪"
+344,0x1fc2b0,"<@RL,Man,00>...たからくじってのは ユメを<CD>貝るために 買うもんなんだよな","<@RL,Man,00>...The lottery is supposed to be played to dream."
+345,0x1fc2b2,"<@RL,Man,00>やっぱ まじめに はたらくか...","<@RL,Man,00>I should work hard, after all..."
 346,0x1fc2b4,むにゃ むにゃ,"Mumble, mumble"
 347,0x1fc2b6,"<@RL,OldMan,00>ばあさん めしは まだか?","<@RL,OldMan,00>Is it time to eat, Gram?"
 348,0x1fc2b8,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble..."
