@@ -465,6 +465,8 @@ VWFDrawCharLoop::
   jp z, VWFControlCodeD3
   cp $D4
   jp z, VWFControlCodeD4
+  cp $D5
+  jp z, VWFControlCodeD5
   ; This character isn't in the font, so confine the index.
   and $7F
   ld [hl], a
@@ -670,6 +672,8 @@ VWFControlCodeD0:: ; Print subtext code.
   ld a, [hli]
   ld h, [hl]
   ld l, a
+
+.extEntry
   ld a, [W_MainScriptIterator]
   ld c, a
   ld b, 0
@@ -750,6 +754,325 @@ VWFControlCodeD4:: ; Font switching code.
   ld [W_MainScriptPauseTimer], a
   jp MainScriptProcessorPutCharLoopCrossBank
 
+VWFControlCodeD5:: ; Print vowel-lengthened subtext code (WARNING: This copies to the patch list buffer).
+  ld a, [W_MainScriptIterator]
+  or a
+  call z, VWFControlCodeD5_common
+  ld hl, W_NewListItemBufferArea
+  ld a, [W_MainScriptIterator]
+  ld c, a
+  ld b, 0
+  add hl, bc
+  ld a, [hl]
+  cp $CB
+  jp nz, VWFControlCodeD0.mapCharacter
+  ld b, 4
+  call MainScriptProgressXChars
+  jp VWFWriteChar.extEntryA
+
+VWFControlCodeD5_common::
+  inc hl
+  ld a, [hli]
+  and 7
+  push af
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  push hl
+  ld bc, 0
+  
+.textLengthLoop
+  ld a, [hli]
+  inc b
+  cp $CB
+  jr nz, .textLengthLoop
+
+  dec hl
+  dec b
+  ld c, b
+  call VWFControlCodeD5_findExtendableChar
+  ld b, a
+  pop de
+  pop af
+  call VWFControlCodeD5_copyWithRepeat
+  ret
+
+VWFControlCodeD5_copyWithRepeat::
+  push af
+  ld c, 0
+  ld hl, W_NewListItemBufferArea
+  
+.preRepeatCopyLoop
+  ld a, [de]
+  ld [hli], a
+  ld a, c
+  cp b
+  jr z, .repeatChar
+  inc de
+  inc c
+  jr .preRepeatCopyLoop
+
+.repeatChar
+  ld a, b
+  or a
+  jr z, .skipPreviousCharCheck
+
+  dec de
+  ld a, [de]
+  inc de
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+
+.skipPreviousCharCheck
+  ld a, [de]
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+  inc de
+  ld a, [de]
+  dec de
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+
+.repeatCharUpper
+  pop af
+  ld c, a
+  ld a, [de]
+  jr .notUppercase
+
+.repeatCharLower
+  pop af
+  ld c, a
+  ld a, [de]
+  call VWFControlCodeD5_checkIfUppercase
+  jr nc, .notUppercase
+  add $20
+
+.notUppercase
+  ld b, a
+  
+.repeatLoop
+  ld a, c
+  or a
+  jr z, .postRepeat
+  ld a, b
+  ld [hli], a
+  dec c
+  jr .repeatLoop
+
+.postRepeat
+  ld a, [de]
+  cp $CB
+  jr z, .cbTime
+
+.postRepeatCopyLoop
+  inc b
+  inc de
+
+  ld a, [de]
+  ld [hli], a
+  cp $CB
+  jr nz, .postRepeatCopyLoop
+
+.cbTime
+  ld a, $CB
+  ld [hli], a
+  ret
+
+VWFControlCodeD5_findExtendableChar::
+  jr nz, .firstPass
+
+  xor a
+  ret
+
+.firstPass
+  push hl
+
+.firstPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .firstPassIsLastChar
+
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .firstPassESCheck
+
+.firstPassRetPos
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.firstPassIsLastChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .firstPassESCheck
+
+  cp 2
+  jr z, .firstPassNotMatch
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .firstPassNotMatch
+  jr .firstPassRetPos
+
+.firstPassESCheck
+  ld a, b
+  dec a
+  jr z, .firstPassNotMatch
+
+  ld a, [hl]
+  cp $53
+  jr z, .firstPassSFound
+  cp $73
+  jr z, .firstPassSFound
+
+.firstPassNotMatch
+  dec b
+  jr nz, .firstPassLoop
+  jr .firstPassExit
+
+.firstPassSFound
+  dec hl
+  ld a, [hli]
+  cp $45
+  jr z, .firstPassESFound
+  cp $65
+  jr nz, .firstPassNotMatch
+
+.firstPassESFound
+  dec hl
+  dec b
+  jr .firstPassNotMatch
+  
+.firstPassExit
+  ld b, c
+  pop hl
+  push hl
+
+.secondPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .secondPassNotOrphanedChar
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .secondPassNotOrphanedChar
+
+.secondPassNotMatch
+  dec b
+  jr nz, .secondPassLoop
+  jr .secondPassExit
+
+.secondPassNotOrphanedChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .secondPassNotMatch
+
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.secondPassExit
+  ld b, c
+  pop hl
+  push hl
+
+.thirdPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .thirdPassNotOrphanedChar
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .thirdPassNotOrphanedChar
+
+.thirdPassNotMatch
+  dec b
+  jr nz, .thirdPassLoop
+  jr .thirdPassExit
+
+.thirdPassNotOrphanedChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .thirdPassNotMatch
+
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.thirdPassExit
+  pop hl
+  ld a, c
+  ret
+
+VWFControlCodeD5_checkIfAlphabetical::
+  call VWFControlCodeD5_checkIfUppercase
+  ret c
+  ; Continue into VWFControlCodeD5_checkIfLowercase
+
+VWFControlCodeD5_checkIfLowercase::
+  cp $61
+  jr c, VWFControlCodeD5_checkIfUppercase.ccfret
+  cp $7B
+  ret
+
+VWFControlCodeD5_checkIfUppercase::
+  cp $41
+  jr c, .ccfret
+  cp $5B
+  ret
+  
+.ccfret
+  ccf
+  ret
+
+VWFControlCodeD5_checkIfVowel::
+  ; notvowel=0, "a"=1, "e"=2, "i"=3, "o"=4, "u"=5, "y"=6
+
+  ld d, 6
+  cp $59
+  ret z
+  cp $79
+  ret z
+  dec d
+  cp $55
+  ret z
+  cp $75
+  ret z
+  dec d
+  cp $4F
+  ret z
+  cp $6F
+  ret z
+  dec d
+  cp $49
+  ret z
+  cp $69
+  ret z
+  dec d
+  cp $45
+  ret z
+  cp $65
+  ret z
+  dec d
+  cp $41
+  ret z
+  cp $61
+  ret z
+  dec d
+  ret
+
 VWFAutoNL::
   push hl
   ld a, [W_VWFIsSecondLine]
@@ -807,6 +1130,8 @@ VWFAutoNL::
   jr z, .exitLoop
   cp $D4
   jr z, .controlCodeD4
+  cp $D5
+  jp z, .controlCodeD5
   and $7F
   jr .measureChar
 
@@ -861,11 +1186,17 @@ VWFAutoNL::
   ld a, [hli]
   ld h, [hl]
   ld l, a
+  call .subtextLoop
+  pop hl
+  inc hl
+  inc hl
+  inc hl
+  jp .loop
 
 .subtextLoop
   ld a, [hli]
   cp $CB
-  jr z, .exitSubtextLoop
+  ret z
   push hl
   ld l, a
   ld a, VWFDrawLetterTable >> 8
@@ -878,8 +1209,16 @@ VWFAutoNL::
   ld c, a
   jr .subtextLoop
 
-.exitSubtextLoop
+.controlCodeD5
+  push de
+  push bc
+  call VWFControlCodeD5_common
+  pop bc
+  pop de
+  ld hl, W_NewListItemBufferArea
+  call .subtextLoop
   pop hl
+  inc hl
   inc hl
   inc hl
   inc hl
