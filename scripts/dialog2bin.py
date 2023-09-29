@@ -166,6 +166,17 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                         s = ''.join(special_data)
                         bintext.append(0xD4)
                         bintext.append(int(s, 16)) # f[00, FF], 0 is normal
+                    elif special_type == '~': # Vowel extension
+                        bintext.append(0xD5)
+                        s = (''.join(special_data)).split(',')
+                        p = s[0]
+                        c = int(s[1])
+                        assert 7 >= c > 0
+                        if p in ptr_names:
+                            p = ptr_names[p].lstrip('0x')
+                        bintext.append(int(c))
+                        bintext.append(int(p[2:4], 16))
+                        bintext.append(int(p[0:2], 16))
                     else:
                         raise Exception(f"Unknown special_type {special_type} in {txt}")
             except Exception as e:
