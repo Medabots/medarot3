@@ -56,6 +56,7 @@ There are a handful of control codes in text:
 * `<S##>`: Sets text speed, lower numbers are faster, SFF is instant and S00 sets to default speed
 * `<*##>`: Different end code, not including it implies '00' (normal ending). This is usually only different when dealing with user option boxes or some special events (i.e. voice clips).
 * `<&BUF##>`: Pulls string from memory buffer, i.e. player's name or numbers
+* `<~BUF##,##`>: Allows for loading and 'vowel extending' any buffer except 04 up to 7 times, e.g. `<~BUF03,02>` where BUF03 is Ikki would print Ikkiii
 * `<@??,##,##>`: Displays face (R/L side of box, R/L flip, [character index or name](./scripts/res/portraits.tbl), expression index)
 	* `<@CC,CLEAR,FF>` can be used to clear a portrait
 * `<CD>`: Go to 2nd line of text box
