@@ -1,7 +1,7 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x200000,"<@LR,Erika,04>えヘヘっ ラッキ-♪<CF><D1><&BUF0A>の メダロッチの<CD>中に 入れておこ-っと♪","<@LR,Erika,04>Ehehe, how lucky ♪<CF><D1>I'll put it in <&BUF0A>'s Medarotch ♪"
 001,0x200002,むにゃ むにゃ,Mumble mumble
-002,0x200004,"<@RL,OldMan,00>ばあさん お茶は まだか?",
+002,0x200004,"<@RL,OldMan,00>ばあさん お茶は まだか?","<@RL,OldMan,00>Do you still want some tea, dear?"
 003,0x200006,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble"
 004,0x200008,"<@LR,Koji,00>もしもし こんな所で ねていたら<CD>かぜを ひいてしまいますよ<CF><D1><@RL,OldMan,00>うん?","<@LR,Koji,00>Hello? You'll get a cold sleeping at a place like this.<CF><D1><@RL,OldMan,00>Hm?"
 005,0x20000a,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble mumble"
@@ -19,24 +19,24 @@
 017,0x200022,"<@RL,OldMan,00>はあ どなたさまかいのう?","<@RL,OldMan,00>Huh, who are you?"
 018,0x200024,むにゃ むにゃ...,"Mumble, mumble"
 019,0x200026,むにゃ むにゃ,"Mumble, mumble"
-020,0x200028,"<@RL,OldMan,00>ばあさん わしの入ればは どこじゃ?",
+020,0x200028,"<@RL,OldMan,00>ばあさん わしの入ればは どこじゃ?","<@RL,OldMan,00>Dear, where do I go in?"
 021,0x20002a,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble, mumble..."
-022,0x20002c,"<@LR,Erika,00>もしもし おじいさん...<CF><D1><@RL,OldMan,00>うん?",
+022,0x20002c,"<@LR,Erika,00>もしもし おじいさん...<CF><D1><@RL,OldMan,00>うん?","<@LR,Erika,00>Hello, gramps...<CF><D1><@RL,OldMan,00>Yeah?"
 023,0x20002e,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble, mumble"
-024,0x200030,"<@LR,Erika,05>また ねちゃった...",
-025,0x200032,"<@RL,OldMan,00>こ ここは どこじゃ!!",
-026,0x200034,"<@LR,Erika,04>セレクト隊よ<CF><D1><@RL,OldMan,00>そリゃ まあ... ごしんせつに",
-027,0x200036,ぐう ぐうっ...,
-028,0x200038,"<@LR,Erika,05>けっきょく ねちゃうのね...",
-029,0x20003a,"<@RL,OldMan,00>いや- すごかったのう<CD>すっかリ 目が さめてしもうたわい",
+024,0x200030,"<@LR,Erika,05>また ねちゃった...","<@LR,Erika,05>He's sleeping again..."
+025,0x200032,"<@RL,OldMan,00>こ ここは どこじゃ!!","<@RL,OldMan,00>Wh-where am I!?"
+026,0x200034,"<@LR,Erika,04>セレクト隊よ<CF><D1><@RL,OldMan,00>そリゃ まあ... ごしんせつに","<@LR,Erika,04>The Select Corps.<CF><D1><@RL,OldMan,00>Ah, well. thanks."
+027,0x200036,ぐう ぐうっ...,Guuh guuh...
+028,0x200038,"<@LR,Erika,05>けっきょく ねちゃうのね...","<@LR,Erika,05>He ended up falling asleep..."
+029,0x20003a,"<@RL,OldMan,00>いや- すごかったのう<CD>すっかリ 目が さめてしもうたわい","<@RL,OldMan,00>Oh, how amazing! I'm completely awake!"
 030,0x20003c,"<@RL,SelectCorpsGrunt,00>ここは セレクト隊の <CD>ア-スモ-ルしぶ であリます","<@RL,SelectCorpsGrunt,00>This is the Select Corps' Earth Mall Branch."
 031,0x20003e,"<@RL,SelectCorpsGrunt,00>さいきん きみょうなじけんが<CD>町で はっせいしているであリます","<@RL,SelectCorpsGrunt,00>There've been some incidents around town these days."
 032,0x200040,"<@RL,SelectCorpsGrunt,00>ロボロボ団の<CD>れんちゅうが 町を さわがせて<CF><D1>こまっているで あリます!","<@RL,SelectCorpsGrunt,00>That Roborobo Gang is causing trouble in the town!"
 033,0x200042,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>自分には 分からないであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of Medals?<CF><D1>I don't know about any."
-034,0x200044,"<@RL,SelectCorpsGrunt,00>ロボロボ団の れんちゅうにも<CD>こまったもので あリますな",
-035,0x200046,"<@RL,SelectCorpsGrunt,00>行方ふめい? 15年ぐらい前?<CF><D1>こもリ型メダロットであリますね?<CD>ふむむ ちょっと おまちください",
-036,0x200048,"<@RL,SelectCorpsGrunt,00>オガサワラさんから そうさくねがいは<CD>出ていないようであリます<CF><D1><@LL,Ikki,05>そっか... って<CD>なんでノ-トなの? パソコンは?<CF><D1><@RL,SelectCorpsGrunt,00>はぁ...よさんは みんな本部が<CD>使いきってしまって...",
-037,0x20004a,"<@RL,SelectCorpsGrunt,00>ここは パソコンどころか<CD>われわれのすわる イスすらも<CF><D1>買って もらえないであリますよ<CF><D1><@LL,Ikki,03>なんだかなぁ",
+034,0x200044,"<@RL,SelectCorpsGrunt,00>ロボロボ団の れんちゅうにも<CD>こまったもので あリますな","<@RL,SelectCorpsGrunt,00>The situation with the Rubber Robos is troubling."
+035,0x200046,"<@RL,SelectCorpsGrunt,00>行方ふめい? 15年ぐらい前?<CF><D1>こもリ型メダロットであリますね?<CD>ふむむ ちょっと おまちください","<@RL,SelectCorpsGrunt,00>Went missing? Around 15 years ago?<CF><D1>A childcare-type medarot, yes? Hmmm, hold on a moment."
+036,0x200048,"<@RL,SelectCorpsGrunt,00>オガサワラさんから そうさくねがいは<CD>出ていないようであリます<CF><D1><@LL,Ikki,05>そっか... って<CD>なんでノ-トなの? パソコンは?<CF><D1><@RL,SelectCorpsGrunt,00>はぁ...よさんは みんな本部が<CD>使いきってしまって...","<@RL,SelectCorpsGrunt,00>There was not a missing report made by Ms. Ogasawara.<CF><D1><@LL,Ikki,05>I... see. Huh? why do you have a notebook? Where's your PC?<CF><D1><@RL,SelectCorpsGrunt,00>Haa... The people at headquarters exhausted the budget..."
+037,0x20004a,"<@RL,SelectCorpsGrunt,00>ここは パソコンどころか<CD>われわれのすわる イスすらも<CF><D1>買って もらえないであリますよ<CF><D1><@LL,Ikki,03>なんだかなぁ","<@RL,SelectCorpsGrunt,00>Let alone PCs, they won't even buy us chairs to sit on.<CF><D1><@LL,Ikki,03>That's awful..."
 038,0x20004c,"<@RL,SelectCorpsGrunt,00>おやくに立てなくて<CD>もうしわけないであリます",
 039,0x20004e,"<@RL,SelectCorpsGrunt,00>本当のことを 言うと こわくて<CD>しかたがなかったであリます<CF><D1><@LL,Ikki,00>ヘぇ-っ そうだったんだ<CF><D1>でも あの時の セレクト隊って<CD>みんな とっても かっこよかったよ",
 040,0x200050,"<@RL,SelectCorpsGrunt,01>本当であリますか? そう言って<CD>もらえるなんて うれしいであリます",

@@ -138,7 +138,7 @@
 134#kabuto,0x22c10a,"<@RL,Metabee,00>おまえが 言いたいことは 何となく<CD>分かるんだけど...<CF><D1>しかたねぇな","<@RL,Metabee,00>I get what you want to say, but...<CF><D1>Oh well."
 134#kuwagata,0x22c10a,"<@RL,Rokusho,00>おまえが 言いたいことは 何となく<CD>分かるのだが...<CF><D1>しかたあるまい","<@RL,Rokusho,00>Although I get what you want to say...<CF><D1>Oh well."
 135,0x22c10c,"<@RL,Koji,04>あ あなが あいたっ!<CF><D1><@LL,Ikki,00>何もないって 思ってるから<CD>何もないんだ<CF><D1>ここから とびこんでみよう<CD>月の大地が うけ止めてくれる<CF><D1><@RL,Koji,04><&BUF03>!<CD>お前 正気か?!<CF><D1><@LL,Ikki,04>月の光ってさ 人をくるわす力が<CD>あるって話だよね","<@RL,Koji,04>T-there's a hole here!<CF><D1><@LL,Ikki,00>There's only nothing here because you think there's nothing here.<CF><D1>Let's jump in. The moon grounds will stop us.<CF><D1><@RL,Koji,04><&BUF03>! Have you gone crazy!?<CF><D1><@LL,Ikki,04>Didn't you know? Moonlight has the power the drive people mad."
-136,0x22c10e,"<@RL,Koji,04><&BUF03>-----!?","<@RL,Koji,04><&BUF03>!?"
+136,0x22c10e,"<@RL,Koji,04><&BUF03>-----!?","<@RL,Koji,04><~BUF03,05>!?"
 137,0x22c110,"<@RL,Koji,04>うわ!","<@RL,Koji,04>Woah!"
 138,0x22c112,"<@RL,Koji,04>海だ...しんじられない<CF><D1><@RL,Karin,01>ゆめで貝たのと 同じですわ","<@RL,Koji,04>It's the sea... I can't believe it.<CF><D1><@RL,Karin,01>It's the one that I saw in my dream."
 139,0x22c114,"<@RL,Koji,04>おいおい お前っ!!<CD>ここは 月面だぞ!<CF><D1><@LL,Ikki,01>すは-...あ- いい気持ち!<CF><D1><@RL,Koji,04>いい!?<CF><D1><@RL,Erika,01>本当!? あたしも あたしも!<CF><D1><@RL,Koji,04>あっ! おいっ!","<@RL,Koji,04>Hey, hey, hey!! We're still on the moon, you know!?<CF><D1><@LL,Ikki,01><f02>Inhale... <f00>Aah... It feels so refreshing!<CF><D1><@RL,Koji,04>Seriously!?<CF><D1><@RL,Erika,01>Really!? Me, too! Me, too!<CF><D1><@RL,Koji,04>Ah! Hey!"
