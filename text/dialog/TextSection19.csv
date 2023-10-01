@@ -37,16 +37,16 @@
 035,0x200046,"<@RL,SelectCorpsGrunt,00>行方ふめい? 15年ぐらい前?<CF><D1>こもリ型メダロットであリますね?<CD>ふむむ ちょっと おまちください","<@RL,SelectCorpsGrunt,00>Went missing? Around 15 years ago?<CF><D1>A childcare-type medarot, yes? Hmmm, hold on a moment."
 036,0x200048,"<@RL,SelectCorpsGrunt,00>オガサワラさんから そうさくねがいは<CD>出ていないようであリます<CF><D1><@LL,Ikki,05>そっか... って<CD>なんでノ-トなの? パソコンは?<CF><D1><@RL,SelectCorpsGrunt,00>はぁ...よさんは みんな本部が<CD>使いきってしまって...","<@RL,SelectCorpsGrunt,00>There was not a missing report made by Ms. Ogasawara.<CF><D1><@LL,Ikki,05>I... see. Huh? why do you have a notebook? Where's your PC?<CF><D1><@RL,SelectCorpsGrunt,00>Haa... The people at headquarters exhausted the budget..."
 037,0x20004a,"<@RL,SelectCorpsGrunt,00>ここは パソコンどころか<CD>われわれのすわる イスすらも<CF><D1>買って もらえないであリますよ<CF><D1><@LL,Ikki,03>なんだかなぁ","<@RL,SelectCorpsGrunt,00>Let alone PCs, they won't even buy us chairs to sit on.<CF><D1><@LL,Ikki,03>That's awful..."
-038,0x20004c,"<@RL,SelectCorpsGrunt,00>おやくに立てなくて<CD>もうしわけないであリます",
-039,0x20004e,"<@RL,SelectCorpsGrunt,00>本当のことを 言うと こわくて<CD>しかたがなかったであリます<CF><D1><@LL,Ikki,00>ヘぇ-っ そうだったんだ<CF><D1>でも あの時の セレクト隊って<CD>みんな とっても かっこよかったよ",
-040,0x200050,"<@RL,SelectCorpsGrunt,01>本当であリますか? そう言って<CD>もらえるなんて うれしいであリます",
+038,0x20004c,"<@RL,SelectCorpsGrunt,00>おやくに立てなくて<CD>もうしわけないであリます","<@RL,SelectCorpsGrunt,00>Apologies for not being of more help."
+039,0x20004e,"<@RL,SelectCorpsGrunt,00>本当のことを 言うと こわくて<CD>しかたがなかったであリます<CF><D1><@LL,Ikki,00>ヘぇ-っ そうだったんだ<CF><D1>でも あの時の セレクト隊って<CD>みんな とっても かっこよかったよ","<@RL,SelectCorpsGrunt,00>Truthfully, I was scared.<CF><D1><@LL,Ikki,00>Heh, is that so?<CF><D1>Even though the Select Corps seemed so cool back then."
+040,0x200050,"<@RL,SelectCorpsGrunt,01>本当であリますか? そう言って<CD>もらえるなんて うれしいであリます","<@RL,SelectCorpsGrunt,01>Really? I'm happy to hear you say that."
 041,0x200052,"<@RL,SelectCorpsGrunt,00>こまったことが あったら<CD>いつでもそうだんに のるであリます","<@RL,SelectCorpsGrunt,00>There've been some strange incidents around town lately. Let us know if you run into trouble."
-042,0x200054,"<@RL,SelectCorpsGrunt,00>ここ ひみつの 地ていとし<CD>ア-スモ-ルに ロボロボ団が<CF><D1>入リこんだようで あリます!<CD>それにしても ロボロボ団が<CF><D1>どうやって ここに 入リこんだのか<CD>ふしぎで あリます!<CF><D1><@LR,Erika,05>う-ん ここでも ロボロボ団の<CD>いばしょは 分からないのね<CF><D1><@LR,Erika,00>ともかく 町に 入リこんだっていう<CD>ロボロボ団を たいじしなくっちゃね!",
+042,0x200054,"<@RL,SelectCorpsGrunt,00>ここ ひみつの 地ていとし<CD>ア-スモ-ルに ロボロボ団が<CF><D1>入リこんだようで あリます!<CD>それにしても ロボロボ団が<CF><D1>どうやって ここに 入リこんだのか<CD>ふしぎで あリます!<CF><D1><@LR,Erika,05>う-ん ここでも ロボロボ団の<CD>いばしょは 分からないのね<CF><D1><@LR,Erika,00>ともかく 町に 入リこんだっていう<CD>ロボロボ団を たいじしなくっちゃね!","<@RL,SelectCorpsGrunt,00>It appears that the Rubber Robos have gotten into this hidden place within the Earth, Earth Mall. In any case, we still have no idea how they got in.<CF><D1><@LR,Erika,05>Hmm, so they're here, but we still don't know where they are.<CF><D1><@LR,Erika,00>We need to deal with the Rubber Robos that got in here somehow."
 043,0x200056,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>それなら 科学研究所なんかで<CD>聞いてみると いいと思うであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of Medals?<CF><D1>It'd probably be worth asking around places like the Scientific Laboratory."
-044,0x200058,"<@RL,SelectCorpsGrunt,00>行方ふめいの メダロット?<CD>ちょっと しらベてみるであリます",
-045,0x20005a,"<@RL,SelectCorpsGrunt,00>おい きろくをしらベてくれ",
-046,0x20005c,"<@RL,SelectCorpsGrunt,00>はい せんぱい!",
-047,0x20005e,"<@RL,SelectCorpsGrunt,00>ここは本部と ちがって ぜいたくが<CD>できないであリます",
+044,0x200058,"<@RL,SelectCorpsGrunt,00>行方ふめいの メダロット?<CD>ちょっと しらベてみるであリます","<@RL,SelectCorpsGrunt,00>A missing medarot? We'll look into it."
+045,0x20005a,"<@RL,SelectCorpsGrunt,00>おい きろくをしらベてくれ","<@RL,SelectCorpsGrunt,00>Hey, check the records."
+046,0x20005c,"<@RL,SelectCorpsGrunt,00>はい せんぱい!","<@RL,SelectCorpsGrunt,00>Yes, sir!"
+047,0x20005e,"<@RL,SelectCorpsGrunt,00>ここは本部と ちがって ぜいたくが<CD>できないであリます","<@RL,SelectCorpsGrunt,00>Unlike headquarters, we can't afford to be wasteful here."
 048,0x200060,"<@RL,SelectCorpsGrunt,00>すごい じしんであリましたな<CD>いちじは どうなることかと...<CF><D1>みんな ぶじで よかったであリます<CF><D1><@LL,Ikki,04>みんな セレクト隊の おかげだよ",
 049,0x200062,"<@RL,SelectCorpsGrunt,03>そんなことは ないであリます!<CF><D1>ア-スモ-ルが ぶじですんだのは<CD><&BUF0A>くんたちが<CF><D1>メダルぞうしょくろの ぼうそうを<CD>くい止めて くれたからであリます!<CF><D1><@LL,Ikki,07>えっ! なんで知ってるの?<CF><D1><@RL,SelectCorpsGrunt,00>オガサワラさんから 話を<CD>聞いたであリます",
 050,0x200064,"<@RL,SelectCorpsGrunt,01><&BUF0A>くんたちは<CD>ゆうきがあって やさしい心の<CF><D1>持ちぬしだって 言ってたであリます<CF><D1><@LL,Ikki,01>いや- てれるな♪<CF><D1><@RL,SelectCorpsGrunt,00>今 パトロ-ルに 出ている者たちも<CD><&BUF0A>くんたちには<CF><D1>とても かんしゃしているであリます",
