@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x204000,"<@LL,Ikki,00>...先に コガネと話をしよう<CD>ボクの 思いちがいかもしれないし",
-001,0x204002,"<@LL,Ikki,00>あっ そうだ! ぼく<CD>コガネに 会いに来たんだっけ?",
+000,0x204000,"<@LL,Ikki,00>...先に コガネと話をしよう<CD>ボクの 思いちがいかもしれないし","<@LL,Ikki,00>...Let's talk with Kogane first. I might just be misunderstanding things."
+001,0x204002,"<@LL,Ikki,00>あっ そうだ! ぼく<CD>コガネに 会いに来たんだっけ?","<@LL,Ikki,00>Ah, right! Didn't I come to see Kogane?"
 002,0x204004,"<@LL,Ikki,04>コガネが 歌っていたの?<CD>その歌は 何?<CF><D1><@RL,BipedMedabot,00>聞かれて しまいましたか<CD>オハズカシイ<CF><D1>むかし ある人に歌って<CD>聞かせていた 子もリ歌です<CF><D1>その人が ないて ねむれなかった<CD>夜には これを歌って<CF><D1>ねかしつけて いたんです<CF><D1><@LL,Ikki,04>その人は セセリさん?","<@LL,Ikki,04>Are you singing Kogane? What is that song?<CF><D1><@RL,BipedMedabot,00>You heard me. I am so embarassed.<CF><D1>It is a lullaby I used to sing to someone. When that person could not fall asleep at night, I would sing this.<CF><D1><@LL,Ikki,04>Was that person Seseri?"
 003,0x204006,"<@RL,BipedMedabot,00>どっ どうしてそれを!<CF><D1><@LL,Ikki,00>ねえ コガネ<CD>セセリさんの 前から とつぜん<CF><D1>いなくなったのには<CD>何か リゆうが あったんだろ?","<@RL,BipedMedabot,00>H-how did you know!?<CF><D1><@LL,Ikki,00>Hey, Kogane. There's a reason you suddenly vanished from being around Seseri, right?"
 004,0x204008,"<@RL,BipedMedabot,00>分かリました お話しします...","<@RL,BipedMedabot,00>Very well, I will tell you..."
@@ -10,14 +10,14 @@
 008,0x204010,"<@RL,BipedMedabot,00>はい でも すがたを けしたあとも<CD>やっぱリ気になって...<CF><D1><@LL,Ikki,04>だから 自分の パ-ツを とリかえて<CD>セセリさんの 近くで ずっと<CF><D1>貝まもって いたんだ","<@RL,BipedMedabot,00>Yes, but even after I disappeared, I was still curious...<CF><D1><@LL,Ikki,04>And that's why you changed your parts. So you could stay by Seseri and watch over her."
 009,0x204012,"<@RL,BipedMedabot,00>ワタシの やったことは<CD>まちがって いたんでしょうかネェ<CF><D1><@LL,Ikki,07>そんなことないよ コガネ!<CF><D1>セセリさんだって きっと コガネの<CD>気持ちを 分かってくれるよ!<CF><D1>セセリさんに おしえてあげよう!","<@RL,BipedMedabot,00>Was what I did a mistake?<CF><D1><@LL,Ikki,07>No way, Kogane!<CF><D1>Seseri will definitely understand how you felt!<CF><D1>Let's tell her!"
 010,0x204014,"<@RL,BipedMedabot,00>あっ <&BUF0A>さん!","<@RL,BipedMedabot,00>Ah, <&BUF0A>!"
-011,0x204016,"<@LL,Ikki,00>セセリさんのオフィスは<CD>このかいの 左のヘやだっけ?",
-012,0x204018,"<@LL,Ikki,00>セセリさんを おいかけなくっちゃ!",
-013,0x20401a,"<@LL,Ikki,00>セセリさんに コガネのことを<CD>おしえてあげなくっちゃ!",
-014,0x20401c,"<@RL,BipedMedabot,00>毎日 毎日 しごとばかリ...<CD>わたしは いつ 休めるのでしょう?",
-015,0x20401e,"<@RL,Seseri,00>あら アリカちゃん<CF><D1><&BUF0A>くんは<CD>貝つかった?",
-016,0x204020,"<@RL,Seseri,00>あらダメよ 勝手に入って来ては! ",
-017,0x204022,"<@RL,Seseri,00>あら<CF><D1><&BUF0A>くん<CD>しんぱいしてたのよ<CF><D1><@LL,Ikki,03>ごめんなさい<CF><D1><@RL,Seseri,01>わたしに あやまらなくても いいのよ<CD>じゃ わたしは しごとがあるから",
-018,0x204024,"<@RL,Seseri,01>どう? <&BUF0A>くん<CD>ア-スモ-ルは 気に入ってくれた?<CF><D1>楽しんで ちょうだいね",
+011,0x204016,"<@LL,Ikki,00>セセリさんのオフィスは<CD>このかいの 左のヘやだっけ?","<@LL,Ikki,00>Was Seseri's office the left one on this floor?"
+012,0x204018,"<@LL,Ikki,00>セセリさんを おいかけなくっちゃ!","<@LL,Ikki,00>I need to go after Seseri!"
+013,0x20401a,"<@LL,Ikki,00>セセリさんに コガネのことを<CD>おしえてあげなくっちゃ!","<@LL,Ikki,00>I have to tell Seseri about Kogane!"
+014,0x20401c,"<@RL,BipedMedabot,00>毎日 毎日 しごとばかリ...<CD>わたしは いつ 休めるのでしょう?","<@RL,BipedMedabot,00>Day in, day out it's work... When will I get a break?"
+015,0x20401e,"<@RL,Seseri,00>あら アリカちゃん<CF><D1><&BUF0A>くんは<CD>貝つかった?","<@RL,Seseri,00>Oh, Arika?<CF><D1>Did you find <&BUF0A>?"
+016,0x204020,"<@RL,Seseri,00>あらダメよ 勝手に入って来ては! ","<@RL,Seseri,00>Oh my, you can't just come in here!"
+017,0x204022,"<@RL,Seseri,00>あら<CF><D1><&BUF0A>くん<CD>しんぱいしてたのよ<CF><D1><@LL,Ikki,03>ごめんなさい<CF><D1><@RL,Seseri,01>わたしに あやまらなくても いいのよ<CD>じゃ わたしは しごとがあるから","<@RL,Seseri,00>Oh my.<CF><D1>We were worried about you, <&BUF0A>.<CF><D1><@LL,Ikki,03>Sorry.<CF><D1><@RL,Seseri,01>No need to apologize to me. I have work to do."
+018,0x204024,"<@RL,Seseri,01>どう? <&BUF0A>くん<CD>ア-スモ-ルは 気に入ってくれた?<CF><D1>楽しんで ちょうだいね","<@RL,Seseri,01>Well, <&BUF0A>? How did you like Earth Mall?<CF><D1>I hope you enjoyed it."
 019,0x204026,"<@LL,Ikki,07>セセリさんっ!","<@LL,Ikki,07>Seseri!"
 020,0x204028,"<@RL,Seseri,00>どうしたの? <&BUF0A>くん<CD>そんなに あわてて<CF><D1><@LL,Ikki,06>セセリさん コガネ! コガネが!<CF><D1><@RL,Seseri,00>コガネ? ああ あの<CD>人工のうじょうに いる<CF><D1>ふリょうメダロットのこと?<CF><D1><@LL,Ikki,07>えっ? セセリさん コガネの名前<CD>知ってるんですか?<CF><D1><@RL,Seseri,00>当たリ前じゃない<CD>はけんセンタ-から おくられてくる<CF><D1>メダロットたちの しょるいしんさは<CD>わたしが やってるのよ<CF><D1><@LL,Ikki,05>う--...<CF><D1><@LL,Ikki,06>とっ ともかく その<CD>コガネなんですけど それが<CF><D1>セセリさんの 子もリ用メダロット<CD>だったんです!","<@RL,Seseri,00>What is it? Why are you in such a rush, <&BUF0A>?<CF><D1><@LL,Ikki,06>Seseri, Kogane! It's Kogane!<CF><D1><@RL,Seseri,00>Kogane? Aah, that  ill-behaved Medarot from the artificial farm?<CF><D1><@LL,Ikki,07>Eh? You know Kogane's name?<CF><D1><@RL,Seseri,00>No need to be surprised, I'm the one who screens the Medarots coming from the dispatch center.<CF><D1><@LL,Ikki,05>Uuw...<CF><D1><@LL,Ikki,06>A-anyway, that Kogane is the Medarot that used to be in charge of your childcare!"
 021,0x20402a,"<@RL,Seseri,00>だれから そんな話を 聞いたの?","<@RL,Seseri,00>Who did you hear that from?"
@@ -34,8 +34,8 @@
 032,0x204040,"<@RL,BipedMedabot,00>これは...<CF><D1><@LL,Ikki,04>これ ねっこが のこってるから<CF><D1>また うえてやれば<CD>だいじょうぶだと 思うよ","<@RL,BipedMedabot,00>This is...<CF><D1><@LL,Ikki,04>This one still has some roots left. If you replant it, I'm sure it'll be okay."
 033,0x204042,"<@RL,BipedMedabot,00><&BUF0A>さん...","<@RL,BipedMedabot,00><&BUF0A>..."
 034,0x204044,"<@LL,Ikki,00>さてと...<CF><D1>そろそろ メダリンピックが<CD>はじまるころだな<CF><D1><@LL,Ikki,04>ジオド-ムヘ 行こう!","<@LL,Ikki,00>Well then...<CF><D1>It's about time for the Medalympics to begin.<CF><D1><@LL,Ikki,04>I should go to the GeoDome!"
-035,0x204046,メダリンピックが はじまるぞ!,
-036,0x204048,"<@LL,Ikki,00>ド-ムに いかなくっちゃ<CD>アリカたちが まってる",
+035,0x204046,メダリンピックが はじまるぞ!,The Medalympics are starting!
+036,0x204048,"<@LL,Ikki,00>ド-ムに いかなくっちゃ<CD>アリカたちが まってる","<@LL,Ikki,00>I need to go to the dome, Arika and the others are waiting."
 037,0x20404a,<&BUF0A>---!!,<&BUF0A>---!!
 038,0x20404c,"<@RL,Erika,02>もう! どこに 行ってたのよ<CD><&BUF0A>!<CF><D1><@LL,Ikki,00>ごめん ごめん","<@RL,Erika,02>Geez! Where have you been, <&BUF0A>?<CF><D1><@LL,Ikki,00>Sorry, sorry."
 039,0x20404e,"<@RL,MrReferee,00>さぁて! やってまいリました!<CD>メダリンピック ア-スモ-ル大会の<CF><D1>まくあけですっ!!<CD>おなじみ わたくし<CF><D1>ミスタ-.うるちです!","<@RL,MrReferee,00>Folks! The curtain is rising on the Earth Mall's Medalympic Tournament!! As always, I am your host, Mr. Referee!"
