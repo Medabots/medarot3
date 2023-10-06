@@ -145,7 +145,7 @@
 90: Text Section 26 (JP Text Bank 35)
 91: Text Section 27 (JP Text Bank 36)
 92: Text 33 (from 63D0 onward)
-93: 
+93: Text 34
 94: 
 95: 
 96: 
