@@ -12,7 +12,7 @@
 010,0x208014,"<@LL,Ikki,00>...あのっ ナエさん!<CD>レアメダルって 知ってますか?<CF><D1><@RL,Nae,00>...<&BUF03>くんが<CD>どこで その話を 耳にしたのか<CF><D1>知リませんが...<CD>それは いせきなどから<CF><D1>ごく まれに はっけんされる<CD>メダルのことです<CF><D1>レアメダルには<CF><D1>「せかいを せいふくする 力をもつ」<CF><D1>という でんせつが あリます<CF><D1><@LL,Ikki,00>何だか すごいんですね","<@LL,Ikki,00>...Uhm Nae!<D3>Do you know about rare Medals?<CF><D1><@RL,Nae,00>...Where did you here about those, <&BUF03>? Rare Medals are Medals that are rarely found in places like historic sites. Legends say that they, ""have the power to conquer the world.""<CF><D1><@LL,Ikki,00>They sure sound amazing."
 011,0x208016,"<@LL,Ikki,00>あの もしかして<CD><&BUF07>の メダル...<CF><D1><@RL,Nae,00>はい?<CF><D1><@LL,Ikki,01>...って そんなわけ ないか!<CF><D1><@LL,Ikki,04>何でも ないです","<@LL,Ikki,00>Say, could <&BUF07>'s Medal...<CF><D1><@RL,Nae,00>Yes?<CF><D1><@LL,Ikki,01>...No, there's no way!<CF><D1><@LL,Ikki,04>It was nothing."
 012,0x208018,"<@RL,Nae,01>そうそう そうでしたわ!<CD><&BUF03>くん<CF><D1>わたくしからの おいわいです<CD>となリのヘやから<CF><D1>メダルを もっていってください<CF><D1><@LL,Ikki,01>え! いいんですか? わあい!<CD>あリがとうございます!","<@RL,Nae,01>Oh yes, that's right, <&BUF03>!<CF><D1>Please take a Medal from one of the neighboring room as a gift from me, <&BUF03>.<CF><D1><@LL,Ikki,01>Eh! Is that really okay? Yay! Thanks a lot!"
-013,0x20801a,"<@RL,Nae,01>次は 海ていとし<CD>アンダ-シェルですね<CF><D1><@RL,Nae,02>かんこう地なので 大きな きけんは<CD>ないと 思うのですが...<CF><D1><@LL,Ikki,04>だいじょうぶですよ! ナエさん<CF><D1><@RL,Nae,01>そうですわね<CD>...がんばって くださいね<CF><D1><@LL,Ikki,04>はい!",
+013,0x20801a,"<@RL,Nae,01>次は 海ていとし<CD>アンダ-シェルですね<CF><D1><@RL,Nae,02>かんこう地なので 大きな きけんは<CD>ないと 思うのですが...<CF><D1><@LL,Ikki,04>だいじょうぶですよ! ナエさん<CF><D1><@RL,Nae,01>そうですわね<CD>...がんばって くださいね<CF><D1><@LL,Ikki,04>はい!","<@RL,Nae,01>Next up is the seabed city, UnderShell.<CF><D1><@RL,Nae,02>I don't believe there should be any danger in the tourist areas...<CF><D1><@LL,Ikki,04>It'll be alright, Ms. Nae!<CF><D1><@RL,Nae,01>That's right.<D3>...Do your best.<CF><D1><@LL,Ikki,04>Yes!"
 014,0x20801c,"<@LL,Ikki,04>こんにちは! キララさん<CF><D1><@RL,Kirara,01>こんにちは <&BUF03>くん<CD>わたしに 会いに来て くれたの?<CF><D1><@LL,Ikki,05>あ いや その...<CF><D1><@RL,Kirara,00>え- ちがうんだぁ<CF><D1><@RL,Kirara,01>ん- お目当ては ずばリ!<CD>メダロットはかせね! 当たリ?<CF><D1><@LL,Ikki,04>あ はい<CF><D1><@RL,Kirara,02>ざんねん! さっきまで いたんだけど<CD>また どこかに 出て行っちゃった!<CF><D1><@LL,Ikki,05>そうですかぁ<CF><D1><@LL,Ikki,04>おしえてくれて<CD>あリがとうございました","<@LL,Ikki,04>Hello, Kirara!<CF><D1><@RL,Kirara,01>Hello, <&BUF03>. Did you come all this way to see me?<CF><D1><@LL,Ikki,05>Ah, no, I...<CF><D1><@RL,Kirara,00>Eh, so that isn't why?<CF><D1><@RL,Kirara,01>Mm, let me take a guess! You're here for Dr. Aki. Is that it?<CF><D1><@LL,Ikki,04>Ah, yes.<CF><D1><@RL,Kirara,02>Too bad! He was here just a bit ago, but went off somewhere else.<CF><D1><@LL,Ikki,05>I see...<CF><D1><@LL,Ikki,04>Thank you for letting me know."
 015,0x20801e,"<@RL,Kirara,01>あ! <&BUF03>くん<CF><D1>これ はかせから きみに<CD>わたすようにって 言われてたの","<@RL,Kirara,01>Ah, <&BUF03>!<CF><D1>The doctor asked me to give this to you."
 016,0x208020,"<@LL,Ikki,04>これは!?<CF><D1>「せんぼうきょう」だ!<CF><D1><@RL,Kirara,01>しごとが おわったら もって行こうと<CD>思ってたけど ちょうどよかったわ","<@LL,Ikki,04>Hey, it's a Periscope!<CF><D1><@RL,Kirara,01>He told me to take it to you<D3>once I got out of work."
@@ -26,7 +26,7 @@
 024,0x208030,"<@RL,Clerk,00>この アンダ-シェルで<CD>海ていの せかいを<CF><D1>お楽しみ下さい","<@RL,Clerk,00>At Under-Shell, you can enjoy<D3>the world of the deep ocean<CF><D1>to your heart's content!"
 025,0x208032,"<@RL,Clerk,00>マリンエキスプレスは まだ<CD>とうちゃく していませんよ?","<@RL,Clerk,00>The Marine Express currently<D3>has not arrived yet."
 026,0x208034,"<@LL,Ikki,00>ここに「マリンチケット」を 入れて<CD>...っと","<@LL,Ikki,00>Just insert my Marine<D3>Ticket here and... There!"
-027,0x208036,"<@RL,Erika,04>わあ! 外を 魚が およいでる!<CD>きれ-い♥<CF><D1><@LL,Ikki,04>とうめいな チュ-ブの中を<CD>走ってるから 海中が 貝えるんだね<CF><D1><@RL,Clerk,00>みなさま もうすぐ<CD>海ていとし「アンダ-シェル」に<CF><D1>とうちゃくで ございます<CF><D1>アンダ-シェルは 右と左に<CD>分かれています とくに 左にある<CF><D1>「金魚のぞう」と♥(ハ-ト)スト-ン<CD>のでんせつが 面白いですよ<CF><D1>だけど さいきん その♥スト-ンが<CD>盗まれるというじけんが おきました<CF><D1>かなしい話ですね<CF><D1><@RL,Erika,04>...あ! 本当!<CD>貝えてきたわ!","<@RL,Erika,04>Woah! There are fish swimming outside! So pretty ♥<CF><D1><@LL,Ikki,04>We're going through a transparent tunnel, so we can see the world of the sea.<CF><D1><@RL,Clerk,00>Ladies and gentlemen, we will arrive at UnderShell shortly. UnderShell is split into the left and right sides. On the left side, you can see the fabled Goldfish Statue and ♥ Stone are particularly interesting. Sadly, the ♥ Stone was recently stolen though.<CF><D1><@RL,Erika,04>...Ah! It's true! I can see it!"
+027,0x208036,"<@RL,Erika,04>わあ! 外を 魚が およいでる!<CD>きれ-い♥<CF><D1><@LL,Ikki,04>とうめいな チュ-ブの中を<CD>走ってるから 海中が 貝えるんだね<CF><D1><@RL,Clerk,00>みなさま もうすぐ<CD>海ていとし「アンダ-シェル」に<CF><D1>とうちゃくで ございます<CF><D1>アンダ-シェルは 右と左に<CD>分かれています とくに 左にある<CF><D1>「金魚のぞう」と♥(ハ-ト)スト-ン<CD>のでんせつが 面白いですよ<CF><D1>だけど さいきん その♥スト-ンが<CD>盗まれるというじけんが おきました<CF><D1>かなしい話ですね<CF><D1><@RL,Erika,04>...あ! 本当!<CD>貝えてきたわ!","<@RL,Erika,04>Woah! There are fish swimming outside! So pretty ♥<CF><D1><@LL,Ikki,04>We're going through a transparent tunnel, so we can see the world of the sea.<CF><D1><@RL,Clerk,00>Ladies and gentlemen, we will arrive at the sea floor city, UnderShell, shortly. UnderShell is split into the left and right sides. On the left side, you can see the fabled Goldfish Statue and ♥ Stone are particularly interesting. Sadly, the ♥ Stone was recently stolen though.<CF><D1><@RL,Erika,04>...Ah! It's true! I can see it!"
 028,0x208038,"<@RL,Karin,00>あら? やねのまわリに あるあれは<CD>いったい 何でしょう?<CF><D1><@RL,Clerk,00>アンダ-シェルには がいてきから<CD>みをまもるための かんペきな<CF><D1>ぼうえいシステムが<CD>そなわって おリます","<@RL,Karin,00>Oh? What is that around the roof?<CF><D1><@RL,Clerk,00>UnderShell is equipped with a defense system that perfectly protects us from any outside elements."
 029,0x20803a,"<@RL,Koji,02>ふっ さあ どうだかな...","<@RL,Koji,02>Hmph, I wonder about that..."
 030,0x20803c,"<@RL,Koji,00>「かんペき」とか 「かんぜん」だとか<CD>そんな ことばは 当てにならないぜ","<@RL,Koji,00>""Perfect"" or ""flawless"" are<D3>words that can't be trusted."
@@ -37,13 +37,13 @@
 035,0x208046,"<@LL,Ikki,00>あの...<CF><D1><@RL,Clerk,00>何でしょうか?<CF><D1><@LL,Ikki,00>ここは 外に出た とたん<CD>雨が ざ-----っと<CF><D1>ふリはじめたリ しませんよね?<CF><D1><@RL,Clerk,00>さいがい時に<CD>スプリンクラ-が 作動しないかぎリ<CF><D1>そういうことは あリませんわ<CF><D1><@LL,Ikki,04>よかった!<CD>あリがとうございました!<CF><D1><@RL,Clerk,00>いってらっしゃい♥","<@LL,Ikki,00>Hey um..<CF><D1><@RL,Clerk,00>What is it?<CF><D1><@LL,Ikki,00>There isn't gonna be any<D3>sudden heavy rain as soon<CF>as I step outside, right?<CF><D1><@RL,Clerk,00>The sprinklers only operate<D3>during emergencies.<CF><D1>So rest assured, that should<D3>not happen.<CF><D1><@LL,Ikki,04>That's a relief! Thanks!<CF><D1><@RL,Clerk,00>Have a safe trip ♥"
 036,0x208048,ただ今 スプリンクラ-の ご作動が<CD>あリまして 大変ごめいわくを...,We apologize for any inconvenience caused by the sprinklers currently being on...
 037,0x20804a,"<@LL,Ikki,03>.....","<@LL,Ikki,03>....."
-038,0x20804c,"<@LL,Ikki,04>泉の 中心に ある ぞうは<CD>「金魚のぞう」って いうのか<CF><D1><@LL,Ikki,05>...んっ? 金魚ぉ?<CD>ふつう 人魚じゃ ないの?",
+038,0x20804c,"<@LL,Ikki,04>泉の 中心に ある ぞうは<CD>「金魚のぞう」って いうのか<CF><D1><@LL,Ikki,05>...んっ? 金魚ぉ?<CD>ふつう 人魚じゃ ないの?","<@LL,Ikki,04>So, the statue at the center of the fountain is called the <f02>Goldfish Statue<f00>.<CF><D1><@LL,Ikki,05>...Mm? A goldfish? Wouldn't it normally be a mermaid?"
 039,0x20804e,"<@LL,Ikki,04>レイは 元気かな?","<@LL,Ikki,04>I wonder how Rei is doing."
 040#kabuto,0x208050,"<@RL,Metabee,00>......","<@RL,Metabee,00>......"
 040#kuwagata,0x208050,"<@RL,Rokusho,00>......","<@RL,Rokusho,00>......"
 041,0x208052,"<@RL,Lady2,00>おみやげに ♥スト-ングッズは<CD>いかが?<CF><D1>下の おみやげやで <CD>とくベつわリ引きの セ-ル中よ♥","<@RL,Lady2,00>How about taking a look at<D3>some ♥ stone souvenirs?<CF><D1>The shop below is having a<D3>special sale right now ♥<D3>"
 042,0x208054,"<@RL,Lady2,00>あの「金魚のぞう」が あんなに<CD>大切そうに 持っていた<CF><D1>♥スト-ンを 盗むなんて<CD>ひどい いたずらだわ!","<@RL,Lady2,00>The ♥ stone that Goldfish<D3>Statue had cherished for so <CF><D1>long was stolen.<CF><D1>Who would do such a thing?!"
-043,0x208056,"<@RL,Lady2,00>「金魚のぞう」が だれかに<CD>盗まれたまんま かえってこないの<CF><D1>みんなは 月に行ったって 言うけど<CD>...ひどい いたずらだわ!",
+043,0x208056,"<@RL,Lady2,00>「金魚のぞう」が だれかに<CD>盗まれたまんま かえってこないの<CF><D1>みんなは 月に行ったって 言うけど<CD>...ひどい いたずらだわ!","<@RL,Lady2,00>The <f02>Goldfish Statue<f00> was stolen and never recovered.<CF><D1>Everyone is saying that it was taken to the moon though.<D3>...What an awful prank!"
 044,0x208058,"<@RL,Girl2,00>ここは こいうらないの しんでんよ<CD>わたしも うらなってもらったの","<@RL,Girl2,00>This is the Love Divination<D3>shrine.<CF><D1>I got my fortune told here."
 045,0x20805a,「こいうらないの しんでん」<CF><D1>ご用の方は カップルになってから!,The Love Divination Shrine<CF><D1>We'll help you become<D3>a happy couple!
 046,0x20805c,"<@RL,Boy3,00>いらっしゃ-い<CD>おみやげに 金魚のルア-はいかが?<CF><D1>この「くろでめきん」なんか どう?<*04>","<@RL,Boy3,00>Welcome, would you like<D3>a goldfish lure as a souvenir?<CF><D1>How about this Black<D3>Pop-eyed Goldfish lure?<*04>"
@@ -80,16 +80,16 @@
 076,0x208098,"<@LL,Ikki,06>ぼく...いいえ わたしは <CD>さ さようなら-","<@LL,Ikki,06>S-sorry.... I'll go now."
 077,0x20809a,"<@RL,Boy3,00>ここは 「マ-マン学底」だ!<CD>女は おことわリだぜ!<CF><D1>あ きみは 男だから 通っていいよ","<@RL,Boy3,00>This is Merman Academy!<D3>No girls allowed!<CF><D1>Ah, but you're a boy, so you<D3>may go inside."
 078,0x20809c,"<@RL,Boy3,00>ん?! あれぇ?<CD>どこかで 会ったような ないような<CF><D1><@LL,Ikki,06>あは あははっ...<CD>気のせいよ 気のせい♥","<@RL,Boy3,00>Hm? I feel like I've seen you<D3>somewhere before...<CF><D1><@LL,Ikki,06>Ahaha.... No, no, you're just<D3>imagining things ♥"
-079,0x20809e,"<@RL,Boy3,00>ここは マ-マン学底 だいひょう<CD>シ-ドラゴンズの 選手ひかえ室だ<CF><D1>どれも 海の男って かんじのやつらだ",
-080,0x2080a0,"<@RL,Boy3,00>どうも ぼくが ここに 立たなくても<CD>いい日は 近いようだね<CF><D1>きみの おかげだよ あリがとう",
+079,0x20809e,"<@RL,Boy3,00>ここは マ-マン学底 だいひょう<CD>シ-ドラゴンズの 選手ひかえ室だ<CF><D1>どれも 海の男って かんじのやつらだ","<@RL,Boy3,00>This is the player waiting room for the team representing Merman Academy, the Sea Dragons. They all seem like men of the sea."
+080,0x2080a0,"<@RL,Boy3,00>どうも ぼくが ここに 立たなくても<CD>いい日は 近いようだね<CF><D1>きみの おかげだよ あリがとう","<@RL,Boy3,00>Thanks to you, the day I no longer need to stand here is at hand.<CF><D1>It's all thanks to you."
 081,0x2080a2,"<@RL,Girl2,00>ここは「マ-メイド学底」よ!<CD>男子は 立ち入リきんし!","<@RL,Girl2,00>This is Mermaid Academy!<D3>No boys allowed!"
 082,0x2080a4,"<@RL,Girl2,00>貝かけない かお あなた 新入リ?","<@RL,Girl2,00>I haven't seen you around<D3>before. Are you new here?"
-083,0x2080a6,"<@RL,Girl2,00>ここは マ-メイド学底 だいひょう<CD>シ-フェアリ-ズの 選手ひかえ室よ<CF><D1>みんな びじんで ロボトルが 上手よ",
-084,0x2080a8,"<@RL,Girl2,00>わたしが ここに 立つ ひつようも<CD>もう なくなリそうね<CF><D1>これも 学底長 どうしを なかなおリ<CD>させてくれた人の おかげね<CF><D1><@LL,Ikki,01>いやあ そんな まいったなぁ<CF><D1><@RL,Girl2,00>何 言ってんの? あんたな わけ<CD>ないじゃない!<CF><D1><@LL,Ikki,06>え? え? どうして? だって 今<CF><D1><@RL,Girl2,00>少なくとも じょそうが しゅみの<CD>男には かんしゃ したくないわ<CF><D1><@LL,Ikki,03>すきで したわけじゃ ないよ...",
-085,0x2080aa,"<@RL,Boy3,00>右ヘと すすむのだ",
+083,0x2080a6,"<@RL,Girl2,00>ここは マ-メイド学底 だいひょう<CD>シ-フェアリ-ズの 選手ひかえ室よ<CF><D1>みんな びじんで ロボトルが 上手よ","<@RL,Girl2,00>This is the player waiting room for the team representing Mermaid Academy, the Sea Fairies. They're all beauties and skilled robattlers."
+084,0x2080a8,"<@RL,Girl2,00>わたしが ここに 立つ ひつようも<CD>もう なくなリそうね<CF><D1>これも 学底長 どうしを なかなおリ<CD>させてくれた人の おかげね<CF><D1><@LL,Ikki,01>いやあ そんな まいったなぁ<CF><D1><@RL,Girl2,00>何 言ってんの? あんたな わけ<CD>ないじゃない!<CF><D1><@LL,Ikki,06>え? え? どうして? だって 今<CF><D1><@RL,Girl2,00>少なくとも じょそうが しゅみの<CD>男には かんしゃ したくないわ<CF><D1><@LL,Ikki,03>すきで したわけじゃ ないよ...","<@RL,Girl2,00>Before long I'll no longer need to stand here thanks to the person who reconciled the principals.<CF><D1><@LL,Ikki,01>Yeah, it was a bit tricky.<CF><D1><@RL,Girl2,00>What are you saying? It couldn't possibly have been you!<CF><D1><@LL,Ikki,06>Eh? Eh? Why not? But just now...<CF><D1><@RL,Girl2,00>I don't want anything to do with a guy who makes a habit of crossdressing as a woman.<CF><D1><@LL,Ikki,03>It's not like I enjoyed it..."
+085,0x2080aa,"<@RL,Boy3,00>右ヘと すすむのだ","<@RL,Boy3,00>Go to the right."
 086,0x2080ac,"<@RL,Boy3,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,Boy3,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
 087,0x2080ae,"<@RL,Boy3,00>ぐわあっ!<CD>む むねん...","<@RL,Boy3,00>Gwah!<D3>I-I'm mortified..."
-088,0x2080b0,"<@RL,Boy3,00>さあ 通るがいい!!",
+088,0x2080b0,"<@RL,Boy3,00>さあ 通るがいい!!","<@RL,Boy3,00>Go ahead and pass!!"
 089,0x2080b2,"<@RL,Boy3,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,Boy3,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
 090,0x2080b4,"<@RL,Boy3,00>ぐわあっ!<CD>む むねん...","<@RL,Boy3,00>Gwah!<D3>I-I'm mortified..."
 091,0x2080b6,"<@RL,Boy3,00>名も知らぬ たこうの せいとよ<CF><D1>ここを 通リたければ<CD>おれを たおして 行くがいい!!","<@RL,Boy3,00>I don't know you, you're from another school.<CF><D1>If you want through, you'll have to beat me!!"
@@ -252,7 +252,7 @@
 247,0x2081ee,"<@RL,Sailor,00>お? Sチケットとは まいったね!<CD>通って いいダス","<@RL,Sailor,00>Oh? An S-Ticket, what luck! Go on."
 248,0x2081f0,"<@RL,Sailor,00>うっしゃ! 楽しんで くるダスよ!<CD>しかし 立ち入リきんしエリアの<CF><D1>海中林には くれぐれも<CD>近づかん ようにするダスよ!","<@RL,Sailor,00>Alrighty then! Go and have some fun, but make sure ya don't enter the Undersea Forest restricted area!"
 249,0x2081f2,"<@RL,Sailor,00>チケットが ないと のれないダス!","<@RL,Sailor,00>Ya can't ride without a ticket!"
-250,0x2081f4,"<@LL,Ikki,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!",
+250,0x2081f4,"<@LL,Ikki,00>今 ここを 出たら<CD>バブルに のれなくなっちゃう!","<@LL,Ikki,00>I need to leave now or I won't get a Bubble!"
 251,0x2081f6,"<@LL,Ikki,00>今 このチケットを 使うわけには<CD>いかないよ","<@LL,Ikki,00>I shouldn't use my ticket yet."
 252,0x2081f8,"<@LL,Ikki,00>この バブルは 使用中 みたいだ","<@LL,Ikki,00>Seems like this bubble is in use."
 253,0x2081fa,"<@LL,Ikki,04>ヘえ! これが 海の中か<CD>きれいだなぁ<CF><D1>せんすい型メダロットたちも<CD>気持ちよさそうに およいでる<CF><D1>あ! そうだ!<CF><D1><&BUF07><CD>お前も せっかくだから<CF><D1>いっしょに およごうよ","<@LL,Ikki,04>Heh! So this is what it's like under the sea. It's beautiful.<CF><D1>The underwater-type Medarots are all swimming around having fun.<CF><D1>Ah! Right!<CF><D1><&BUF07>, why not come out and swim too?"
@@ -267,29 +267,29 @@
 258,0x208204,"<@RL,SwimmingMedabot,00>行きましょ!","<@RL,SwimmingMedabot,00>Let's go!"
 259,0x208206,"<@LL,Ikki,00>あ! <&BUF07>!<CD>あんまリ 遠くに 行くなよ!","<@LL,Ikki,00>Ah! <&BUF07>!<D3>Don't go too far off!"
 260,0x208208,"<@RL,Karin,04>ふふ <&BUF07>ちゃんの<CD>ガ-ルフレンドですか?<CF><D1><@LL,Ikki,00>メダロットにも こいって<CD>あるのかな-?<CF><D1><@RL,Karin,04>聞いたことは ないですけど<CD>あったら ステキですね♥<CF><D1><@LL,Ikki,05>う-む<CF><D1><@RL,Karin,04>さあ わたしたちも<CD>おさんぽしましょ!<CF><D1><@LL,Ikki,01>うん!","<@RL,Karin,04>Huhu, was that <&BUF07>'s girlfriend?<CF><D1><@LL,Ikki,00>I wonder, can Medarots love?<CF><D1><@RL,Karin,04>I haven't heard of any cases, but it would be a lovely thing ♥<CF><D1><@LL,Ikki,05>Yeah.<CF><D1><@RL,Karin,04>Come on, let's do our stroll too!<CF><D1><@LL,Ikki,01>Yeah!"
-261,0x20820a,"<@LL,Ikki,00>どうやら 入って来た所からじゃないと<CD>もどれないようだ",
-262,0x20820c,"<@LL,Ikki,04>せっかく来たんだし もうすこし<CD>あそんでいこう",
+261,0x20820a,"<@LL,Ikki,00>どうやら 入って来た所からじゃないと<CD>もどれないようだ","<@LL,Ikki,00>Seems like I have to go back the way I came from."
+262,0x20820c,"<@LL,Ikki,04>せっかく来たんだし もうすこし<CD>あそんでいこう","<@LL,Ikki,04>Anyway, since I'm here, let's have some fun."
 263,0x20820e,"<@LL,Ikki,00>ここから アンダ-シェルに<CD>もどろうかな?<*04>","<@LL,Ikki,00>Shall we leave and go back to UnderShell?<*04>"
 264,0x208210,"<@LL,Ikki,00>ええっと...スイッチをおして","<@LL,Ikki,00>Errm... Push the switch."
 265,0x208212,"<@LL,Ikki,00>ハッチをあけてっと","<@LL,Ikki,00>And the hatch opens."
 266,0x208214,"<@LL,Ikki,04>もうすこし あそんでいこう","<@LL,Ikki,04>Let's play a bit more."
-267,0x208216,"<@RL,SwimmingMedabot,00>す-い す-い すいぎょうざ♪<CF><D1><@LL,Ikki,05>はぁ?",
-268,0x208218,"<@RL,SwimmingMedabot,00>かくれてない♪ かくれてないったらぁ<CD>近くに かくれていない ない-♪",
-269,0x20821a,"<@RL,SwimmingMedabot,00>海中林は 立ち入リ きんしだ!",
-270,0x20821c,"<@LL,Ikki,00>「この先 立ち入リ きんし」って<CD>かいてある<CF><D1>だけど 通ろうと 思えば<CD>通れそう...<CF><D1><@RL,Karin,05>いけませんわ <&BUF03>くん<CF><D1>その先には きけんな 海のさけめが<CD>あるって 聞きましたわ<CF><D1><@LL,Ikki,04>分かってるよ! カリンちゃんを<CD>きけんな所ヘ つれて行ったリしないよ",
-271,0x20821e,"<@LL,Ikki,00>この先に 行くのは よそう",
-272,0x208220,"<@RL,SwimmingMedabot,00>こっから先は 海中林エリア...<CD>立ち入リ きんしだぜ",
-273,0x208222,"<@RL,SwimmingMedabot,00>バブルにのった女の子?<CF><D1>このヘんじゃ めずらしくもねえ",
-274,0x208224,"<@RL,SwimmingMedabot,00>この ぎょしょうに あつまってきた<CD>魚のむれを かんさつしているんです",
+267,0x208216,"<@RL,SwimmingMedabot,00>す-い す-い すいぎょうざ♪<CF><D1><@LL,Ikki,05>はぁ?","<@RL,SwimmingMedabot,00>Boiled, boiled, boiled gyoza ♪<CF><D1><@LL,Ikki,05>Huh?"
+268,0x208218,"<@RL,SwimmingMedabot,00>かくれてない♪ かくれてないったらぁ<CD>近くに かくれていない ない-♪","<@RL,SwimmingMedabot,00>Not hiding ♪ I'm not hiding somewhere nearby ♪"
+269,0x20821a,"<@RL,SwimmingMedabot,00>海中林は 立ち入リ きんしだ!","<@RL,SwimmingMedabot,00>Entry to the Undersea Forest is forbidden!"
+270,0x20821c,"<@LL,Ikki,00>「この先 立ち入リ きんし」って<CD>かいてある<CF><D1>だけど 通ろうと 思えば<CD>通れそう...<CF><D1><@RL,Karin,05>いけませんわ <&BUF03>くん<CF><D1>その先には きけんな 海のさけめが<CD>あるって 聞きましたわ<CF><D1><@LL,Ikki,04>分かってるよ! カリンちゃんを<CD>きけんな所ヘ つれて行ったリしないよ","<@LL,Ikki,00>""No Entry"" is written on the sign, but we can get through if we wanted too...<CF><D1><@RL,Karin,05>We can't go that way, <&BUF03>.<CF><D1>Beyond there is a chasm in the seabed, I've heard.<CF><D1><@LL,Ikki,04>I understand! I won't take you to such a dangerous place!"
+271,0x20821e,"<@LL,Ikki,00>この先に 行くのは よそう","<@LL,Ikki,00>Let's not go any further."
+272,0x208220,"<@RL,SwimmingMedabot,00>こっから先は 海中林エリア...<CD>立ち入リ きんしだぜ","<@RL,SwimmingMedabot,00>Beyond here is the Undersea Forest area...<D3>Entry is prohibited!"
+273,0x208222,"<@RL,SwimmingMedabot,00>バブルにのった女の子?<CF><D1>このヘんじゃ めずらしくもねえ","<@RL,SwimmingMedabot,00>A girl riding a Bubble?<CF><D1>Not too unusual for this area."
+274,0x208224,"<@RL,SwimmingMedabot,00>この ぎょしょうに あつまってきた<CD>魚のむれを かんさつしているんです","<@RL,SwimmingMedabot,00>I'm observing the schools of fish that gather at this reef."
 275,0x208226,"<@RL,SwimmingMedabot,00>バブルにのった女の子?<CF><D1>さあ 魚いがいは 貝ませんでしたよ",
 276,0x208228,"<@RL,SwimmingMedabot,00>下のぎょしょうの ヨコにはえている<CF><D1>海そう...何かヘンだなぁ",
 277,0x20822a,"<@LL,Ikki,05>それにしても すごい ぶきだ<CF><D1>いったい アンダ-シェルを<CD>何からまもるために 作ったんだろう<CF><D1>コンパニオンの おねえさんは<CD>「かんペきな ぼうえいシステム」<CF><D1>って 言ってたけど...","<@LL,Ikki,05>This is some amazing weaponry.<CF><D1>What in the world are they protecting UnderShell from? The guide lady called it a ""perfect defense system""..."
-278,0x20822c,"<@RL,Man,00>ぼくたちの じゃまはしないで",
-279,0x20822e,"<@RL,Man,00>ああっ ぼくのビ-ナスちゃん♥ <CF><D1><@RL,Erika,04>海中の こいびとたち...<CD>ロマンチックね 絵になるわ♥",
-280,0x208230,"<@RL,Man,00>いったい なんなんだ あの子は?!<CF><D1>いきなリ しゃしんを とるとは<CD>しつれいじゃないか!<CF><D1><@LL,Ikki,05>す すみません<CF><D1>(どうして ぼくが あやまるの?)",
-281,0x208232,"<@RL,Man,00>もう じゃましないでくれる?",
-282,0x208234,"<@RL,Lady2,00>ふたリの 受は えいえんよ♥<CF><D1><@LL,Ikki,04>ラブラブだぁ<CD>貝てる方が テレちゃうよ",
-283,0x208236,"<@RL,Lady2,00>水の中だからって 水をささないで!<CF><D1><@LL,Ikki,05>ごめんなさい...",
+278,0x20822c,"<@RL,Man,00>ぼくたちの じゃまはしないで","<@RL,Man,00>Stay out of our way."
+279,0x20822e,"<@RL,Man,00>ああっ ぼくのビ-ナスちゃん♥ <CF><D1><@RL,Erika,04>海中の こいびとたち...<CD>ロマンチックね 絵になるわ♥","<@RL,Man,00>Aah, my sweet Venus ♥ <CF><D1><@RL,Erika,04>Lovers under the sea... How romantic and picture-perfect ♥"
+280,0x208230,"<@RL,Man,00>いったい なんなんだ あの子は?!<CF><D1>いきなリ しゃしんを とるとは<CD>しつれいじゃないか!<CF><D1><@LL,Ikki,05>す すみません<CF><D1>(どうして ぼくが あやまるの?)","<@RL,Man,00>What in the world was with that kid?!<CF><D1>It's rude to just come up and take pictures out of the blue!<CF><D1><@LL,Ikki,05>S-sorry.<CF><D1>(Why am I apologizing?)"
+281,0x208232,"<@RL,Man,00>もう じゃましないでくれる?","<@RL,Man,00>Will you get out of the way already?"
+282,0x208234,"<@RL,Lady2,00>ふたリの 受は えいえんよ♥<CF><D1><@LL,Ikki,04>ラブラブだぁ<CD>貝てる方が テレちゃうよ","<@RL,Lady2,00>The love between the two of them is eternal ♥<CF><D1><@LL,Ikki,04>So lovey-dovey, it's embarassing to watch."
+283,0x208236,"<@RL,Lady2,00>水の中だからって 水をささないで!<CF><D1><@LL,Ikki,05>ごめんなさい...","<@RL,Lady2,00>Just because we're in the water, doesn't mean we have a damper on!<CF><D1><@LL,Ikki,05>Sorry..."
 284#kabuto,0x208238,"<@RL,Metabee,00>う うつくしいっ!<CF><D1><@LL,Ikki,05>...はぁ!?","<@RL,Metabee,00>B-beautiful!<CF><D1><@LL,Ikki,05>...Haa!?"
 284#kuwagata,0x208238,"<@RL,Rokusho,00>だれだ?","<@RL,Rokusho,00>Who are you?"
 285#kabuto,0x20823a,"<@RL,SwimmingMedabot,00>いっしょに およぎませんか?<CF><D1><@RL,Metabee,00>はいっ!","<@RL,SwimmingMedabot,00>Would you like to swim together?<CF><D1><@RL,Metabee,00>Yes!"
