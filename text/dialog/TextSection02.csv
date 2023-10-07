@@ -88,8 +88,8 @@
 086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF>B1F<D3><f01>Go to <f00>Heaven's Tower B1F?<*04>
 087,0x94112,<SFF>1F<CD>エントランスに 行く?<*04>,<SFF>1F<D3><f01>Go to the <f00>entrance?<*04>
 088,0x94114,<SFF>2F<CD>オフィス1に 行く?<*04>,<SFF>2F<D3><f01>Go to <f00>office 1?<*04>
-089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Air Hotel 1?<*04>
-090,0x94118,<SFF>4F<CD>エアロホテル2に 行く?<*04>,<SFF>4F<D3><f01>Go to <f00>Air Hotel 2?<*04>
+089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Aero Hotel 1?<*04>
+090,0x94118,<SFF>4F<CD>エアロホテル2に 行く?<*04>,<SFF>4F<D3><f01>Go to <f00>Aero Hotel 2?<*04>
 091,0x9411a,<SFF>5F<CD>オフィス2に 行く?<*04>,<SFF>5F<D3><f01>Go to <f00>office 2?<*04>
 092,0x9411c,<SFF>6F<CD>メダロット社に 行く?<*04>,<SFF>6F<D3><f01>Go to the <f00>Medarot Company?<*04>
 093,0x9411e,<SFF>7F<CD>ライチョウ学園1に 行く?<*04>,<SFF>7F<D3><f01>Go to <f00>Raicho Academy 1F?<*04>

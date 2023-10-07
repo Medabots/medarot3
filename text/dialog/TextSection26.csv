@@ -64,7 +64,7 @@
 062,0x21c07c,"<@RL,Lady3,00>あ-あ この間 買ってもらった<CD>メダロットも あきちゃったわ<CF><D1>新しいの パパに買ってもらおっ","<@RL,Lady3,00>Aww... I'm already tired of the Medarot that I got the other day.<CF><D1>I'll ask dad to buy me a new one."
 063,0x21c07e,"<@RL,Clerk,00>おきゃくさまの おヘやは<CD>4Fで ございます","<@RL,Clerk,00>The room is on 4F."
 064,0x21c080,"<@LL,Ikki,05>目つきのわるい 3人租 とまってる?<CF><D1><@RL,Clerk,00>ええ とまってますよ","<@LL,Ikki,05>Do you know any group of three with scary eyes staying in this hotel?<CF><D1><@RL,Clerk,00>Yes, I've seen them."
-065,0x21c082,"<@RL,Clerk,00>3Fと 4Fは エアロホテルと<CD>なっておリます","<@RL,Clerk,00>3F and 4F are part of the Air Hotel."
+065,0x21c082,"<@RL,Clerk,00>3Fと 4Fは エアロホテルと<CD>なっておリます","<@RL,Clerk,00>3F and 4F are part of the Aero Hotel."
 066,0x21c084,"<@RL,Samantha,00>何よぉ しつこいわねぇ イワノイ<CD>あたしなら いないわよぉ<CF><D1><@LL,Ikki,00>いや ぼく<CD><&BUF0A>なんだけど<CF><D1><@RL,Samantha,04><&BUF0A>? あたし 今<CD>いないことに なってるしぃ","<@RL,Samantha,00>Iwanoi, you're being persistent. I'm not here.<CF><D1><@LL,Ikki,00>No, it's me, <&BUF0A>.<CF><D1><@RL,Samantha,04><&BUF0A>? Anyway, I've decided that I'm not here right now."
 067,0x21c086,"<@RL,Samantha,04>何よぉ あたし 今<CD>いないことに なってんだからぁ","<@RL,Samantha,04>What? Like I said, I've decided that I'm not here right now."
 068,0x21c088,"<@LL,Ikki,06>いない! こんな時に!<CF><D1>イワノイなら キクヒメのいばしょ<CD>知ってるかも!?","<@LL,Ikki,06>Kikuhime's not here! Why!?<CF><D1>Maybe Iwanoi knows where she is!?"

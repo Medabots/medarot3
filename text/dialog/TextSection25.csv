@@ -11,7 +11,7 @@
 008#kuwagata,0x218010,"<@LL,Ikki,04>ま いいや<CD>今は 家で 休む前に<CF><D1>このブラッククワガタメダルを<CD>はかせの 所に もって行こう","<@LL,Ikki,04>Well, no worries.<D3>Before I go home to rest, I should take the Black Stag Medal to Doctor Aki."
 009,0x218012,"<@RL,Salty,00>くぅん...<CF><D1><@LL,Ikki,04>そんな かお するなって!<CD>あとで さんぽに つれてってやるよ<CF><D1>だから 先に かえっていてくれ","<@RL,Salty,00>Awoo...<CF><D1><@LL,Ikki,04>Don't make that face!<D3>I'll take you for a walk later, so go home for now, alright?"
 010,0x218014,"<@RL,Salty,00>わん!","<@RL,Salty,00>Woof!"
-011,0x218016,"<@LL,Ikki,00>チケットが ないや",
+011,0x218016,"<@LL,Ikki,00>チケットが ないや","<@LL,Ikki,00>I don't have a ticket."
 012,0x218018,"<@LL,Ikki,04>こんにちは はかせ!<CD>貝てもらいたいものが あるんです","<@LL,Ikki,04>Hello, Doctor Aki.<D3>I've got something to show you."
 013,0x21801a,"<@RL,DrAki,00>6負かヘい石か?<CD>これが どうか したかの?<CF><D1><@LL,Ikki,00>6負かヘい石に 絵が...<CF><D1><@LL,Ikki,07>あれっ? 絵が きえてる!<CF><D1><@LL,Ikki,05>おっかしいなぁ<CD>さっきまでは たしかに...<CF><D1><@RL,DrAki,01>おかしな やつじゃな<CF><D1><@LL,Ikki,06>あ ほかにも あるんです!<CD>はかせ これを 貝てください","<@RL,DrAki,00>A six-sided nummulite? What about it?<CF><D1><@LL,Ikki,00>There's a picture on the...<CF><D1><@LL,Ikki,07>Huh? The picture is gone!<CF><D1><@LL,Ikki,05>How strange...<D3>I'm sure it was just there...<CF><D1><@RL,DrAki,01>You sure are a strange one.<CF><D1><@LL,Ikki,06>Ah, I have something else too! Doctor, take a look at this."
 014#kabuto,0x21801c,"<@RL,DrAki,00>こ これは...<CF><D1><@LL,Ikki,00>「ブラックカブト」って<CD>知ってますか?<CF><D1><@RL,DrAki,03>ブラックカブトじゃと?<CD>何じゃ それは!<CF><D1><@LL,Ikki,00>これ 黒い カブトメダロットが<CD>つけていた メダルなんです","<@RL,DrAki,00>Th-this is...?<CF><D1><@LL,Ikki,00>Do you know anything about a Black Kabuto?<CF><D1><@RL,DrAki,03>Black Kabuto, you say? What's that?<CF><D1><@LL,Ikki,00>This is the Medal from a black beetle-type Medarot."
@@ -20,7 +20,7 @@
 016,0x218020,"<@RL,Salty,00>わん わん!","<@RL,Salty,00>Woof woof!"
 017,0x218022,"<@LL,Ikki,07>あ! お前 こんな所にまでっ!<CD>家で まってろって 言ったろ?<CF><D1><@RL,Salty,00>くぅ...<CF><D1><@LL,Ikki,00>ともかく はかせ! メダルのこと<CD>よろしく おねがいします!<CF><D1><@RL,DrAki,00><&BUF0A>!","<@LL,Ikki,07>Ah! You came all the way here? Didn't I tell you to wait at home?<CF><D1><@RL,Salty,00>Whine...<CF><D1><@LL,Ikki,00>Anyway, Doctor! I'll leave the Medal in your care!<CF><D1><@RL,DrAki,00><&BUF0A>!"
 018,0x218024,"<@RL,DrAki,00>やれやれ","<@RL,DrAki,00>My, oh my."
-019,0x218026,"<@RL,DrAki,00>ん? まだ 何か あるのかの?",
+019,0x218026,"<@RL,DrAki,00>ん? まだ 何か あるのかの?","<@RL,DrAki,00>Mm? Was there something else?"
 020,0x218028,"<@LL,Ikki,07>...あれ? また6負かヘい石に<CD>絵が もどってる<CF><D1><@LL,Ikki,00>変なの- だけど また<CD>きえちゃうと いやだから<CF><D1>まだ はかせには 言わないでおこう","<@LL,Ikki,07>...Huh? The picture on the six-sided nummulite is back.<CF><D1><@LL,Ikki,00>Weird, but I don't want it disappearing again, so I won't tell Doctor Aki about it just yet."
 021#kabuto,0x21802a,"<@LL,Ikki,04>まっ ブラックカブトの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kabuto Medal, so it's fine."
 021#kuwagata,0x21802a,"<@LL,Ikki,04>まっ ブラッククワガタの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kuwagata Medal, so it's fine."
@@ -69,12 +69,12 @@
 063,0x21807e,"<@RL,Spyke,05>わっ! 体が ちぢんじまった!<CF><D1><@RL,Samantha,03>こうつごうじゃなぁい<CD>やつらに つづいて 行くわよぉ!","<@RL,Spyke,05>Woah! My body shrank!<CF><D1><@RL,Samantha,03>Now isn't the time, after them!"
 064,0x218080,"<@RL,Erika,02>もう! 何 もたもた してんのよ<CD>おいて行くわよっ!","<@RL,Erika,02>Geez! What's taking you so long? We'll leave you behind!"
 065,0x218082,"<@LL,Ikki,03>できるなら のリたくないけど...","<@LL,Ikki,03>If possible, I don't want to ride this..."
-066,0x218084,"<@RL,Koji,02>早く せきに つけよ!",
-067,0x218086,"<@RL,Karin,04>わくわくしますわ",
-068,0x218088,"<@RL,Erika,00>つっ立ってないで 早く せきに<CD>つきなさいよ",
-069,0x21808a,"<@RL,Man,00>さいきん しゅっちょう ばっかリだ",
-070,0x21808c,"<@RL,Girl,00>あたし ヘブンスゲ-トに 行くの<CD>はじめてなのよ",
-071,0x21808e,"<@RL,Lady2,00>この子を いろんな ところに<CD>つれていって あげるの",
+066,0x218084,"<@RL,Koji,02>早く せきに つけよ!","<@RL,Koji,02>Hurry and take a seat!"
+067,0x218086,"<@RL,Karin,04>わくわくしますわ","<@RL,Karin,04>This is so exciting."
+068,0x218088,"<@RL,Erika,00>つっ立ってないで 早く せきに<CD>つきなさいよ","<@RL,Erika,00>Don't just stand around, take a seat."
+069,0x21808a,"<@RL,Man,00>さいきん しゅっちょう ばっかリだ","<@RL,Man,00>It's been nothing but business trips lately."
+070,0x21808c,"<@RL,Girl,00>あたし ヘブンスゲ-トに 行くの<CD>はじめてなのよ","<@RL,Girl,00>I've never been to Heaven's Gate before."
+071,0x21808e,"<@RL,Lady2,00>この子を いろんな ところに<CD>つれていって あげるの","<@RL,Lady2,00>I'm taking this child all over the place."
 072,0x218090,"<@LL,Ikki,03>せきに つこう...<*04>","<@LL,Ikki,03>Take a seat...?<*04>"
 073,0x218092,"<@RL,Erika,00>何だまってんのよ? ジオプレインの<CD>時は あんなに はしゃいでたのに<CF><D1><@LL,Ikki,03>こわいんだ ひこうきに のると<CD>おっこちないかなって 考えちゃって<CF><D1><@RL,Erika,07>今時そんなこと 考えてるなんて<CD>あんた 天ねんきねんぶつものね!<CF><D1>でも 「風のつばさ」に のった時は<CD>そんなこと 言ってなかったじゃない","<@RL,Erika,00>What took you so long? Even though you were so excited with the Geo Plane.<CF><D1><@LL,Ikki,03>It's scary, I keep thinking of what will happen if it falls.<CF><D1><@RL,Erika,07>You've sure become a coward to think like that! Back when you were riding around on the 'Wings of Wind' you didn't say anything like that."
 074,0x218094,アテンション プリ-ズ<CD>アテンション プリ-ズ<CF><D1>とうきは まもなく...,"Your attention please,<D3>your attention please.<CF><D1>This plane will soon..."
@@ -137,40 +137,40 @@
 128,0x218100,"<@LL,Ikki,00>まずは ホテルに チェックインしよう<CD>ホテルは えっと- 3Fと4Fだな<CF><D1>3Fに 行く?<*04>","<@LL,Ikki,00>Let's check out the hotel first. Uhm, it should be on the third and fourth floor.<CF><D1>Go to the third floor?<*04>"
 129,0x218102,"<@LL,Ikki,00>じゃあ 4Fに 行こう","<@LL,Ikki,00>Let's go to the fourth floor then."
 130,0x218104,"<@LL,Ikki,06>キクヒメは ホテルの3Fだ!","<@LL,Ikki,06>Kikuhime is at the hotel on the third floor!"
-131,0x218106,"<@RL,Clerk,00>おきゃくさまの おヘやは<CD>左の おくになリます",
-132,0x218108,"<@RL,Clerk,00>エアロホテルヘ ようこそ!",
-133,0x21810a,"<@LL,Ikki,00>まずは チェックインだ<CD>ヘやで ちょっと 休もう<CF><D1>行動は それからでも いいかな",
-134,0x21810c,"<@LL,Ikki,01>まってて カリンちゃん♥<CF><D1><@LL,Ikki,00>カリンちゃんの ヘやは この かいだ",
-135,0x21810e,"<@LL,Ikki,04>アリカに おしえないとね",
-136,0x218110,"<@RL,Man,00>あれ? おかしいな ドアがあかないぞ<CF><D1>あ これ 車のカギだ",
-137,0x218112,"<@RL,Man,00>ひょっとして 今の 貝てた?",
-138,0x218114,"<@RL,Man,00>きみも レンタルビデオの店で<CD>かいいんカ-ドとまちがえて<CF><D1>電車のていきけんとか<CD>出しちゃったこと あるだろ?",
-139,0x218116,"<@RL,Erika,00>ちょっと きゅうけい",
+131,0x218106,"<@RL,Clerk,00>おきゃくさまの おヘやは<CD>左の おくになリます","<@RL,Clerk,00>Dear guest, your room is on the left."
+132,0x218108,"<@RL,Clerk,00>エアロホテルヘ ようこそ!","<@RL,Clerk,00>Welcome to the Aero Hotel!"
+133,0x21810a,"<@LL,Ikki,00>まずは チェックインだ<CD>ヘやで ちょっと 休もう<CF><D1>行動は それからでも いいかな","<@LL,Ikki,00>Let's check in and rest in the room a bit first. We can do something after that."
+134,0x21810c,"<@LL,Ikki,01>まってて カリンちゃん♥<CF><D1><@LL,Ikki,00>カリンちゃんの ヘやは この かいだ","<@LL,Ikki,01>Wait for me Karin ♥<CF><D1><@LL,Ikki,00>Karin's room is on this floor."
+135,0x21810e,"<@LL,Ikki,04>アリカに おしえないとね","<@LL,Ikki,04>I need to tell Arika."
+136,0x218110,"<@RL,Man,00>あれ? おかしいな ドアがあかないぞ<CF><D1>あ これ 車のカギだ","<@RL,Man,00>Oh? Isn't that strange. The door won't open.<CF><D1>Ah, these are the car's keys."
+137,0x218112,"<@RL,Man,00>ひょっとして 今の 貝てた?","<@RL,Man,00>Did you happen to see that?"
+138,0x218114,"<@RL,Man,00>きみも レンタルビデオの店で<CD>かいいんカ-ドとまちがえて<CF><D1>電車のていきけんとか<CD>出しちゃったこと あるだろ?","<@RL,Man,00>You've been at a video rental place and pulled out your commuter pass instead of membership card, haven't you?"
+139,0x218116,"<@RL,Erika,00>ちょっと きゅうけい","<@RL,Erika,00>Hold on, let's take a break."
 140,0x218118,"<@LL,Ikki,00>ふ- つかれた-<CD>イスに すわって ひと休みしよう","<@LL,Ikki,00>Phew, I'm beat. Let's take a seat and rest a bit."
 141,0x21811a,"<@LL,Ikki,00>う-ん じっとしてても つまんない<CF><D1>何か 面白い テレビでも<CD>やってないかな?","<@LL,Ikki,00>Hmmm, just sitting around is boring.<CF><D1>Is there anything interesting on TV?"
-142,0x21811c,"<@LL,Ikki,00>ここは アリカの ヘやだな",
-143,0x21811e,"<@LL,Ikki,00>ここは コウジの ヘやだ",
-144,0x218120,"<@LL,Ikki,04>ここは カリンちゃんの ヘやだ",
+142,0x21811c,"<@LL,Ikki,00>ここは アリカの ヘやだな","<@LL,Ikki,00>This is Arika's room."
+143,0x21811e,"<@LL,Ikki,00>ここは コウジの ヘやだ","<@LL,Ikki,00>This is Koji's room."
+144,0x218120,"<@LL,Ikki,04>ここは カリンちゃんの ヘやだ","<@LL,Ikki,04>This is Karin's room."
 145,0x218122,"<@LL,Ikki,00>ここは キクヒメの ヘやだ","<@LL,Ikki,00>This is Kikuhime's room."
-146,0x218124,"<@LL,Ikki,00>ここは イワノイの ヘやだ",
-147,0x218126,"<@LL,Ikki,00>ここは スクリュ-ズの中で 1番<CD>かげが うすい カガミヤマの ヘやだ",
-148,0x218128,"<@LL,Ikki,00>ここは 知らない人の ヘやだ",
+146,0x218124,"<@LL,Ikki,00>ここは イワノイの ヘやだ","<@LL,Ikki,00>This is Iwanoi's room."
+147,0x218126,"<@LL,Ikki,00>ここは スクリュ-ズの中で 1番<CD>かげが うすい カガミヤマの ヘやだ","<@LL,Ikki,00>This is Kagamiyama's room. He's the least noticeable of the Screws."
+148,0x218128,"<@LL,Ikki,00>ここは 知らない人の ヘやだ","<@LL,Ikki,00>I don't know the person who's room this is."
 149,0x21812a,"<@LL,Ikki,00>用が あるなら ドアの右の<CD>インタ-ホンを おそう","<@LL,Ikki,00>If I have business, I should use the intercom to the right of the door."
-150,0x21812c,"<@LL,Ikki,00>だれも いないようだ",
-151,0x21812e,"<@RL,Man,00>中には だれも いないよ だって<CD>わたしが 入ってないからねぇ",
-152,0x218130,"<@RL,Man,00>ドアは あいてますよ",
-153,0x218132,"<@LL,Ikki,00>ここは ぼくの ヘやだ<CD>インタ-ホンは おさなくても いい",
-154,0x218134,"<@LL,Ikki,00>ぼくは ヘやに いないようだ<CF><D1><@LL,Ikki,01>...なんちゃって",
-155,0x218136,"<@LL,Ikki,00>コウジは いないようだ",
-156,0x218138,"<@LL,Ikki,00>今は やめておこう",
+150,0x21812c,"<@LL,Ikki,00>だれも いないようだ","<@LL,Ikki,00>Seems no one is here."
+151,0x21812e,"<@RL,Man,00>中には だれも いないよ だって<CD>わたしが 入ってないからねぇ","<@RL,Man,00>There's no one inside, you see, because I haven't gone in."
+152,0x218130,"<@RL,Man,00>ドアは あいてますよ","<@RL,Man,00>The door is open."
+153,0x218132,"<@LL,Ikki,00>ここは ぼくの ヘやだ<CD>インタ-ホンは おさなくても いい","<@LL,Ikki,00>This is my room, so no need to use the intercom."
+154,0x218134,"<@LL,Ikki,00>ぼくは ヘやに いないようだ<CF><D1><@LL,Ikki,01>...なんちゃって","<@LL,Ikki,00>I don't seem to be in the room.<CF><D1><@LL,Ikki,01>...Just kidding."
+155,0x218136,"<@LL,Ikki,00>コウジは いないようだ","<@LL,Ikki,00>Doesn't seem like Koji is in."
+156,0x218138,"<@LL,Ikki,00>今は やめておこう","<@LL,Ikki,00>Let's give that a pass for now."
 157,0x21813a,"<@RL,Karin,00>はい<CF><D1><@LL,Ikki,04>あ カリンちゃん<CD>今 入っていいかな?<CF><D1><@RL,Karin,04>どうぞ <CD><&BUF0A>くん","<@RL,Karin,00>Yes?<CF><D1><@LL,Ikki,04>Ah, Karin. Is it okay if I come in?<CF><D1><@RL,Karin,04>Go ahead, <&BUF0A>."
-158,0x21813c,"<@RL,Karin,04>楽しみですわね",
-159,0x21813e,"<@RL,Karin,04><&BUF0A>くんとの ロボトル<CD>とても 楽しかったですわ",
-160,0x218140,"<@RL,Koji,00>アリカちゃんに でんごん<CD>よろしくな!",
+158,0x21813c,"<@RL,Karin,04>楽しみですわね","<@RL,Karin,04>Isn't this fun?"
+159,0x21813e,"<@RL,Karin,04><&BUF0A>くんとの ロボトル<CD>とても 楽しかったですわ","<@RL,Karin,04>I had a very fun robattle with <&BUF0A>."
+160,0x218140,"<@RL,Koji,00>アリカちゃんに でんごん<CD>よろしくな!","<@RL,Koji,00>Wish Arika the best for me!"
 161,0x218142,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,02>何だ? <&BUF0A><CD>カリンの ようす貝か?<CF><D1><@LL,Ikki,04>うん まあ<CF><D1><@RL,Koji,02>ふふん 1人で ヘやにいるの<CD>さみしかったんだろ<CF><D1><@LL,Ikki,05>ど-せ","<@LL,Ikki,00>Ah, Koji.<CF><D1><@RL,Koji,02>What is it, <&BUF0A>?<D3>Come to check on Karin?<CF><D1><@LL,Ikki,04>Yeah, I guess.<CF><D1><@RL,Koji,02>Hm-hmm, you got lonely being alone in your room, huh?<CF><D1><@LL,Ikki,05>Anyway..."
 162,0x218144,"<@RL,Koji,00>そうそう <&BUF0A><CD>おれたち 今日は<CF><D1>しょうたい選手として<CD>ワタリドリ家に 行くことになってる<CF><D1><@LL,Ikki,00>何? ワタリドリ家って<CF><D1><@RL,Koji,03>お前な- ヘブンスゲ-トと 言えば<CD>今や せいじの 中心の 場所だぜ?<CF><D1>せいじの 中心じんぶつと言えば?<CF><D1><@LL,Ikki,01>そうリだいじん?<CD>...何ちゃって!<CF><D1><@RL,Koji,03>そうリだいじんの<CD>名前ぐらい 知っとけよな","<@RL,Koji,00>Oh yeah, <&BUF0A>, Our team was invited to been invited to the Wataridori household.<CF><D1><@LL,Ikki,00>What? Who are the Watadoris?<CF><D1><@RL,Koji,03>You... Doesn't everyone knows that Heaven's Gate is the center of politics? And on that note, who is the political leader?<CF><D1><@LL,Ikki,01>Mr. Prime Minister?<D3>...Just kidding!<CF><D1><@RL,Koji,03>You should at least know the name of the Prime Minister."
 163,0x218146,"<@LL,Ikki,07>え--っ! そそそそんなっ!!<CF><D1><@RL,Koji,03>気づくのが おそいぜ<CF><D1><@LL,Ikki,05>何で そんな えらい人が<CD>ぼくたちなんかを?<CF><D1><@RL,Koji,00>そうリは すっげぇ ロボトルファンで<CD>ロボトルを はやらせた 1人だとさ<CF><D1>...で そうリは「わが国を<CD>だいひょうする メダロッタ-に<CF><D1>ぜひ会いたい」んだとよ<CF><D1><@LL,Ikki,05>うそみたい<CF><D1><@RL,Koji,02>あいては ただのロボトルマニアの<CD>おっさんさ...まっ そんなわけで<CF><D1>夕方 ホテルのヘやの前に おむかえが<CD>来るそうだ よろしくな<CF><D1><@LL,Ikki,06>よよよろしくって<CD>こっ 心の じゅんびが...<CF><D1><@RL,Koji,02>アリカちゃんにも<CD>つたえといてくれよ","<@LL,Ikki,07>Eeeeeh!? That's who!?<CF><D1><@RL,Koji,03>Took you long enough to realize.<CF><D1><@LL,Ikki,05>What does such a big-wig want with us?<CF><D1><@RL,Koji,00>The Prime Minister is a huge fan of robattling and is one of the people who helped it gain popularity.<CF><D1>...And he said ""I absolutely must meet the medarotters that are representing our country.""<CF><D1><@LL,Ikki,05>You're kidding.<CF><D1><@RL,Koji,02>The guy is just a robattle-loving old man... Well, that's why someone will come to pick you up from your room this evening.<CF><D1><@LL,Ikki,06>P-p-picked up? I'm not sure my heart is ready...<CF><D1><@RL,Koji,02>Make sure to let Arika know too."
-164,0x218148,"<@LL,Ikki,00>今は いないみたいだ",
+164,0x218148,"<@LL,Ikki,00>今は いないみたいだ","<@LL,Ikki,00>Doesn't seem to be in."
 165,0x21814a,"<@LL,Ikki,00>アリカ いないや<CD>どこ 行ったんだろ?","<@LL,Ikki,00>Arika isn't here, where did she go?"
 166,0x21814c,"<@RL,Gillgirl,01>お-ほほほ ここを せんきょして<CD>しまえば 何もかも思い通リでしてよ<CF><D1><@RL,Seaslug,01>フッフッフ おれさまが<CD>かみに なる日も 近い!","<@RL,Gillgirl,01>Ohohoho, if we occupy this place, then everything will go according to plan.<CF><D1><@RL,Seaslug,01>Huhuhu, the day my great self becomes a god draws near!"
 167,0x21814e,"<@RL,Seaslug,03>ふぎゃっ!","<@RL,Seaslug,03>Fgyah!"
@@ -183,8 +183,8 @@
 174,0x21815c,"<@RL,Sloan,04>!!!!!","<@RL,Sloan,04>!!!!!"
 175,0x21815e,"<@LL,Ikki,00>あ アリカ えっと 今日<CD>そうリだいじんの...<CF><D1><@RL,Erika,04>知ってるわよ あたしは<CD>耳が 早いんだから!<CF><D1><@LL,Ikki,00>そ...<CF><D1><@RL,Erika,04>ここって ヘブンスタワ-って<CD>言うのよねっ<CF><D1>いろんな しせつが つまってて<CD>面白い かんじ!<CF><D1>何と! メダロット社まで あるのよ<CD>さっき そこで <&BUF0A>も<CF><D1>よく 知ってる<CD>人に 会っちゃった!<CF><D1><@RL,Erika,05>ついたばかリで 走リ回ったから<CD>つかれちゃった! ちょっと 休も","<@LL,Ikki,00>Ah, Arika. Uhm, today the Prime Minister...<CF><D1><@RL,Erika,04>I know already, I have sharp ears!<CF><D1><@LL,Ikki,00>I see...<CF><D1><@RL,Erika,04>This place is called Heaven's Tower. There are kinds of facilities here, it's so interesting!<CF><D1>Oh yeah! The Medarot Company even has a place here. I ran into someone you know well just now, <&BUF0A>.<CF><D1><@RL,Erika,05>Even though we just arrived, I'm tired from all the running around I did. I'm gonna rest a bit."
 176,0x218160,"<@LL,Ikki,05>口が はさめなかった...<CF><D1><@LL,Ikki,04>アリカの 言ってたこと 気になるし<CD>メダロット社に 行ってみよう","<@LL,Ikki,05>I couldn't get a word in...<CF><D1><@LL,Ikki,04>I'm curious about what Arika was talking about, so let's go to the Medarot Company."
-177,0x218162,"<@RL,Erika,00>は-い<CF><D1><@LL,Ikki,00>ぼくだけど<CF><D1><@RL,Erika,00>今 ドアの カギ あけたよ",
-178,0x218164,"<@RL,DrAki,01>メダロットは ばくはつじゃ!",
+177,0x218162,"<@RL,Erika,00>は-い<CF><D1><@LL,Ikki,00>ぼくだけど<CF><D1><@RL,Erika,00>今 ドアの カギ あけたよ","<@RL,Erika,00>Yeees?<CF><D1><@LL,Ikki,00>It's me.<CF><D1><@RL,Erika,00>I just unlocked the door."
+178,0x218164,"<@RL,DrAki,01>メダロットは ばくはつじゃ!","<@RL,DrAki,01>A medarot explosion!"
 179,0x218166,"<@LL,Ikki,00>はかせ! また あの ミニ...<CF><D1><@RL,DrAki,01>おお <&BUF0A>か<CD>ちょうどよかった<CF><D1>これを 持って行くがいい","<@LL,Ikki,00>Professor! They're at it again with the Mini-...<CF><D1><@RL,DrAki,01>Ooh <&BUF0A>, perfect timing.<CF><D1>Take this with you, okay?"
 180,0x218168,"<@LL,Ikki,07>えっ どうして これを!?<CF><D1><@RL,DrAki,01>何 ロボロボ団の 考えることなど<CD>お貝通しじゃ!<CF><D1>わしらが ここに 来たのは<CD>こういう じたいも 貝こしての<CF><D1>ことじゃ!<CF><D1>ミニミニマシ-ンの こうぞうを<CD>かいせきし このドリ-ムマシ-ンで<CF><D1>作リ上げた だい1ごうじゃ!<CD>きゃつらを これいじょう<CF><D1>のさばらせる わけには いかん!<CD>がんばって くれるかの?<CF><D1><@LL,Ikki,01>はい!","<@LL,Ikki,07>Eh? Why did you!?<CF><D1><@RL,DrAki,01>What the Rubber Robos are planning is clear as day.<D3>We came here for that purpose, because we foresaw the situation!<D3>We analyzed the Mini-mini Machine's structure and created this dream machine, the magnificent No. 1!<D3>They can't be allowed to get away with any more!<D3>Can I count on you to do your best?<CF><D1><@LL,Ikki,01>Yes!"
 181,0x21816a,"<@RL,DrAki,00>ん? 何じゃ?<CF><D1><@LL,Ikki,05>はかせ「風のつばさ」<CD>持ってませんか?<CF><D1><@RL,DrAki,02>今は 持ってないぞい<CD>それにの ここで「風のつばさ」を<CF><D1>持っておっても あまリ いみは<CD>ないんじゃ<CF><D1>「風のつばさ」では 地上と<CD>このヘブンスゲ-トとを<CF><D1>行き来するのは ふかのうじゃからな<CF><D1>使い勝手が よくないというので<CD>今では「風のつばさ」は<CF><D1>メダロッタ-の 間でも あまリ<CD>使われんように なっとるんじゃ<CF><D1>「風のつばさ」も さすがに<CD>ほんものの ひこうきには<CF><D1>勝てんからの<CF><D1><@LL,Ikki,03>そうなんですか...はぁ","<@RL,DrAki,00>Mm? What is it?<CF><D1><@LL,Ikki,05>Professor, do you have any ""Wings of Wind"" with you?<CF><D1><@RL,DrAki,02>I don't have any on hand. Besides, it'd be pretty pointless to have them with me here. It's impossible to travel between Heaven's Gate and the surface with them, you know?<CF><D1>Because of the limited usability, even medarotters don't use ""Wings of Wind"" much these days. ""Wings of Wind"" is no match for a real airplane, after all.<CF><D1><@LL,Ikki,03>Is that so...? Haa..."
@@ -193,17 +193,17 @@
 184,0x218170,"<@RL,DrAki,01>おお <&BUF0A>!<CF><D1><@RL,Nae,01>こんにちは <&BUF0A>くん<CF><D1><@LL,Ikki,04>はかせたちも 来てたんですね!<CF><D1><@RL,Nae,01>おじいさまったら<CD><&BUF0A>くんの ことが<CF><D1>しんぱいで たまらない<CD>みたいなんです","<@RL,DrAki,01>Ooh, <&BUF0A>!<CF><D1><@RL,Nae,01>Hello, <&BUF0A>.<CF><D1><@LL,Ikki,04>Professor, you guys came here too!<CF><D1><@RL,Nae,01>Grandpa is so worried about you that it seems he couldn't stand it."
 185,0x218172,"<@RL,DrAki,03>こ これ ナエ!<CD>よけいなことを 言うでないっ!","<@RL,DrAki,03>H-hey, Nae! Don't say unnecessary things!!"
 186,0x218174,"<@RL,DrAki,00>コホン! と ともかくじゃ<CD>この ヘブンスゲ-トの<CF><D1>メダロット社も かなリの<CD>ぎじゅつリょくを ほこっておる<CF><D1>貝学していくが よい","<@RL,DrAki,00>Ahem! A-anyway, the Medarot Company here at Heaven's Gate boasts a considerable amout of technological prowess. Take a look around."
-187,0x218176,"<@RL,Nae,01>メダリンピック<CD>がんばって くださいね!",
+187,0x218176,"<@RL,Nae,01>メダリンピック<CD>がんばって くださいね!","<@RL,Nae,01>Do your best in the Medalympics!"
 188,0x218178,"<@RL,Nae,01><&BUF0A>くん<CF><D1>たすけてくださって<CD>あリがとうございます","<@RL,Nae,01><&BUF0A>,<CF><D1>Thank you for helping us."
-189,0x21817a,"<@RL,ScientistMale,00>ここに あるのは ゆめの きかい<CD>ドリ-ム.マッシ-ン!<CF><D1>何と! ざいリょうを 中に入れると<CD>かんせいひんが 出てくるんだ<CF><D1>中に パ-ツの ざいリょうが<CD>入っていて",
-190#kabuto,0x21817c,"<@RL,ScientistMale,00>たとえば「カブト」と 入力すると",
-190#kuwagata,0x21817c,"<@RL,ScientistMale,00>たとえば「クワガタ」と 入力すると",
-191,0x21817e,"<@RL,ScientistMale,01>ほら! この通リ!<CD>すごいだろう?",
-192,0x218180,"<@LL,Ikki,03>何か やだなぁ そういうの",
-193,0x218182,"<@LL,Ikki,00>はかせ どこに行ったか知リませんか?<CF><D1><@RL,ScientistMale,00>はかせたちなら ニモウサクていに<CD>行ったようだよ<CF><D1>ニモウサクてい? タワ-を 出て<CD>ヘブンスゲ-トに 行ったら あるよ",
-194,0x218184,"<@RL,ScientistMale,00>この メダロット社は ユウキ<CD>ぼっちゃんが まかされて いるんだ<CF><D1>あの人 なかなかの やリ手だよ<CD>わるい くせさえ なけリゃな",
-195,0x218186,"<@RL,ScientistMale,01>ヘブンスタワ- メダロット社に<CD>ようこそ",
-196,0x218188,"<@RL,SelectCorpsGrunt,00>あ- そこの 少年!",
+189,0x21817a,"<@RL,ScientistMale,00>ここに あるのは ゆめの きかい<CD>ドリ-ム.マッシ-ン!<CF><D1>何と! ざいリょうを 中に入れると<CD>かんせいひんが 出てくるんだ<CF><D1>中に パ-ツの ざいリょうが<CD>入っていて","<@RL,ScientistMale,00>This is the machine of dreams, the Dream Machine!<CF><D1>Really! Input the data and the finished product comes out.<CF><D1>Let's try putting in some data for some parts."
+190#kabuto,0x21817c,"<@RL,ScientistMale,00>たとえば「カブト」と 入力すると","<@RL,ScientistMale,00>For example, if you type in ""Kabuto""..."
+190#kuwagata,0x21817c,"<@RL,ScientistMale,00>たとえば「クワガタ」と 入力すると","<@RL,ScientistMale,00>For example, if you type in ""Kuwagata""..."
+191,0x21817e,"<@RL,ScientistMale,01>ほら! この通リ!<CD>すごいだろう?","<@RL,ScientistMale,01>See! Like that! Isn't it amazing?"
+192,0x218180,"<@LL,Ikki,03>何か やだなぁ そういうの","<@LL,Ikki,03>I'm not really into that sort of thing."
+193,0x218182,"<@LL,Ikki,00>はかせ どこに行ったか知リませんか?<CF><D1><@RL,ScientistMale,00>はかせたちなら ニモウサクていに<CD>行ったようだよ<CF><D1>ニモウサクてい? タワ-を 出て<CD>ヘブンスゲ-トに 行ったら あるよ","<@LL,Ikki,00>Do you know were Dr. Aki went?<CF><D1><@RL,ScientistMale,00>Dr. Aki and the others went to the Nimousaki residence.<CF><D1>Where is the Nimousaki residence? Just leave the tower and go toward Heaven's Gate"
+194,0x218184,"<@RL,ScientistMale,00>この メダロット社は ユウキ<CD>ぼっちゃんが まかされて いるんだ<CF><D1>あの人 なかなかの やリ手だよ<CD>わるい くせさえ なけリゃな","<@RL,ScientistMale,00>That lad, Yuki is in charge of this Medarot Company.<CF><D1>He's actually quite skilled, if not for his bad habits."
+195,0x218186,"<@RL,ScientistMale,01>ヘブンスタワ- メダロット社に<CD>ようこそ","<@RL,ScientistMale,01>Welcome to the Medarot Company of Heaven's Tower."
+196,0x218188,"<@RL,SelectCorpsGrunt,00>あ- そこの 少年!","<@RL,SelectCorpsGrunt,00>Ah, you there, boy!"
 197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます","<@RL,SelectCorpsGrunt,00>We have received a report of a thief entering Heaven's Tower, we ask that everyone remain vigilant!<CF><D1><@LL,Ikki,00>A thief?<CF><D1><@RL,SelectCorpsGrunt,00>The Heaven's Gate branch of the Select Corps is located in Office 1, we request any information."
 198,0x21818c,"<@RL,MultiLeggedMedabot,00>もう いやだ<CD>なんで 多脚パ-ツのオレが<CF><D1>2本足で 立たなきゃならんのだ?",
 199,0x21818e,"<@RL,MultiLeggedMedabot,00>なんだか 上が さわがしいな",
@@ -274,11 +274,11 @@
 264,0x218210,"<@LL,Ikki,06>レトルトさんは ともかく<CD>ロボロボ団の やつら<CF><D1>やっぱリ ミニミニマシ-ンを<CD>使って ここに?...大変だ!","<@LL,Ikki,06>Other than Phantom Renegade, there was also the Roborobo Gang, did they end up using the MiniMini Machine to get here? ...This is an emergency!"
 265,0x218212,"<@RL,Koji,01><&BUF0A>!<CD>ロボロボ団が 出たぞ!<CF><D1><@LL,Ikki,06>そうなんだ なにも おこらなきゃ<CD>いいけど<CF><D1><@RL,Koji,01>何もさせや しないさ!<CD>おれは 7かいから 上で<CF><D1>ロボロボ団を さがすから お前に<CD>6かいから 下を まかせるぜ!","<@RL,Koji,01><&BUF0A>!<D3>The Roborobo Gang is here!<CF><D1><@LL,Ikki,06>Yeah, I'll be glad if nothing happens, but...<CF><D1><@RL,Koji,01>We won't let anything happen!<D3>I'll check the seventh floor and up for the Roborobo Gang, you take the sixth and below."
 266,0x218214,"<@LL,Ikki,00>早く ロボロボ団を さがさないと<CF><D1>で コウジ-! そっちは 7かいから<CD>上じゃ ないぞ-","<@LL,Ikki,00>I've gotta hurry and find the Roborobo Gang.<CF><D1>And Koji! This isn't the seventh floor!"
-267,0x218216,"<@LL,Ikki,00>まずは タワ-を たんさくだ!",
+267,0x218216,"<@LL,Ikki,00>まずは タワ-を たんさくだ!","<@LL,Ikki,00>First up is exploring the tower!"
 268,0x218218,...こまったわね...じゃない?<CD>こうなったら...が...だけど,...no good...it?<D3>I'm sorry....but...
 269,0x21821a,"<@LL,Ikki,00>んん? 何だか 上の方が<CD>さわがしいぞ","<@LL,Ikki,00>Mm? It's a bit noisy up from here."
-270,0x21821c,"<@RL,Man,00>いや- こまったねぇ-",
-271,0x21821e,"<@RL,Lady2,00>いやだわぁ どうしましょ",
+270,0x21821c,"<@RL,Man,00>いや- こまったねぇ-","<@RL,Man,00>Oh no, how vexing!"
+271,0x21821e,"<@RL,Lady2,00>いやだわぁ どうしましょ","<@RL,Lady2,00>Oh no, whatever shall I do?"
 272,0x218220,"<@LL,Ikki,00>どうしたんですか?<CF><D1><@RL,Lady2,00>中に 変な人が 立てこもって<CD>中から カギを かけちゃったのよ<CF><D1><@LL,Ikki,00>そいつら 金魚ばちみたいな<CD>ヘルメット かぶってませんでした?<CF><D1><@RL,Lady2,00>ええ それから かめんと マントを<CD>つけた 女の人も 入っていったわ<CF><D1><@LL,Ikki,00>かめんと マント?<CF><D1><@RL,RubberRoboGrunt,03>ロボ-っ!","<@LL,Ikki,00>What's going on?<CF><D1><@RL,Lady2,00>Some weirdos holed themselves up locked themselves in.<CF><D1><@LL,Ikki,00>Were they wearing a fishbowl-looking helmet?<CF><D1><@RL,Lady2,00>Yeah, and then a woman with a mask and cape went in too.<CF><D1><@LL,Ikki,00>A mask and cape?<CF><D1><@RL,RubberRoboGrunt,03>Robo!"
 273,0x218222,"<@RL,Mystery,00>まちなさいっ!","<@RL,Mystery,00>Wait!"
 274,0x218224,"<@LL,Ikki,07>レトルトレディ!<CF><D1><@RL,LadyRenegade,01>あら たくさん おあつまリのようね!<CD>では ここで 1つ","<@LL,Ikki,07>Lady Renegade!<CF><D1><@RL,LadyRenegade,01>Oh my, there's quite the crowd here. Well, here's something for you."

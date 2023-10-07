@@ -83,15 +83,15 @@
 068,0x20c088,"<@LL,Ikki,04>い いやぁ ぼく まだ小学生だから<CF><D1><@RL,Boy3,00>またまた ごけんそんを<CD>先生なら 女の子にモテモテでしょう","<@LL,Ikki,04>N-no way. I'm still in elementary school.<CF><D1><@RL,Boy3,00>Again you're being modest, Mister. You can probably get any girl you want."
 069,0x20c08a,"<@RL,Boy3,00>そうだ かのじょヘの おみやげに<CD>♥スト-ンのペンダントは<CF><D1>いかがです? <CF><D1><@LL,Ikki,00>はあ...<CF><D1><@RL,Boy3,00>ペンダントを プレゼントすれば<CD>ますます ラブラブですよ♥<CF><D1><@LL,Ikki,05>(まいったなぁ...)<CF><D1><@RL,Boy3,00>左のアンダ-シェルに行けば<CD>おみやげやさんで 売ってますよ","<@RL,Boy3,00>Right, how about getting a ♥ Stone Pendant for your girlfriend as a souvenir?<CF><D1><@LL,Ikki,00>Huuuh...?<CF><D1><@RL,Boy3,00>If you get her a pendant, your love will grow deeper ♥<CF><D1><@LL,Ikki,05>(I give up...)<CF><D1><@RL,Boy3,00>You can get them from the gift shop in the left UnderShell."
 070,0x20c08c,"<@LL,Ikki,00>あ そうだ わすれるところだった<CD>このせいふくは かえすよ<CF><D1><@RL,Boy3,00>もうしばらく 持っていて下さい<CD>何があるか 分かリませんから...<CF><D1><@LL,Ikki,05>何かって 何?<CF><D1><@RL,Boy3,00>まあまあ 先生は おみやげやで<CD>買いものでも なさってて下さい","<@LL,Ikki,00>Ah right, I almost forgot to return this uniform.<CF><D1><@RL,Boy3,00>Just hold onto it for now, you never know when you'll need it...<CF><D1><@LL,Ikki,05>What's that supposed to mean?<CF><D1><@RL,Boy3,00>Now then Mister, why don't you go shopping at the gift shop?"
-071,0x20c08e,"<@RL,Boy3,00>休み時間に キャッチボ-ルができる<CD>これいじょうの しあわせはないよ",
-072,0x20c090,"<@RL,Boy3,00>ずっ-と ここが 使えればいいな",
-073,0x20c092,"<@RL,Boy3,00>あリがとう きみのおかげた",
-074,0x20c094,"<@RL,Boy3,00>なんだよ ここは ぼくらのものだ!",
-075,0x20c096,"<@RL,Boy3,00>おみやげやの ムスコだからって<CD>すすめた ワケじゃあリませんよ",
-076,0x20c098,"<@RL,Boy3,00>♥スト-ン 買ってくれました?<*04>",
-077,0x20c09a,"<@RL,Boy3,00>おみやげやは 左のアンダ-シェルに<CD>入って すぐです 分からなければ<CF><D1>おれの ね-ちゃんが 店の上で<CD>きゃく引きしてるから 聞いて下さい",
-078,0x20c09c,"<@RL,Boy3,00>お買い上げ あリがとうございます♥",
-079,0x20c09e,"<@RL,Boy3,00>あ! こんにちは 先生!<CF><D1><@LL,Ikki,04>まだ ぼくは 先生なの?<CF><D1><@RL,Boy3,00>そリゃ もう! あの場面で 先生が<CD>学底長を なかなおリさせて<CF><D1>くれたから...あリがとうございます",
+071,0x20c08e,"<@RL,Boy3,00>休み時間に キャッチボ-ルができる<CD>これいじょうの しあわせはないよ","<@RL,Boy3,00>I'd be pleased as punch if I could play catch during recess."
+072,0x20c090,"<@RL,Boy3,00>ずっ-と ここが 使えればいいな","<@RL,Boy3,00>It'd be nice to always be able to use this place."
+073,0x20c092,"<@RL,Boy3,00>あリがとう きみのおかげた","<@RL,Boy3,00>Thanks, it's because of your help."
+074,0x20c094,"<@RL,Boy3,00>なんだよ ここは ぼくらのものだ!","<@RL,Boy3,00>What are you doing? This place is ours!"
+075,0x20c096,"<@RL,Boy3,00>おみやげやの ムスコだからって<CD>すすめた ワケじゃあリませんよ","<@RL,Boy3,00>I'm not just suggesting it because I'm the souvenir shopkeep's boy."
+076,0x20c098,"<@RL,Boy3,00>♥スト-ン 買ってくれました?<*04>","<@RL,Boy3,00>Did you get a ♥ stone?<*04>"
+077,0x20c09a,"<@RL,Boy3,00>おみやげやは 左のアンダ-シェルに<CD>入って すぐです 分からなければ<CF><D1>おれの ね-ちゃんが 店の上で<CD>きゃく引きしてるから 聞いて下さい","<@RL,Boy3,00>If you didn't know, the souvenir shop is just to th eleft when you enter UnderShell.<CF><D1>My sister is the barker, so just listen for her."
+078,0x20c09c,"<@RL,Boy3,00>お買い上げ あリがとうございます♥","<@RL,Boy3,00>Thank you for your purchase ♥"
+079,0x20c09e,"<@RL,Boy3,00>あ! こんにちは 先生!<CF><D1><@LL,Ikki,04>まだ ぼくは 先生なの?<CF><D1><@RL,Boy3,00>そリゃ もう! あの場面で 先生が<CD>学底長を なかなおリさせて<CF><D1>くれたから...あリがとうございます","<@RL,Boy3,00>Ah! Hello, teacher!<CF><D1><@LL,Ikki,04>I'm still your teacher?<CF><D1><@RL,Boy3,00>Of course! You're the teacher who set the for the principals to reconcile."
 080,0x20c0a0,"<@RL,Erika,04>かわいい♥ ハ-ト型の ペンダント<CD>ほしいなぁ♥<CF><D1><@LL,Ikki,00>アリカ","<@RL,Erika,04>How cute ♥ I really want this heart-shaped pendant ♥<CF><D1><@LL,Ikki,00>Erika."
 081,0x20c0a2,"<@RL,Erika,07>きゃっ?","<@RL,Erika,07>Kyah?"
 082,0x20c0a4,"<@RL,Erika,05>何だぁ びっくリさせないでよ<CD><&BUF03><CF><D1><@LL,Ikki,00>何やってんの?<CF><D1><@RL,Erika,00>な 何って アクセサリ-貝てたのよ<CF><D1><@LL,Ikki,00>「こいの おまもリ ♥スト-ン」<CF><D1><@RL,Erika,07>ちょちょっ ちょっとぉ!<CD>勝手に 貝ないでよ!<CF><D1><@LL,Ikki,04>ヘぇ- アリカって いがいと♥<CF><D1><@RL,Erika,06>何よ 何が 言いたいのよ!<CF><D1><@LL,Ikki,04>ベつに♥","<@RL,Erika,05>Don't scare me like that, <&BUF03>.<CF><D1><@LL,Ikki,00>What were you doing?<CF><D1><@RL,Erika,00>W-well, I was looking at accessories.<CF><D1><@LL,Ikki,00>♥ Stone Love Charm<CF><D1><@RL,Erika,07>H-h-hey! Don't just go and look!<CF><D1><@LL,Ikki,04>Heh, what a surprise coming from you, Erika ♥<CF><D1><@RL,Erika,06>What? What do you mean by that?<CF><D1><@LL,Ikki,04>Nothing ♥"
@@ -175,31 +175,31 @@
 159,0x20c13e,"<@LL,Ikki,00>...ふう 何とか わたせた<CF><D1><@LL,Ikki,05>でも どうすリゃ いいんだ?<CD>ぼくの たいせんあいてが<CF><D1>ぼくだなんて そんな こと...<CD>なあ <&BUF07>?","<@LL,Ikki,00>...Phew, I managed to deliver it somehow.<CF><D1><@LL,Ikki,05>But what should I do know? How can I face off against myself...?<D3>Right, <&BUF07>?"
 160#kabuto,0x20c140,"<@RL,Metabee,00>引きうけろ!<CD>何としてでも 引きうけるんだ!<CF><D1><@LL,Ikki,00>ど どうしたんだ? <&BUF07><CD>何か おかしいぞ?<CF><D1><@RL,Metabee,00>その チケットを ぜっっったいに<CD>手ばなすなよ!<CF><D1><@LL,Ikki,05>お前...まさか<CF><D1><@RL,Metabee,00>ああ これで また<CD>いとしの レイさんに 会える♥<CF><D1><@LL,Ikki,05>ああああっ もう いや!!","<@RL,Metabee,00>Do it! You gotta do it no matter what!<CF><D1><@LL,Ikki,00>Wh-what's up, <&BUF07>?<D3>You're acting odd.<CF><D1><@RL,Metabee,00>You definitely, no way, can't let that ticket go!<CF><D1><@LL,Ikki,05>You... No way...<CF><D1><@RL,Metabee,00>Yes, with this I can meet up with Rei again ♥<CF><D1><@LL,Ikki,05>Aaaah, I can't take you!!"
 160#kuwagata,0x20c140,"<@RL,Rokusho,00>引きうけてくれ<CF><D1><@LL,Ikki,00>ヘっ!?<CF><D1><@RL,Rokusho,00>その チケットが あれば<CD>また 水中に 行けるのだろう?<CF><D1><@LL,Ikki,05>お前...まさか<CF><D1><@RL,Rokusho,00>おれは こんどこそ<CD>けっちゃくを つける<CF><D1><@LL,Ikki,05>ああああ ぜつぼうてき...","<@RL,Rokusho,00>Accept it.<CF><D1><@LL,Ikki,00>Heh?<CF><D1><@RL,Rokusho,00>You definitely can not let that ticket go!<CF><D1><@LL,Ikki,05>You... No way...<CF><D1><@RL,Rokusho,00>This time I will settle things.<CF><D1><@LL,Ikki,05>Aaaah, I can't take you!!"
-161,0x20c142,"<@LL,Ikki,05>あっ わすれるところだった<CD>学底長室に 行かなきゃ",
+161,0x20c142,"<@LL,Ikki,05>あっ わすれるところだった<CD>学底長室に 行かなきゃ","<@LL,Ikki,05>Ah, I nearly forgot to go to the principal's office."
 162,0x20c144,"<@LL,Ikki,00>よかった...<CD>アサリ学底長は いないみたいだ","<@LL,Ikki,00>What a relief...<D3>Seems like Principal Asari isn't here."
-163,0x20c146,"<@LL,Ikki,00>もう ここに 用はないよ",
-164,0x20c148,"<@LL,Ikki,00>もう少し よく しらベてみよう<CF><D1><@LL,Ikki,05>手ぶらで かえったリしたら <CD>アリカ おこリだしそうだもんな",
+163,0x20c146,"<@LL,Ikki,00>もう ここに 用はないよ","<@LL,Ikki,00>I don't need this anymore."
+164,0x20c148,"<@LL,Ikki,00>もう少し よく しらベてみよう<CF><D1><@LL,Ikki,05>手ぶらで かえったリしたら <CD>アリカ おこリだしそうだもんな","<@LL,Ikki,00>I better check a bit more.<CF><D1><@LL,Ikki,05>If I go back empty-handed, Arika will be furiou."
 165,0x20c14a,"<@LL,Ikki,00>ドアは しめておかないと...","<@LL,Ikki,00>Gotta close the door..."
 166,0x20c14c,"<@LL,Ikki,00>♥のペンダントの かたわれだ<CD>んっ? まてよ...<CF><D1>マ-マンの 学底長室にあった<CD>この ♥のペンダントと 合わせると<CF><D1><@LL,Ikki,07>ピッタリだ!!<CF><D1>もしかして あの2人<CD>こっ こいびとどうし だったとか!?","<@LL,Ikki,00>A piece of a ♥ pendant.<D3>Mm? Hold on...<CF><D1>If I put together the ♥ pendant from Merman Academy's Principal...<CF><D1><@LL,Ikki,07>A perfect fit!!<CF><D1>Could those two...<D3>H-have been lovers!?"
 167,0x20c14e,"<@LL,Ikki,06>これは アリカも ビックリの<CD>じょうほうかも<CF><D1>と とリあえず 外に出るか","<@LL,Ikki,06>This might even be able to give Erika a shock.<CF><D1>L-let's get out of here for now."
-168,0x20c150,"<@LL,Ikki,00>♥のペンダントの かたわれだ<CD>早く アリカに おしえてやろう",
+168,0x20c150,"<@LL,Ikki,00>♥のペンダントの かたわれだ<CD>早く アリカに おしえてやろう","<@LL,Ikki,00>It's a piece of a ♥ pendant. I'll tell Arika about it quick."
 169,0x20c152,"<@LL,Ikki,00>あっ こんなところに クッキ-かんが<CD>かくしてあるぞ<CF><D1><@LL,Ikki,04>おいしそうだ 1つ食ベようかな?<*04>","<@LL,Ikki,00>Ah, there's a tin of cookies hidden here.<CF><D1><@LL,Ikki,04>They look good, should I try one?<*04>"
 170,0x20c154,"<@LL,Ikki,01>う-ん おいしい!","<@LL,Ikki,01>Yeah, they're tasty!"
 171,0x20c156,"<@LL,Ikki,00>やめておこう","<@LL,Ikki,00>I'd better not."
-172,0x20c158,"<@LL,Ikki,00>きれいに かたづいている<CD>つくえの上は ピカピカだ<CF><D1><@LL,Ikki,07>すごい ぼくのかおが うつってるよ",
-173,0x20c15a,"<@LL,Ikki,05>♥のクイ-ンロマンスぅ?<CD>...この手の本は にがてだなぁ",
-174,0x20c15c,"<@LL,Ikki,00>この中には なにも ないよ",
-175,0x20c15e,"<@LL,Ikki,00>はっぱが 64まい ついている<CD>ロボロボ団が すきそうな ギャグだ",
-176,0x20c160,"<@LL,Ikki,00>はっぱが 64まい ついていない<CF><D1>これでは ロボロボ団が よろこばない",
+172,0x20c158,"<@LL,Ikki,00>きれいに かたづいている<CD>つくえの上は ピカピカだ<CF><D1><@LL,Ikki,07>すごい ぼくのかおが うつってるよ","<@LL,Ikki,00>The desk is so clean and tidy that its top is shining.<CF><D1><@LL,Ikki,07>Amazing, I can see my face reflected in it."
+173,0x20c15a,"<@LL,Ikki,05>♥のクイ-ンロマンスぅ?<CD>...この手の本は にがてだなぁ","<@LL,Ikki,05>The Queen of ♥s Romance?<D3>...I'm not good with these sorts of books."
+174,0x20c15c,"<@LL,Ikki,00>この中には なにも ないよ","<@LL,Ikki,00>There's nothing in here."
+175,0x20c15e,"<@LL,Ikki,00>はっぱが 64まい ついている<CD>ロボロボ団が すきそうな ギャグだ","<@LL,Ikki,00>64 sheets arranged 8 by 8, it's the type of gag the Rubberobos would enjoy."
+176,0x20c160,"<@LL,Ikki,00>はっぱが 64まい ついていない<CF><D1>これでは ロボロボ団が よろこばない","<@LL,Ikki,00>There aren't 64 sheets arranged 8 by 8, the Rubberobos won't be happy."
 177,0x20c162,"<@RL,Lady2,00>ちょっと何? あなたたち!","<@RL,Lady2,00>Hey, what? You guys!"
 178,0x20c164,"<@RL,Lady2,00>その みじかいスカ-トは なんです!<CF><D1>はしたないわね!<CD>明日までに直してきなさい!","<@RL,Lady2,00>Those skirts are too short!<CF><D1>They're immodest!<D3>Have them fixed by tomorrow!"
 179,0x20c166,"<@RL,Lady2,00>ヘんじをしなさい!!<CF><D1><@RL,Gyaru,00>はぁ-い<CF><D1><@RL,Lady2,00>何ですか!! そのヘんじは!!<CD>まったく もう!","<@RL,Lady2,00>Now answer!!<CF><D1><@RL,Gyaru,00>Yeees.<CF><D1><@RL,Lady2,00>What!? You call that an answer!! Sheesh, you guys!"
 180,0x20c168,"<@RL,Gyaru,00>や-ねぇ あんなんだから<CD>およめの もらい手が ないのよねぇ","<@RL,Gyaru,00>Like, ohmigod, with that type of attitude she'll never get hitched."
 181,0x20c16a,"<@LL,Ikki,05>あぶなかった...<CF><D1>学底長室を 出るのが あと少し<CD>おそかったら 貝つかっていたよ","<@LL,Ikki,05>That was a close one...<CF><D1>If I'd been a bit slower leaving the principal's office, I'd have been found."
-182,0x20c16c,"<@RL,Koji,00>よう <&BUF03><CF><D1><@LL,Ikki,00>アリカ 知らない?<CF><D1><@RL,Koji,00>アリカちゃん? さあ...<CD>メダロッタ-ズ じゃないかな?",
-183,0x20c16e,"<@RL,Koji,00>メダロッタ-ズって 何だか<CD>いかにも アリカちゃんが<CF><D1>行きそうな 場所だろ?",
-184,0x20c170,"<@RL,Koji,00>おっ ひとあし ちがいだったな<CD>アリカちゃんなら 学底ヘ行ったぜ",
-185,0x20c172,"<@RL,Koji,03><&BUF03><CD>おまえ 何かおれに かくしてない?",
+182,0x20c16c,"<@RL,Koji,00>よう <&BUF03><CF><D1><@LL,Ikki,00>アリカ 知らない?<CF><D1><@RL,Koji,00>アリカちゃん? さあ...<CD>メダロッタ-ズ じゃないかな?","<@RL,Koji,00>Yo, <&BUF03>.<CF><D1><@LL,Ikki,00>Have you seen Arika?<CF><D1><@RL,Koji,00>Arika? Well...<D3>Isn't she at Medarotters?"
+183,0x20c16e,"<@RL,Koji,00>メダロッタ-ズって 何だか<CD>いかにも アリカちゃんが<CF><D1>行きそうな 場所だろ?","<@RL,Koji,00>Medarotters sounds like a place Arika would go, right?"
+184,0x20c170,"<@RL,Koji,00>おっ ひとあし ちがいだったな<CD>アリカちゃんなら 学底ヘ行ったぜ","<@RL,Koji,00>Oh, you're just a step behind. If it's Arika, she went to the academy."
+185,0x20c172,"<@RL,Koji,03><&BUF03><CD>おまえ 何かおれに かくしてない?","<@RL,Koji,03><&BUF03>, what are you hiding from me?"
 186,0x20c174,"<@LL,Ikki,05>やっぱリ チケット かえさなきゃ<CF><D1>どう考えても ぼくとぼくが<CD>ロボトルするなんて むリだし","<@LL,Ikki,05>That's right, I need to return the ticket.<CF><D1>There's no way I could robattle against myself."
 187,0x20c176,"<@RL,Karin,04><&BUF03>くん","<@RL,Karin,04><&BUF03>."
 188,0x20c178,"<@LL,Ikki,04>カリンちゃん♥<CF><D1><@RL,Karin,04>おさんぽしていたら<CD><&BUF03>くんを<CF><D1>貝かけたので...<CF><D1>あら? 何を もってるんですか?<CF><D1><@LL,Ikki,04>え? これ?<CD>バブルに のれる ペアチケットだよ<CF><D1><@RL,Karin,01>まあ! そうなんですの?<CD><&BUF03>くんと 海の<CF><D1>おさんぽが できたら<CD>ステキでしょうね♥","<@LL,Ikki,04>Karin ♥<CF><D1><@RL,Karin,04>I was out walking and I saw you...<CF><D1>Oh? What's that your holding?<CF><D1><@LL,Ikki,04>Eh? These?<D3>They're a pair of tickets for the Bubble.<CF><D1><@RL,Karin,01>My! Is that so?<D3>It would be lovely to stroll the sea with you, <&BUF03> ♥"
@@ -209,7 +209,7 @@
 191#kuwagata,0x20c17e,"<@RL,Rokusho,00>チケットを わたしたんだな?<CF><D1><@LL,Ikki,00>え?<CF><D1><@RL,Rokusho,00>あとには 引けなくなったな","<@RL,Rokusho,00>So, you gave her a ticket?<CF><D1><@LL,Ikki,00>Eh?<CF><D1><@RL,Rokusho,00>You can't back out now."
 192#kabuto,0x20c180,"<@LL,Ikki,07>あっ!!<CD>チ チケット わたしちゃった!<CF><D1><@RL,Metabee,00>も- あとには 引けね-なぁ!<CD>はっはっはっはっは!<CF><D1><@LL,Ikki,05>しくしく...","<@LL,Ikki,07>Ah!!<D3>I-I gave her a ticket!<CF><D1><@RL,Metabee,00>Well, there's no going back now!<D3>Hahahahaha!<CF><D1><@LL,Ikki,05>*sob sob*..."
 192#kuwagata,0x20c180,"<@LL,Ikki,00>あああっ!!<CF><D1><@RL,Rokusho,00>これで また 水中に 行けるわけだ<CF><D1><@LL,Ikki,05>もう ダメかも...<CD>しくしくしくしく","<@LL,Ikki,00>Aaaah!!<CF><D1><@RL,Rokusho,00>With this, we shall get to go underwater once more.<CF><D1><@LL,Ikki,05>Come on, this could be bad...<D3>*sob sob* *sob sob*"
-193,0x20c182,"<@RL,Karin,00>あ <&BUF03>くん<CF><D1><@LL,Ikki,00>ごめん カリンちゃん<CD>ちょっと まっててくれる?<CF><D1><@RL,Karin,04>ええ いいですわ<CD>ここで おまちしておリます",
+193,0x20c182,"<@RL,Karin,00>あ <&BUF03>くん<CF><D1><@LL,Ikki,00>ごめん カリンちゃん<CD>ちょっと まっててくれる?<CF><D1><@RL,Karin,04>ええ いいですわ<CD>ここで おまちしておリます","<@RL,Karin,00>Ah, <&BUF03>.<CF><D1><@LL,Ikki,00>Sorry Karin. Can you wait here for a bit?<CF><D1><@RL,Karin,04>Sure. I'll be waiting here for you."
 194,0x20c184,"<@LL,Ikki,01>おまたせ! カリンちゃん","<@LL,Ikki,01>Did I keep you waiting, Karin?"
 195,0x20c186,"<@RL,Koji,02>よお <&BUF03>","<@RL,Koji,02>Yo, <&BUF03>."
 196,0x20c188,"<@LL,Ikki,07>え? コ コウジ?<CD>どうして ここに?<CF><D1><@RL,Koji,02>カリンが 何か だいじそうに<CD>持ってたからな 聞いてみたのさ<CF><D1><@LL,Ikki,06>(ギクッ!!)<CF><D1><@RL,Koji,02>そしたら お前に チケットを<CD>もらったって 言うじゃね-か<CF><D1>おかげで おれが ロボトルで<CD>パ-ツのかわリに 手に入れた<CF><D1>チケットが あまっちまったわけだ<CF><D1><@LL,Ikki,05>つまリ それって...","<@LL,Ikki,07>Eh? K-Koji?<D3>Why are you here?<CF><D1><@RL,Koji,02>Karin seemed to be holding onto something important, so I asked her about it.<CF><D1><@LL,Ikki,06>(gulp!!)<CF><D1><@RL,Koji,02>And she told me that you gave her a ticket.<CF><D1>I ended up getting an extra ticket instead of parts from a robattle.<CF><D1><@LL,Ikki,05>So, you mean..."
@@ -276,10 +276,10 @@
 254,0x20c1fc,"<@RL,Kai,00>どうしたの?<CF><D1><@LL,Ikki,06>あの さっき たすけてもらったのに<CD>おれいも 言ってなくて...その<CF><D1><@RL,Kai,01>じこしょうかいが まだだったね<CD>ぼくの 名前は ウラシマ カイ<CF><D1>...きみは?<CF><D1><@LL,Ikki,04>ぼくは テンリョウ <&BUF03><CF><D1>...あらためて あリがとう<CD>ウラシマくん<CF><D1><@RL,Kai,01>どういたしまして<CD>ふふっ カイで いいよ<CF><D1>きみだね? 地上から来た<CD>メダリンピック<CF><D1>だいひょう選手と いうのは<CF><D1><@LL,Ikki,01>あ うん そうなんだ!<CF><D1><@RL,Kai,01>そうか では 大会前に ぼくと<CD>お手合わせ ねがえるかな?<CF><D1><@LL,Ikki,01>うん! よろこんで!<CF><D1><@RL,Kai,01>それじゃ 行くよ","<@RL,Kai,00>What is it?<CF><D1><@LL,Ikki,06>Uhm, you saved me earlier and I didn't even thank you...<CF><D1><@RL,Kai,01>I suppose we should introduce ourselves. My name is Kai Urashima.<CF><D1>...You are?<CF><D1><@LL,Ikki,04>I'm <&BUF03> Tenryou.<CF><D1>...Thanks again, Urashima.<CF><D1><@RL,Kai,01>Don't mention it.<D3>Huhu, and just Kai is fine.<CF><D1>It's you, right? The Medalympic representative from up above?<CF><D1><@LL,Ikki,01>Ah, yes. That's right.<CF><D1><@RL,Kai,01>I see. Well, before the tournament, would you like to havea  contest with me?<CF><D1><@LL,Ikki,01>Yeah! It'd be my pleasure!<CF><D1><@RL,Kai,01>Well then, let's go."
 255,0x20c1fe,"<@RL,Kai,01>さすがだね お貝それしたよ<CF><D1><@LL,Ikki,01>いやぁ そんな!<CF><D1><@LL,Ikki,04>ぼくの方こそ おどろきだよ<CD>きみほどの 院だったら<CF><D1>マ-メイドの子たちに<CD>じゅうぶん 勝てるんじゃないの?<CF><D1><@RL,Kai,01>ふふ...そうかな?<CF><D1>あリがとう とても 楽しかったよ<CD>お近づきの しるしに<CF><D1>あくしゅしてくれるかい?<CF><D1><@LL,Ikki,01>え? あくしゅ?...てれるなぁ<CF><D1><@LL,Ikki,04>じゃ じゃあ はい あくしゅ!","<@RL,Kai,01>Truly superb. I'm impressed.<CF><D1><@LL,Ikki,01>Oh, that's too much.<CF><D1><@LL,Ikki,04>You suprised me too.<D3>If you're this good, you could deal with the Mermaid girls yourself, couldn't you?<CF><D1><@RL,Kai,01>Huhu... You think so?<CF><D1>Thanks, it was a blast. How about a handshake to mark our acquaintance?<CF><D1><@LL,Ikki,01>Eh? A handshake? You're making me blush.<CF><D1><@LL,Ikki,04>W-well then, let's shake hands!"
 256,0x20c200,"<@LL,Ikki,07>(ひゃ! つめたい手!)<CF><D1><@RL,Kai,00>どうしたの?<CF><D1><@LL,Ikki,06>いや 何でも...<CF><D1>(でも つめたい手の人は<CD>心が あたたかいって言うし...)<CF><D1><@RL,Kai,01>それじゃあ 大会を 楽しみに<CD>しているよ","<@LL,Ikki,07>(Hah! What cold hands!)<CF><D1><@RL,Kai,00>What's wrong?<CF><D1><@LL,Ikki,06>Well, it's nothing...<CF><D1>(But they say that cold hands make for a warm heart...)<CF><D1><@RL,Kai,01>Well then, I will be looking forward to the tournament."
-257,0x20c202,"<@RL,Kai,01>大会が 楽しみだね<CF><D1><@LL,Ikki,04>カイも 出るんだろ?<CF><D1><@RL,Kai,01>...そうだな<CF><D1>きみが 出るのなら 考えてみても<CD>いいかもね<CF><D1><@LL,Ikki,01>出ようよ! ね?<CD>やくそくだよ!<CF><D1><@RL,Kai,01>ふふ",
+257,0x20c202,"<@RL,Kai,01>大会が 楽しみだね<CF><D1><@LL,Ikki,04>カイも 出るんだろ?<CF><D1><@RL,Kai,01>...そうだな<CF><D1>きみが 出るのなら 考えてみても<CD>いいかもね<CF><D1><@LL,Ikki,01>出ようよ! ね?<CD>やくそくだよ!<CF><D1><@RL,Kai,01>ふふ","<@RL,Kai,01>The tournament should be fun.<CF><D1><@LL,Ikki,04>You'll be there too, Kai?<CF><D1><@RL,Kai,01>...Perhaps.<CF><D1>If you'll be in it, I may consider it.<CF><D1><@LL,Ikki,01>We're doing it! Okay? It's a promise!<CF><D1><@RL,Kai,01>Huhu."
 258,0x20c204,"<@LL,Ikki,00>そうだ ラブレタ-を かいたやつに<CD>わたしたって おしえてやらないとな<CF><D1><@LL,Ikki,04>まってて カリンちゃん!","<@LL,Ikki,00>Right, I should let the guy who wrote the love letter know that I delivered it.<CF><D1><@LL,Ikki,04>Wait for me, Karin!"
-259,0x20c206,"<@LL,Ikki,05>あの男の子に おれいを<CD>言いに 行かなくちゃ!",
-260,0x20c208,"<@LL,Ikki,05>ラブレタ-を かいたやつに<CD>わたしたって おしえて あげよう",
+259,0x20c206,"<@LL,Ikki,05>あの男の子に おれいを<CD>言いに 行かなくちゃ!","<@LL,Ikki,05>I have to thank that boy!"
+260,0x20c208,"<@LL,Ikki,05>ラブレタ-を かいたやつに<CD>わたしたって おしえて あげよう","<@LL,Ikki,05>I'll let him know that I delivered the letter."
 261,0x20c20a,"<@LL,Ikki,04>さて これでやっと 心おきなく<CD>カリンちゃんと デ-トできるぞ♥<CF><D1><@LL,Ikki,01>バブルのリばヘ GO!","<@LL,Ikki,04>Now I can finally relax on a date with Karin ♥<CF><D1><@LL,Ikki,01>To the Bubble Jetty, Go!"
 262,0x20c20c,"<@RL,SwimmingMedabot,00>どいた どいたぁ!","<@RL,SwimmingMedabot,00>Move it, move it!"
 263#kabuto,0x20c20e,"<@RL,Koji,01>がんばれ! スミロドナッド<CD>ほかの せんすいたちに まけるな!","<@RL,Koji,01>You can do it, Smilodonad! Don't let the diving ones get the better of you!"
@@ -298,5 +298,5 @@
 270#kuwagata,0x20c21c,"<@RL,Rokusho,00>まったく このおれが<CD>何を ふリ回されて いるんだ<CF><D1>...ふっ まあいい<CD>もう少し つき合ってみるか","<@RL,Rokusho,00>Why the heck do I have to get dragged around for?<CF><D1>...Sigh, I guess I'll keep them company a while longer."
 271,0x20c21e,"<@RL,Erika,04>ここは もういいわ<CD>ブラス 場所を 変えましょ<CF><D1><@RL,FemaleMedabot,00>アリカちゃん...<CF><D1><@RL,Erika,04>ほらほら! 行くわよ!","<@RL,Erika,04>We're done with this place, let's change locations, Brass.<CF><D1><@RL,FemaleMedabot,00>Erika...<CF><D1><@RL,Erika,04>Come on, come on! Let's go!"
 272,0x20c220,"<@RL,Karin,04>わたしたちも 行きましょう","<@RL,Karin,04>Let's go as well."
-273,0x20c222,"<@RL,FemaleMedabot,00>海って すてきですね",
+273,0x20c222,"<@RL,FemaleMedabot,00>海って すてきですね","<@RL,FemaleMedabot,00>Isn't the ocean lovely?"
 274,0x20c224,"<@LL,Ikki,00>あれ? あれって カリンちゃんの<CD>ナ-スちゃんじゃ?<CF><D1><@RL,Karin,04>ナ-スちゃんは あそこに じっとして<CD>心を おちつけているんですわ<CF><D1>海って やっぱリ 心が<CD>おちつく ものなんですね<CF><D1><@LL,Ikki,04>うん そうかも","<@LL,Ikki,00>Huh? Isn't that your lil' Nurse, Karin?<CF><D1><@RL,Karin,04>My lil' Nurse is quietly standing over here to calm her heart.<CF><D1>As expected, the ocean is really relaxing.<CF><D1><@LL,Ikki,04>Yeah, I guess so."
