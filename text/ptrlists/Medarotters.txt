@@ -242,7 +242,7 @@ Index[#version],Unknown,Name
 237,\x1b\x4c\x00,Pretty Girls
 238,\x21\x4d\x00,Roborobos
 239,\x13\x4e\x00,Extras
-240,\x1b\x4f\x00,Hitoshirezu
+240,\x1b\x4f\x00,Human Series
 241,\x00\x50\x00,Nashi
 242,\x25\x51\x00,Roborobos
 243,\x00\x52\x00,Nashi
