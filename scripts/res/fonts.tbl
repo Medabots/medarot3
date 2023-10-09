@@ -3,3 +3,5 @@ Narrow=1
 NormalBold=2
 Robotic=3
 RoboticBold=4
+Italic=8
+ItalicBold=9
