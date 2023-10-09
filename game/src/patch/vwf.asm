@@ -438,6 +438,26 @@ VWFDrawItalicLetterTable::
   db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
   ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
 
+VWFDrawItalicBoldLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 7, 7, 7 ; 1x
+  db 2, 3, 4, 6, 6, 5, 6, 2, 4, 4, 4, 5, 2, 4, 1, 5 ; 2x
+  db 6, 3, 6, 6, 6, 6, 5, 6, 6, 6, 1, 3, 5, 4, 4, 7 ; 3x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 4x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 5, 4, 4, 4 ; 5x
+  db 2, 6, 5, 5, 6, 5, 6, 5, 5, 3, 4, 5, 3, 6, 5, 5 ; 6x
+  db 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 2, 5, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
 VWFFont::
   INCBIN "build/tilesets/patch/Font.1bpp"
 
@@ -464,6 +484,9 @@ VWFSplatFont::
 
 VWFItalicFont::
   INCBIN "build/tilesets/patch/ItalicFont.1bpp"
+
+VWFItalicBoldFont::
+  INCBIN "build/tilesets/patch/ItalicBoldFont.1bpp"
 
 VWFDrawCharLoop::
   call VWFCheckInit
