@@ -32,10 +32,10 @@ def transform_line(line):
 				assert "Bold" in proposed_font
 				proposed_font = proposed_font.replace("Bold", "", 1)
 			elif section == '<i>':
-				proposed_font = "RoboticBold" if proposed_font == "NormalBold" else "Robotic"
+				proposed_font = "ItalicBold" if proposed_font == "NormalBold" else "Italic"
 			elif section == '</i>':
-				assert "Robotic" in proposed_font
-				proposed_font = proposed_font.replace("Robotic", "Normal", 1)
+				assert "Italic" in proposed_font
+				proposed_font = proposed_font.replace("Italic", "Normal", 1)
 			elif section:
 				if proposed_font != current_font and not section.isspace():
 					line += f"<f{int(font_table[proposed_font], 16):02X}>"
