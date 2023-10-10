@@ -219,7 +219,7 @@
 217,0x1f01b2,"<@RL,Boy,00>いいなぁ このパ-ツ<CF><D1>ぼくのチ-ムにも<CD>こんな パ-ツが あったら...","<@RL,Boy,00>These parts are so awesome...<CF><D1>I could make a whole other<D3>team if I had these parts..."
 218,0x1f01b4,"<@LL,Ikki,00>メダロッタ-ズ きねんメダルだ<CD>おみやげに けっこう いいよね","<@LL,Ikki,00>It's a Medarotters<D3>commemoration Medal. It<CF><D1>would make a fantastic<D3>souvenier!"
 219,0x1f01b6,コチラノ メダリンクデノ<CD>アナタノ ランクノ ウケツケハ<CF><D1>シュウリョウシマシタ<CD>ツギノ ランクノ メダリンクカラ<CF><D1>アクセスシテクダサイ,"You can no longer use this MedaLink at your rank, please use the next ranks' MedaLink to access."
-220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f03>You are now the top ranker!<f00><CF><D1><f03>Thank you for your use.
+220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f08>You are now the top ranker!<f00><CF><D1><f08>Thank you for your use.
 221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,This Medalink is for from<D3>rank 40 to rank 36.<CF><D1>Would you lke to access this<D3>Medalink?<*04>
 222,0x1f01bc,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
 223,0x1f01be,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"Thank you very much, we look<D3>forward to your return!"

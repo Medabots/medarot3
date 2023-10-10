@@ -82,7 +82,7 @@
 053,0x21006a,"<@LL,Ikki,00>ここ...どこだ?<CD>たしか ぼくは ふか-い海の<CF><D1>さけめに 引きずリこまれて...","<@LL,Ikki,00>Where... am I?<D3>I'm pretty sure I was pulled deep into the ocean chasm..."
 054,0x21006c,"<@LL,Ikki,07>あ あれっ!?","<@LL,Ikki,07>H-huh!?"
 055,0x21006e,"<@LL,Ikki,06>バブルに のっていない?!<CF><D1>そっ それどころか 回リに水も<CD>かんじないっ<CF><D1>も...もしかして ここは天国?","<@LL,Ikki,06>I'm not riding a Bubble?!<CF><D1>I-I don't even feel the water all around me.<CF><D1>C-could this be the afterlife?"
-056,0x210070,"<@LL,Ikki,00>何だろう はしらに ふしぎな<CD>もようが ちょうこくされている",
+056,0x210070,"<@LL,Ikki,00>何だろう はしらに ふしぎな<CD>もようが ちょうこくされている","<@LL,Ikki,00>What are these strange carvings on the pillars?"
 057,0x210072,"<@LL,Ikki,00>これは 何だろう?","<@LL,Ikki,00>What is this?"
 058,0x210074,"<@LL,Ikki,00>あれは 6負かヘい石!<CD>どうして あんな所に?","<@LL,Ikki,00>A six-sided nummulite!<D3>What's it doing here?"
 059,0x210076,"<@LL,Ikki,07>う 宇宙人!?","<@LL,Ikki,07>A-an alien!?"
