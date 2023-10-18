@@ -134,17 +134,17 @@
 130,0x208104,"<@RL,Boy3,00>そうかなぁ...","<@RL,Boy3,00>Is that so...?"
 131,0x208106,"<@RL,Boy3,00>リンとした あの よこがお...<CD>ちてきな そのひとみ...<CF><D1><@LL,Ikki,05>(もしかして アリカのこと?)<CF><D1><@RL,Boy3,00>ああっ もういちど 会いたい♥","<@RL,Boy3,00>Her dignified profile...<D3>Those sharp eyes...<CF><D1><@LL,Ikki,05>(Could that be Arika?)<CF><D1><@RL,Boy3,00>Aah, I want to meet her again ♥"
 132,0x208108,"<@LL,Ikki,00>ふ-ん アリカって いがいと<CD>もてるタイプなのかな?","<@LL,Ikki,00>Hmm, is Arika the type to be unexpectedly popular?"
-133,0x20810a,"<@RL,Man,00>何とか マ-メイド学底と<CD>なかなおリ してくれないかなぁ<CF><D1><@LL,Ikki,00>そんなに わるいの?<CF><D1><@RL,Man,00>わるいってもんじゃ ないよ<CF><D1>むすめには 「マ-マンの先生なんて<CD>やってるパパは きらいよ!」って<CF><D1>言われちゃうし...つらいなぁ",
-134,0x20810c,"<@RL,Man,00>さいきんは むすめが 「マ-マンの<CD>先生やってるパパは だいすきよ!」<CF><D1>なんて 言ってくれるんだ うれしいよ",
-135,0x20810e,"<@RL,Boy3,00>バブルに のって 海ていを さんぽ<CD>アンダ-シェルの だいごみだね",
-136,0x208110,"<@RL,Boy3,00>バブルに のれば 海に 出られるのに<CD>チケットが なかなか 手に入らない",
-137,0x208112,"<@RL,Boy3,00>うわさでは バブルに のリほうだい<CD>になる 「Sバブルチケット」<CF><D1>なんてものが あるらしいぞ",
+133,0x20810a,"<@RL,Man,00>何とか マ-メイド学底と<CD>なかなおリ してくれないかなぁ<CF><D1><@LL,Ikki,00>そんなに わるいの?<CF><D1><@RL,Man,00>わるいってもんじゃ ないよ<CF><D1>むすめには 「マ-マンの先生なんて<CD>やってるパパは きらいよ!」って<CF><D1>言われちゃうし...つらいなぁ","<@RL,Man,00>I hope they can reconcile with the Mermaid Academy.<CF><D1><@LL,Ikki,00>Are things that bad?<CF><D1><@RL,Man,00>Things aren't really that bad.<CF><D1>It's just being told things like, ""I hate you teacher at Merman!"" by my daughter... It's rough."
+134,0x20810c,"<@RL,Man,00>さいきんは むすめが 「マ-マンの<CD>先生やってるパパは だいすきよ!」<CF><D1>なんて 言ってくれるんだ うれしいよ","<@RL,Man,00>These days my daughters tells me things like, ""I love that you're a teacher at Merman.""<CF><D1>Hearing those things makes me happy."
+135,0x20810e,"<@RL,Boy3,00>バブルに のって 海ていを さんぽ<CD>アンダ-シェルの だいごみだね","<@RL,Boy3,00>The real charm of Under-Shell is being able to walk in the sea riding a bubble."
+136,0x208110,"<@RL,Boy3,00>バブルに のれば 海に 出られるのに<CD>チケットが なかなか 手に入らない","<@RL,Boy3,00>Riding a bubble I can go out to sea, but it's hard to get tickets."
+137,0x208112,"<@RL,Boy3,00>うわさでは バブルに のリほうだい<CD>になる 「Sバブルチケット」<CF><D1>なんてものが あるらしいぞ","<@RL,Boy3,00>Rumor has it that there's an <f02>S-Bubble Ticket<f00> that let's you ride a bubble as much as you want."
 138,0x208114,"<@RL,Boy3,00>うリゃ!","<@RL,Boy3,00>Oorah!"
 139,0x208116,"<@RL,Boy3,00>あっれ-? パソコンが まっ黒だ","<@RL,Boy3,00>Huuuh? The computer is all dark."
 140,0x208118,"<@RL,Boy3,00>アンチシ- なしで せんすい型の<CD>メダロットに 攻撃を 当てるには<CF><D1>せいこうの 高い 右院の パ-ツに<CD>たよるしか ないのかなぁ","<@RL,Boy3,00>To get a diving-type medarot without anti-sea parts, relying on right arm parts with high hit rates seems like the only option, right?"
-141,0x20811a,"<@RL,Boy3,00>アンチシ-がなくても メダフォ-スや<CD>ミサイル攻撃が ゆうこうだって<CF><D1>はくいのおじさんが 言ってたよ<CD>めがねを 光らせながら...<CF><D1><@LL,Ikki,00>はくいのおじさん?",
+141,0x20811a,"<@RL,Boy3,00>アンチシ-がなくても メダフォ-スや<CD>ミサイル攻撃が ゆうこうだって<CF><D1>はくいのおじさんが 言ってたよ<CD>めがねを 光らせながら...<CF><D1><@LL,Ikki,00>はくいのおじさん?","<@RL,Boy3,00>Even without anti-sea parts, Medaforce and missile attacks get the job done. An old guy in a white coat said so with his glasses glinting.<CF><D1><@LL,Ikki,00>An old man in a white coat?"
 142,0x20811c,"<@RL,Boy3,00>アンダ-シェルは 天気がないから<CD>雨がふる しんぱいも ないんだ","<@RL,Boy3,00>There isn't any weather in UnderShell, so we don't need to worry about rain."
-143,0x20811e,"<@RL,Boy3,00>アンチシ-を 持たせた せんすい型の<CD>メダロットが アンチシ-を 持った<CF><D1>せんすい型の メダロットに<CD>よく やられちゃうんだよね-<CF><D1>かなし-よね- 何でだろ-ね-",
+143,0x20811e,"<@RL,Boy3,00>アンチシ-を 持たせた せんすい型の<CD>メダロットが アンチシ-を 持った<CF><D1>せんすい型の メダロットに<CD>よく やられちゃうんだよね-<CF><D1>かなし-よね- 何でだろ-ね-","<@RL,Boy3,00>Anti-sea using diving-type medarots are often used against other anti-sea using diving-type medarots.<CF><D1>How straaaange, I wooooonder whhhhhy?"
 144,0x208120,"<@RL,Boy3,00>何とかなるって な? 元気だせよ!","<@RL,Boy3,00>We'll figure something oout, right? Cheer up!"
 145,0x208122,"<@RL,Boy3,00>あいつなら こいうらないの<CD>しんでんに 行ったよ","<@RL,Boy3,00>That guy went to the shrine for a love fortune."
 146,0x208124,"<@RL,Boy3,00>ここは マ-マン学底 さいきょうの<CD>メダロッタ-しゅうだん<CF><D1>「シ-ドラゴンズ」の クラスだ!<CD>本当に つよいんだぞ!...きっと","<@RL,Boy3,00>This is the class of Merman Academy's strongest, the ""Sea Dragons""! They're really strong! ...I'm sure."
