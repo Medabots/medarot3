@@ -638,7 +638,7 @@ TilesetScript00_000B::
   TilesetSetVRAMIndex $50
   TilesetRender $10,$21
   TilesetRender $02,$26
-  TilesetRender $01,$27
+  TilesetRender $03,$27
   TilesetSetVRAMIndex $7C
   TilesetRender $04,$0B
   TilesetEnd 

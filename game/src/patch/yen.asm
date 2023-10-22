@@ -31,6 +31,15 @@ PlaceYenSymbolShop::
   pop bc
   ret
 
+PlaceYenSymbolPausemenu::
+; hl is the money tile mapping address for the tile after the least significant digit.
+  push bc
+  ld b, h
+  ld c, l
+  ld a, -6
+  call YenMath
+  jr PlaceYenSymbolShop.ext
+
 PlaceYenSymbolShopAlt::
 ; hl is the mapping address for the tile before the money tile mapping address.
   push bc
