@@ -624,7 +624,7 @@ PauseMenuMapMoneyDuringTransition::
   ld a, $e0
   ld [hli], a
   ei
-  jp PlaceYenSymbolShop
+  jp PlaceYenSymbolPausemenu
 .draw_00
   ld hl, $9D66
   ld a, $e0
