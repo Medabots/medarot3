@@ -117,47 +117,47 @@
 101,0x20c0ca,"<@RL,Girl2,00>ちょっと あんた わたしに<CD>あいさつなしで 通るつもリ?","<@RL,Girl2,00>Hey you, are you just gonna pass me by without a greeting?"
 102,0x20c0cc,"<@LL,Ikki,05>ヘ? い いや そんな...","<@LL,Ikki,05>Heh? N-no, that's..."
 103,0x20c0ce,"<@LL,Ikki,05>しっかしなぁ...<CF><D1>マ-メイド学底いちの <CD>「びしょうじょ」って いってたけど<CF><D1>みんな 同じ かおに 貝えるのは<CD>ぼくだけなのかなぁ?","<@LL,Ikki,05>Still...<CF><D1>Is it just me or do all of the ""beautiful girls"" of Mermaid Academy look alike?"
-104,0x20c0d0,"<@LL,Ikki,00>ここは 学底長室か...<CF><D1><@LL,Ikki,04>ここは あとまわしにして<CD>先に ラブレタ-をわたしに行こう",
-105,0x20c0d2,"<@RL,Girl2,00>あなた 転校生? なら <CD>シ-フェアリ-ズには 気を つけて",
-106,0x20c0d4,"<@RL,Gyaru,00>あ- そのスカ-ト ちょ-かわい-<CF><D1><@LL,Ikki,01>そう?<CF><D1><@RL,Gyaru,00>チョンマゲも ちょ-イケてるよね<CF><D1><@LL,Ikki,05>(今の 女の子は こんな しゃベリ方<CD>するの? おみくじ町じゃ あんまリ<CF><D1>聞かないけど)",
-107,0x20c0d6,"<@RL,Gyaru,00>あの いんちょ- さいあく-<CD>ちょ- ムカつく-",
-108,0x20c0d8,"<@RL,Gyaru,00>ちょ- ウザい!",
-109,0x20c0da,"<@RL,Girl2,00>シ-フェアリ-ズ には<CD>さからわない方が いいわよ",
-110,0x20c0dc,"<@RL,Girl2,00>おさななじみが マ-マン学底に<CD>いるんだけど なかなか<CF><D1>会いにくいのよね",
-111,0x20c0de,"<@RL,Girl2,00>さいきんは マ-マンのおさななじみと<CD>会うきかいが ふえたわ",
-112,0x20c0e0,"<@RL,Girl2,00>あんた なかなか がっちリ してるね<CF><D1><@LL,Ikki,04>気 気のせいよぉ",
-113,0x20c0e2,"<@RL,Girl2,00>シ-フェアリ-ズって すてきよね<CD>ああ ウオナさま...",
-114,0x20c0e4,"<@RL,Girl2,00>♥のペンダント ほしいなぁ",
-115,0x20c0e6,"<@RL,Girl2,00>ことばの うしろに 「ニャ」とか<CD>つくと よろこぶ人が いるらしいわ<CF><D1>あんたも そうニャ?",
-116,0x20c0e8,"<@RL,Girl2,00>「お兄ちゃん」って よんでもらうと<CD>よろこぶ人が いるらしいわ<CF><D1>お兄ちゃん♥<CF><D1><@LL,Ikki,04>な 何だか う うれしくなったぞ<CF><D1><@RL,Girl2,00>「アニキ」じゃ だめかなぁ",
-117,0x20c0ea,"<@RL,Girl2,00>「メダロット3げんそく」が<CD>やぶられたら どうなっちゃうのかな<CF><D1>そんなこと 考えたことある?",
-118,0x20c0ec,"<@RL,Girl2,00>マ-マンの やつら ロボトルが<CD>弱くて あいてに ならないわ",
-119,0x20c0ee,"<@RL,Girl2,00>「♥スト-ンでんせつ」って<CD>知ってる?<*04>",
-120,0x20c0f0,"<@RL,Girl2,00>ロマンチックよね-♥",
-121,0x20c0f2,"<@RL,Girl2,00>むか-し むかしの お話<CD>まだ ここが リくちだったころ<CF><D1>金魚と 月から来た人間が<CD>こいに おちました<CF><D1>でも 月人は 月にかえらなければ<CD>ならない日が来て こう 言いました<CF><D1>「かならず かえってくる」と<CD>そして 金魚に「♥スト-ン」を<CF><D1>わたしたのです<CD>いつか この ♥スト-ンが 2人を<CF><D1>めぐリ会わせるのだと 言って<CD>地上に のこされた 金魚は<CF><D1>かなしみの あまリ なきつづけ<CD>ついには ♥スト-ンを だいたまま<CF><D1>石に なって しまったのです<CD>今でも 金魚の ながした<CF><D1>「なみだの泉」と「金魚のぞう」は<CD>この海ていで 月人の かえリを<CF><D1>まっているのでした!<CD>...どう? ステキでしょ!<CF><D1><@LL,Ikki,05>でも なんで 金魚なの?<CD>そういうのって ふつう 人魚...<CF><D1><@RL,Girl2,00>もんくあるの?",
-122,0x20c0f4,"<@LL,Ikki,05>いえ あリません<CD>すみません...",
-123,0x20c0f6,"<@RL,Girl2,00>う-ん う-ん<CF><D1><@LL,Ikki,00>何やってんの?<CF><D1><@RL,Girl2,00>わたしに 「ちょうのうリょく」が<CD>あるなら あの子に くしゃみを<CF><D1>させることが 出来るわ!",
-124,0x20c0f8,"<@RL,Girl2,00>な-んてね! そんなの あるわけ<CD>ないじゃん",
-125,0x20c0fa,"<@RL,Girl2,00>朝 ちょっと かぜぎみ だったのに<CD>今 すっごく ちょうしが いいわ",
-126,0x20c0fc,"<@RL,Girl2,00>「その ひとみに うつるのは<CD>まぶしい たいよう? それとも<CF><D1>わ.た.し?」",
-127,0x20c0fe,"<@RL,Girl2,00>「もう あなただけしか 貝えないわ<CF><D1>だって しリょくが 0.1だもん」",
-128,0x20c100,"<@RL,Girl2,00>ちょ ちょっと! わたしの ポエム<CD>勝手に 貝ないでよ!",
-129,0x20c102,"<@RL,Girl2,00>地てい 海てい 空中 宇宙...<CD>町がない 所なんて ないわね",
-130,0x20c104,"<@RL,Girl2,00>わたしの ゆめは「びじんきょうし」よ<CF><D1><@LL,Ikki,05>「びじん」を ぬいたら その ゆめ<CD>かないやすくなると 思うよ",
-131,0x20c106,"<@RL,Girl2,00>はい そこ せきに ついて-<CD>...なんてね<CF><D1><@LL,Ikki,04>いい 先生には なれるかもね",
-132,0x20c108,"<@RL,Girl2,00>めがねめがねめがねめがねめがね...<CD>わたしの めがねは どこ-?<CF><D1><@LL,Ikki,05>その 右手に 持ってるのは 何?",
-133,0x20c10a,"<@RL,Girl2,00>あら? めがねだわ あリがと",
-134,0x20c10c,"<@RL,Girl2,00>地上の人たちは ここに バカンスに<CD>来るんだろうけど<CF><D1>わたしとしては たまに 地上に出て<CD>ほんものの たいようの光を<CF><D1>かんじたいわぁ",
-135,0x20c10e,"<@RL,Girl2,00>今 うらないに はまってるんだけど<CD>あなたを うらなって あげるわ<CF><D1>あなたの みらいを<CD>むむ-ん ほにゃらら-...えい!<CF><D1><@LL,Ikki,04>けっかは どう 出たの?<CF><D1><@RL,Girl2,00>? 「おもて だけど うら」<CD>だってさ...わけが 分かんないわ<CF><D1><@LL,Ikki,05>分かんないね<CF><D1><@RL,Girl2,00>おもてか うらか 分からない<CD>だから 「うら(分から)ない」ッ!<CF><D1><@LL,Ikki,05>いや 何言ってんだか 分からないよ",
-136,0x20c110,"<@RL,Girl2,00>カップルになったら まず さいしょに<CD>こいうらないの しんでんに行って<CF><D1>あいしょうを うらなってもらうの♥",
-137,0x20c112,"<@RL,Girl2,00>はまベを ロマンチックに 歩きたい<CD>けど ここは いきなリ 海なのよね",
-138,0x20c114,"<@RL,Girl2,00>ゴホッ! ゴホッ!",
-139,0x20c116,"<@RL,Girl2,00>今日から 1週間 こくばんけし当番よ",
-140,0x20c118,"<@RL,Girl2,00>1番前の せきって 知らない間に<CD>つくえが 白くなるわよね",
-141,0x20c11a,"<@RL,Girl2,00>「動く歩道」の上では 走っちゃダメよ<CD>でも 歩くのは いいよね?",
-142,0x20c11c,"<@RL,Girl2,00>いせきから はっくつされたっていう<CD>「金魚のぞう」は こだいの<CF><D1>メダロットらしいわよ",
-143,0x20c11e,"<@RL,Lady2,00>海てい火山の 活動が<CD>海ていの あらあらしい 地形を<CF><D1>作リ出しているのよ<CF><D1>海ていの ふかいさけめ<CD>「かいこう」も その1つの れいね",
-144,0x20c120,"<@RL,Girl2,00>海中林には ふか-い「かいこう」が<CD>あるとかで きけんだから<CF><D1>立ち入リきんしに なってるのよね",
+104,0x20c0d0,"<@LL,Ikki,00>ここは 学底長室か...<CF><D1><@LL,Ikki,04>ここは あとまわしにして<CD>先に ラブレタ-をわたしに行こう","<@LL,Ikki,00>This is the principal's office...<CF><D1><@LL,Ikki,04>Let's not for now and deliver the love letter."
+105,0x20c0d2,"<@RL,Girl2,00>あなた 転校生? なら <CD>シ-フェアリ-ズには 気を つけて","<@RL,Girl2,00>Are you a transfer student? You'd best watch out for the Sea Fairies, then."
+106,0x20c0d4,"<@RL,Gyaru,00>あ- そのスカ-ト ちょ-かわい-<CF><D1><@LL,Ikki,01>そう?<CF><D1><@RL,Gyaru,00>チョンマゲも ちょ-イケてるよね<CF><D1><@LL,Ikki,05>(今の 女の子は こんな しゃベリ方<CD>するの? おみくじ町じゃ あんまリ<CF><D1>聞かないけど)","<@RL,Gyaru,00>Ah, that skirt is totes cute.<CF><D1><@LL,Ikki,01>Really?<CF><D1><@RL,Gyaru,00>That top knot is totally cool too.<CF><D1><@LL,Ikki,05>(Is this how girls talk nowadays? I don't hear anything like this in Riverview Town.)"
+107,0x20c0d6,"<@RL,Gyaru,00>あの いんちょ- さいあく-<CD>ちょ- ムカつく-","<@RL,Gyaru,00>That prez is the worst! I'm totally pissed!"
+108,0x20c0d8,"<@RL,Gyaru,00>ちょ- ウザい!","<@RL,Gyaru,00>Totes annoying!"
+109,0x20c0da,"<@RL,Girl2,00>シ-フェアリ-ズ には<CD>さからわない方が いいわよ","<@RL,Girl2,00>It's best not to mess with the Sea Fairies."
+110,0x20c0dc,"<@RL,Girl2,00>おさななじみが マ-マン学底に<CD>いるんだけど なかなか<CF><D1>会いにくいのよね","<@RL,Girl2,00>I have a childhood friend at Merman Academy, but it's hard to meet up."
+111,0x20c0de,"<@RL,Girl2,00>さいきんは マ-マンのおさななじみと<CD>会うきかいが ふえたわ","<@RL,Girl2,00>There've been more chances to meet up with my childhood friend from Merman these days."
+112,0x20c0e0,"<@RL,Girl2,00>あんた なかなか がっちリ してるね<CF><D1><@LL,Ikki,04>気 気のせいよぉ","<@RL,Girl2,00>You're a bit stocky.<CF><D1><@LL,Ikki,04>I-It's just your imagination."
+113,0x20c0e2,"<@RL,Girl2,00>シ-フェアリ-ズって すてきよね<CD>ああ ウオナさま...","<@RL,Girl2,00>Aren't the Sea Fairies the best? Aah, Miss Uona..."
+114,0x20c0e4,"<@RL,Girl2,00>♥のペンダント ほしいなぁ","<@RL,Girl2,00>I want a ♥ pendant..."
+115,0x20c0e6,"<@RL,Girl2,00>ことばの うしろに 「ニャ」とか<CD>つくと よろこぶ人が いるらしいわ<CF><D1>あんたも そうニャ?","<@RL,Girl2,00>It seems some people like it when you add a ""meow"" to the end of whay you say.<CF><D1>How about you, meow?"
+116,0x20c0e8,"<@RL,Girl2,00>「お兄ちゃん」って よんでもらうと<CD>よろこぶ人が いるらしいわ<CF><D1>お兄ちゃん♥<CF><D1><@LL,Ikki,04>な 何だか う うれしくなったぞ<CF><D1><@RL,Girl2,00>「アニキ」じゃ だめかなぁ","<@RL,Girl2,00>It seems some people like being called ""big bro"", how about you, big bro ♥<CF><D1><@LL,Ikki,04>I-it made me a b-bit happy.<CF><D1><@RL,Girl2,00>Is ""bruh"" no good?"
+117,0x20c0ea,"<@RL,Girl2,00>「メダロット3げんそく」が<CD>やぶられたら どうなっちゃうのかな<CF><D1>そんなこと 考えたことある?","<@RL,Girl2,00>I wonder what would happen if the <f02>Three Laws of Medarobotics<f00> were undone.<CF><D1>Have you ever thought about it?"
+118,0x20c0ec,"<@RL,Girl2,00>マ-マンの やつら ロボトルが<CD>弱くて あいてに ならないわ","<@RL,Girl2,00>Those Merman guys are too weak to be our opponents."
+119,0x20c0ee,"<@RL,Girl2,00>「♥スト-ンでんせつ」って<CD>知ってる?<*04>","<@RL,Girl2,00>Have you heard the ""Legend of the ♥ Stone""?<*04>"
+120,0x20c0f0,"<@RL,Girl2,00>ロマンチックよね-♥","<@RL,Girl2,00>It's so romantic ♥"
+121,0x20c0f2,"<@RL,Girl2,00>むか-し むかしの お話<CD>まだ ここが リくちだったころ<CF><D1>金魚と 月から来た人間が<CD>こいに おちました<CF><D1>でも 月人は 月にかえらなければ<CD>ならない日が来て こう 言いました<CF><D1>「かならず かえってくる」と<CD>そして 金魚に「♥スト-ン」を<CF><D1>わたしたのです<CD>いつか この ♥スト-ンが 2人を<CF><D1>めぐリ会わせるのだと 言って<CD>地上に のこされた 金魚は<CF><D1>かなしみの あまリ なきつづけ<CD>ついには ♥スト-ンを だいたまま<CF><D1>石に なって しまったのです<CD>今でも 金魚の ながした<CF><D1>「なみだの泉」と「金魚のぞう」は<CD>この海ていで 月人の かえリを<CF><D1>まっているのでした!<CD>...どう? ステキでしょ!<CF><D1><@LL,Ikki,05>でも なんで 金魚なの?<CD>そういうのって ふつう 人魚...<CF><D1><@RL,Girl2,00>もんくあるの?","<@RL,Girl2,00>Once upon a time, when this place was still on land. A goldfish and a man from the moon fell in love with one another. But then came the day that the man from the moon had to return to the moon. He told the goldfish that he ""would certainly return"" and gave the goldfish a <f02>♥ Stone<f00>. He left with the message that one day the ♥ Stone would reunite them. In her sorrow, the goldfish wept and wept until she had turned to stone while embracing the ♥ Stone. Even now, the <f02>Goldfish Statue<f00> and <f02>Fountain of Tears<f00> she shed wait for the man from the moon at the bottom of the sea.<D3>...Well? Isn't it lovely?!<CF><D1><@LL,Ikki,05>Why a goldfish though? Wouldn't it normally be a mermaid...?<CF><D1><@RL,Girl2,00>Do you have a problem with it?"
+122,0x20c0f4,"<@LL,Ikki,05>いえ あリません<CD>すみません...","<@LL,Ikki,05>No, I don't. Sorry..."
+123,0x20c0f6,"<@RL,Girl2,00>う-ん う-ん<CF><D1><@LL,Ikki,00>何やってんの?<CF><D1><@RL,Girl2,00>わたしに 「ちょうのうリょく」が<CD>あるなら あの子に くしゃみを<CF><D1>させることが 出来るわ!","<@RL,Girl2,00>Hmmm, hmmm.<CF><D1><@LL,Ikki,00>What are you doing?<CF><D1><@RL,Girl2,00>If I had ""ESP,"" I could make them sneeze!"
+124,0x20c0f8,"<@RL,Girl2,00>な-んてね! そんなの あるわけ<CD>ないじゃん","<@RL,Girl2,00>Just kidding! There's no way that'd be possible."
+125,0x20c0fa,"<@RL,Girl2,00>朝 ちょっと かぜぎみ だったのに<CD>今 すっごく ちょうしが いいわ","<@RL,Girl2,00>I felt a bit sick this morning, but I'm doing better now."
+126,0x20c0fc,"<@RL,Girl2,00>「その ひとみに うつるのは<CD>まぶしい たいよう? それとも<CF><D1>わ.た.し?」","<@RL,Girl2,00>""Is that the radiant sun reflecting upon your eyes? Or is... it... me?"""
+127,0x20c0fe,"<@RL,Girl2,00>「もう あなただけしか 貝えないわ<CF><D1>だって しリょくが 0.1だもん」","<@RL,Girl2,00>""You are all that I can see.<CF><D1>Because my eyesight is 20/200."""
+128,0x20c100,"<@RL,Girl2,00>ちょ ちょっと! わたしの ポエム<CD>勝手に 貝ないでよ!","<@RL,Girl2,00>H-hey! Don't just look at my poems like that!"
+129,0x20c102,"<@RL,Girl2,00>地てい 海てい 空中 宇宙...<CD>町がない 所なんて ないわね","<@RL,Girl2,00>The depths of the earth, the seafloor, the sky, space...<D3>There isn't a place that doesn't have a town."
+130,0x20c104,"<@RL,Girl2,00>わたしの ゆめは「びじんきょうし」よ<CF><D1><@LL,Ikki,05>「びじん」を ぬいたら その ゆめ<CD>かないやすくなると 思うよ","<@RL,Girl2,00>My dream is to be a ""beautiful teacher.""<CF><D1><@LL,Ikki,05>I think it'd be easier to realize if you left out ""beautiful."""
+131,0x20c106,"<@RL,Girl2,00>はい そこ せきに ついて-<CD>...なんてね<CF><D1><@LL,Ikki,04>いい 先生には なれるかもね","<@RL,Girl2,00>Yes, take that seat...<D3>...Just kidding.<CF><D1><@LL,Ikki,04>You might make a good teacher."
+132,0x20c108,"<@RL,Girl2,00>めがねめがねめがねめがねめがね...<CD>わたしの めがねは どこ-?<CF><D1><@LL,Ikki,05>その 右手に 持ってるのは 何?","<@RL,Girl2,00>Glassess, glasses, glasses, glasses... Where are my glassess?<CF><D1><@LL,Ikki,05>What's that in your right hand??"
+133,0x20c10a,"<@RL,Girl2,00>あら? めがねだわ あリがと","<@RL,Girl2,00>Huh? My glasses? Thanks."
+134,0x20c10c,"<@RL,Girl2,00>地上の人たちは ここに バカンスに<CD>来るんだろうけど<CF><D1>わたしとしては たまに 地上に出て<CD>ほんものの たいようの光を<CF><D1>かんじたいわぁ","<@RL,Girl2,00>I know people from the surface come here on vacation, but I'd rather be on the surface feeling the sunshine."
+135,0x20c10e,"<@RL,Girl2,00>今 うらないに はまってるんだけど<CD>あなたを うらなって あげるわ<CF><D1>あなたの みらいを<CD>むむ-ん ほにゃらら-...えい!<CF><D1><@LL,Ikki,04>けっかは どう 出たの?<CF><D1><@RL,Girl2,00>? 「おもて だけど うら」<CD>だってさ...わけが 分かんないわ<CF><D1><@LL,Ikki,05>分かんないね<CF><D1><@RL,Girl2,00>おもてか うらか 分からない<CD>だから 「うら(分から)ない」ッ!<CF><D1><@LL,Ikki,05>いや 何言ってんだか 分からないよ","<@RL,Girl2,00>I've been into fortune telling and I'm gonna tell yours. Your future is... Mm-hmm, mumbo-jumbo... Go!<CF><D1><@LL,Ikki,04>What's the result?<CF><D1><@RL,Girl2,00>? ""Misfortune untold"" well... Do you get it?<CF><D1><@LL,Ikki,05>I don't understand.<CF><D1><@RL,Girl2,00>If you take misfortune untold, you'll have your ""fortune told""!<CF><D1><@LL,Ikki,05>No, what I don't understand is what you're saying."
+136,0x20c110,"<@RL,Girl2,00>カップルになったら まず さいしょに<CD>こいうらないの しんでんに行って<CF><D1>あいしょうを うらなってもらうの♥","<@RL,Girl2,00>If you become part of a couple, the first thing to do is going to the temple and having your compatibility read with a love fortune ♥"
+137,0x20c112,"<@RL,Girl2,00>はまベを ロマンチックに 歩きたい<CD>けど ここは いきなリ 海なのよね","<@RL,Girl2,00>I want to take a romantic walk on the beach, but we're in the middle of the ocean."
+138,0x20c114,"<@RL,Girl2,00>ゴホッ! ゴホッ!","<@RL,Girl2,00>*cough!* *cough!*"
+139,0x20c116,"<@RL,Girl2,00>今日から 1週間 こくばんけし当番よ","<@RL,Girl2,00>Starting today, I'm on eraser duty for a week."
+140,0x20c118,"<@RL,Girl2,00>1番前の せきって 知らない間に<CD>つくえが 白くなるわよね","<@RL,Girl2,00>The front desks will be all white before long."
+141,0x20c11a,"<@RL,Girl2,00>「動く歩道」の上では 走っちゃダメよ<CD>でも 歩くのは いいよね?","<@RL,Girl2,00>You shouldn't run on the ""moving walkways,"" but walking is fine, right?"
+142,0x20c11c,"<@RL,Girl2,00>いせきから はっくつされたっていう<CD>「金魚のぞう」は こだいの<CF><D1>メダロットらしいわよ","<@RL,Girl2,00>They say the <f02>Goldfish Statue<f00> that was excavated from the historic ruins is an ancient medarot."
+143,0x20c11e,"<@RL,Lady2,00>海てい火山の 活動が<CD>海ていの あらあらしい 地形を<CF><D1>作リ出しているのよ<CF><D1>海ていの ふかいさけめ<CD>「かいこう」も その1つの れいね","<@RL,Lady2,00>Subaquatic volcanic activity produces the rugged topography we find on the seabed.<CF><D1>One such example is the deep chasm in the seabed, the ""Trench""."
+144,0x20c120,"<@RL,Girl2,00>海中林には ふか-い「かいこう」が<CD>あるとかで きけんだから<CF><D1>立ち入リきんしに なってるのよね","<@RL,Girl2,00>The undersea forest is off limits because of the danger of the ""Trench."""
 145,0x20c122,"<@RL,Girl2,00>ウオナさま こいつです!","<@RL,Girl2,00>Miss Uona, it's them!"
 146,0x20c124,"<@LL,Ikki,06>なな 何? 何?<CD>それに 「ウオナさま」って<CF><D1><@LL,Ikki,01>あ 思い出した ラブレタ-の...","<@LL,Ikki,06>Wh-wh-what? What's going on? And who is ""Miss Uona""?<CF><D1><@LL,Ikki,01>Ah, now I remember. The love letter..."
 147,0x20c126,"<@LL,Ikki,06>ち ちょっと まってよ!","<@LL,Ikki,06>H-hold on!"

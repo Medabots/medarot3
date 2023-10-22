@@ -44,7 +44,7 @@
 027#kuwagata,0x210036,"<@LL,Ikki,07>...!<CD>めずらしいな お前から ぼくに<CF><D1>そんな風に たのみごとを<CD>するなんて<CF><D1><@LL,Ikki,00>お前に そこまで 言わせるなんてな","<@LL,Ikki,07>...!<D3>It's a rare sight to hear you say please.<CF><D1><@LL,Ikki,00>To think you'd go so far."
 028#kabuto,0x210038,"<@LL,Ikki,00>...分かったよ <&BUF07><CD>お前が そこまで 言うんだ<CF><D1>いっしょに 行こう!","<@LL,Ikki,00>...Fine, <&BUF07> if you're gonna say that much, then let's go!"
 028#kuwagata,0x210038,"<@LL,Ikki,04>...分かったよ <&BUF07><CD>いっしょに 行こう!","<@LL,Ikki,04>...Fine, <&BUF07>.<D3>Let's go!"
-029,0x21003a,"<@LL,Ikki,00>もどる前に レイを さがそう",
+029,0x21003a,"<@LL,Ikki,00>もどる前に レイを さがそう","<@LL,Ikki,00>Let's look for Rei before going back."
 030#kabuto,0x21003c,"<@RL,Metabee,00>何だ? 今の<CD>メダロットでも 人間でもねえ<CF><D1>半魚人って やつか?","<@RL,Metabee,00>What was that just now? It wasn't Medarot nor a human.<CF><D1>Was that guy a merman?"
 030#kuwagata,0x21003c,"<@RL,Rokusho,00>あれは 何だ?<CD>メダロットでも 人間でも ない<CF><D1>かといって 魚にも 貝えなかったぞ","<@RL,Rokusho,00>What was that? It wasn't a Medarot and it wasn't a human.<CF><D1>Having said that, it didn't seem like a fish either."
 031,0x21003e,"<@LL,Ikki,00>まるで ぼくたちを<CD>さそってる みたいだ","<@LL,Ikki,00>It's like they're luring us in."
@@ -142,37 +142,37 @@
 107,0x2100d6,"<@RL,Karin,04>がんばリましょうね","<@RL,Karin,04>Let's do our best!"
 108,0x2100d8,"<@RL,Boy3,00>ウオナちゃん がんばれ!","<@RL,Boy3,00>Go for it, Uona!"
 109,0x2100da,"<@RL,Boy3,00>ウオナちゃん まけちゃった...","<@RL,Boy3,00>Uona lost..."
-110,0x2100dc,"<@RL,Boy3,00>マ-マン学底の だいひょう<CD>シ-ドラゴンズは おれたちの<CF><D1>だいひょうとして はずかしくない<CD>ロボトルをする!...はずだ",
-111,0x2100de,"<@RL,Boy3,00>おれ 本当は マ-メイドの女子と<CD>ケンカなんか したくなかったんだ<CF><D1>でも これからは その しんぱいも<CD>なくなリそうだね",
-112,0x2100e0,"<@RL,Girl2,00>ロボトルしてる ウオナさまって<CD>すっごく かがやいてるわ!",
-113,0x2100e2,"<@RL,Girl2,00>よく 分からないんだけど 学底長たち<CD>すっごく なかが よくなってるの",
-114,0x2100e4,"<@RL,Lady2,00>勝つのは マ-メイド女学底よ",
-115,0x2100e6,"<@RL,Lady2,00>あなたたちの ゆうしょうは<CD>きまったも どうぜんね<CF><D1>マ-マン学底では 手も足も<CD>出すことが 出来ないでしょうから",
-116,0x2100e8,"<@RL,Man,00>何だと!? 言わせておけば!",
-117,0x2100ea,"<@RL,Man,00>勝つのは わが マ-マン学底だ!",
-118,0x2100ec,"<@RL,Boy3,00>あの <&BUF03>って やつを<CD>たおせば!<CF><D1>「うんどう場 えいきゅう<CD>使用けん」が 手に入るんだ!",
-119,0x2100ee,"<@RL,Boy3,00>お前な- いちどは たすけてもらった<CD>おんを あだでかえすのか?",
-120,0x2100f0,"<@RL,Boy3,00>ふっ その前に 勝つのは<CD>ふかのうだと 思うね ぼくは",
-121,0x2100f2,"<@RL,Boy3,00>お前ぇぇぇっ!!!",
-122,0x2100f4,"<@RL,Boy3,00>のぞみは なくもない<CD>あとの 2人が 弱ければ",
-123,0x2100f6,"<@RL,Boy3,00>やめようよ そういうのぞみを<CD>持つのは",
-124,0x2100f8,"<@RL,Boy3,00>しくしく...",
-125,0x2100fa,"<@RL,Boy3,00>何だよ 今 お前を どう たおすかの<CD>さくせん かいぎ中だぞ 出てけよ!",
-126,0x2100fc,"<@RL,Boy3,00>おれたちが どう たおされるかの<CD>さくせんの まちがいじゃ ないかな",
-127,0x2100fe,"<@RL,Boy3,00>うるさ-い!",
-128,0x210100,"<@RL,Boy3,00>お前 貝てると 何だか なさけなく<CD>なってくるんだ!",
-129,0x210102,"<@RL,Boy3,00>やっぱリ お前は おれたちの<CD>リ-ダ-だな!",
-130,0x210104,"<@RL,Boy3,00>ほっといてくれ!",
-131,0x210106,"<@RL,Girl2,00>あの <&BUF03>って やつを<CD>たおせば!<CF><D1>「うんどう場 えいきゅう<CD>使用けん」が 手に入るのね!",
-132,0x210108,"<@RL,Girl2,00>でも ウオナさま この間 あいつに<CD>まけちゃいましたよ?",
-133,0x21010a,"<@RL,Girl2,00>うるっさいわね! 3人がかリなら<CD>いけるかも 知れないじゃない!<CF><D1><@RL,Girl2,00>むこうも 3人なんですけど...",
-134,0x21010c,"<@RL,Girl2,00>何よ! 今 あんたを やっつける<CD>さくせんの かいぎ中よ 出てってよ",
-135,0x21010e,"<@RL,Girl2,00>今回は わたしたちの まけだけど<CD>次は こうは いかないわよ",
-136,0x210110,"<@RL,Girl2,00>わたしも こいでも しようかしら?",
-137,0x210112,"<@RL,Girl2,00>でも ロボトルが 弱い マ-マン<CD>なんて あいてに したくないわ",
-138,0x210114,"<@RL,Girl2,00>ロボトルが つよい男なら いるわよ?",
-139,0x210116,"<@RL,Girl2,00>でも じょそうする 男はねぇ",
-140,0x210118,"<@RL,Girl2,00>そうね じょそうが しゅみの<CD>男じゃあねぇ<CF><D1><@LL,Ikki,03>しゅみじゃ ないよ...",
+110,0x2100dc,"<@RL,Boy3,00>マ-マン学底の だいひょう<CD>シ-ドラゴンズは おれたちの<CF><D1>だいひょうとして はずかしくない<CD>ロボトルをする!...はずだ","<@RL,Boy3,00>The Sea Dragons will represent Merman Academy with a robattle to be proud of... or so they should."
+111,0x2100de,"<@RL,Boy3,00>おれ 本当は マ-メイドの女子と<CD>ケンカなんか したくなかったんだ<CF><D1>でも これからは その しんぱいも<CD>なくなリそうだね","<@RL,Boy3,00>I didn't really want to fight with the girls from Mermaid, but seems I don't have to worry about that anymore."
+112,0x2100e0,"<@RL,Girl2,00>ロボトルしてる ウオナさまって<CD>すっごく かがやいてるわ!","<@RL,Girl2,00>Miss Uona's robattling is so fantastic!"
+113,0x2100e2,"<@RL,Girl2,00>よく 分からないんだけど 学底長たち<CD>すっごく なかが よくなってるの","<@RL,Girl2,00>I don't really get it, but the principals are getting along now."
+114,0x2100e4,"<@RL,Lady2,00>勝つのは マ-メイド女学底よ","<@RL,Lady2,00>The winner is, the Mermaid Girl's Academy."
+115,0x2100e6,"<@RL,Lady2,00>あなたたちの ゆうしょうは<CD>きまったも どうぜんね<CF><D1>マ-マン学底では 手も足も<CD>出すことが 出来ないでしょうから","<@RL,Lady2,00>The victor is decided, isn't it? There's no way for Merman Academy to win."
+116,0x2100e8,"<@RL,Man,00>何だと!? 言わせておけば!","<@RL,Man,00>What!? What did you say?"
+117,0x2100ea,"<@RL,Man,00>勝つのは わが マ-マン学底だ!","<@RL,Man,00>Our Merman Academy will win!"
+118,0x2100ec,"<@RL,Boy3,00>あの <&BUF03>って やつを<CD>たおせば!<CF><D1>「うんどう場 えいきゅう<CD>使用けん」が 手に入るんだ!","<@RL,Boy3,00>Beat that <&BUF03>!<CF><D1>And we'll get ""perpetual use of the field""!"
+119,0x2100ee,"<@RL,Boy3,00>お前な- いちどは たすけてもらった<CD>おんを あだでかえすのか?","<@RL,Boy3,00>You... Once you did me a favor, and now you plan to use it against me?"
+120,0x2100f0,"<@RL,Boy3,00>ふっ その前に 勝つのは<CD>ふかのうだと 思うね ぼくは","<@RL,Boy3,00>Phew, before I thought victory was impossible, I did."
+121,0x2100f2,"<@RL,Boy3,00>お前ぇぇぇっ!!!","<@RL,Boy3,00>Yoooou!!"
+122,0x2100f4,"<@RL,Boy3,00>のぞみは なくもない<CD>あとの 2人が 弱ければ","<@RL,Boy3,00>There's a shot if the other two are weak."
+123,0x2100f6,"<@RL,Boy3,00>やめようよ そういうのぞみを<CD>持つのは","<@RL,Boy3,00>Let's not hope for that shot."
+124,0x2100f8,"<@RL,Boy3,00>しくしく...","<@RL,Boy3,00>*sob sob...*"
+125,0x2100fa,"<@RL,Boy3,00>何だよ 今 お前を どう たおすかの<CD>さくせん かいぎ中だぞ 出てけよ!","<@RL,Boy3,00>What the...? We're in the middle of a strategy meeting, get lost!"
+126,0x2100fc,"<@RL,Boy3,00>おれたちが どう たおされるかの<CD>さくせんの まちがいじゃ ないかな","<@RL,Boy3,00>There's an issue with our winning strategy."
+127,0x2100fe,"<@RL,Boy3,00>うるさ-い!","<@RL,Boy3,00>Shut up!"
+128,0x210100,"<@RL,Boy3,00>お前 貝てると 何だか なさけなく<CD>なってくるんだ!","<@RL,Boy3,00>Looking at you makes me feel pathetic!"
+129,0x210102,"<@RL,Boy3,00>やっぱリ お前は おれたちの<CD>リ-ダ-だな!","<@RL,Boy3,00>Of course, you're our leader!"
+130,0x210104,"<@RL,Boy3,00>ほっといてくれ!","<@RL,Boy3,00>Leave me be!"
+131,0x210106,"<@RL,Girl2,00>あの <&BUF03>って やつを<CD>たおせば!<CF><D1>「うんどう場 えいきゅう<CD>使用けん」が 手に入るのね!","<@RL,Boy3,00>Beat that <&BUF03>!<CF><D1>And we'll get ""perpetual use of the field""!"
+132,0x210108,"<@RL,Girl2,00>でも ウオナさま この間 あいつに<CD>まけちゃいましたよ?","<@RL,Girl2,00>But didn't you lose to him before, Miss Uona?"
+133,0x21010a,"<@RL,Girl2,00>うるっさいわね! 3人がかリなら<CD>いけるかも 知れないじゃない!<CF><D1><@RL,Girl2,00>むこうも 3人なんですけど...","<@RL,Girl2,00>Be quiet, if there are three of us, I might be able to do it, you never know!<CF><D1><@RL,Girl2,00>The other team will have three too, though..."
+134,0x21010c,"<@RL,Girl2,00>何よ! 今 あんたを やっつける<CD>さくせんの かいぎ中よ 出てってよ","<@RL,Girl2,00>What...? We're in the middle of a strategy meeting, get!"
+135,0x21010e,"<@RL,Girl2,00>今回は わたしたちの まけだけど<CD>次は こうは いかないわよ","<@RL,Girl2,00>We lost this time, but it won't happen again."
+136,0x210110,"<@RL,Girl2,00>わたしも こいでも しようかしら?","<@RL,Girl2,00>Should I try falling in love too?"
+137,0x210112,"<@RL,Girl2,00>でも ロボトルが 弱い マ-マン<CD>なんて あいてに したくないわ","<@RL,Girl2,00>But I don't want someone from Merman who's weak at robattling."
+138,0x210114,"<@RL,Girl2,00>ロボトルが つよい男なら いるわよ?","<@RL,Girl2,00>Do you know any men that are strong robattlers?"
+139,0x210116,"<@RL,Girl2,00>でも じょそうする 男はねぇ","<@RL,Girl2,00>But no crossdressers."
+140,0x210118,"<@RL,Girl2,00>そうね じょそうが しゅみの<CD>男じゃあねぇ<CF><D1><@LL,Ikki,03>しゅみじゃ ないよ...","<@RL,Girl2,00>Well then, see ya, guy with a hobby of crossdressing.<CF><D1><@LL,Ikki,03>It's not a hobby..."
 141,0x21011a,"<@RL,MrReferee,00>そろそろ はじめますよ!<CD>じゅんびは よろしいですか?<*04>","<@RL,MrReferee,00>We are about to begin! Are you prepared?<*04>"
 142,0x21011c,"<@RL,Koji,00>すまん またせちまったな","<@RL,Koji,00>Sorry, I kept you waiting."
 143,0x21011e,"<@RL,MrReferee,00>みなさん おまたせ いたしましたぁ!","<@RL,MrReferee,00>My apologies for the wait, everyone!"
@@ -228,8 +228,8 @@
 193,0x210182,"<@RL,Lady2,00>行きますわよ!<CF><D1><@RL,Man,00>うむ!","<@RL,Lady2,00>Let's go!<CF><D1><@RL,Man,00>Yes!"
 194,0x210184,"<@LL,Ikki,06>また 町ごと ほうかいの<CD>ききってやつ?<CF><D1>と とにかく カイを<CD>おいかけなきゃ!","<@LL,Ikki,06>Is this another ""town destruction""?<CF><D1>A-anyway I need to go after Kai!"
 195,0x210186,"<@LL,Ikki,00>ちょっと まって","<@LL,Ikki,00>Hold on a bit."
-196,0x210188,"<@LL,Ikki,06>ここは 学底長たちに まかせて<CD>海中林ヘ いそごう",
-197,0x21018a,"<@LL,Ikki,00>シャッタ-が おリている",
+196,0x210188,"<@LL,Ikki,06>ここは 学底長たちに まかせて<CD>海中林ヘ いそごう","<@LL,Ikki,06>Let's leave this place to the principals and go to the undersea forest."
+197,0x21018a,"<@LL,Ikki,00>シャッタ-が おリている","<@LL,Ikki,00>The shutters are closing."
 198,0x21018c,ドド-ンッ!!,*kaboom!!*
 199,0x21018e,"<@RL,Lady2,00>キャア-ッ!!<CF><D1><@RL,Man,00>わ-!","<@RL,Lady2,00>Kyaah!!<CF><D1><@RL,Man,00>Woah!"
 200,0x210190,"<@LL,Ikki,07>何だ!?","<@LL,Ikki,07>What's happening!?"
@@ -315,7 +315,7 @@
 270,0x21021c,"<@LL,Ikki,07>...あれ? <&BUF07>?","<@LL,Ikki,07>...Huh? <&BUF07>?"
 271#kabuto,0x21021e,"<@RL,Metabee,00>何が どうなってるのか<CD>オレには さっぱリだぜ","<@RL,Metabee,00>I've got no clue what's going on."
 271#kuwagata,0x21021e,"<@RL,Rokusho,00>何が おこっている?","<@RL,Rokusho,00>What's going on?"
-272,0x210220,"<@LL,Ikki,00>夜は 通れなくなっているみたいだ",
+272,0x210220,"<@LL,Ikki,00>夜は 通れなくなっているみたいだ","<@LL,Ikki,00>You can't get through at night."
 273,0x210222,"<@LL,Ikki,00>これが「金魚のぞう」 つまリ...","<@LL,Ikki,00>This is the Goldfish Statue..."
 274#kabuto,0x210224,"<@RL,Metabee,00>レイさん!? レイさんなのか!?","<@RL,Metabee,00>Rei!? Is that you, Rei!?"
 274#kuwagata,0x210224,"<@RL,Rokusho,00>レイ? レイなのか?","<@RL,Rokusho,00>Rei!? Is that you, Rei!?"
