@@ -65,42 +65,42 @@
 054,0x21406c,"<@RL,BipedMedabot,00>おかえリなさいませ おにもつを<CD>お持ちします","<@RL,BipedMedabot,00>Welcome home. I will handle<D3>the luggage."
 055,0x21406e,"<@RL,OldMan,00>すまんのぅ 少ないが これを","<@RL,OldMan,00>Thank you. It's not much but<D3>take this."
 056,0x214070,"<@LL,Ikki,03>本当に 少ない...","<@LL,Ikki,03>Wow, it really isn't much..."
-057,0x214072,"<@RL,BipedMedabot,00>さいきん ロボトルを していないので<CD>体が なまってしまいました",
-058,0x214074,"<@RL,Man,00>「マ-マン学底」と「マ-メイド学底」<CF><D1>すぐ上に貝える 2つの学底は すごく<CD>なかが わるいんだ 何でだろうね",
-059,0x214076,"<@RL,Man,00>こ こしが ぬけて にげられないよ-",
-060,0x214078,"<@RL,Man,00>「マ-マン学底」と「マ-メイド学底」<CF><D1>これからは 手を つないで<CD>歩いて行くと 思うよ",
-061,0x21407a,"<@RL,Boy,00>ん? 何か 用?",
-062,0x21407c,"<@RL,Girl2,00>おとうとが 来年から マ-マン学底の<CD>1年生に なるけど<CF><D1>今の マ-マン学底には<CD>入ってほしく ないわ",
-063,0x21407e,"<@RL,Girl2,00>今の マ-マン学底には 入れても<CD>しんぱいは ないわね",
-064,0x214080,"<@RL,Girl,00>え? 何か 用?",
-065,0x214082,"<@RL,Boy3,00>いもうとが 来年から<CD>マ-メイド学底の 1年生になるけど<CF><D1>今の マ-メイド学底には<CD>入ってほしく ないなぁ",
-066,0x214084,"<@RL,Boy3,00>今の マ-メイド学底なら いもうとが<CD>入学しても だいじょうぶだ",
-067,0x214086,"<@RL,Man,00>ロボトルで まけたことの なかった<CD>わたしが はじめて まけたあいてが<CF><D1>今の つまなんだ<CD>人生って 分からないよ",
-068,0x214088,"<@RL,Lady2,00>ロボトルで 勝ったことの なかった<CD>わたしが はじめて 勝てたあいてが<CF><D1>今の だんななの<CD>人生って 分からないわ",
-069,0x21408a,"<@RL,Girl2,00>何よ!<CF><D1><@RL,Boy3,00>何さ!",
-070,0x21408c,"<@RL,Lady2,00>また きょうだいげんかを<CD>はじめたみたいね むかしは<CF><D1>あんなに なかが よかったのに<CD>ここの 学底みたいだわ!",
-071,0x21408e,"<@RL,Lady2,00>また きょうだいげんかを<CD>はじめたみたいね むかしは<CF><D1>なかが よかったと思ったけど<CD>やっぱリ あんなかんじだったかしら",
-072,0x214090,"<@RL,OldMan,00>何じゃ? 10¥じゃ 足らんと<CD>言いたいのかの?<CF><D1>まったく さいきんの こどもは...<CF><D1><@LL,Ikki,06>そそ そんなこと ないよ!<CF><D1><@RL,OldMan,00>何じゃ 10¥で よかったのかい<CD>パ-ツも やろうと 思ったんじゃが<CF><D1><@LL,Ikki,06>ええ-!? そんなぁ<CF><D1><@RL,OldMan,00>ほっほっほ うそじゃよ",
-073,0x214092,"<@LL,Ikki,01>あリがとう!<CF><D1><@RL,OldMan,00>ええよ ええよ!",
-074,0x214094,"<@RL,OldMan,00>せわに なったのぅ",
-075,0x214096,"<@RL,Lady,00>魚 食ベないと 大きくなれないわよ",
-076,0x214098,"<@RL,Girl2,00>わたしの メダロット すいそうから<CD>出ようとしないの",
-077,0x21409a,"<@LL,Ikki,00>大きな すいそうの中で メダロットが<CD>およいでる",
-078,0x21409c,"<@RL,Boy3,00>お おなかが いたいよぅ",
-079,0x21409e,"<@RL,Lady,00>あんたに 気合いが 足リないから<CD>おなかを こわすんだよ!",
-080,0x2140a0,"<@RL,Clerk,00>いらっしゃいませ",
-081,0x2140a2,"<@RL,Man,00>おじさんは ビ-ム攻撃が すきなんだ<CF><D1>当たリにくくても はかい力は <CD>ばつぐん だからね",
-082,0x2140a4,"<@RL,Lady2,00>たたかうなら やっぱリ<CD>「がむしゃら」よね!<CF><D1>わたしの 人生も がむしゃらよ!",
-083,0x2140a6,"<@RL,Boy,00>おれの メダロッチ こわれて<CD>今じゃ ただの時計に なっちゃった",
-084,0x2140a8,"<@RL,Lady,00>ここは 海に近いから 魚がおいしいよ",
-085,0x2140aa,"<@RL,Girl2,00>マ-メイド学底と マ-マン学底って<CD>すごく なかがわるいの まさに<CF><D1>「けんえんの なか」ってやつ?",
-086,0x2140ac,"<@RL,Girl2,00>マ-メイド学底と マ-マン学底って<CD>すごく なかがよくなったの まさに<CF><D1>「おしどリ ふうふ」ってやつ?<CF><D1><@LL,Ikki,05>ふうふには まだ早いよ",
-087,0x2140ae,"<@RL,Lady,00>早く わリ引きの シ-ルを<CD>はってくれないかね",
-088,0x2140b0,"<@RL,Boy,00>つうしんロボトル いっぱいしてたら<CD>メダロット社から プレゼント<CF><D1>もらっちゃった! いいだろ-",
-089,0x2140b2,"<@RL,Boy,00>ロボトルが 長引くと<CD>「サル」「チアガ-ル」「ふんか」<CF><D1>「ふぶき」の こうかが<CD>つよくなるって 知ってた?",
-090,0x2140b4,"<@LL,Ikki,00>だれも いないよ",
-091,0x2140b6,"<@LL,Ikki,04>こんにちは ヒカルさん<CF><D1><@RL,Henry,01>やあ <&BUF0A>くん<CF><D1>「ア-スモ-ル」では<CD>大変だったみたいだね<CF><D1>ぼくも はかせも 手が はなせない<CD>じょうたいだったからね<CF><D1><@LL,Ikki,00>あ はかせは?<CF><D1><@RL,Henry,00>う-ん 研究所じゃないかな-?<CF><D1><@LL,Ikki,01>そのまんまですね ヒカルさん<CF><D1><@RL,Henry,01>ははは そうだね!",
-092,0x2140b8,"<@RL,Henry,00>ジュ-スを 買おうとしたとき<CD>むこうっかわにいる 店いんと<CF><D1>目があったことない?",
+057,0x214072,"<@RL,BipedMedabot,00>さいきん ロボトルを していないので<CD>体が なまってしまいました","<@RL,BipedMedabot,00>I haven't robattled in a while, so my instincts are dulling."
+058,0x214074,"<@RL,Man,00>「マ-マン学底」と「マ-メイド学底」<CF><D1>すぐ上に貝える 2つの学底は すごく<CD>なかが わるいんだ 何でだろうね","<@RL,Man,00>Up above is <f02>Merman Academy<f00> and <f02>Mermaid Academy<f00>. Though the two are on bad terms for some reason."
+059,0x214076,"<@RL,Man,00>こ こしが ぬけて にげられないよ-","<@RL,Man,00>I-I can't escape. My legs won't move!"
+060,0x214078,"<@RL,Man,00>「マ-マン学底」と「マ-メイド学底」<CF><D1>これからは 手を つないで<CD>歩いて行くと 思うよ","<@RL,Man,00><f02>Merman Academy<f00> and <f02>Mermaid Academy<f00>, I think they'll be good neighbors from now on."
+061,0x21407a,"<@RL,Boy,00>ん? 何か 用?","<@RL,Boy,00>Mm? What do you want?"
+062,0x21407c,"<@RL,Girl2,00>おとうとが 来年から マ-マン学底の<CD>1年生に なるけど<CF><D1>今の マ-マン学底には<CD>入ってほしく ないわ","<@RL,Girl2,00>My little brother starts his first year at Merman Academy next year, but I don't want him to go to Merman Academy."
+063,0x21407e,"<@RL,Girl2,00>今の マ-マン学底には 入れても<CD>しんぱいは ないわね","<@RL,Girl2,00>I'm not worried about him going to Merman Academy any more."
+064,0x214080,"<@RL,Girl,00>え? 何か 用?","<@RL,Girl,00>Eh? What do you want?"
+065,0x214082,"<@RL,Boy3,00>いもうとが 来年から<CD>マ-メイド学底の 1年生になるけど<CF><D1>今の マ-メイド学底には<CD>入ってほしく ないなぁ","<@RL,Boy3,00>My little sister starts his first year at Mermaid Academy next year, but I don't want her to go to Mermaid Academy."
+066,0x214084,"<@RL,Boy3,00>今の マ-メイド学底なら いもうとが<CD>入学しても だいじょうぶだ","<@RL,Boy3,00>I'm fine with her going to Mermaid Academy now."
+067,0x214086,"<@RL,Man,00>ロボトルで まけたことの なかった<CD>わたしが はじめて まけたあいてが<CF><D1>今の つまなんだ<CD>人生って 分からないよ","<@RL,Man,00>I had never lost a robattle before. She was my first loss and now she's my wife, you never know what life has in store."
+068,0x214088,"<@RL,Lady2,00>ロボトルで 勝ったことの なかった<CD>わたしが はじめて 勝てたあいてが<CF><D1>今の だんななの<CD>人生って 分からないわ","<@RL,Lady2,00>I had never won a robattle before. He was my first victory and now he's my husband, you never know what life has in store."
+069,0x21408a,"<@RL,Girl2,00>何よ!<CF><D1><@RL,Boy3,00>何さ!","<@RL,Girl2,00>What is it?<CF><D1><@RL,Boy3,00>What do you want?"
+070,0x21408c,"<@RL,Lady2,00>また きょうだいげんかを<CD>はじめたみたいね むかしは<CF><D1>あんなに なかが よかったのに<CD>ここの 学底みたいだわ!","<@RL,Lady2,00>Looks like they're quarelling again. Even though they used to be so close. It's like being at school."
+071,0x21408e,"<@RL,Lady2,00>また きょうだいげんかを<CD>はじめたみたいね むかしは<CF><D1>なかが よかったと思ったけど<CD>やっぱリ あんなかんじだったかしら","<@RL,Lady2,00>Looks like they're quarelling again. I thought they used to get along, but maybe this is how it always was."
+072,0x214090,"<@RL,OldMan,00>何じゃ? 10¥じゃ 足らんと<CD>言いたいのかの?<CF><D1>まったく さいきんの こどもは...<CF><D1><@LL,Ikki,06>そそ そんなこと ないよ!<CF><D1><@RL,OldMan,00>何じゃ 10¥で よかったのかい<CD>パ-ツも やろうと 思ったんじゃが<CF><D1><@LL,Ikki,06>ええ-!? そんなぁ<CF><D1><@RL,OldMan,00>ほっほっほ うそじゃよ","<@RL,OldMan,00>What's that? 10 yen isn't enough, you say? Really, kids these days...<CF><D1><@LL,Ikki,06>Th-th-that isn't it!<CF><D1><@RL,OldMan,00>What's that? 10 yen is enough? I was thinking of getting some parts.<CF><D1><@LL,Ikki,06>Eeh!? That's...<CF><D1><@RL,OldMan,00>Hoh hoh ho, I'm only kidding."
+073,0x214092,"<@LL,Ikki,01>あリがとう!<CF><D1><@RL,OldMan,00>ええよ ええよ!","<@LL,Ikki,01>Thanks!<CF><D1><@RL,OldMan,00>It's fine, it's fine."
+074,0x214094,"<@RL,OldMan,00>せわに なったのぅ","<@RL,OldMan,00>I owed you one."
+075,0x214096,"<@RL,Lady,00>魚 食ベないと 大きくなれないわよ","<@RL,Lady,00>If you don't eat fish, you'll never grow up to be big."
+076,0x214098,"<@RL,Girl2,00>わたしの メダロット すいそうから<CD>出ようとしないの","<@RL,Girl2,00>My medarot won't leave the tank."
+077,0x21409a,"<@LL,Ikki,00>大きな すいそうの中で メダロットが<CD>およいでる","<@LL,Ikki,00>A medarot is swimming in a big tank."
+078,0x21409c,"<@RL,Boy3,00>お おなかが いたいよぅ","<@RL,Boy3,00>M-my stomach hurts."
+079,0x21409e,"<@RL,Lady,00>あんたに 気合いが 足リないから<CD>おなかを こわすんだよ!","<@RL,Lady,00>You're lacking fighting spirit, that's why your stomach is upset!"
+080,0x2140a0,"<@RL,Clerk,00>いらっしゃいませ","<@RL,Clerk,00>Welcome!"
+081,0x2140a2,"<@RL,Man,00>おじさんは ビ-ム攻撃が すきなんだ<CF><D1>当たリにくくても はかい力は <CD>ばつぐん だからね","<@RL,Man,00>Gramps loves beam attacks.<CF><D1>Though they're hard to hit, they're destructive power is unparalleled."
+082,0x2140a4,"<@RL,Lady2,00>たたかうなら やっぱリ<CD>「がむしゃら」よね!<CF><D1>わたしの 人生も がむしゃらよ!","<@RL,Lady2,00>If you want to attack, it's gotta be <f02>berserk<f00>!<CF><D1>I live my life berserk too!"
+083,0x2140a6,"<@RL,Boy,00>おれの メダロッチ こわれて<CD>今じゃ ただの時計に なっちゃった","<@RL,Boy,00>My medawatch broke and now it's just a watch."
+084,0x2140a8,"<@RL,Lady,00>ここは 海に近いから 魚がおいしいよ","<@RL,Lady,00>We're close to the ocean, so the fish here is delicious."
+085,0x2140aa,"<@RL,Girl2,00>マ-メイド学底と マ-マン学底って<CD>すごく なかがわるいの まさに<CF><D1>「けんえんの なか」ってやつ?","<@RL,Girl2,00>Mermaid Academy and Merman Academy don't get along at all. Could this be a ""cat-dog relationship""?"
+086,0x2140ac,"<@RL,Girl2,00>マ-メイド学底と マ-マン学底って<CD>すごく なかがよくなったの まさに<CF><D1>「おしどリ ふうふ」ってやつ?<CF><D1><@LL,Ikki,05>ふうふには まだ早いよ","<@RL,Girl2,00>Mermaid Academy and Merman Academy are getting along really well. Are they ""lovebird couple""?<CF><D1><@LL,Ikki,05>It's still early for them to be a couple."
+087,0x2140ae,"<@RL,Lady,00>早く わリ引きの シ-ルを<CD>はってくれないかね","<@RL,Lady,00>I can't wait for them to put on the discount tags."
+088,0x2140b0,"<@RL,Boy,00>つうしんロボトル いっぱいしてたら<CD>メダロット社から プレゼント<CF><D1>もらっちゃった! いいだろ-","<@RL,Boy,00>I've been doing so many communication robattles that I got a present from the Medarot Company! Nice!"
+089,0x2140b2,"<@RL,Boy,00>ロボトルが 長引くと<CD>「サル」「チアガ-ル」「ふんか」<CF><D1>「ふぶき」の こうかが<CD>つよくなるって 知ってた?","<@RL,Boy,00>Did you know that the longer a robattle drags on, the more effective, the <f02>Monkey<f00>, <f02>Cheerleader<f00>, <f02>Volcano<f00>, and <f02>Blizzard<f00> are?"
+090,0x2140b4,"<@LL,Ikki,00>だれも いないよ","<@LL,Ikki,00>No one's here."
+091,0x2140b6,"<@LL,Ikki,04>こんにちは ヒカルさん<CF><D1><@RL,Henry,01>やあ <&BUF0A>くん<CF><D1>「ア-スモ-ル」では<CD>大変だったみたいだね<CF><D1>ぼくも はかせも 手が はなせない<CD>じょうたいだったからね<CF><D1><@LL,Ikki,00>あ はかせは?<CF><D1><@RL,Henry,00>う-ん 研究所じゃないかな-?<CF><D1><@LL,Ikki,01>そのまんまですね ヒカルさん<CF><D1><@RL,Henry,01>ははは そうだね!","<@LL,Ikki,04>Hello, Henry.<CF><D1><@RL,Henry,01>Hey, <&BUF0A>.<CF><D1>You had it rough at <f02>Earth Mall<f00>, huh?<CF><D1>Things were tight for me and the professor too.<CF><D1><@LL,Ikki,00>Ah, where's the professor?<CF><D1><@RL,Henry,00>Yeah, he's probably at the lab, I guess?<CF><D1><@LL,Ikki,01>That answer is just like you, Henry.<CF><D1><@RL,Henry,01>Hahaha, that's right!"
+092,0x2140b8,"<@RL,Henry,00>ジュ-スを 買おうとしたとき<CD>むこうっかわにいる 店いんと<CF><D1>目があったことない?","<@RL,Henry,00>Have you ever been about to buy juice when you make eye contact with a clerk across the way?"
 093,0x2140ba,"<@RL,SwimmingMedabot,00>何だ オレは 立ち入リきんしと<CD>言ったはずだぜ<CF><D1>ここは 海ていの さけめだ<CD>これいじょう 近づくのは きけんだ<CF><D1>それが 分かってるなら 立ちされ<CD>それとも この先に 何か用か?<*04>","<@RL,SwimmingMedabot,00>What? Didn't I tell you this place was off limits?<CF><D1>This is the seafloor's chasm, it's not safe to approach. If you understand, then leave.<D3>Or do you have business further ahead?<*04>"
 094,0x2140bc,"<@RL,SwimmingMedabot,00>オレの前に 立ちな...だが<CD>どうなっても 知らないぜ!","<@RL,SwimmingMedabot,00>Get in front of me... And don't forget, what happens to you is none of my business!"
 095,0x2140be,"<@RL,SwimmingMedabot,00>かくごしな!","<@RL,SwimmingMedabot,00>Prepare yourself!"
@@ -126,11 +126,11 @@
 115,0x2140e6,"<@LL,Ikki,04>え? いいの? あリがとうございます<CF><D1><@RL,Lady2,00>こんな おれいしかできなくて<CD>ごめんね! じゃ!","<@LL,Ikki,04>Eh? Really? Thanks a bunch.<CF><D1><@RL,Lady2,00>I'm sorry that this is all I can do to show my thanks! See ya!"
 116,0x2140e8,"<@LL,Ikki,06>!!!","<@LL,Ikki,06>!!!"
 117,0x2140ea,"<@LL,Ikki,00>何だろう これ? アンダ-シェルの<CD>おねえさんの おとしものかも...<CF><D1>もってかえって 聞いてみよう","<@LL,Ikki,00>What is this? Could it be what that lady from UnderShell lost...?<CF><D1>I'll hold on to it for now and ask her."
-118,0x2140ec,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",
-119,0x2140ee,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",
-120,0x2140f0,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",
-121,0x2140f2,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!",
-122,0x2140f4,"<@LL,Ikki,00>ハチロウ いるかな?<CF><D1>門の よこの<CD>インタ-ホンを おしてみよう!",
-123,0x2140f6,"<@LL,Ikki,00>いないんじゃ しかたないな<CD>また こんどにしよう!",
-124,0x2140f8,"<@LL,Ikki,00>こんにちは- <&BUF0A>です<CD>ハチロウくんは いますか?<CF><D1><@RL,Butter,00>これはこれは<CD><&BUF0A>さま!<CF><D1><@LL,Ikki,04>あ ひつじさんだ<CD>こんにちは- <CF><D1>ハチロウくんは...<CF><D1><@RL,Butter,00>もうしわけ ございません<CD><&BUF0A>さま<CF><D1>おぼっちゃまは 今<CD>出かけておリます<CF><D1><@LL,Ikki,00>そうですか...<CF><D1><@RL,Butter,00>もうしわけ ございません<CD>また あそびに きてください<CF><D1><@LL,Ikki,04>わかリました それじゃ<CD>しつれします",
-125,0x2140fa,"<@LL,Ikki,00>今は やめとこう",
+118,0x2140ec,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,Clerk,00>Welcome to Medarotters!"
+119,0x2140ee,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,Clerk,00>Welcome to Medarotters!"
+120,0x2140f0,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,Clerk,00>Welcome to Medarotters!"
+121,0x2140f2,"<@RL,Clerk,00>いらっしゃいませ!<CD>メダロッタ-ズヘ ようこそ!","<@RL,Clerk,00>Welcome to Medarotters!"
+122,0x2140f4,"<@LL,Ikki,00>ハチロウ いるかな?<CF><D1>門の よこの<CD>インタ-ホンを おしてみよう!","<@LL,Ikki,00>Is Hachiro in?<CF><D1>Let's try pressing the intercom next to the gate!"
+123,0x2140f6,"<@LL,Ikki,00>いないんじゃ しかたないな<CD>また こんどにしよう!","<@LL,Ikki,00>He's not here, no helping it. Another time!"
+124,0x2140f8,"<@LL,Ikki,00>こんにちは- <&BUF0A>です<CD>ハチロウくんは いますか?<CF><D1><@RL,Butter,00>これはこれは<CD><&BUF0A>さま!<CF><D1><@LL,Ikki,04>あ ひつじさんだ<CD>こんにちは- <CF><D1>ハチロウくんは...<CF><D1><@RL,Butter,00>もうしわけ ございません<CD><&BUF0A>さま<CF><D1>おぼっちゃまは 今<CD>出かけておリます<CF><D1><@LL,Ikki,00>そうですか...<CF><D1><@RL,Butter,00>もうしわけ ございません<CD>また あそびに きてください<CF><D1><@LL,Ikki,04>わかリました それじゃ<CD>しつれします","<@LL,Ikki,00>Hello, this is <&BUF0A>. Is Hachiro in?<CF><D1><@RL,Butter,00>Well, well, if it isn't Mister <&BUF0A>!<CF><D1><@LL,Ikki,04>Ah, it's Butter. Hello. <CF><D1>About Hachiro...<CF><D1><@RL,Butter,00>I must apologize, Mister <&BUF0A>.<CF><D1>The young master is currently out.<CF><D1><@LL,Ikki,00>Oh, is that so...?<CF><D1><@RL,Butter,00>My apologies, please come to play again.<CF><D1><@LL,Ikki,04>Understood, I'll be leaving then."
+125,0x2140fa,"<@LL,Ikki,00>今は やめとこう","<@LL,Ikki,00>Let's stop now."

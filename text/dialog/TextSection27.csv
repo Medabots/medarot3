@@ -83,8 +83,8 @@
 081,0x2200a2,"<@RL,Man3,00>そんなことも 分からないのですか?<CD>それでは 先生と みとめませんよ","<@RL,Man3,00>Don't you understand those things?<D3>Then you won't be recognized as a teacher."
 082,0x2200a4,"<@RL,Man,00>ひ-! むずかしいっ!","<@RL,Man,00>Ack! It's too hard!"
 083,0x2200a6,"<@RL,Lady2,00>あの子 わたしたちの きょういくじゃ<CD>もの足リないんだって きびしいわぁ","<@RL,Lady2,00>That girl is relentless. She says our education isn't enough!"
-084,0x2200a8,"<@RL,Man,00>人という字はね 人と人がだね...",
-085,0x2200aa,"<@RL,Man3,00>先生が言うにはね 「人」の字って<CD>人と人とが ささえ合っているって<CF><D1>いみらしいけど ぼくは 人をささえて<CD>くれるのは お金だけだと 思うよ<CF><D1><@LL,Ikki,05>でも お金じゃ 買えないものだって<CF><D1><@RL,Man3,00>ないね!",
+084,0x2200a8,"<@RL,Man,00>人という字はね 人と人がだね...","<@RL,Man,00>The word for mankind consists of the words ""man"" and ""kind""..."
+085,0x2200aa,"<@RL,Man3,00>先生が言うにはね 「人」の字って<CD>人と人とが ささえ合っているって<CF><D1>いみらしいけど ぼくは 人をささえて<CD>くれるのは お金だけだと 思うよ<CF><D1><@LL,Ikki,05>でも お金じゃ 買えないものだって<CF><D1><@RL,Man3,00>ないね!","<@RL,Man3,00>The teacher says that the word symbolizes how man must be kind to one another, but I feel like the only thing people are kind to is money.<CF><D1><@LL,Ikki,05>But money can't buy everything.<CF><D1><@RL,Man3,00>I disagree!"
 086,0x2200ac,"<@RL,Man3,00>パパに せいせきが上がるまで<CD>ロボトルきんしって 言われちゃった","<@RL,Man3,00>Papa banned me from Robattles until I get my grades up!"
 087,0x2200ae,"<@RL,Lady3,00>あなたの そのチョンマゲ すてきね♥","<@RL,Lady3,00>Your topknot is great♥"
 088,0x2200b0,"<@RL,Lady2,00>このクラス つかれるわぁ","<@RL,Lady2,00>I'm bored of this class..."
