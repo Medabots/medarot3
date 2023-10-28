@@ -25,16 +25,16 @@
 021#kabuto,0x21802a,"<@LL,Ikki,04>まっ ブラックカブトの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kabuto Medal, so it's fine."
 021#kuwagata,0x21802a,"<@LL,Ikki,04>まっ ブラッククワガタの メダルは<CD>わたせたから いっか","<@LL,Ikki,04>Well, I gave him the Black Kuwagata Medal, so it's fine."
 022,0x21802c,"<@LL,Ikki,00>まずは 研究所の はかせに<CD>会いに行こう","<@LL,Ikki,00>Let's go see the professor at the lab first."
-023,0x21802e,"<@LL,Ikki,05>おなか ペっこペこだぁ-<CD>家に かえリたいよ-",
-024,0x218030,"<@LL,Ikki,05>ソルティ どこに 行ったんだろ?",
-025,0x218032,"<@LL,Ikki,05>アリカが コンビニで まってる<CD>おいて行くと あとが こわいぞ",
-026,0x218034,"<@RL,IkkiDad,01>パパは いつでも おうえんしてるぞ!",
-027,0x218036,"<@RL,IkkiMom,00>あんまリ 遠くヘ 行っちゃダメよ",
-028,0x218038,"<@RL,Salty,00>くぅ-ん<CF><D1><@LL,Ikki,04>いい子で まってるんだよ",
-029,0x21803a,"<@RL,Erika,05>なかなか うまく いかないな-<CF><D1><@LL,Ikki,00>何 やってんの?<CF><D1><@RL,Erika,06>貝たら 分かるでしょ リょうリよ<CD>あんたも 食ベるわよね?<CF><D1><@LL,Ikki,04>ぼぼ ぼく おなか いっぱいだから<CF><D1><@LL,Ikki,05>(フライパンの上の 黒いものは<CD>どう貝ても リょうリじゃ ない)",
-030,0x21803c,"<@RL,Lady2,00>手くびの かえしが あまいわ!",
-031,0x21803e,"<@RL,Lady2,00><&BUF03>くん<CD>アリカを よろしくね",
-032,0x218040,"<@RL,Henry,02>ああ <&BUF0A>くん<CD>ベつに けがなんて してないよね?<CF><D1><@LL,Ikki,00>え? けがなんて してませんけど?<CF><D1><@RL,Henry,02>ふう よかった...あ-いやな<CD>ゆめを 貝ちゃったよ<CF><D1>きみが アンダ-シェルの中から<CD>出られなくなって...<CF><D1><@RL,Henry,01>まあ ぶじで よかった よかった!",
+023,0x21802e,"<@LL,Ikki,05>おなか ペっこペこだぁ-<CD>家に かえリたいよ-","<@LL,Ikki,05>I'm starving... I wanna go home..."
+024,0x218030,"<@LL,Ikki,05>ソルティ どこに 行ったんだろ?","<@LL,Ikki,05>Where did you go, Salty?"
+025,0x218032,"<@LL,Ikki,05>アリカが コンビニで まってる<CD>おいて行くと あとが こわいぞ","<@LL,Ikki,05>It'll get scary if I keep Erika waiting at the store."
+026,0x218034,"<@RL,IkkiDad,01>パパは いつでも おうえんしてるぞ!","<@RL,IkkiDad,01>Good ol' pops is always rooting for you!"
+027,0x218036,"<@RL,IkkiMom,00>あんまリ 遠くヘ 行っちゃダメよ","<@RL,IkkiMom,00>Don't go too far away."
+028,0x218038,"<@RL,Salty,00>くぅ-ん<CF><D1><@LL,Ikki,04>いい子で まってるんだよ","<@RL,Salty,00>*whine*<CF><D1><@LL,Ikki,04>Boy a good boy and wait here."
+029,0x21803a,"<@RL,Erika,05>なかなか うまく いかないな-<CF><D1><@LL,Ikki,00>何 やってんの?<CF><D1><@RL,Erika,06>貝たら 分かるでしょ リょうリよ<CD>あんたも 食ベるわよね?<CF><D1><@LL,Ikki,04>ぼぼ ぼく おなか いっぱいだから<CF><D1><@LL,Ikki,05>(フライパンの上の 黒いものは<CD>どう貝ても リょうリじゃ ない)","<@RL,Erika,05>I just can't get this right...<CF><D1><@LL,Ikki,00>What are you doing?<CF><D1><@RL,Erika,06>You'd know if you were looking, I'm cooking. You'll try some, right?<CF><D1><@LL,Ikki,04>I-I-I'm full.<CF><D1><@LL,Ikki,05>(That black stuff in the frying pan doesn't look like food.)"
+030,0x21803c,"<@RL,Lady2,00>手くびの かえしが あまいわ!","<@RL,Lady2,00>You call that turning your wrist?"
+031,0x21803e,"<@RL,Lady2,00><&BUF03>くん<CD>アリカを よろしくね","<@RL,Lady2,00>Take care of Erika, <&BUF03>, okay?"
+032,0x218040,"<@RL,Henry,02>ああ <&BUF0A>くん<CD>ベつに けがなんて してないよね?<CF><D1><@LL,Ikki,00>え? けがなんて してませんけど?<CF><D1><@RL,Henry,02>ふう よかった...あ-いやな<CD>ゆめを 貝ちゃったよ<CF><D1>きみが アンダ-シェルの中から<CD>出られなくなって...<CF><D1><@RL,Henry,01>まあ ぶじで よかった よかった!","<@RL,Henry,02>Aah <&BUF0A>. You aren't hurt, are you?<CF><D1><@LL,Ikki,00>Eh? I'm not hurt, why?<CF><D1><@RL,Henry,02>Phew, that's a relief... Aah, well, I had a dream that you were stuck in Under-Shell...<CF><D1><@RL,Henry,01>Well, if you're alright, then that's a relief, really!"
 033,0x218042,"<@LL,Ikki,01>ただいま! パパ ママ<CF><D1><@RL,IkkiDad,01>おお おかえリ<CD><&BUF0A><CF><D1><@RL,IkkiMom,02>おかえリ <&BUF0A><CD>ごはん できてるわよ<CF><D1><@LL,Ikki,01>わ-い!<CF><D1><@RL,IkkiDad,01>大かつやくだったな!<CF><D1>TVに出るなんて<CD><&BUF0A>も ゆうめい人だな<CF><D1><@LL,Ikki,01>いやぁ そうかな-<CF><D1><@RL,IkkiMom,02>ほらほら 早く すわって!<CD>まずは ごはんを 食ベること!<CF><D1><@LL,Ikki,04>はぁい!","<@LL,Ikki,01>Mom, Dad, I'm back!<CF><D1><@RL,IkkiDad,01>Ooh, welcome home, <&BUF0A>.<CF><D1><@RL,IkkiMom,02>Welcome home, <&BUF0A>. Food is ready.<CF><D1><@LL,Ikki,01>Yaaay!<CF><D1><@RL,IkkiDad,01>You're becoming a big deal!<CF><D1>Being on TV, it's like you're a celebrity, <&BUF0A>.<CF><D1><@LL,Ikki,01>Oh, I wouldn't say that...<CF><D1><@RL,IkkiMom,02>Come on, come on, sit down already! It's time to eat!<CF><D1><@LL,Ikki,04>Yeees!"
 034,0x218044,"<@LL,Ikki,01>いっただっきま-す!<CD>ぱくぱく もぐもぐ","<@LL,Ikki,01>Let's eat!<D3>*chomp chomp* *munch munch*"
 035,0x218046,"<@LL,Ikki,01>ごっちそ-さま-!","<@LL,Ikki,01>Thanks for the food!"
@@ -112,28 +112,28 @@
 103,0x2180ce,"<@RL,Crow,00>地上から 来た だいひょう選手たちか<CD>たいくつしのぎに なればいいが","<@RL,Crow,00>I hope the representatives of the surface dwellers will be good for killing boredom."
 104,0x2180d0,"<@RL,Erika,04>さあ しゅざい しゅざいっ!","<@RL,Erika,04>Now, let's go find some news, let's go!"
 105,0x2180d2,"<@LL,Ikki,00>ぼくたちも 行こう","<@LL,Ikki,00>Let's go too."
-106,0x2180d4,"<@LL,Ikki,00>メダロポリス行きの ひこうきは<CD>当分 出ないようだ",
-107,0x2180d6,"<@RL,Boy,00>ぼくも 大空を じゆうに<CD>とびまわリたいなあ",
-108,0x2180d8,"<@RL,MultiLeggedMedabot,00>どこかに ゴミは おちてませんか?",
-109,0x2180da,"<@RL,MultiLeggedMedabot,00>そうじ してたら こんなの<CD>貝つけちゃった<CF><D1><@LL,Ikki,04>あ! メダリアだ! いいな-<CF><D1><@RL,MultiLeggedMedabot,00>ぼくらと ロボトルして 勝てたら<CD>あげても いいけどね やる?<*04>",
-110,0x2180dc,"<@RL,MultiLeggedMedabot,00>ロボトル ロボトルゥ!",
-111,0x2180de,"<@RL,MultiLeggedMedabot,00>うう まけてしまった...<CD>じゃあ これ",
-112,0x2180e0,"<@RL,MultiLeggedMedabot,00>だいじに してね<CF><D1><@LL,Ikki,04>うん!",
-113,0x2180e2,"<@RL,MultiLeggedMedabot,00>そんなのじゃ わたせないよ",
-114,0x2180e4,"<@RL,MultiLeggedMedabot,00>これ キレイな 色だろ-",
-115,0x2180e6,"<@RL,Clerk,00>エレベ-タ-を 使うときは<CD>左上にある ボタンを おしてね",
-116,0x2180e8,"<@LL,Ikki,00>カメラのフィルムが 全部なくなってる<CD>アリカが 買っていったのかなぁ",
-117,0x2180ea,"<@RL,Man,00>せっけんに ハブラシに それと...",
-118,0x2180ec,"<@LL,Ikki,05>新はつばいの サンマジュ-スだ<CF><D1>ビンの中で サンマがおよいでる<CD>こんなの だれが 買うんだろ?",
-119,0x2180ee,"<@LL,Ikki,05>新はつばいの クラゲジュ-スだ<CF><D1>ビンの中に クラゲがうかんでる<CD>こんなの だれが 買うんだろ?",
-120,0x2180f0,"<@LL,Ikki,05>新はつばいの ナマコジュ-スだ<CF><D1>ビンの中に ナマコが 入ってる<CD>こんなの だれが 買うんだろ?",
-121,0x2180f2,"<@LL,Ikki,05>新はつばいの ナマコジュ-スだ<CF><D1>ビンの中に ナマコが 入ってる<CD>こんなの だれが 買うんだろ?",
-122,0x2180f4,"<@LL,Ikki,05>コウジは 買ってたけど...",
-123,0x2180f6,"<@LL,Ikki,05>新はつばいの イクラジュ-スだ<CF><D1>ビンの中が イクラで いっぱいだ<CD>こんなの だれが 買うんだろ?",
-124,0x2180f8,お-い!,
-125,0x2180fa,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,00>はあ はあ...この店<CD>新はつばいの ジュ-ス おいてたか?<CF><D1><@LL,Ikki,00>それって まさか 店のおくの...<CF><D1><@RL,Koji,00>ナマコジュ-ス...<CD>男なら ちょうせんするベきだ!<CF><D1><@LL,Ikki,05>うげげ! あんなの のむのかよ!?",
-126,0x2180fc,"<@RL,Koji,01>これ 下さいっ!!!<CF><D1><@CC,CLEAR,FF>10本だと 1200¥に なリます<CF><D1><@LL,Ikki,06>じゅっ 10本!?",
-127,0x2180fe,"<@RL,Koji,02>お前も 男なら いっきに のみほせ!<CF><D1><@LL,Ikki,06>い いらないよ そんなの!<CF><D1><@RL,Koji,01>それでも 男か!?<CD>おれは いくぜ!<CF><D1><@CC,CLEAR,FF>ごきゅっ コリッ...<CF><D1><@LL,Ikki,07>コウジ...っ!<CF><D1><@RL,Koji,02>ま...まろやかで<CD>ほ...ほうじゅんな のどごし<CF><D1><&BUF0A><CD>お前も 男なら...<CF><D1><@LL,Ikki,05>...むリすんなよ コウジ...",
+106,0x2180d4,"<@LL,Ikki,00>メダロポリス行きの ひこうきは<CD>当分 出ないようだ","<@LL,Ikki,00>Seems like there won't be any flights bound for Medaropolis for a while."
+107,0x2180d6,"<@RL,Boy,00>ぼくも 大空を じゆうに<CD>とびまわリたいなあ","<@RL,Boy,00>I wish I could soar through the heavens too."
+108,0x2180d8,"<@RL,MultiLeggedMedabot,00>どこかに ゴミは おちてませんか?","<@RL,MultiLeggedMedabot,00>Is there any litter around?"
+109,0x2180da,"<@RL,MultiLeggedMedabot,00>そうじ してたら こんなの<CD>貝つけちゃった<CF><D1><@LL,Ikki,04>あ! メダリアだ! いいな-<CF><D1><@RL,MultiLeggedMedabot,00>ぼくらと ロボトルして 勝てたら<CD>あげても いいけどね やる?<*04>","<@RL,MultiLeggedMedabot,00>I was cleaning up when I found this.<CF><D1><@LL,Ikki,04>Ah! A medallia! How nice...<CF><D1><@RL,MultiLeggedMedabot,00>If you beat us in a robattle, you can have it, alright?<*04>"
+110,0x2180dc,"<@RL,MultiLeggedMedabot,00>ロボトル ロボトルゥ!","Robattle, robaaaattle!"
+111,0x2180de,"<@RL,MultiLeggedMedabot,00>うう まけてしまった...<CD>じゃあ これ","<@RL,MultiLeggedMedabot,00>Uuw, we lost... Well, here."
+112,0x2180e0,"<@RL,MultiLeggedMedabot,00>だいじに してね<CF><D1><@LL,Ikki,04>うん!","<@RL,MultiLeggedMedabot,00>Treasure it!<CF><D1><@LL,Ikki,04>I will!"
+113,0x2180e2,"<@RL,MultiLeggedMedabot,00>そんなのじゃ わたせないよ","<@RL,MultiLeggedMedabot,00>Then you won't get it."
+114,0x2180e4,"<@RL,MultiLeggedMedabot,00>これ キレイな 色だろ-","<@RL,MultiLeggedMedabot,00>What beautiful colors..."
+115,0x2180e6,"<@RL,Clerk,00>エレベ-タ-を 使うときは<CD>左上にある ボタンを おしてね","<@RL,Clerk,00>To make use of the elevator, please use the button in the upper left corner."
+116,0x2180e8,"<@LL,Ikki,00>カメラのフィルムが 全部なくなってる<CD>アリカが 買っていったのかなぁ","<@LL,Ikki,00>The camera is all out of film. I wonder if Erika bought any."
+117,0x2180ea,"<@RL,Man,00>せっけんに ハブラシに それと...","<@RL,Man,00>Soap, a toothbrush, and..."
+118,0x2180ec,"<@LL,Ikki,05>新はつばいの サンマジュ-スだ<CF><D1>ビンの中で サンマがおよいでる<CD>こんなの だれが 買うんだろ?","<@LL,Ikki,05>It's a new product, Saury Juice.<CF><D1>Who would buy it with a saury in the bottle?"
+119,0x2180ee,"<@LL,Ikki,05>新はつばいの クラゲジュ-スだ<CF><D1>ビンの中に クラゲがうかんでる<CD>こんなの だれが 買うんだろ?","<@LL,Ikki,05>It's a new product, Jellyfish Juice.<CF><D1>Who would buy it with a jellyfish in the bottle?"
+120,0x2180f0,"<@LL,Ikki,05>新はつばいの ナマコジュ-スだ<CF><D1>ビンの中に ナマコが 入ってる<CD>こんなの だれが 買うんだろ?","<@LL,Ikki,05>It's a new product, Sea Cucumber Juice.<CF><D1>Who would buy it with a sea cucumber in the bottle?"
+121,0x2180f2,"<@LL,Ikki,05>新はつばいの ナマコジュ-スだ<CF><D1>ビンの中に ナマコが 入ってる<CD>こんなの だれが 買うんだろ?","<@LL,Ikki,05>It's a new product, Sea Cucumber Juice.<CF><D1>Who would buy it with a sea cucumber in the bottle?"
+122,0x2180f4,"<@LL,Ikki,05>コウジは 買ってたけど...","<@LL,Ikki,05>But Koji was buying..."
+123,0x2180f6,"<@LL,Ikki,05>新はつばいの イクラジュ-スだ<CF><D1>ビンの中が イクラで いっぱいだ<CD>こんなの だれが 買うんだろ?","<@LL,Ikki,05>It's a new product, Salmon Roe Juice.<CF><D1>Who would buy it with a salmon roe in the bottle?"
+124,0x2180f8,お-い!,Heeey!
+125,0x2180fa,"<@LL,Ikki,00>あ コウジ<CF><D1><@RL,Koji,00>はあ はあ...この店<CD>新はつばいの ジュ-ス おいてたか?<CF><D1><@LL,Ikki,00>それって まさか 店のおくの...<CF><D1><@RL,Koji,00>ナマコジュ-ス...<CD>男なら ちょうせんするベきだ!<CF><D1><@LL,Ikki,05>うげげ! あんなの のむのかよ!?","<@LL,Ikki,00>Ah, Koji.<CF><D1><@RL,Koji,00>Haa haa...Have you seen the new juices at this store?<CF><D1><@LL,Ikki,00>Is that really thie place's...?<CF><D1><@RL,Koji,00>Sea cucumber juice... If you're a real man, then you should try some!<CF><D1><@LL,Ikki,05>Bleh! You're really drinking that!?"
+126,0x2180fc,"<@RL,Koji,01>これ 下さいっ!!!<CF><D1><@CC,CLEAR,FF>10本だと 1200¥に なリます<CF><D1><@LL,Ikki,06>じゅっ 10本!?","<@RL,Koji,01>This please!!<CF><D1><@CC,CLEAR,FF>Ten of those will come to 1200 yen..<CF><D1><@LL,Ikki,06>T-ten!?"
+127,0x2180fe,"<@RL,Koji,02>お前も 男なら いっきに のみほせ!<CF><D1><@LL,Ikki,06>い いらないよ そんなの!<CF><D1><@RL,Koji,01>それでも 男か!?<CD>おれは いくぜ!<CF><D1><@CC,CLEAR,FF>ごきゅっ コリッ...<CF><D1><@LL,Ikki,07>コウジ...っ!<CF><D1><@RL,Koji,02>ま...まろやかで<CD>ほ...ほうじゅんな のどごし<CF><D1><&BUF0A><CD>お前も 男なら...<CF><D1><@LL,Ikki,05>...むリすんなよ コウジ...","<@RL,Koji,02>If you're a man too, then down it in one go!<CF><D1><@LL,Ikki,06>I-I'm good without doing that!<CF><D1><@RL,Koji,01>And you call yourself a man!? Here I go!<CF><D1><@CC,CLEAR,FF>*gulp* *chew*...<CF><D1><@LL,Ikki,07>Koji...!<CF><D1><@RL,Koji,02>S-so mellow. I-it feels so rich going down.<CF><D1><&BUF0A>, if you're a man...<CF><D1><@LL,Ikki,05>...There's no way, Koji..."
 128,0x218100,"<@LL,Ikki,00>まずは ホテルに チェックインしよう<CD>ホテルは えっと- 3Fと4Fだな<CF><D1>3Fに 行く?<*04>","<@LL,Ikki,00>Let's check out the hotel first. Uhm, it should be on the third and fourth floor.<CF><D1>Go to the third floor?<*04>"
 129,0x218102,"<@LL,Ikki,00>じゃあ 4Fに 行こう","<@LL,Ikki,00>Let's go to the fourth floor then."
 130,0x218104,"<@LL,Ikki,06>キクヒメは ホテルの3Fだ!","<@LL,Ikki,06>Kikuhime is at the hotel on the third floor!"
@@ -205,60 +205,60 @@
 195,0x218186,"<@RL,ScientistMale,01>ヘブンスタワ- メダロット社に<CD>ようこそ","<@RL,ScientistMale,01>Welcome to the Medarot Company of Heaven's Tower."
 196,0x218188,"<@RL,SelectCorpsGrunt,00>あ- そこの 少年!","<@RL,SelectCorpsGrunt,00>Ah, you there, boy!"
 197,0x21818a,"<@RL,SelectCorpsGrunt,00>ヘブンスタワ-に どろぼうが<CD>入リこんだという つうほうが<CF><D1>あったので ちゅういを<CD>よびかけているで あリます!<CF><D1><@LL,Ikki,00>どろぼうが?<CF><D1><@RL,SelectCorpsGrunt,00>セレクト隊ヘブンスゲ-トしぶは<CD>オフィス1に あるで あリます<CF><D1>じょうほうていきょうを<CD>おねがいするで あリます","<@RL,SelectCorpsGrunt,00>We have received a report of a thief entering Heaven's Tower, we ask that everyone remain vigilant!<CF><D1><@LL,Ikki,00>A thief?<CF><D1><@RL,SelectCorpsGrunt,00>The Heaven's Gate branch of the Select Corps is located in Office 1, we request any information."
-198,0x21818c,"<@RL,MultiLeggedMedabot,00>もう いやだ<CD>なんで 多脚パ-ツのオレが<CF><D1>2本足で 立たなきゃならんのだ?",
-199,0x21818e,"<@RL,MultiLeggedMedabot,00>なんだか 上が さわがしいな",
-200,0x218190,"<@RL,ScientistMale,01>次は ふゆうに ちょうせんだ!",
-201,0x218192,"<@RL,ScientistMale,00>何だか 黒いものが いたような...",
-202,0x218194,"<@RL,ScientistMale,00>ふう かてないなぁ さいきん...",
-203,0x218196,"<@RL,ScientistMale,00>きみにも なかったかい?<CF><D1>1番さいしょに こわれるのが<CD>リ-ダ-の 頭パ-ツな じきが",
-204,0x218198,"<@RL,ScientistMale,00>いま セレクト隊が<CD>上に 走って行ったぞ!",
-205,0x21819a,"<@RL,Man,00>セレクトしぶなら このヘやだよ",
-206,0x21819c,"<@RL,Man,00>よ-し がんばるぞ!",
-207,0x21819e,"<@RL,Man,00>まいったな- 今日もてつやだ",
-208,0x2181a0,"<@RL,Lady2,00>あ- いそがしいわ",
-209,0x2181a2,"<@RL,Lady2,00>はたらけど はたらけど<CD>わたしのくらしは 楽に ならないわ<CF><D1>じっと 手でも貝ましょ",
-210,0x2181a4,ぷるぷるぷるぷるぷるぷるぷるぷるぷる<CD>ぷるぷるぷるぷるぷるぷるぷる...,
-211,0x2181a6,"<@RL,Man,00>お おじさんは ね ねてないよ!?<CF><D1>ベ ベつに キ-ボ-ドを おしたまま<CD>いねむリしてた わけじゃないよ!",
-212,0x2181a8,ぐ- ぐ-,
-213,0x2181aa,"<@RL,Lady2,00>なぜ わたくしが お茶くみなど<CD>しなければ ならないの?",
-214,0x2181ac,"<@RL,Man,00>お茶は どこかなぁ?",
-215,0x2181ae,"<@RL,Lady2,00>お茶は まだなの?",
-216,0x2181b0,"<@RL,Man,00>は はい! 今すぐ!",
-217,0x2181b2,"<@RL,Lady2,00>きみは お茶も入れられないような<CD>大人になっちゃ だめよ",
-218,0x2181b4,"<@RL,Man,00>こんな きかくは どうでしょう?<CF><D1><@RL,Lady2,00>まだまだね",
-219,0x2181b6,"<@RL,Man,00>うちの じょうしは きびし-!<CF><D1>おれも 入社当時は よく お茶くみ<CD>させられたなぁ ",
-220,0x2181b8,"<@RL,Lady2,00>さあ しごと しごと!",
-221,0x2181ba,"<@RL,Man,00>今日も ざんぎょうかぁ...",
-222,0x2181bc,"<@RL,Lady2,00>明日も ざんぎょうよ!",
-223,0x2181be,"<@RL,Lady2,00>オフィスレディに 休みはないわ!",
-224,0x2181c0,"<@RL,Man,00>サラリ-マンに 休みは ない!",
-225,0x2181c2,"<@RL,Man,00>お昼は まだかな-♥",
-226,0x2181c4,"<@RL,Lady2,00>パソコンつかってると かたが こるわ",
-227,0x2181c6,"<@RL,Man,00>ヘブンスタワ-は とても高い場所に<CD>あるんだ そんな気は しないけどね",
-228,0x2181c8,"<@RL,Lady2,00>きかいを さわってると<CD>体に せいでんきが たまっちゃって",
-229,0x2181ca,"<@RL,Lady2,00>こんなことも できちゃうわ",
-230,0x2181cc,"<@RL,Lady2,00>しごとを するようになってからは<CD>ロボトルを あんまリやってないの<CF><D1>そうだ きみ! ちょっとつき合ってよ",
-231,0x2181ce,"<@RL,Lady2,00>ヘ- さいきんは そんなたたかい方も<CD>あるのね! ベんきょうになったわ",
-232,0x2181d0,"<@RL,Man,00>なんだか か 体が しびびれるるる",
-233,0x2181d2,"<@RL,Lady2,00>アンチエアさえ あれば ひこう型の<CD>メダロットと たたかいやすいけど<CF><D1>その パ-ツ こわれやすいのよねぇ",
-234,0x2181d4,"<@RL,Lady2,00>宇宙とし「ランデブ-」や<CD>月面とし「ビ-ハイブ」を のぞけば<CF><D1>ここって 1番宇宙に 近いのよ<CD>のぞけば...だけどね",
-235,0x2181d6,"<@RL,Man,00>いや それは ちがうんだよ<CD>もっと こう...",
-236,0x2181d8,"<@RL,Lady2,00>わたしは やっぱリ こう思います<CD>だから これを こうして...",
-237,0x2181da,"<@RL,Lady2,00>この しごとも あきてしまいましたわ<CD>じいやに やらせようかしら",
-238,0x2181dc,"<@RL,OldMan,00>おじょうさま! もっとしっかリ!",
-239,0x2181de,"<@RL,Man,00>今から しゅっちょうなんだ<CD>さっき ここに来たばかリなのに",
-240,0x2181e0,"<@RL,Man,00>リストラが こわいんだ<CD>きみの パパは だいじょうぶかい?",
-241,0x2181e2,"<@RL,Man,00>わたしは エリ-トのかいだんを<CD>のぼって来たはずなんだが<CF><D1>どこでどう まちがえたのか<CD>今は しがない サラリ-マンだよ",
-242,0x2181e4,"<@RL,Man,00>もう ずっと 地上に下リてないんだ<CD>さいきんは どうだね?",
-243,0x2181e6,"<@RL,SelectCorpsGrunt,00>ここは セレクト隊<CD>ヘブンスゲ-トしぶで あリます!",
-244,0x2181e8,"<@RL,SelectCorpsGrunt,00>どろぼうが よく出る場所は<CD>1かいの コンビニや オフィスに<CF><D1>しゅうちゅう しているで あリます",
-245,0x2181ea,"<@RL,SelectCorpsGrunt,00>レトルトと 名のる ドロボウは<CD>げんざい とリしらベ中で あリます",
-246,0x2181ec,"<@RL,SelectCorpsGrunt,00>何だか ひまで あリます<CF><D1>まあ われわれが ひまということは<CD>いいことなので あリますが",
-247,0x2181ee,"<@RL,Lady2,00>いらっしゃいませ 何にいたします?",
-248,0x2181f0,"<@RL,Lady2,00>アンチエアは 持ってる?",
-249,0x2181f2,"<@RL,Lady2,00>ヘブンスゲ-トには テレビきょくとか<CD>そうリだいじんの おやしきもあるの<CF><D1>何だか この国の 中心ってカンジよ!",
-250,0x2181f4,"<@RL,Lady2,00>ここの おしょくじ おいしいの<CD>むすめを つれてきて よかったわ",
-251,0x2181f6,"<@RL,Girl,00>ここの ごはんも いいけど やっぱリ<CD>ママの作った ごはんが 1番よ",
+198,0x21818c,"<@RL,MultiLeggedMedabot,00>もう いやだ<CD>なんで 多脚パ-ツのオレが<CF><D1>2本足で 立たなきゃならんのだ?","<@RL,MultiLeggedMedabot,00>Enough already. Why do I have to stand on two legs when I'm mutil-legged?"
+199,0x21818e,"<@RL,MultiLeggedMedabot,00>なんだか 上が さわがしいな","<@RL,MultiLeggedMedabot,00>It's a bit noisy up there."
+200,0x218190,"<@RL,ScientistMale,01>次は ふゆうに ちょうせんだ!","<@RL,ScientistMale,01>Next, try floating!"
+201,0x218192,"<@RL,ScientistMale,00>何だか 黒いものが いたような...","<@RL,ScientistMale,00>I think there was something dark..."
+202,0x218194,"<@RL,ScientistMale,00>ふう かてないなぁ さいきん...","<@RL,ScientistMale,00>Phew, I just can't win these days..."
+203,0x218196,"<@RL,ScientistMale,00>きみにも なかったかい?<CF><D1>1番さいしょに こわれるのが<CD>リ-ダ-の 頭パ-ツな じきが","<@RL,ScientistMale,00>Has it ever happened to you?<CF><D1>Your leader's head part being the first to go?"
+204,0x218198,"<@RL,ScientistMale,00>いま セレクト隊が<CD>上に 走って行ったぞ!","<@RL,ScientistMale,00>Now the Select Corps are running up there!"
+205,0x21819a,"<@RL,Man,00>セレクトしぶなら このヘやだよ","<@RL,Man,00>If you're looking for the Select Branch, you found it."
+206,0x21819c,"<@RL,Man,00>よ-し がんばるぞ!","<@RL,Man,00>Alright, let's do this!"
+207,0x21819e,"<@RL,Man,00>まいったな- 今日もてつやだ","<@RL,Man,00>I give up... Today will be another all-nighter."
+208,0x2181a0,"<@RL,Lady2,00>あ- いそがしいわ","<@RL,Lady2,00>Aah, we're so busy."
+209,0x2181a2,"<@RL,Lady2,00>はたらけど はたらけど<CD>わたしのくらしは 楽に ならないわ<CF><D1>じっと 手でも貝ましょ","<@RL,Lady2,00>I work and work, but my life never gets any better.<CF><D1>I'll sit peacefully and look at my hands."
+210,0x2181a4,ぷるぷるぷるぷるぷるぷるぷるぷるぷる<CD>ぷるぷるぷるぷるぷるぷるぷる...,*wobble wobble wobble wobble wobble wobble wobble wobble...*
+211,0x2181a6,"<@RL,Man,00>お おじさんは ね ねてないよ!?<CF><D1>ベ ベつに キ-ボ-ドを おしたまま<CD>いねむリしてた わけじゃないよ!","<@RL,Man,00>M-Mister, a-are you asleep!?<CF><D1>I-I wasn't dozing off while pressing keys on the keyboard!"
+212,0x2181a8,ぐ- ぐ-,*zzz zzz*
+213,0x2181aa,"<@RL,Lady2,00>なぜ わたくしが お茶くみなど<CD>しなければ ならないの?","<@RL,Lady2,00>Why do I have to be the tea server?"
+214,0x2181ac,"<@RL,Man,00>お茶は どこかなぁ?","<@RL,Man,00>Where's the tea?"
+215,0x2181ae,"<@RL,Lady2,00>お茶は まだなの?","<@RL,Lady2,00>Still no tea?"
+216,0x2181b0,"<@RL,Man,00>は はい! 今すぐ!","<@RL,Man,00>Y-yes! Right away!"
+217,0x2181b2,"<@RL,Lady2,00>きみは お茶も入れられないような<CD>大人になっちゃ だめよ","<@RL,Lady2,00>You can't even make tea and you call yourself an adult?"
+218,0x2181b4,"<@RL,Man,00>こんな きかくは どうでしょう?<CF><D1><@RL,Lady2,00>まだまだね","<@RL,Man,00>How about this design?<CF><D1><@RL,Lady2,00>Not quite."
+219,0x2181b6,"<@RL,Man,00>うちの じょうしは きびし-!<CF><D1>おれも 入社当時は よく お茶くみ<CD>させられたなぁ ","<@RL,Man,00>Our boss is strict!<CF><D1>When I first joined the company, I was made to serve tea often."
+220,0x2181b8,"<@RL,Lady2,00>さあ しごと しごと!","<@RL,Lady2,00>Come on, work, work!"
+221,0x2181ba,"<@RL,Man,00>今日も ざんぎょうかぁ...","<@RL,Man,00>Overtime again today, huh...?"
+222,0x2181bc,"<@RL,Lady2,00>明日も ざんぎょうよ!","<@RL,Lady2,00>Overtime again tomorrow!"
+223,0x2181be,"<@RL,Lady2,00>オフィスレディに 休みはないわ!","<@RL,Lady2,00>Ladies get no rest!"
+224,0x2181c0,"<@RL,Man,00>サラリ-マンに 休みは ない!","<@RL,Man,00>Men get no rest!"
+225,0x2181c2,"<@RL,Man,00>お昼は まだかな-♥","<@RL,Man,00>Is it lunch yet? ♥"
+226,0x2181c4,"<@RL,Lady2,00>パソコンつかってると かたが こるわ","<@RL,Lady2,00>Using a computer makes my neck stiff."
+227,0x2181c6,"<@RL,Man,00>ヘブンスタワ-は とても高い場所に<CD>あるんだ そんな気は しないけどね","<@RL,Man,00>Heaven's Tower is extremely high up, even if it doesn't feel that way."
+228,0x2181c8,"<@RL,Lady2,00>きかいを さわってると<CD>体に せいでんきが たまっちゃって","<@RL,Lady2,00>While I'm touching the machine, my body gathers static."
+229,0x2181ca,"<@RL,Lady2,00>こんなことも できちゃうわ","<@RL,Lady2,00>I can do that too."
+230,0x2181cc,"<@RL,Lady2,00>しごとを するようになってからは<CD>ロボトルを あんまリやってないの<CF><D1>そうだ きみ! ちょっとつき合ってよ","<@RL,Lady2,00>I haven't robattled much since I started working.<CF><D1>Right, you! Entertain me a bit."
+231,0x2181ce,"<@RL,Lady2,00>ヘ- さいきんは そんなたたかい方も<CD>あるのね! ベんきょうになったわ","<@RL,Lady2,00>Heh, so that's how you fight these days! That was enlightening!"
+232,0x2181d0,"<@RL,Man,00>なんだか か 体が しびびれるるる","<@RL,Man,00>My body is tingling a bit."
+233,0x2181d2,"<@RL,Lady2,00>アンチエアさえ あれば ひこう型の<CD>メダロットと たたかいやすいけど<CF><D1>その パ-ツ こわれやすいのよねぇ","<@RL,Lady2,00>As long as you have anti-air, then flying medarots are easy fights, but they're fragile parts."
+234,0x2181d4,"<@RL,Lady2,00>宇宙とし「ランデブ-」や<CD>月面とし「ビ-ハイブ」を のぞけば<CF><D1>ここって 1番宇宙に 近いのよ<CD>のぞけば...だけどね","<@RL,Lady2,00>You can see the town in space, <f02>Rendezvous<f00> and the town on the moon, <f02>Beehive<f00>, this place give the closest look into space... Did you know?"
+235,0x2181d6,"<@RL,Man,00>いや それは ちがうんだよ<CD>もっと こう...","<@RL,Man,00>No that isn't it. It's more..."
+236,0x2181d8,"<@RL,Lady2,00>わたしは やっぱリ こう思います<CD>だから これを こうして...","<@RL,Lady2,00>I still think it's this way, so like this..."
+237,0x2181da,"<@RL,Lady2,00>この しごとも あきてしまいましたわ<CD>じいやに やらせようかしら","<@RL,Lady2,00>I'm getting fed up with this job, maybe I'll rope the old man into it."
+238,0x2181dc,"<@RL,OldMan,00>おじょうさま! もっとしっかリ!","<@RL,OldMan,00>Madam! Do it more firmly!"
+239,0x2181de,"<@RL,Man,00>今から しゅっちょうなんだ<CD>さっき ここに来たばかリなのに","<@RL,Man,00>I'm on a business trip right now and only just got here."
+240,0x2181e0,"<@RL,Man,00>リストラが こわいんだ<CD>きみの パパは だいじょうぶかい?","<@RL,Man,00>Restructuring is scary. Is your dad alright?"
+241,0x2181e2,"<@RL,Man,00>わたしは エリ-トのかいだんを<CD>のぼって来たはずなんだが<CF><D1>どこでどう まちがえたのか<CD>今は しがない サラリ-マンだよ","<@RL,Man,00>I thought I was climbing the ladder to becoming an elite, but I went wrong somewhere and now I'm but a humble office worker."
+242,0x2181e4,"<@RL,Man,00>もう ずっと 地上に下リてないんだ<CD>さいきんは どうだね?","<@RL,Man,00>I haven't been down to the surface in a while, how have things been?"
+243,0x2181e6,"<@RL,SelectCorpsGrunt,00>ここは セレクト隊<CD>ヘブンスゲ-トしぶで あリます!","<@RL,SelectCorpsGrunt,00>This is the Heaven's Gate Branch  of the Select Corps!"
+244,0x2181e8,"<@RL,SelectCorpsGrunt,00>どろぼうが よく出る場所は<CD>1かいの コンビニや オフィスに<CF><D1>しゅうちゅう しているで あリます","<@RL,SelectCorpsGrunt,00>The convenience stores and offices on the ground floor are the prime targets of thieves."
+245,0x2181ea,"<@RL,SelectCorpsGrunt,00>レトルトと 名のる ドロボウは<CD>げんざい とリしらベ中で あリます","<@RL,SelectCorpsGrunt,00>A thief calling himself Renegade is currently being investigated."
+246,0x2181ec,"<@RL,SelectCorpsGrunt,00>何だか ひまで あリます<CF><D1>まあ われわれが ひまということは<CD>いいことなので あリますが","<@RL,SelectCorpsGrunt,00>I have some free time.<CF><D1>Well, it's a good thing that we aren't busy."
+247,0x2181ee,"<@RL,Lady2,00>いらっしゃいませ 何にいたします?","<@RL,Lady2,00>Welcome, how may I help you?"
+248,0x2181f0,"<@RL,Lady2,00>アンチエアは 持ってる?","<@RL,Lady2,00>Do you have any anti-airs?"
+249,0x2181f2,"<@RL,Lady2,00>ヘブンスゲ-トには テレビきょくとか<CD>そうリだいじんの おやしきもあるの<CF><D1>何だか この国の 中心ってカンジよ!","<@RL,Lady2,00>Heaven's Gate has its own television station and the prime minister's residence; it really feels like the center of this country!"
+250,0x2181f4,"<@RL,Lady2,00>ここの おしょくじ おいしいの<CD>むすめを つれてきて よかったわ","<@RL,Lady2,00>The food here is great. I'm glad I brought my daughter along."
+251,0x2181f6,"<@RL,Girl,00>ここの ごはんも いいけど やっぱリ<CD>ママの作った ごはんが 1番よ","<@RL,Girl,00>The food here is good, but the food mom makes is the best."
 252,0x2181f8,きゃ-! ドロボ-!!,Kyah! Thief!!
 253,0x2181fa,"<@LL,Ikki,07>ロボロボ団!?","<@LL,Ikki,07>The Roborobo Gang?"
 254,0x2181fc,"<@RL,Mystery,00>ふはははははは!!","<@RL,Mystery,00>Hwahahaha!!"
