@@ -28,7 +28,7 @@
 026,0x238034,"<@LL,Ikki,00>メダロポリスに 行くなら 300¥だ<CD>メダロポリスに 行く?<*04>","<@LL,Ikki,00>I have to pay ¥300 to go to Medaropolis. Should I go to Medaropolis?<*04>"
 027,0x238036,"<@LL,Ikki,03>お金が 足リないや...","<@LL,Ikki,03>I don't have enough money..."
 028,0x238038,"<@RL,IkkiMom,02>そろそろ ベんきょうが<CD>こいしい ころかしら?","<@RL,IkkiMom,02>Did you miss studying?"
-029,0x23803a,"<@RL,IkkiDad,01>メダリンピック ゆうしょう<CD>おめでとう!<CF><D1>パパも 宇宙に 行きたかったなぁ♥","<@RL,IkkiDad,01>Congratulations on wining the Medalympics!<CF><D1>Dad wants to go to the space, too ♥"
+029,0x23803a,"<@RL,IkkiDad,01>メダリンピック ゆうしょう<CD>おめでとう!<CF><D1>パパも 宇宙に 行きたかったなぁ♥","<@RL,IkkiDad,01>Congratulations on winning the Medalympics!<CF><D1>Dad wants to go to the space, too ♥"
 030,0x23803c,"「快盗レトルト あらわる!」<CF><D1><@LL,Ikki,07>...レトルトさんが 色んな町に<CD>出て じけんを おこしてるだって!","""Phantom Retort made his appearances!""<CF><D1><@LL,Ikki,07>...Phantom Retort has been causing incidents in many different towns!"
 031,0x23803e,「快盗レトルト あらわる!<CD>快盗レトルトが かくちで<CF><D1>しゅつぼつし 町を さわがしている<CD>もよう...」,"""Phantom Retort made his appearances! His repeated escapades are causing commotions in every town..."""
 032,0x238040,「...みめい 町を さわがせた<CD>じけんの はんにんは<CF><D1>しんしゅの ゴキブリに<CD>よるものと はんめい...」,"""...The culprit behind the commotion in the dead of dawn was identified as a new species of a cockroach..."""
