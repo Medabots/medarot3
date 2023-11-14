@@ -41,7 +41,7 @@
 039,0x20004e,"<@RL,SelectCorpsGrunt,00>本当のことを 言うと こわくて<CD>しかたがなかったであリます<CF><D1><@LL,Ikki,00>ヘぇ-っ そうだったんだ<CF><D1>でも あの時の セレクト隊って<CD>みんな とっても かっこよかったよ","<@RL,SelectCorpsGrunt,00>Truthfully, I was scared.<CF><D1><@LL,Ikki,00>Heh, is that so?<CF><D1>Even though the Select Corps seemed so cool back then."
 040,0x200050,"<@RL,SelectCorpsGrunt,01>本当であリますか? そう言って<CD>もらえるなんて うれしいであリます","<@RL,SelectCorpsGrunt,01>Really? I'm happy to hear you say that."
 041,0x200052,"<@RL,SelectCorpsGrunt,00>こまったことが あったら<CD>いつでもそうだんに のるであリます","<@RL,SelectCorpsGrunt,00>There've been some strange incidents around town lately. Let us know if you run into trouble."
-042,0x200054,"<@RL,SelectCorpsGrunt,00>ここ ひみつの 地ていとし<CD>ア-スモ-ルに ロボロボ団が<CF><D1>入リこんだようで あリます!<CD>それにしても ロボロボ団が<CF><D1>どうやって ここに 入リこんだのか<CD>ふしぎで あリます!<CF><D1><@LR,Erika,05>う-ん ここでも ロボロボ団の<CD>いばしょは 分からないのね<CF><D1><@LR,Erika,00>ともかく 町に 入リこんだっていう<CD>ロボロボ団を たいじしなくっちゃね!","<@RL,SelectCorpsGrunt,00>It appears that the Rubber Robos have gotten into this hidden place within the Earth, Earth Mall. In any case, we still have no idea how they got in.<CF><D1><@LR,Erika,05>Hmm, so they're here, but we still don't know where they are.<CF><D1><@LR,Erika,00>We need to deal with the Rubber Robos that got in here somehow."
+042,0x200054,"<@RL,SelectCorpsGrunt,00>ここ ひみつの 地ていとし<CD>ア-スモ-ルに ロボロボ団が<CF><D1>入リこんだようで あリます!<CD>それにしても ロボロボ団が<CF><D1>どうやって ここに 入リこんだのか<CD>ふしぎで あリます!<CF><D1><@LR,Erika,05>う-ん ここでも ロボロボ団の<CD>いばしょは 分からないのね<CF><D1><@LR,Erika,00>ともかく 町に 入リこんだっていう<CD>ロボロボ団を たいじしなくっちゃね!","<@RL,SelectCorpsGrunt,00>It appears that the RubberRobos have gotten into this hidden place within the Earth, Earth Mall. In any case, we still have no idea how they got in.<CF><D1><@LR,Erika,05>Hmm, so they're here, but we still don't know where they are.<CF><D1><@LR,Erika,00>We need to deal with the RubberRobos that got in here somehow."
 043,0x200056,"<@RL,SelectCorpsGrunt,00>たくさんメダルを 持っている人...<CD>で あリますか?<CF><D1>それなら 科学研究所なんかで<CD>聞いてみると いいと思うであリます","<@RL,SelectCorpsGrunt,00>Someone with... a lot of Medals?<CF><D1>It'd probably be worth asking around places like the Scientific Laboratory."
 044,0x200058,"<@RL,SelectCorpsGrunt,00>行方ふめいの メダロット?<CD>ちょっと しらベてみるであリます","<@RL,SelectCorpsGrunt,00>A missing medarot? We'll look into it."
 045,0x20005a,"<@RL,SelectCorpsGrunt,00>おい きろくをしらベてくれ","<@RL,SelectCorpsGrunt,00>Hey, check the records."
@@ -54,7 +54,7 @@
 052,0x200068,ドロボ-!!,Thief!!
 053,0x20006a,"<@LR,Erika,07>また ロボロボ団ね!","<@LR,Erika,07>The roborobos again!"
 054,0x20006c,"<@LR,Erika,00>今の さけび声<CD>むこうの たてものから 聞こえたわ!<CF><D1>よ-し! 貝てなさいよぉ<CD>ロボロボ団!","<@LR,Erika,00>That shout just now came from over there! Okay! Let's go get the Roborobo Gang!"
-055,0x20006e,"<@RL,Lady2,00>ここの店って どういうワケか<CF><D1>おとしよリしか 来ないのよね<CD>なぜ かしら?","<@RL,Lady2,00>For some reaon, it's only old folk that come to this place."
+055,0x20006e,"<@RL,Lady2,00>ここの店って どういうワケか<CF><D1>おとしよリしか 来ないのよね<CD>なぜ かしら?","<@RL,Lady2,00>For some reason, it's only old folk that come to this place."
 056,0x200070,"<@RL,Lady2,00>わたし あんなすごい じしんを<CF><D1>たいけんしたのは はじめてよ","<@RL,Lady2,00>That was my first time experiencing an earthquake like that."
 057,0x200072,リょく茶 まっ茶 こぶ茶...,"Green tea, matcha, kelp tea..."
 058,0x200074,うめこぶ茶 売リ切れ中,Plum and kelp tea out of stock.
