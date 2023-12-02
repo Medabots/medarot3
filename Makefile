@@ -171,7 +171,7 @@ version_misc_ADDITIONAL := $(VERSION_SRC)/misc.asm
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
 all: $(VERSIONS)
-test: test_tilemaps test_attribmaps
+test: test_tilemaps test_attribmaps test_malias
 
 clean:
 	rm -r $(BUILD) $(TARGETS) $(SYM_OUT) $(MAP_OUT) || exit 0
@@ -298,6 +298,9 @@ test_tilemaps:
 
 test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
+
+test_malias:
+	$(PYTHON) $(SCRIPT)/test_tilesets.py "$(TILESET_PREBUILT)"
 
 #Make directories if necessary
 $(BUILD):
