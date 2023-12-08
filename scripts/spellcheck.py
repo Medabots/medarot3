@@ -1,8 +1,10 @@
-from spellchecker import SpellChecker
 import glob
 import os
 import csv
 import re
+import sys
+
+from spellchecker import SpellChecker
 from dataclasses import dataclass
 
 
@@ -19,11 +21,13 @@ class File:
 
 checker = SpellChecker()
 
+dialog_dir = sys.argv[1]
+known_words_list = sys.argv[2]
+
 # Add known words to the dictionary
 # NOTE: Change res/known_words.txt for the glossary
-checker.word_frequency.load_text_file("res/known_words.txt")
+checker.word_frequency.load_text_file(known_words_list)
 
-dialog_dir = "../text/dialog"
 
 # Get list of .csv files in dialog dir
 csv_files = glob.glob(os.path.join(dialog_dir, "*.csv"))

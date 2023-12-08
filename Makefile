@@ -363,13 +363,16 @@ dump_metasprites: | $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_metasprites.py "$(VERSION_SRC)"
 
 # Tests
-.PHONY: test_tilemaps test_attribmaps
+.PHONY: test_tilemaps test_attribmaps test_spellcheck
 
 test_tilemaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(TILEMAP_PREBUILT)"
 
 test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
+
+test_spellcheck:
+	$(PYTHON) $(SCRIPT)/spellcheck.py "$(DIALOG_TEXT)" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 
