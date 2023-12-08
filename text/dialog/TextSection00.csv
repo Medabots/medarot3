@@ -160,7 +160,7 @@
 158,0x9013c,<&BUF03>は<CD>ロボトルにまけてしまった!<*02>,<&BUF03> has lost the robattle!<*02>
 159,0x9013e,あっ.........!<CD>1体も 租まれたメダロットがない!<*02>,Ah...!<D3>I have no Medarots assembled!<*02>
 160,0x90140,フィ-ルドは せいぎょされている!<CD>メダフォ-スは 使えない!<S46><*04>,The field is sealed!<D3>Medaforce can't be used!<S46><*04>
-161,0x90142,選んだ メダフォ-スは<CD>おぼえていない!<S46><*04>,Can't remember choosen Medaforce!<S46><*04>
+161,0x90142,選んだ メダフォ-スは<CD>おぼえていない!<S46><*04>,Can't remember chosen Medaforce!<S46><*04>
 162,0x90144,メダフォ-スリょうが 足リなかった!<S46><*04>,Not enough Medaforce gauge!<S46><*04>
 163,0x90146,メダフォ-ス!<CD>「<&BUF02>」 はつどう!<*04>,Medaforce!<D3><&BUF02> activated!<*04>
 164,0x90148,メダフォ-スの はつどうに<CD>しっぱいした!<S46><*04>,Medaforce operation failed! <S46><*04>
