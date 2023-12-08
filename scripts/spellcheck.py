@@ -1,11 +1,12 @@
+import csv
 import glob
 import os
-import csv
 import re
 import sys
-
-from spellchecker import SpellChecker
 from dataclasses import dataclass
+
+from pygit2 import Repository
+from spellchecker import SpellChecker
 
 
 @dataclass(frozen=True)
@@ -22,12 +23,28 @@ class File:
 checker = SpellChecker()
 
 dialog_dir = sys.argv[1]
-known_words_list = sys.argv[2]
+glossary = sys.argv[2]
+known_words_lists = sys.argv[3:]
 
-# Add known words to the dictionary
-# NOTE: Change res/known_words.txt for the glossary
-checker.word_frequency.load_text_file(known_words_list)
+# Either tr_EN or tr_EN-US
+branch_name = Repository(".").head.shorthand
 
+
+# Open glossary file and add words based on language version
+# NOTE: Can be expanded for other languages later
+with open(glossary) as csv_file:
+    reader = csv.reader(csv_file, delimiter=",")
+    glossary_words = set(
+        word
+        for row in reader
+        for word in (row[1] if branch_name == "tr_EN" else row[2]).split()
+    )
+    checker.word_frequency.load_words(glossary_words)
+
+
+# Add additional known words to the dictionary
+for known_words_list in known_words_lists:
+    checker.word_frequency.load_text_file(known_words_list)
 
 # Get list of .csv files in dialog dir
 csv_files = glob.glob(os.path.join(dialog_dir, "*.csv"))
