@@ -30,7 +30,7 @@
 028,0x238038,"<@RL,IkkiMom,02>そろそろ ベんきょうが<CD>こいしい ころかしら?","<@RL,IkkiMom,02>Did you miss studying?"
 029,0x23803a,"<@RL,IkkiDad,01>メダリンピック ゆうしょう<CD>おめでとう!<CF><D1>パパも 宇宙に 行きたかったなぁ♥","<@RL,IkkiDad,01>Congratulations on winning the Medalympics!<CF><D1>Dad wants to go to the space, too ♥"
 030,0x23803c,"「快盗レトルト あらわる!」<CF><D1><@LL,Ikki,07>...レトルトさんが 色んな町に<CD>出て じけんを おこしてるだって!","""Phantom Retort made his appearances!""<CF><D1><@LL,Ikki,07>...Phantom Retort has been causing incidents in many different towns!"
-031,0x23803e,「快盗レトルト あらわる!<CD>快盗レトルトが かくちで<CF><D1>しゅつぼつし 町を さわがしている<CD>もよう...」,"""Phantom Retort made his appearances! His repeated escapades are causing commotions in every town..."""
+031,0x23803e,「快盗レトルト あらわる!<CD>快盗レトルトが かくちで<CF><D1>しゅつぼつし 町を さわがしている<CD>もよう...」,"""Phantom Retort made his appearances! His repeated escapades are causing commotion in every town..."""
 032,0x238040,「...みめい 町を さわがせた<CD>じけんの はんにんは<CF><D1>しんしゅの ゴキブリに<CD>よるものと はんめい...」,"""...The culprit behind the commotion in the dead of dawn was identified as a new species of a cockroach..."""
 033,0x238042,"<@RL,Lady2,00>アリカ また しゅざいとかって<CD>とび出して 行ったわ","<@RL,Lady2,00>Arika said she wanted to cover something and rushed off."
 034,0x238044,"<@LL,Ikki,04>こんにちは! ヒカルさん<CF><D1><@RL,Henry,01>やあ いらっしゃい<CD><&BUF03>くん","<@LL,Ikki,04>Hikaru, good afternoon!<CF><D1><@RL,Henry,01>Hey there, <&BUF03>. Welcome."
