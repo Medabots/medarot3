@@ -282,7 +282,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   ld a, [$C4EE]
   or a
   jr z, .start_calc
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $01
@@ -299,7 +299,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   ld a, [$C4EE]
   or a
   jr z, .next_digit_1
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $01
@@ -309,7 +309,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   ld a, [$c4fc]
   or a
   jr z, .next_digit_2
-  ld a, $e0
+  ld a, $30
   ld [de], a
   inc de
 .next_digit_2
@@ -324,7 +324,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   ld a, [$C4EE]
   or a
   jr z, .check_last_digit
-  add $e0
+  add $30
   ld [de], a
   inc de
   jr .last_digit_terminate
@@ -345,7 +345,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   call DigitCalculationLoop
   pop de
   ld a, [$C4EE]
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $cb
