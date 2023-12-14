@@ -372,7 +372,7 @@ test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 test_spellcheck:
-	$(PYTHON) $(SCRIPT)/spellcheck.py "$(DIALOG_TEXT)" "$(SCRIPT_RES)/known_words.txt"
+	$(PYTHON) $(SCRIPT)/spellcheck.py tr_EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 
