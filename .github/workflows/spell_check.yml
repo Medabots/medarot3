@@ -31,8 +31,10 @@ jobs:
         run: |
           make test_spellcheck > ~/spellcheck_results.txt
           cat ~/spellcheck_results.txt
+           [ -z "$(cat ~/spellcheck_results.txt" ] && exit 0 || exit 1
 
       - name: Archive spell check results
+        if: ${{ failure() }}
         uses: actions/upload-artifact@v2
         with:
           name: spellcheck_results.txt
