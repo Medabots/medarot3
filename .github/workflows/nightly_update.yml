@@ -8,8 +8,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    container: docker://variantxyz/rgbds-20220711:1a126d774613431dd5eb568472493977a3682175
+    runs-on: ubuntu-latest
+    container: ghcr.io/medabots/medarot3:tr_EN
 
     steps:
       - name: List versions
@@ -51,19 +51,6 @@ jobs:
           wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
           make csv_from_xlsx
           git status --porcelain
-
-      - name: Run spell check
-        working-directory: 'medarot3'
-        run: |
-          make test_spellcheck > ~/spellcheck_results.txt
-          cat ~/spellcheck_results.txt
-
-      - name: Archive spell check results
-        uses: actions/upload-artifact@v2
-        with:
-          name: spellcheck_results.txt
-          path: ~/spellcheck_results.txt
-          retention-days: 1
 
       - name: Push and release if there are changes
         working-directory: 'medarot3'
