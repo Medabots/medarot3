@@ -31,7 +31,7 @@ jobs:
         run: |
           make --silent test_spellcheck > ~/spellcheck_results.txt
           cat ~/spellcheck_results.txt
-           [ -z "$(cat ~/spellcheck_results.txt" ] && exit 0 || exit 1
+          [ -z "$(cat ~/spellcheck_results.txt)" ] && exit 0 || exit 1
 
       - name: Archive spell check results
         if: ${{ failure() }}
