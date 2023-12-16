@@ -19,7 +19,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/medabots/medarot3:master
+    container: ghcr.io/medabots/medarot3:tr_EN
 
     steps:
       - name: List versions

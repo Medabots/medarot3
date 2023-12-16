@@ -2,7 +2,7 @@ name: Create a Docker image
 
 on:
   push:
-    branches: ['master']
+    branches: ['tr_EN']
     paths:
       - '.github/workflows/Dockerfile'
       - '.github/workflows/docker.yml'
