@@ -47,7 +47,7 @@
 045,0x29805a,「なぐる」「がむしゃら」「まもる」<CD>「なおす」「おうえん」行動の時<CF>このあたいが 高いと<CD>行動が せいこうしやすくなる<*03>,"Increases the success rate<D3>of Strike, Berserk,<CF>Protect, Heal, and<D3>Support actions.<*03>"
 046,0x29805c,「うつ」「ねらいうち」「せっち」<CD>「とくしゅ」「ぼうがい」行動の時<CF>このあたいが 高いと<CD>行動が せいこうしやすくなる<*03>,"Increases the success rate<D3>of Shoot, Snipe, Set-Up,<CF>Special, and Disrupt<D3>actions.<*03>"
 047,0x29805e,「デストロイ.サクリファイス」と<CD>「カウントダウン.ホ-ムシック」は<CF>「トラップ」や「えんご.かまえ」に<CD>かからない とくしゅな 攻撃です<*03>,"Destroy, Sacrifice,<D3>Countdown, and Homesick<CF>are special moves that are<D3>not related to Trap,<CF>Cover, and Ready.<*03>"
-048,0x298060,メダロットが ロボトルする<CD>せんとうフィ-ルドのこと<*03>,The field of the Medarots'<D3>Robottle.<*03>
+048,0x298060,メダロットが ロボトルする<CD>せんとうフィ-ルドのこと<*03>,The field of the Medarots'<D3>Robattle.<*03>
 049,0x298062,フィ-ルドの内がわの マップ部分は<CD>「地形エリア」と よばれ<CF>脚部タイプと 地形の 租み合わせで<CD>いどうスピ-ドに ちがいが出る<*03>,The mapped area within the<D3>Field is called the Terrain<CF>Area. Speed is impacted by<D3>both Terrain and Leg type.<*03>
 050,0x298064,フィ-ルドの外がわの みどリ部分は<CD>「チャ-ジエリア」と よばれ<CF>行動まえには 「じゅうてん」<CD>行動あとには 「ほうねつ」が<CF>それぞれ じゅんび時間となる<CD><*03>,"The area outside of the Field<D3>is called the Charge Area.<CF>Before an action, Loading<D3>time is displayed and after<CF>Dissipation time is<D3>displayed.<*03>"
 051,0x298066,せんとうを オ-トでおこなえる<CF>せんとう中 STARTボタンで<CD>コマンドがひらき 選択できる<CF>オ-トを かいじょしたい時は<CD>Bボタンを おしつづけることで<CF>かいじょできる<*03>,"An autoplay of combat.<CF>To enable it, press the<D3>START button and select<CF>commands. To disable it,<D3>press and hold the B button.<*03>"
