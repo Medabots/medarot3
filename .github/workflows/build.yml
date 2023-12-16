@@ -13,8 +13,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    container: docker://variantxyz/rgbds-20230123:e27da737c6aca9659458d95c32d606ebbea7380c
+    runs-on: ubuntu-latest
+    container: ghcr.io/medabots/medarot3:master
 
     steps:
       - name: List versions
