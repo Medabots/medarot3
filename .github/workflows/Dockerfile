@@ -39,7 +39,7 @@ RUN wget https://www.python.org/ftp/python/$PYTHON_VERSION_NUM/Python-$PYTHON_VE
     make install
 
 # Update pip
-RUN pip3 install --upgrade pip
+RUN python3 -m pip install --upgrade pip
 
 # install rgbds
 RUN git clone $RGBDS_REPOSITORY ~/rgbds && \
@@ -61,7 +61,7 @@ RUN wget https://github.com/tcnksm/ghr/releases/download/v0.14.0/ghr_v0.14.0_lin
 RUN python3 -m pip install ips-util
 
 # install pyspellcheck
-RUN python3 -m pip install pyspellchecker
+RUN python3 -m pip install pyspellchecker dataclasses
 
 # install openpyxl
 RUN git clone $OPENPYXL_REPOSITORY ~/openpyxl && \
