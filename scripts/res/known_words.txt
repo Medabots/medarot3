@@ -81,7 +81,6 @@ debuffs
 Pssh
 Mmm
 Achoo
-Eeh
 hachoo
 Amazake
 Huhuh
@@ -177,9 +176,7 @@ preshiss
 thertis
 Ohyo
 thankye
-robooo
 Hiih
-Waah
 Uoooh
 Ikki
 Haaah
@@ -223,7 +220,6 @@ Riverview
 bruh
 ohmigod
 Guh
-Woooah
 Waaah
 Mmmmm
 Eheh
@@ -265,7 +261,6 @@ aloofness
 Fuyon
 Takyakun
 Heheh
-Robooo
 Marbler
 Gnn
 finawy
@@ -282,7 +277,6 @@ seater
 Eeeeeeh
 afforest
 Uuuuw
-Gaaah
 BGM
 Hyaa
 lly
@@ -306,7 +300,6 @@ KLN
 goooes
 Uuuuuh
 Imagineer
-Gooo
 Fishman
 keychains
 Rappy
@@ -314,14 +307,12 @@ Pii
 Hanamura
 Guuuu
 uwaaah
-Woooah
-Woooooah
 Khh
 autoplay
 Tch
 Auu
-Hahahahaha
 Hwahahahaha
+Hwahahahahahaha
 Huhuhu
 EEEEHHH
 Ohohoho
@@ -354,3 +345,10 @@ Hoho
 Hwaaaah
 Ogwaaah
 Hugwaaah
+Uhuhuhu
+Hahihahi
+Mmmphhh
+Muhuhuhu
+Hiiiiih
+Ahahahahaha
+Gahahahahaha
