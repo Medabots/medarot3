@@ -2,7 +2,7 @@
 000,0x240000,"<@RL,PhantomRenegade,00>行くぞ! レアメダル!<CF><D1><@RL,LadyRenegade,01>足手まといには ならないわよ!<CF><D1><@RL,PhantomRenegade,00>行くぞ!","<@RL,PhantomRenegade,00>Rare Medals!<CF><D1><@RL,LadyRenegade,01>I won't be a burden!<CF><D1><@RL,PhantomRenegade,00>Let's go!"
 001,0x240002,"<@RL,PhantomRenegade,01>よし! しめいは はたした!","<@RL,PhantomRenegade,01>Nice, we made it to the end!"
 002,0x240004,"<@LL,Ikki,07>あ! レトルトさん!","<@LL,Ikki,07>Ah! It's Phantom Retort!"
-003,0x240006,"<@RL,PhantomRenegade,01>きょうリょく かんしゃする<CD><&BUF03>くん!<CF><D1>また 会おう! ふははははは!","<@RL,PhantomRenegade,01>Thanks for the help <&BUF03>!<CF><D1>We'll meet again! Fuahahah!"
+003,0x240006,"<@RL,PhantomRenegade,01>きょうリょく かんしゃする<CD><&BUF03>くん!<CF><D1>また 会おう! ふははははは!","<@RL,PhantomRenegade,01>Thanks for the help <&BUF03>!<CF><D1>We'll meet again! Hwahahaha!"
 004,0x240008,"<@RL,LadyRenegade,01>またね <&BUF03>くん<CF><D1><@LL,Ikki,06>あの...っ! レトルトレディ!<CF><D1><@RL,LadyRenegade,01>しんぱいないわよ!<CD>レトルトも わたしも<CF><D1>そろそろ マンションに もどるわ<CD>やくめは とリあえず<CF><D1>おわったんだからね<CD>それじゃ ま.た.ね♥","<@RL,LadyRenegade,01>See you <&BUF03>~<CF><@LL,Ikki,06>Uhm... ah! Lady Retort!<CF><@RL,LadyRenegade,01>Don't worry!<CF>Phantom and I will go now to the mansion<D3>since our mission is finished.<CF>See you later~♥"
 005,0x24000a,"<@LL,Ikki,04>かあっこいいなぁ♥<CF><D1><@LL,Ikki,01>...さてと ぼくも かえろっと!","<@LL,Ikki,04>So cool♥<CF><@LL,Ikki,01>...I should get going too!"
 006,0x24000c,"<@LL,Ikki,00>あれ? 何だろ この メダル<CF><D1>レトルトさんたち おとして<CD>いったのかな?<CF><D1>ぼくが 持ってても いいのかな?","<@LL,Ikki,00>Huh? What is this Medal?<CF>Did Phantom Retort and the others<D3>leave it here?<CF><D1>I wonder if it's OK for me to take it?"

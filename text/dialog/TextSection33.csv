@@ -128,7 +128,7 @@
 123,0x2380f6,"<@RL,Lady,00>こしゃくなっ! 40100!!<CF><D1><@LL,Ikki,02>じゃあ 40150!!!<CF><D1><@RL,Man,00>こまかくなって まいリました!","<@RL,Lady,00>This insolent--! 40,100!!<CF><D1><@LL,Ikki,02>In that case, 40,150!!!<CF><D1><@RL,Man,00>The difference between the bids is now getting smaller!"
 124,0x2380f8,"<@RL,Lady,00>何のっ! 41000!!!!<CF><D1><@LL,Ikki,02>こうなったらっ!<CD>45000!!!!!","<@RL,Lady,00>What!? 41,000!!!!<CF><D1><@LL,Ikki,02>If that's what you want... 45,000!!!!!"
 125,0x2380fa,"<@RL,Lady,00>うううぅ----<CD>48000!!!!!!<CF><D1><@LL,Ikki,02>ええええ-----い<CD>これでどうだ!<CF><D1>49800!!!!!!!","<@RL,Lady,00>Uuuuuh... 48,000!!!!!!<CF><D1><@LL,Ikki,02>Here goooes! How about this!?<CF><D1>49,800!!!!!!!"
-126,0x2380fc,"<@RL,Lady,00>あああ----っ!!!!!!!!<CD>...まけた","<@RL,Lady,00>Aaaaaaah!!!!!!!! ...I lost."
+126,0x2380fc,"<@RL,Lady,00>あああ----っ!!!!!!!!<CD>...まけた","<@RL,Lady,00>Aaaaah!!!!!!!! ...I lost."
 127,0x2380fe,"<@RL,Man,00>49800¥!!<CD>もう いないか? いないかっ!?","<@RL,Man,00>¥49,800!! Any more bidders? No more!?"
 128,0x238100,"<@RL,Man,00>では そちらの おぼっちゃん<CD>こちらまで どうぞ!!","<@RL,Man,00>Boy, please come over here!!"
 129,0x238102,"<@RL,Man,00>え-...お名前は?<CF><D1><@LL,Ikki,04>テンリョウ <&BUF03>です","<@RL,Man,00>Um... Your name, please?<CF><D1><@LL,Ikki,04><&BUF03> Tenryo."

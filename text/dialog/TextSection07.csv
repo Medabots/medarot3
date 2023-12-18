@@ -15,7 +15,7 @@
 013,0x9232e#kabuto|0x92330#kuwagata,なんで いつも こうなっちゃうの?<CD><*02>,Why do things always turn out<D3>like this...?<*02>
 014,0x92330#kabuto|0x92332#kuwagata,ボクが あいてを してあげよう<CD><*02>,I'll be your opponent. <*02>
 015,0x92332#kabuto|0x92334#kuwagata,ちょっとは やるようだね<CD><*02>,"You're pretty good, huh.<*02>"
-016,0x92334#kabuto|0x92336#kuwagata,はぁ-い ボウヤ<CD>ミルキ-が まほうをかけてあげるわ♥<*02>,"Heeyyy boy, I, Milky, will cast<D3>a spell on you!<*02>"
+016,0x92334#kabuto|0x92336#kuwagata,はぁ-い ボウヤ<CD>ミルキ-が まほうをかけてあげるわ♥<*02>,"Heeey boy, I, Milky, will cast<D3>a spell on you!<*02>"
 017,0x92336#kabuto|0x92338#kuwagata,あ-あ キミには<CD>こどもだましは つうじなかったようね<*02>,"Aw man, I guess my party<D3>tricks didn't fool you...<*02>"
 018,0x92338#kabuto|0x9233a#kuwagata,ふっ...しょうねんよ<CD>わたしを こえられるかな?<*02>,"Hmph... you think you can<D3>surpass me, boy?<*02>"
 019,0x9233a#kabuto|0x9233c#kuwagata,ぼ-いず び- あんびしゃす!<CD>しょうねんよ...なんだっけな?<*02>,"What is it they say again?<D3><f01>""Boys be ambitious!""<f00>... I think?<*04>"
@@ -36,7 +36,7 @@
 034,0x92358#kabuto|0x9235a#kuwagata,あたしだって まだ わかいもんには<CD>まけないよ<*02>,I won't lose to a youngster<D3>like you!<*02>
 035,0x9235a#kabuto|0x9235c#kuwagata,わかいって いいねェ<CD><*02>,Oh to be young again...<*02>
 036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,Show me your Medarots!<*02>
-037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,Fufufu<D3>You let me take your data!<*02>
+037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,Huhuhu<D3>You let me take your data!<*02>
 038,0x92360#kabuto|0x92362#kuwagata,しっぷうのごとく きる!<CD><*02>,I'll blow you down like a<D3>strong gale!<*02>
 039,0x92362#kabuto|0x92364#kuwagata,...そして しっぷうのごとく<CD>やぶれたリ!<*02>,"... And as if by a strong gale,<D3>I was blown down!<*02>"
 040,0x92364#kabuto|0x92366#kuwagata,おれの メダロットを<CD>貝てくれ!<*02>,Check out my Medarots!<*02>
@@ -53,8 +53,8 @@
 051,0x9237a#kabuto|0x9237c#kuwagata,ウフフッ♥ またねぇ<CD><*02>,Uhuhu ♥ See ya.<*02>
 052,0x9237c#kabuto|0x9237e#kuwagata,われわれの おそろしさを<CD>思い知るロボ!<*02>,"Learn just how dreadful<D3>we are, robo<*02>"
 053,0x9237e#kabuto|0x92380#kuwagata,おたすけロボ-ッ!!<CD><*02>,"Help, robo!<D3><*02>"
-054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"Fufufu<D3>In the end, evil will win!<*02>"
-055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,Kuuuuuh!<D3>Don't think this is the end!<*02>
+054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"Huhuhu<D3>In the end, evil will win!<*02>"
+055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,Grrrr!<D3>Don't think this is the end!<*02>
 056,0x92384#kabuto|0x92386#kuwagata,お-ほほほほほほほ!! わたくしを<CD>おこらせると こうかいしますことよ!<*02>,Ohohoho! Now you can see how I am when I'm angry!<*02>
 057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,Someday I'll make you regret<D3>this!<*02>
 058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,"Wheeze, wheeze...<CF>You think you can beat me?<*02>"
@@ -123,8 +123,8 @@
 121,0x92406#kabuto|0x92408#kuwagata,ン-ッ?<CD>ボロトルトボロトル...<*02>,"Mm?<D3>A borattle, a borattle...<*02>"
 122,0x92408#kabuto|0x9240a#kuwagata,オレと ロボトろ-ぜっ!!<CD><*02>,Robattle me!<*02>
 123,0x9240a#kabuto|0x9240c#kuwagata,ロボトったぜ-っ!!<CD><*02>,I was robattled!<*02>
-124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,Fufufu<D3>I am Shiratama!<*02>
-125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,Fu...fufufu...<D3>Fuahahahaha!<*02>
+124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,Huhuhu<D3>I am Shiratama!<*02>
+125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,Hu...huhuhu...<D3>Hwahahahaha!<*02>
 126,0x92410#kabuto|0x92412#kuwagata,いち きょうしとして<CD>きみと ロボトルだ!!<*02>,"As a superb teacher,<D3>I'll robattle you!<*02>"
 127,0x92412#kabuto|0x92414#kuwagata,いち きょうしとして まんぞくしたぞ<CD><*02>,"As a superb teacher,<D3>I'm satisfied.<*02>"
 128,0x92414#kabuto|0x92416#kuwagata,いち きょうしとして<CD>あなたと ロボトルです!!<*02>,"As a superb teacher,<D3>I'll robattle you!<*02>"
@@ -147,7 +147,7 @@
 145,0x92436#kabuto|0x92438#kuwagata,ここは き.け.ん...<CD><*02>,D a n g e r...<*02>
 146,0x92438#kabuto|0x9243a#kuwagata,これが...<CD>コンビニェ-ションアタック!!<*02>,This is...<D3>our combination attack!<*02>
 147,0x9243a#kabuto|0x9243c#kuwagata,これじゃ...<CD>コンビニェ-ション ボロボロ-<*02>,Just like that...<D3>the combination crumbles...<*02>
-148,0x9243c#kabuto|0x9243e#kuwagata,「アンビリバボ-」と「ぼ-ず」で<CD>アンビリバボ-ズ!!<*02>,"""Unbelievable"" and ""boys,"" we<D3>are the Unboylievables!<*02>"
+148,0x9243c#kabuto|0x9243e#kuwagata,「アンビリバボ-」と「ぼ-ず」で<CD>アンビリバボ-ズ!!<*02>,"""Unbelievable"" and ""boys,"" we<D3>are the Unboylieveables!<*02>"
 149,0x9243e#kabuto|0x92440#kuwagata,アン.ビリ-バボ-ズ!!<CD><*02>,Un-boy-lieveable!<D3><*02>
 150,0x92440#kabuto|0x92442#kuwagata,あそんであげても いいですよぉ<CD>キクヒメ「うるさいわよぉ!」<*02>,I get to play with you!<CF>Kikuhime: Shut it!<*02>
 151,0x92442#kabuto|0x92444#kuwagata,ちょっと シャレに なんないですよぉ<CD>キクヒメ「うっとうしいわねぇ!!」<*02>,That was a bit embarrassing.<CF>Kikuhime: You're so annoying!<*02>
