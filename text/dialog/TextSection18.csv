@@ -223,7 +223,7 @@
 221,0x1fc1ba,"<@RL,BipedMedabot,00>はぁ しょるいせいリって 大変ですね<CD>毎日 毎日 きリがあリませんよ","<@RL,BipedMedabot,00>Haa, filing paperwork is such a pain. Day in, day out, there's no end to it."
 222,0x1fc1bc,"<@RL,ScientistMale,00>ここで すベてのヘやを<CD>モニタ-しているんだよ","<@RL,ScientistMale,00>This is the place that all the rooms are monitored from."
 223,0x1fc1be,"<@RL,ScientistMale,00>ぼくの たんとうは...<CD>けいば場♪<CF><D1><@LL,Ikki,05>はあ!?...<CD>なんだかなぁ...","<@RL,ScientistMale,00>My area of expertise is...<D3>The race track ♪<CF><D1><@LL,Ikki,05>Haa!?...<D3>That's a bit..."
-224,0x1fc1c0,"<@RL,Lady2,00>ここで すベてのヘやを<CD>モニタ-しているのよ","<@RL,Lady,00>This is the place that all the rooms are monitored from."
+224,0x1fc1c0,"<@RL,Lady2,00>ここで すベてのヘやを<CD>モニタ-しているのよ","<@RL,Lady2,00>This is the place that all the rooms are monitored from."
 225,0x1fc1c2,"<@RL,Lady2,00>もぐ もぐ...<CD>ろっかくせんベい 食ベる?<CF><D1><@LL,Ikki,05>い いえ けっこうです<CF><D1>(この人 さっきから おかしばっかリ<CD>食ベてて モニタ-を貝てないよ)","<@RL,Lady2,00>*munch munch...*<D3>Do you want some rice crackers?<CF><D1><@LL,Ikki,05>N-no thanks.<CF><D1>(This person has just been snacking without looking at the monitor.)"
 226,0x1fc1c4,"<@RL,BipedMedabot,00>ここで作られる 電力は<CD>と-っても クリ-ンです ハイ","<@RL,BipedMedabot,00>The electricity made here is very clean, <f08>yes<f00>."
 227,0x1fc1c6,"<@RL,BipedMedabot,00>だいじょうぶ わたしたちが ちゃんと<CD>かんリうんえい していますから<CF><D1>じこなんて おこリませんよ!","<@RL,BipedMedabot,00>Don't worry, we manage and operate everything properly, so no incidents will occur!"

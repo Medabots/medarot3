@@ -247,7 +247,7 @@ Index[#version],Unknown,Name
 242,\x25\x51\x00,Roborobos
 243,\x00\x52\x00,Nashi
 244,\x4a\x53\x00,Sea Fairies
-245,\x4b\x54\x00,Sea Fairies
+245,\x4b\x54\x00,Sea Dragons
 246,\x00\x55\x00,Nashi
 247,\x46\x56\x00,Crow
 248,\x46\x57\x00,Dragonflier
