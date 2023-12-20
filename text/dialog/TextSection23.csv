@@ -1,10 +1,10 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000#kabuto,0x210000,"<@RL,Metabee,00>レイさん!!","<@RL,Metabee,00>Rei!!"
 000#kuwagata,0x210000,"<@RL,Rokusho,00>ここが お前の言う<CD>「ステキな場所」か?","<@RL,Rokusho,00>This is what you call a ""lovely place""?"
-001#kabuto,0x210002,"<@RL,SwimmingMedabot,00>海ていからは 時々 こだいいせきの<CD>いちぶが 貝つかるんです<CF><D1>そして この ふかい 海の<CD>さけめの そこにも<CF><D1>いせきが ねむってるって<CD>言われてるんですよ","<@RL,SwimmingMedabot,00>I'm told there are ancient ruins deep within the chasm.<CF>Sometimes fragments from it are found on the sea floor."
-001#kuwagata,0x210002,"<@RL,SwimmingMedabot,00>海ていからは 時々 こだいいせきの<CD>いちぶが 貝つかるんです<CF><D1>そして この ふかい 海の<CD>さけめの そこにも<CF><D1>いせきが ねむってるって<CD>言われているんですよ","<@RL,SwimmingMedabot,00>It's said there are ancient ruins deep within the chasm.<CF>Sometimes fragments from it are found on the sea floor."
+001#kabuto,0x210002,"<@RL,SwimmingMedabot,00>海ていからは 時々 こだいいせきの<CD>いちぶが 貝つかるんです<CF><D1>そして この ふかい 海の<CD>さけめの そこにも<CF><D1>いせきが ねむってるって<CD>言われてるんですよ","<@RL,SwimmingMedabot,00>Occasionally, fragments of ruins are found on the sea floor.<CF>It's said that an ancient ruin rests in the depth's of the chasm."
+001#kuwagata,0x210002,"<@RL,SwimmingMedabot,00>海ていからは 時々 こだいいせきの<CD>いちぶが 貝つかるんです<CF><D1>そして この ふかい 海の<CD>さけめの そこにも<CF><D1>いせきが ねむってるって<CD>言われているんですよ","<@RL,SwimmingMedabot,00>Occasionally, fragments of ruins are found on the sea floor.<CF>It's said that an ancient ruin rests in the depth's of the chasm."
 002#kabuto,0x210004,"<@RL,SwimmingMedabot,00>ここは 何だか なつかしい<CD>かんじが するんです ふしぎですね","<@RL,SwimmingMedabot,00>It's strange, but this place gives me a nostalgic feeling."
-002#kuwagata,0x210004,"<@RL,SwimmingMedabot,00>ここは 何だか なつかしい<CD>かんじが するんです ふしぎですね<CF><D1><@RL,Rokusho,00>「なつかしい」か...<CF><D1>その いせきには まだ<CD>メダロットの メダルたちが<CF><D1>ひっそリと ねむっているかも<CD>しれないのか","<@RL,SwimmingMedabot,00>It's strange, but this place gives me a nostalgic feeling.<CF><D1><@RL,Rokusho,00>""Nostalgic,"" huh...<CF><D1>Could there perhaps be Medarot Medals slumbering her still?"
+002#kuwagata,0x210004,"<@RL,SwimmingMedabot,00>ここは 何だか なつかしい<CD>かんじが するんです ふしぎですね<CF><D1><@RL,Rokusho,00>「なつかしい」か...<CF><D1>その いせきには まだ<CD>メダロットの メダルたちが<CF><D1>ひっそリと ねむっているかも<CD>しれないのか","<@RL,SwimmingMedabot,00>It's strange, but this place gives me a nostalgic feeling.<CF><D1><@RL,Rokusho,00>""Nostalgic,"" huh...<CF><D1>Could there perhaps be Medarot Medals slumbering here still?"
 003#kabuto,0x210006,"<@RL,Metabee,00>ヘぇ- こんな 海のさけめに<CD>いせきがね-","<@RL,Metabee,00>Heh, so there are ruins in this chasm?"
 003#kuwagata,0x210006,"<@RL,SwimmingMedabot,00>さあ! きょうそうしましょ!","<@RL,SwimmingMedabot,00>Come on! Let's race!"
 004#kabuto,0x210008,"<@RL,Metabee,00>う うわ! おちる-!","<@RL,Metabee,00>W-woah! I'm falling!"
