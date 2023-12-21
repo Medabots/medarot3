@@ -409,7 +409,7 @@ Tilemap00_50::
 Tilemap00_51::
   INCBIN "./build/tilemaps/0051.map"
 Tilemap00_52::
-  INCBIN "./build/tilemaps/0052.map"
+  INCBIN "./build/tilemaps/RobattleEncounterScreen.map"
 Tilemap00_53::
   INCBIN "./build/tilemaps/0053.map"
 Tilemap00_54::
@@ -565,13 +565,13 @@ Tilemap00_B3::
 Tilemap00_B4::
   INCBIN "./build/tilemaps/00B4.map"
 Tilemap00_B5::
-  INCBIN "./build/tilemaps/00B5.map"
+  INCBIN "./build/tilemaps/LinkMainMenu.map"
 Tilemap00_C1::
-  INCBIN "./build/tilemaps/00C1.map"
+  INCBIN "./build/tilemaps/LinkRobattleLoadScreen.map"
 Tilemap00_C2::
   INCBIN "./build/tilemaps/000C.map"
 Tilemap00_C3::
-  INCBIN "./build/tilemaps/00C3.map"
+  INCBIN "./build/tilemaps/LinkRobattleOptionsModeSelect.map"
 Tilemap00_C4::
   INCBIN "./build/tilemaps/00C4.map"
 Tilemap00_C5::
@@ -1445,11 +1445,11 @@ Tilemap02_00::
 Tilemap02_01::
   INCBIN "./build/tilemaps/0201.map"
 Tilemap02_02::
-  INCBIN "./build/tilemaps/0202.map"
+  INCBIN "./build/tilemaps/LinkTradeOptions.map"
 Tilemap02_69::
-  INCBIN "./build/tilemaps/0269.map"
+  INCBIN "./build/tilemaps/LinkTradeWaitScreen.map"
 Tilemap02_6A::
-  INCBIN "./build/tilemaps/026A.map"
+  INCBIN "./build/tilemaps/LinkTradeOwnItemImage.map"
 Tilemap02_6B::
   INCBIN "./build/tilemaps/026B.map"
 Tilemap02_6C::
@@ -1457,7 +1457,7 @@ Tilemap02_6C::
 Tilemap02_6D::
   INCBIN "./build/tilemaps/026D.map"
 Tilemap02_6E::
-  INCBIN "./build/tilemaps/026E.map"
+  INCBIN "./build/tilemaps/LinkTradePartnerItemImage.map"
 Tilemap02_6F::
   INCBIN "./build/tilemaps/026F.map"
 Tilemap02_70::
@@ -1467,7 +1467,7 @@ Tilemap02_71::
 Tilemap02_72::
   INCBIN "./build/tilemaps/0272.map"
 Tilemap02_73::
-  INCBIN "./build/tilemaps/0273.map"
+  INCBIN "./build/tilemaps/LinkGiftMedalOptions.map"
 Tilemap02_74::
   INCBIN "./build/tilemaps/0274.map"
 Tilemap02_75::
