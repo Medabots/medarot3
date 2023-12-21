@@ -83,10 +83,11 @@ TitleMenuMapScreenState::
   jp IncSubStateIndex
 
 TitleMenuPrepareCursorState::
-  ld a, 1
-  ld [$C0A0], a
-  ld a, 0
+  xor a
   ld [$C0A1], a
+  inc a
+  ld [$C0A0], a
+  rst $38 ; PatchPrintVersion
   ld a, $B4
   ld [$C0A2], a
   ld a, $17

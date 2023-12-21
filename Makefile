@@ -223,6 +223,8 @@ patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
+patch_hack_ADDITIONAL := $(PATCH_TEXT_OUT)/tag.bin
+
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
 all: $(VERSIONS)
@@ -324,6 +326,10 @@ $(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_S
 $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
 
+# patch/*.bin from patch/*.txt
+$(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_OUT)
+	$(PYTHON) $(SCRIPT)/patchtext2bin.py $@ $^
+
 # TRANSLATION_SHEET="~/sheet.xlsx" make csv_from_xlsx
 .PHONY: csv_from_xlsx
 csv_from_xlsx:
@@ -380,6 +386,9 @@ test_spellcheck:
 # Patch Specific
 $(PATCH_TILESET_OUT):
 	mkdir -p $(PATCH_TILESET_OUT)
+
+$(PATCH_TEXT_OUT):
+	mkdir -p $(PATCH_TEXT_OUT)
 
 $(BUILD):
 	mkdir -p $(BUILD)

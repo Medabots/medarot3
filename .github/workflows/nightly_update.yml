@@ -42,6 +42,7 @@ jobs:
           git fetch --tags --all
           echo "TAG_NAME=`git rev-parse --abbrev-ref HEAD`" >> $GITHUB_ENV
           echo "LATEST_TAG_NAME=`git tag --list --sort=-authordate \"\`git name-rev --name-only HEAD\`+nightly.*\" | head -n 1`" >> $GITHUB_ENV
+          echo "NIGHTLY_TAG_NAME=`git rev-parse --abbrev-ref HEAD`+nightly.`date +%Y%m%d`" >> $GITHUB_ENV
 
       - name: Get latest text from source
         working-directory: 'medarot3'
@@ -57,6 +58,7 @@ jobs:
         run: |
           [ -z "$(git status --porcelain)" ] && git diff --exit-code $LATEST_TAG_NAME && exit 0
 
+          echo $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
           make -j all
 
           git config user.email "${{ secrets.USER_EMAIL }}"
@@ -70,4 +72,4 @@ jobs:
 
           git push
 
-          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
+          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $NIGHTLY_TAG_NAME ./patch/
