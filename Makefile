@@ -223,7 +223,7 @@ patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
 
-patch_hack_ADDITIONAL := $(PATCH_TEXT_OUT)/tag.bin
+patch_hack_ADDITIONAL := $(PATCH_TEXT_OUT)/tag.bin $(PATCH_TEXT_OUT)/url.bin
 
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto

@@ -118,15 +118,35 @@ PatchPrintVersion:
 
   ; Draw text
   ld a, $14
-  ld bc, .text
-  ld de, $9a20
-  ld h, $30 ; MenuStartScreen patch tileset only uses up to $29, but leave some space just in case
+  ld bc, .url
+  ld de, $9800
+  ld h, $30
   call VWFDrawStringRightFullAddress
 
-  ; Invert the colors
-  VRAMSwitchToBank1
+  ld a, $14
+  ld bc, .tag
+  ld de, $9a20
+  ld h, $44
+  call VWFDrawStringRightFullAddress
+
   ld hl, $9300
   ld bc, $A0FF
+  call .invert
+
+  ld hl, $9440
+  ld bc, $A0FF
+  call .invert
+
+  pop hl
+  pop de
+  pop bc
+
+  pop af
+  ld [W_BankPreservation], a
+  ret
+.invert
+  ; Invert the colors
+  VRAMSwitchToBank1
   .loop
   ei
   .wfb
@@ -141,13 +161,8 @@ PatchPrintVersion:
   dec b
   jr nz, .loop
   VRAMSwitchToBank0
-
-  pop hl
-  pop de
-  pop bc
-
-  pop af
-  ld [W_BankPreservation], a
   ret
-.text
+.tag
   INCBIN "build/patch/tag.bin"
+.url
+  INCBIN "build/patch/url.bin"
