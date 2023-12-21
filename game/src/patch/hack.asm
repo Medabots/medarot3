@@ -147,9 +147,9 @@ PatchPrintVersion:
 .invert
   ; Invert the colors
   VRAMSwitchToBank1
-  .loop
-  ei
-  .wfb
+.loop
+  di
+.wfb
   ldh a, [H_LCDStat]
   and 2
   jr nz, .wfb
