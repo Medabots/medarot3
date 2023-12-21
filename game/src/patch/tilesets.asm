@@ -167,3 +167,4 @@ PatchTilesets::
   PatchTilesetEntry MinigameAOverlay
   PatchTilesetEntry MinigameBOverlay
   PatchTilesetEntry HeavensGateElevator
+  PatchTilesetEntry LinkMainMenu
