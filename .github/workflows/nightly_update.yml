@@ -58,7 +58,7 @@ jobs:
         run: |
           [ -z "$(git status --porcelain)" ] && git diff --exit-code $LATEST_TAG_NAME && exit 0
 
-          echo $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
+          echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
           make -j all
 
           git config user.email "${{ secrets.USER_EMAIL }}"
