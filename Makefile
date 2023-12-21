@@ -183,6 +183,7 @@ version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tile
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_metasprites_ADDITIONAL := $(VERSION_SRC)/metasprites00.asm $(VERSION_SRC)/metasprites01.asm $(VERSION_SRC)/metasprites02.asm $(VERSION_SRC)/metasprites03.asm $(VERSION_SRC)/metasprites04.asm $(VERSION_SRC)/metasprites05.asm $(VERSION_SRC)/metasprites06.asm $(VERSION_SRC)/metasprites07.asm
 version_misc_ADDITIONAL := $(VERSION_SRC)/misc.asm
+version_titlemenu_ADDITIONAL := $(VERSION_SRC)/titlemenu.asm
 
 # Patch Specific, including any tilesets we move into the patch tileset
 patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
