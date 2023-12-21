@@ -22,7 +22,7 @@ HackPredef::
 
 HackPredefTable:
   dw TilemapLoadTileset ; 0
-
+  dw PatchPrintVersion ; 1
 
 MACRO TilemapTilesetTableEntry
   ; Number of Tiles, Tileset, Load Offset
@@ -106,3 +106,29 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MinigameAOverlay, $9010 ; 24
   TilemapTilesetTableEntry MinigameBOverlay, $9010 ; 25
   TilemapTilesetTableEntry HeavensGateElevator, $9010 ; 26
+
+PatchPrintVersion:
+  ; VWF will overwrite the preserved bank, so fix it
+  ld a, [W_BankPreservation]
+  push af
+
+  push bc
+  push de
+  push hl
+
+  ; Draw text
+  ld a, $14
+  ld bc, .text
+  ld de, $9a20
+  ld h, $30 ; MenuStartScreen patch tileset only uses up to $29, but leave some space just in case
+  call VWFDrawStringRightFullAddress
+
+  pop hl
+  pop de
+  pop bc
+
+  pop af
+  ld [W_BankPreservation], a
+  ret
+.text
+  INCBIN "build/patch/tag.bin"
