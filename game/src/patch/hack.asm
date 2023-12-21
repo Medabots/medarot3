@@ -123,6 +123,25 @@ PatchPrintVersion:
   ld h, $30 ; MenuStartScreen patch tileset only uses up to $29, but leave some space just in case
   call VWFDrawStringRightFullAddress
 
+  ; Invert the colors
+  VRAMSwitchToBank1
+  ld hl, $9300
+  ld bc, $A0FF
+  .loop
+  ei
+  .wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  ld a, [hl]
+  xor c
+  ld [hli], a
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  VRAMSwitchToBank0
+
   pop hl
   pop de
   pop bc
