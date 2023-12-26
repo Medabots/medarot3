@@ -135,7 +135,7 @@ PartTradingMapPartName::
   add hl, bc
   pop bc
   ld a, 8
-  jp $258F
+  jp PutStringVariableLength
 
 PartTradingAnimateDotPath::
   ld a, 1
