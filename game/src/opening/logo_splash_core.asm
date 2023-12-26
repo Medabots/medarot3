@@ -15,25 +15,28 @@ LogoSplashStateMachine::
   dw LogoSplashImagineerMappingState ; 02
   dw LogoSplashDoFadeState ; 03
   dw LogoSplashWaitTimerState ; 04
-  dw LogoSplashDoFadeOutState ; 05
+  dw LogoSplashDoFadeState ; 05
   dw LogoSplashBombomMappingState ; 06
   dw LogoSplashPrepareFadeInState ; 07
   dw LogoSplashDoFadeState ; 08
   dw LogoSplashWaitTimerState ; 09
-  dw LogoSplashDoFadeOutState ; 0A
+  dw LogoSplashDoFadeState ; 0A
   dw LogoSplashCharacterDesignState ; 0B
   dw LogoSplashPrepareFadeInState ; 0C
   dw LogoSplashDoFadeState ; 0D
   dw LogoSplashWaitTimerState ; 0E
-  dw LogoSplashDoFadeOutState ; 0F
+  dw LogoSplashDoFadeState ; 0F
   dw LogoSplashNatsumeState ; 10
   dw LogoSplashPrepareFadeInState ; 11
   dw LogoSplashDoFadeState ; 12
   dw LogoSplashWaitTimerState ; 13
-  dw LogoSplashDoFadeOutState ; 14
-  dw LogoSplashPrepareFadeToBlackState ; 15
-  dw LogoSplashFadeToOpeningState ; 16
-  dw LogoSplashDoNothingState ; 17
+  dw LogoSplashDoFadeState ; 14
+  dw LogoSplashCashMedalChameleonState ; 15
+  dw LogoSplashDoFadeState ; 16
+  dw LogoSplashWaitTimerState ; 17
+  dw LogoSplashDoFadeState ; 18
+  dw LogoSplashPrepareFadeToBlackState ; 19
+  dw LogoSplashFadeToOpeningState ; 1A
 
 LogoSplashDoFadeState::
   call $34E6
@@ -42,16 +45,10 @@ LogoSplashDoFadeState::
   ret nz
   jp IncSubStateIndex
 
-LogoSplashDoFadeOutState::
-  ; Identical to LogoSplashDoFadeState. Entirely redundant.
-  call $34E6
-  ld a, [W_PaletteAnimRunning]
-  or a
-  ret nz
-  jp IncSubStateIndex
-
 LogoSplashPrepareFadeInState::
   ld hl, $3B
+
+.ext
   ld bc, 0
   ld d, $7F
   ld e, 0
@@ -96,8 +93,6 @@ LogoSplashImagineerMappingState::
   call WrapDecompressTilemap0
   ld a, $3C
   ld [W_MedalMenuWaitTimer], a
-  xor a
-  ld [W_LogoSplashCurrentLogo], a
   ld hl, $3B
   ld bc, 0
   ld d, $7F
@@ -116,13 +111,7 @@ LogoSplashWaitTimerState::
   ld e, $FF
   ld a, $E
   call WrapSetupPalswapAnimation
-  ; Redundant. The loaded state index is always $14.
-  ld hl, .table
-  ld a, [W_LogoSplashCurrentLogo]
-  ld d, 0
-  ld e, a
-  add hl, de
-  ld a, [hl]
+  ld a, $18
   ld [W_CoreSubStateIndex], a
   ret
 
@@ -139,9 +128,6 @@ LogoSplashWaitTimerState::
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
 
-.table
-  db $14,$14,$14,$14
-
 LogoSplashBombomMappingState::
   ld bc, 0
   ld e, $53
@@ -153,8 +139,6 @@ LogoSplashBombomMappingState::
   call WrapDecompressTilemap0
   ld a, $3C
   ld [W_MedalMenuWaitTimer], a
-  ld a, 1
-  ld [W_LogoSplashCurrentLogo], a
   jp IncSubStateIndex
 
 LogoSplashCharacterDesignState::
@@ -171,8 +155,6 @@ LogoSplashCharacterDesignState::
   call WrapDecompressTilemap0
   ld a, $3C
   ld [W_MedalMenuWaitTimer], a
-  ld a, 2
-  ld [W_LogoSplashCurrentLogo], a
   jp IncSubStateIndex
 
 LogoSplashNatsumeState::
@@ -186,8 +168,6 @@ LogoSplashNatsumeState::
   call WrapDecompressTilemap0
   ld a, $3C
   ld [W_MedalMenuWaitTimer], a
-  ld a, 3
-  ld [W_LogoSplashCurrentLogo], a
   jp IncSubStateIndex
 
 LogoSplashPrepareFadeToBlackState::
@@ -210,5 +190,19 @@ LogoSplashFadeToOpeningState::
   ld [W_CoreSubStateIndex], a
   ret
 
-LogoSplashDoNothingState::
-  ret
+LogoSplashCashMedalChameleonState::
+  ld bc, TilesetIDX_CashMedalChameleon
+  call WrapLoadMaliasGraphics
+  ld bc, 0
+  ld e, $54
+  ld a, 1
+  call WrapDecompressAttribmap0
+  ld bc, 0
+  ld e, $FE
+  ld a, 3
+  call WrapDecompressTilemap0
+  ld a, $3C
+  ld [W_MedalMenuWaitTimer], a
+  ld hl, $1FE
+  jp LogoSplashPrepareFadeInState.ext
+  nop

@@ -1736,7 +1736,7 @@ TilemapTable03::
   dw TilemapTable03Terminator ; FB
   dw TilemapTable03Terminator ; FC
   dw TilemapTable03Terminator ; FD
-  dw TilemapTable03Terminator ; FE
+  dw CashMedalChameleonTilemap ; FE
   dw TilemapTable03Terminator ; FF
 Tilemap03_00::
   INCBIN "./build/tilemaps/0300.map"
@@ -1766,3 +1766,6 @@ Tilemap03_0C::
   INCBIN "./build/tilemaps/030C.map"
 TilemapTable03Terminator::
 
+SECTION "Tilemap Table 03 - Cash Medal Chameleon", ROMX[$7B00], BANK[$AB]
+CashMedalChameleonTilemap::
+  INCBIN "./build/tilemaps/CashMedalChameleon.map"
