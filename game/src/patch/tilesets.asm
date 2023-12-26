@@ -168,3 +168,4 @@ PatchTilesets::
   PatchTilesetEntry MinigameBOverlay
   PatchTilesetEntry HeavensGateElevator
   PatchTilesetEntry LinkMainMenu
+  PatchTilesetEntry LinkTradeOptions
