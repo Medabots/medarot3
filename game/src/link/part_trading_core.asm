@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "build/pointer_constants.asm"
 
 SECTION "Part Trading State Machine 1", ROMX[$5000], BANK[$11]
 PartTradingStateMachine::
@@ -227,10 +228,10 @@ PartTradingPrepareSendingPartFadeInState::
 PartTradingDisplaySendingPartNameState::
   ld a, [$C613]
   ld b, a
-  ld hl, $DD90
+  ld hl, cBUF02
   ld a, [$C615]
   call PartTradingBufferPartName
-  ld hl, $DD90
+  ld hl, cBUF02
   ld a, 0
   call PartTradingMapPartName
   jp IncSubStateIndex
@@ -317,10 +318,10 @@ PartTradingPrepareReceivingPartFadeInState::
 PartTradingDisplayReceivingPartNameState::
   ld a, [$C614]
   ld b, a
-  ld hl, $DD99
+  ld hl, cBUF01
   ld a, [$C616]
   call PartTradingBufferPartName
-  ld hl, $DD99
+  ld hl, cBUF01
   ld a, 1
   call PartTradingMapPartName
   jp IncSubStateIndex
@@ -429,10 +430,10 @@ PartTradingSwapPartImagesState::
   jp IncSubStateIndex
 
 PartTradingSwapPartNamesState::
-  ld hl, $DD99
+  ld hl, cBUF01
   ld a, 0
   call PartTradingMapPartName
-  ld hl, $DD90
+  ld hl, cBUF02
   ld a, 1
   call PartTradingMapPartName
   jp IncSubStateIndex
@@ -500,7 +501,7 @@ PartTradingAnimateGetOverlayUpwardsState::
   ret nz
   ld a, 6
   rst 8
-  ld hl, $DDA2
+  ld hl, cBUF00
   ld a, [$C614]
   call $3731
   ld bc, $4D
