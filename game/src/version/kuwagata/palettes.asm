@@ -10240,9 +10240,9 @@ OBPPaletteColorTable::
   dcolor 0, 0, 0
   dcolor 0, 0, 0
 ; Palette CE/7FE
-  dcolor 0, 0, 0
-  dcolor 0, 0, 0
-  dcolor 0, 0, 0
+  dcolor 31, 31, 31
+  dcolor 15, 31, 0
+  dcolor 28, 14, 0
   dcolor 0, 0, 0
 ; Palette CF/7FF
   dcolor 0, 0, 0
@@ -10762,7 +10762,7 @@ BGPPaletteGroupTable::
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FB
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FC
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FD
-  dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FE
+  dpalette $7FE, $0, $0, $0, $0, $0, $0, $0 ; 1FE
   dpalette $0, $0, $0, $0, $0, $0, $0, $0 ; 1FF
 
 SECTION "OBP Palette Group Table (Kuwagata)", ROMX[$6000], BANK[$36]

@@ -517,7 +517,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FB (3D8B)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FC (3D8D)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FD (3D8F)
-  TilesetTableEntry TilesetSourceAddressTableEnd ; 1FE (3D91)
+  TilesetTableEntry CashMedalChameleon ; 1FE (3D91), Patch Tileset
   TilesetTableEntry OpeningAnimationRoboRoboGang ; 1FF (3D93), Patch Tileset
 TilesetSourceAddressTableEnd::
 
@@ -1033,7 +1033,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FB
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FC
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FD
-  dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FE
+  dbwb BANK(CashMedalChameleon), $9000, $0 ; 1FE, Patch Tileset
   dbwb BANK(OpeningAnimationRoboRoboGang), $8800, $0 ; 1FF, Patch Tileset
 TilesetInfoTableEnd::
 
