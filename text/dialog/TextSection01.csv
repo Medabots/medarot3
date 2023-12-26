@@ -52,7 +52,7 @@
 050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah! This is your 40th link robattle!<CF>To celebrate, the Medarot Company is gifting you a complete Sun-type Medarot.<CF>Please look over the parts' data later!<*03>"
 051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!! This is your 40th communication robattle!<CF>To celebrate, the Medarot Company is gifting you a complete Moon-type Medarot.<CF>Please look over the parts later!<*03>"
 052,0x91a80,パ-ツ転送!<S5A><*04>,Part transfer!<S5A><*04>
-053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> <&BUF00> part <&BUF01> was acquired!<*03>
+053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> acquired the <&BUF00> part <f02><&BUF01><f00>!<*03>
 054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal you currently have equipped!
 055,0x91a8a,メダリアのついている メダルは<CD>あげることが できません!,You can not give away a Medal that has Medalia equipped!
 056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The other person already owns this Medal!
