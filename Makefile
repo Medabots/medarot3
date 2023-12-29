@@ -333,8 +333,9 @@ $(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_
 # TRANSLATION_SHEET="~/sheet.xlsx" make csv_from_xlsx
 .PHONY: csv_from_xlsx
 csv_from_xlsx:
-	$(PYTHON) $(SCRIPT)/xlsx2dialog.py $(TRANSLATION_SHEET) $(DIALOG_TEXT) $(DIALOG)
-	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py $(TRANSLATION_SHEET) $(PTRLISTS_TEXT) $(PTRLISTS)
+	$(PYTHON) $(SCRIPT)/xlsx2dialog.py "$(TRANSLATION_SHEET)" "$(DIALOG_TEXT)" "$(DIALOG)"
+	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py "$(TRANSLATION_SHEET)" "$(PTRLISTS_TEXT)" "$(PTRLISTS)"
+	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/glossary.csv" "Glossary"
 
 ### Dump Scripts
 
@@ -379,7 +380,7 @@ test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 test_spellcheck:
-	$(PYTHON) $(SCRIPT)/spellcheck.py tr_EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/known_words.txt"
+	$(PYTHON) $(SCRIPT)/spellcheck.py EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 

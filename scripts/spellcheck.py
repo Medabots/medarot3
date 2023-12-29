@@ -21,7 +21,7 @@ class File:
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Spellcheck CSV files.")
-    parser.add_argument("branch_name", help="Language branch name")
+    parser.add_argument("language", help="Language identifier")
     parser.add_argument("dialog_dir", help="Directory containing CSV files")
     parser.add_argument("glossary", help="Path to the glossary CSV file")
     parser.add_argument(
@@ -35,7 +35,7 @@ def main():
     args = parse_arguments()
     checker = SpellChecker()
 
-    branch_name = args.branch_name
+    language_code = args.language
     dialog_dir = args.dialog_dir
     glossary = args.glossary
     known_words_lists = args.known_words_lists
@@ -43,10 +43,12 @@ def main():
     # Open glossary file and add words based on language version
     with open(glossary) as csv_file:
         reader = csv.reader(csv_file, delimiter=",")
+        header = next(reader)
+        language_index = header.index(language_code)
         glossary_words = set(
             word
             for row in reader
-            for word in (row[1] if branch_name == "tr_EN" else row[2]).split()
+            for word in (row[language_index]).split()
         )
         checker.word_frequency.load_words(glossary_words)
 
