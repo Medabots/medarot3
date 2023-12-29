@@ -48,7 +48,7 @@ def main():
         glossary_words = set(
             word
             for row in reader
-            for word in (row[language_index]).split()
+            for word in re.split(' |,', row[language_index])
         )
         checker.word_frequency.load_words(glossary_words)
 
