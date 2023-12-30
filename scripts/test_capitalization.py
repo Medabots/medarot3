@@ -17,7 +17,7 @@ with open(glossary_file, 'r', encoding='utf-8-sig') as fp:
     header = next(reader, None)
     idx = header.index(lang_code)
     glossary_words = set(
-        word
+        word.translate(str.maketrans('', '', string.punctuation))
         for row in reader
         for word in re.split(',', row[idx])
     )
@@ -36,13 +36,18 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
             continue
         i = row[idx_index]
         # Strip out control codes
-        text = re.sub(r"\<&.+?\>", '01234567', row[idx_text]) # Strip out control codes
+        text = re.sub(r"\<&.+?\>", '01234567', row[idx_text])
+        text = re.sub(r"\<D1\>", ' ', text)
+        text = re.sub(r"\<D3\>", ' ', text)
+        text = re.sub(r"\<CD\>", ' ', text)
+        text = re.sub(r"\<CF\>", ' ', text)
         text = re.sub(r"\<.+?\>", '', text)
         words = re.split(' ', text)
         if len(words) == 0:
             continue
         l = []
 
+        # First word should always be capitalized with some exceptions
         w_np = words[0].translate(str.maketrans('', '', string.punctuation))
         if len(w_np) > 0 and w_np != "'s" and not words[0].startswith("...") and w_np[0].isalpha() and not w_np[0].isupper():
             l.append(w_np)
@@ -50,11 +55,18 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         for w, word in enumerate(words[1:], 1):
             # Get a version of the word with no punctuation
             w_np = word.translate(str.maketrans('', '', string.punctuation))
+            if len(w_np) == 0:
+                continue
 
-            if len(w_np) > 0 and words[w - 1].endswith(('.', '?', '!')) and not (words[w - 1].endswith("...") or word.startswith("...")) and w_np[0].islower():
-                l.append(w_np)
-            elif w_np.upper() in glossary and w_np != glossary[w_np.upper()]:
-                l.append(w_np)
+            is_first_word = words[w - 1].endswith(('.', '?', '!'))
+            is_ellipsis = words[w - 1].endswith("...") or word.startswith("...")
+            is_capitlized = w_np[0].islower()
+
+            if is_first_word and not is_ellipsis:
+                if len(w_np) > 0 and w_np[0].islower():
+                    l.append(w_np)
+            elif not is_first_word and w_np.upper() in glossary and w_np != glossary[w_np.upper()]:
+                    l.append(w_np)
 
         if len(l) > 0:
             failed.append((i, l))
