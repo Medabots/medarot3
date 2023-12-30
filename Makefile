@@ -330,12 +330,21 @@ $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_T
 $(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_OUT)
 	$(PYTHON) $(SCRIPT)/patchtext2bin.py $@ $^
 
-# TRANSLATION_SHEET="~/sheet.xlsx" make csv_from_xlsx
-.PHONY: csv_from_xlsx
-csv_from_xlsx:
+# TRANSLATION_SHEET="~/sheet.xlsx" make dump_xlsx
+.PHONY: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
+dump_xlsx: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
+
+dump_xlsx_dialog: $(DIALOG_TEXT)
 	$(PYTHON) $(SCRIPT)/xlsx2dialog.py "$(TRANSLATION_SHEET)" "$(DIALOG_TEXT)" $(DIALOG)
+
+dump_xlsx_ptrlist: $(PTRLISTS_TEXT)
 	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py "$(TRANSLATION_SHEET)" "$(PTRLISTS_TEXT)" $(PTRLISTS)
+
+dump_xlsx_glossary: $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/glossary.csv" Glossary
+
+dump_xlsx_soundeffects: $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/sound_effects.txt" SoundEffects
 
 ### Dump Scripts
 
@@ -380,7 +389,7 @@ test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 test_spellcheck:
-	$(PYTHON) $(SCRIPT)/spellcheck.py EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/known_words.txt"
+	$(PYTHON) $(SCRIPT)/spellcheck.py EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 

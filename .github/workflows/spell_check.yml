@@ -30,7 +30,7 @@ jobs:
           TRANSLATION_SHEET: sheet.xlsx
         run: |
           wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
-          make csv_from_xlsx
+          make -j dump_xlsx
 
       - name: Run spell check
         working-directory: 'medarot3'
