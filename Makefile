@@ -382,18 +382,19 @@ dump_metasprites: | $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_metasprites.py "$(VERSION_SRC)"
 
 # Tests
-.PHONY: test_tilemaps test_attribmaps test_text test_spellcheck
-
-test_text: test_spellcheck
-
+.PHONY: test_tilemaps test_attribmaps
 test_tilemaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(TILEMAP_PREBUILT)"
 
 test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
-test_spellcheck:
-	$(PYTHON) $(SCRIPT)/spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
+# Tests (Text)
+.PHONY: test_text
+test_text: $(foreach FILE,$(DIALOG),test_spellcheck_$(FILE))
+
+test_spellcheck_%:
+	$(PYTHON) $(SCRIPT)/spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 

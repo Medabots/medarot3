@@ -1,6 +1,5 @@
 import argparse
 import csv
-import glob
 import os
 import re
 from dataclasses import dataclass
@@ -22,7 +21,7 @@ class File:
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Spellcheck CSV files.")
     parser.add_argument("language", help="Language identifier")
-    parser.add_argument("dialog_dir", help="Directory containing CSV files")
+    parser.add_argument("filename", help="CSV file for dialog")
     parser.add_argument("glossary", help="Path to the glossary CSV file")
     parser.add_argument(
         "known_words_lists", nargs="*", help="List of known words files"
@@ -36,13 +35,13 @@ def main():
     checker = SpellChecker()
 
     language_code = args.language
-    dialog_dir = args.dialog_dir
+    filename = args.filename
     glossary = args.glossary
     known_words_lists = args.known_words_lists
 
     # Open glossary file and add words based on language version
-    with open(glossary) as csv_file:
-        reader = csv.reader(csv_file, delimiter=",")
+    with open(glossary) as glossary_csv_file:
+        reader = csv.reader(glossary_csv_file, delimiter=",")
         header = next(reader)
         language_index = header.index(language_code)
         glossary_words = set(
@@ -56,9 +55,6 @@ def main():
     for known_words_list in known_words_lists:
         checker.word_frequency.load_text_file(known_words_list)
 
-    # Get list of .csv files in dialog dir
-    csv_files = glob.glob(os.path.join(dialog_dir, "*.csv"))
-
     # Set of all unknown words
     unknown: set[str] = set()
 
@@ -68,24 +64,22 @@ def main():
     # List containing file data
     files: list[File] = []
 
+
     # Build set of unknown words and make a dictionary with line information
-    for filename in sorted(csv_files):
-        base_filename = os.path.basename(filename)
-        # List of all lines in the file
-        lines: list[Line] = []
-        with open(filename, newline="") as csv_file:
-            reader = csv.reader(csv_file, delimiter=",")
-            for i, row in enumerate(reader, 1):
-                # The translated column is the third column in the .csv
-                translated = row[3]
-                # Extract words from line
-                words: list[str] = re.findall(r"<[^>]+>|[\w\']+", translated)
-                # Update the set with all unknown words
-                unknown.update(checker.unknown(words))
-                # Saving lines for later output
-                lines.append(Line(words))
-        # Add file data to list
-        files.append(File(base_filename, lines))
+    lines: list[Line] = []
+    with open(filename, newline="") as csv_file:
+        reader = csv.reader(csv_file, delimiter=",")
+        for i, row in enumerate(reader, 1):
+            # The translated column is the third column in the .csv
+            translated = row[3]
+            # Extract words from line
+            words: list[str] = re.findall(r"<[^>]+>|[\w\']+", translated)
+            # Update the set with all unknown words
+            unknown.update(checker.unknown(words))
+            # Saving lines for later output
+            lines.append(Line(words))
+    base_filename = os.path.basename(filename)
+    file = File(base_filename, lines)
 
     # Spellcheck unknown words
     for word in unknown:
@@ -110,13 +104,11 @@ def main():
             # Add the correction to the dictionary
             corrections[word.lower()] = correction
 
-    for file in files:
-        for i, line in enumerate(file.lines, 1):
-            for word in line.words:
-                # If the word is misspelled
-                if word.lower() in corrections:
-                    print(f"{file.name}:{i}\t{word} -> {corrections[word.lower()]}")
-
+    for i, line in enumerate(file.lines, 1):
+        for word in line.words:
+            # If the word is misspelled
+            if word.lower() in corrections:
+                print(f"{file.name}:{i}\t{word} -> {corrections[word.lower()]}")
 
 if __name__ == "__main__":
     main()
