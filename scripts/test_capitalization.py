@@ -38,4 +38,4 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
             failed.append((i, l))
 
 for f in failed:
-    print(f"{base_filename}:{f[0]:02}: {f[1]}")
+    print(f"Capitalization: {base_filename}:{f[0]:02}: {f[1]}")
