@@ -380,7 +380,9 @@ dump_metasprites: | $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/dump_metasprites.py "$(VERSION_SRC)"
 
 # Tests
-.PHONY: test_tilemaps test_attribmaps test_spellcheck
+.PHONY: test_tilemaps test_attribmaps test_text test_spellcheck
+
+test_text: test_spellcheck
 
 test_tilemaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(TILEMAP_PREBUILT)"
