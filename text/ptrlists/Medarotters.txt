@@ -216,9 +216,9 @@ Index[#version],Unknown,Name
 211,\x4d\x3b\x00,Raicho Girl
 212,\x4e\x3c\x00,Alien
 213,\x4e\x3c\x00,Alien
-214,\x4f\x3d\x00,Rintarou
-215,\x4f\x3d\x00,Rintarou
-216,\x4f\x3d\x00,Rintarou
+214,\x4f\x3d\x00,Rintaro
+215,\x4f\x3d\x00,Rintaro
+216,\x4f\x3d\x00,Rintaro
 217,\x18\x3e\x00,Shiratama
 218,\x18\x3e\x00,Shiratama
 219,\x14\x3f\x00,Teacher
@@ -252,7 +252,7 @@ Index[#version],Unknown,Name
 247,\x46\x56\x00,Crow
 248,\x46\x57\x00,Dragonflier
 249,\x00\x58\x00,Nashi
-250,\x4f\x59\x00,Rintarou & Karin
+250,\x4f\x59\x00,Rintaro & Karin
 251,\x4a\x5a\x00,Sea Fairies
 252,\x4b\x5b\x00,Sea Dragons
 253,\x05\x5c\x00,The Screws

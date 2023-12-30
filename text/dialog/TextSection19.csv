@@ -186,7 +186,7 @@
 178#kuwagata,0x200164,"<@RL,Rokusho,00>ああ... そうだな","<@RL,Rokusho,00>Yes... I suppose."
 179,0x200166,"<@RL,Koji,00>あれ? まだ <&BUF0A>のやつ<CD>貝つからないのかい?<CF><D1><@LR,Erika,04>えヘヘっ ちょっと よリ道してるの","<@RL,Koji,00>Huh? Still no luck finding <&BUF0A>?<CF><D1><@LR,Erika,04>Ehehe, this is just a bit of a detour."
 180,0x200168,"<@RL,Koji,00>はやく 行ってやリなよ","<@RL,Koji,00>Hurry and get going."
-181,0x20016a,"<@RL,Karin,00>あら? アリカさん <CD><&BUF0A>くんは?<CF><D1><@LR,Erika,04>まだ科学研究所に 行ってないの<CD>ちょっと よリ道しちゃおうかなって<CF><D1><@RL,Karin,05>早く <&BUF07>ちゃんを<CD>かえしてあげたほうが いいですわ<CF><D1><@LR,Erika,00>そうね はやくメダロッチを<CD>かえしてあげたほうが いいわね","<@RL,Karin,00>Huh, Arika? Where's Ikki?<CF><D1><@LR,Erika,04>I hadn't gone to the scientific institute yet, so I took a small detour.<CF><D1><@RL,Karin,05>You'd best hurry and get <&BUF07> back where they belong.<CF><D1><@LR,Erika,00>Right, I should get his medarotch back to him quickly."
+181,0x20016a,"<@RL,Karin,00>あら? アリカさん <CD><&BUF0A>くんは?<CF><D1><@LR,Erika,04>まだ科学研究所に 行ってないの<CD>ちょっと よリ道しちゃおうかなって<CF><D1><@RL,Karin,05>早く <&BUF07>ちゃんを<CD>かえしてあげたほうが いいですわ<CF><D1><@LR,Erika,00>そうね はやくメダロッチを<CD>かえしてあげたほうが いいわね","<@RL,Karin,00>Huh, Arika? Where's <&BUF0A>?<CF><D1><@LR,Erika,04>I hadn't gone to the scientific institute yet, so I took a small detour.<CF><D1><@RL,Karin,05>You'd best hurry and get <&BUF07> back where they belong.<CF><D1><@LR,Erika,00>Right, I should get his medarotch back to him quickly."
 182,0x20016c,"<@RL,Karin,00>はやく 行ったほうがいいですわ","<@RL,Karin,00>You'd best get going."
 183,0x20016e,"<@RR,Ikki,00>何してるの?","<@RR,Ikki,00>What are you doing?"
 184,0x200170,"<@RL,BipedMedabot,00>ここ これはっ!<CD>何でも ないですっ!<CF><D1><@RR,Ikki,04>貝せてよ","<@RL,BipedMedabot,00>This here!?<D3>It's nothing!<CF><D1><@RR,Ikki,04>Show me!"

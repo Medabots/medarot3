@@ -218,7 +218,7 @@
 203,0x1dc196,"<@LL,Ikki,00>あれは 何だったんだろう?<CD>ただの ゆめ?<CF><D1>それにしたって 何だか...<CD>人間を にくんでるみたいだった","<@LL,Ikki,00>I wonder what that was?<D3>Just a dream?<CF>Even if that is the case... it seemed like it hated humans."
 204,0x1dc198,"<@RL,IkkiMom,02>おかえリ <&BUF03><CD>ごはん できてるわよ!<CF><D1><@LL,Ikki,01>うわ-い!","<@RL,IkkiMom,02>Welcome home, <&BUF03>.<D3>Dinner's ready!<CF><@LL,Ikki,01>Cool!"
 205,0x1dc19a,"<@LL,Ikki,05>...って ママ これ","<@LL,Ikki,05>...Say, mom, this is..."
-206,0x1dc19c,"<@RL,IkkiMom,02>オムレツ タマゴやき<CD>だしまき かにタマ タマゴどん!<CF><D1>ぜ-んぶ あんたが<CD>わった タマゴよ<CF><D1><@RL,IkkiDad,01>ママのリょうリ さいこうっ!<CF><D1><@RL,IkkiMom,02>た-くさん たベてね♥<CF><D1><@LL,Ikki,01>あ あはは あは あは...","<@RL,IkkiMom,02>An omelette, a rolled omelette, and a rolled egg, together they make...<CF>The Egg-Egg Dish!<CF><D1>And <f08>aaall <f00>made with the eggs you broke.<CF><D1><@RL,IkkiDad,01>Your cooking is the best!<CF><D1><@RL,IkkiMom,02>Make sure to eat a lot. ♥<CF><D1><@LL,Ikki,01><f08>Ah-ahaha-aha-aha..."
+206,0x1dc19c,"<@RL,IkkiMom,02>オムレツ タマゴやき<CD>だしまき かにタマ タマゴどん!<CF><D1>ぜ-んぶ あんたが<CD>わった タマゴよ<CF><D1><@RL,IkkiDad,01>ママのリょうリ さいこうっ!<CF><D1><@RL,IkkiMom,02>た-くさん たベてね♥<CF><D1><@LL,Ikki,01>あ あはは あは あは...","<@RL,IkkiMom,02>An omelette, a rolled omelette, and a rolled egg, together they make...<CF>The Egg-Egg Dish!<CF><D1>And all made with the eggs you broke~<CF><D1><@RL,IkkiDad,01>Your cooking is the best!<CF><D1><@RL,IkkiMom,02>Make sure to eat a lot. ♥<CF><D1><@LL,Ikki,01><f08>Ah-ahaha-aha-aha..."
 207,0x1dc19e,"<@RL,Salty,00>わん わん!","<@RL,Salty,00><f08>Arf arf<f00>!"
 208,0x1dc1a0,"<@LL,Ikki,00>カギが かかってる","<@LL,Ikki,00>It's locked."
 209,0x1dc1a2,"<@LL,Ikki,00>カギが かかってる","<@LL,Ikki,00>It's locked."

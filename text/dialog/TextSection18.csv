@@ -37,7 +37,7 @@
 035,0x1fc046,"<@LL,Ikki,00>ここかな? アリカが言っていた<CD>「ジオフロント科学研究所」って","<@LL,Ikki,00>Is this the place? The GeoFront Scientific Laboratory that Arika was talking about?"
 036,0x1fc048,"<@RL,Erika,04>あ! 来た 来た!","<@RL,Erika,04>Ah! You came, you came!"
 037,0x1fc04a,"<@LL,Ikki,00>アリカ その人は?<CF><D1><@RL,Seseri,01>ア-スモ-ルに ようこそ!<CF><D1>はじめまして わたしは 研究いんの<CD>オガサワラ セセリ よろしくね","<@LL,Ikki,00>Who is this, Arika?<CF><D1><@RL,Seseri,01>Welcome to the Earth Mall!<CF><D1>I'm a researcher here, my name is Ogasawara Seseri. Nice to meet you."
-038,0x1fc04c,"<@LL,Ikki,04>あ はじめまして ぼくは<CF><D1>テンリョウ <&BUF0A>です","<@LL,Ikki,04>Ah, nice to meet you. I'm <&BUF0A> Tenryo."
+038,0x1fc04c,"<@LL,Ikki,04>あ はじめまして ぼくは<CF><D1>テンリョウ <&BUF0A>です","<@LL,Ikki,04>Ah, nice to meet you. I'm <&BUF0A> Tenryou"
 039,0x1fc04e,"<@RL,Erika,04>オガサワラさんは ハチロウくんから<CD>ガイドを たのまれてるんですって!<CF><D1><@LL,Ikki,04>ヘぇ そうなんだ","<@RL,Erika,04>Hachiro asked Mrs. Ogasawara to show us around.<CF><D1><@LL,Ikki,04>Hee, is that so?"
 040,0x1fc050,"<@RL,Seseri,01>わたしのことは セセリで いいわよ<CF><D1>では あんないするわね","<@RL,Seseri,01>You can just call me Seseri. I'll be your guide."
 041,0x1fc052,"<@RL,Seseri,01>こちらヘ どうぞ","<@RL,Seseri,01>Come along, this way."
