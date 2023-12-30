@@ -390,11 +390,18 @@ test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 # Tests (Text)
-.PHONY: test_text
-test_text: $(foreach FILE,$(DIALOG),test_spellcheck_$(FILE))
+.PHONY: test_text test_spellcheck test_capitalization
+test_text: test_spellcheck test_capitalization
+
+test_capitalization: $(foreach FILE,$(DIALOG),test_capitalization_$(FILE))
+
+test_capitalization_%:
+	$(PYTHON) $(SCRIPT)/test_capitalization.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv"
+
+test_spellcheck: $(foreach FILE,$(DIALOG),test_spellcheck_$(FILE))
 
 test_spellcheck_%:
-	$(PYTHON) $(SCRIPT)/spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
+	$(PYTHON) $(SCRIPT)/test_spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 

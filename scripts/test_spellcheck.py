@@ -69,9 +69,11 @@ def main():
     lines: list[Line] = []
     with open(filename, newline="") as csv_file:
         reader = csv.reader(csv_file, delimiter=",")
+        header = next(reader, None)
+        idx_text = header.index("Translated")
         for i, row in enumerate(reader, 1):
             # The translated column is the third column in the .csv
-            translated = row[3]
+            translated = row[idx_text]
             # Extract words from line
             words: list[str] = re.findall(r"<[^>]+>|[\w\']+", translated)
             # Update the set with all unknown words
@@ -108,7 +110,7 @@ def main():
         for word in line.words:
             # If the word is misspelled
             if word.lower() in corrections:
-                print(f"{file.name}:{i}\t{word} -> {corrections[word.lower()]}")
+                print(f"Spellcheck: {file.name}:{i}\t{word} -> {corrections[word.lower()]}")
 
 if __name__ == "__main__":
     main()
