@@ -44,7 +44,7 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         l = []
 
         w_np = words[0].translate(str.maketrans('', '', string.punctuation))
-        if len(w_np) > 0 and w_np != "'s" and w_np[0].isalpha() and not w_np[0].isupper():
+        if len(w_np) > 0 and w_np != "'s" and not words[0].startswith("...") and w_np[0].isalpha() and not w_np[0].isupper():
             l.append(w_np)
 
         for w, word in enumerate(words[1:], 1):
