@@ -67,11 +67,11 @@ def main():
 
     # Build set of unknown words and make a dictionary with line information
     lines: list[Line] = []
-    with open(filename, newline="") as csv_file:
+    with open(filename, 'r', encoding='utf-8-sig') as csv_file:
         reader = csv.reader(csv_file, delimiter=",")
         header = next(reader, None)
         idx_text = header.index("Translated")
-        for i, row in enumerate(reader, 1):
+        for row in reader:
             # The translated column is the third column in the .csv
             translated = row[idx_text]
             # Extract words from line
