@@ -35,21 +35,25 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         if row[idx_text].startswith("@"):
             continue
         i = row[idx_index]
-        text = re.sub(r"\<.+?\>(?:'s)*", ' ', row[idx_text])
+        # Strip out control codes
+        text = re.sub(r"\<&.+?\>", '01234567', row[idx_text]) # Strip out control codes
+        text = re.sub(r"\<.+?\>", '', text)
         words = re.split(' ', text)
         if len(words) == 0:
             continue
         l = []
 
         w_np = words[0].translate(str.maketrans('', '', string.punctuation))
-        if len(w_np) > 0 and w_np[0].isalpha() and not w_np[0].isupper():
+        if len(w_np) > 0 and w_np != "'s" and w_np[0].isalpha() and not w_np[0].isupper():
             l.append(w_np)
 
         for w, word in enumerate(words[1:], 1):
             # Get a version of the word with no punctuation
             w_np = word.translate(str.maketrans('', '', string.punctuation))
 
-            if w_np.upper() in glossary and w_np != glossary[w_np.upper()] and not words[w - 1] == '' and not words[w - 1].endswith(('.', '?', '!')):
+            if len(w_np) > 0 and words[w - 1].endswith(('.', '?', '!')) and not (words[w - 1].endswith("...") or word.startswith("...")) and w_np[0].islower():
+                l.append(w_np)
+            elif w_np.upper() in glossary and w_np != glossary[w_np.upper()]:
                 l.append(w_np)
 
         if len(l) > 0:
