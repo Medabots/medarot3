@@ -16,16 +16,19 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
     idx_text = header.index("Translated")
 
     for row in reader:
-    	original_text = row[idx_original]
-    	translated_text = row[idx_text]
-    	index = row[idx_index]
+        original_text = row[idx_original]
+        translated_text = row[idx_text]
+        index = row[idx_index]
 
-    	original_portraits = re.findall(r"\<@.+?\>", original_text)
-    	translated_portraits = re.findall(r"\<@.+?\>", translated_text)
+        if index.startswith("UNUSED") or translated_text.startswith("@"):
+            continue
 
-    	if original_portraits != translated_portraits:
-    		print(f"Portraits: {base_filename}:{index}: ", end = '')
-    		if len(original_portraits) != len(translated_portraits):
-    			print("Portrait count doesn't match")
-    		else:
-    			print(f'Mismatched portraits: {[f"{p[1]} -> {p[0]}" for p in zip(original_portraits, translated_portraits) if p[0] != p[1]]}')
+        original_portraits = re.findall(r"\<@.+?\>", original_text)
+        translated_portraits = re.findall(r"\<@.+?\>", translated_text)
+
+        if original_portraits != translated_portraits:
+            print(f"Portraits: {base_filename}:{index}: ", end = '')
+            if len(original_portraits) != len(translated_portraits):
+                print("Portrait count doesn't match")
+            else:
+                print(f'Mismatched portraits: {[f"{p[1]} -> {p[0]}" for p in zip(original_portraits, translated_portraits) if p[0] != p[1]]}')

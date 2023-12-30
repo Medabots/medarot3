@@ -31,7 +31,7 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
     idx_text = header.index("Translated")
 
     for row in reader:
-        if row[idx_text].startswith("@"):
+        if row[idx_index].startswith("UNUSED") or row[idx_text].startswith("@"):
             continue
         i = row[idx_index]
         # Strip out control codes
