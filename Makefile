@@ -5,6 +5,8 @@ VERSIONS := kuwagata kabuto
 OUTPUT_PREFIX := medarot3_
 ORIGINAL_PREFIX := baserom_
 
+LANG_CODE := EN
+
 PYTHON := python3
 
 # Types
@@ -391,7 +393,7 @@ test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
 test_spellcheck:
-	$(PYTHON) $(SCRIPT)/spellcheck.py EN "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
+	$(PYTHON) $(SCRIPT)/spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
 
 #Make directories if necessary
 
