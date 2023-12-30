@@ -28,7 +28,6 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')
     header = next(reader, None)
     idx_index = header.index("Index[#version]")
-    idx_pointer = header.index("Pointer[#version|]")
     idx_text = header.index("Translated")
 
     for row in reader:

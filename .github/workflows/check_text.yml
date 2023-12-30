@@ -36,11 +36,8 @@ jobs:
       - name: Run text checks
         working-directory: 'medarot3'
         run: |
-          make -j --silent test_spellcheck > ~/spellcheck_results.txt
-          make -j --silent test_capitalization > ~/capitalization_results.txt
-          cat ~/spellcheck_results.txt ~/capitalization_results.txt > ~/results.txt
+          make -j --silent test_text > ~/results.txt
           sort -o ~/results.txt ~/results.txt
-
           cat ~/results.txt
           [ -z "$(cat ~/results.txt)" ] && exit 0 || exit 1
 
