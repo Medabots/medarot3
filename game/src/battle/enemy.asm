@@ -50,7 +50,7 @@ BattleLoadEnemyDataInit:: ; This copies the name, which happens again later...
   push de
   call WrapBufferTextFromList
   pop de
-  ld a, [W_ListItemBufferArea]
+  ld a, [W_NewListItemBufferArea]
   ld hl, $1
   add hl, de
   ld [hl], a
@@ -66,7 +66,7 @@ BattleLoadEnemyDataInit:: ; This copies the name, which happens again later...
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, $9
   call memcpy
   pop de
@@ -157,7 +157,7 @@ BattleLoadEnemyDataName:: ; 29285 (a:5285)
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, $9
   call memcpy
   pop de

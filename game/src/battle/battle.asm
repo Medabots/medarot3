@@ -32,7 +32,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -96,7 +96,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -156,7 +156,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -216,7 +216,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de

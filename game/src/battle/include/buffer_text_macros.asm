@@ -81,6 +81,17 @@ LoadParticipantNameIntoBUF02Cont_\1::
   add hl, de
   ret
 .npc
+  ; Could be used for multiplayer, so check if length would work
+  ld hl, $40
+  add hl, de
+  ld b, $09
+.checkLengthLoop
+  ld a, [hli]
+  cp $CB
+  jr z, .player
+  dec b
+  jr nz, .checkLengthLoop
+
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   ld h, a
