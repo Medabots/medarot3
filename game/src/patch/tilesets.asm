@@ -169,3 +169,4 @@ PatchTilesets::
   PatchTilesetEntry HeavensGateElevator
   PatchTilesetEntry LinkMainMenu
   PatchTilesetEntry LinkTradeOptions
+  PatchTilesetEntry LinkRobattleOptionsModeSelect
