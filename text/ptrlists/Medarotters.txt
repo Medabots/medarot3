@@ -100,18 +100,18 @@ Index[#version],Unknown,Name
 95,\x1e\x18\x00,Hostess
 96,\x1f\x19\x00,Bunny
 97,\x1f\x19\x00,Bunny
-98,\x21\x1a\x01,Roborobo Member
-99,\x21\x1a\x01,Roborobo Member
-100,\x21\x1a\x01,Roborobo Member
-101,\x21\x1a\x01,Roborobo Member
-102,\x21\x1a\x01,Roborobo Member
-103,\x21\x1a\x01,Roborobo Member
-104,\x21\x1a\x01,Roborobo Member
-105,\x21\x1a\x01,Roborobo Member
-106,\x21\x1a\x01,Roborobo Member
-107,\x21\x1a\x01,Roborobo Member
-108,\x21\x1a\x01,Roborobo Member
-109,\x21\x1a\x01,Roborobo Member
+98,\x21\x1a\x01,RoboRobo Member
+99,\x21\x1a\x01,RoboRobo Member
+100,\x21\x1a\x01,RoboRobo Member
+101,\x21\x1a\x01,RoboRobo Member
+102,\x21\x1a\x01,RoboRobo Member
+103,\x21\x1a\x01,RoboRobo Member
+104,\x21\x1a\x01,RoboRobo Member
+105,\x21\x1a\x01,RoboRobo Member
+106,\x21\x1a\x01,RoboRobo Member
+107,\x21\x1a\x01,RoboRobo Member
+108,\x21\x1a\x01,RoboRobo Member
+109,\x21\x1a\x01,RoboRobo Member
 110,\x22\x1b\x01,Sakekaasu
 111,\x22\x1b\x01,Sakekaasu
 112,\x22\x1b\x01,Sakekaasu
@@ -240,11 +240,11 @@ Index[#version],Unknown,Name
 235,\x13\x4a\x00,Unboylievables
 236,\x1b\x4b\x00,Cosplayers
 237,\x1b\x4c\x00,Pretty Girls
-238,\x21\x4d\x00,Roborobos
+238,\x21\x4d\x00,RoboRobos
 239,\x13\x4e\x00,Extras
 240,\x1b\x4f\x00,Human Series
 241,\x00\x50\x00,Nashi
-242,\x25\x51\x00,Roborobos
+242,\x25\x51\x00,RoboRobos
 243,\x00\x52\x00,Nashi
 244,\x4a\x53\x00,Sea Fairies
 245,\x4b\x54\x00,Sea Dragons

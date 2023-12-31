@@ -54,13 +54,13 @@
 052,0x94092,もういちど はじめから<CD>ゲ-ムを プレイしてください<*02>,Play the game from the start once more.<*02>
 053,0x94094,まちがって けさないように<CD>ちゅういしてください<*02>,Be careful not to accidentally delete your save data.<*02>
 054,0x94096,<SFF>全国の ロボトルファンのみなさん<CD>おまたせ いたしました!<*04>,"<SFF>Fans from around the country, sorry for the wait!<*04>"
-055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from the Robattle Association...<*04>
+055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from the robattle Association...<*04>
 056,0x940c4,<SFF>ミスタ-.うるちです!<*04>,<SFF>Mr. Uruchi!<*04>
-057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, Robattle Fight your way up to space, kids!<*04>"
-058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-on-one Robattle Fight!<*04>
-059,0x940ca,<SFF>おおっ!!<CD>のぞむところだっ!<*04>,<SFF>Yeah!! Bring it on!!<*04>
+057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, robattle fight your way up to space, kids!<*04>"
+058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-on-one robattle fight!<*04>
+059,0x940ca,<SFF>おおっ!!<CD>のぞむところだっ!<*04>,<SFF>Yeah! Bring it on!!<*04>
 060,0x940cc,<SFF>え!? ちょっと ちょっと!<CD>そんな 勝手にっ...!<*04>,"<SFF>Huh? Wait wait, I'm the one that's supposed to- uh.....<*04>"
-061,0x940ce,<SFF>ロボトル- ファイト-!!<*04>,<SFF>Robattle fight!!<*04>
+061,0x940ce,<SFF>ロボトル- ファイト-!!<*04>,<SFF>Robattle fight!<*04>
 062,0x940d0,<SFF>何? この歌?<*04>,<SFF>What? This song...<*04>
 063,0x940d2,<SFF>聞いたことのない メロディ-だ<*04>,<SFF>I've never heard a melody like this before.<*04>
 064,0x940d4,<SFF>だけど...とっても<CD>やさしい 歌<*04>,<SFF>But... it's so lovely.<*04>
@@ -79,7 +79,7 @@
 077,0x940ee,<SFF>あ! きみは!<*04>,<SFF>Ah! It's you!<*04>
 078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from Sky TV's Medarot satellite...<CF><f02>Little Terakado<f00> brings you...<CF><f02>Medarot Weekly<f00>!<CF>We welcome today's guest, Mr. Yuki Nimosaku!<*03>"
 079,0x94102,やあ よい子の メダロッタ-たち<CD>元気かい?<*03>,Yo! How're all you Medarotters doing?<*03>
-080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,I have major news for all of you today...<CF>Courtesy of the Medarot Company...<CF>A nationwide Elementary School Robattle Tournament will be held... <CF>The Medalympics!<CF>The strongest schoolkid Medarotter team will be crowned the National Elementary Robattle Champions!<CF>The winner gets a trip into space to boot!<CF>Come and challenge it yourself if you're watching this!<*03>
+080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,I have major news for all of you today...<CF>Courtesy of the Medarot Company...<CF>A nationwide Elementary School robattle Tournament will be held... <CF>The Medalympics!<CF>The strongest schoolkid Medarotter team will be crowned the National Elementary robattle Champions!<CF>The winner gets a trip into space to boot!<CF>Come and challenge it yourself if you're watching this!<*03>
 081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 Medarotters per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be announced at the schools!<*03>
 082,0x94108,ティンペットは メダロットの<CD>「ほね」に あたるものである<CF>男型と 女型の2しゅるいあリ<CF>それぞれ せんようの パ-ツしか<CD>そうびできない<*02>,The Tinpet is the skeleton of the Medarot.<CF>There are two types: Male and female Tinpets.<CF>Only parts of the same type fit the Tinpet.<*02>
 083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right arm, a left arm, and legs.<CF>Four different types of parts to install.<*02>"

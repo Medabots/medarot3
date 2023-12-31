@@ -2,7 +2,7 @@
 56
 31067
 Index[#version],ItemName,Flags
-0,Roborobo Medal\xcb,\x00
+0,RoboRobo Medal\xcb,\x00
 1,Egg Carton\xcb,\x00
 2,MiniMini Machine\xcb,\x00
 3,Town Map\xcb,\x01
