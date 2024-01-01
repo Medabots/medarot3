@@ -56,7 +56,7 @@
 054,0x91a88,そうびされている メダルは<CD>あげることが できません!,You can not give away a Medal you currently have equipped!
 055,0x91a8a,メダリアのついている メダルは<CD>あげることが できません!,You can not give away a Medal that has Medalia equipped!
 056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The other person already owns this Medal!
-057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,Your opponent is choosing a Medal. Please wait!<*04>
+057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,The other person is choosing a Medal. Please wait!<*04>
 058,0x91a90,メダル転送!<S5A><*04>,Medal transfer!<S5A><*04>
 059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> <&BUF00> Medal <&BUF01> was acquired!<*03>
 060,0x91a94,<&BUF03>の<CD><&BUF05>メダルが なくなった!<*03>,<&BUF03>'s <&BUF05> Medal was lost!<*03>
