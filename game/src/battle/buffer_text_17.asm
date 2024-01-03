@@ -8,7 +8,11 @@ INCLUDE "build/pointer_constants.asm"
 SECTION "Load text into buffers for battle messages 17", ROMX[$4f80], BANK[$17]
   LoadParticipantNameIntoBUF02 17
 
-SECTION "Load text into buffers for battle messages 2 17", ROMX[$4dc2], BANK[$17]
+SECTION "Load text into buffers for battle messages 17 2", ROMX[$4c10], BANK[$17]
+  LoadDamageNumberIntoBUF00 17
+  padend $4c79
+
+SECTION "Load text into buffers for battle messages 17 3", ROMX[$4dc2], BANK[$17]
 BattleStatusLoadSkillIntoBuf00::
   call $5203
   ld hl, $da
