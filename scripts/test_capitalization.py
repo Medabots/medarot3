@@ -22,6 +22,7 @@ with open(glossary_file, 'r', encoding='utf-8-sig') as fp:
         for word in re.split(',', row[idx])
     )
     glossary = { v.upper() : v for v in glossary_words }
+    glossary_multiple_words_pattern = re.compile("|".join([ glossary[k] for k in glossary if len(glossary[k].split(' ')) > 1 ]))
 
 failed = []
 with open(input_file, 'r', encoding='utf-8-sig') as fp:
@@ -41,6 +42,9 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         text = re.sub(r"\<CD\>", ' ', text)
         text = re.sub(r"\<CF\>", ' ', text)
         text = re.sub(r"\<.+?\>", '', text)
+        # Replace multi-word phrases since they may capitalize words that may otherwise not be capitalized normally
+        text = glossary_multiple_words_pattern.sub('A', text)
+
         words = re.split(' ', text)
         if len(words) == 0:
             continue
@@ -59,7 +63,7 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
 
             is_first_word = words[w - 1].endswith(('.', '?', '!'))
             is_ellipsis = words[w - 1].endswith("...") or word.startswith("...")
-            is_capitlized = w_np[0].islower()
+            is_capitalized = not w_np[0].islower()
 
             if is_first_word and not is_ellipsis:
                 if len(w_np) > 0 and w_np[0].islower():
