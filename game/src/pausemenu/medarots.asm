@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_MedarotMedachangeStatMathBuffer EQU $C48A
+DEF W_MedarotMedachangeStatMathBuffer EQU $C48A
 
 SECTION "Medarot Variables 1",  WRAM0[$C525]
 W_MedarotCurrentHeadPart:: ds 1

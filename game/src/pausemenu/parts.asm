@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_PartStatsBuffer EQU $C552
+DEF W_PartStatsBuffer EQU $C552
 
 SECTION "Part Variables 1",  WRAM0[$C566]
 W_CurrentPartTypeForListView:: ds 1

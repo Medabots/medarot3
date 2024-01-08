@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_NamingScreenCursorPositionIndex EQU $C48D
+DEF W_NamingScreenCursorPositionIndex EQU $C48D
 
 SECTION "Naming Entry Variables", WRAM0[$C763]
 W_NamingEntryBottomRowSelection:: ds 1

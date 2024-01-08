@@ -7,7 +7,7 @@ W_CreditsCurrentLineNumber:: ds 1
 SECTION "Credits Variables 2", WRAM0[$C4E8]
 W_CreditsConfigAddressBuffer:: ds 2
 
-W_CreditsLetterOrderingAddressBuffer EQU $C4E2
+DEF W_CreditsLetterOrderingAddressBuffer EQU $C4E2
 
 SECTION "Credits Helper Functions 1", ROMX[$43E8], BANK[$16]
 CreditsAnimateSidebarPalette::

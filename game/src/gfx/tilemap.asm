@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_TilemapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
-W_TilemapPointerTableIndex EQU $C4E1
+DEF W_TilemapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
+DEF W_TilemapPointerTableIndex EQU $C4E1
 
 SECTION "Load Tilemaps", ROM0[$064F]
 DecompressTilemap0::

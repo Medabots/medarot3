@@ -261,7 +261,7 @@ try:
         with open(version_file_path, "w") as version_file:
             for var in file_constants[version]:
                 name = file_constants[version][var]
-                version_file.write(f'c{map_label.capitalize()}{var}        EQUS "\\"{os.path.join(output_path, f"{name}.map")}\\""\n')
+                version_file.write(f'DEF c{map_label.capitalize()}{var}        EQUS "\\"{os.path.join(output_path, f"{name}.map")}\\""\n')
             version_file.write(f'\nINCLUDE "{os.path.join(version_src_path, f"{map_label}_table.asm")}"\n')
 
     if namefile:

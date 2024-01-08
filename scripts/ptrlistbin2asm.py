@@ -58,4 +58,4 @@ for input_file in input_files:
 
 with open(output_file, 'w') as output:
     for k in bin_files:
-        output.write(f'c{k}        EQUS "\\"{bin_files[k]}\\""\n')
+        output.write(f'DEF c{k}        EQUS "\\"{bin_files[k]}\\""\n')

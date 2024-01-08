@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_AttribmapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
-W_AttribmapPointerTableIndex EQU $C4E1
+DEF W_AttribmapWritingBaseLocationIndex EQU $C4E0 ; 0 for $9800, 1 for $9C00, I suck at naming things.
+DEF W_AttribmapPointerTableIndex EQU $C4E1
 
 SECTION "Attribmap Loading Variables 1", WRAM0[$C499]
 W_DecompressAttribmapCurrentValue:: ds 1

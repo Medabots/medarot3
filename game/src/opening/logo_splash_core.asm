@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_LogoSplashCurrentLogo EQU $C720
+DEF W_LogoSplashCurrentLogo EQU $C720
 
 SECTION "Logo Splash State Machine 1", ROMX[$40FD], BANK[$03]
 LogoSplashStateMachine::

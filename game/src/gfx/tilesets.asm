@@ -16,10 +16,10 @@ W_TilesetScript_NumTiles:: ds 1
 SECTION "Tileset Variables 4", WRAM0[$C4DD]
 W_TilesetScript_Bank:: ds 1
 
-W_TilesetScript_PointerIndex EQU $C4E0 ; This address is overutilised, so EQU is better.
-W_MaliasSourceBank EQU $C4EE ; This address is overutilised, so EQU is better.
-W_TilesetScript_TilesetPointerIndex EQU $C4EE ; This address is overutilised, so EQU is better.
-W_MaliasDestinationAddress EQU $C4F0 ; This address is overutilised, so EQU is better.
+DEF W_TilesetScript_PointerIndex EQU $C4E0 ; This address is overutilised, so EQU is better.
+DEF W_MaliasSourceBank EQU $C4EE ; This address is overutilised, so EQU is better.
+DEF W_TilesetScript_TilesetPointerIndex EQU $C4EE ; This address is overutilised, so EQU is better.
+DEF W_MaliasDestinationAddress EQU $C4F0 ; This address is overutilised, so EQU is better.
 
 SECTION "Load Malias-Compressed Tilesets", ROM0[$0983]
 LoadMaliasGraphics::

@@ -235,7 +235,7 @@ with open(output_file, 'w') as output:
                     output.write(f'  INCBIN c{name}_GAMEVERSION\n')
                     for i, f in enumerate(version_files):
                         fname = f"{name}_{roms[i][1]}" 
-                        f.write(f'c{name}_GAMEVERSION        EQUS "\\"{os.path.join(gfx_output_path, fname)}.2bpp\\""\n')
+                        f.write(f'DEF c{name}_GAMEVERSION        EQUS "\\"{os.path.join(gfx_output_path, fname)}.2bpp\\""\n')
                         gfx.dump_2bpp_to_png(os.path.join(raw_path, f"{fname}.png"), data[i])
             
             # Last pointer is always the terminator, so just use that

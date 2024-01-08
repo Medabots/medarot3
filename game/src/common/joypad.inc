@@ -1,11 +1,11 @@
-H_JPInputHeldDown   EQU $ff8c
-H_JPInputChanged    EQU $ff8d
+DEF H_JPInputHeldDown   EQU $ff8c
+DEF H_JPInputChanged    EQU $ff8d
 
-M_JPInputA          EQU $1
-M_JPInputB          EQU $2
-M_JPInputSelect     EQU $4
-M_JPInputStart      EQU $8
-M_JPInputRight      EQU $10
-M_JPInputLeft       EQU $20
-M_JPInputUp         EQU $40
-M_JPInputDown       EQU $80
+DEF M_JPInputA          EQU $1
+DEF M_JPInputB          EQU $2
+DEF M_JPInputSelect     EQU $4
+DEF M_JPInputStart      EQU $8
+DEF M_JPInputRight      EQU $10
+DEF M_JPInputLeft       EQU $20
+DEF M_JPInputUp         EQU $40
+DEF M_JPInputDown       EQU $80
