@@ -2,7 +2,7 @@ INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 INCLUDE "build/pointer_constants.asm"
 
-W_BattleEncounterSubsubstateIndex EQU $C0A6
+DEF W_BattleEncounterSubsubstateIndex EQU $C0A6
 
 SECTION "Encounter State Machine 1", ROMX[$4D9D], BANK[$05]
 BattleEncounterStateMachine::

@@ -3,9 +3,9 @@ INCLUDE "game/src/common/constants.asm"
 SECTION "Number Mapping Variables 1", WRAM0[$C4E2]
 W_MapDigitsAddress:: ds 2
 
-W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; This address is overutilised, so EQU is better.
-W_MapDigitsSignificantDigitFound EQU $C4F0 ; This address is overutilised, so EQU is better.
-W_MapDigitsMedalExpSignificantDigitFound EQU $C4F2
+DEF W_MapDigitsCurrentCalculatedDigit EQU $C4EE ; This address is overutilised, so EQU is better.
+DEF W_MapDigitsSignificantDigitFound EQU $C4F0 ; This address is overutilised, so EQU is better.
+DEF W_MapDigitsMedalExpSignificantDigitFound EQU $C4F2
 
 SECTION "Map Three/Four Digit Numbers", ROM0[$1315]
 ParseThreeDigitNumberForMapping::

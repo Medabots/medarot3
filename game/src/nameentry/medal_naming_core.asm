@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-W_NamingScreenSubSubSubStateIndex EQU $C760
+DEF W_NamingScreenSubSubSubStateIndex EQU $C760
 
 SECTION "Medal Naming Screen State Machine 1", ROMX[$562F], BANK[$01]
 MedalNamingScreenStateMachine::

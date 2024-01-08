@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_PartStatsBuffer EQU $C552
+DEF W_PartStatsBuffer EQU $C552
 
 SECTION "Parts State Machine 1", ROMX[$5EBB], BANK[$06]
 PartsStateMachine::

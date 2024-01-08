@@ -1,12 +1,12 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_NamingScreenCursorPositionIndex EQU $C48D
+DEF W_NamingScreenCursorPositionIndex EQU $C48D
 
-W_NamingScreenSubSubSubStateIndex EQU $C760
+DEF W_NamingScreenSubSubSubStateIndex EQU $C760
 
-W_NamingEntryBottomRowSelection EQU $C763
-W_NamingEntryCursorPositionIndexWithinGroup EQU $C764
-W_NamingEntryCursorRowIndex EQU $C765
+DEF W_NamingEntryBottomRowSelection EQU $C763
+DEF W_NamingEntryCursorPositionIndexWithinGroup EQU $C764
+DEF W_NamingEntryCursorRowIndex EQU $C765
 
 SECTION "Naming Screen Entry State Machine 1", ROMX[$48F7], BANK[$01]
 NamingEntryStateMachine::

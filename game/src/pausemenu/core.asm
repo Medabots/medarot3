@@ -7,9 +7,9 @@ W_PauseMenuPerserveSCY:: ds 1
 SECTION "Pause Menu Vars 2", WRAM0[$C562]
 W_PauseMenuSelectedOption:: ds 1
 
-W_TransportOptionAAvailable EQU $C576
-W_TransportOptionBAvailable EQU $C577
-W_TransportOptionCAvailable EQU $C578
+DEF W_TransportOptionAAvailable EQU $C576
+DEF W_TransportOptionBAvailable EQU $C577
+DEF W_TransportOptionCAvailable EQU $C578
 
 SECTION "Pause Menu Vars 3", WRAM0[$C579]
 W_SelectedTransportOption:: ds 1

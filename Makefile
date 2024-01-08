@@ -313,7 +313,7 @@ $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 
 # build/pointer_constants.asm from scripts/res/ptrs.tbl
 $(BUILD)/pointer_constants.asm: $(SCRIPT_RES)/ptrs.tbl | $(BUILD)
-	awk -F "=0x" '{ print "c"$$1 " EQU " "$$"$$2 > "$@" }' $<
+	awk -F "=0x" '{ print "DEF c"$$1 " EQU " "$$"$$2 > "$@" }' $<
 
 ## Patch Specific
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)

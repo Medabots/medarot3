@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_OpeningSkipButtonPressed EQU $C737
+DEF W_OpeningSkipButtonPressed EQU $C737
 
 SECTION "Opening Animation State Machine 1", ROMX[$4627], BANK[$03]
 OpeningStateMachine::
