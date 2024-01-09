@@ -15,7 +15,7 @@ LoadMedaforceNameIntoBUF02::
 
   LoadPartTypeTextIntoBUF01 0F
 
-  PartTypeTable 0F
+  padend $4c24
 
 SECTION "Load text into buffers for battle messages 0F 2", ROMX[$4727], BANK[$0F]
   LoadDamageNumberIntoBUF00 0F
@@ -23,6 +23,9 @@ SECTION "Load text into buffers for battle messages 0F 2", ROMX[$4727], BANK[$0F
   padend $4790
 
 SECTION "Free space Bank 0F", ROMX[$7500], BANK[$0F]
+
+  PartTypeTable 0F
+
 LoadMedaforceNameIntoMedarotData:
   ld hl, $1d0
   add hl, de

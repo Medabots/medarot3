@@ -45,6 +45,8 @@ BattleLoadPartDamageNumber:: ;
 
   LoadPartTypeTextIntoBUF01 0C
 
+  padend $5721
+
 SECTION "Load participant name into cBUF02 0C", ROMX[$59f4], BANK[$0C]
   LoadParticipantNameIntoBUF02 0C
 

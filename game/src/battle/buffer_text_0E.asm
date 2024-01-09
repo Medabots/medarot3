@@ -26,13 +26,14 @@ LoadMedaforceTextIntoBUF02::
 
   padend $5597
 
+  padend $55b7
+
 SECTION "Load text into buffers for battle messages 3 0E", ROMX[$55C0], BANK[$0E]
   LoadParticipantNameIntoBUF02 0E
 
 
 SECTION "Free space Bank 0E", ROMX[$7200], BANK[$0E]
   PartTypeTable 0E
-
   LoadParticipantNameIntoBUF02Cont 0E
 
 LoadMedaforceNameIntoMedarotData:
