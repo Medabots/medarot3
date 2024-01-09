@@ -332,7 +332,7 @@ CalculateAndBufferExperienceForEncounterScreen::
   ld a, [$c4fc]
   or a
   jr z, .last_digit_terminate
-  ld a, $e0
+  ld a, $30
   ld [de], a
   inc de
 .last_digit_terminate
