@@ -44,3 +44,5 @@ BattleStatusLoadAttackIntoBuf01::
 
   LoadPartTypeTextIntoBUF01 17
   PartTypeTable 17
+
+  padend $4e4c

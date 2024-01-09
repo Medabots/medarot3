@@ -18,6 +18,8 @@ LoadMedaforceNameIntoBUF02::
 
   PartTypeTable 0F
 
+  padend $4c24
+
 SECTION "Load text into buffers for battle messages 0F 2", ROMX[$4727], BANK[$0F]
   LoadDamageNumberIntoBUF00 0F
 

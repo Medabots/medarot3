@@ -29,5 +29,7 @@ LoadMedaforceTextIntoBUF02::
 
   PartTypeTable 0E
 
+  padend $55b7
+
 SECTION "Load text into buffers for battle messages 3 0E", ROMX[$55C0], BANK[$0E]
   LoadParticipantNameIntoBUF02 0E
