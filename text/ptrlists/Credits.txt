@@ -209,8 +209,8 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 205,\x11,\x05,Development
 206,\x11,\x04,andwhyisit
 207,\x11,\x04,Variant
-208,\x11,\x04,\xCB
-209,\x11,\x04,\xCB
+208,\x11,\x05,Test Development
+209,\x11,\x04,netcat
 210,\x11,\x04,\xCB
 211,\x00,\x03,Localization
 212,\x10,\x05,Translations
