@@ -1144,8 +1144,7 @@ VWFAutoNL::
 
 .loop
   ld a, c
-  cp $89
-  ; The measurements account for 1px spacing, which does not matter at a line's end
+  cp $88
   jr z, .check_next_character
   jr nc, .tooLong
 .check_next_character
