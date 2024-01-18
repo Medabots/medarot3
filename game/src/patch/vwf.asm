@@ -547,6 +547,9 @@ VWFMessageBoxInputHandler::
   ret
 
 VWFControlCodeCC:: ; End code.
+  ; It is better to reset the font every pass than to lose the chance when there is only one pass.
+  xor a
+  ld [W_VWFCurrentFont], a
   ld a, [W_MainScriptCCSubState]
   or a
   jp nz, .subsequentStateLoader
@@ -618,11 +621,6 @@ VWFControlCodeCC:: ; End code.
 .exitCode4
   jp .exitCodeCommon
 
-.exitCode5
-  ld a, 1
-  ld [W_MainScriptExitMode], a
-  ret
-
 .exitSubState1
   ld a, [W_ReturnBank]
   push af
@@ -639,8 +637,7 @@ VWFControlCodeCC:: ; End code.
   jp .nextSubState
 
 .exitSubState3
-  ld a, 1
-  ld [W_MainScriptExitMode], a
+  call .exitCode5
   jp $2060
 
 .nextSubState
@@ -656,7 +653,7 @@ VWFControlCodeCC:: ; End code.
   cp $FF
   jr nz, .continueIntoState1
 
-.exitNow
+.exitCode5
   ld a, 1
   ld [W_MainScriptExitMode], a
   ret
