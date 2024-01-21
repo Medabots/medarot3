@@ -143,7 +143,7 @@
 00_B1=MedachangeTextPower
 00_B4=00B4
 00_B5=LinkMainMenu
-00_C1=LinkRobattleLoadScreen
+00_C1=LinkTransferringDataLoadScreen
 00_C3=LinkRobattleOptionsModeSelect
 00_C4=00C4
 00_C5=00C5

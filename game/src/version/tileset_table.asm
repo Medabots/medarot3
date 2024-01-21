@@ -167,7 +167,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9D (3ACF)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9E (3AD1)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9F (3AD3)
-  TilesetTableEntry Tileset3AD5 ; A0 (3AD5)
+  TilesetTableEntry LinkTransferringDataLoadScreen ; A0 (3AD5)
   TilesetTableEntry Tileset3AD7 ; A1 (3AD7)
   TilesetTableEntry Tileset3AD9 ; A2 (3AD9)
   TilesetTableEntry Tileset3ADB ; A3 (3ADB)
@@ -683,7 +683,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09D
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09F
-  dbwb BANK(Tileset3AD5), $9000, $0 ; 0A0
+  dbwb BANK(LinkTransferringDataLoadScreen), $9000, $0 ; 0A0
   dbwb BANK(Tileset3AD7), $8000, $0 ; 0A1
   dbwb BANK(Tileset3AD9), $8000, $0 ; 0A2
   dbwb BANK(Tileset3ADB), $8800, $0 ; 0A3
@@ -1422,9 +1422,9 @@ SECTION "Tileset Data Tileset3ACB", ROMX[$6E25], BANK[$1F]
 Tileset3ACB::
   INCBIN "./build/tilesets/Tileset3ACB.malias"
 
-SECTION "Tileset Data Tileset3AD5", ROMX[$44C1], BANK[$A5]
-Tileset3AD5::
-  INCBIN "./build/tilesets/Tileset3AD5.malias"
+SECTION "Tileset Data LinkTransferringDataLoadScreen", ROMX[$44C1], BANK[$A5]
+LinkTransferringDataLoadScreen::
+  INCBIN "./build/tilesets/LinkTransferringDataLoadScreen.malias"
 
 SECTION "Tileset Data Tileset3AD7", ROMX[$46B9], BANK[$A5]
 Tileset3AD7::
