@@ -567,7 +567,7 @@ Tilemap00_B4::
 Tilemap00_B5::
   INCBIN "./build/tilemaps/LinkMainMenu.map"
 Tilemap00_C1::
-  INCBIN "./build/tilemaps/LinkRobattleLoadScreen.map"
+  INCBIN "./build/tilemaps/LinkTransferringDataLoadScreen.map"
 Tilemap00_C2::
   INCBIN "./build/tilemaps/000C.map"
 Tilemap00_C3::
