@@ -221,9 +221,13 @@ SECTION "Text34", ROMX[$4000], BANK[$93]
 Text34:
   INCBIN cText34
 
-SECTION "Text35", ROMX[$4000], BANK[$95]
+SECTION "Text35", ROMX[$6F90], BANK[$94]
 Text35:
   INCBIN cText35
+
+SECTION "Text36", ROMX[$4000], BANK[$95]
+Text36:
+  INCBIN cText36
 
 SECTION "Dialog Text Tables", ROM0[$20a0]
 TextTableBanks:: ; 0x20a0
