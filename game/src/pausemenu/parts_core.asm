@@ -103,6 +103,7 @@ PartsListPrepareFadeOutState::
 PartsListPrepareFadeOutToWhiteState::
   ld bc, 0
   ld h, b
+  ld l, c
   ld d, $FF
   ld e, d
   ld a, 8
