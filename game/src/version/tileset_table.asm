@@ -1422,10 +1422,6 @@ SECTION "Tileset Data Tileset3ACB", ROMX[$6E25], BANK[$1F]
 Tileset3ACB::
   INCBIN "./build/tilesets/Tileset3ACB.malias"
 
-SECTION "Tileset Data LinkTransferringDataLoadScreen", ROMX[$44C1], BANK[$A5]
-LinkTransferringDataLoadScreen::
-  INCBIN "./build/tilesets/LinkTransferringDataLoadScreen.malias"
-
 SECTION "Tileset Data Tileset3AD7", ROMX[$46B9], BANK[$A5]
 Tileset3AD7::
   INCBIN "./build/tilesets/Tileset3AD7.malias"
