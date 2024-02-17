@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "build/pointer_constants.asm"
 
 SECTION "Medal Transfer Screen State Machine 1", ROMX[$4BD1], BANK[$11]
 MedalTransferStateMachine::
@@ -112,3 +113,16 @@ MedalTransferStateMachine::
   dw $4FEF ;5E
   dw $4FFF ;5F
   dw $4FFF ;60
+
+SECTION "Medal Transfer Screen State Machine 2", ROMX[$6278], BANK[$11]
+MedalTransferCopyMedalNameIntoBUF05::
+  ld [W_ListItemIndexForBuffering], a
+  ld b, $0b
+  ld c, $06
+  ld a, $00
+  ld [W_ListItemInitialOffsetForBuffering], a
+  call WrapBufferTextFromList
+  ld hl, W_ListItemBufferArea
+  ld de, cBUF05
+  ld bc, $0006
+  jp memcpy
