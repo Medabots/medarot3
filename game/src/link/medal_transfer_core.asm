@@ -117,12 +117,13 @@ MedalTransferStateMachine::
 SECTION "Medal Transfer Screen State Machine 2", ROMX[$6278], BANK[$11]
 MedalTransferCopyMedalNameIntoBUF05::
   ld [W_ListItemIndexForBuffering], a
-  ld b, $0b
-  ld c, $06
-  ld a, $00
+  ld bc, $0b06
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld de, cBUF05
-  ld bc, $0006
+  ld bc, $000b ; B Kuwagata + CB is the longest (11)
   jp memcpy
+
+  ; This is actually the end of bank 11
