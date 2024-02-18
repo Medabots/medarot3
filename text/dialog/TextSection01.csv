@@ -58,13 +58,13 @@
 056,0x91a8c,あれ! このメダルは<CD>あいても 持っていますよ!,The other person already owns this Medal!
 057,0x91a8e,あいてが メダルを選択しています!<CD>ちょっとまってね!<*04>,The other person is choosing a Medal. Please wait!<*04>
 058,0x91a90,メダル転送!<S5A><*04>,Medal transfer!<S5A><*04>
-059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> <&BUF00> Medal <&BUF01> was acquired!<*03>
+059,0x91a92,<&BUF03>は<CD><&BUF05>メダルを 手に入れた!<*03>,<&BUF03> acquired the <&BUF05> Medal!<*03>
 060,0x91a94,<&BUF03>の<CD><&BUF05>メダルが なくなった!<*03>,<&BUF03>'s <&BUF05> Medal was lost!<*03>
-061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,"Hey, <&BUF03>!<CF>Equip my Kabuto Medal to something, will ya?!<CF>I can't move at all like this!!<*03>"
+061#kabuto,0x91a96,<&BUF03>!<CD>オレの カブトメダルを<CF>そうちゃくしろっ!<CD>動けね-じゃね-かっ!!<*03>,"Hey, <&BUF03>!<CF>Equip my Kabuto Medal to something, will ya?!<CF>I can't move at all like this!<*03>"
 061#kuwagata,0x91a96,<&BUF03>!<CD>おれの クワガタメダルを<CF>外したままに するな<CD>みうごきが とれなくなる<*03>,<&BUF03>!<CF>Don't leave my Kuwagata Medal out in the open.<CF>I can not move freely like this.<*03>
 062,0x91a98,何が 知リたいのかな?<*04>,What do you want to know?<*04>
 063,0x91a9a,今は コマンドを ひらけません!,Can't open command now!
-064,0x91a9c,OBJオ-バ- フリ-ズ!!<*04>,Object overfreeze!!<*04>
+064,0x91a9c,OBJオ-バ- フリ-ズ!!<*04>,Object overfreeze!<*04>
 065,0x91a9e,<FINAL>,
 066,0x919fa,@0x919f8,@0x919f8
 067,0x919fc,@0x919f8,@0x919f8
