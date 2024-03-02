@@ -72,31 +72,25 @@ LinkEncounterSetupTerrainPalettes2::
   jp WrapRestageDestinationBGPalettesForFade
 
 LinkEncounterLoadStrings::
-  ld b, $11
-  ld c, $07
+  push de
+  ld bc, $1107
   ld a, [W_EncounterTerrainListItemIndex]
   ld [W_ListItemIndexForBuffering], a
-  ld a, $00
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld bc, W_ListItemBufferArea
+  ld bc, W_NewListItemBufferArea
   ld a, $06
-  call GetTileBasedCenteringOffset
-  ld hl, $9821
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
+  ld de, $9821
+  ld h, $01
+  call VWFDrawStringCentredFullAddress
+
   ld bc, $C5A5
-  ld a, $08
-  call GetTileBasedCenteringOffset
-  ld hl, $996B
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld bc, $C5A5
-  jp PutStringVariableLength
+  ld de, $996B
+  ld h, $07
+  call VWFDrawStringCentredFullAddress8Tiles
+  pop de
+  ret
 
   padend $57bf
 
