@@ -1444,7 +1444,7 @@ VWFDrawStringInitContinued::
   ld b, a
   call VWFEmptyDrawingRegion
 
-  ; Clear the first tile in the composite area to avoid visual bugs with centred text.
+  ; Clear the first tile in the composite area to avoid visual bugs with centered text.
 
   ld hl, W_VWFCompositeArea
   ld b, $10

@@ -138,7 +138,7 @@ PartTradingMapPartName::
   rla
   inc a
   ld h, a
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
 
   padend $5d5a
 

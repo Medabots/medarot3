@@ -83,12 +83,12 @@ LinkEncounterLoadStrings::
   ld a, $06
   ld de, $9821
   ld h, $01
-  call VWFDrawStringCentredFullAddress
+  call VWFDrawStringCenteredFullAddress
 
   ld bc, $C5A5
   ld de, $996B
   ld h, $07
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   ret
 
