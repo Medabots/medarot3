@@ -633,7 +633,7 @@ HelperPullPartsTextAndDraw:
   pop de
   pop hl
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   ret
 
 MapEightDashesForBattle::
@@ -663,7 +663,7 @@ MapMedaforceANamePlusAmmoForBattle::
   ld h, $70
   ld de, $99c6
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   jr .mapDashes
 
@@ -691,7 +691,7 @@ MapMedaforceBNameForBattle::
   ld h, $68
   ld de, $9A0B
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   ret
 
@@ -714,7 +714,7 @@ MapMedaforceCNameForBattle::
   ld h, $60
   ld de, $9A01
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   ret
 

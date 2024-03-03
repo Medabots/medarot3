@@ -273,7 +273,7 @@ MapSelectedMedalName::
   ld c, l ; bc is string location
   pop de ; hl -> de, tile mapping location
   ld h, $78 ; tile index to draw, drawing at the very end since name is used in every screen
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
 
 .noMedal
   pop hl

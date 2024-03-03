@@ -461,7 +461,7 @@ BattleEncounterResultsDrawPrizeState::
   ld bc, W_NewListItemBufferArea
   ld de, $996b
   ld h, $07
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   jp BattleEncounterIncSubsubstateIndex
 

@@ -236,7 +236,7 @@ MapCurrentMedarotNameForPaintShopSelectionScreen::
   ; bc = Medarot name
   pop de ; de = address to draw to
   ld h, $29 ; h = tile index 
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
 
 PaintShopGetMedalAddressForCurrentMedarot::
   ld c, a

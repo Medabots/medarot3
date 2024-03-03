@@ -307,7 +307,7 @@ MapCurrentMedarotNameForSelectionScreen::
   ld c, l
   pop de ; hl -> de
   ld h, $78
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
   padend $48de
 
 OffsetToMappingAddressForMedarotScreens::
@@ -1537,7 +1537,7 @@ MapMedalNicknameForMedarotStatusScreen::
   ld d, h
   ld e, l
   ld h, $78 ; As a rule of thumb, we draw the Medarot name in the last available tiles
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
 
   pop af
   pop bc

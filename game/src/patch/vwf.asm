@@ -40,14 +40,14 @@ VWFDrawStringLeftFullAddress::
   call VWFAlignToLeft
   jp VWFDrawStringLoop
 
-VWFDrawStringCentredFullAddress8Tiles::
+VWFDrawStringCenteredFullAddress8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
   ; h is the tile index of our drawing area.
   ld a, 8
-  ; Continues into VWFDrawStringCentredFullAddress.
+  ; Continues into VWFDrawStringCenteredFullAddress.
 
-VWFDrawStringCentredFullAddress::
+VWFDrawStringCenteredFullAddress::
   ; a is the number of tiles our drawing area is comprised of.
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
@@ -94,14 +94,14 @@ VWFDrawStringLeft::
   call VWFAlignToLeft
   jp VWFDrawStringLoop
 
-VWFDrawStringCentred8Tiles::
+VWFDrawStringCentered8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; h is the tile index of our drawing area.
   ; l is a single-byte representation of an address for mapping tiles to.
   ld a, 8
-  ; Continues into VWFDrawStringCentred.
+  ; Continues into VWFDrawStringCentered.
   
-VWFDrawStringCentred::
+VWFDrawStringCentered::
   ; a is the number of tiles our drawing area is comprised of.
   ; bc is the address of the string to print, terminated by 0xCB.
   ; h is the tile index of our drawing area.

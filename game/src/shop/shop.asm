@@ -959,7 +959,7 @@ ShopPasswordMapObtainedPartName::
   ld h, $02
   ld bc, W_NewListItemBufferArea
   ld a, $07
-  call VWFDrawStringCentredFullAddress
+  call VWFDrawStringCenteredFullAddress
   ret
 
 ShopPasswordGetPartStatValues::

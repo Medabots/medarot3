@@ -248,7 +248,7 @@ MapTextForEncounterScreen::
   ld de, $9821
   ld h, $01
   ld a, $06
-  call VWFDrawStringCentredFullAddress
+  call VWFDrawStringCenteredFullAddress
   ld bc, $0f07
   ld a, [W_EncounterOpponentListItemIndex]
   ld [W_ListItemIndexForBuffering], a
@@ -258,7 +258,7 @@ MapTextForEncounterScreen::
   ld bc, W_NewListItemBufferArea
   ld de, $996B
   ld h, $07
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
 
   padend $5c0f
 
