@@ -79,7 +79,7 @@ LinkEncounterLoadStrings::
   call WrapBufferTextFromList
   ld bc, W_ListItemBufferArea
   ld a, $06
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld hl, $9821
   ld b, $00
   ld c, a
@@ -88,7 +88,7 @@ LinkEncounterLoadStrings::
   call PutStringVariableLength
   ld bc, $C5A5
   ld a, $08
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld hl, $996B
   ld b, $00
   ld c, a

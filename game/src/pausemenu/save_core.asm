@@ -52,7 +52,7 @@ SaveMenuMappingState::
   call WrapDecompressAttribmap0
   ld bc, W_PlayerName
   ld a, 8
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld d, 0
   ld e, a
   ld hl, $9823

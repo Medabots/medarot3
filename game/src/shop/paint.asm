@@ -233,7 +233,7 @@ MapCurrentMedarotNameForPaintShopSelectionScreen::
   ld b, h
   ld c, l
   ld a, 8
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   pop hl
   ld b, 0
   ld c, a

@@ -268,7 +268,7 @@ MapSelectedMedalName::
   ld b, h
   ld c, l
   ld a, 8
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   pop hl
   ld d, 0
   ld e, a

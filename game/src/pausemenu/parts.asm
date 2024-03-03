@@ -1264,7 +1264,7 @@ MapPartNameForPartStatus::
   pop hl
   ld bc, W_ListItemBufferArea
   ld a, 8
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld b, 0
   ld c, a
   add hl, bc

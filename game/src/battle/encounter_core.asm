@@ -460,7 +460,7 @@ BattleEncounterResultsDrawPrizeState::
   pop de
   ld bc, W_ListItemBufferArea
   ld a, $08
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld hl, $996b
   ld b, $00
   ld c, a

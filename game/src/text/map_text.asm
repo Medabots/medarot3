@@ -51,7 +51,7 @@ PutStringFixedLength::
   ret
 
 SECTION "Get Tile-Based Centring Offset", ROM0[$25BD]
-GetTileBasedCentringOffset::
+GetTileBasedCenteringOffset::
   push hl
   push bc
   push af

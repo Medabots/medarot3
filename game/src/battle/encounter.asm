@@ -248,7 +248,7 @@ MapTextForEncounterScreen::
   call WrapBufferTextFromList
   ld bc, W_ListItemBufferArea
   ld a, 6
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld hl, $9821
   ld b, 0
   ld c, a
@@ -257,7 +257,7 @@ MapTextForEncounterScreen::
   call PutStringVariableLength
   ld bc, W_EncounterOpponentBufferArea + 3
   ld a, 8
-  call GetTileBasedCentringOffset
+  call GetTileBasedCenteringOffset
   ld hl, $996B
   ld b, 0
   ld c, a
