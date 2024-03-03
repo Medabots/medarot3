@@ -12,6 +12,7 @@ SECTION "Link Battle Helper Functions 1", ROMX[$52BC], BANK[$12]
 LinkBattleInitializeLoadParticipantData:: 
   xor a
   ld [$C4EE], a
+
 .loop
   ld hl, $60
   add hl, de
@@ -37,7 +38,7 @@ LinkBattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -101,7 +102,7 @@ LinkBattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -161,7 +162,7 @@ LinkBattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -221,7 +222,7 @@ LinkBattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -274,7 +275,7 @@ LinkBattleInitializeLoadParticipantData::
   add hl, de
   ld a, [hl]
   or a
-  jp z, $55e5
+  jp z, .nextParticipant
   ld hl, 3
   add hl, de
   ld a, [hli]
@@ -296,7 +297,7 @@ LinkBattleInitializeLoadParticipantData::
   ld hl, $EE
   add hl, de
   ld [hl], a
-  jp $55e5
+  jp .nextParticipant
 
 .jpB
   ld hl, 3
@@ -434,6 +435,7 @@ LinkBattleInitializeLoadParticipantData::
   ld [hli], a
   ld a, [$C55A]
   ld [hli], a
+
 .nextParticipant
   ld hl, $DC
   add hl, de
@@ -538,18 +540,7 @@ LinkMapAttackNamesForBattle::
   jp LinkMapPlayerMedachangeAttackCNameForBattle
 
 LinkMapPlayerAttackANamePlusAmmoForBattle::
-  ld hl, $D0
-  add hl, de
-  ld b, h
-  ld c, l
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
-  call LinkMapEightDashesForBattle
-
-.mapName
-  ld hl, $99C6
-  ld bc, $DCBA
-  call PutStringVariableLength
+.mapAmmo
   ld hl, $E7
   add hl, de
   ld a, [hl]
@@ -570,49 +561,86 @@ LinkMapPlayerAttackANamePlusAmmoForBattle::
   pop af
   ld [hli], a
   ei
+
+  ; Head part can't be broken
+  ld hl, 3
+  add hl, de
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $99C6
+  ld b, $01
+  ld h, $70
+  call LinkHelperPullPartsTextAndDraw
+  pop de
   ret
 
 LinkMapPlayerAttackBNameForBattle::
+  ; Check if part is broken
   ld hl, $106
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, $F0
+  ld hl, 4
   add hl, de
-  ld b, h
-  ld c, l
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
-
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $9A0B
+  ld b, $02
+  ld h, $68
+  call LinkHelperPullPartsTextAndDraw
+  pop de
+  ret
 .mapDashes
-  call LinkMapEightDashesForBattle
-
-.mapName
   ld hl, $9A0B
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jr LinkHelperMapDashes
 
 LinkMapPlayerAttackCNameForBattle::
+  ; Check if part is broken
   ld hl, $126
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, $110
+  ld hl, 5
   add hl, de
-  ld b, h
-  ld c, l
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
-
+  ld a, [hl]
+  push de ; Must preserve de
+  ld de, $9A01
+  ld b, $03
+  ld h, $60
+  call LinkHelperPullPartsTextAndDraw
+  pop de
+  ret
 .mapDashes
-  call LinkMapEightDashesForBattle
-
-.mapName
   ld hl, $9A01
+  jr LinkHelperMapDashes
+
+LinkHelperMapDashes:
+  ; hl is position to draw
+  push hl
+  call LinkMapEightDashesForBattle
+  pop hl
   ld bc, $DCBA
   jp PutStringVariableLength
+
+LinkHelperPullPartsTextAndDraw:
+  ; a - list index
+  ; b - part index
+  ; de - location to draw
+  ; h - tile address
+  ld c, $09 ; All parts are c == 09
+  ld [W_ListItemIndexForBuffering], a
+  ld a, 7 ; skip the the part model
+  ld [W_ListItemInitialOffsetForBuffering], a
+  push hl
+  push de
+  call WrapBufferTextFromList
+  pop de
+  pop hl
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCenteredFullAddress8Tiles
+  ret
 
 LinkMapEightDashesForBattle::
   ld hl, $DCBA
@@ -627,57 +655,6 @@ LinkMapEightDashesForBattle::
   ld [hl], a
   ret
 
-LinkBufferCenteredAttackNameForBattle::
-  push de
-  push hl
-  ld a, 8
-  call GetTileBasedCenteringOffset
-  pop de
-  ld b, a
-  ld a, 8
-  ld [$C4EE], a
-  ld hl, $DCBA
-
-.paddingLoop
-  ld a, b
-  or a
-  jr z, .copyLoop
-  xor a
-  ld [hli], a
-  dec b
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .paddingLoop
-
-.copyLoop
-  ld a, [de]
-  cp $CB
-  jr z, .endPaddingLoop
-  ld [hli], a
-  inc de
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .copyLoop
-
-.endPaddingLoop
-  ld a, [$C4EE]
-  or a
-  jr z, .addTerminator
-  xor a
-  ld [hli], a
-  ld a, [$C4EE]
-  dec a
-  ld [$C4EE], a
-  jr .endPaddingLoop
-
-.addTerminator
-  ld a, $CB
-  ld [hl], a
-  pop de
-  ret
-
 LinkMapMedaforceANamePlusAmmoForBattle::
   ld hl, $15
   add hl, de
@@ -685,25 +662,23 @@ LinkMapMedaforceANamePlusAmmoForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $70
+  ld de, $99c6
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
+  jr .mapDashes
 
 .slotEmpty
-  call LinkMapEightDashesForBattle
-
-.mapName
   ld hl, $99C6
-  ld bc, $DCBA
-  call PutStringVariableLength
+  call LinkHelperMapDashes
+
+.mapDashes
   ld hl, $99CF
   ld a, 5
   jp LinkMapDashesForBattle
@@ -715,25 +690,21 @@ LinkMapMedaforceBNameForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $68
+  ld de, $9A0B
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
+  ret
 
 .slotEmpty
-  call LinkMapEightDashesForBattle
-
-.mapName
   ld hl, $9A0B
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jp LinkHelperMapDashes
 
 LinkMapMedaforceCNameForBattle::
   ld hl, $17
@@ -742,25 +713,21 @@ LinkMapMedaforceCNameForBattle::
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld b, $A
-  ld c, 9
+  ld bc, $0A09
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
+  ld h, $60
+  ld de, $9A01
+  ld bc, W_NewListItemBufferArea
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
-  ld hl, W_ListItemBufferArea
-  ld bc, W_ListItemBufferArea
-  call LinkBufferCenteredAttackNameForBattle
-  jr .mapName
+  ret
 
 .slotEmpty
-  call LinkMapEightDashesForBattle
-
-.mapName
   ld hl, $9A01
-  ld bc, $DCBA
-  jp PutStringVariableLength
+  jp LinkHelperMapDashes
 
 LinkMapDashesForBattle::
   ld b, a
@@ -776,6 +743,8 @@ LinkMapDashesForBattle::
   dec b
   jr nz, .loop
   ret
+
+  padend $5e0a
 
 LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle::
   push de
@@ -818,13 +787,13 @@ LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle::
   ret
 
 .medachangeAttackAName
-  db $00,$7B,$27,$02,$7E,$00,$9E,$00
+  db $00,$00,$56,$57,$58,$59,$00,$00
 
 .medachangeAttackBName
-  db $00,$7B,$27,$02,$7E,$00,$9F,$00
+  db $00,$00,$56,$57,$58,$5A,$00,$00
 
 .medachangeAttackCName
-  db $00,$7B,$27,$02,$7E,$00,$A0,$00
+  db $00,$00,$56,$57,$58,$5B,$00,$00
 
 LinkMapPlayerMedachangeAttackBNameForBattle::
   push de
