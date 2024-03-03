@@ -1,12 +1,17 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-SECTION "Battle Helper Functions 1", ROMX[$4DCF], BANK[$0A]
-; Part of initial state (0A:40C1 -> 0A:4B84 -> 0A:4DCF)
-BattleInitializeLoadParticipantData::
+INCLUDE "build/pointer_constants.asm"
+
+; In general these are just copies of the routines in battle but only used within link
+; There may be some subtle differences
+
+
+SECTION "Link Battle Helper Functions 1", ROMX[$52BC], BANK[$12]
+; TODO: This is identical to the equivalent function in battle
+LinkBattleInitializeLoadParticipantData:: 
   xor a
   ld [$C4EE], a
-
 .loop
   ld hl, $60
   add hl, de
@@ -269,7 +274,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld a, [hl]
   or a
-  jp z, .nextParticipant
+  jp z, $55e5
   ld hl, 3
   add hl, de
   ld a, [hli]
@@ -291,7 +296,7 @@ BattleInitializeLoadParticipantData::
   ld hl, $EE
   add hl, de
   ld [hl], a
-  jp .nextParticipant
+  jp $55e5
 
 .jpB
   ld hl, 3
@@ -429,24 +434,23 @@ BattleInitializeLoadParticipantData::
   ld [hli], a
   ld a, [$C55A]
   ld [hli], a
-
 .nextParticipant
   ld hl, $DC
   add hl, de
   ld a, [hl]
-  call BattleInitializeLoadParticipantData_sub
+  call LinkBattleInitializeLoadParticipantData_sub
   ld hl, $FC
   add hl, de
   ld a, [hl]
-  call BattleInitializeLoadParticipantData_sub
+  call LinkBattleInitializeLoadParticipantData_sub
   ld hl, $11C
   add hl, de
   ld a, [hl]
-  call BattleInitializeLoadParticipantData_sub
+  call LinkBattleInitializeLoadParticipantData_sub
   ld hl, $13C
   add hl, de
   ld a, [hl]
-  call BattleInitializeLoadParticipantData_sub
+  call LinkBattleInitializeLoadParticipantData_sub
   ld hl, $200
   add hl, de
   ld d, h
@@ -463,7 +467,7 @@ BattleInitializeLoadParticipantData::
   jp nz, .loop
   ret
 
-BattleInitializeLoadParticipantData_sub::
+LinkBattleInitializeLoadParticipantData_sub:: ; 49624 (12:5624)
   push hl
   ld c, a
   ld hl, $00A8
@@ -490,18 +494,18 @@ BattleInitializeLoadParticipantData_sub::
   pop hl
   ret
 
-  padend $5157
+  padend $5644
 
-SECTION "Battle Helper Functions 2", ROMX[$5662], BANK[$0A]
-CalculateBattleParticipantAddress::
+SECTION "Link Battle Helper Functions 2", ROMX[$5B40], BANK[$12]
+LinkCalculateBattleParticipantAddress::
   ld hl, $D000
   ld b, 0
   ld c, a
   ld a, 9
   jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
-SECTION "Battle Helper Functions 3", ROMX[$5778], BANK[$0A]
-MapAttackNamesForBattle::
+SECTION "Link Battle Helper Functions 3", ROMX[$5c56], BANK[$12]
+LinkMapAttackNamesForBattle::
   ld a, [$DCB6]
   ld hl, .table
   rst $30
@@ -514,27 +518,38 @@ MapAttackNamesForBattle::
 
 .standardAttacks
   ld a, [$DCB9]
-  call CalculateBattleParticipantAddress
-  call MapPlayerAttackANamePlusAmmoForBattle
-  call MapPlayerAttackBNameForBattle
-  jp MapPlayerAttackCNameForBattle
+  call LinkCalculateBattleParticipantAddress
+  call LinkMapPlayerAttackANamePlusAmmoForBattle
+  call LinkMapPlayerAttackBNameForBattle
+  jp LinkMapPlayerAttackCNameForBattle
 
 .medaliaAttacks
   ld a, [$DCB9]
-  call CalculateBattleParticipantAddress
-  call MapMedaforceANamePlusAmmoForBattle
-  call MapMedaforceBNameForBattle
-  jp MapMedaforceCNameForBattle
+  call LinkCalculateBattleParticipantAddress
+  call LinkMapMedaforceANamePlusAmmoForBattle
+  call LinkMapMedaforceBNameForBattle
+  jp LinkMapMedaforceCNameForBattle
 
 .medachangeAttacks
   ld a, [$DCB9]
-  call CalculateBattleParticipantAddress
-  call MapPlayerMedachangeAttackANamePlusAmmoForBattle
-  call MapPlayerMedachangeAttackBNameForBattle
-  jp MapPlayerMedachangeAttackCNameForBattle
+  call LinkCalculateBattleParticipantAddress
+  call LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle
+  call LinkMapPlayerMedachangeAttackBNameForBattle
+  jp LinkMapPlayerMedachangeAttackCNameForBattle
 
-MapPlayerAttackANamePlusAmmoForBattle::
-.mapAmmo
+LinkMapPlayerAttackANamePlusAmmoForBattle::
+  ld hl, $D0
+  add hl, de
+  ld b, h
+  ld c, l
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
+  call LinkMapEightDashesForBattle
+
+.mapName
+  ld hl, $99C6
+  ld bc, $DCBA
+  call PutStringVariableLength
   ld hl, $E7
   add hl, de
   ld a, [hl]
@@ -555,90 +570,54 @@ MapPlayerAttackANamePlusAmmoForBattle::
   pop af
   ld [hli], a
   ei
-
-  ; Head part can't be broken
-  ld hl, 3
-  add hl, de
-  ld a, [hl]
-  push de ; Must preserve de
-  ld de, $99C6
-  ld b, $01
-  ld h, $70
-  call HelperPullPartsTextAndDraw
-  pop de
   ret
 
-MapPlayerAttackBNameForBattle::
-  ; Check if part is broken
+LinkMapPlayerAttackBNameForBattle::
   ld hl, $106
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, 4
+  ld hl, $F0
   add hl, de
-  ld a, [hl]
-  push de ; Must preserve de
-  ld de, $9A0B
-  ld b, $02
-  ld h, $68
-  call HelperPullPartsTextAndDraw
-  pop de
-  ret
-.mapDashes
-  ld hl, $9A0B
-  jr HelperMapDashes
+  ld b, h
+  ld c, l
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
 
-MapPlayerAttackCNameForBattle::
-  ; Check if part is broken
+.mapDashes
+  call LinkMapEightDashesForBattle
+
+.mapName
+  ld hl, $9A0B
+  ld bc, $DCBA
+  jp PutStringVariableLength
+
+LinkMapPlayerAttackCNameForBattle::
   ld hl, $126
   add hl, de
   ld a, [hl]
   or a
   jr z, .mapDashes
-  ld hl, 5
+  ld hl, $110
   add hl, de
-  ld a, [hl]
-  push de ; Must preserve de
-  ld de, $9A01
-  ld b, $03
-  ld h, $60
-  call HelperPullPartsTextAndDraw
-  pop de
-  ret
-.mapDashes
-  ld hl, $9A01
-  jr HelperMapDashes
+  ld b, h
+  ld c, l
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
 
-HelperMapDashes:
-  ; hl is position to draw
-  push hl
-  call MapEightDashesForBattle
-  pop hl
+.mapDashes
+  call LinkMapEightDashesForBattle
+
+.mapName
+  ld hl, $9A01
   ld bc, $DCBA
   jp PutStringVariableLength
 
-HelperPullPartsTextAndDraw:
-  ; a - list index
-  ; b - part index
-  ; de - location to draw
-  ; h - tile address
-  ld c, $09 ; All parts are c == 09
-  ld [W_ListItemIndexForBuffering], a
-  ld a, 7 ; skip the the part model
-  ld [W_ListItemInitialOffsetForBuffering], a
-  push hl
-  push de
-  call WrapBufferTextFromList
-  pop de
-  pop hl
-  ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
-  ret
-
-MapEightDashesForBattle::
+LinkMapEightDashesForBattle::
   ld hl, $DCBA
   ld b, 8
+
 .loop
   ld a, $EE
   ld [hli], a
@@ -648,81 +627,142 @@ MapEightDashesForBattle::
   ld [hl], a
   ret
 
-MapMedaforceANamePlusAmmoForBattle::
+LinkBufferCenteredAttackNameForBattle::
+  push de
+  push hl
+  ld a, 8
+  call GetTileBasedCenteringOffset
+  pop de
+  ld b, a
+  ld a, 8
+  ld [$C4EE], a
+  ld hl, $DCBA
+
+.paddingLoop
+  ld a, b
+  or a
+  jr z, .copyLoop
+  xor a
+  ld [hli], a
+  dec b
+  ld a, [$C4EE]
+  dec a
+  ld [$C4EE], a
+  jr .paddingLoop
+
+.copyLoop
+  ld a, [de]
+  cp $CB
+  jr z, .endPaddingLoop
+  ld [hli], a
+  inc de
+  ld a, [$C4EE]
+  dec a
+  ld [$C4EE], a
+  jr .copyLoop
+
+.endPaddingLoop
+  ld a, [$C4EE]
+  or a
+  jr z, .addTerminator
+  xor a
+  ld [hli], a
+  ld a, [$C4EE]
+  dec a
+  ld [$C4EE], a
+  jr .endPaddingLoop
+
+.addTerminator
+  ld a, $CB
+  ld [hl], a
+  pop de
+  ret
+
+LinkMapMedaforceANamePlusAmmoForBattle::
   ld hl, $15
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld bc, $0A09
+  ld b, $A
+  ld c, 9
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
-  ld h, $70
-  ld de, $99c6
-  ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  jr .mapDashes
+  ld hl, W_ListItemBufferArea
+  ld bc, W_ListItemBufferArea
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
 
 .slotEmpty
-  ld hl, $99C6
-  call HelperMapDashes
+  call LinkMapEightDashesForBattle
 
-.mapDashes
+.mapName
+  ld hl, $99C6
+  ld bc, $DCBA
+  call PutStringVariableLength
   ld hl, $99CF
   ld a, 5
-  jp MapDashesForBattle
+  jp LinkMapDashesForBattle
 
-MapMedaforceBNameForBattle::
+LinkMapMedaforceBNameForBattle::
   ld hl, $16
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld bc, $0A09
+  ld b, $A
+  ld c, 9
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
-  ld h, $68
-  ld de, $9A0B
-  ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ret
+  ld hl, W_ListItemBufferArea
+  ld bc, W_ListItemBufferArea
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
 
 .slotEmpty
-  ld hl, $9A0B
-  jp HelperMapDashes
+  call LinkMapEightDashesForBattle
 
-MapMedaforceCNameForBattle::
+.mapName
+  ld hl, $9A0B
+  ld bc, $DCBA
+  jp PutStringVariableLength
+
+LinkMapMedaforceCNameForBattle::
   ld hl, $17
   add hl, de
   ld a, [hl]
   cp $FF
   jr z, .slotEmpty
   ld [W_ListItemIndexForBuffering], a
-  ld bc, $0A09
+  ld b, $A
+  ld c, 9
   ld a, 6
   ld [W_ListItemInitialOffsetForBuffering], a
   push de
   call WrapBufferTextFromList
-  ld h, $60
-  ld de, $9A01
-  ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
   pop de
-  ret
+  ld hl, W_ListItemBufferArea
+  ld bc, W_ListItemBufferArea
+  call LinkBufferCenteredAttackNameForBattle
+  jr .mapName
 
 .slotEmpty
-  ld hl, $9A01
-  jp HelperMapDashes
+  call LinkMapEightDashesForBattle
 
-MapDashesForBattle::
+.mapName
+  ld hl, $9A01
+  ld bc, $DCBA
+  jp PutStringVariableLength
+
+LinkMapDashesForBattle::
   ld b, a
 
 .loop
@@ -737,12 +777,10 @@ MapDashesForBattle::
   jr nz, .loop
   ret
 
-  padend $592c
-
-MapPlayerMedachangeAttackANamePlusAmmoForBattle::
+LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle::
   push de
   ld hl, $99C6
-  ld de, MedachangeAttackAName
+  ld de, .medachangeAttackAName
   ld b, 8
 
 .loop
@@ -779,19 +817,19 @@ MapPlayerMedachangeAttackANamePlusAmmoForBattle::
   ei
   ret
 
-MedachangeAttackAName::
-  db $00,$00,$56,$57,$58,$59,$00,$00
+.medachangeAttackAName
+  db $00,$7B,$27,$02,$7E,$00,$9E,$00
 
-MedachangeAttackBName::
-  db $00,$00,$56,$57,$58,$5A,$00,$00
+.medachangeAttackBName
+  db $00,$7B,$27,$02,$7E,$00,$9F,$00
 
-MedachangeAttackCName::
-  db $00,$00,$56,$57,$58,$5B,$00,$00
+.medachangeAttackCName
+  db $00,$7B,$27,$02,$7E,$00,$A0,$00
 
-MapPlayerMedachangeAttackBNameForBattle::
+LinkMapPlayerMedachangeAttackBNameForBattle::
   push de
   ld hl, $9A0B
-  ld de, MedachangeAttackBName
+  ld de, LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle.medachangeAttackBName
   ld b, 8
 
 .loop
@@ -808,10 +846,10 @@ MapPlayerMedachangeAttackBNameForBattle::
   pop de
   ret
 
-MapPlayerMedachangeAttackCNameForBattle::
+LinkMapPlayerMedachangeAttackCNameForBattle::
   push de
   ld hl, $9A01
-  ld de, MedachangeAttackCName
+  ld de, LinkMapPlayerMedachangeAttackANamePlusAmmoForBattle.medachangeAttackCName
   ld b, 8
 
 .loop
@@ -827,143 +865,3 @@ MapPlayerMedachangeAttackCNameForBattle::
   jr nz, .loop
   pop de
   ret
-
-SECTION "'Medaforce' selection", ROMX[$5cff], BANK[$0A]
-BattlePrepareMedaforce::
-  xor a
-  ld [$c4f1], a
-  ld a, [$dc10]
-  cp $28
-  jp z, .no_medaforce_selected
-  ld a, b
-  cp $ff
-  jr z, .check_table
-  ld [$c4f0], a
-  ld a, $01
-  ld [$c4f1], a
-  jr .ignore_table
-.check_table
-  call $ab4
-  ld a, [$c4a0]
-  and $07
-  ld hl, .table
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld a, [hl]
-  ld [$c4f0], a
-.ignore_table
-  xor a
-  ld [$c4f2], a
-.check_next
-  ld hl, $15
-  ld b, $00
-  ld a, [$c4f0]
-  ld c, a
-  add hl, bc
-  add hl, de
-  ld a, [hl]
-  cp $ff
-  jr z, .no_medaforce
-  ld [W_ListItemIndexForBuffering], a
-  ld b, $0a
-  ld c, $0f
-  ld a, $00
-  ld [W_ListItemInitialOffsetForBuffering], a
-  push de
-  call WrapBufferTextFromList
-  pop de
-  ld a, [$c546]
-  ld b, a
-  ld hl, $1dc
-  add hl, de
-  ld a, [hl]
-  cp b
-  jr c, .no_medaforce
-  call BattlePrepareMedaforceCopyToStructure
-  jr .medaforce_selected
-.no_medaforce
-  ld a, [$c4f1]
-  or a
-  jr nz, .no_medaforce_selected
-  ld a, [$c4f0]
-  sub $01
-  jr nc, .increment
-  ld a, $02
-.increment
-  ld [$c4f0], a
-  ld a, [$c4f2]
-  inc a
-  ld [$c4f2], a
-  cp $03
-  jr nz, .check_next
-.no_medaforce_selected
-  xor a
-  ret
-.medaforce_selected
-  ld a, $01
-  ret
-.table
-  db $00, $01, $02
-  db $00, $01, $02
-  db $00, $01
-
-  padend $5d8d
-
-BattlePrepareMedaforceCopyToStructure::
-  ld a, [W_ListItemIndexForBuffering]
-  ld hl, $1d0
-  add hl, de ; Store the list item index so we can draw the name later
-  ld [hl], a
-  ld a, [W_ListItemBufferArea + $3]
-  ld hl, $1da
-  add hl, de
-  ld [hli], a
-  ld hl, $15
-  ld b, $00
-  ld a, [$c4f0]
-  ld c, a
-  add hl, bc
-  add hl, de
-  ld a, [hl]
-  push af
-  ld hl, $1e0
-  add hl, de
-  pop af
-  ld [hli], a
-  ld hl, $1db
-  add hl, de
-  ld a, [W_ListItemBufferArea]
-  ld [hl], a
-  ld hl, $1dd
-  add hl, de
-  ld a, [W_ListItemBufferArea + $1]
-  ld [hli], a
-  ld hl, $1de
-  add hl, de
-  ld a, [W_ListItemBufferArea + $2]
-  ld [hli], a
-  ld hl, $1e1
-  add hl, de
-  ld a, [W_ListItemBufferArea + $4]
-  ld [hli], a
-  ld hl, $1df
-  add hl, de
-  ld a, [W_ListItemBufferArea + $5]
-  ld [hli], a
-  ld hl, $1e6
-  add hl, de
-  ld a, [$c4f0]
-  inc a
-  ld [hli], a
-  ld hl, $a2
-  add hl, de
-  ld a, [$c4f0]
-  add $04
-  ld [hl], a
-  ld hl, $1e3
-  add hl, de
-  ld [hl], $00
-  ret
-
-  padend $5dfb
