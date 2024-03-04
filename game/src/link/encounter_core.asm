@@ -1,6 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
+INCLUDE "build/pointer_constants.asm"
+
 ; TODO: Extract the actual state machine
 
 
@@ -97,3 +99,86 @@ LinkEncounterLoadStrings::
   jp PutStringVariableLength
 
   padend $57bf
+
+SECTION "Link Encounter End", ROMX[$4911], BANK[$11]
+LinkEncounterLoadWinRateIntoBuffers::
+  ld a, $06
+  rst $8
+  ld a, [$C6A5]
+  ld h, a
+  ld a, [$C6A6]
+  ld l, a
+  ld de, cBUF02
+  call LinkCalculateWinLossRateDigits
+  ld a, [$C6A7]
+  ld h, a
+  ld a, [$C6A8]
+  ld l, a
+  ld de, cBUF01
+  call LinkCalculateWinLossRateDigits
+  ld a, [W_EncounterWinner]
+  dec a
+  ld h, $00
+  ld l, a
+  ld bc, $003F
+  add hl, bc
+  ld b, h
+  ld c, l
+  call $5415
+  jp IncSubStateIndex
+
+SECTION "Link Encounter Calculate Win/loss digits", ROMX[$5864], BANK[$11]
+LinkCalculateWinLossRateDigits::
+  xor a
+  ld [$C4FC], a
+  ld bc, $0064
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  or a
+  jr z, .start_calc
+  add $e0
+  ld [de], a
+  inc de
+  ld a, $01
+  ld [$C4FC], a
+.start_calc
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, $000A
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  or a
+  jr z, .next_digit_1
+  add $e0
+  ld [de], a
+  inc de
+  jr .next_digit_2
+.next_digit_1
+  ld a, [$C4FC]
+  or a
+  jr z, .next_digit_2
+  ld a, $e0
+  ld [de], a
+  inc de
+.next_digit_2
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, $0001
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  add $e0
+  ld [de], a
+  inc de
+  ld a, $cb
+  ld [de], a
+  ret
