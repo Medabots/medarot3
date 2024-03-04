@@ -72,31 +72,25 @@ LinkEncounterSetupTerrainPalettes2::
   jp WrapRestageDestinationBGPalettesForFade
 
 LinkEncounterLoadStrings::
-  ld b, $11
-  ld c, $07
+  push de
+  ld bc, $1107
   ld a, [W_EncounterTerrainListItemIndex]
   ld [W_ListItemIndexForBuffering], a
-  ld a, $00
+  xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld bc, W_ListItemBufferArea
+  ld bc, W_NewListItemBufferArea
   ld a, $06
-  call GetTileBasedCenteringOffset
-  ld hl, $9821
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld bc, W_ListItemBufferArea
-  call PutStringVariableLength
+  ld de, $9821
+  ld h, $01
+  call VWFDrawStringCenteredFullAddress
+
   ld bc, $C5A5
-  ld a, $08
-  call GetTileBasedCenteringOffset
-  ld hl, $996B
-  ld b, $00
-  ld c, a
-  add hl, bc
-  ld bc, $C5A5
-  jp PutStringVariableLength
+  ld de, $996B
+  ld h, $07
+  call VWFDrawStringCenteredFullAddress8Tiles
+  pop de
+  ret
 
   padend $57bf
 
@@ -138,7 +132,7 @@ LinkCalculateWinLossRateDigits::
   ld a, [$C4EE]
   or a
   jr z, .start_calc
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $01
@@ -155,7 +149,7 @@ LinkCalculateWinLossRateDigits::
   ld a, [$C4EE]
   or a
   jr z, .next_digit_1
-  add $e0
+  add $30
   ld [de], a
   inc de
   jr .next_digit_2
@@ -163,7 +157,7 @@ LinkCalculateWinLossRateDigits::
   ld a, [$C4FC]
   or a
   jr z, .next_digit_2
-  ld a, $e0
+  ld a, $30
   ld [de], a
   inc de
 .next_digit_2
@@ -176,7 +170,7 @@ LinkCalculateWinLossRateDigits::
   call DigitCalculationLoop
   pop de
   ld a, [$C4EE]
-  add $e0
+  add $30
   ld [de], a
   inc de
   ld a, $cb

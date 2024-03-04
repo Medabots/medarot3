@@ -106,6 +106,9 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry MinigameAOverlay, $9010 ; 24
   TilemapTilesetTableEntry MinigameBOverlay, $9010 ; 25
   TilemapTilesetTableEntry HeavensGateElevator, $9010 ; 26
+  TilemapTilesetTableEntry LinkMainMenu, $9010 ; 27
+  TilemapTilesetTableEntry LinkTradeOptions, $9010 ; 28
+  TilemapTilesetTableEntry LinkRobattleOptionsModeSelect, $9010 ; 29
 
 PatchPrintVersion:
   ; VWF will overwrite the preserved bank, so fix it

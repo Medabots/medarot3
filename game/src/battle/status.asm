@@ -889,6 +889,20 @@ DisplayMedarotNamesForBattleStatus::
   ret
 
 HelperGetMedarotNameFromHead:
+  ; This will be reused for multiplayer as well, so check if the length might fit
+  ld b, $09
+  ld hl, $40
+  add hl, de
+  push hl
+.loop
+  ld a, [hli]
+  cp $CB
+  jr z, .player
+  dec b
+  jr nz, .loop
+  
+  pop hl
+  
   ; The enemy bot names are based on the head part (loaded in 0A:519c)
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
@@ -902,6 +916,10 @@ HelperGetMedarotNameFromHead:
   call WrapBufferTextFromList
   pop de
   ld bc, W_NewListItemBufferArea
+  ret
+
+.player
+  pop bc ; hl -> bc
   ret
 
   padend $6c2d
