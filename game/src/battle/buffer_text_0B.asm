@@ -162,6 +162,19 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
   ret
 
 HelperLoadOpponentNameIntoListArea:
+  ld hl, W_EncounterOpponentBufferArea
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ; hl is just the enemy player name
+  ret
+.npc_enemy
   ld bc, $0F0C
   ld a, [W_EncounterOpponentListItemIndex]
   ld [W_ListItemIndexForBuffering], a
