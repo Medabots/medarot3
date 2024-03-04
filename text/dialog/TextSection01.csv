@@ -41,8 +41,8 @@
 039,0x91a64,デ-タ転送エラ-!<S5A><*04>,Data transfer error!<S5A><*04>
 040,0x91a66,モ-ドを 選んでください!<*04>,Please select a mode!<*04>
 041,0x91a68,つうしんチェック中!<*04>,Checking link!<*04>
-042,0x91a6a,ロボトルに 勝ちました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,"<f01>Link robattle won!<D3><&BUF02> won, <&BUF01> lost<f00><*03>"
-043,0x91a6c,ロボトルに まけました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,"<f01>Link robattle lost!<D3><&BUF02> won, <&BUF01> lost.<f00><*03>"
+042,0x91a6a,ロボトルに 勝ちました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,"Link robattle won!<D3><&BUF02> wins, <&BUF01> losses<*03>"
+043,0x91a6c,ロボトルに まけました!<CD>つうしんロボトル <&BUF02>勝<&BUF01>敗<*03>,"Link robattle lost!<D3><&BUF02> wins, <&BUF01> losses.<*03>"
 044,0x91a6e,あいてが 「ロボと-る」中です!<S5A><*04>,The other person is currently doing the Robotoll<S5A><*04>
 045,0x91a72,タイミングよく Aボタンを おして<CD>パ-ツを ゲットしよう!<S5A><*04>,Press the A button at the right time to win some parts!<S5A><*04>
 046,0x91a74,ざんねん! 「ハズレ」です!<CD>何も ゲットできなかった!<*03>,Too bad! You got a Miss!<D3>You get nothing!<*03>
