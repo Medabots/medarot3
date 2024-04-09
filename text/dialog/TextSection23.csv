@@ -123,7 +123,7 @@
 088,0x2100b0,"<@RL,Kai,00>きみか...","<@RL,Kai,00>You..."
 089,0x2100b2,"<@LL,Ikki,07>どうしたの? カイ<CD>院に けがしてる!<CF><D1><@RL,Kai,00>.........","<@LL,Ikki,07>What's wrong, Kai?<D3>Your arm is hurt!<CF><D1><@RL,Kai,00>........."
 090,0x2100b4,"<@RL,Kai,01>ふふっ そうだな たとえば...<CD>道でころんだんだと ぼくが言ったら<CF><D1>きみは それを しんじるかい?<CF><D1><@LL,Ikki,00>え...っ それって<CD>どういう...","<@RL,Kai,01>Huhu, if I were to say...<D3>That I fell while walking, would you believe me?<CF><D1><@LL,Ikki,00>Eh...? What do you mean...?"
-091,0x2100b6,"<@RL,Kai,01>本当に 分からないのか<CD>それとも 分からない<CF><D1>ふリを しているのか...<CF><D1><@LL,Ikki,00>カイ...?","<@RL,Kai,01>Doe's he really not know, or is he just pretending...?<CF><D1><@LL,Ikki,00>Kai...?"
+091,0x2100b6,"<@RL,Kai,01>本当に 分からないのか<CD>それとも 分からない<CF><D1>ふリを しているのか...<CF><D1><@LL,Ikki,00>カイ...?","<@RL,Kai,01>Does he really not know, or is he just pretending...?<CF><D1><@LL,Ikki,00>Kai...?"
 092,0x2100b8,"<@RL,Kai,01>そろそろ メダリンピック大会が<CD>はじまるよ<CF><D1>楽しみに してるよ<CD><&BUF03>くん!","<@RL,Kai,01>The Medalympic tournament is about to begin.<CF><D1>I'm looking forward to it, <&BUF03>!"
 093,0x2100ba,"<@LL,Ikki,00>(カイ...)","<@LL,Ikki,00>(Kai...)"
 094,0x2100bc,"<@RL,Girl2,00>まちなさいよ!!","<@RL,Girl2,00>Hold it right there!!"
