@@ -44,6 +44,7 @@ RUN python3 -m pip install --upgrade pip
 # install rgbds
 RUN git clone $RGBDS_REPOSITORY ~/rgbds && \
     cd ~/rgbds && \
+    git fetch --all && \
     git checkout $RGBDS_VERSION && \
     cd - && \
     make -C ~/rgbds clean && \
@@ -66,6 +67,7 @@ RUN python3 -m pip install pyspellchecker dataclasses
 # install openpyxl
 RUN git clone $OPENPYXL_REPOSITORY ~/openpyxl && \
     cd ~/openpyxl && \
+    git fetch --all && \
     git checkout $OPENPYXL_VERSION && \
     python3 setup.py build && \
     python3 setup.py install && \

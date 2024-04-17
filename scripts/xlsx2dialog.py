@@ -18,7 +18,6 @@ def transform_line(line):
 	line = (line or "").replace('""', '"')
 	# D3 is universal linebreak (new line or new box, depending), CF is new line
 	line = re.sub(r'\n((?:</{0,1}(?:b|i)>)*)\n', r'<CF>\1', line).replace('\n','<D3>')
-
 	sections = re.split(r'(<b>|</b>|<i>|</i>)', line)
 	if len(sections) > 1:
 		current_font = "Normal"
@@ -47,7 +46,7 @@ xlsx = sys.argv[1]
 csvdir = sys.argv[2]
 SHEETS = list(sys.argv[3:])
 
-wb = xl.load_workbook(filename = xlsx)
+wb = xl.load_workbook(filename=xlsx, rich_text=True)
 
 for sheet in wb.worksheets:
 	if not sheet.title in SHEETS:
@@ -71,8 +70,24 @@ for sheet in wb.worksheets:
 			int(line[index_idx].value.split("#")[0], 16)
 		except ValueError:
 			continue
-		text[idx] = [x.value for x in line[:translated_idx+1]]
-	
+		text[idx] = [];
+		for x in line[:translated_idx+1]:
+			prefix = ["", "<b>", "<i>", "<b><i>"][int(x.font.b) + (int(x.font.i) << 1)]
+			suffix = ["", "</b>", "</i>", "</i></b>"][int(x.font.b) + (int(x.font.i) << 1)]
+			if type(x.value) is str:
+				text[idx].append(prefix + x.value + suffix)
+			else:
+				start = 1
+				t = ""
+				if type(x.value) is str:
+					t = prefix + x.value[0] + suffix
+				else:
+					start = 0
+				for val in x.value[start:]:
+					prefix = ["", "<b>", "<i>", "<b><i>"][int(val.font.b) + (int(val.font.i) << 1)]
+					suffix = ["", "</b>", "</i>", "</i></b>"][int(val.font.b) + (int(val.font.i) << 1)]
+					t += prefix + val.text + suffix
+				text[idx].append(t)
 	orig_text = OrderedDict()
 	fieldnames = []
 	orig_text_idx = None
