@@ -1565,7 +1565,7 @@ MapMedalSelectedMedaforceSkillForMedalSubscreen::
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   call WrapBufferTextFromList
-  ld h, $5b
+  ld h, $63
   ld de, $98ce ; Originally $992B, Skill
   ld bc, W_NewListItemBufferArea
   ld a, $5
