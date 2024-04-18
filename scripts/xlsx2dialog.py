@@ -76,7 +76,7 @@ for sheet in wb.worksheets:
 			suffix = ["", "</b>", "</i>", "</i></b>"][int(x.font.b) + (int(x.font.i) << 1)]
 			if type(x.value) is str:
 				text[idx].append(prefix + x.value + suffix)
-			else:
+			elif x.value is not None:
 				start = 1
 				t = ""
 				if type(x.value) is str:
@@ -88,6 +88,9 @@ for sheet in wb.worksheets:
 					suffix = ["", "</b>", "</i>", "</i></b>"][int(val.font.b) + (int(val.font.i) << 1)]
 					t += prefix + val.text + suffix
 				text[idx].append(t)
+			else:
+				text[idx].append("")
+				
 	orig_text = OrderedDict()
 	fieldnames = []
 	orig_text_idx = None
