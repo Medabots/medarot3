@@ -1,7 +1,7 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x1fc000,"<@RL,Asama,03>おっと! 大変だ!!<CD>早く きょうしつに もどらないと<CF><D1><@CC,CLEAR,FF><&BUF0A>---!","<@RL,Asama,03>Uh-oh! What a mess!! I need to hurry back to class.<CF><D1><@CC,CLEAR,FF><&BUF0A>---!"
 001,0x1fc002,"<@LL,Ikki,00>あっ! アリカだ!","<@LL,Ikki,00>Ah! Thanks!"
-002,0x1fc004,ドンッ!,Thud!
+002,0x1fc004,ドンッ!,<f09>Thud!
 003,0x1fc006,"<@RL,Erika,07>きゃっ!<CF><D1><@RL,Asama,03>あっ!","<@RL,Erika,07>Eeek!<CF><D1><@RL,Asama,03>Ah!"
 004,0x1fc008,"<@LL,Ikki,07>アリカ!!","<@LL,Ikki,07>Arika!"
 005,0x1fc00a,"<@LL,Ikki,00>ケガはないか アリカ?<CF><D1><@RL,Erika,05>いった-い ","<@LL,Ikki,00>Are you okay, Arika?<CF><D1><@RL,Erika,05>Ow-ow-ow"
@@ -52,7 +52,7 @@
 050,0x1fc064,"<@LR,Koji,03>ちぇっ しっかリ カギをしめてらぁ","<@LR,Koji,03>Tch, they made sure to lock it."
 051,0x1fc066,"<@LR,Erika,05>あれっ?","<@LR,Erika,05>Huh?"
 052,0x1fc068,"<@LR,Erika,02>ちょっと! なによ-!!<CD>どうしてカギが かかってんのよ!!","<@LR,Erika,02>Hey! What is this!? Why is it locked!?"
-053,0x1fc06a,ドン! ドン!,Thud! Thud!
+053,0x1fc06a,ドン! ドン!,<f08>Thud! Thud!
 054,0x1fc06c,"<@LR,Erika,06>...ふんっだ!!","<@LR,Erika,06>...Hmph!"
 055,0x1fc06e,"<@RL,Erika,02>ちょっと <&BUF0A>!<CD>勝手に 入っちゃダメじゃない","<@RL,Erika,02>Hey, <&BUF0A>!<D3>You can't just go in there."
 056,0x1fc070,"<@LL,Ikki,00>アリカたちの ところヘ いかなきゃ","<@LL,Ikki,00>I have to go to Arika and the rest."
@@ -94,9 +94,9 @@
 092,0x1fc0b8,"<@LL,Ikki,00>で? かれらは 今 どこに?<CF><D1><@RL,BipedMedabot,00>上のカプセルに かたづけまし-た♪<CF><D1><@LL,Ikki,05>か かたづけ...<CD>","<@LL,Ikki,00>So? Where are they now?<CF><D1><@RL,BipedMedabot,00>They've been neatly put away in the capsules above ♪<CF><D1><@LL,Ikki,05>P-put away...<D3>"
 093,0x1fc0ba,"<@RL,BipedMedabot,00>何か ヘんなこと 言いました?<CF><D1><@LL,Ikki,05>う-ん... なんだかなぁ","<@RL,BipedMedabot,00>Did I say something strange?<CF><D1><@LL,Ikki,05>Hmm... I guess not."
 094,0x1fc0bc,"<@RL,BipedMedabot,00>そうだ!!<CD>あのネコは つかまリましたか?<CF><D1><@LL,Ikki,06>いけね! すっかリネコのこと<CD>わすれてたや! ","<@RL,BipedMedabot,00>Oh yeah!! Did you catch that cat?<CF><D1><@LL,Ikki,06>Oh no! I completely forget about the cat! "
-095,0x1fc0be,"<@RL,BipedMedabot,00>早く つかまえて下さい サイ♪","<@RL,BipedMedabot,00>Please catch it quickly-ly♪"
-096,0x1fc0c0,"<@RL,BipedMedabot,00>ハァ-♪ じめんが グラグ-ラ♪","<@RL,BipedMedabot,00>Haa ♪ The ground is shaking ♪"
-097,0x1fc0c2,"<@RL,BipedMedabot,00>ゆれて ゆれる 男ゴコロ-♪","<@RL,BipedMedabot,00>Shaking, he's the shaking man, Gokoro ♪"
+095,0x1fc0be,"<@RL,BipedMedabot,00>早く つかまえて下さい サイ♪","<f08><@RL,BipedMedabot,00>Please catch it quickly-ly♪"
+096,0x1fc0c0,"<@RL,BipedMedabot,00>ハァ-♪ じめんが グラグ-ラ♪","<f08><@RL,BipedMedabot,00>Haa ♪ The ground is shaking ♪"
+097,0x1fc0c2,"<@RL,BipedMedabot,00>ゆれて ゆれる 男ゴコロ-♪","<f08><@RL,BipedMedabot,00>Shaking, he's the shaking man, Gokoro ♪"
 098,0x1fc0c4,"<@LL,Ikki,01>あはははっ おもしろ-い<CD>あたらしい 歌ができて よかったね","<@LL,Ikki,01>Ahaha, how funny. You made up a new song."
 099,0x1fc0c6,"<@RL,BipedMedabot,00>こんど CDデビュ-しようかなって<CD>思っているんです<CF><D1><@LL,Ikki,01>うん いいんじゃない<CF><D1><@RL,BipedMedabot,00>よ-し♪ がんばルンルン♪","<@RL,BipedMedabot,00>Do you think I should make my debut on CD?<CF><D1><@LL,Ikki,01>Yeah, that sounds good.<CF><f08><D1><@RL,BipedMedabot,00>Alright ♪ I'll do my best-est♪"
 100,0x1fc0c8,"<@RL,ScientistMale,01>科学研究所ヘ ようこそ<CD>ささっ こちらを ごらんください","<@RL,ScientistMale,01>Welcome to the scientific laboratory. Feel free to take a look around."
@@ -128,12 +128,12 @@
 126,0x1fc0fc,"<@LR,Erika,00>ん? 何かせつめいが かいてある<CF><D1>ええっと 「バイオ キャロット」<CD>「あいしょう ぼしゅう中」ねぇ<CF><D1><@LR,Erika,04>このしゃしんは キャプションをつけて<CD>3面目の上に 入れよ-っと","<@LR,Erika,00>Mm? There's something written here.<CF><D1>Uhm, ""Name The Bio-Carrot."" ""Currently Accepting Suggestions.""<CF><@LR,Erika,04>I'll use these as the caption and put it as a picture on page three."
 127,0x1fc0fe,"<@LR,Koji,04>な なんだ これ!?<CD>にんじん...か? でかいなぁ","<@LR,Koji,04>W-what is this!?<D3>Is it... a carrot? It's huge."
 128,0x1fc100,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
-129,0x1fc102,「バイオ キャロット」<CD>あいしょう ぼしゅう中,"Name The Bio-Carrot, Currently Accepting Suggestions."
+129,0x1fc102,「バイオ キャロット」<CD>あいしょう ぼしゅう中,"<f02>Name The Bio-Carrot, Currently Accepting Suggestions."
 130,0x1fc104,"<@LL,Ikki,00>あれ? 何も 入ってないや","<@LL,Ikki,00>Huh? Nothing's there."
 131,0x1fc106,"<@LR,Erika,00>ほんとうに 何にも入ってない...","<@LR,Erika,00>There really is nothing there..."
 132,0x1fc108,"<@LR,Koji,00>カラか...<CF><D1>ばいようえきの せい分ひょうぐらい<CD>はっときゃ いいのに","<@LR,Koji,00>It's empty...<CF><D1>They could at least list the contents of the cultivation solution they used."
 133,0x1fc10a,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
-134,0x1fc10c,「バイオ さいばい カプセル」,Bio-Cultivation Capsule
+134,0x1fc10c,「バイオ さいばい カプセル」,<f02>Bio-Cultivation Capsule
 135,0x1fc10e,"<@LL,Ikki,00>貝たことのない 花だなぁ","<@LL,Ikki,00>I've never seen this flower before."
 136,0x1fc110,"<@LR,Erika,04>水中花ね 下から <CD>ライトアップされて すごくきれい♥","<@LR,Erika,04>Flowers blooming in water, huh? They're so pretty when lit from below ♥"
 137,0x1fc112,"<@LR,Erika,00>何か 下の方に かいてあるわ<CD>ええっと...","<@LR,Erika,00>There's something written underneath, uhm..."
@@ -146,7 +146,7 @@
 144,0x1fc120,"<@LR,Erika,06>うヘっ...<CD>なんだか きもちわる-い","<@LR,Erika,06>Ugh... It's kinda gross."
 145,0x1fc122,"<@LR,Koji,00>クロレラか...<CF><D1><@LR,Koji,02>「ス-パ-」と つくからには <CD>もっと 体にいいんだろうな","<@LR,Koji,00>Is it chlorella...?<CF><D1><@LR,Koji,02>It has ""super"" in front of it, so it must be even better for you."
 146,0x1fc124,"<@LL,Ikki,00>こわれてない...<CD>だいじょうぶみたいだ","<@LL,Ikki,00>It didn't break...<D3>It seems fine."
-147,0x1fc126,「ス-パ- クロレラ」<CD>ばいよう じっけん中,Super-Chlorella<D3>Cultivation experiment in progress
+147,0x1fc126,「ス-パ- クロレラ」<CD>ばいよう じっけん中,<f02>Super-Chlorella<D3>Cultivation experiment in progress
 148,0x1fc128,「アメ-バ」 メダロット,<f02>Amoeba<f00> Medarot
 149,0x1fc12a,"<@LL,Ikki,07>あっ! アメ-バがいない!!","<@LL,Ikki,07>Ah! The Amoeba is gone!!"
 150,0x1fc12c,カプセルの中は からっぽだ,The capsule is empty.
@@ -289,7 +289,7 @@
 280,0x1fc230,"<@LR,Erika,04>あたし さがしますから<CD>あとは まかせといて下さい!<CF><D1><@RL,Seseri,01>そう? じゃ わるいけど<CD>おねがいするわね<CF><D1>わたし しごとに もどるから","<@LR,Erika,04>Leave the search to me!<CF><D1><@RL,Seseri,01>Really? Well then, excuse me but I'll be going back to work."
 281,0x1fc232,"<@LR,Erika,05>セセリさんって わるい人じゃ<CD>なさそうだけど ちょっと<CF><D1>つめたい かんじが するわね","<@LR,Erika,05>Seseri doesn't seem like a bad person, but she comes off as a bit cold."
 282,0x1fc234,"<@LR,Erika,01>ま! ともかく<CD><&BUF0A>を さがしましょ!","<@LR,Erika,01>Well, anyway! Let's get searching for <&BUF0A>!"
-283,0x1fc236,キャ-ッ!! ,Eeek!!
+283,0x1fc236,キャ-ッ!! ,<f08>Eeek!!
 284,0x1fc238,"<@LR,Erika,07>何? 何? じけん?","<@LR,Erika,07>What? What? Did something happen?"
 285,0x1fc23a,"<@LR,Erika,07>ロボロボ団!<CD>大変! おいかけなくっちゃ!","<@LR,Erika,07>The RoboRobos are? This is big! I gotta go after them!"
 286#kabuto,0x1fc23c,"<@RL,Metabee,00>あのよ- <CF><D1><&BUF0A>の ことも<CD>わすれてくれるなよな...","<@RL,Metabee,00>Come on... <CF><D1>Don't forget about <&BUF0A>..."
@@ -344,7 +344,7 @@
 333,0x1fc29a,"<@RL,Lady2,00>ちょっと貝じゃ 分からないけど<CD>あっち こっち ひびが入っちゃって<CF><D1>アワノざいばつに たて直しを<CD>しんせい しようかしら...","<@RL,Lady2,00>At a glance, it isn't clear, but cracks are starting to form here and there. I wonder if I should propose a reconstruction project to the Awano Conglomerate..."
 334,0x1fc29c,"<@RL,Lady2,00>何に しようかしら","<@RL,Lady2,00>What shall I do?"
 335,0x1fc29e,"<@RL,Lady2,00>ものすごく ゆれたわね<CD>本当に こわかったわ","<@RL,Lady2,00>Things were shaking like crazy, it was scary."
-336,0x1fc2a0,アップルジュ-ス 売リ切れ中,Apple juice: sold out
+336,0x1fc2a0,アップルジュ-ス 売リ切れ中,<f02>Apple juice: sold out
 337,0x1fc2a2,"<@RL,Man,00>たからくじ 当たっていればいいなぁ","<@RL,Man,00>Sure would be nice to win the lottery."
 338,0x1fc2a4,"<@RL,Man,00>ええっと 498854番は...","<@RL,Man,00>Uhm, 498854 is..."
 339,0x1fc2a6,"<@RL,Man,00>...ふっ まっ 次があるさ","<@RL,Man,00>...Hah, well there's always next time."
@@ -354,11 +354,11 @@
 343,0x1fc2ae,"<@RL,Man,00>もしも 3おくえんが 当たったら♪","<@RL,Man,00>If I'd only win 300,000,000 yen ♪"
 344,0x1fc2b0,"<@RL,Man,00>...たからくじってのは ユメを<CD>貝るために 買うもんなんだよな","<@RL,Man,00>...The lottery is supposed to be played to dream."
 345,0x1fc2b2,"<@RL,Man,00>やっぱ まじめに はたらくか...","<@RL,Man,00>I should work hard, after all..."
-346,0x1fc2b4,むにゃ むにゃ,"Mumble, mumble"
+346,0x1fc2b4,むにゃ むにゃ,"<f08>Mumble, mumble"
 347,0x1fc2b6,"<@RL,OldMan,00>ばあさん めしは まだか?","<@RL,OldMan,00>Is it time to eat, Gram?"
-348,0x1fc2b8,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble..."
+348,0x1fc2b8,"<@RL,OldMan,00>むにゃ むにゃ...","<f08><@RL,OldMan,00>Mumble mumble..."
 349,0x1fc2ba,"<@LL,Ikki,00>こんにちは<CF><D1><@RL,OldMan,00>うん?","<@LL,Ikki,00>Hello.<CF><D1><@RL,OldMan,00>Hm?"
-350,0x1fc2bc,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble mumble"
+350,0x1fc2bc,"<@RL,OldMan,00>むにゃ むにゃ","<f08><@RL,OldMan,00>Mumble mumble"
 351,0x1fc2be,"<@LL,Ikki,00>あれれっ また ねちゃったよ<CD>もしも-し!","<@LL,Ikki,00>Hey, did you fall asleep?<D3>Hellooo!"
 352,0x1fc2c0,"<@RL,OldMan,00>うむむっ...<CD>もう少し 上じゃ!!","<@RL,OldMan,00>Mmm...<D3>Just a bit higher!!"
 353,0x1fc2c2,"<@LL,Ikki,07>あっ はい!","<@LL,Ikki,07>Ah, yes!"
@@ -367,11 +367,11 @@
 356,0x1fc2c8,"<@LL,Ikki,01>どういたしまして<CF><D1><@LL,Ikki,05>って...<CD>なんでボクが かたもみを?","<@LL,Ikki,01>Don't mention it.<CF><D1><@LL,Ikki,05>Say...<D3>Why did I give you a massage?"
 357,0x1fc2ca,"<@RL,OldMan,00>おおっ そうじゃった!<CF><D1>いや すまん すまん<CD>おれいに これをやろう","<@RL,OldMan,00>Ooh, good point!<CF><D1>Well, sorry. You can have this as thanks."
 358,0x1fc2cc,"<@LL,Ikki,01>わ-い あリがとう!!","<@LL,Ikki,01>Yay, thanks!!"
-359,0x1fc2ce,むにゃ むにゃ,Mumble mumble
+359,0x1fc2ce,むにゃ むにゃ,<f08>Mumble mumble
 360,0x1fc2d0,"<@RL,OldMan,00>ばあさん フロは まだか?","<@RL,OldMan,00>Is the bath ready yet, Gram?"
-361,0x1fc2d2,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00>Mumble mumble"
+361,0x1fc2d2,"<@RL,OldMan,00>むにゃ むにゃ...","<f08><@RL,OldMan,00>Mumble mumble"
 362,0x1fc2d4,"<@LR,Erika,00>こんにちは おじいさん<CF><D1><@RL,OldMan,00>うん?","<@LR,Erika,00>Hello gramps.<CF><D1><@RL,OldMan,00>Hmm?"
-363,0x1fc2d6,"<@RL,OldMan,00>むにゃ むにゃ","<@RL,OldMan,00>Mumble mumble"
+363,0x1fc2d6,"<@RL,OldMan,00>むにゃ むにゃ","<f08><@RL,OldMan,00>Mumble mumble"
 364,0x1fc2d8,"<@LR,Erika,05>ねちゃった...<CD>もしも-し!","<@LR,Erika,05>Is he sleeping...?<D3>Hello!"
 365,0x1fc2da,"<@RL,OldMan,00>おおっ みっちゃんか!<CD>ずいぶん 大きくなったのう","<@RL,OldMan,00>Ooh, it's lil' Mi! You've gotten so big."
 366,0x1fc2dc,"<@LR,Erika,07>ち ちがう...<CF><D1><@RL,OldMan,00>そうじゃ! おこづかいをやろうな","<@LR,Erika,07>I-I'm not...<CF><D1><@RL,OldMan,00>Oh, right! I suppose you want some pocket money."

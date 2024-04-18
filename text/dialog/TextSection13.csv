@@ -3,7 +3,7 @@
 001,0x1e8002,"<@LL,Ikki,01>行ってきま-っす!<CF><D1><@RL,IkkiMom,00>ちょっと <&BUF0A>!<CD>ごはんは?","<@LL,Ikki,01>I'm off!<CF><D1><@RL,IkkiMom,00>Wait just a minute, <&BUF0A>! What about breakfast?"
 002,0x1e8004,"<@RL,IkkiMom,01>...んもう!<CF><D1><@RL,IkkiDad,00>.......","<@RL,IkkiMom,01>...Mm, geez!<CF><D1><@RL,IkkiDad,00>......."
 003,0x1e8006,"<@RL,IkkiDad,01>パパが 食ベちゃおっかな-♥","<@RL,IkkiDad,01>Well then, maybe I'll just have to eat it myself-♥"
-004,0x1e8008,"<@RL,Salty,00>きゅう きゅうぅん","<@RL,Salty,00>Aroo roo"
+004,0x1e8008,"<@RL,Salty,00>きゅう きゅうぅん","<f08><@RL,Salty,00>Aroo roo"
 005,0x1e800a,"<@RL,IkkiDad,00>く...くるしい...っ<CD>た...食ベすぎた","<@RL,IkkiDad,00>O-oh man...<D3>I-I ate too much."
 006,0x1e800c,"<@RL,IkkiMom,00>たまには お家に いたらどう?","<@RL,IkkiMom,00>Why don't you ever have days where you just stay home?"
 007,0x1e800e,"<@LL,Ikki,04>早く メダロポリスヘ 行こう!<CF><D1>おみくじ町を 右に行ったら<CD>メダロポリスだ!","<@LL,Ikki,04>Let's get to Medaropolis right away!<CF><D1>If I go to the right of Omikuji Town, I'll find Medaropolis!"

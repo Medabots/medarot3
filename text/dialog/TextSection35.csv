@@ -7,7 +7,7 @@
 005,0x24000a,"<@LL,Ikki,04>かあっこいいなぁ♥<CF><D1><@LL,Ikki,01>...さてと ぼくも かえろっと!","<@LL,Ikki,04>So cool♥<CF><@LL,Ikki,01>...I should get going too!"
 006,0x24000c,"<@LL,Ikki,00>あれ? 何だろ この メダル<CF><D1>レトルトさんたち おとして<CD>いったのかな?<CF><D1>ぼくが 持ってても いいのかな?","<@LL,Ikki,00>Huh? What is this Medal?<CF>Did Phantom Retort and the others<D3>leave it here?<CF><D1>I wonder if it's OK for me to take it?"
 007,0x24000e,"<@RL,Boy,00>なかにわ 今 大変なことに なってて<CD>こわくて 入れないよ...","<@RL,Boy,00>Something terrible is happening inside.<CF>I'm too afraid to enter..."
-008,0x240010,"<@RL,Salty,00>ワン ワン!","<@RL,Salty,00>Woof woof!"
+008,0x240010,"<@RL,Salty,00>ワン ワン!","<f08><@RL,Salty,00>Woof woof!"
 009,0x240012,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
 010,0x240014,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!
 011,0x240016,ただいま こうひょう レンタル中!<CD>いろんなメダロット そろっています,There is a high rated rental currently!<D3>Various Medarots are lined up!

@@ -217,12 +217,12 @@
 209,0x2281a2,"<@RL,Man2,00>いけが 貝えないでゴザル","<@RL,Man2,00>I can't see the pond."
 210,0x2281a4,"<@RL,Man2,00>いけを 貝てると<CD>水の上を 走リたくなるでゴザルよ!","<@RL,Man2,00>Whenever I see a pond, it makes me want to run across it!"
 211,0x2281a6,"<@RL,Man2,00>すごいでゴザルか?<CF><D1><@LL,Ikki,01>す すごいっ!","<@RL,Man2,00>Is it amazing?<CF><D1><@LL,Ikki,01>I-it is!"
-212,0x2281a8,ぼちゃ-ん,Splash!
+212,0x2281a8,ぼちゃ-ん,<f02>Splash!
 213,0x2281aa,"<@LL,Ikki,06>おちた!? まあ にんじゃなら<CD>だいじょうぶ... だよねぇ","<@LL,Ikki,06>He fell!? Well, he's a ninja so he should be fine... right?"
 214,0x2281ac,"<@RL,Girl,00>わたしは この町 けっこう すきよ<CF><D1>あなたは 自分の町って すき?","<@RL,Girl,00>I quite like this town.<CF><D1>Do you like your own town?"
 215,0x2281ae,"<@RL,Man2,00>われわれが かんリしている<CD>「テラカドくん」が ロボロボ団に<CF><D1>のっとられそうだったでゴザル<CD>みんな 「ふきや」に たよって<CF><D1>気持ちが ゆるんでたで ゴザルな","<@RL,Man2,00>The RoboRobo Gang almost took over <f02>Little Terakado<f00> while it's under our supervision.<CF><D1>We've become too lax and reliant on the <f02>Blowpipe<f00>."
 216,0x2281b0,"<@RL,Man2,00>いい子だ いい子だ<CF><D1><@RL,Salty,00>わうっ<CF><D1><@LL,Ikki,04>この犬 ソルティに そっくリだ","<@RL,Man2,00>Who's a good boy?<CF><f08><D1><@RL,Salty,00>Woof!<f00><CF><D1><@LL,Ikki,04>This dog looks exactly like Salty."
-217,0x2281b2,"<@RL,Salty,00>わうん","<@RL,Salty,00>Woof."
+217,0x2281b2,"<@RL,Salty,00>わうん","<f08><@RL,Salty,00>Woof."
 218,0x2281b4,"<@LL,Ikki,04>うはっ くすぐったいよ<CF><D1><@RL,Man2,00>ほお 「しおあじ丸」が ほえないとは<CF><D1><@LL,Ikki,04>ぼくのいえでも 犬を かってるんです<CD>きょうだい だったリして","<@LL,Ikki,04>Haha! That tickles.<CF><D1><@RL,Man2,00>My, I can hardly believe that <f02>Saltymaru<f00> didn't bark at you.<CF><D1><@LL,Ikki,04>I also have a dog in my house. Maybe they're brothers or something."
 219,0x2281b6,"<@RL,Man2,00>ここ1番の デ-トスポットは そこの<CD>「こいびとたちの ベンチ」でゴザル<CF><D1><@LL,Ikki,04>こ こいびとかぁ","<@RL,Man2,00>The best dating spot here is the <f02>Lovers' Bench<f00>, which is just over there.<CF><D1><@LL,Ikki,04>L-lovers..."
 220,0x2281b8,"<@LL,Ikki,04>ちょっと つかれたし すわろっか?<CF><D1><@RL,Karin,04>そうですね","<@LL,Ikki,04>I'm a bit tired. Should we sit?<CF><D1><@RL,Karin,04>I suppose."

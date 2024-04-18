@@ -4,7 +4,7 @@
 002,0x11c004,"<@LL,Ikki,00>ここは カガミヤマの家だ","<@LL,Ikki,00>This is Kagamiyama's house."
 003,0x11c006,"<@LL,Ikki,00>ここは メダロット研究所だ","<@LL,Ikki,00>This is the Medarot Research <D3>Institute."
 004,0x11c008,"<@LL,Ikki,00>ここは はい工場だ","<@LL,Ikki,00>This is the Abandoned Factory."
-005,0x11c00a,「セレクト しぶ」,Select Branch
+005,0x11c00a,「セレクト しぶ」,<f02>Select Branch
 006,0x11c00c,"<@LL,Ikki,00>ここは アリカの家だ","<@LL,Ikki,00>This is Arika's house."
 007,0x11c00e,"<@LL,Ikki,00>ぼくの家だ","<@LL,Ikki,00>My house is here."
 008,0x11c010,"<@LL,Ikki,00>ここは 番長の家だ<CF><@LL,Ikki,05>番長って だれだっけ?","<@LL,Ikki,00>This is the boss's house.<CF><@LL,Ikki,05>But who's the boss, again?"
@@ -46,18 +46,18 @@
 044,0x11c058,"<@LL,Ikki,04>う-ん 今日も キマッてる!","<@LL,Ikki,04>Yeah! <D3>I look sharp as always today."
 045,0x11c05a,"<@LL,Ikki,04>う-ん 今日も キマッてる!<CF><@LL,Ikki,06>...って 女の子の トイレで<CD>なにを カッコつけてるんだ ぼくは!","<@LL,Ikki,04>Yeah!<D3>I look sharp as always today.<CF><@LL,Ikki,06>...Why am I primping myself in a girls' bathroom?"
 046,0x11c05c,"<@LL,Ikki,03>もちろん ひけない...","<@LL,Ikki,03>No way I can play this..."
-047,0x11c05e,「ドレミから はじめよう」,Starting From Do-Re-Mi
+047,0x11c05e,「ドレミから はじめよう」,<f02>Starting From Do-Re-Mi
 048,0x11c060,"「ラシドで おわろう」<CF><@LL,Ikki,05>.......?","<f02>Ending with La-Si-Do<CF><f00><@LL,Ikki,05>.......?"
-049,0x11c062,「セレクト隊 本部」,Select Corp<D3>Headquarters
-050,0x11c064,「きゅうきゅう センタ-」,First Aid Center
-051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"Bunny Girls always wanted, mwah!"
+049,0x11c062,「セレクト隊 本部」,<f02>Select Corp<D3>Headquarters
+050,0x11c064,「きゅうきゅう センタ-」,<f02>First Aid Center
+051,0x11c066,「バニ-ちゃん<CD> ずいじ ぼしゅうちゅう!」,"<f02>Bunny Girls always wanted, mwah!"
 052,0x11c068,"<@LL,Ikki,04>ここは メダロッタ-の あこがれ<CD>メダロッタ-ズだ!","<@LL,Ikki,04>This is the place of dreams!<D3>Medarotters!"
 053,0x11c06a,"<@LL,Ikki,04>さすが メダロッタ-ズ!<CD>しなぞろえが ほうふだね!","<@LL,Ikki,04>As expected of Medarotters! <D3>There's loads of products!"
 054,0x11c06c,"<@LL,Ikki,04>メダロットグッズが<CD>たくさん ならんでる","<@LL,Ikki,04>There are a lot of Medarot goods lined up."
-055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,Please see the Data Information Desk.
-056,0x11c070,「ハウ トゥ ゲット おてがら」,Getting Achievements for Dummies
+055,0x11c06e,デ-タ ウケツケハ<CD>シュウリョウ シマシタ,<f08>Please see the Data Information Desk.
+056,0x11c070,「ハウ トゥ ゲット おてがら」,<f02>Getting Achievements for Dummies
 057,0x11c072,"「せいぎの さんげんそく」<CD>原作.アワモリ元隊長<CF>ひとつ<CD>貝て 貝ぬふリ<CF>ひとつ<CD>さわらぬ かみに たたリなし<CF>ひとつ<CD>にげるが かち<CF><@LL,Ikki,05>あの人 こんな本<CD>出してたのか...","<f02>Principles of Justice<f00><D3><f01>Original by (former) Captain Awamori<f00><CF>Turn a blind eye.<CF>Let sleeping dogs lie.<CF>Discretion is the greater part of valor.<CF><@LL,Ikki,05>Did that guy really write a book like this..."
-058,0x11c074,「おさわリ ぜったい きんし!!」,Touching is absolutely prohibited!
+058,0x11c074,「おさわリ ぜったい きんし!!」,<f02>Touching is absolutely prohibited!
 059,0x11c076,"<@LL,Ikki,00>ここは メダロデパ-トだ","<@LL,Ikki,00>This is the Medalo Department Store."
 060,0x11c078,"<@LL,Ikki,04>パ-ツが たくさん ならんでる","<@LL,Ikki,04>There are a bunch of parts that are lined up."
 061,0x11c07a,"<@LL,Ikki,04>アイスクリ-ムの 自動はんばいきだ<CF><@LL,Ikki,01>プリンアイスは......!<CF><@LL,Ikki,03>ない......","<@LL,Ikki,04>It's a vending machine that sells ice cream.<CF><@LL,Ikki,01>Pudding ice cream...!<CF><@LL,Ikki,03>I shouldn't..."
@@ -71,46 +71,46 @@
 069,0x11c08a,"<@LL,Ikki,04>今は 何も 貝たくないよ","<@LL,Ikki,04>I don't want to watch anything right now."
 070,0x11c08c,"<@LL,Ikki,04>いろんな人の ししゅうが<CD>たくさん ならんでる<CF>カリンちゃんも<CD>しを かくのかな?","<@LL,Ikki,04>There are lots of poem collections by different authors.<CF>Does Karin want to be an author?"
 071,0x11c08e,"<@LL,Ikki,04>しょうせつが たくさん ならんでる<CF>カリンちゃん らしいなあ","<@LL,Ikki,04>Lots of novels are lined up here.<CF>Seems just like Karin..."
-072,0x11c090,「レアパ-ツずかん」,A Guide to Rare Parts
+072,0x11c090,「レアパ-ツずかん」,<f02>A Guide to Rare Parts
 073,0x11c092,"<@LL,Ikki,04>心が やすらぐねえ","<@LL,Ikki,04>My mind feels at ease."
 074,0x11c094,"<@LL,Ikki,00>この学園の 園長先生の ぞうかな?","<@LL,Ikki,00>I wonder if this is what this academy's principal looks like?"
 075,0x11c096,"<@LL,Ikki,00>このぞうだけ<CD>ほかのと ちがう...<CF>しかも どこかで<CD>貝たこと あるぞ.....?","<@LL,Ikki,00>This statue is different from the rest...<CF>Where have I seen this before...?"
 076,0x11c098,"ふぃっしゅ!ふぃっしゅ!<CF><@LL,Ikki,07>このぞう くしゃみした!?<CF><@LL,Ikki,00>..........<CF>気のせいか.....","Pssh! Pssh!<CF><@LL,Ikki,07>Did this statue just sneeze?!<CF><@LL,Ikki,00> ... You're imagining things."
 077,0x11c09a,"<@LL,Ikki,00>ふつうの げたばこだ","<@LL,Ikki,00>It's an ordinary shoe rack."
 078,0x11c09c,"<@LL,Ikki,07>マッ...マ-ライオンだ!<CF><@LL,Ikki,05>ったく<CD>おんせんじゃ ないんだから...","<@LL,Ikki,07>It's... it's a lioness!<CF><@LL,Ikki,05>Geez, it's not like this is a hot spring..."
-079,0x11c09e,「アワノざいばつ ぞうてい」,A Gift from Awano Financial Group
+079,0x11c09e,「アワノざいばつ ぞうてい」,<f02>A Gift from Awano Financial Group
 080,0x11c0a0,"<@LL,Ikki,00>かってに 貝たら<CD>おこられるだろうな.....<CF>やめておこう","<@LL,Ikki,00>I'll probably get in trouble if I watch this now."
-081,0x11c0a2,「花園学園の れきし」,The History of Hanazono Private School
+081,0x11c0a2,「花園学園の れきし」,<f02>The History of Hanazono Private School
 082,0x11c0a4,"<@LL,Ikki,07>いろんな トロフィ-が<CD>たっくさん ならベられてる!","<@LL,Ikki,07>A lot of different kinds of trophies were lined up here!"
 083,0x11c0a6,"<@LL,Ikki,07>ぎっしリと<CD>メダルが ならんでる!<CF><@LL,Ikki,00>どうやって こんなに<CD>あつめたんだろう...","<@LL,Ikki,07>Those Medals are really packed in!<CF><@LL,Ikki,00>How'd they collect so many..."
 084,0x11c0a8,"<@LL,Ikki,03>どれだけ しらベても<CD>もらえっこ ないよね...","<@LL,Ikki,03>No matter how hard I search, I got nothing..."
 085,0x11c0aa,"「マンション リゾット」<CF><@LL,Ikki,04>ヒカルさんと キララさんが<CD>すんでる マンションだ","Risotto Apartments<CF><@LL,Ikki,04>Hikaru and Kirara live in<D3>these apartments."
-086,0x11c0ac,「レストラン ドン.ペリ」,Restaurant Dom Peri
-087,0x11c0ae,「メダロット社」,Medarot Company
+086,0x11c0ac,「レストラン ドン.ペリ」,<f02>Restaurant Dom Peri
+087,0x11c0ae,「メダロット社」,<f02>Medarot Company
 088,0x11c0b0,「メダロット社 しゃくん」<CF>もし あなたが<CD>まける と考えるなら<CF>あなたは まける<CF>もし あなたが<CD>もうダメだ と考えるなら<CF>あなたは ダメになる<CF>もし あなたが<CD>しっぱいする と考えるなら<CF>あなたは しっぱいする<CF>もし あなたが<CD>勝てる と考えるなら<CF>あなたは 勝つ<CF>わたしは できる<CF>そう考えている人が<CD>けっきょくは 勝つのだ<CF>本日も がんばリましょう!,"Medarot Company Precepts<CF>If you think you will lose, you will lose.<CF>If you think it will turn out badly, it will turn out badly for you.<CF>If you think you will fail, you will fail.<CF>If you think you will win, you will win.<CF>Those who think ""I can do it!"" will ultimately win.<CF>Hang in there today!"
 089,0x11c0b2,"<@LL,Ikki,04>ん- いいにおい!","<@LL,Ikki,04>Mmm... it smells so good!"
 090,0x11c0b4,"<@LL,Ikki,07>あ! こんなところに<CD>パ-ツが...!?<CF><@LL,Ikki,00>...と 思ったら<CD>エビや カニだった...<CF><@LL,Ikki,05>何とな-く にてるよね?<CF><@LL,Ikki,03>にてない...?","<@LL,Ikki,07>Ah! Are those parts here...!?<CF><@LL,Ikki,00>...I guess they're just shrimps and crabs...<CF><@LL,Ikki,05>They kind of look alike...<CF><@LL,Ikki,03>Don't they...?"
 091,0x11c0b6,"<@LL,Ikki,00>ざっしが たくさん ならんでる","<@LL,Ikki,00>A lot of magazines are lined up."
 092,0x11c0b8,"<@LL,Ikki,00>ひらかないみたいだ","<@LL,Ikki,00>Seems like it won't open."
-093,0x11c0ba,「きっさ カマド-マ」,Cafe Kamadoma
+093,0x11c0ba,「きっさ カマド-マ」,<f02>Cafe Kamadoma
 094,0x11c0bc,"<@LL,Ikki,00>ジオポ-トヘ つづく<CD>エレベ-タ-だ","<@LL,Ikki,00>The elevator leads to the GeoPort."
-095,0x11c0be,「気しょう かんリ所」,Weather Station
-096,0x11c0c0,「メダロット はけん センタ-」,Medarot Dispatch Center
-097,0x11c0c2,「ジオド-ム」,GeoDome
-098,0x11c0c4,「メダルぞうしょく はつ電所」,Medal Propagation Power Plant
-099,0x11c0c6,「ジオフロント 科学研究所」,GeoFront Scientific Laboratory
-100,0x11c0c8,「高おん岩体 はつ電所」,Geothermal Power Plant
-101,0x11c0ca,「ツチノエ小学校」,Tsuchinoe Elementary School
+095,0x11c0be,「気しょう かんリ所」,<f02>Weather Station
+096,0x11c0c0,「メダロット はけん センタ-」,<f02>Medarot Dispatch Center
+097,0x11c0c2,「ジオド-ム」,<f02>GeoDome
+098,0x11c0c4,「メダルぞうしょく はつ電所」,<f02>Medal Propagation Power Plant
+099,0x11c0c6,「ジオフロント 科学研究所」,<f02>GeoFront Scientific Laboratory
+100,0x11c0c8,「高おん岩体 はつ電所」,<f02>Geothermal Power Plant
+101,0x11c0ca,「ツチノエ小学校」,<f02>Tsuchinoe Elementary School
 102,0x11c0cc,"<@LL,Ikki,00>何かの しょるいが ならんでる","<@LL,Ikki,00>There are some kind of documents stacked up here."
-103,0x11c0ce,「マリン学底」,Marine Academy
+103,0x11c0ce,「マリン学底」,<f02>Marine Academy
 104,0x11c0d0,"<@LL,Ikki,00>小さな ねったいぎょが<CD>およいでる","<@LL,Ikki,00>A small, tropical fish is swimming around."
 105,0x11c0d2,"<@LL,Ikki,04>女の子の 学校らしく<CD>パソコンも 全部 ピンク色だ","<@LL,Ikki,04>Seems like all the computers in the girls' school are pink."
 106,0x11c0d4,"<@LL,Ikki,04>あざやかな ブル-の<CD>パソコンだ","<@LL,Ikki,04>It's a vibrant blue computer."
-107,0x11c0d6,「スイデンジ」,Swedenji
-108,0x11c0d8,"「ニモウサク」<CF><@LL,Ikki,04>ヒカルさんの ともだちの<CD>ユウキさんの 家だ","Nimosaku<CF><@LL,Ikki,04>This is Hikaru's friend Yuki's house."
+107,0x11c0d6,「スイデンジ」,<f02>Swedenji
+108,0x11c0d8,"「ニモウサク」<CF><@LL,Ikki,04>ヒカルさんの ともだちの<CD>ユウキさんの 家だ","<f02>Nimosaku<CF><@LL,Ikki,04>This is Hikaru's friend Yuki's house."
 109,0x11c0da,"「ワタリドリ」<CF><@LL,Ikki,04>ここは そうリだいじんの 家だ","Wataridori<CF><D3><@LL,Ikki,04>This is the Prime Minister's house."
-110,0x11c0dc,「ヘブンスタワ- 入リ口」,Heaven's Tower Entrance
-111,0x11c0de,「スカイド-ム」,Sky Dome
+110,0x11c0dc,「ヘブンスタワ- 入リ口」,<f02>Heaven's Tower Entrance
+111,0x11c0de,「スカイド-ム」,<f02>Sky Dome
 112,0x11c0e0,"<@LL,Ikki,07>でか!","<@LL,Ikki,07>It's huge!"
 113,0x11c0e2,"「カワムラ- サイン」<CF><@LL,Ikki,00>ホコリ かぶってるよ...","Kawamura Sign<CF><D3><@LL,Ikki,00>It's covered in dust..."
 114,0x11c0e4,"<@LL,Ikki,07>きゅうしき カブト型<CD>メダロットの ぞうだ!","<@LL,Ikki,07>It looks like an old model of a Kabuto type Medarot!"

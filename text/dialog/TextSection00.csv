@@ -47,10 +47,10 @@
 045,0x9005a,はんげきに しっぱいした!<*04>,Counterattack failed!<*04>
 046,0x9005c,<&BUF02>は<CD>あいての 攻撃を むこうにした!<S46><*04>,All attacks will be nullified!<S46><*04>
 047,0x9005e,<&BUF02>は<CD>弱い 攻撃を むこうにした!<S46><*04>,Weak attacks will be nullified!<S46><*04>
-048,0x90060,<&BUF02>には<CD>レ-ザ-とビ-ムが きかない!<S46><*04>,Beam and Laser will not affect <&BUF02>!<S46><*04>
-049,0x90062,<&BUF02>には<CD>ミサイルとナパ-ムが きかない!<S46><*04>,Missile and Napalm will not affect <&BUF02>!<S46><*04>
-050,0x90064,<&BUF02>には<CD>ブレイクとプレスが きかない!<S46><*04>,Break and Press will not affect<&BUF02>!<S46><*04>
-051,0x90066,クリティカル!!<*04>,Critical hit!!<*04>
+048,0x90060,<&BUF02>には<CD>レ-ザ-とビ-ムが きかない!<S46><*04>,<f02>Beam and Laser will not affect <&BUF02>!<S46><*04>
+049,0x90062,<&BUF02>には<CD>ミサイルとナパ-ムが きかない!<S46><*04>,<f02>Missile and Napalm will not affect <&BUF02>!<S46><*04>
+050,0x90064,<&BUF02>には<CD>ブレイクとプレスが きかない!<S46><*04>,<f02>Break and Press will not affect<&BUF02>!<S46><*04>
+051,0x90066,クリティカル!!<*04>,<f02>Critical hit!!<*04>
 052,0x90068,<&BUF01>パ-ツで ぼうぎょした!<*04>,The attack hit the <&BUF01>!<*04>
 053,0x9006a,ベつのパ-ツに かんつうした!<S46><*04>,The attack affected other parts!<S46><*04>
 054,0x9006c,攻撃は 当らなかった!<S46><*04>,The attack missed!<S46><*04>

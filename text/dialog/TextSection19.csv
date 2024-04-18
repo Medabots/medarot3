@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x200000,"<@LR,Erika,04>えヘヘっ ラッキ-♪<CF><D1><&BUF0A>の メダロッチの<CD>中に 入れておこ-っと♪","<@LR,Erika,04>Ehehe, how lucky am I. ♪<CF><D1>I'll put it in <&BUF0A>'s Medarotch. ♪"
-001,0x200002,むにゃ むにゃ,Mumble mumble
+001,0x200002,むにゃ むにゃ,<f08>Mumble mumble
 002,0x200004,"<@RL,OldMan,00>ばあさん お茶は まだか?","<@RL,OldMan,00>Do you still want some tea, dear?"
 003,0x200006,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00><f08>Mumble mumble"
 004,0x200008,"<@LR,Koji,00>もしもし こんな所で ねていたら<CD>かぜを ひいてしまいますよ<CF><D1><@RL,OldMan,00>うん?","<@LR,Koji,00>Hello? You'll get a cold sleeping at a place like this.<CF><D1><@RL,OldMan,00>Hm?"
@@ -15,10 +15,10 @@
 013,0x20001a,ぐう ぐうっ...,<f08>Ghh ghh<f00>...
 014,0x20001c,"<@LR,Koji,03>ちぇっ サラサラストレ-トヘア-も<CD>考えものだな","<@LR,Koji,03><f08>Tch<f00>. He just had to focus on my silky, straight hair."
 015,0x20001e,"<@LR,Koji,02>このパ-ツは... そうだな<CF><D1><&BUF0A>の メダロッチにでも<CD>入れておくか","<@LR,Koji,02>This part... That's it.<CF><D1>I'll put it in <&BUF0A>'s Medarotch."
-016,0x200020,むにゃ むにゃ,"Mumble, mumble"
+016,0x200020,むにゃ むにゃ,"<f08>Mumble, mumble"
 017,0x200022,"<@RL,OldMan,00>はあ どなたさまかいのう?","<@RL,OldMan,00>Huh, who are you?"
-018,0x200024,むにゃ むにゃ...,"Mumble, mumble"
-019,0x200026,むにゃ むにゃ,"Mumble, mumble"
+018,0x200024,むにゃ むにゃ...,"<f08>Mumble, mumble"
+019,0x200026,むにゃ むにゃ,"<f08>Mumble, mumble"
 020,0x200028,"<@RL,OldMan,00>ばあさん わしの入ればは どこじゃ?","<@RL,OldMan,00>Dear, where do I go in?"
 021,0x20002a,"<@RL,OldMan,00>むにゃ むにゃ...","<@RL,OldMan,00><f08>Mumble, mumble..."
 022,0x20002c,"<@LR,Erika,00>もしもし おじいさん...<CF><D1><@RL,OldMan,00>うん?","<@LR,Erika,00>Hello, gramps...<CF><D1><@RL,OldMan,00>Yeah?"
@@ -26,7 +26,7 @@
 024,0x200030,"<@LR,Erika,05>また ねちゃった...","<@LR,Erika,05>He's sleeping again..."
 025,0x200032,"<@RL,OldMan,00>こ ここは どこじゃ!!","<@RL,OldMan,00>Wh-where am I!?"
 026,0x200034,"<@LR,Erika,04>セレクト隊よ<CF><D1><@RL,OldMan,00>そリゃ まあ... ごしんせつに","<@LR,Erika,04>At the Select Corps building.<CF><D1><@RL,OldMan,00>Ah, well. Thanks."
-027,0x200036,ぐう ぐうっ...,Ghh ghh...
+027,0x200036,ぐう ぐうっ...,<f08>Ghh ghh...
 028,0x200038,"<@LR,Erika,05>けっきょく ねちゃうのね...","<@LR,Erika,05>He ended up falling back asleep..."
 029,0x20003a,"<@RL,OldMan,00>いや- すごかったのう<CD>すっかリ 目が さめてしもうたわい","<@RL,OldMan,00>Oh, how amazing! I'm completely awake!"
 030,0x20003c,"<@RL,SelectCorpsGrunt,00>ここは セレクト隊の <CD>ア-スモ-ルしぶ であリます","<@RL,SelectCorpsGrunt,00>This is the Select Corps' Earth Mall Branch."
@@ -216,7 +216,7 @@
 205,0x20019a,"<@RL,BipedMedabot,00>小学校の子どもたちが <CD>よろこんで くれるといいのですが","<@RL,BipedMedabot,00>I hope the elementary schoolers will be happy with them."
 206,0x20019c,"<@RL,BipedMedabot,00>そうだ! いつの日にか 小学校に<CD>花だんを つくリましょう!!<CF><D1><@LL,Ikki,04>うん! いいね<CF><D1><@LL,Ikki,00>でも その前に この花を学校ヘ<CD>もって行って あげなくっちゃね","<@RL,BipedMedabot,00>That's it! Let's make a flower bed at the elementary school someday!!<CF><D1><@LL,Ikki,04>Yeah! That'd be nice.<CF><D1><@LL,Ikki,00>But to start with, I'll take these flowers to the school."
 207,0x20019e,"<@RL,BipedMedabot,00>わたしは これからも たくさんの花を<CD>そだてて いくつもリです","<@RL,BipedMedabot,00>I'll keep growing more and more flowers."
-208,0x2001a0,ドンッ!,Thud!
+208,0x2001a0,ドンッ!,<f09>Thud!
 209,0x2001a2,"<@LL,Ikki,07>わっ!<CF><D1><@RL,Asama,03>あっ!","<@LL,Ikki,07>Woah!<CF><D1><@RL,Asama,03>Ah!"
 210,0x2001a4,"<@RL,Asama,03>だだだだいじょうぶかい? キミ<CD>...あ! <CF><D1><&BUF0A>くん!<CF><D1><@LL,Ikki,05>あいたぁ...","<@RL,Asama,03>A-a-a-are you okay? You're... ah!<CF><D1><&BUF0A>!<CF><D1><@LL,Ikki,05>That smarts..."
 211,0x2001a6,"<@LL,Ikki,07>あ! 花が!<CF><D1><@RL,Asama,03>えっ!?<CF><D1><@LL,Ikki,04>はぁ だいじょうぶだった<CD>...よかった<CF><D1><@RL,Asama,00>花ですか?<CF><D1><@LL,Ikki,04>あ はい<CD>子どもずきの メダロットから<CF><D1>もらったんです<CD>ここの 小学校の 子どもたちにって<CF><D1><@RL,Asama,01>ヘぇ 子どもずきか それは<CD>やっぱリ 子もリ型メダロット?<CF><D1><@LL,Ikki,04>いえ 人工のうじょうで はたらいてる<CD>しょくぶつ さいばい型ですよ<CF><D1><@RL,Asama,01>面白い メダロットだねぇ<CF><D1>うん じゃ さっそく<CD>きょうしつに かざってこよう","<@LL,Ikki,07>Ah! The flowers!<CF><D1><@RL,Asama,03>Eh!?<CF><D1><@LL,Ikki,04>Hah, it's okay.<D3>...What a relief<CF><D1><@RL,Asama,00>Flowers?<CF><D1><@LL,Ikki,04>Ah, yes. I got them from a child-loving Medarot. I'm supposed to give them to kids at this elementary school.<CF><D1><@RL,Asama,01>Heh, it must've been a childcare-type Medarot, right?<CF><D1><@LL,Ikki,04>No, it was an agriculture-type from the artificial farm.<CF><D1><@RL,Asama,01>What an interesting Medarot.<CF><D1>Okay then, let's display them in classroom."

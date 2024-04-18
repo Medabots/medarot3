@@ -298,9 +298,9 @@
 293,0x1f824a,"<@RL,Girl,00>あリがとう チュ♥","<@RL,Girl,00>Thank you... smooch ♥"
 294,0x1f824c,"<@LL,Ikki,04>てヘヘっ♥","<@LL,Ikki,04>Tee hee ♥"
 295,0x1f824e,がくふが おいてある,It's a music sheet.
-296,0x1f8250,「ロボトルの マ-チ」 ,Robattle's March.
+296,0x1f8250,「ロボトルの マ-チ」 ,<f02>Robattle's March.
 297,0x1f8252,がくふが おいてある,It's a music sheet.
-298,0x1f8254,「ティンペットのための ソナタ」,Sonata for Tinpet.
+298,0x1f8254,「ティンペットのための ソナタ」,<f02>Sonata for Tinpet.
 299,0x1f8256,"<@RL,Boy,00>キミは 「そうたいせいリろん」で<CF><D1>ブラックホ-ルの そんざいを<CD>せつめい できるか?<CF><D1><@LL,Ikki,05>「そうたいせい...」何?","<@RL,Boy,00>Can you explain the existence of black hole using the Theory of Relativity?<CF><D1><@LL,Ikki,05>Theory of... come again?"
 300,0x1f8258,"<@RL,Boy,00>こんどの じゆう研究は<CF><D1>ずばリ! 「じしん」に ついてだ<CD>なかなか いいテ-マだろ?<CF><D1><@LL,Ikki,04>がんばって 研究してね","<@RL,Boy,00>The topic for the next self-study is...<CF><D1>Ta-dah! Earthquakes! Isn't it a good one?<CF><D1><@LL,Ikki,04>Good luck with your studies."
 301,0x1f825a,"<@RL,Boy,00>むずかしすぎる...<CD>ぼくには リかい できないや","<@RL,Boy,00>It's too difficult... I can't understand a thing."
@@ -317,7 +317,7 @@
 312,0x1f8270,"<@RL,Boy,00>ぼくが 考えた ロボトルに おける<CD>租み合わせの リろんは こうだ!","<@RL,Boy,00>Here's my combination theory on robattles!"
 313,0x1f8272,"<@RL,Boy,00>だから どうしたって<CD>かんじかな?","<@RL,Boy,00>I mean... so what?"
 314,0x1f8274,"<@RL,Boy,00>メダリンピック ゆうしょう<CD>おめでとう<CF><D1><@LL,Ikki,01>あリがとう","<@RL,Boy,00>Congrats on winning the Medalympics.<CF><D1><@LL,Ikki,01>Thanks."
-315,0x1f8276,「メダルずかん1」 「2」 「3」,"Medal Picture Book 1, 2, 3."
+315,0x1f8276,「メダルずかん1」 「2」 「3」,"<f02>Medal Picture Book 1, 2, 3."
 316,0x1f8278,"<@LL,Ikki,00>う-ん ボクの持っていない<CD>メダルが たくさん のってるなぁ","<@LL,Ikki,00>Hm... There are so many Medals that I don't have in here."
 317,0x1f827a,"<@RL,Erika,04>ヘ- じゃあ この小学校の子たちは<CD>みんな 科学者を 目ざしてるんだ<CF><D1><@RL,Girl,00>みんなって わけじゃ ないけど<CD>そういう子が 多いわ<CF><D1><@LL,Ikki,00>ここに いたのか アリカ","<@RL,Erika,04>I see... Everyone in this elementary school wants to become a scientist.<CF><D1><@RL,Girl,00>Not everyone, but it's true there are many of them.<CF><D1><@LL,Ikki,00>There you are, Arika."
 318,0x1f827c,"<@RL,Erika,00><&BUF0A>じゃない<CF><D1>インタビュ- おわったの?<*04>","<@RL,Erika,00>If it isn't <&BUF0A>.<CF><D1>Have you done the interview?<*04>"
