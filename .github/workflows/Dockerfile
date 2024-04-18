@@ -5,6 +5,8 @@ ARG RGBDS_VERSION
 ARG OPENPYXL_REPOSITORY
 ARG OPENPYXL_VERSION
 ARG PYTHON_VERSION_NUM
+ARG PYTHON_PYSPELLCHECKER_VERSION
+ARG PYTHON_DATACLASSES_VERSION
 
 RUN apt-get update && \
     apt-get -qq -y install \
@@ -59,10 +61,10 @@ RUN wget https://github.com/tcnksm/ghr/releases/download/v0.14.0/ghr_v0.14.0_lin
     mv ghr_v0.14.0_linux_amd64/ghr /usr/local/bin
 
 # install ips-util
-RUN python3 -m pip install ips-util
+RUN python3 -m pip install ips-util==1.0
 
 # install pyspellcheck
-RUN python3 -m pip install pyspellchecker dataclasses
+RUN python3 -m pip install pyspellchecker==$PYTHON_PYSPELLCHECKER_VERSION dataclasses==$PYTHON_DATACLASSES_VERSION
 
 # install openpyxl
 RUN git clone $OPENPYXL_REPOSITORY ~/openpyxl && \
