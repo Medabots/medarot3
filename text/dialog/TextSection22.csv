@@ -224,7 +224,7 @@
 204#kuwagata,0x20c198,"<@RL,Rokusho,00>言いづらいなら おれから<CD>言ってやろうか?","<@RL,Rokusho,00>If you don't wish to divulge, then shall I?"
 205,0x20c19a,"<@LL,Ikki,06>わ-! わ-!<CD><&BUF07>!!<CF><D1><@RL,Erika,00>んん---??<CD>あんた な-に あせってんの-?<CF><D1><@LL,Ikki,06>うっ あ あせってなんか...","<@LL,Ikki,06>Woah! Woah!<D3><&BUF07>!!<CF><D1><@RL,Erika,00>Mmm??<D3>Why are you all flustered?<CF><D1><@LL,Ikki,06>Uuw, I-I'm not flustered..."
 206#kabuto,0x20c19c,"<@RL,Metabee,00>あのな- こいつな-<CD>カリンちゃんに...","<@RL,Metabee,00>Y'see... This guy...<D3>Gave to Karin..."
-206#kuwagata,0x20c19c,"<@RL,Rokusho,00>もらったチケットを カリンに...","<@RL,Rokusho,00>He gave a ticket to Karen..."
+206#kuwagata,0x20c19c,"<@RL,Rokusho,00>もらったチケットを カリンに...","<@RL,Rokusho,00>He gave a ticket to Karin..."
 207,0x20c19e,"<@LL,Ikki,06>わ-! わ-!<CF><D1><@RL,Erika,04>ふ-ん だ-いたい 分かったわ-<CD>面白いじゃな-い?<CF><D1>あんたが このピンチを どう<CD>切リぬけるのか バッチリ<CF><D1>貝せて もらおうじゃないの?<CF><D1><@LL,Ikki,06>あわわわわ...<CD>(おこってるよ...アリカ)<CF><D1><@RL,Erika,04>じゃ まったね-","<@LL,Ikki,06>Woah! Woah!<CF><D1><@RL,Erika,04>Hmph, I can more or less get the rest. Now, isn't this funny? I can't wait to see how you pull yourself out of this pinch.<CF><D1><@LL,Ikki,06>Awawawawa...<D3>(She's... Getting mad.)<CF><D1><@RL,Erika,04>Well, see ya."
 208,0x20c1a0,"<@LL,Ikki,05>ふい-","<@LL,Ikki,05>Phew."
 209#kabuto,0x20c1a2,"<@RL,Metabee,00>面白いことに なってきたな","<@RL,Metabee,00>Things are getting interesting."
