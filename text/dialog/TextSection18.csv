@@ -91,7 +91,7 @@
 089,0x1fc0b2,"<@LR,Koji,03>はぁ? なんだ なんだぁ!?<CD>まったく いみが 分からない...","<@LR,Koji,03>Haa? What was that!? I didn't understand any of it..."
 090,0x1fc0b4,"<@LR,Koji,02>まっ 本人が しあわせそうだから<CD>ベつに ワケ分かんなくても いいや","<@LR,Koji,02>Well, as long as they seem happy, it doesn't really matter if I understand."
 091,0x1fc0b6,"<@LL,Ikki,00>にげ出した メダロットたちは<CD>もどって 来た?<CF><D1><@RL,BipedMedabot,00>ハイ おかげさまで","<@LL,Ikki,00>Have any of the runaway Medarots returned?<CF><D1><@RL,BipedMedabot,00>Yes, most of them have fortunately."
-092,0x1fc0b8,"<@LL,Ikki,00>で? かれらは 今 どこに?<CF><D1><@RL,BipedMedabot,00>上のカプセルに かたづけまし-た♪<CF><D1><@LL,Ikki,05>か かたづけ...<CD>","<@LL,Ikki,00>So? Where are they now?<CF><D1><@RL,BipedMedabot,00>They've been neatly put away in the capsules above ♪<CF><D1><@LL,Ikki,05>P-put away...<D3>"
+092,0x1fc0b8,"<@LL,Ikki,00>で? かれらは 今 どこに?<CF><D1><@RL,BipedMedabot,00>上のカプセルに かたづけまし-た♪<CF><D1><@LL,Ikki,05>か かたづけ...<CD>","<@LL,Ikki,00>So? Where are they now?<CF><D1><@RL,BipedMedabot,00>They've been neatly put away in the capsules above ♪<CF><D1><@LL,Ikki,05>P-put away..."
 093,0x1fc0ba,"<@RL,BipedMedabot,00>何か ヘんなこと 言いました?<CF><D1><@LL,Ikki,05>う-ん... なんだかなぁ","<@RL,BipedMedabot,00>Did I say something strange?<CF><D1><@LL,Ikki,05>Hmm... I guess not."
 094,0x1fc0bc,"<@RL,BipedMedabot,00>そうだ!!<CD>あのネコは つかまリましたか?<CF><D1><@LL,Ikki,06>いけね! すっかリネコのこと<CD>わすれてたや! ","<@RL,BipedMedabot,00>Oh yeah!! Did you catch that cat?<CF><D1><@LL,Ikki,06>Oh no! I completely forget about the cat! "
 095,0x1fc0be,"<@RL,BipedMedabot,00>早く つかまえて下さい サイ♪","<f08><@RL,BipedMedabot,00>Please catch it quickly-ly♪"

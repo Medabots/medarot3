@@ -10,7 +10,7 @@
 008,0x298010,「なおす」「とくしゅ」行動の<CD>パ-ツを ねらって 行動する<*03>,Aims at parts with Heal and<D3>Special effects.<*03>
 009,0x298012,「なぐる」「がむしゃら」<CD>「うつ」「ねらいうち」攻撃の<CF>パ-ツを ねらって 行動する<CD><*03>,"Aims at parts with Strike,<D3>Berserk, Shoot, and<CF>Snipe effects.<*03>"
 010,0x298014,ランダムにパ-ツを<CD>ねらって 行動する<*03>,Randomly aims.<*03>
-011,0x298016,メダルと パ-ツの<CD>ぞくせいを 合わせると<CF>全ての行動せいこうちが アップする<*03>,Matching the attributes<D3>of the parts and Medals<CF>Provides a boost to all<D3>effects.<*03><D3>
+011,0x298016,メダルと パ-ツの<CD>ぞくせいを 合わせると<CF>全ての行動せいこうちが アップする<*03>,Matching the attributes<D3>of the parts and Medals<CF>Provides a boost to all<D3>effects.<*03>
 012,0x298018,せんとう中 みかたのメダロットが<CD>2体同時に 中心にとうちゃくすると<CF>行動の せいこうちが アップする<CF>アップした じょうほうは<CD>メダルにも きおくされる<*03>,"If two allied Medarots reach<D3>the center simultaneously,<CF>then the effects are<D3>increased.<CF>The increased effect will be<D3>recorded to the Medal.<*03>"
 013,0x29801a,行動するたびに パ-ツにたいおうした<CD>じゅくれんどが アップする<CF>じゅくれんどが 上がると<CD>行動の せいこうちが アップする<*03>,"Each time an action is<D3>performed, the skill level<CF>of the matching part is<D3>increased.<*03>"
 014,0x29801c,1ばん ちかいてきに 攻撃をしかける<CD>クリティカルしやすい<CF>だいひょうてきな パ-ツは<CD>「ソ-ド」「サンダ-」<CF>この行動から 次の行動まで<CD>「ぼうぎょ」が できない<*03>,"Attacks the nearest enemy,<D3>it has a high critical chance.<CF>Some example parts are<D3>Sword and Thunder.<CF>Until its next turn, it<D3>can not be Defended.<*03>"
