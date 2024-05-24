@@ -159,24 +159,24 @@
 157,0x9244e#kabuto|0x92450#kuwagata,もんじゅって なに?<CD><*02>,"What's Monju, anyway?<*02>"
 158,0x92450#kabuto|0x92452#kuwagata,3本の や!<CD><*02>,3 arrows!<*02>
 159,0x92452#kabuto|0x92454#kuwagata,しまった! 3本の やは<CD>1本ずつ おれば いいのか...<*02>,Darn! It's better to fire 3 arrows one by one...<*02>
-160,0x92454#kabuto|0x92456#kuwagata,<CD><*02>,<*02>
-161,0x92456#kabuto|0x92458#kuwagata,<CD><*02>,<*02>
+160,0x92454#kabuto|0x92456#kuwagata,<CD><*02>,<D3><*02>
+161,0x92456#kabuto|0x92458#kuwagata,<CD><*02>,<D3><*02>
 162,0x92458#kabuto|0x9245a#kuwagata,おこしゃま ひきちゅれ<CD>ロボトルでしゅ!<*02>,"Hey, bwat! Time for Wobattle!"
 163,0x9245a#kabuto|0x9245c#kuwagata,まだまだ おこしゃまでしゅね-っ<CD>やくに たたないでしゅよ<*02>,No way can I beat you cause I'm stiww a kid...<*02>
-164,0x9245c#kabuto|0x9245e#kuwagata,<CD><*02>,<*02>
-165,0x9245e#kabuto|0x92460#kuwagata,<CD><*02>,<*02>
+164,0x9245c#kabuto|0x9245e#kuwagata,<CD><*02>,<D3><*02>
+165,0x9245e#kabuto|0x92460#kuwagata,<CD><*02>,<D3><*02>
 166,0x92460#kabuto|0x92462#kuwagata,おとなしく ヤキ入れられな!!<CD><*02>,Don't get fried without a fight!<*02>
 167,0x92462#kabuto|0x92464#kuwagata,コンガリ やきざかなっ!!<CD><*02>,This fish is well-done!<*02>
 168,0x92464#kabuto|0x92466#kuwagata,A「きみたちに かてば...」<CD>B「まだ 言ってるよ...」<*02>,A: If we beat you...<D3>B: ...He's still talking.<*02>
 169,0x92466#kabuto|0x92468#kuwagata,A「きみたちに かってれば...」<CD>C「まあ がんばったけどね」<*02>,"A: If only we'd beaten you...<D3>C: Well, we did our best.<*02>"
-170,0x92468#kabuto|0x9246a#kuwagata,<CD><*02>,<*02>
-171,0x9246a#kabuto|0x9246c#kuwagata,<CD><*02>,<*02>
+170,0x92468#kabuto|0x9246a#kuwagata,<CD><*02>,<D3><*02>
+171,0x9246a#kabuto|0x9246c#kuwagata,<CD><*02>,<D3><*02>
 172,0x9246c#kabuto|0x9246e#kuwagata,あいてが 何人で あろうと<CD>おなじことだ<*02>,The results won't change no<D3>matter of how many face me.<*02>
 173,0x9246e#kabuto|0x92470#kuwagata,それで 勝った つもリか?<CD><*02>,Is that how you plan on<D3>winning?<*02>
 174,0x92470#kabuto|0x92472#kuwagata,お前たちの じつリょくを 貝せてみろ<CD><*02>,Show me your strength <*02>
 175,0x92472#kabuto|0x92474#kuwagata,...なるほどな<CD><*02>,... I see.<*02>
-176,0x92474#kabuto|0x92476#kuwagata,<CD><*02>,<*02>
-177,0x92476#kabuto|0x92478#kuwagata,<CD><*02>,<*02>
+176,0x92474#kabuto|0x92476#kuwagata,<CD><*02>,<D3><*02>
+177,0x92476#kabuto|0x92478#kuwagata,<CD><*02>,<D3><*02>
 178,0x92478#kabuto|0x9247a#kuwagata,リんたろう「ロボトろ-ぜっ!」<CD>カリン  「ろ-ぜっ...ですわ♥」<*02>,Rintaro: Let's robattle!<D3>Karin: Let's! ♥<*02>
 179,0x9247a#kabuto|0x9247c#kuwagata,リんたろう「まけちまっただぜ!」<CD>カリン  「だぜっ...ですわ♥」<*02>,Rintaro: We were done in!<D3>Karin: Done in... indeed! ♥<*02>
 180,0x9247c#kabuto|0x9247e#kuwagata,おとなしく ヤキ入れられな!!<CD><*02>,Time to get fried!<*02>
@@ -189,14 +189,14 @@
 187,0x9248a#kabuto|0x9248c#kuwagata,なんということ...<CD><*02>,What in the...<*02>
 188,0x9248c#kabuto|0x9248e#kuwagata,さてと どうするかな...<CD><*02>,"Well, what to do about this...?<*02>"
 189,0x9248e#kabuto|0x92490#kuwagata,まあ いい<CD>いまの うちだけはな...<*02>,"Aah, very well. I suppose now is not the time...<*02>"
-190,0x92490#kabuto|0x92492#kuwagata,<CD><*02>,<*02>
-191,0x92492#kabuto|0x92494#kuwagata,<CD><*02>,<*02>
-192,0x92494#kabuto|0x92496#kuwagata,<CD><*02>,<*02>
-193,0x92496#kabuto|0x92498#kuwagata,<CD><*02>,<*02>
-194,0x92498#kabuto|0x9249a#kuwagata,<CD><*02>,<*02>
-195,0x9249a#kabuto|0x9249c#kuwagata,<CD><*02>,<*02>
-196,0x9249c#kabuto|0x9249e#kuwagata,<CD><*02>,<*02>
-197,0x9249e#kabuto|0x924a0#kuwagata,<CD><*02>,<*02>
+190,0x92490#kabuto|0x92492#kuwagata,<CD><*02>,<D3><*02>
+191,0x92492#kabuto|0x92494#kuwagata,<CD><*02>,<D3><*02>
+192,0x92494#kabuto|0x92496#kuwagata,<CD><*02>,<D3><*02>
+193,0x92496#kabuto|0x92498#kuwagata,<CD><*02>,<D3><*02>
+194,0x92498#kabuto|0x9249a#kuwagata,<CD><*02>,<D3><*02>
+195,0x9249a#kabuto|0x9249c#kuwagata,<CD><*02>,<D3><*02>
+196,0x9249c#kabuto|0x9249e#kuwagata,<CD><*02>,<D3><*02>
+197,0x9249e#kabuto|0x924a0#kuwagata,<CD><*02>,<D3><*02>
 198,0x924a0#kabuto|0x924a2#kuwagata,<FINAL>,<FINAL>
 199#kabuto,0x924a2,@0x924a0,@0x924a0
 199#kuwagata,0x924a4,@0x924a2,@0x924a2

@@ -108,11 +108,11 @@
 106,0x11c0d4,"<@LL,Ikki,04>あざやかな ブル-の<CD>パソコンだ","<@LL,Ikki,04>It's a vibrant blue computer."
 107,0x11c0d6,「スイデンジ」,<f02>Swedenji
 108,0x11c0d8,"「ニモウサク」<CF><@LL,Ikki,04>ヒカルさんの ともだちの<CD>ユウキさんの 家だ","<f02>Nimosaku<CF><@LL,Ikki,04>This is Hikaru's friend Yuki's house."
-109,0x11c0da,"「ワタリドリ」<CF><@LL,Ikki,04>ここは そうリだいじんの 家だ","Wataridori<CF><D3><@LL,Ikki,04>This is the Prime Minister's house."
+109,0x11c0da,"「ワタリドリ」<CF><@LL,Ikki,04>ここは そうリだいじんの 家だ","Wataridori<CF><@LL,Ikki,04>This is the Prime Minister's house."
 110,0x11c0dc,「ヘブンスタワ- 入リ口」,<f02>Heaven's Tower Entrance
 111,0x11c0de,「スカイド-ム」,<f02>Sky Dome
 112,0x11c0e0,"<@LL,Ikki,07>でか!","<@LL,Ikki,07>It's huge!"
-113,0x11c0e2,"「カワムラ- サイン」<CF><@LL,Ikki,00>ホコリ かぶってるよ...","Kawamura Sign<CF><D3><@LL,Ikki,00>It's covered in dust..."
+113,0x11c0e2,"「カワムラ- サイン」<CF><@LL,Ikki,00>ホコリ かぶってるよ...","Kawamura Sign<CF><@LL,Ikki,00>It's covered in dust..."
 114,0x11c0e4,"<@LL,Ikki,07>きゅうしき カブト型<CD>メダロットの ぞうだ!","<@LL,Ikki,07>It looks like an old model of a Kabuto type Medarot!"
 115,0x11c0e6,"<@LL,Ikki,07>きゅうしき クワガタ型<CD>メダロットの ぞうだ!","<@LL,Ikki,07>It looks like an old model of a Kuwagata type Medarot!"
 116,0x11c0e8,"<@LL,Ikki,04><@LL,Ikki,04>ホテルの きゃくしつにも<CD>パソコンが ついてるのか<CF>今は ベつに いらないや","<@LL,Ikki,04><@LL,Ikki,04>There are even computers in the hotel guest room?<CF>We don't particularly need to go in there now."
