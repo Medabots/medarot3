@@ -238,7 +238,7 @@
 233,0x23c1d0,"<@LL,Ikki,00>ちきゅうに かえる?<*04>","<@LL,Ikki,00>Should I go back to Earth?<*04>"
 234,0x23c1d2,"<@LL,Ikki,00>ビ-ハイブに 行く?<*04>","<@LL,Ikki,00>Should I go to Beehive?<*04>"
 235,0x23c1d4,"<@LL,Ikki,00>ランデブ-に 行く?<*04>","<@LL,Ikki,00>Should I go to Rendezvous?<*04>"
-236,0x23c1d6,"<@LL,Ikki,00>ここを 下リれば 月の海だ<CD>月の海ヘ 行く?<*04>","<@LL,Ikki,00>Lunar Mare is just below here. Should I go to Lunar Mare?<*04>"
+236,0x23c1d6,"<@LL,Ikki,00>ここを 下リれば 月の海だ<CD>月の海ヘ 行く?<*04>","<@LL,Ikki,00>The Lunar Sea is just below here. Should I go to the Lunar Sea?<*04>"
 237,0x23c1d8,"<@LL,Ikki,04>ここは 宇宙ふくが いらないから<CD>ぬいでおこう","<@LL,Ikki,04>I don't need a spacesuit here. I'll take it off."
 238,0x23c1da,"<@LL,Ikki,00>やっぱリ やめとこ","<@LL,Ikki,00>Maybe not."
 239,0x23c1dc,"<@RL,FlyingMedabot,00>ボクは ここに すみついちゃった<CD>メダロット<CF><D1>キミが 「はい」って 言うなら<CD>外に つれてって あげるヨ?<*04>","<@RL,FlyingMedabot,00>I'm a Medarot that has settled down here.<CF><D1>Do you want to go outside? Choose ""Yes"" if you do.<*04>"
