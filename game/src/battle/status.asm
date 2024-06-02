@@ -889,18 +889,17 @@ DisplayMedarotNamesForBattleStatus::
   ret
 
 HelperGetMedarotNameFromHead:
-  ; This will be reused for multiplayer as well, so check if the length might fit
-  ld b, $09
+  ; A bit of a hack, but check if the loaded name exists and fits
+  ; This must cover the multiplayer, NPC ally, and NPC enemy use-cases
   ld hl, $40
   add hl, de
   push hl
-.loop
+  ; If the length is 0, use the head part
   ld a, [hli]
   cp $CB
-  jr z, .player
-  dec b
-  jr nz, .loop
-  
+  jr nz, .player
+
+.useHeadPart
   pop hl
   
   ; The enemy bot names are based on the head part (loaded in 0A:519c)

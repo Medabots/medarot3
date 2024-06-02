@@ -88,15 +88,7 @@ LoadParticipantNameIntoBUF02Cont_\1::
   ; If the length is 0, fall back on the head part (probably ally)
   ld a, [hli]
   cp $CB
-  jr z, .useHeadPart
-  ; Check if the length fits
-  ld b, $08
-.checkLengthLoop
-  ld a, [hli]
-  cp $CB
-  jr z, .player
-  dec b
-  jr nz, .checkLengthLoop
+  jr nz, .player
   
 .useHeadPart
   xor a

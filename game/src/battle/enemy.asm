@@ -61,15 +61,12 @@ BattleLoadEnemyDataInit:: ; This copies the name, which happens again later...
   push de
   call WrapBufferTextFromList
   pop de
-  push de
+
+  ; Instead of loading the enemy name, we'll just use the head part, so omit copying it
   ld hl, $40
   add hl, de
-  ld d, h
-  ld e, l
-  ld hl, W_NewListItemBufferArea
-  ld bc, $9
-  call memcpy
-  pop de
+  ld [hl], $CB
+
   ld hl, $c5bc
   ld b, $00
   ld a, [$c4ee]
@@ -152,15 +149,12 @@ BattleLoadEnemyDataName:: ; 29285 (a:5285)
   push de
   call WrapBufferTextFromList
   pop de
-  push de
+  
+  ; Instead of loading the enemy name, we'll just use the head part, so omit copying it
   ld hl, $40
   add hl, de
-  ld d, h
-  ld e, l
-  ld hl, W_NewListItemBufferArea
-  ld bc, $9
-  call memcpy
-  pop de
+  ld [hl], $CB
+
   ld hl, $200
   add hl, de
   ld d, h
@@ -209,3 +203,5 @@ BattleLoadEnemyDataMisc::
   ld [$c4f0], a
   jr nz, .next_participant
   ret
+
+  padend $530c
