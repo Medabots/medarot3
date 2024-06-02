@@ -5,7 +5,12 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
-SECTION "Load text into buffers for battle messages 0D", ROMX[$46f9], BANK[$0D]
+SECTION "Load text into buffers for battle messages 0D", ROMX[$4505], BANK[$0D]
+  LoadDamageNumberIntoBUF00 0D
+
+  padend $456e
+
+SECTION "Load text into buffers for battle messages 0D 2", ROMX[$46f9], BANK[$0D]
 ; Probably for status messages
 BattleStatusLoadAttackIntoBuf00::
   call $4b3a
