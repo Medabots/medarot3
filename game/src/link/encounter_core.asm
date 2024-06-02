@@ -182,3 +182,22 @@ LinkCalculateWinLossRateDigits::
   ld a, $cb
   ld [de], a
   ret
+
+SECTION "Link Encounter Robotoll", ROMX[$5c5b], BANK[$11]
+LinkEncounterRobotollLoadPartType::
+  ld a, $06
+  rst $08
+  ld hl, cBUF01
+  ld a, [$C60F]
+  call WrapEncounterLoadRewardPartTypeText
+  ld a, [$C60F]
+  inc a
+  ld b, a
+  ld c, $09
+  ld a, [$C611]
+  ld [W_ListItemIndexForBuffering], a
+  ld a, $07
+  ld [W_ListItemInitialOffsetForBuffering], a
+  jp WrapBufferTextFromList
+
+  padend $5c7c
