@@ -1430,10 +1430,6 @@ SECTION "Tileset Data Tileset3AD9", ROMX[$472F], BANK[$A5]
 Tileset3AD9::
   INCBIN "./build/tilesets/Tileset3AD9.malias"
 
-SECTION "Tileset Data LinkRobotollPrizeTypes", ROMX[$48A6], BANK[$A5]
-LinkRobotollPrizeTypes::
-  INCBIN "./build/tilesets/LinkRobotollPrizeTypes.malias"
-
 SECTION "Tileset Data LinkRobotollScreen", ROMX[$4997], BANK[$A5]
 LinkRobotollScreen::
   INCBIN "./build/tilesets/LinkRobotollScreen.malias"
