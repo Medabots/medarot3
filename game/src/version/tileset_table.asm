@@ -132,7 +132,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry Tileset3A89 ; 7A (3A89)
   TilesetTableEntry Tileset3A8B ; 7B (3A8B)
   TilesetTableEntry Tileset3A8D ; 7C (3A8D)
-  TilesetTableEntry Tileset3A8F ; 7D (3A8F)
+  TilesetTableEntry LinkMainScreenBubbleText ; 7D (3A8F)
   TilesetTableEntry Tileset3A91 ; 7E (3A91)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 7F (3A93)
   TilesetTableEntry Tileset3A95 ; 80 (3A95)
@@ -648,7 +648,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset3A89), $9000, $0 ; 07A
   dbwb BANK(Tileset3A8B), $9290, $0 ; 07B
   dbwb BANK(Tileset3A8D), $8D40, $1 ; 07C
-  dbwb BANK(Tileset3A8F), $9000, $0 ; 07D
+  dbwb BANK(LinkMainScreenBubbleText), $9000, $0 ; 07D
   dbwb BANK(Tileset3A91), $8800, $0 ; 07E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 07F
   dbwb BANK(Tileset3A95), $9000, $0 ; 080
@@ -1374,9 +1374,9 @@ SECTION "Tileset Data Tileset3A8D", ROMX[$78BA], BANK[$3C]
 Tileset3A8D::
   INCBIN "./build/tilesets/Tileset3A8D.malias"
 
-SECTION "Tileset Data Tileset3A8F", ROMX[$4000], BANK[$A5]
-Tileset3A8F::
-  INCBIN "./build/tilesets/Tileset3A8F.malias"
+SECTION "Tileset Data LinkMainScreenBubbleText", ROMX[$4000], BANK[$A5]
+LinkMainScreenBubbleText::
+  INCBIN "./build/tilesets/LinkMainScreenBubbleText.malias"
 
 SECTION "Tileset Data Tileset3A91", ROMX[$43CB], BANK[$A5]
 Tileset3A91::
