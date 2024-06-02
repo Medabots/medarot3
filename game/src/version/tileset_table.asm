@@ -1318,10 +1318,6 @@ SECTION "Tileset Data Tileset3A8D", ROMX[$78BA], BANK[$3C]
 Tileset3A8D::
   INCBIN "./build/tilesets/Tileset3A8D.malias"
 
-SECTION "Tileset Data LinkMainScreenBubbleText", ROMX[$4000], BANK[$A5]
-LinkMainScreenBubbleText::
-  INCBIN "./build/tilesets/LinkMainScreenBubbleText.malias"
-
 SECTION "Tileset Data Tileset3A91", ROMX[$43CB], BANK[$A5]
 Tileset3A91::
   INCBIN "./build/tilesets/Tileset3A91.malias"
@@ -1429,10 +1425,6 @@ Tileset3AD7::
 SECTION "Tileset Data Tileset3AD9", ROMX[$472F], BANK[$A5]
 Tileset3AD9::
   INCBIN "./build/tilesets/Tileset3AD9.malias"
-
-SECTION "Tileset Data LinkRobotollScreen", ROMX[$4997], BANK[$A5]
-LinkRobotollScreen::
-  INCBIN "./build/tilesets/LinkRobotollScreen.malias"
 
 SECTION "Tileset Data Tileset3ADF", ROMX[$4D6B], BANK[$A5]
 Tileset3ADF::
