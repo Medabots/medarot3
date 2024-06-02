@@ -573,17 +573,17 @@ Tilemap00_C2::
 Tilemap00_C3::
   INCBIN "./build/tilemaps/LinkRobattleOptionsModeSelect.map"
 Tilemap00_C4::
-  INCBIN "./build/tilemaps/00C4.map"
+  INCBIN "./build/tilemaps/LinkRobotollScreen.map"
 Tilemap00_C5::
-  INCBIN "./build/tilemaps/00C5.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionHead.map"
 Tilemap00_C6::
-  INCBIN "./build/tilemaps/00C6.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionRArm.map"
 Tilemap00_C7::
-  INCBIN "./build/tilemaps/00C7.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionLArm.map"
 Tilemap00_C8::
-  INCBIN "./build/tilemaps/00C8.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionLegs.map"
 Tilemap00_C9::
-  INCBIN "./build/tilemaps/00C9.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionMiss.map"
 Tilemap00_CA::
   INCBIN "./build/tilemaps/RobattleTextChargeMF.map"
 Tilemap00_F1::

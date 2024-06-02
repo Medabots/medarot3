@@ -170,8 +170,8 @@ TilesetSourceAddressTable::
   TilesetTableEntry LinkTransferringDataLoadScreen ; A0 (3AD5)
   TilesetTableEntry Tileset3AD7 ; A1 (3AD7)
   TilesetTableEntry Tileset3AD9 ; A2 (3AD9)
-  TilesetTableEntry Tileset3ADB ; A3 (3ADB)
-  TilesetTableEntry Tileset3ADD ; A4 (3ADD)
+  TilesetTableEntry LinkRobotollPrizeTypes ; A3 (3ADB)
+  TilesetTableEntry LinkRobotollScreen ; A4 (3ADD)
   TilesetTableEntry Tileset3ADF ; A5 (3ADF)
   TilesetTableEntry Tileset3AE1 ; A6 (3AE1)
   TilesetTableEntry Tileset3AE3 ; A7 (3AE3)
@@ -686,8 +686,8 @@ TilesetInfoTable::
   dbwb BANK(LinkTransferringDataLoadScreen), $9000, $0 ; 0A0
   dbwb BANK(Tileset3AD7), $8000, $0 ; 0A1
   dbwb BANK(Tileset3AD9), $8000, $0 ; 0A2
-  dbwb BANK(Tileset3ADB), $8800, $0 ; 0A3
-  dbwb BANK(Tileset3ADD), $9000, $0 ; 0A4
+  dbwb BANK(LinkRobotollPrizeTypes), $8800, $0 ; 0A3
+  dbwb BANK(LinkRobotollScreen), $9000, $0 ; 0A4
   dbwb BANK(Tileset3ADF), $8000, $0 ; 0A5
   dbwb BANK(Tileset3AE1), $9000, $0 ; 0A6
   dbwb BANK(Tileset3AE3), $8000, $0 ; 0A7
@@ -1490,13 +1490,13 @@ SECTION "Tileset Data Tileset3AD9", ROMX[$472F], BANK[$A5]
 Tileset3AD9::
   INCBIN "./build/tilesets/Tileset3AD9.malias"
 
-SECTION "Tileset Data Tileset3ADB", ROMX[$48A6], BANK[$A5]
-Tileset3ADB::
-  INCBIN "./build/tilesets/Tileset3ADB.malias"
+SECTION "Tileset Data LinkRobotollPrizeTypes", ROMX[$48A6], BANK[$A5]
+LinkRobotollPrizeTypes::
+  INCBIN "./build/tilesets/LinkRobotollPrizeTypes.malias"
 
-SECTION "Tileset Data Tileset3ADD", ROMX[$4997], BANK[$A5]
-Tileset3ADD::
-  INCBIN "./build/tilesets/Tileset3ADD.malias"
+SECTION "Tileset Data LinkRobotollScreen", ROMX[$4997], BANK[$A5]
+LinkRobotollScreen::
+  INCBIN "./build/tilesets/LinkRobotollScreen.malias"
 
 SECTION "Tileset Data Tileset3ADF", ROMX[$4D6B], BANK[$A5]
 Tileset3ADF::
