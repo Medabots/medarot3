@@ -125,8 +125,8 @@
 123,0x900f6,マイナス症状クリアによって<CD>こんらんが ぼうがいされた!<S46><*04>,<f02>Confuse<f00> was jammed by Ailment Clear!<S46><*04>
 124,0x900f8,症状むこうパ-ツによって<CD>こんらんが ぼうがいされた!<S46><*04>,<f02>Confuse<f00> was jammed by Negate Status part!<S46><*04>
 125,0x900fa,<&BUF02>は こんらんした!<CD>攻撃のあいてが さだまらない!<S46><*04>,<&BUF02> is confused!<S46><CF><D1><S00>Actions and targets will be randomized!<S46><*04>
-126,0x900fc,うばいとる のこリ回数がない!<S46><*04>,No ammo left to steal!<S46><*04>
-127,0x900fe,頭パ-ツの回数を <&BUF00>うばいとった!<S46><*04>,Taken <&BUF00> from head part!<S46><*04>
+126,0x900fc,うばいとる のこリ回数がない!<S46><*04>,No uses left to steal!<S46><*04>
+127,0x900fe,頭パ-ツの回数を <&BUF00>うばいとった!<S46><*04>,Took <&BUF00> uses from the head part!<S46><*04>
 128,0x90100,マイナス症状クリアによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,<f02>Hindered<f00> ailment jammed by Ailment Clear!<S46><*04>
 129,0x90102,症状むこうパ-ツによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,<f02>Hindered<f00> ailment jammed by Negate Status part!<S46><*04>
 130,0x90104,かいひふのうの マイナス症状!<CD>攻撃を かいひできない!<S46><*04>,"Status ailment, <f02>Hindered<f00>!<D3>Unable to dodge!<S46><*04>"
@@ -150,7 +150,7 @@
 148,0x90128,「えんご」「かまえ」パ-ツを<CD>かんぜん はかい!<S46><*04>,<f02>Defend<f00> or <f02>Stance<f00> part completely destroyed!<S46><*04>
 149,0x9012a,メダチェ------ンジ!<S46><*04>,Medachaaaaaange!<S46><*04>
 150,0x9012c,てきの リ-ダ-の<CD>きのうが ていしした!<CF>そこまでっ!<CD>勝者 <&BUF02>!,Function ceased!<D3>The enemy leader is out!<CF>That's it!<D3><&BUF02> wins!
-151,0x9012e,みかたの リ-ダ-の<CD>きのうが ていしした!<CF>そこまでっ!<CD>勝者 <&BUF02>!,Function ceased!<D3>The enemy leader is out!<CF>That's it!<D3><&BUF02> wins!
+151,0x9012e,みかたの リ-ダ-の<CD>きのうが ていしした!<CF>そこまでっ!<CD>勝者 <&BUF02>!,Function ceased!<D3>Our leader is out!<CF>That's it!<D3><&BUF02> wins!
 152,0x90130,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*02>,<&BUF03> got the <&BUF01> part <&BUF04>!<*02>
 153,0x90132,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*02>,<&BUF03>'s <&BUF01> part <&BUF04> was taken!<*02>
 154,0x90134,ロボロボメダルを 手に入れた!<*02>,<f02>RoboRobo Medal<f00> acquired!<*02>
