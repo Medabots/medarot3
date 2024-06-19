@@ -22,8 +22,8 @@
 020,0x90028,ねらった パ-ツは<CD>すでに こわれていた!<S46><*04>,The targeted part has already been destroyed!<S46><*04>
 021,0x9002a,<&BUF01>は<CD>行動ないようを わすれた!<S46><*04>,<&BUF01> has forgotten its actions!<S46><*04>
 022,0x9002c,行動パ-ツは こわれていた!<S46><*04>,That part is broken! <S46><*04>
-023,0x9002e,<&BUF00>パ-ツは<CD>「使用ふのう」で 使えなかった!<S46><*04>,<&BUF00> could not be used due to Disable! <S46><*04>
-024,0x90030,頭パ-ツの 使用回数がなかった!<S46><*04>,This Head part has no more uses left!<S46><*04>
+023,0x9002e,<&BUF00>パ-ツは<CD>「使用ふのう」で 使えなかった!<S46><*04>,The <&BUF00> is <f02>disabled<f00>! <S46><*04>
+024,0x90030,頭パ-ツの 使用回数がなかった!<S46><*04>,This head part has no more uses left!<S46><*04>
 025,0x90032,そせいする メダロットがなかった!<S46><*04>,There are no Medarots to revive! <S46><*04>
 026,0x90034,こわれたパ-ツが あるため<CD>変形できなかった!<S46><*04>,You can not transform with broken parts!<S46><*04>
 027,0x90036,<&BUF02>は<CD>かくとうトラップを かいじょした!<S46><*04>,<&BUF02> cleared the Melee trap!<S46><*04>
