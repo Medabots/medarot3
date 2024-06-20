@@ -15,3 +15,5 @@ scripts/common/__pycache__/
 
 # OSX
 .DS_Store
+
+/.venv/
