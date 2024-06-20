@@ -1,6 +1,7 @@
 *.gbc
 *.sav
 *.sgm
+*.state
 build/
 *.sn*
 *.sna
@@ -14,3 +15,5 @@ scripts/common/__pycache__/
 
 # OSX
 .DS_Store
+
+/.venv/
