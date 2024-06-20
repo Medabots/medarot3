@@ -1,6 +1,7 @@
 *.gbc
 *.sav
 *.sgm
+*.state
 build/
 *.sn*
 *.sna
