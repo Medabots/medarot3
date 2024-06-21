@@ -2,6 +2,7 @@
 *.sav
 *.sgm
 *.state
+*.ram
 build/
 *.sn*
 *.sna
