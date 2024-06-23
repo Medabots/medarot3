@@ -51,45 +51,49 @@ wb = xl.load_workbook(filename=xlsx, rich_text=True)
 for sheet in wb.worksheets:
 	if not sheet.title in SHEETS:
 		continue
-	values = sheet.values
-	data = sheet.rows
-	header = next(values)
-	index_idx = header.index('Index[#version]') # Index must precede all useful data (data before the pointer index is ignored)
-	original_idx = header.index('Original')
-	translated_idx = header.index('Translated') # Translated is the end of useful data, everything after this is ignored
-	file_path = path.join(csvdir, "{0}.csv".format(sheet.title))
-	text = {}
-	for line in data:
-		if line is None or line[0].value is None:
-			continue
-		# 'line' is a tuple of Cells
-		if str(line[0].value).startswith('#'):
-			continue
-		idx = line[index_idx].value
-		try:
-			int(line[index_idx].value.split("#")[0], 16)
-		except ValueError:
-			continue
-		text[idx] = [];
-		for x in line[:translated_idx+1]:
-			prefix = ["", "<b>", "<i>", "<b><i>"][int(x.font.b) + (int(x.font.i) << 1)]
-			suffix = ["", "</b>", "</i>", "</i></b>"][int(x.font.b) + (int(x.font.i) << 1)]
-			if type(x.value) is str:
-				text[idx].append(prefix + x.value + suffix)
-			elif x.value is not None:
-				start = 1
-				t = ""
+	try:
+		values = sheet.values
+		data = sheet.rows
+		header = next(values)
+		index_idx = header.index('Index[#version]') # Index must precede all useful data (data before the pointer index is ignored)
+		original_idx = header.index('Original')
+		translated_idx = header.index('Translated') # Translated is the end of useful data, everything after this is ignored
+		file_path = path.join(csvdir, "{0}.csv".format(sheet.title))
+		text = {}
+		for line in data:
+			if line is None or line[0].value is None:
+				continue
+			# 'line' is a tuple of Cells
+			if str(line[0].value).startswith('#'):
+				continue
+			idx = line[index_idx].value
+			try:
+				int(line[index_idx].value.split("#")[0], 16)
+			except ValueError:
+				continue
+			text[idx] = [];
+			for x in line[:translated_idx+1]:
+				prefix = ["", "<b>", "<i>", "<b><i>"][int(x.font.b) + (int(x.font.i) << 1)]
+				suffix = ["", "</b>", "</i>", "</i></b>"][int(x.font.b) + (int(x.font.i) << 1)]
 				if type(x.value) is str:
-					t = prefix + x.value[0] + suffix
+					text[idx].append(prefix + x.value + suffix)
+				elif x.value is not None:
+					start = 1
+					t = ""
+					if type(x.value) is str:
+						t = prefix + x.value[0] + suffix
+					else:
+						start = 0
+					for val in x.value[start:]:
+						prefix = ["", "<b>", "<i>", "<b><i>"][int(val.font.b) + (int(val.font.i) << 1)]
+						suffix = ["", "</b>", "</i>", "</i></b>"][int(val.font.b) + (int(val.font.i) << 1)]
+						t += prefix + val.text + suffix
+					text[idx].append(t)
 				else:
-					start = 0
-				for val in x.value[start:]:
-					prefix = ["", "<b>", "<i>", "<b><i>"][int(val.font.b) + (int(val.font.i) << 1)]
-					suffix = ["", "</b>", "</i>", "</i></b>"][int(val.font.b) + (int(val.font.i) << 1)]
-					t += prefix + val.text + suffix
-				text[idx].append(t)
-			else:
-				text[idx].append("")
+					text[idx].append("")
+	except:
+		print(f'Failed to process sheet {sheet}')
+		exit(1)
 				
 	orig_text = OrderedDict()
 	fieldnames = []
