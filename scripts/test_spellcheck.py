@@ -16,6 +16,7 @@ class Line:
 class File:
     name: str
     lines: list[Line]
+    indices: list[int]
 
 
 def parse_arguments():
@@ -84,8 +85,9 @@ def main():
             # Saving lines for later output
             indices.append(index)
             lines.append(Line(words))
+
     base_filename = os.path.basename(filename)
-    file = File(base_filename, lines)
+    file = File(base_filename, lines, indices)
 
     # Spellcheck unknown words
     for word in unknown:
@@ -110,11 +112,11 @@ def main():
             # Add the correction to the dictionary
             corrections[word.lower()] = correction
 
-    for i, line in enumerate(file.lines, 1):
+    for i, (line, index) in enumerate(zip(file.lines, file.indices), 1):
         for word in line.words:
             # If the word is misspelled
             if word.lower() in corrections:
-                print(f"Spellcheck: {file.name}:{indices[i]}\t{word} -> {corrections[word.lower()]}")
+                print(f"Spellcheck: {file.name}:{index}\t{word} -> {corrections[word.lower()]}")
 
 if __name__ == "__main__":
     main()
