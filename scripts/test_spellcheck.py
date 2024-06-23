@@ -67,18 +67,22 @@ def main():
 
     # Build set of unknown words and make a dictionary with line information
     lines: list[Line] = []
+    indices: list[str] = []
     with open(filename, 'r', encoding='utf-8-sig') as csv_file:
         reader = csv.reader(csv_file, delimiter=",")
         header = next(reader, None)
+        idx_index = header.index("Index[#version]")
         idx_text = header.index("Translated")
         for row in reader:
             # The translated column is the third column in the .csv
+            index = row[idx_index]
             translated = row[idx_text]
             # Extract words from line
             words: list[str] = re.findall(r"<[^>]+>|[\w\']+", translated)
             # Update the set with all unknown words
             unknown.update(checker.unknown(words))
             # Saving lines for later output
+            indices.append(index)
             lines.append(Line(words))
     base_filename = os.path.basename(filename)
     file = File(base_filename, lines)
@@ -110,7 +114,7 @@ def main():
         for word in line.words:
             # If the word is misspelled
             if word.lower() in corrections:
-                print(f"Spellcheck: {file.name}:{i}\t{word} -> {corrections[word.lower()]}")
+                print(f"Spellcheck: {file.name}:{indices[i]}\t{word} -> {corrections[word.lower()]}")
 
 if __name__ == "__main__":
     main()
