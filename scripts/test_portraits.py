@@ -29,6 +29,6 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         if original_portraits != translated_portraits:
             print(f"Portraits: {base_filename}:{index}: ", end = '')
             if len(original_portraits) != len(translated_portraits):
-                print("Portrait count doesn't match")
+                print(f"Portrait count doesn't match (original {len(original_portraits)} != {len(translated_portraits)})")
             else:
                 print(f'Mismatched portraits: {[f"{p[1]} -> {p[0]}" for p in zip(original_portraits, translated_portraits) if p[0] != p[1]]}')
