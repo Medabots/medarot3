@@ -29,13 +29,12 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')
     header = next(reader, None)
     idx_index = header.index("Index[#version]")
-    idx_pointer = header.index("Pointer[#version|]")
     idx_text = header.index("Translated")
 
     for row in reader:
         if row[idx_index].startswith("UNUSED") or row[idx_text].startswith("@"):
             continue
-        i = row[idx_pointer]
+        i = row[idx_index]
         # Strip out control codes
         text = re.sub(r"\<&.+?\>", '01234567', row[idx_text])
         text = re.sub(r"\<D1\>", ' ', text)
