@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
 000,0x90000,ユウコウテキデス?ST,Friendly?ST
-001,0x90002,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,<SFF>Select active Medarots and their orientation.<*04>
+001,0x90002,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,<SFF>Select active Medarots and their positions.<*04>
 002,0x90004,<SFF>メダロットが 自分で考えて行動します<*04>,<SFF>Your Medarots will act of their own accord. <*04>
 003,0x90006,<SFF>頭パ-ツを使います<CD>変形の時は ドライブAを使います<*04>,"<SFF><f01>Uses Head part; When Medachanged,<D3>Drive A will be used.<f00> <S46><*04>"
 004,0x90008,<SFF>右院パ-ツを使います<CD>変形の時は ドライブBを使います<*04>,"<SFF><f01>Uses Right Arm part; When<D3>Medachanged, Drive B will be used.<f00> <S46><*04>"
@@ -8,7 +8,7 @@
 006,0x9000c,<SFF>メダフォ-スをためます<*04>,<SFF>Charges Medaforce gauge<*04>
 007,0x9000e,<SFF>メダフォ-スを使います<*04>,<SFF>Activates Medaforce<*04>
 008,0x90010,<SFF>変形します<*04>,<SFF>Medachange<*04>
-009,0x90012,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,Use Left and Right on the D-Pad to select repeat point.<S46><*04>
+009,0x90012,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,Use Left and Right on the D-Pad to select loop point.<S46><*04>
 010,0x90014,<SFF>ロボトル ファイト!<*04>,<SFF>Robattle fight!<*04>
 011,0x90016,ゆうこうパワ-アップ!<CD>行動せいこうちが 上がった!<S46><*04>,Ally Power Up!<D3>Success Rate increased!<S46><*04>
 012,0x90018,メダフォ-スプラントはつどう!<CD>メダフォ-スが上がった!<S46><*04>,Medaforce Plant Activate!<D3>Medaforce gauge was charged!<S46><*04>
@@ -35,7 +35,7 @@
 033,0x90042,<&BUF02>の<CD><&BUF01>パ-ツに <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02>'s <&BUF01> took <&BUF00> damage!<S46><*04>
 034,0x90044,<&BUF01>パ-ツは こわれた!<S46><*04>,The attack destroyed the <&BUF01>!<S46><*04>
 035,0x90046,本体の きのうが ていしした!<S46><*04>,The Medarot has been shutdown!<S46><*04>
-036,0x90048,たんぱつクリア トラップで<CD>攻撃が うちけされた!<S46><*04>,Attack will be nullified by Single-Engine Clear!<S46><*04>
+036,0x90048,たんぱつクリア トラップで<CD>攻撃が うちけされた!<S46><*04>,Attack was nullified by Shot Clear!<S46><*04>
 037,0x9004a,<&BUF02>に <&BUF00>ダメ-ジ!<S46><*04>,<&BUF02> took <&BUF00> damage!<S46><*04>
 038,0x9004c,<&BUF02>は<CD>たんぱつクリアトラップに かかった!<S46><*04>,<&BUF02> was caught in a<D3>Single-Engine Clear!<S46><*04>
 039,0x9004e,<&BUF02>が えんごに入った!<S46><*04>,<&BUF02> came in to shield!<S46><*04>
