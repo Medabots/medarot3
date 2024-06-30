@@ -7,7 +7,7 @@
 005,0x96f36,<SFF>かくとうと しゃげきの リょうほうに<CD>こうかのある トラップを セットする<*04>,<SFF>Sets a trap that targets<D3>both <f02>Melee<f00> and <f02>Shooting<f00> parts.<*04>
 006,0x96f38,<SFF>てき全体に 「ヘんどう」の<CD>マイナス症状を つける<*04>,<SFF>Induces <f02>Flux<f00> status<D3>on all enemies.<*04>
 007,0x96f3a,<SFF>てき全体に 「そくばく」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Bind<f00> status<D3>on all enemies.<*04>
-008,0x96f3c,<SFF>てき全体に 「けいぞく」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Burn<f00> status<D3>on all enemies.<*04>
+008,0x96f3c,<SFF>てき全体に 「けいぞく」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Flow<f00> status<D3>on all enemies.<*04>
 009,0x96f3e,<SFF>てき全体に 「ていし」の<CD>マイナス症状を つける<*04>,<SFF>Inflicts <f02>Stop<f00> status<D3>on all enemies.<*04>
 010,0x96f40,<SFF>てきに ダメ-ジを あたえて<CD>自分の ダメ-ジを かいふくする<*04>,<SFF>Damages an enemy and<D3>replenishes user's health.<*04>
 011,0x96f42,<SFF>ひこうメダロット 全体に<CD>マイナス症状を つける<*04>,<SFF>Inflicts status ailments on<D3>all Flying Medarots.<*04>

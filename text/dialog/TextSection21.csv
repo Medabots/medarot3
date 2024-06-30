@@ -53,7 +53,7 @@
 050,0x208064,"<@RL,Boy3,00>ハンドメイドの ルア-が ちょっと<CD>人気が なかったから<CF><D1>この パ-ツを 売ることにするよ","<@RL,Boy3,00>Since the handmade lures<D3>haven't been selling,<CF><D1>I'll sell these Medarot parts<D3>instead."
 051#kabuto,0x208066,"<@LL,Ikki,04>あ! これは ツル型メダロット<CD>「ビ-トブレス」だ!","<@LL,Ikki,04>Ah! This is the Crane-Type Medarot, <f02>BeatBreath!"
 051#kuwagata,0x208066,"<@LL,Ikki,04>あ! これは クジャク型メダロット<CD>「ゴ-ジャイン」だ!","<@LL,Ikki,04>Ah! This is the Peacock-Type Medarot, <f02>Gorgine!"
-052,0x208068,"<@LL,Ikki,05>でも 何で 左院だけなんだろ...<CF><D1><@RL,Boy3,00>何言ってるんですか! 遠くの頭よリ<CD>近くの左院って 言うじゃないですか<CF><D1>1つ 5000¥で どうです?<*04>","<@LL,Ikki,05>But it's only the left arm...<CF><D1><@RL,Boy3,00>What are you talking about? As they say, A left arm that's close to you is better than a head thats in the clouds.<CF><D1>How does ¥5000 for one sound?<*04>"
+052,0x208068,"<@LL,Ikki,05>でも 何で 左院だけなんだろ...<CF><D1><@RL,Boy3,00>何言ってるんですか! 遠くの頭よリ<CD>近くの左院って 言うじゃないですか<CF><D1>1つ 5000¥で どうです?<*04>","<@LL,Ikki,05>But it's only the left arm...<CF><D1><@RL,Boy3,00>What are you talking about? As they say, ""A left arm in the hand is worth two heads in the bush.""<CF><D1>How does ¥5000 for one sound?<*04>"
 053,0x20806a,"<@LL,Ikki,05>高いけど がまん がまん","<@LL,Ikki,05>It's pricey but I can't resist..."
 054,0x20806c,"<@LL,Ikki,06>うわ! 高いよ! 何とかならない?<CF><D1><@RL,Boy3,00>わっかリました! それなら<CD>1つ 4000¥で どうです?<*04>","<@LL,Ikki,06>Woah! That's pricey! Can't you do better?<CF><D1><@RL,Boy3,00>Very well! In that case,<D3>how does ¥4000 for one sound?<*04>"
 055,0x20806e,"<@LL,Ikki,06>パ-ツって こんなに 高いの?","<@LL,Ikki,06>Are parts usually this<D3>expensive?"

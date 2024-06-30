@@ -1,11 +1,11 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x919ec,えっと ここ...どこだっけ?<CD>どうして ぼく<CF>ここに いるんだっけ?<CD>そうだ ぼく かえらなきゃ...<*03>,Wh-Where... am I?<D3>Why am I here?<CF>That's right...<D3>I have to get back...<*03>
+000,0x919ec,えっと ここ...どこだっけ?<CD>どうして ぼく<CF>ここに いるんだっけ?<CD>そうだ ぼく かえらなきゃ...<*03>,Wh-Where... am I?<D3>Why am I here?<CF>That's right...<D3>I have to go back...<*03>
 001,0x919ee,<SFF>あ! ながれ星!<*04>,<SFF>Ah!<D3>It's a shooting star!<*04>
 002,0x919f0,あっちの方に おちたぞ<CD>行ってみよう!<*03>,It fell over there!<D3>I need to go check it out!<*03>
 003,0x919f2,あれっ? 小さな 男の子だ<CD>ながれ星かと 思ったのに<CF>そうだ この子に 聞いてみよう<CD>でも ぼくの家が どこかなんて<CF>この子が 知ってるわけ<CD>ないよなぁ...<*03>,Huh? A kid?<CF>I thought it was a shooting star.<CF>Maybe I can ask them how to get home.<CF>... But how would they know?<*03>
-004,0x919f4,......<CF>何? 上? 上が どうしたの?<CD>上に 何か あるの?<*03>,...<CF>Up?<D3>What's up there?<*03>
+004,0x919f4,......<CF>何? 上? 上が どうしたの?<CD>上に 何か あるの?<*03>,...<CF>Look up?<D3>What's up there?<*03>
 005,0x919f6,えっ! ちきゅう!?<CD>そんな! じゃあ ここは...?<*03>,Is that... Earth!?<CF>That can't be right!<CF>Then where am I now...?<*03>
-006,0x919f8,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,<SFF>Please select the rotation order of your Medarots.<*04>
+006,0x919f8,<SFF>ロ-テ-ションをきめる<CD>メダロットを 選んでください<*04>,<SFF>Please select the positions of your Medarots.<*04>
 007,0x91a0e,<SFF>メダロットが 自分で考えて行動します<*04>,<SFF>Your Medarots will act of their own accord.<*04>
 008,0x91a10,<SFF>頭パ-ツを使います<CD>変形の時は ドライブAを使います<*04>,"<SFF><f01>Uses Head part; When Medachanged,<D3>Drive A will be used.<f00> <*04>"
 009,0x91a12,<SFF>右院パ-ツを使います<CD>変形の時は ドライブBを使います<*04>,"<SFF><f01>Uses Right Arm part; When<D3>Medachanged, Drive B will be used.<f00> <*04>"

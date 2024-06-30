@@ -80,7 +80,7 @@
 078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF><f02>Float Medarot<f00>: <f01>Comfortable in any terrains.<*04>
 079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,<SFF><f02>Multi-Leg Medarot<f00>: <f01>Strong in <f02>mountain<f00> and <f02>volcano<f00> terrains.<*04>
 080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,<SFF><f02>Bipedal Medarot<f00>: <f01>Strong in <f02>forest<f00> and <f02>jungle<f00> terrains.<*04>
-081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,<SFF><f02>Vehicle Medarot<f00>: <f01>Strong in <f02>downtoan<f00> and <f02>stadium <f00>terrains.<*04>
+081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,<SFF><f02>Vehicle Medarot<f00>: <f01>Strong in <f02>downtown<f00> and <f02>stadium <f00>terrains.<*04>
 082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF><f02>Tank Medarot<f00>: <f01>Not affected by the terrain.<*04>
 083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,<SFF><f02>Diving Medarot<f00>: <f01>Strong in <f02>underwater<f00> and <f02>glacial<f00> fields.<*04>
 084,0x9647e,<FINAL>,

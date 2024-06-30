@@ -9,7 +9,7 @@
 007,0x22c00e,"<@RL,ScientistMale,00>きみ! あぶないから さがってなさい<CF><D1>かいはつ中の パ-ツだから<CD>どんな じこが おこるか<CF><D1><@LL,Ikki,04>おじさんは あぶなくないの?<CF><D1><@RL,ScientistMale,01>わたしは このしごと 長いからね","<@RL,ScientistMale,00>Hey, get back! It's dangerous over here.<CF><D1>Accidents tend to come when Parts are being researched.<CF><D1><@LL,Ikki,04>Then isn't it dangerous for you, as well?<CF><D1><@RL,ScientistMale,01>It's fine for me, after all, I've been doing this for years."
 008,0x22c010,"<@RL,ScientistMale,00>あ あぶないじゃないかっ!","<@RL,ScientistMale,00>T-that's dangerous!"
 009,0x22c012,"<@RL,ScientistMale,00>ティンペットが 多くなったら<CD>その内の1体は せんすいに つよい<CF><D1>パ-ツで 租んでおくと いいかも","<@RL,ScientistMale,00>If there are lots of Tinpets available, maybe it's better to build one that's strong against diving types."
-010,0x22c014,"<@RL,ScientistMale,00>メダロット変形についての ろんぶんを<CD>かきたかったんだけど<CF><D1>まだまだ しリょうが 出てないなあ","<@RL,ScientistMale,00>I was going to write a thesis on the deformation of Medarots, but I don't have enough materials to start yet."
+010,0x22c014,"<@RL,ScientistMale,00>メダロット変形についての ろんぶんを<CD>かきたかったんだけど<CF><D1>まだまだ しリょうが 出てないなあ","<@RL,ScientistMale,00>I was going to write a thesis on Medarots Medachanges, but I don't have enough materials to start yet."
 011,0x22c016,"<@RL,ScientistMale,00>「トラップパ-ツ」 使ってる?","<@RL,ScientistMale,00>Do you use <f02>Trap Parts<f00>?"
 012,0x22c018,"<@RL,ScientistMale,00>「いんペいパ-ツ」とか 使ってる?","<@RL,ScientistMale,00>Do you use any <f02>Conceal Parts<f00>?"
 013,0x22c01a,"<@RL,ScientistMale,00>攻撃させる だけじゃ 本当の<CD>メダロッタ-には なれないぞ","<@RL,ScientistMale,00>Just attacking as much as you can doesn't make you a true Medarotter."
