@@ -123,6 +123,8 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
                         special_data.append(txt[i])
                         i += 1
                     # Handle special codes
+                    if special_type == '#': # Ignore, used for annotations for other scripts
+                        continue
                     if special_type == '*': # Endcode
                         endcode = int(''.join(special_data), 16)
                         break
