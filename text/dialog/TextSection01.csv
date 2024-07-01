@@ -15,7 +15,7 @@
 013,0x91a1a,<SFF>メダフォ-ス2を使います<*04>,<SFF>Use Medaforce 2.<*04>
 014,0x91a1c,<SFF>メダフォ-ス3を使います<*04>,<SFF>Use Medaforce 3.<*04>
 015,0x91a1e,<SFF>変形します<CD>すでに 変形している時は ?と同じ<*04>,<SFF><f01>Medachange. Already Medachanged?<D3>The same action will happen.<f00><*04>
-016,0x91a20,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,<SFF>Please select the left and<D3>right rotation point.<*04>
+016,0x91a20,<SFF>左右キ-で ロ-テ-ションポイントを<CD>選んでください<*04>,<SFF>Please select the left and<D3>right loop point.<*04>
 017,0x91a22,このアイテムは 使えません!<*03>,You can't use this item!<*03>
 018,0x91a2e,ここでは 使えません!<*03>,You can't use this here!<*03>
 019,0x91a30,今は 使えません!<*03>,You can't use this right now!<*03>
