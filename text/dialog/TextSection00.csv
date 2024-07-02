@@ -198,7 +198,7 @@
 196,0x90188,パ-ツの 攻撃ダメ-ジが<CD>全て <&BUF00>になる!<S46><*04>,All part damage will become <&BUF00>!<S46><*04>
 197,0x9018a,メダフォ-ス「<&BUF02>」に<CD>チェンジした!<S46><*04>,Medaforce <f02><&BUF02><f00> exchanged!<S46><*04>
 198,0x9018c,うばいとる メダルレベルがない!<S46><*04>,Not enough Medal levels to absorb!<S46><*04>
-199,0x9018e,メダルのレベルを <&BUF00>うばいとった!<S46><*04>,Aborbed <&BUF00> levels from Medal!<S46><*04>
+199,0x9018e,メダルのレベルを <&BUF00>うばいとった!<S46><*04>,Absorbed <&BUF00> levels from Medal!<S46><*04>
 200,0x90190,メダフォ-スリょうが なかった!<CD>パワ-ヘんけい できない!<S46><*04>,No Medaforce gauge!<D3>Power Transformation failed!<S46><*04>
 201,0x90192,メダフォ-スリょうが なくなった!<CD>パワ-ヘんけいが とけた!<S46><*04>,Medaforce gauge depleted!<D3>Power Transformation undone!<S46><*04>
 202,0x90194,<FINAL>,<FINAL>
