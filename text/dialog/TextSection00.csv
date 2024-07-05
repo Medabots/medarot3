@@ -57,7 +57,7 @@
 055,0x9006e,ヘんどうの マイナス症状!<CD>行動が せいこうしにくくなる!<S46><*04>,Status Ailment: <f02>Flux<f00>!<S46><CF><D1><S00>Success rate has been lowered!<S46><*04>
 056,0x90070,そくばくの マイナス症状!<CD>じゅんび時間が 長くなる!<S46><*04>,Status Ailment: <f02>Bind<f00>!<S46><CF><D1><S00>Preparation time has been extended!<S46><*04>
 057,0x90072,けいぞくの マイナス症状!<CD>じゅんび時間にも ダメ-ジ!<S46><*04>,Status Ailment: <f02>Flow<f00>!<S46><CF><D1><S00>Damage will be dealt during preparation time!<S46><*04>
-058,0x90074,ていしの マイナス症状!<CD>何も 行動ができない!<S46><*04>,Status Ailment: <f02>Paralyzed<f00>!<S46><CF><D1><S00>No actions can be taken!<S46><*04>
+058,0x90074,ていしの マイナス症状!<CD>何も 行動ができない!<S46><*04>,Status Ailment: <f02>Stop<f00>!<S46><CF><D1><S00>No actions can be taken!<S46><*04>
 059,0x90076,カウントダウンの マイナス症状!<CD>「0」になると きのうていし!<S46><*04>,Status Ailment: <f02>Countdown<f00>!<S46><CF><D1><S00>Shutdown will occur once count reaches 0.<S46><*04>
 060,0x90078,ホ-ムシックの マイナス症状!<CD>時々 家にかえリたくなる!<S46><*04>,Status Ailment: <f02>Homesick<f00>!<S46><CF><D1><S00>Sometimes will turn back mid-prep!<S46><*04>
 061,0x9007a,カウントダウンが かんリょう!<CD>メダロットが きのうていしした!<S46><*04>,Countdown finished!<D3>The Medarots have shutdown!<S46><*04>
@@ -170,7 +170,7 @@
 168,0x90150,ぼうぎょリょくアップ!<CD>うけるダメ-ジを ヘらす!<S46><*04>,Defense up!<D3>Damage taken reduced!<S46><*04>
 169,0x90152,攻撃トラップをセットした!<CD>全ての攻撃に ダメ-ジ!<S46><*04>,Attack Trap set!<D3>It will trigger on all attacks!<S46><*04>
 170,0x90154,トラップクリアによって<CD>攻撃トラップが ぼうがいされた!<S46><*04>,Trap Clear has jammed Attack Trap!<S46><*04>
-171,0x90156,マイナス症状クリアによって<CD>こうかが なかった!<S46><*04>,Minus Status Clear had no effect!<S46><*04>
+171,0x90156,マイナス症状クリアによって<CD>こうかが なかった!<S46><*04>,Ailment Clear had no effect!<S46><*04>
 172,0x90158,かいふくする パ-ツが なかった!<S46><*04>,No part to restore!<S46><*04>
 173,0x9015a,ひこうメダロットが いなかった!<S46><*04>,There is no Flying Medarot!<S46><*04>
 174,0x9015c,せんすいメダロットが いなかった!<S46><*04>,There is no Aquatic Medarot!<S46><*04>

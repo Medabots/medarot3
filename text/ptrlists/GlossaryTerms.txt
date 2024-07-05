@@ -51,7 +51,7 @@ Index[#version],Unknown,Term
 46,\x00,Ranged
 47,\x00,Direct Attack
 48,\x00,Field
-49,\x00,Terrain
+49,\x00,Terrain Area
 50,\x00,Charge Area
 51,\x00,Auto
 52,\x00,Rotation

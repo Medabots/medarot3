@@ -37,12 +37,12 @@
 035,0x96416,<SFF>ファ-ストエイド行動<CD>こわれたパ-ツを ふっかつさせる<*04>,<SFF><f02>First Aid<f00>: <f01>Repairs a broken part.<*04>
 036,0x96418,<SFF>クロス攻撃セット行動<CD>「クロスこうげき」を セットする<*04>,<SFF><f02>Cross Attack Set<f00>: <f01>Sets <f02>Cross Attack<f00>.<*04>
 037,0x9641a,<SFF>クロス攻撃ファイア行動<CD>「クロスこうげき」で 攻撃する<*04>,<SFF><f02>Cross Attack Fire<f00>: <f01>Fires with a set <f02>Cross Attack<f00>.<*04>
-038,0x9641c,<SFF>マイナス症状クリア行動<CD>マイナス症状を かいじょする<*04>,<SFF><f02>Minus Status Clear<f00>: <f01>Removes negative status effects.<*04>
+038,0x9641c,<SFF>マイナス症状クリア行動<CD>マイナス症状を かいじょする<*04>,<SFF><f02>Ailment Clear<f00>: <f01>Removes negative status effects.<*04>
 039,0x9641e,<SFF>トラップクリア行動<CD>「トラップ」を はかいする<*04>,<SFF><f02>Trap Clear<f00>: <f01>Destroys a <f02>trap<f00>.<*04>
 040,0x96420,<SFF>フォ-スせいぎょ行動<CD>「メダフォ-ス」を 使えなくする<*04>,<SFF><f02>Force Seal<f00>: <f01>Prevents <f02>Medaforce<f00> usage.<*04>
-041,0x96422,<SFF>かいふく行動<CD>ダメ-ジをうけたパ-ツを かいふく<*04>,<SFF><f02>Repair<f00>: <f01>Repairs a damaged part.<*04>
-042,0x96424,<SFF>ふっかつ行動<CD>きのうていしパ-ツを ふっかつさせる<*04>,<SFF><f02>Restore<f00>: <f01>Restores a destroyed part.<*04>
-043,0x96426,<SFF>そせい行動<CD>たおれた みかたを ふっかつさせる<*04>,<SFF><f02>Resuscitation<f00>: <f01>Revives a fallen ally.<*04>
+041,0x96422,<SFF>かいふく行動<CD>ダメ-ジをうけたパ-ツを かいふく<*04>,<SFF><f02>Restore<f00>: <f01>Restores a damaged part.<*04>
+042,0x96424,<SFF>ふっかつ行動<CD>きのうていしパ-ツを ふっかつさせる<*04>,<SFF><f02>Repairs<f00>: <f01>Repairs a destroyed part.<*04>
+043,0x96426,<SFF>そせい行動<CD>たおれた みかたを ふっかつさせる<*04>,<SFF><f02>Resuscitation<f00>: <f01>Repair a fallen ally.<*04>
 044,0x96428,<SFF>レベルドレイン行動<CD>てきの レベルを うばいとる<*04>,<SFF><f02>Level Drain<f00>: <f01>Drains an opponent's level.<*04>
 045,0x9642a,<SFF>かんぜんむこう行動<CD>全ての 攻撃を むこうにする<*04>,<SFF><f02>Perfect Disable<f00>: <f01>Nullify all attacks.<*04>
 046,0x9642c,<SFF>たいせいはかい行動<CD>「えんご」「かまえ」を はかいする<*04>,<SFF><f02>Stance Disable<f00>: <f01>Nullify <f02>Stance<f00> and <f02>Defend<f00> skills.<*04>
@@ -50,7 +50,7 @@
 048,0x96430,<SFF>かやく むこう行動    (そうび)<CD>「ミサイル」「ナパ-ム」を ブロック<*04>,<SFF><f02>Explosive Disable (Passive)<f00>: <f01>Nullify <f02>Missile<f00> & <f02>Napalm<f00> attacks.<*04>
 049,0x96432,<SFF>じゅうリょく むこう行動 (そうび)<CD>「ブレイク」「プレス」を ブロック<*04>,<SFF><f02>Gravity Disable (Passive)<f00>: <f01>Nullify <f02>Break<f00> and <f02>Press<f00> attacks.<*04>
 050,0x96434,<SFF>症状クリア        (そうび)<CD>全ての 症状が つかない<*04>,<SFF><f02>Symptom Clear (Passive)<f00>: <f01>Clears all symptoms.<*04>
-051,0x96436,<SFF>けいぞくリペア行動<CD>じゅんび中も ダメ-ジをかいふく<*04>,<SFF><f02>Continuous Repair<f00>: <f01>Heals damage during preparation.<*04>
+051,0x96436,<SFF>けいぞくリペア行動<CD>じゅんび中も ダメ-ジをかいふく<*04>,<SFF><f02>Continuous Restore<f00>: <f01>Restores armor during preparation.<*04>
 052,0x96438,<SFF>ダメ-ジげんしょう行動<CD>うけるダメ-ジを ヘらす<*04>,<SFF><f02>Damage Reduction<f00>: <f01>Reduces damage taken.<*04>
 053,0x9643a,<SFF>はんしゃ行動<CD>あいての 攻撃を はじきかえす<*04>,<SFF><f02>Reflect<f00>: <f01>Repels enemy attacks.<*04>
 054,0x9643c,<SFF>はんげき行動<CD>つよい攻撃だけを はじきかえす<*04>,<SFF><f02>Counterattack<f00>: <f01>Reflects only strong attacks.<*04>
@@ -67,7 +67,7 @@
 065,0x96452,<SFF>ヘんか(いリょく)行動<CD>「いリょく」のパ-ツに ヘんかする<*04>,<SFF><f02>Change (Power)<f00>: <f01>Change to a <f02>Power<f00> part.<*04>
 066,0x96454,<SFF>ヘんか(症状)行動<CD>「症状」のパ-ツに ヘんかする<*04>,<SFF><f02>Change (Ailment)<f00>: <f01>Change to an <f02>Ailment-Afflicting<f00> part.<*04>
 067,0x96456,<SFF>ヘんか(えんご)行動<CD>「えんご」パ-ツに ヘんかする<*04>,<SFF><f02>Change (Defense)<f00>: <f01>Change to a <f02>Defense<f00> part.<*04>
-068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,<SFF><f02>Change (Recovery)<f00>: <f01>Change to a <f02>Recovery<f00> part.<*04>
+068,0x96458,<SFF>ヘんか(かいふく)行動<CD>「かいふく」パ-ツに ヘんかする<*04>,<SFF><f02>Change (Restore)<f00>: <f01>Change to a <f02>Restore<f00> part.<*04>
 069,0x9645a,<SFF>ヘんか(しえん)行動<CD>「ぼうがい」パ-ツに ヘんかする<*04>,<SFF><f02>Change (Support)<f00>: <f01>Change to a <f02>Disrupt <f00>part.<*04>
 070,0x9645c,<SFF>プラス症状クリア行動<CD>プラス症状を かいじょする<*04>,<SFF><f02>Buff Clear<f00>: <f01>Clears positive effects.<*04>
 071,0x9645e,<SFF>使用ふのう行動<CD>パ-ツが 使えなくなる<*04>,<SFF><f02>Disabled<f00>: <f01>Parts are made unusable.<*04>
@@ -76,13 +76,13 @@
 074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF><f02>Staggered<f00>: <f01>Makes avoiding attacks impossible.<*04>
 075,0x96466,<SFF>ぼうぎょふのう行動<CD>ぼうぎょを できなくする<*04>,<SFF><f02>Vulnerable<f00>: <f01>Makes defending against attacks impossible.<*04>
 076,0x96468,<SFF>フォ-スドレイン行動<CD>メダフォ-スを うばいとる<*04>,<SFF><f02>Force Drain<f00>: <f01>Drains the opponent's Medaforce.<*04>
-077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,<SFF><f02>Flying Medarot<f00>: <f01>Strong in <f02>desert<f00> and <f02>antlion<f00> terrains.<*04>
+077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,<SFF><f02>Flying Medarot<f00>: <f01>Strong in <f02>desert<f00> and <f02>antlion trap<f00> terrains.<*04>
 078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF><f02>Float Medarot<f00>: <f01>Comfortable in any terrains.<*04>
 079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,<SFF><f02>Multi-Leg Medarot<f00>: <f01>Strong in <f02>mountain<f00> and <f02>volcano<f00> terrains.<*04>
 080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,<SFF><f02>Bipedal Medarot<f00>: <f01>Strong in <f02>forest<f00> and <f02>jungle<f00> terrains.<*04>
 081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,<SFF><f02>Vehicle Medarot<f00>: <f01>Strong in <f02>downtown<f00> and <f02>stadium <f00>terrains.<*04>
 082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF><f02>Tank Medarot<f00>: <f01>Not affected by the terrain.<*04>
-083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,<SFF><f02>Diving Medarot<f00>: <f01>Strong in <f02>underwater<f00> and <f02>glacial<f00> fields.<*04>
+083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,<SFF><f02>Diving Medarot<f00>: <f01>Strong in <f02>underwater<f00> and <f02>glacial<f00> terrains.<*04>
 084,0x9647e,<FINAL>,
 085,0x9646c,@0x9646a,@0x9646a
 086,0x9646e,@0x9646a,@0x9646a
