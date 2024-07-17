@@ -28,7 +28,7 @@
 026,0x91a40,"<@RL,Milky,01>ざんねん! このバ-ジョンでは<CD>つうしんできません!<*03>","<@RL,Milky,01>Sorry!<D3>I can't link with this version!<*03>"
 027,0x91a42,"<@RL,Milky,01>つうしん前に セ-ブします!<CD>よろしいですか?<*04>","<@RL,Milky,01>Do you want to save beforehand?<*04>"
 028,0x91a4e,"<@RL,Milky,00>つうしんを あきらめた!","<@RL,Milky,00>Link aborted!"
-029,0x91a50,"<@RL,Milky,02>つうしんネットに せつぞくします!<S46><*04>","<@RL,Milky,02>Link will now connect!"
+029,0x91a50,"<@RL,Milky,02>つうしんネットに せつぞくします!<S46><*04>","<@RL,Milky,02>Link will now connect!<S46><*04>"
 030,0x91a52,"<@RL,Milky,00>つうしんネットヘの せつぞくに<CD>しっぱいした!","<@RL,Milky,00>Link connection failed!"
 031,0x91a54,セ-ブ中!<*04>,Saving!<*04>
 032,0x91a56,<SFF>ともだちと きがるに ロボトル!<*04>,<SFF>A casual robattle with a friend!<*04>
