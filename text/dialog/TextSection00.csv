@@ -68,7 +68,7 @@
 066,0x90084,トラップクリアによって<CD>トラップを セットできなかった!<S46><*04>,You can not set a trap due to Trap Clear!<S46><*04>
 067,0x90086,かくとうトラップを セットした!<CD>「なぐる」「がむしゃら」にダメ-ジ!<S46><*04>,Melee trap set!<D3>Triggers on <f02>Strike<f00> and <f02>Berserk<f00> attacks!<S46><*04>
 068,0x90088,しゃげきトラップを セットした!<CD>「うつ」「ねらいうち」にダメ-ジ!<S46><*04>,Shooting trap set!<D3>Triggers on <f02>Shoot<f00> and <f02>Snipe <f00>attacks!<S46><*04>
-069,0x9008a,メダフォ-スプラントを セットした!<CD>行動するたび メダフォ-スアップ!<S46><*04>,<#NOCHECK_TEXTSPEED>Medaforce Plant was activated!<S46><CF>Actions will charge Medaforce!<S46><*04>
+069,0x9008a,メダフォ-スプラントを セットした!<CD>行動するたび メダフォ-スアップ!<S46><*04>,<#NOCHECK_TEXTSPEED>Medaforce Plant was activated!<S46><CF><D1><S00>Actions will charge Medaforce!<S46><*04>
 070,0x9008c,あいての さくてきを 下げた!<S46><*04>,Scan parameter was reduced!<S46><*04>
 071,0x9008e,さくてきクリアを セットした!<CD>あいての さくてきを ぼうがいする!<S46><*04>,Scan Clear activated!<D3>Scans have been jammed!<S46><*04>
 072,0x90090,あいての いんペいを 下げた!<S46><*04>,Conceal parameter was reduced!<S46><*04>
