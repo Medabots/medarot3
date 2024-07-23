@@ -4,7 +4,7 @@
 002,0x1f0004,"<@RL,DrAki,03>そそ そんなこと ないぞい!<CF><D1>まだまだ デ-タが足リないからって<CD>お前さんに 使ってもらって<CF><D1>デ-タをとろうなんて 少しも<CD>考えておらん!<CF><D1><@RL,DrAki,02>...とは 言いきれないんじゃ<CD>使ってもらえんかのぅ?<CF><D1><@LL,Ikki,04>ははは いいですよ はかせ<CD>ぼくの変形パ-ツの おんがえしです<CF><D1>モニタ-でも 何でもやリますよ<CF><D1><@RL,DrAki,01>うむ では たのんだぞい!","<@RL,DrAki,03>Th-th-that isn't the case!<CF><D1>It isn't that we lack data and need you to gather some!<CF><D1><@RL,DrAki,02>...But I can't really say that I don't want you to use it, you know?<CF><D1><@LL,Ikki,04>Hahaha, it's okay Professor. I owe you one for fixing my transformation parts. I'll test whatever you need me to.<CF><D1><@RL,DrAki,01>Well then, I'll leave it to you!"
 003,0x1f0006,"<@LL,Ikki,00>なぞに つつまれた<CD>「6負かヘい石」だ<CF><D1>全ての メダルは<CD>はじめは こんなのだっかのかも","<@LL,Ikki,00>A <f02>6-Sided Nummulite<f00> that's shrouded in mystery.<CF><D1>Maybe this is how all medals started out."
 004,0x1f0008,"<@LL,Ikki,04>さてと 次の大会に そなえて<CD>家で 休んで おくかな","<@LL,Ikki,04>Now then, I should go home and rest to prepare for the next tournament."
-005,0x1f000a,"<@LL,Ikki,01>ただいま-!<CF><D1><@RL,IkkiMom,02><&BUF0A> ごはんは?<CF><D1><@LL,Ikki,01>食ベる 食ベる!<CF><D1><@RL,IkkiDad,01>どうだった? <&BUF0A><CD>こんどの しょうぶは<CF><D1><@LL,Ikki,04>うん! こんどはね...","<@LL,Ikki,01>I'm home!<CF><D1><@RL,IkkiMom,02>Do you want dinner, <&BUF0A>?<CF><D1><@LL,Ikki,01>Let's eat, let's eat!<CF><D1><@RL,IkkiDad,01>The battle this time, how was it, <&BUF0A>?<CF><D1><@LL,Ikki,04>Yeah! This time..."
+005,0x1f000a,"<@LL,Ikki,01>ただいま-!<CF><D1><@RL,IkkiMom,02><&BUF0A> ごはんは?<CF><D1><@LL,Ikki,01>食ベる 食ベる!<CF><D1><@RL,IkkiDad,01>どうだった? <&BUF0A><CD>こんどの しょうぶは<CF><D1><@LL,Ikki,04>うん! こんどはね...","<@LL,Ikki,01>I'm home!<CF><D1><@RL,IkkiMom,02>Do you want dinner, <&BUF0A>?<CF><D1><@LL,Ikki,01>It's time to eat!<CF><D1><@RL,IkkiDad,01>The battle this time, how was it, <&BUF0A>?<CF><D1><@LL,Ikki,04>Yeah! This time..."
 006,0x1f000c,"<@LL,Ikki,01>あ- おなか いっぱい!<CD>ごちそうさま-!<CF><D1><@RL,IkkiMom,01><&BUF0A><CD>夜ふかし しないで 早く<CF><D1><@RL,IkkiMom,02>ねなきゃ ダ.メ.よ!<CF><D1><@LL,Ikki,04>はぁ-い!<CD>じゃ パパ ママ おやすみなさい<CF><D1><@RL,IkkiDad,01>お-! おやすみ<CF><D1><@RL,IkkiMom,02>おやすみ","<@LL,Ikki,01>Aah, I'm stuffed! Thanks for the food!<CF><D1><@RL,IkkiMom,01><&BUF0A>, get some sleep. Don't stay up too late.<CF><D1><@RL,IkkiMom,02>It's not good for you!<CF><D1><@LL,Ikki,04>OK!<D3>Well, mom and dad, good night.<CF><D1><@RL,IkkiDad,01>Ooh! Good night.<CF><D1><@RL,IkkiMom,02>Good night."
 007,0x1f000e,"<@LL,Ikki,04>夜ふかし するなと 言われると<CD>したくなっちゃうな えヘヘ","<@LL,Ikki,04>Whenever I get told not to stay up, I always want to. <f08>Ehehe<f00>."
 008,0x1f0010,"<@LL,Ikki,05>下に おリたら<CD>ママに おこられちゃうや","<@LL,Ikki,05>Mom'll get mad if I go downstairs."
@@ -33,13 +33,13 @@
 031,0x1f003e,"<@RL,Man,00>ああっ いそがしい いそがしい!<CD>話しかけるんじゃなぁい!","<@RL,Man,00>Aah, I've got so much to do!<D3>There's no time to talk!"
 032,0x1f0040,"<@RL,Man,00>貝たまえ!<CD>ここの コンピュ-タ 全てに<CF><D1>メダロットの ぼうだいな<CD>デ-タが 入っているんだよ!","<@RL,Man,00>Look here!<D3>This computer is filled<CF><D1>with a huge amount of<D3>Medarot data!"
 033,0x1f0042,"<@RL,Lady2,00>ここは きゅうけいしつに<CD>なっているの<CF><D1>ねている人も いるから<CD>しずかに してあげてね","<@RL,Lady2,00>This is the break room.<CF><D1>People are resting here, so<D3>please keep it down."
-034,0x1f0044,"<@RL,ScientistMale,00>ミシン メダロットは<CD>うれるの...グ-グ-","<@RL,ScientistMale,00>The sales of the sewing-type Medarot... *snore*"
+034,0x1f0044,"<@RL,ScientistMale,00>ミシン メダロットは<CD>うれるの...グ-グ-","<@RL,ScientistMale,00>The sales of the sewing-type Medarot... <f08>snore"
 035,0x1f0046,"<@RL,Lady2,00>すいみん ぶそ...く...","<@RL,Lady2,00>I need... sl...eep..."
 036,0x1f0048,"<@RL,ScientistMale,00>セリフの 長さが<CD>頭の よさじゃないぞ!<CF><D1><@LL,Ikki,00>それだけ?<CF><D1><@RL,ScientistMale,00>...それだけ","<@RL,ScientistMale,00>Talking a lot doesn't make mean that you're smart!<CF><D1><@LL,Ikki,00>Is that all?<CF><D1><@RL,ScientistMale,00>...That's all."
-037,0x1f004a,"<@LL,Ikki,00>たいくう メダロット<CD>「フロ-トスピナ-」","<@LL,Ikki,00>It's the anti-air Medarot Float Spinner."
-038,0x1f004c,"<@LL,Ikki,00>ぼうぎょ メダロット<CD>「マンマンモス」","<@LL,Ikki,00>It's the defense Medarot Man Mammoth."
-039,0x1f004e,"<@LL,Ikki,00>チャ-ジ メダロット<CD>「コノトラクタ-」","<@LL,Ikki,00>It's the charge Medarot Constructor."
-040,0x1f0050,"<@LL,Ikki,00>たきのう メダロット<CD>「ミラクルミシン」","<@LL,Ikki,00>It's the multifunction Medarot Miracle Machine."
+037,0x1f004a,"<@LL,Ikki,00>たいくう メダロット<CD>「フロ-トスピナ-」","<@LL,Ikki,00>It's the anti-air Medarot <f02>Float Spinner."
+038,0x1f004c,"<@LL,Ikki,00>ぼうぎょ メダロット<CD>「マンマンモス」","<@LL,Ikki,00>It's the defense Medarot <f02>Man Mammoth."
+039,0x1f004e,"<@LL,Ikki,00>チャ-ジ メダロット<CD>「コノトラクタ-」","<@LL,Ikki,00>It's the charge Medarot <f02>Constructor."
+040,0x1f0050,"<@LL,Ikki,00>たきのう メダロット<CD>「ミラクルミシン」","<@LL,Ikki,00>It's the multifunction <f02>Medarot Miracle Machine."
 041,0x1f0052,"<@RL,ScientistMale,00>この ステ-ジでの ロボトルは<CD>メダロット社の デ-タベ-スに<CF><D1>ちくせきされ 次の メダロットの<CD>かいはつに 生かされるんだよ","<@RL,ScientistMale,00>Data from robattles on this stage is stored in the<CF><D1>Medarots Corporation database.<CF><D1>That way, we can put it to good use when developing new Medarots."
 042,0x1f0054,"<@RL,ScientistMale,00>かいはつ中の メダロットの<CD>チェックをしているんだよ<CF><D1>すいしんが 行動の スピ-ドに<CD>えいきょうするから ちゅういしないと","<@RL,ScientistMale,00>I'm checking the Medarots in development.<CF><D1>we need to be careful because propulsion affects the speed of actions."
 043,0x1f0056,"<@RL,Lady,00>まだだ!<CD>まだ 早すぎる....","<@RL,Lady,00>Not quite yet! It's still too early..."
@@ -122,8 +122,8 @@
 120,0x1f00f0,"<@LL,Ikki,00>ここの ビルって だれもいないなぁ<CD>ちょっと きけんじゃない?","<@LL,Ikki,00>There's no one in this building...<D3>Isn't that a little dangerous?"
 121,0x1f00f2,"<@RL,Man,00>うい-っ<CD>もう のめましぇ-んっ!","<@RL,Man,00>Urk,<D3>I can't drink anymore!"
 122,0x1f00f4,"<@LL,Ikki,07>うわっ ジュ-スくさいっ!","<@LL,Ikki,07>Woah, it reeks of juice!"
-123,0x1f00f6,"<@RL,Lady2,00>ふんふ-んっ♪<CD>ふんふふ-ん♪","<@RL,Lady2,00>Hm hmm ♪<D3>Hm hm hmm ♪"
-124,0x1f00f8,"<@RL,Lady2,00>きゃっ!!<CD>おどかさないでちょうだい","<@RL,Lady2,00>Eeek!!<D3>Don't scare me like that!"
+123,0x1f00f6,"<@RL,Lady2,00>ふんふ-んっ♪<CD>ふんふふ-ん♪","<@RL,Lady2,00><f08>Hm hmm ♪<D3>Hm hm hmm ♪"
+124,0x1f00f8,"<@RL,Lady2,00>きゃっ!!<CD>おどかさないでちょうだい","<@RL,Lady2,00><f08>Eeek!!<f00><D3>Don't scare me like that!"
 125,0x1f00fa,"<@RL,BipedMedabot,00>メダロットの アニメは<CD>ギャグの きわどさが いいよな","<@RL,BipedMedabot,00>The Medarot show had some<D3>good gags."
 126,0x1f00fc,"<@RL,Boy,00>う-ん<CD>ムニャムニャ...","<@RL,Boy,00>Hmm,<D3>mumble mumble..."
 127,0x1f00fe,"<@RL,Lady2,00>はぁ- やっと ねたわ<CD>ふたごの 子どもって ほんと 大変<CF><D1>子もリメダロットでも 買おうかしら?","<@RL,Lady2,00>Haa, they're finally sleeping.<D3>Having twins sure is hard,<CF><D1>maybe I should get a<D3>sitter-type Medarot."
@@ -194,7 +194,7 @@
 192,0x1f0180,"<@RL,Man,00>どうじょうは いらないっ!","<@RL,Man,00>I don't need your pity!"
 193,0x1f0182,"<@RL,Boy,00>ここの こうしきを こうやって<CD>それで...","<@RL,Boy,00>So I use the formula this<D3>way..."
 194,0x1f0184,"<@LR,Karin,04>あの <&BUF0A>くんっていう<CD>ちょんまげが ステキな<CF><D1>男の子 知リませんか?<CF><D1><@RL,Boy,00>ぼ ぼくは いそがしいんだ<CD>あとに してくれよ...","<@LR,Karin,04>Um, I'm looking for a boy called <&BUF0A>.<CF><D1>His hair is in a cool ponytail.<CF><D1>Have you seen him?<CF><D1><@RL,Boy,00>I-I'm busy right now.<D3>Please talk to me later."
-195,0x1f0186,"<@RL,Girl,00>きゃ-っ!!","<@RL,Girl,00>Kiyahhh!!"
+195,0x1f0186,"<@RL,Girl,00>きゃ-っ!!","<@RL,Girl,00><f08>Kiyahhh!!"
 196,0x1f0188,"<@RL,Girl,00>いやぁ-っ!!","<@RL,Girl,00>Get out!!"
 197,0x1f018a,"<@RL,Lady2,00>ヘんた-い!!","<@RL,Lady2,00>Pervert!!"
 198,0x1f018c,"<@RL,Lady,00>いやぁ-ん♥","<@RL,Lady,00>Oh noooo...♥"
@@ -218,38 +218,38 @@
 216,0x1f01b0,"<@RL,Boy,00>いいなぁ あの おねえさん<CF><D1>ぼくの うちにも<CD>あんな おねえさんが いたら...","<@RL,Boy,00>What a lovely lady.<CF><D1>I wish she were my sister..."
 217,0x1f01b2,"<@RL,Boy,00>いいなぁ このパ-ツ<CF><D1>ぼくのチ-ムにも<CD>こんな パ-ツが あったら...","<@RL,Boy,00>These parts are so awesome...<CF><D1>I could make a whole other<D3>team if I had these parts..."
 218,0x1f01b4,"<@LL,Ikki,00>メダロッタ-ズ きねんメダルだ<CD>おみやげに けっこう いいよね","<@LL,Ikki,00>It's a Medarotters<D3>commemoration Medal. It<CF><D1>would make a fantastic<D3>souvenir!"
-219,0x1f01b6,コチラノ メダリンクデノ<CD>アナタノ ランクノ ウケツケハ<CF><D1>シュウリョウシマシタ<CD>ツギノ ランクノ メダリンクカラ<CF><D1>アクセスシテクダサイ,"<f08>You can no longer use this MedaLink at your rank, please use the next ranks' MedaLink to access."
-220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f08>You are now the top ranker!<f00><CF><D1><f08>Thank you for your use.
-221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 40 to rank 36.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-222,0x1f01bc,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-223,0x1f01be,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-224,0x1f01c0,コチラノ メダリンクデハ<CD>ランク35カラ ランク31マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 35 to rank 31.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-225,0x1f01c2,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-226,0x1f01c4,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-227,0x1f01c6,コチラノ メダリンクデハ<CD>ランク30カラ ランク26マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 30 to rank 26.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-228,0x1f01c8,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-229,0x1f01ca,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-230,0x1f01cc,コチラノ メダリンクデハ<CD>ランク25カラ ランク21マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 25 to rank 21.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-231,0x1f01ce,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-232,0x1f01d0,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-233,0x1f01d2,コチラノ メダリンクデハ<CD>ランク20カラ ランク16マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 20 to rank 16.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-234,0x1f01d4,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-235,0x1f01d6,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-236,0x1f01d8,コチラノ メダリンクデハ<CD>ランク15カラ ランク11マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 15 to rank 11.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-237,0x1f01da,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-238,0x1f01dc,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-239,0x1f01de,コチラノ メダリンクデハ<CD>ランク10カラ ランク6マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 10 to rank 6.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-240,0x1f01e0,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-241,0x1f01e2,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-242,0x1f01e4,コチラノ メダリンクデハ<CD>ランク5カラ ランク1マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f08>This MedaLink is for from<D3>rank 5 to rank 1.<CF><D1>Would you lke to access this<D3>MedaLink?<*04>
-243,0x1f01e6,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f08>Awaiting connection...<CF><D1>Please await a challenger's<D3>arrival.
-244,0x1f01e8,オメデトウゴザイマス<CF><D1>ゲンザイ アナタハ サイコウノ<CD>ランカ-ト ナリマシタ!<CF><D1>カウンタ-デ ケイヒンヲ<CD>オウケトリ クダサイ<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f08>Congratulations!<CF><D1>You have become the highest<D3>ranked player!<CF><D1>Please pick up your prize at<D3>the counter.<CF><D1>Thank you very much for<D3>visiting.
-245,0x1f01ea,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f08>Thank you very much, we look<D3>forward to your return!"
-246,0x1f01ec,"<@LL,Ikki,00>「ジャンプでゴ-ル!」の ゲ-ムだ<CD>1回100¥だけど やってみる?<*04>","<@LL,Ikki,00>It's a ""Jump for the Goal"" game.<D3>At 100¥ a game, should I play?<*04>"
+219,0x1f01b6,コチラノ メダリンクデノ<CD>アナタノ ランクノ ウケツケハ<CF><D1>シュウリョウシマシタ<CD>ツギノ ランクノ メダリンクカラ<CF><D1>アクセスシテクダサイ,"<f02>You can no longer use this MedaLink at your rank, please use the next ranks' MedaLink to access."
+220,0x1f01b8,ゲンザイ アナタハ<CD>トップランカ-デス<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f02>You are now the top ranker!<CF><f00><D1><f02>Thank you for your use.
+221,0x1f01ba,コチラノ メダリンクデハ<CD>ランク40カラ ランク36マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 40 to rank 36.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+222,0x1f01bc,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+223,0x1f01be,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+224,0x1f01c0,コチラノ メダリンクデハ<CD>ランク35カラ ランク31マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 35 to rank 31.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+225,0x1f01c2,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+226,0x1f01c4,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+227,0x1f01c6,コチラノ メダリンクデハ<CD>ランク30カラ ランク26マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 30 to rank 26.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+228,0x1f01c8,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+229,0x1f01ca,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+230,0x1f01cc,コチラノ メダリンクデハ<CD>ランク25カラ ランク21マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 25 to rank 21.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+231,0x1f01ce,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f09><D1><f02>Please await a challenger's<D3>arrival.
+232,0x1f01d0,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+233,0x1f01d2,コチラノ メダリンクデハ<CD>ランク20カラ ランク16マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 20 to rank 16.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+234,0x1f01d4,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+235,0x1f01d6,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+236,0x1f01d8,コチラノ メダリンクデハ<CD>ランク15カラ ランク11マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 15 to rank 11.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+237,0x1f01da,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+238,0x1f01dc,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+239,0x1f01de,コチラノ メダリンクデハ<CD>ランク10カラ ランク6マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 10 to rank 6.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+240,0x1f01e0,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+241,0x1f01e2,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+242,0x1f01e4,コチラノ メダリンクデハ<CD>ランク5カラ ランク1マデノ<CF><D1>ウケツケヲ オコナッテイマス<CD>メダリンクニ アクセスシマスカ?<*04>,<f02>This MedaLink is for from<D3>rank 5 to rank 1.<CF><f00><D1><f02>Would you lke to access this<D3>MedaLink?<f00><*04>
+243,0x1f01e6,ツウシン タイキチュウ...<CF><D1>チョウセンシャガ アラワレルマデ<CD>オマチクダサイ,<f02>Awaiting connection...<CF><f00><D1><f02>Please await a challenger's<D3>arrival.
+244,0x1f01e8,オメデトウゴザイマス<CF><D1>ゲンザイ アナタハ サイコウノ<CD>ランカ-ト ナリマシタ!<CF><D1>カウンタ-デ ケイヒンヲ<CD>オウケトリ クダサイ<CF><D1>ゴリヨウ アリガトウ ゴザイマシタ,<f02>Congratulations!<CF><f00><D1><f02>You have become the highest<D3>ranked player!<CF><f00><D1><f02>Please pick up your prize at<D3>the counter.<CF><f00><D1><f02>Thank you very much for<D3>visiting.
+245,0x1f01ea,アリガトウゴザイマシタ<CD>マタノ ゴリヨウ オマチシテオリマス,"<f02>Thank you very much, we look<D3>forward to your return!"
+246,0x1f01ec,"<@LL,Ikki,00>「ジャンプでゴ-ル!」の ゲ-ムだ<CD>1回100¥だけど やってみる?<*04>","<@LL,Ikki,00>It's a <f02>Jump for the Goal <f00>game.<D3>At 100¥ a game, should I play?<*04>"
 247,0x1f01ee,"<@LL,Ikki,03>まけちゃった...","<@LL,Ikki,03>I lost..."
 248,0x1f01f0,"<@LL,Ikki,05>お金が ないや...","<@LL,Ikki,05>I don't have the money..."
 249,0x1f01f2,"<@LL,Ikki,00>やっぱリ いいや","<@LL,Ikki,00>I'm fine after all."
-250,0x1f01f4,"<@LL,Ikki,00>「セレクト隊 ききいっぱつ!」の<CD>ゲ-ムだ<CF><D1>1回200¥だけど やってみる?<*04>","<@LL,Ikki,00>It's a ""Select Corp's Close Call"" game.<D3>At 200¥ a game, should I play?<*04>"
+250,0x1f01f4,"<@LL,Ikki,00>「セレクト隊 ききいっぱつ!」の<CD>ゲ-ムだ<CF><D1>1回200¥だけど やってみる?<*04>","<@LL,Ikki,00>It's a <f02>Select Corp's Close Call<f00> game.<D3>At 200¥ a game, should I play?<*04>"
 251,0x1f01f6,"<@LL,Ikki,03>まけちゃった...","<@LL,Ikki,03>I lost..."
 252,0x1f01f8,"<@LL,Ikki,05>お金が ないや...","<@LL,Ikki,05>I don't have the money..."
 253,0x1f01fa,"<@LL,Ikki,00>やっぱリ いいや","<@LL,Ikki,00>I'm fine after all."
@@ -277,7 +277,7 @@
 275,0x1f0226,"<@LL,Ikki,04>トリケラトプス型メダロットだ<CD>どっしリしてて がんじょうそう","<@LL,Ikki,04>It's a triceratops-type Medarot. Its bulk and weight seem solid."
 276,0x1f0228,"<@RL,MultiLeggedMedabot,00>おそうじ してると<CD>心が あらわれる ようです","<@RL,MultiLeggedMedabot,00>Cleaning seems to soothe the<D3>soul."
 277,0x1f022a,"<@RL,MultiLeggedMedabot,00>おそうじ とっても<CD>気もちE-♥","<@RL,MultiLeggedMedabot,00>Cleaning is so nice ♥"
-278,0x1f022c,"<@RL,Lady,00>ぐが- ぐご-<CF><D1><@LL,Ikki,05>すごい いびき","<@RL,Lady,00>Guuugaa...Guuugoo...<CF><D1><@LL,Ikki,05>What terrible snoring."
+278,0x1f022c,"<@RL,Lady,00>ぐが- ぐご-<CF><D1><@LL,Ikki,05>すごい いびき","<@RL,Lady,00><f08>Guuugaa...Guuugoo...<f00><CF><D1><@LL,Ikki,05>What terrible snoring."
 279,0x1f022e,"<@RL,Lady,00>メダロットたちが よく<CD>はたらいてくれるから たすかるわ","<@RL,Lady,00>Medarots often do our work<D3>for us. That makes them quite helpful!"
 280,0x1f0230,"<@RL,SwimmingMedabot,00>ここは この町1番の<CD>お金もちの 家なんだよ!","<@RL,SwimmingMedabot,00>This is the richest household<D3>in town, you know!"
 281,0x1f0232,"<@RL,SwimmingMedabot,00>「アワノざいばつ」と言えば<CD>とにかく すごい お金持ちなんだ!<CF><D1>...でも 名前が ちょっと<CD>バブルな かんじ","<@RL,SwimmingMedabot,00>The Awano Financial Group is<D3>incredibly rich!<CF><D1>...but I have a feeling it's just<D3>temporary economic growth."

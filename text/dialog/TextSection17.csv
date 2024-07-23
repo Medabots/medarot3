@@ -67,7 +67,7 @@
 065,0x1f8082,"<@LL,Ikki,05>だって いきなリ雨が...<CF><D1><@RL,Erika,00>ばかね ちょっと まっていれば <CD>すぐに雨は あがったのに","<@LL,Ikki,05>It's the sudden downpour!<CF><D1><@RL,Erika,00>Stupid. You could've waited for the rain to let up."
 066,0x1f8084,"<@LL,Ikki,07>ええっ!? どうして分かったの?","<@LL,Ikki,07>Huh?! How can you tell?"
 067,0x1f8086,"<@RL,Hachiro,02>ここの お天気は かんぜんに<CD>コントロ-ル されているのサ<CF><D1>だから みんな いつ 雨がふって<CD>いつ はれるのか 分かっているのサ<CF><D1><@LL,Ikki,05>もっと早く おしえてくれたら... <CF><D1><@RL,Hachiro,03>おしえようとしたら キミが<CD>とび出して 行ったのサ<CF><D1><@RL,Hachiro,02>メダリンピックは 「ジオド-ム」って<CD>場所で ひらかれるけど<CF><D1>時間は あるから まず<CD>ア-スモ-ルを 貝学するといいサ<CF><D1>「ジオフロント科学研究所」に<CD>行けば あんないしてくれるよ<CF><D1><@RL,Hachiro,00>さて ぼくの 出番は ここまでサ<CF><D1>キミたちが かえるときに<CD>また むかえに 来るよ<CF><D1><@LL,Ikki,07>あれ!? かえっちゃうの?<CF><D1><@RL,Hachiro,02>ふっ きみたちとちがって <CD>ぼくは いそがしいのサ<CF><D1>じゃ 楽しんでくれたまえ","<@RL,Hachiro,02>The weather here is all controlled.<CF><D1>That's why everyone knows when it will rain and when it will let up.<CF><D1><@LL,Ikki,05>You could've told me sooner...<CF><D1><@RL,Hachiro,03>Except you were already gone before I had the chance.<CF><D1><@RL,Hachiro,02>The Medalympics will be held in the GeoDome.<CF><D1>There's still time though, so feel free to take a look around the Earth Mall.<CF><D1>Go to the GeoFront Scientific Laboratory if you need a guide.<CF><D1><@RL,Hachiro,00>That's all from me for now.<CF><D1>I'll come pick you up when it's time to return.<CF><D1><@LL,Ikki,07>Huh!? You're going back?<CF><D1><@RL,Hachiro,02>Heh, unlike you people, I'm quite busy.<CF><D1>Have fun."
-068,0x1f8088,"<@RL,Hachiro,00>そうそう... もうひとつ<CF><D1>今は まだ ア-スモ-ルの中では<CD>ミニハンドルは しようきんしだよ<CF><D1><@RL,Hachiro,02>それじゃあね","<@RL,Hachiro,00>Oh yeah... One more thing.<CF><D1>You can't use Mini Handle in Earth Mall for the time being.<CF><D1><@RL,Hachiro,02>Bye then."
+068,0x1f8088,"<@RL,Hachiro,00>そうそう... もうひとつ<CF><D1>今は まだ ア-スモ-ルの中では<CD>ミニハンドルは しようきんしだよ<CF><D1><@RL,Hachiro,02>それじゃあね","<@RL,Hachiro,00>Oh yeah... One more thing.<CF><D1>You can't use a Mini Handle in Earth Mall for the time being.<CF><D1><@RL,Hachiro,02>Bye then."
 069,0x1f808a,"<@RL,Koji,02>よおし! 地ていとしで<CD>ロボトルだ! 行くぞ カリン!","<@RL,Koji,02>Alright! It's time for robattles in the underground city! Let's go, Karin!"
 070,0x1f808c,"<@RL,Karin,06>あ! コウジくん!","<@RL,Karin,06>Koji, wait!"
 071,0x1f808e,"<@RL,Karin,04>コウジくんたら はしゃいじゃって<CD>しょうがないですわね","<@RL,Karin,04>Geez, now he's the one who can't sit still."
@@ -89,12 +89,12 @@
 087,0x1f80ae,"<@RL,ScientistMale,00>はつ電所は 立ち入リきんしだよ<CF><D1>どうしても 貝学したいなら<CD>おとなの人と いっしょにおいで","<@RL,ScientistMale,00>You can't enter the power plant.<CF><D1>If you really want to take a look around, you need to ask an adult to accompany you."
 088,0x1f80b0,"<@RL,ScientistMale,00>おや? キミはメダリンピックを<CD>貝に行かないのかい","<@RL,ScientistMale,00>Oh? Aren't you going to see the Medalympics?"
 089,0x1f80b2,"<@LL,Ikki,06>そうだ! ジオド-ムに 行かなきゃ<CD>よリ道してる 場合じゃない!","<@LL,Ikki,06>Oh yeah! I gotta go to the GeoDome instead of loitering around here!"
-090,0x1f80b4,メダリンピック じゅんび中につき<CD>ご入場できません,No entry until the start of Medalympics.
-091,0x1f80b6,メダリンピック じゅんび中につき<CD>ご入場できません,No entry until the start of Medalympics.
+090,0x1f80b4,メダリンピック じゅんび中につき<CD>ご入場できません,<f02>No entry until the start of Medalympics.
+091,0x1f80b6,メダリンピック じゅんび中につき<CD>ご入場できません,<f02>No entry until the start of Medalympics.
 092,0x1f80b8,"<@LL,Ikki,00>はやく はじまらないかな...","<@LL,Ikki,00>I'm tired of waiting..."
-093,0x1f80ba,メダリンピック じゅんび中につき<CD>ご入場できません,No entry until the start of Medalympics.
+093,0x1f80ba,メダリンピック じゅんび中につき<CD>ご入場できません,<f02>No entry until the start of Medalympics.
 094,0x1f80bc,"<@LR,Erika,00>メダリンピックが はじまる前に<CD><&BUF0A>を 貝つけなきゃ","<@LR,Erika,00>I need to find <&BUF0A> before the Medalympics begin."
-095,0x1f80be,メダリンピック じゅんび中につき<CD>ご入場できません,No entry until the start of Medalympics.
+095,0x1f80be,メダリンピック じゅんび中につき<CD>ご入場できません,<f02>No entry until the start of Medalympics.
 096,0x1f80c0,"<@LR,Koji,01>メダリンピックが まちどおしいぜ!","<@LR,Koji,01>I'm really looking forward to it!"
 097,0x1f80c2,"<@LR,Koji,02>おっと その前に<CD><&BUF0A>を さがさないとな","<@LR,Koji,02>Whoops, I better find <&BUF0A> first."
 098,0x1f80c4,"<@LL,Ikki,00>ここは きっさ店だ<CD>...1人で 入ってもなぁ","<@LL,Ikki,00>It's a cafe... I'm not sure about going in alone."
@@ -136,10 +136,10 @@
 134,0x1f810c,"<@RL,Karin,04><&BUF0A>くん<CF><D1><@LL,Ikki,04>カリンちゃん 何を のんでるの?<CF><D1><@RL,Karin,04>ストロベリ-ミルクですの<CF><D1><@LL,Ikki,04>おいしそうだね♥","<@RL,Karin,04>Oh, <&BUF0A>.<CF><D1><@LL,Ikki,04>What are you drinking, Karin?<CF><D1><@RL,Karin,04>Strawberry milk!<CF><D1><@LL,Ikki,04>Sounds tasty ♥"
 135,0x1f810e,"<@RL,Karin,05>「きしょうかんリ所」ですか?<CD>どこにあるのか 分かリませんわ<CF><D1><@RL,Karin,04>あっ でもアリカさんとなら<CD>コンビニから もどって来る時に<CF><D1>道で すれちがいましたわよ<CF><D1><@LL,Ikki,04>あリがとう カリンちゃん♥","<@RL,Karin,05>The Weather Station? I have no idea where it is.<CF><D1><@RL,Karin,04>Oh, but if you're looking for Arika, we passed each other while I was on my way back from the convenience store.<CF><D1><@LL,Ikki,04>Thanks, Karin ♥"
 136,0x1f8110,"<@RL,Lady2,00>小学校なら この上を行ったとこよ","<@RL,Lady2,00>The elementary school? You can find it to the top from here."
-137,0x1f8112,"<@RL,Lady2,00>「ジオフロント科学研究所」なら<CD>道をはさんで ジオド-ムのむかいよ","<@RL,Lady2,00>GeoFront Scientific Laboratory? It's just across the street from the GeoDome."
+137,0x1f8112,"<@RL,Lady2,00>「ジオフロント科学研究所」なら<CD>道をはさんで ジオド-ムのむかいよ","<@RL,Lady2,00><f02>The GeoFront Scientific Laboratory?<f00> It's just across the street from the GeoDome."
 138,0x1f8114,"<@RL,Lady2,00>ジオド-ムは メダリンピックの<CD>じゅんび中で 今は入れないわよ","<@RL,Lady2,00>You can't enter the GeoDome until the start of the Medalympics."
-139,0x1f8116,"<@RL,Lady2,00>「気しょう かんリ所」は<CD>ジオド-ムの ななめ上にあるわ","<@RL,Lady2,00>The Weather Station is diagonally up from the GeoDome."
-140,0x1f8118,"<@RL,Lady2,00>「メダルはつ電所」は<CD>ア-スモ-ルの 中心にあるわ<CF><D1>ここの全電力を まかなっているのよ<CD>まさにア-スモ-ルの しんぞうね","<@RL,Lady2,00>The Medal Power Plant is at the center of Earth Mall.<CF><D1>Generating enough energy to power the entire area, it can be considered the heart of the mall."
+139,0x1f8116,"<@RL,Lady2,00>「気しょう かんリ所」は<CD>ジオド-ムの ななめ上にあるわ","<@RL,Lady2,00><f02>The Weather Station<f00> is diagonally up from the GeoDome."
+140,0x1f8118,"<@RL,Lady2,00>「メダルはつ電所」は<CD>ア-スモ-ルの 中心にあるわ<CF><D1>ここの全電力を まかなっているのよ<CD>まさにア-スモ-ルの しんぞうね","<@RL,Lady2,00><f02>The Medal Power Plant i<f00>s at the center of Earth Mall.<CF><D1>Generating enough energy to power the entire area, it can be considered the heart of the mall."
 141,0x1f811a,"<@LR,Erika,00>すみません ちょんまげ頭の<CD>男の子を 貝かけませんでしたか?<CF><D1><@RL,Lady2,00>さあ ここ しばらくは貝てないけど<CF><D1><@LR,Erika,00>じゃあ ロボロボ団は?<CF><D1><@RL,Lady2,00>ほかの人に 聞いてちょうだい","<@LR,Erika,00>Excuse me, have you seen a boy with a ponytail?<CF><D1><@RL,Lady2,00>Not sure, at least not recently.<CF><D1><@LR,Erika,00>How about the RoboRobo Gang?<CF><D1><@RL,Lady2,00>Ask someone else."
 142,0x1f811c,"<@RL,Lady2,00>ちょんまげくんなら 貝てないわよ","<@RL,Lady2,00>I don't see any boys with a ponytail."
 143,0x1f811e,"<@LR,Koji,00>あの すみません...<CF><D1><@RL,Lady2,00>道に まよったの?<CF><D1><@LR,Koji,00>ちょんまげみたいに かみをくくった<CD>男の子を 貝かけませんでしたか?<CF><D1><@RL,Lady2,00>このあたリには いないみたいよ","<@LR,Koji,00>Um, excuse me...<CF><D1><@RL,Lady2,00>Are you lost?<CF><D1><@LR,Koji,00>Have you seen a boy who ties his hair into a ponytail?<CF><D1><@RL,Lady2,00>I don't think I've seen anyone like that nearby."
@@ -201,19 +201,19 @@
 199,0x1f818e,"<@RL,Boy,00>あリがとう","<@RL,Boy,00>Thanks."
 200,0x1f8190,"<@RL,Boy,00>あれ? キミは メダリンピックを<CD>貝に 行かないの?","<@RL,Boy,00>Huh? You're not going to watch the Medalympics?"
 201,0x1f8192,"<@LL,Ikki,07>あっ! しまった!<CD>ジオド-ムに 行かなくっちゃ!","<@LL,Ikki,07>Oh no! I gotta hurry to GeoDome!"
-202,0x1f8194,"青い空に まっ赤な たいよう<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,00>うん!?","It's a drawing of a red sun and the blue sky.<CF><D1>Along with several Medarots drawn beneath. <CF><D1><@LL,Ikki,00>Hm!?"
+202,0x1f8194,"青い空に まっ赤な たいよう<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,00>うん!?","<f02>It's a drawing of a red sun and the blue sky.<CF><f00><D1><f02>Along with several Medarots drawn beneath. <f00><CF><D1><@LL,Ikki,00>Hm!?"
 203,0x1f8196,"<@LL,Ikki,07>あっ! このメダロットのよこの絵<CD>アリカじゃないか!?<CF><D1><@LL,Ikki,04>カメラを持ってるしな...<CD>うん アリカにちがいない!","<@LL,Ikki,07>Hey, isn't that a drawing of Arika next to the Medarots!?<CF><D1><@LL,Ikki,04>She's carrying a camera... There's no mistaking it!"
-204,0x1f8198,青い空に まっ赤な たいよう<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,It's a drawing of a red sun and the blue sky.<CF><D1>Along with several Medarots drawn beneath.
-205,0x1f819a,"青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,07>あっ!<CF><D1><@LL,Ikki,04>これ... ひょっとして ボクかな?<CD>えヘヘっ うれしいなっ♪","It's a drawing of the blue sky and white clouds.<CF><D1>Along with several Medarots drawn beneath.<CF><D1><@LL,Ikki,07>Hey!<CF><D1><@LL,Ikki,04>Is this... me? Hee hee! It makes me happy ♪"
-206,0x1f819c,青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,It's a drawing of the blue sky and white clouds.<CF><D1>Along with several Medarots drawn beneath.
-207,0x1f819e,"青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,07>あっ!<CF><D1><@LL,Ikki,04>コウジと カリンちゃんの絵も<CD>あるよ!","It's a drawing of the blue sky and white clouds.<CF><D1>Along with several Medarots drawn beneath.<CF><D1><@LL,Ikki,07>Hey!<CF><D1><@LL,Ikki,04>There's a drawing of Koji and Karin in there, too!"
+204,0x1f8198,青い空に まっ赤な たいよう<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,<f02>It's a drawing of a red sun and the blue sky.<CF><f00><D1><f02>Along with several Medarots drawn beneath.
+205,0x1f819a,"青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,07>あっ!<CF><D1><@LL,Ikki,04>これ... ひょっとして ボクかな?<CD>えヘヘっ うれしいなっ♪","<f02>It's a drawing of the blue sky and white clouds.<CF><f00><D1><f02>Along with several Medarots drawn beneath.<f00><CF><D1><@LL,Ikki,07>Hey!<CF><D1><@LL,Ikki,04>Is this... me? Hee hee! It makes me happy ♪"
+206,0x1f819c,青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,<f02>It's a drawing of the blue sky and white clouds.<CF><f00><D1><f02>Along with several Medarots drawn beneath.
+207,0x1f819e,"青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれている<CF><D1><@LL,Ikki,07>あっ!<CF><D1><@LL,Ikki,04>コウジと カリンちゃんの絵も<CD>あるよ!","<f02>It's a drawing of the blue sky and white clouds.<CF><f00><D1><f02>Along with several Medarots drawn beneath.<f00><CF><D1><@LL,Ikki,07>Hey!<CF><D1><@LL,Ikki,04>There's a drawing of Koji and Karin in there, too!"
 208,0x1f81a0,"<@LL,Ikki,05>...って なんで コウジと<CD>カリンちゃんは 2人 いっしょに<CF><D1>かいてあるの!?<CF><D1><@LL,Ikki,03>どうせなら ボクと カリンちゃんを<CD>いっしょに かいてほしかったなぁ","<@LL,Ikki,05>Wait a sec... Why are Koji and Karin in this drawing together!?<CF><D1><@LL,Ikki,03>I wish he could've drawn me and Karin instead..."
-209,0x1f81a2,青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,It's a drawing of the blue sky and white clouds.<CF><D1>Along with several Medarots drawn beneath.
+209,0x1f81a2,青い空に 白い くも<CF><D1>その下には メダロットたちの絵が<CD>かかれいてる,<f02>It's a drawing of the blue sky and white clouds.<CF><f00><D1><f02>Along with several Medarots drawn beneath.
 210,0x1f81a4,"かベに 絵が かいてある<CF><D1><@LL,Ikki,04>にじの絵か... きれいだな<CD>だれが かいたんだろう","There's a drawing on the wall.<CF><D1><@LL,Ikki,04>A rainbow... It's beautiful. I wonder who drew it."
 211,0x1f81a6,"<@LL,Ikki,00>......<CF><D1><@LL,Ikki,04>ぼくも かいちゃお♥","<@LL,Ikki,00>......<CF><D1><@LL,Ikki,04>I'mma draw something, too ♥"
-212,0x1f81a8,"<@LL,Ikki,01>じじゃ-ん♪<CD>だいして にじの下のコガネの花","<@LL,Ikki,01>Ta-dah ♪<D3>I title it ""A Golden Flower Under the Rainbow""."
-213,0x1f81aa,"7色にかがやく にじの絵の下に<CD>ヘたくそなチュ-リップ(?)が<CF><D1>かかれている<CF><D1><@LL,Ikki,04>うん われながら けっさくじゃん♪","It's a drawing of a seven-colored rainbow.<CF><D1>Along with a poorly-drawn tulip(?) drawn beneath.<CF><D1><@LL,Ikki,04>Yup, now this is a masterpiece ♪"
-214,0x1f81ac,7色にかがやく にじの絵の下に<CD>ヘたくそなチュ-リップ(?)が<CF><D1>かかれている,It's a drawing of a seven-colored rainbow.<CF><D1>Along with a poorly-drawn tulip(?) drawn beneath.
+212,0x1f81a8,"<@LL,Ikki,01>じじゃ-ん♪<CD>だいして にじの下のコガネの花","<@LL,Ikki,01>Ta-dah ♪<D3>I'll call it ""A Golden Flower Under the Rainbow""."
+213,0x1f81aa,"7色にかがやく にじの絵の下に<CD>ヘたくそなチュ-リップ(?)が<CF><D1>かかれている<CF><D1><@LL,Ikki,04>うん われながら けっさくじゃん♪","<f02>It's a drawing of a seven-colored rainbow.<CF><f00><D1><f02>Along with a poorly-drawn tulip(?) drawn beneath.<f00><CF><D1><@LL,Ikki,04>Yup, now this is a masterpiece ♪"
+214,0x1f81ac,7色にかがやく にじの絵の下に<CD>ヘたくそなチュ-リップ(?)が<CF><D1>かかれている,<f02>It's a drawing of a seven-colored rainbow.<CF><f00><D1><f02>Along with a poorly-drawn tulip(?) drawn beneath.
 215,0x1f81ae,"<@RL,ScientistMale,00>こら! ずる休みは いけないぞ<CF><D1><@LL,Ikki,05>ぼくは メダリンピックに...<CF><D1><@RL,ScientistMale,00>いいわけしても ダメ!<CD>さあ 早く 学校ヘ 行きなさい","<@RL,ScientistMale,00>Hey! No playing hooky.<CF><D1><@LL,Ikki,05>But... the Medalympics...<CF><D1><@RL,ScientistMale,00>No buts! Now, hurry on to school."
 216,0x1f81b0,"<@RL,ScientistMale,00>早く 学校ヘ 行きなさい","<@RL,ScientistMale,00>Hurry on to school."
 217,0x1f81b2,"<@RL,ScientistMale,01>ここは 高おん...<CD>やっぱリ ないしょ♥","<@RL,ScientistMale,01>This heat... Nah, it's a secret ♥"
@@ -221,7 +221,7 @@
 219,0x1f81b6,"<@RL,ScientistMale,00>きみも しつこいな","<@RL,ScientistMale,00>You're a persistent one."
 220,0x1f81b8,"<@RL,ScientistMale,00>これでも くらえ!!","<@RL,ScientistMale,00>Take this!!"
 221,0x1f81ba,"<@RL,ScientistMale,00>これでも くらえ!!","<@RL,ScientistMale,00>Take this!!"
-222,0x1f81bc,ブッ!,Oof!
+222,0x1f81bc,ブッ!,<f08>Oof!
 223,0x1f81be,"<@LR,Koji,03>ぐわっ!! なんだこのおやじは!!","<@LR,Koji,03>Gwah!! What's the deal with this old man!?"
 224,0x1f81c0,"<@RL,ScientistMale,00>いゃあ すごかったなぁ...<CD>もう だめかと思ったよ","<@RL,ScientistMale,00>Man, that was crazy... I thought it was all over for a second."
 225,0x1f81c2,"<@LR,Koji,03>たしか... あの女の子と<CD>ロボロボ団のヤツ こっちのほうから<CF><D1>走って 来たよなぁ...","<@LR,Koji,03>I think... that girl and the RoboRobo guy came running from this direction."
@@ -231,7 +231,7 @@
 229,0x1f81ca,"<@RL,Man,00>子どもは いいよな...<CD>いやな じょうしも いないし","<@RL,Man,00>I envy those children... They don't have any boss to nag at them at work."
 230,0x1f81cc,"<@RL,Man,00>子どもは いいよな...<CD>バカな ぶかも いないし","<@RL,Man,00>I envy those children... They don't have any stupid employees to deal with."
 231,0x1f81ce,"<@RL,Man,00>子どもは いいよな...<CD>こわい おくさんも いないし","<@RL,Man,00>I envy those children... They don't have a wife to be scared of."
-232,0x1f81d0,ぐう ぐう,Zzzz... Zzzz...
+232,0x1f81d0,ぐう ぐう,<f08>Zzzz... Zzzz...
 233,0x1f81d2,"<@RL,Lady2,00>いらっしゃいませ","<@RL,Lady2,00>Welcome."
 234,0x1f81d4,"<@RL,Lady2,00>いらっしゃいませ-","<@RL,Lady2,00>Welcome!"
 235,0x1f81d6,"<@RL,Lady2,00>あリがとうございました","<@RL,Lady2,00>Thank you very much."
@@ -244,8 +244,8 @@
 242,0x1f81e4,"<@RL,Karin,05>いろいろあって まよいますわ","<@RL,Karin,05>I can't decide though, they have so many kinds."
 243,0x1f81e6,"<@LL,Ikki,00>えんようの イワシ水... これ<CD>だれか 買う人が いるのかなぁ","<@LL,Ikki,00>Pacific Sardine Juice...? Does anyone even buy this thing?"
 244,0x1f81e8,"<@LR,Erika,00>えんようの イワシ水?<CD>なに これ? <CF><D1>なになに...<CD>のめば 頭がよくなるですって?<CF><D1>これって <&BUF0A>に<CD>のませると いいかも♪","<@LR,Erika,00>What's this? Pacific Sardine Juice?<CF><D1>Let's see... ""You can get smarter by drinking it"", it says.<CF><D1>It might be a good idea to make <&BUF0A> drink it ♪"
-245#kabuto,0x1f81ea,"<@RL,Metabee,00>おっ それ グッドアイデアだぜ<CD>100本ぐらい のませようぜ!","<@RL,Metabee,00>Oh, that's agreat idea. Let's make him drink at least 100 cans!"
-245#kuwagata,0x1f81ea,"<@RL,Rokusho,00>いい 考えだな<CD>100本ほど のませておこう<CF><D1>少しは ましに なるだろう","<@RL,Rokusho,00>Great thinking. He should be forced to consume at minimum 100 cans.<CF><D1>That will increase his intelligence marginally."
+245#kabuto,0x1f81ea,"<@RL,Metabee,00>おっ それ グッドアイデアだぜ<CD>100本ぐらい のませようぜ!","<@RL,Metabee,00>Oh, that's a great idea. Let's make him drink at least 100 cans!"
+245#kuwagata,0x1f81ea,"<@RL,Rokusho,00>いい 考えだな<CD>100本ほど のませておこう<CF><D1>少しは ましに なるだろう","<@RL,Rokusho,00>Great thinking. He should be forced to consume at minimum 100 cans.<CF><D1>That should increase his intelligence marginally."
 246,0x1f81ec,"<@LR,Erika,01>あはははっ","<@LR,Erika,01>Ahahahah!"
 247,0x1f81ee,"<@LR,Koji,04>あっ! カリンが買ってきたジュ-ス<CF><D1><@LR,Koji,03>...えんようの イワシ水<CF><D1>すっげ- まずかったんだよな これ","<@LR,Koji,04>Oh! This is the drink that Karin bought for me.<CF><D1><@LR,Koji,03>...Pacific Sardine Juice.<CF><D1>It tastes really awful, you know?"
 248,0x1f81f0,"<@LL,Ikki,04>カリンちゃん 何を 買ったのかな?<CD>ええっと たしか これを手に...","<@LL,Ikki,04>What did Karin buy? Hm... I think it was..."
@@ -261,21 +261,21 @@
 256,0x1f8200,"<@LL,Ikki,00>ヘんなやつ","<@LL,Ikki,00>Weirdo."
 257,0x1f8202,"<@LR,Erika,00>それにしても ヘんなジュ-スね<CF><D1>そのとなリのジュ-スは<CD>「ストロベリ-ミルク」か...","<@LR,Erika,00>It's a really weird drink, though.<CF><D1>Oh, there's a Strawberry Milk next to it..."
 258,0x1f8204,"<@LR,Erika,04>ストロベリ-ミルク おいしそう♥","<@LR,Erika,04>The Strawberry Milk looks tasty ♥"
-259,0x1f8206,"<@CC,CLEAR,FF>「えんようのイワシ水」 売リ切れ中","<@CC,CLEAR,FF>Pacific Sardine Juice is out of stock."
+259,0x1f8206,"<@CC,CLEAR,FF>「えんようのイワシ水」 売リ切れ中","<@CC,CLEAR,FF><f02>Pacific Sardine Juice is out of stock."
 260,0x1f8208,"<@LL,Ikki,07>ええっ!! 売リ切れ!?<CD>(け けっこう 売れてんだ...)","<@LL,Ikki,07>What!? Out of stock!? (P-people actually buy it?)"
 261,0x1f820a,"いろんな ざっしが おいてある<CF><D1><@LR,Erika,00>...ふ-ん やっぱリ コンビニじゃ<CD>月刊「フォトワ-ルド」は<CF><D1>売っていないのね","There are various magazines stacked over.<CF><D1><@LR,Erika,00>...Figures, they don't sell monthly Photo World in convenience stores."
-262,0x1f820c,いろんな ざっしが おいてある,There are various magazines stacked over.
-263,0x1f820e,"いろんな ざっしが おいてある<CF><D1><@LR,Koji,00>...しなぞろえは メダロポリスと<CD>かわんないな","There are various magazines stacked over.<CF><D1><@LR,Koji,00>...The selections here can't compare to Medaropolis."
-264,0x1f8210,"アイスクリ-ムが 売られている<CF><D1><@LR,Erika,00>おいしそう...","You can buy ice cream here.<CF><D1><@LR,Erika,00>Looks tasty..."
+262,0x1f820c,いろんな ざっしが おいてある,<f02>There are various magazines stacked over.
+263,0x1f820e,"いろんな ざっしが おいてある<CF><D1><@LR,Koji,00>...しなぞろえは メダロポリスと<CD>かわんないな","<f02>There are various magazines stacked over.<f00><CF><D1><@LR,Koji,00>...The selections here can't compare to Medaropolis."
+264,0x1f8210,"アイスクリ-ムが 売られている<CF><D1><@LR,Erika,00>おいしそう...","<f02>You can buy ice cream here.<f00><CF><D1><@LR,Erika,00>Looks tasty..."
 265,0x1f8212,"<@LR,Erika,02>だめ だめ!<CF><D1><@LR,Erika,00>アイスクリ-ムなんて 食ベたら<CD>ふとっちゃう がまんしなくっちゃ","<@LR,Erika,02>Nope, nope!<CF><D1><@LR,Erika,00>I have to endure, eating ice cream will make me fat."
-266,0x1f8214,アイスクリ-ムが 売られている,You can buy ice cream here.
-267,0x1f8216,"アイスクリ-ムが 売られている<CF><D1><@LR,Koji,02>おっ! うまそうだな でも...<CD>ジュ-スを のんだばかリだし<CF><D1>とうぶんの とリすぎは 体にわるい<CD>アイスクリ-ムは あきらめよう","You can buy ice cream here.<CF><D1><@LR,Koji,02>Oh, that looks tasty... But I just drank something, and too much sugar intake is bad for my health. I'll give up on ice cream for now."
+266,0x1f8214,アイスクリ-ムが 売られている,<f02>You can buy ice cream here.
+267,0x1f8216,"アイスクリ-ムが 売られている<CF><D1><@LR,Koji,02>おっ! うまそうだな でも...<CD>ジュ-スを のんだばかリだし<CF><D1>とうぶんの とリすぎは 体にわるい<CD>アイスクリ-ムは あきらめよう","<f02>You can buy ice cream here.<f00><CF><D1><@LR,Koji,02>Oh, that looks tasty... But I just drank something, and too much sugar intake is bad for my health. I'll give up on ice cream for now."
 268,0x1f8218,"<@LL,Ikki,00>...だれも いない<CD>たいいくの 時間なのかな?","<@LL,Ikki,00>...There's no one here. Are they out for P.E.?"
-269,0x1f821a,"<@LL,Ikki,00>数学の じゅぎょう中みたいだ","<@LL,Ikki,00>Math is in session."
-270,0x1f821c,"<@LL,Ikki,00>数学の じゅぎょう中みたいだ","<@LL,Ikki,00>Math is in session."
+269,0x1f821a,"<@LL,Ikki,00>数学の じゅぎょう中みたいだ","<@LL,Ikki,00>Math class is in session."
+270,0x1f821c,"<@LL,Ikki,00>数学の じゅぎょう中みたいだ","<@LL,Ikki,00>Math class is in session."
 271,0x1f821e,"<@LL,Ikki,00>国語の じゅぎょう中みたいだ","<@LL,Ikki,00>Japanese class is in session."
-272,0x1f8220,"<@LL,Ikki,00>社会の じゅぎょう中みたいだ","<@LL,Ikki,00>Social studies is in session."
-273,0x1f8222,"<@LL,Ikki,00>理科の じゅぎょう中みたいだ","<@LL,Ikki,00>Science class is in session."
+272,0x1f8220,"<@LL,Ikki,00>社会の じゅぎょう中みたいだ","<@LL,Ikki,00>Social studies class is in session."
+273,0x1f8222,"<@LL,Ikki,00>理科の じゅぎょう中みたいだ","<@LL,Ikki,00>Science class class is in session."
 274,0x1f8224,"<@LL,Ikki,00>ピアノの音が聞こえる...<CD>音楽の じゅぎょう中みたいだ","<@LL,Ikki,00>I can hear the piano... It seems music class is in session."
 275,0x1f8226,"<@LL,Ikki,05>このまま だまって 出て行くと...<CD>アリカ おこるだろうなぁ","<@LL,Ikki,05>If I leave without doing anything... Arika is going to be mad."
 276,0x1f8228,"<@LL,Ikki,07>ここは女子トイレじゃないか!?<CD>あぶない あぶない","<@LL,Ikki,07>This is the girl's toilet! That was so close..."
@@ -297,23 +297,23 @@
 292,0x1f8248,"<@LL,Ikki,01>うまい! とっても じょうずだよ","<@LL,Ikki,01>Wow! You're so good!"
 293,0x1f824a,"<@RL,Girl,00>あリがとう チュ♥","<@RL,Girl,00>Thank you... smooch ♥"
 294,0x1f824c,"<@LL,Ikki,04>てヘヘっ♥","<@LL,Ikki,04>Tee hee ♥"
-295,0x1f824e,がくふが おいてある,It's a music sheet.
+295,0x1f824e,がくふが おいてある,<f02>It's a music sheet.
 296,0x1f8250,「ロボトルの マ-チ」 ,<f02>Robattle's March.
-297,0x1f8252,がくふが おいてある,It's a music sheet.
+297,0x1f8252,がくふが おいてある,<f02>It's a music sheet.
 298,0x1f8254,「ティンペットのための ソナタ」,<f02>Sonata for Tinpet.
-299,0x1f8256,"<@RL,Boy,00>キミは 「そうたいせいリろん」で<CF><D1>ブラックホ-ルの そんざいを<CD>せつめい できるか?<CF><D1><@LL,Ikki,05>「そうたいせい...」何?","<@RL,Boy,00>Can you explain the existence of black hole using the Theory of Relativity?<CF><D1><@LL,Ikki,05>Theory of... come again?"
+299,0x1f8256,"<@RL,Boy,00>キミは 「そうたいせいリろん」で<CF><D1>ブラックホ-ルの そんざいを<CD>せつめい できるか?<CF><D1><@LL,Ikki,05>「そうたいせい...」何?","<@RL,Boy,00>Can you explain the existence of black hole using the <f02>Theory of Relativity?<f00><CF><D1><@LL,Ikki,05><f02>The theory of...<f00> come again?"
 300,0x1f8258,"<@RL,Boy,00>こんどの じゆう研究は<CF><D1>ずばリ! 「じしん」に ついてだ<CD>なかなか いいテ-マだろ?<CF><D1><@LL,Ikki,04>がんばって 研究してね","<@RL,Boy,00>The topic for the next self-study is...<CF><D1>Ta-dah! Earthquakes! Isn't it a good one?<CF><D1><@LL,Ikki,04>Good luck with your studies."
 301,0x1f825a,"<@RL,Boy,00>むずかしすぎる...<CD>ぼくには リかい できないや","<@RL,Boy,00>It's too difficult... I can't understand a thing."
 302,0x1f825c,"<@RL,Boy,00>アインシュタインって いうよリは<CD>そうたいしたいんって かんじだよ","<@RL,Boy,00>Physicist Einstein? Sounds more like a relativist to me."
 303,0x1f825e,"<@RL,Boy,00>ちぇっ じしんで 学校がつぶれたら<CD>あしたのテストも なくなったのにな","<@RL,Boy,00>Tsk! I wish the earthquake destroyed the school. Then tomorrow's test would be cancelled."
-304,0x1f8260,むずかしそうな本が ならんでいる,All the books look difficult to read.
+304,0x1f8260,むずかしそうな本が ならんでいる,<f02>All the books look difficult to read.
 305,0x1f8262,"<@RL,Girl,00>わたしたちは 数学も ならうのよ<CD>すごいでしょ ","<@RL,Girl,00>We study Math, too. Aren't we amazing?"
 306,0x1f8264,"<@RL,Girl,00>わたし... じつは数学 キライなの<CD>もっと じしんが つづいてればなぁ","<@RL,Girl,00>Actually... I hate Math. I wish the earthquake didn't stop."
-307,0x1f8266,"「はたらく メダロット」<CD>「メダロットの 今とむかし」<CF><D1><@LL,Ikki,00>すごい本が ならんでいるな","<f02>Medarot at Work.<D3>Medarot Now and Then.<CF><D1><@LL,Ikki,00><f00>These are some amazing books."
+307,0x1f8266,"「はたらく メダロット」<CD>「メダロットの 今とむかし」<CF><D1><@LL,Ikki,00>すごい本が ならんでいるな","<f02>Medarot at Work.<D3>Medarot Now and Then.<CF><f00><D1><@LL,Ikki,00>These are some amazing books."
 308,0x1f8268,"<@RL,Boy,00>科学者に なって この町を<CD>もっと もっと すみやすくするんだ!","<@RL,Boy,00>I'll become a scientist and make this place even more easier to live in!"
 309,0x1f826a,"<@RL,Boy,00>科学者をやめて セレクト隊に入るよ<CF><D1>じしんの時の セレクト隊が<CD>さいこうに カッコよかったからさ","<@RL,Boy,00>I decided to join the Select Corp instead of becoming a scientist.<CF><D1>During the earthquake, the Select Corp was so frigging cool, you know?"
 310,0x1f826c,"<@LL,Ikki,00>たなに ほこリがたまっている<CD>ちゃんと そうじしてるのかな<CF><D1>ふっ-","<@LL,Ikki,00>There are dusts gathering in the shelves. Do they even clean this place?<CF><D1>Huff..."
-311,0x1f826e,"<@LL,Ikki,05>ヘッ... ヘックション!","<@LL,Ikki,05>A... achoo!"
+311,0x1f826e,"<@LL,Ikki,05>ヘッ... ヘックション!","<@LL,Ikki,05><f08>A... achoo!"
 312,0x1f8270,"<@RL,Boy,00>ぼくが 考えた ロボトルに おける<CD>租み合わせの リろんは こうだ!","<@RL,Boy,00>Here's my combination theory on robattles!"
 313,0x1f8272,"<@RL,Boy,00>だから どうしたって<CD>かんじかな?","<@RL,Boy,00>I mean... so what?"
 314,0x1f8274,"<@RL,Boy,00>メダリンピック ゆうしょう<CD>おめでとう<CF><D1><@LL,Ikki,01>あリがとう","<@RL,Boy,00>Congrats on winning the Medalympics.<CF><D1><@LL,Ikki,01>Thanks."
@@ -362,7 +362,7 @@
 357,0x1f82ca,"<@LL,Ikki,03>なにやってんだかなぁ...","<@LL,Ikki,03>What am I doing here...?"
 358,0x1f82cc,"<@RL,Lady2,00>勝手に 貝てはいけません!","<@RL,Lady2,00>You can't look!"
 359,0x1f82ce,"<@LL,Ikki,03>す すみません...","<@LL,Ikki,03>S-sorry..."
-360,0x1f82d0,"すぴ- すぴ-<CF><D1><@LL,Ikki,04>この先生 いねむリしてる","Zzzz... Zzzz...<CF><D1><@LL,Ikki,04>This teacher is nodding off."
+360,0x1f82d0,"すぴ- すぴ-<CF><D1><@LL,Ikki,04>この先生 いねむリしてる","<f08>Zzzz... Zzzz...<f00><CF><D1><@LL,Ikki,04>This teacher is nodding off."
 361,0x1f82d2,"<@RL,Man,00>ああ きみ! ちょっと来てくれ","<@RL,Man,00>Hey, you there! Come here for a bit."
 362,0x1f82d4,"<@LL,Ikki,00>ぼくですか?","<@LL,Ikki,00>Me?"
 363,0x1f82d6,"<@RL,Man,00>ああ きみ! ちょっと来てくれ","<@RL,Man,00>Hey, you there! Come here for a bit."
