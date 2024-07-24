@@ -78,7 +78,7 @@
 076,0x1fc098,"<@RL,Erika,00>ここは これでOKね","<@RL,Erika,00>With that, I've got everything I need."
 077,0x1fc09a,"<@RL,Erika,00><&BUF0A><CD>あたし 先に 行っとくから","<@RL,Erika,00><&BUF0A>, I'm going on ahead."
 078,0x1fc09c,"<@RL,BipedMedabot,00>ハエトリソウを アザラシが 食ベてェ<CD>アザラシは アメ-バが 食ベてェ<CF><D1>アメ-バは ハエトリソウが<CD>食ベるゥ-♪","<@RL,BipedMedabot,00><f08>The venus flytraps eat the seals,<D3>the seals eat the amoebas,<f00><CF><D1><f08>and the amoebas eat the venus flytraps ♪"
-079,0x1fc09e,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪","<@RL,BipedMedabot,00><f08>Aah, that's the food chain ♪<D3>It's survival of the fittest ♪<f00><CF><D1><f08>It's a barbucue dinner♪"
+079,0x1fc09e,"<@RL,BipedMedabot,00>ア ソレ ショクモツレンサァ♪<CD>ジャクニクキョウショクゥ♪<CF><D1>ヤキニクテイショクゥ♪","<@RL,BipedMedabot,00><f08>Aah, that's the food chain ♪<D3>It's survival of the fittest ♪<f00><CF><D1><f08>It's a barbecue dinner♪"
 080,0x1fc0a0,"<@LL,Ikki,05>それ しょくもつれんさって 言う?<CF><D1>...って いうか<CD>ヤキニクテイショクって 何?","<@LL,Ikki,05>That's a food chain?<CF><D1>...Rather, what's up with the barbecue part?"
 081,0x1fc0a2,"<@RL,BipedMedabot,00>大変だ! 大変だ!<CD>変な ネコが 出てきて<CF><D1>ハエトリソウと アザラシと<CD>アメ-バを にがしちゃった!<CF><D1>それで ワタシは ハエトリソウの<CD>トラップに かかって<CF><D1>アメ-バの ウイルスに<CD>やられちゃった!","<@RL,BipedMedabot,00>There's an emergency! A strange cat appeared and released the Venus Flytrap, Seal, and Amoeba! And then I was caught in the Venus Flytrap's trap and infected by the Amoeba's virus!"
 082,0x1fc0a4,"<@RL,BipedMedabot,00>グルグル グルグル 目がまわる♪","<@RL,BipedMedabot,00><f08>Round and round, round and round. Getting dizzy ♪"

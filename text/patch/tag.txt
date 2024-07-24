@@ -1,1 +1,1 @@
-tr_EN+nightly.20240723
+tr_EN+nightly.20240724
