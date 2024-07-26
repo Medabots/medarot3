@@ -47,9 +47,9 @@
 045,0x9005a,はんげきに しっぱいした!<*04>,Counterattack failed!<*04>
 046,0x9005c,<&BUF02>は<CD>あいての 攻撃を むこうにした!<S46><*04>,<&BUF02> nullified the opponent's attack!<S46><*04>
 047,0x9005e,<&BUF02>は<CD>弱い 攻撃を むこうにした!<S46><*04>,<&BUF02> nullified a weak attack!<S46><*04>
-048,0x90060,<&BUF02>には<CD>レ-ザ-とビ-ムが きかない!<S46><*04>,<f02>Beam and Laser will not affect <&BUF02>!<S46><*04>
-049,0x90062,<&BUF02>には<CD>ミサイルとナパ-ムが きかない!<S46><*04>,<f02>Missile and Napalm will not affect <&BUF02>!<S46><*04>
-050,0x90064,<&BUF02>には<CD>ブレイクとプレスが きかない!<S46><*04>,<f02>Break and Press will not affect <&BUF02>!<S46><*04>
+048,0x90060,<&BUF02>には<CD>レ-ザ-とビ-ムが きかない!<S46><*04>,<f02>Beam <f00>and <f02>Laser <f00>will not affect <&BUF02>!<S46><*04>
+049,0x90062,<&BUF02>には<CD>ミサイルとナパ-ムが きかない!<S46><*04>,<f02>Missile <f00>and <f02>Napalm <f00>will not affect <&BUF02>!<S46><*04>
+050,0x90064,<&BUF02>には<CD>ブレイクとプレスが きかない!<S46><*04>,<f02>Break <f00>and <f02>Press <f00>will not affect <&BUF02>!<S46><*04>
 051,0x90066,クリティカル!!<*04>,<f02>Critical hit!!<*04>
 052,0x90068,<&BUF01>パ-ツで ぼうぎょした!<*04>,The attack was taken by the <&BUF01>!<*04>
 053,0x9006a,ベつのパ-ツに かんつうした!<S46><*04>,The attack affected other parts!<S46><*04>
@@ -83,7 +83,7 @@
 081,0x900a2,クロス攻撃を セットした!<CD>クロス攻撃ファイヤ-で アタック!<S46><*04>,Cross Attack activated!<D3>Use Cross Attack Fire!<S46><*04>
 082,0x900a4,さくてきクリアに ぼうがいされて<CD>さくてきに しっぱいした!<S46><*04>,Scan Clear is active! <D3>Scanning failed!<S46><*04>
 083,0x900a6,チ-ム全体の さくてきアップ!<CD>攻撃が 当リやすくなった!<S46><*04>,Team's scan parameter up!<D3>Success rate is increased!<S46><*04>
-084,0x900a8,いんペいクリアに ぼうがいされて<CD>いんペいに しっぱいした!<S46><*04>,<f02>Conceal<f00> was jammed by Conceal Clear!<S46><*04>
+084,0x900a8,いんペいクリアに ぼうがいされて<CD>いんペいに しっぱいした!<S46><*04>,Conceal was jammed by Conceal Clear!<S46><*04>
 085,0x900aa,<&BUF02>の いんペいアップ!<CD>攻撃を よけやすくなった!<S46><*04>,<&BUF02>'s Conceal up!<D3>Dodge chance improved!<S46><*04>
 086,0x900ac,マイナス症状に ダメ-ジ!<S46><*04>,Damaged by status ailment!<S46><*04>
 087,0x900ae,マイナス症状を クリアした!<S46><*04>,Status ailment was removed!<S46><*04>
@@ -98,40 +98,40 @@
 096,0x900c0,症状むこうによって ぼうがいされた!<S46><*04>,Jammed by Negate Status!<S46><*04>
 097,0x900c2,フィ-ルドを せいぎょした!<CD>メダフォ-スが 使えなくなった!<S46><*04>,<#NOCHECK_TEXTSPEED>Field Controlled!<S46><CF><D1><S00>Unable to use Medaforce going forward!<S46><*04>
 098,0x900c4,フィ-ルドの せいぎょを 弱めた!<S46><*04>,The Field's Control is weakened!<S46><*04>
-099,0x900c6,フィ-ルドの せいぎょを かいじょ!<CD>メダフォ-スを 使うことができる!<S46><*04>,The Field's Control was removed!<CF>Medaforce is now available!<S46><*04>
+099,0x900c6,フィ-ルドの せいぎょを かいじょ!<CD>メダフォ-スを 使うことができる!<S46><*04>,<#NOCHECK_TEXTSPEED>The Field's Control was removed!<CF><S00>Medaforce is now available!<S46><*04>
 100,0x900c8,<&BUF02>の メダフォ-スが<CD><&BUF00>ポイント アップした!<S46><*04>,<&BUF02>'s Medaforce gauge is increased by <&BUF00>!<S46><*04>
 101,0x900ca,うばいとる メダフォ-スがない!<S46><*04>,No Medaforce gauge to absorb!<S46><*04>
 102,0x900cc,<&BUF02>の メダフォ-スを<CD><&BUF00>ポイント きゅうしゅうした!<S46><*04>,<&BUF00> points of <&BUF02>'s Medaforce gauge was absorbed!<S46><*04>
 103,0x900ce,ぼうぎょが できない時は<CD>かまえの たいせいが とれない!<S46><*04>,Can't adopt Stance when unable to Defend.<S46><*04>
 104,0x900d0,かまえの たいせいを とった!<CD>あいての 攻撃に そなえます!<S46><*04>,Stance adopted!<D3>Ready for opponent's attack!<S46><*04>
-105,0x900d2,プラス症状クリアによって<CD>けいぞくリペアが ぼうがいされた!<S46><*04>,<f02>Continuous Repair<f00> was jammed by Buff Clear!<S46><*04>
-106,0x900d4,症状むこうパ-ツによって<CD>けいぞくリペアが ぼうがいされた!<S46><*04>,<f02>Continuous Repair<f00> was jammed by a part with Negate Status!<S46><*04>
-107,0x900d6,けいぞくリペアの プラス症状!<CD>じゅんび時間にも リペア!<S46><*04>,Status Buff: <f02>Continuous Repair<f00>!<CF>Parts will be repaired over time!<S46><*04>
+105,0x900d2,プラス症状クリアによって<CD>けいぞくリペアが ぼうがいされた!<S46><*04>,Continuous Repair was jammed by Buff Clear!<S46><*04>
+106,0x900d4,症状むこうパ-ツによって<CD>けいぞくリペアが ぼうがいされた!<S46><*04>,Continuous Repair was jammed by a part with Negate Status!<S46><*04>
+107,0x900d6,けいぞくリペアの プラス症状!<CD>じゅんび時間にも リペア!<S46><*04>,<#NOCHECK_TEXTSPEED>Status Buff: <f02>Continuous Repair<f00>!<CF><D1><S00>Parts will be repaired over time!<S46><*04>
 108,0x900d8,このパ-ツは そうびしているだけで<CD>こうかを はっきする!<S46><*04>,This part takes effect just by being equipped.<S46><*04>
 109,0x900da,じゅんびと いどうが<CD>いっしゅんで おわった!<S46><*04>,Preparation and Movement completed instantly!<S46><*04>
 110,0x900dc,スピ-ドアップ!<CD>じゅんび時間が はやくなった!<S46><*04>,Status Buff: <f02>Speed-up<f00>!<D3>Preparation time decreased!<S46><*04>
-111,0x900de,プラス症状クリアによって<CD>スピ-ドアップが ぼうがいされた!<S46><*04>,<f02>Speed-Up<f00> was jammed by Buff Clear!<S46><*04>
-112,0x900e0,症状むこうパ-ツによって<CD>スピ-ドアップが ぼうがいされた!<S46><*04>,<f02>Speed-Up<f00> was jammed by Negate Status part!<S46><*04>
+111,0x900de,プラス症状クリアによって<CD>スピ-ドアップが ぼうがいされた!<S46><*04>,Speed-Up was jammed by Buff Clear!<S46><*04>
+112,0x900e0,症状むこうパ-ツによって<CD>スピ-ドアップが ぼうがいされた!<S46><*04>,Speed-Up was jammed by Negate Status part!<S46><*04>
 113,0x900e2,じゅんび時間を きゅうしゅうした!<CD>あいてをおそく! じぶんをはやく!<S46><*04>,Preparation time absorbed!<D3>Opponent slowed! Own sped up!<S46><*04>
-114,0x900e4,あいての マイナス症状クリアによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,<f02>Absorb<f00> was jammed by opponent's Ailment Clear!<S46><*04>
-115,0x900e6,あいての 症状むこうパ-ツによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,<f02>Absorb<f00> was jammed by opponent's Negate Status part!<S46><*04>
-116,0x900e8,じぶんの プラス症状クリアによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,<f02>Absorb<f00> jammed by own Buff Clear!<S46><*04>
-117,0x900ea,じぶんの 症状むこうパ-ツによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,<f02>Absorb<f00> jammed by own Negate Status part!<S46><*04>
+114,0x900e4,あいての マイナス症状クリアによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,Absorb was jammed by opponent's Ailment Clear!<S46><*04>
+115,0x900e6,あいての 症状むこうパ-ツによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,Absorb was jammed by opponent's Negate Status part!<S46><*04>
+116,0x900e8,じぶんの プラス症状クリアによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,Absorb jammed by own Buff Clear!<S46><*04>
+117,0x900ea,じぶんの 症状むこうパ-ツによって<CD>きゅうしゅうが ぼうがいされた!<S46><*04>,Absorb jammed by own Negate Status part!<S46><*04>
 118,0x900ec,てんとうは うしろをむいている<CD>あいてには こうかがない!<S46><*04>,Falling does not effect returning opponents!<S46><*04>
 119,0x900ee,<&BUF02>は ころんだ!<CD>行動を わすれてしまった!<S46><*04>,<&BUF02> has fallen!<D3>Action forgotten!<S46><*04>
-120,0x900f0,マイナス症状クリアによって<CD>使用ふのうが ぼうがいされた!<S46><*04>,<f02>Disable<f00> ailment jammed by Ailment Clear!<S46><*04>
-121,0x900f2,症状むこうパ-ツによって<CD>使用ふのうが ぼうがいされた!<S46><*04>,<f02>Disable<f00> ailment jammed by Negate Status part!<S46><*04>
+120,0x900f0,マイナス症状クリアによって<CD>使用ふのうが ぼうがいされた!<S46><*04>,Disable ailment jammed by Ailment Clear!<S46><*04>
+121,0x900f2,症状むこうパ-ツによって<CD>使用ふのうが ぼうがいされた!<S46><*04>,Disable ailment jammed by Negate Status part!<S46><*04>
 122,0x900f4,使用ふのうの マイナス症状!<CD><&BUF01>パ-ツが 使えなくなった!<S46><*04>,Status Ailment: <f02>Disable<f00>! <D3>Unable to use <&BUF01> part!<S46><*04>
-123,0x900f6,マイナス症状クリアによって<CD>こんらんが ぼうがいされた!<S46><*04>,<f02>Confuse<f00> was jammed by Ailment Clear!<S46><*04>
-124,0x900f8,症状むこうパ-ツによって<CD>こんらんが ぼうがいされた!<S46><*04>,<f02>Confuse<f00> was jammed by Negate Status part!<S46><*04>
+123,0x900f6,マイナス症状クリアによって<CD>こんらんが ぼうがいされた!<S46><*04>,Confuse was jammed by Ailment Clear!<S46><*04>
+124,0x900f8,症状むこうパ-ツによって<CD>こんらんが ぼうがいされた!<S46><*04>,Confuse was jammed by Negate Status part!<S46><*04>
 125,0x900fa,<&BUF02>は こんらんした!<CD>攻撃のあいてが さだまらない!<S46><*04>,<#NOCHECK_TEXTSPEED>The opponent's attack confused <&BUF02>!<S46><CF><D1><S00>Actions and targets will be randomized!<S46><*04>
 126,0x900fc,うばいとる のこリ回数がない!<S46><*04>,No ammo left to absorb!<S46><*04>
 127,0x900fe,頭パ-ツの回数を <&BUF00>うばいとった!<S46><*04>,Took <&BUF00> ammo from the head part!<S46><*04>
-128,0x90100,マイナス症状クリアによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,<f02>No-Escape<f00> ailment jammed by Ailment Clear!<S46><*04>
-129,0x90102,症状むこうパ-ツによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,<f02>No-Escape<f00> ailment jammed by Negate Status part!<S46><*04>
+128,0x90100,マイナス症状クリアによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,No-Escape ailment jammed by Ailment Clear!<S46><*04>
+129,0x90102,症状むこうパ-ツによって<CD>かいひふのうが ぼうがいされた!<S46><*04>,No-Escape ailment jammed by Negate Status part!<S46><*04>
 130,0x90104,かいひふのうの マイナス症状!<CD>攻撃を かいひできない!<S46><*04>,Status Ailment: <f02>No-Escape<f00>!<D3>Unable to dodge!<S46><*04>
-131,0x90106,マイナス症状クリアによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,<f02>No-Defense<f00> ailment jammed by Ailment Clear!<S46><*04>
-132,0x90108,症状むこうパ-ツによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,<f02>No-Defense<f00> ailment jammed by Negate Status part!<S46><*04>
+131,0x90106,マイナス症状クリアによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,No-Defense ailment jammed by Ailment Clear!<S46><*04>
+132,0x90108,症状むこうパ-ツによって<CD>ぼうぎょふのうが ぼうがいされた!<S46><*04>,No-Defense ailment jammed by Negate Status part!<S46><*04>
 133,0x9010a,ぼうぎょふのうの マイナス症状!<CD>攻撃を ぼうぎょできない!<S46><*04>,Status ailment: <f02>No-Defense<f00>!<D3>Unable to defend!<S46><*04>
 134,0x9010c,<&BUF01>パ-ツは<CD><&BUF02>に ヘんかした!<S46><*04>,The <&BUF01> transformed into <&BUF02>!<S46><*04>
 135,0x9010e,<&BUF01>パ-ツに はかいこうか!<S46><*04>,The <&BUF01> has been inflicted with Destruction!<S46><*04>
