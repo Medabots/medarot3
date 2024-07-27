@@ -21,7 +21,7 @@
 018,0x224024,"<@LL,Ikki,05>何なんだよ いったい<CF><D1>どれくらい 気を うしなってたんだ?","<@LL,Ikki,05>What's her problem?<CF><D1>How long was I out?"
 019,0x224026,"<@LL,Ikki,06>ない! ない! カ-ドキ-が<CD>どこにも!<CF><D1>大変だ! どうしよう<CD><&BUF07>!","<@LL,Ikki,06>Gone! It's gone! Where's the keycard!?<CF><D1>Oh no! What do I do, <&BUF07>!?"
 020,0x224028,"<@RL,FemaleMedabot,00>何よ-<CD>あんたなんかに 気やすく よばれる<CF><D1>おぼえは ないわよ-","<@RL,FemaleMedabot,00>What... Don't get so chummy with me."
-021,0x22402a,"<@LL,Ikki,07>はあっ!?<CD>だっ だれだ お前っ!<CF><D1><@RL,FemaleMedabot,00>あたし-?<CF><D1>あたしは ノクトキャットあらため<CD>ダ-クパンサ-よ-<CF><D1><@LL,Ikki,06>それって キクヒメの<CD>メダロットじゃないか!<CF><D1><@RL,FemaleMedabot,00>あんたの メダロットじゃないことは<CD>たしかね-<CF><D1><@LL,Ikki,06>まっ まさか ほかの<CD>メダロットの デ-タも...!","<@LL,Ikki,07>Huh!? W-who are you!?<CF><D1><@RL,FemaleMedabot,00>Me?<CF><D1>I used to be Noctocat, but I go by Darkphanter.<CF><D1><@LL,Ikki,06>You're Kikuhime's Medarot!<CF><D1><@RL,FemaleMedabot,00>Yes, I'm not your Medarot for sure.<CF><D1><@LL,Ikki,06>D-don't tell me that my Medarot data--!"
+021,0x22402a,"<@LL,Ikki,07>はあっ!?<CD>だっ だれだ お前っ!<CF><D1><@RL,FemaleMedabot,00>あたし-?<CF><D1>あたしは ノクトキャットあらため<CD>ダ-クパンサ-よ-<CF><D1><@LL,Ikki,06>それって キクヒメの<CD>メダロットじゃないか!<CF><D1><@RL,FemaleMedabot,00>あんたの メダロットじゃないことは<CD>たしかね-<CF><D1><@LL,Ikki,06>まっ まさか ほかの<CD>メダロットの デ-タも...!","<@LL,Ikki,07>Huh!? W-who are you!?<CF><D1><@RL,FemaleMedabot,00>Me?<CF><D1>I used to be Noctocat, but I go by Darkphanter now.<CF><D1><@LL,Ikki,06>You're Kikuhime's Medarot!<CF><D1><@RL,FemaleMedabot,00>Yes, I'm not your Medarot for sure.<CF><D1><@LL,Ikki,06>D-don't tell me that my Medarot data's been...!"
 022,0x22402c,"<@LL,Ikki,07>全部 ぼくのじゃなくなってる!<CD>じゃあ さっきの 電撃は...<CF><D1><@LL,Ikki,06>...やられたっ!<CF><D1>ええいっ とにかく<CD>キクヒメのいる エアロホテルに<CF><D1>直行しないと!<CD>でも どうやって...<CF><D1>カモメちゃんに 会えば 何とか<CD>なるかも知れない!","<@LL,Ikki,07>It's not my data! That electric shock must be why...<CF><D1><@LL,Ikki,06>...She got me!<CF><D1>Ugh! Anyway, I need to go to Aero Hotel and find Kikuhime now!<CF><D1>...But how do I get there?<CF><D1>Maybe Gull can help!"
 023,0x22402e,"<@LL,Ikki,02>やっぱリ ドアは あかない!<CD>早く カモメちゃんの 所に!","<@LL,Ikki,02>The door won't open! I need to find Gull!"
 024,0x224030,"<@LL,Ikki,04>さあ 行くぞ!<CF><D1><@RL,FlyingMedabot,00>もう行く? すぐ行く? 早く行く?<CF><D1><@LL,Ikki,00>とリあえず とんでくれ","<@LL,Ikki,04>Alright, let's go!<CF><D1><@RL,FlyingMedabot,00>We're going? We go now? We go hurry?<CF><D1><@LL,Ikki,00>Start flying, please."
@@ -49,16 +49,16 @@
 044,0x224058,"<@RL,Samantha,00>先に 行っててよぉ","<@RL,Samantha,00>Just go already."
 045,0x22405a,"<@RL,Spyke,04>あねご こんなとこ 早く出ましょう!","<@RL,Spyke,04>Boss, let's get out of here!"
 046,0x22405c,"<@RL,Sloan,03>あねご ぶじ...よかった...","<@RL,Sloan,03>Boss... Thank goodness... You're alright..."
-047,0x22405e,カギが かかっている,It's locked.
-048,0x224060,カギを はずした,It's unlocked.
+047,0x22405e,カギが かかっている,<f02>It's locked.
+048,0x224060,カギを はずした,<f02>It's unlocked.
 049,0x224062,"<@LL,Ikki,00>こっちからは ひらかないようだ","<@LL,Ikki,00>It doesn't open from here."
 050,0x224064,"<@LL,Ikki,00>ここから先も カ-ドキ-が<CD>いるかも知れないな","<@LL,Ikki,00>I might still need this card where I'm going."
 051,0x224066,"<@RL,Crow,00>ここに おちたら 空をとぶ のリもの<CD>でも ないかぎリ...<CF><D1>エアバイク 「風のつばさ」...<CF><D1>「風のつばさ」? このおれが<CD>あんな おもちゃに? フッ","<@RL,Crow,00>Without any flying vehicles, I can't afford to fall from here...<CF><D1>An airbike or... <f02>Wings of Wind<f00>...<CF><D1><f02>Wings of Wind<f00>? Heh, as if I would use that kind of toy."
 052,0x224068,"<@RL,Crow,00>あの 地上人が こわしたから すてた<CD>エアバイクか<CF><D1><@CC,CLEAR,FF>ガルルルル...","<@RL,Crow,00>This is the airbike that I threw away after that surface dweller broke it.<CF><D1><@CC,CLEAR,FF><f08>Grrrr<f00>..."
-053,0x22406a,"<@RL,MultiLeggedMedabot,00>右院 「おう! ここは 人間が<CD>来るところちゃうで!」<CF><D1>左院 「早ク 出テッテヨ-」<CF><D1><@RL,Crow,00>ふん どうやら おれが ピンチなのに<CD>気づいてないらしい ","<@RL,MultiLeggedMedabot,00>Right Arm: ""Hey! Humans shouldn't be in this place!""<CF><D1>Left Arm: ""Hurry up and scram!""<CF><D1><@RL,Crow,00>Hmph, it seems he isn't aware that I'm in a pinch."
-054,0x22406c,"<@RL,Crow,02>チィッ!!!","<@RL,Crow,02>Tsk!!!"
+053,0x22406a,"<@RL,MultiLeggedMedabot,00>右院 「おう! ここは 人間が<CD>来るところちゃうで!」<CF><D1>左院 「早ク 出テッテヨ-」<CF><D1><@RL,Crow,00>ふん どうやら おれが ピンチなのに<CD>気づいてないらしい ","<@RL,MultiLeggedMedabot,00><f02>Right Arm:<f00> ""Hey! Humans shouldn't be in this place!""<CF><D1><f02>Left Arm:<f00> ""Hurry up and scram!""<CF><D1><@RL,Crow,00>Hmph, it seems he isn't aware that I'm in a pinch."
+054,0x22406c,"<@RL,Crow,02>チィッ!!!","<@RL,Crow,02><f08>Tsk!!!"
 055,0x22406e,"<@RL,Crow,02>くっ! 動けないっ!","<@RL,Crow,02>Ugh! I can't move!"
-056,0x224070,"<@RL,Crow,00>おい そこのスイッチを おせ<CF><D1><@RL,MultiLeggedMedabot,00>頭 「ガルルルル」<CF><D1>右院 「早う かえれや コラァ!」<CF><D1>左院 「ソレジャ サヨナラ-!」","<@RL,Crow,00>Hey, press that button.<CF><D1><@RL,MultiLeggedMedabot,00>Head: ""<f08>Grrrr!<f00>""<CF><D1>Right Arm: ""Scram already!""<CF><D1>Left Arm: ""Good bye now!"""
+056,0x224070,"<@RL,Crow,00>おい そこのスイッチを おせ<CF><D1><@RL,MultiLeggedMedabot,00>頭 「ガルルルル」<CF><D1>右院 「早う かえれや コラァ!」<CF><D1>左院 「ソレジャ サヨナラ-!」","<@RL,Crow,00>Hey, press that button.<CF><D1><@RL,MultiLeggedMedabot,00><f02>Head:<f00> ""<f08>Grrrr!<f00>""<CF><D1><f02>Right Arm:<f00> ""Scram already!""<CF><D1><f02>Left Arm: <f00>""Good bye now!"""
 057,0x224072,"<@RL,Crow,00>くっ...あいつめ ねつで<CD>耳が いかれてやがるのか","<@RL,Crow,00>Ugh... Are his ears broken from all this heat?"
 058,0x224074,"<@RL,Crow,00>...ゲ-ムオ-バ-か<CD>ふん おわらいだな","<@RL,Crow,00>...It's game over for me. Hmph, what a joke."
 059,0x224076,"<@RL,Crow,00>? 何をする?","<@RL,Crow,00>? What are you doing?"
@@ -78,7 +78,7 @@
 073,0x224092,"ツヅイテ 次ノ コンピュ-タ ヲ<CD>キドウ サセテ下サイ<CF><D1><@LL,Ikki,06>まだなの!?","<f02>Please turn on the next computer.<f00><CF><D1><@LL,Ikki,06>There's still more!?"
 074,0x224094,ゲンザイ 入力マチ デス,<f02>Waiting for input.
 075,0x224096,"マダ 何カ 用?<CF><D1><@LL,Ikki,05>ベつに 用はないよ","<f02>Need anything else?<CF><f00><D1><@LL,Ikki,05>Not really."
-076,0x224098,デンゲン ガ 入ッテ オリマセン,<f08>There is no power.
+076,0x224098,デンゲン ガ 入ッテ オリマセン,<f02>There is no power.
 077,0x22409a,"カ-ドキ-ヲ ゴテイジ シテ下サイ<CF><D1><@LL,Ikki,06>は 早くしないと!","<f02>Please present the keycard.<f00><CF><D1><@LL,Ikki,06>I-I gotta hurry!"
 078,0x22409c,"<@LL,Ikki,01>動いた! この ボタンかな?","<@LL,Ikki,01>It moved! Is it this button?"
 079,0x22409e,"ツヅイテ 次ノ コンピュ-タ ヲ<CD>キドウ サセテ下サイ<CF><D1><@LL,Ikki,06>いくつ あるんだよ!","<f02>Please turn on the next computer.<f00><CF><D1><@LL,Ikki,06>Just how many are there!?"
@@ -124,10 +124,10 @@
 118,0x2240ec,"<@LL,Ikki,00>まだ じゅうぶん 使えそうなのに<CD>どうして すてちゃうんだろうね","<@LL,Ikki,00>It still looks good. I wonder why they threw it away?"
 119,0x2240ee,"<@LL,Ikki,03>スラフシステムも 作動 してない<CD>もう...動かないのかな...","<@LL,Ikki,03>The Slough System isn't running. I guess... he won't move anymore..."
 120,0x2240f0,"<@RL,Crow,00>近よるな ここには きょうれつな<CD>じゅうリょくが はたらいている<CF><D1>のがれられなくなるぞ","<@RL,Crow,00>Stay away. There's a strong gravity field here.<CF><D1>Step one foot in and you won't be able to escape anymore."
-121,0x2240f2,"<@RL,MultiLeggedMedabot,00>頭 「ワンッ!」<CF><D1>右院 「おうっ! 何やワレェ!」<CF><D1>左院 「ナニモノ デ-ス!」<CF><D1><@LL,Ikki,07>うわ! パ-ツがしゃベった!?<CD>まさか メダルが 3つも?<CF><D1><@RL,Crow,00>あのメダロットの 右院 左院<CD>パ-ツには スピ-カ-が<CF><D1>ついていて パ-ツが 勝手に<CD>しゃベっているように 貝えるだけだ","<@RL,MultiLeggedMedabot,00>Head: <f08>""Woof!""<f00><CF><D1>Right Arm: ""Hey! Who are you!?""<CF><D1>Left Arm: ""Who goes there!?""<CF><D1><@LL,Ikki,07>Woah! The Parts can talk!? Does he have three Medals?<CF><D1><@RL,Crow,00>That Medarot has speakers in his Left and Right Arm Parts.<CF><D1>That's how he misleads people into thinking that way."
+121,0x2240f2,"<@RL,MultiLeggedMedabot,00>頭 「ワンッ!」<CF><D1>右院 「おうっ! 何やワレェ!」<CF><D1>左院 「ナニモノ デ-ス!」<CF><D1><@LL,Ikki,07>うわ! パ-ツがしゃベった!?<CD>まさか メダルが 3つも?<CF><D1><@RL,Crow,00>あのメダロットの 右院 左院<CD>パ-ツには スピ-カ-が<CF><D1>ついていて パ-ツが 勝手に<CD>しゃベっているように 貝えるだけだ","<@RL,MultiLeggedMedabot,00><f02>Head: <f08>""Woof!""<f00><CF><D1><f02>Right Arm: <f00>""Hey! Who are you!?""<CF><D1><f02>Left Arm:<f00> ""Who goes there!?""<CF><D1><@LL,Ikki,07>Woah! The Parts can talk!? Does he have three Medals?<CF><D1><@RL,Crow,00>That Medarot has speakers in his Left and Right Arm Parts.<CF><D1>That's how he misleads people into thinking that way."
 122,0x2240f4,"<@LL,Ikki,04>ヘ- 何だかんだ 言っても やっぱリ<CD>カラスは メダロットがすきなんだね<CF><D1>ぼくも そこまでは 知らなかったよ<CF><D1><@RL,Crow,00>...ふん","<@LL,Ikki,04>I see. In the end, you love Medarots, don't you?<CF><D1>I didn't even notice until you pointed that out.<CF><D1><@RL,Crow,00>...Hmph."
-123,0x2240f6,"<@LL,Ikki,00>ねえ きみ そこを<CD>どいてくれないかな?<CF><D1>友だちが あぶないんだ<CF><D1><@RL,MultiLeggedMedabot,00>頭 「ガルガルガル!」<CF><D1>右院 「あ? 何かうるっさいのぉ!」<CF><D1>左院 「ナ-ンデ-スカ-!?」<CF><D1><@LL,Ikki,00>もしかして 耳が 聞こえないのか?<CF><D1><@RL,Crow,00>ねつで やられたんだろ<CF><D1>やつにとって おれたちは ただの<CD>しんにゅう者って ことだ<CF><D1><@LL,Ikki,00>しかたないな","<@LL,Ikki,00>Hey, can you move aside?<CF><D1>My friend's in trouble.<CF><D1><@RL,MultiLeggedMedabot,00>Head: ""<f08>Grr grr grr!<f00>""<CF><D1>Right Arm: ""Huh? Shut yer trap!""<CF><D1>Left Arm: ""What did you say!?""<CF><D1><@LL,Ikki,00>Are his ears not working?<CF><D1><@RL,Crow,00>They must be broken from the heat.<CF><D1>We're no more than intruders in his eyes.<CF><D1><@LL,Ikki,00>No other choice then."
-124,0x2240f8,"<@RL,MultiLeggedMedabot,00>頭 「キャイン キャイン」<CF><D1>右院 「イタッ 何すんねん!?」<CF><D1>左院 「ボウリョクハ イケナ-イ!」","<@RL,MultiLeggedMedabot,00>Head:<f09> Whimper whimper...<f00><CF><D1>Right Arm: ""Ow! What's yer problem!?""<CF><D1>Left Arm: ""Say no to violence!"""
+123,0x2240f6,"<@LL,Ikki,00>ねえ きみ そこを<CD>どいてくれないかな?<CF><D1>友だちが あぶないんだ<CF><D1><@RL,MultiLeggedMedabot,00>頭 「ガルガルガル!」<CF><D1>右院 「あ? 何かうるっさいのぉ!」<CF><D1>左院 「ナ-ンデ-スカ-!?」<CF><D1><@LL,Ikki,00>もしかして 耳が 聞こえないのか?<CF><D1><@RL,Crow,00>ねつで やられたんだろ<CF><D1>やつにとって おれたちは ただの<CD>しんにゅう者って ことだ<CF><D1><@LL,Ikki,00>しかたないな","<@LL,Ikki,00>Hey, can you move aside?<CF><D1>My friend's in trouble.<CF><D1><@RL,MultiLeggedMedabot,00><f02>Head: <f00>""<f08>Grr grr grr!<f00>""<CF><D1><f02>Right Arm:<f00> ""Huh? Shut yer trap!""<CF><D1><f02>Left Arm: <f00>""What did you say!?""<CF><D1><@LL,Ikki,00>Are his ears not working?<CF><D1><@RL,Crow,00>They must be broken from the heat.<CF><D1>We're no more than intruders in his eyes.<CF><D1><@LL,Ikki,00>No other choice then."
+124,0x2240f8,"<@RL,MultiLeggedMedabot,00>頭 「キャイン キャイン」<CF><D1>右院 「イタッ 何すんねん!?」<CF><D1>左院 「ボウリョクハ イケナ-イ!」","<@RL,MultiLeggedMedabot,00><f02>Head:<f09> Whimper whimper...<f00><CF><D1><f02>Right Arm:<f00> ""Ow! What's yer problem!?""<CF><D1><f02>Left Arm:<f00> ""Say no to violence!"""
 125,0x2240fa,"<@LL,Ikki,00>スイッチがある<CF><D1>このスイッチを おそうかな?<*04>","<@LL,Ikki,00>There's a switch here.<CF><D1>Should I press it?<*04>"
 126,0x2240fc,"<@LL,Ikki,06>な 何が おこるんだ?","<@LL,Ikki,06>W-what's happening?"
 127,0x2240fe,"<@LL,Ikki,04>これかな?","<@LL,Ikki,04>Is it this one?"

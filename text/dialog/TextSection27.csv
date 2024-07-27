@@ -161,7 +161,7 @@
 159,0x22013c,"<@RL,Lady3,00>あ- やだ なんだって こんな所に<CD>ゴキブリが 出るのよ<CF><D1><@LL,Ikki,06>ゴ ゴキブリ!?","<@RL,Lady3,00>Eeek! What on earth?! There are cockroaches here! <CF><D1><@LL,Ikki,06>C-cockroaches?!"
 160,0x22013e,"<@RL,Lady3,00>今のが 地上でうわさの ロボロボ団?<CD>ゴキブリよリ こわそうね<CF><D1><@LL,Ikki,06>ぼくは ゴキブリの方が...","<@RL,Lady3,00>Was that the RoboRobo Gang they talk about on the surface? They're scarier than cockroaches!<CF><D1><@LL,Ikki,06>I'd prefer cockroaches to RoboRobo's..."
 161,0x220140,"<@RL,Lady3,00>もう ゴキブリは 出てないわ","<@RL,Lady3,00>The cockroaches don't show up anymore."
-162,0x220142,"<@RL,Lady3,00>きゃ-っ!<CD>ゴキブリ! ゴキブリ!","<@RL,Lady3,00>Eeek<D3>A cockroach! A cockroach!"
+162,0x220142,"<@RL,Lady3,00>きゃ-っ!<CD>ゴキブリ! ゴキブリ!","<@RL,Lady3,00><f08>Eeek!<f00><D3>A cockroach! A cockroach!"
 163,0x220144,"<@LL,Ikki,07>ゴキブリ! どこ? どこっ!?","<@LL,Ikki,07>A cockroach! Where? Where!?"
 164,0x220146,"<@LL,Ikki,02>...じゃ なくって!<CD>ロボロボ団 かくご!","<@LL,Ikki,02>...It's not!<D3>Get ready, RoboRobo!"
 165,0x220148,"<@RL,RubberRoboGrunt,00>...ロボ?","<@RL,RubberRoboGrunt,00>...Robo?"
