@@ -57,6 +57,16 @@ GameOverScreenCharacters::
   INCBIN "./build/tilesets/GameOverScreenCharacters.malias"
 Tileset39E1::
   INCBIN "./build/tilesets/Tileset39E1.malias"
+CashMedalChameleon::
+  INCBIN "./build/tilesets/patch/CashMedalChameleon.malias"
+LinkTransferringDataLoadScreen::
+  INCBIN "./build/tilesets/LinkTransferringDataLoadScreen.malias"
+LinkRobotollPrizeTypes::
+  INCBIN "./build/tilesets/LinkRobotollPrizeTypes.malias"
+LinkRobotollScreen::
+  INCBIN "./build/tilesets/LinkRobotollScreen.malias"
+LinkMainScreenBubbleText::
+  INCBIN "./build/tilesets/LinkMainScreenBubbleText.malias"
 
 SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FC]
 ; Include certain 2bpp 'malias' uncompressed graphics here
@@ -164,3 +174,7 @@ PatchTilesets::
   PatchTilesetEntry PaintShopPaintSelectScreen
   PatchTilesetEntry MinigameAOverlay
   PatchTilesetEntry MinigameBOverlay
+  PatchTilesetEntry HeavensGateElevator
+  PatchTilesetEntry LinkMainMenu
+  PatchTilesetEntry LinkTradeOptions
+  PatchTilesetEntry LinkRobattleOptionsModeSelect

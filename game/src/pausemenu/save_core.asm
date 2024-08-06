@@ -54,7 +54,7 @@ SaveMenuMappingState::
   ld bc, W_PlayerName
   ld de, $9823
   ld h, $74
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   call $5360
   call $5388
   call $53BC

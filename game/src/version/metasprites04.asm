@@ -247,17 +247,6 @@ MetaspriteTable04::
   dw MetaspriteTable04End
   dw MetaspriteTable04End
   dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
-  dw MetaspriteTable04End
 Metasprite0400::
   db $04
   db $00,$00,$38,$00,$10
@@ -1118,9 +1107,11 @@ Metasprite04BC::
   db $F8,$00,$4D,$01,$1F
   db $00,$00,$4E,$01,$1F
 Metasprite04BD::
-  db $02
-  db $00,$00,$60,$01,$18
-  db $00,$08,$61,$01,$18
+  db $04
+  db $00,$F8,$60,$01,$18
+  db $00,$00,$61,$01,$18
+  db $00,$08,$63,$01,$18
+  db $00,$10,$64,$01,$18
 Metasprite04BE::
   db $01
   db $F8,$08,$00,$02,$1E

@@ -3,7 +3,7 @@
 002=MainDialog1
 003=MainDialog2
 004=Special
-005=Tileset399F
+005=DialogBorderGraphics
 006=MenuMedawatchGraphics
 007=Tileset39A3
 008=Tileset39A5
@@ -123,7 +123,7 @@
 07A=Tileset3A89
 07B=Tileset3A8B
 07C=Tileset3A8D
-07D=Tileset3A8F
+07D=LinkMainScreenBubbleText
 07E=Tileset3A91
 07F=TilesetSourceAddressTableEnd
 080=Tileset3A95
@@ -158,11 +158,11 @@
 09D=TilesetSourceAddressTableEnd
 09E=TilesetSourceAddressTableEnd
 09F=TilesetSourceAddressTableEnd
-0A0=Tileset3AD5
+0A0=LinkTransferringDataLoadScreen
 0A1=Tileset3AD7
 0A2=Tileset3AD9
-0A3=Tileset3ADB
-0A4=Tileset3ADD
+0A3=LinkRobotollPrizeTypes
+0A4=LinkRobotollScreen
 0A5=Tileset3ADF
 0A6=Tileset3AE1
 0A7=Tileset3AE3

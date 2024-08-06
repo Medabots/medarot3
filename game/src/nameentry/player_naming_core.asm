@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-W_NamingScreenSubSubSubStateIndex EQU $C760
+DEF W_NamingScreenSubSubSubStateIndex EQU $C760
 
 SECTION "Player Name", WRAM0[$C656]
 W_PlayerName:: ds 1

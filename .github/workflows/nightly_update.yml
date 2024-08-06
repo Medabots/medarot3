@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-    container: docker://variantxyz/rgbds-20220711:1a126d774613431dd5eb568472493977a3682175
+  update:
+    runs-on: ubuntu-latest
+    container: ghcr.io/medabots/medarot3:tr_EN
 
     steps:
       - name: List versions
@@ -41,7 +41,8 @@ jobs:
         run: |
           git fetch --tags --all
           echo "TAG_NAME=`git rev-parse --abbrev-ref HEAD`" >> $GITHUB_ENV
-          echo "LATEST_TAG_NAME=`git tag --list --sort=version:refname \"\`git name-rev --name-only HEAD\`+nightly.*\"`" >> $GITHUB_ENV
+          echo "LATEST_TAG_NAME=`git tag --list --sort=-authordate \"\`git name-rev --name-only HEAD\`+nightly.*\" | head -n 1`" >> $GITHUB_ENV
+          echo "NIGHTLY_TAG_NAME=`git rev-parse --abbrev-ref HEAD`+nightly.`date +%Y%m%d`" >> $GITHUB_ENV
 
       - name: Get latest text from source
         working-directory: 'medarot3'
@@ -49,7 +50,7 @@ jobs:
           TRANSLATION_SHEET: sheet.xlsx
         run: |
           wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
-          make csv_from_xlsx
+          make -j dump_xlsx
           git status --porcelain
 
       - name: Push and release if there are changes
@@ -57,17 +58,18 @@ jobs:
         run: |
           [ -z "$(git status --porcelain)" ] && git diff --exit-code $LATEST_TAG_NAME && exit 0
 
+          echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
           make -j all
 
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
-          git commit -am "Nightly text update - `date +%Y%m%d`"
+          git commit -am "Nightly text update - `date +%Y%m%d`" || echo "No text changes"
 
           mkdir patch
-          ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.ips
-          ips_util create baserom_kuwagata.gbc medarot3_kuwagata.gbc -o ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.ips
+          flips --create baserom_kabuto.gbc medarot3_kabuto.gbc ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
+          flips --create baserom_kuwagata.gbc medarot3_kuwagata.gbc ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
 
           git push
 
-          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $TAG_NAME+nightly.`date +%Y%m%d` ./patch/
+          ghr -t ${{ secrets.GITHUB_TOKEN }} -b "Apply the patch for the version you want to the original ROM for that version with a BPS patcher such as https://medabots.github.io/RomPatcher.js/" -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $NIGHTLY_TAG_NAME ./patch/

@@ -81,10 +81,20 @@ LoadParticipantNameIntoBUF02Cont_\1::
   add hl, de
   ret
 .npc
+  ; A bit of a hack, but check if the loaded name exists and fits
+  ; This must cover the multiplayer, NPC ally, and NPC enemy use-cases
+  ld hl, $40
+  add hl, de
+  ; If the length is 0, fall back on the head part (probably ally)
+  ld a, [hli]
+  cp $CB
+  jr nz, .player
+  
+.useHeadPart
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   ld h, a
-  ld l, $03 ; Use the head part to get the idx for the name
+  ld l, $03
   add hl, de
   ld a, [hl]
   ld [W_ListItemIndexForBuffering], a

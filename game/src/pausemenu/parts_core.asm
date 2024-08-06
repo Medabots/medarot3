@@ -1,6 +1,6 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_PartStatsBuffer EQU $C552
+DEF W_PartStatsBuffer EQU $C552
 
 SECTION "Parts State Machine 1", ROMX[$5EBB], BANK[$06]
 PartsStateMachine::
@@ -91,8 +91,9 @@ PartsStateMachine::
   dw PartsPlaceholderState ; 3F
 
 PartsListPrepareFadeOutState::
-  ld hl, 1
   ld bc, 1
+  ld h, b
+  ld l, c
   ld d, $FF
   ld e, $A1
   ld a, 8
@@ -100,10 +101,11 @@ PartsListPrepareFadeOutState::
   jp IncSubStateIndex
 
 PartsListPrepareFadeOutToWhiteState::
-  ld hl, 0
   ld bc, 0
+  ld h, b
+  ld l, c
   ld d, $FF
-  ld e, $FF
+  ld e, d
   ld a, 8
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
@@ -135,19 +137,19 @@ PartsListDrawingState::
 PartsListMappingState::
   ld bc, 0
   ld e, $19
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld bc, 0
   ld e, $19
-  ld a, 0
+  xor a
   call WrapDecompressAttribmap0
   ld bc, $100
   ld e, $1E
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld bc, $100
   ld e, $1E
-  ld a, 0
+  xor a
   call WrapDecompressAttribmap0
   call MapTypeNameForPartList
   call PartsListCalculatePageNumberAndCursorPosition
@@ -168,7 +170,7 @@ PartsListMappingState::
   add $30
   ld e, a
   ld bc, $201
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   jp IncSubStateIndex
 
@@ -248,7 +250,7 @@ PartsListUpdatePartImageState::
   ld [W_MedalMenuWaitTimer], a
   ld bc, $201
   ld e, $34
-  ld a, 0
+  xor a
   jp WrapDecompressTilemap0
 
 .notZero
@@ -283,12 +285,14 @@ PartsStatusMappingState::
   add $2C
   ld e, a
   push de
-  ld bc, 0
-  ld a, 0
+  xor a
+  ld b, a
+  ld c, a
   call WrapDecompressTilemap0
   pop de
-  ld bc, 0
-  ld a, 0
+  xor a
+  ld b, a
+  ld c, a
   call WrapDecompressAttribmap0
   call CountPartsForPartStatus
   call TileMappingByPartTypeForPartStatus
@@ -300,6 +304,10 @@ PartsStatusInitiateMainScriptState::
   jp IncSubStateIndex
 
 PartsStatusDisplayDescriptionTextState::
+  call .displayDescriptionText
+  jp IncSubStateIndex
+
+.displayDescriptionText
   ld a, [W_CurrentPartIndexForPartStatus]
   ld [W_ListItemIndexForBuffering], a
   ld a, [W_CurrentPartTypeForListView]
@@ -308,11 +316,7 @@ PartsStatusDisplayDescriptionTextState::
   ld b, 0
   ld c, a
   ld a, 5
-  call WrapMainScriptProcessor
-  ld a, [W_MainScriptExitMode]
-  or a
-  ret z
-  jp IncSubStateIndex
+  jp WrapMainScriptProcessor
 
 PartsStatusPrepareFadeInState::
   ld hl, $1E
@@ -340,7 +344,19 @@ PartsStatusInputHandlerState::
   jp nz, IncSubStateIndex
   ldh a, [H_JPInputChanged]
   and M_JPInputB
-  ret z
+  jr nz, .bPressed
+
+  ld a, [W_MainScriptExitMode]
+  or a
+  jp z, PartsStatusDisplayDescriptionTextState.displayDescriptionText
+  di
+  rst $20
+  xor a
+  ld [$9C72], a
+  ei
+  ret
+
+.bPressed
   ld a, 4
   call ScheduleSoundEffect
   call ParsePartIndexForExitToPartList
@@ -353,7 +369,7 @@ PartsStatusPrepareFadeOutPartImageState::
   ld bc, $13
   ld d, 8
   ld e, 0
-  ld a, 8
+  ld a, d
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
 

@@ -2,7 +2,7 @@
 56
 31067
 Index[#version],ItemName,Flags
-0,Roborobo Medal\xcb,\x00
+0,RoboRobo Medal\xcb,\x00
 1,Egg Carton\xcb,\x00
 2,MiniMini Machine\xcb,\x00
 3,Town Map\xcb,\x01
@@ -29,7 +29,7 @@ Index[#version],ItemName,Flags
 24,Mermaid Uniform\xcb,\x09
 25,♥ Pendant\xcb,\x00
 26,Black Box\xcb,\x00
-27,Card Key\xcb,\x00
+27,Keycard\xcb,\x00
 28,Broken Medal\xcb,\x00
 29,Transceiver\xcb,\x00
 30,COMP Key\xcb,\x00

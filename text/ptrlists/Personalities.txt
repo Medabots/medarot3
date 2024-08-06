@@ -6,6 +6,6 @@ Index[#version],Personality
 1,Offensive
 2,Technical
 3,Defensive
-4,Obstructive
+4,Reductive
 5,Flexible
 6,Volatile

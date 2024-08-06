@@ -1,4 +1,5 @@
 INCLUDE "game/src/common/constants.asm"
+INCLUDE "game/src/common/macros.asm"
 
 SECTION "Part Trading Helper Functions 1", ROMX[$5C87], BANK[$11]
 DrawPartImageForPartTrading::
@@ -104,8 +105,8 @@ PartTradingBufferPartName::
   rst 8
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
-  ld bc, 9
+  ld hl, W_NewListItemBufferArea
+  ld bc, 17
   jp memcpy
 
 PartTradingMapPartName::
@@ -121,21 +122,25 @@ PartTradingMapPartName::
   ld hl, $9822
 
 .isBottomPartName
+  ; bc is source address
+  ; hl is vram address to draw to
+  ; WRAM bank should already be correct
   push bc
   ld bc, $801
   push hl
   call $25E5
-  pop hl
+  pop de ; VRAM address -> de
   pop bc
-  push bc
-  ld a, 8
-  call GetTileBasedCentringOffset
-  ld b, 0
-  ld c, a
-  add hl, bc
-  pop bc
-  ld a, 8
-  jp $258F
+  ld a, d ; $99xx or $98xx
+  sub $98 ; 0 or 1
+  rla
+  rla
+  rla
+  inc a
+  ld h, a
+  jp VWFDrawStringCenteredFullAddress8Tiles
+
+  padend $5d5a
 
 PartTradingAnimateDotPath::
   ld a, 1

@@ -4,7 +4,7 @@ INCLUDE "game/src/common/macros.asm"
 
 INCLUDE "build/pointer_constants.asm"
 
-W_OpeningSkipButtonPressed EQU $C737
+DEF W_OpeningSkipButtonPressed EQU $C737
 
 IF !STRCMP("{GAMEVERSION}", "kabuto")
 SECTION "Opening Input Handler", ROMX[$6236], BANK[$03]

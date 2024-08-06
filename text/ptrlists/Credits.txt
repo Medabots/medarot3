@@ -185,14 +185,14 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 181,\x00,\x02,\xCB
 182,\x00,\x02,\xCB
 183,\x00,\x03,Natsume Staff
-184,\x11,\x05,Special Thanks
+184,\x10,\x05,Special Thanks
 185,\x11,\x04,Tetsuya Oku
 186,\x11,\x04,Hiroyuki Tanaka
 187,\x11,\x04,Yuu Kasumi
 188,\x11,\x04,Ryuji Shiotani
 189,\x11,\x04,Yuki Funayama
 190,\x00,\x03,Natsume Staff
-191,\x10,\x05,Special Thanks
+191,\x00,\x05,Special Thanks
 192,\x11,\x04,Takenori Miyazaki
 193,\x11,\x04,Norihiro Maeda
 194,\x11,\x04,Masahiro Yanagisawa
@@ -206,11 +206,11 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 202,\x11,\x04,Toshiaki Kaname
 203,\x11,\x04,Junichi Yamaguchi
 204,\x10,\x03,Localization
-205,\x11,\x05,Hacking
+205,\x11,\x05,Development
 206,\x11,\x04,andwhyisit
 207,\x11,\x04,Variant
-208,\x11,\x04,\xCB
-209,\x11,\x04,\xCB
+208,\x11,\x05,Test Development
+209,\x11,\x04,netcat
 210,\x11,\x04,\xCB
 211,\x00,\x03,Localization
 212,\x10,\x05,Translations
@@ -227,30 +227,37 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 223,\x11,\x04,Aoitenshi
 224,\x11,\x04,\xCB
 225,\x00,\x03,Localization
-226,\x10,\x05,Special Thanks
-227,\x11,\x04,AzMiLion
-228,\x11,\x04,Blaziken257
-229,\x11,\x04,Gilor
-230,\x11,\x04,WobblyPython
-231,\x11,\x04,Zichz
-232,\x01,\x03,Localization
-233,\x01,\x05,Special Thanks
-234,\x11,\x04,The many members 
-235,\x11,\x04,of the Medabots
-236,\x11,\x04,Community.
-237,\x11,\x04,\xCB
+226,\x11,\x05,Editing
+227,\x11,\x04,Variant
+228,\x11,\x04,Zichz
+229,\x11,\x05,Proofreading
+230,\x11,\x04,kabuto
+231,\x11,\x04,Tobias_Levi
+232,\x00,\x03,Localization
+233,\x10,\x05,Special Thanks
+234,\x11,\x04,AzMiLion
+235,\x11,\x04,Blaziken257
+236,\x11,\x04,Gilor
+237,\x11,\x04,WobblyPython
 238,\x11,\x04,\xCB
-239,\x00,\x02,\xCB
-240,\x00,\x02,\xCD
-241,\x00,\x02,\xCB
-242,\x11,\x02,"And you,"
-243,##&C794=\x11,\x02,\x20
-244,\x00,\x02,\xCB
-245,\x00,\x02,\xCB
+239,\x01,\x03,Localization
+240,\x01,\x05,Special Thanks
+241,\x11,\x04,The many members 
+242,\x11,\x04,of the Medabots
+243,\x11,\x04,Community.
+244,\x11,\x04,\xCB
+245,\x11,\x04,\xCB
 246,\x00,\x02,\xCB
 247,\x00,\x02,\xCD
 248,\x00,\x02,\xCB
-249,\x11,\x04,Thank you
-250,\x11,\x04,for playing!
+249,\x11,\x02,"And you,"
+250,##&C794=\x11,\x02,\x20
 251,\x00,\x02,\xCB
-252,\x00,\x02,\xCC
+252,\x00,\x02,\xCB
+253,\x00,\x02,\xCB
+254,\x00,\x02,\xCD
+255,\x00,\x02,\xCB
+256,\x11,\x04,Thank you
+257,\x11,\x04,for playing!
+258,\x00,\x02,\xCB
+259,\x00,\x02,\xCC

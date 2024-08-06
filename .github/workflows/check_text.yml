@@ -1,0 +1,50 @@
+name: Check Text
+
+on:
+  workflow_run:
+    workflows: [Nightly Update (EN)]
+    types: [completed]
+
+  workflow_dispatch:
+    inputs:
+      use-latest-translations:
+        required: false
+        default: true
+        description: 'Use latest translations from shared Google Docs sheet (default: true)'
+
+jobs:
+  check-text:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    container: ghcr.io/medabots/medarot3:tr_EN
+
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v2
+        with:
+          path: 'medarot3'
+
+      - name: Get latest text from source
+        if: github.event.inputs.use-latest-translations == 'true'
+        working-directory: 'medarot3'
+        env:
+          TRANSLATION_SHEET: sheet.xlsx
+        run: |
+          wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
+          make -j dump_xlsx
+
+      - name: Run text checks
+        working-directory: 'medarot3'
+        run: |
+          make -j --silent test_text > ~/results.txt
+          sort -o ~/results.txt ~/results.txt
+          cat ~/results.txt
+          [ -z "$(cat ~/results.txt)" ] && exit 0 || exit 1
+
+      - name: Archive results
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: results.txt
+          path: ~/results.txt
+          retention-days: 1

@@ -144,10 +144,10 @@
 8F: Text Section 25 (JP Text Bank 34)
 90: Text Section 26 (JP Text Bank 35)
 91: Text Section 27 (JP Text Bank 36)
-92: 
-93: 
-94: 
-95: 
+92: Text 33 (from 63D0 onward)
+93: Text 34
+94: Text 35 (from 6F90 onward)
+95: Text 36
 96: 
 97: 
 98: 
@@ -244,11 +244,11 @@ F2: Text Pointers 2 / Pointer List Pointers / PtrList 0 / Special pointer list h
 F3: PtrList 1
 F4: PtrList 2
 F5: PtrList 3
-F6: (empty)
-F7: (empty)
-F8: (empty)
-F9: (empty)
-FA: (empty)
+F6: Text 28
+F7: Text 29
+F8: Text 30
+F9: Text 31
+FA: Text 32
 FB: Patched 2bpp gfx
 FC: Patched 2bpp gfx
 FD: Patched 2bpp gfx

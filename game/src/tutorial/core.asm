@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 
-W_TutorialScrollOffset EQU $C562
-W_TutorialCursorPosition EQU $C563
+DEF W_TutorialScrollOffset EQU $C562
+DEF W_TutorialCursorPosition EQU $C563
 
 SECTION "Tutorial State Machine", ROMX[$5E07], BANK[$07]
 TutorialStateMachine::

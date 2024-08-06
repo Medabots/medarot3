@@ -947,7 +947,6 @@ ShopBuyMappingState::
   call ShopMapMoney
   call ShopBuyMapSelectionPrice
   call ShopMapQty
-  call ShopDisplayPartDescription
   jp ShopSubstateIncrement
 
 ShopBuyUnusedCheckPart0OwnershipState::
@@ -1118,7 +1117,8 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, [$C54B]
   ld hl, $996B
   call ShopMapHeartMaybe
-  jp ShopSubstateIncrement
+  jr .showPartDesc
+  nop
 
 .part0SlotEmpty
   ld hl, $98A2
@@ -1159,6 +1159,9 @@ ShopBuyDisplayPartNamesPricesAndGenderState::
   ld a, 5
   ld b, a
   call ShopMapDashes
+
+.showPartDesc
+  call ShopDisplayPartDescription
   jp ShopSubstateIncrement
 
   padend $4883
@@ -1209,8 +1212,7 @@ ShopBuyInputHandlerState::
   ret
 
 .downNotPressed
-  ldh a, [H_JPInputChanged]
-  and M_JPInputA
+  call ShopDescriptionMultiPageHelper
   jp z, .aNotSelected
   ld a, [W_ShopSelectedPartIndex]
   cp $FF
@@ -1242,6 +1244,8 @@ ShopBuyInputHandlerState::
   call WrapInitiateMainScript
   call ShopMapMessageboxAttributes
   ret
+
+  nop
 
 ShopBuyYNBoxState::
   ld a, 4
@@ -1577,8 +1581,7 @@ ShopSellInputHandlerState::
   ret
 
 .downNotPressed
-  ldh a, [H_JPInputChanged]
-  and M_JPInputA
+  call ShopDescriptionMultiPageHelper
   jp z, .aNotPressed
   ld a, [W_ShopSelectedPartIndex]
   cp $FF
@@ -1611,6 +1614,8 @@ ShopSellInputHandlerState::
   call WrapInitiateMainScript
   call ShopMapMessageboxAttributes
   ret
+
+  nop
 
 ShopSellYNBoxState::
   ld a, 1

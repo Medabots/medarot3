@@ -100,18 +100,18 @@ Index[#version],Unknown,Name
 95,\x1e\x18\x00,Hostess
 96,\x1f\x19\x00,Bunny
 97,\x1f\x19\x00,Bunny
-98,\x21\x1a\x01,Roborobo Member
-99,\x21\x1a\x01,Roborobo Member
-100,\x21\x1a\x01,Roborobo Member
-101,\x21\x1a\x01,Roborobo Member
-102,\x21\x1a\x01,Roborobo Member
-103,\x21\x1a\x01,Roborobo Member
-104,\x21\x1a\x01,Roborobo Member
-105,\x21\x1a\x01,Roborobo Member
-106,\x21\x1a\x01,Roborobo Member
-107,\x21\x1a\x01,Roborobo Member
-108,\x21\x1a\x01,Roborobo Member
-109,\x21\x1a\x01,Roborobo Member
+98,\x21\x1a\x01,RoboRobo Member
+99,\x21\x1a\x01,RoboRobo Member
+100,\x21\x1a\x01,RoboRobo Member
+101,\x21\x1a\x01,RoboRobo Member
+102,\x21\x1a\x01,RoboRobo Member
+103,\x21\x1a\x01,RoboRobo Member
+104,\x21\x1a\x01,RoboRobo Member
+105,\x21\x1a\x01,RoboRobo Member
+106,\x21\x1a\x01,RoboRobo Member
+107,\x21\x1a\x01,RoboRobo Member
+108,\x21\x1a\x01,RoboRobo Member
+109,\x21\x1a\x01,RoboRobo Member
 110,\x22\x1b\x01,Sakekaasu
 111,\x22\x1b\x01,Sakekaasu
 112,\x22\x1b\x01,Sakekaasu
@@ -216,9 +216,9 @@ Index[#version],Unknown,Name
 211,\x4d\x3b\x00,Raicho Girl
 212,\x4e\x3c\x00,Alien
 213,\x4e\x3c\x00,Alien
-214,\x4f\x3d\x00,Rintarou
-215,\x4f\x3d\x00,Rintarou
-216,\x4f\x3d\x00,Rintarou
+214,\x4f\x3d\x00,Rintaro
+215,\x4f\x3d\x00,Rintaro
+216,\x4f\x3d\x00,Rintaro
 217,\x18\x3e\x00,Shiratama
 218,\x18\x3e\x00,Shiratama
 219,\x14\x3f\x00,Teacher
@@ -240,19 +240,19 @@ Index[#version],Unknown,Name
 235,\x13\x4a\x00,Unboylievables
 236,\x1b\x4b\x00,Cosplayers
 237,\x1b\x4c\x00,Pretty Girls
-238,\x21\x4d\x00,Roborobos
+238,\x21\x4d\x00,RoboRobos
 239,\x13\x4e\x00,Extras
-240,\x1b\x4f\x00,Hitoshirezu
+240,\x1b\x4f\x00,Human Series
 241,\x00\x50\x00,Nashi
-242,\x25\x51\x00,Roborobos
+242,\x25\x51\x00,RoboRobos
 243,\x00\x52\x00,Nashi
 244,\x4a\x53\x00,Sea Fairies
-245,\x4b\x54\x00,Sea Fairies
+245,\x4b\x54\x00,Sea Dragons
 246,\x00\x55\x00,Nashi
 247,\x46\x56\x00,Crow
 248,\x46\x57\x00,Dragonflier
 249,\x00\x58\x00,Nashi
-250,\x4f\x59\x00,Rintarou & Karin
+250,\x4f\x59\x00,Rintaro & Karin
 251,\x4a\x5a\x00,Sea Fairies
 252,\x4b\x5b\x00,Sea Dragons
 253,\x05\x5c\x00,The Screws

@@ -12,7 +12,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry MainDialog1 ; 02 (3999)
   TilesetTableEntry MainDialog2 ; 03 (399B)
   TilesetTableEntry Special ; 04 (399D)
-  TilesetTableEntry Tileset399F ; 05 (399F)
+  TilesetTableEntry DialogBorderGraphics ; 05 (399F)
   TilesetTableEntry MenuMedawatchGraphics ; 06 (39A1)
   TilesetTableEntry Tileset39A3 ; 07 (39A3)
   TilesetTableEntry Tileset39A5 ; 08 (39A5)
@@ -132,7 +132,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry Tileset3A89 ; 7A (3A89)
   TilesetTableEntry Tileset3A8B ; 7B (3A8B)
   TilesetTableEntry Tileset3A8D ; 7C (3A8D)
-  TilesetTableEntry Tileset3A8F ; 7D (3A8F)
+  TilesetTableEntry LinkMainScreenBubbleText ; 7D (3A8F)
   TilesetTableEntry Tileset3A91 ; 7E (3A91)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 7F (3A93)
   TilesetTableEntry Tileset3A95 ; 80 (3A95)
@@ -167,11 +167,11 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9D (3ACF)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9E (3AD1)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 9F (3AD3)
-  TilesetTableEntry Tileset3AD5 ; A0 (3AD5)
+  TilesetTableEntry LinkTransferringDataLoadScreen ; A0 (3AD5)
   TilesetTableEntry Tileset3AD7 ; A1 (3AD7)
   TilesetTableEntry Tileset3AD9 ; A2 (3AD9)
-  TilesetTableEntry Tileset3ADB ; A3 (3ADB)
-  TilesetTableEntry Tileset3ADD ; A4 (3ADD)
+  TilesetTableEntry LinkRobotollPrizeTypes ; A3 (3ADB)
+  TilesetTableEntry LinkRobotollScreen ; A4 (3ADD)
   TilesetTableEntry Tileset3ADF ; A5 (3ADF)
   TilesetTableEntry Tileset3AE1 ; A6 (3AE1)
   TilesetTableEntry Tileset3AE3 ; A7 (3AE3)
@@ -517,7 +517,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FB (3D8B)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FC (3D8D)
   TilesetTableEntry TilesetSourceAddressTableEnd ; 1FD (3D8F)
-  TilesetTableEntry TilesetSourceAddressTableEnd ; 1FE (3D91)
+  TilesetTableEntry CashMedalChameleon ; 1FE (3D91), Patch Tileset
   TilesetTableEntry OpeningAnimationRoboRoboGang ; 1FF (3D93), Patch Tileset
 TilesetSourceAddressTableEnd::
 
@@ -528,7 +528,7 @@ TilesetInfoTable::
   dbwb BANK(MainDialog1), $9000, $1 ; 002
   dbwb BANK(MainDialog2), $8800, $1 ; 003
   dbwb BANK(Special), $8E00, $1 ; 004
-  dbwb BANK(Tileset399F), $8D40, $1 ; 005
+  dbwb BANK(DialogBorderGraphics), $8D40, $1 ; 005
   dbwb BANK(MenuMedawatchGraphics), $9000, $0 ; 006
   dbwb BANK(Tileset39A3), $9500, $0 ; 007
   dbwb BANK(Tileset39A5), $9500, $0 ; 008
@@ -648,7 +648,7 @@ TilesetInfoTable::
   dbwb BANK(Tileset3A89), $9000, $0 ; 07A
   dbwb BANK(Tileset3A8B), $9290, $0 ; 07B
   dbwb BANK(Tileset3A8D), $8D40, $1 ; 07C
-  dbwb BANK(Tileset3A8F), $9000, $0 ; 07D
+  dbwb BANK(LinkMainScreenBubbleText), $9000, $0 ; 07D
   dbwb BANK(Tileset3A91), $8800, $0 ; 07E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 07F
   dbwb BANK(Tileset3A95), $9000, $0 ; 080
@@ -683,11 +683,11 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09D
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09E
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 09F
-  dbwb BANK(Tileset3AD5), $9000, $0 ; 0A0
+  dbwb BANK(LinkTransferringDataLoadScreen), $9000, $0 ; 0A0
   dbwb BANK(Tileset3AD7), $8000, $0 ; 0A1
   dbwb BANK(Tileset3AD9), $8000, $0 ; 0A2
-  dbwb BANK(Tileset3ADB), $8800, $0 ; 0A3
-  dbwb BANK(Tileset3ADD), $9000, $0 ; 0A4
+  dbwb BANK(LinkRobotollPrizeTypes), $8800, $0 ; 0A3
+  dbwb BANK(LinkRobotollScreen), $9000, $0 ; 0A4
   dbwb BANK(Tileset3ADF), $8000, $0 ; 0A5
   dbwb BANK(Tileset3AE1), $9000, $0 ; 0A6
   dbwb BANK(Tileset3AE3), $8000, $0 ; 0A7
@@ -1033,7 +1033,7 @@ TilesetInfoTable::
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FB
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FC
   dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FD
-  dbwb BANK(TilesetSourceAddressTableEnd), $0000, $0 ; 1FE
+  dbwb BANK(CashMedalChameleon), $9000, $0 ; 1FE, Patch Tileset
   dbwb BANK(OpeningAnimationRoboRoboGang), $8800, $0 ; 1FF, Patch Tileset
 TilesetInfoTableEnd::
 
@@ -1050,9 +1050,9 @@ SECTION "Tileset Data MainDialog2", ROMX[$44E7], BANK[$3A]
 MainDialog2::
   INCBIN "./build/tilesets/MainDialog2.malias"
 
-SECTION "Tileset Data Tileset399F", ROMX[$48BF], BANK[$3A]
-Tileset399F::
-  INCBIN "./build/tilesets/Tileset399F.malias"
+SECTION "Tileset Data DialogBorderGraphics", ROMX[$48BF], BANK[$3A]
+DialogBorderGraphics::
+  INCBIN "./build/tilesets/DialogBorderGraphics.malias"
 
 SECTION "Tileset Data Tileset39A3", ROMX[$43A0], BANK[$3C]
 Tileset39A3::
@@ -1318,10 +1318,6 @@ SECTION "Tileset Data Tileset3A8D", ROMX[$78BA], BANK[$3C]
 Tileset3A8D::
   INCBIN "./build/tilesets/Tileset3A8D.malias"
 
-SECTION "Tileset Data Tileset3A8F", ROMX[$4000], BANK[$A5]
-Tileset3A8F::
-  INCBIN "./build/tilesets/Tileset3A8F.malias"
-
 SECTION "Tileset Data Tileset3A91", ROMX[$43CB], BANK[$A5]
 Tileset3A91::
   INCBIN "./build/tilesets/Tileset3A91.malias"
@@ -1422,10 +1418,6 @@ SECTION "Tileset Data Tileset3ACB", ROMX[$6E25], BANK[$1F]
 Tileset3ACB::
   INCBIN "./build/tilesets/Tileset3ACB.malias"
 
-SECTION "Tileset Data Tileset3AD5", ROMX[$44C1], BANK[$A5]
-Tileset3AD5::
-  INCBIN "./build/tilesets/Tileset3AD5.malias"
-
 SECTION "Tileset Data Tileset3AD7", ROMX[$46B9], BANK[$A5]
 Tileset3AD7::
   INCBIN "./build/tilesets/Tileset3AD7.malias"
@@ -1433,14 +1425,6 @@ Tileset3AD7::
 SECTION "Tileset Data Tileset3AD9", ROMX[$472F], BANK[$A5]
 Tileset3AD9::
   INCBIN "./build/tilesets/Tileset3AD9.malias"
-
-SECTION "Tileset Data Tileset3ADB", ROMX[$48A6], BANK[$A5]
-Tileset3ADB::
-  INCBIN "./build/tilesets/Tileset3ADB.malias"
-
-SECTION "Tileset Data Tileset3ADD", ROMX[$4997], BANK[$A5]
-Tileset3ADD::
-  INCBIN "./build/tilesets/Tileset3ADD.malias"
 
 SECTION "Tileset Data Tileset3ADF", ROMX[$4D6B], BANK[$A5]
 Tileset3ADF::

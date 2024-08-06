@@ -5,6 +5,8 @@ VERSIONS := kuwagata kabuto
 OUTPUT_PREFIX := medarot3_
 ORIGINAL_PREFIX := baserom_
 
+LANG_CODE := EN
+
 PYTHON := python3
 
 # Types
@@ -183,6 +185,7 @@ version_tilemap_table_ADDITIONAL :=  $(TILEMAP_FILES_COMMON) $(VERSION_SRC)/tile
 version_attribmap_table_ADDITIONAL :=  $(ATTRIBMAP_FILES_COMMON) $(VERSION_SRC)/attribmap_table.asm $(ATTRIBMAP_OUT)/PLACEHOLDER_VERSION.stamp
 version_metasprites_ADDITIONAL := $(VERSION_SRC)/metasprites00.asm $(VERSION_SRC)/metasprites01.asm $(VERSION_SRC)/metasprites02.asm $(VERSION_SRC)/metasprites03.asm $(VERSION_SRC)/metasprites04.asm $(VERSION_SRC)/metasprites05.asm $(VERSION_SRC)/metasprites06.asm $(VERSION_SRC)/metasprites07.asm
 version_misc_ADDITIONAL := $(VERSION_SRC)/misc.asm
+version_titlemenu_ADDITIONAL := $(VERSION_SRC)/titlemenu.asm
 
 # Patch Specific, including any tilesets we move into the patch tileset
 patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
@@ -214,12 +217,20 @@ patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
  $(TILESET_OUT)/ChapterScreenChapterTitle5.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/ChapterScreenChapterTitle6.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/GameOverScreenCharacters.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/Tileset39E1.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/GBCOnlyErrorScreenTextGraphics.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/SplashScreenConceptCredit.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/PaintShopBubbleText.$(COMPRESSED_TSET_TYPE)\
- $(TILESET_OUT)/Digits.$(COMPRESSED_TSET_TYPE)
+ $(TILESET_OUT)/Digits.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/LinkTransferringDataLoadScreen.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/LinkRobotollPrizeTypes.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/LinkRobotollScreen.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/LinkMainScreenBubbleText.$(COMPRESSED_TSET_TYPE)
+
 
 patch_vwf_ADDITIONAL := $(PATCH_TEXT_TILESET_FILES)
+
+patch_hack_ADDITIONAL := $(PATCH_TEXT_OUT)/tag.bin $(PATCH_TEXT_OUT)/url.bin
 
 .PHONY: $(VERSIONS) all clean default test
 default: kabuto
@@ -307,7 +318,7 @@ $(ATTRIBMAP_OUT)/%.stamp: $$(call FILTER,%,$(ATTRIBMAP_FILES_VERSIONED))
 
 # build/pointer_constants.asm from scripts/res/ptrs.tbl
 $(BUILD)/pointer_constants.asm: $(SCRIPT_RES)/ptrs.tbl | $(BUILD)
-	awk -F "=0x" '{ print "c"$$1 " EQU " "$$"$$2 > "$@" }' $<
+	awk -F "=0x" '{ print "DEF c"$$1 " EQU " "$$"$$2 > "$@" }' $<
 
 ## Patch Specific
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
@@ -322,11 +333,25 @@ $(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_S
 $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
 	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
 
-# TRANSLATION_SHEET="~/sheet.xlsx" make csv_from_xlsx
-.PHONY: csv_from_xlsx
-csv_from_xlsx:
-	$(PYTHON) $(SCRIPT)/xlsx2csv.py $(TRANSLATION_SHEET) $(DIALOG_TEXT) $(DIALOG)
-	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py $(TRANSLATION_SHEET) $(PTRLISTS_TEXT) $(PTRLISTS)
+# patch/*.bin from patch/*.txt
+$(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_OUT)
+	$(PYTHON) $(SCRIPT)/patchtext2bin.py $@ $^
+
+# TRANSLATION_SHEET="~/sheet.xlsx" make dump_xlsx
+.PHONY: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
+dump_xlsx: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
+
+dump_xlsx_dialog: $(DIALOG_TEXT)
+	$(PYTHON) $(SCRIPT)/xlsx2dialog.py "$(TRANSLATION_SHEET)" "$(DIALOG_TEXT)" $(DIALOG)
+
+dump_xlsx_ptrlist: $(PTRLISTS_TEXT)
+	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py "$(TRANSLATION_SHEET)" "$(PTRLISTS_TEXT)" $(PTRLISTS)
+
+dump_xlsx_glossary: $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/glossary.csv" Glossary
+
+dump_xlsx_soundeffects: $(SCRIPT_RES)
+	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/sound_effects.txt" SoundEffects
 
 ### Dump Scripts
 
@@ -363,18 +388,44 @@ dump_metasprites: | $(SCRIPT_RES)
 
 # Tests
 .PHONY: test_tilemaps test_attribmaps
-
 test_tilemaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(TILEMAP_PREBUILT)"
 
 test_attribmaps:
 	$(PYTHON) $(SCRIPT)/test_maps.py "$(ATTRIBMAP_PREBUILT)"
 
+# Tests (Text)
+.PHONY: test_text test_spellcheck test_capitalization test_portraits test_textspeed
+test_text: test_spellcheck test_capitalization test_portraits test_textspeed
+
+test_capitalization: $(foreach FILE,$(DIALOG),test_capitalization_$(FILE))
+
+test_capitalization_%:
+	$(PYTHON) $(SCRIPT)/test_capitalization.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv"
+
+test_spellcheck: $(foreach FILE,$(DIALOG),test_spellcheck_$(FILE))
+
+test_spellcheck_%:
+	$(PYTHON) $(SCRIPT)/test_spellcheck.py "$(LANG_CODE)" "$(DIALOG_TEXT)/$*.csv" "$(SCRIPT_RES)/glossary.csv" "$(SCRIPT_RES)/sound_effects.txt" "$(SCRIPT_RES)/known_words.txt"
+
+test_portraits: $(foreach FILE,$(DIALOG),test_portraits_$(FILE))
+
+test_portraits_%:
+	$(PYTHON) $(SCRIPT)/test_portraits.py "$(DIALOG_TEXT)/$*.csv"
+
+test_textspeed: $(foreach FILE,$(DIALOG),test_textspeed_$(FILE))
+
+test_textspeed_%:
+	$(PYTHON) $(SCRIPT)/test_textspeed.py "$(DIALOG_TEXT)/$*.csv"
+
 #Make directories if necessary
 
 # Patch Specific
 $(PATCH_TILESET_OUT):
 	mkdir -p $(PATCH_TILESET_OUT)
+
+$(PATCH_TEXT_OUT):
+	mkdir -p $(PATCH_TEXT_OUT)
 
 $(BUILD):
 	mkdir -p $(BUILD)

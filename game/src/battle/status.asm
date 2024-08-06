@@ -72,8 +72,7 @@ MapMedalNameForBattleStatus::
   ld de, $9823
   ld h, $01
   ld bc, W_NewListItemBufferArea
-  ld a, 5
-  jp VWFDrawStringLeftFullAddress
+  jp VWFDrawStringLeftFullAddress8Tiles
 
 MapHeadPartNameForBattleStatus::
   ld a, [W_BattleStatusCursorPosition]
@@ -90,7 +89,7 @@ MapHeadPartNameForBattleStatus::
 .draw
   push de
   ld de, $9863
-  ld h, $06
+  ld h, $09
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
@@ -110,7 +109,7 @@ MapLeftArmPartNameForBattleStatus::
 .draw
   push de
   ld de, $98A3
-  ld h, $0E
+  ld h, $11
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
@@ -130,7 +129,7 @@ MapRightArmPartNameForBattleStatus::
 .draw
   push de
   ld de, $98E3
-  ld h, $16
+  ld h, $19
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
@@ -150,7 +149,7 @@ MapLegPartNameForBattleStatus::
 .draw
   push de
   ld de, $9923
-  ld h, $1E
+  ld h, $21
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
@@ -814,7 +813,7 @@ DisplayMedarotNamesForBattleStatus::
   or a
   jr z, .checkParticipantB
   ld hl, $9980
-  ld a, $26
+  ld a, $29
   call HelperDrawPlayerOrAllyNameString
 
 .checkParticipantB
@@ -826,7 +825,7 @@ DisplayMedarotNamesForBattleStatus::
   or a
   jr z, .checkParticipantC
   ld hl, $99c0
-  ld a, $2e
+  ld a, $31
   call HelperDrawPlayerOrAllyNameString
 
 .checkParticipantC
@@ -838,7 +837,7 @@ DisplayMedarotNamesForBattleStatus::
   or a
   jr z, .checkParticipantD
   ld hl, $9A00
-  ld a, $36
+  ld a, $39
   call HelperDrawPlayerOrAllyNameString
 
 ; Enemy bot names are loaded from a list, based on head part idx
@@ -853,7 +852,7 @@ DisplayMedarotNamesForBattleStatus::
   call HelperGetMedarotNameFromHead ; sets bc
   push de
   ld de, $998C
-  ld h, $3e
+  ld h, $41
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
 
@@ -868,7 +867,7 @@ DisplayMedarotNamesForBattleStatus::
   call HelperGetMedarotNameFromHead ; sets bc
   push de
   ld de, $99CC
-  ld h, $46
+  ld h, $49
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
 
@@ -883,12 +882,25 @@ DisplayMedarotNamesForBattleStatus::
   call HelperGetMedarotNameFromHead ; sets bc
   push de
   ld de, $9A0C
-  ld h, $4e
+  ld h, $51
   call VWFDrawStringLeftFullAddress8Tiles
   pop de
   ret
 
 HelperGetMedarotNameFromHead:
+  ; A bit of a hack, but check if the loaded name exists and fits
+  ; This must cover the multiplayer, NPC ally, and NPC enemy use-cases
+  ld hl, $40
+  add hl, de
+  push hl
+  ; If the length is 0, use the head part
+  ld a, [hli]
+  cp $CB
+  jr nz, .player
+
+.useHeadPart
+  pop hl
+  
   ; The enemy bot names are based on the head part (loaded in 0A:519c)
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
@@ -902,6 +914,10 @@ HelperGetMedarotNameFromHead:
   call WrapBufferTextFromList
   pop de
   ld bc, W_NewListItemBufferArea
+  ret
+
+.player
+  pop bc ; hl -> bc
   ret
 
   padend $6c2d

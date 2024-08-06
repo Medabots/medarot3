@@ -1,13 +1,13 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-W_NamingScreenCursorPositionIndex EQU $C48D
+DEF W_NamingScreenCursorPositionIndex EQU $C48D
 
-W_NamingScreenSubSubSubStateIndex EQU $C760
+DEF W_NamingScreenSubSubSubStateIndex EQU $C760
 
-W_NamingEntryBottomRowSelection EQU $C763
-W_NamingEntryCursorPositionIndexWithinGroup EQU $C764
-W_NamingEntryCursorRowIndex EQU $C765
+DEF W_NamingEntryBottomRowSelection EQU $C763
+DEF W_NamingEntryCursorPositionIndexWithinGroup EQU $C764
+DEF W_NamingEntryCursorRowIndex EQU $C765
 
 SECTION "Naming Screen Entry Functions 1", ROMX[$4D49], BANK[$01]
 NamingEntryCursorRepositioningTable::

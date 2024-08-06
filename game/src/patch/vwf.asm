@@ -40,14 +40,14 @@ VWFDrawStringLeftFullAddress::
   call VWFAlignToLeft
   jp VWFDrawStringLoop
 
-VWFDrawStringCentredFullAddress8Tiles::
+VWFDrawStringCenteredFullAddress8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
   ; h is the tile index of our drawing area.
   ld a, 8
-  ; Continues into VWFDrawStringCentredFullAddress.
+  ; Continues into VWFDrawStringCenteredFullAddress.
 
-VWFDrawStringCentredFullAddress::
+VWFDrawStringCenteredFullAddress::
   ; a is the number of tiles our drawing area is comprised of.
   ; bc is the address of the string to print, terminated by 0xCB.
   ; de is the address we are mapping tiles to.
@@ -94,14 +94,14 @@ VWFDrawStringLeft::
   call VWFAlignToLeft
   jp VWFDrawStringLoop
 
-VWFDrawStringCentred8Tiles::
+VWFDrawStringCentered8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
   ; h is the tile index of our drawing area.
   ; l is a single-byte representation of an address for mapping tiles to.
   ld a, 8
-  ; Continues into VWFDrawStringCentred.
+  ; Continues into VWFDrawStringCentered.
   
-VWFDrawStringCentred::
+VWFDrawStringCentered::
   ; a is the number of tiles our drawing area is comprised of.
   ; bc is the address of the string to print, terminated by 0xCB.
   ; h is the tile index of our drawing area.
@@ -254,7 +254,7 @@ VWFDrawCharForCredits::
 ; Free space.
   padend ($1EEA)
 
-SECTION "VWF Drawing Functions", ROMX[$5000], BANK[$FF]
+SECTION "VWF Drawing Functions", ROMX[$4400], BANK[$FF]
 VWFDrawLetterTable::
   ; This determines the width of each character (excluding the 1px between characters).
   ; The address of this table must be a multiple of $100.
@@ -418,6 +418,46 @@ VWFDrawSplatLetterTable::
   db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
   ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
 
+VWFDrawItalicLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 7, 7, 6 ; 1x
+  db 2, 2, 4, 6, 5, 5, 5, 2, 3, 3, 4, 5, 2, 4, 1, 5 ; 2x
+  db 5, 2, 5, 5, 5, 5, 4, 5, 5, 5, 1, 3, 5, 4, 4, 6 ; 3x
+  db 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6 ; 4x
+  db 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 3, 5, 3, 4, 4 ; 5x
+  db 2, 5, 4, 4, 5, 4, 5, 4, 4, 2, 3, 4, 2, 5, 4, 4 ; 6x
+  db 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 2, 4, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
+VWFDrawItalicBoldLetterTable::
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+  db 2, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 0x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 7, 7, 7 ; 1x
+  db 2, 3, 4, 6, 6, 5, 6, 2, 4, 4, 4, 5, 2, 4, 1, 5 ; 2x
+  db 6, 3, 6, 6, 6, 6, 5, 6, 6, 6, 1, 3, 5, 4, 4, 7 ; 3x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 4x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 5, 4, 4, 4 ; 5x
+  db 2, 6, 5, 5, 6, 5, 6, 5, 5, 3, 4, 5, 3, 6, 5, 5 ; 6x
+  db 5, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 2, 5, 7, 7 ; 7x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 8x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; 9x
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ax
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Bx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Cx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Dx
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Ex
+  db 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7 ; Fx
+  ;  x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF
+
 VWFFont::
   INCBIN "build/tilesets/patch/Font.1bpp"
 
@@ -442,6 +482,12 @@ VWFSmooshFont::
 VWFSplatFont::
   INCBIN "build/tilesets/patch/SplatFont.1bpp"
 
+VWFItalicFont::
+  INCBIN "build/tilesets/patch/ItalicFont.1bpp"
+
+VWFItalicBoldFont::
+  INCBIN "build/tilesets/patch/ItalicBoldFont.1bpp"
+
 VWFDrawCharLoop::
   call VWFCheckInit
   ld a, [hl]
@@ -465,6 +511,8 @@ VWFDrawCharLoop::
   jp z, VWFControlCodeD3
   cp $D4
   jp z, VWFControlCodeD4
+  cp $D5
+  jp z, VWFControlCodeD5
   ; This character isn't in the font, so confine the index.
   and $7F
   ld [hl], a
@@ -499,6 +547,9 @@ VWFMessageBoxInputHandler::
   ret
 
 VWFControlCodeCC:: ; End code.
+  ; It is better to reset the font every pass than to lose the chance when there is only one pass.
+  xor a
+  ld [W_VWFCurrentFont], a
   ld a, [W_MainScriptCCSubState]
   or a
   jp nz, .subsequentStateLoader
@@ -570,11 +621,6 @@ VWFControlCodeCC:: ; End code.
 .exitCode4
   jp .exitCodeCommon
 
-.exitCode5
-  ld a, 1
-  ld [W_MainScriptExitMode], a
-  ret
-
 .exitSubState1
   ld a, [W_ReturnBank]
   push af
@@ -591,8 +637,7 @@ VWFControlCodeCC:: ; End code.
   jp .nextSubState
 
 .exitSubState3
-  ld a, 1
-  ld [W_MainScriptExitMode], a
+  call .exitCode5
   jp $2060
 
 .nextSubState
@@ -608,7 +653,7 @@ VWFControlCodeCC:: ; End code.
   cp $FF
   jr nz, .continueIntoState1
 
-.exitNow
+.exitCode5
   ld a, 1
   ld [W_MainScriptExitMode], a
   ret
@@ -670,6 +715,8 @@ VWFControlCodeD0:: ; Print subtext code.
   ld a, [hli]
   ld h, [hl]
   ld l, a
+
+.extEntry
   ld a, [W_MainScriptIterator]
   ld c, a
   ld b, 0
@@ -750,6 +797,325 @@ VWFControlCodeD4:: ; Font switching code.
   ld [W_MainScriptPauseTimer], a
   jp MainScriptProcessorPutCharLoopCrossBank
 
+VWFControlCodeD5:: ; Print vowel-lengthened subtext code (WARNING: This copies to the patch list buffer).
+  ld a, [W_MainScriptIterator]
+  or a
+  call z, VWFControlCodeD5_common
+  ld hl, W_NewListItemBufferArea
+  ld a, [W_MainScriptIterator]
+  ld c, a
+  ld b, 0
+  add hl, bc
+  ld a, [hl]
+  cp $CB
+  jp nz, VWFControlCodeD0.mapCharacter
+  ld b, 4
+  call MainScriptProgressXChars
+  jp VWFWriteChar.extEntryA
+
+VWFControlCodeD5_common::
+  inc hl
+  ld a, [hli]
+  and 7
+  push af
+  ld a, [hli]
+  ld h, [hl]
+  ld l, a
+  push hl
+  ld bc, 0
+  
+.textLengthLoop
+  ld a, [hli]
+  inc b
+  cp $CB
+  jr nz, .textLengthLoop
+
+  dec hl
+  dec b
+  ld c, b
+  call VWFControlCodeD5_findExtendableChar
+  ld b, a
+  pop de
+  pop af
+  call VWFControlCodeD5_copyWithRepeat
+  ret
+
+VWFControlCodeD5_copyWithRepeat::
+  push af
+  ld c, 0
+  ld hl, W_NewListItemBufferArea
+  
+.preRepeatCopyLoop
+  ld a, [de]
+  ld [hli], a
+  ld a, c
+  cp b
+  jr z, .repeatChar
+  inc de
+  inc c
+  jr .preRepeatCopyLoop
+
+.repeatChar
+  ld a, b
+  or a
+  jr z, .skipPreviousCharCheck
+
+  dec de
+  ld a, [de]
+  inc de
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+
+.skipPreviousCharCheck
+  ld a, [de]
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+  inc de
+  ld a, [de]
+  dec de
+  call VWFControlCodeD5_checkIfLowercase
+  jr c, .repeatCharLower
+
+.repeatCharUpper
+  pop af
+  ld c, a
+  ld a, [de]
+  jr .notUppercase
+
+.repeatCharLower
+  pop af
+  ld c, a
+  ld a, [de]
+  call VWFControlCodeD5_checkIfUppercase
+  jr nc, .notUppercase
+  add $20
+
+.notUppercase
+  ld b, a
+  
+.repeatLoop
+  ld a, c
+  or a
+  jr z, .postRepeat
+  ld a, b
+  ld [hli], a
+  dec c
+  jr .repeatLoop
+
+.postRepeat
+  ld a, [de]
+  cp $CB
+  jr z, .cbTime
+
+.postRepeatCopyLoop
+  inc b
+  inc de
+
+  ld a, [de]
+  ld [hli], a
+  cp $CB
+  jr nz, .postRepeatCopyLoop
+
+.cbTime
+  ld a, $CB
+  ld [hli], a
+  ret
+
+VWFControlCodeD5_findExtendableChar::
+  jr nz, .firstPass
+
+  xor a
+  ret
+
+.firstPass
+  push hl
+
+.firstPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .firstPassIsLastChar
+
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .firstPassESCheck
+
+.firstPassRetPos
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.firstPassIsLastChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .firstPassESCheck
+
+  cp 2
+  jr z, .firstPassNotMatch
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .firstPassNotMatch
+  jr .firstPassRetPos
+
+.firstPassESCheck
+  ld a, b
+  dec a
+  jr z, .firstPassNotMatch
+
+  ld a, [hl]
+  cp $53
+  jr z, .firstPassSFound
+  cp $73
+  jr z, .firstPassSFound
+
+.firstPassNotMatch
+  dec b
+  jr nz, .firstPassLoop
+  jr .firstPassExit
+
+.firstPassSFound
+  dec hl
+  ld a, [hli]
+  cp $45
+  jr z, .firstPassESFound
+  cp $65
+  jr nz, .firstPassNotMatch
+
+.firstPassESFound
+  dec hl
+  dec b
+  jr .firstPassNotMatch
+  
+.firstPassExit
+  ld b, c
+  pop hl
+  push hl
+
+.secondPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .secondPassNotOrphanedChar
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .secondPassNotOrphanedChar
+
+.secondPassNotMatch
+  dec b
+  jr nz, .secondPassLoop
+  jr .secondPassExit
+
+.secondPassNotOrphanedChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfVowel
+  ld a, d
+  or a
+  jr z, .secondPassNotMatch
+
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.secondPassExit
+  ld b, c
+  pop hl
+  push hl
+
+.thirdPassLoop
+  ld a, [hld]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .thirdPassNotOrphanedChar
+
+  dec hl
+  ld a, [hli]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr c, .thirdPassNotOrphanedChar
+
+.thirdPassNotMatch
+  dec b
+  jr nz, .thirdPassLoop
+  jr .thirdPassExit
+
+.thirdPassNotOrphanedChar
+  ld a, [hl]
+  call VWFControlCodeD5_checkIfAlphabetical
+  jr nc, .thirdPassNotMatch
+
+  pop hl
+  dec b
+  ld a, b
+  ret
+
+.thirdPassExit
+  pop hl
+  ld a, c
+  ret
+
+VWFControlCodeD5_checkIfAlphabetical::
+  call VWFControlCodeD5_checkIfUppercase
+  ret c
+  ; Continue into VWFControlCodeD5_checkIfLowercase
+
+VWFControlCodeD5_checkIfLowercase::
+  cp $61
+  jr c, VWFControlCodeD5_checkIfUppercase.ccfret
+  cp $7B
+  ret
+
+VWFControlCodeD5_checkIfUppercase::
+  cp $41
+  jr c, .ccfret
+  cp $5B
+  ret
+  
+.ccfret
+  ccf
+  ret
+
+VWFControlCodeD5_checkIfVowel::
+  ; notvowel=0, "a"=1, "e"=2, "i"=3, "o"=4, "u"=5, "y"=6
+
+  ld d, 6
+  cp $59
+  ret z
+  cp $79
+  ret z
+  dec d
+  cp $55
+  ret z
+  cp $75
+  ret z
+  dec d
+  cp $4F
+  ret z
+  cp $6F
+  ret z
+  dec d
+  cp $49
+  ret z
+  cp $69
+  ret z
+  dec d
+  cp $45
+  ret z
+  cp $65
+  ret z
+  dec d
+  cp $41
+  ret z
+  cp $61
+  ret z
+  dec d
+  ret
+
 VWFAutoNL::
   push hl
   ld a, [W_VWFIsSecondLine]
@@ -775,8 +1141,7 @@ VWFAutoNL::
 
 .loop
   ld a, c
-  cp $89
-  ; The measurements account for 1px spacing, which does not matter at a line's end
+  cp $88
   jr z, .check_next_character
   jr nc, .tooLong
 .check_next_character
@@ -807,6 +1172,8 @@ VWFAutoNL::
   jr z, .exitLoop
   cp $D4
   jr z, .controlCodeD4
+  cp $D5
+  jp z, .controlCodeD5
   and $7F
   jr .measureChar
 
@@ -861,11 +1228,17 @@ VWFAutoNL::
   ld a, [hli]
   ld h, [hl]
   ld l, a
+  call .subtextLoop
+  pop hl
+  inc hl
+  inc hl
+  inc hl
+  jp .loop
 
 .subtextLoop
   ld a, [hli]
   cp $CB
-  jr z, .exitSubtextLoop
+  ret z
   push hl
   ld l, a
   ld a, VWFDrawLetterTable >> 8
@@ -878,8 +1251,16 @@ VWFAutoNL::
   ld c, a
   jr .subtextLoop
 
-.exitSubtextLoop
+.controlCodeD5
+  push de
+  push bc
+  call VWFControlCodeD5_common
+  pop bc
+  pop de
+  ld hl, W_NewListItemBufferArea
+  call .subtextLoop
   pop hl
+  inc hl
   inc hl
   inc hl
   inc hl
@@ -1063,7 +1444,7 @@ VWFDrawStringInitContinued::
   ld b, a
   call VWFEmptyDrawingRegion
 
-  ; Clear the first tile in the composite area to avoid visual bugs with centred text.
+  ; Clear the first tile in the composite area to avoid visual bugs with centered text.
 
   ld hl, W_VWFCompositeArea
   ld b, $10

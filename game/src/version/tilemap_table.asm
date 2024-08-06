@@ -409,7 +409,7 @@ Tilemap00_50::
 Tilemap00_51::
   INCBIN "./build/tilemaps/0051.map"
 Tilemap00_52::
-  INCBIN "./build/tilemaps/0052.map"
+  INCBIN "./build/tilemaps/RobattleEncounterScreen.map"
 Tilemap00_53::
   INCBIN "./build/tilemaps/0053.map"
 Tilemap00_54::
@@ -565,25 +565,25 @@ Tilemap00_B3::
 Tilemap00_B4::
   INCBIN "./build/tilemaps/00B4.map"
 Tilemap00_B5::
-  INCBIN "./build/tilemaps/00B5.map"
+  INCBIN "./build/tilemaps/LinkMainMenu.map"
 Tilemap00_C1::
-  INCBIN "./build/tilemaps/00C1.map"
+  INCBIN "./build/tilemaps/LinkTransferringDataLoadScreen.map"
 Tilemap00_C2::
   INCBIN "./build/tilemaps/000C.map"
 Tilemap00_C3::
-  INCBIN "./build/tilemaps/00C3.map"
+  INCBIN "./build/tilemaps/LinkRobattleOptionsModeSelect.map"
 Tilemap00_C4::
-  INCBIN "./build/tilemaps/00C4.map"
+  INCBIN "./build/tilemaps/LinkRobotollScreen.map"
 Tilemap00_C5::
-  INCBIN "./build/tilemaps/00C5.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionHead.map"
 Tilemap00_C6::
-  INCBIN "./build/tilemaps/00C6.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionRArm.map"
 Tilemap00_C7::
-  INCBIN "./build/tilemaps/00C7.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionLArm.map"
 Tilemap00_C8::
-  INCBIN "./build/tilemaps/00C8.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionLegs.map"
 Tilemap00_C9::
-  INCBIN "./build/tilemaps/00C9.map"
+  INCBIN "./build/tilemaps/LinkRobotollPrizeOptionMiss.map"
 Tilemap00_CA::
   INCBIN "./build/tilemaps/RobattleTextChargeMF.map"
 Tilemap00_F1::
@@ -1119,37 +1119,37 @@ Tilemap01_96::
 Tilemap01_97::
   INCBIN "./build/tilemaps/0197.map"
 Tilemap01_98::
-  INCBIN "./build/tilemaps/0198.map"
+  INCBIN "./build/tilemaps/HeavensGateElevatorMainTilemap.map"
 Tilemap01_99::
-  INCBIN "./build/tilemaps/0199.map"
+  INCBIN "./build/tilemaps/HeavensGateElevatorB1F.map"
 Tilemap01_9A::
-  INCBIN "./build/tilemaps/019A.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator01F.map"
 Tilemap01_9B::
-  INCBIN "./build/tilemaps/019B.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator02F.map"
 Tilemap01_9C::
-  INCBIN "./build/tilemaps/019C.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator03F.map"
 Tilemap01_9D::
-  INCBIN "./build/tilemaps/019D.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator04F.map"
 Tilemap01_9E::
-  INCBIN "./build/tilemaps/019E.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator05F.map"
 Tilemap01_9F::
-  INCBIN "./build/tilemaps/019F.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator06F.map"
 Tilemap01_A0::
-  INCBIN "./build/tilemaps/01A0.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator07F.map"
 Tilemap01_A1::
-  INCBIN "./build/tilemaps/01A1.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator08F.map"
 Tilemap01_A2::
-  INCBIN "./build/tilemaps/01A2.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator09F.map"
 Tilemap01_A3::
-  INCBIN "./build/tilemaps/01A3.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator10F.map"
 Tilemap01_A4::
-  INCBIN "./build/tilemaps/01A4.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator11F.map"
 Tilemap01_A5::
-  INCBIN "./build/tilemaps/01A5.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator12F.map"
 Tilemap01_A6::
-  INCBIN "./build/tilemaps/01A6.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator13F.map"
 Tilemap01_A7::
-  INCBIN "./build/tilemaps/01A7.map"
+  INCBIN "./build/tilemaps/HeavensGateElevator14F.map"
 Tilemap01_A8::
   INCBIN "./build/tilemaps/01A8.map"
 Tilemap01_AB::
@@ -1445,11 +1445,11 @@ Tilemap02_00::
 Tilemap02_01::
   INCBIN "./build/tilemaps/0201.map"
 Tilemap02_02::
-  INCBIN "./build/tilemaps/0202.map"
+  INCBIN "./build/tilemaps/LinkTradeOptions.map"
 Tilemap02_69::
-  INCBIN "./build/tilemaps/0269.map"
+  INCBIN "./build/tilemaps/LinkTradeWaitScreen.map"
 Tilemap02_6A::
-  INCBIN "./build/tilemaps/026A.map"
+  INCBIN "./build/tilemaps/LinkTradeOwnItemImage.map"
 Tilemap02_6B::
   INCBIN "./build/tilemaps/026B.map"
 Tilemap02_6C::
@@ -1457,7 +1457,7 @@ Tilemap02_6C::
 Tilemap02_6D::
   INCBIN "./build/tilemaps/026D.map"
 Tilemap02_6E::
-  INCBIN "./build/tilemaps/026E.map"
+  INCBIN "./build/tilemaps/LinkTradePartnerItemImage.map"
 Tilemap02_6F::
   INCBIN "./build/tilemaps/026F.map"
 Tilemap02_70::
@@ -1467,7 +1467,7 @@ Tilemap02_71::
 Tilemap02_72::
   INCBIN "./build/tilemaps/0272.map"
 Tilemap02_73::
-  INCBIN "./build/tilemaps/0273.map"
+  INCBIN "./build/tilemaps/LinkGiftMedalOptions.map"
 Tilemap02_74::
   INCBIN "./build/tilemaps/0274.map"
 Tilemap02_75::
@@ -1736,7 +1736,7 @@ TilemapTable03::
   dw TilemapTable03Terminator ; FB
   dw TilemapTable03Terminator ; FC
   dw TilemapTable03Terminator ; FD
-  dw TilemapTable03Terminator ; FE
+  dw CashMedalChameleonTilemap ; FE
   dw TilemapTable03Terminator ; FF
 Tilemap03_00::
   INCBIN "./build/tilemaps/0300.map"
@@ -1766,3 +1766,6 @@ Tilemap03_0C::
   INCBIN "./build/tilemaps/030C.map"
 TilemapTable03Terminator::
 
+SECTION "Tilemap Table 03 - Cash Medal Chameleon", ROMX[$7B00], BANK[$AB]
+CashMedalChameleonTilemap::
+  INCBIN "./build/tilemaps/CashMedalChameleon.map"

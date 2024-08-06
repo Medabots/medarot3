@@ -54,13 +54,13 @@
 052,0x94092,もういちど はじめから<CD>ゲ-ムを プレイしてください<*02>,Play the game from the start once more.<*02>
 053,0x94094,まちがって けさないように<CD>ちゅういしてください<*02>,Be careful not to accidentally delete your save data.<*02>
 054,0x94096,<SFF>全国の ロボトルファンのみなさん<CD>おまたせ いたしました!<*04>,"<SFF>Fans from around the country, sorry for the wait!<*04>"
-055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from the Robattle Association...<*04>
+055,0x940c2,<SFF>わたくし ロボトルきょう会<CD>こうにん レフェリ-<*04>,<SFF>I am the official referee from the robattle Association...<*04>
 056,0x940c4,<SFF>ミスタ-.うるちです!<*04>,<SFF>Mr. Uruchi!<*04>
-057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, Robattle Fight your way up to space, kids!<*04>"
-058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-on-one Robattle Fight!<*04>
-059,0x940ca,<SFF>おおっ!!<CD>のぞむところだっ!<*04>,<SFF>Yeah!! Bring it on!!<*04>
+057,0x940c6,<SFF>それでは みなさん!<CD>宇宙めざして ロボトル ファイトッ!<*04>,"<SFF>And with that, robattle fight your way up to space, kids!<*04>"
+058,0x940c8,<SFF>行くぞ! タイマンで<CD>しんけんロボトルだ!<*04>,<SFF>Let's go! A one-on-one robattle fight!<*04>
+059,0x940ca,<SFF>おおっ!!<CD>のぞむところだっ!<*04>,<SFF>Yeah! Bring it on!!<*04>
 060,0x940cc,<SFF>え!? ちょっと ちょっと!<CD>そんな 勝手にっ...!<*04>,"<SFF>Huh? Wait wait, I'm the one that's supposed to- uh.....<*04>"
-061,0x940ce,<SFF>ロボトル- ファイト-!!<*04>,<SFF>Robattle fight!!<*04>
+061,0x940ce,<SFF>ロボトル- ファイト-!!<*04>,<SFF>Robattle fight!<*04>
 062,0x940d0,<SFF>何? この歌?<*04>,<SFF>What? This song...<*04>
 063,0x940d2,<SFF>聞いたことのない メロディ-だ<*04>,<SFF>I've never heard a melody like this before.<*04>
 064,0x940d4,<SFF>だけど...とっても<CD>やさしい 歌<*04>,<SFF>But... it's so lovely.<*04>
@@ -69,7 +69,7 @@
 067,0x940da,<SFF>6負かヘい石から<CD>スピリットたちが!<*04>,<SFF>The spirits from the fossils!<*04>
 068,0x940dc,<SFF>ブラックデビル!!<*04>,<SFF>Black Devil!!<*04>
 069,0x940de,<SFF>目が ひらいた<*04>,<SFF>It opened its eyes!<*04>
-070,0x940e0,<SFF>大きい...これも メダロット?<*04>,It's huge...<D3>Is this also a Medarot?<*04>
+070,0x940e0,<SFF>大きい...これも メダロット?<*04>,<SFF>It's huge...<D3>Is this also a Medarot?<*04>
 071,0x940e2,<SFF>あくま...だ<*04>,<SFF>It's... a devil.<*04>
 072,0x940e4,<SFF>さあ! みんな かえろう<CD>ぼくたちの 家ヘ!<*04>,<SFF>Come on! <D3>Let's all go back home!<*04>
 073,0x940e6,<SFF>ビ-ハイブまで きょうそうだ!<*04>,<SFF>Race you to Beehive!<*04>
@@ -79,21 +79,21 @@
 077,0x940ee,<SFF>あ! きみは!<*04>,<SFF>Ah! It's you!<*04>
 078,0x940f0,スカイTV ていきょう<CD>メダロット えいせい<CF>「テラカドくん」から<CD>おおくリ している<CF>「週刊メダロット」の お時間です!<CF>本日 ゲストを おむかえしています<CD>ニモウサク ユウキさん どうぞ!<*03>,"Being broadcast from Sky TV's Medarot satellite...<CF><f02>Little Terakado<f00> brings you...<CF><f02>Medarot Weekly<f00>!<CF>We welcome today's guest, Mr. Yuki Nimosaku!<*03>"
 079,0x94102,やあ よい子の メダロッタ-たち<CD>元気かい?<*03>,Yo! How're all you Medarotters doing?<*03>
-080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,I have major news for all of you today...<CF>Courtesy of the Medarot Company...<CF>A nationwide Elementary School Robattle Tournament will be held... <CF>The Medalympics!<CF>The strongest schoolkid Medarotter team will be crowned the National Elementary Robattle Champions!<CF>The winner gets a trip into space to boot!<CF>Come and challenge it yourself if you're watching this!<*03>
+080,0x94104,今日は キミたちに<CD>じゅうだい ニュ-スを つたえよう<CF>今回 メダロット社の ていきょうで<CD>全国小学生 ロボトル大会<CF>「メダリンピック」を<CD>かいさいすることに なったのさ!<CF>かくちいきの小学校で さいきょうの<CD>メダロッタ-チ-ムを せんばつし<CF>全国小学生 ロボトルチャンピオンを<CD>きめるんだ<CF>ゆう勝すれば なんと <CD>宇宙リょこうがまっている!<CF>さあ TVの前のキミも<CD>ぜひ チャレンジして くれたまえ!<*03>,I have major news for all of you today...<CF>Courtesy of the Medarot Company...<CF>A nationwide Elementary School Robattle Tournament will be held... <CF>The Medalympics!<CF>The strongest schoolkid Medarotter team will be crowned the National Elementary Robattle Champions!<CF>The winners get a trip into space to boot!<CF>Come and challenge it yourself if you're watching this!<*03>
 081,0x94106,ル-ルは 3人のメダロッタ-を<CD>1チ-ムとし 3たい3の<CF>チ-ムバトルせいと します!<CF>かいさい日時は かく小学校で<CD>はっぴょうと なリます<*03>,The rules are 3 Medarotters per team for a 3-on-3.<CF>This will be a team battle!<CF>The day and time will be announced at the schools!<*03>
 082,0x94108,ティンペットは メダロットの<CD>「ほね」に あたるものである<CF>男型と 女型の2しゅるいあリ<CF>それぞれ せんようの パ-ツしか<CD>そうびできない<*02>,The Tinpet is the skeleton of the Medarot.<CF>There are two types: Male and female Tinpets.<CF>Only parts of the same type fit the Tinpet.<*02>
 083,0x9410a,ティンペットに<CD>頭.右院.左院.脚部の<CF>4しゅるいの パ-ツを<CD>そうちゃくし<*02>,"Tinpets have a head, a right arm, a left arm, and legs.<CF>Four different types of parts to install.<*02>"
-084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,A Medarot's personality depends on the inserted Medal.<*04>
+084,0x9410c,メダロットの ずのうとなる<CD>メダルを はめこむことによって<*04>,The way a  Medarot understands the world depends on the inserted Medal.<*04>
 085,0x9410e,さまざまな こせいを もった<CD>メダロットたちが かんせいする!<*02>,There are all kinds of Medarots with all sorts of personalities!<*02>
-086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF>B1F<D3><f01>Go to <f00>Heaven's Tower?<*04>
+086,0x94110,<SFF>B1F<CD>ヘブンスタワ-B1Fに 行く?<*04>,<SFF>B1F<D3><f01>Go to <f00>Heaven's Tower B1F?<*04>
 087,0x94112,<SFF>1F<CD>エントランスに 行く?<*04>,<SFF>1F<D3><f01>Go to the <f00>entrance?<*04>
 088,0x94114,<SFF>2F<CD>オフィス1に 行く?<*04>,<SFF>2F<D3><f01>Go to <f00>office 1?<*04>
-089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Air Hotel 1?<*04>
-090,0x94118,<SFF>4F<CD>エアロホテル2に 行く?<*04>,<SFF>4F<D3><f01>Go to <f00>Air Hotel 2?<*04>
+089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Aero Hotel 1?<*04>
+090,0x94118,<SFF>4F<CD>エアロホテル2に 行く?<*04>,<SFF>4F<D3><f01>Go to <f00>Aero Hotel 2?<*04>
 091,0x9411a,<SFF>5F<CD>オフィス2に 行く?<*04>,<SFF>5F<D3><f01>Go to <f00>office 2?<*04>
 092,0x9411c,<SFF>6F<CD>メダロット社に 行く?<*04>,<SFF>6F<D3><f01>Go to the <f00>Medarot Company?<*04>
-093,0x9411e,<SFF>7F<CD>ライチョウ学園1に 行く?<*04>,<SFF>7F<D3><f01>Go to <f00>Raicho Academy 1F?<*04>
-094,0x94120,<SFF>8F<CD>ライチョウ学園2に 行く?<*04>,<SFF>8F<D3><f01>Go to <f00>Raicho Academy 2F?<*04>
+093,0x9411e,<SFF>7F<CD>ライチョウ学園1に 行く?<*04>,<SFF>7F<D3><f01>Go to <f00>Raicho Institute 1F?<*04>
+094,0x94120,<SFF>8F<CD>ライチョウ学園2に 行く?<*04>,<SFF>8F<D3><f01>Go to <f00>Raicho Institute 2F?<*04>
 095,0x94122,<SFF>9F<CD>スカイパ-クに 行く?<*04>,<SFF>9F<D3><f01>Go to <f00>Sky Park?<*04>
 096,0x94124,<SFF>10F<CD>オフィス3に 行く?<*04>,<SFF>10F<D3><f01>Go to <f00>office 3?<*04>
 097,0x94126,<SFF>11F<CD>スカイTVに 行く?<*04>,<SFF>11F<D3><f01>Go to <f00>Sky TV?<*04>
@@ -101,8 +101,8 @@
 099,0x9412a,<SFF>13F<CD>エアロポ-トに 行く?<*04>,<SFF>13F<D3><f01>Go to the <f00>Aero Port?<*04>
 100,0x9412c,<SFF>14F<CD>スタ-ゲ-トに 行く?<*04>,<SFF>14F<D3><f01>Go to <f00>Star Gate?<*04>
 101,0x9412e,む-...分かリました!<CD>メダリンピックの<CF>ル-ルとは ちがいますが<CD>わたくし ミスタ- うるち!<CF>少年たちの あつき たましいに<CD>こたえまして<CF>あらためて レフェリ-を<CD>つとめさせて いただきます!<CF>それでは...<*03>,"Hmm... I got it! <CF>The rules of the Medalympics may say otherwise, but in answer to the passionate souls of these young boys, I, Mr. Uruchi, will be the referee once more!<CF>Now... <*03>"
-102,0x94130,フギャッ フギャッ<CD>ウウ...アヴ...<CF>なき声が 止まったわ<CD>どうして?<CF>なく子を おちつかせるのは<CD>やっぱリ 子もリ歌が 1番なんだね!<*02>,"Wah! Wah!<D3>Urgh... urg....<CF>Oh, it stopped crying.<D3>But why?<CF>I guess a lullaby really is the best way to calm a crying kid!<*02>"
-103,0x94132,これはっ!<CF>そう ブラックカブトさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックビ-トルだ<CF>どうだい つよそうだろう?<CF>ふざけんじゃね-よ!<CF>オレが ニセモノなんかに<CD>まけるかよっ!<CF>勝った方が ほんものよね<CF>つまリ アタシが 勝てば<CD>アタシが ほんものってわけ<*02>,"Hey that's-!<CF>That's right, a Black Kabuto.<CF>The Black Beetle model is the antithesis of your <&BUF07>.<CF>So,what do you think?<D3>Sounds pretty strong, no?<CF>Get real!<CF>There's no way I'm losing to a fake like her!<CF>All right, whoever wins is the real thing then.<CF>In other words, if I win, I'll be the real deal!<*02>"
+102,0x94130,フギャッ フギャッ<CD>ウウ...アヴ...<CF>なき声が 止まったわ<CD>どうして?<CF>なく子を おちつかせるのは<CD>やっぱリ 子もリ歌が 1番なんだね!<*02>,"Wah! Wah!<D3>Uuw... Auu....<CF>Oh, it stopped crying.<D3>But why?<CF>I guess a lullaby really is the best way to calm a crying kid!<*02>"
+103,0x94132,これはっ!<CF>そう ブラックカブトさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックビ-トルだ<CF>どうだい つよそうだろう?<CF>ふざけんじゃね-よ!<CF>オレが ニセモノなんかに<CD>まけるかよっ!<CF>勝った方が ほんものよね<CF>つまリ アタシが 勝てば<CD>アタシが ほんものってわけ<*02>,"Hey that's-!<CF>That's right, a Black Kabuto.<CF>The Black Beetle model is the antithesis of your <&BUF07>.<CF>So, what do you think?<D3>Sounds pretty strong, no?<CF>Get real!<CF>There's no way I'm losing to a fake like her!<CF>All right, whoever wins is the real thing then.<CF>In other words, if I win, I'll be the real deal!<*02>"
 104,0x94134,これはっ!<CF>そう ブラッククワガタさ<CD>きみの <&BUF07>とは<CF>まったく ぎゃくの メダロット<CD>ブラックスタッグだ<CF>どうだい つよそうだろう?<CF>にせものが このおれに<CD>勝てると 思っているのか?<CF>勝った方が ほんものよ<CF>わたしが勝てば<CD>ほんものは わたし<*02>,"That's--! <CF>Yes, a Black Kuwagata.<CF>The Black Stag Medarot is the antithesis of your <&BUF07>. <CF>Doesn't that sound strong?<CF>You, a fake, think you can win against me? <CF>The real one will be the winner! <CF>So when I beat you, the real one will be me!<*02>"
 105,0x94136,レア.メダル.貝-っけ♥<CF>な 何だ? こいつ!<CD>とつぜん あらわれやがって!<CF>はねの ある 人間?<CF>キレイ...♥<CF>レア.メダル<CD>また.元のニンゲンに.もどってる<CF>うわき者.ね!<CF>だれがだっ!<CF>わたしが.きょうみ.あるのは<CD>レア.メダルの.お前だけ!<CF>お前が.勝てば.あとは<CD>貝のがし.たげる<CF>ほんとだな!<CF>イワノイ! カガミヤマ!<CD>お前らは 先に行け!<*02>,"Search - rare - Medals♥<CF>W-what?! Where'd this one come from all of a sudden?!<CF>A human with wings?<CF>Pretty...♥<CF>Rare - Medal - turning back - to human.<CF>You're fickle, aren't you?<CF>Who are you?!<CF>I only - like you - with rare Medals!<CF>If you win - I'll look away.<CF>That's the truth!<CF>Iwanoi! Kagamiyama! You guys go ahead!<*02>"
 106,0x94138,はははははっ お前は わざわざ<CD>わたしの 元まで<CF>わたしの 子どもたちを<CD>はこんできたと いうわけだ!<CF>目ざめよ わが しもベたち!<CF>ブラックデビルと おそれられた<CD>わたしの力を 貝せてやろう<*02>,"Hahahahaha! You made it all the way here, to me! <CF>That must be how my children were brought here!<CF>Awake, my servant!<CF>I'll show you my power with the fearful Black Devil!<*02>"

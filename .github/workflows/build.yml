@@ -18,8 +18,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    container: docker://variantxyz/rgbds-20230123:e27da737c6aca9659458d95c32d606ebbea7380c
+    runs-on: ubuntu-latest
+    container: ghcr.io/medabots/medarot3:tr_EN
 
     steps:
       - name: List versions
@@ -53,24 +53,24 @@ jobs:
           TRANSLATION_SHEET: sheet.xlsx
         run: |
           wget -q --no-check-certificate "${{ secrets.TRANSLATION_SHEET_URL_SOURCE }}" -O $TRANSLATION_SHEET
-          make csv_from_xlsx
+          make -j dump_xlsx
 
       - name: Make all
         working-directory: 'medarot3'
         run: |
           make -j all
 
-      - name: Generate IPS files
+      - name: Generate BPS files
         working-directory: 'medarot3'
         run: |
-          ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o m3kabuto-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
-          ips_util create baserom_kuwagata.gbc medarot3_kuwagata.gbc -o m3kuwagata-$GITHUB_RUN_NUMBER-$GITHUB_SHA.ips
+          flips --create baserom_kabuto.gbc medarot3_kabuto.gbc m3kabuto-$GITHUB_RUN_NUMBER-$GITHUB_SHA.bps
+          flips --create baserom_kuwagata.gbc medarot3_kuwagata.gbc m3kuwagata-$GITHUB_RUN_NUMBER-$GITHUB_SHA.bps
 
-      - name: 'Archive IPS files'
+      - name: 'Archive BPS files'
         uses: actions/upload-artifact@v2
         with:
-          name: ips_files
-          path: medarot3/*.ips
+          name: patch_files
+          path: medarot3/*.bps
           retention-days: 1
 
       - name: Verify there are no uncommitted changes

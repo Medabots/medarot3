@@ -1,13 +1,15 @@
 *.gbc
 *.sav
 *.sgm
+*.state
+*.ram
 build/
 *.sn*
 *.sna
 *.o
 .vscode/
 scripts/common/__pycache__/
-*.ips
+*.bps
 *.pyc
 /*.map
 *.sym
@@ -15,3 +17,5 @@ scripts/common/__pycache__/
 
 # OSX
 .DS_Store
+
+/.venv/

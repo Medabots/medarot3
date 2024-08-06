@@ -1,242 +1,242 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x22c000,"<@RL,Lady2,00>あんな人には なっちゃだめよ!<CF><D1>ぼうやは リっぱな こうむいんに<CD>なるのよ!",
-001,0x22c002,"<@RL,Lady2,00>うちの だんな すぐに<CD>のリものよい しちゃうのよ",
-002,0x22c004,"<@RL,Boy,00>ビ-ハイブって 変な作リだろ?<CD>だから かくれんぼとか 出来るんだ",
-003,0x22c006,"<@RL,Boy,00>どこ行ったんだ? あいつ<CD>かくれるのが 上手なんだよな",
-004,0x22c008,"<@RL,Boy,00>うわ- いいな- ぼくも ほしいな-",
-005,0x22c00a,"<@RL,ScientistMale,01>いいだろ- せんしゃメダロットの<CD>さいしんばん だからな",
-006,0x22c00c,"<@LL,Ikki,04>この せんしゃメダロットは<CD>すごく つよそうだ!",
-007,0x22c00e,"<@RL,ScientistMale,00>きみ! あぶないから さがってなさい<CF><D1>かいはつ中の パ-ツだから<CD>どんな じこが おこるか<CF><D1><@LL,Ikki,04>おじさんは あぶなくないの?<CF><D1><@RL,ScientistMale,01>わたしは このしごと 長いからね",
-008,0x22c010,"<@RL,ScientistMale,00>あ あぶないじゃないかっ!",
-009,0x22c012,"<@RL,ScientistMale,00>ティンペットが 多くなったら<CD>その内の1体は せんすいに つよい<CF><D1>パ-ツで 租んでおくと いいかも",
-010,0x22c014,"<@RL,ScientistMale,00>メダロット変形についての ろんぶんを<CD>かきたかったんだけど<CF><D1>まだまだ しリょうが 出てないなあ",
-011,0x22c016,"<@RL,ScientistMale,00>「トラップパ-ツ」 使ってる?",
-012,0x22c018,"<@RL,ScientistMale,00>「いんペいパ-ツ」とか 使ってる?",
-013,0x22c01a,"<@RL,ScientistMale,00>攻撃させる だけじゃ 本当の<CD>メダロッタ-には なれないぞ",
-014,0x22c01c,"<@RL,ScientistMale,00>メダロットは おくが ふかい<CD>だからもっと 研究が ひつようだ",
-015,0x22c01e,"<@RL,Karin,04><&BUF03>くん<CF><D1><@LL,Ikki,04>何? カリンちゃん<CF><D1><@RL,Karin,04>聞いてほしいことが あるんです<CF><D1>あの...わらわずに<CD>聞いていただけますか?<CF><D1><@LL,Ikki,06>(どきっ♥)<CD>な 何?<CF><D1><@RL,Karin,00>じつは わたし その...<CF><D1><@LL,Ikki,07>(どきどきっ♥♥)",
-016,0x22c020,"<@RL,Karin,00>ゆめを 貝たんです!<CF><D1><@LL,Ikki,00>ゆ ゆめ?<CF><D1><@RL,Karin,00>ええ「月の海」の ゆめを<CF><D1>月に海があって<CD>たくさんの 草や木が...<CF><D1><@LL,Ikki,00>それって このルナパ-クの<CD>ことじゃないの?<CF><D1><@RL,Karin,00>そんなんじゃないんです<CD>とても広い 海なんです!<CF><D1>わたし それが どうしても<CD>ただの ゆめだって 思えなくて<CF><D1>きっと この月には<CF><D1>だれも 知らない 月の海が<CD>あるんじゃないかって...<CF><D1><@RL,Karin,05>やっぱリ こんな お話<CD>おかしいですか?<CF><D1><@LL,Ikki,06>そっ そんなことないよ!<CF><D1><@RL,Karin,00>しんじてくださいます?<CF><D1><@LL,Ikki,00>も もちろん!<CF><D1><@RL,Karin,04>あリがとうございます<CF><D1>すみません とつぜん こんな<CD>変な お話を して<CF><D1><@LL,Ikki,04>そんな! ぜんぜん かまわないよ!<CF><D1><@RL,Karin,04>そろそろ おヘやの方に<CD>行きたいと 思います<CF><D1><&BUF03>くんは?<CF><D1><@LL,Ikki,04>あ うん 休みたくなったらね<CF><D1><@RL,Karin,04>分かリましたわ<CD>それでは また あとで",
-017,0x22c022,"<@LL,Ikki,04>(何を きたいしてたのかな?<CD>ぼくは)",
-018,0x22c024,"<@LL,Ikki,00>ううん...何だか ねむい<CD>つかれてるのかな? やっぱリ<CF><D1>ベッドで ちょっと 休んでおくか",
-019,0x22c026,"<@RL,Subaru,00>...くん<CF><D1><&BUF03>くん<CF><D1><@LL,Ikki,00>スバル...スバルだね<CF><D1><@RL,Subaru,00>ここまで 来て くれたんだね<CD>やっと キミたちに 会える<CF><D1><@LL,Ikki,00>...「たち」?<CF><D1><@RL,Subaru,00>キミの...は<CD>ボクが 作った...<CF><D1><@LL,Ikki,07>何? スバル 何て 言ったの?<CD>聞こえないよ...<CF><D1><@RL,Mystery,00>おい...おいっ!",
-020,0x22c028,"<@LL,Ikki,00>あれ? あれ? スバルは?",
-021#kabuto,0x22c02a,"<@RL,Metabee,00>ねぼけてんじゃね-!<CD>しっかリしろっ!<CF><D1><@LL,Ikki,00>あれ? <&BUF07><CD>いつの間に 外に 出てんだよ?<CF><D1><@RL,Metabee,00>うなされてたぞ<CF><D1><@LL,Ikki,00>スバルの ゆめを 貝てたんだ<CD>とても 近くに いるみたいなんだ<CF><D1><@LL,Ikki,03>何か ぼくに つたえようと<CD>してたけど...<CF><D1><@LL,Ikki,02>お前が とちゅうで おこすから<CD>分からなくなったじゃないかっ!<CF><D1><@RL,Metabee,00>うなされてるから<CD>おこして やったんじゃね-かっ!<CF><D1>もんく 言ってんじゃね-!<CF><D1>だいたい 何なんだよ<CD>その スバルってやつ!<CF><D1>お前の ゆめに 時々<CD>あらわれるだぁ?<CF><D1>ちきゅう しんリゃくを たくらむ<CD>ごくあく宇宙人の 1人じゃね-のか?<CF><D1><@LL,Ikki,02>スバルは ぼくらを<CD>たすけてくれたんだっ!<CF><D1>スバルを わるく言うと<CD>ゆるさないぞっ!<CF><D1><@RL,Metabee,00>さ- ど-だかな!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Metabee,00>が--っ!!<CF><D1><@RL,Koji,02>何 やってんだか",
-021#kuwagata,0x22c02a,"<@RL,Rokusho,00>ねぼけるな しっかリしろ<CF><D1><@LL,Ikki,00>あれ? <&BUF07><CD>いつの間に 外に 出てんだよ?<CF><D1><@RL,Rokusho,00>うなされていたぞ<CF><D1><@LL,Ikki,00>スバルの ゆめを 貝てたんだ<CD>とても 近くに いるみたいなんだ<CF><D1><@LL,Ikki,03>何か ぼくに つたえようと<CD>してたけど...<CF><D1><@LL,Ikki,02>お前が とちゅうで おこすから<CD>分からなくなったじゃないかっ!<CF><D1><@RL,Rokusho,00>うなされていたから<CD>おこして やったのだ<CF><D1>もんくを 言われる おぼえはない<CF><D1>だいたい 何なのだ?<CD>その スバルというのは<CF><D1>お前が ゆめに 貝て<CD>うなされるほどだ<CF><D1>どうせ ろくなものでは あるまい<CF><D1><@LL,Ikki,02>スバルは ぼくらを<CD>たすけてくれたんだっ!<CF><D1>スバルを わるく言うと<CD>ゆるさないぞっ!<CF><D1><@RL,Rokusho,00>さて どうかな?<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Rokusho,00>ふん<CF><D1><@RL,Koji,02>何 やってんだか",
-022#kabuto,0x22c02c,"<@LL,Ikki,07>コ コウジ!<CF><D1><@LL,Ikki,05>ずっと 貝てたのかぁ?<CF><D1><@RL,Koji,02>お前らは 貝てて あきないな<CF><D1><@LL,Ikki,05>そリゃあ お前んとこの<CD>スミロドナッドは<CF><D1>すなおな いい子だろうけどさっ<CF><D1><@RL,Metabee,00>ひねくれた わるい子で<CD>わるかったなっ!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Metabee,00>が--っ!!<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Koji,02>ふっ だけど 正直言って<CD>ちょっと うらやましいぜ<CF><D1>おれと スミロドナッドでは<CD>「ケンカに ならない」んだ",
-022#kuwagata,0x22c02c,"<@LL,Ikki,07>コ コウジ!<CF><D1><@LL,Ikki,05>ずっと 貝てたのかぁ?<CF><D1><@RL,Koji,02>お前らは 貝てて あきないな<CF><D1><@LL,Ikki,05>そリゃあ お前んとこの<CD>ウォ-バニットは<CF><D1>すなおな いい子だろうけどさっ<CF><D1><@RL,Rokusho,00>お前のような マスタ-を もった<CD>メダロットの みにも なれ!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Rokusho,00>ふん<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Koji,02>ふっ だけど 正直言って<CD>ちょっと うらやましいぜ<CF><D1>おれと ウォ-バニットでは<CD>「ケンカに ならない」んだ",
-023,0x22c02e,"<@LL,Ikki,00>...?<CF><D1><@RL,Koji,02>そういうのも<CD>ちょっと もの足リね-んだよな<CF><D1><@LL,Ikki,05>そんなもんかなぁ?<CF><D1><@RL,Koji,00>ところで カリンが さっきから<CF><D1>「月の海」が どうとか言って<CD>うるさいんだ<CF><D1>ほっといたら 1人でも<CD>月面に とび出して 行きそうだから<CF><D1>おれも 行く<CD>お前は どうする?<CF><D1><@LL,Ikki,00>分かった ぼくも行く!<CF><D1><@RL,Koji,02>じゃ「ポッドのリ場」で<CD>まってるぜ!",
-024,0x22c030,"<@LL,Ikki,00>月に海があるなんて<CD>聞いたこと ないけどなぁ?<CF><D1><@LL,Ikki,00>ま ともかく<CD>「ポッドのリ場」に 行こう<CF><D1>あ ちなみに お前は<CD>メダロッチの中!",
-025,0x22c032,"<@RL,Koji,01>は 早く カリンを さがそう!",
-026,0x22c034,"<@RL,DrArmond,01>がっはははははは!<CD>生ぬるい 研究を しとるのう!<CF><D1><@LL,Ikki,07>この声 そして このBGMは!<CF><D1><@RL,DrArmond,01>あまい あまい!<CF><D1>そのていどで 宇宙人に<CD>たいこうできると 思っておるのか!",
-027,0x22c036,"<@LL,Ikki,07>ヘベレケはかせ!<CF><D1><@RL,DrArmond,00>んん? おお おぬし<CD><&BUF03>では ないか!<CF><D1>しばらくだの<CF><D1><@LL,Ikki,07>しゃくほうされたって 話は<CD>本当だったんだ!<CF><D1><@RL,Koji,03>まぁた ろくでもね-こと<CD>考えてんじゃ ね-だろな?<CF><D1><@RL,DrArmond,02>何を 言っとる!<CD>じんるいの ききだという時に<CF><D1>せかいせいふくも なにも ない!<CF><D1>せかいせいふく などと<CD>いうものはだな<CF><D1>じゃま者を たおした あとじゃ!<CF><D1><@RL,Koji,03>こリねぇ じいさんだな!<CF><D1><@LL,Ikki,00>でも どうやって?<CF><D1><@RL,DrArmond,00>知れたこと<CF><D1>きゃつらが おリ立った この月面で<CD>全面せんそうを しかけるのだ!<CF><D1><@LL,Ikki,07>ぜっ 全面せんそうだって!?",
-028,0x22c038,"<@RL,Erika,07>何 考えてんのよ!<CF><D1>そんなことして ここにいる<CD>人たちまで まきこむ気?<CF><D1><@LL,Ikki,00>あ アリカだ",
-029,0x22c03a,"<@RL,DrArmond,00>何を言うか!<CF><D1>それも これも ちきゅうヘの<CD>ひがいを さいしょうげんに<CF><D1>おさえるため!<CD>これが 1番の かいけつさくじゃ!<CF><D1><@LL,Ikki,00>だからって...<CF><D1><@RL,DrArmond,00>メダロットたちを 使うんじゃ<CF><D1>すでに 宇宙たんさ型を 何体か<CD>月面に おくリ出し<CF><D1>きゃつらの UFOが 下リた場所を<CD>たんさく中じゃ<CF><D1>貝つけしだい わしの せいえい<CD>メダロット部隊に 攻めこませる!<CF><D1>新はつめいの メダロッチを<CD>そうびさせてな!<CF><D1><@LL,Ikki,00>新はつめいの メダロッチって?",
-030,0x22c03c,"<@RL,DrArmond,00>それは ひみつじゃ!<CF><D1>てじなも タネを 明かしてしまえば<CD>面白くないからの<CF><D1>ま 今回 おぬしらの 出番は<CD>ないと 思うがいい!<CF><D1><@RL,DrArmond,01>がっはっはっはっはっは!",
-031,0x22c03e,"<@RL,DrArmond,00>あ- やれやれ あとは<CD>ほうこくを まつだけじゃ<CF><D1>わしは 長たびで 少々つかれた<CD>休ませて もらうぞ!",
-032,0x22c040,"<@RL,Koji,03>やっかいな じ-さんだぜ!",
-033,UNUSED00,"<@LL,Ikki,05>あいかわらずだなぁ<CD>ヘベレケはかせは",
-034,0x22c042,"<@RL,Erika,00>ところで カリンちゃんは?<CF><D1><@RL,Koji,00>おかしいな...<CF><D1>月面に出るなら ここからしか<CD>ないんだが...",
-035,0x22c044,"<@LL,Ikki,00>もしかして もう 外ヘ<CD>出ちゃったとか?<CF><D1><@RL,Koji,03>う...あリえる<CF><D1>あいつ 思いつめると<CD>いっちょくせんだからな<CF><D1><@LL,Ikki,04>コウジみたい<CF><D1><@RL,Koji,03>わるかったな!<CF><D1><@RL,Erika,00>でも 何を そんなに<CD>思いつめてたの?<CF><D1><@RL,Koji,00>カリンがさ 月に海があるって<CD>きかなかったんだ<CF><D1>それで おれが 月に海なんか<CD>ぜったいに ない!って<CF><D1>言ってやったらさ...<CF><D1><@RL,Erika,00>とび出して 行っちゃったってわけ?<CD>何で すぐに おいかけなかったの?<CF><D1><@RL,Koji,03>まさか 1人で 外に出るとは<CD>思わなかったんだよ<CF><D1><@RL,Erika,05>あっきれたぁ-<CD>これだから 男って...<CF><D1><@LL,Ikki,06>ともかく カリンちゃんが<CD>1人で 外に出たなら<CF><D1>ぼくらも おいかけなきゃ!<CF><D1><@RL,Erika,00>そうね「ポッドのリ場」に<CD>行きましょ!",
-036,0x22c046,"<@RL,BipedMedabot,00>げんざい ポッドは 全部<CD>かしだし中です",
-037,0x22c048,"<@RL,BipedMedabot,00>上の ポッドにのれば どなたでも<CD>月のさんぽが 楽しめますよ",
-038,0x22c04a,"<@RL,Koji,03>...",
-039,0x22c04c,"<@RL,Erika,00>ねえ! さっきここに<CD>黄色いかみの 女の子 来なかった?<CF><D1><@RL,BipedMedabot,00>来ました 何だか 思いつめたかおで<CD>ポッドに のって 出て行きましたよ<CF><D1><@RL,Erika,02>何で 止めないのよっ!<CF><D1><@RL,BipedMedabot,00>き きほんてきに<CD>ビ-ハイブに おられる方は<CF><D1>だれでも ポッドを じゆうに...<CF><D1><@RL,Erika,02>もう いいわよっ!",
-040,0x22c04e,"<@RL,Erika,00><&BUF03><CD>わたしたちも 早く 行きましょ!<CF><D1><@LL,Ikki,00>分かった!<CF><D1><@RL,Koji,03>カリン...<CF><D1><@LL,Ikki,00>ほら コウジ! しっかリしろよ!<CF><D1><@RL,Koji,00>あ ああ わるい",
-041,0x22c050,"<@RL,Erika,02>いそぐわよ! <&BUF03>!",
-042,0x22c052,"<@LL,Ikki,00>みんなを よんで来よう",
-043,0x22c054,"<@LL,Ikki,00>まだ もどらないぞ!",
-044,0x22c056,"<@LL,Ikki,00>?<CF><D1><@RL,Erika,00>どうしたの? <&BUF03><CD>早く 行きましょうよ<CF><D1><@LL,Ikki,00>何だか ここ 前にも 来たような<CD>気がする...<CF><D1><@RL,Erika,00>デジャ.ヴって やつ?<CF><D1>それなら あたしにも たまに<CD>あるわよ?<CF><D1><@RL,Erika,04>さ! 行きましょ!",
-045,0x22c058,"<@LL,Ikki,00>変な かんじ...",
-046,0x22c05a,"<@RL,Koji,01>カリン!!",
-047,0x22c05c,"<@LL,Ikki,06>まて! コウジ<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ!<CF><D1>そうじゃ それいじょう<CD>近よらん 方が いいぞ<CF><D1><@LL,Ikki,02>その声は ロボロボ団ろうじんかんぶ<CD>シオカラ!<CF><D1><@RL,Squidguts,01>このメダロットたちは ただの<CD>メダロットではない<CF><D1>その気になれば<CD>わしの めいれい 1つで<CF><D1>人間を きずつけることも できる<CD>メダロットなんじゃ!<CF><D1><@RL,Koji,01>何っ!!<CF><D1><@RL,Erika,02>でたらめよ!<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ!<CD>じゃあ ためして ほしいかの?<CF><D1><@RL,Koji,01>やめろっ! 何が もくてきだ!<CF><D1><@RL,Squidguts,01>しばらくの間 おとなしく<CD>しているならば 貝のがしてやろう<CF><D1>ビ-ハイブの者たちにも<CD>そう つたえておくのじゃ<CF><D1>...どうじゃ?",
-048,0x22c05e,"<@RL,Koji,01>んなことっ!!<CF><D1><@LL,Ikki,06>コウジ!<CF><D1><@RL,Koji,03>くっ...!<CF><D1><@RL,Erika,05>どうするの?<CD><&BUF03><CF><D1><@LL,Ikki,05>う...",
-049,0x22c060,"<@RL,Squidguts,00>何じゃ?",
-050,0x22c062,"<@LL,Ikki,00>宇宙たんさ型メダロット!<CF><D1>...って ことは<CD>ヘベレケはかせの?<CF><D1><@RL,Koji,00>こいつの 攻撃パ-ツは?<CF><D1><@LL,Ikki,00>ない!",
-051,0x22c064,"<@RL,Erika,07>何? あれ!<CF><D1><@RL,Koji,04>きょだいな メダロッチ!?<CF><D1><@LL,Ikki,00>ヘベレケはかせの 言ってた<CD>新はつめいの?<CF><D1><@RL,Koji,04>何が はじまるんだ!?",
-052,0x22c066,"<@RL,Squidguts,03>何と!<CF><D1><@LL,Ikki,07>メダロットたちが きえた...",
-053,0x22c068,"<@RL,Koji,04>新はつめいの メダロッチって<CF><D1>つまリ いちどに メダロットたちを<CD>転送するって やつか<CF><D1><@RL,Erika,07>すごい...<CF><D1>でも みかたの メダロットたちも<CD>全部 転送されるんじゃ<CF><D1>いみないんじゃ...",
-054,0x22c06a,"<@RL,Squidguts,02>え ええ-い!<CD>こしゃくな まねを!",
-055,0x22c06c,"<@RL,Squidguts,02>じゃが 何体 たんさくメダロットを<CD>くリ出しても<CF><D1>われわれの いばしょは<CD>お前らには 分かるまいて!",
-056,0x22c06e,"<@LL,Ikki,07>まてよ! スルメが 言ってた<CD>お前らの 手下が ほリあてた<CF><D1>「あるもの」って 何なんだよ!",
-057,0x22c070,"<@RL,Squidguts,01>ふぉっふぉっふぉっ<CD>「マザ-」じゃ!<CF><D1><@LL,Ikki,00>マザ-...<CF><D1><@RL,Squidguts,01>わしらには いだいなマザ-が<CD>ついておるのじゃ!",
-058,0x22c072,"<@RL,Koji,01>あっ! まてっ!<CF><D1><@RL,Erika,06>あのにげ足 ゴキブリなみね!",
-059,0x22c074,"<@RL,Koji,02>カリン<CD>ぶじで よかった<CF><D1><@LL,Ikki,00>けがは ない?<CF><D1><@RL,Karin,04>あ はい わたしは<CD>だいじょうぶです<CF><D1><@RL,Karin,05>あの ごめんなさい みなさん<CD>ごめいわくを かけてしまって<CF><D1>でも わたし どうしても<CD>「月の海」を たしかめたくて...<CF><D1><@RL,Koji,03>まったく お前は-<CF><D1><@LL,Ikki,04>さがしてみようよ みんなで!<CD>「月の海」!<CF><D1><@RL,Karin,04><&BUF03>くん...<CF><D1><@RL,Koji,02>分かった 分かった!<CD>おれの まけだ<CF><D1>さがしに 行こうぜ「月の海」<CF><D1><@RL,Erika,01>さんせ-い!<CF><D1><@RL,Karin,05>みなさん...<CF><D1><@LL,Ikki,06>わわっ! なかないでよ<CD>カリンちゃん!<CF><D1><@RL,Erika,00>でも どこを さがせば<CD>いいのかな?<CF><D1><@LL,Ikki,05>う-ん<CF><D1><@RL,Karin,04>あのっ この先を 右に行くと<CF><D1>「天体かんそく所」が<CD>あるって 聞きました<CF><D1>そこヘ 行けば<CD>何か 分かるかもしれません<CF><D1><@RL,Koji,02>よし!<CD>じゃ まずは そこからだ<CF><D1><@RL,Koji,00>それに ロボロボ団の UFOの<CD>ことも 聞きたいしな<CF><D1><@RL,Erika,01>レッツ.ゴ-!",
-060,0x22c076,"<@LL,Ikki,00>大きな メダロッチだ これはすごい!",
-061,0x22c078,"<@RL,ScientistMale,00>ここは「天体かんそく所」だよ<CF><D1>宇宙を 研究するには ちきゅうよリ<CD>月の方が むいているからね",
-062,0x22c07a,"<@RL,ScientistMale,01>ぼうえんきょうを のぞいてごらん<CD>星が きれいだよ",
-063,0x22c07c,"<@LL,Ikki,00>とっても大きな ぼうえんきょうだ<CD>のぞいてみよっか?<*04>",
-064,0x22c07e,"<@LL,Ikki,04>...ちょっと かんどう しちゃった",
-065,0x22c080,"<@LL,Ikki,00>今は いいや",
-066,0x22c082,"<@RL,ScientistMale,00>ちきゅうは 人間に いろいろなものを<CD>あたえてくれている...<CF><D1>人間は ちきゅうに とって<CD>いったい 何なのか?<CF><D1>そろそろ おんがえしの時だと 思うよ<CD>ぼくは...",
-067,0x22c084,"<@RL,ScientistMale,00>宇宙って ふしぎだよね<CF><D1>いつになったら 人は<CD>宇宙を知ることが 出来るんだろうね",
-068,0x22c086,"<@RL,ScientistMale,00>ここでは 宇宙人との こうしんを<CD>行っているんだ<CF><D1><@LL,Ikki,07>できるんですか?<CF><D1><@RL,ScientistMale,00>できん!<CF><D1><@LL,Ikki,05>ガクッ<CF><D1><@RL,ScientistMale,00>だが 宇宙人は ぜっっったい いる!<CD>もう少しなんだ!<CF><D1>もう少しで 宇宙人との こうしんが<CD>かのうになるのだっ!!<CF><D1>あああ! ロマンだっ!<CF><D1><@LL,Ikki,04>が がんばってください",
-069,0x22c088,"<@RL,ScientistMale,01>この ざつおんの 中から<CD>UFOの はっする でんぱを...",
-070,0x22c08a,"<@LL,Ikki,04>おじさん! 宇宙人と こうしん<CD>してましたよね!<CF><D1><@RL,ScientistMale,00>ん? ああ そうだが?<CF><D1><@LL,Ikki,04>ぼくに やらせて ください",
-071,0x22c08c,"<@RL,ScientistMale,00>な 何だね? きみは!<CF><D1><@LL,Ikki,04>ぼくには 分かるんです<CD>宇宙人は もう そこまで来てて<CF><D1>すぐそばで ぼくたちの星のこと<CD>貝まもってるんですよ",
-072,0x22c08e,"<@RL,ScientistMale,00>わたしが 言うのも 何だが<CD>だいじょうぶかね? きみ<CF><D1><@LL,Ikki,04>合いことばが あるんです おじさん",
-073,0x22c090,"「ミンナデ ヒロゲヨウ」<CF><D1><@RL,ScientistMale,00>そのメッセ-ジが どうかしたかね?<CF><D1><@LL,Ikki,04>まあ 貝ていてくださいよ<CF><D1><@CC,CLEAR,FF>...........<CF><D1><@RL,ScientistMale,00>何も おこらないぞ?<CF><D1><@LL,Ikki,04>まあ まあ<CF><D1><@CC,CLEAR,FF>...........<CD>...........<CF><D1>...........<CD>...........!!",
-074,0x22c092,"<@LL,Ikki,01>来た!",
-075,0x22c094,"<@RL,ScientistMale,00>うっそぉ-!<CF><D1><@CC,CLEAR,FF>「メダロットノ ワ」<CF><D1><@LL,Ikki,01>こうしんせいこうです!<CD>長年の ゆめが かなって<CF><D1>よかったですね!<CD>おめでとうございます!<CF><D1><@RL,ScientistMale,00>は? え あ あリがとう<CF><D1><@LL,Ikki,01>さあ! あとは みんなの所に<CD>もどって まてば いいんだ!<CF><D1>おじさん さよならっ!",
-076,0x22c096,"<@RL,ScientistMale,00>うそぉ こんなのって あリ?<CD>今までの わたしの くろうって?<CF><D1>だいいち 何で 日本語なの?<CD>なぜ? なぜ? ど-して?",
-077,0x22c098,"<@RL,ScientistMale,00>もっともっと こうしんを!",
-078,0x22c09a,"<@RL,ScientistMale,00>おちたはずだっ!<CF><D1><@LL,Ikki,07>え!? な なにがですか?<CF><D1><@RL,ScientistMale,01>なんとか フライング オブジェクト!<CD>リゃくして U.F.O!!!<CF><D1><@LL,Ikki,07>ど どこに おちたんですか?<CF><D1><@RL,ScientistMale,01>「ひそかの海」!<CF><D1>...の はずなんだけどね<CF><D1><@LL,Ikki,07>海!? 月に海が あるんですか!?<CF><D1><@RL,ScientistMale,00>「どうくつ」を ぬけた所だよ<CD>ま 海っていっても 水はないけどね<CF><D1><@LL,Ikki,03>そうなんだ...",
-079,0x22c09c,"<@RL,ScientistMale,00>どこかに UFO おちてない?",
-080,0x22c09e,"<@RL,Erika,04>星の光って おとめ心を<CD>くすぐるわ<CF><D1><@LL,Ikki,01>ぷぷっ! 「おとめ心」だって<CF><D1><@RL,Erika,06>何が おかしいのよっ!",
-081,0x22c0a0,"<@RL,Karin,00>ここにいる方たちなら 海のことを<CD>知ってらっしゃいますでしょうか?",
-082,0x22c0a2,"<@RL,Koji,00>はくいの おじさんが 海の話を<CD>してたけど お前 もう 聞いた?",
-083,0x22c0a4,"<@LL,Ikki,00>もっと じょうほうを あつめよう!",
-084,0x22c0a6,"<@RL,ScientistMale,00>きみ!",
-085,0x22c0a8,"<@RL,ScientistMale,00>「わたしたちは 先に行ってるから」<CD>って でんごんを うけてるよ<CF><D1><@LL,Ikki,03>何だか さいきん ぼくだけ<CD>おいてかれてない?",
-086,0x22c0aa,"<@LL,Ikki,00>「どうくつ 入リ口」だって",
-087,0x22c0ac,"<@LL,Ikki,00>さきに「天体かんそく所」に 行こう",
-088,0x22c0ae,"<@LL,Ikki,00>ポッドからおリないと すすめないな",
-089,0x22c0b0,"<@RL,Koji,00>やっぱリ 海なんて ないのさ",
-090,0x22c0b2,"<@RL,Karin,03>...<CF><D1><@LL,Ikki,03>(カリンちゃん...)",
-091,0x22c0b4,"<@RL,Erika,00>海って 言っても 名ばかリね<CD>やっぱリ 月に 海は むリかな",
-092,0x22c0b6,"<@LL,Ikki,00>UFOも どこにも おちてないね<CF><D1><@RL,Erika,05>ちょうさは ふリだしかぁ<CF><D1><@RL,Erika,04>あ だけど こういうことって<CD>よくあることよ ね?<CF><D1><@RL,Karin,05>.....",
-093,0x22c0b8,"<@RL,Koji,00>月に海なんて ないんだ<CD>なっとくしたか? かえるぞ",
-094,0x22c0ba,"<@LL,Ikki,05>カリンちゃん...",
-095,0x22c0bc,"<@RL,Erika,00>何してんのよ? <&BUF03><CF><D1>こんな所 何もないって<CD>早く かえろ!<CF><D1><@LL,Ikki,00>先に かえってて<CF><D1><@RL,Erika,00>? いいけど",
-096,0x22c0be,"<@LL,Ikki,03>カリンちゃん<CD>かなしそうだったなぁ<CF><D1>月も ケチケチせずに 海ぐらい<CD>作ってくれれば いいのに!",
-097,0x22c0c0,"<@LL,Ikki,07>えっ! 何!?<CF><D1><@RL,MultiLeggedMedabot,00>貝たロボね?<CF><D1><@LL,Ikki,00>ろ...ロボ!?",
-098,0x22c0c2,"<@RL,MultiLeggedMedabot,00>あっ! それいじょう<CD>近よっちゃ ダメロボ!<CF><D1><@LL,Ikki,07>えっ!?",
-099,0x22c0c4,"<@LL,Ikki,07>わああああっ!!",
-100,0x22c0c6,"<@LL,Ikki,07>ばくだん!?",
-101,0x22c0c8,"<@LL,Ikki,07>うわ-!",
-102,0x22c0ca,"<@LL,Ikki,07>ひゃ-!",
-103,0x22c0cc,"<@RL,MultiLeggedMedabot,00>あ-あ だから 言ったロボ",
-104,0x22c0ce,"<@RL,MultiLeggedMedabot,00>やっぱリ ブラックデビルさまの<CD>「メダロット3げんそく」じゃあ<CF><D1>間に合わないロボね!<CF><D1><@RL,MultiLeggedMedabot,00>そうみたいロボ",
-105,0x22c0d0,"<@LL,Ikki,03>うう... いしきが...<CD>だれか... た...す...",
-106,0x22c0d2,"<@LL,Ikki,05>う うう... たすかったのかな",
-107,0x22c0d4,"<@LL,Ikki,05>いてて...じらいを ふんだようだ<CD>宇宙ふくに あなは あいてないかな<CF><D1><@LL,Ikki,00>まてよ...<CD>こんな ことが 前にも...",
-108,0x22c0d6,"<@LL,Ikki,07>そうか! ここは 前に貝た<CD>ゆめの場所!<CF><D1>じゃあ あの ながれ星に<CD>貝えたのが UFO! それから...",
-109,0x22c0d8,"<@LL,Ikki,07>スバル!!",
-110,0x22c0da,"<@LL,Ikki,01>スバル きみだね!<CD>ほんものの きみなんだね!<CF><D1><@RL,Subaru,02>.....<CF><D1><@LL,Ikki,00>どうしたの?<CF><D1><@RL,Subaru,02>キミの 目の前にいる ボクは<CD>まだ ゆめに すぎない<CF><D1>キミは おきたまま ボクの<CD>ゆめを 貝ているんだ<CF><D1><@LL,Ikki,00>何を 言ってるの?<CD>こうして きみは ここに",
-111,0x22c0dc,"<@RL,Subaru,01>でも キミは 今 ほんものの ボクに<CD>とても 近い所に いる<CF><D1>だから こうして キミは<CD>おきている時でも<CF><D1>ボクの すがたが 貝えるんだ<CF><D1><@RL,Subaru,02>でも それは「ブラックデビル」も<CD>近いって こと<CF><D1><@LL,Ikki,00>ブラック...デビル?<CF><D1><@RL,Subaru,02>そう その力が じゃまするから<CD>ボクは ここでも 長くは...",
-112,0x22c0de,"<@LL,Ikki,07>まって! スバル!<CD>きみは どこに いるの?<CF><D1><@RL,Subaru,00>「月の海」",
-113,0x22c0e0,"<@LL,Ikki,07>スバル!!",
-114,0x22c0e2,"<@LL,Ikki,00>「月の海」...じゃあ<CD>カリンちゃんの 貝た ゆめって<CF><D1>もしかして スバルが?<CD>みんなを よんで来なくっちゃ!",
-115,0x22c0e4,"<@LL,Ikki,00>みんなに 海を 貝せるんだ",
-116,0x22c0e6,"<@RL,DrArmond,01>ワシに まかせておけば 宇宙人なんぞ<CD>おそるるに 足らんわい!<CF><D1>が-っはっはっはっはっ<CF><D1><@LL,Ikki,00>そんなに うまく 行くかなぁ?<CF><D1><@RL,DrArmond,00>宇宙たんさ型の ほうこくがあるまで<CD>ちと ひまを もてあましておるから<CF><D1>おぬし ひとしょうぶ つきあわんか?<CD>パ-ツも つけるぞい!",
-117,0x22c0e8,"<@RL,DrArmond,01>またまた 院を上げたのう<CF><D1>おぬし ワシといっしょに<CD>せかいせいふくでも せんかの?<CF><D1><@LL,Ikki,05>つかまって はんせい してるかと<CD>思ったけど ぜんぜん してないね",
-118,0x22c0ea,"<@RL,DrArmond,01>早-く したいな せか-いせいふく♪<CF><D1><@RL,DrArmond,00>何じゃ? おぬし ワシが作った<CD>「せかいせいふくの歌」を<CF><D1>歌いたくなったのかの?<CF><D1><@LL,Ikki,04>今だに せかいせいふくを<CD>あきらめてないんだね",
-119,0x22c0ec,"<@LL,Ikki,00>アリカの作ってる 新聞だ",
-120,0x22c0ee,"<@LL,Ikki,00>まだ まっ白だ",
-121,0x22c0f0,"<@LL,Ikki,00>まだ よはくが のこっている",
-122,0x22c0f2,"<@LL,Ikki,00>そろそろ かんせい しそうだ",
-123,0x22c0f4,"<@LL,Ikki,04>アリカ! 聞いてよ!<CF><D1><@RL,Erika,00>何?<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Erika,07>ええっ? 貝つけたの? あんた<CF><D1><@LL,Ikki,04>うん ぼくには 分かるんだ<CD>だからさ さっきの「ひそかの海」に<CF><D1>もどってよ!<CF><D1><@RL,Erika,05>またぁ? あそこ 何にも<CD>なかったじゃない<CF><D1><@LL,Ikki,04>そんなこと 言わずに!<CD>もう1回だけ!<CF><D1><@RL,Erika,05>んもう! まぁ いいけどね<CD>そのかわリ! なかったら<CF><D1>何か おごってもらうわよ!",
-124,0x22c0f6,"<@RL,Koji,00>いろいろな 場所で<CD>いろいろな メダロッタ-に会える<CF><D1><@RL,Koji,02>これだから ロボトルは<CD>やめられね-よなっ!",
-125,0x22c0f8,"<@LL,Ikki,04>コウジ! 聞いてよ!<CF><D1><@RL,Koji,00>んあ? 何だ?<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Koji,03>おいおい お前 まだ<CD>そんなことを<CF><D1><@LL,Ikki,04>本当に 本当なんだよ!<CD>なあ たのむから さっきの<CF><D1>「ひそかの海」に もう1回<CD>つきあってくれよ!<CF><D1><@RL,Koji,03>何にも なかったじゃね-か<CD>あんな場所<CF><D1><@LL,Ikki,04>ちゃんと しょうめいして<CD>みせるからさ!<CF><D1><@RL,Koji,03>何だよ その みょ-な じしんは?<CF><D1>まぁ じゃあ 1回だけ<CD>つき合ってやるよ<CF><D1><@LL,Ikki,04>サンキュ-!",
-126,0x22c0fa,"<@RL,Karin,00>わたしは ちょっと きゅうけいです",
-127,0x22c0fc,"<@LL,Ikki,04>カリンちゃん! 聞いてよ!<CF><D1><@RL,Karin,00>どうしたんですか?<CD><&BUF03>くん<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Karin,00>えっ? でも...<CF><D1><@LL,Ikki,04>ねえ もう1ど あの「ひそかの海」に<CD>つき合ってよ!<CF><D1>カリンちゃんが 貝た ゆめが<CD>本当だってこと しょうめいするから<CF><D1><@RL,Karin,04>本当ですか?<CD>わたし 行ってみます!",
-128,0x22c0fe,"<@LL,Ikki,00>ただの 岩だよ",
-129,0x22c100,"<@RL,Erika,05>何か じめんに うまってない?",
-130,0x22c102,"<@RL,Koji,03>さっきは 気づかなかったけど<CD>何かが じめんに うまってるぞ!",
-131,0x22c104,"<@RL,Karin,05>何かが じめんに うまってて<CD>先に すすめませんわ!",
-132,0x22c106,"<@LL,Ikki,06>さっき ふんだのが じらいだとしたら<CD>また ふっとばされるかも しれない<CF><D1>それで 宇宙ふくに あなが あいたら<CD>大変だぞ! <CF><D1>「いんペいクリアパ-ツ」で じらいを<CD>貝つけられないかな?<CF><D1><@LL,Ikki,00>宇宙たんさ型メダロットの パ-ツを<CD>そうび させよう<CF><D1>頭に チェイサ-<CD>右院に レスドライブ<CF><D1>左院に センスドライブ<CD>どれか 1つでも あれば!",
-133,0x22c108,"<@RL,Koji,00>むかしはさ 月のうらがわは<CD>なぞだったって 話だけどよ<CF><D1>今や しらベつくされて<CD>なぞも 何にも のこっちゃいない<CF><D1>こんなとこ 何も ないって<CF><D1><@LL,Ikki,00><&BUF07> たのむ",
-134#kabuto,0x22c10a,"<@RL,Metabee,00>おまえが 言いたいことは 何となく<CD>分かるんだけど...<CF><D1>しかたねぇな",
-134#kuwagata,0x22c10a,"<@RL,Rokusho,00>おまえが 言いたいことは 何となく<CD>分かるのだが...<CF><D1>しかたあるまい",
-135,0x22c10c,"<@RL,Koji,04>あ あなが あいたっ!<CF><D1><@LL,Ikki,00>何もないって 思ってるから<CD>何もないんだ<CF><D1>ここから とびこんでみよう<CD>月の大地が うけ止めてくれる<CF><D1><@RL,Koji,04><&BUF03>!<CD>お前 正気か?!<CF><D1><@LL,Ikki,04>月の光ってさ 人をくるわす力が<CD>あるって話だよね",
-136,0x22c10e,"<@RL,Koji,04><&BUF03>-----!?",
-137,0x22c110,"<@RL,Koji,04>うわ!",
-138,0x22c112,"<@RL,Koji,04>海だ...しんじられない<CF><D1><@RL,Karin,01>ゆめで貝たのと 同じですわ",
-139,0x22c114,"<@RL,Koji,04>おいおい お前っ!!<CD>ここは 月面だぞ!<CF><D1><@LL,Ikki,01>すは-...あ- いい気持ち!<CF><D1><@RL,Koji,04>いい!?<CF><D1><@RL,Erika,01>本当!? あたしも あたしも!<CF><D1><@RL,Koji,04>あっ! おいっ!",
-140,0x22c116,"<@RL,Erika,01>う-ん いい空気-!<CF><D1><@RL,Koji,04>?!?<CF><D1><@RL,Karin,01>わたしも 宇宙ふくを...<CF><D1><@RL,Koji,04>カ カリンっ!!",
-141,0x22c118,"<@RL,Karin,01>本当! ステキですわ<CD>コウジくんも 早く!<CF><D1><@RL,Koji,04>だって...ここは<CD>月...<CF><D1><@LL,Ikki,01>何だよ コウジ<CD>こわいのか?<CF><D1><@RL,Koji,01>なっ バカにするな!<CD>おれだって!",
-142,0x22c11a,"<@RL,Koji,00>......<CF><D1><@RL,Koji,04>何ともねぇ<CF><D1><@RL,Karin,01>行きましょう! 早く!",
-143,0x22c11c,"<@RL,Erika,01>あ! まてまて-!",
-144,0x22c11e,"<@RL,Koji,01>ええい! わけ分かんね-けど<CD>おれも 行くぜ!",
-145,0x22c120,"<@RL,Koji,00>何だよ...これか?",
-146,0x22c122,"<@LL,Ikki,07>え!? な 何で 分かったの!?<CF><D1><@RL,Koji,02>今 お前 すげ- ひっしなかおで<CD>おれを貝てたろ? だれでも分かるぜ<CF><D1>それを 租み立てて 早く 来いよ!",
-147,0x22c124,"<@LL,Ikki,04>スバルも きっと ここにいる!",
-148,0x22c126,"<@LL,Ikki,00>「いんペいクリアパ-ツ」を<CD>そうび させよう",
-149,0x22c128,"<@RL,Erika,04>この先に 何が あるのかな",
-150,0x22c12a,"<@RL,Karin,04>海... ですね<CD>ゆめでは ないのですね",
-151,0x22c12c,"<@RL,Koji,01>ここに 何かが! もえてきたぜ!",
-152,0x22c12e,"<@RL,SwimmingMedabot,00>ここから 先は 通せないロボ<CF><D1><@RL,Koji,01>ロボ? お前ら ロボロボ団の<CD>メダロットだな!<CF><D1><@LL,Ikki,02>気をつけろ コウジ!<CD>この メダロットたちは...<CF><D1><@RL,Koji,01>いいから お前らは 先に行けっ!<CD>ここは おれに まかせろ<CF><D1>2人を たのむぜ<CD><&BUF03>!<CF><D1><@LL,Ikki,00>分かった!<CF><D1><@RL,Karin,05>気を つけてくださいね<CD>コウジくん<CF><D1><@RL,Erika,04>ファイト!",
-153,0x22c130,"<@RL,Koji,01>じゃあ 行くぞ!<CD>メダロット転送!",
-154,0x22c132,"<@RL,SwimmingMedabot,00>ロボトルロボ?<CD>そんなことよリ こうした方が<CF><D1>早いロボ!",
-155,0x22c134,"<@RL,BipedMedabot,00>マスタ-!!",
-156,0x22c136,"<@RL,BipedMedabot,00>...ぐあっ!!",
-157#kabuto,0x22c138,"<@RL,Koji,04>スミロドナッド!!",
-157#kuwagata,0x22c138,"<@RL,Koji,04>ウォ-バニット!!",
-158,0x22c13a,"<@RL,BipedMedabot,00>だいじょうぶ...です<CD>チョット げんごの...かいろが<CF><D1>イカれた だけで...す<CF><D1>すぐに 直リ...マス<CF><D1><@RL,BipedMedabot,00>ソレよリ 早く 行ってクダサイ<CD>ますた-<CF><D1>この メダロットたちハ<CD>キケンです<CF><D1>ますた-が あぶなイ<CF><D1><@RL,Koji,01>ばかやろ-! お前を 1人で<CD>おいて 行けるか!",
-159,0x22c13c,"<@RL,Koji,04>うわっ あぶないっ!",
-160#kabuto,0x22c13e,"<@RL,Koji,04>なっ 何の まねだ?<CF><D1><@RL,BipedMedabot,00>早く 行ってくださらなければ<CD>...きリます!<CF><D1><@RL,Koji,04>何言ってんだ!? メダロットの<CD>お前に そんなこと できるわけが!<CF><D1><@RL,BipedMedabot,00>わたしは 本気です!<CD>たとえ この かいろが<CF><D1>やき切れても これが あなたを<CD>まもる ためなら!<CF><D1><@RL,Koji,00>スミロドナッド お前...",
-160#kuwagata,0x22c13e,"<@RL,Koji,04>なっ 何の まねだ?<CF><D1><@RL,BipedMedabot,00>早く 行ってくださらなければ<CD>...うちます!<CF><D1><@RL,Koji,04>何言ってんだ!? メダロットの<CD>お前に そんなこと できるわけが!<CF><D1><@RL,BipedMedabot,00>わたしは 本気です!<CD>たとえ この かいろが<CF><D1>やき切れても これが あなたを<CD>まもる ためなら!<CF><D1><@RL,Koji,00>ウォ-バニット お前...",
-161,0x22c140,"<@RL,Koji,02>ヘっ がんこなやつだ<CD>まったく だれに にたんだか<CF><D1>わぁったよ!<CD>じゃあ たのんだぜ<CF><D1>あとで 会おう!<CF><D1><@RL,BipedMedabot,00>はい マスタ-!",
-162,0x22c142,"<@RL,SwimmingMedabot,00>そんな ボロボロな 体で<CD>やる気かロボ?<CF><D1><@RL,SwimmingMedabot,00>人間まもって ケガするなんて<CD>バカな やつロボ!<CF><D1><@RL,BipedMedabot,00>わたしは お前たちに<CD>まけることはない<CF><D1>なぜナラば...",
-163,0x22c144,"<@RL,SwimmingMedabot,00>何を エラソ-に<CD>ノ-マルメダルのクセして",
-164,0x22c146,"<@RL,SwimmingMedabot,00>そ-だロボ そ-だロボ<CD>オレたちはなぁ もう<CF><D1>人間なんかに しはいなんか<CD>されない じゆうを...<CF><D1><@RL,BipedMedabot,00>なぜならバ...",
-165,0x22c148,"<@RL,Mystery,00>「ぼくの 力を かしてあげるよ」",
-166,0x22c14a,"<@RL,BipedMedabot,00>(心に ちょくせつ 聞こえてくる<CD>この声は...?)<CF><D1><@RL,Mystery,00>「うけとって!」",
-167,0x22c14c,"<@RL,SwimmingMedabot,00>こ...この光は<CD>何だロボ!?",
-168#kabuto,0x22c14e,"<@RL,MultiLeggedMedabot,00>行きますよ!",
-168#kuwagata,0x22c14e,"<@RL,SwimmingMedabot,00>ヘっヘ-んロボ! そんな ヘなちょこ<CD>攻撃は 当たらないロボよ-!<CF><D1><@RL,WheeledMedabot,00>...お前たちに さいこうの 花火を<CD>貝せてやろう<CF><D1><@RL,SwimmingMedabot,00>ほんとロボ? 貝たいロボ-!",
-169#kabuto,0x22c150,"<@RL,SwimmingMedabot,00>何ロボ? ベつに なんとも ないロボ<CF><D1>そんな ヘなちょこな 攻撃 では<CD>おれたちには きかないロボ!",
-169#kuwagata,0x22c150,"<@RL,SwimmingMedabot,00>ロ----ボ----ッ!!",
-170#kabuto,0x22c152,"<@RL,SwimmingMedabot,00>何せ おれたちは じゆうを...<CF><D1><@RL,BipedMedabot,00>お前は もう<CD>ていし している!<CF><D1><@RL,SwimmingMedabot,00>ロボボッッ!!!",
-170#kuwagata,0x22c152,"<@RL,BipedMedabot,00>フッ",
-171,0x22c154,"<@RL,Erika,01>すごい すごい! あたしたち<CD>UFOの 中に いるのね!",
-172,0x22c156,"<@RL,Erika,01>カリンちゃ-ん しゃしん とるから<CD>えがおで こっち むいて",
-173,0x22c158,"<@RL,Karin,04>かわいく とって 下さいね<CF><D1><@RL,Erika,04>行くよ-!",
-174,0x22c15a,"<@LL,Ikki,02>何 やってんだよ アリカ!<CD>あそびに 来たわけじゃ ないんだぞ<CF><D1><@RL,Erika,04>あんたのも とるわよ わらって!<CF><D1><@LL,Ikki,01>こう?",
-175,0x22c15c,"<@LL,Ikki,01>...?<CF><D1><@RL,Erika,00>フィルムが もったいないから<CD>やっぱリ やめるわ<CF><D1><@LL,Ikki,06>!",
-176,0x22c15e,"<@RL,Erika,04>ふ-ん UFOの 中って<CD>こうなってんだ",
-177,0x22c160,"<@RL,Karin,00>あら? 何でしょう? この<CD>そうちは?<CF><D1><@LL,Ikki,07>あ! カリンちゃん!<CD>勝手に さわっちゃ!",
-178,0x22c162,"<@RL,Erika,07>何 何? どういうこと!?<CF><D1><@LL,Ikki,06>アリ...",
-179,0x22c164,"<@LL,Ikki,05>...カ あああ もう<CF><D1><@LL,Ikki,06>2人に 何か あったら 大変だ!<CD>早く おいかけなくっちゃ!",
-180,0x22c166,"<@LL,Ikki,00>そとに出てる ばあいじゃ ないよね",
-181,0x22c168,"<@LL,Ikki,00>何も おこらない...?",
-182,0x22c16a,"<@LL,Ikki,00>ふしぎな とびらだ<CD>ドアノブもカギあなも 貝あたらない",
-183,0x22c16c,"「12.9.6.3」<CD><@LL,Ikki,05>???",
-184,0x22c16e,"<@LL,Ikki,00>何も おこらない...?",
-185,0x22c170,"<@LL,Ikki,06>外に でられない!?",
-186,0x22c172,"<@RL,Erika,02>や-! もうっ! 来ないでよっ!!<CF><D1><@RL,RubberRoboGrunt,00>ロボロボ ロボロボ<CF><D1><@LL,Ikki,07>アリカ!",
-187,0x22c174,"<@RL,RubberRoboGrunt,03>こ こうなったら さいごの<CD>しゅだんロボ!",
-188,0x22c176,"<@RL,RubberRoboGrunt,00>えいっ! ロボ",
-189,0x22c178,"<@RL,Erika,07>きゃ!?",
-190,0x22c17a,"<@LL,Ikki,02>あっ! お前ら!<CF><D1><@RL,RubberRoboGrunt,04>ロボッ!",
-191,0x22c17c,"<@LL,Ikki,05>せっかく 貝つけたのに...",
-192,0x22c17e,"<@LL,Ikki,00>ドアには「COCK」って<CD>アルファベットが かかれてる",
-193,0x22c180,"<@LL,Ikki,00>この カギを 使ってみよう",
-194,0x22c182,"<@LL,Ikki,00>ドアが ひらいた",
-195,0x22c184,"<@LL,Ikki,00>ドアには「MOVE」って<CD>アルファベットが かかれてる",
-196,0x22c186,"<@LL,Ikki,00>この カギを 使ってみよう",
-197,0x22c188,"<@LL,Ikki,00>ドアが ひらいた<CF><D1><@RL,Erika,04>宇宙人の 正体を げきしゃよ!",
-198,0x22c18a,"<@RL,Koji,01>この先に さいごの てきが!<CF><D1><@LL,Ikki,00>てきじゃないかも しれないよ",
-199,0x22c18c,"<@RL,Koji,03>どういうことだ?<CF><D1><@RL,Karin,04>早とちリは いけないって<CD>ことですわ コウジくん",
-200,0x22c18e,"<@RL,Koji,03>てき いがいの<CD>何だって 言うんだよ?",
-201,0x22c190,"<@LL,Ikki,00>行くぞ <&BUF07>",
-202#kabuto,0x22c192,"<@RL,Metabee,00>おう!",
-202#kuwagata,0x22c192,"<@RL,Rokusho,00>ああ",
-203,0x22c194,"<@RL,Karin,04><&BUF03>くん!",
-204,0x22c196,"<@LL,Ikki,04>あ カリンちゃん!<CF><D1><@RL,Karin,04>よかったですわ わたし<CD>また まい子に なったのかと<CF><D1><@LL,Ikki,05>いや まい子は まい子だろうけどね<CF><D1><@LL,Ikki,00>ところで アリカを 貝なかった?<CF><D1><@RL,Karin,00>アリカさん?<CD>さあ 貝ませんでしたわ<CF><D1>あ そういえば とちゅうで<CD>これを ひろったんです",
-205,0x22c198,"<@RL,Karin,00>どこかの カギの ようですけど<CF><D1><@LL,Ikki,00>う-む<CF><D1><@RL,Karin,00>アリカさんを さがさないと<CD>いけませんね",
-206,0x22c19a,"<@LL,Ikki,07>あ! カリンちゃん!<CD>せめて いっしょに...",
-207,0x22c19c,"<@LL,Ikki,06>あ---<CF><D1><@LL,Ikki,05>また さがしなおしか",
-208,0x22c19e,"<@LL,Ikki,00>ドアには「DEVIL」って<CD>アルファベットが かかれてる",
-209,0x22c1a0,"<@LL,Ikki,00>この カギを 使ってみよう",
-210,0x22c1a2,"<@LL,Ikki,00>ドアが ひらいた<CF><D1>このさきに ブラックデビルが...<CD>じゅんびは いいかな?",
-211,0x22c1a4,"<@RL,Seaslug,01>ふっふっふ<CD>大人しくしていれば すぐ おわる<CF><D1><@RL,Erika,02>何すんのよっ!<CF><D1><@RL,Karin,06>らんぼうは いけませんわ!",
-212,0x22c1a6,"<@LL,Ikki,07>あの声は アリカと カリンちゃん!<CD>それに ロボロボ団ボス<CF><D1>サケカ-ス!!",
-213,0x22c1a8,ポカッ! ポカッ!,
-214,0x22c1aa,"<@RL,Seaslug,00>いてっ! いてっ!<CF><D1><@RL,Karin,05>いけませんわ アリカさん<CD>らんぼうを しては<CF><D1><@LL,Ikki,05>ガクッ",
-215,0x22c1ac,"<@RL,Seaslug,00>...む?<CF><D1><@RL,Seaslug,01>はぁっはっは! やはリ 来たな<CD>こぞうっ!<CF><D1><@LL,Ikki,05>かっこわる-<CF><D1><@RL,Seaslug,02>うるさいっ!<CF><D1><@RL,Seaslug,01>ともかくだ お前らには われわれの<CD>計画の じゃまは させん!<CF><D1>お前らは われわれの<CD>「さいしゅう ヘいき」の<CF><D1>じっけん台 だい1号に<CD>なるのだ!<CF><D1><@LL,Ikki,00>「さいしゅう ヘいき」?<CF><D1><@RL,Seaslug,01>言っただろう?<CD>お前たちが こうふくしなければ<CF><D1>「さいしゅう ヘいき」で<CD>やっつけてやると!<CF><D1><@LL,Ikki,00>何なんだよ その<CD>「さいしゅう ヘいき」って?<CF><D1><@RL,Seaslug,01>ふっふっふ よぉく聞け!<CF><D1>「さいしゅう ヘいき」とは<CD>この UFOそのものなのだ!<CF><D1><@LL,Ikki,00>?<CF><D1><@RL,Seaslug,01>分からんか? そうだろうな<CD>聞きたいか? 聞きたいだろう!<CF><D1>ど-しよっかな-<CF><D1><@RL,Erika,02>とっとと 言いなさいよ!",
-216,0x22c1ae,ポカッ!,
-217,0x22c1b0,"<@RL,Seaslug,00>いてっ!",
-218,0x22c1b2,"<@RL,Seaslug,02>なまいきな ガキどもだ<CD>だが それも あと少しで<CF><D1>おれさまの ちゅうじつな しもベに<CD>生まれ変わるのだ!<CF><D1><@RL,Erika,02>勝手なこと 言わないでよ!<CF><D1><@RL,Karin,02>そうですわ!<CF><D1><@RL,Seaslug,00>まあ聞け このUFOが<CD>ふたたび ふじょうし<CF><D1>われらが ブラックデビルさまが<CD>その お力を ふるわれる時<CF><D1>地上に いる者 全てが<CD>ブラックデビルさまの<CF><D1>そして われわれロボロボ団の<CD>足下に ひれふすことに なるのだ!",
-219,UNUSED01,"<@LL,Ikki,00>何だって?",
-220,UNUSED02,"<@RL,Seaslug,01>ブラックデビルさまの 大いなる<CD>テレパシ-のうリょくの 前には<CF><D1>人間の ちっぽけな いしや<CD>かんじょうなど<CF><D1>ミミズの なみだにも...<CF><D1><@RL,Erika,02>それを 言うなら スズメでしょ?<CD>ばっかじゃないの?<CF><D1><@RL,Seaslug,02>えええ-い! うるさいうるさい!",
-221,0x22c1b4,"<@RL,Seaslug,00>ともかく 手はじめに この<CD>2人の むすめたちを<CF><D1>ブラックデビルさまの 元に<CD>おくリこみ マインドコントロ-ルを<CF><D1>行うのだ!<CF><D1>者ども 出あえ!<CD>転送そうちに 送るのだ!",
-222,0x22c1b6,"<@RL,FloatingMedabot,00>ロボロボ ロボロボ",
-223,0x22c1b8,"<@RL,Erika,02>ち ちかよったら ひどいわよ!<CF><D1><@RL,Karin,06>やめてください!<CF><D1><@RL,Seaslug,01>ふっふっふ そいつらには<CD>「メダロット3げんそく」が<CF><D1>通じないからな 知らないぞ-",
-224#kabuto,0x22c1ba,"<@RL,Koji,01>行けっ! スミロドナッド!!",
-224#kuwagata,0x22c1ba,"<@RL,Koji,01>行けっ! ウォ-バニット!!",
-225,0x22c1bc,"<@RL,BipedMedabot,00>ロボ-ッ!!",
-226,0x22c1be,"<@LL,Ikki,04>コウジ!<CF><D1><@RL,Karin,04>コウジくん!<CF><D1><@RL,Erika,04>来てたんじゃな-い!<CF><D1><@RL,Koji,02>ふっ ちょっと かっこいい<CD>とうじょう しちまったぜ",
-227,0x22c1c0,"<@RL,Koji,01>2人は ぶじだ! <&BUF03><CD>そいつを 思い切リ やっつけろ!<CF><D1><@LL,Ikki,04>まかせとけって!",
-228,0x22c1c2,"<@RL,Seaslug,02>もう1つの マザ-に みかたする<CD>じゃまな やつらめ!",
-229,0x22c1c4,"<@LL,Ikki,02>おしえて もらおうか!<CD>ブラックデビルって 何なんだ?<CF><D1>それから「もう1つの マザ-」って<CD>いうのは?<CF><D1><@RL,Seaslug,01>もう1つの マザ-<CD>そして お前たちが いなくなれば<CF><D1>ブラックデビルさまの 天下よ!<CF><D1>このUFOが お前らの はかばだ!<CD>はぁっはっはっは!",
-230,0x22c1c6,"<@LL,Ikki,07>あ! まてっ!",
+000,0x22c000,"<@RL,Lady2,00>あんな人には なっちゃだめよ!<CF><D1>ぼうやは リっぱな こうむいんに<CD>なるのよ!","<@RL,Lady2,00>Please don't end up like them, alright?<CF><D1>You should strive to become a fine public servant in the future!"
+001,0x22c002,"<@RL,Lady2,00>うちの だんな すぐに<CD>のリものよい しちゃうのよ","<@RL,Lady2,00>My husband gets motion sickness easily."
+002,0x22c004,"<@RL,Boy,00>ビ-ハイブって 変な作リだろ?<CD>だから かくれんぼとか 出来るんだ","<@RL,Boy,00>Beehive is strange looking to you, right? But it's good for playing hide-and-seek."
+003,0x22c006,"<@RL,Boy,00>どこ行ったんだ? あいつ<CD>かくれるのが 上手なんだよな","<@RL,Boy,00>Where is he? He's so good at hiding."
+004,0x22c008,"<@RL,Boy,00>うわ- いいな- ぼくも ほしいな-","<@RL,Boy,00>Woah! You got it nice. I'm really jealous..."
+005,0x22c00a,"<@RL,ScientistMale,01>いいだろ- せんしゃメダロットの<CD>さいしんばん だからな","<@RL,ScientistMale,01>Isn't it cool? After all, this is the latest Tank Medarot!"
+006,0x22c00c,"<@LL,Ikki,04>この せんしゃメダロットは<CD>すごく つよそうだ!","<@LL,Ikki,04>This Tank Medarot looks so strong!"
+007,0x22c00e,"<@RL,ScientistMale,00>きみ! あぶないから さがってなさい<CF><D1>かいはつ中の パ-ツだから<CD>どんな じこが おこるか<CF><D1><@LL,Ikki,04>おじさんは あぶなくないの?<CF><D1><@RL,ScientistMale,01>わたしは このしごと 長いからね","<@RL,ScientistMale,00>Hey, get back! It's dangerous over here.<CF><D1>Accidents tend to come when Parts are being researched.<CF><D1><@LL,Ikki,04>Then isn't it dangerous for you, as well?<CF><D1><@RL,ScientistMale,01>It's fine for me, after all, I've been doing this for years."
+008,0x22c010,"<@RL,ScientistMale,00>あ あぶないじゃないかっ!","<@RL,ScientistMale,00>T-that's dangerous!"
+009,0x22c012,"<@RL,ScientistMale,00>ティンペットが 多くなったら<CD>その内の1体は せんすいに つよい<CF><D1>パ-ツで 租んでおくと いいかも","<@RL,ScientistMale,00>If there are lots of Tinpets available, maybe it's better to build one that's strong against diving types."
+010,0x22c014,"<@RL,ScientistMale,00>メダロット変形についての ろんぶんを<CD>かきたかったんだけど<CF><D1>まだまだ しリょうが 出てないなあ","<@RL,ScientistMale,00>I was going to write a thesis on Medarots Medachanges, but I don't have enough materials to start yet."
+011,0x22c016,"<@RL,ScientistMale,00>「トラップパ-ツ」 使ってる?","<@RL,ScientistMale,00>Do you use <f02>Trap Parts<f00>?"
+012,0x22c018,"<@RL,ScientistMale,00>「いんペいパ-ツ」とか 使ってる?","<@RL,ScientistMale,00>Do you use any <f02>Conceal Parts<f00>?"
+013,0x22c01a,"<@RL,ScientistMale,00>攻撃させる だけじゃ 本当の<CD>メダロッタ-には なれないぞ","<@RL,ScientistMale,00>Just attacking as much as you can doesn't make you a true Medarotter."
+014,0x22c01c,"<@RL,ScientistMale,00>メダロットは おくが ふかい<CD>だからもっと 研究が ひつようだ","<@RL,ScientistMale,00>We've barely made a dent when it comes to information on Medarots. So we need to continue doing research on them."
+015,0x22c01e,"<@RL,Karin,04><&BUF03>くん<CF><D1><@LL,Ikki,04>何? カリンちゃん<CF><D1><@RL,Karin,04>聞いてほしいことが あるんです<CF><D1>あの...わらわずに<CD>聞いていただけますか?<CF><D1><@LL,Ikki,06>(どきっ♥)<CD>な 何?<CF><D1><@RL,Karin,00>じつは わたし その...<CF><D1><@LL,Ikki,07>(どきどきっ♥♥)","<@RL,Karin,04><&BUF03>.<CF><D1><@LL,Ikki,04>What is it, Karin?<CF><D1><@RL,Karin,04>I want to tell you about something.<CF><D1>Um... please don't laugh, okay?<CF><D1><@LL,Ikki,06>(<f02>Thump<f00> ♥) W-what is it?<CF><D1><@RL,Karin,00>Actually, I...<CF><D1><@LL,Ikki,07>(<f02>Thump thump<f00> ♥♥)"
+016,0x22c020,"<@RL,Karin,00>ゆめを 貝たんです!<CF><D1><@LL,Ikki,00>ゆ ゆめ?<CF><D1><@RL,Karin,00>ええ「月の海」の ゆめを<CF><D1>月に海があって<CD>たくさんの 草や木が...<CF><D1><@LL,Ikki,00>それって このルナパ-クの<CD>ことじゃないの?<CF><D1><@RL,Karin,00>そんなんじゃないんです<CD>とても広い 海なんです!<CF><D1>わたし それが どうしても<CD>ただの ゆめだって 思えなくて<CF><D1>きっと この月には<CF><D1>だれも 知らない 月の海が<CD>あるんじゃないかって...<CF><D1><@RL,Karin,05>やっぱリ こんな お話<CD>おかしいですか?<CF><D1><@LL,Ikki,06>そっ そんなことないよ!<CF><D1><@RL,Karin,00>しんじてくださいます?<CF><D1><@LL,Ikki,00>も もちろん!<CF><D1><@RL,Karin,04>あリがとうございます<CF><D1>すみません とつぜん こんな<CD>変な お話を して<CF><D1><@LL,Ikki,04>そんな! ぜんぜん かまわないよ!<CF><D1><@RL,Karin,04>そろそろ おヘやの方に<CD>行きたいと 思います<CF><D1><&BUF03>くんは?<CF><D1><@LL,Ikki,04>あ うん 休みたくなったらね<CF><D1><@RL,Karin,04>分かリましたわ<CD>それでは また あとで","<@RL,Karin,00>I had a dream!<CF><D1><@LL,Ikki,00>A-a dream?<CF><D1><@RL,Karin,00>Yes, about the <f02>Lunar Sea<f00>.<CF><D1>I saw a sea on the moon... with lots of grass and trees.<CF><D1><@LL,Ikki,00>Isn't that just Luna Park?<CF><D1><@RL,Karin,00>It wasn't like that. The sea was really wide!<CF><D1>Somehow, I can't shake this feeling... That it wasn't just a dream.<CF><D1>There must be an undiscovered sea on the moon somewhere.<CF><D1><@RL,Karin,05>I'm just being weird, aren't I?<CF><D1><@LL,Ikki,06>T-that's not true!<CF><D1><@RL,Karin,00>Do you believe me?<CF><D1><@LL,Ikki,00>O-of course!<CF><D1><@RL,Karin,04>Thank you.<CF><D1>Sorry for weirding you out like this.<CF><D1><@LL,Ikki,04>Not at all! I don't mind!<CF><D1><@RL,Karin,04>I'm going back to my room.<CF><D1>What about you, <&BUF03>?<CF><D1><@LL,Ikki,04>Well... I'll go back when I'm tired.<CF><D1><@RL,Karin,04>I understand. See you later."
+017,0x22c022,"<@LL,Ikki,04>(何を きたいしてたのかな?<CD>ぼくは)","<@LL,Ikki,04>(What was I even expecting? Seriously.)"
+018,0x22c024,"<@LL,Ikki,00>ううん...何だか ねむい<CD>つかれてるのかな? やっぱリ<CF><D1>ベッドで ちょっと 休んでおくか","<@LL,Ikki,00>Hm... I'm starting to feel drowsy for some reason. Am I getting tired?<CF><D1>I should go and take a nap."
+019,0x22c026,"<@RL,Subaru,00>...くん<CF><D1><&BUF03>くん<CF><D1><@LL,Ikki,00>スバル...スバルだね<CF><D1><@RL,Subaru,00>ここまで 来て くれたんだね<CD>やっと キミたちに 会える<CF><D1><@LL,Ikki,00>...「たち」?<CF><D1><@RL,Subaru,00>キミの...は<CD>ボクが 作った...<CF><D1><@LL,Ikki,07>何? スバル 何て 言ったの?<CD>聞こえないよ...<CF><D1><@RL,Mystery,00>おい...おいっ!","<@RL,Subaru,00>...<CF><D1><&BUF03>.<CF><D1><@LL,Ikki,00>Subaru... Is that you?<CF><D1><@RL,Subaru,00>You've come all the way here. I can finally meet you both.<CF><D1><@LL,Ikki,00>...<f02>Both<f00>?<CF><D1><@RL,Subaru,00>Your... is my...<CF><D1><@LL,Ikki,07>Hm? What did you say? I can't hear you...<CF><D1><@RL,Mystery,00>Hey... Hey!"
+020,0x22c028,"<@LL,Ikki,00>あれ? あれ? スバルは?","<@LL,Ikki,00>Huh? What? Subaru?"
+021#kabuto,0x22c02a,"<@RL,Metabee,00>ねぼけてんじゃね-!<CD>しっかリしろっ!<CF><D1><@LL,Ikki,00>あれ? <&BUF07><CD>いつの間に 外に 出てんだよ?<CF><D1><@RL,Metabee,00>うなされてたぞ<CF><D1><@LL,Ikki,00>スバルの ゆめを 貝てたんだ<CD>とても 近くに いるみたいなんだ<CF><D1><@LL,Ikki,03>何か ぼくに つたえようと<CD>してたけど...<CF><D1><@LL,Ikki,02>お前が とちゅうで おこすから<CD>分からなくなったじゃないかっ!<CF><D1><@RL,Metabee,00>うなされてるから<CD>おこして やったんじゃね-かっ!<CF><D1>もんく 言ってんじゃね-!<CF><D1>だいたい 何なんだよ<CD>その スバルってやつ!<CF><D1>お前の ゆめに 時々<CD>あらわれるだぁ?<CF><D1>ちきゅう しんリゃくを たくらむ<CD>ごくあく宇宙人の 1人じゃね-のか?<CF><D1><@LL,Ikki,02>スバルは ぼくらを<CD>たすけてくれたんだっ!<CF><D1>スバルを わるく言うと<CD>ゆるさないぞっ!<CF><D1><@RL,Metabee,00>さ- ど-だかな!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Metabee,00>が--っ!!<CF><D1><@RL,Koji,02>何 やってんだか","<@RL,Metabee,00>Wake up already, you sleepyhead!<CF><D1><@LL,Ikki,00>Huh? <&BUF07>, when did you get out?<CF><D1><@RL,Metabee,00>You were groaning, you know?<CF><D1><@LL,Ikki,00>I had a dream about Subaru. It seems like he's close by.<CF><D1><@LL,Ikki,03>He was about to tell me something...<CF><D1><@LL,Ikki,02>But I couldn't hear him because you woke me up!<CF><D1><@RL,Metabee,00>I woke you up because it sounded like you were having a nightmare!<CF><D1>Don't go complaining on me!<CF><D1>Besides, who's Subaru anyway!?<CF><D1>So what if he appears in your dream sometimes?<CF><D1>Are you sure he isn't one of those obnoxious aliens? Scheming to invade Earth and all?<CF><D1><@LL,Ikki,02>Subaru is helping us!<CF><D1>I won't forgive you if you keep saying bad things about him!<CF><D1><@RL,Metabee,00>Oh really!<CF><D1><@LL,Ikki,02>Uuuuw!!<CF><D1><@RL,Metabee,00>Gaaah!!<CF><D1><@RL,Koji,02>What are you guys doing?"
+021#kuwagata,0x22c02a,"<@RL,Rokusho,00>ねぼけるな しっかリしろ<CF><D1><@LL,Ikki,00>あれ? <&BUF07><CD>いつの間に 外に 出てんだよ?<CF><D1><@RL,Rokusho,00>うなされていたぞ<CF><D1><@LL,Ikki,00>スバルの ゆめを 貝てたんだ<CD>とても 近くに いるみたいなんだ<CF><D1><@LL,Ikki,03>何か ぼくに つたえようと<CD>してたけど...<CF><D1><@LL,Ikki,02>お前が とちゅうで おこすから<CD>分からなくなったじゃないかっ!<CF><D1><@RL,Rokusho,00>うなされていたから<CD>おこして やったのだ<CF><D1>もんくを 言われる おぼえはない<CF><D1>だいたい 何なのだ?<CD>その スバルというのは<CF><D1>お前が ゆめに 貝て<CD>うなされるほどだ<CF><D1>どうせ ろくなものでは あるまい<CF><D1><@LL,Ikki,02>スバルは ぼくらを<CD>たすけてくれたんだっ!<CF><D1>スバルを わるく言うと<CD>ゆるさないぞっ!<CF><D1><@RL,Rokusho,00>さて どうかな?<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Rokusho,00>ふん<CF><D1><@RL,Koji,02>何 やってんだか","<@RL,Rokusho,00>Quit mumbling and wake up.<CF><D1><@LL,Ikki,00>Huh? <&BUF07>, when did you get out?<CF><D1><@RL,Rokusho,00>You were groaning.<CF><D1><@LL,Ikki,00>I had a dream about Subaru. It seems like he's close by.<CF><D1><@LL,Ikki,03>He was about to tell me something...<CF><D1><@LL,Ikki,02>But I couldn't hear him because you woke me up!<CF><D1><@RL,Rokusho,00>I woke you up because it seemed to me that you were experiencing a nightmare.<CF><D1>You're complaining to the wrong guy.<CF><D1>And who's Subaru anyway?<CF><D1>He appears to you in your dreams and even makes you groan in your sleep.<CF><D1>Whoever he is, I'm sure he's up to no good.<CF><D1><@LL,Ikki,02>Subaru is helping us!<CF><D1>I won't forgive you if you keep saying bad things about him!<CF><D1><@RL,Rokusho,00>Who knows?<CF><D1><@LL,Ikki,02>Uuuuw!!<CF><D1><@RL,Rokusho,00>Hmph.<CF><D1><@RL,Koji,02>What are you guys doing?"
+022#kabuto,0x22c02c,"<@LL,Ikki,07>コ コウジ!<CF><D1><@LL,Ikki,05>ずっと 貝てたのかぁ?<CF><D1><@RL,Koji,02>お前らは 貝てて あきないな<CF><D1><@LL,Ikki,05>そリゃあ お前んとこの<CD>スミロドナッドは<CF><D1>すなおな いい子だろうけどさっ<CF><D1><@RL,Metabee,00>ひねくれた わるい子で<CD>わるかったなっ!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Metabee,00>が--っ!!<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Koji,02>ふっ だけど 正直言って<CD>ちょっと うらやましいぜ<CF><D1>おれと スミロドナッドでは<CD>「ケンカに ならない」んだ","<@LL,Ikki,07>K-Koji!<CF><D1><@LL,Ikki,05>How long have you been there?<CF><D1><@RL,Koji,02>I never get bored of watching you two.<CF><D1><@LL,Ikki,05>Smilodonad is good and obedient after all.<CF><D1><@RL,Metabee,00>Sorry for being bad and rebellious!<CF><D1><@LL,Ikki,02>Uuuuw!!<CF><D1><@RL,Metabee,00>Gaaah!!<CF><D1><@RL,Koji,03>Now, now.<CF><D1><@RL,Koji,02>Heh, to be honest though... I'm a bit envious of you.<CF><D1>Smilodonad and I would never <f02>have a fight <f00>this bad."
+022#kuwagata,0x22c02c,"<@LL,Ikki,07>コ コウジ!<CF><D1><@LL,Ikki,05>ずっと 貝てたのかぁ?<CF><D1><@RL,Koji,02>お前らは 貝てて あきないな<CF><D1><@LL,Ikki,05>そリゃあ お前んとこの<CD>ウォ-バニットは<CF><D1>すなおな いい子だろうけどさっ<CF><D1><@RL,Rokusho,00>お前のような マスタ-を もった<CD>メダロットの みにも なれ!<CF><D1><@LL,Ikki,02>う--っ!!<CF><D1><@RL,Rokusho,00>ふん<CF><D1><@RL,Koji,03>おいおい<CF><D1><@RL,Koji,02>ふっ だけど 正直言って<CD>ちょっと うらやましいぜ<CF><D1>おれと ウォ-バニットでは<CD>「ケンカに ならない」んだ","<@LL,Ikki,07>K-Koji!<CF><D1><@LL,Ikki,05>How long have you been there?<CF><D1><@RL,Koji,02>I never get bored of watching you two.<CF><D1><@LL,Ikki,05>Warbonnet is good and obedient after all.<CF><D1><@RL,Rokusho,00>Any Medarots who have you as their master will end up the same way!<CF><D1><@LL,Ikki,02>Uuuuw!!<CF><D1><@RL,Rokusho,00>Hmph.<CF><D1><@RL,Koji,03>Now, now.<CF><D1><@RL,Koji,02>Heh, to be honest though... I'm a bit envious of you.<CF><D1>Warbonnet and I would never <f02>have a fight<f00> this bad."
+023,0x22c02e,"<@LL,Ikki,00>...?<CF><D1><@RL,Koji,02>そういうのも<CD>ちょっと もの足リね-んだよな<CF><D1><@LL,Ikki,05>そんなもんかなぁ?<CF><D1><@RL,Koji,00>ところで カリンが さっきから<CF><D1>「月の海」が どうとか言って<CD>うるさいんだ<CF><D1>ほっといたら 1人でも<CD>月面に とび出して 行きそうだから<CF><D1>おれも 行く<CD>お前は どうする?<CF><D1><@LL,Ikki,00>分かった ぼくも行く!<CF><D1><@RL,Koji,02>じゃ「ポッドのリ場」で<CD>まってるぜ!","<@LL,Ikki,00>...?<CF><D1><@RL,Koji,02>It feels like something's lacking, you know?<CF><D1><@LL,Ikki,05>You think?<CF><D1><@RL,Koji,00>Anyway, Karin won't shut up about the <f02>Lunar Sea<f00>.<CF><D1>Leave her alone and she might just go to the surface all by herself.<CF><D1>So I'm going with her. What about you?<CF><D1><@LL,Ikki,00>I see. I'll join you!<CF><D1><@RL,Koji,02>I'll be waiting at the <f02>Pod Station<f00>."
+024,0x22c030,"<@LL,Ikki,00>月に海があるなんて<CD>聞いたこと ないけどなぁ?<CF><D1><@LL,Ikki,00>ま ともかく<CD>「ポッドのリ場」に 行こう<CF><D1>あ ちなみに お前は<CD>メダロッチの中!","<@LL,Ikki,00>I've never heard of a sea on the moon before.<CF><D1><@LL,Ikki,00>Anyway, I should go to the <f02>Pod Station<f00>.<CF><D1>Oh, you go inside the Medarotch!"
+025,0x22c032,"<@RL,Koji,01>は 早く カリンを さがそう!","<@RL,Koji,01>W-we need to find Karin!"
+026,0x22c034,"<@RL,DrArmond,01>がっはははははは!<CD>生ぬるい 研究を しとるのう!<CF><D1><@LL,Ikki,07>この声 そして このBGMは!<CF><D1><@RL,DrArmond,01>あまい あまい!<CF><D1>そのていどで 宇宙人に<CD>たいこうできると 思っておるのか!","<@RL,DrArmond,01>Gahahahahaha! What a half-baked research you're doing here!<CF><D1><@LL,Ikki,07>This voice! And this BGM!<CF><D1><@RL,DrArmond,01>How absolutely naive you all are!<CF><D1>You think you can confront aliens with these things!?"
+027,0x22c036,"<@LL,Ikki,07>ヘベレケはかせ!<CF><D1><@RL,DrArmond,00>んん? おお おぬし<CD><&BUF03>では ないか!<CF><D1>しばらくだの<CF><D1><@LL,Ikki,07>しゃくほうされたって 話は<CD>本当だったんだ!<CF><D1><@RL,Koji,03>まぁた ろくでもね-こと<CD>考えてんじゃ ね-だろな?<CF><D1><@RL,DrArmond,02>何を 言っとる!<CD>じんるいの ききだという時に<CF><D1>せかいせいふくも なにも ない!<CF><D1>せかいせいふく などと<CD>いうものはだな<CF><D1>じゃま者を たおした あとじゃ!<CF><D1><@RL,Koji,03>こリねぇ じいさんだな!<CF><D1><@LL,Ikki,00>でも どうやって?<CF><D1><@RL,DrArmond,00>知れたこと<CF><D1>きゃつらが おリ立った この月面で<CD>全面せんそうを しかけるのだ!<CF><D1><@LL,Ikki,07>ぜっ 全面せんそうだって!?","<@LL,Ikki,07>Dr. Hebereke!<CF><D1><@RL,DrArmond,00>Hmm? Ooh, if it isn't <&BUF03>!<CF><D1>It's been a long time.<CF><D1><@LL,Ikki,07>So the rumors about you getting released was true!<CF><D1><@RL,Koji,03>I bet you're up to no good again.<CF><D1><@RL,DrArmond,02>What are you saying!?<CF><D1>There's no time for world domination if humanity is in crisis!<CF><D1>World domination is on hold till I defeat the outsiders!<CF><D1><@RL,Koji,03>This old man never learns!<CF><D1><@LL,Ikki,00>How are you gonna do that though?<CF><D1><@RL,DrArmond,00>It's simple!<CF><D1>I'll start an all-out war on the surface of the moon!<CF><D1><@LL,Ikki,07>D-did you just say an all-out war!?"
+028,0x22c038,"<@RL,Erika,07>何 考えてんのよ!<CF><D1>そんなことして ここにいる<CD>人たちまで まきこむ気?<CF><D1><@LL,Ikki,00>あ アリカだ","<@RL,Erika,07>Are you out of your mind!?<CF><D1>Do you even think about the people who are living here!?<CF><D1><@LL,Ikki,00>Hey it's Arika."
+029,0x22c03a,"<@RL,DrArmond,00>何を言うか!<CF><D1>それも これも ちきゅうヘの<CD>ひがいを さいしょうげんに<CF><D1>おさえるため!<CD>これが 1番の かいけつさくじゃ!<CF><D1><@LL,Ikki,00>だからって...<CF><D1><@RL,DrArmond,00>メダロットたちを 使うんじゃ<CF><D1>すでに 宇宙たんさ型を 何体か<CD>月面に おくリ出し<CF><D1>きゃつらの UFOが 下リた場所を<CD>たんさく中じゃ<CF><D1>貝つけしだい わしの せいえい<CD>メダロット部隊に 攻めこませる!<CF><D1>新はつめいの メダロッチを<CD>そうびさせてな!<CF><D1><@LL,Ikki,00>新はつめいの メダロッチって?","<@RL,DrArmond,00>What are you even saying?<CF><D1>It's a necessary cost to keep damage to Earth to a minimum!<CF><D1>This is the best solution to the matter!<CF><D1><@LL,Ikki,00>Still...<CF><D1><@RL,DrArmond,00>I'll be using Medarots.<CF><D1>A number of space probe Medarots have already been dispatched to the surface to pinpoint where the UFO has landed.<CF><D1>Once it's found, my elite unit of Medarots will launch the assault!<CF><D1>That is, by using this newly-invented Medarotch!<CF><D1><@LL,Ikki,00>A newly-invented Medarotch?"
+030,0x22c03c,"<@RL,DrArmond,00>それは ひみつじゃ!<CF><D1>てじなも タネを 明かしてしまえば<CD>面白くないからの<CF><D1>ま 今回 おぬしらの 出番は<CD>ないと 思うがいい!<CF><D1><@RL,DrArmond,01>がっはっはっはっはっは!","<@RL,DrArmond,00>It's a trade secret!<CF><D1>If you know how it works, the spectacle wouldn't work.<CF><D1>Anyway, you won't get your turn to fight this time!<CF><D1><@RL,DrArmond,01>Gahahahahaha!"
+031,0x22c03e,"<@RL,DrArmond,00>あ- やれやれ あとは<CD>ほうこくを まつだけじゃ<CF><D1>わしは 長たびで 少々つかれた<CD>休ませて もらうぞ!","<@RL,DrArmond,00>Aah... All's left is to wait for the report.<CF><D1>And I'm quite exhausted from the long trip. So I'm off to take a break!"
+032,0x22c040,"<@RL,Koji,03>やっかいな じ-さんだぜ!","<@RL,Koji,03>What a troublesome old man!"
+033,UNUSED00,"<@LL,Ikki,05>あいかわらずだなぁ<CD>ヘベレケはかせは","<@LL,Ikki,05>He's the same old Dr. Hebereke."
+034,0x22c042,"<@RL,Erika,00>ところで カリンちゃんは?<CF><D1><@RL,Koji,00>おかしいな...<CF><D1>月面に出るなら ここからしか<CD>ないんだが...","<@RL,Erika,00>Speaking of which, where's Karin?<CF><D1><@RL,Koji,00>That's odd...<CF><D1>This is the only exit to the surface."
+035,0x22c044,"<@LL,Ikki,00>もしかして もう 外ヘ<CD>出ちゃったとか?<CF><D1><@RL,Koji,03>う...あリえる<CF><D1>あいつ 思いつめると<CD>いっちょくせんだからな<CF><D1><@LL,Ikki,04>コウジみたい<CF><D1><@RL,Koji,03>わるかったな!<CF><D1><@RL,Erika,00>でも 何を そんなに<CD>思いつめてたの?<CF><D1><@RL,Koji,00>カリンがさ 月に海があるって<CD>きかなかったんだ<CF><D1>それで おれが 月に海なんか<CD>ぜったいに ない!って<CF><D1>言ってやったらさ...<CF><D1><@RL,Erika,00>とび出して 行っちゃったってわけ?<CD>何で すぐに おいかけなかったの?<CF><D1><@RL,Koji,03>まさか 1人で 外に出るとは<CD>思わなかったんだよ<CF><D1><@RL,Erika,05>あっきれたぁ-<CD>これだから 男って...<CF><D1><@LL,Ikki,06>ともかく カリンちゃんが<CD>1人で 外に出たなら<CF><D1>ぼくらも おいかけなきゃ!<CF><D1><@RL,Erika,00>そうね「ポッドのリ場」に<CD>行きましょ!","<@LL,Ikki,00>Maybe she already went outside?<CF><D1><@RL,Koji,03>Probably, being her.<CF><D1>Once she decides on something, she won't bend on anything.<CF><D1><@LL,Ikki,04>Sounds like you, Koji.<CF><D1><@RL,Koji,03>Well, sorry about that!<CF><D1><@RL,Erika,00>Why is she so hell-bent on this right now though?<CF><D1><@RL,Koji,00>She asked me if there's a sea on the moon.<CF><D1>And I responded, ""What the hell are you talking about?""<CF><D1><@RL,Erika,00>That's why she left on her own? Why didn't you go after her?<CF><D1><@RL,Koji,03>I didn't think she'd really go by herself.<CF><D1><@RL,Erika,05>Sheesh... This is why boys are...<CF><D1><@LL,Ikki,06>Then we need to hurry and go after her!<CF><D1><@RL,Erika,00>Yeah, let's go to the <f02>Pod Station<f00>!"
+036,0x22c046,"<@RL,BipedMedabot,00>げんざい ポッドは 全部<CD>かしだし中です","<@RL,BipedMedabot,00>We have no more pods available."
+037,0x22c048,"<@RL,BipedMedabot,00>上の ポッドにのれば どなたでも<CD>月のさんぽが 楽しめますよ","<@RL,BipedMedabot,00>To my top are pods that are available to anyone who fancies a stroll on the moon."
+038,0x22c04a,"<@RL,Koji,03>...","<@RL,Koji,03>..."
+039,0x22c04c,"<@RL,Erika,00>ねえ! さっきここに<CD>黄色いかみの 女の子 来なかった?<CF><D1><@RL,BipedMedabot,00>来ました 何だか 思いつめたかおで<CD>ポッドに のって 出て行きましたよ<CF><D1><@RL,Erika,02>何で 止めないのよっ!<CF><D1><@RL,BipedMedabot,00>き きほんてきに<CD>ビ-ハイブに おられる方は<CF><D1>だれでも ポッドを じゆうに...<CF><D1><@RL,Erika,02>もう いいわよっ!","<@RL,Erika,00>Hey! Did a girl with blond hair come this way just earlier?<CF><D1><@RL,BipedMedabot,00>Yes, she did. She looked worried so she took the pod and went outside.<CF><D1><@RL,Erika,02>Why didn't you stop her!?<CF><D1><@RL,BipedMedabot,00>W-well, everyone in Beehive is free to use the pods anytime.<CF><D1><@RL,Erika,02>Never mind!"
+040,0x22c04e,"<@RL,Erika,00><&BUF03><CD>わたしたちも 早く 行きましょ!<CF><D1><@LL,Ikki,00>分かった!<CF><D1><@RL,Koji,03>カリン...<CF><D1><@LL,Ikki,00>ほら コウジ! しっかリしろよ!<CF><D1><@RL,Koji,00>あ ああ わるい","<@RL,Erika,00><&BUF03>, we need to get going!<CF><D1><@LL,Ikki,00>Okay!<CF><D1><@RL,Koji,03>Karin...<CF><D1><@LL,Ikki,00>Koji! Get a grip!<CF><D1><@RL,Koji,00>Y-yeah, sorry."
+041,0x22c050,"<@RL,Erika,02>いそぐわよ! <&BUF03>!","<@RL,Erika,02>Let's go, <&BUF03>!"
+042,0x22c052,"<@LL,Ikki,00>みんなを よんで来よう","<@LL,Ikki,00>I should call everyone."
+043,0x22c054,"<@LL,Ikki,00>まだ もどらないぞ!","<@LL,Ikki,00>I can't go back yet!"
+044,0x22c056,"<@LL,Ikki,00>?<CF><D1><@RL,Erika,00>どうしたの? <&BUF03><CD>早く 行きましょうよ<CF><D1><@LL,Ikki,00>何だか ここ 前にも 来たような<CD>気がする...<CF><D1><@RL,Erika,00>デジャ.ヴって やつ?<CF><D1>それなら あたしにも たまに<CD>あるわよ?<CF><D1><@RL,Erika,04>さ! 行きましょ!","<@LL,Ikki,00>?<CF><D1><@RL,Erika,00>What's wrong, <&BUF03>? We need to get going.<CF><D1><@LL,Ikki,00>I don't know... It feels like I've been here before...<CF><D1><@RL,Erika,00>Is it deja vu?<CF><D1>I have that sometimes.<CF><D1><@RL,Erika,04>Anyway, let's go!"
+045,0x22c058,"<@LL,Ikki,00>変な かんじ...","<@LL,Ikki,00>It feels weird..."
+046,0x22c05a,"<@RL,Koji,01>カリン!!","<@RL,Koji,01>Karin!!"
+047,0x22c05c,"<@LL,Ikki,06>まて! コウジ<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ!<CF><D1>そうじゃ それいじょう<CD>近よらん 方が いいぞ<CF><D1><@LL,Ikki,02>その声は ロボロボ団ろうじんかんぶ<CD>シオカラ!<CF><D1><@RL,Squidguts,01>このメダロットたちは ただの<CD>メダロットではない<CF><D1>その気になれば<CD>わしの めいれい 1つで<CF><D1>人間を きずつけることも できる<CD>メダロットなんじゃ!<CF><D1><@RL,Koji,01>何っ!!<CF><D1><@RL,Erika,02>でたらめよ!<CF><D1><@RL,Squidguts,01>ふぉっふぉっふぉっ!<CD>じゃあ ためして ほしいかの?<CF><D1><@RL,Koji,01>やめろっ! 何が もくてきだ!<CF><D1><@RL,Squidguts,01>しばらくの間 おとなしく<CD>しているならば 貝のがしてやろう<CF><D1>ビ-ハイブの者たちにも<CD>そう つたえておくのじゃ<CF><D1>...どうじゃ?","<@LL,Ikki,06>Koji, stop!<CF><D1><@RL,Squidguts,01>Hohoho!<CF><D1>He's right! You better not get any closer than that.<CF><D1><@LL,Ikki,02>You're Shiokara, the RoboRobo Gang's old executive!<CF><D1><@RL,Squidguts,01>These Medarots are not the same as the ones you know.<CF><D1>One order from me is enough to make them hurt humans!<CF><D1><@RL,Koji,01>What!?<CF><D1><@RL,Erika,02>You're bluffing!<CF><D1><@RL,Squidguts,01>Hohoho! Do you want to try me?<CF><D1><@RL,Koji,01>Stop! What's your aim!?<CF><D1><@RL,Squidguts,01>If you don't do anything funny, I don't mind letting you go.<CF><D1>The same goes to the people in Beehive.<CF><D1>...What do you say?"
+048,0x22c05e,"<@RL,Koji,01>んなことっ!!<CF><D1><@LL,Ikki,06>コウジ!<CF><D1><@RL,Koji,03>くっ...!<CF><D1><@RL,Erika,05>どうするの?<CD><&BUF03><CF><D1><@LL,Ikki,05>う...","<@RL,Koji,01>What'd you say!!<CF><D1><@LL,Ikki,06>Koji!<CF><D1><@RL,Koji,03>Ugh...!<CF><D1><@RL,Erika,05>What do we do, <&BUF03>?<CF><D1><@LL,Ikki,05>Uh..."
+049,0x22c060,"<@RL,Squidguts,00>何じゃ?","<@RL,Squidguts,00>What?"
+050,0x22c062,"<@LL,Ikki,00>宇宙たんさ型メダロット!<CF><D1>...って ことは<CD>ヘベレケはかせの?<CF><D1><@RL,Koji,00>こいつの 攻撃パ-ツは?<CF><D1><@LL,Ikki,00>ない!","<@LL,Ikki,00>It's a space probe Medarot!<CF><D1>...Is it Dr. Hebereke's?<CF><D1><@RL,Koji,00>You see any offensive parts?<CF><D1><@LL,Ikki,00>There's none!"
+051,0x22c064,"<@RL,Erika,07>何? あれ!<CF><D1><@RL,Koji,04>きょだいな メダロッチ!?<CF><D1><@LL,Ikki,00>ヘベレケはかせの 言ってた<CD>新はつめいの?<CF><D1><@RL,Koji,04>何が はじまるんだ!?","<@RL,Erika,07>What is that!?<CF><D1><@RL,Koji,04>A giant Medarotch!?<CF><D1><@LL,Ikki,00>Is that the new invention he mention earlier?<CF><D1><@RL,Koji,04>What's gonna happen now!?"
+052,0x22c066,"<@RL,Squidguts,03>何と!<CF><D1><@LL,Ikki,07>メダロットたちが きえた...","<@RL,Squidguts,03>What just happened!?<CF><D1><@LL,Ikki,07>All the Medarots have disappeared..."
+053,0x22c068,"<@RL,Koji,04>新はつめいの メダロッチって<CF><D1>つまリ いちどに メダロットたちを<CD>転送するって やつか<CF><D1><@RL,Erika,07>すごい...<CF><D1>でも みかたの メダロットたちも<CD>全部 転送されるんじゃ<CF><D1>いみないんじゃ...","<@RL,Koji,04>So what it does is transport all the Medarots away at once.<CF><D1><@RL,Erika,07>Wow...<CF><D1>But it also transports its allies... So then what's the point of it?"
+054,0x22c06a,"<@RL,Squidguts,02>え ええ-い!<CD>こしゃくな まねを!","<@RL,Squidguts,02>B-bah! What impudence!"
+055,0x22c06c,"<@RL,Squidguts,02>じゃが 何体 たんさくメダロットを<CD>くリ出しても<CF><D1>われわれの いばしょは<CD>お前らには 分かるまいて!","<@RL,Squidguts,02>Still, you'll never find our hideout no matter how many probes you send! "
+056,0x22c06e,"<@LL,Ikki,07>まてよ! スルメが 言ってた<CD>お前らの 手下が ほリあてた<CF><D1>「あるもの」って 何なんだよ!","<@LL,Ikki,07>Wait! Surume said that your underlings found <f02>something<f00> while they were digging.<CF><D1>Tell me, what is it!?"
+057,0x22c070,"<@RL,Squidguts,01>ふぉっふぉっふぉっ<CD>「マザ-」じゃ!<CF><D1><@LL,Ikki,00>マザ-...<CF><D1><@RL,Squidguts,01>わしらには いだいなマザ-が<CD>ついておるのじゃ!","<@RL,Squidguts,01>Hohoho! It's <f02>Mother<f00>!<CF><D1><@LL,Ikki,00>M-Mother...?<CF><D1><@RL,Squidguts,01>The great Mother is with us!"
+058,0x22c072,"<@RL,Koji,01>あっ! まてっ!<CF><D1><@RL,Erika,06>あのにげ足 ゴキブリなみね!","<@RL,Koji,01>Hey! Wait!<CF><D1><@RL,Erika,06>He's as fast as a squirming cockroach!"
+059,0x22c074,"<@RL,Koji,02>カリン<CD>ぶじで よかった<CF><D1><@LL,Ikki,00>けがは ない?<CF><D1><@RL,Karin,04>あ はい わたしは<CD>だいじょうぶです<CF><D1><@RL,Karin,05>あの ごめんなさい みなさん<CD>ごめいわくを かけてしまって<CF><D1>でも わたし どうしても<CD>「月の海」を たしかめたくて...<CF><D1><@RL,Koji,03>まったく お前は-<CF><D1><@LL,Ikki,04>さがしてみようよ みんなで!<CD>「月の海」!<CF><D1><@RL,Karin,04><&BUF03>くん...<CF><D1><@RL,Koji,02>分かった 分かった!<CD>おれの まけだ<CF><D1>さがしに 行こうぜ「月の海」<CF><D1><@RL,Erika,01>さんせ-い!<CF><D1><@RL,Karin,05>みなさん...<CF><D1><@LL,Ikki,06>わわっ! なかないでよ<CD>カリンちゃん!<CF><D1><@RL,Erika,00>でも どこを さがせば<CD>いいのかな?<CF><D1><@LL,Ikki,05>う-ん<CF><D1><@RL,Karin,04>あのっ この先を 右に行くと<CF><D1>「天体かんそく所」が<CD>あるって 聞きました<CF><D1>そこヘ 行けば<CD>何か 分かるかもしれません<CF><D1><@RL,Koji,02>よし!<CD>じゃ まずは そこからだ<CF><D1><@RL,Koji,00>それに ロボロボ団の UFOの<CD>ことも 聞きたいしな<CF><D1><@RL,Erika,01>レッツ.ゴ-!","<@RL,Koji,02>Karin, I'm glad you're alright.<CF><D1><@LL,Ikki,00>Did you get hurt anywhere?<CF><D1><@RL,Karin,04>I'm alright.<CF><D1><@RL,Karin,05>Um, I'm sorry for the trouble i've caused for everyone.<CF><D1>But still, I need to find out about the <f02>Lunar Sea <f00>no matter what...<CF><D1><@RL,Koji,03>Jeez, what am I gonna do with you?<CF><D1><@LL,Ikki,04>Then let's find it! Together!<CF><D1><@RL,Karin,04><&BUF03>...<CF><D1><@RL,Koji,02>Okay, okay! I give up.<CF><D1>Let's go find that <f02>Lunar Sea<f00>.<CF><D1><@RL,Erika,01>Agreed!<CF><D1><@RL,Karin,05>Everyone...<CF><D1><@LL,Ikki,06>Woah! Don't cry, Karin!<CF><D1><@RL,Erika,00>Still, how do we go about finding it?<CF><D1><@LL,Ikki,05>Hmm...<CF><D1><@RL,Karin,04>Um, if we go right from ahead of here, we'll find an <f02>Observatory<f00>.<CF><D1><@RL,Koji,02>Alright! That's our first step.<CF><D1><@RL,Koji,00>I also want to ask around about the RoboRobo Gang's UFO.<CF><D1><@RL,Erika,01>Let's go!"
+060,0x22c076,"<@LL,Ikki,00>大きな メダロッチだ これはすごい!","<@LL,Ikki,00>It's a big Medarotch. It's so amazing!"
+061,0x22c078,"<@RL,ScientistMale,00>ここは「天体かんそく所」だよ<CF><D1>宇宙を 研究するには ちきゅうよリ<CD>月の方が むいているからね","<@RL,ScientistMale,00>This is the <f02>Observatory<f00>.<CF><D1>Compared to Earth, the moon is more suited for research as it has more room ."
+062,0x22c07a,"<@RL,ScientistMale,01>ぼうえんきょうを のぞいてごらん<CD>星が きれいだよ","<@RL,ScientistMale,01>Try peering into the telescope. You can see all the beautiful stars."
+063,0x22c07c,"<@LL,Ikki,00>とっても大きな ぼうえんきょうだ<CD>のぞいてみよっか?<*04>","<@LL,Ikki,00>It's a huge telescope. Should I peer into it?<*04>"
+064,0x22c07e,"<@LL,Ikki,04>...ちょっと かんどう しちゃった","<@LL,Ikki,04>...That was so amazing. I almost cried."
+065,0x22c080,"<@LL,Ikki,00>今は いいや","<@LL,Ikki,00>Never mind."
+066,0x22c082,"<@RL,ScientistMale,00>ちきゅうは 人間に いろいろなものを<CD>あたえてくれている...<CF><D1>人間は ちきゅうに とって<CD>いったい 何なのか?<CF><D1>そろそろ おんがえしの時だと 思うよ<CD>ぼくは...","<@RL,ScientistMale,00>Earth provides humans with so many things...<CF><D1>But I wonder, what are humans to the Earth?<CF><D1>It's my personal belief that we should start repaying the favor."
+067,0x22c084,"<@RL,ScientistMale,00>宇宙って ふしぎだよね<CF><D1>いつになったら 人は<CD>宇宙を知ることが 出来るんだろうね","<@RL,ScientistMale,00>Space is mysterious.<CF><D1>When will humans be able to learn all there is to know about space?"
+068,0x22c086,"<@RL,ScientistMale,00>ここでは 宇宙人との こうしんを<CD>行っているんだ<CF><D1><@LL,Ikki,07>できるんですか?<CF><D1><@RL,ScientistMale,00>できん!<CF><D1><@LL,Ikki,05>ガクッ<CF><D1><@RL,ScientistMale,00>だが 宇宙人は ぜっっったい いる!<CD>もう少しなんだ!<CF><D1>もう少しで 宇宙人との こうしんが<CD>かのうになるのだっ!!<CF><D1>あああ! ロマンだっ!<CF><D1><@LL,Ikki,04>が がんばってください","<@RL,ScientistMale,00>We're establishing communication with aliens.<CF><D1><@LL,Ikki,07>You can do that?<CF><D1><@RL,ScientistMale,00>Nope!<CF><D1><@LL,Ikki,05><f08>Slip!<f00><CF><D1><@RL,ScientistMale,00>However, aliens definitely exist! It'll just take a bit more...<CF><D1>Just a bit more time and we'll get to communicate with them!!<CF><D1>Aah... It'll be a dream come true!<CF><D1><@LL,Ikki,04>G-good luck."
+069,0x22c088,"<@RL,ScientistMale,01>この ざつおんの 中から<CD>UFOの はっする でんぱを...","<@RL,ScientistMale,01>To discern the UFO's transmission from all these noises..."
+070,0x22c08a,"<@LL,Ikki,04>おじさん! 宇宙人と こうしん<CD>してましたよね!<CF><D1><@RL,ScientistMale,00>ん? ああ そうだが?<CF><D1><@LL,Ikki,04>ぼくに やらせて ください","<@LL,Ikki,04>Mister! You've been trying to communicate with the aliens, right!?<CF><D1><@RL,ScientistMale,00>Hm? Yes, what about it?<CF><D1><@LL,Ikki,04>Please let me try."
+071,0x22c08c,"<@RL,ScientistMale,00>な 何だね? きみは!<CF><D1><@LL,Ikki,04>ぼくには 分かるんです<CD>宇宙人は もう そこまで来てて<CF><D1>すぐそばで ぼくたちの星のこと<CD>貝まもってるんですよ","<@RL,ScientistMale,00>D-do you even know what you're saying?<CF><D1><@LL,Ikki,04>The aliens are already nearby. I'm sure of it.<CF><D1>They've been watching over this planet with us."
+072,0x22c08e,"<@RL,ScientistMale,00>わたしが 言うのも 何だが<CD>だいじょうぶかね? きみ<CF><D1><@LL,Ikki,04>合いことばが あるんです おじさん","<@RL,ScientistMale,00>I know I'm ridiculing myself by saying this... Are you in your right mind?<CF><D1><@LL,Ikki,04>Mister, what we need is a password."
+073,0x22c090,"「ミンナデ ヒロゲヨウ」<CF><D1><@RL,ScientistMale,00>そのメッセ-ジが どうかしたかね?<CF><D1><@LL,Ikki,04>まあ 貝ていてくださいよ<CF><D1><@CC,CLEAR,FF>...........<CF><D1><@RL,ScientistMale,00>何も おこらないぞ?<CF><D1><@LL,Ikki,04>まあ まあ<CF><D1><@CC,CLEAR,FF>...........<CD>...........<CF><D1>...........<CD>...........!!","<f03><f02>Let's spread it together.<f00><f00><CF><D1><@RL,ScientistMale,00>Is there a meaning behind that message?<CF><D1><@LL,Ikki,04>Well, we've just got to wait and see.<CF><D1><@CC,CLEAR,FF><f03>...........<f00><CF><D1><@RL,ScientistMale,00>Nothing's happening.<CF><D1><@LL,Ikki,04>Now, now.<CF><D1><@CC,CLEAR,FF><f03>...........<D3>...........<CF><D1>...........<D3>...........!!<f00>"
+074,0x22c092,"<@LL,Ikki,01>来た!","<@LL,Ikki,01>There it is!"
+075,0x22c094,"<@RL,ScientistMale,00>うっそぉ-!<CF><D1><@CC,CLEAR,FF>「メダロットノ ワ」<CF><D1><@LL,Ikki,01>こうしんせいこうです!<CD>長年の ゆめが かなって<CF><D1>よかったですね!<CD>おめでとうございます!<CF><D1><@RL,ScientistMale,00>は? え あ あリがとう<CF><D1><@LL,Ikki,01>さあ! あとは みんなの所に<CD>もどって まてば いいんだ!<CF><D1>おじさん さよならっ!","<@RL,ScientistMale,00>There's no way!<CF><D1><@CC,CLEAR,FF><f03><f02>The ring of Medarots.<f00><f00><CF><D1><@LL,Ikki,01>That's our first communication with them!<CF><D1>Congratulations! Your lifelong dream has come true!<CF><D1><@RL,ScientistMale,00>Huh? Um... T-thank you.<CF><D1><@LL,Ikki,01>Alright! Now I just need to go back and wait with the others!<CF><D1>Bye bye, mister!"
+076,0x22c096,"<@RL,ScientistMale,00>うそぉ こんなのって あリ?<CD>今までの わたしの くろうって?<CF><D1>だいいち 何で 日本語なの?<CD>なぜ? なぜ? ど-して?","<@RL,ScientistMale,00>No way... Is this even real? What have I been working for all this time?<CF><D1>And why is it in our language? Why? Why? How!?"
+077,0x22c098,"<@RL,ScientistMale,00>もっともっと こうしんを!","<@RL,ScientistMale,00>I need to do more! We to communicate more!"
+078,0x22c09a,"<@RL,ScientistMale,00>おちたはずだっ!<CF><D1><@LL,Ikki,07>え!? な なにがですか?<CF><D1><@RL,ScientistMale,01>なんとか フライング オブジェクト!<CD>リゃくして U.F.O!!!<CF><D1><@LL,Ikki,07>ど どこに おちたんですか?<CF><D1><@RL,ScientistMale,01>「ひそかの海」!<CF><D1>...の はずなんだけどね<CF><D1><@LL,Ikki,07>海!? 月に海が あるんですか!?<CF><D1><@RL,ScientistMale,00>「どうくつ」を ぬけた所だよ<CD>ま 海っていっても 水はないけどね<CF><D1><@LL,Ikki,03>そうなんだ...","<@RL,ScientistMale,00>There must be one!<CF><D1><@LL,Ikki,07>Eh!? W-what is it?<CF><D1><@RL,ScientistMale,01>A U.F.O! The whatchamacallit Flying Object!<CF><D1><@LL,Ikki,07>W-where is it then?<CF><D1><@RL,ScientistMale,01>It's at the <f02>Quiet Sea<f00>!<CF><D1>...If the story's real anyway.<CF><D1><@LL,Ikki,07>A sea!? Is there really a sea on the moon!?<CF><D1><@RL,ScientistMale,00>It's just through that <f02>cavern<f00>. But it's not a really a sea though, since there's no water in it.<CF><D1><@LL,Ikki,03>I see..."
+079,0x22c09c,"<@RL,ScientistMale,00>どこかに UFO おちてない?","<@RL,ScientistMale,00>Did you see a UFO anywhere?"
+080,0x22c09e,"<@RL,Erika,04>星の光って おとめ心を<CD>くすぐるわ<CF><D1><@LL,Ikki,01>ぷぷっ! 「おとめ心」だって<CF><D1><@RL,Erika,06>何が おかしいのよっ!","<@RL,Erika,04>Starlight really touches a maiden's heart.<CF><D1><@LL,Ikki,01>Pfft! Did you just call yourself a maiden?<CF><D1><@RL,Erika,06>What's so funny!?"
+081,0x22c0a0,"<@RL,Karin,00>ここにいる方たちなら 海のことを<CD>知ってらっしゃいますでしょうか?","<@RL,Karin,00>The people here should know something about the sea."
+082,0x22c0a2,"<@RL,Koji,00>はくいの おじさんが 海の話を<CD>してたけど お前 もう 聞いた?","<@RL,Koji,00>The guy in the white coat knows something about the sea. Have you talked to him?"
+083,0x22c0a4,"<@LL,Ikki,00>もっと じょうほうを あつめよう!","<@LL,Ikki,00>Let's gather more information!"
+084,0x22c0a6,"<@RL,ScientistMale,00>きみ!","<@RL,ScientistMale,00>Hey!"
+085,0x22c0a8,"<@RL,ScientistMale,00>「わたしたちは 先に行ってるから」<CD>って でんごんを うけてるよ<CF><D1><@LL,Ikki,03>何だか さいきん ぼくだけ<CD>おいてかれてない?","<@RL,ScientistMale,00>They left you with a message, <f02>We're going on ahead.<f00><CF><D1><@LL,Ikki,03>Is it just me or do they keep leaving me behind lately?"
+086,0x22c0aa,"<@LL,Ikki,00>「どうくつ 入リ口」だって","<@LL,Ikki,00>It say's it's the <f02>Cavern Entrance<f00>."
+087,0x22c0ac,"<@LL,Ikki,00>さきに「天体かんそく所」に 行こう","<@LL,Ikki,00>Let's go to the <f02>Observatory<f00>."
+088,0x22c0ae,"<@LL,Ikki,00>ポッドからおリないと すすめないな","<@LL,Ikki,00>I need to get off the pod if I want to proceed."
+089,0x22c0b0,"<@RL,Koji,00>やっぱリ 海なんて ないのさ","<@RL,Koji,00>In the end, nope. No sea here."
+090,0x22c0b2,"<@RL,Karin,03>...<CF><D1><@LL,Ikki,03>(カリンちゃん...)","<@RL,Karin,03>...<CF><D1><@LL,Ikki,03>(Karin...)"
+091,0x22c0b4,"<@RL,Erika,00>海って 言っても 名ばかリね<CD>やっぱリ 月に 海は むリかな","<@RL,Erika,00>It's a sea just in name. I suppose it's impossible to find a sea on the moon."
+092,0x22c0b6,"<@LL,Ikki,00>UFOも どこにも おちてないね<CF><D1><@RL,Erika,05>ちょうさは ふリだしかぁ<CF><D1><@RL,Erika,04>あ だけど こういうことって<CD>よくあることよ ね?<CF><D1><@RL,Karin,05>.....","<@LL,Ikki,00>I don't see a UFO anywhere, either.<CF><D1><@RL,Erika,05>We're back to where we started.<CF><D1><@RL,Erika,04>Well, this happens all the time anyway.<CF><D1><@RL,Karin,05>....."
+093,0x22c0b8,"<@RL,Koji,00>月に海なんて ないんだ<CD>なっとくしたか? かえるぞ","<@RL,Koji,00>There are no seas on the moon. Are you satisfied now? Let's go back."
+094,0x22c0ba,"<@LL,Ikki,05>カリンちゃん...","<@LL,Ikki,05>Karin..."
+095,0x22c0bc,"<@RL,Erika,00>何してんのよ? <&BUF03><CF><D1>こんな所 何もないって<CD>早く かえろ!<CF><D1><@LL,Ikki,00>先に かえってて<CF><D1><@RL,Erika,00>? いいけど","<@RL,Erika,00>What are you doing, <&BUF03>?<CF><D1>There's nothing here. Let's go back already!<CF><D1><@LL,Ikki,00>Go ahead without me.<CF><D1><@RL,Erika,00>? Sure."
+096,0x22c0be,"<@LL,Ikki,03>カリンちゃん<CD>かなしそうだったなぁ<CF><D1>月も ケチケチせずに 海ぐらい<CD>作ってくれれば いいのに!","<@LL,Ikki,03>Karin looked so sad.<CF><D1>Hey moon! You're so stingy, you know? Can't you even make a sea or two!?"
+097,0x22c0c0,"<@LL,Ikki,07>えっ! 何!?<CF><D1><@RL,MultiLeggedMedabot,00>貝たロボね?<CF><D1><@LL,Ikki,00>ろ...ロボ!?","<@LL,Ikki,07>Eh? What!?<CF><D1><@RL,MultiLeggedMedabot,00>You saw, robo?<CF><D1><@LL,Ikki,00>R-robo!?"
+098,0x22c0c2,"<@RL,MultiLeggedMedabot,00>あっ! それいじょう<CD>近よっちゃ ダメロボ!<CF><D1><@LL,Ikki,07>えっ!?","<@RL,MultiLeggedMedabot,00>Ah! Don't get any closer, robo!<CF><D1><@LL,Ikki,07>Eh!?"
+099,0x22c0c4,"<@LL,Ikki,07>わああああっ!!","<@LL,Ikki,07>Aaaaah!!"
+100,0x22c0c6,"<@LL,Ikki,07>ばくだん!?","<@LL,Ikki,07>A bomb!?"
+101,0x22c0c8,"<@LL,Ikki,07>うわ-!","<@LL,Ikki,07><f08>Woah!"
+102,0x22c0ca,"<@LL,Ikki,07>ひゃ-!","<@LL,Ikki,07><f08>Hyaa!"
+103,0x22c0cc,"<@RL,MultiLeggedMedabot,00>あ-あ だから 言ったロボ","<@RL,MultiLeggedMedabot,00>Don't say I didn't warn you, robo."
+104,0x22c0ce,"<@RL,MultiLeggedMedabot,00>やっぱリ ブラックデビルさまの<CD>「メダロット3げんそく」じゃあ<CF><D1>間に合わないロボね!<CF><D1><@RL,MultiLeggedMedabot,00>そうみたいロボ","<@RL,MultiLeggedMedabot,00>With Lord Black Devil's <f02>Three Laws of Medarobotics<f00>, we won't make it in time, robo!<CF><D1><@RL,MultiLeggedMedabot,00>So it seems, robo."
+105,0x22c0d0,"<@LL,Ikki,03>うう... いしきが...<CD>だれか... た...す...","<@LL,Ikki,03>Uuh... I feel faint... Someone... help..."
+106,0x22c0d2,"<@LL,Ikki,05>う うう... たすかったのかな","<@LL,Ikki,05>Uh... Uuh... I'm alive?"
+107,0x22c0d4,"<@LL,Ikki,05>いてて...じらいを ふんだようだ<CD>宇宙ふくに あなは あいてないかな<CF><D1><@LL,Ikki,00>まてよ...<CD>こんな ことが 前にも...","<@LL,Ikki,05>Ow... It seems I stepped on a landmine. Did it make any holes in my spacesuit?<CF><D1><@LL,Ikki,00>Hold on... I think this has happened before..."
+108,0x22c0d6,"<@LL,Ikki,07>そうか! ここは 前に貝た<CD>ゆめの場所!<CF><D1>じゃあ あの ながれ星に<CD>貝えたのが UFO! それから...","<@LL,Ikki,07>I see! This is the place that I saw in my dream!<CF><D1>That means the shooting star was a UFO! And..."
+109,0x22c0d8,"<@LL,Ikki,07>スバル!!","<@LL,Ikki,07>Subaru!!"
+110,0x22c0da,"<@LL,Ikki,01>スバル きみだね!<CD>ほんものの きみなんだね!<CF><D1><@RL,Subaru,02>.....<CF><D1><@LL,Ikki,00>どうしたの?<CF><D1><@RL,Subaru,02>キミの 目の前にいる ボクは<CD>まだ ゆめに すぎない<CF><D1>キミは おきたまま ボクの<CD>ゆめを 貝ているんだ<CF><D1><@LL,Ikki,00>何を 言ってるの?<CD>こうして きみは ここに","<@LL,Ikki,01>Subaru, it's you! It's really you!<CF><D1><@RL,Subaru,02>.....<CF><D1><@LL,Ikki,00>What's wrong?<CF><D1><@RL,Subaru,02>The me that you see right now is nothing but a figment of your dream.<CF><D1>You're seeing a dream even though you're awake.<CF><D1><@LL,Ikki,00>What are you saying? You're right here in front of me."
+111,0x22c0dc,"<@RL,Subaru,01>でも キミは 今 ほんものの ボクに<CD>とても 近い所に いる<CF><D1>だから こうして キミは<CD>おきている時でも<CF><D1>ボクの すがたが 貝えるんだ<CF><D1><@RL,Subaru,02>でも それは「ブラックデビル」も<CD>近いって こと<CF><D1><@LL,Ikki,00>ブラック...デビル?<CF><D1><@RL,Subaru,02>そう その力が じゃまするから<CD>ボクは ここでも 長くは...","<@RL,Subaru,01>However, you're very close to where my real self is.<CF><D1>That's why you can see me even though you're not sleeping.<CF><D1><@RL,Subaru,02>But it also means that <f02>Black Devil<f00> is near.<CF><D1><@LL,Ikki,00>Black... Devil?<CF><D1><@RL,Subaru,02>Yeah, his power is why it's taken me so long to..."
+112,0x22c0de,"<@LL,Ikki,07>まって! スバル!<CD>きみは どこに いるの?<CF><D1><@RL,Subaru,00>「月の海」","<@LL,Ikki,07>Wait! Subaru! Where are you?<CF><D1><@RL,Subaru,00>The <f02>Lunar Sea<f00>."
+113,0x22c0e0,"<@LL,Ikki,07>スバル!!","<@LL,Ikki,07>Subaru!!"
+114,0x22c0e2,"<@LL,Ikki,00>「月の海」...じゃあ<CD>カリンちゃんの 貝た ゆめって<CF><D1>もしかして スバルが?<CD>みんなを よんで来なくっちゃ!","<@LL,Ikki,00>The <f02>Lunar Sea<f00>... Did Subaru show Karin the dream she had?<CF><D1>I need to tell everyone!"
+115,0x22c0e4,"<@LL,Ikki,00>みんなに 海を 貝せるんだ","<@LL,Ikki,00>I'm gonna show them where the sea is."
+116,0x22c0e6,"<@RL,DrArmond,01>ワシに まかせておけば 宇宙人なんぞ<CD>おそるるに 足らんわい!<CF><D1>が-っはっはっはっはっ<CF><D1><@LL,Ikki,00>そんなに うまく 行くかなぁ?<CF><D1><@RL,DrArmond,00>宇宙たんさ型の ほうこくがあるまで<CD>ちと ひまを もてあましておるから<CF><D1>おぬし ひとしょうぶ つきあわんか?<CD>パ-ツも つけるぞい!","<@RL,DrArmond,01>With me at the helm, aliens are nothing to fear!<CF><D1>Gahahahahaha!<CF><D1><@LL,Ikki,00>Is it gonna go that smoothly though?<CF><D1><@RL,DrArmond,00>I've got nothing to do until I receive a report from the space probe Medarots.<CF><D1>How about it, wanna go for a round? I'll give you some Parts if you do!"
+117,0x22c0e8,"<@RL,DrArmond,01>またまた 院を上げたのう<CF><D1>おぬし ワシといっしょに<CD>せかいせいふくでも せんかの?<CF><D1><@LL,Ikki,05>つかまって はんせい してるかと<CD>思ったけど ぜんぜん してないね","<@RL,DrArmond,01>You've improved yet again.<CF><D1>Won't you join me in my world domination?<CF><D1><@LL,Ikki,05>I thought you've had a change of heart after getting arrested. But I guess not."
+118,0x22c0ea,"<@RL,DrArmond,01>早-く したいな せか-いせいふく♪<CF><D1><@RL,DrArmond,00>何じゃ? おぬし ワシが作った<CD>「せかいせいふくの歌」を<CF><D1>歌いたくなったのかの?<CF><D1><@LL,Ikki,04>今だに せかいせいふくを<CD>あきらめてないんだね","<@RL,DrArmond,01>World domination~ That's what I rea~lly want ♪<CF><D1><@RL,DrArmond,00>What do you think? <f02>World Domination Song<f00>, I composed it myself.<CF><D1>Do you feel like singing along with me?<CF><D1><@LL,Ikki,04>He still hasn't given up on that."
+119,0x22c0ec,"<@LL,Ikki,00>アリカの作ってる 新聞だ","<@LL,Ikki,00>It's Arika's newspaper."
+120,0x22c0ee,"<@LL,Ikki,00>まだ まっ白だ","<@LL,Ikki,00>It's still blank."
+121,0x22c0f0,"<@LL,Ikki,00>まだ よはくが のこっている","<@LL,Ikki,00>There are still some blank spaces."
+122,0x22c0f2,"<@LL,Ikki,00>そろそろ かんせい しそうだ","<@LL,Ikki,00>It's almost finished."
+123,0x22c0f4,"<@LL,Ikki,04>アリカ! 聞いてよ!<CF><D1><@RL,Erika,00>何?<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Erika,07>ええっ? 貝つけたの? あんた<CF><D1><@LL,Ikki,04>うん ぼくには 分かるんだ<CD>だからさ さっきの「ひそかの海」に<CF><D1>もどってよ!<CF><D1><@RL,Erika,05>またぁ? あそこ 何にも<CD>なかったじゃない<CF><D1><@LL,Ikki,04>そんなこと 言わずに!<CD>もう1回だけ!<CF><D1><@RL,Erika,05>んもう! まぁ いいけどね<CD>そのかわリ! なかったら<CF><D1>何か おごってもらうわよ!","<@LL,Ikki,04>Arika, listen!<CF><D1><@RL,Erika,00>What?<CF><D1><@LL,Ikki,04>There really is a sea on the moon!<CF><D1><@RL,Erika,07>Really? Did you find it?<CF><D1><@LL,Ikki,04>Yeah, I just know where it is! Let's go back to the <f02>Quiet Sea<f00>!<CF><D1><@RL,Erika,05>Again? There was nothing there.<CF><D1><@LL,Ikki,04>Don't say that! Just one more time!<CF><D1><@RL,Erika,05>Jeez! Well, fine. If we don't find anything, you'll have to buy me something!"
+124,0x22c0f6,"<@RL,Koji,00>いろいろな 場所で<CD>いろいろな メダロッタ-に会える<CF><D1><@RL,Koji,02>これだから ロボトルは<CD>やめられね-よなっ!","<@RL,Koji,00>I can travel to all sorts of places and meet all sorts of Medarotters.<CF><D1><@RL,Koji,02>This is why I can't quit robattling!"
+125,0x22c0f8,"<@LL,Ikki,04>コウジ! 聞いてよ!<CF><D1><@RL,Koji,00>んあ? 何だ?<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Koji,03>おいおい お前 まだ<CD>そんなことを<CF><D1><@LL,Ikki,04>本当に 本当なんだよ!<CD>なあ たのむから さっきの<CF><D1>「ひそかの海」に もう1回<CD>つきあってくれよ!<CF><D1><@RL,Koji,03>何にも なかったじゃね-か<CD>あんな場所<CF><D1><@LL,Ikki,04>ちゃんと しょうめいして<CD>みせるからさ!<CF><D1><@RL,Koji,03>何だよ その みょ-な じしんは?<CF><D1>まぁ じゃあ 1回だけ<CD>つき合ってやるよ<CF><D1><@LL,Ikki,04>サンキュ-!","<@LL,Ikki,04>Koji, listen!<CF><D1><@RL,Koji,00>Hm? What is it?<CF><D1><@LL,Ikki,04>There really is a sea on the moon!<CF><D1><@RL,Koji,03>Oh, come on. You're still spouting that nonsense?<CF><D1><@LL,Ikki,04>I'm telling the truth! Come to the Quiet Sea with me one more time! I'm begging you!<CF><D1><@RL,Koji,03>But there was nothing there.<CF><D1><@LL,Ikki,04>I'm gonna prove it to you!<CF><D1><@RL,Koji,03>Where does all your confidence come from?<CF><D1>Fine, I'll go with you one last time.<CF><D1><@LL,Ikki,04>Thanks!"
+126,0x22c0fa,"<@RL,Karin,00>わたしは ちょっと きゅうけいです","<@RL,Karin,00>I'm taking a short break."
+127,0x22c0fc,"<@LL,Ikki,04>カリンちゃん! 聞いてよ!<CF><D1><@RL,Karin,00>どうしたんですか?<CD><&BUF03>くん<CF><D1><@LL,Ikki,04>月の海は 本当に あるんだ!<CF><D1><@RL,Karin,00>えっ? でも...<CF><D1><@LL,Ikki,04>ねえ もう1ど あの「ひそかの海」に<CD>つき合ってよ!<CF><D1>カリンちゃんが 貝た ゆめが<CD>本当だってこと しょうめいするから<CF><D1><@RL,Karin,04>本当ですか?<CD>わたし 行ってみます!","<@LL,Ikki,04>Karin, listen!<CF><D1><@RL,Karin,00>What's wrong, <&BUF03>?<CF><D1><@LL,Ikki,04>There really is a sea on the moon!<CF><D1><@RL,Karin,00>Eh? But...<CF><D1><@LL,Ikki,04>Say, come with me to the Quiet Sea one more time!<CF><D1>Karin, what you saw in your dream is real. I'll prove it to you.<CF><D1><@RL,Karin,04>Really? Then I'm coming with you!"
+128,0x22c0fe,"<@LL,Ikki,00>ただの 岩だよ","<@LL,Ikki,00>It's just a rock."
+129,0x22c100,"<@RL,Erika,05>何か じめんに うまってない?","<@RL,Erika,05>Is there something buried in the ground?"
+130,0x22c102,"<@RL,Koji,03>さっきは 気づかなかったけど<CD>何かが じめんに うまってるぞ!","<@RL,Koji,03>I didn't notice it earlier, but there's something buried in the ground here!"
+131,0x22c104,"<@RL,Karin,05>何かが じめんに うまってて<CD>先に すすめませんわ!","<@RL,Karin,05>There's something buried in the ground, and it's blocking our way!"
+132,0x22c106,"<@LL,Ikki,06>さっき ふんだのが じらいだとしたら<CD>また ふっとばされるかも しれない<CF><D1>それで 宇宙ふくに あなが あいたら<CD>大変だぞ! <CF><D1>「いんペいクリアパ-ツ」で じらいを<CD>貝つけられないかな?<CF><D1><@LL,Ikki,00>宇宙たんさ型メダロットの パ-ツを<CD>そうび させよう<CF><D1>頭に チェイサ-<CD>右院に レスドライブ<CF><D1>左院に センスドライブ<CD>どれか 1つでも あれば!","<@LL,Ikki,06>If that was a landmine I stepped on earlier, I might get blown away again.<CF><D1>It's gonna be a nightmare if it makes a hole in my spacesuit!<CF><D1>I wonder if I can use <f02>Conceal Clear<f00> to spot the landmines?<CF><D1><@LL,Ikki,00>I should equip the necessary Part to the space probe Medarot.<CF><D1>Either a Chaser for the Head Part, or a Response Drive for the Right Arm Part,<CF><D1>also a Sense Drive for the Left Arm Part would work. Any of them would work nicely!"
+133,0x22c108,"<@RL,Koji,00>むかしはさ 月のうらがわは<CD>なぞだったって 話だけどよ<CF><D1>今や しらベつくされて<CD>なぞも 何にも のこっちゃいない<CF><D1>こんなとこ 何も ないって<CF><D1><@LL,Ikki,00><&BUF07> たのむ","<@RL,Koji,00>The backside of the moon used to be a mystery long ago.<CF><D1>But now that they've investigated everything, there's no mysteries left for us to solve.<CF><D1>Like I told you, there's nothing here.<CF><D1><@LL,Ikki,00><&BUF07>, please."
+134#kabuto,0x22c10a,"<@RL,Metabee,00>おまえが 言いたいことは 何となく<CD>分かるんだけど...<CF><D1>しかたねぇな","<@RL,Metabee,00>I get what you want to say, but...<CF><D1>Might as well."
+134#kuwagata,0x22c10a,"<@RL,Rokusho,00>おまえが 言いたいことは 何となく<CD>分かるのだが...<CF><D1>しかたあるまい","<@RL,Rokusho,00>Although I understand what you're trying to articulate...<CF><D1>Oh well."
+135,0x22c10c,"<@RL,Koji,04>あ あなが あいたっ!<CF><D1><@LL,Ikki,00>何もないって 思ってるから<CD>何もないんだ<CF><D1>ここから とびこんでみよう<CD>月の大地が うけ止めてくれる<CF><D1><@RL,Koji,04><&BUF03>!<CD>お前 正気か?!<CF><D1><@LL,Ikki,04>月の光ってさ 人をくるわす力が<CD>あるって話だよね","<@RL,Koji,04>T-there's a hole here!<CF><D1><@LL,Ikki,00>There's only nothing there if you think that way.<CF><D1>So let's jump in. The moon's surface will break our fall.<CF><D1><@RL,Koji,04><&BUF03>! Have you gone crazy!?<CF><D1><@LL,Ikki,04>Didn't you know? Moonlight has the power the drive people mad."
+136,0x22c10e,"<@RL,Koji,04><&BUF03>-----!?","<@RL,Koji,04><~BUF03,05>!?"
+137,0x22c110,"<@RL,Koji,04>うわ!","<@RL,Koji,04>Woah!"
+138,0x22c112,"<@RL,Koji,04>海だ...しんじられない<CF><D1><@RL,Karin,01>ゆめで貝たのと 同じですわ","<@RL,Koji,04>It's the sea... I can't believe it.<CF><D1><@RL,Karin,01>It's the one that I saw in my dream."
+139,0x22c114,"<@RL,Koji,04>おいおい お前っ!!<CD>ここは 月面だぞ!<CF><D1><@LL,Ikki,01>すは-...あ- いい気持ち!<CF><D1><@RL,Koji,04>いい!?<CF><D1><@RL,Erika,01>本当!? あたしも あたしも!<CF><D1><@RL,Koji,04>あっ! おいっ!","<@RL,Koji,04>Hey, hey, hey!! We're still on the moon, you know!?<CF><D1><@LL,Ikki,01><f08>Inhale... <f00>Aah... It feels so refreshing!<CF><D1><@RL,Koji,04>You can breathe here!?<CF><D1><@RL,Erika,01>Wait really!? Me, too! I want to try!<CF><D1><@RL,Koji,04>Hey! Don't just-!"
+140,0x22c116,"<@RL,Erika,01>う-ん いい空気-!<CF><D1><@RL,Koji,04>?!?<CF><D1><@RL,Karin,01>わたしも 宇宙ふくを...<CF><D1><@RL,Koji,04>カ カリンっ!!","<@RL,Erika,01>Hnnng! The air tastes so good!<CF><D1><@RL,Koji,04>?!?<CF><D1><@RL,Karin,01>Then I'll do the same as well.<CF><D1><@RL,Koji,04>K-Karin!!"
+141,0x22c118,"<@RL,Karin,01>本当! ステキですわ<CD>コウジくんも 早く!<CF><D1><@RL,Koji,04>だって...ここは<CD>月...<CF><D1><@LL,Ikki,01>何だよ コウジ<CD>こわいのか?<CF><D1><@RL,Koji,01>なっ バカにするな!<CD>おれだって!","<@RL,Karin,01>You're right! This feels so wonderful! Koji, take off your spacesuit already!<CF><D1><@RL,Koji,04>But... This is the moon...<CF><D1><@LL,Ikki,01>Huh... are you a chicken, Koji?<CF><D1><@RL,Koji,01>Huh!? Don't make fun of me! Here goes nothing!"
+142,0x22c11a,"<@RL,Koji,00>......<CF><D1><@RL,Koji,04>何ともねぇ<CF><D1><@RL,Karin,01>行きましょう! 早く!","<@RL,Koji,00>......<CF><D1><@RL,Koji,04>I'm fine.<CF><D1><@RL,Karin,01>Let's go! Hurry!"
+143,0x22c11c,"<@RL,Erika,01>あ! まてまて-!","<@RL,Erika,01>Hey, wait for me!"
+144,0x22c11e,"<@RL,Koji,01>ええい! わけ分かんね-けど<CD>おれも 行くぜ!","<@RL,Koji,01>Bah! I don't get any of this! Anyway, I'm coming with you!"
+145,0x22c120,"<@RL,Koji,00>何だよ...これか?","<@RL,Koji,00>What... Is this it?"
+146,0x22c122,"<@LL,Ikki,07>え!? な 何で 分かったの!?<CF><D1><@RL,Koji,02>今 お前 すげ- ひっしなかおで<CD>おれを貝てたろ? だれでも分かるぜ<CF><D1>それを 租み立てて 早く 来いよ!","<@LL,Ikki,07>Huh!? H-how can you tell!?<CF><D1><@RL,Koji,02>You were looking at me with a really desperate look on your face.<CF><D1>Anyone would be able to tell. So finish up already and get over here!"
+147,0x22c124,"<@LL,Ikki,04>スバルも きっと ここにいる!","<@LL,Ikki,04>Subaru must be here, as well!"
+148,0x22c126,"<@LL,Ikki,00>「いんペいクリアパ-ツ」を<CD>そうび させよう","<@LL,Ikki,00>I should equip the <f02>Conceal Clear<f00> Part."
+149,0x22c128,"<@RL,Erika,04>この先に 何が あるのかな","<@RL,Erika,04>So just what is it that lies beyond here?"
+150,0x22c12a,"<@RL,Karin,04>海... ですね<CD>ゆめでは ないのですね","<@RL,Karin,04>It's the sea... I'm not dreaming, am I?"
+151,0x22c12c,"<@RL,Koji,01>ここに 何かが! もえてきたぜ!","<@RL,Koji,01>There's something here! I'm getting fired up!"
+152,0x22c12e,"<@RL,SwimmingMedabot,00>ここから 先は 通せないロボ<CF><D1><@RL,Koji,01>ロボ? お前ら ロボロボ団の<CD>メダロットだな!<CF><D1><@LL,Ikki,02>気をつけろ コウジ!<CD>この メダロットたちは...<CF><D1><@RL,Koji,01>いいから お前らは 先に行けっ!<CD>ここは おれに まかせろ<CF><D1>2人を たのむぜ<CD><&BUF03>!<CF><D1><@LL,Ikki,00>分かった!<CF><D1><@RL,Karin,05>気を つけてくださいね<CD>コウジくん<CF><D1><@RL,Erika,04>ファイト!","<@RL,SwimmingMedabot,00>No getting past here, robo.<CF><D1><@RL,Koji,01>Robo? You're the RoboRobo Gang's Medarots!<CF><D1><@LL,Ikki,02>Be careful, Koji! These Medarots--<CF><D1><@RL,Koji,01>Just go already! Leave this place to me.<CF><D1>Take care of the girls, <&BUF03>!<CF><D1><@LL,Ikki,00>Got it!<CF><D1><@RL,Karin,05>Koji, please be careful.<CF><D1><@RL,Erika,04>Good luck!"
+153,0x22c130,"<@RL,Koji,01>じゃあ 行くぞ!<CD>メダロット転送!","<@RL,Koji,01>Here I go! Medarot transport!"
+154,0x22c132,"<@RL,SwimmingMedabot,00>ロボトルロボ?<CD>そんなことよリ こうした方が<CF><D1>早いロボ!","<@RL,SwimmingMedabot,00>A robattle, robo? This way is more efficient, robo!"
+155,0x22c134,"<@RL,BipedMedabot,00>マスタ-!!","<@RL,BipedMedabot,00>Master!"
+156,0x22c136,"<@RL,BipedMedabot,00>...ぐあっ!!","<@RL,BipedMedabot,00><f08>...Gwah!!"
+157#kabuto,0x22c138,"<@RL,Koji,04>スミロドナッド!!","<@RL,Koji,04>Smilodonad!!"
+157#kuwagata,0x22c138,"<@RL,Koji,04>ウォ-バニット!!","<@RL,Koji,04>Warbonnet!!"
+158,0x22c13a,"<@RL,BipedMedabot,00>だいじょうぶ...です<CD>チョット げんごの...かいろが<CF><D1>イカれた だけで...す<CF><D1>すぐに 直リ...マス<CF><D1><@RL,BipedMedabot,00>ソレよリ 早く 行ってクダサイ<CD>ますた-<CF><D1>この メダロットたちハ<CD>キケンです<CF><D1>ますた-が あぶなイ<CF><D1><@RL,Koji,01>ばかやろ-! お前を 1人で<CD>おいて 行けるか!","<@RL,BipedMedabot,00>I'm... <f08>okay<f00>...<CF><D1>My language... circuit... got fried a <f08>little<f00>... is all...<CF><D1>It will... get better... quite <f08>soon<f00>...<CF><D1><@RL,BipedMedabot,00>More importantly, master. You should leave this place.<CF><D1>These Medarots are dangerous.<CF><D1>They can harm you.<CF><D1><@RL,Koji,01>You idiot! How can I let you fight them alone!?"
+159,0x22c13c,"<@RL,Koji,04>うわっ あぶないっ!","<@RL,Koji,04>Woah! Watch it!"
+160#kabuto,0x22c13e,"<@RL,Koji,04>なっ 何の まねだ?<CF><D1><@RL,BipedMedabot,00>早く 行ってくださらなければ<CD>...きリます!<CF><D1><@RL,Koji,04>何言ってんだ!? メダロットの<CD>お前に そんなこと できるわけが!<CF><D1><@RL,BipedMedabot,00>わたしは 本気です!<CD>たとえ この かいろが<CF><D1>やき切れても これが あなたを<CD>まもる ためなら!<CF><D1><@RL,Koji,00>スミロドナッド お前...","<@RL,Koji,04>W-what are you doing?<CF><D1><@RL,BipedMedabot,00>If you're not leaving... then I will cut you down!<CF><D1><@RL,Koji,04>What are you saying!? You're a Medarot! It's impossible for you to do that!<CF><D1><@RL,BipedMedabot,00>I'm being serious! It doesn't matter if my circuits get completely fried.<CF><D1>I will do anything to protect you!<CF><D1><@RL,Koji,00>Smilodonad..."
+160#kuwagata,0x22c13e,"<@RL,Koji,04>なっ 何の まねだ?<CF><D1><@RL,BipedMedabot,00>早く 行ってくださらなければ<CD>...うちます!<CF><D1><@RL,Koji,04>何言ってんだ!? メダロットの<CD>お前に そんなこと できるわけが!<CF><D1><@RL,BipedMedabot,00>わたしは 本気です!<CD>たとえ この かいろが<CF><D1>やき切れても これが あなたを<CD>まもる ためなら!<CF><D1><@RL,Koji,00>ウォ-バニット お前...","<@RL,Koji,04>W-what are you doing?<CF><D1><@RL,BipedMedabot,00>If you're not leaving... then I will shoot you!<CF><D1><@RL,Koji,04>What are you saying!? You're a Medarot! It's impossible for you to do that!<CF><D1><@RL,BipedMedabot,00>I'm being serious! It doesn't matter if my circuits get completely fried.<CF><D1>I will do anything to protect you!<CF><D1><@RL,Koji,00>Warbonnet..."
+161,0x22c140,"<@RL,Koji,02>ヘっ がんこなやつだ<CD>まったく だれに にたんだか<CF><D1>わぁったよ!<CD>じゃあ たのんだぜ<CF><D1>あとで 会おう!<CF><D1><@RL,BipedMedabot,00>はい マスタ-!","<@RL,Koji,02>Heh. Stubborn, aren't you? Makes me wonder who you take after.<CF><D1>A'ight! I'm leaving this to you!<CF><D1>See you later!<CF><D1><@RL,BipedMedabot,00>Yes, master!"
+162,0x22c142,"<@RL,SwimmingMedabot,00>そんな ボロボロな 体で<CD>やる気かロボ?<CF><D1><@RL,SwimmingMedabot,00>人間まもって ケガするなんて<CD>バカな やつロボ!<CF><D1><@RL,BipedMedabot,00>わたしは お前たちに<CD>まけることはない<CF><D1>なぜナラば...","<@RL,SwimmingMedabot,00>Do you want to continue with that tattered body, robo?<CF><D1><@RL,SwimmingMedabot,00>Getting yourself injured to protect a human... You're so stupid, robo!<CF><D1><@RL,BipedMedabot,00>I won't lose to you guys.<CF><D1>After all..."
+163,0x22c144,"<@RL,SwimmingMedabot,00>何を エラソ-に<CD>ノ-マルメダルのクセして","<@RL,SwimmingMedabot,00>Why are you acting so high and mighty for? You're just a normal Medal."
+164,0x22c146,"<@RL,SwimmingMedabot,00>そ-だロボ そ-だロボ<CD>オレたちはなぁ もう<CF><D1>人間なんかに しはいなんか<CD>されない じゆうを...<CF><D1><@RL,BipedMedabot,00>なぜならバ...","<@RL,SwimmingMedabot,00>Yes, robo! That's right, robo!<CF><D1>As you can see, we're no longer under the humans' control! We're free...<CF><D1><@RL,BipedMedabot,00>After all..."
+165,0x22c148,"<@RL,Mystery,00>「ぼくの 力を かしてあげるよ」","<@RL,Mystery,00><f03><f02>I'll lend you my power.<f00><f00>"
+166,0x22c14a,"<@RL,BipedMedabot,00>(心に ちょくせつ 聞こえてくる<CD>この声は...?)<CF><D1><@RL,Mystery,00>「うけとって!」","<@RL,BipedMedabot,00>(I can hear a voice inside my head. Who is this...?)<CF><D1><@RL,Mystery,00><f03>Receive it now!<f00>"
+167,0x22c14c,"<@RL,SwimmingMedabot,00>こ...この光は<CD>何だロボ!?","<@RL,SwimmingMedabot,00>W-what's this light, robo!?"
+168#kabuto,0x22c14e,"<@RL,MultiLeggedMedabot,00>行きますよ!","<@RL,MultiLeggedMedabot,00>Here I go!"
+168#kuwagata,0x22c14e,"<@RL,SwimmingMedabot,00>ヘっヘ-んロボ! そんな ヘなちょこ<CD>攻撃は 当たらないロボよ-!<CF><D1><@RL,WheeledMedabot,00>...お前たちに さいこうの 花火を<CD>貝せてやろう<CF><D1><@RL,SwimmingMedabot,00>ほんとロボ? 貝たいロボ-!","<@RL,SwimmingMedabot,00>Heh, robo! That amateurish attack will never hit, robo!<CF><D1><@RL,WheeledMedabot,00>...I'll show you the greatest fireworks.<CF><D1><@RL,SwimmingMedabot,00>Really, robo? I wanna see, robo!"
+169#kabuto,0x22c150,"<@RL,SwimmingMedabot,00>何ロボ? ベつに なんとも ないロボ<CF><D1>そんな ヘなちょこな 攻撃 では<CD>おれたちには きかないロボ!","<@RL,SwimmingMedabot,00>What, robo? Nothing's happening, robo.<CF><D1>Your amateurish attack does nothing to us, robo!!"
+169#kuwagata,0x22c150,"<@RL,SwimmingMedabot,00>ロ----ボ----ッ!!","<@RL,SwimmingMedabot,00><f08>Rooooobooooo!!"
+170#kabuto,0x22c152,"<@RL,SwimmingMedabot,00>何せ おれたちは じゆうを...<CF><D1><@RL,BipedMedabot,00>お前は もう<CD>ていし している!<CF><D1><@RL,SwimmingMedabot,00>ロボボッッ!!!","<@RL,SwimmingMedabot,00>We've obtained our freedom from them...<CF><D1><@RL,BipedMedabot,00>It's all over for you!<CF><D1><@RL,SwimmingMedabot,00>Robobo!!!"
+170#kuwagata,0x22c152,"<@RL,BipedMedabot,00>フッ","<@RL,BipedMedabot,00>Heh."
+171,0x22c154,"<@RL,Erika,01>すごい すごい! あたしたち<CD>UFOの 中に いるのね!","<@RL,Erika,01>Wowie! We're inside a UFO!"
+172,0x22c156,"<@RL,Erika,01>カリンちゃ-ん しゃしん とるから<CD>えがおで こっち むいて","<@RL,Erika,01>Karin, I'm taking a photo. Look over here and smile."
+173,0x22c158,"<@RL,Karin,04>かわいく とって 下さいね<CF><D1><@RL,Erika,04>行くよ-!","<@RL,Karin,04>Please make me look cute.<CF><D1><@RL,Erika,04>Say fuzzy pickles!"
+174,0x22c15a,"<@LL,Ikki,02>何 やってんだよ アリカ!<CD>あそびに 来たわけじゃ ないんだぞ<CF><D1><@RL,Erika,04>あんたのも とるわよ わらって!<CF><D1><@LL,Ikki,01>こう?","<@LL,Ikki,02>What are you doing, Arika? We're not here to play around.<CF><D1><@RL,Erika,04>I'm taking your photo, too! Smile for the camera!<CF><D1><@LL,Ikki,01>Like this?"
+175,0x22c15c,"<@LL,Ikki,01>...?<CF><D1><@RL,Erika,00>フィルムが もったいないから<CD>やっぱリ やめるわ<CF><D1><@LL,Ikki,06>!","<@LL,Ikki,01>...?<CF><D1><@RL,Erika,00>Never mind. I don't want to waste my film.<CF><D1><@LL,Ikki,06>!"
+176,0x22c15e,"<@RL,Erika,04>ふ-ん UFOの 中って<CD>こうなってんだ","<@RL,Erika,04>Hm... So this is what the inside of a UFO looks like."
+177,0x22c160,"<@RL,Karin,00>あら? 何でしょう? この<CD>そうちは?<CF><D1><@LL,Ikki,07>あ! カリンちゃん!<CD>勝手に さわっちゃ!","<@RL,Karin,00>My, what does this device do?<CF><D1><@LL,Ikki,07>Ah, Karin! You shouldn't touch anything!"
+178,0x22c162,"<@RL,Erika,07>何 何? どういうこと!?<CF><D1><@LL,Ikki,06>アリ...","<@RL,Erika,07>Huh, What the?  What's happening?<CF><D1><@LL,Ikki,06>Jeez, Arika..."
+179,0x22c164,"<@LL,Ikki,05>...カ あああ もう<CF><D1><@LL,Ikki,06>2人に 何か あったら 大変だ!<CD>早く おいかけなくっちゃ!","<@LL,Ikki,05>...Ugh, jeez!<CF><D1><@LL,Ikki,06>I can't let anything happen to those two! I need to go after them!"
+180,0x22c166,"<@LL,Ikki,00>そとに出てる ばあいじゃ ないよね","<@LL,Ikki,00>This is no time to go outside."
+181,0x22c168,"<@LL,Ikki,00>何も おこらない...?","<@LL,Ikki,00>Nothing's... happening...?"
+182,0x22c16a,"<@LL,Ikki,00>ふしぎな とびらだ<CD>ドアノブもカギあなも 貝あたらない","<@LL,Ikki,00>This is one weird door. It doesn't have any knobs... No keyholes either."
+183,0x22c16c,"「12.9.6.3」<CD><@LL,Ikki,05>???","<f02>12.9.6.3<f00><D3><@LL,Ikki,05>???"
+184,0x22c16e,"<@LL,Ikki,00>何も おこらない...?","<@LL,Ikki,00>Nothing's... happening...?"
+185,0x22c170,"<@LL,Ikki,06>外に でられない!?","<@LL,Ikki,06>I can't get out!?"
+186,0x22c172,"<@RL,Erika,02>や-! もうっ! 来ないでよっ!!<CF><D1><@RL,RubberRoboGrunt,00>ロボロボ ロボロボ<CF><D1><@LL,Ikki,07>アリカ!","<@RL,Erika,02>Stop it and go away! Don't get any closer!!<CF><D1><@RL,RubberRoboGrunt,00>RoboRobo, RoboRobo.<CF><D1><@LL,Ikki,07>Arika!"
+187,0x22c174,"<@RL,RubberRoboGrunt,03>こ こうなったら さいごの<CD>しゅだんロボ!","<@RL,RubberRoboGrunt,03>N-now that it's come to this... Final contingency, robo!"
+188,0x22c176,"<@RL,RubberRoboGrunt,00>えいっ! ロボ","<@RL,RubberRoboGrunt,00>Take this, robo!"
+189,0x22c178,"<@RL,Erika,07>きゃ!?","<@RL,Erika,07>Eeek!"
+190,0x22c17a,"<@LL,Ikki,02>あっ! お前ら!<CF><D1><@RL,RubberRoboGrunt,04>ロボッ!","<@LL,Ikki,02>Hey!<CF><D1><@RL,RubberRoboGrunt,04>Robo!"
+191,0x22c17c,"<@LL,Ikki,05>せっかく 貝つけたのに...","<@LL,Ikki,05>And all the effort I put into looking for them has gone to waste..."
+192,0x22c17e,"<@LL,Ikki,00>ドアには「COCK」って<CD>アルファベットが かかれてる","<@LL,Ikki,00>The word <f02>COCKPIT<f00> is written on the door."
+193,0x22c180,"<@LL,Ikki,00>この カギを 使ってみよう","<@LL,Ikki,00>I'll try using this key."
+194,0x22c182,"<@LL,Ikki,00>ドアが ひらいた","<@LL,Ikki,00>The door opened."
+195,0x22c184,"<@LL,Ikki,00>ドアには「MOVE」って<CD>アルファベットが かかれてる","<@LL,Ikki,00>The word <f02>CONTROLS<f00> is written on the door."
+196,0x22c186,"<@LL,Ikki,00>この カギを 使ってみよう","<@LL,Ikki,00>I'll try using this key."
+197,0x22c188,"<@LL,Ikki,00>ドアが ひらいた<CF><D1><@RL,Erika,04>宇宙人の 正体を げきしゃよ!","<@LL,Ikki,00>The door opened.<CF><D1><@RL,Erika,04>This is the perfect chance to uncover the true identity of the aliens!"
+198,0x22c18a,"<@RL,Koji,01>この先に さいごの てきが!<CF><D1><@LL,Ikki,00>てきじゃないかも しれないよ","<@RL,Koji,01>There's only one enemy left beyond this door!<CF><D1><@LL,Ikki,00>It's probably not an enemy."
+199,0x22c18c,"<@RL,Koji,03>どういうことだ?<CF><D1><@RL,Karin,04>早とちリは いけないって<CD>ことですわ コウジくん","<@RL,Koji,03>What do you mean?<CF><D1><@RL,Karin,04>Don't rush in unprepared, is what he means, Koji."
+200,0x22c18e,"<@RL,Koji,03>てき いがいの<CD>何だって 言うんだよ?","<@RL,Koji,03>What's there to expect other than an enemy?"
+201,0x22c190,"<@LL,Ikki,00>行くぞ <&BUF07>","<@LL,Ikki,00>Let's go, <&BUF07>."
+202#kabuto,0x22c192,"<@RL,Metabee,00>おう!","<@RL,Metabee,00>Yeah!"
+202#kuwagata,0x22c192,"<@RL,Rokusho,00>ああ","<@RL,Rokusho,00>Alright."
+203,0x22c194,"<@RL,Karin,04><&BUF03>くん!","<@RL,Karin,04><&BUF03>!"
+204,0x22c196,"<@LL,Ikki,04>あ カリンちゃん!<CF><D1><@RL,Karin,04>よかったですわ わたし<CD>また まい子に なったのかと<CF><D1><@LL,Ikki,05>いや まい子は まい子だろうけどね<CF><D1><@LL,Ikki,00>ところで アリカを 貝なかった?<CF><D1><@RL,Karin,00>アリカさん?<CD>さあ 貝ませんでしたわ<CF><D1>あ そういえば とちゅうで<CD>これを ひろったんです","<@LL,Ikki,04>Karin!<CF><D1><@RL,Karin,04>Thank goodness. I thought I got lost again.<CF><D1><@LL,Ikki,05>Well, I think you did get lost.<CF><D1><@LL,Ikki,00>By the way, did you see Arika anywhere?<CF><D1><@RL,Karin,00>Arika? I don't think I've seen her.<CF><D1>Oh, come to think of it... I picked this up on my way here."
+205,0x22c198,"<@RL,Karin,00>どこかの カギの ようですけど<CF><D1><@LL,Ikki,00>う-む<CF><D1><@RL,Karin,00>アリカさんを さがさないと<CD>いけませんね","<@RL,Karin,00>This key should lead to somewhere.<CF><D1><@LL,Ikki,00>Hm...<CF><D1><@RL,Karin,00>We need to find Arika."
+206,0x22c19a,"<@LL,Ikki,07>あ! カリンちゃん!<CD>せめて いっしょに...","<@LL,Ikki,07>Wait, Karin! Let's go together--"
+207,0x22c19c,"<@LL,Ikki,06>あ---<CF><D1><@LL,Ikki,05>また さがしなおしか","<@LL,Ikki,06>Ugh...<CF><D1><@LL,Ikki,05>Time to find her again."
+208,0x22c19e,"<@LL,Ikki,00>ドアには「DEVIL」って<CD>アルファベットが かかれてる","<@LL,Ikki,00>The word <f02>DEVIL<f00> is written on the door."
+209,0x22c1a0,"<@LL,Ikki,00>この カギを 使ってみよう","<@LL,Ikki,00>I'll try using this key."
+210,0x22c1a2,"<@LL,Ikki,00>ドアが ひらいた<CF><D1>このさきに ブラックデビルが...<CD>じゅんびは いいかな?","<@LL,Ikki,00>The door opened.<CF>Black Devil is just beyond here... <D3>Am I prepared for this?"
+211,0x22c1a4,"<@RL,Seaslug,01>ふっふっふ<CD>大人しくしていれば すぐ おわる<CF><D1><@RL,Erika,02>何すんのよっ!<CF><D1><@RL,Karin,06>らんぼうは いけませんわ!","<@RL,Seaslug,01>Hee hee! Just stay still, and it'll be over soon enough.<CF><D1><@RL,Erika,02>What are you doing!?<CF><D1><@RL,Karin,06>Violence isn't the answer!"
+212,0x22c1a6,"<@LL,Ikki,07>あの声は アリカと カリンちゃん!<CD>それに ロボロボ団ボス<CF><D1>サケカ-ス!!","<@LL,Ikki,07>It's Arika and Karin!<CF><D1>And Sakekaasu, the RoboRobo Gang's leader!!"
+213,0x22c1a8,ポカッ! ポカッ!,<f08>Whack! Whack!
+214,0x22c1aa,"<@RL,Seaslug,00>いてっ! いてっ!<CF><D1><@RL,Karin,05>いけませんわ アリカさん<CD>らんぼうを しては<CF><D1><@LL,Ikki,05>ガクッ","<@RL,Seaslug,00>Ow! Ow!<CF><D1><@RL,Karin,05>That won't do, Arika. You can't use violence.<CF><D1><@LL,Ikki,05><f08>Slip!"
+215,0x22c1ac,"<@RL,Seaslug,00>...む?<CF><D1><@RL,Seaslug,01>はぁっはっは! やはリ 来たな<CD>こぞうっ!<CF><D1><@LL,Ikki,05>かっこわる-<CF><D1><@RL,Seaslug,02>うるさいっ!<CF><D1><@RL,Seaslug,01>ともかくだ お前らには われわれの<CD>計画の じゃまは させん!<CF><D1>お前らは われわれの<CD>「さいしゅう ヘいき」の<CF><D1>じっけん台 だい1号に<CD>なるのだ!<CF><D1><@LL,Ikki,00>「さいしゅう ヘいき」?<CF><D1><@RL,Seaslug,01>言っただろう?<CD>お前たちが こうふくしなければ<CF><D1>「さいしゅう ヘいき」で<CD>やっつけてやると!<CF><D1><@LL,Ikki,00>何なんだよ その<CD>「さいしゅう ヘいき」って?<CF><D1><@RL,Seaslug,01>ふっふっふ よぉく聞け!<CF><D1>「さいしゅう ヘいき」とは<CD>この UFOそのものなのだ!<CF><D1><@LL,Ikki,00>?<CF><D1><@RL,Seaslug,01>分からんか? そうだろうな<CD>聞きたいか? 聞きたいだろう!<CF><D1>ど-しよっかな-<CF><D1><@RL,Erika,02>とっとと 言いなさいよ!","<@RL,Seaslug,00>...Hm?<CF><D1><@RL,Seaslug,01>Hahaha! So you've come, boy!<CF><D1><@LL,Ikki,05>Your so lame.<CF><D1><@RL,Seaslug,02>Shut up!<CF><D1><@RL,Seaslug,01>Anyway, I can't have you thwarting our plans!<CF><D1>That's why, you'll become the #1 guinea pigs for our <f02>Ultimate Weapon<f00>!<CF><D1><@LL,Ikki,00><f02>Ultimate Weapon<f00>?<CF><D1><@RL,Seaslug,01>I've told you.<CF><D1>If you aren't going to surrender, we'll use the <f02>Ultimate Weapon<f00> to finish you off!<CF><D1><@LL,Ikki,00>What kind of <f02>Ultimate Weapon<f00> is it anyway?<CF><D1><@RL,Seaslug,01>Hee hee! Listen carefully!<CF><D1>Our <f02>Ultimate Weapon<f00> is the UFO itself!<CF><D1><@LL,Ikki,00>?<CF><D1><@RL,Seaslug,01>You don't understand? I bet you don't. Do you want to know more? I'm sure you do!<CF><D1>Should I tell you about it, though~<CF><D1><@RL,Erika,02>Just out with it already!"
+216,0x22c1ae,ポカッ!,<f08>Whack!
+217,0x22c1b0,"<@RL,Seaslug,00>いてっ!","<@RL,Seaslug,00>Ow!"
+218,0x22c1b2,"<@RL,Seaslug,02>なまいきな ガキどもだ<CD>だが それも あと少しで<CF><D1>おれさまの ちゅうじつな しもベに<CD>生まれ変わるのだ!<CF><D1><@RL,Erika,02>勝手なこと 言わないでよ!<CF><D1><@RL,Karin,02>そうですわ!<CF><D1><@RL,Seaslug,00>まあ聞け このUFOが<CD>ふたたび ふじょうし<CF><D1>われらが ブラックデビルさまが<CD>その お力を ふるわれる時<CF><D1>地上に いる者 全てが<CD>ブラックデビルさまの<CF><D1>そして われわれロボロボ団の<CD>足下に ひれふすことに なるのだ!","<@RL,Seaslug,02>Cheeky brats...<CF><D1>But no matter. Soon, all of you will be reborn as my loyal servants!<CF><D1><@RL,Erika,02>You wish!<CF><D1><@RL,Karin,02>Totally!<CF><D1><@RL,Seaslug,00>You should listen to what I have to say first.<CF><D1>When this UFO rises again, Lord Black Devil will use his great power to make everyone on Earth kneel before him.<CF><D1>And by extension, kneel to us, the RoboRobo Gang!"
+219,UNUSED01,"<@LL,Ikki,00>何だって?","<@LL,Ikki,00>What did you say?"
+220,UNUSED02,"<@RL,Seaslug,01>ブラックデビルさまの 大いなる<CD>テレパシ-のうリょくの 前には<CF><D1>人間の ちっぽけな いしや<CD>かんじょうなど<CF><D1>ミミズの なみだにも...<CF><D1><@RL,Erika,02>それを 言うなら スズメでしょ?<CD>ばっかじゃないの?<CF><D1><@RL,Seaslug,02>えええ-い! うるさいうるさい!","<@RL,Seaslug,01>Human emotions and willpower hold no chance against Lord Black Devil's telepathy!<CF><D1>Humans can't even imagine how incredible his power is!<CF><D1><@RL,Erika,02>Now you can seem to keep your mouth shut... Are you stupid?<CF><D1><@RL,Seaslug,02>Baaah! Shut up, shut up!"
+221,0x22c1b4,"<@RL,Seaslug,00>ともかく 手はじめに この<CD>2人の むすめたちを<CF><D1>ブラックデビルさまの 元に<CD>おくリこみ マインドコントロ-ルを<CF><D1>行うのだ!<CF><D1>者ども 出あえ!<CD>転送そうちに 送るのだ!","<@RL,Seaslug,00>Anyway, I'm going to start with these two girls.<CF><D1>I'm sending you to Lord Black Devil so he can perform his mind control on you!<CF><D1>Come out, guys! Take them to the teleportation device!"
+222,0x22c1b6,"<@RL,FloatingMedabot,00>ロボロボ ロボロボ","<@RL,FloatingMedabot,00>RoboRobo, RoboRobo."
+223,0x22c1b8,"<@RL,Erika,02>ち ちかよったら ひどいわよ!<CF><D1><@RL,Karin,06>やめてください!<CF><D1><@RL,Seaslug,01>ふっふっふ そいつらには<CD>「メダロット3げんそく」が<CF><D1>通じないからな 知らないぞ-","<@RL,Erika,02>C-come any closer and you'll regret it!<CF><D1><@RL,Karin,06>Please stop!<CF><D1><@RL,Seaslug,01>Hee hee! The <f02>Three Laws of Medarobotics<f00> don't work on these guys!<CF><D1>Don't say I didn't warn you~"
+224#kabuto,0x22c1ba,"<@RL,Koji,01>行けっ! スミロドナッド!!","<@RL,Koji,01>Go! Smilodonad!!"
+224#kuwagata,0x22c1ba,"<@RL,Koji,01>行けっ! ウォ-バニット!!","<@RL,Koji,01>Go! Warbonnet!!"
+225,0x22c1bc,"<@RL,BipedMedabot,00>ロボ-ッ!!","<@RL,BipedMedabot,00>Robooo!!"
+226,0x22c1be,"<@LL,Ikki,04>コウジ!<CF><D1><@RL,Karin,04>コウジくん!<CF><D1><@RL,Erika,04>来てたんじゃな-い!<CF><D1><@RL,Koji,02>ふっ ちょっと かっこいい<CD>とうじょう しちまったぜ","<@LL,Ikki,04>Koji!<CF><D1><@RL,Karin,04>Koji!<CF><D1><@RL,Erika,04>You're here!<CF><D1><@RL,Koji,02>Heh, am I just so cool or what?"
+227,0x22c1c0,"<@RL,Koji,01>2人は ぶじだ! <&BUF03><CD>そいつを 思い切リ やっつけろ!<CF><D1><@LL,Ikki,04>まかせとけって!","<@RL,Koji,01><&BUF03>, I'll keep them safe! He's all yours!<CF><D1><@LL,Ikki,04>Just leave it to me!"
+228,0x22c1c2,"<@RL,Seaslug,02>もう1つの マザ-に みかたする<CD>じゃまな やつらめ!","<@RL,Seaslug,02>Taking the side of the other Mother... You people are a nuisance!"
+229,0x22c1c4,"<@LL,Ikki,02>おしえて もらおうか!<CD>ブラックデビルって 何なんだ?<CF><D1>それから「もう1つの マザ-」って<CD>いうのは?<CF><D1><@RL,Seaslug,01>もう1つの マザ-<CD>そして お前たちが いなくなれば<CF><D1>ブラックデビルさまの 天下よ!<CF><D1>このUFOが お前らの はかばだ!<CD>はぁっはっはっは!","<@LL,Ikki,02>Tell us everything! Who, or what is Black Devil?<CF><D1>What do you mean by <f02>the other Mother?<f00><CF><D1><@RL,Seaslug,01>If you and the other Mother are gone...<CF><D1>The world will be Black Devil's!<CF><D1>This UFO will be your grave! Haa, hahaha!"
+230,0x22c1c6,"<@LL,Ikki,07>あ! まてっ!","<@LL,Ikki,07>Hey! Stop right there!"

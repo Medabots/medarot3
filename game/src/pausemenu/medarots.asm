@@ -1,7 +1,7 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
-W_MedarotMedachangeStatMathBuffer EQU $C48A
+DEF W_MedarotMedachangeStatMathBuffer EQU $C48A
 
 SECTION "Medarot Variables 1",  WRAM0[$C525]
 W_MedarotCurrentHeadPart:: ds 1
@@ -307,7 +307,7 @@ MapCurrentMedarotNameForSelectionScreen::
   ld c, l
   pop de ; hl -> de
   ld h, $78
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
   padend $48de
 
 OffsetToMappingAddressForMedarotScreens::
@@ -1537,7 +1537,7 @@ MapMedalNicknameForMedarotStatusScreen::
   ld d, h
   ld e, l
   ld h, $78 ; As a rule of thumb, we draw the Medarot name in the last available tiles
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
 
   pop af
   pop bc

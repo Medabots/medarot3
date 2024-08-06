@@ -745,6 +745,9 @@ ShopGetPartPriceAndStatus::
 ShopDisplayPartDescription::
   call $3482
   call ShopMapMessageboxAttributes
+  ; Continues into ShopDisplayPartDescription_extEntry
+
+ShopDisplayPartDescription_extEntry::
   ld a, [W_ShopSelectedPartIndex]
   cp $FF
   jr z, .exit
@@ -959,7 +962,7 @@ ShopPasswordMapObtainedPartName::
   ld h, $02
   ld bc, W_NewListItemBufferArea
   ld a, $07
-  call VWFDrawStringCentredFullAddress
+  call VWFDrawStringCenteredFullAddress
   ret
 
 ShopPasswordGetPartStatValues::
@@ -1921,3 +1924,39 @@ Shop10Stock::
   db $8B,$8C,$08,$27
 
   padend $70a4
+
+SECTION "Shop Patch Helper Functions", ROMX[$70A4], BANK[$04]
+ShopDescriptionMultiPageHelper::
+  ldh a, [H_JPInputChanged]
+  and M_JPInputA
+  ld a, [W_ShopSelectedPartIndex] ; "ld a" doesn't affect flags
+  jr z, .aNotSelected
+  
+  cp $FF
+  jr nz, .descriptionHandling
+  xor a
+  inc a
+  ret
+  
+.aNotSelected
+  cp $FF
+  call nz, .descriptionHandling
+  xor a
+  ret
+
+.descriptionHandling
+  ld a, [W_MainScriptExitMode]
+  or a
+  jr nz, .messageFullyDisplayed
+  call ShopDisplayPartDescription_extEntry
+  xor a
+  ret
+  
+.messageFullyDisplayed
+  di
+  rst $20
+  xor a
+  ld [$9C72], a
+  ei
+  inc a
+  ret

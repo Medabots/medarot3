@@ -1,6 +1,8 @@
 INCLUDE "game/src/common/constants.asm"
 INCLUDE "game/src/common/macros.asm"
 
+INCLUDE "build/pointer_constants.asm"
+
 SECTION "Encounter State", WRAM0[$C594]
 W_EncounterWinner:: ds 1
 
@@ -246,7 +248,7 @@ MapTextForEncounterScreen::
   ld de, $9821
   ld h, $01
   ld a, $06
-  call VWFDrawStringCentredFullAddress
+  call VWFDrawStringCenteredFullAddress
   ld bc, $0f07
   ld a, [W_EncounterOpponentListItemIndex]
   ld [W_ListItemIndexForBuffering], a
@@ -256,7 +258,7 @@ MapTextForEncounterScreen::
   ld bc, W_NewListItemBufferArea
   ld de, $996B
   ld h, $07
-  jp VWFDrawStringCentredFullAddress8Tiles
+  jp VWFDrawStringCenteredFullAddress8Tiles
 
   padend $5c0f
 
@@ -268,7 +270,93 @@ CalculateParticipantAddressForVictoryResultsScreen::
   ld a, 9
   jp MultiplyBCByTwoToThePowerOfAAndAddToHL
 
-SECTION "Encounter Helper Functions 5", ROMX[$6675], BANK[$05]
+SECTION "Encounter Helper Functions 5", ROMX[$6239], BANK[$05]
+CalculateAndBufferExperienceForEncounterScreen::
+  xor a
+  ld [$c4fc], a
+  ld de, cBUF00
+  ld bc, $03E8
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  or a
+  jr z, .start_calc
+  add $30
+  ld [de], a
+  inc de
+  ld a, $01
+  ld [$c4fc], a
+.start_calc
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, $0064
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  or a
+  jr z, .next_digit_1
+  add $30
+  ld [de], a
+  inc de
+  ld a, $01
+  ld [$c4fc], a
+  jr .next_digit_2
+.next_digit_1
+  ld a, [$c4fc]
+  or a
+  jr z, .next_digit_2
+  ld a, $30
+  ld [de], a
+  inc de
+.next_digit_2
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, $000A
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  or a
+  jr z, .check_last_digit
+  add $30
+  ld [de], a
+  inc de
+  jr .last_digit_terminate
+.check_last_digit
+  ld a, [$c4fc]
+  or a
+  jr z, .last_digit_terminate
+  ld a, $30
+  ld [de], a
+  inc de
+.last_digit_terminate
+  ld a, [$C4E0]
+  ld h, a
+  ld a, [$C4E1]
+  ld l, a
+  ld bc, $0001
+  push de
+  call DigitCalculationLoop
+  pop de
+  ld a, [$C4EE]
+  add $30
+  ld [de], a
+  inc de
+  ld a, $cb
+  ld [de], a
+  ret
+
+  padend $62c3
+
+
+
+SECTION "Encounter Helper Functions 6", ROMX[$6675], BANK[$05]
 PopulatedVictoryResultsScreen::
   xor a
   ld [$C4F2], a
@@ -727,7 +815,7 @@ MapEmptyMedaliaSkillsForVictoryResultsScreen::
   ld l, a
   jp MapEmptyBasicSkillsForVictoryResultsScreen.extEntry
 
-SECTION "Encounter Helper Functions 6", ROMX[$6c6b], BANK[$05]
+SECTION "Encounter Helper Functions 7", ROMX[$6c6b], BANK[$05]
 MapNewMedaforceTextForVictoryResultsScreen::
   xor a
   ld [$c4f6], a

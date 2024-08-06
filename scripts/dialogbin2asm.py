@@ -53,7 +53,7 @@ current_fp = None
 with open(output_file, 'w') as output:
     try:
         current_fp = open(current_file, 'wb')
-        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
+        output.write(f'DEF c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         for input_file in input_files:
             base_name = os.path.basename(input_file)
             output_path = os.path.join(output_bin_dir, base_name)
@@ -82,7 +82,7 @@ with open(output_file, 'w') as output:
                         current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
                         current_fp = open(current_file, 'wb')
                         assert length + current_offset < BANK_MAX, "Text is too long"
-                        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
+                        output.write(f'DEF c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
 
                     out_f.write(pack("<BH", current_bank, current_offset))
                     duplicate_offset_map[offset] = (current_bank, current_offset)
@@ -94,7 +94,7 @@ with open(output_file, 'w') as output:
                     current_offset += length
                     current_free_space -= length
             
-            output.write(f'c{key}        EQUS "\\"{output_path}\\""\n')
+            output.write(f'DEF c{key}        EQUS "\\"{output_path}\\""\n')
     finally:
         if current_fp:
             current_fp.close()
@@ -102,7 +102,7 @@ with open(output_file, 'w') as output:
     current_index += 1
     while f"{TYPE_PREFIX}{current_index}" in sections:
         current_file = os.path.join(output_bin_dir, f"{TYPE_PREFIX}{current_index}_{version_suffix}.bin")
-        output.write(f'c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
+        output.write(f'DEF c{TYPE_PREFIX}{current_index}        EQUS "\\"{current_file}\\""\n')
         current_index += 1
 
     # Note how much free space is remaining, and send a warning to GitHub Actions if we're running low

@@ -40,12 +40,12 @@ Index[#version],AttackName
 35,First Aid
 36,Cross-Attack Set
 37,Cross-Attack Fire
-38,Minus Clear
+38,Ailment Clear
 39,Trap Clear
 40,Force Seal
 41,Repair
 42,Revive
-43,Resurrect
+43,Resuscitation
 44,Level Drain
 45,Null-All
 46,Stance Disable
@@ -53,7 +53,7 @@ Index[#version],AttackName
 48,Null-Explosive
 49,Null-Gravity
 50,Status Clear
-51,Auto-Repair
+51,Continuous Repair
 52,Damage Reduce
 53,Reflect
 54,Counter
@@ -72,10 +72,10 @@ Index[#version],AttackName
 67,Transform (Defense)
 68,Transform (Heal)
 69,Transform (Support)
-70,Plus Clear
+70,Buff Clear
 71,Disable
 72,Confusion
 73,Ammo Drain
-74,No Dodge
-75,No Defend
+74,No-Escape
+75,No-Defend
 76,Force Defend

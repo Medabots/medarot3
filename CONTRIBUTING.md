@@ -56,6 +56,7 @@ There are a handful of control codes in text:
 * `<S##>`: Sets text speed, lower numbers are faster, SFF is instant and S00 sets to default speed
 * `<*##>`: Different end code, not including it implies '00' (normal ending). This is usually only different when dealing with user option boxes or some special events (i.e. voice clips).
 * `<&BUF##>`: Pulls string from memory buffer, i.e. player's name or numbers
+* `<~BUF##,##`>: Allows for loading and 'vowel extending' any buffer except 04 up to 7 times, e.g. `<~BUF03,02>` where BUF03 is Ikki would print Ikkiii
 * `<@??,##,##>`: Displays face (R/L side of box, R/L flip, [character index or name](./scripts/res/portraits.tbl), expression index)
 	* `<@CC,CLEAR,FF>` can be used to clear a portrait
 * `<CD>`: Go to 2nd line of text box
@@ -84,13 +85,22 @@ The patch adds a few new fonts due to necessity and translation flair. These fon
 
 ![<f02>The quick brown fox jumps over the lazy dog.](.contributing/f02.png)
 
-`<f03>` is a "robotic" font (possible to activate by making font *italic* within the sheet), meant to better encapsulate robotic/formal speech from Medabots that would otherwise just be in "ALL CAPS" to get the effect across
+`<f03>` is a "robotic" font, meant to better encapsulate robotic/formal speech from Medabots that would otherwise just be in "ALL CAPS" to get the effect across
 
 ![<f03>The quick brown fox jumps over the lazy dog.](.contributing/f03.png)
 
-`<f04>` is a combined bold robotic font, activatable by making font ***both italic and bold*** in the sheet
+`<f04>` is a combined bold robotic font, activatable by making font in the sheet
 
 ![<f04>The quick brown fox jumps over the lazy dog.](.contributing/f04.png)
+
+`<f08>` is an *italic* font (making text italic in the sheet will work as well). Use this for sound effects (like *Knock Knock*).
+
+![<f08>The quick brown fox jumps over the lazy dog.](.contributing/f08.png)
+
+`<f09>` is a ***bold italic*** font (making text italic and bold in the sheet will work as well). Use this for sound effects that would be loud (like ***SLAM***).
+
+![<f09>The quick brown fox jumps over the lazy dog.](.contributing/f09.png)
+
 
 #### Automatic Linebreaks
 The patch recently incorporated a feature to automatically linebreak for long lines, so in general translation should not require using the manual linebreak to fit text within a box. 
@@ -175,7 +185,8 @@ For consistency, there are some general things about this specific project we tr
 * Match idioms and puns where possible, but avoid inserting them where there aren't any
 * Part descriptions must fit within one box
 * Use bold for emphasis instead of quotes (use quotes only if something is actually being directly quoted)
-* For speech from aliens, use italics in the sheet (or font f03 and f04), as it is a font meant to represent their more 'rigid' way of speaking
+* For sounds in text, use italics or bold italics in the sheet (or font codes f08 and f09)
+* For speech from aliens, use the robotic font (font codes f03 and f04), as it is a font meant to represent their more 'rigid' way of speaking
 
 ## Contributing to Development
 

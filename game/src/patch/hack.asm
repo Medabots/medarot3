@@ -22,7 +22,7 @@ HackPredef::
 
 HackPredefTable:
   dw TilemapLoadTileset ; 0
-
+  dw PatchPrintVersion ; 1
 
 MACRO TilemapTilesetTableEntry
   ; Number of Tiles, Tileset, Load Offset
@@ -105,3 +105,67 @@ TilemapLoadTileset:
   TilemapTilesetTableEntry PaintShopPaintSelectScreen, $9010 ; 23
   TilemapTilesetTableEntry MinigameAOverlay, $9010 ; 24
   TilemapTilesetTableEntry MinigameBOverlay, $9010 ; 25
+  TilemapTilesetTableEntry HeavensGateElevator, $9010 ; 26
+  TilemapTilesetTableEntry LinkMainMenu, $9010 ; 27
+  TilemapTilesetTableEntry LinkTradeOptions, $9010 ; 28
+  TilemapTilesetTableEntry LinkRobattleOptionsModeSelect, $9010 ; 29
+
+PatchPrintVersion:
+  ; VWF will overwrite the preserved bank, so fix it
+  ld a, [W_BankPreservation]
+  push af
+
+  push bc
+  push de
+  push hl
+
+  ; Draw text
+  ld a, $14
+  ld bc, .url
+  ld de, $9800
+  ld h, $30
+  call VWFDrawStringRightFullAddress
+
+  ld a, $14
+  ld bc, .tag
+  ld de, $9a20
+  ld h, $44
+  call VWFDrawStringRightFullAddress
+
+  ld hl, $9300
+  ld bc, $A0FF
+  call .invert
+
+  ld hl, $9440
+  ld bc, $A0FF
+  call .invert
+
+  pop hl
+  pop de
+  pop bc
+
+  pop af
+  ld [W_BankPreservation], a
+  ret
+.invert
+  ; Invert the colors
+  VRAMSwitchToBank1
+.loop
+  di
+.wfb
+  ldh a, [H_LCDStat]
+  and 2
+  jr nz, .wfb
+  ld a, [hl]
+  xor c
+  ld [hli], a
+  ld [hli], a
+  ei
+  dec b
+  jr nz, .loop
+  VRAMSwitchToBank0
+  ret
+.tag
+  INCBIN "build/patch/tag.bin"
+.url
+  INCBIN "build/patch/url.bin"

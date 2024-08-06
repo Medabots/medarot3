@@ -32,7 +32,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -96,7 +96,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -156,7 +156,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -216,7 +216,7 @@ BattleInitializeLoadParticipantData::
   add hl, de
   ld d, h
   ld e, l
-  ld hl, W_ListItemBufferArea
+  ld hl, W_NewListItemBufferArea
   ld bc, 9
   call memcpy
   pop de
@@ -434,19 +434,19 @@ BattleInitializeLoadParticipantData::
   ld hl, $DC
   add hl, de
   ld a, [hl]
-  call $5137
+  call BattleInitializeLoadParticipantData_sub
   ld hl, $FC
   add hl, de
   ld a, [hl]
-  call $5137
+  call BattleInitializeLoadParticipantData_sub
   ld hl, $11C
   add hl, de
   ld a, [hl]
-  call $5137
+  call BattleInitializeLoadParticipantData_sub
   ld hl, $13C
   add hl, de
   ld a, [hl]
-  call $5137
+  call BattleInitializeLoadParticipantData_sub
   ld hl, $200
   add hl, de
   ld d, h
@@ -463,7 +463,34 @@ BattleInitializeLoadParticipantData::
   jp nz, .loop
   ret
 
-  padend $5137
+BattleInitializeLoadParticipantData_sub::
+  push hl
+  ld c, a
+  ld hl, $00A8
+  add hl, de
+  ld a, [hli]
+  ld l, [hl]
+  ld h, a
+  ld b, $00
+  add hl, bc
+  ld b, h
+  ld c, l
+  ld hl, $00A8
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  ld hl, $00AA
+  add hl, de
+  ld a, b
+  ld [hli], a
+  ld a, c
+  ld [hl], a
+  pop hl
+  ret
+
+  padend $5157
 
 SECTION "Battle Helper Functions 2", ROMX[$5662], BANK[$0A]
 CalculateBattleParticipantAddress::
@@ -606,7 +633,7 @@ HelperPullPartsTextAndDraw:
   pop de
   pop hl
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   ret
 
 MapEightDashesForBattle::
@@ -636,7 +663,7 @@ MapMedaforceANamePlusAmmoForBattle::
   ld h, $70
   ld de, $99c6
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   jr .mapDashes
 
@@ -664,7 +691,7 @@ MapMedaforceBNameForBattle::
   ld h, $68
   ld de, $9A0B
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   ret
 
@@ -687,7 +714,7 @@ MapMedaforceCNameForBattle::
   ld h, $60
   ld de, $9A01
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringCentredFullAddress8Tiles
+  call VWFDrawStringCenteredFullAddress8Tiles
   pop de
   ret
 

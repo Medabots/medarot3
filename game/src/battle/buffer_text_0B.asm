@@ -136,6 +136,17 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
   add hl, de
   ret
 .npc
+  ; Could be used for multiplayer, so check if length would work
+  ld hl, $40
+  add hl, de
+  ld b, $09
+.checkLengthLoop
+  ld a, [hli]
+  cp $CB
+  jr z, .player
+  dec b
+  jr nz, .checkLengthLoop
+
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a
   ld h, a
@@ -151,6 +162,19 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
   ret
 
 HelperLoadOpponentNameIntoListArea:
+  ld hl, W_EncounterOpponentBufferArea
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ld a, [hli]
+  or a
+  jr nz, .npc_enemy
+  ; hl is just the enemy player name
+  ret
+.npc_enemy
   ld bc, $0F0C
   ld a, [W_EncounterOpponentListItemIndex]
   ld [W_ListItemIndexForBuffering], a

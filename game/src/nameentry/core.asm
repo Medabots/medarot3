@@ -9,7 +9,7 @@ W_NamingScreenEnteredTextBuffer:: ds 9
 SECTION "Naming Screen Variables 3", WRAM0[$C581]
 W_NamingScreenExitIndicator:: ds 1
   
-W_NamingScreenSubSubSubStateIndex EQU $C760
+DEF W_NamingScreenSubSubSubStateIndex EQU $C760
 
 SECTION "Naming Screen State Machine", ROMX[$48A6], BANK[$01]
 NamingScreenStateMachine::

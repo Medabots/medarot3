@@ -50,8 +50,8 @@ PutStringFixedLength::
   jr nz, .clearLoop
   ret
 
-SECTION "Get Tile-Based Centring Offset", ROM0[$25BD]
-GetTileBasedCentringOffset::
+SECTION "Get Tile-Based Centering Offset", ROM0[$25BD]
+GetTileBasedCenteringOffset::
   push hl
   push bc
   push af
