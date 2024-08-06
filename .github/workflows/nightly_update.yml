@@ -72,4 +72,4 @@ jobs:
 
           git push
 
-          ghr -t ${{ secrets.GITHUB_TOKEN }} -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $NIGHTLY_TAG_NAME ./patch/
+          ghr -t ${{ secrets.GITHUB_TOKEN }} -b "Apply the patch for the version you want to the original ROM for that version with a BPS patcher such as https://medabots.github.io/RomPatcher.js/" -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $NIGHTLY_TAG_NAME ./patch/
