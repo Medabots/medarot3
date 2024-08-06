@@ -67,8 +67,8 @@ jobs:
           git commit -am "Nightly text update - `date +%Y%m%d`" || echo "No text changes"
 
           mkdir patch
-          ips_util create baserom_kabuto.gbc medarot3_kabuto.gbc -o ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.ips
-          ips_util create baserom_kuwagata.gbc medarot3_kuwagata.gbc -o ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.ips
+          flips --create baserom_kabuto.gbc medarot3_kabuto.gbc ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
+          flips --create baserom_kuwagata.gbc medarot3_kuwagata.gbc ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
 
           git push
 

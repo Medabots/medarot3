@@ -7,6 +7,8 @@ ARG OPENPYXL_VERSION
 ARG PYTHON_VERSION_NUM
 ARG PYTHON_PYSPELLCHECKER_VERSION
 ARG PYTHON_DATACLASSES_VERSION
+ARG FLIPS_REPOSITORY
+ARG FLIPS_VERSION
 
 RUN apt-get update && \
     apt-get -qq -y install \
@@ -60,8 +62,16 @@ RUN wget https://github.com/tcnksm/ghr/releases/download/v0.14.0/ghr_v0.14.0_lin
     tar -xvzf ghr_v0.14.0_linux_amd64.tar.gz && \
     mv ghr_v0.14.0_linux_amd64/ghr /usr/local/bin
 
-# install ips-util
-RUN python3 -m pip install ips-util==1.0
+# install flips
+RUN git clone $FLIPS_REPOSITORY ~/flips && \
+    cd ~/flips && \
+    git fetch --all && \
+    git checkout -f $FLIPS_VERSION && \
+    g++ *.c *.cpp -O3 -flto -o flips -DFLIPS_CLI && \
+    mv flips /usr/bin/ && \
+    cd - && \
+    rm -rf flips && \
+    flips --version
 
 # install pyspellcheck
 RUN python3 -m pip install pyspellchecker==$PYTHON_PYSPELLCHECKER_VERSION dataclasses==$PYTHON_DATACLASSES_VERSION

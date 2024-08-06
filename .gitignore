@@ -9,7 +9,7 @@ build/
 *.o
 .vscode/
 scripts/common/__pycache__/
-*.ips
+*.bps
 *.pyc
 /*.map
 *.sym
