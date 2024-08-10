@@ -57,19 +57,25 @@ jobs:
         working-directory: 'medarot3'
         run: |
           [ -z "$(git status --porcelain)" ] && git diff --exit-code $LATEST_TAG_NAME && exit 0
-
-          echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
-          make -j all
-
+          
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
           git commit -am "Nightly text update - `date +%Y%m%d`" || echo "No text changes"
+          git push
+
+          make -j all
+          sha1sum medarot3_*.gbc > medarot3.sha1sum
+
+          git diff --exit-code $LATEST_TAG_NAME && echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt || exit 0
+          
+          sha1sum medarot3_*.gbc > medarot3.sha1sum
+          git commit -am "Update tag"
+          git push
 
           mkdir patch
+          cp medarot3.sha1sum ./patch/
           flips --create baserom_kabuto.gbc medarot3_kabuto.gbc ./patch/m3kabuto-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
           flips --create baserom_kuwagata.gbc medarot3_kuwagata.gbc ./patch/m3kuwagata-$GITHUB_RUN_NUMBER-`git rev-parse HEAD`.bps
-
-          git push
 
           ghr -t ${{ secrets.GITHUB_TOKEN }} -b "Apply the patch for the version you want to the original ROM for that version with a BPS patcher such as https://medabots.github.io/RomPatcher.js/" -u $GITHUB_REPOSITORY_OWNER -r medarot3 -delete $NIGHTLY_TAG_NAME ./patch/
