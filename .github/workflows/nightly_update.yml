@@ -61,14 +61,14 @@ jobs:
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "$GITHUB_ACTOR"
 
-          git commit -am "Nightly text update - `date +%Y%m%d`" || echo "No text changes"
-          git push
+          git commit -am "Nightly text update - `date +%Y%m%d`" && git push || echo "No text changes"
 
           make -j all
           sha1sum medarot3_*.gbc > medarot3.sha1sum
 
-          git diff --exit-code $LATEST_TAG_NAME && echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt || exit 0
+          git diff --exit-code && exit 0 || echo -n $NIGHTLY_TAG_NAME > ./text/patch/tag.txt
           
+          make -j all
           sha1sum medarot3_*.gbc > medarot3.sha1sum
           git commit -am "Update tag"
           git push
