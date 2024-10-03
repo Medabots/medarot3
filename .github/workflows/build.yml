@@ -67,7 +67,7 @@ jobs:
           flips --create baserom_kuwagata.gbc medarot3_kuwagata.gbc m3kuwagata-$GITHUB_RUN_NUMBER-$GITHUB_SHA.bps
 
       - name: 'Archive BPS files'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: patch_files
           path: medarot3/*.bps

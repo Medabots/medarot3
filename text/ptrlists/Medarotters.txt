@@ -191,8 +191,8 @@ Index[#version],Unknown,Name
 186,\x43\x31\x00,Shimeta
 187,\x44\x32\x00,Ichimonji
 188,\x44\x32\x00,Ichimonji
-189,\x45\x33\x00,Cecily
-190,\x45\x33\x00,Cecily
+189,\x45\x33\x00,Seseri
+190,\x45\x33\x00,Seseri
 191,\x46\x34\x00,Crow
 192,\x46\x34\x00,Crow
 193,\x46\x34\x00,Crow

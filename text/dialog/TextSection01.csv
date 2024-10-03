@@ -49,7 +49,7 @@
 047,0x91a76,ラッキ-! 「ハズレ」です!<CD>何も とられなかった!<*03>,How lucky! They got a Miss!<D3>They took nothing!<*03>
 048,0x91a78,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を 手に入れた!<*03>,<&BUF03> won the <&BUF01> part <&BUF04>!
 049,0x91a7a,<&BUF03>は <&BUF01>パ-ツ<CD><&BUF04>を とられた!<*03>,<&BUF03> lost the <&BUF01> part <&BUF04>!
-050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah! This is your 40th link robattle!<CF>To celebrate, the Medarot Company is gifting you a complete Sun-type Medarot.<CF>Please look over the parts' data later!<*03>"
+050,0x91a7c,あっ!!<CD>つうしんロボトル 20回目です!<CF>メダロット社から きねんに<CD>たいよう型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah! This is your 20th link robattle!<CF>To celebrate, the Medarot Company is gifting you a complete Sun-type Medarot.<CF>Please look over the parts' data later!<*03>"
 051,0x91a7e,あっ!!<CD>つうしんロボトル 40回目です!<CF>メダロット社から きねんに<CD>月型メダロットいっしきを<CF>プレゼントいたします!<CF>あとで パ-ツデ-タを<CD>かくにんしてね!<*03>,"Ah!! This is your 40th communication robattle!<CF>To celebrate, the Medarot Company is gifting you a complete Moon-type Medarot.<CF>Please look over the parts later!<*03>"
 052,0x91a80,パ-ツ転送!<S5A><*04>,Part transfer!<S5A><*04>
 053,0x91a86,<&BUF03>は <&BUF00>パ-ツ<CD><&BUF01>を 手に入れた!<*03>,<&BUF03> acquired the <&BUF00> part <f02><&BUF01><f00>!<*03>
