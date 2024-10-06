@@ -1974,10 +1974,6 @@ SECTION "Tileset Data Tileset3C4B", ROMX[$55D8], BANK[$73]
 Tileset3C4B::
   INCBIN "./build/tilesets/Tileset3C4B.malias"
 
-SECTION "Tileset Data Tileset3C5B", ROMX[$4000], BANK[$74]
-Tileset3C5B::
-  INCBIN "./build/tilesets/Tileset3C5B.malias"
-
 SECTION "Tileset Data Tileset3C67", ROMX[$53F1], BANK[$74]
 Tileset3C67::
   INCBIN "./build/tilesets/Tileset3C67.malias"
