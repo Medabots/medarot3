@@ -51,7 +51,7 @@
 049,0x90062,<&BUF02>には<CD>ミサイルとナパ-ムが きかない!<S46><*04>,<f02>Missile <f00>and <f02>Napalm <f00>will not affect <&BUF02>!<S46><*04>
 050,0x90064,<&BUF02>には<CD>ブレイクとプレスが きかない!<S46><*04>,<f02>Break <f00>and <f02>Press <f00>will not affect <&BUF02>!<S46><*04>
 051,0x90066,クリティカル!!<*04>,<f02>Critical hit!!<*04>
-052,0x90068,<&BUF01>パ-ツで ぼうぎょした!<*04>,The attack was taken by the <&BUF01>!<*04>
+052,0x90068,<&BUF01>パ-ツで ぼうぎょした!<*04>,The attack hit the <&BUF01>!<*04>
 053,0x9006a,ベつのパ-ツに かんつうした!<S46><*04>,The attack affected other parts!<S46><*04>
 054,0x9006c,攻撃は 当らなかった!<S46><*04>,The attack missed!<S46><*04>
 055,0x9006e,ヘんどうの マイナス症状!<CD>行動が せいこうしにくくなる!<S46><*04>,<#NOCHECK_TEXTSPEED>Status Ailment: <f02>Flux<f00>!<S46><CF><#NOCHECK_TEXTSPEED><S00>Success rate has been lowered!<S46><*04>
