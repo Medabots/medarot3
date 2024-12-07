@@ -1269,7 +1269,7 @@ MapPartNameForPartStatus::
   ld h, $12 ; Tile drawing index
   ld bc, W_NewListItemBufferArea
   ld a, $9
-  call VWFDrawStringCenteredFullAddress
+  call VWFDrawStringCenteredFullAddressResetFont
   ret
 
 GetPartStatValuesForPartStatus::
