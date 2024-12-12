@@ -55,10 +55,10 @@
 053,0x9643a,<SFF>はんしゃ行動<CD>あいての 攻撃を はじきかえす<*04>,<SFF><f02>Reflect<f00>: Repels enemy attacks.<*04>
 054,0x9643c,<SFF>はんげき行動<CD>つよい攻撃だけを はじきかえす<*04>,<SFF><f02>Counterattack<f00>: Reflects only strong attacks.<*04>
 055,0x9643e,<SFF>じゅうリょくせいぎょ   (そうび)<CD>じゅんび時間を いっていにする<*04>,<SFF><f02>Gravity Control (Passive)<f00>: Makes preparation time consistent.<*04>
-056,0x96440,<SFF>てきえい かんち     (そうび)<CD>タ-ゲットそうび と ダメ-ジアップ<*04>,<SFF><f02>Enemy Detection (Passive)<f00>: Increases melee attack power and adds <f02>Enemy<D3>Detection<f00> effect.<*04>
+056,0x96440,<SFF>てきえい かんち     (そうび)<CD>タ-ゲットそうび と ダメ-ジアップ<*04>,<SFF><f02>Enemy Detection (Passive)<f00>: Increases melee attack power and adds <f02>Enemy Detection<f00> effect.<*04>
 057,0x96442,<SFF>きゅうそくチャ-ジ行動<CD>じゅんび時間を ゼロにする<*04>,<SFF><f02>Rapid Charge<f00>: Preparation time is reduced to zero.<*04>
 058,0x96444,<SFF>ほじょチャ-ジ行動<CD>じゅんび時間を みじかくする<*04>,<SFF><f02>Auxiliary Charge<f00>: Shorten preparation time.<*04>
-059,0x96446,<SFF>じょうじチャ-ジ     (そうび)<CD>じゅんび時間が みじかくなる<*04>,<SFF><f02>Continuous Charge (Passive):<D3><f00>Shorten preparation time.<*04>
+059,0x96446,<SFF>じょうじチャ-ジ     (そうび)<CD>じゅんび時間が みじかくなる<*04>,<SFF><f02>Continuous Charge (Passive): <f00>Shorten preparation time.<*04>
 060,0x96448,<SFF>チャ-ジドレイン行動<CD>じゅんび時間を うばいとる<*04>,<SFF><f02>Charge Drain<f00>: Drains preparation time from your opponent.<*04>
 061,0x9644a,<SFF>てんとう行動<CD>ころばせて めいれいを わすれさせる<*04>,<SFF><f02>Fall<f00>: The opponent falls and forgets their command.<*04>
 062,0x9644c,<SFF>フォ-スアップ行動<CD>メダフォ-スを ふやす<*04>,<SFF><f02>Force Up<f00>: Increases Medaforce.<*04>
