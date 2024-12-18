@@ -3064,12 +3064,12 @@ DisplayMedaliaListItem::
   call MedaliaListItem4TileClearer
   ld l, $EB
   call MedaliaListItem8TileClearer
-  ld l, $CB
+  ld l, $EB
 
   ld a, 1
   ld [W_CurrentVRAMBank], a
   ldh [H_RegVBK], a
-  ld d, 8
+  ld d, 0
   call MedaliaListItem8TileClearer
   ld l, $EB
   call MedaliaListItem8TileClearer
