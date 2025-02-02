@@ -64,7 +64,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry ShopBuySellKanji ; 36 (3A01)
   TilesetTableEntry Tileset3A03 ; 37 (3A03)
   TilesetTableEntry Tileset3A05 ; 38 (3A05)
-  TilesetTableEntry Tileset3A07 ; 39 (3A07)
+  TilesetTableEntry ShopPasswordScreenButtonPressed ; 39 (3A07)
   TilesetTableEntry Tileset3A09 ; 3A (3A09)
   TilesetTableEntry PaintShopShopkeeperAvatar ; 3B (3A0B)
   TilesetTableEntry PaintShopBubbleText ; 3C (3A0D)
@@ -580,7 +580,7 @@ TilesetInfoTable::
   dbwb BANK(ShopBuySellKanji), $8600, $0 ; 036
   dbwb BANK(Tileset3A03), $82C0, $0 ; 037
   dbwb BANK(Tileset3A05), $8300, $0 ; 038
-  dbwb BANK(Tileset3A07), $8000, $1 ; 039
+  dbwb BANK(ShopPasswordScreenButtonPressed), $8000, $1 ; 039
   dbwb BANK(Tileset3A09), $9000, $0 ; 03A
   dbwb BANK(PaintShopShopkeeperAvatar), $9560, $0 ; 03B
   dbwb BANK(PaintShopBubbleText), $8400, $0 ; 03C
@@ -1222,9 +1222,9 @@ SECTION "Tileset Data Tileset3A05", ROMX[$4D3D], BANK[$3B]
 Tileset3A05::
   INCBIN "./build/tilesets/Tileset3A05.malias"
 
-SECTION "Tileset Data Tileset3A07", ROMX[$4D71], BANK[$3B]
-Tileset3A07::
-  INCBIN "./build/tilesets/Tileset3A07.malias"
+SECTION "Tileset Data ShopPasswordScreenButtonPressed", ROMX[$4D71], BANK[$3B]
+ShopPasswordScreenButtonPressed::
+  INCBIN "./build/tilesets/ShopPasswordScreenButtonPressed.malias"
 
 SECTION "Tileset Data Tileset3A09", ROMX[$4E96], BANK[$3B]
 Tileset3A09::
