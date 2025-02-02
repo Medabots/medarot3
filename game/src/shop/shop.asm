@@ -943,7 +943,7 @@ ShopPasswordDrawAndMapPartObtainedWindow::
   ld b, a
   ld a, [W_CurrentPartIndexForPartStatus]
   ld c, a
-  ld hl, $98EB
+  ld hl, $98EA
   call ShopPasswordMapObtainedPartName
   call ShopPasswordGetPartStatValues
   call ShopPasswordMapObtainedPartNature
@@ -959,9 +959,9 @@ ShopPasswordMapObtainedPartName::
   push hl
   call WrapBufferTextFromList
   pop de ; hl -> de, VRAM address to map
-  ld h, $02
+  ld h, $14
   ld bc, W_NewListItemBufferArea
-  ld a, $07
+  ld a, $08
   call VWFDrawStringCenteredFullAddress
   ret
 
