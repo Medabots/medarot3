@@ -67,6 +67,8 @@ LinkRobotollScreen::
   INCBIN "./build/tilesets/LinkRobotollScreen.malias"
 LinkMainScreenBubbleText::
   INCBIN "./build/tilesets/LinkMainScreenBubbleText.malias"
+ShopPasswordScreenButtonPressed::
+  INCBIN "./build/tilesets/ShopPasswordScreenButtonPressed.malias"
 
 SECTION "Patch 2bpp Tilesets 2", ROMX[$4000], BANK[$FC]
 ; Include certain 2bpp 'malias' uncompressed graphics here

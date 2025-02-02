@@ -225,6 +225,7 @@ patch_tilesets_ADDITIONAL := $(PATCH_TILESET_FILES) $(PATCH_TEXT_TILESET_FILES)\
  $(TILESET_OUT)/LinkTransferringDataLoadScreen.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/LinkRobotollPrizeTypes.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/LinkRobotollScreen.$(COMPRESSED_TSET_TYPE)\
+ $(TILESET_OUT)/ShopPasswordScreenButtonPressed.$(COMPRESSED_TSET_TYPE)\
  $(TILESET_OUT)/LinkMainScreenBubbleText.$(COMPRESSED_TSET_TYPE)
 
 

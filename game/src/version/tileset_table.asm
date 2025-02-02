@@ -1174,10 +1174,6 @@ SECTION "Tileset Data Tileset3A05", ROMX[$4D3D], BANK[$3B]
 Tileset3A05::
   INCBIN "./build/tilesets/Tileset3A05.malias"
 
-SECTION "Tileset Data ShopPasswordScreenButtonPressed", ROMX[$4D71], BANK[$3B]
-ShopPasswordScreenButtonPressed::
-  INCBIN "./build/tilesets/ShopPasswordScreenButtonPressed.malias"
-
 SECTION "Tileset Data Tileset3A09", ROMX[$4E96], BANK[$3B]
 Tileset3A09::
   INCBIN "./build/tilesets/Tileset3A09.malias"
