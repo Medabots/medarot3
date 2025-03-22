@@ -66,7 +66,7 @@ with open(glossary_file, "r", encoding='utf-8-sig', newline='\n') as csvfile:
 		for string in string_replacements:
 			if string[0] == string[1]:
 				continue
-			substitutions.append(functools.partial(re.sub, r"\b" + re.escape(string[0].strip()) + r"\b", string[1].strip()))
+			substitutions.append(functools.partial(re.sub, r"(?<!<[^>])\b" + re.escape(string[0].strip()) + r"\b(?![^<]*?>)", string[1].strip()))
 
 wb = xl.load_workbook(filename=xlsx, rich_text=True)
 
