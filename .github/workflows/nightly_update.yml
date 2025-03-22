@@ -1,4 +1,4 @@
-name: Nightly Update (EN-US)
+name: Nightly Update
 
 on:
   schedule:
