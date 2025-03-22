@@ -362,7 +362,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry OpeningAnimationTransformStatus ; 160 (3C55)
   TilesetTableEntry OpeningAnimationTransformImages1 ; 161 (3C57)
   TilesetTableEntry OpeningAnimationTransformImages2 ; 162 (3C59)
-  TilesetTableEntry Tileset3C5B ; 163 (3C5B)
+  TilesetTableEntry OpeningAnimationMedalLogo ; 163 (3C5B)
   TilesetTableEntry StartScreenText ; 164 (3C5D)
   TilesetTableEntry StartScreenMainLogoRotation ; 165 (3C5F)
   TilesetTableEntry StartScreenMainLogo ; 166 (3C61)
@@ -878,7 +878,7 @@ TilesetInfoTable::
   dbwb BANK(OpeningAnimationTransformStatus), $9000, $0 ; 160
   dbwb BANK(OpeningAnimationTransformImages1), $8800, $0 ; 161
   dbwb BANK(OpeningAnimationTransformImages2), $9000, $1 ; 162
-  dbwb BANK(Tileset3C5B), $9000, $0 ; 163
+  dbwb BANK(OpeningAnimationMedalLogo), $9000, $0 ; 163
   dbwb BANK(StartScreenText), $8800, $0 ; 164
   dbwb BANK(StartScreenMainLogoRotation), $9000, $1 ; 165
   dbwb BANK(StartScreenMainLogo), $8800, $1 ; 166
@@ -1970,9 +1970,9 @@ SECTION "Tileset Data Tileset3C4B", ROMX[$55D8], BANK[$73]
 Tileset3C4B::
   INCBIN "./build/tilesets/Tileset3C4B.malias"
 
-SECTION "Tileset Data Tileset3C5B", ROMX[$4000], BANK[$74]
-Tileset3C5B::
-  INCBIN "./build/tilesets/Tileset3C5B.malias"
+SECTION "Tileset Data OpeningAnimationMedalLogo", ROMX[$4000], BANK[$74]
+OpeningAnimationMedalLogo::
+  INCBIN "./build/tilesets/OpeningAnimationMedalLogo.malias"
 
 SECTION "Tileset Data Tileset3C67", ROMX[$53F1], BANK[$74]
 Tileset3C67::
