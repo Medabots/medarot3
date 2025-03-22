@@ -2,7 +2,7 @@ name: Check Text
 
 on:
   workflow_run:
-    workflows: [Nightly Update (EN-US)]
+    workflows: [Nightly Update]
     types: [completed]
 
   workflow_dispatch:
