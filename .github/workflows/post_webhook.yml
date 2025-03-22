@@ -14,7 +14,7 @@ jobs:
       - name: Post Webhook (Success)
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} (Success)", "url":"${{ github.event.workflow_run.html_url }}", "color":65280 } ] }' \
+          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} - ${{ github.ref_name }} (Success)", "url":"${{ github.event.workflow_run.html_url }}", "color":65280 } ] }' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
 
   on-failure:
@@ -25,5 +25,5 @@ jobs:
       - name: Post Webhook (Failure)
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} (Failure)", "url":"${{ github.event.workflow_run.html_url }}", "color":16711680 } ] }' \
+          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} - ${{ github.ref_name }} (Failure)", "url":"${{ github.event.workflow_run.html_url }}", "color":16711680 } ] }' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
