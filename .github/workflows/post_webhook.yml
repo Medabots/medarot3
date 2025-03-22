@@ -2,7 +2,7 @@ name: Post Webhook (EN)
 
 on:
   workflow_run:
-    workflows: [Nightly Update (EN), Check Text, Build All]
+    workflows: [Nightly Update, Check Text, Build All]
     types: [completed]
 
 jobs:
