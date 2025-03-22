@@ -33,7 +33,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 29,\x00,\x05,Voices
 30,\x00,\x02,\xCD
 31,\x00,\x02,\xCB
-32,\x11,\x06,Arika
+32,\x11,\x06,Erika
 33,\x11,\x04,Eri Sendai
 34,\x00,\x02,\xCB
 35,\x00,\x02,\xCB

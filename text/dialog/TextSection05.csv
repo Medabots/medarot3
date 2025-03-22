@@ -24,8 +24,8 @@
 022,0x963fc,<SFF>ぼうぎょ行動<CD>みかたの メダロットを えんごする<*04>,<SFF><f02>Defend<f00>: Protect your allies.<*04>
 023,0x963fe,<SFF>かんぜんぼうぎょ行動<CD>みかたヘの 攻撃を ブロックする<*04>,<SFF><f02>Perfect Defense<f00>: Block all attacks aimed at your allies.<*04>
 024,0x96400,<SFF>みまんぼうぎょ行動<CD>よわい攻撃を ブロックする<*04>,<SFF><f02>Lesser Defense<f00>: Block weak attacks aimed at your allies.<*04>
-025,0x96402,<SFF>アンチエア攻撃<CD>ひこうメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Air<f00>: Does massive damage to flying Medarots.<*04>
-026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Sea<f00>: Does massive damage to aquatic Medarots.<*04>
+025,0x96402,<SFF>アンチエア攻撃<CD>ひこうメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Air<f00>: Does massive damage to flying Medabots.<*04>
+026,0x96404,<SFF>アンチシ-攻撃<CD>せんすいメダロットに 大ダメ-ジ<*04>,<SFF><f02>Anti-Sea<f00>: Does massive damage to aquatic Medabots.<*04>
 027,0x96406,<SFF>さくてき行動<CD>みかたの 攻撃を あてやすくする<*04>,<SFF><f02>Scan<f00>: Your allies' attacks will hit more easily.<*04>
 028,0x96408,<SFF>いんペい行動<CD>てきの 攻撃を よけやすくなる<*04>,<SFF><f02>Conceal<f00>: Your enemies' attacks are easier to avoid.<*04>
 029,0x9640a,<SFF>かくとうトラップ行動<CD>「なぐる.がむしゃら」攻撃にダメ-ジ<*04>,<SFF><f02>Fighting Trap<f00>: Damages a target before they do a melee attack<*04>
@@ -76,13 +76,13 @@
 074,0x96464,<SFF>かいひふのう行動<CD>かいひを できなくする<*04>,<SFF><f02>Staggered<f00>: Makes avoiding attacks impossible.<*04>
 075,0x96466,<SFF>ぼうぎょふのう行動<CD>ぼうぎょを できなくする<*04>,<SFF><f02>Vulnerable<f00>: Makes defending against attacks impossible.<*04>
 076,0x96468,<SFF>フォ-スドレイン行動<CD>メダフォ-スを うばいとる<*04>,<SFF><f02>Force Drain<f00>: Drains the opponent's Medaforce.<*04>
-077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,<SFF><f02>Flying Medarot<f00>: Strong in <f02>desert<f00> and <f02>antlion trap<f00> terrains.<*04>
-078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF><f02>Float Medarot<f00>: Comfortable in any terrains.<*04>
-079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,<SFF><f02>Multi-Leg Medarot<f00>: Strong in <f02>mountain<f00> and <f02>volcano<f00> terrains.<*04>
-080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,<SFF><f02>Bipedal Medarot<f00>: Strong in <f02>forest<f00> and <f02>jungle<f00> terrains.<*04>
-081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,<SFF><f02>Vehicle Medarot<f00>: Strong in <f02>downtown<f00> and <f02>stadium <f00>terrains.<*04>
-082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF><f02>Tank Medarot<f00>: Not affected by the terrain.<*04>
-083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,<SFF><f02>Diving Medarot<f00>: Strong in <f02>underwater<f00> and <f02>glacial<f00> terrains.<*04>
+077,0x9646a,<SFF>ひこうメダロット<CD>「さばく」「アリじごく」に つよい<*04>,<SFF><f02>Flying Medabot<f00>: Strong in <f02>desert<f00> and <f02>antlion trap<f00> terrains.<*04>
+078,0x96472,<SFF>ふゆうメダロット<CD>どのフィ-ルドも とくい<*04>,<SFF><f02>Float Medabot<f00>: Comfortable in any terrains.<*04>
+079,0x96474,<SFF>たきゃくメダロット<CD>「さんち」「かざん」に つよい<*04>,<SFF><f02>Multi-Leg Medabot<f00>: Strong in <f02>mountain<f00> and <f02>volcano<f00> terrains.<*04>
+080,0x96476,<SFF>にきゃくメダロット<CD>「しんリん」「ジャングル」に つよい<*04>,<SFF><f02>Bipedal Medabot<f00>: Strong in <f02>forest<f00> and <f02>jungle<f00> terrains.<*04>
+081,0x96478,<SFF>くるまメダロット<CD>「まちなか」「スタジアム」に つよい<*04>,<SFF><f02>Vehicle Medabot<f00>: Strong in <f02>downtown<f00> and <f02>stadium <f00>terrains.<*04>
+082,0x9647a,<SFF>せんしゃメダロット<CD>フィ-ルドに えいきょうされない<*04>,<SFF><f02>Tank Medabot<f00>: Not affected by the terrain.<*04>
+083,0x9647c,<SFF>せんすいメダロット<CD>「すいちゅう」「ひょうが」に つよい<*04>,<SFF><f02>Diving Medabot<f00>: Strong in <f02>underwater<f00> and <f02>glacial<f00> terrains.<*04>
 084,0x9647e,<FINAL>,
 085,0x9646c,@0x9646a,@0x9646a
 086,0x9646e,@0x9646a,@0x9646a

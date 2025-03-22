@@ -1,5 +1,5 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000#kabuto,0x1e4000,"<@RL,Metabee,00>メダロットを どうぐとしか 貝ね-<CD>やつらが こんなこと するんだ<CF><D1><&BUF0A>も いつかは<CD>そんなやつに なっちまうのか?","<@RL,Metabee,00>This is the result of humans treating Medarots like tools.<CF><D1>Are you going to treat me like that one day, <&BUF0A>?"
+000#kabuto,0x1e4000,"<@RL,Metabee,00>メダロットを どうぐとしか 貝ね-<CD>やつらが こんなこと するんだ<CF><D1><&BUF0A>も いつかは<CD>そんなやつに なっちまうのか?","<@RL,Metabee,00>This is the result of humans treating Medabots like tools.<CF><D1>Are you going to treat me like that one day, <&BUF0A>?"
 000#kuwagata,0x1e4000,"<@RL,Rokusho,00>しょせん おれたちは 人間にとって<CD>ベんリな どうぐと 言うわけか...<CF><D1>こわれるまで使い こわれたら すてる<CD>おれも いつかは こうなるのか?","<@RL,Rokusho,00>In the end, we're nothing but tools of convenience for humans.<CF><D1>If I'm used until I break, will this be my fate?"
 001,0x1e4002,"<@LL,Ikki,02>そんなことない! ぼくは そんなこと<CD>しないよ!","<@LL,Ikki,02>No way! I'd never do anything thing like that!"
 002#kabuto,0x1e4004,"<@RL,Metabee,00>本当だな!? わすれね-ぞ!<CD>その ことば!","<@RL,Metabee,00>Really!? You'd better not forget you said that!"

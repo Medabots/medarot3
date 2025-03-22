@@ -30,18 +30,18 @@
 028,0x9234c#kabuto|0x9234e#kuwagata,たたかえ! きぎょうせんし!<CD>あかるい あすは きっとくる!<*02>,"Fight, o corporate warriors!<D3>A bright tomorrow shall come!<*02>"
 029,0x9234e#kabuto|0x92350#kuwagata,まだまだ ふけいきが つづきそうだな<CD><*02>,It seems business will continue<D3>to be poor for a while...<*02>
 030,0x92350#kabuto|0x92352#kuwagata,どいとくれよ!<CD>しゅふは いそがしいんだからね!<*02>,Move aside!<D3>Can't you see I'm busy?<*02>
-031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,"If your Medarot has a good personality, it'll be more useful than mine!<*02>"
+031,0x92352#kabuto|0x92354#kuwagata,せいかくのいい メダロットなら<CD>うちのこよリ やくにたつよ!<*02>,"If your Medabot has a good personality, it'll be more useful than mine!<*02>"
 032,0x92354#kabuto|0x92356#kuwagata,ボロトルは いくつになっても<CD>やめられんのぉ<*02>,I can't stop robattling no matter how old I get.<*02>
 033,0x92356#kabuto|0x92358#kuwagata,ボトルロは やはリ むずかしいのぉ<CD><*02>,Borattles are still tricky.<*02>
 034,0x92358#kabuto|0x9235a#kuwagata,あたしだって まだ わかいもんには<CD>まけないよ<*02>,I won't lose to a youngster<D3>like you!<*02>
 035,0x9235a#kabuto|0x9235c#kuwagata,わかいって いいねェ<CD><*02>,Oh to be young again...<*02>
-036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,Show me your Medarots!<*02>
+036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,Show me your Medabots!<*02>
 037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,Huhuhu<D3>You let me take your data!<*02>
 038,0x92360#kabuto|0x92362#kuwagata,しっぷうのごとく きる!<CD><*02>,I'll blow you down like a<D3>strong gale!<*02>
 039,0x92362#kabuto|0x92364#kuwagata,...そして しっぷうのごとく<CD>やぶれたリ!<*02>,"... And as if by a strong gale,<D3>I was blown down!<*02>"
-040,0x92364#kabuto|0x92366#kuwagata,おれの メダロットを<CD>貝てくれ!<*02>,Check out my Medarots!<*02>
-041,0x92366#kabuto|0x92368#kuwagata,ああ-っ!!<CD>おれの メダロットちゃんがっ!<*02>,"Aaah, no! My poor Medarots!<*02>"
-042,0x92368#kabuto|0x9236a#kuwagata,メダロットは<CD>おとこのこ だけのものじゃ ないよ<*02>,"Medarots aren't just for <D3>boys, you know!<*02>"
+040,0x92364#kabuto|0x92366#kuwagata,おれの メダロットを<CD>貝てくれ!<*02>,Check out my Medabots!<*02>
+041,0x92366#kabuto|0x92368#kuwagata,ああ-っ!!<CD>おれの メダロットちゃんがっ!<*02>,"Aaah, no! My poor Medabots!<*02>"
+042,0x92368#kabuto|0x9236a#kuwagata,メダロットは<CD>おとこのこ だけのものじゃ ないよ<*02>,"Medabots aren't just for <D3>boys, you know!<*02>"
 043,0x9236a#kabuto|0x9236c#kuwagata,え-ん<CD>けっこう じしんあったのにィ<*02>,"Hmph, I was so confident I'd<D3>win too...<*02>"
 044,0x9236c#kabuto|0x9236e#kuwagata,ロボトルのよわい カレなんて<CD>カッコわるいわよね-<*02>,A boyfriend who can't win any<D3>robattles is no good!<*02>
 045,0x9236e#kabuto|0x92370#kuwagata,も- しんじらんな-い!<CD>オトコって すぐ あつくなるんだから<*02>,"Oh, jeez! Guys are just way<D3>too hotheaded! <*02>"
@@ -59,7 +59,7 @@
 057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,Someday I'll make you regret<D3>this!<*02>
 058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,"Wheeze, wheeze...<CF>You think you can beat me?<*02>"
 059,0x9238a#kabuto|0x9238c#kuwagata,子どもは なまいきだから<CD>気に 食わんのじゃ!<*02>,The kids are bratty so I'm in a bad mood!<*02>
-060,0x9238c#kabuto|0x9238e#kuwagata,てんさい ようちえんじ サラミが<CD>あいてに なるでしゅ!<*02>,The genius preschooler Sarami will be your opponent!<*02>
+060,0x9238c#kabuto|0x9238e#kuwagata,てんさい ようちえんじ サラミが<CD>あいてに なるでしゅ!<*02>,The genius preschooler Shrimplips will be your opponent!<*02>
 061,0x9238e#kabuto|0x92390#kuwagata,あたちの IQは<CD>180も あるんでしゅよ!<*02>,My IQ is 180!<*02>
 062,0x92390#kabuto|0x92392#kuwagata,わしと おぬしの どちらが<CD>メダルを うまく そだてとるかな?<*02>,Which of us do you think has raised our Medals well?<*02>
 063,0x92392#kabuto|0x92394#kuwagata,やるもんじゃな がはは!<CD><*02>,I'll try! Gahaha!<*02>
@@ -149,9 +149,9 @@
 147,0x9243a#kabuto|0x9243c#kuwagata,これじゃ...<CD>コンビニェ-ション ボロボロ-<*02>,Just like that...<D3>the combination crumbles...<*02>
 148,0x9243c#kabuto|0x9243e#kuwagata,「アンビリバボ-」と「ぼ-ず」で<CD>アンビリバボ-ズ!!<*02>,"""Unbelievable"" and ""boys,"" we<D3>are the Unboylieveables!<*02>"
 149,0x9243e#kabuto|0x92440#kuwagata,アン.ビリ-バボ-ズ!!<CD><*02>,Un-boy-lieveable!<D3><*02>
-150,0x92440#kabuto|0x92442#kuwagata,あそんであげても いいですよぉ<CD>キクヒメ「うるさいわよぉ!」<*02>,I get to play with you!<CF>Kikuhime: Shut it!<*02>
-151,0x92442#kabuto|0x92444#kuwagata,ちょっと シャレに なんないですよぉ<CD>キクヒメ「うっとうしいわねぇ!!」<*02>,That was a bit embarrassing.<CF>Kikuhime: You're so annoying!<*02>
-152,0x92444#kabuto|0x92446#kuwagata,ギンジョウ小学校で 1ばんの<CD>びしょうじょ 3にんぐみ!<*02>,We are Ginjo Elementary's<D3>three most beautiful girls!<*02>
+150,0x92440#kabuto|0x92442#kuwagata,あそんであげても いいですよぉ<CD>キクヒメ「うるさいわよぉ!」<*02>,I get to play with you!<CF>Samantha: Shut it!<*02>
+151,0x92442#kabuto|0x92444#kuwagata,ちょっと シャレに なんないですよぉ<CD>キクヒメ「うっとうしいわねぇ!!」<*02>,That was a bit embarrassing.<CF>Samantha: You're so annoying!<*02>
+152,0x92444#kabuto|0x92446#kuwagata,ギンジョウ小学校で 1ばんの<CD>びしょうじょ 3にんぐみ!<*02>,We are Riverview Public School's<D3>three most beautiful girls!<*02>
 153,0x92446#kabuto|0x92448#kuwagata,びしょうじょ コンテストなら<CD>まけないのに<*02>,We wouldn't have lost in a<D3>beauty contest.<*02>
 154,0x92448#kabuto|0x9244a#kuwagata,チ-ムロボトルロボ!<CD><*02>,"Team robattle, robo!<D3><*02>"
 155,0x9244a#kabuto|0x9244c#kuwagata,チ-ムボロトルロボ...<CD><*02>,"Team borattle, robo...<D3><*02>"

@@ -5,7 +5,7 @@ VERSIONS := kuwagata kabuto
 OUTPUT_PREFIX := medarot3_
 ORIGINAL_PREFIX := baserom_
 
-LANG_CODE := EN
+LANG_CODE := US-EN
 
 PYTHON := python3
 
