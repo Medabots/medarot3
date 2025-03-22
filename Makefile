@@ -342,11 +342,11 @@ $(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_
 .PHONY: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
 dump_xlsx: dump_xlsx_dialog dump_xlsx_ptrlist dump_xlsx_glossary dump_xlsx_soundeffects
 
-dump_xlsx_dialog: $(DIALOG_TEXT)
-	$(PYTHON) $(SCRIPT)/xlsx2dialog.py "$(TRANSLATION_SHEET)" "$(DIALOG_TEXT)" $(DIALOG)
+dump_xlsx_dialog: $(DIALOG_TEXT) dump_xlsx_glossary
+	$(PYTHON) $(SCRIPT)/xlsx2dialog.py "$(LANG_CODE)" "$(SCRIPT_RES)/glossary.csv" "$(TRANSLATION_SHEET)" "$(DIALOG_TEXT)" $(DIALOG)
 
-dump_xlsx_ptrlist: $(PTRLISTS_TEXT)
-	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py "$(TRANSLATION_SHEET)" "$(PTRLISTS_TEXT)" $(PTRLISTS)
+dump_xlsx_ptrlist: $(PTRLISTS_TEXT) dump_xlsx_glossary
+	$(PYTHON) $(SCRIPT)/xlsx2ptrlist.py "$(LANG_CODE)" "$(SCRIPT_RES)/glossary.csv" "$(TRANSLATION_SHEET)" "$(PTRLISTS_TEXT)" $(PTRLISTS)
 
 dump_xlsx_glossary: $(SCRIPT_RES)
 	$(PYTHON) $(SCRIPT)/xlsx2csv.py "$(TRANSLATION_SHEET)" "$(SCRIPT_RES)/glossary.csv" Glossary
