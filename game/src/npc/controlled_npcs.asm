@@ -39,7 +39,7 @@ NPCSwapPlayerName::
   ret
 .table
   ; 8 characters + terminator
-  db "Arika", $CB, $00, $00, $00 ; Erika (アリカ)
+  db "Erika", $CB, $00, $00, $00 ; Erika (アリカ)
   db "Koji", $CB, $00, $00, $00, $00 ; Koji  (コウジ)
   db "Karin", $CB, $00, $00, $00 ; Karin (カリン)
-  db "Kikuhime", $CB ; Kikuhime (キクヒメ)
+  db "Samantha", $CB ; Kikuhime (キクヒメ)
