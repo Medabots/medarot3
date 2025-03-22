@@ -10,6 +10,11 @@ jobs:
   update:
     runs-on: ubuntu-latest
     container: ghcr.io/medabots/medarot3:tr_EN
+    strategy:
+      matrix:
+        branch:
+          - tr_EN
+          - tr_EN-US
 
     steps:
       - name: List versions
@@ -24,6 +29,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: 'medarot3'
+          ref: ${{ matrix.branch }}
 
       - name: Checkout baserom repository
         uses: actions/checkout@v2
