@@ -7,11 +7,14 @@ BattleAllyInitializeParticipantName::
   or a
   ret z
   ld a, $CB
-  ; Set the name to $FF as a way to inform that name should be loaded based on head part
+  ; Set the name to $CB as a way to inform that name should be loaded based on head part
+  ; Store FE afterwards to identify allies
   ld hl, $D240
-  ld [hl], a
+  ld [hli], a
+  ld [hl], $FE
   ld hl, $D440
-  ld [hl], a
+  ld [hli], a
+  ld [hl], $FE
   ret
 
   padend $4d3d

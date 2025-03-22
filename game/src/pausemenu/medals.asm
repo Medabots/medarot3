@@ -3072,6 +3072,7 @@ DisplayMedaliaListItem::
   ld d, 8
   call MedaliaListItem8TileClearer
   ld l, $EB
+  ld d, 0 ; instead of 8, use 0 to avoid causing glitches when we have no medalia
   call MedaliaListItem8TileClearer
   xor a
   ld [W_CurrentVRAMBank], a

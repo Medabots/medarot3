@@ -64,7 +64,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry ShopBuySellKanji ; 36 (3A01)
   TilesetTableEntry Tileset3A03 ; 37 (3A03)
   TilesetTableEntry Tileset3A05 ; 38 (3A05)
-  TilesetTableEntry Tileset3A07 ; 39 (3A07)
+  TilesetTableEntry ShopPasswordScreenButtonPressed ; 39 (3A07)
   TilesetTableEntry Tileset3A09 ; 3A (3A09)
   TilesetTableEntry PaintShopShopkeeperAvatar ; 3B (3A0B)
   TilesetTableEntry PaintShopBubbleText ; 3C (3A0D)
@@ -362,7 +362,7 @@ TilesetSourceAddressTable::
   TilesetTableEntry OpeningAnimationTransformStatus ; 160 (3C55)
   TilesetTableEntry OpeningAnimationTransformImages1 ; 161 (3C57)
   TilesetTableEntry OpeningAnimationTransformImages2 ; 162 (3C59)
-  TilesetTableEntry Tileset3C5B ; 163 (3C5B)
+  TilesetTableEntry OpeningAnimationMedalLogo ; 163 (3C5B)
   TilesetTableEntry StartScreenText ; 164 (3C5D)
   TilesetTableEntry StartScreenMainLogoRotation ; 165 (3C5F)
   TilesetTableEntry StartScreenMainLogo ; 166 (3C61)
@@ -580,7 +580,7 @@ TilesetInfoTable::
   dbwb BANK(ShopBuySellKanji), $8600, $0 ; 036
   dbwb BANK(Tileset3A03), $82C0, $0 ; 037
   dbwb BANK(Tileset3A05), $8300, $0 ; 038
-  dbwb BANK(Tileset3A07), $8000, $1 ; 039
+  dbwb BANK(ShopPasswordScreenButtonPressed), $8000, $1 ; 039
   dbwb BANK(Tileset3A09), $9000, $0 ; 03A
   dbwb BANK(PaintShopShopkeeperAvatar), $9560, $0 ; 03B
   dbwb BANK(PaintShopBubbleText), $8400, $0 ; 03C
@@ -878,7 +878,7 @@ TilesetInfoTable::
   dbwb BANK(OpeningAnimationTransformStatus), $9000, $0 ; 160
   dbwb BANK(OpeningAnimationTransformImages1), $8800, $0 ; 161
   dbwb BANK(OpeningAnimationTransformImages2), $9000, $1 ; 162
-  dbwb BANK(Tileset3C5B), $9000, $0 ; 163
+  dbwb BANK(OpeningAnimationMedalLogo), $9000, $0 ; 163
   dbwb BANK(StartScreenText), $8800, $0 ; 164
   dbwb BANK(StartScreenMainLogoRotation), $9000, $1 ; 165
   dbwb BANK(StartScreenMainLogo), $8800, $1 ; 166
@@ -1173,10 +1173,6 @@ Tileset3A03::
 SECTION "Tileset Data Tileset3A05", ROMX[$4D3D], BANK[$3B]
 Tileset3A05::
   INCBIN "./build/tilesets/Tileset3A05.malias"
-
-SECTION "Tileset Data Tileset3A07", ROMX[$4D71], BANK[$3B]
-Tileset3A07::
-  INCBIN "./build/tilesets/Tileset3A07.malias"
 
 SECTION "Tileset Data Tileset3A09", ROMX[$4E96], BANK[$3B]
 Tileset3A09::

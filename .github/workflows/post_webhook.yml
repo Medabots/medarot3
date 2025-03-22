@@ -1,0 +1,29 @@
+name: Post Webhook
+
+on:
+  workflow_run:
+    workflows: [Nightly Update (EN), Check Text, Build All]
+    types: [completed]
+
+jobs:
+  on-success:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'Build All' }}
+
+    steps:
+      - name: Post Webhook (Success)
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} (Success)", "url":"${{ github.event.workflow_run.html_url }}", "color":65280 } ] }' \
+          ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+
+    steps:
+      - name: Post Webhook (Failure)
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{ "username": "github-actions", "embeds": [ { "title": "${{ github.event.workflow_run.name }} (Failure)", "url":"${{ github.event.workflow_run.html_url }}", "color":16711680 } ] }' \
+          ${{ secrets.DISCORD_WEBHOOK_URL }}

@@ -44,7 +44,7 @@
 3A01=ShopBuySellKanji
 3A03=Tileset3A03
 3A05=Tileset3A05
-3A07=Tileset3A07
+3A07=ShopPasswordScreenButtonPressed
 3A09=Tileset3A09
 3A0B=PaintShopShopkeeperAvatar
 3A0D=PaintShopBubbleText
@@ -286,7 +286,7 @@
 3C55=OpeningAnimationTransformStatus
 3C57=OpeningAnimationTransformImages1
 3C59=OpeningAnimationTransformImages2
-3C5B=Tileset3C5B
+3C5B=OpeningAnimationMedalLogo
 3C5D=StartScreenText
 3C5F=StartScreenMainLogoRotation
 3C61=StartScreenMainLogo

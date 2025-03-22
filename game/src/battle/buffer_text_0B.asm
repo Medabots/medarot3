@@ -143,9 +143,15 @@ BattleAllyStatusLoadParticipantNameBuf01Cont::
 .checkLengthLoop
   ld a, [hli]
   cp $CB
-  jr z, .player
+  jr z, .check_ally
   dec b
   jr nz, .checkLengthLoop
+
+.check_ally
+  ; It's hacky, but in BattleAllyInitializeParticipantName, we'll use FE to flag if it's an ally
+  ld a, [hl]
+  cp $FE
+  jr nz, .player
 
   xor a
   ld [W_ListItemInitialOffsetForBuffering], a

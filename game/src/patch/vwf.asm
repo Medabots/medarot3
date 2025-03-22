@@ -46,7 +46,6 @@ VWFDrawStringCenteredFullAddress8Tiles::
   ; h is the tile index of our drawing area.
   ld a, 8
   ; Continues into VWFDrawStringCenteredFullAddress.
-
 VWFDrawStringCenteredFullAddress::
   ; a is the number of tiles our drawing area is comprised of.
   ; bc is the address of the string to print, terminated by 0xCB.
@@ -57,6 +56,13 @@ VWFDrawStringCenteredFullAddress::
   call VWFDrawStringMeasureString
   call VWFAlignToCentre
   jp VWFDrawStringLoop
+VWFDrawStringCenteredFullAddressResetFont::
+  ; Same as above, except reset the font
+  push af
+  xor a
+  ld [W_VWFCurrentFont], a
+  pop af
+  jr VWFDrawStringCenteredFullAddress
 
 VWFDrawStringRightFullAddress8Tiles::
   ; bc is the address of the string to print, terminated by 0xCB.
