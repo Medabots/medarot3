@@ -7,6 +7,7 @@ import re
 import openpyxl as xl
 from collections import OrderedDict
 import csv
+import functools
 from os import path
 
 sys.path.append(path.join(path.dirname(__file__), 'common'))
@@ -42,9 +43,30 @@ def transform_line(line):
 				line += section
 	return line
 
-xlsx = sys.argv[1]
-csvdir = sys.argv[2]
-SHEETS = list(sys.argv[3:])
+lang_code = sys.argv[1]
+glossary_file = sys.argv[2]
+xlsx = sys.argv[3]
+csvdir = sys.argv[4]
+SHEETS = list(sys.argv[5:])
+
+# Rely on regex substitutions at word boundaries
+substitutions = []
+with open(glossary_file, "r", encoding='utf-8-sig', newline='\n') as csvfile:
+	reader = csv.reader(csvfile, delimiter=',')
+	header = next(reader)
+	lang_idx = header.index(lang_code)
+	assert lang_idx > 0
+	if lang_idx != 1: # Only care about substitutions if we aren't the default language
+		string_replacements = []
+		for line in reader:
+			string_replacements += list(zip(line[1].split(','), line[lang_idx].split(',')))
+
+		string_replacements.sort(key=lambda string: len(string[0]), reverse=True)
+
+		for string in string_replacements:
+			if string[0] == string[1]:
+				continue
+			substitutions.append(functools.partial(re.sub, r"\b" + re.escape(string[0].strip()) + r"\b", string[1].strip()))
 
 wb = xl.load_workbook(filename=xlsx, rich_text=True)
 
@@ -128,4 +150,7 @@ for sheet in wb.worksheets:
 			else:
 				row = [transform_line(x) if i == (original_idx - index_idx) or i == (translated_idx - index_idx) else x for i, x in enumerate(text[ptr][index_idx:translated_idx+1])]
 				row[original_idx - index_idx] = original_text # Keep our dumped version of the original text at all times
+				for subst in substitutions:
+					row[translated_idx - index_idx] = subst(row[translated_idx - index_idx])
+
 			writer.writerow(row)

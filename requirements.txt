@@ -1,2 +1,4 @@
 dataclasses==0.6
 pyspellchecker==0.7.2
+numpy==2.0.2
+openpyxl @ git+https://github.com/VariantXYZ/openpyxl-variant.git@bcedbfadcafba04fab0d9ffe2c8f001e19683497
