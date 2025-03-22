@@ -1,4 +1,4 @@
-name: Post Webhook
+name: Post Webhook (EN)
 
 on:
   workflow_run:
