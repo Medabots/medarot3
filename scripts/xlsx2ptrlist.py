@@ -116,5 +116,5 @@ for sheet in wb.worksheets:
             for column, data in enumerate(updated_data[idx]):
                 for subst in substitutions:
                     if type(data) is str:
-                        updated_data[idx][column] = subst(data)
+                        updated_data[idx][column] = subst(updated_data[idx][column])
             writer.writerow(updated_data[idx])
