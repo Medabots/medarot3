@@ -5,7 +5,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 1,\x00,\x02,\xCB
 2,\x00,\x02,\xCD
 3,\x00,\x02,\xCB
-4,\x11,\x02,Medabot 3
+4,\x11,\x02,Medabots 3
 5,\x11,\x04,Staff
 6,\x00,\x02,\xCB
 7,\x00,\x02,\xCB
