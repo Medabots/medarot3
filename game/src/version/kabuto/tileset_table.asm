@@ -85,10 +85,6 @@ SECTION "Tileset Data Tileset3C3F", ROMX[$6128], BANK[$72]
 Tileset3C3F::
   INCBIN "./build/tilesets/Tileset3C3F.malias"
 
-SECTION "Tileset Data OpeningAnimationCharacterNames", ROMX[$5841], BANK[$72]
-OpeningAnimationCharacterNames::
-  INCBIN "./build/tilesets/OpeningAnimationCharacterNames.malias"
-
 SECTION "Tileset Data Tileset3C53", ROMX[$70B0], BANK[$72]
 Tileset3C53::
   INCBIN "./build/tilesets/Tileset3C53.malias"
