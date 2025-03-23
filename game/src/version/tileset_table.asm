@@ -32,8 +32,8 @@ TilesetSourceAddressTable::
   TilesetTableEntry Tileset39C1 ; 16 (39C1)
   TilesetTableEntry Tileset39C3 ; 17 (39C3)
   TilesetTableEntry Tileset39C5 ; 18 (39C5)
-  TilesetTableEntry Tileset39C7 ; 19 (39C7)
-  TilesetTableEntry Tileset39C9 ; 1A (39C9)
+  TilesetTableEntry RobattleTransition1 ; 19 (39C7)
+  TilesetTableEntry RobattleTransition2 ; 1A (39C9)
   TilesetTableEntry Tileset39CB ; 1B (39CB)
   TilesetTableEntry GBCOnlyErrorScreenTextGraphics ; 1C (39CD)
   TilesetTableEntry Tileset39CF ; 1D (39CF)
@@ -548,8 +548,8 @@ TilesetInfoTable::
   dbwb BANK(Tileset39C1), $8000, $0 ; 016
   dbwb BANK(Tileset39C3), $8D00, $0 ; 017
   dbwb BANK(Tileset39C5), $9000, $0 ; 018
-  dbwb BANK(Tileset39C7), $9000, $1 ; 019
-  dbwb BANK(Tileset39C9), $8800, $1 ; 01A
+  dbwb BANK(RobattleTransition1), $9000, $1 ; 019
+  dbwb BANK(RobattleTransition2), $8800, $1 ; 01A
   dbwb BANK(Tileset39CB), $9000, $0 ; 01B
   dbwb BANK(GBCOnlyErrorScreenTextGraphics), $9000, $0 ; 01C
   dbwb BANK(Tileset39CF), $9000, $0 ; 01D
@@ -1138,13 +1138,13 @@ SECTION "Tileset Data Tileset39C5", ROMX[$5D95], BANK[$3C]
 Tileset39C5::
   INCBIN "./build/tilesets/Tileset39C5.malias"
 
-SECTION "Tileset Data Tileset39C7", ROMX[$5FD2], BANK[$3C]
-Tileset39C7::
-  INCBIN "./build/tilesets/Tileset39C7.malias"
+SECTION "Tileset Data RobattleTransition1", ROMX[$5FD2], BANK[$3C]
+RobattleTransition1::
+  INCBIN "./build/tilesets/RobattleTransition1.malias"
 
-SECTION "Tileset Data Tileset39C9", ROMX[$64C5], BANK[$3C]
-Tileset39C9::
-  INCBIN "./build/tilesets/Tileset39C9.malias"
+SECTION "Tileset Data RobattleTransition2", ROMX[$64C5], BANK[$3C]
+RobattleTransition2::
+  INCBIN "./build/tilesets/RobattleTransition2.malias"
 
 SECTION "Tileset Data Tileset39CB", ROMX[$69F2], BANK[$3C]
 Tileset39CB::
