@@ -5,7 +5,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 1,\x00,\x02,\xCB
 2,\x00,\x02,\xCD
 3,\x00,\x02,\xCB
-4,\x11,\x02,Medarot 3
+4,\x11,\x02,Medabot 3
 5,\x11,\x04,Staff
 6,\x00,\x02,\xCB
 7,\x00,\x02,\xCB
@@ -47,7 +47,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 43,\x01,\x05,Voices
 44,\x00,\x02,\xCD
 45,\x00,\x02,\xCB
-46,\x11,\x06,Mr. Uruchi
+46,\x11,\x06,Mr. Referee
 47,\x11,\x04,Hiroshi Shimizu
 48,\x00,\x02,\xCB
 49,\x00,\x02,\xCB

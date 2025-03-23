@@ -21,22 +21,22 @@ Index[#version],CharacterName
 16,Koji
 17,Koji
 18,Koji
-19,Kikuhime
-20,Kikuhime
-21,Kikuhime
-22,Iwanoi
-23,Iwanoi
-24,Iwanoi
-25,Kagamiyama
-26,Kagamiyama
-27,Kagamiyama
+19,Samantha
+20,Samantha
+21,Samantha
+22,Spyke
+23,Spyke
+24,Spyke
+25,Sloan
+26,Sloan
+27,Sloan
 28,Hachiro
 29,Hachiro
 30,Retort
 31,Retort
-32,Lady Retort
-33,Lady Retort
-34,Dr. Medarot
+32,Lady Renegade
+33,Lady Renegade
+34,Dr. Aki
 35,Nae
 36,Nae
 37,Nae

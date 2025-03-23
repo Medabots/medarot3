@@ -21,21 +21,21 @@ Index[#version],Unknown,Name
 16,\x03\x03\x00,Koji
 17,\x03\x03\x00,Koji
 18,\x03\x03\x00,Koji
-19,\x05\x04\x00,Kikuhime
-20,\x05\x04\x00,Kikuhime
-21,\x05\x04\x00,Kikuhime
-22,\x05\x04\x00,Kikuhime
-23,\x05\x04\x00,Kikuhime
-24,\x06\x05\x00,Iwanoi
-25,\x06\x05\x00,Iwanoi
-26,\x06\x05\x00,Iwanoi
-27,\x06\x05\x00,Iwanoi
-28,\x06\x05\x00,Iwanoi
-29,\x07\x06\x00,Kagamiyama
-30,\x07\x06\x00,Kagamiyama
-31,\x07\x06\x00,Kagamiyama
-32,\x07\x06\x00,Kagamiyama
-33,\x07\x06\x00,Kagamiyama
+19,\x05\x04\x00,Samantha
+20,\x05\x04\x00,Samantha
+21,\x05\x04\x00,Samantha
+22,\x05\x04\x00,Samantha
+23,\x05\x04\x00,Samantha
+24,\x06\x05\x00,Spyke
+25,\x06\x05\x00,Spyke
+26,\x06\x05\x00,Spyke
+27,\x06\x05\x00,Spyke
+28,\x06\x05\x00,Spyke
+29,\x07\x06\x00,Sloan
+30,\x07\x06\x00,Sloan
+31,\x07\x06\x00,Sloan
+32,\x07\x06\x00,Sloan
+33,\x07\x06\x00,Sloan
 34,\x08\x07\x00,Hachiro
 35,\x08\x07\x00,Hachiro
 36,\x08\x07\x00,Hachiro
@@ -43,10 +43,10 @@ Index[#version],Unknown,Name
 38,\x0a\x08\x00,Milky
 39,\x0b\x09\x00,Retort
 40,\x0b\x09\x00,Retort
-41,\x0d\x0a\x00,Lady Retort
-42,\x0d\x0a\x00,Lady Retort
-43,\x0f\x0b\x00,Dr. Medarot
-44,\x0f\x0b\x00,Dr. Medarot
+41,\x0d\x0a\x00,Lady Renegade
+42,\x0d\x0a\x00,Lady Renegade
+43,\x0f\x0b\x00,Dr. Aki
+44,\x0f\x0b\x00,Dr. Aki
 45,\x10\x0c\x00,Nae
 46,\x10\x0c\x00,Nae
 47,\x10\x0c\x00,Nae
@@ -100,70 +100,70 @@ Index[#version],Unknown,Name
 95,\x1e\x18\x00,Hostess
 96,\x1f\x19\x00,Bunny
 97,\x1f\x19\x00,Bunny
-98,\x21\x1a\x01,RoboRobo Member
-99,\x21\x1a\x01,RoboRobo Member
-100,\x21\x1a\x01,RoboRobo Member
-101,\x21\x1a\x01,RoboRobo Member
-102,\x21\x1a\x01,RoboRobo Member
-103,\x21\x1a\x01,RoboRobo Member
-104,\x21\x1a\x01,RoboRobo Member
-105,\x21\x1a\x01,RoboRobo Member
-106,\x21\x1a\x01,RoboRobo Member
-107,\x21\x1a\x01,RoboRobo Member
-108,\x21\x1a\x01,RoboRobo Member
-109,\x21\x1a\x01,RoboRobo Member
-110,\x22\x1b\x01,Sakekaasu
-111,\x22\x1b\x01,Sakekaasu
-112,\x22\x1b\x01,Sakekaasu
-113,\x23\x1c\x01,Surume
-114,\x23\x1c\x01,Surume
-115,\x23\x1c\x01,Surume
-116,\x24\x1d\x01,Shiokara
-117,\x24\x1d\x01,Shiokara
-118,\x24\x1d\x01,Shiokara
-119,\x25\x1e\x01,Sarami
-120,\x25\x1e\x01,Sarami
-121,\x25\x1e\x01,Sarami
-122,\x26\x1f\x01,Dr. Hebereke
-123,\x26\x1f\x01,Dr. Hebereke
+98,\x21\x1a\x01,Rubberobo Member
+99,\x21\x1a\x01,Rubberobo Member
+100,\x21\x1a\x01,Rubberobo Member
+101,\x21\x1a\x01,Rubberobo Member
+102,\x21\x1a\x01,Rubberobo Member
+103,\x21\x1a\x01,Rubberobo Member
+104,\x21\x1a\x01,Rubberobo Member
+105,\x21\x1a\x01,Rubberobo Member
+106,\x21\x1a\x01,Rubberobo Member
+107,\x21\x1a\x01,Rubberobo Member
+108,\x21\x1a\x01,Rubberobo Member
+109,\x21\x1a\x01,Rubberobo Member
+110,\x22\x1b\x01,Seaslug
+111,\x22\x1b\x01,Seaslug
+112,\x22\x1b\x01,Seaslug
+113,\x23\x1c\x01,Gillgirl
+114,\x23\x1c\x01,Gillgirl
+115,\x23\x1c\x01,Gillgirl
+116,\x24\x1d\x01,Squidguts
+117,\x24\x1d\x01,Squidguts
+118,\x24\x1d\x01,Squidguts
+119,\x25\x1e\x01,Shrimplips
+120,\x25\x1e\x01,Shrimplips
+121,\x25\x1e\x01,Shrimplips
+122,\x26\x1f\x01,Dr. Armond
+123,\x26\x1f\x01,Dr. Armond
 124,\x27\x20\x01,Select Three
 125,\x27\x20\x01,Select Three
 126,\x28\x21\x01,Select Member
 127,\x28\x21\x01,Select Member
 128,\x28\x21\x01,Select Member
 129,\x28\x21\x01,Select Member
-130,\x2d\x22\x00,Flying Medarot
-131,\x2d\x22\x00,Flying Medarot
-132,\x2d\x22\x00,Flying Medarot
-133,\x2d\x22\x00,Flying Medarot
-134,\x2e\x23\x00,Hover Medarot
-135,\x2e\x23\x00,Hover Medarot
-136,\x2e\x23\x00,Hover Medarot
-137,\x2e\x23\x00,Hover Medarot
-138,\x2f\x24\x00,Polyped Medarot
-139,\x2f\x24\x00,Polyped Medarot
-140,\x2f\x24\x00,Polyped Medarot
-141,\x2f\x24\x00,Polyped Medarot
-142,\x30\x25\x00,Bipedal Medarot
-143,\x30\x25\x00,Bipedal Medarot
-144,\x30\x25\x00,Bipedal Medarot
-145,\x30\x25\x00,Bipedal Medarot
-146,\x31\x26\x00,Vehicle Medarot
-147,\x31\x26\x00,Vehicle Medarot
-148,\x31\x26\x00,Vehicle Medarot
-149,\x31\x26\x00,Vehicle Medarot
-150,\x32\x27\x00,Tank Medarot
-151,\x32\x27\x00,Tank Medarot
-152,\x32\x27\x00,Tank Medarot
-153,\x32\x27\x00,Tank Medarot
-154,\x33\x28\x00,Sea Medarot
-155,\x33\x28\x00,Sea Medarot
-156,\x33\x28\x00,Sea Medarot
-157,\x33\x28\x00,Sea Medarot
-158,\x34\x29\x00,Female Medarot
-159,\x34\x29\x00,Female Medarot
-160,\x34\x29\x00,Female Medarot
-161,\x34\x29\x00,Female Medarot
+130,\x2d\x22\x00,Flying Medabot
+131,\x2d\x22\x00,Flying Medabot
+132,\x2d\x22\x00,Flying Medabot
+133,\x2d\x22\x00,Flying Medabot
+134,\x2e\x23\x00,Hover Medabot
+135,\x2e\x23\x00,Hover Medabot
+136,\x2e\x23\x00,Hover Medabot
+137,\x2e\x23\x00,Hover Medabot
+138,\x2f\x24\x00,Polyped Medabot
+139,\x2f\x24\x00,Polyped Medabot
+140,\x2f\x24\x00,Polyped Medabot
+141,\x2f\x24\x00,Polyped Medabot
+142,\x30\x25\x00,Bipedal Medabot
+143,\x30\x25\x00,Bipedal Medabot
+144,\x30\x25\x00,Bipedal Medabot
+145,\x30\x25\x00,Bipedal Medabot
+146,\x31\x26\x00,Vehicle Medabot
+147,\x31\x26\x00,Vehicle Medabot
+148,\x31\x26\x00,Vehicle Medabot
+149,\x31\x26\x00,Vehicle Medabot
+150,\x32\x27\x00,Tank Medabot
+151,\x32\x27\x00,Tank Medabot
+152,\x32\x27\x00,Tank Medabot
+153,\x32\x27\x00,Tank Medabot
+154,\x33\x28\x00,Sea Medabot
+155,\x33\x28\x00,Sea Medabot
+156,\x33\x28\x00,Sea Medabot
+157,\x33\x28\x00,Sea Medabot
+158,\x34\x29\x00,Female Medabot
+159,\x34\x29\x00,Female Medabot
+160,\x34\x29\x00,Female Medabot
+161,\x34\x29\x00,Female Medabot
 162,\x3b\x2a\x00,Black Devil
 163,\x3b\x2a\x00,Black Devil
 164,\x3c\x2b\x00,Marbler
@@ -191,8 +191,8 @@ Index[#version],Unknown,Name
 186,\x43\x31\x00,Shimeta
 187,\x44\x32\x00,Ichimonji
 188,\x44\x32\x00,Ichimonji
-189,\x45\x33\x00,Seseri
-190,\x45\x33\x00,Seseri
+189,\x45\x33\x00,Cecily
+190,\x45\x33\x00,Cecily
 191,\x46\x34\x00,Crow
 192,\x46\x34\x00,Crow
 193,\x46\x34\x00,Crow
@@ -233,18 +233,18 @@ Index[#version],Unknown,Name
 228,\x34\x46\x00,Kogane
 229,\x05\x47\x00,The Screws
 230,\x05\x47\x00,The Screws
-231,\x30\x48\x00,Biped Medarot
-232,\x30\x48\x00,Biped Medarot
-233,\x30\x48\x00,Biped Medarot
+231,\x30\x48\x00,Biped Medabot
+232,\x30\x48\x00,Biped Medabot
+233,\x30\x48\x00,Biped Medabot
 234,\x1b\x49\x00,Destroyers
 235,\x13\x4a\x00,Unboylievables
 236,\x1b\x4b\x00,Cosplayers
 237,\x1b\x4c\x00,Pretty Girls
-238,\x21\x4d\x00,RoboRobos
+238,\x21\x4d\x00,Rubberobos
 239,\x13\x4e\x00,Extras
 240,\x1b\x4f\x00,Human Series
 241,\x00\x50\x00,Nashi
-242,\x25\x51\x00,RoboRobos
+242,\x25\x51\x00,Rubberobos
 243,\x00\x52\x00,Nashi
 244,\x4a\x53\x00,Sea Fairies
 245,\x4b\x54\x00,Sea Dragons

@@ -8,14 +8,14 @@ Index[#version],MedarotName
 3,Fly-Falcon
 4,Youngsparrow
 5,Oldwise
-6,Blackrover
+6,Black-Rover
 7,Semi-Cicade
 8,Head Locust
-9,Stoleboat
+9,Stole-Boat
 10,Jackal
 11,Gorgine
 12,Seekamar
-13,Nervous Bird
+13,Nervous-Bird
 14,Chair Pixie
 15,Bloodstock
 16,White Grouse
@@ -23,129 +23,129 @@ Index[#version],MedarotName
 18,Beatbreath
 19,Neo Sakura-Chan
 20,Flysquire
-21,Shrimpresser
+21,Shrimp-Presser
 22,Limbo-Mambo
 23,Spyne
 24,G.O. Death
 25,Cu
 26,Changeling
 27,Pakat
-28,Change-Gargo
-29,Hoodwitchy
-30,Float Spinner
+28,Change-Cargo
+29,Food-Witch
+30,Float-Spinner
 31,Cry Banshee
 32,Meda-Mars
-33,God Emperor
+33,Mega-Emperor
 34,Naturally
 35,Trilobide
 36,Man-Mammoth
 37,Grancia
 38,FlyTrap
-39,Ham-Anything
+39,Hamshin
 40,Hellcerberus
-41,Dullahorse
+41,Dura-Horse
 42,Danin
 43,Shiramin
 44,Nomin
 45,Littledeer
 46,Not-Touch
-47,Sti-Dryad
+47,Stay-Dryad
 48,RinCricket
 49,Meda-Earth
 50,Rokusho
 51,Metabee
-52,Smilodonad
-53,Warbonnet
-54,Kantaros
+52,Sumilidon
+53,Warbandit
+54,Kantaroth
 55,Arcbeetle
-56,Atheist 2
+56,Eisiest 2
 57,Ambiguous 2
 58,Assault-Tyranno
-59,Banchuu
+59,Ban-Chu
 60,Purple Collar
 61,Wire-Alien
 62,Dash-Raptor
-63,Frill-Frilly
-64,Blackstag
+63,Frill-Free
+64,Black-Stag
 65,Skycargo
 66,Premium 2K
 67,Genius
-68,Gan-King
-69,Dorcus
-70,Excise
+68,Gun-King
+69,Roks
+70,Exor
 71,Light Cheetah
 72,Straywolf
 73,Vapor-Rail
-74,Saikachis
+74,Saikachi
 75,Unitris
-76,Blackbeetle
-77,Basalt
+76,Blakbeetle
+77,Basart
 78,Brownbison
-79,Lon-Gan
+79,Lon-Gun
 80,Auto-Cruise
-81,Passghoul
+81,Dighoul
 82,Last Sailor
 83,Bravenurse
 84,Noctocat
-85,Gallant Lady
+85,Garant-Lady
 86,Bunnymind
 87,Riza
 88,Marche
-89,Holy Oracle
+89,Holy-Oracle
 90,Royal Maid
 91,Primi-Lotus
-92,Honeyforce
-93,Meda-Sun
+92,Honey-Force
+93,Meda-San
 94,Meda-Moon
 95,Meda-Comet
 96,Meda-Uranus
 97,Meda-Neptune
-98,Meda-Pluto
+98,Meda-Plute
 99,Sphink
 100,Darkpanther
-101,Put-Cat
-102,Tundre
+101,Puttycat
+102,Tundle
 103,Dear Idol
 104,Bi-Bikoon
-105,Konotractor
-106,Grade Kabuki
-107,Childsitter
+105,Kono-Tractor
+106,Great Kabuki
+107,Child-Sitter
 108,High-Giraffe
 109,Humpcamel
-110,Onewheel
-111,Go-Fan
-112,Centipade
-113,Hairy-Insect
+110,One-Wheel
+111,Gofan
+112,Centipede
+113,Hairy Insect
 114,Brave Police
 115,Brave Rescue
 116,Brave Fire
 117,Diststar
-118,Potato-Insect
+118,Potatobug
 119,Meda-Venus
-120,Earth-Brachio
+120,Earth-Brakio
 121,Rickturtle
-122,King Flag
+122,King Tank
 123,Set-Stego
-124,Attack-Tricer
+124,Attack-Trikeru
 125,Denshi Ranger
 126,Miracle Machine
 127,Denguri Roll
 128,Landreach
 129,Meda-Saturn
 130,Blue Hountain
-131,Soft Amoeba
+131,Soft-Amoeba
 132,Anemone
 133,Shine Seal
 134,Nya-Buck
-135,Slime Eel
-136,Kronoform
+135,Slime-Eel
+136,Chono-Folm
 137,Axolotl
-138,Basstroyer
+138,Bustroyer
 139,Sea-Catcher
 140,Sea-Monster
 141,Water-Beat
 142,Oil Slider
-143,Co-Seahorse
+143,Cosy-Horse
 144,Old Carp
 145,Dol-Dolphin
 146,Goldfin

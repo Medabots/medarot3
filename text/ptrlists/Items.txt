@@ -2,12 +2,12 @@
 56
 31067
 Index[#version],ItemName,Flags
-0,RoboRobo Medal\xcb,\x00
+0,Rubberobo Medal\xcb,\x00
 1,Egg Carton\xcb,\x00
 2,MiniMini Machine\xcb,\x00
 3,Town Map\xcb,\x01
 4,Medalympic Badge\xcb,\x00
-5,Hanazono Badge\xcb,\x00
+5,Rosewood Badge\xcb,\x00
 6,Mini Handle\xcb,\x00
 7,Hachiro's Medal\xcb,\x00
 8,Six-sided Fossil\xcb,\x00
