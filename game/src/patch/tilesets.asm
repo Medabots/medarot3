@@ -182,3 +182,5 @@ PatchTilesets::
   PatchTilesetEntry LinkMainMenu
   PatchTilesetEntry LinkTradeOptions
   PatchTilesetEntry LinkRobattleOptionsModeSelect
+OpeningAnimationCharacterNames::
+  INCBIN "./build/tilesets/OpeningAnimationCharacterNames.malias"
