@@ -10,15 +10,15 @@ Sound_PlaySample::
   push bc
   push de
   push hl
-  xor a
-  ldh [H_RegNR52], a ;Disable sound hardware, resetting all state
   call Sound_OpenSampleData
   
 .fragmentLoop
-  call Sound_ExitSampleMode ; In Telefang this call is missing.
   call Sound_PrepareSampleFragment
   di ; In Telefang this is before the call to the Sound_PlaySample wrapper function instead.
+  xor a
+  ldh [H_RegNR52], a ;Disable sound hardware, resetting all state
   call Sound_PlaySampleFragment
+  call Sound_ExitSampleMode ; In Telefang this call is missing.
   ei ; In Telefang this is after the call to the Sound_PlaySample wrapper function instead.
   ld a, [W_Sound_SampleFragmentCount]
   dec a
