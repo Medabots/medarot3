@@ -100,18 +100,18 @@ Index[#version],Unknown,Name
 95,\x1e\x18\x00,Hostess
 96,\x1f\x19\x00,Bunny
 97,\x1f\x19\x00,Bunny
-98,\x21\x1a\x01,RoboRobo Member
-99,\x21\x1a\x01,RoboRobo Member
-100,\x21\x1a\x01,RoboRobo Member
-101,\x21\x1a\x01,RoboRobo Member
-102,\x21\x1a\x01,RoboRobo Member
-103,\x21\x1a\x01,RoboRobo Member
-104,\x21\x1a\x01,RoboRobo Member
-105,\x21\x1a\x01,RoboRobo Member
-106,\x21\x1a\x01,RoboRobo Member
-107,\x21\x1a\x01,RoboRobo Member
-108,\x21\x1a\x01,RoboRobo Member
-109,\x21\x1a\x01,RoboRobo Member
+98,\x21\x1a\x01,RoboRobo Grunt
+99,\x21\x1a\x01,RoboRobo Grunt
+100,\x21\x1a\x01,RoboRobo Grunt
+101,\x21\x1a\x01,RoboRobo Grunt
+102,\x21\x1a\x01,RoboRobo Grunt
+103,\x21\x1a\x01,RoboRobo Grunt
+104,\x21\x1a\x01,RoboRobo Grunt
+105,\x21\x1a\x01,RoboRobo Grunt
+106,\x21\x1a\x01,RoboRobo Grunt
+107,\x21\x1a\x01,RoboRobo Grunt
+108,\x21\x1a\x01,RoboRobo Grunt
+109,\x21\x1a\x01,RoboRobo Grunt
 110,\x22\x1b\x01,Sakekaasu
 111,\x22\x1b\x01,Sakekaasu
 112,\x22\x1b\x01,Sakekaasu

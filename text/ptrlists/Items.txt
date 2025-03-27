@@ -8,7 +8,7 @@ Index[#version],ItemName,Flags
 3,Town Map\xcb,\x01
 4,Medalympic Badge\xcb,\x00
 5,Hanazono Badge\xcb,\x00
-6,Mini Handle\xcb,\x00
+6,Mini-Handle\xcb,\x00
 7,Hachiro's Medal\xcb,\x00
 8,Six-sided Fossil\xcb,\x00
 9,Name Tag\xcb,\x00
