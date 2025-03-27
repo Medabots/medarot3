@@ -1,6 +1,6 @@
 ﻿Index[#version],Pointer[#version|],Original,Translated
-000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,Bwaha!<D3><*02>
-001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,Tee-hee♥<D3><*02>
+000,0x92314#kabuto|0x92316#kuwagata,はっはあ-っん<CD><*02>,<f08>Bwaha!<f00><D3><*02>
+001,0x92316#kabuto|0x92318#kuwagata,ふっふ-ん♥<CD><*02>,<f08>Tee-hee<f00>♥<D3><*02>
 002,0x92318#kabuto|0x9231a#kuwagata,かよわい 女の子だからって<CD>手を ぬかないでよ!<*02>,Don't go easy on me just<D3>because I'm a girl!<*02>
 003,0x9231a#kabuto|0x9231c#kuwagata,も-ちょっと 手かげんしてくれたって<CD>い-じゃない!<*02>,"Jeez, you could go at least<D3>little easier on me!<*02>"
 004,0x9231c#kabuto|0x9231e#kuwagata,わたしと ロボトル<CD>おねがいできますか?<*02>,Would you like to robattle<D3>with me?<*02>
@@ -36,11 +36,11 @@
 034,0x92358#kabuto|0x9235a#kuwagata,あたしだって まだ わかいもんには<CD>まけないよ<*02>,I won't lose to a youngster<D3>like you!<*02>
 035,0x9235a#kabuto|0x9235c#kuwagata,わかいって いいねェ<CD><*02>,Oh to be young again...<*02>
 036,0x9235c#kabuto|0x9235e#kuwagata,キミのメダロットを<CD>みせてもらうよ<*02>,Show me your Medabots!<*02>
-037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,Huhuhu<D3>You let me take your data!<*02>
+037,0x9235e#kabuto|0x92360#kuwagata,フフフッ<CD>デ-タは とらせてもらったよ<*02>,<f08>Huhuhu<f00><D3>You let me take your data!<*02>
 038,0x92360#kabuto|0x92362#kuwagata,しっぷうのごとく きる!<CD><*02>,I'll blow you down like a<D3>strong gale!<*02>
 039,0x92362#kabuto|0x92364#kuwagata,...そして しっぷうのごとく<CD>やぶれたリ!<*02>,"... And as if by a strong gale,<D3>I was blown down!<*02>"
 040,0x92364#kabuto|0x92366#kuwagata,おれの メダロットを<CD>貝てくれ!<*02>,Check out my Medabots!<*02>
-041,0x92366#kabuto|0x92368#kuwagata,ああ-っ!!<CD>おれの メダロットちゃんがっ!<*02>,"Aaah, no! My poor Medabots!<*02>"
+041,0x92366#kabuto|0x92368#kuwagata,ああ-っ!!<CD>おれの メダロットちゃんがっ!<*02>,No! My poor Medabots!<*02>
 042,0x92368#kabuto|0x9236a#kuwagata,メダロットは<CD>おとこのこ だけのものじゃ ないよ<*02>,"Medabots aren't just for <D3>boys, you know!<*02>"
 043,0x9236a#kabuto|0x9236c#kuwagata,え-ん<CD>けっこう じしんあったのにィ<*02>,"Hmph, I was so confident I'd<D3>win too...<*02>"
 044,0x9236c#kabuto|0x9236e#kuwagata,ロボトルのよわい カレなんて<CD>カッコわるいわよね-<*02>,A boyfriend who can't win any<D3>robattles is no good!<*02>
@@ -50,19 +50,19 @@
 048,0x92374#kabuto|0x92376#kuwagata,ロボトルは しんけんしょうぶで<CD>ございま-す!<*02>,A truly serious robattle!<*02>
 049,0x92376#kabuto|0x92378#kuwagata,またの おこしを<CD>おまちして おリま-す!<*02>,I look forward to facing you again!<*02>
 050,0x92378#kabuto|0x9237a#kuwagata,おね-さんが あそんであ.げ.る♥<CD><*02>,Lil' ol me will play with you ♥<*02>
-051,0x9237a#kabuto|0x9237c#kuwagata,ウフフッ♥ またねぇ<CD><*02>,Uhuhu ♥ See ya.<*02>
-052,0x9237c#kabuto|0x9237e#kuwagata,われわれの おそろしさを<CD>思い知るロボ!<*02>,"Learn just how dreadful<D3>we are, robo<*02>"
+051,0x9237a#kabuto|0x9237c#kuwagata,ウフフッ♥ またねぇ<CD><*02>,<f08>Uhuhu <f00>♥<D3>See ya.<*02>
+052,0x9237c#kabuto|0x9237e#kuwagata,われわれの おそろしさを<CD>思い知るロボ!<*02>,"Learn just how dreadful<D3>we are, robo!<*02>"
 053,0x9237e#kabuto|0x92380#kuwagata,おたすけロボ-ッ!!<CD><*02>,"Help, robo!<D3><*02>"
-054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"Huhuhu<D3>In the end, evil will win!<*02>"
-055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,Grrrr!<D3>Don't think this is the end!<*02>
+054,0x92380#kabuto|0x92382#kuwagata,ふっふっふ<CD>さいごは あくが 勝つのだ!<*02>,"<f08>Huhuhu<f00><D3>In the end, evil will win!<*02>"
+055,0x92382#kabuto|0x92384#kuwagata,く-------っ!!<CD>これで おわったと 思うな!<*02>,<f08>Grrrr!<f00><D3>Don't think this is the end!<*02>
 056,0x92384#kabuto|0x92386#kuwagata,お-ほほほほほほほ!! わたくしを<CD>おこらせると こうかいしますことよ!<*02>,Ohohoho! Now you can see how I am when I'm angry!<*02>
 057,0x92386#kabuto|0x92388#kuwagata,いつか 本当に<CD>こうかい させてやリますことよ!<*02>,Someday I'll make you regret<D3>this!<*02>
-058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,"Wheeze, wheeze...<CF>You think you can beat me?<*02>"
+058,0x92388#kabuto|0x9238a#kuwagata,ふぉっふぉっふぉっ<CD>わしに 勝てる気で おるのか?<*02>,"<f08>Wheeze, wheeze...<f00><CF>You think you can beat me?<*02>"
 059,0x9238a#kabuto|0x9238c#kuwagata,子どもは なまいきだから<CD>気に 食わんのじゃ!<*02>,The kids are bratty so I'm in a bad mood!<*02>
 060,0x9238c#kabuto|0x9238e#kuwagata,てんさい ようちえんじ サラミが<CD>あいてに なるでしゅ!<*02>,The genius preschooler Shrimplips will be your opponent!<*02>
 061,0x9238e#kabuto|0x92390#kuwagata,あたちの IQは<CD>180も あるんでしゅよ!<*02>,My IQ is 180!<*02>
 062,0x92390#kabuto|0x92392#kuwagata,わしと おぬしの どちらが<CD>メダルを うまく そだてとるかな?<*02>,Which of us do you think has raised our Medals well?<*02>
-063,0x92392#kabuto|0x92394#kuwagata,やるもんじゃな がはは!<CD><*02>,I'll try! Gahaha!<*02>
+063,0x92392#kabuto|0x92394#kuwagata,やるもんじゃな がはは!<CD><*02>,I'll try! <f08>Gahaha!<f00><*02>
 064,0x92394#kabuto|0x92396#kuwagata,よいこのヒ-ロ- セレクトスリ-<CD>ただいま さんじょう!!<*02>,"The Great Heroes, the Select<D3>Three, on the scene!<*02>"
 065,0x92396#kabuto|0x92398#kuwagata,それでは また らいしゅう<CD>こう ごきたい!!<*02>,See you next week! Stay tuned!<*02>
 066,0x92398#kabuto|0x9239a#kuwagata,入隊きぼう者<CD>ぼしゅう中で あリます!<*02>,We're now taking applications from those who want to enlist!<*02>
@@ -72,7 +72,7 @@
 070,0x923a0#kabuto|0x923a2#kuwagata,どんな ちけいでも<CD>うかんでいれば かんけいないよっ<*02>,"If I'm floating, terrain doesn't matter!<*02>"
 071,0x923a2#kabuto|0x923a4#kuwagata,あ-<CD>ぼくは ながされていく-...<*02>,"Aw, I was cut down...<*02>"
 072,0x923a4#kabuto|0x923a6#kuwagata,けわしい やまみちだって<CD>あしが たくさんあれば ヘいきさっ<*02>,My many arms are my weapons for a rugged mountain.<*02>
-073,0x923a6#kabuto|0x923a8#kuwagata,あっ あしが もつれた-っ<CD><*02>,Ack! Tangled up in my own legs!<*02>
+073,0x923a6#kabuto|0x923a8#kuwagata,あっ あしが もつれた-っ<CD><*02>,<f08>Ack!<f00> Tangled up in my own legs!<*02>
 074,0x923a8#kabuto|0x923aa#kuwagata,もリみたいな いリくんだ ばしょでは<CD>きどうせいが ものを いうぞ!!<*02>,"In the forest, maneuverability is the name of the game!<*02>"
 075,0x923aa#kabuto|0x923ac#kuwagata,しかいが さえぎられて<CD>よく みえないっ<*02>,I couldn't see because my view was blocked!<*02>
 076,0x923ac#kabuto|0x923ae#kuwagata,はしって はしって<CD>はしリまくるぞぉ!<*02>,Run! Run! Run around and around!<*02>
@@ -83,7 +83,7 @@
 081,0x923b6#kabuto|0x923b8#kuwagata,きょうは みずあびしてから<CD>ぐっすリ ねよう<*02>,Guess I'll just fall asleep in the shower today.<*02>
 082,0x923b8#kabuto|0x923ba#kuwagata,おんなだと おもって<CD>あまく 貝ないことね<*02>,Don't think I look soft just 'cause I'm a girl!<*02>
 083,0x923ba#kabuto|0x923bc#kuwagata,ほんとうに てかげんも しないのね<CD><*02>,I really won't go easy on you next time.<*02>
-084,0x923bc#kabuto|0x923be#kuwagata,グルルルル...ニンゲンヨ<CD>ワガ ソンザイニ キョウフセヨ!<*02>,"GRRRR..... FEAR ME, FECKLESS HUMAN!<*02>"
+084,0x923bc#kabuto|0x923be#kuwagata,グルルルル...ニンゲンヨ<CD>ワガ ソンザイニ キョウフセヨ!<*02>,"<f08>GRRRR<f00>... FEAR ME, FECKLESS HUMAN!<*02>"
 085,0x923be#kabuto|0x923c0#kuwagata,オマエハ アクマヲモ<CD>オソレヌト イウノカ!?<*02>,IMPOSSIBLE! ARE YOU NOT AFRAID OF DEMONS!?<*02>
 086,0x923c0#kabuto|0x923c2#kuwagata,ニンゲンめ! おとなしく<CD>したがっていれば いいものを!<*02>,"This will only go well for you if<D3>you don't make a peep, human!<*02>"
 087,0x923c2#kabuto|0x923c4#kuwagata,われに したがわぬならば<CD>ほろびてしまうが いい!<*02>,I should destroy you for disobeying me!<*02>
@@ -94,21 +94,21 @@
 092,0x923cc#kabuto|0x923ce#kuwagata,きみは ロボトルが すきかい?<CD><*02>,Do you like robattles?<*02>
 093,0x923ce#kabuto|0x923d0#kuwagata,ニンゲンの れきしは たたかいから<CD>はじまったんだってね...<*02>,The history of Man was birthed from war...<*02>
 094,0x923d0#kabuto|0x923d2#kuwagata,お前なんか にゃ-の 前から<CD>きえちゃうのにゃ-!<*02>,"I wannya hide away from people like you, meow!<*02>"
-095,0x923d2#kabuto|0x923d4#kuwagata,にゃ-っ!<CD><*02>,Mrr-ow!<*02>
+095,0x923d2#kabuto|0x923d4#kuwagata,にゃ-っ!<CD><*02>,Mrr<f08>-ow!<f00><*02>
 096,0x923d4#kabuto|0x923d6#kuwagata,ニンゲン...テキ!<CD><*02>,DESTROY.... HUMANS!<*02>
 097,0x923d6#kabuto|0x923d8#kuwagata,ニンゲン カナラズ タオス!<CD><*02>,HUMANS MUST BE ERADICATED!<*02>
 098,0x923d8#kabuto|0x923da#kuwagata,お手なみ はいけんと いきましょう<CD><*02>,Let's shake hands and go!<*02>
 099,0x923da#kabuto|0x923dc#kuwagata,あなたとの ロボトルは<CD>わたしの むねを あつくするのです<*02>,Robattling with you gets me<D3>fired up!<*02>
 100,0x923dc#kabuto|0x923de#kuwagata,大人を からかっちゃ いけないよ!<CD><*02>,Don't mess with grown-ups!<*02>
-101,0x923de#kabuto|0x923e0#kuwagata,いや- つよいね きみは<CD><*02>,Eep! You sure are strong!<*02>
+101,0x923de#kabuto|0x923e0#kuwagata,いや- つよいね きみは<CD><*02>,<f08>Eep!<f00> You sure are strong!<*02>
 102,0x923e0#kabuto|0x923e2#kuwagata,このわたしが ロボトルするなんて<CD>思っても みなかったわ<*02>,I never thought I'd be participating in a robattle.<*02>
 103,0x923e2#kabuto|0x923e4#kuwagata,けっこう ロボトルって たのしいわね<CD>はまリそうだわ♥<*02>,"This robattle was quite fun, was it not? I could grow fond of this♥<*02>"
 104,0x923e4#kabuto|0x923e6#kuwagata,しんけん しょうぶに<CD>いろんは ない<*02>,"In a serious fight, nothing matters other than victory or defeat.<*02>"
 105,0x923e6#kabuto|0x923e8#kuwagata,...たのしかったぜ<CD><*02>,...That was fun!<*02>
 106,0x923e8#kabuto|0x923ea#kuwagata,ぼくも つよくなって いつか<CD>兄さんに 勝ってみせる!<*02>,I wanna get strong so I can beat my big bro someday!<*02>
-107,0x923ea#kabuto|0x923ec#kuwagata,あ- たのしかったぁ<CD>また あそんでよ!<*02>,Aah that was fun!<D3>Let's do that again sometime!<*02>
+107,0x923ea#kabuto|0x923ec#kuwagata,あ- たのしかったぁ<CD>また あそんでよ!<*02>,That was fun!<D3>Let's do that again sometime!<*02>
 108,0x923ec#kabuto|0x923ee#kuwagata,きみが あいてか<CD>あいてに とって ふそくはないさ<*02>,"You're my opponent? Well, can't complain about that.<*02>"
-109,0x923ee#kabuto|0x923f0#kuwagata,ふっ なかなか やるね<CD><*02>,"Hmph, not bad. <*02>"
+109,0x923ee#kabuto|0x923f0#kuwagata,ふっ なかなか やるね<CD><*02>,"<f08>Hmph<f00>, not bad. <*02>"
 110,0x923f0#kabuto|0x923f2#kuwagata,いくわよっ ベティ!<CD><*02>,"Let's go, Betty!<*02>"
 111,0x923f2#kabuto|0x923f4#kuwagata,ベティ! あんたは ほんとに<CD>わるい子ねっ<*02>,Betty! You really are such a bad child.<*02>
 112,0x923f4#kabuto|0x923f6#kuwagata,なんじゃくな 男なんかよリ<CD>女の子の方が こわいと 思わない?<*02>,"Girls can be much scarier than<D3>puny boys, don't you think?<*02>"
@@ -119,32 +119,32 @@
 117,0x923fe#kabuto|0x92400#kuwagata,...お金が あっても<CD>勝てるとは かぎらないよね<*02>,Having money doesn't always<D3>mean you'll win though...<*02>
 118,0x92400#kabuto|0x92402#kuwagata,ふ-ん 地上から 来た人なんだ<CD>あなたの お家は お金持ち?<*02>,Hmm? You came from the<D3>surface? Are you rich?<*02>
 119,0x92402#kabuto|0x92404#kuwagata,お金が なくても そんな ワイルドな<CD>あなたは ステキよ♥<*02>,"Even if you aren't rich, I like<D3>that wild style of yours ♥<*02>"
-120,0x92404#kabuto|0x92406#kuwagata,ンッ?<CD>ロボトルロボトル...<*02>,"Mm?<D3>A robattle, a robattle...<*02>"
-121,0x92406#kabuto|0x92408#kuwagata,ン-ッ?<CD>ボロトルトボロトル...<*02>,"Mm?<D3>A borattle, a borattle...<*02>"
+120,0x92404#kabuto|0x92406#kuwagata,ンッ?<CD>ロボトルロボトル...<*02>,"<f08>Mm?<f00><D3>A robattle, a robattle...<*02>"
+121,0x92406#kabuto|0x92408#kuwagata,ン-ッ?<CD>ボロトルトボロトル...<*02>,"<f08>Mm?<f00><D3>A borattle, a borattle...<*02>"
 122,0x92408#kabuto|0x9240a#kuwagata,オレと ロボトろ-ぜっ!!<CD><*02>,Robattle me!<*02>
 123,0x9240a#kabuto|0x9240c#kuwagata,ロボトったぜ-っ!!<CD><*02>,I was robattled!<*02>
-124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,Huhuhu<D3>I am Shiratama!<*02>
-125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,Hu...huhuhu...<D3>Hwahahahaha!<*02>
+124,0x9240c#kabuto|0x9240e#kuwagata,ふふふっ<CD>わたしが 白玉です<*02>,<f08>Huhuhu<f00><D3>I am Shiratama!<*02>
+125,0x9240e#kabuto|0x92410#kuwagata,ふっ ふふふっ<CD>ふははははははっ!!<*02>,<f08>Hu...huhuhu...<D3>Hwahahahaha!<f00><*02>
 126,0x92410#kabuto|0x92412#kuwagata,いち きょうしとして<CD>きみと ロボトルだ!!<*02>,"As a superb teacher,<D3>I'll robattle you!<*02>"
 127,0x92412#kabuto|0x92414#kuwagata,いち きょうしとして まんぞくしたぞ<CD><*02>,"As a superb teacher,<D3>I'm satisfied.<*02>"
 128,0x92414#kabuto|0x92416#kuwagata,いち きょうしとして<CD>あなたと ロボトルです!!<*02>,"As a superb teacher,<D3>I'll robattle you!<*02>"
 129,0x92416#kabuto|0x92418#kuwagata,まんぞくで-す<CD><*02>,I'm satisfied.<*02>
-130,0x92418#kabuto|0x9241a#kuwagata,ピ- ピピピ<CD><*02>,Pi- pipipi<D3><*02>
-131,0x9241a#kabuto|0x9241c#kuwagata,ピピピ ピ-...<CD><*02>,Pipipi pi-...<D3><*02>
+130,0x92418#kabuto|0x9241a#kuwagata,ピ- ピピピ<CD><*02>,<f08>Pi- pipipi<f00><D3><*02>
+131,0x9241a#kabuto|0x9241c#kuwagata,ピピピ ピ-...<CD><*02>,<f08>Pipipi pi-...<f00><D3><*02>
 132,0x9241c#kabuto|0x9241e#kuwagata,あたしたちは なく子も だまる<CD>シ-フェアリ-ズ!<*02>,We are the Sea Fairies! We<D3>never let up even if you cry!<*02>
 133,0x9241e#kabuto|0x92420#kuwagata,も-っ ゆるさないんだから!<CD><*02>,"Geeeez, I won't let you get away with this!<*02>"
 134,0x92420#kabuto|0x92422#kuwagata,シ-フェアリ-ズの リ-ダ-を<CD>なめてんじゃ ないわよ!<*02>,Don't underestimate the<D3>leader of the Sea Fairies!<*02>
-135,0x92422#kabuto|0x92424#kuwagata,ヘぇ...<CD>なかなか やるじゃない!<*02>,Hee...<D3>You're pretty good!<*02>
+135,0x92422#kabuto|0x92424#kuwagata,ヘぇ...<CD>なかなか やるじゃない!<*02>,<f08>Oh...?<f00><D3>You're pretty good!<*02>
 136,0x92424#kabuto|0x92426#kuwagata,   頭「ガルルッ ガウッ!」<CD>右「やるんか?ワレ」左「やるデ-ス」<*02>,"Head: GRRRR, ARF!<D3>Right: Shall we? Left: WE SHALL! "
 137,0x92426#kabuto|0x92428#kuwagata,   頭「キャイン キャイン!」<CD>右「なんでやねん!」左「まけデ-ス」<*02>,Head: Whimper!<D3>Right: What the heck! Left: Defeated...<*02>
 138,0x92428#kabuto|0x9242a#kuwagata,みなさん ごぞんじの とおリ<CD>わたしが カワムラ-です!<*02>,"As you are all aware, it is I, Kawamura!<*02>"
-139,0x9242a#kabuto|0x9242c#kuwagata,ひえぇぇぇ<CD>かんベんして くださいよぉ<*02>,Eeek! Please forgive me!<*02>
+139,0x9242a#kabuto|0x9242c#kuwagata,ひえぇぇぇ<CD>かんベんして くださいよぉ<*02>,<f08>Eeek!<f00> Please forgive me!<*02>
 140,0x9242c#kabuto|0x9242e#kuwagata,わたしは ここを うごくわけには<CD>いきません!<*02>,I'm not gonna budge from this spot!<*02>
 141,0x9242e#kabuto|0x92430#kuwagata,まけてしまっては<CD>しかたが ないですね...<*02>,Sucks to be on the losing side...<*02>
 142,0x92430#kabuto|0x92432#kuwagata,いくよ おまえたちぃ!<CD>目にもの 貝せてあげるのよぉ!<*02>,Let's go guys!<D3>Let's show 'em what we got!<*02>
 143,0x92432#kabuto|0x92434#kuwagata,まけゼリフなんて<CD>言ってあげないんだからぁ!!<*02>,I'm not gonna make a losing remark!<*02>
 144,0x92434#kabuto|0x92436#kuwagata,これいじょう 先に<CD>行かせるわけには いきません!<*02>,I won't let you go any further!<*02>
-145,0x92436#kabuto|0x92438#kuwagata,ここは き.け.ん...<CD><*02>,D a n g e r...<*02>
+145,0x92436#kabuto|0x92438#kuwagata,ここは き.け.ん...<CD><*02>,<f03>D a n g e r...<*02>
 146,0x92438#kabuto|0x9243a#kuwagata,これが...<CD>コンビニェ-ションアタック!!<*02>,This is...<D3>our combination attack!<*02>
 147,0x9243a#kabuto|0x9243c#kuwagata,これじゃ...<CD>コンビニェ-ション ボロボロ-<*02>,Just like that...<D3>the combination crumbles...<*02>
 148,0x9243c#kabuto|0x9243e#kuwagata,「アンビリバボ-」と「ぼ-ず」で<CD>アンビリバボ-ズ!!<*02>,"""Unbelievable"" and ""boys,"" we<D3>are the Unboylieveables!<*02>"

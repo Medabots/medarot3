@@ -100,18 +100,18 @@ Index[#version],Unknown,Name
 95,\x1e\x18\x00,Hostess
 96,\x1f\x19\x00,Bunny
 97,\x1f\x19\x00,Bunny
-98,\x21\x1a\x01,Rubberobo Member
-99,\x21\x1a\x01,Rubberobo Member
-100,\x21\x1a\x01,Rubberobo Member
-101,\x21\x1a\x01,Rubberobo Member
-102,\x21\x1a\x01,Rubberobo Member
-103,\x21\x1a\x01,Rubberobo Member
-104,\x21\x1a\x01,Rubberobo Member
-105,\x21\x1a\x01,Rubberobo Member
-106,\x21\x1a\x01,Rubberobo Member
-107,\x21\x1a\x01,Rubberobo Member
-108,\x21\x1a\x01,Rubberobo Member
-109,\x21\x1a\x01,Rubberobo Member
+98,\x21\x1a\x01,Rubberobo Grunt
+99,\x21\x1a\x01,Rubberobo Grunt
+100,\x21\x1a\x01,Rubberobo Grunt
+101,\x21\x1a\x01,Rubberobo Grunt
+102,\x21\x1a\x01,Rubberobo Grunt
+103,\x21\x1a\x01,Rubberobo Grunt
+104,\x21\x1a\x01,Rubberobo Grunt
+105,\x21\x1a\x01,Rubberobo Grunt
+106,\x21\x1a\x01,Rubberobo Grunt
+107,\x21\x1a\x01,Rubberobo Grunt
+108,\x21\x1a\x01,Rubberobo Grunt
+109,\x21\x1a\x01,Rubberobo Grunt
 110,\x22\x1b\x01,Seaslug
 111,\x22\x1b\x01,Seaslug
 112,\x22\x1b\x01,Seaslug
