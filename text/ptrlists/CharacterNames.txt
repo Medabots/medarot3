@@ -32,8 +32,8 @@ Index[#version],CharacterName
 27,Sloan
 28,Hachiro
 29,Hachiro
-30,Retort
-31,Retort
+30,Renegade
+31,Renegade
 32,Lady Renegade
 33,Lady Renegade
 34,Dr. Aki

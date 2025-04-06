@@ -41,8 +41,8 @@ Index[#version],Unknown,Name
 36,\x08\x07\x00,Hachiro
 37,\x0a\x08\x00,Milky
 38,\x0a\x08\x00,Milky
-39,\x0b\x09\x00,Retort
-40,\x0b\x09\x00,Retort
+39,\x0b\x09\x00,Renegade
+40,\x0b\x09\x00,Renegade
 41,\x0d\x0a\x00,Lady Renegade
 42,\x0d\x0a\x00,Lady Renegade
 43,\x0f\x0b\x00,Dr. Aki
