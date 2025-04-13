@@ -2733,6 +2733,9 @@ MapStarForMedachangeStatus::
 
 DisplayMedachangeDescription::
   call WrapInitiateMainScriptAlternate
+  ; Continues into DisplayMedachangeDescription_skipInit...
+ 
+DisplayMedachangeDescription_skipInit::
   ld a, [W_MedarotCurrentLegPart]
   ld [W_ListItemIndexForBuffering], a
   ld a, [W_MedalMenuSelectedMedaliaSlot]
