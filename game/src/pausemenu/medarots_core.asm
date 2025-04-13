@@ -563,21 +563,21 @@ MedarotsMedachangeWindowMappingState::
 MedarotsMedachangeWindowMappingOnReturnState::
   ld bc, $206
   ld e, $4A
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld bc, 0
   ld e, $48
-  ld a, 0
+  xor a
   call WrapDecompressTilemap1
   ld bc, 0
   ld e, $48
-  ld a, 0
+  xor a
   call WrapDecompressAttribmap1
   ld bc, $A03
   ld a, [$C602]
   add $B0
   ld e, a
-  ld a, 0
+  xor a
   call WrapDecompressTilemap1
   ld hl, $94A0
   call $3603
@@ -616,11 +616,11 @@ MedarotsMedachangeWindowInputHandlerState::
   call DisplayMedarotStatusSelectionArrows
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 0
+  xor a
   call $1554
   ld bc, $206
   ld e, $47
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld a, $14
   ld [W_CoreSubStateIndex], a
@@ -629,17 +629,18 @@ MedarotsMedachangeWindowInputHandlerState::
 MedarotsMedachangeMappingState::
   xor a
   ld [W_MedalMenuSelectedMedaliaSlot], a
-  ld bc, 0
+  ld b, a
+  ld c, a
   ld e, $4B
-  ld a, 0
   call WrapDecompressTilemap0
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $4B
-  ld a, 0
   call WrapDecompressAttribmap0
   ld bc, $A00
   ld e, $4C
-  ld a, 0
+  xor a
   call WrapDecompressAttribmap0
   ld bc, $101
   call MapMedalNicknameForMedarotStatus
@@ -665,7 +666,18 @@ MedarotsMedachangeInputHandlerState::
   call MedachangeStatusScreenInputHandler
   ldh a, [H_JPInputChanged]
   and M_JPInputB
-  ret z
+  jr nz, .bPressed
+  ld a, [W_MainScriptExitMode]
+  or a
+  jp z, DisplayMedachangeDescription_skipInit
+  di
+  rst $20
+  xor a
+  ld [$9C72], a
+  ei
+  ret
+
+.bPressed
   ld a, 4
   call ScheduleSoundEffect
   jp IncSubStateIndex
@@ -736,12 +748,11 @@ MedarotsMedawatchRestoreOddsAndEndsState::
   ld [W_ShadowREG_SCX], a
   ld a, [W_PauseMenuPerserveSCY]
   ld [W_ShadowREG_SCY], a
-  ld a, 0
+  xor a
   ld [$C4EE], a
+  ld [$C4F0], a
   ld a, $14
   ld [$C4EF], a
-  ld a, 0
-  ld [$C4F0], a
   ld a, $12
   ld [$C4F1], a
   ld a, 3
@@ -831,7 +842,7 @@ MedarotsSelectionScreenPrepareBattleEntryState::
   call UpdateSelectedMedarotPalette
   ld a, 1
   ld [W_OAM_SpritesReady], a
-  ld a, 0
+  xor a
   ld [$C0C0], a
   ld bc, $103
   ld hl, $99C1
