@@ -91,7 +91,7 @@
 089,0x94116,<SFF>3F<CD>エアロホテル1に 行く?<*04>,<SFF>3F<D3><f01>Go to <f00>Aero Hotel 1?<*04>
 090,0x94118,<SFF>4F<CD>エアロホテル2に 行く?<*04>,<SFF>4F<D3><f01>Go to <f00>Aero Hotel 2?<*04>
 091,0x9411a,<SFF>5F<CD>オフィス2に 行く?<*04>,<SFF>5F<D3><f01>Go to <f00>office 2?<*04>
-092,0x9411c,<SFF>6F<CD>メダロット社に 行く?<*04>,<SFF>6F<D3><f01>Go to the <f00>Medabots Corporation?<*04>
+092,0x9411c,<SFF>6F<CD>メダロット社に 行く?<*04>,<SFF>6F<D3><f01>Go to the Medabots Corporation?<*04>
 093,0x9411e,<SFF>7F<CD>ライチョウ学園1に 行く?<*04>,<SFF>7F<D3><f01>Go to <f00>Ptarmigan Institute 1F?<*04>
 094,0x94120,<SFF>8F<CD>ライチョウ学園2に 行く?<*04>,<SFF>8F<D3><f01>Go to <f00>Ptarmigan Institute 2F?<*04>
 095,0x94122,<SFF>9F<CD>スカイパ-クに 行く?<*04>,<SFF>9F<D3><f01>Go to <f00>Sky Park?<*04>

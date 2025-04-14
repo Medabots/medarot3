@@ -239,7 +239,7 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 235,\x11,\x04,Blaziken257
 236,\x11,\x04,Gilor
 237,\x11,\x04,WobblyPython
-238,\x11,\x04,\xCB
+238,\x11,\x04,TannerOfTheNorth
 239,\x01,\x03,Localization
 240,\x01,\x05,Special Thanks
 241,\x11,\x04,The many members 
