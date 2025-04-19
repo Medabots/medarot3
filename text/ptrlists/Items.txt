@@ -34,7 +34,7 @@ Index[#version],ItemName,Flags
 29,Transceiver\xcb,\x00
 30,COMP Key\xcb,\x00
 31,COCKPIT Key\xcb,\x00
-32,MOVE Key\xcb,\x00
+32,CONTROLS Key\xcb,\x00
 33,DEVIL Key\xcb,\x00
 34,Space Suit\xcb,\x0a
 35,Periscope\xcb,\x00
