@@ -83,7 +83,7 @@
 サケカース,Sakekaasu,Seaslug
 サケノスケカスカベ,Sakenosuke Kasukabe,Seymore Slugbottom
 メダロットはかせ,Dr. Medarot,Dr. Aki
-ヘベレケはかせ,Dr. Hebereke,Dr. Armond
+ヘベレケはかせ,"Dr. Hebereke,Hebereke","Dr. Armond,Armond"
 ゲンゴロウフシハラはかせ,Dr. Gengoro Fushihara,Dr. Hushi
 花園,Hanazono,Rosewood
 クワガタ,Kuwagata,Kuwagata
@@ -100,7 +100,7 @@
 メダロデパート,Medalo Department Store,Medalo Department Store
 メダリア,Medalia,Medalia
 プリミティベビ,Primity Baby,Babbyblu
-おみくじ村,Omikuji Town,Riverview Town
+おみくじ村,"Omikuji Town,Omikuji District","Riverview Town,Riverview District"
 ギンジョウ小学校,Ginjo Elementary,Riverview Public School
 ライチョウ学園,Raicho Institute,Ptarmigan Institute
 ウラシマ カイ,Urashima Kai,Kai Urashima
@@ -145,7 +145,6 @@
 -,"MedaLink,MedaLinks","MedaLink,MedaLinks"
 -,MiniMini,MiniMini
 -,Monju,Monju
--,Nimosaki,Nimosaki
 -,Rappy,Rappy
 -,Dry Shakeys,Dry Shakeys
 -,Unboylieveables,Unboylieveables
