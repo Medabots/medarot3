@@ -238,14 +238,14 @@ Index[#version],AnimateInOut,PaletteIndex,Name
 234,\x11,\x04,AzMiLion
 235,\x11,\x04,Blaziken257
 236,\x11,\x04,Gilor
-237,\x11,\x04,\xCB
-238,\x11,\x04,\xCB
+237,\x11,\x04,Kimbles
+238,\x11,\x04,Malias
 239,\x00,\x03,Localization
 240,\x00,\x05,Special Thanks
 241,\x11,\x04,MaverickHunterVile
-242,\x11,\x04,TannerOfTheNorth
-243,\x11,\x04,WobblyPython
-244,\x11,\x04,\xCB
+242,\x11,\x04,Sanqui
+243,\x11,\x04,TannerOfTheNorth
+244,\x11,\x04,WobblyPython
 245,\x11,\x04,\xCB
 246,\x01,\x03,Localization
 247,\x01,\x05,Special Thanks
