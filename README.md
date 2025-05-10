@@ -9,7 +9,7 @@ The master branch is focused on extracting components of the game and making sur
 * Medarot 3 KABUTO ROM (md5: cbc55f3bb98f8c0443917ae477e56e51) and/or Medarot 3 KUWAGATA ROM (md5: dabfbdc9aba5f2edc21f884c52881e0d)
 * Make 4 or greater
 * Python 3.6 or greater, aliased to 'python3'
-* [rgbds toolchain](https://github.com/rednex/rgbds) v0.7.0 or greater
+* [rgbds toolchain](https://github.com/rednex/rgbds) v0.9.2 or greater
 
 ## Make
 

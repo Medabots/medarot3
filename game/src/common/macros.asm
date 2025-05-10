@@ -27,6 +27,7 @@ MACRO TableStart
   ENDM
 
 ; TableAddressEntry TableName,ID
+; Note that duplicate entries will be overridden by the latest entry
 MACRO TableAddressEntry
   IF DEF(\1IDX_\2)
     PURGE \1IDX_\2
