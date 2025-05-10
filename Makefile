@@ -106,7 +106,7 @@ npc
 
 # Toolchain
 CC := rgbasm
-CC_ARGS :=
+CC_ARGS := -Wno-purge
 LD := rgblink
 LD_ARGS :=
 FIX := rgbfix
