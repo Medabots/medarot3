@@ -29,21 +29,27 @@ MACRO TableStart
 ; TableAddressEntry TableName,ID
 ; Note that duplicate entries will be overridden by the latest entry
 MACRO TableAddressEntry
+  PUSHO
+  OPT Wno-purge
   IF DEF(\1IDX_\2)
     PURGE \1IDX_\2
   ENDC
   DEF \1IDX_\2 RB
   dw \2
   EXPORT \1IDX_\2
+  POPO
   ENDM
 
 MACRO TableAddressBankEntry
+  PUSHO
+  OPT Wno-purge
   IF DEF(\1IDX_\2)
     PURGE \1IDX_\2
   ENDC
   DEF \1IDX_\2 RB
   dwb \2, BANK(\2)
   EXPORT \1IDX_\2
+  POPO
   ENDM
 
 MACRO dcolor
