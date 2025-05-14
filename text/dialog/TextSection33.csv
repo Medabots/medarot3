@@ -186,7 +186,7 @@
 176,0x238160,"<@RL,Hachiro,04>なかなか やるね","<@RL,Hachiro,04>You're good."
 177,0x238162,"<@RL,Hachiro,04>...ふっ すなおじゃ ないね<CD>本当は ボクと あそびたい くせに","<@RL,Hachiro,04>...Heh, aren't you a shy one. I know you actually want to play with me."
 178,0x238164,"<@RL,Erika,04>ニュ-ス ニュ-ス!","<@RL,Erika,04>There's big news!"
-179,0x238166,"<@RL,Erika,04>「花園学園に なぞのメダロッタ-<CD>とうじょう!<CF><D1>花園さいきょうの メダロッタ-<CD>コウジくんとの ロボトル!」<CF><D1>...と まあ しんぶんの<CD>貝出しは こうね!<CF><D1>早く 行くわよ<&BUF03>!","<@RL,Erika,04><f02>A Mysterious Medarotter Appeared at Hanazono Private School!<f00><CF><D1><f02>A Robattle with Koji, the Strongest Medarotter in Hanazono!<f00><CF><D1>...Well, that'll be the news title!<CF><D1>Let's hurry, <&BUF03>!"
+179,0x238166,"<@RL,Erika,04>「花園学園に なぞのメダロッタ-<CD>とうじょう!<CF><D1>花園さいきょうの メダロッタ-<CD>コウジくんとの ロボトル!」<CF><D1>...と まあ しんぶんの<CD>貝出しは こうね!<CF><D1>早く 行くわよ<&BUF03>!","<@RL,Erika,04><f02>A Mysterious Medarotter Appeared at Hanazono Private School!<f00><CF><D1><f02>A <#NOCHECK_CAPITALIZATION>Robattle with Koji, the Strongest Medarotter in Hanazono!<f00><CF><D1>...Well, that'll be the news title!<CF><D1>Let's hurry, <&BUF03>!"
 180,0x238168,"<@LL,Ikki,00>...ぼくも?","<@LL,Ikki,00>...I'm coming, too?"
 181,0x23816a,"<@RL,Rintaro,00>行っけぇ! カンタロス!!","<@RL,Rintaro,00>Gooo! Kantaros!!"
 182,0x23816c,"<@RL,Erika,01>スク-プ スク-プ!","<@RL,Erika,01>It's a huge scoop!!"
