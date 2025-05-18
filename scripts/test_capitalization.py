@@ -35,8 +35,10 @@ with open(input_file, 'r', encoding='utf-8-sig') as fp:
         if row[idx_index].startswith("UNUSED") or row[idx_text].startswith("@"):
             continue
         i = row[idx_index]
+        # Remove things flagged with <#NOCHECK_CAPITALIZATION>
+        text = re.sub(r"\<#NOCHECK_CAPITALIZATION\>\w+\b", '', row[idx_text])
         # Strip out control codes
-        text = re.sub(r"\<&.+?\>", '01234567', row[idx_text])
+        text = re.sub(r"\<&.+?\>", '01234567', text)
         text = re.sub(r"\<D1\>", ' ', text)
         text = re.sub(r"\<D3\>", ' ', text)
         text = re.sub(r"\<CD\>", ' ', text)

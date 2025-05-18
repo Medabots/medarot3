@@ -15,7 +15,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
   # Dockerfile arguments
   RGBDS_REPOSITORY: https://github.com/gbdev/rgbds.git
-  RGBDS_VERSION: v0.7.0
+  RGBDS_VERSION: v0.9.2
   OPENPYXL_REPOSITORY: https://github.com/VariantXYZ/openpyxl-variant.git
   OPENPYXL_VERSION: bcedbfadcafba04fab0d9ffe2c8f001e19683497
   PYTHON_VERSION_NUM: 3.10.6

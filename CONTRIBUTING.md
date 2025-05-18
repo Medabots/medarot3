@@ -20,6 +20,14 @@ There are several tabs in this Google Sheet:
 * TextSectionXX tabs that contain the text and translation for most of the game's dialog, part descriptions, and just about anything else that appears in a text box in-game
 * The remaining tabs refer to 'lists', things like attack names, enemy names, and other substitutable text
 
+#### Automated Checks
+
+There are automated nightly checks that run on various things (spelling, capitalization, etc...). Sometimes breaking these norms is intentional, and for those it is possible to add specific flags to text to ignore them.
+
+* `<#NOCHECK_CAPITALIZATION>WORD` will skip a capitalization check on a particular word.
+* `<#NOCHECK_PORTRAIT><@Portrait...>` will skip checking to make sure portraits line up between the original and translated text.
+* `<#NOCHECK_TEXTSPEED><S...>` will skip checking text speed flags match between the original and translated text.
+
 #### Text Sections
 
 Within the TextSection tabs, there are several columns:

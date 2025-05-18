@@ -205,20 +205,21 @@ MedalsDrawingState::
 MedalsMappingState::
   xor a
   ld [W_MedalMenuCurrentScreen], a
-  ld bc, 0
+  ld b, a
+  ld c, a
   ld e, $35
-  ld a, 0
   call WrapDecompressTilemap0
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $35
-  ld a, 0
   call WrapDecompressAttribmap0
   ld bc, $908
   ld a, $90
   ld hl, $980B
   call $262C
   ld bc, $908
-  ld a, 0
+  xor a
   ld hl, $980B
   call $25FF
   call CountMedals
@@ -248,8 +249,7 @@ MedalsMappingState::
 MedalsPrepareFadeInState::
   ld hl, $23
   ld bc, $16
-  ld d, $FF
-  ld e, $FF
+  ld de, $FFFF
   ld a, 8
   call WrapSetupPalswapAnimation
   call CalculateMedalImagePaletteIndex
@@ -382,13 +382,15 @@ MedalsSubscreenDrawingState::
 MedalsAbilitySubscreenMappingState::
   ld a, 1
   ld [W_MedalMenuCurrentScreen], a
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $3B
-  ld a, 0
   call WrapDecompressTilemap0
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $3B
-  ld a, 0
   call WrapDecompressAttribmap0
   call WrapInitiateMainScript
   call DisplayMedalDescriptionForMedalSubscreen
@@ -416,8 +418,7 @@ MedalsAbilitySubscreenMappingState::
 MedalsAbilitySubscreenPrepareFadeInState::
   ld hl, $24
   ld bc, $16
-  ld d, $FF
-  ld e, $FF
+  ld de, $FFFF
   ld a, 8
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
@@ -475,13 +476,14 @@ MedalsMedaforceSubscreenMappingState::
   ld [W_MedalMenuCurrentScreen], a
   xor a
   ld [W_ItemActionSubSubStateIndex], a
-  ld bc, 0
+  ld b, a
+  ld c, a
   ld e, $41
-  ld a, 0
   call WrapDecompressTilemap0
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $41
-  ld a, 0
   call WrapDecompressAttribmap0
   call WrapInitiateMainScript
   call PrintMedalSelectedMedaforceDescriptionForMedalSubscreen
@@ -500,8 +502,7 @@ MedalsMedaforceSubscreenMappingState::
 MedalsMedaforceSubscreenPrepareFadeInState::
   ld hl, $25
   ld bc, $16
-  ld d, $FF
-  ld e, $FF
+  ld de, $FFFF
   ld a, 8
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
@@ -510,7 +511,11 @@ MedalsMedaforceSubscreenInputHandlerState::
   ld de, $C0C0
   call $33B7
   call MedalSubscreenAnimateArrows
-  call MedalPreOptionBoxInputCheck
+  xor a
+  ld [$C4EE], a
+  ld a, [W_MainScriptExitMode]
+  or a
+  call nz, MedalPreOptionBoxInputCheck
   ld a, [$C4EE]
   or a
   jp nz, IncSubStateIndex
@@ -524,7 +529,18 @@ MedalsMedaforceSubscreenInputHandlerState::
   ret nz
   ldh a, [H_JPInputChanged]
   and M_JPInputB
-  ret z
+  jr nz, .bPressed
+  ld a, [W_MainScriptExitMode]
+  or a
+  jp z, PrintMedalSelectedMedaforceDescriptionForMedalSubscreen_skipInit
+  di
+  rst $20
+  xor a
+  ld [$9C72], a
+  ei
+  ret
+
+.bPressed
   ld a, 4
   call ScheduleSoundEffect
   ld a, $1B
@@ -534,13 +550,15 @@ MedalsMedaforceSubscreenInputHandlerState::
 MedalsSkillLevelSubscreenMappingState::
   ld a, 3
   ld [W_MedalMenuCurrentScreen], a
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $42
-  ld a, 0
   call WrapDecompressTilemap0
-  ld bc, 0
+  xor a
+  ld b, a
+  ld c, a
   ld e, $42
-  ld a, 0
   call WrapDecompressAttribmap0
   call DrawMedalIconForMedalSubscreen
   call MapMedalIconForMedalSubscreen
@@ -558,8 +576,7 @@ MedalsSkillLevelSubscreenMappingState::
 MedalsSkillLevelSubscreenPrepareFadeInState::
   ld hl, $26
   ld bc, $16
-  ld d, $FF
-  ld e, $FF
+  ld de, $FFFF
   ld a, 8
   call WrapSetupPalswapAnimation
   jp IncSubStateIndex
@@ -603,7 +620,7 @@ MedalsMedaliaSubscreenMappingState::
   ld [W_MedalMenuMedaliaListOffsetIndex], a
   ld bc, 0
   ld e, $43
-  ld a, 0
+  xor a
   call WrapDecompressTilemap0
   ld bc, 0
   ld e, $43

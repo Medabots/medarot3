@@ -1580,6 +1580,9 @@ MapMedalSelectedMedaforceSkillForMedalSubscreen::
 
 PrintMedalSelectedMedaforceDescriptionForMedalSubscreen::
   call WrapInitiateMainScriptAlternate
+  ; Continues into PrintMedalSelectedMedaforceDescriptionForMedalSubscreen_skipInit...
+ 
+PrintMedalSelectedMedaforceDescriptionForMedalSubscreen_skipInit::
   call GetMedalAddress
   ld hl, M_MedalMedaforceA
   add hl, de
