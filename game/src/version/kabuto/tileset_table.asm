@@ -107,8 +107,6 @@ SECTION "Tileset Data SplashScreenConceptCredit", ROMX[$7307], BANK[$74]
 ASSERT SIZEOF("Tileset Data SplashScreenConceptCredit") <= 761
 
 SECTION "Tileset Data BorderTextMedarot3", ROMX[$7600], BANK[$74]
-BorderTextMedarot3::
-  INCBIN "./build/tilesets/BorderTextMedarot3.malias"
 ASSERT SIZEOF("Tileset Data BorderTextMedarot3") <= 143
 
 SECTION "Tileset Data Tileset3C73", ROMX[$768F], BANK[$74]

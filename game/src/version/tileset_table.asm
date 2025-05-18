@@ -1152,13 +1152,9 @@ Tileset39C5::
 ASSERT SIZEOF("Tileset Data Tileset39C5") <= 573
 
 SECTION "Tileset Data RobattleTransition1", ROMX[$5FD2], BANK[$3C]
-RobattleTransition1::
-  INCBIN "./build/tilesets/RobattleTransition1.malias"
 ASSERT SIZEOF("Tileset Data RobattleTransition1") <= 1267
 
 SECTION "Tileset Data RobattleTransition2", ROMX[$64C5], BANK[$3C]
-RobattleTransition2::
-  INCBIN "./build/tilesets/RobattleTransition2.malias"
 ASSERT SIZEOF("Tileset Data RobattleTransition2") <= 1325
 
 SECTION "Tileset Data Tileset39CB", ROMX[$69F2], BANK[$3C]

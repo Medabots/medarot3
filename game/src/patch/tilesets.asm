@@ -184,3 +184,9 @@ PatchTilesets::
   PatchTilesetEntry LinkRobattleOptionsModeSelect
 OpeningAnimationCharacterNames::
   INCBIN "./build/tilesets/OpeningAnimationCharacterNames.malias"
+RobattleTransition1::
+  INCBIN "./build/tilesets/RobattleTransition1.malias"
+RobattleTransition2::
+  INCBIN "./build/tilesets/RobattleTransition2.malias"
+BorderTextMedarot3::
+  INCBIN "./build/tilesets/BorderTextMedarot3.malias"
