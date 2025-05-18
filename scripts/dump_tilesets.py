@@ -199,7 +199,8 @@ MACRO TilesetTableEntry
         
         output.write(f'SECTION "Tileset Data {name}", ROMX[${p[1]:04X}], BANK[${p[0]:02X}]\n')
         output.write(f"{name}::\n")
-        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n\n')
+        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n')
+        output.write(f'ASSERT SIZEOF("Tileset Data {name}") <= {len(bytearray(f[1]))}\n\n')
     output.write('\n')
 
 
@@ -210,7 +211,8 @@ MACRO TilesetTableEntry
         name = nametable[key]
         output.write(f'SECTION "Tileset Data {name}", ROMX[${p[1]:04X}], BANK[${p[0]:02X}]\n')
         output.write(f"{name}::\n")
-        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{{GAMEVERSION}}.malias")}"\n\n')
+        output.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{{GAMEVERSION}}.malias")}"\n')
+        output.write(f'ASSERT SIZEOF("Tileset Data {name}") <= {len(bytearray(f[1]))}\n\n')
 
         for version in roms:
             ver = version[1]
@@ -262,7 +264,8 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n\n')
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}.malias")}"\n')
+            outputv.write(f'ASSERT SIZEOF("Tileset Data {name}") <= {len(bytearray(f[1]))}\n\n')
 
         for key in unique_pointer_and_tilesets:
             p = utils.real2romaddr(tileset_data[key][ver][0])
@@ -288,7 +291,8 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{ver}.malias")}"\n\n')
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{name}_{ver}.malias")}"\n')
+            outputv.write(f'ASSERT SIZEOF("Tileset Data {name}") <= {len(bytearray(f[1]))}\n\n')
 
         for key in missing_pointers:
             if ver not in tileset_data[key]:
@@ -320,8 +324,8 @@ for version in roms:
             if key in tileset_alias[ver]:
                 for alias_key in tileset_alias[ver][key]:
                     outputv.write(f"{nametable[alias_key]}::\n")
-            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{basename}.malias")}"\n\n')
-
+            outputv.write(f'  INCBIN "{os.path.join(output_path, f"{basename}.malias")}"\n')
+            outputv.write(f'ASSERT SIZEOF("Tileset Data {name}") <= {len(bytearray(f[1]))}\n\n')
 
 with open(meta_tileset_load_offsets_file,"w") as offsetfile, open(meta_tileset_index_file,"w") as indexfile:
     for i, key in enumerate(tileset_metadata[default_version]):
