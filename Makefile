@@ -267,7 +267,7 @@ $(BUILD)/%.$(INT_TYPE): $(SRC)/$$(firstword $$(subst ., ,$$*))/$$(lastword $$(su
 
 # build/tilesets/*.2bpp from source png
 $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TILESET_OUT)
-	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
+	$(CCGFX) $(CCGFX_ARGS) -c dmg -d 2 -o $@ $<
 
 # build/tilesets/*.malias from built malias.2bpp
 $(TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(TILESET_OUT)/%.$(COMPRESSED_TSET_SRC_TYPE) | $(TILESET_OUT)
