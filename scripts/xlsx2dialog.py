@@ -14,28 +14,32 @@ sys.path.append(path.join(path.dirname(__file__), 'common'))
 from common import utils
 
 font_table = utils.read_table("scripts/res/fonts.tbl", keystring=True)
+font_table_reversed = utils.reverse_dict(font_table)
 
 def transform_line(line):
 	line = (line or "").replace('""', '"')
 	# D3 is universal linebreak (new line or new box, depending), CF is new line
 	line = re.sub(r'\n((?:</{0,1}(?:b|i)>)*)\n', r'<CF>\1', line).replace('\n','<D3>')
-	sections = re.split(r'(<b>|</b>|<i>|</i>)', line)
+	sections = re.split(r'(<b>|</b>|<i>|</i>|<f\d{1,}>)', line)
 	if len(sections) > 1:
 		current_font = "Normal"
 		proposed_font = "Normal" # Don't change fonts until we have non-space characters
 		line = ""
 		for section in sections:
-			if section == '<b>':
-				assert "Bold" not in proposed_font
+			if re.search(pattern=r'<f\d{1,}>', string=section) != None:
+				proposed_font = font_table_reversed[f"{int(section[2:-1])}"]
+			elif section == '<b>':
+				assert proposed_font in ("Normal", "Robotic", "Italic"), f"{sections}"
 				proposed_font = proposed_font + "Bold"
 			elif section == '</b>':
-				assert "Bold" in proposed_font
+				assert proposed_font in ("NormalBold", "RoboticBold", "ItalicBold"), f"{sections}"
 				proposed_font = proposed_font.replace("Bold", "", 1)
 			elif section == '<i>':
+				assert proposed_font in ("Normal", "NormalBold"), f"{sections}"
 				proposed_font = "ItalicBold" if proposed_font == "NormalBold" else "Italic"
 			elif section == '</i>':
-				assert "Italic" in proposed_font
-				proposed_font = proposed_font.replace("Italic", "Normal", 1)
+				assert proposed_font in ("Italic", "ItalicBold"), f"{sections}"
+				proposed_font = "Normal" if proposed_font == "Italic" else "NormalBold"
 			elif section:
 				if proposed_font != current_font and not section.isspace():
 					line += f"<f{int(font_table[proposed_font], 16):02X}>"
