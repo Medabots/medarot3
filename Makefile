@@ -272,7 +272,7 @@ $(BUILD)/%.$(INT_TYPE): $(SRC)/$$(firstword $$(subst ., ,$$*))/$$(lastword $$(su
 
 # build/tilesets/*.2bpp from source png
 $(TILESET_OUT)/%.$(TSET_SRC_TYPE): $(TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(TILESET_OUT)
-	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
+	$(CCGFX) $(CCGFX_ARGS) -c dmg -d 2 -o $@ $<
 
 # build/tilesets/*.malias from built malias.2bpp
 $(TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(TILESET_OUT)/%.$(COMPRESSED_TSET_SRC_TYPE) | $(TILESET_OUT)
@@ -334,10 +334,10 @@ $(PATCH_TILESET_OUT)/%.$(COMPRESSED_TSET_TYPE): $(PATCH_TILESET_OUT)/%.$(TSET_SR
 	$(PYTHON) $(SCRIPT)/tileset2malias.py $@ $< $(TILESET_PREBUILT)
 
 $(PATCH_TILESET_OUT)/%.$(VWF_TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(VWF_TSET_SRC_TYPE).$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
-	$(CCGFX) $(CCGFX_ARGS) -d 1 -o $@ $<
+	$(CCGFX) $(CCGFX_ARGS) -c dmg -d 1 -o $@ $<
 
 $(PATCH_TILESET_OUT)/%.$(TSET_SRC_TYPE): $(PATCH_TILESET_GFX)/%.$(RAW_TSET_SRC_TYPE) | $(PATCH_TILESET_OUT)
-	$(CCGFX) $(CCGFX_ARGS) -d 2 -o $@ $<
+	$(CCGFX) $(CCGFX_ARGS) -c dmg -d 2 -o $@ $<
 
 # patch/*.bin from patch/*.txt
 $(PATCH_TEXT_OUT)/%.$(DIALOG_TYPE): $(PATCH_TEXT)/%.$(TEXT_TYPE) | $(PATCH_TEXT_OUT)
