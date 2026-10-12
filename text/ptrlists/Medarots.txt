@@ -77,7 +77,7 @@ Index[#version],MedarotName
 72,Straywolf
 73,Vapor-Rail
 74,Saikachi
-75,Unitris
+75,Unitrix
 76,Blakbeetle
 77,Basart
 78,Brownbison
