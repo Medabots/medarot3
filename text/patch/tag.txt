@@ -1,1 +1,1 @@
-tr_EN+nightly.20261018
+tr_EN+nightly.20261022
