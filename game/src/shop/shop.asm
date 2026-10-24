@@ -674,7 +674,7 @@ ShopMapPartNameHeartAndPrice::
   push de
   ld h, a
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringLeftFullAddress8Tiles
+  call VWFDrawStringLeftFullAddress8TilesInitFont
   pop hl
   ld de, 9
   add hl, de
