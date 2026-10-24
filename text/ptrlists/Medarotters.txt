@@ -121,9 +121,9 @@ Index[#version],Unknown,Name
 116,\x24\x1d\x01,Shiokara
 117,\x24\x1d\x01,Shiokara
 118,\x24\x1d\x01,Shiokara
-119,\x25\x1e\x01,Sarami
-120,\x25\x1e\x01,Sarami
-121,\x25\x1e\x01,Sarami
+119,\x25\x1e\x01,Salami
+120,\x25\x1e\x01,Salami
+121,\x25\x1e\x01,Salami
 122,\x26\x1f\x01,Dr. Hebereke
 123,\x26\x1f\x01,Dr. Hebereke
 124,\x27\x20\x01,Select Three
