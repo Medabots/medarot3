@@ -113,7 +113,7 @@
 109,0x2280da,"<@RL,RubberRoboGrunt,00>ここで つかまるわけには<CD>行かないロボ!","<@RL,RubberRoboGrunt,00>No way I'm letting you catch me here, robo!"
 110,0x2280dc,"<@RL,RubberRoboGrunt,01>こっこまっで お-いで-ロボ!<CF><D1><@LL,Ikki,02>宇宙ふくじゃ あそこまで 行けない!<CD>ずるいぞっ!","<@RL,RubberRoboGrunt,01>Come get me if you can, robo!<CF><D1><@LL,Ikki,02>I can't get there with only a spacesuit! That's cheating!"
 111,0x2280de,"<@LL,Ikki,05>宇宙ふくじゃ<CD>これいじょう すすめない<CF><D1>じゃあ むこうがわに<CD>ぐるっと回るのは むリってことか<CF><D1>いったん 引きかえして<CD>アリカの方を 貝に行こう","<@LL,Ikki,05>I can't go past here with only a spacesuit.<CF><D1>That means I can't go around the moon from here.<CF><D1>I should go back and find Erika."
-112,0x2280e0,"<@LL,Ikki,05>それにしても ロボロボ団のふくって<CD>宇宙ふくの かわリにも なるのか<CF><D1>変なとこだけ ちゃんとしてるなぁ","<@LL,Ikki,05>Still, I didn't expect that the Rubberobo's suits can also be used a spacesuit.<CF><D1>They're thorough in strange places."
+112,0x2280e0,"<@LL,Ikki,05>それにしても ロボロボ団のふくって<CD>宇宙ふくの かわリにも なるのか<CF><D1>変なとこだけ ちゃんとしてるなぁ","<@LL,Ikki,05>Still, I didn't expect that the Rubberobo's suits could also be used a spacesuit.<CF><D1>They're thorough in strange places."
 113,0x2280e2,"<@LL,Ikki,07>あ! ロボロボ団!<CF><D1><@RL,RubberRoboGrunt,04>ロボッ!?","<@LL,Ikki,07>Ah! It's the Rubberobo Gang!<CF><D1><@RL,RubberRoboGrunt,04>Robo!?"
 114,0x2280e4,"<@RL,RubberRoboGrunt,01>こっこまっで お-いで-ロボ!<CF><D1><@LL,Ikki,02>またっ!","<@RL,RubberRoboGrunt,01>Come get me if you can, robo!<CF><D1><@LL,Ikki,02>Not again!"
 115,0x2280e6,"<@LL,Ikki,00>それにしても アリカ<CD>いないなぁ 先に 行ったのかな?<CF><D1>手がかリもないし<CD>ぼくも 先ヘ行こう","<@LL,Ikki,00>Still, where's Erika? Did she go on ahead?<CF><D1>I've got no clue. So I guess I should head there myself."
