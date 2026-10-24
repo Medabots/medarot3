@@ -25,10 +25,10 @@
 18: 
 19: Tilemap pointer table 3, attribmap pointer table 3
 1A: 
-1B: 
+1B: (from 71D0) Text37 
 1C: 
 1D: 
-1E: 
+1E: (from 7300) Text38
 1F: 
 20: 
 21: 
