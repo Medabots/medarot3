@@ -10,7 +10,7 @@ Index[#version],ItemName,Flags
 5,Rosewood Badge\xcb,\x00
 6,Mini-Handle\xcb,\x00
 7,Hachiro's Medal\xcb,\x00
-8,Six-sided Fossil\xcb,\x00
+8,Six-sided Nummulite\xcb,\x00
 9,Name Tag\xcb,\x00
 10,Lesson Materials\xcb,\x00
 11,Kogane's Flowers\xcb,\x00

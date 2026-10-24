@@ -138,7 +138,7 @@ Index[#version],MedarotName
 133,Shine Seal
 134,Nya-Buck
 135,Slime-Eel
-136,Chono-Folm
+136,Chrono-Folm
 137,Axolotl
 138,Bustroyer
 139,Sea-Catcher
