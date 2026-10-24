@@ -674,7 +674,7 @@ ShopMapPartNameHeartAndPrice::
   push de
   ld h, a
   ld bc, W_NewListItemBufferArea
-  call VWFDrawStringLeftFullAddress8Tiles
+  call VWFDrawStringLeftFullAddress8TilesInitFont
   pop hl
   ld de, 9
   add hl, de
@@ -943,7 +943,7 @@ ShopPasswordDrawAndMapPartObtainedWindow::
   ld b, a
   ld a, [W_CurrentPartIndexForPartStatus]
   ld c, a
-  ld hl, $98EA
+  ld hl, $98EB
   call ShopPasswordMapObtainedPartName
   call ShopPasswordGetPartStatValues
   call ShopPasswordMapObtainedPartNature
