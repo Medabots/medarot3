@@ -34,7 +34,7 @@
 032,0x1e8040,"<@RL,SelectCorpsGrunt,00>ロボトルに はげんでおリますか?<CF><D1>さあ わたくしと<CD>ロボトルで あリます!<CF><D1><@LL,Ikki,07>ええっ!?","<@RL,SelectCorpsGrunt,00>Are you working hard in your robattles?<CF><D1>Well then, you shall have a robattle with me!<CF><D1><@LL,Ikki,07>Huh!?"
 033,0x1e8042,"<@RL,SelectCorpsGrunt,01>たのしかったであリます!<CD>また あそんで ほしいであリます!","<@RL,SelectCorpsGrunt,01>That was fun! I'd like for us to battle again sometime!"
 034,0x1e8044,"<@RL,FemaleMedabot,00>メダロットの ちょうしは<CD>いかがですか?","<@RL,FemaleMedabot,00>How's your Medabot holding up?"
-035,0x1e8046,"<@RL,FemaleMedabot,00>まちなかでは しゃリょう型の<CD>メダロットが はやくはしれますよ♥","<@RL,FemaleMedabot,00>You can find vehicle-type Medabots all around town. ♥"
+035,0x1e8046,"<@RL,FemaleMedabot,00>まちなかでは しゃリょう型の<CD>メダロットが はやくはしれますよ♥","<@RL,FemaleMedabot,00>You can find wheeled-type Medabots all around town. ♥"
 036,0x1e8048,"<@RL,Boy,00>どうだい ぼくの メダロット<CD>かっこいいだろう?<CF><D1><@LL,Ikki,00>ねえ こっちくらい むいてよ...","<@RL,Boy,00>How do you like my Medabots?<D3>Aren't they cool?<CF><D1><@LL,Ikki,00>Hey, look this way at least..."
 037,0x1e804a,"<@RL,Girl,00>ねえ 貝て 貝て!<CF><D1>わたしの メダロット<CD>かわいいでしょ?<CF><D1><@LL,Ikki,00>ぼくの 話なんか きいてないや...","<@RL,Girl,00>Hey, look, look!<CF><D1>Aren't my Medabots cute?<CF><D1><@LL,Ikki,00>They aren't listening to anything I'm saying..."
 038,0x1e804c,"<@LL,Ikki,04>ちゅうけん ボナパルトのぞうだ<CD>ボナパルトって犬は<CF><D1>ミニチュアブルテリアなんだってね<CF><D1>フォックステリアの ソルティとは<CD>しんせきみたいな ものかな?","<@LL,Ikki,04>It's a statue of the faithful dog, Bonaparte.<CF><D1>He's a miniature bull terrier.<CF><D1>Salty's a fox terrier. I wonder if they're related?"
