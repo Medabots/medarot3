@@ -78,4 +78,4 @@ Index[#version],AttackName
 73,Ammo Drain
 74,No-Escape
 75,No-Defend
-76,Force Defend
+76,Force Drain
